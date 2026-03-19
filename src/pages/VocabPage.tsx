@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ChevronLeft, ChevronRight, RotateCcw, Volume2, BookOpen, Brain, Pencil, Home, Search, BookText } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, RotateCcw, Volume2, BookOpen, Brain, Pencil, Home, Search, BookText, X, Check, Trophy } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";

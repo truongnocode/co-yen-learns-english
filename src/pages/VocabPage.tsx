@@ -158,20 +158,52 @@ const QuizTab = ({ words }: { words: VocabItem[] }) => {
 // ===== SPELLING TAB =====
 const SpellingTab = ({ words }: { words: VocabItem[] }) => {
   const [current, setCurrent] = useState(0);
-  const [input, setInput] = useState("");
+  const [letters, setLetters] = useState<string[]>([]);
   const [result, setResult] = useState<"correct" | "wrong" | null>(null);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const word = words[current];
-  const normalize = (s: string) => s.toLowerCase().replace(/\s+/g, " ").trim();
+
+  // Initialize letter slots when word changes
+  useEffect(() => {
+    setLetters(new Array(word.en.length).fill(""));
+  }, [current, word.en]);
+
+  const handleLetterChange = (idx: number, value: string) => {
+    if (result) return;
+    const char = value.slice(-1); // Take last typed char
+    const newLetters = [...letters];
+    newLetters[idx] = char;
+    setLetters(newLetters);
+
+    // Auto-focus next empty slot
+    if (char && idx < word.en.length - 1) {
+      const nextInput = document.getElementById(`spell-${idx + 1}`);
+      nextInput?.focus();
+    }
+  };
+
+  const handleKeyDown = (idx: number, e: React.KeyboardEvent) => {
+    if (result) return;
+    if (e.key === "Backspace" && !letters[idx] && idx > 0) {
+      const prevInput = document.getElementById(`spell-${idx - 1}`);
+      prevInput?.focus();
+      const newLetters = [...letters];
+      newLetters[idx - 1] = "";
+      setLetters(newLetters);
+    }
+    if (e.key === "Enter") handleCheck();
+  };
 
   const handleCheck = () => {
-    if (!input.trim()) return;
-    const isCorrect = normalize(input) === normalize(word.en);
+    const typed = letters.join("").toLowerCase().trim();
+    if (!typed) return;
+    const isCorrect = typed === word.en.toLowerCase();
     setResult(isCorrect ? "correct" : "wrong");
     if (isCorrect) setScore(s => s + 1);
     setTimeout(() => {
-      if (current < words.length - 1) { setCurrent(c => c + 1); setInput(""); setResult(null); } else { setFinished(true); }
+      if (current < words.length - 1) { setCurrent(c => c + 1); setResult(null); }
+      else { setFinished(true); }
     }, 1500);
   };
 
@@ -181,7 +213,7 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
         <span className="text-6xl mb-4 block">✍️</span>
         <h3 className="font-display font-extrabold text-2xl text-foreground mb-2">Hoàn thành!</h3>
         <p className="text-muted-foreground mb-6">Đúng {score}/{words.length} câu</p>
-        <motion.button whileTap={{ scale: 0.95 }} onClick={() => { setCurrent(0); setInput(""); setResult(null); setScore(0); setFinished(false); }}
+        <motion.button whileTap={{ scale: 0.95 }} onClick={() => { setCurrent(0); setResult(null); setScore(0); setFinished(false); }}
           className="gradient-primary text-white px-6 py-3 rounded-full font-bold">Làm lại</motion.button>
       </div>
     );
@@ -197,28 +229,51 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
           </div>
         ); })()}
         <p className="text-sm text-muted-foreground mb-1">Viết từ tiếng Anh:</p>
-        <p className="font-display font-extrabold text-2xl text-foreground mb-2">{word.vi}</p>
-        <p className="text-xs text-muted-foreground">{wordTypeLabels[word.type] || word.type} · {word.en.length} ký tự</p>
-        <p className="text-lg tracking-[0.4em] text-muted-foreground/50 mt-2 font-mono">
-          {word.en.split("").map((c) => c === " " ? " " : "_").join("")}
-        </p>
+        <p className="font-display font-extrabold text-2xl text-foreground mb-1">{word.vi}</p>
+        <p className="text-xs text-muted-foreground mb-4">{wordTypeLabels[word.type] || word.type}</p>
+
+        {/* Letter input slots */}
+        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+          {word.en.split("").map((char, idx) => {
+            if (char === " ") {
+              return <div key={idx} className="w-4" />;
+            }
+            const isCorrectChar = result === "correct";
+            const isWrongChar = result === "wrong";
+            return (
+              <input
+                key={idx}
+                id={`spell-${idx}`}
+                type="text"
+                maxLength={1}
+                value={letters[idx] || ""}
+                onChange={(e) => handleLetterChange(idx, e.target.value)}
+                onKeyDown={(e) => handleKeyDown(idx, e)}
+                autoFocus={idx === 0}
+                disabled={!!result}
+                className={`w-10 h-12 text-center text-lg font-bold rounded-xl border-2 outline-none transition-all ${
+                  isCorrectChar
+                    ? "border-emerald-400 bg-emerald-50 text-emerald-700"
+                    : isWrongChar
+                    ? "border-red-400 bg-red-50 text-red-700"
+                    : letters[idx]
+                    ? "border-primary bg-primary/5 text-foreground"
+                    : "border-border bg-card text-foreground focus:border-primary"
+                }`}
+              />
+            );
+          })}
+        </div>
+
+        {result === "wrong" && (
+          <p className="text-destructive text-sm mt-3">Đáp án: <strong>{word.en}</strong></p>
+        )}
       </div>
-      <div className="flex gap-3">
-        <input
-          type="text" value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === "Enter" && handleCheck()}
-          placeholder="Nhập từ tiếng Anh..."
-          className={`flex-1 px-5 py-4 rounded-2xl border text-lg font-bold outline-none transition-colors bg-card/80 backdrop-blur-xl ${
-            result === "correct" ? "border-emerald-400 bg-emerald-50 text-emerald-700" :
-            result === "wrong" ? "border-red-400 bg-red-50 text-red-700" :
-            "border-white/60 text-foreground focus:border-primary"
-          }`}
-        />
-        <motion.button whileTap={{ scale: 0.9 }} onClick={handleCheck}
-          className="gradient-primary text-white px-6 rounded-2xl font-bold shadow-md">Kiểm tra</motion.button>
-      </div>
-      {result === "wrong" && (
-        <p className="text-red-500 text-sm mt-3 text-center">Đáp án đúng: <strong>{word.en}</strong></p>
-      )}
+
+      <motion.button whileTap={{ scale: 0.95 }} onClick={handleCheck} disabled={!!result}
+        className="w-full gradient-primary text-white py-4 rounded-2xl font-display font-bold text-base shadow-lg disabled:opacity-50">
+        Kiểm tra ✅
+      </motion.button>
     </div>
   );
 };

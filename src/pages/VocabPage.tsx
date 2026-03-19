@@ -226,42 +226,64 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
     return acc;
   }, {} as Record<string, VocabItem[]>);
 
+  const types = Object.keys(grouped);
+  const [activeType, setActiveType] = useState(types[0] || "");
+
+  const colors = wordTypeColors[activeType] || defaultTypeColor;
+  const items = grouped[activeType] || [];
+
   return (
-    <div className="max-h-[62vh] overflow-y-auto space-y-5 pr-1 scrollbar-thin">
-      {Object.entries(grouped).map(([type, items]) => {
-        const colors = wordTypeColors[type] || defaultTypeColor;
-        return (
-          <div key={type}>
-            <div className={`${colors.bg} rounded-2xl px-4 py-2.5 mb-3 flex items-center gap-2 shadow-md`}>
-              <span className="text-lg">{colors.icon}</span>
-              <span className={`font-display font-bold text-sm ${colors.text} uppercase tracking-wide`}>{type}</span>
-              <span className={`${colors.text} opacity-80 text-xs ml-auto font-bold`}>{items.length} từ</span>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {items.map((w, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.03, duration: 0.3 }}
-                  className="group bg-card/80 backdrop-blur-xl rounded-xl px-4 py-3 border border-border/50 flex items-center gap-3 hover:shadow-md hover:border-primary/30 transition-all cursor-default"
+    <div className="space-y-4">
+      {/* Word type filter tabs */}
+      <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+        {types.map((type) => {
+          const c = wordTypeColors[type] || defaultTypeColor;
+          const isActive = type === activeType;
+          return (
+            <button
+              key={type}
+              onClick={() => setActiveType(type)}
+              className={`shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-xl font-display font-bold text-xs transition-all ${
+                isActive
+                  ? `${c.bg} text-white shadow-md scale-105`
+                  : "bg-card/80 backdrop-blur-xl border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/30"
+              }`}
+            >
+              <span>{c.icon}</span>
+              <span>{type}</span>
+              <span className={`ml-1 text-[10px] ${isActive ? "opacity-80" : "opacity-50"}`}>({grouped[type].length})</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Word list */}
+      <div className="max-h-[55vh] overflow-y-auto pr-1 scrollbar-thin">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <AnimatePresence mode="wait">
+            {items.map((w, i) => (
+              <motion.div
+                key={`${activeType}-${i}`}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.02, duration: 0.25 }}
+                className="group bg-card/80 backdrop-blur-xl rounded-xl px-4 py-3 border border-border/50 flex items-center gap-3 hover:shadow-md hover:border-primary/30 transition-all cursor-default"
+              >
+                <div className="min-w-0 flex-1">
+                  <p className="font-display font-bold text-foreground text-sm leading-tight">{w.en}</p>
+                  <p className="text-muted-foreground text-xs mt-0.5">{w.vi}</p>
+                </div>
+                <button
+                  onClick={() => speak(w.en)}
+                  className="p-2 rounded-full bg-primary/5 hover:bg-primary/15 transition-colors shrink-0 opacity-60 group-hover:opacity-100"
                 >
-                  <div className="min-w-0 flex-1">
-                    <p className="font-display font-bold text-foreground text-sm leading-tight">{w.en}</p>
-                    <p className="text-muted-foreground text-xs mt-0.5">{w.vi}</p>
-                  </div>
-                  <button
-                    onClick={() => speak(w.en)}
-                    className="p-2 rounded-full bg-primary/5 hover:bg-primary/15 transition-colors shrink-0 opacity-60 group-hover:opacity-100"
-                  >
-                    <Volume2 className="h-3.5 w-3.5 text-primary" />
-                  </button>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        );
-      })}
+                  <Volume2 className="h-3.5 w-3.5 text-primary" />
+                </button>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+      </div>
     </div>
   );
 };

@@ -241,11 +241,14 @@ const defaultTypeColor = { bg: "gradient-purple-card", text: "text-white", icon:
 const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
   const [search, setSearch] = useState("");
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
+  const [activeType, setActiveType] = useState<string | null>(null);
 
-  const filtered = words.filter(w =>
-    w.en.toLowerCase().includes(search.toLowerCase()) ||
-    w.vi.toLowerCase().includes(search.toLowerCase())
-  );
+  const filtered = words.filter(w => {
+    const matchSearch = w.en.toLowerCase().includes(search.toLowerCase()) ||
+      w.vi.toLowerCase().includes(search.toLowerCase());
+    const matchType = !activeType || (wordTypeLabels[w.type] || w.type) === activeType;
+    return matchSearch && matchType;
+  });
 
   // Sort alphabetically
   const sorted = [...filtered].sort((a, b) => a.en.localeCompare(b.en));
@@ -272,15 +275,24 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
         />
       </div>
 
-      {/* Word type chips */}
+      {/* Word type filter chips */}
       <div className="flex flex-wrap gap-1.5">
         {Object.entries(wordTypeColors).map(([type, c]) => {
           const count = words.filter(w => (wordTypeLabels[w.type] || w.type) === type).length;
           if (!count) return null;
+          const isActive = activeType === type;
           return (
-            <span key={type} className={`${c.bg} text-white text-[10px] font-bold px-2.5 py-1 rounded-full`}>
+            <button
+              key={type}
+              onClick={() => setActiveType(isActive ? null : type)}
+              className={`text-[10px] font-bold px-2.5 py-1 rounded-full transition-all ${
+                isActive
+                  ? `${c.bg} text-white shadow-md scale-105`
+                  : "bg-card/80 border border-border/50 text-muted-foreground hover:text-foreground"
+              }`}
+            >
               {c.icon} {type} · {count}
-            </span>
+            </button>
           );
         })}
       </div>

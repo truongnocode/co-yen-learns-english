@@ -33,6 +33,14 @@ const QuizPage = () => {
     });
   }, [unit]);
 
+  // Auto-read the English word when question changes
+  useEffect(() => {
+    if (questions.length > 0 && !finished) {
+      const q = questions[currentIndex];
+      if (q) speakUS(q.word.english);
+    }
+  }, [currentIndex, questions, finished]);
+
   if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy.</div>;
 
   if (finished) {

@@ -66,14 +66,14 @@ const DashboardPage = () => {
           <DashboardHeader progress={progress} />
           <HeroBanner />
 
+          {/* Learning Overview */}
+          <LearningOverview progress={progress} />
+
           {/* Main content: Learning Path + Review Corner */}
-          <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex flex-col lg:flex-row gap-8 mt-8">
             <LearningPath progress={progress} />
             <ReviewCorner />
           </div>
-
-          {/* Learning Overview (hình 2) */}
-          <LearningOverview progress={progress} />
 
           <div className="h-10" />
         </main>

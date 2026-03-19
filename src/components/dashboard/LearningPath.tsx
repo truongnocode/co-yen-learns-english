@@ -84,7 +84,7 @@ const LearningPath = ({ progress }: Props) => {
                   </p>
                 </div>
                 <button
-                  onClick={() => navigate(`/grade/${grade}`)}
+                  onClick={() => navigate(`/grade/${grade}/vocab/${unit.id}`)}
                   className="bg-success-foreground/20 backdrop-blur-sm text-success-foreground text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 hover:bg-success-foreground/30 transition-colors"
                 >
                   <BookOpen className="h-3.5 w-3.5" />
@@ -133,10 +133,11 @@ const LearningPath = ({ progress }: Props) => {
                         whileTap={stopUnlocked ? { scale: 0.95 } : {}}
                         onClick={() => {
                           if (!stopUnlocked) return;
-                          if (stop.key === "vocab") navigate(`/grade/${grade}`);
-                          else if (stop.key === "grammar") navigate(`/grade/${grade}`);
-                          else if (stop.key === "practice") navigate(`/grade/${grade}`);
-                          else navigate(`/grade/${grade}`);
+                          const u = unit.id;
+                          if (stop.key === "vocab") navigate(`/grade/${grade}/vocab/${u}`);
+                          else if (stop.key === "grammar") navigate(`/grade/${grade}/grammar/${u}`);
+                          else if (stop.key === "practice") navigate(`/grade/${grade}/exercises/${u}`);
+                          else if (stop.key === "spelling") navigate(`/grade/${grade}/vocab/${u}`);
                         }}
                         className={`relative w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-lg ${
                           stopDone

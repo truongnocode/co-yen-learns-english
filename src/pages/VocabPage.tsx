@@ -7,6 +7,7 @@ import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PageShell from "@/components/PageShell";
+import { getWordIcon } from "@/lib/wordIcons";
 
 const speak = (text: string) => {
   const u = new SpeechSynthesisUtterance(text);
@@ -41,22 +42,31 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
           className={`w-full max-w-sm aspect-[3/4] rounded-3xl shadow-xl flex flex-col items-center justify-center cursor-pointer select-none p-8 border border-white/40 relative overflow-hidden ${flipped ? "gradient-purple-card text-white" : "bg-card/90 backdrop-blur-xl"}`}
         >
           <div className={`absolute top-6 right-6 w-16 h-16 rounded-full ${flipped ? "bg-white/10" : "bg-primary/5"} float-animation`} />
-          {!flipped ? (
-            <>
-              <span className="text-5xl font-display font-bold text-foreground mb-2 relative z-10">{word.en}</span>
-              <span className="text-sm text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-2 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
-              <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="mt-3 p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
-                <Volume2 className="h-5 w-5 text-primary" />
-              </button>
-              <span className="text-xs text-muted-foreground mt-6 bg-muted/50 px-4 py-1.5 rounded-full relative z-10">👆 Nhấn để lật thẻ</span>
-            </>
-          ) : (
-            <>
-              <span className="text-4xl font-display font-bold mb-3 relative z-10">{word.vi}</span>
-              <span className="text-xl opacity-90 relative z-10">{word.en}</span>
-              <span className="text-sm opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
-            </>
-          )}
+          {(() => {
+            const WordIcon = getWordIcon(word.en, word.type);
+            return !flipped ? (
+              <>
+                <div className="p-3 rounded-2xl bg-primary/10 mb-4 relative z-10">
+                  <WordIcon className="h-8 w-8 text-primary" />
+                </div>
+                <span className="text-5xl font-display font-bold text-foreground mb-2 relative z-10">{word.en}</span>
+                <span className="text-sm text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-2 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+                <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="mt-3 p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
+                  <Volume2 className="h-5 w-5 text-primary" />
+                </button>
+                <span className="text-xs text-muted-foreground mt-6 bg-muted/50 px-4 py-1.5 rounded-full relative z-10">👆 Nhấn để lật thẻ</span>
+              </>
+            ) : (
+              <>
+                <div className="p-3 rounded-2xl bg-white/15 mb-4 relative z-10">
+                  <WordIcon className="h-8 w-8 text-white" />
+                </div>
+                <span className="text-4xl font-display font-bold mb-3 relative z-10">{word.vi}</span>
+                <span className="text-xl opacity-90 relative z-10">{word.en}</span>
+                <span className="text-sm opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+              </>
+            );
+          })()}
         </motion.div>
       </AnimatePresence>
 
@@ -120,6 +130,11 @@ const QuizTab = ({ words }: { words: VocabItem[] }) => {
     <div className="max-w-sm mx-auto">
       <Progress value={((current + 1) / words.length) * 100} className="h-2.5 rounded-full mb-6" />
       <div className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6 text-center">
+        {(() => { const QIcon = getWordIcon(word.en, word.type); return (
+          <div className="inline-flex p-2.5 rounded-xl bg-primary/10 mb-3">
+            <QIcon className="h-6 w-6 text-primary" />
+          </div>
+        ); })()}
         <p className="text-sm text-muted-foreground mb-1">Chọn từ tiếng Anh đúng:</p>
         <p className="font-display font-extrabold text-2xl text-foreground">{word.vi}</p>
         <p className="text-xs text-muted-foreground mt-1">{wordTypeLabels[word.type] || word.type}</p>
@@ -180,6 +195,11 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
     <div className="max-w-sm mx-auto">
       <Progress value={((current + 1) / words.length) * 100} className="h-2.5 rounded-full mb-6" />
       <div className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6 text-center">
+        {(() => { const SIcon = getWordIcon(word.en, word.type); return (
+          <div className="inline-flex p-2.5 rounded-xl bg-primary/10 mb-3">
+            <SIcon className="h-6 w-6 text-primary" />
+          </div>
+        ); })()}
         <p className="text-sm text-muted-foreground mb-1">Viết từ tiếng Anh:</p>
         <p className="font-display font-extrabold text-2xl text-foreground mb-2">{word.vi}</p>
         <p className="text-xs text-muted-foreground">{wordTypeLabels[word.type] || word.type} · {word.en.length} ký tự</p>
@@ -269,6 +289,11 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
                 transition={{ delay: i * 0.02, duration: 0.25 }}
                 className="group bg-card/80 backdrop-blur-xl rounded-xl px-4 py-3 border border-border/50 flex items-center gap-3 hover:shadow-md hover:border-primary/30 transition-all cursor-default"
               >
+                {(() => { const WIcon = getWordIcon(w.en, w.type); return (
+                  <div className="p-1.5 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors shrink-0">
+                    <WIcon className="h-4 w-4 text-primary/70" />
+                  </div>
+                ); })()}
                 <div className="min-w-0 flex-1">
                   <p className="font-display font-bold text-foreground text-sm leading-tight">{w.en}</p>
                   <p className="text-muted-foreground text-xs mt-0.5">{w.vi}</p>

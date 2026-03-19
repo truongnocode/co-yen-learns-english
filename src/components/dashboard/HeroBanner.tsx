@@ -34,9 +34,9 @@ const HeroBanner = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() => navigate(`/grade/${grade}`)}
-          className="bg-white text-primary font-display font-extrabold text-sm rounded-full px-6 py-3 inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
+          className="bg-white text-primary font-display font-extrabold text-xs rounded-full px-5 py-2 inline-flex items-center gap-2 shadow-lg hover:shadow-xl transition-shadow"
         >
-          <Play className="h-4 w-4 fill-primary" />
+          <Play className="h-3.5 w-3.5 fill-primary" />
           Học tiếp ngay
         </motion.button>
       </div>
@@ -45,7 +45,7 @@ const HeroBanner = () => {
       <img
         src={foxMascot}
         alt="Mascot"
-        className="absolute right-4 bottom-0 w-32 sm:w-44 opacity-95 drop-shadow-2xl hidden sm:block"
+        className="absolute right-4 bottom-0 w-24 sm:w-32 opacity-95 drop-shadow-2xl hidden sm:block"
       />
     </motion.div>
   );

@@ -305,10 +305,11 @@ const Index = () => {
           <motion.button
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.97 }}
+            onClick={handleCTA}
             className="bg-foreground text-background rounded-full px-10 py-5 text-lg font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(260,30%,15%,0.2)] hover:shadow-[0_18px_50px_hsl(260,30%,15%,0.3)] transition-all duration-500"
           >
             <Flame className="h-5 w-5" />
-            Đăng nhập để bắt đầu
+            {user ? "Vào trang cá nhân" : "Đăng nhập để bắt đầu"}
           </motion.button>
         </motion.div>
       </section>

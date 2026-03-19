@@ -1,0 +1,362 @@
+{
+  "letterArranging": {
+    "instruction": "Mark the letter A, B, C, or D to indicate the correct arrangement of the sentences to make a meaningful letter/email.",
+    "questions": [
+      {
+        "q": "Dear Madam, (a) I am looking forward to hearing your decision... (b) Hearing about your passion for the company... (c) I realize it may take you some time... (d) Thank you for inviting me to the interview yesterday... (e) I really enjoyed talking to you about your vision...",
+        "opts": [
+          "a-e-d-c-b",
+          "d-c-e-a-b",
+          "d-e-b-c-a",
+          "e-b-d-c-a"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Dear Mary, (a) Tell me when you come so that I can arrange my time... (b) Secondly, if you are interested in admiring the wildlife, Cuc Phuong National Park... (c) How are things? It's great that you're coming... (d) You should also visit Hoa Lu ancient town... (e) The first place I suggest is Trang An Landscape Complex...",
+        "opts": [
+          "a-b-c-d-e",
+          "c-d-e-a-b",
+          "a-b-d-e-c",
+          "c-e-b-d-a"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Dear Anna, (a) The first place I suggest is the Vietnam National Museum of History... (b) There are so many interesting places in the city... (c) Tell me when you're coming... (d) The second is Hoan Kiem Lake... (e) How are you? It's great to know that you are coming to Vietnam...",
+        "opts": [
+          "a-b-c-d-e",
+          "e-b-a-d-c",
+          "d-e-a-b-c",
+          "e-b-d-c-a"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Dear Jennifer, (a) If there's anything you'd like to share... (b) I trust this letter finds you well... (c) Looking forward to catching up soon... (d) I understand that exam periods can be quite stressful... (e) I recently heard about the exams you had...",
+        "opts": [
+          "b-e-d-a-c",
+          "b-d-e-c-a",
+          "a-b-e-d-c",
+          "d-e-a-c-b"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Dear Santa, (a) Second, I would like a new video game... (b) Merry Christmas! I hope this letter finds you well... (c) Lastly, I would like a new set of art supplies... (d) First, I would like a new bike... (e) I hope you and your family have a wonderful holiday season...",
+        "opts": [
+          "d-a-b-c-e",
+          "e-d-a-c-b",
+          "b-d-a-c-e",
+          "a-d-e-b-c"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  "paragraphArranging": {
+    "instruction": "Mark the letter A, B, C, or D to indicate the correct arrangement of the sentences to make a meaningful paragraph.",
+    "questions": [
+      {
+        "q": "(a) Firstly, there is the problem of traffic jams... (b) Living in a city has a number of drawbacks... (c) Thirdly, the city is noisy, even at night... (d) In conclusion, these factors contribute to making city life more difficult... (e) Secondly, air pollution negatively affects people's health...",
+        "opts": [
+          "a-b-c-d-e",
+          "e-d-a-b-c",
+          "b-a-e-c-d",
+          "e-b-d-a-c"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "(a) There are many advantages of using electronic devices... (b) Secondly, modern technology tools improve their study results... (c) Finally, smartphones help students communicate... (d) In short, personal electronic devices bring more benefits... (e) First of all, they can be used for both research and study... (f) These apps are not only useful but also exciting...",
+        "opts": [
+          "d-a-e-b-c",
+          "d-a-c-b-e",
+          "c-a-e-b-d",
+          "d-c-e-b-a"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "(a) In short, taking care of your health is a lifelong task... (b) Another good habit is to exercise regularly... (c) First, eating balanced meals is crucial... (d) Health is very important for everyone... (e) Lastly, getting enough sleep is essential...",
+        "opts": [
+          "d-c-b-e-a",
+          "d-b-e-a-c",
+          "c-b-e-d-a",
+          "d-c-e-b-a"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "(a) Secondly, sharing housework helps to alleviate stress... (b) In conclusion, when both men and women go out to work... (c) Firstly, it promotes fairness and equality... (d) Lastly, it promotes a clean and organized living environment... (e) Sharing housework brings numerous benefits...",
+        "opts": [
+          "c-a-d-e-b",
+          "e-c-a-d-b",
+          "b-c-a-d-e",
+          "a-d-b-e-c"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "(a) Firstly, doing well at school involves a lot of pressure... (b) Then, there is also the stress of having a social life... (c) I think teenagers are as stressed as adults... (d) In conclusion, we can say that a lot of reasons can lead teenagers to stress... (e) Finally, we can also mention the stress that comes from family problems...",
+        "opts": [
+          "d-c-a-e-b",
+          "c-b-a-e-d",
+          "a-b-c-e-d",
+          "c-a-b-e-d"
+        ],
+        "ans": 3
+      }
+    ]
+  },
+  "sentenceArranging": {
+    "instruction": "Rearrange the words to make a complete sentence.",
+    "questions": [
+      {
+        "q": "usually / to / bus. / goes / school / by / She /",
+        "answer": [
+          "She usually goes to school by bus."
+        ]
+      },
+      {
+        "q": "English / speaks / very / My / fluently. / teacher /",
+        "answer": [
+          "My teacher speaks English very fluently."
+        ]
+      },
+      {
+        "q": "in / interested / history, / is / very / Nam / learning /",
+        "answer": [
+          "Nam is very interested in learning history."
+        ]
+      },
+      {
+        "q": "a / Ho Chi Minh City / is / city. / busy / very /",
+        "answer": [
+          "Ho Chi Minh City is a very busy city."
+        ]
+      },
+      {
+        "q": "forward / to / looking / seeing / am / I / you / soon. /",
+        "answer": [
+          "I am looking forward to seeing you soon."
+        ]
+      },
+      {
+        "q": "tired / was / He /, so / went / he / early. / to / bed /",
+        "answer": [
+          "He was tired, so he went to bed early."
+        ]
+      },
+      {
+        "q": "likes / coffee / My father /, but / mother / my / tea. / prefers /",
+        "answer": [
+          "My father likes coffee, but my mother prefers tea."
+        ]
+      },
+      {
+        "q": "hurry / You / up / must /, or / will / late / be / you / school. / for /",
+        "answer": [
+          "You must hurry up, or you will be late for school."
+        ]
+      },
+      {
+        "q": "rain / the / heavy / was / The /, and / strong. / wind / was /",
+        "answer": [
+          "The rain was heavy, and the wind was strong."
+        ]
+      },
+      {
+        "q": "studied / hard / She /, but / pass / didn't / she / exam. / the /",
+        "answer": [
+          "She studied hard, but she didn't pass the exam."
+        ]
+      },
+      {
+        "q": "rains / If / tomorrow / it /, / cancel / will / the / we / picnic. /",
+        "answer": [
+          "If it rains tomorrow, we will cancel the picnic."
+        ]
+      },
+      {
+        "q": "bad / the / Although / was / weather /, / went / they / out. /",
+        "answer": [
+          "Although the weather was bad, they went out."
+        ]
+      },
+      {
+        "q": "who / woman / The / next door / a / lives / doctor. / is /",
+        "answer": [
+          "The woman who lives next door is a doctor."
+        ]
+      },
+      {
+        "q": "watching / was / I / TV / when / phone / the / rang. /",
+        "answer": [
+          "I was watching TV when the phone rang."
+        ]
+      },
+      {
+        "q": "passes / she / hard / studies / Unless /, / exam. / the / won't / she /",
+        "answer": [
+          "Unless she studies hard, she won't pass the exam."
+        ]
+      },
+      {
+        "q": "skip / tired / and hungry. / If you / you may / feel / breakfast, /",
+        "answer": [
+          "If you skip breakfast, you may feel tired and hungry."
+        ]
+      },
+      {
+        "q": "than / is usually higher / in rural areas. / living in big cities / that / The price of /",
+        "answer": [
+          "The price of living in big cities is usually higher than that in rural areas."
+        ]
+      },
+      {
+        "q": "the main / Motorbikes / means / in Vietnam. / are / of transport /",
+        "answer": [
+          "Motorbikes are the main means of transport in Vietnam."
+        ]
+      },
+      {
+        "q": "the / because / stayed / was / bad. / weather / We / at home /",
+        "answer": [
+          "We stayed at home because the weather was bad."
+        ]
+      },
+      {
+        "q": "was / that / movie / boring / so / fell / the / I / asleep.",
+        "answer": [
+          "The movie was so boring that I fell asleep."
+        ]
+      }
+    ]
+  },
+  "sentenceRewriting": {
+    "instruction": "Complete the following sentences with NO MORE THAN THREE WORDS.",
+    "questions": [
+      {
+        "q": "They started building this house two months ago. -> They ___ this house for two months.",
+        "answer": [
+          "have built"
+        ]
+      },
+      {
+        "q": "The last time I ate sushi was in 2022. -> I ___ sushi since 2022.",
+        "answer": [
+          "haven't eaten"
+        ]
+      },
+      {
+        "q": "It has been five years since we last met each other. -> We ___ each other for five years.",
+        "answer": [
+          "haven't met"
+        ]
+      },
+      {
+        "q": "This is the first time she has ever driven a car. -> She ___ a car before.",
+        "answer": [
+          "has never driven"
+        ]
+      },
+      {
+        "q": "I have never seen a more interesting film than this. -> This is ___ film I have ever seen.",
+        "answer": [
+          "the most interesting"
+        ]
+      },
+      {
+        "q": "While I was walking home, it began to rain. -> It began to rain ___ walking home.",
+        "answer": [
+          "when I was"
+        ]
+      },
+      {
+        "q": "My sister was reading while I was playing games. -> My sister was reading ___ playing games.",
+        "answer": [
+          "and I was"
+        ]
+      },
+      {
+        "q": "The last time it rained was last Monday. -> It ___ since last Monday.",
+        "answer": [
+          "hasn't rained"
+        ]
+      },
+      {
+        "q": "It's a pity that I cannot speak Japanese. -> I wish ___ Japanese.",
+        "answer": [
+          "I could speak"
+        ]
+      },
+      {
+        "q": "I am sorry that I don't have enough money for that bag. -> I wish ___ enough money for that bag.",
+        "answer": [
+          "I had"
+        ]
+      },
+      {
+        "q": "It's a pity that they are not here now. -> I wish ___ here now.",
+        "answer": [
+          "they were"
+        ]
+      },
+      {
+        "q": "\"I am visiting my grandmother now,\" said Nam. -> Nam said he ___ his grandmother then.",
+        "answer": [
+          "was visiting"
+        ]
+      },
+      {
+        "q": "\"Do you like this book?\" she asked me. -> She asked me ___ that book.",
+        "answer": [
+          "if I liked"
+        ]
+      },
+      {
+        "q": "\"Where are you staying?\" the man asked me. -> The man asked me ___ staying.",
+        "answer": [
+          "where I was"
+        ]
+      },
+      {
+        "q": "\"Can you help me?\" Hoa asked me. -> Hoa asked me ___ help her.",
+        "answer": [
+          "if I could"
+        ]
+      },
+      {
+        "q": "\"I will call you tomorrow,\" Tuan said to me. -> Tuan told me ___ call me the next day.",
+        "answer": [
+          "he would"
+        ]
+      },
+      {
+        "q": "That is the teacher. He taught me last year. -> That is the teacher ___ me last year.",
+        "answer": [
+          "who taught"
+        ]
+      },
+      {
+        "q": "The boy is my cousin. You met him at the party. -> The boy ___ at the party is my cousin.",
+        "answer": [
+          "whom you met"
+        ]
+      },
+      {
+        "q": "I am looking for the keys. I lost them this morning. -> I am looking for the keys ___ this morning.",
+        "answer": [
+          "which I lost"
+        ]
+      },
+      {
+        "q": "I met a girl. Her brother is a famous singer. -> I met a girl ___ is a famous singer.",
+        "answer": [
+          "whose brother"
+        ]
+      }
+    ]
+  }
+}

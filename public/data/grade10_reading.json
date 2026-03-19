@@ -1,0 +1,1848 @@
+{
+  "signs": {
+    "exercise1": {
+      "instruction": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "sign": "NO SMOKING sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You are allowed to smoke anywhere, including in this area.",
+            "Smoking is only permitted in specific areas that are marked for it.",
+            "Smoking is not allowed at all in this area to keep it clean and safe.",
+            "Smoking is encouraged and welcome in this area."
+          ],
+          "ans": 2
+        },
+        {
+          "sign": "FREE WI-FI sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "There is no Wi-Fi service in this area.",
+            "You can connect to the Wi-Fi here without paying.",
+            "You have to pay to use the Wi-Fi.",
+            "Wi-Fi is only available in some specific areas."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "NO SWIMMING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Swimming is allowed in this area.",
+            "It is not recommended to swim in this area.",
+            "Swimming is forbidden here at certain times.",
+            "Swimming is completely prohibited in this area."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "NO CLIMBING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You are permitted to climb here.",
+            "Climbing is not advised or recommended here.",
+            "Climbing is encouraged here, and you should do it here.",
+            "Climbing is not allowed in this area."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "TURN OFF LIGHT sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "Turn off the light when there are few people in the room.",
+            "Turn off the light when you are not using it.",
+            "You are not allowed to switch off the night light.",
+            "Always keep the light on when you go out."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "CAUTION HIGH NOISE AREA sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "This area is quiet.",
+            "This area has high noise levels.",
+            "Noise is prohibited in this area.",
+            "Noise levels are moderate."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "RESTROOMS sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "The restrooms are in the opposite direction.",
+            "Follow the sign to find the restrooms.",
+            "The restrooms are currently closed to the public.",
+            "The restrooms are located outside."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "Art Workshop Saturdays",
+          "q": "Which information is correct from the announcement?",
+          "opts": [
+            "There will be five workshops each week.",
+            "You don't have to be talented to go to the workshop.",
+            "The final workshop is on Saturday, 15 September.",
+            "The workshop is for good painters."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "FACE MASK REQUIRED sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Buy mask when you come here.",
+            "Do not remove your mask when you leave here.",
+            "Put on a mask before entering this location.",
+            "Make sure the mask covers your mouth all day."
+          ],
+          "ans": 2
+        },
+        {
+          "sign": "WET PAINT sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "The paint is dry and safe to touch.",
+            "The paint is still wet, so you should avoid touching it.",
+            "People are encouraged to touch the paint.",
+            "The paint is not meant for anyone to use."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "CAMERAS RECORDING 24/7 sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "There are no security cameras operating in this area.",
+            "Security cameras are actively monitoring and recording here.",
+            "This building has no security cameras installed.",
+            "The security cameras work only at night."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "DANGER NO OPEN FLAMES sign",
+          "q": "What does the sign indicate?",
+          "opts": [
+            "It's safe to start a fire in this area because there is no danger.",
+            "You are not allowed to use any open flames, like candles or matches, here.",
+            "Only small fires, like campfires or candles, are permitted in this area.",
+            "Fire can be used in this area only when the weather is very cold outside."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "NO PHOTOGRAPHY sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You are allowed to take photos in this area.",
+            "Photography is not allowed in this area at any time.",
+            "You can take photos if you have permission.",
+            "Taking photos is encouraged and permitted here."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "STOP BULLYING sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "Ignore bullying unless it's serious.",
+            "Stand up against bullying and speak out.",
+            "Stop bullying only if you're directly involved.",
+            "Speak about bullying to students."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "DAN'S ICE CREAMS Buy one, get one free! 12-2 p.m.",
+          "q": "Which of the following information is correct?",
+          "opts": [
+            "The ice cream shop is open for only 2 hours.",
+            "Two ice creams will cost the same as one.",
+            "You can get free ice cream all afternoon.",
+            "You can only buy 2 ice creams at a time."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "OPEN - DINE IN ONLY sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You can eat in this restaurant.",
+            "This restaurant cannot be open at the moment.",
+            "You can't eat inside this restaurant.",
+            "You can't buy any food in this restaurant."
+          ],
+          "ans": 2
+        },
+        {
+          "sign": "DON'T USE CELL PHONE WHILE PUMPING GAS sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Using mobile phones is allowed when pumping gas.",
+            "Using mobile phones is prohibited when pumping gas.",
+            "Making a phone call is allowed while pumping gas.",
+            "Using a mobile phone isn't dangerous when pumping gas."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "ELEVATOR OUT OF ORDER sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "The elevator is working well, and you can use it.",
+            "The elevator is not working, and you cannot use it.",
+            "The elevator is being repaired and will work again soon.",
+            "The elevator is for special use only and not for everyone."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "BRING YOUR ID CARD sign",
+          "q": "What should you do with your ID card?",
+          "opts": [
+            "Leave your ID card at home.",
+            "Remember to bring your ID card when you enter the building.",
+            "Do not bring your ID card.",
+            "Show your ID card upon entry."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "HELP DESK sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You can get assistance and help at this desk.",
+            "This desk is closed and cannot assist you.",
+            "At the moment, no help is available at this desk.",
+            "This desk is for staff only and not for visitors."
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    "exercise2": {
+      "instruction": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "sign": "NO EATING OR DRINKING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You are allowed to eat and drink here without any restrictions.",
+            "Eating and drinking are not permitted in this area at all times.",
+            "You can bring drinks but not food into this area.",
+            "Food is permitted in this area without any special restrictions."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "DO NOT FEED THE ANIMALS sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Visitors are allowed to interact with the animals here.",
+            "Visitors are not permitted to feed the animals.",
+            "It is allowed to disturb the wildlife in this area.",
+            "The animals here require food to survive."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "NO LITTERING sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "You are allowed to litter anywhere.",
+            "You mustn't litter anywhere; put it in the trash bin.",
+            "You can only throw trash in the trash bin.",
+            "If you can't put trash in the bin, leave it where you want."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "ELDERLY CROSSING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Be cautious as elderly people may be crossing the road.",
+            "Notice the elderly people in this area.",
+            "Be careless as elderly people may be crossing the road.",
+            "Observe the way people are dressed here."
+          ],
+          "ans": 0
+        },
+        {
+          "sign": "NO FLASH PHOTOGRAPHY sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Flash photography is allowed.",
+            "Flash photography is encouraged here.",
+            "Flash use is not allowed at certain times.",
+            "Taking pictures with a flash is not allowed."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "FALLING ROCKS warning sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Falling rocks",
+            "Slippery road",
+            "Dropping objects",
+            "Landslide area"
+          ],
+          "ans": 0
+        },
+        {
+          "sign": "WATERFALL 5 KM sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "The waterfall is popular with walkers.",
+            "You'll see a waterfall five kilometers from here.",
+            "The waterfall stretches across five kilometers.",
+            "Walk five kilometers to get to the waterfall."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "PUT WASTE IN BIN sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Please help protect the environment.",
+            "Please put waste into the garbage bin.",
+            "Don't throw rubbish into the bin.",
+            "Please keep the water clean."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "CHILDREN MUST WEAR HELMETS sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Make sure children wear a helmet when riding a bicycle.",
+            "Helmets are provided for both boys and girls.",
+            "A mother is riding a bicycle with her child.",
+            "The mother is allowed to ride without a helmet."
+          ],
+          "ans": 0
+        },
+        {
+          "sign": "DANGER ELECTRICITY sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Be careful! You may be struck by lightning.",
+            "Be careful! Electricity can kill.",
+            "Be careful! A thunderstorm is approaching.",
+            "Be careful! Do not touch electrical sockets."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "BEWARE OF DOOR sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Keep a safe distance from the door.",
+            "Beware of the door opening suddenly.",
+            "Be ready to stop immediately.",
+            "Do not enter without permission."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "FIRE ALARM BUTTON sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Press the button to activate the fire alarm.",
+            "Touch this button to create a fire.",
+            "Please put your finger to make a fire.",
+            "Press here in case of fire."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "CASH ONLY sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You can pay either by cash or by credit card.",
+            "You must not pay by credit card here.",
+            "You cannot pay by cash here.",
+            "You needn't pay by cash here."
+          ],
+          "ans": 2
+        },
+        {
+          "sign": "DO NOT LEAN OUT OF WINDOW sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Leaning out of the window is prohibited for passengers.",
+            "The window is required to be opened by passengers.",
+            "Looking out of the window is not allowed for passengers.",
+            "This window is not intended to be used by passengers."
+          ],
+          "ans": 0
+        },
+        {
+          "sign": "NO PHONE CHARGING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Please do not use smartphones here.",
+            "Please note that there is no power supply available here.",
+            "Please keep your phone away from this area.",
+            "Please do not charge your phone here."
+          ],
+          "ans": 3
+        },
+        {
+          "sign": "NO STRAIGHT AHEAD sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You must change direction instead of going straight.",
+            "You are allowed to continue straight ahead.",
+            "You can go straight ahead first and turn at a later point.",
+            "Traffic lights should be ignored."
+          ],
+          "ans": 0
+        },
+        {
+          "sign": "FASTEN SEAT BELT sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You are required to keep your seat belt fastened at all times.",
+            "You may choose whether or not to wear a seat belt.",
+            "Fastening your seat belt is not recommended.",
+            "You are advised to bring a seat belt with you."
+          ],
+          "ans": 0
+        },
+        {
+          "sign": "NO SHARP OBJECTS ON PLANE sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You can't use scissors and knives at the same time on the plane.",
+            "You can't buy any scissors or knives on the plane.",
+            "You can't bring any sharp objects on the plane.",
+            "You can't use scissors or knives because they are sharp."
+          ],
+          "ans": 2
+        },
+        {
+          "sign": "NO CUTTING TREES sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You shouldn't cut down trees in this area.",
+            "You mustn't cut down trees in this area.",
+            "Cutting down trees is allowed in this area.",
+            "Trees in this area are too difficult for you to cut down."
+          ],
+          "ans": 1
+        },
+        {
+          "sign": "NO CAMPING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Camping is strictly prohibited in this area.",
+            "Camping is allowed in this area.",
+            "This place is designated as a campsite.",
+            "Visitors are required to bring their own tents."
+          ],
+          "ans": 0
+        }
+      ]
+    }
+  },
+  "cloze": [
+    {
+      "title": "HANDICRAFT FAIR ANNOUNCEMENT",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "some",
+            "much",
+            "all",
+            "each"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "from",
+            "at",
+            "during",
+            "in"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "If",
+            "Because",
+            "When",
+            "Although"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "facilities",
+            "suburbs",
+            "handicrafts",
+            "electricians"
+          ],
+          "ans": 2
+        }
+      ]
+    },
+    {
+      "title": "CITY DISCOVERY TOUR - FOR TEENS",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "rural",
+            "urban",
+            "remote",
+            "simple"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "from",
+            "on",
+            "at",
+            "in"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "If",
+            "So",
+            "Because",
+            "When"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "much",
+            "most",
+            "some",
+            "few"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "TAKE CARE OF YOUR MENTAL HEALTH",
+      "instruction": "Read the following public message and circle the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "anxious",
+            "happy",
+            "relaxed",
+            "confident"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "when",
+            "because",
+            "although",
+            "unless"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "much",
+            "many",
+            "little",
+            "few"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "which",
+            "where",
+            "who",
+            "whose"
+          ],
+          "ans": 2
+        }
+      ]
+    },
+    {
+      "title": "TRADITIONAL LIVING DAY",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option.",
+      "questions": [
+        {
+          "opts": [
+            "cultural",
+            "harmful",
+            "modern",
+            "traditional"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "at",
+            "during",
+            "in",
+            "on"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "nobody",
+            "everybody",
+            "someone",
+            "anybody"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "classes",
+            "dishes",
+            "slots",
+            "costumes"
+          ],
+          "ans": 2
+        }
+      ]
+    },
+    {
+      "title": "DISCOVER PHONG NHA - ONE-DAY TOUR",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "beautiful",
+            "terrible",
+            "boring",
+            "popular"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "on",
+            "into",
+            "at",
+            "of"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "Because",
+            "Although",
+            "If",
+            "So"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "each",
+            "much",
+            "a little",
+            "a few"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "CLEAN-UP FRIDAY!",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "give up",
+            "pick up",
+            "take off",
+            "bring up"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "at",
+            "on",
+            "in",
+            "from"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "When",
+            "So",
+            "Although",
+            "Because"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "many",
+            "a little",
+            "much",
+            "little"
+          ],
+          "ans": 1
+        }
+      ]
+    },
+    {
+      "title": "HEALTHY EATING WEEK",
+      "instruction": "Read the following poster and circle the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "many",
+            "much",
+            "little",
+            "a little"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "of",
+            "with",
+            "in",
+            "on"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "Because",
+            "Although",
+            "So",
+            "Unless"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "spicy",
+            "healthy",
+            "junk",
+            "dry"
+          ],
+          "ans": 1
+        }
+      ]
+    },
+    {
+      "title": "ENGLISH CAMP TRIP TO DA NANG!",
+      "instruction": "Read the following notice and circle the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "many",
+            "a few",
+            "some",
+            "all"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "put out",
+            "look after",
+            "take off",
+            "turn up"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "Because",
+            "Unless",
+            "While",
+            "When"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "lesson",
+            "event",
+            "opportunity",
+            "thing"
+          ],
+          "ans": 2
+        }
+      ]
+    },
+    {
+      "title": "JOIN THE GLOBAL ENGLISH QUIZ!",
+      "instruction": "Read the following instruction and mark the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "all",
+            "every",
+            "much",
+            "a little"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "on",
+            "at",
+            "of",
+            "in"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "So",
+            "Because",
+            "While",
+            "Unless"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "present",
+            "gift",
+            "award",
+            "prize"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "SPACE TALK WITH AN ASTRONAUT",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct option.",
+      "questions": [
+        {
+          "opts": [
+            "on",
+            "for",
+            "in",
+            "under"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "Unless",
+            "Although",
+            "While",
+            "Since"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "boring",
+            "useless",
+            "fascinating",
+            "simple"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "a few",
+            "many",
+            "much",
+            "little"
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "MESSAGE FROM THE SCHOOL COUNCIL",
+      "instruction": "Read the following invitation and mark the letter A, B, C, or D to indicate the correct word that best fits each numbered blank.",
+      "questions": [
+        {
+          "opts": [
+            "traditional",
+            "popular",
+            "modern",
+            "careful"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "with",
+            "in",
+            "on",
+            "at"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "Unless",
+            "Because",
+            "When",
+            "While"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "all",
+            "much",
+            "few",
+            "every"
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "CAREER TALK FOR STUDENTS",
+      "instruction": "Read the following invitation and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "subjects",
+            "schedules",
+            "careers",
+            "talents"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "at",
+            "in",
+            "on",
+            "to"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "a little",
+            "much",
+            "each",
+            "many"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "whose",
+            "who",
+            "where",
+            "that"
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "SCHOOL ANNOUNCEMENT: CLEAN-UP DAY",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "take part in",
+            "take off",
+            "take after",
+            "take away"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "at",
+            "for",
+            "on",
+            "to"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "which",
+            "whose",
+            "who",
+            "where"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "many",
+            "little",
+            "much",
+            "each"
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "CHANGES TO CITY BUS ROUTES",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "a little",
+            "all",
+            "each",
+            "little"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "on",
+            "at",
+            "under",
+            "between"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "Because",
+            "If",
+            "Unless",
+            "Though"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "car",
+            "travel",
+            "transport",
+            "bus"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "VOLUNTEER TO PRESERVE HISTORY!",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "many",
+            "few",
+            "little",
+            "much"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "which",
+            "whom",
+            "who",
+            "where"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "help",
+            "experience",
+            "advice",
+            "weight"
+          ],
+          "ans": 1
+        }
+      ]
+    },
+    {
+      "title": "INVITATION TO YOUTH TECH FAIR",
+      "instruction": "Read the following invitation and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "much",
+            "a little",
+            "a",
+            "any"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "at",
+            "on",
+            "for",
+            "of"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "So",
+            "Unless",
+            "If",
+            "Although"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "boring",
+            "interactive",
+            "annual",
+            "normal"
+          ],
+          "ans": 1
+        }
+      ]
+    },
+    {
+      "title": "EXPLORE THE BEAUTY OF HALONG BAY!",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "another",
+            "other",
+            "every",
+            "one"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "above",
+            "under",
+            "between",
+            "on"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "Unless",
+            "So",
+            "While",
+            "Whether"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "wonderful",
+            "boring",
+            "terrible",
+            "common"
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "YOUTH CLIMATE VOICE - JOIN THE ACTION!",
+      "instruction": "Read the following public message and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "for",
+            "in",
+            "on",
+            "of"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "much",
+            "some",
+            "a little",
+            "an"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "where",
+            "who",
+            "when",
+            "which"
+          ],
+          "ans": 0
+        },
+        {
+          "opts": [
+            "memory",
+            "motive",
+            "feeling",
+            "sense"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "JOIN OUR TEEN CHEF COOKING CLASS!",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "at",
+            "on",
+            "for",
+            "in"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "many",
+            "few",
+            "an",
+            "much"
+          ],
+          "ans": 3
+        },
+        {
+          "opts": [
+            "tools",
+            "skills",
+            "appliances",
+            "furniture"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "because",
+            "although",
+            "but",
+            "so"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "HOW TO ENROLL IN OUR GLOBAL ENGLISH COURSE",
+      "instruction": "Read the following instruction and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "grammar",
+            "level",
+            "accent",
+            "subject"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "much",
+            "all",
+            "every",
+            "most"
+          ],
+          "ans": 1
+        },
+        {
+          "opts": [
+            "which",
+            "when",
+            "where",
+            "who"
+          ],
+          "ans": 2
+        },
+        {
+          "opts": [
+            "to",
+            "in",
+            "at",
+            "by"
+          ],
+          "ans": 3
+        }
+      ]
+    }
+  ],
+  "comprehension": [
+    {
+      "title": "Tan Cuong Tea",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "The landscapes of Thai Nguyen.",
+            "The specialty tea from Thai Nguyen.",
+            "How to process tea leaves.",
+            "How to grow tea trees."
+          ],
+          "ans": 1
+        },
+        {
+          "q": "According to the passage, Tan Cuong Tea is unique because ___.",
+          "opts": [
+            "it is free from harmful pesticides",
+            "it is harvested in a traditional way",
+            "it is stored to maintain the quality",
+            "it is exported to many countries"
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Why has there been support for businesses and farmers in tea cultivation?",
+          "opts": [
+            "To preserve and expand the unique Tan Cuong tea-producing region.",
+            "To ensure tea trees are free from harmful pesticide.",
+            "To maintain the quality of tea leaves.",
+            "To help tea farm owners establish facilities for tourists."
+          ],
+          "ans": 0
+        },
+        {
+          "q": "The word 'preserve' in paragraph 3 is closest in meaning to ___.",
+          "opts": [
+            "destroy",
+            "damage",
+            "protect",
+            "provide"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "According to the passage, visitors to Tan Cuong Commune can do all of the following EXCEPT ___.",
+          "opts": [
+            "staying overnight",
+            "enjoying tea",
+            "seeing tea hills",
+            "harvesting tea"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "Unusual Community Helper Jobs",
+      "questions": [
+        {
+          "q": "Which best serves as the title for the passage?",
+          "opts": [
+            "Typical Jobs",
+            "Well-paid Jobs",
+            "Unusual Jobs",
+            "Low-paid Jobs"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "The word 'overcrowded' in paragraph A is CLOSEST in meaning to ___.",
+          "opts": [
+            "packed",
+            "peaceful",
+            "empty",
+            "unlimited"
+          ],
+          "ans": 0
+        },
+        {
+          "q": "According to paragraph A, what do 'oshiya' do during rush hour?",
+          "opts": [
+            "They count the number of commuters.",
+            "They endure the pain inside the train.",
+            "They push passengers into trains.",
+            "They pay attention to each commuter."
+          ],
+          "ans": 2
+        },
+        {
+          "q": "How long does it take to clean the Burj Khalifa in Dubai?",
+          "opts": [
+            "800 days",
+            "three months",
+            "36 weeks",
+            "more than three months"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "All of the following are said about golf ball divers EXCEPT ___.",
+          "opts": [
+            "most of them are scuba divers",
+            "they clean the balls before selling or recycling them",
+            "they look for lost golf balls in lakes and ponds",
+            "they make a very high salary from this job"
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "Problems in Johannesburg",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "Johannesburg is a clean and safe city.",
+            "Johannesburg has some problems and possible solutions.",
+            "The government doesn't care about the people.",
+            "People don't want to live there anymore."
+          ],
+          "ans": 1
+        },
+        {
+          "q": "The word 'They' in paragraph 2 refers to ___.",
+          "opts": [
+            "cities",
+            "people living in Johannesburg",
+            "criminals",
+            "government"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "Which best describes the impact of crime on people's daily lives?",
+          "opts": [
+            "They choose to leave the city permanently.",
+            "They are unable to maintain a normal way of life.",
+            "They are forced to commit crimes to survive.",
+            "They can no longer receive support from the government."
+          ],
+          "ans": 1
+        },
+        {
+          "q": "Which of the following is TRUE about Johannesburg?",
+          "opts": [
+            "There won't be enough homes for people in the future.",
+            "There aren't enough jobs for people.",
+            "Johannesburg doesn't have any homeless people anymore.",
+            "There aren't many apartment buildings now."
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Which solutions are suggested to improve living conditions?",
+          "opts": [
+            "Reducing the city's population.",
+            "Focusing mainly on economic growth.",
+            "Encouraging people to use private cars.",
+            "Improving public safety, housing conditions, and environmental quality."
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "Advantages of Living in Cities",
+      "questions": [
+        {
+          "q": "What could be the best title for the passage?",
+          "opts": [
+            "Advantages of living in Cities",
+            "Features of Dynamic Cities",
+            "Education and Employment in Cities",
+            "High-skilled and Low-skilled Labour Forces"
+          ],
+          "ans": 0
+        },
+        {
+          "q": "The word 'pro' is closest in meaning to ___.",
+          "opts": [
+            "disadvantage",
+            "advantage",
+            "trouble",
+            "feature"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "Why do pre-school teachers prefer working in cities?",
+          "opts": [
+            "Because parents leave their kids at preschool.",
+            "Because they can earn high salaries.",
+            "Because they can have access to great education.",
+            "Because they can have more job opportunities."
+          ],
+          "ans": 1
+        },
+        {
+          "q": "How many advantages of living in cities are mentioned?",
+          "opts": [
+            "four",
+            "three",
+            "two",
+            "one"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "Which of the following statements is TRUE?",
+          "opts": [
+            "Pre-school education in cities is of good quality because of well-trained teachers.",
+            "People living in cities find it difficult to get a job.",
+            "Families in cities cannot choose suitable schools.",
+            "City life offers few chances for both skilled and unskilled workers."
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "Making Homework Less Stressful",
+      "questions": [
+        {
+          "q": "The first thing to do to make homework less stressful is ___.",
+          "opts": [
+            "to remember the deadline",
+            "to understand what you have to do in your assignment",
+            "to go to the school library as soon as possible",
+            "to know what it can do for you"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "The word 'stressful' in paragraph 1 is opposite in meaning to ___.",
+          "opts": [
+            "annoying",
+            "relaxing",
+            "tiring",
+            "wasteful"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "What should you do if you have extra time at school?",
+          "opts": [
+            "spend time with your friends",
+            "use it to make your day planner",
+            "use it to understand the assignment",
+            "study or get your homework done"
+          ],
+          "ans": 3
+        },
+        {
+          "q": "Who is the first person to ask when a student needs some help?",
+          "opts": [
+            "the best student at school",
+            "his teacher",
+            "a member of his family",
+            "his friend"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "Some tips to avoid worrying about homework",
+            "Some ways to look after your physical health",
+            "Some advice to get on with friends at school",
+            "Some reasons to do homework in school libraries"
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "Time Management - Jane and Jack",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "How teenagers and adults use technology to relax",
+            "Balancing work, study, and personal life through good time management",
+            "Differences between a student's lifestyle and an adult's family responsibilities",
+            "Ways people can improve their health by doing volunteer work"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "What is the main difference between Jane and Jack's approach?",
+          "opts": [
+            "Jane limits her social media use, while Jack avoids distractions by turning off notifications.",
+            "Jane uses a to-do list, while Jack does not use any planning tools.",
+            "Jane frequently works overtime, while Jack has a flexible work schedule.",
+            "Jane spends a lot of time on social media, while Jack spends little time with his family."
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Which word is closest in meaning to 'organized'?",
+          "opts": [
+            "arranged",
+            "ignored",
+            "delayed",
+            "confused"
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Why does Jane limit her social media time?",
+          "opts": [
+            "To avoid wasting time and stay focused",
+            "To relax and clear her mind",
+            "To focus on volunteer work",
+            "To spend more time with her family"
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Which statement is NOT TRUE based on the text?",
+          "opts": [
+            "Jack frequently checks social media notifications at work.",
+            "Jane uses a daily to-do list to stay focused.",
+            "Jack turns off notifications to avoid distractions.",
+            "Jane enjoys volunteering at a local charity."
+          ],
+          "ans": 0
+        }
+      ]
+    },
+    {
+      "title": "My First Group Discussion",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "A group of students discuss how to protect the environment.",
+            "A student learns to become more confident after preparing well for a group discussion.",
+            "A teacher praises her students for their good teamwork skills.",
+            "A student searches for information about recycling."
+          ],
+          "ans": 1
+        },
+        {
+          "q": "What did the speaker do to prepare for the discussion?",
+          "opts": [
+            "Read books about animals",
+            "Practiced speaking and wrote notes",
+            "Asked the teacher for help",
+            "Talked to friends about sports"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "How did the speaker feel at the beginning of the discussion?",
+          "opts": [
+            "Relaxed",
+            "Excited",
+            "Nervous",
+            "Confident"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "The word 'praised' in paragraph 4 is closest in meaning to ___.",
+          "opts": [
+            "criticized",
+            "admired",
+            "complimented",
+            "ignored"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "Which of the following is NOT true?",
+          "opts": [
+            "The speaker practiced speaking several times.",
+            "The group discussion topic was about protecting the environment.",
+            "The teacher was unhappy with the group's performance.",
+            "The speaker felt more confident after finishing the discussion."
+          ],
+          "ans": 2
+        }
+      ]
+    },
+    {
+      "title": "The Impact of Experiences on Personal Growth",
+      "questions": [
+        {
+          "q": "What is the main topic of the passage?",
+          "opts": [
+            "The role of traveling in learning about different cultures",
+            "The benefits of attending workshops on communication",
+            "The importance of dealing with academic challenges",
+            "The overall impact of experiences on personal growth"
+          ],
+          "ans": 3
+        },
+        {
+          "q": "The word 'difficult' in paragraph 3 means ___.",
+          "opts": [
+            "easy",
+            "simple",
+            "hard",
+            "fun"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "How does traveling help us?",
+          "opts": [
+            "By making us more physically fit",
+            "By teaching us about different cultures and ways of life",
+            "By providing financial benefits",
+            "By improving academic grades"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "The word 'They' in paragraph 5 refers to ___.",
+          "opts": [
+            "experiences",
+            "workshops",
+            "challenges",
+            "school projects"
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Which statement is NOT true about experiences?",
+          "opts": [
+            "Traveling helps us learn about different cultures.",
+            "Facing challenges teaches us to keep trying.",
+            "Attending workshops makes us better at communication.",
+            "Experiences only include major life events."
+          ],
+          "ans": 3
+        }
+      ]
+    },
+    {
+      "title": "Trang An Landscape Complex",
+      "questions": [
+        {
+          "q": "What is the passage mainly about?",
+          "opts": [
+            "The history of Ninh Binh Province",
+            "The beauty and value of Trang An Landscape Complex",
+            "The development of tourism in Vietnam",
+            "The caves and mountains in Ha Long Bay"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "When was Trang An recognized as a World Heritage Site?",
+          "opts": [
+            "In 1989",
+            "In 1995",
+            "In 2014",
+            "In 2020"
+          ],
+          "ans": 2
+        },
+        {
+          "q": "The word 'breathtaking' in paragraph 2 is closest in meaning to ___.",
+          "opts": [
+            "ordinary",
+            "impressive",
+            "boring",
+            "dangerous"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "Which of the following statements is TRUE?",
+          "opts": [
+            "Trang An was once the capital of Vietnam in ancient times.",
+            "Trang An is famous only for its temples and pagodas.",
+            "There are no rivers or caves in the Trang An area.",
+            "The local authorities don't care about protecting the environment."
+          ],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is NOT mentioned in the passage?",
+          "opts": [
+            "The cultural and historical significance of Trang An.",
+            "The effort to protect the site for future generations.",
+            "The exact number of tourists visiting Trang An each year.",
+            "The comparison between Trang An and Ha Long Bay."
+          ],
+          "ans": 2
+        }
+      ]
+    },
+    {
+      "title": "Career Guidance in British Schools",
+      "questions": [
+        {
+          "q": "What does Mr. Hemmings say about his job as a careers teacher?",
+          "opts": [
+            "It is a stressful job.",
+            "It is an easy job.",
+            "It is a challenging experience.",
+            "It is a rewarding experience."
+          ],
+          "ans": 3
+        },
+        {
+          "q": "How often do British students have careers lessons?",
+          "opts": [
+            "Once a fortnight",
+            "Twice a month",
+            "Twice a week",
+            "Once a week"
+          ],
+          "ans": 3
+        },
+        {
+          "q": "The word 'accurately' in paragraph 2 is closest in meaning to ___.",
+          "opts": [
+            "frequently",
+            "exactly",
+            "usually",
+            "incorrectly"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "The word 'They' in paragraph 3 refers to ___.",
+          "opts": [
+            "the senses",
+            "some youngsters",
+            "personal skills",
+            "office jobs"
+          ],
+          "ans": 1
+        },
+        {
+          "q": "What does the passage mainly discuss?",
+          "opts": [
+            "Merits of British career teachers",
+            "Challenges faced by British careers teachers and their students in career advice",
+            "Rewards for British career teachers",
+            "Excitement among British career teachers"
+          ],
+          "ans": 1
+        }
+      ]
+    }
+  ]
+}

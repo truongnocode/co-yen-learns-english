@@ -289,6 +289,11 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
                 transition={{ delay: i * 0.02, duration: 0.25 }}
                 className="group bg-card/80 backdrop-blur-xl rounded-xl px-4 py-3 border border-border/50 flex items-center gap-3 hover:shadow-md hover:border-primary/30 transition-all cursor-default"
               >
+                {(() => { const WIcon = getWordIcon(w.en, w.type); return (
+                  <div className="p-1.5 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors shrink-0">
+                    <WIcon className="h-4 w-4 text-primary/70" />
+                  </div>
+                ); })()}
                 <div className="min-w-0 flex-1">
                   <p className="font-display font-bold text-foreground text-sm leading-tight">{w.en}</p>
                   <p className="text-muted-foreground text-xs mt-0.5">{w.vi}</p>

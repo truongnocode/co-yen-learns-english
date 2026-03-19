@@ -22,6 +22,11 @@ const SpellingPage = () => {
   const word = unit.words[currentIndex];
   const progress = ((currentIndex + 1) / unit.words.length) * 100;
 
+  // Auto-read the word (speak the English word as a hint)
+  useEffect(() => {
+    if (word && !finished) speakUS(word.english);
+  }, [currentIndex, word, finished]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (status !== "idle") return;

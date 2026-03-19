@@ -617,8 +617,8 @@ const VocabPage = () => {
           </motion.button>
         </div>
 
-        <Tabs defaultValue="list" className="w-full">
-          <TabsList className="w-full grid grid-cols-4 mb-6 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-white/60">
+        <Tabs defaultValue="list" className="w-full flex-1 flex flex-col">
+          <TabsList className="w-full grid grid-cols-4 mb-4 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-white/60 shrink-0">
             <TabsTrigger value="list" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
               <BookText className="h-3.5 w-3.5 mr-1" /> Từ điển
             </TabsTrigger>
@@ -633,8 +633,8 @@ const VocabPage = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="list"><DictionaryTab words={unit.vocabulary} /></TabsContent>
-          <TabsContent value="flashcard"><FlashcardTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="list" className="flex-1"><DictionaryTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="flashcard" className="flex-1 flex flex-col"><FlashcardTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="quiz"><QuizTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="spelling"><SpellingTab words={unit.vocabulary} /></TabsContent>
         </Tabs>

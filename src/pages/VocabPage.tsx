@@ -426,7 +426,7 @@ const VocabPage = () => {
         <Tabs defaultValue="list" className="w-full">
           <TabsList className="w-full grid grid-cols-4 mb-6 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-white/60">
             <TabsTrigger value="list" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
-              <BookOpen className="h-3.5 w-3.5 mr-1" /> Danh sách
+              <BookText className="h-3.5 w-3.5 mr-1" /> Từ điển
             </TabsTrigger>
             <TabsTrigger value="flashcard" className="rounded-xl text-xs font-bold data-[state=active]:gradient-accent data-[state=active]:text-white">
               <RotateCcw className="h-3.5 w-3.5 mr-1" /> Flashcard

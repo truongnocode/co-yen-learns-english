@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ChevronLeft, ChevronRight, RotateCcw, Volume2, BookOpen, Brain, Pencil, Home, Search, BookText, X, Check, Trophy } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, Volume2, BookOpen, Brain, Pencil, Home, Search, BookText, X, Check, Trophy, RefreshCw, RotateCcw } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
@@ -11,6 +11,59 @@ import { getWordIcon } from "@/lib/wordIcons";
 import { speakUS } from "@/lib/tts";
 
 const speak = (text: string) => speakUS(text);
+
+// Shared card wrapper for consistent look across tabs
+const SectionCard = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
+  <div className={`bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-border/30 shadow-lg ${className}`}>
+    {children}
+  </div>
+);
+
+// Shared result/summary screen
+const ResultScreen = ({ emoji, title, subtitle, score, total, onRetry }: {
+  emoji: string; title: string; subtitle: string; score: number; total: number; onRetry: () => void;
+}) => {
+  const pct = Math.round((score / total) * 100);
+  const xp = score * 10;
+  return (
+    <div className="flex flex-col items-center justify-center flex-1 py-6">
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0, filter: "blur(8px)" }}
+        animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="text-center max-w-sm w-full"
+      >
+        <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+          className="text-5xl block mb-3">{emoji}</motion.span>
+        <h3 className="font-display font-extrabold text-2xl text-foreground mb-1">{title}</h3>
+        <p className="text-muted-foreground text-sm mb-5">{subtitle}</p>
+
+        <SectionCard className="mb-4">
+          <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="bg-success/10 border border-success/20 rounded-2xl p-3 text-center">
+              <span className="font-display font-extrabold text-2xl text-success">{score}</span>
+              <span className="text-xs font-bold text-success block">Đúng</span>
+            </div>
+            <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-3 text-center">
+              <span className="font-display font-extrabold text-2xl text-destructive">{total - score}</span>
+              <span className="text-xs font-bold text-destructive block">Sai</span>
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3">
+            <Trophy className="h-5 w-5 text-energy" />
+            <span className="font-display font-extrabold text-lg text-energy">+{xp} XP</span>
+            <span className="text-xs text-energy/70">({pct}%)</span>
+          </div>
+        </SectionCard>
+
+        <motion.button whileTap={{ scale: 0.95 }} onClick={onRetry}
+          className="w-full gradient-primary text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
+          Làm lại
+        </motion.button>
+      </motion.div>
+    </div>
+  );
+};
 
 // ===== FLASHCARD TAB =====
 const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
@@ -45,76 +98,53 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
   };
 
   const handleRestart = () => {
-    setCurrentIndex(0);
-    setFlipped(false);
-    setMastered(new Set());
-    setRelearn(new Set());
-    setFinished(false);
+    setCurrentIndex(0); setFlipped(false); setMastered(new Set()); setRelearn(new Set()); setFinished(false);
   };
 
   const handleRestartRelearn = () => {
-    // Only reset relearn words — not implemented as full filter, just restart all
-    setCurrentIndex(0);
-    setFlipped(false);
-    setFinished(false);
+    setCurrentIndex(0); setFlipped(false); setFinished(false);
   };
 
   const xpEarned = mastered.size * 10;
 
-  // Summary screen
   if (finished) {
     return (
-      <div className="flex flex-col items-center justify-center h-full py-4">
+      <div className="flex flex-col items-center justify-center flex-1 py-6">
         <motion.div
           initial={{ scale: 0.8, opacity: 0, filter: "blur(8px)" }}
           animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="text-center max-w-sm w-full"
         >
-          <motion.span
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="text-6xl block mb-4"
-          >
-            🎉
-          </motion.span>
-          <h3 className="font-display font-extrabold text-2xl text-foreground mb-2">Chúc mừng!</h3>
-          <p className="text-muted-foreground text-sm mb-6">Em đã lướt hết {words.length} thẻ từ vựng</p>
+          <motion.span initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+            className="text-5xl block mb-3">🎉</motion.span>
+          <h3 className="font-display font-extrabold text-2xl text-foreground mb-1">Chúc mừng!</h3>
+          <p className="text-muted-foreground text-sm mb-5">Em đã lướt hết {words.length} thẻ từ vựng</p>
 
-          <div className="grid grid-cols-2 gap-3 mb-6">
-            <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 text-center">
-              <div className="flex items-center justify-center gap-1.5 mb-1">
-                <Check className="h-5 w-5 text-emerald-600" />
-                <span className="font-display font-extrabold text-2xl text-emerald-700">{mastered.size}</span>
+          <SectionCard className="mb-4">
+            <div className="grid grid-cols-2 gap-3 mb-4">
+              <div className="bg-success/10 border border-success/20 rounded-2xl p-3 text-center">
+                <Check className="h-4 w-4 text-success mx-auto mb-0.5" />
+                <span className="font-display font-extrabold text-2xl text-success">{mastered.size}</span>
+                <span className="text-xs font-bold text-success block">Đã thuộc</span>
               </div>
-              <span className="text-xs font-bold text-emerald-600">Đã thuộc</span>
-            </div>
-            <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
-              <div className="flex items-center justify-center gap-1.5 mb-1">
-                <RotateCcw className="h-5 w-5 text-amber-600" />
-                <span className="font-display font-extrabold text-2xl text-amber-700">{relearn.size}</span>
+              <div className="bg-energy/10 border border-energy/20 rounded-2xl p-3 text-center">
+                <RotateCcw className="h-4 w-4 text-energy mx-auto mb-0.5" />
+                <span className="font-display font-extrabold text-2xl text-energy">{relearn.size}</span>
+                <span className="text-xs font-bold text-energy block">Học lại</span>
               </div>
-              <span className="text-xs font-bold text-amber-600">Học lại</span>
             </div>
-          </div>
-
-          {/* XP reward */}
-          <motion.div
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="gradient-energy rounded-2xl p-4 mb-6 flex items-center justify-center gap-2"
-          >
-            <Trophy className="h-5 w-5 text-white" />
-            <span className="font-display font-extrabold text-lg text-white">+{xpEarned} XP</span>
-          </motion.div>
+            <div className="flex items-center justify-center gap-2 bg-primary/10 border border-primary/20 rounded-2xl p-3">
+              <Trophy className="h-5 w-5 text-primary" />
+              <span className="font-display font-extrabold text-lg text-primary">+{xpEarned} XP</span>
+            </div>
+          </SectionCard>
 
           <div className="flex flex-col gap-3">
             {relearn.size > 0 && (
               <motion.button whileTap={{ scale: 0.95 }} onClick={handleRestartRelearn}
-                className="w-full gradient-warm text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
-                Học lại {relearn.size} từ chưa thuộc 🔄
+                className="w-full gradient-accent text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
+                Học lại {relearn.size} từ chưa thuộc
               </motion.button>
             )}
             <motion.button whileTap={{ scale: 0.95 }} onClick={handleRestart}
@@ -128,20 +158,20 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
   }
 
   return (
-    <div className="flex flex-col items-center h-full">
+    <div className="flex flex-col items-center flex-1 min-h-0">
       {/* Progress */}
       <div className="w-full max-w-sm mb-3">
         <div className="flex items-center justify-between mb-1.5">
           <span className="text-xs font-bold text-muted-foreground">{currentIndex + 1} / {words.length}</span>
           <div className="flex items-center gap-3 text-xs font-bold">
-            <span className="text-emerald-600">✓ {mastered.size}</span>
-            <span className="text-amber-600">↺ {relearn.size}</span>
+            <span className="text-success">✓ {mastered.size}</span>
+            <span className="text-energy">↺ {relearn.size}</span>
           </div>
         </div>
         <Progress value={progress} className="h-2 rounded-full" />
       </div>
 
-      {/* Card */}
+      {/* Card — taller ratio */}
       <div className="flex-1 flex items-center justify-center w-full max-w-sm min-h-0">
         <AnimatePresence mode="wait">
           <motion.div
@@ -151,33 +181,35 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
             exit={{ rotateY: -90, opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             onClick={() => setFlipped(!flipped)}
-            className={`w-full aspect-[4/3] rounded-3xl shadow-xl flex flex-col items-center justify-center cursor-pointer select-none p-6 border border-white/40 relative overflow-hidden ${
-              flipped ? "gradient-purple-card text-white" : "bg-card/90 backdrop-blur-xl"
+            className={`w-full aspect-[3/4] rounded-3xl shadow-xl flex flex-col items-center justify-center cursor-pointer select-none p-6 border relative overflow-hidden ${
+              flipped ? "gradient-purple-card text-white border-white/20" : "bg-card/90 backdrop-blur-xl border-border/30"
             }`}
           >
             <div className={`absolute top-5 right-5 w-14 h-14 rounded-full ${flipped ? "bg-white/10" : "bg-primary/5"} float-animation`} />
+            <div className={`absolute bottom-8 left-6 w-10 h-10 rounded-full ${flipped ? "bg-white/8" : "bg-accent/8"} float-animation-delay`} />
             {(() => {
               const WordIcon = getWordIcon(word.en, word.type);
               return !flipped ? (
                 <>
-                  <div className="p-2.5 rounded-2xl bg-primary/10 mb-3 relative z-10">
-                    <WordIcon className="h-7 w-7 text-primary" />
+                  <div className="p-3 rounded-2xl bg-primary/10 mb-4 relative z-10">
+                    <WordIcon className="h-8 w-8 text-primary" />
                   </div>
-                  <span className="text-4xl font-display font-bold text-foreground mb-1.5 relative z-10">{word.en}</span>
-                  <span className="text-xs text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-2 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
-                  <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
-                    <Volume2 className="h-4 w-4 text-primary" />
+                  <span className="text-4xl font-display font-bold text-foreground mb-2 relative z-10">{word.en}</span>
+                  <span className="text-xs text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-3 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+                  <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
+                    <Volume2 className="h-5 w-5 text-primary" />
                   </button>
-                  <span className="text-[10px] text-muted-foreground mt-3 bg-muted/50 px-3 py-1 rounded-full relative z-10">👆 Nhấn để lật</span>
+                  <span className="text-[10px] text-muted-foreground mt-4 bg-muted/40 px-3 py-1 rounded-full relative z-10">👆 Nhấn thẻ để xem nghĩa</span>
                 </>
               ) : (
                 <>
-                  <div className="p-2.5 rounded-2xl bg-white/15 mb-3 relative z-10">
-                    <WordIcon className="h-7 w-7 text-white" />
+                  <div className="p-3 rounded-2xl bg-white/15 mb-4 relative z-10">
+                    <WordIcon className="h-8 w-8 text-white" />
                   </div>
                   <span className="text-3xl font-display font-bold mb-2 relative z-10">{word.vi}</span>
                   <span className="text-lg opacity-90 relative z-10">{word.en}</span>
-                  <span className="text-xs opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+                  <span className="text-sm opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+                  <span className="text-[10px] opacity-50 mt-4 bg-white/10 px-3 py-1 rounded-full relative z-10">👆 Nhấn để quay lại</span>
                 </>
               );
             })()}
@@ -186,11 +218,11 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
       </div>
 
       {/* Action buttons */}
-      <div className="flex items-center justify-center gap-4 mt-4 w-full max-w-sm">
+      <div className="flex items-center justify-center gap-3 mt-3 w-full max-w-sm">
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={handleRelearn}
-          className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-amber-100 border border-amber-300 text-amber-700 font-display font-bold shadow-sm"
+          className="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-energy/10 border border-energy/20 text-energy font-display font-bold text-sm"
         >
           <RotateCcw className="h-4 w-4" />
           Học lại
@@ -198,14 +230,15 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setFlipped(!flipped)}
-          className="p-3.5 rounded-full bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-white/40"
+          className="px-4 py-3 rounded-2xl bg-card/80 backdrop-blur-xl border border-border/30 text-muted-foreground font-display font-bold text-sm flex items-center gap-1.5"
         >
-          <RotateCcw className="h-5 w-5" />
+          <RefreshCw className="h-4 w-4" />
+          Lật thẻ
         </motion.button>
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={handleMastered}
-          className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-emerald-100 border border-emerald-300 text-emerald-700 font-display font-bold shadow-sm"
+          className="flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl bg-success/10 border border-success/20 text-success font-display font-bold text-sm"
         >
           <Check className="h-4 w-4" />
           Đã thuộc
@@ -241,43 +274,42 @@ const QuizTab = ({ words }: { words: VocabItem[] }) => {
     }, 1200);
   };
 
+  const handleRetry = () => { setCurrent(0); setSelected(null); setScore(0); setFinished(false); };
+
   if (finished) {
-    return (
-      <div className="text-center py-12">
-        <span className="text-6xl mb-4 block">🎉</span>
-        <h3 className="font-display font-extrabold text-2xl text-foreground mb-2">Hoàn thành!</h3>
-        <p className="text-muted-foreground mb-6">Đúng {score}/{words.length} câu</p>
-        <motion.button whileTap={{ scale: 0.95 }} onClick={() => { setCurrent(0); setSelected(null); setScore(0); setFinished(false); }}
-          className="gradient-primary text-white px-6 py-3 rounded-full font-bold">Làm lại</motion.button>
-      </div>
-    );
+    return <ResultScreen emoji="🎉" title="Hoàn thành!" subtitle={`Trắc nghiệm ${words.length} câu`} score={score} total={words.length} onRetry={handleRetry} />;
   }
 
   return (
     <div className="max-w-sm mx-auto">
-      <Progress value={((current + 1) / words.length) * 100} className="h-2.5 rounded-full mb-6" />
-      <div className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6 text-center">
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs font-bold text-muted-foreground">Câu {current + 1} / {words.length}</span>
+      </div>
+      <Progress value={((current + 1) / words.length) * 100} className="h-2 rounded-full mb-5" />
+
+      <SectionCard className="mb-5 text-center">
         {(() => { const QIcon = getWordIcon(word.en, word.type); return (
           <div className="inline-flex p-2.5 rounded-xl bg-primary/10 mb-3">
             <QIcon className="h-6 w-6 text-primary" />
           </div>
         ); })()}
-        <p className="text-sm text-muted-foreground mb-1">Chọn từ tiếng Anh đúng:</p>
+        <p className="text-xs text-muted-foreground mb-1">Chọn từ tiếng Anh đúng:</p>
         <p className="font-display font-extrabold text-2xl text-foreground">{word.vi}</p>
         <p className="text-xs text-muted-foreground mt-1">{wordTypeLabels[word.type] || word.type}</p>
-      </div>
-      <div className="flex flex-col gap-3">
+      </SectionCard>
+
+      <div className="flex flex-col gap-2.5">
         {currentOpts.options.map((opt, idx) => {
-          let style = "bg-card/80 backdrop-blur-xl border-white/60 text-foreground hover:bg-muted/50";
+          let style = "bg-card/80 backdrop-blur-xl border-border/30 text-foreground hover:border-primary/30";
           if (selected !== null) {
-            if (idx === currentOpts.correctIndex) style = "bg-emerald-100 border-emerald-400 text-emerald-800";
-            else if (idx === selected) style = "bg-red-100 border-red-400 text-red-800";
-            else style = "bg-card/50 border-white/40 text-muted-foreground opacity-50";
+            if (idx === currentOpts.correctIndex) style = "bg-success/10 border-success/40 text-success";
+            else if (idx === selected) style = "bg-destructive/10 border-destructive/40 text-destructive";
+            else style = "bg-card/40 border-border/20 text-muted-foreground opacity-50";
           }
           return (
             <motion.button key={idx} whileTap={{ scale: 0.97 }} onClick={() => handleSelect(idx)}
-              className={`p-4 rounded-2xl border text-left font-bold text-lg transition-all ${style}`}>
-              {opt}
+              className={`p-4 rounded-2xl border text-left font-bold text-base transition-all ${style}`}>
+              <span className="text-muted-foreground mr-2">{String.fromCharCode(65 + idx)}.</span>{opt}
             </motion.button>
           );
         })}
@@ -295,30 +327,25 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
   const [finished, setFinished] = useState(false);
   const word = words[current];
 
-  // Initialize letter slots when word changes
   useEffect(() => {
     setLetters(new Array(word.en.length).fill(""));
   }, [current, word.en]);
 
   const handleLetterChange = (idx: number, value: string) => {
     if (result) return;
-    const char = value.slice(-1); // Take last typed char
+    const char = value.slice(-1);
     const newLetters = [...letters];
     newLetters[idx] = char;
     setLetters(newLetters);
-
-    // Auto-focus next empty slot
     if (char && idx < word.en.length - 1) {
-      const nextInput = document.getElementById(`spell-${idx + 1}`);
-      nextInput?.focus();
+      document.getElementById(`spell-${idx + 1}`)?.focus();
     }
   };
 
   const handleKeyDown = (idx: number, e: React.KeyboardEvent) => {
     if (result) return;
     if (e.key === "Backspace" && !letters[idx] && idx > 0) {
-      const prevInput = document.getElementById(`spell-${idx - 1}`);
-      prevInput?.focus();
+      document.getElementById(`spell-${idx - 1}`)?.focus();
       const newLetters = [...letters];
       newLetters[idx - 1] = "";
       setLetters(newLetters);
@@ -338,37 +365,32 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
     }, 1500);
   };
 
+  const handleRetry = () => { setCurrent(0); setResult(null); setScore(0); setFinished(false); };
+
   if (finished) {
-    return (
-      <div className="text-center py-12">
-        <span className="text-6xl mb-4 block">✍️</span>
-        <h3 className="font-display font-extrabold text-2xl text-foreground mb-2">Hoàn thành!</h3>
-        <p className="text-muted-foreground mb-6">Đúng {score}/{words.length} câu</p>
-        <motion.button whileTap={{ scale: 0.95 }} onClick={() => { setCurrent(0); setResult(null); setScore(0); setFinished(false); }}
-          className="gradient-primary text-white px-6 py-3 rounded-full font-bold">Làm lại</motion.button>
-      </div>
-    );
+    return <ResultScreen emoji="✍️" title="Hoàn thành!" subtitle={`Chính tả ${words.length} từ`} score={score} total={words.length} onRetry={handleRetry} />;
   }
 
   return (
     <div className="max-w-sm mx-auto">
-      <Progress value={((current + 1) / words.length) * 100} className="h-2.5 rounded-full mb-6" />
-      <div className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6 text-center">
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs font-bold text-muted-foreground">Từ {current + 1} / {words.length}</span>
+      </div>
+      <Progress value={((current + 1) / words.length) * 100} className="h-2 rounded-full mb-5" />
+
+      <SectionCard className="mb-5 text-center">
         {(() => { const SIcon = getWordIcon(word.en, word.type); return (
           <div className="inline-flex p-2.5 rounded-xl bg-primary/10 mb-3">
             <SIcon className="h-6 w-6 text-primary" />
           </div>
         ); })()}
-        <p className="text-sm text-muted-foreground mb-1">Viết từ tiếng Anh:</p>
+        <p className="text-xs text-muted-foreground mb-1">Viết từ tiếng Anh:</p>
         <p className="font-display font-extrabold text-2xl text-foreground mb-1">{word.vi}</p>
         <p className="text-xs text-muted-foreground mb-4">{wordTypeLabels[word.type] || word.type}</p>
 
-        {/* Letter input slots */}
         <div className="flex items-center justify-center gap-1.5 flex-wrap">
           {word.en.split("").map((char, idx) => {
-            if (char === " ") {
-              return <div key={idx} className="w-4" />;
-            }
+            if (char === " ") return <div key={idx} className="w-4" />;
             const isCorrectChar = result === "correct";
             const isWrongChar = result === "wrong";
             return (
@@ -384,9 +406,9 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
                 disabled={!!result}
                 className={`w-10 h-12 text-center text-lg font-bold rounded-xl border-2 outline-none transition-all ${
                   isCorrectChar
-                    ? "border-emerald-400 bg-emerald-50 text-emerald-700"
+                    ? "border-success bg-success/10 text-success"
                     : isWrongChar
-                    ? "border-red-400 bg-red-50 text-red-700"
+                    ? "border-destructive bg-destructive/10 text-destructive"
                     : letters[idx]
                     ? "border-primary bg-primary/5 text-foreground"
                     : "border-border bg-card text-foreground focus:border-primary"
@@ -399,11 +421,11 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
         {result === "wrong" && (
           <p className="text-destructive text-sm mt-3">Đáp án: <strong>{word.en}</strong></p>
         )}
-      </div>
+      </SectionCard>
 
       <motion.button whileTap={{ scale: 0.95 }} onClick={handleCheck} disabled={!!result}
-        className="w-full gradient-primary text-white py-4 rounded-2xl font-display font-bold text-base shadow-lg disabled:opacity-50">
-        Kiểm tra ✅
+        className="w-full gradient-primary text-white py-3.5 rounded-2xl font-display font-bold text-sm shadow-md disabled:opacity-50">
+        Kiểm tra
       </motion.button>
     </div>
   );
@@ -417,7 +439,6 @@ const wordTypeColors: Record<string, { bg: string; text: string; icon: string }>
   "Trạng từ": { bg: "gradient-warm", text: "text-white", icon: "💫" },
   "Giới từ": { bg: "gradient-cool", text: "text-white", icon: "📍" },
 };
-
 const defaultTypeColor = { bg: "gradient-purple-card", text: "text-white", icon: "📝" };
 
 const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
@@ -426,16 +447,11 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
   const [activeType, setActiveType] = useState<string | null>(null);
 
   const filtered = words.filter(w => {
-    const matchSearch = w.en.toLowerCase().includes(search.toLowerCase()) ||
-      w.vi.toLowerCase().includes(search.toLowerCase());
+    const matchSearch = w.en.toLowerCase().includes(search.toLowerCase()) || w.vi.toLowerCase().includes(search.toLowerCase());
     const matchType = !activeType || (wordTypeLabels[w.type] || w.type) === activeType;
     return matchSearch && matchType;
   });
-
-  // Sort alphabetically
   const sorted = [...filtered].sort((a, b) => a.en.localeCompare(b.en));
-
-  // Group by first letter
   const grouped = sorted.reduce((acc, w) => {
     const letter = w.en[0].toUpperCase();
     if (!acc[letter]) acc[letter] = [];
@@ -445,74 +461,53 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
 
   return (
     <div className="space-y-4">
-      {/* Search bar */}
       <div className="relative">
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <input
-          type="text"
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          placeholder="Tìm từ vựng..."
-          className="w-full pl-11 pr-4 py-3 rounded-2xl bg-card/80 backdrop-blur-xl border border-border/50 text-sm font-medium text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-primary/40 focus:shadow-md transition-all"
+          type="text" value={search} onChange={e => setSearch(e.target.value)} placeholder="Tìm từ vựng..."
+          className="w-full pl-11 pr-4 py-3 rounded-2xl bg-card/80 backdrop-blur-xl border border-border/30 text-sm font-medium text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-primary/40 focus:shadow-md transition-all"
         />
       </div>
 
-      {/* Word type filter chips */}
       <div className="flex flex-wrap gap-1.5">
         {Object.entries(wordTypeColors).map(([type, c]) => {
           const count = words.filter(w => (wordTypeLabels[w.type] || w.type) === type).length;
           if (!count) return null;
           const isActive = activeType === type;
           return (
-            <button
-              key={type}
-              onClick={() => setActiveType(isActive ? null : type)}
+            <button key={type} onClick={() => setActiveType(isActive ? null : type)}
               className={`text-[10px] font-bold px-2.5 py-1 rounded-full transition-all ${
-                isActive
-                  ? `${c.bg} text-white shadow-md scale-105`
-                  : "bg-card/80 border border-border/50 text-muted-foreground hover:text-foreground"
-              }`}
-            >
+                isActive ? `${c.bg} text-white shadow-md scale-105` : "bg-card/80 border border-border/30 text-muted-foreground hover:text-foreground"
+              }`}>
               {c.icon} {type} · {count}
             </button>
           );
         })}
       </div>
 
-      {/* Dictionary entries */}
       <div className="max-h-[50vh] overflow-y-auto pr-1 space-y-1">
         {Object.keys(grouped).length === 0 && (
           <p className="text-center text-muted-foreground py-8 text-sm">Không tìm thấy từ nào</p>
         )}
         {Object.entries(grouped).map(([letter, items]) => (
           <div key={letter}>
-            {/* Letter header */}
             <div className="sticky top-0 z-10 flex items-center gap-2 py-1.5">
               <span className="font-display font-extrabold text-lg text-primary">{letter}</span>
               <div className="flex-1 h-px bg-border/50" />
               <span className="text-[10px] text-muted-foreground font-bold">{items.length}</span>
             </div>
-
-            {/* Words */}
             {items.map((w, i) => {
               const globalIdx = words.indexOf(w);
               const isExpanded = expandedIdx === globalIdx;
               const WIcon = getWordIcon(w.en, w.type);
               const typeColor = wordTypeColors[wordTypeLabels[w.type] || w.type] || defaultTypeColor;
-
               return (
-                <motion.div
-                  key={`${letter}-${i}`}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: i * 0.015 }}
+                <motion.div key={`${letter}-${i}`}
+                  initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: i * 0.015 }}
                   onClick={() => setExpandedIdx(isExpanded ? null : globalIdx)}
                   className={`rounded-xl px-3.5 py-2.5 mb-1 cursor-pointer transition-all ${
-                    isExpanded
-                      ? "bg-card/90 backdrop-blur-xl shadow-md border border-primary/20"
-                      : "hover:bg-card/60 border border-transparent"
-                  }`}
-                >
+                    isExpanded ? "bg-card/90 backdrop-blur-xl shadow-md border border-primary/20" : "hover:bg-card/60 border border-transparent"
+                  }`}>
                   <div className="flex items-center gap-3">
                     <div className={`p-1.5 rounded-lg shrink-0 transition-colors ${isExpanded ? "bg-primary/15" : "bg-primary/5"}`}>
                       <WIcon className="h-4 w-4 text-primary" />
@@ -526,34 +521,22 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
                       </div>
                       <p className="text-muted-foreground text-xs mt-0.5 truncate">{w.vi}</p>
                     </div>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); speak(w.en); }}
-                      className="p-2 rounded-full hover:bg-primary/10 transition-colors shrink-0"
-                    >
+                    <button onClick={(e) => { e.stopPropagation(); speak(w.en); }}
+                      className="p-2 rounded-full hover:bg-primary/10 transition-colors shrink-0">
                       <Volume2 className="h-3.5 w-3.5 text-primary" />
                     </button>
                   </div>
-
-                  {/* Expanded detail */}
                   <AnimatePresence>
                     {isExpanded && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.25 }}
-                        className="overflow-hidden"
-                      >
+                      <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25 }} className="overflow-hidden">
                         <div className="mt-3 pt-3 border-t border-border/40 flex items-center gap-4">
                           <div className="flex-1">
                             <p className="text-xs text-muted-foreground mb-1">Nghĩa tiếng Việt</p>
                             <p className="font-display font-bold text-foreground">{w.vi}</p>
                           </div>
-                          <motion.button
-                            whileTap={{ scale: 0.9 }}
-                            onClick={(e) => { e.stopPropagation(); speak(w.en); }}
-                            className="gradient-primary text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5"
-                          >
+                          <motion.button whileTap={{ scale: 0.9 }} onClick={(e) => { e.stopPropagation(); speak(w.en); }}
+                            className="gradient-primary text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5">
                             <Volume2 className="h-3.5 w-3.5" /> Nghe
                           </motion.button>
                         </div>
@@ -602,9 +585,9 @@ const VocabPage = () => {
   return (
     <PageShell withNavbar={false}>
       <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-6 flex flex-col min-h-screen">
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex items-center gap-3 mb-5 shrink-0">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-white/50">
+            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
           <div className="flex-1">
@@ -612,18 +595,18 @@ const VocabPage = () => {
             <p className="text-xs text-muted-foreground">{unit.vocabulary.length} từ vựng</p>
           </div>
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-white/50">
+            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
             <Home className="h-5 w-5" />
           </motion.button>
         </div>
 
-        <Tabs defaultValue="list" className="w-full flex-1 flex flex-col">
-          <TabsList className="w-full grid grid-cols-4 mb-4 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-white/60 shrink-0">
+        <Tabs defaultValue="list" className="w-full flex-1 flex flex-col min-h-0">
+          <TabsList className="w-full grid grid-cols-4 mb-4 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-border/30 shrink-0">
             <TabsTrigger value="list" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
               <BookText className="h-3.5 w-3.5 mr-1" /> Từ điển
             </TabsTrigger>
             <TabsTrigger value="flashcard" className="rounded-xl text-xs font-bold data-[state=active]:gradient-accent data-[state=active]:text-white">
-              <RotateCcw className="h-3.5 w-3.5 mr-1" /> Flashcard
+              <BookOpen className="h-3.5 w-3.5 mr-1" /> Flashcard
             </TabsTrigger>
             <TabsTrigger value="quiz" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
               <Brain className="h-3.5 w-3.5 mr-1" /> Trắc nghiệm
@@ -633,10 +616,10 @@ const VocabPage = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="list" className="flex-1"><DictionaryTab words={unit.vocabulary} /></TabsContent>
-          <TabsContent value="flashcard" className="flex-1 flex flex-col"><FlashcardTab words={unit.vocabulary} /></TabsContent>
-          <TabsContent value="quiz"><QuizTab words={unit.vocabulary} /></TabsContent>
-          <TabsContent value="spelling"><SpellingTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="list" className="flex-1 min-h-0"><DictionaryTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="flashcard" className="flex-1 flex flex-col min-h-0"><FlashcardTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="quiz" className="flex-1"><QuizTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="spelling" className="flex-1"><SpellingTab words={unit.vocabulary} /></TabsContent>
         </Tabs>
       </div>
     </PageShell>

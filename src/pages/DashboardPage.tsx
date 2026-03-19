@@ -9,6 +9,7 @@ import HeroBanner from "@/components/dashboard/HeroBanner";
 import LearningPath from "@/components/dashboard/LearningPath";
 import ReviewCorner from "@/components/dashboard/ReviewCorner";
 import LearningOverview from "@/components/dashboard/LearningOverview";
+import Leaderboard from "@/components/dashboard/Leaderboard";
 
 const DashboardPage = () => {
   const navigate = useNavigate();

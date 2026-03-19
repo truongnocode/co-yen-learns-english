@@ -133,11 +133,12 @@ const LearningPath = ({ progress }: Props) => {
                         whileTap={stopUnlocked ? { scale: 0.95 } : {}}
                         onClick={() => {
                           if (!stopUnlocked) return;
-                          if (stop.key === "vocab") navigate(`/grade/${grade}`);
-                          else if (stop.key === "grammar") navigate(`/grade/${grade}`);
-                          else if (stop.key === "practice") navigate(`/grade/${grade}`);
-                          else navigate(`/grade/${grade}`);
-                        }}
+                          const u = unit.id;
+                          if (stop.key === "vocab") navigate(`/grade/${grade}/vocab/${u}`);
+                          else if (stop.key === "grammar") navigate(`/grade/${grade}/grammar/${u}`);
+                          else if (stop.key === "practice") navigate(`/grade/${grade}/exercises/${u}`);
+                          else if (stop.key === "spelling") navigate(`/grade/${grade}/vocab/${u}`);
+                        }
                         className={`relative w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-lg ${
                           stopDone
                             ? `${stop.color} ring-4 ${stop.ring}/30`

@@ -130,6 +130,11 @@ const QuizTab = ({ words }: { words: VocabItem[] }) => {
     <div className="max-w-sm mx-auto">
       <Progress value={((current + 1) / words.length) * 100} className="h-2.5 rounded-full mb-6" />
       <div className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6 text-center">
+        {(() => { const QIcon = getWordIcon(word.en, word.type); return (
+          <div className="inline-flex p-2.5 rounded-xl bg-primary/10 mb-3">
+            <QIcon className="h-6 w-6 text-primary" />
+          </div>
+        ); })()}
         <p className="text-sm text-muted-foreground mb-1">Chọn từ tiếng Anh đúng:</p>
         <p className="font-display font-extrabold text-2xl text-foreground">{word.vi}</p>
         <p className="text-xs text-muted-foreground mt-1">{wordTypeLabels[word.type] || word.type}</p>

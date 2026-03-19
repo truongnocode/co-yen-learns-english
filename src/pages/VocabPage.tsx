@@ -42,22 +42,31 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
           className={`w-full max-w-sm aspect-[3/4] rounded-3xl shadow-xl flex flex-col items-center justify-center cursor-pointer select-none p-8 border border-white/40 relative overflow-hidden ${flipped ? "gradient-purple-card text-white" : "bg-card/90 backdrop-blur-xl"}`}
         >
           <div className={`absolute top-6 right-6 w-16 h-16 rounded-full ${flipped ? "bg-white/10" : "bg-primary/5"} float-animation`} />
-          {!flipped ? (
-            <>
-              <span className="text-5xl font-display font-bold text-foreground mb-2 relative z-10">{word.en}</span>
-              <span className="text-sm text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-2 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
-              <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="mt-3 p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
-                <Volume2 className="h-5 w-5 text-primary" />
-              </button>
-              <span className="text-xs text-muted-foreground mt-6 bg-muted/50 px-4 py-1.5 rounded-full relative z-10">👆 Nhấn để lật thẻ</span>
-            </>
-          ) : (
-            <>
-              <span className="text-4xl font-display font-bold mb-3 relative z-10">{word.vi}</span>
-              <span className="text-xl opacity-90 relative z-10">{word.en}</span>
-              <span className="text-sm opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
-            </>
-          )}
+          {(() => {
+            const WordIcon = getWordIcon(word.en, word.type);
+            return !flipped ? (
+              <>
+                <div className="p-3 rounded-2xl bg-primary/10 mb-4 relative z-10">
+                  <WordIcon className="h-8 w-8 text-primary" />
+                </div>
+                <span className="text-5xl font-display font-bold text-foreground mb-2 relative z-10">{word.en}</span>
+                <span className="text-sm text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-2 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+                <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="mt-3 p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
+                  <Volume2 className="h-5 w-5 text-primary" />
+                </button>
+                <span className="text-xs text-muted-foreground mt-6 bg-muted/50 px-4 py-1.5 rounded-full relative z-10">👆 Nhấn để lật thẻ</span>
+              </>
+            ) : (
+              <>
+                <div className="p-3 rounded-2xl bg-white/15 mb-4 relative z-10">
+                  <WordIcon className="h-8 w-8 text-white" />
+                </div>
+                <span className="text-4xl font-display font-bold mb-3 relative z-10">{word.vi}</span>
+                <span className="text-xl opacity-90 relative z-10">{word.en}</span>
+                <span className="text-sm opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
+              </>
+            );
+          })()}
         </motion.div>
       </AnimatePresence>
 

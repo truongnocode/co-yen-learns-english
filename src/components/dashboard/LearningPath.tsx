@@ -103,12 +103,11 @@ const LearningPath = ({ progress }: Props) => {
                   const stopUnlocked = prevUnitDone && (isFirst || stopDone || stopIdx <= 1);
                   const isActive = prevUnitDone && !stopDone && stopIdx === 0;
 
-                  // Seeded pseudo-random zigzag offsets per unit+stop
+                  // Seeded pseudo-random zigzag offsets in pixels per unit+stop
                   const seed = (unitIdx * 7 + stopIdx * 13 + 3) % 11;
-                  const offsets = [-35, 20, -15, 30, -25, 10, -30, 25, -10, 35, -20];
-                  const xPercent = offsets[seed];
-                  const isLeft = xPercent < 0;
-                  const xOffset = `${xPercent}%`;
+                  const offsets = [-120, 80, -60, 110, -90, 40, -100, 95, -45, 130, -75];
+                  const xPx = offsets[seed];
+                  const isLeft = xPx < 0;
 
                   return (
                     <motion.div
@@ -129,7 +128,7 @@ const LearningPath = ({ progress }: Props) => {
 
                       {/* Node */}
                       <motion.div
-                        style={{ x: xOffset }}
+                        animate={{ x: xPx }}
                         whileHover={stopUnlocked ? { scale: 1.12 } : {}}
                         whileTap={stopUnlocked ? { scale: 0.95 } : {}}
                         onClick={() => {
@@ -169,7 +168,6 @@ const LearningPath = ({ progress }: Props) => {
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           className={`absolute ${isLeft ? "left-[calc(50%+60px)]" : "right-[calc(50%+60px)]"} bg-card text-foreground font-display font-bold text-sm px-4 py-2 rounded-xl shadow-lg border border-border`}
-                          style={{ transform: `translateX(${isLeft ? xOffset : xOffset})` }}
                         >
                           BẮT ĐẦU
                           {/* Arrow */}

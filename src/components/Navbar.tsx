@@ -5,9 +5,9 @@ import { UserCircle2, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
 const navLinks = [
-  { label: "Góc ôn tập", to: "/grades" },
-  { label: "Thi đua", to: "/progress" },
-  { label: "Nhiệm vụ", to: "/practice" },
+  { label: "📚 Góc ôn tập", to: "/grades" },
+  { label: "🏆 Thi đua", to: "/progress" },
+  { label: "🎯 Nhiệm vụ", to: "/practice" },
 ];
 
 const Navbar = () => {
@@ -29,10 +29,10 @@ const Navbar = () => {
       className="fixed top-5 left-1/2 z-50 w-full px-4"
     >
       <div
-        className={`max-w-6xl mx-auto rounded-full w-full px-5 py-2.5 relative flex items-center justify-between gap-3 transition-all duration-500 ${
+        className={`max-w-5xl mx-auto rounded-full w-full px-6 py-3 relative flex items-center justify-between gap-3 transition-all duration-500 ${
           scrolled
-            ? "bg-card/70 backdrop-blur-2xl shadow-lg border border-white/50"
-            : "bg-card/40 backdrop-blur-md shadow-sm border border-white/30"
+            ? "bg-card/80 backdrop-blur-2xl shadow-xl border border-white/60"
+            : "bg-card/50 backdrop-blur-lg shadow-md border border-white/40"
         }`}
       >
         {/* Logo */}
@@ -40,22 +40,22 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="relative z-10 flex items-center gap-2.5 hover:opacity-80 transition-opacity shrink-0"
         >
-          <div className="w-8 h-8 rounded-full gradient-primary flex items-center justify-center text-primary-foreground font-display font-bold text-sm shadow-md">
+          <div className="w-9 h-9 rounded-full gradient-purple-card flex items-center justify-center text-primary-foreground font-display font-extrabold text-sm shadow-lg">
             Y
           </div>
-          <span className="font-display font-bold text-foreground text-sm hidden sm:inline">
+          <span className="font-display font-extrabold text-foreground text-sm hidden sm:inline">
             Học tiếng anh{" "}
-            <span className="text-accent">với cô Yến</span>
+            <span className="gradient-text">với cô Yến</span>
           </span>
         </button>
 
         {/* Nav Links */}
-        <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-5">
+        <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <button
               key={link.to}
               onClick={() => navigate(link.to)}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
+              className={`text-sm font-bold transition-all hover:text-primary hover:scale-105 ${
                 location.pathname === link.to
                   ? "text-primary"
                   : "text-muted-foreground"
@@ -72,17 +72,17 @@ const Navbar = () => {
             <img
               src={user.photoURL || ""}
               alt={user.displayName || "Avatar"}
-              className="w-8 h-8 rounded-full border-2 border-primary/30 object-cover"
+              className="w-9 h-9 rounded-full border-2 border-primary/40 object-cover shadow-sm"
               referrerPolicy="no-referrer"
             />
-            <span className="hidden sm:inline text-xs font-medium text-foreground max-w-[100px] truncate">
+            <span className="hidden sm:inline text-xs font-bold text-foreground max-w-[100px] truncate">
               {user.displayName?.split(" ")[0]}
             </span>
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               onClick={logout}
-              className="p-2 rounded-full hover:bg-muted/50 text-muted-foreground transition-colors"
+              className="p-2 rounded-full hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors"
               title="Đăng xuất"
             >
               <LogOut className="h-4 w-4" />
@@ -90,12 +90,12 @@ const Navbar = () => {
           </div>
         ) : (
           <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={signInWithGoogle}
-            className="relative z-10 bg-foreground text-background rounded-full px-4 py-2 text-xs sm:text-sm font-medium flex items-center gap-2 shadow-md shrink-0"
+            className="relative z-10 gradient-purple-card text-white rounded-full px-5 py-2.5 text-xs sm:text-sm font-display font-extrabold flex items-center gap-2 shadow-lg shrink-0"
           >
-            <UserCircle2 className="h-3.5 w-3.5" />
+            <UserCircle2 className="h-4 w-4" />
             <span className="hidden sm:inline">Đăng nhập học sinh</span>
             <span className="sm:hidden">Đăng nhập</span>
           </motion.button>

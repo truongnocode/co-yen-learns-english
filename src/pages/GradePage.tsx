@@ -17,12 +17,13 @@ const GradePage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Grades 6-9 now use the dashboard zigzag learning path
     if (grade >= 6 && grade <= 9) {
-      loadSGKData(grade).then(setData).finally(() => setLoading(false));
-    } else {
-      setLoading(false);
+      navigate("/dashboard", { replace: true });
+      return;
     }
-  }, [grade]);
+    setLoading(false);
+  }, [grade, navigate]);
 
   if (!cfg) {
     return (

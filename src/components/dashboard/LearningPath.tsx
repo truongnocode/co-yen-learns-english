@@ -84,7 +84,7 @@ const LearningPath = ({ progress }: Props) => {
                   </p>
                 </div>
                 <button
-                  onClick={() => navigate(`/grade/${grade}`)}
+                  onClick={() => navigate(`/grade/${grade}/vocab/${unit.id}`)}
                   className="bg-success-foreground/20 backdrop-blur-sm text-success-foreground text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 hover:bg-success-foreground/30 transition-colors"
                 >
                   <BookOpen className="h-3.5 w-3.5" />

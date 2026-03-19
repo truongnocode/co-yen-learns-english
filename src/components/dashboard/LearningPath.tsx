@@ -103,9 +103,12 @@ const LearningPath = ({ progress }: Props) => {
                   const stopUnlocked = prevUnitDone && (isFirst || stopDone || stopIdx <= 1);
                   const isActive = prevUnitDone && !stopDone && stopIdx === 0;
 
-                  // Zigzag: alternate left/right
-                  const isLeft = stopIdx % 2 === 0;
-                  const xOffset = isLeft ? "-25%" : "25%";
+                  // Seeded pseudo-random zigzag offsets per unit+stop
+                  const seed = (unitIdx * 7 + stopIdx * 13 + 3) % 11;
+                  const offsets = [-35, 20, -15, 30, -25, 10, -30, 25, -10, 35, -20];
+                  const xPercent = offsets[seed];
+                  const isLeft = xPercent < 0;
+                  const xOffset = `${xPercent}%`;
 
                   return (
                     <motion.div

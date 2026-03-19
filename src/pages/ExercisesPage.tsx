@@ -1,13 +1,14 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft, Home, Volume2 } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/contexts/AuthContext";
 import { saveQuizResult } from "@/lib/progress";
 import PageShell from "@/components/PageShell";
+import { speakUS } from "@/lib/tts";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 

@@ -1,14 +1,42 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Zap, CheckCircle2, XCircle, Send } from "lucide-react";
+import { ArrowLeft, Zap, CheckCircle2, XCircle, Send, Home, Trophy } from "lucide-react";
 import { loadGrade10Grammar } from "@/data/loader";
 import { type Grade10GrammarData, type MCQuestion } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
-import Navbar from "@/components/Navbar";
+import PageShell from "@/components/PageShell";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-type ExerciseType = "mcq" | "rearrange" | "completion" | "rewrite";
+const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
+
+// Shared result component
+const ResultCard = ({ score, total, onRetry }: { score: number; total: number; onRetry: () => void }) => {
+  const pct = Math.round((score / total) * 100);
+  const xp = score * 10;
+  return (
+    <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
+      className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30 text-center">
+      <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
+      <div className="grid grid-cols-2 gap-3 mb-4 max-w-xs mx-auto">
+        <div className="bg-success/10 border border-success/20 rounded-2xl p-3 text-center">
+          <span className="font-display font-extrabold text-2xl text-success">{score}</span>
+          <span className="text-xs font-bold text-success block">Đúng</span>
+        </div>
+        <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-3 text-center">
+          <span className="font-display font-extrabold text-2xl text-destructive">{total - score}</span>
+          <span className="text-xs font-bold text-destructive block">Sai</span>
+        </div>
+      </div>
+      <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3 mb-6 max-w-xs mx-auto">
+        <Trophy className="h-5 w-5 text-energy" />
+        <span className="font-display font-extrabold text-lg text-energy">+{xp} XP</span>
+      </div>
+      <motion.button whileTap={{ scale: 0.95 }} onClick={onRetry}
+        className="gradient-primary text-white px-6 py-3 rounded-2xl font-display font-bold text-sm">Làm lại</motion.button>
+    </motion.div>
+  );
+};
 
 const Grade10GrammarPage = () => {
   const navigate = useNavigate();
@@ -20,37 +48,49 @@ const Grade10GrammarPage = () => {
     loadGrade10Grammar().then(setData).finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Đang tải...</div>;
-  if (!data) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không có dữ liệu.</div>;
+  if (loading) return <PageShell><div className="flex items-center justify-center pt-40 text-muted-foreground">Đang tải...</div></PageShell>;
+  if (!data) return <PageShell><div className="flex items-center justify-center pt-40 text-muted-foreground">Không có dữ liệu.</div></PageShell>;
 
   const topics = Object.entries(data);
 
   if (!selectedTopic) {
     return (
-      <div className="min-h-screen gradient-hero">
-        <Navbar />
+      <PageShell>
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
-          <button onClick={() => navigate("/grade/10")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 mb-4 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Lớp 10
-          </button>
-          <div className="bg-gradient-to-r from-primary to-[hsl(var(--primary-glow))] text-primary-foreground rounded-3xl p-6 mb-6">
-            <Zap className="h-8 w-8 mb-2 opacity-80" />
-            <h1 className="font-display font-bold text-2xl">Ngữ pháp Lớp 10</h1>
-            <p className="text-primary-foreground/70 text-sm">{topics.length} chủ đề</p>
+          <div className="flex items-center gap-3 mb-6">
+            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
+              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              <ArrowLeft className="h-5 w-5" />
+            </motion.button>
+            <div className="flex-1">
+              <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
+              <p className="text-xs text-muted-foreground">Ngữ pháp</p>
+            </div>
+            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
+              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              <Home className="h-5 w-5" />
+            </motion.button>
           </div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}
+            className="gradient-cool text-white rounded-3xl p-6 mb-6 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
+            <Zap className="h-8 w-8 mb-2 opacity-80 relative z-10" />
+            <h1 className="font-display font-extrabold text-2xl relative z-10">Ngữ pháp Lớp 10</h1>
+            <p className="text-white/70 text-sm relative z-10">{topics.length} chủ đề</p>
+          </motion.div>
+
           <div className="flex flex-col gap-3">
             {topics.map(([key, topic], i) => {
               const types = Object.keys(topic.exercises);
               return (
-                <motion.button
-                  key={key}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.04 }}
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
+                <motion.button key={key}
+                  initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ ...smooth, delay: i * 0.04 }}
+                  whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}
                   onClick={() => setSelectedTopic(key)}
-                  className="gradient-card rounded-2xl p-5 text-left border border-white/60 shadow-card hover:shadow-card-hover transition-all"
+                  className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 text-left border border-border/30 shadow-lg hover:shadow-xl transition-all"
                 >
                   <h3 className="font-display font-bold text-foreground">{topic.name}</h3>
                   <div className="flex gap-2 mt-2 flex-wrap">
@@ -64,26 +104,29 @@ const Grade10GrammarPage = () => {
             })}
           </div>
         </div>
-      </div>
+      </PageShell>
     );
   }
 
   const topic = data[selectedTopic];
 
   return (
-    <div className="min-h-screen gradient-hero">
-      <Navbar />
+    <PageShell>
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
-        <button onClick={() => setSelectedTopic(null)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 mb-4 transition-colors">
-          <ArrowLeft className="h-4 w-4" /> Chọn chủ đề
-        </button>
-        <h1 className="font-display font-bold text-2xl text-foreground mb-4">{topic.name}</h1>
+        <div className="flex items-center gap-3 mb-5">
+          <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectedTopic(null)}
+            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            <ArrowLeft className="h-5 w-5" />
+          </motion.button>
+          <p className="font-display font-extrabold text-sm text-foreground flex-1">{topic.name}</p>
+        </div>
+
         <Tabs defaultValue={Object.keys(topic.exercises)[0]} className="w-full">
-          <TabsList className="w-full flex bg-secondary/50 rounded-2xl p-1 mb-4 flex-wrap h-auto gap-1">
-            {topic.exercises.mcq && <TabsTrigger value="mcq" className="flex-1 rounded-xl text-xs font-bold py-2">Trắc nghiệm</TabsTrigger>}
-            {topic.exercises.rearrange && <TabsTrigger value="rearrange" className="flex-1 rounded-xl text-xs font-bold py-2">Sắp xếp từ</TabsTrigger>}
-            {topic.exercises.completion && <TabsTrigger value="completion" className="flex-1 rounded-xl text-xs font-bold py-2">Điền từ</TabsTrigger>}
-            {topic.exercises.rewrite && <TabsTrigger value="rewrite" className="flex-1 rounded-xl text-xs font-bold py-2">Viết lại câu</TabsTrigger>}
+          <TabsList className="w-full flex bg-card/60 backdrop-blur-xl rounded-2xl p-1 mb-4 flex-wrap h-auto gap-1 border border-border/30">
+            {topic.exercises.mcq && <TabsTrigger value="mcq" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-primary data-[state=active]:text-white">Trắc nghiệm</TabsTrigger>}
+            {topic.exercises.rearrange && <TabsTrigger value="rearrange" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-accent data-[state=active]:text-white">Sắp xếp từ</TabsTrigger>}
+            {topic.exercises.completion && <TabsTrigger value="completion" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-success data-[state=active]:text-white">Điền từ</TabsTrigger>}
+            {topic.exercises.rewrite && <TabsTrigger value="rewrite" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-cool data-[state=active]:text-white">Viết lại câu</TabsTrigger>}
           </TabsList>
           {topic.exercises.mcq && <TabsContent value="mcq"><MCQSection questions={topic.exercises.mcq.questions} instruction={topic.exercises.mcq.instruction} /></TabsContent>}
           {topic.exercises.rearrange && <TabsContent value="rearrange"><TextInputSection questions={topic.exercises.rearrange.questions} instruction={topic.exercises.rearrange.instruction} /></TabsContent>}
@@ -91,11 +134,10 @@ const Grade10GrammarPage = () => {
           {topic.exercises.rewrite && <TabsContent value="rewrite"><TextInputSection questions={topic.exercises.rewrite.questions} instruction={topic.exercises.rewrite.instruction} /></TabsContent>}
         </Tabs>
       </div>
-    </div>
+    </PageShell>
   );
 };
 
-// MCQ Section
 const MCQSection = ({ questions, instruction }: { questions: MCQuestion[]; instruction: string }) => {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
@@ -103,28 +145,20 @@ const MCQSection = ({ questions, instruction }: { questions: MCQuestion[]; instr
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const q = questions[current];
-  const progress = ((current + 1) / questions.length) * 100;
 
-  if (finished) {
-    const pct = Math.round((score / questions.length) * 100);
-    return (
-      <div className="gradient-card rounded-3xl p-8 shadow-card border border-white/60 text-center">
-        <div className="text-5xl mb-4">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
-        <p className="text-4xl font-display font-bold text-primary my-4">{score}/{questions.length}</p>
-        <p className="text-sm text-muted-foreground mb-6">({pct}% đúng)</p>
-        <button onClick={() => { setCurrent(0); setSelected(null); setSubmitted(false); setScore(0); setFinished(false); }} className="gradient-primary text-primary-foreground px-6 py-3 rounded-2xl font-bold text-sm">Làm lại</button>
-      </div>
-    );
-  }
+  if (finished) return <ResultCard score={score} total={questions.length} onRetry={() => { setCurrent(0); setSelected(null); setSubmitted(false); setScore(0); setFinished(false); }} />;
 
   return (
     <div>
-      <p className="text-xs text-muted-foreground italic mb-4">{instruction}</p>
-      <Progress value={progress} className="h-2 rounded-full mb-2" />
-      <p className="text-xs text-muted-foreground text-right mb-4">Câu {current + 1}/{questions.length}</p>
-      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="gradient-card rounded-3xl p-6 shadow-card border border-white/60">
+      <p className="text-xs text-muted-foreground italic mb-3">{instruction}</p>
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs font-bold text-muted-foreground">Câu {current + 1} / {questions.length}</span>
+      </div>
+      <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
+      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
+        className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed">{q.q}</p>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5">
           {q.opts.map((opt, idx) => {
             let cls = "bg-secondary/50 border-2 border-transparent text-foreground hover:border-primary/30";
             if (submitted) {
@@ -139,11 +173,13 @@ const MCQSection = ({ questions, instruction }: { questions: MCQuestion[]; instr
             );
           })}
         </div>
-        <div className="flex gap-3 mt-6">
+        <div className="mt-6">
           {!submitted ? (
-            <button onClick={() => { if (selected === null) return; setSubmitted(true); if (selected === q.ans) setScore(s => s + 1); }} disabled={selected === null} className={`flex-1 py-3.5 rounded-2xl font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-primary-foreground"}`}>Kiểm tra</button>
+            <button onClick={() => { if (selected === null) return; setSubmitted(true); if (selected === q.ans) setScore(s => s + 1); }} disabled={selected === null}
+              className={`w-full py-3.5 rounded-2xl font-display font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-white"}`}>Kiểm tra</button>
           ) : (
-            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setSelected(null); setSubmitted(false); } else setFinished(true); }} className="flex-1 py-3.5 rounded-2xl font-bold text-sm gradient-accent text-accent-foreground">
+            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setSelected(null); setSubmitted(false); } else setFinished(true); }}
+              className="w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
               {current < questions.length - 1 ? "Câu tiếp →" : "Xem kết quả"}
             </button>
           )}
@@ -159,51 +195,34 @@ const MCQSection = ({ questions, instruction }: { questions: MCQuestion[]; instr
   );
 };
 
-// Text input section for rearrange/completion/rewrite
 const TextInputSection = ({ questions, instruction }: { questions: { q: string; answer: string[] }[]; instruction: string }) => {
   const [current, setCurrent] = useState(0);
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
-
   const q = questions[current];
   const isCorrect = q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim());
-  const progress = ((current + 1) / questions.length) * 100;
 
-  if (finished) {
-    const pct = Math.round((score / questions.length) * 100);
-    return (
-      <div className="gradient-card rounded-3xl p-8 shadow-card border border-white/60 text-center">
-        <div className="text-5xl mb-4">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
-        <p className="text-4xl font-display font-bold text-primary my-4">{score}/{questions.length}</p>
-        <p className="text-sm text-muted-foreground mb-6">({pct}% đúng)</p>
-        <button onClick={() => { setCurrent(0); setInput(""); setSubmitted(false); setScore(0); setFinished(false); }} className="gradient-primary text-primary-foreground px-6 py-3 rounded-2xl font-bold text-sm">Làm lại</button>
-      </div>
-    );
-  }
+  if (finished) return <ResultCard score={score} total={questions.length} onRetry={() => { setCurrent(0); setInput(""); setSubmitted(false); setScore(0); setFinished(false); }} />;
 
   return (
     <div>
-      <p className="text-xs text-muted-foreground italic mb-4">{instruction}</p>
-      <Progress value={progress} className="h-2 rounded-full mb-2" />
-      <p className="text-xs text-muted-foreground text-right mb-4">Câu {current + 1}/{questions.length}</p>
-      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="gradient-card rounded-3xl p-6 shadow-card border border-white/60">
+      <p className="text-xs text-muted-foreground italic mb-3">{instruction}</p>
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs font-bold text-muted-foreground">Câu {current + 1} / {questions.length}</span>
+      </div>
+      <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
+      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
+        className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed whitespace-pre-line">{q.q}</p>
         <div className="flex gap-2">
-          <input
-            value={input}
-            onChange={e => !submitted && setInput(e.target.value)}
+          <input value={input} onChange={e => !submitted && setInput(e.target.value)}
             onKeyDown={e => { if (e.key === "Enter" && !submitted && input.trim()) { setSubmitted(true); if (q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim())) setScore(s => s + 1); } }}
-            placeholder="Nhập câu trả lời..."
-            className="flex-1 bg-secondary/50 border-2 border-border rounded-2xl px-4 py-3 text-foreground font-medium focus:outline-none focus:border-primary transition-colors"
-            disabled={submitted}
-          />
-          {!submitted && (
-            <button onClick={() => { if (!input.trim()) return; setSubmitted(true); if (q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim())) setScore(s => s + 1); }} className="gradient-primary text-primary-foreground px-4 py-3 rounded-2xl">
-              <Send className="h-5 w-5" />
-            </button>
-          )}
+            placeholder="Nhập câu trả lời..." disabled={submitted}
+            className="flex-1 bg-card/80 border-2 border-border/30 rounded-2xl px-4 py-3 text-foreground font-medium focus:outline-none focus:border-primary transition-colors" />
+          {!submitted && <button onClick={() => { if (!input.trim()) return; setSubmitted(true); if (q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim())) setScore(s => s + 1); }}
+            className="gradient-primary text-white px-4 py-3 rounded-2xl"><Send className="h-5 w-5" /></button>}
         </div>
         {submitted && (
           <div className="mt-4">
@@ -212,7 +231,8 @@ const TextInputSection = ({ questions, instruction }: { questions: { q: string; 
               {isCorrect ? "Chính xác!" : "Chưa đúng"}
             </div>
             {!isCorrect && <p className="text-sm text-muted-foreground mt-1">Đáp án: <span className="font-bold text-foreground">{q.answer[0]}</span></p>}
-            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setInput(""); setSubmitted(false); } else setFinished(true); }} className="mt-4 w-full py-3.5 rounded-2xl font-bold text-sm gradient-accent text-accent-foreground">
+            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setInput(""); setSubmitted(false); } else setFinished(true); }}
+              className="mt-4 w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
               {current < questions.length - 1 ? "Câu tiếp →" : "Xem kết quả"}
             </button>
           </div>

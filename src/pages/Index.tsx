@@ -102,6 +102,69 @@ const Index = () => {
         </motion.button>
       </section>
 
+      {/* Grade 10 Exam Prep — Hero Bento */}
+      <section className="max-w-5xl mx-auto px-5 pb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 50, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          whileHover={{ scale: 1.01, y: -3 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={smoothCard}
+          onClick={() => smartNavigate("/grade/10")}
+          className="relative rounded-3xl overflow-hidden cursor-pointer group shadow-2xl"
+        >
+          {/* Gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(270,80%,35%)] via-[hsl(300,70%,40%)] to-[hsl(335,80%,45%)]" />
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvc3ZnPg==')] opacity-60" />
+          <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-56 h-56 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
+
+          <div className="relative z-10 p-8 sm:p-10 md:p-12 flex flex-col md:flex-row items-center gap-8">
+            {/* Left content */}
+            <div className="flex-1 text-white">
+              <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 mb-4">
+                <GraduationCap className="h-4 w-4" />
+                <span className="text-xs font-extrabold uppercase tracking-wider">Ôn thi vào lớp 10</span>
+              </div>
+              <h3 className="font-display font-extrabold text-3xl sm:text-4xl mb-3 drop-shadow-md leading-tight">
+                Chinh phục kỳ thi <br className="hidden sm:block" />vào THPT 🏆
+              </h3>
+              <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6 max-w-md font-medium">
+                Hệ thống ôn luyện toàn diện với 11 chủ đề từ vựng, 9 chủ đề ngữ pháp, bài đọc hiểu, viết và 15 đề thi thử có chấm điểm.
+              </p>
+              <span className="bg-white text-[hsl(270,80%,35%)] font-display font-extrabold rounded-full px-8 py-3.5 text-sm shadow-xl inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-500">
+                <Rocket className="h-4 w-4" />
+                Bắt đầu ôn thi ngay
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </div>
+
+            {/* Right stats grid */}
+            <div className="grid grid-cols-2 gap-3 w-full md:w-auto md:min-w-[260px]">
+              {[
+                { num: "11", label: "Chủ đề từ vựng", icon: "📚" },
+                { num: "9", label: "Chủ đề ngữ pháp", icon: "⚡" },
+                { num: "7", label: "Dạng bài luyện", icon: "✍️" },
+                { num: "15", label: "Đề thi thử", icon: "📝" },
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 + i * 0.1, type: "spring", stiffness: 200 }}
+                  className="bg-white/15 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/10"
+                >
+                  <span className="text-xl mb-1 block">{item.icon}</span>
+                  <span className="font-display font-extrabold text-2xl text-white block">{item.num}</span>
+                  <span className="text-[10px] text-white/70 font-bold">{item.label}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Bento Grid */}
       <section className="max-w-5xl mx-auto px-5 pb-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

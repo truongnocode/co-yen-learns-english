@@ -168,7 +168,7 @@ const LearningPath = ({ progress }: Props) => {
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           className={`absolute ${isLeft ? "left-[calc(50%+60px)]" : "right-[calc(50%+60px)]"} bg-card text-foreground font-display font-bold text-sm px-4 py-2 rounded-xl shadow-lg border border-border`}
-                          style={{ transform: `translateX(${isLeft ? xOffset : xOffset})` }}
+                        >
                         >
                           BẮT ĐẦU
                           {/* Arrow */}

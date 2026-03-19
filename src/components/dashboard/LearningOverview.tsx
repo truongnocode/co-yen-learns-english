@@ -47,7 +47,7 @@ const LearningOverview = ({ progress }: Props) => {
 
       <div className="flex flex-col gap-6">
         {/* Profile card */}
-        <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-6 flex flex-col items-center w-full md:w-64 shrink-0">
+        <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-5 flex flex-col items-center w-full">
           <div className="relative mb-4">
             <div className="w-24 h-24 rounded-full gradient-purple-card p-[3px] shadow-lg">
               <img

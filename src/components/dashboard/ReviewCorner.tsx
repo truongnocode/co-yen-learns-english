@@ -22,7 +22,7 @@ const ReviewCorner = () => {
       initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
       animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{ ...smooth, delay: 0.2 }}
-      className="w-full lg:w-72 shrink-0"
+      className="w-full"
     >
       <h2 className="font-display font-extrabold text-lg text-foreground mb-5">
         Góc ôn tập vui nhộn

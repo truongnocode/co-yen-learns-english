@@ -11,6 +11,7 @@ import { saveQuizResult } from "@/lib/progress";
 const ExercisesPage = () => {
   const { gradeId, unitKey } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const grade = Number(gradeId);
   const [unit, setUnit] = useState<SGKUnit | null>(null);
   const [loading, setLoading] = useState(true);

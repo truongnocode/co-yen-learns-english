@@ -17,15 +17,16 @@ const SpellingPage = () => {
   const [finished, setFinished] = useState(false);
 
   const unit = gradesData.flatMap((g) => g.units).find((u) => u.id === unitId);
-  if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy.</div>;
+  const word = unit?.words[currentIndex];
 
-  const word = unit.words[currentIndex];
-  const progress = ((currentIndex + 1) / unit.words.length) * 100;
-
-  // Auto-read the word (speak the English word as a hint)
+  // Auto-read the word
   useEffect(() => {
     if (word && !finished) speakUS(word.english);
   }, [currentIndex, word, finished]);
+
+  if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy.</div>;
+
+  const progress = ((currentIndex + 1) / unit.words.length) * 100;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

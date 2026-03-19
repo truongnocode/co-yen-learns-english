@@ -51,6 +51,11 @@ const ExercisesPage = () => {
   const progress = ((current + 1) / exercises.length) * 100;
   const score = answers.filter((a, i) => a === exercises[i].ans).length;
 
+  // Auto-read the question
+  useEffect(() => {
+    if (q && !finished) speakUS(q.q);
+  }, [current, q, finished]);
+
   const handleSelect = (idx: number) => {
     if (selected !== null) return;
     setSelected(idx);

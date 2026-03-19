@@ -39,7 +39,7 @@ const LearningOverview = ({ progress }: Props) => {
       initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
       animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{ ...smooth, delay: 0.25 }}
-      className="mt-8"
+      className="mb-0"
     >
       <h2 className="font-display font-extrabold text-xl text-foreground mb-6">
         Tổng quan học tập

@@ -195,6 +195,11 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
     <div className="max-w-sm mx-auto">
       <Progress value={((current + 1) / words.length) * 100} className="h-2.5 rounded-full mb-6" />
       <div className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6 text-center">
+        {(() => { const SIcon = getWordIcon(word.en, word.type); return (
+          <div className="inline-flex p-2.5 rounded-xl bg-primary/10 mb-3">
+            <SIcon className="h-6 w-6 text-primary" />
+          </div>
+        ); })()}
         <p className="text-sm text-muted-foreground mb-1">Viết từ tiếng Anh:</p>
         <p className="font-display font-extrabold text-2xl text-foreground mb-2">{word.vi}</p>
         <p className="text-xs text-muted-foreground">{wordTypeLabels[word.type] || word.type} · {word.en.length} ký tự</p>

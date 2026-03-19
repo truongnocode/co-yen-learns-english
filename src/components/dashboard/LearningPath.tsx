@@ -128,7 +128,7 @@ const LearningPath = ({ progress }: Props) => {
 
                       {/* Node */}
                       <motion.div
-                        style={{ x: xOffset }}
+                        animate={{ x: xPx }}
                         whileHover={stopUnlocked ? { scale: 1.12 } : {}}
                         whileTap={stopUnlocked ? { scale: 0.95 } : {}}
                         onClick={() => {

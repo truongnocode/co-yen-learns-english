@@ -31,6 +31,14 @@ const ExercisesPage = () => {
     }).finally(() => setLoading(false));
   }, [grade, unitKey]);
 
+  const exercises = unit?.exercises || [];
+  const q = exercises[current];
+
+  // Auto-read the question
+  useEffect(() => {
+    if (q && !finished && !loading) speakUS(q.q);
+  }, [current, q, finished, loading]);
+
   if (loading) return (
     <PageShell withNavbar={false}>
       <div className="flex items-center justify-center pt-40">
@@ -46,15 +54,8 @@ const ExercisesPage = () => {
     </PageShell>
   );
 
-  const exercises = unit.exercises;
-  const q = exercises[current];
   const progress = ((current + 1) / exercises.length) * 100;
   const score = answers.filter((a, i) => a === exercises[i].ans).length;
-
-  // Auto-read the question
-  useEffect(() => {
-    if (q && !finished) speakUS(q.q);
-  }, [current, q, finished]);
 
   const handleSelect = (idx: number) => {
     if (selected !== null) return;

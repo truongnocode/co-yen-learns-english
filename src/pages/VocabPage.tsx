@@ -217,25 +217,27 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
   }, {} as Record<string, VocabItem[]>);
 
   return (
-    <div className="space-y-6">
-      {Object.entries(grouped).map(([type, items]) => (
-        <div key={type}>
-          <h4 className="font-display font-bold text-sm text-primary mb-3 uppercase tracking-wider">{type} ({items.length})</h4>
-          <div className="grid gap-2">
+    <div className="bg-card/80 backdrop-blur-xl rounded-2xl border border-white/60 shadow-lg overflow-hidden max-h-[65vh]">
+      <div className="overflow-y-auto max-h-[65vh] divide-y divide-border/40">
+        {Object.entries(grouped).map(([type, items]) => (
+          <div key={type}>
+            <div className="sticky top-0 z-10 bg-muted/90 backdrop-blur-sm px-4 py-2 border-b border-border/30">
+              <span className="font-display font-bold text-xs text-primary uppercase tracking-wider">{type} ({items.length})</span>
+            </div>
             {items.map((w, i) => (
-              <div key={i} className="bg-card/80 backdrop-blur-xl rounded-2xl px-4 py-3 border border-white/60 flex items-center justify-between shadow-sm">
-                <div>
-                  <span className="font-bold text-foreground mr-2">{w.en}</span>
-                  <span className="text-muted-foreground text-sm">— {w.vi}</span>
+              <div key={i} className="flex items-center justify-between px-4 py-2.5 hover:bg-muted/30 transition-colors">
+                <div className="flex items-center gap-2 min-w-0">
+                  <span className="font-bold text-sm text-foreground shrink-0">{w.en}</span>
+                  <span className="text-muted-foreground text-sm truncate">— {w.vi}</span>
                 </div>
-                <button onClick={() => speak(w.en)} className="p-2 rounded-full hover:bg-primary/10 transition-colors">
-                  <Volume2 className="h-4 w-4 text-primary" />
+                <button onClick={() => speak(w.en)} className="p-1.5 rounded-full hover:bg-primary/10 transition-colors shrink-0">
+                  <Volume2 className="h-3.5 w-3.5 text-primary" />
                 </button>
               </div>
             ))}
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

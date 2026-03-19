@@ -51,6 +51,11 @@ const ExercisesPage = () => {
         setSelected(null);
       } else {
         setFinished(true);
+        if (user) {
+          const finalAnswers = [...newAnswers];
+          const finalScore = finalAnswers.filter((a, i) => a === exercises[i].ans).length;
+          saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
+        }
       }
     }, 1200);
   };

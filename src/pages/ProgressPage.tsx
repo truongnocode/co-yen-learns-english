@@ -1,14 +1,28 @@
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { Trophy, BookOpen, Target } from "lucide-react";
-
-const stats = [
-  { icon: BookOpen, label: "Từ đã học", value: "0", gradient: "gradient-primary" },
-  { icon: Target, label: "Quiz xong", value: "0", gradient: "gradient-success" },
-  { icon: Trophy, label: "Điểm cao", value: "—", gradient: "gradient-accent" },
-];
+import { useAuth } from "@/contexts/AuthContext";
+import { useEffect, useState } from "react";
+import { getProgress, type UserProgress } from "@/lib/progress";
 
 const ProgressPage = () => {
+  const { user } = useAuth();
+  const [progress, setProgress] = useState<UserProgress | null>(null);
+
+  useEffect(() => {
+    if (user) {
+      getProgress(user.uid).then(setProgress);
+    } else {
+      setProgress(null);
+    }
+  }, [user]);
+
+  const stats = [
+    { icon: BookOpen, label: "Từ đã học", value: progress ? String(progress.wordsLearned.length) : "0", gradient: "gradient-primary" },
+    { icon: Target, label: "Quiz xong", value: progress ? String(progress.quizzesDone) : "0", gradient: "gradient-success" },
+    { icon: Trophy, label: "Điểm cao", value: progress ? `${progress.highScore}%` : "—", gradient: "gradient-accent" },
+  ];
+
   return (
     <div className="min-h-screen gradient-hero">
       <Navbar />
@@ -29,12 +43,35 @@ const ProgressPage = () => {
           ))}
         </div>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
-          className="bg-card rounded-3xl p-8 shadow-lg text-center border border-white/50">
-          <span className="text-5xl mb-3 block">🚀</span>
-          <h3 className="font-display font-bold text-xl text-foreground mb-2">Sắp ra mắt!</h3>
-          <p className="text-sm text-muted-foreground">Đăng nhập bằng Gmail để lưu tiến trình và xem thống kê chi tiết nhé!</p>
-        </motion.div>
+        {/* Quiz history */}
+        {progress && progress.quizHistory.length > 0 && (
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
+            className="bg-card rounded-3xl p-6 shadow-lg border border-white/50 mb-8">
+            <h3 className="font-display font-bold text-lg text-foreground mb-4">📝 Lịch sử làm bài</h3>
+            <div className="space-y-3">
+              {progress.quizHistory.slice(-10).reverse().map((h, i) => (
+                <div key={i} className="flex items-center justify-between p-3 bg-muted/30 rounded-2xl">
+                  <div>
+                    <p className="text-sm font-bold text-foreground">Lớp {h.grade} — Unit {h.unit}</p>
+                    <p className="text-xs text-muted-foreground">{new Date(h.date).toLocaleDateString("vi-VN")}</p>
+                  </div>
+                  <span className={`font-display font-bold text-lg ${h.score >= h.total * 0.7 ? "text-emerald-600" : "text-orange-500"}`}>
+                    {h.score}/{h.total}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {!user && (
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
+            className="bg-card rounded-3xl p-8 shadow-lg text-center border border-white/50">
+            <span className="text-5xl mb-3 block">🚀</span>
+            <h3 className="font-display font-bold text-xl text-foreground mb-2">Đăng nhập để lưu tiến trình!</h3>
+            <p className="text-sm text-muted-foreground">Đăng nhập bằng Gmail để lưu tiến trình và xem thống kê chi tiết nhé!</p>
+          </motion.div>
+        )}
       </div>
     </div>
   );

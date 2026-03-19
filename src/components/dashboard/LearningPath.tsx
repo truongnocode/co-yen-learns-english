@@ -1,8 +1,11 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Star, Play, Lock } from "lucide-react";
+import { BookOpen, Brain, MessageCircle, Gift, Pencil, Lock, Star, Play } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { gradeConfig } from "@/data/types";
+import { loadSGKData } from "@/data/loader";
+import type { SGKUnit } from "@/data/types";
 import type { UserProgress } from "@/lib/progress";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -11,12 +14,13 @@ interface Props {
   progress: UserProgress | null;
 }
 
-const pathItems = [
-  { type: "TỪ VỰNG", title: "Đồ dùng học tập", unit: "1", gradient: "gradient-purple-card" },
-  { type: "NGỮ PHÁP", title: "Thì Hiện tại đơn", unit: "1", gradient: "gradient-cool" },
-  { type: "NGỮ PHÁP", title: "Danh từ số nhiều", unit: "1", gradient: "gradient-cool" },
-  { type: "TỪ VỰNG", title: "Gia đình & bạn bè", unit: "2", gradient: "gradient-purple-card" },
-  { type: "BÀI TẬP", title: "Unit 1 - Tổng ôn", unit: "1", gradient: "gradient-accent" },
+/* Each unit has these lesson stops */
+const stopsTemplate = [
+  { key: "vocab", label: "TỪ VỰNG", icon: BookOpen, color: "bg-energy text-energy-foreground", ring: "ring-energy" },
+  { key: "grammar", label: "NGỮ PHÁP", icon: Brain, color: "bg-primary text-primary-foreground", ring: "ring-primary" },
+  { key: "practice", label: "LUYỆN TẬP", icon: MessageCircle, color: "bg-success text-success-foreground", ring: "ring-success" },
+  { key: "reward", label: "PHẦN THƯỞNG", icon: Gift, color: "bg-muted text-muted-foreground", ring: "ring-muted" },
+  { key: "spelling", label: "CHÍNH TẢ", icon: Pencil, color: "bg-accent text-accent-foreground", ring: "ring-accent" },
 ];
 
 const LearningPath = ({ progress }: Props) => {
@@ -24,7 +28,19 @@ const LearningPath = ({ progress }: Props) => {
   const { profile } = useAuth();
   const grade = profile?.grade || 6;
   const cfg = gradeConfig[grade];
-  const completedUnits = (progress?.quizHistory || []).map((q) => q.unit);
+
+  const [units, setUnits] = useState<{ id: string; data: SGKUnit }[]>([]);
+
+  useEffect(() => {
+    if (grade <= 9) {
+      loadSGKData(grade).then((d) => {
+        const arr = Object.entries(d.units).map(([id, data]) => ({ id, data }));
+        setUnits(arr);
+      });
+    }
+  }, [grade]);
+
+  const completedUnits = new Set((progress?.quizHistory || []).map((q) => q.unit));
 
   return (
     <motion.div
@@ -45,62 +61,131 @@ const LearningPath = ({ progress }: Props) => {
         </button>
       </div>
 
-      <div className="space-y-3">
-        {pathItems.map((item, i) => {
-          const isDone = completedUnits.includes(item.unit);
-          const isLocked = i > 2 && !isDone;
+      <div className="space-y-0">
+        {units.map((unit, unitIdx) => {
+          const isUnitDone = completedUnits.has(unit.id);
+          const prevUnitDone = unitIdx === 0 || completedUnits.has(units[unitIdx - 1].id);
 
           return (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ ...smooth, delay: 0.15 + i * 0.05 }}
-              className={`flex items-center gap-4 p-4 rounded-2xl border transition-all duration-300 cursor-pointer hover:shadow-md ${
-                isLocked
-                  ? "bg-muted/30 border-border/50 opacity-60"
-                  : "bg-card/80 border-white/60 hover:border-primary/30"
-              }`}
-              onClick={() => !isLocked && navigate(`/grade/${grade}`)}
-            >
-              {/* Status icon */}
-              <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
-                isDone ? "gradient-success" : isLocked ? "bg-muted" : "gradient-purple-card"
-              }`}>
-                {isDone ? (
-                  <Star className="h-5 w-5 text-white fill-white" />
-                ) : isLocked ? (
-                  <Lock className="h-4 w-4 text-muted-foreground" />
-                ) : (
-                  <Star className="h-5 w-5 text-white" />
-                )}
-              </div>
-
-              {/* Content */}
-              <div className="flex-1 min-w-0">
-                <span className={`text-[10px] font-extrabold uppercase tracking-wider ${
-                  item.type === "TỪ VỰNG" ? "text-primary" : item.type === "NGỮ PHÁP" ? "text-accent" : "text-success"
-                }`}>
-                  {item.type}
-                </span>
-                <h3 className="font-display font-bold text-sm text-foreground truncate">
-                  Unit {item.unit}: {item.title}
-                </h3>
-              </div>
-
-              {/* Play button */}
-              {!isLocked && (
-                <motion.div
-                  whileHover={{ scale: 1.15 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+            <div key={unit.id}>
+              {/* Unit Banner */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ ...smooth, delay: 0.05 * unitIdx }}
+                className="gradient-success rounded-2xl px-6 py-4 mb-6 flex items-center justify-between shadow-lg"
+              >
+                <div>
+                  <h3 className="font-display font-extrabold text-lg text-success-foreground">
+                    Unit {unit.id}: {unit.data.title}
+                  </h3>
+                  <p className="text-success-foreground/80 text-xs font-medium mt-0.5">
+                    {unit.data.vocabulary?.length || 0} từ vựng &bull; {unit.data.grammar?.length || 0} chủ điểm ngữ pháp
+                  </p>
+                </div>
+                <button
+                  onClick={() => navigate(`/grade/${grade}`)}
+                  className="bg-success-foreground/20 backdrop-blur-sm text-success-foreground text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 hover:bg-success-foreground/30 transition-colors"
                 >
-                  <Play className="h-4 w-4 text-primary fill-primary" />
-                </motion.div>
-              )}
-            </motion.div>
+                  <BookOpen className="h-3.5 w-3.5" />
+                  LÝ THUYẾT
+                </button>
+              </motion.div>
+
+              {/* Zigzag stops */}
+              <div className="relative pb-8">
+                {/* Vertical connector line */}
+                <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2 z-0" />
+
+                {stopsTemplate.map((stop, stopIdx) => {
+                  const isFirst = stopIdx === 0;
+                  const stopDone = isUnitDone;
+                  const stopUnlocked = prevUnitDone && (isFirst || stopDone || stopIdx <= 1);
+                  const isActive = prevUnitDone && !stopDone && stopIdx === 0;
+
+                  // Zigzag: alternate left/right
+                  const isLeft = stopIdx % 2 === 0;
+                  const xOffset = isLeft ? "-25%" : "25%";
+
+                  return (
+                    <motion.div
+                      key={stop.key}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ ...smooth, delay: 0.05 * unitIdx + 0.06 * stopIdx }}
+                      className="relative flex items-center justify-center py-5 z-10"
+                    >
+                      {/* Label - positioned to the side */}
+                      <div
+                        className={`absolute ${isLeft ? "right-[15%] lg:right-[20%]" : "left-[15%] lg:left-[20%]"} text-xs font-extrabold tracking-wider ${
+                          stopUnlocked ? "text-muted-foreground" : "text-muted-foreground/40"
+                        }`}
+                      >
+                        {stop.label}
+                      </div>
+
+                      {/* Node */}
+                      <motion.div
+                        style={{ x: xOffset }}
+                        whileHover={stopUnlocked ? { scale: 1.12 } : {}}
+                        whileTap={stopUnlocked ? { scale: 0.95 } : {}}
+                        onClick={() => {
+                          if (!stopUnlocked) return;
+                          if (stop.key === "vocab") navigate(`/grade/${grade}`);
+                          else if (stop.key === "grammar") navigate(`/grade/${grade}`);
+                          else if (stop.key === "practice") navigate(`/grade/${grade}`);
+                          else navigate(`/grade/${grade}`);
+                        }}
+                        className={`relative w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-lg ${
+                          stopDone
+                            ? `${stop.color} ring-4 ${stop.ring}/30`
+                            : isActive
+                            ? `${stop.color} ring-4 ring-energy/50 animate-pulse`
+                            : stopUnlocked
+                            ? `${stop.color} ring-2 ${stop.ring}/20`
+                            : "bg-muted/60 text-muted-foreground/40 cursor-not-allowed"
+                        }`}
+                      >
+                        {/* Progress ring for active */}
+                        {isActive && (
+                          <div className="absolute inset-[-6px] rounded-full border-[3px] border-energy/40 border-t-energy animate-spin" style={{ animationDuration: "3s" }} />
+                        )}
+
+                        {stopDone ? (
+                          <Star className="h-7 w-7 fill-current" />
+                        ) : !stopUnlocked ? (
+                          <Lock className="h-5 w-5" />
+                        ) : (
+                          <stop.icon className="h-7 w-7" />
+                        )}
+                      </motion.div>
+
+                      {/* "BẮT ĐẦU" tooltip for active node */}
+                      {isActive && (
+                        <motion.div
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          className={`absolute ${isLeft ? "left-[calc(50%+60px)]" : "right-[calc(50%+60px)]"} bg-card text-foreground font-display font-bold text-sm px-4 py-2 rounded-xl shadow-lg border border-border`}
+                          style={{ transform: `translateX(${isLeft ? xOffset : xOffset})` }}
+                        >
+                          BẮT ĐẦU
+                          {/* Arrow */}
+                          <div className={`absolute top-1/2 -translate-y-1/2 ${isLeft ? "-left-2" : "-right-2"} w-0 h-0 border-y-[6px] border-y-transparent ${isLeft ? "border-r-[8px] border-r-card" : "border-l-[8px] border-l-card"}`} />
+                        </motion.div>
+                      )}
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
           );
         })}
+
+        {units.length === 0 && (
+          <div className="text-center py-12 text-muted-foreground">
+            <p className="font-display font-bold">Đang tải lộ trình...</p>
+          </div>
+        )}
       </div>
     </motion.div>
   );

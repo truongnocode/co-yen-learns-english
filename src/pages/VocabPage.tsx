@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, ChevronLeft, ChevronRight, RotateCcw, Volume2, BookOpen, Brain, Pencil, Home } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, RotateCcw, Volume2, BookOpen, Brain, Pencil, Home, Search, BookText } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
@@ -238,76 +238,139 @@ const wordTypeColors: Record<string, { bg: string; text: string; icon: string }>
 
 const defaultTypeColor = { bg: "gradient-purple-card", text: "text-white", icon: "📝" };
 
-const VocabListTab = ({ words }: { words: VocabItem[] }) => {
-  const grouped = words.reduce((acc, w) => {
-    const key = wordTypeLabels[w.type] || w.type;
-    if (!acc[key]) acc[key] = [];
-    acc[key].push(w);
+const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
+  const [search, setSearch] = useState("");
+  const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
+
+  const filtered = words.filter(w =>
+    w.en.toLowerCase().includes(search.toLowerCase()) ||
+    w.vi.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // Sort alphabetically
+  const sorted = [...filtered].sort((a, b) => a.en.localeCompare(b.en));
+
+  // Group by first letter
+  const grouped = sorted.reduce((acc, w) => {
+    const letter = w.en[0].toUpperCase();
+    if (!acc[letter]) acc[letter] = [];
+    acc[letter].push(w);
     return acc;
   }, {} as Record<string, VocabItem[]>);
 
-  const types = Object.keys(grouped);
-  const [activeType, setActiveType] = useState(types[0] || "");
-
-  const colors = wordTypeColors[activeType] || defaultTypeColor;
-  const items = grouped[activeType] || [];
-
   return (
     <div className="space-y-4">
-      {/* Word type filter tabs */}
-      <div className="flex flex-wrap gap-2">
-        {types.map((type) => {
-          const c = wordTypeColors[type] || defaultTypeColor;
-          const isActive = type === activeType;
+      {/* Search bar */}
+      <div className="relative">
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <input
+          type="text"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder="Tìm từ vựng..."
+          className="w-full pl-11 pr-4 py-3 rounded-2xl bg-card/80 backdrop-blur-xl border border-border/50 text-sm font-medium text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-primary/40 focus:shadow-md transition-all"
+        />
+      </div>
+
+      {/* Word type chips */}
+      <div className="flex flex-wrap gap-1.5">
+        {Object.entries(wordTypeColors).map(([type, c]) => {
+          const count = words.filter(w => (wordTypeLabels[w.type] || w.type) === type).length;
+          if (!count) return null;
           return (
-            <button
-              key={type}
-              onClick={() => setActiveType(type)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-display font-bold text-xs transition-all ${
-                isActive
-                  ? `${c.bg} text-white shadow-md scale-105`
-                  : "bg-card/80 backdrop-blur-xl border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/30"
-              }`}
-            >
-              <span>{c.icon}</span>
-              <span>{type}</span>
-              <span className={`text-[10px] ${isActive ? "opacity-80" : "opacity-50"}`}>({grouped[type].length})</span>
-            </button>
+            <span key={type} className={`${c.bg} text-white text-[10px] font-bold px-2.5 py-1 rounded-full`}>
+              {c.icon} {type} · {count}
+            </span>
           );
         })}
       </div>
 
-      {/* Word list */}
-      <div className="max-h-[55vh] overflow-y-auto pr-1 scrollbar-thin">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <AnimatePresence mode="wait">
-            {items.map((w, i) => (
-              <motion.div
-                key={`${activeType}-${i}`}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.02, duration: 0.25 }}
-                className="group bg-card/80 backdrop-blur-xl rounded-xl px-4 py-3 border border-border/50 flex items-center gap-3 hover:shadow-md hover:border-primary/30 transition-all cursor-default"
-              >
-                {(() => { const WIcon = getWordIcon(w.en, w.type); return (
-                  <div className="p-1.5 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors shrink-0">
-                    <WIcon className="h-4 w-4 text-primary/70" />
-                  </div>
-                ); })()}
-                <div className="min-w-0 flex-1">
-                  <p className="font-display font-bold text-foreground text-sm leading-tight">{w.en}</p>
-                  <p className="text-muted-foreground text-xs mt-0.5">{w.vi}</p>
-                </div>
-                <button
-                  onClick={() => speak(w.en)}
-                  className="p-2 rounded-full bg-primary/5 hover:bg-primary/15 transition-colors shrink-0 opacity-60 group-hover:opacity-100"
+      {/* Dictionary entries */}
+      <div className="max-h-[50vh] overflow-y-auto pr-1 space-y-1">
+        {Object.keys(grouped).length === 0 && (
+          <p className="text-center text-muted-foreground py-8 text-sm">Không tìm thấy từ nào</p>
+        )}
+        {Object.entries(grouped).map(([letter, items]) => (
+          <div key={letter}>
+            {/* Letter header */}
+            <div className="sticky top-0 z-10 flex items-center gap-2 py-1.5">
+              <span className="font-display font-extrabold text-lg text-primary">{letter}</span>
+              <div className="flex-1 h-px bg-border/50" />
+              <span className="text-[10px] text-muted-foreground font-bold">{items.length}</span>
+            </div>
+
+            {/* Words */}
+            {items.map((w, i) => {
+              const globalIdx = words.indexOf(w);
+              const isExpanded = expandedIdx === globalIdx;
+              const WIcon = getWordIcon(w.en, w.type);
+              const typeColor = wordTypeColors[wordTypeLabels[w.type] || w.type] || defaultTypeColor;
+
+              return (
+                <motion.div
+                  key={`${letter}-${i}`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: i * 0.015 }}
+                  onClick={() => setExpandedIdx(isExpanded ? null : globalIdx)}
+                  className={`rounded-xl px-3.5 py-2.5 mb-1 cursor-pointer transition-all ${
+                    isExpanded
+                      ? "bg-card/90 backdrop-blur-xl shadow-md border border-primary/20"
+                      : "hover:bg-card/60 border border-transparent"
+                  }`}
                 >
-                  <Volume2 className="h-3.5 w-3.5 text-primary" />
-                </button>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </div>
+                  <div className="flex items-center gap-3">
+                    <div className={`p-1.5 rounded-lg shrink-0 transition-colors ${isExpanded ? "bg-primary/15" : "bg-primary/5"}`}>
+                      <WIcon className="h-4 w-4 text-primary" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline gap-2">
+                        <span className="font-display font-bold text-foreground text-sm">{w.en}</span>
+                        <span className={`${typeColor.bg} text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none`}>
+                          {wordTypeLabels[w.type] || w.type}
+                        </span>
+                      </div>
+                      <p className="text-muted-foreground text-xs mt-0.5 truncate">{w.vi}</p>
+                    </div>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); speak(w.en); }}
+                      className="p-2 rounded-full hover:bg-primary/10 transition-colors shrink-0"
+                    >
+                      <Volume2 className="h-3.5 w-3.5 text-primary" />
+                    </button>
+                  </div>
+
+                  {/* Expanded detail */}
+                  <AnimatePresence>
+                    {isExpanded && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 pt-3 border-t border-border/40 flex items-center gap-4">
+                          <div className="flex-1">
+                            <p className="text-xs text-muted-foreground mb-1">Nghĩa tiếng Việt</p>
+                            <p className="font-display font-bold text-foreground">{w.vi}</p>
+                          </div>
+                          <motion.button
+                            whileTap={{ scale: 0.9 }}
+                            onClick={(e) => { e.stopPropagation(); speak(w.en); }}
+                            className="gradient-primary text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5"
+                          >
+                            <Volume2 className="h-3.5 w-3.5" /> Nghe
+                          </motion.button>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -363,7 +426,7 @@ const VocabPage = () => {
         <Tabs defaultValue="list" className="w-full">
           <TabsList className="w-full grid grid-cols-4 mb-6 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-white/60">
             <TabsTrigger value="list" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
-              <BookOpen className="h-3.5 w-3.5 mr-1" /> Danh sách
+              <BookText className="h-3.5 w-3.5 mr-1" /> Từ điển
             </TabsTrigger>
             <TabsTrigger value="flashcard" className="rounded-xl text-xs font-bold data-[state=active]:gradient-accent data-[state=active]:text-white">
               <RotateCcw className="h-3.5 w-3.5 mr-1" /> Flashcard
@@ -376,7 +439,7 @@ const VocabPage = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="list"><VocabListTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="list"><DictionaryTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="flashcard"><FlashcardTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="quiz"><QuizTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="spelling"><SpellingTab words={unit.vocabulary} /></TabsContent>

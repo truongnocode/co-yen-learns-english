@@ -47,6 +47,13 @@ export const setUserGrade = async (uid: string, grade: number) => {
   await updateDoc(doc(db, "users", uid), { grade });
 };
 
+export const updateUserProfile = async (
+  uid: string,
+  data: { displayName?: string; photoURL?: string }
+) => {
+  await updateDoc(doc(db, "users", uid), data);
+};
+
 // --- Progress ---
 
 export const getProgress = async (uid: string): Promise<UserProgress> => {

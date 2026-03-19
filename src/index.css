@@ -141,6 +141,10 @@
     background-size: 200% 100%;
     animation: shimmer 2s infinite;
   }
+
+  .sound-wave {
+    animation: soundWave 1.2s ease-in-out infinite alternate;
+  }
 }
 
 @keyframes shimmer {
@@ -151,4 +155,9 @@
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
+}
+
+@keyframes soundWave {
+  0% { transform: scaleY(0.4); }
+  100% { transform: scaleY(1); }
 }

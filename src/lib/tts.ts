@@ -1,10 +1,42 @@
 /**
- * Text-to-Speech utility with random American English male/female voices.
- * Uses the Web Speech API (SpeechSynthesis).
+ * Text-to-Speech utility.
+ * Primary: Puter.js (high quality, natural US voice) — requires one-time Puter login.
+ * Fallback: Web Speech API (browser built-in) — uses random en-US voice.
  */
 
-let voicesLoaded = false;
+declare global {
+  interface Window {
+    puter?: {
+      ai: {
+        txt2speech: (text: string) => Promise<HTMLAudioElement>;
+      };
+    };
+  }
+}
+
+let puterAvailable: boolean | null = null; // null = not checked yet
+
+const checkPuter = (): boolean => {
+  if (puterAvailable !== null) return puterAvailable;
+  puterAvailable = !!(window.puter?.ai?.txt2speech);
+  return puterAvailable;
+};
+
+// ---- Puter TTS ----
+const speakPuter = async (text: string): Promise<void> => {
+  try {
+    const audio = await window.puter!.ai.txt2speech(text);
+    audio.play();
+  } catch (err) {
+    console.warn("Puter TTS failed, falling back to Web Speech API:", err);
+    puterAvailable = false;
+    speakFallback(text);
+  }
+};
+
+// ---- Web Speech API fallback ----
 let usVoices: SpeechSynthesisVoice[] = [];
+let voicesLoaded = false;
 
 const loadVoices = (): Promise<SpeechSynthesisVoice[]> => {
   return new Promise((resolve) => {
@@ -13,10 +45,7 @@ const loadVoices = (): Promise<SpeechSynthesisVoice[]> => {
       resolve(voices);
       return;
     }
-    speechSynthesis.onvoiceschanged = () => {
-      resolve(speechSynthesis.getVoices());
-    };
-    // Fallback timeout
+    speechSynthesis.onvoiceschanged = () => resolve(speechSynthesis.getVoices());
     setTimeout(() => resolve(speechSynthesis.getVoices()), 500);
   });
 };
@@ -24,44 +53,41 @@ const loadVoices = (): Promise<SpeechSynthesisVoice[]> => {
 const getUSVoices = async (): Promise<SpeechSynthesisVoice[]> => {
   if (voicesLoaded && usVoices.length > 0) return usVoices;
   const all = await loadVoices();
-  // Prefer en-US voices
   usVoices = all.filter((v) => v.lang.startsWith("en-US") || v.lang === "en_US");
-  // Fallback to any English voice
-  if (usVoices.length === 0) {
-    usVoices = all.filter((v) => v.lang.startsWith("en"));
-  }
+  if (usVoices.length === 0) usVoices = all.filter((v) => v.lang.startsWith("en"));
   voicesLoaded = true;
   return usVoices;
 };
 
-/**
- * Speak text in American English with a random voice (alternating male/female).
- * Returns a function to replay the same utterance.
- */
-export const speakUS = async (text: string, rate = 0.85): Promise<void> => {
-  speechSynthesis.cancel(); // Stop any ongoing speech
+const speakFallback = async (text: string, rate = 0.85): Promise<void> => {
+  speechSynthesis.cancel();
   const voices = await getUSVoices();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "en-US";
   u.rate = rate;
   if (voices.length > 0) {
-    // Pick a random voice for variety (male/female)
     u.voice = voices[Math.floor(Math.random() * voices.length)];
   }
   speechSynthesis.speak(u);
 };
 
+// ---- Public API ----
+
 /**
- * Simple speak without async voice loading (immediate, uses whatever voice is available).
+ * Speak text using Puter (preferred) or Web Speech API (fallback).
+ */
+export const speakUS = async (text: string, rate = 0.85): Promise<void> => {
+  speechSynthesis.cancel();
+  if (checkPuter()) {
+    await speakPuter(text);
+  } else {
+    await speakFallback(text, rate);
+  }
+};
+
+/**
+ * Immediate speak (non-async, for click handlers that don't want to await).
  */
 export const speakImmediate = (text: string, rate = 0.85): void => {
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = "en-US";
-  u.rate = rate;
-  const voices = speechSynthesis.getVoices().filter((v) => v.lang.startsWith("en-US") || v.lang === "en_US");
-  if (voices.length > 0) {
-    u.voice = voices[Math.floor(Math.random() * voices.length)];
-  }
-  speechSynthesis.speak(u);
+  speakUS(text, rate);
 };

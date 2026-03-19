@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { BookOpen, Brain, MessageCircle, Gift, Pencil, Lock, Star, Play } from "lucide-react";
@@ -41,6 +41,21 @@ const LearningPath = ({ progress }: Props) => {
   }, [grade]);
 
   const completedUnits = new Set((progress?.quizHistory || []).map((q) => q.unit));
+  const activeUnitRef = useRef<HTMLDivElement>(null);
+  const hasScrolled = useRef(false);
+
+  // Find the first incomplete unit index
+  const activeUnitIdx = units.findIndex((u) => !completedUnits.has(u.id));
+
+  // Auto-scroll to the active unit on first load
+  useEffect(() => {
+    if (units.length > 0 && activeUnitRef.current && !hasScrolled.current && activeUnitIdx > 0) {
+      hasScrolled.current = true;
+      setTimeout(() => {
+        activeUnitRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 600);
+    }
+  }, [units, activeUnitIdx]);
 
   return (
     <motion.div
@@ -65,9 +80,10 @@ const LearningPath = ({ progress }: Props) => {
         {units.map((unit, unitIdx) => {
           const isUnitDone = completedUnits.has(unit.id);
           const prevUnitDone = unitIdx === 0 || completedUnits.has(units[unitIdx - 1].id);
+          const isActiveUnit = unitIdx === activeUnitIdx;
 
           return (
-            <div key={unit.id}>
+            <div key={unit.id} ref={isActiveUnit ? activeUnitRef : undefined}>
               {/* Unit Banner */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}

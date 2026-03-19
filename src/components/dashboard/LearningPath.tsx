@@ -169,7 +169,6 @@ const LearningPath = ({ progress }: Props) => {
                           animate={{ opacity: 1, scale: 1 }}
                           className={`absolute ${isLeft ? "left-[calc(50%+60px)]" : "right-[calc(50%+60px)]"} bg-card text-foreground font-display font-bold text-sm px-4 py-2 rounded-xl shadow-lg border border-border`}
                         >
-                        >
                           BẮT ĐẦU
                           {/* Arrow */}
                           <div className={`absolute top-1/2 -translate-y-1/2 ${isLeft ? "-left-2" : "-right-2"} w-0 h-0 border-y-[6px] border-y-transparent ${isLeft ? "border-r-[8px] border-r-card" : "border-l-[8px] border-l-card"}`} />

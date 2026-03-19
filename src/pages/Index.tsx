@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, Star, Flame, Rocket } from "lucide-react";
+import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, Star, Flame, Rocket, GraduationCap } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import GradeSelectDialog from "@/components/GradeSelectDialog";

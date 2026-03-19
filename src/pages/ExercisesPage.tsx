@@ -5,6 +5,8 @@ import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type MCQuestion } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
+import { useAuth } from "@/contexts/AuthContext";
+import { saveQuizResult } from "@/lib/progress";
 
 const ExercisesPage = () => {
   const { gradeId, unitKey } = useParams();

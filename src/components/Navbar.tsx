@@ -24,8 +24,9 @@ const Navbar = () => {
 
   return (
     <motion.header
-      initial={{ y: -20, opacity: 0, x: "-50%" }}
-      animate={{ y: 0, opacity: 1, x: "-50%" }}
+      initial={{ y: -20, opacity: 0, x: "-50%", filter: "blur(8px)" }}
+      animate={{ y: 0, opacity: 1, x: "-50%", filter: "blur(0px)" }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-5 left-1/2 z-50 w-full px-4"
     >
       <div

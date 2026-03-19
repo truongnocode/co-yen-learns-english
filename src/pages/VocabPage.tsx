@@ -208,6 +208,16 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
 };
 
 // ===== VOCAB LIST TAB =====
+const wordTypeColors: Record<string, { bg: string; text: string; icon: string }> = {
+  "Danh từ": { bg: "gradient-primary", text: "text-white", icon: "📦" },
+  "Động từ": { bg: "gradient-accent", text: "text-white", icon: "⚡" },
+  "Tính từ": { bg: "gradient-success", text: "text-white", icon: "🎨" },
+  "Trạng từ": { bg: "gradient-warm", text: "text-white", icon: "💫" },
+  "Giới từ": { bg: "gradient-cool", text: "text-white", icon: "📍" },
+};
+
+const defaultTypeColor = { bg: "gradient-purple-card", text: "text-white", icon: "📝" };
+
 const VocabListTab = ({ words }: { words: VocabItem[] }) => {
   const grouped = words.reduce((acc, w) => {
     const key = wordTypeLabels[w.type] || w.type;
@@ -217,27 +227,41 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
   }, {} as Record<string, VocabItem[]>);
 
   return (
-    <div className="bg-card/80 backdrop-blur-xl rounded-2xl border border-white/60 shadow-lg overflow-hidden max-h-[65vh]">
-      <div className="overflow-y-auto max-h-[65vh] divide-y divide-border/40">
-        {Object.entries(grouped).map(([type, items]) => (
+    <div className="max-h-[62vh] overflow-y-auto space-y-5 pr-1 scrollbar-thin">
+      {Object.entries(grouped).map(([type, items]) => {
+        const colors = wordTypeColors[type] || defaultTypeColor;
+        return (
           <div key={type}>
-            <div className="sticky top-0 z-10 bg-muted/90 backdrop-blur-sm px-4 py-2 border-b border-border/30">
-              <span className="font-display font-bold text-xs text-primary uppercase tracking-wider">{type} ({items.length})</span>
+            <div className={`${colors.bg} rounded-2xl px-4 py-2.5 mb-3 flex items-center gap-2 shadow-md`}>
+              <span className="text-lg">{colors.icon}</span>
+              <span className={`font-display font-bold text-sm ${colors.text} uppercase tracking-wide`}>{type}</span>
+              <span className={`${colors.text} opacity-80 text-xs ml-auto font-bold`}>{items.length} từ</span>
             </div>
-            {items.map((w, i) => (
-              <div key={i} className="flex items-center justify-between px-4 py-2.5 hover:bg-muted/30 transition-colors">
-                <div className="flex items-center gap-2 min-w-0">
-                  <span className="font-bold text-sm text-foreground shrink-0">{w.en}</span>
-                  <span className="text-muted-foreground text-sm truncate">— {w.vi}</span>
-                </div>
-                <button onClick={() => speak(w.en)} className="p-1.5 rounded-full hover:bg-primary/10 transition-colors shrink-0">
-                  <Volume2 className="h-3.5 w-3.5 text-primary" />
-                </button>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {items.map((w, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.03, duration: 0.3 }}
+                  className="group bg-card/80 backdrop-blur-xl rounded-xl px-4 py-3 border border-border/50 flex items-center gap-3 hover:shadow-md hover:border-primary/30 transition-all cursor-default"
+                >
+                  <div className="min-w-0 flex-1">
+                    <p className="font-display font-bold text-foreground text-sm leading-tight">{w.en}</p>
+                    <p className="text-muted-foreground text-xs mt-0.5">{w.vi}</p>
+                  </div>
+                  <button
+                    onClick={() => speak(w.en)}
+                    className="p-2 rounded-full bg-primary/5 hover:bg-primary/15 transition-colors shrink-0 opacity-60 group-hover:opacity-100"
+                  >
+                    <Volume2 className="h-3.5 w-3.5 text-primary" />
+                  </button>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
 };

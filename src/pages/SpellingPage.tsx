@@ -81,6 +81,14 @@ const SpellingPage = () => {
               <p className="text-sm text-muted-foreground mb-3">Viết từ tiếng Anh cho: ✏️</p>
               <h2 className="font-display font-bold text-4xl text-foreground mb-2 relative z-10">{word.vietnamese}</h2>
               <p className="text-muted-foreground text-sm">{word.phonetic}</p>
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={() => speakUS(word.english)}
+                className="mt-3 p-2.5 rounded-full bg-success/10 hover:bg-success/20 transition-colors relative z-10"
+                title="Nghe phát âm"
+              >
+                <Volume2 className="h-5 w-5 text-success" />
+              </motion.button>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">

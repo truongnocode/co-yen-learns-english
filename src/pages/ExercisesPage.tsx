@@ -125,7 +125,17 @@ const ExercisesPage = () => {
           transition={smooth}
           className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6"
         >
-          <p className="font-display font-extrabold text-lg text-foreground leading-relaxed">{q.q}</p>
+          <div className="flex items-start justify-between gap-3">
+            <p className="font-display font-extrabold text-lg text-foreground leading-relaxed flex-1">{q.q}</p>
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={() => speakUS(q.q)}
+              className="p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors shrink-0"
+              title="Nghe câu hỏi"
+            >
+              <Volume2 className="h-5 w-5 text-primary" />
+            </motion.button>
+          </div>
         </motion.div>
 
         <div className="flex flex-col gap-3">

@@ -66,6 +66,11 @@ const QuizPage = () => {
   const q = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
 
+  // Auto-read the English word when question changes
+  useEffect(() => {
+    if (q) speakUS(q.word.english);
+  }, [currentIndex, q]);
+
   const handleSelect = (v: string) => {
     if (selected) return;
     setSelected(v);
@@ -98,6 +103,14 @@ const QuizPage = () => {
               <p className="text-sm text-muted-foreground mb-3">Từ này nghĩa là gì? 🤔</p>
               <h2 className="font-display font-bold text-4xl text-foreground relative z-10">{q.word.english}</h2>
               <p className="text-muted-foreground mt-2">{q.word.phonetic}</p>
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={() => speakUS(q.word.english)}
+                className="mt-3 p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10"
+                title="Nghe phát âm"
+              >
+                <Volume2 className="h-5 w-5 text-primary" />
+              </motion.button>
             </div>
 
             <div className="flex flex-col gap-3">

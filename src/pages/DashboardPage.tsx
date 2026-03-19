@@ -63,12 +63,14 @@ const DashboardPage = () => {
         <DashboardSidebar />
 
         {/* Middle column: Hero + Learning Path */}
-        <main className="flex-1 px-5 lg:px-6 py-6 lg:py-8 overflow-y-auto min-w-0">
-          <HeroBanner />
-          <div className="mt-6">
-            <LearningPath progress={progress} />
+        <main className="flex-1 px-5 lg:px-6 py-6 lg:py-8 min-w-0 flex flex-col max-h-screen">
+          <div className="shrink-0">
+            <HeroBanner />
           </div>
-          <div className="h-10" />
+          <div className="mt-6 flex-1 overflow-y-auto min-h-0 pr-1">
+            <LearningPath progress={progress} />
+            <div className="h-10" />
+          </div>
         </main>
 
         {/* Right column: Header stats + Overview + Review */}

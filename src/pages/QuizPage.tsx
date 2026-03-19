@@ -1,9 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { gradesData } from "@/data/vocabulary";
 import { motion } from "framer-motion";
-import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowLeft, CheckCircle2, XCircle, Volume2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
+import { speakUS } from "@/lib/tts";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];

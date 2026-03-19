@@ -7,6 +7,7 @@ import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PageShell from "@/components/PageShell";
+import { getWordIcon } from "@/lib/wordIcons";
 
 const speak = (text: string) => {
   const u = new SpeechSynthesisUtterance(text);

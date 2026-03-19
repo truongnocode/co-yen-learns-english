@@ -237,7 +237,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-white/20 py-12 text-center">
         <p className="text-sm text-muted-foreground/60">
-          © 2026 Học tiếng Anh với cô Yến. Thiết kế dành riêng cho học sinh lớp 1–9.
+          © 2026 Học tiếng Anh với cô Yến. Thiết kế dành riêng cho học sinh lớp 6–10.
         </p>
       </footer>
     </div>

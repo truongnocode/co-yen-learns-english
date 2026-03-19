@@ -17,7 +17,7 @@ const HeroBanner = () => {
       initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
       animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={smooth}
-      className="gradient-purple-card rounded-3xl p-8 sm:p-10 text-white relative overflow-hidden min-h-[200px] flex items-center mb-8"
+      className="gradient-purple-card rounded-3xl px-8 py-5 sm:px-10 sm:py-6 text-white relative overflow-hidden flex items-center mb-8"
     >
       {/* Background decorations */}
       <div className="absolute top-0 right-0 w-60 h-60 bg-white/10 rounded-full -translate-y-1/3 translate-x-1/4 blur-3xl" />

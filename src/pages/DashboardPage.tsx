@@ -62,21 +62,21 @@ const DashboardPage = () => {
       <div className="flex min-h-screen">
         <DashboardSidebar />
 
-        <main className="flex-1 px-5 lg:px-8 py-6 lg:py-8 overflow-y-auto">
+        {/* Middle column: Hero + Learning Path */}
+        <main className="flex-1 px-5 lg:px-6 py-6 lg:py-8 overflow-y-auto min-w-0">
           <DashboardHeader progress={progress} />
           <HeroBanner />
-
-          {/* Learning Overview */}
-          <LearningOverview progress={progress} />
-
-          {/* Main content: Learning Path + Review Corner */}
-          <div className="flex flex-col lg:flex-row gap-8 mt-8">
+          <div className="mt-6">
             <LearningPath progress={progress} />
-            <ReviewCorner />
           </div>
-
           <div className="h-10" />
         </main>
+
+        {/* Right column: Overview + Review */}
+        <aside className="hidden xl:flex flex-col w-80 shrink-0 py-6 pr-5 gap-6 overflow-y-auto max-h-screen sticky top-0">
+          <LearningOverview progress={progress} />
+          <ReviewCorner />
+        </aside>
       </div>
 
       <GradeSelectDialog open={showGradeSelect} onSelect={handleGradeSelected} />

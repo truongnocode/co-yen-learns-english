@@ -72,7 +72,6 @@ const DashboardPage = () => {
 
         {/* Right column: Header stats + Overview + Review */}
         <aside className="hidden xl:flex flex-col w-80 shrink-0 py-6 pr-5 gap-6 overflow-y-auto max-h-screen sticky top-0">
-          <DashboardHeader progress={progress} />
           <LearningOverview progress={progress} />
           <ReviewCorner />
         </aside>

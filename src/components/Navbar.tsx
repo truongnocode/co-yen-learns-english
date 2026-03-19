@@ -29,7 +29,7 @@ const Navbar = () => {
       className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-full max-w-3xl px-4"
     >
       <div
-        className={`rounded-full px-5 py-2.5 flex items-center gap-6 transition-all duration-500 ${
+        className={`rounded-full px-5 py-2.5 flex items-center justify-center gap-6 transition-all duration-500 ${
           scrolled
             ? "bg-card/70 backdrop-blur-2xl shadow-lg border border-white/50"
             : "bg-card/40 backdrop-blur-md shadow-sm border border-white/30"

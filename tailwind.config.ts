@@ -41,12 +41,10 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          glow: "hsl(var(--accent-glow))",
         },
         success: {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
-          glow: "hsl(var(--success-glow))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -55,17 +53,6 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-        },
-        grade: {
-          1: "hsl(var(--grade-1))",
-          2: "hsl(var(--grade-2))",
-          3: "hsl(var(--grade-3))",
-          4: "hsl(var(--grade-4))",
-          5: "hsl(var(--grade-5))",
-          6: "hsl(var(--grade-6))",
-          7: "hsl(var(--grade-7))",
-          8: "hsl(var(--grade-8))",
-          9: "hsl(var(--grade-9))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -86,11 +73,6 @@ export default {
         "2xl": "calc(var(--radius) + 8px)",
         "3xl": "calc(var(--radius) + 16px)",
       },
-      boxShadow: {
-        card: "var(--shadow-card)",
-        "card-hover": "var(--shadow-card-hover)",
-        glow: "var(--shadow-glow)",
-      },
       keyframes: {
         "accordion-down": {
           from: { height: "0", opacity: "0" },
@@ -100,33 +82,10 @@ export default {
           from: { height: "var(--radix-accordion-content-height)", opacity: "1" },
           to: { height: "0", opacity: "0" },
         },
-        "celebrate": {
-          "0%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.25) rotate(5deg)" },
-          "100%": { transform: "scale(1) rotate(0deg)" },
-        },
-        "bounce-in": {
-          "0%": { transform: "scale(0.3)", opacity: "0" },
-          "50%": { transform: "scale(1.05)" },
-          "70%": { transform: "scale(0.9)" },
-          "100%": { transform: "scale(1)", opacity: "1" },
-        },
-        "slide-up": {
-          "0%": { transform: "translateY(20px)", opacity: "0" },
-          "100%": { transform: "translateY(0)", opacity: "1" },
-        },
-        "wiggle": {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "celebrate": "celebrate 0.5s ease-in-out",
-        "bounce-in": "bounce-in 0.6s ease-out",
-        "slide-up": "slide-up 0.4s ease-out",
-        "wiggle": "wiggle 1s ease-in-out infinite",
       },
     },
   },

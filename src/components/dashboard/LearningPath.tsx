@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { BookOpen, Brain, MessageCircle, Gift, Pencil, Lock, Star, Play } from "lucide-react";
+import { BookOpen, Brain, MessageCircle, Gift, Pencil, Lock, Star, Play, GraduationCap, ArrowRight } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { gradeConfig } from "@/data/types";
 import { loadSGKData } from "@/data/loader";

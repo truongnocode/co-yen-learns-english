@@ -16,6 +16,7 @@ import Grade10ReadingPage from "./pages/Grade10ReadingPage";
 import Grade10TestsPage from "./pages/Grade10TestsPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
+import DashboardPage from "./pages/DashboardPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/grades" element={<GradesPage />} />
           <Route path="/grade/10/vocab" element={<Grade10VocabPage />} />
           <Route path="/grade/10/grammar" element={<Grade10GrammarPage />} />

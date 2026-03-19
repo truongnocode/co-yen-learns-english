@@ -1,6 +1,13 @@
 import { doc, getDoc, setDoc, updateDoc, arrayUnion, increment } from "firebase/firestore";
 import { db } from "./firebase";
 
+export interface UserProfile {
+  displayName: string;
+  photoURL: string;
+  grade: number | null;
+  createdAt: string;
+}
+
 export interface UserProgress {
   quizzesDone: number;
   highScore: number;
@@ -14,6 +21,33 @@ const defaultProgress: UserProgress = {
   wordsLearned: [],
   quizHistory: [],
 };
+
+// --- Profile ---
+
+export const getUserProfile = async (uid: string): Promise<UserProfile | null> => {
+  const snap = await getDoc(doc(db, "users", uid));
+  return snap.exists() ? (snap.data() as UserProfile) : null;
+};
+
+export const createUserProfile = async (
+  uid: string,
+  data: { displayName: string; photoURL: string }
+): Promise<UserProfile> => {
+  const profile: UserProfile = {
+    displayName: data.displayName,
+    photoURL: data.photoURL,
+    grade: null,
+    createdAt: new Date().toISOString(),
+  };
+  await setDoc(doc(db, "users", uid), profile);
+  return profile;
+};
+
+export const setUserGrade = async (uid: string, grade: number) => {
+  await updateDoc(doc(db, "users", uid), { grade });
+};
+
+// --- Progress ---
 
 export const getProgress = async (uid: string): Promise<UserProgress> => {
   const snap = await getDoc(doc(db, "progress", uid));

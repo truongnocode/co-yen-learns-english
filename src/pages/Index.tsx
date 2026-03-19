@@ -1,16 +1,55 @@
+import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, UserCircle2, Star, Flame, Rocket } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import GradeSelectDialog from "@/components/GradeSelectDialog";
+import { useAuth } from "@/contexts/AuthContext";
+import { getUserProfile, createUserProfile, setUserGrade } from "@/lib/progress";
 import foxMascot from "@/assets/fox-mascot.png";
 
 const smooth = { duration: 0.8, ease: [0.22, 1, 0.36, 1] };
 const smoothSlow = { duration: 1, ease: [0.22, 1, 0.36, 1] };
 const smoothCard = { duration: 0.7, ease: [0.22, 1, 0.36, 1] };
-const hoverSmooth = { type: "spring" as const, stiffness: 120, damping: 14 };
 
 const Index = () => {
   const navigate = useNavigate();
+  const { user, signInWithGoogle } = useAuth();
+  const [showGradeSelect, setShowGradeSelect] = useState(false);
+
+  const handleCTA = useCallback(async () => {
+    if (!user) {
+      try {
+        await signInWithGoogle();
+        // After sign-in, check if they have a profile
+        // The onAuthStateChanged will update user, but we need to wait
+        // So we'll handle onboarding in a useEffect-like approach
+      } catch {
+        return;
+      }
+      return;
+    }
+    // User is logged in, check if they have a grade selected
+    const profile = await getUserProfile(user.uid);
+    if (!profile) {
+      await createUserProfile(user.uid, {
+        displayName: user.displayName || "",
+        photoURL: user.photoURL || "",
+      });
+      setShowGradeSelect(true);
+    } else if (!profile.grade) {
+      setShowGradeSelect(true);
+    } else {
+      navigate("/dashboard");
+    }
+  }, [user, signInWithGoogle, navigate]);
+
+  const handleGradeSelected = async (grade: number) => {
+    if (!user) return;
+    await setUserGrade(user.uid, grade);
+    setShowGradeSelect(false);
+    navigate("/dashboard");
+  };
 
   return (
     <div className="min-h-screen overflow-hidden relative">
@@ -94,11 +133,11 @@ const Index = () => {
           transition={{ ...smooth, delay: 0.8 }}
           whileHover={{ scale: 1.05, y: -2 }}
           whileTap={{ scale: 0.97 }}
-          onClick={() => navigate("/grades")}
+          onClick={handleCTA}
           className="gradient-purple-card text-primary-foreground rounded-full px-10 py-4 sm:px-14 sm:py-5 text-base sm:text-xl font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(270,75%,55%,0.35)] hover:shadow-[0_16px_60px_hsl(335,80%,58%,0.4)] transition-shadow duration-500 pulse-glow"
         >
           <Rocket className="h-5 w-5" />
-          Vào lớp ngay
+          {user ? "Vào lớp ngay" : "Đăng nhập & vào lớp"}
           <ArrowRight className="h-5 w-5" />
         </motion.button>
       </section>
@@ -266,10 +305,11 @@ const Index = () => {
           <motion.button
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.97 }}
+            onClick={handleCTA}
             className="bg-foreground text-background rounded-full px-10 py-5 text-lg font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(260,30%,15%,0.2)] hover:shadow-[0_18px_50px_hsl(260,30%,15%,0.3)] transition-all duration-500"
           >
             <Flame className="h-5 w-5" />
-            Đăng nhập để bắt đầu
+            {user ? "Vào trang cá nhân" : "Đăng nhập để bắt đầu"}
           </motion.button>
         </motion.div>
       </section>
@@ -280,6 +320,9 @@ const Index = () => {
           © 2026 Học tiếng Anh với cô Yến · Thiết kế dành riêng cho học sinh lớp 6–10 ❤️
         </p>
       </footer>
+
+      {/* Grade Select Dialog */}
+      <GradeSelectDialog open={showGradeSelect} onSelect={handleGradeSelected} />
     </div>
   );
 };

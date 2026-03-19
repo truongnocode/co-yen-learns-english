@@ -12,12 +12,12 @@ const Index = () => {
       <Navbar />
 
       {/* Announcement Banner */}
-      <div className="pt-28 pb-4 flex justify-center px-4">
+      <div className="pt-32 pb-6 flex justify-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-card/60 backdrop-blur-sm rounded-full px-5 py-2.5 flex items-center gap-3 border border-white/50 shadow-sm"
+          className="bg-card/50 backdrop-blur-sm rounded-full px-5 py-2.5 flex items-center gap-3 border border-white/40 shadow-sm"
         >
           <span className="bg-accent text-accent-foreground text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
             Thông báo
@@ -32,8 +32,8 @@ const Index = () => {
         </motion.div>
       </div>
 
-      {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-5 pt-8 pb-16 text-center">
+      {/* Hero Section — more spacing */}
+      <section className="max-w-4xl mx-auto px-5 pt-10 pb-24 text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const Index = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, type: "spring", stiffness: 100 }}
-          className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 gradient-text italic"
+          className="font-display font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-8 gradient-text italic"
         >
           Vui Chơi Đua Top.
         </motion.h1>
@@ -54,7 +54,7 @@ const Index = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed"
+          className="text-muted-foreground text-base sm:text-lg max-w-lg mx-auto mb-12 leading-relaxed"
         >
           Hệ thống bài tập, flashcard và trò chơi tương tác độc quyền dành riêng
           cho học sinh của cô Yến. Các em hãy đăng nhập để xem nhiệm vụ hôm nay nhé!
@@ -73,17 +73,18 @@ const Index = () => {
         </motion.button>
       </section>
 
-      {/* Feature Bento Grid */}
-      <section className="max-w-5xl mx-auto px-5 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* Feature Bento Grid — wider gaps, hover scale */}
+      <section className="max-w-5xl mx-auto px-5 pb-28">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Large card - Flashcard */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.03 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.1, type: "spring", stiffness: 300 }}
             onClick={() => navigate("/grades")}
-            className="md:col-span-2 gradient-purple-card rounded-3xl p-7 sm:p-8 text-primary-foreground relative overflow-hidden cursor-pointer group min-h-[220px] flex flex-col justify-between"
+            className="md:col-span-2 gradient-purple-card rounded-3xl p-7 sm:p-9 text-primary-foreground relative overflow-hidden cursor-pointer group min-h-[240px] flex flex-col justify-between will-change-transform"
           >
             <div className="absolute top-5 left-6 w-11 h-11 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
               <BookOpen className="h-5 w-5" />
@@ -97,10 +98,10 @@ const Index = () => {
               <h3 className="font-display font-bold text-2xl sm:text-3xl mb-2">
                 Ôn tập từ vựng mỗi ngày
               </h3>
-              <p className="text-white/80 text-sm leading-relaxed mb-4">
+              <p className="text-white/75 text-sm leading-relaxed mb-4">
                 Lật thẻ Flashcard thông minh để nhớ lại các từ vựng cô đã dạy trên lớp, kèm phiên âm chuẩn.
               </p>
-              <span className="text-white/90 text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              <span className="text-white/90 text-sm font-medium inline-flex items-center gap-1 group-hover:gap-2.5 transition-all">
                 Vào ôn tập ngay <ArrowRight className="h-4 w-4" />
               </span>
             </div>
@@ -110,9 +111,10 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.04 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="bg-card rounded-3xl p-7 border border-white/60 shadow-lg cursor-pointer group hover:shadow-xl transition-shadow"
+            transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
+            className="bg-card/80 backdrop-blur-sm rounded-3xl p-7 border border-white/50 shadow-md cursor-pointer will-change-transform"
           >
             <div className="w-11 h-11 rounded-2xl bg-accent/10 flex items-center justify-center mb-5">
               <Trophy className="h-5 w-5 text-accent" />
@@ -137,9 +139,10 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.04 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="bg-card rounded-3xl p-7 border border-white/60 shadow-lg cursor-pointer group hover:shadow-xl transition-shadow"
+            transition={{ delay: 0.3, type: "spring", stiffness: 300 }}
+            className="bg-card/80 backdrop-blur-sm rounded-3xl p-7 border border-white/50 shadow-md cursor-pointer will-change-transform"
           >
             <div className="w-11 h-11 rounded-2xl bg-primary/10 flex items-center justify-center mb-5">
               <Zap className="h-5 w-5 text-primary" />
@@ -159,11 +162,12 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.03 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="md:col-span-2 gradient-orange-card rounded-3xl p-7 sm:p-8 text-white relative overflow-hidden cursor-pointer group min-h-[200px] flex flex-col justify-between"
+            transition={{ delay: 0.4, type: "spring", stiffness: 300 }}
+            className="md:col-span-2 gradient-orange-card rounded-3xl p-7 sm:p-9 text-white relative overflow-hidden cursor-pointer group min-h-[220px] flex flex-col justify-between will-change-transform"
           >
-            <div className="absolute right-6 bottom-6 flex items-end gap-1 opacity-40">
+            <div className="absolute right-6 bottom-6 flex items-end gap-1 opacity-30">
               {[20, 35, 50, 30, 45, 25, 40, 55, 35, 20, 45, 30].map((h, i) => (
                 <div key={i} className="w-2 bg-white/60 rounded-full" style={{ height: `${h}px` }} />
               ))}
@@ -173,14 +177,14 @@ const Index = () => {
             </div>
             <div className="mt-4 relative z-10 max-w-[65%]">
               <h3 className="font-display font-bold text-2xl sm:text-3xl mb-2">Luyện phát âm chuẩn</h3>
-              <p className="text-white/80 text-sm leading-relaxed mb-4">
+              <p className="text-white/75 text-sm leading-relaxed mb-4">
                 Nghe phiên âm chuẩn và luyện tập chính tả để nhớ lâu và đọc đúng.
               </p>
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => navigate("/grades")}
-                className="bg-card text-accent rounded-full px-5 py-2.5 text-sm font-bold shadow-md"
+                className="bg-card/90 backdrop-blur-sm text-accent rounded-full px-5 py-2.5 text-sm font-bold shadow-md"
               >
                 Vào làm bài chính tả
               </motion.button>
@@ -190,7 +194,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="max-w-3xl mx-auto px-5 pb-24 text-center">
+      <section className="max-w-3xl mx-auto px-5 pb-28 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -203,7 +207,7 @@ const Index = () => {
           <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl text-foreground mb-4">
             Các em đã sẵn sàng làm bài chưa?
           </h2>
-          <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-8 leading-relaxed">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto mb-10 leading-relaxed">
             Cô Yến đã cập nhật đầy đủ bài tập và từ vựng mới cho các lớp. Các em nhớ
             hoàn thành nhiệm vụ trước hạn chót để nhận thưởng nhé!
           </p>
@@ -219,8 +223,8 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/40 py-8 text-center">
-        <p className="text-sm text-muted-foreground">
+      <footer className="border-t border-white/30 py-10 text-center">
+        <p className="text-sm text-muted-foreground/70">
           © 2026 Học tiếng Anh với cô Yến. Thiết kế dành riêng cho học sinh lớp 1–9.
         </p>
       </footer>

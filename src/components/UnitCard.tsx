@@ -10,9 +10,9 @@ interface UnitCardProps {
 }
 
 const modes = [
-  { key: "flashcard", label: "Flashcard", icon: BookOpen, color: "bg-accent text-accent-foreground" },
-  { key: "quiz", label: "Trắc nghiệm", icon: Brain, color: "bg-primary text-primary-foreground" },
-  { key: "spelling", label: "Chính tả", icon: Pencil, color: "bg-success text-success-foreground" },
+  { key: "flashcard", label: "Flashcard", icon: BookOpen, gradient: "gradient-accent" },
+  { key: "quiz", label: "Trắc nghiệm", icon: Brain, gradient: "gradient-primary" },
+  { key: "spelling", label: "Chính tả", icon: Pencil, gradient: "gradient-success" },
 ];
 
 const UnitCard = ({ unit, grade, index }: UnitCardProps) => {
@@ -20,29 +20,30 @@ const UnitCard = ({ unit, grade, index }: UnitCardProps) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.08, type: "spring", stiffness: 260 }}
-      className="bg-card rounded-2xl p-5 shadow-card"
+      transition={{ delay: index * 0.1, type: "spring", stiffness: 260 }}
+      className="gradient-card rounded-3xl p-5 shadow-card hover:shadow-card-hover transition-all duration-300 border border-white/60"
     >
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex items-center justify-between mb-4">
         <div>
-          <h3 className="font-display font-bold text-foreground">{unit.name}</h3>
+          <h3 className="font-display font-bold text-lg text-foreground">{unit.name}</h3>
           <p className="text-sm text-muted-foreground">{unit.topic}</p>
         </div>
-        <span className="text-xs bg-muted text-muted-foreground px-2 py-1 rounded-full">
+        <span className="text-xs gradient-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold shadow-sm">
           {unit.words.length} từ
         </span>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2.5">
         {modes.map((mode) => (
           <motion.button
             key={mode.key}
+            whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate(`/learn/${unit.id}/${mode.key}`)}
-            className={`${mode.color} flex-1 rounded-xl py-2.5 px-2 flex flex-col items-center gap-1 text-xs font-medium font-display transition-transform`}
+            className={`${mode.gradient} text-white flex-1 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md hover:shadow-lg transition-shadow`}
           >
-            <mode.icon className="h-4 w-4" />
+            <mode.icon className="h-5 w-5" />
             {mode.label}
           </motion.button>
         ))}

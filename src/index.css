@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 220 20% 96%;
+    --background: 230 25% 95%;
     --foreground: 215 28% 17%;
 
     --card: 0 0% 100%;
@@ -17,6 +17,7 @@
 
     --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
+    --primary-glow: 260 80% 72%;
 
     --secondary: 220 14% 96%;
     --secondary-foreground: 215 28% 17%;
@@ -26,9 +27,11 @@
 
     --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
+    --accent-glow: 28 95% 55%;
 
     --success: 142 71% 45%;
     --success-foreground: 0 0% 100%;
+    --success-glow: 152 76% 50%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -39,17 +42,23 @@
 
     --radius: 1rem;
 
-    /* Grade colors */
-    --grade-elementary: 340 82% 92%;
-    --grade-elementary-fg: 340 65% 47%;
-    --grade-middle: 199 89% 90%;
-    --grade-middle-fg: 199 69% 40%;
+    /* Vibrant grade palette */
+    --grade-1: 340 82% 52%;
+    --grade-2: 350 80% 58%;
+    --grade-3: 24 95% 53%;
+    --grade-4: 38 92% 50%;
+    --grade-5: 48 96% 53%;
+    --grade-6: 199 89% 48%;
+    --grade-7: 217 91% 60%;
+    --grade-8: 239 84% 67%;
+    --grade-9: 270 76% 60%;
 
     /* Glassmorphism */
-    --glass-bg: 0 0% 100% / 0.7;
-    --glass-border: 0 0% 100% / 0.3;
-    --shadow-card: 0 4px 24px -4px hsl(220 20% 80% / 0.5);
-    --shadow-card-hover: 0 8px 32px -4px hsl(220 20% 70% / 0.5);
+    --glass-bg: 0 0% 100% / 0.6;
+    --glass-border: 0 0% 100% / 0.4;
+    --shadow-card: 0 4px 24px -4px hsl(230 30% 70% / 0.35);
+    --shadow-card-hover: 0 12px 40px -8px hsl(230 30% 60% / 0.45);
+    --shadow-glow: 0 0 30px -5px hsl(239 84% 67% / 0.3);
 
     --font-display: 'Quicksand', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -82,9 +91,75 @@
 
 @layer utilities {
   .glass-card {
-    @apply bg-card/80 backdrop-blur-xl border border-white/30 shadow-card;
+    @apply bg-card/70 backdrop-blur-2xl border border-white/40 shadow-card;
   }
+
   .text-display {
     font-family: var(--font-display);
   }
+
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(239, 84%, 67%), hsl(260, 80%, 72%));
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(38, 92%, 50%), hsl(28, 95%, 55%));
+  }
+
+  .gradient-success {
+    background: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(152, 76%, 50%));
+  }
+
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(239, 84%, 67%) 0%, hsl(260, 80%, 72%) 50%, hsl(280, 70%, 65%) 100%);
+  }
+
+  .gradient-warm {
+    background: linear-gradient(135deg, hsl(350, 80%, 58%) 0%, hsl(38, 92%, 50%) 100%);
+  }
+
+  .gradient-cool {
+    background: linear-gradient(135deg, hsl(199, 89%, 48%) 0%, hsl(239, 84%, 67%) 100%);
+  }
+
+  .gradient-card {
+    background: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(230, 25%, 97%) 100%);
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, transparent, hsl(0, 0%, 100%, 0.4), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .float-animation-delay {
+    animation: float 6s ease-in-out 2s infinite;
+  }
+
+  .float-animation-slow {
+    animation: float 8s ease-in-out 1s infinite;
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px -5px hsl(239, 84%, 67%, 0.3); }
+  50% { box-shadow: 0 0 40px -5px hsl(239, 84%, 67%, 0.6); }
 }

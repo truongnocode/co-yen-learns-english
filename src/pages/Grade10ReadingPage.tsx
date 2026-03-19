@@ -1,14 +1,41 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, FileText, CheckCircle2, XCircle, BookOpen, Eye, PenTool, Send } from "lucide-react";
+import { ArrowLeft, FileText, CheckCircle2, XCircle, BookOpen, Eye, PenTool, Send, Home, Trophy } from "lucide-react";
 import { loadGrade10Reading, loadGrade10Writing } from "@/data/loader";
 import { type MCQuestion } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
-import Navbar from "@/components/Navbar";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import PageShell from "@/components/PageShell";
 
-// Reusable MCQ quiz component
+const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
+
+// Shared result
+const ResultCard = ({ score, total, onRetry }: { score: number; total: number; onRetry: () => void }) => {
+  const pct = Math.round((score / total) * 100);
+  return (
+    <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
+      className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30 text-center">
+      <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
+      <div className="grid grid-cols-2 gap-3 mb-4 max-w-xs mx-auto">
+        <div className="bg-success/10 border border-success/20 rounded-2xl p-3 text-center">
+          <span className="font-display font-extrabold text-2xl text-success">{score}</span>
+          <span className="text-xs font-bold text-success block">Đúng</span>
+        </div>
+        <div className="bg-destructive/10 border border-destructive/20 rounded-2xl p-3 text-center">
+          <span className="font-display font-extrabold text-2xl text-destructive">{total - score}</span>
+          <span className="text-xs font-bold text-destructive block">Sai</span>
+        </div>
+      </div>
+      <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3 mb-6 max-w-xs mx-auto">
+        <Trophy className="h-5 w-5 text-energy" />
+        <span className="font-display font-extrabold text-lg text-energy">+{score * 10} XP</span>
+      </div>
+      <motion.button whileTap={{ scale: 0.95 }} onClick={onRetry}
+        className="gradient-primary text-white px-6 py-3 rounded-2xl font-display font-bold text-sm">Làm lại</motion.button>
+    </motion.div>
+  );
+};
+
 const MCQQuiz = ({ questions, title }: { questions: MCQuestion[]; title?: string }) => {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
@@ -16,28 +43,20 @@ const MCQQuiz = ({ questions, title }: { questions: MCQuestion[]; title?: string
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const q = questions[current];
-  const progress = ((current + 1) / questions.length) * 100;
 
-  if (finished) {
-    const pct = Math.round((score / questions.length) * 100);
-    return (
-      <div className="gradient-card rounded-3xl p-8 shadow-card border border-white/60 text-center">
-        <div className="text-5xl mb-4">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
-        {title && <p className="text-sm text-muted-foreground mb-2">{title}</p>}
-        <p className="text-4xl font-display font-bold text-primary my-4">{score}/{questions.length}</p>
-        <button onClick={() => { setCurrent(0); setSelected(null); setSubmitted(false); setScore(0); setFinished(false); }} className="gradient-primary text-primary-foreground px-6 py-3 rounded-2xl font-bold text-sm">Làm lại</button>
-      </div>
-    );
-  }
+  if (finished) return <ResultCard score={score} total={questions.length} onRetry={() => { setCurrent(0); setSelected(null); setSubmitted(false); setScore(0); setFinished(false); }} />;
 
   return (
     <div>
-      <Progress value={progress} className="h-2 rounded-full mb-2" />
-      <p className="text-xs text-muted-foreground text-right mb-4">Câu {current + 1}/{questions.length}</p>
-      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="gradient-card rounded-3xl p-6 shadow-card border border-white/60">
-        {(q as any).sign && <p className="text-sm bg-muted rounded-xl p-3 mb-3 font-medium">🪧 {(q as any).sign}</p>}
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs font-bold text-muted-foreground">Câu {current + 1} / {questions.length}</span>
+      </div>
+      <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
+      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
+        className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
+        {(q as any).sign && <p className="text-sm bg-muted/50 rounded-xl p-3 mb-3 font-medium">🪧 {(q as any).sign}</p>}
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed">{q.q}</p>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5">
           {q.opts.map((opt, idx) => {
             let cls = "bg-secondary/50 border-2 border-transparent text-foreground hover:border-primary/30";
             if (submitted) {
@@ -54,9 +73,11 @@ const MCQQuiz = ({ questions, title }: { questions: MCQuestion[]; title?: string
         </div>
         <div className="mt-6">
           {!submitted ? (
-            <button onClick={() => { if (selected === null) return; setSubmitted(true); if (selected === q.ans) setScore(s => s + 1); }} disabled={selected === null} className={`w-full py-3.5 rounded-2xl font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-primary-foreground"}`}>Kiểm tra</button>
+            <button onClick={() => { if (selected === null) return; setSubmitted(true); if (selected === q.ans) setScore(s => s + 1); }} disabled={selected === null}
+              className={`w-full py-3.5 rounded-2xl font-display font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-white"}`}>Kiểm tra</button>
           ) : (
-            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setSelected(null); setSubmitted(false); } else setFinished(true); }} className="w-full py-3.5 rounded-2xl font-bold text-sm gradient-accent text-accent-foreground">
+            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setSelected(null); setSubmitted(false); } else setFinished(true); }}
+              className="w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
               {current < questions.length - 1 ? "Câu tiếp →" : "Xem kết quả"}
             </button>
           )}
@@ -72,7 +93,6 @@ const MCQQuiz = ({ questions, title }: { questions: MCQuestion[]; title?: string
   );
 };
 
-// Text input for writing exercises
 const TextInputExercise = ({ questions, instruction }: { questions: { q: string; answer: string[] }[]; instruction: string }) => {
   const [current, setCurrent] = useState(0);
   const [input, setInput] = useState("");
@@ -82,30 +102,25 @@ const TextInputExercise = ({ questions, instruction }: { questions: { q: string;
   const q = questions[current];
   const isCorrect = q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim());
 
-  if (finished) {
-    const pct = Math.round((score / questions.length) * 100);
-    return (
-      <div className="gradient-card rounded-3xl p-8 shadow-card border border-white/60 text-center">
-        <div className="text-5xl mb-4">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
-        <p className="text-4xl font-display font-bold text-primary my-4">{score}/{questions.length}</p>
-        <button onClick={() => { setCurrent(0); setInput(""); setSubmitted(false); setScore(0); setFinished(false); }} className="gradient-primary text-primary-foreground px-6 py-3 rounded-2xl font-bold text-sm">Làm lại</button>
-      </div>
-    );
-  }
+  if (finished) return <ResultCard score={score} total={questions.length} onRetry={() => { setCurrent(0); setInput(""); setSubmitted(false); setScore(0); setFinished(false); }} />;
 
   return (
     <div>
-      <p className="text-xs text-muted-foreground italic mb-4">{instruction}</p>
-      <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-2" />
-      <p className="text-xs text-muted-foreground text-right mb-4">Câu {current + 1}/{questions.length}</p>
-      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="gradient-card rounded-3xl p-6 shadow-card border border-white/60">
+      <p className="text-xs text-muted-foreground italic mb-3">{instruction}</p>
+      <div className="flex items-center justify-between mb-1.5">
+        <span className="text-xs font-bold text-muted-foreground">Câu {current + 1} / {questions.length}</span>
+      </div>
+      <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
+      <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
+        className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed whitespace-pre-line">{q.q}</p>
         <div className="flex gap-2">
           <input value={input} onChange={e => !submitted && setInput(e.target.value)}
             onKeyDown={e => { if (e.key === "Enter" && !submitted && input.trim()) { setSubmitted(true); if (q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim())) setScore(s => s + 1); } }}
             placeholder="Nhập câu trả lời..." disabled={submitted}
-            className="flex-1 bg-secondary/50 border-2 border-border rounded-2xl px-4 py-3 text-foreground font-medium focus:outline-none focus:border-primary transition-colors" />
-          {!submitted && <button onClick={() => { if (!input.trim()) return; setSubmitted(true); if (q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim())) setScore(s => s + 1); }} className="gradient-primary text-primary-foreground px-4 py-3 rounded-2xl"><Send className="h-5 w-5" /></button>}
+            className="flex-1 bg-card/80 border-2 border-border/30 rounded-2xl px-4 py-3 text-foreground font-medium focus:outline-none focus:border-primary transition-colors" />
+          {!submitted && <button onClick={() => { if (!input.trim()) return; setSubmitted(true); if (q.answer.some(a => a.toLowerCase().trim() === input.toLowerCase().trim())) setScore(s => s + 1); }}
+            className="gradient-primary text-white px-4 py-3 rounded-2xl"><Send className="h-5 w-5" /></button>}
         </div>
         {submitted && (
           <div className="mt-4">
@@ -114,7 +129,8 @@ const TextInputExercise = ({ questions, instruction }: { questions: { q: string;
               {isCorrect ? "Chính xác!" : "Chưa đúng"}
             </div>
             {!isCorrect && <p className="text-sm text-muted-foreground mt-1">Đáp án: <span className="font-bold text-foreground">{q.answer[0]}</span></p>}
-            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setInput(""); setSubmitted(false); } else setFinished(true); }} className="mt-4 w-full py-3.5 rounded-2xl font-bold text-sm gradient-accent text-accent-foreground">
+            <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setInput(""); setSubmitted(false); } else setFinished(true); }}
+              className="mt-4 w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
               {current < questions.length - 1 ? "Câu tiếp →" : "Xem kết quả"}
             </button>
           </div>
@@ -138,7 +154,7 @@ const Grade10ReadingPage = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Đang tải...</div>;
+  if (loading) return <PageShell><div className="flex items-center justify-center pt-40 text-muted-foreground">Đang tải...</div></PageShell>;
 
   const sections = [
     { key: "signs", label: "Đọc biển báo", icon: Eye, desc: `${readingData?.signs ? Object.values(readingData.signs).reduce((sum: number, ex: any) => sum + (ex.questions?.length || 0), 0) : 0} câu`, color: "gradient-primary" },
@@ -152,41 +168,56 @@ const Grade10ReadingPage = () => {
 
   if (!activeSection) {
     return (
-      <div className="min-h-screen gradient-hero">
-        <Navbar />
+      <PageShell>
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
-          <button onClick={() => navigate("/grade/10")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 mb-4 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Lớp 10
-          </button>
-          <div className="gradient-accent text-accent-foreground rounded-3xl p-6 mb-6">
-            <FileText className="h-8 w-8 mb-2 opacity-80" />
-            <h1 className="font-display font-bold text-2xl">Đọc hiểu & Viết</h1>
-            <p className="text-accent-foreground/70 text-sm">Luyện các kỹ năng đọc và viết</p>
+          <div className="flex items-center gap-3 mb-6">
+            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
+              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              <ArrowLeft className="h-5 w-5" />
+            </motion.button>
+            <div className="flex-1">
+              <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
+              <p className="text-xs text-muted-foreground">Đọc hiểu & Viết</p>
+            </div>
+            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
+              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              <Home className="h-5 w-5" />
+            </motion.button>
           </div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}
+            className="gradient-accent text-white rounded-3xl p-6 mb-6 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
+            <FileText className="h-8 w-8 mb-2 opacity-80 relative z-10" />
+            <h1 className="font-display font-extrabold text-2xl relative z-10">Đọc hiểu & Viết</h1>
+            <p className="text-white/70 text-sm relative z-10">Luyện các kỹ năng đọc và viết</p>
+          </motion.div>
+
           <div className="flex flex-col gap-3">
             {sections.map((sec, i) => (
-              <motion.button key={sec.key} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}
+              <motion.button key={sec.key}
+                initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ ...smooth, delay: i * 0.04 }}
                 whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}
                 onClick={() => { setActiveSection(sec.key); setActiveSubIdx(0); }}
-                className="gradient-card rounded-2xl p-5 text-left border border-white/60 shadow-card hover:shadow-card-hover transition-all">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className={`${sec.color} text-white p-2.5 rounded-xl`}><sec.icon className="h-5 w-5" /></div>
-                    <div>
-                      <h3 className="font-display font-bold text-foreground">{sec.label}</h3>
-                      <p className="text-xs text-muted-foreground">{sec.desc}</p>
-                    </div>
+                className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 text-left border border-border/30 shadow-lg hover:shadow-xl transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={`${sec.color} text-white p-2.5 rounded-xl`}><sec.icon className="h-5 w-5" /></div>
+                  <div>
+                    <h3 className="font-display font-bold text-foreground">{sec.label}</h3>
+                    <p className="text-xs text-muted-foreground">{sec.desc}</p>
                   </div>
                 </div>
               </motion.button>
             ))}
           </div>
         </div>
-      </div>
+      </PageShell>
     );
   }
 
-  // Render active section content
   const renderContent = () => {
     if (activeSection === "signs") {
       const exercises = readingData.signs;
@@ -197,7 +228,7 @@ const Grade10ReadingPage = () => {
           {exKeys.length > 1 && (
             <div className="flex gap-2 mb-4 flex-wrap">
               {exKeys.map((k, i) => (
-                <button key={k} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"}`}>Phần {i + 1}</button>
+                <button key={k} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-white" : "bg-card/80 border border-border/30 text-muted-foreground"}`}>Phần {i + 1}</button>
               ))}
             </div>
           )}
@@ -205,7 +236,6 @@ const Grade10ReadingPage = () => {
         </div>
       );
     }
-
     if (activeSection === "cloze") {
       const items = readingData.cloze;
       const item = items[activeSubIdx];
@@ -214,7 +244,7 @@ const Grade10ReadingPage = () => {
           {items.length > 1 && (
             <div className="flex gap-2 mb-4 flex-wrap">
               {items.map((it: any, i: number) => (
-                <button key={i} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"}`}>{it.title?.substring(0, 20) || `Bài ${i + 1}`}</button>
+                <button key={i} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-white" : "bg-card/80 border border-border/30 text-muted-foreground"}`}>{it.title?.substring(0, 20) || `Bài ${i + 1}`}</button>
               ))}
             </div>
           )}
@@ -223,7 +253,6 @@ const Grade10ReadingPage = () => {
         </div>
       );
     }
-
     if (activeSection === "comprehension") {
       const items = readingData.comprehension;
       const item = items[activeSubIdx];
@@ -232,44 +261,42 @@ const Grade10ReadingPage = () => {
           {items.length > 1 && (
             <div className="flex gap-2 mb-4 flex-wrap">
               {items.map((it: any, i: number) => (
-                <button key={i} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-primary-foreground" : "bg-secondary text-secondary-foreground"}`}>{it.title?.substring(0, 25) || `Bài ${i + 1}`}</button>
+                <button key={i} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-white" : "bg-card/80 border border-border/30 text-muted-foreground"}`}>{it.title?.substring(0, 25) || `Bài ${i + 1}`}</button>
               ))}
             </div>
           )}
           {item.title && <h3 className="font-display font-bold text-foreground mb-2">{item.title}</h3>}
-          {item.passage && <div className="bg-secondary/30 rounded-2xl p-4 mb-4 text-sm text-foreground leading-relaxed max-h-60 overflow-y-auto">{item.passage}</div>}
+          {item.passage && <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-sm text-foreground leading-relaxed max-h-60 overflow-y-auto border border-border/20">{item.passage}</div>}
           <MCQQuiz key={activeSubIdx} questions={item.questions} />
         </div>
       );
     }
-
-    // Writing sections
     if (activeSection === "letterArranging" || activeSection === "paragraphArranging") {
       const sec = writingData[activeSection];
       return <MCQQuiz questions={sec.questions} title={sec.instruction} />;
     }
-
     if (activeSection === "sentenceArranging" || activeSection === "sentenceRewriting") {
       const sec = writingData[activeSection];
       return <TextInputExercise questions={sec.questions} instruction={sec.instruction} />;
     }
-
     return null;
   };
 
   const currentLabel = sections.find(s => s.key === activeSection)?.label || "";
 
   return (
-    <div className="min-h-screen gradient-hero">
-      <Navbar />
+    <PageShell>
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
-        <button onClick={() => setActiveSection(null)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 mb-4 transition-colors">
-          <ArrowLeft className="h-4 w-4" /> Đọc hiểu & Viết
-        </button>
-        <h1 className="font-display font-bold text-2xl text-foreground mb-4">{currentLabel}</h1>
+        <div className="flex items-center gap-3 mb-5">
+          <motion.button whileTap={{ scale: 0.9 }} onClick={() => setActiveSection(null)}
+            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            <ArrowLeft className="h-5 w-5" />
+          </motion.button>
+          <p className="font-display font-extrabold text-sm text-foreground flex-1">{currentLabel}</p>
+        </div>
         {renderContent()}
       </div>
-    </div>
+    </PageShell>
   );
 };
 

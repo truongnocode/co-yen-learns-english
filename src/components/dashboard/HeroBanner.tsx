@@ -24,10 +24,10 @@ const HeroBanner = () => {
       <div className="absolute bottom-0 left-0 w-40 h-40 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
 
       <div className="relative z-10 flex-1">
-        <h1 className="font-display font-extrabold text-3xl sm:text-4xl mb-3 drop-shadow-sm">
+        <h1 className="font-display font-extrabold text-2xl sm:text-3xl mb-1.5 drop-shadow-sm">
           Chào {name}! 👋
         </h1>
-        <p className="text-white/80 text-sm sm:text-base leading-relaxed max-w-md mb-5 font-medium">
+        <p className="text-white/80 text-xs sm:text-sm leading-relaxed max-w-md mb-3 font-medium">
           Hôm nay chúng ta sẽ tiếp tục luyện tập bài <strong className="text-white">Unit 1: My New School</strong> nhé. Em đã sẵn sàng chưa?
         </p>
         <motion.button

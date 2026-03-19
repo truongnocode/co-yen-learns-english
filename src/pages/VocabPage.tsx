@@ -235,7 +235,7 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
   return (
     <div className="space-y-4">
       {/* Word type filter tabs */}
-      <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-thin">
+      <div className="flex flex-wrap gap-2">
         {types.map((type) => {
           const c = wordTypeColors[type] || defaultTypeColor;
           const isActive = type === activeType;
@@ -243,7 +243,7 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
             <button
               key={type}
               onClick={() => setActiveType(type)}
-              className={`shrink-0 flex items-center gap-1.5 px-4 py-2 rounded-xl font-display font-bold text-xs transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-display font-bold text-xs transition-all ${
                 isActive
                   ? `${c.bg} text-white shadow-md scale-105`
                   : "bg-card/80 backdrop-blur-xl border border-border/50 text-muted-foreground hover:text-foreground hover:border-primary/30"
@@ -251,7 +251,7 @@ const VocabListTab = ({ words }: { words: VocabItem[] }) => {
             >
               <span>{c.icon}</span>
               <span>{type}</span>
-              <span className={`ml-1 text-[10px] ${isActive ? "opacity-80" : "opacity-50"}`}>({grouped[type].length})</span>
+              <span className={`text-[10px] ${isActive ? "opacity-80" : "opacity-50"}`}>({grouped[type].length})</span>
             </button>
           );
         })}

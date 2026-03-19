@@ -66,6 +66,31 @@
 @layer base {
   * {
     @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(270 75% 55% / 0.25) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(270 75% 55% / 0.2);
+    border-radius: 9999px;
+    transition: background 0.2s;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(270 75% 55% / 0.4);
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background: hsl(270 75% 55% / 0.55);
   }
 
   body {

@@ -41,7 +41,7 @@ const LearningOverview = ({ progress }: Props) => {
       transition={{ ...smooth, delay: 0.25 }}
       className="flex flex-col gap-4"
     >
-      {/* Profile card with integrated stats */}
+      {/* Single unified card */}
       <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-5">
         {/* Top row: actions */}
         <div className="flex items-center justify-between mb-4">
@@ -89,7 +89,7 @@ const LearningOverview = ({ progress }: Props) => {
         </div>
 
         {/* Stats row: Grade, Streak, XP */}
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 gap-2 mb-5">
           <div className="bg-muted/40 rounded-xl px-2 py-2.5 text-center">
             <span className="text-lg block mb-0.5">{cfg.emoji}</span>
             <span className="text-[10px] font-bold text-muted-foreground block">{cfg.label}</span>
@@ -109,24 +109,21 @@ const LearningOverview = ({ progress }: Props) => {
             <span className="text-[10px] font-bold text-muted-foreground block">XP</span>
           </div>
         </div>
-      </div>
 
-      {/* Skill progress */}
-      <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-5">
-        <h3 className="font-display font-extrabold text-sm text-foreground mb-4 flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg gradient-cool flex items-center justify-center">
-            <Zap className="h-3.5 w-3.5 text-white" />
-          </div>
+        {/* Divider */}
+        <div className="h-px bg-border mb-4" />
+
+        {/* Skill progress inline */}
+        <h3 className="font-display font-extrabold text-xs text-muted-foreground uppercase tracking-wider mb-3">
           Tiến độ kỹ năng
         </h3>
-
-        <div className="space-y-4">
+        <div className="space-y-3">
           {skills.map((skill, i) => (
             <div key={i}>
-              <div className="flex items-center justify-between mb-1.5">
+              <div className="flex items-center justify-between mb-1">
                 <div className="flex items-center gap-2">
-                  <div className={`w-6 h-6 rounded-md ${skill.color} flex items-center justify-center`}>
-                    <skill.icon className="h-3 w-3 text-white" />
+                  <div className={`w-5 h-5 rounded-md ${skill.color} flex items-center justify-center`}>
+                    <skill.icon className="h-2.5 w-2.5 text-white" />
                   </div>
                   <span className="text-xs font-bold text-foreground">{skill.label}</span>
                 </div>
@@ -136,7 +133,7 @@ const LearningOverview = ({ progress }: Props) => {
                   {skill.pct}%
                 </span>
               </div>
-              <div className={`w-full h-2.5 ${skill.trackColor} rounded-full overflow-hidden`}>
+              <div className={`w-full h-2 ${skill.trackColor} rounded-full overflow-hidden`}>
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.pct}%` }}
@@ -146,42 +143,6 @@ const LearningOverview = ({ progress }: Props) => {
               </div>
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* Leaderboard by grade block */}
-      <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-5">
-        <h3 className="font-display font-extrabold text-sm text-foreground mb-4 flex items-center gap-2">
-          🏆 Xếp hạng Khối {grade}
-        </h3>
-        <div className="space-y-2.5">
-          {[
-            { rank: 1, name: "Minh Tuấn", xp: 1250, color: "gradient-energy", medal: "🥇" },
-            { rank: 2, name: "Thu Hà", xp: 1100, color: "gradient-cool", medal: "🥈" },
-            { rank: 3, name: "Đức Anh", xp: 980, color: "gradient-accent", medal: "🥉" },
-          ].map((student) => (
-            <div key={student.rank} className="flex items-center gap-2.5 bg-muted/30 rounded-xl px-3 py-2">
-              <span className="text-sm">{student.medal}</span>
-              <div className={`w-7 h-7 rounded-full ${student.color} flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0`}>
-                {student.name[0]}
-              </div>
-              <span className="text-xs font-bold text-foreground truncate flex-1">{student.name}</span>
-              <span className="text-[11px] font-extrabold text-accent">{student.xp} XP</span>
-            </div>
-          ))}
-          {/* Current user rank */}
-          <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2 border border-primary/20">
-            <span className="text-xs font-bold text-muted-foreground w-4 text-center">—</span>
-            <div className="w-7 h-7 rounded-full gradient-purple-card flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0 overflow-hidden">
-              {user?.photoURL ? (
-                <img src={user.photoURL} alt="" className="w-full h-full object-cover rounded-full" referrerPolicy="no-referrer" />
-              ) : (
-                (user?.displayName?.[0] || "?")
-              )}
-            </div>
-            <span className="text-xs font-bold text-primary truncate flex-1">Bạn</span>
-            <span className="text-[11px] font-extrabold text-primary">{xp} XP</span>
-          </div>
         </div>
       </div>
     </motion.div>

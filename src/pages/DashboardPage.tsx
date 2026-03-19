@@ -9,6 +9,7 @@ import HeroBanner from "@/components/dashboard/HeroBanner";
 import LearningPath from "@/components/dashboard/LearningPath";
 import ReviewCorner from "@/components/dashboard/ReviewCorner";
 import LearningOverview from "@/components/dashboard/LearningOverview";
+import Leaderboard from "@/components/dashboard/Leaderboard";
 
 const DashboardPage = () => {
   const navigate = useNavigate();
@@ -74,6 +75,7 @@ const DashboardPage = () => {
         <aside className="hidden xl:flex flex-col w-80 shrink-0 py-6 pr-5 gap-6 overflow-y-auto max-h-screen sticky top-0">
           <LearningOverview progress={progress} />
           <ReviewCorner />
+          <Leaderboard progress={progress} />
         </aside>
       </div>
 

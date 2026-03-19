@@ -46,36 +46,6 @@ const ReviewCorner = () => {
           </motion.button>
         ))}
       </div>
-
-      {/* Leaderboard */}
-      <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ ...smooth, delay: 0.3 }}
-        className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-2xl p-5"
-      >
-        <h3 className="font-display font-extrabold text-sm text-foreground mb-4 flex items-center gap-2">
-          🏆 Bảng xếp hạng Lớp
-        </h3>
-        <div className="space-y-3">
-          {[
-            { rank: 1, name: "Minh Tuấn", xp: 1250, color: "gradient-energy" },
-            { rank: 2, name: "Thu Hà", xp: 1100, color: "gradient-cool" },
-            { rank: 3, name: "Đức Anh", xp: 980, color: "gradient-accent" },
-          ].map((student) => (
-            <div key={student.rank} className="flex items-center gap-3">
-              <span className="text-sm font-bold text-muted-foreground w-5">{student.rank}</span>
-              <div className={`w-8 h-8 rounded-full ${student.color} flex items-center justify-center text-white text-xs font-bold shadow-sm`}>
-                {student.name[0]}
-              </div>
-              <div className="flex-1 min-w-0">
-                <span className="text-sm font-bold text-foreground truncate block">{student.name}</span>
-              </div>
-              <span className="text-xs font-extrabold text-accent">{student.xp} XP</span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
     </motion.div>
   );
 };

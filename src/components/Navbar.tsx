@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
-import { UserCircle2 } from "lucide-react";
+import { UserCircle2, LogOut } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 const navLinks = [
   { label: "Góc ôn tập", to: "/grades" },
@@ -12,6 +13,7 @@ const navLinks = [
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { user, signInWithGoogle, logout } = useAuth();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -64,16 +66,40 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Login button */}
-        <motion.button
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="bg-foreground text-background rounded-full px-4 py-2 text-xs sm:text-sm font-medium flex items-center gap-2 shadow-md shrink-0"
-        >
-          <UserCircle2 className="h-3.5 w-3.5" />
-          <span className="hidden sm:inline">Đăng nhập học sinh</span>
-          <span className="sm:hidden">Đăng nhập</span>
-        </motion.button>
+        {/* Auth button */}
+        {user ? (
+          <div className="flex items-center gap-3 shrink-0">
+            <img
+              src={user.photoURL || ""}
+              alt={user.displayName || "Avatar"}
+              className="w-8 h-8 rounded-full border-2 border-primary/30 object-cover"
+              referrerPolicy="no-referrer"
+            />
+            <span className="hidden sm:inline text-xs font-medium text-foreground max-w-[100px] truncate">
+              {user.displayName?.split(" ")[0]}
+            </span>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={logout}
+              className="p-2 rounded-full hover:bg-muted/50 text-muted-foreground transition-colors"
+              title="Đăng xuất"
+            >
+              <LogOut className="h-4 w-4" />
+            </motion.button>
+          </div>
+        ) : (
+          <motion.button
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            onClick={signInWithGoogle}
+            className="bg-foreground text-background rounded-full px-4 py-2 text-xs sm:text-sm font-medium flex items-center gap-2 shadow-md shrink-0"
+          >
+            <UserCircle2 className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Đăng nhập học sinh</span>
+            <span className="sm:hidden">Đăng nhập</span>
+          </motion.button>
+        )}
       </div>
     </motion.header>
   );

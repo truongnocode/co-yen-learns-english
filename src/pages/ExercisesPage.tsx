@@ -5,10 +5,13 @@ import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type MCQuestion } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
+import { useAuth } from "@/contexts/AuthContext";
+import { saveQuizResult } from "@/lib/progress";
 
 const ExercisesPage = () => {
   const { gradeId, unitKey } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const grade = Number(gradeId);
   const [unit, setUnit] = useState<SGKUnit | null>(null);
   const [loading, setLoading] = useState(true);
@@ -48,6 +51,11 @@ const ExercisesPage = () => {
         setSelected(null);
       } else {
         setFinished(true);
+        if (user) {
+          const finalAnswers = [...newAnswers];
+          const finalScore = finalAnswers.filter((a, i) => a === exercises[i].ans).length;
+          saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
+        }
       }
     }, 1200);
   };

@@ -5,7 +5,6 @@ import { useAuth } from "@/contexts/AuthContext";
 import { getProgress, type UserProgress } from "@/lib/progress";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
-import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import HeroBanner from "@/components/dashboard/HeroBanner";
 import LearningPath from "@/components/dashboard/LearningPath";
 import ReviewCorner from "@/components/dashboard/ReviewCorner";

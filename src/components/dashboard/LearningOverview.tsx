@@ -45,7 +45,7 @@ const LearningOverview = ({ progress }: Props) => {
         Tổng quan học tập
       </h2>
 
-      <div className="flex flex-col md:flex-row gap-6">
+      <div className="flex flex-col gap-6">
         {/* Profile card */}
         <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-6 flex flex-col items-center w-full md:w-64 shrink-0">
           <div className="relative mb-4">

@@ -137,7 +137,7 @@ const Index = () => {
           className="gradient-purple-card text-primary-foreground rounded-full px-10 py-4 sm:px-14 sm:py-5 text-base sm:text-xl font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(270,75%,55%,0.35)] hover:shadow-[0_16px_60px_hsl(335,80%,58%,0.4)] transition-shadow duration-500 pulse-glow"
         >
           <Rocket className="h-5 w-5" />
-          Vào lớp ngay
+          {user ? "Vào lớp ngay" : "Đăng nhập & vào lớp"}
           <ArrowRight className="h-5 w-5" />
         </motion.button>
       </section>

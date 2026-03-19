@@ -74,6 +74,11 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
   const [finished, setFinished] = useState(false);
 
   const word = words[currentIndex];
+
+  // Auto-read word aloud when card changes
+  useEffect(() => {
+    if (!finished) speak(words[currentIndex].en);
+  }, [currentIndex, finished]);
   const progress = ((currentIndex + 1) / words.length) * 100;
 
   const goToNext = () => {

@@ -1,16 +1,55 @@
+import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, UserCircle2, Star, Flame, Rocket } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import GradeSelectDialog from "@/components/GradeSelectDialog";
+import { useAuth } from "@/contexts/AuthContext";
+import { getUserProfile, createUserProfile, setUserGrade } from "@/lib/progress";
 import foxMascot from "@/assets/fox-mascot.png";
 
 const smooth = { duration: 0.8, ease: [0.22, 1, 0.36, 1] };
 const smoothSlow = { duration: 1, ease: [0.22, 1, 0.36, 1] };
 const smoothCard = { duration: 0.7, ease: [0.22, 1, 0.36, 1] };
-const hoverSmooth = { type: "spring" as const, stiffness: 120, damping: 14 };
 
 const Index = () => {
   const navigate = useNavigate();
+  const { user, signInWithGoogle } = useAuth();
+  const [showGradeSelect, setShowGradeSelect] = useState(false);
+
+  const handleCTA = useCallback(async () => {
+    if (!user) {
+      try {
+        await signInWithGoogle();
+        // After sign-in, check if they have a profile
+        // The onAuthStateChanged will update user, but we need to wait
+        // So we'll handle onboarding in a useEffect-like approach
+      } catch {
+        return;
+      }
+      return;
+    }
+    // User is logged in, check if they have a grade selected
+    const profile = await getUserProfile(user.uid);
+    if (!profile) {
+      await createUserProfile(user.uid, {
+        displayName: user.displayName || "",
+        photoURL: user.photoURL || "",
+      });
+      setShowGradeSelect(true);
+    } else if (!profile.grade) {
+      setShowGradeSelect(true);
+    } else {
+      navigate("/dashboard");
+    }
+  }, [user, signInWithGoogle, navigate]);
+
+  const handleGradeSelected = async (grade: number) => {
+    if (!user) return;
+    await setUserGrade(user.uid, grade);
+    setShowGradeSelect(false);
+    navigate("/dashboard");
+  };
 
   return (
     <div className="min-h-screen overflow-hidden relative">

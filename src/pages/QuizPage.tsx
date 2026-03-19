@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { gradesData, VocabWord } from "@/data/vocabulary";
+import { gradesData } from "@/data/vocabulary";
 import { motion } from "framer-motion";
-import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowLeft, CheckCircle2, XCircle, PartyPopper } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 
 function shuffle<T>(arr: T[]): T[] {
@@ -28,31 +28,40 @@ const QuizPage = () => {
     if (!unit) return [];
     return unit.words.map((word) => {
       const wrong = shuffle(unit.words.filter((w) => w.english !== word.english)).slice(0, 3);
-      const options = shuffle([word, ...wrong]);
-      return { word, options };
+      return { word, options: shuffle([word, ...wrong]) };
     });
   }, [unit]);
 
   if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy bài học.</div>;
 
   if (finished) {
+    const pct = score / unit.words.length;
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center px-5">
-        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-          className="bg-card rounded-3xl p-8 shadow-card text-center max-w-sm w-full">
-          <span className="text-6xl mb-4 block">🎉</span>
+      <div className="min-h-screen flex flex-col items-center justify-center px-5 bg-gradient-to-b from-background to-muted/30">
+        <motion.div initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ type: "spring", stiffness: 200 }}
+          className="gradient-card rounded-3xl p-8 shadow-card-hover text-center max-w-sm w-full border border-white/50 relative overflow-hidden">
+          <div className="absolute top-4 right-4 w-16 h-16 rounded-full bg-primary/5 float-animation" />
+          <motion.span
+            initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2, type: "spring" }}
+            className="text-7xl mb-4 block"
+          >
+            {pct === 1 ? "🏆" : pct >= 0.7 ? "🎉" : "📖"}
+          </motion.span>
           <h2 className="font-display font-bold text-2xl text-foreground mb-2">Hoàn thành!</h2>
-          <p className="text-muted-foreground mb-1">Điểm: {score}/{unit.words.length}</p>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="text-4xl font-display font-bold text-primary">{score}</span>
+            <span className="text-muted-foreground text-lg">/ {unit.words.length}</span>
+          </div>
           <p className="text-sm text-muted-foreground mb-6">
-            {score === unit.words.length ? "Xuất sắc! 🌟" : score >= unit.words.length * 0.7 ? "Tốt lắm! 💪" : "Cố gắng thêm nhé! 📖"}
+            {pct === 1 ? "Xuất sắc! Em giỏi lắm! 🌟" : pct >= 0.7 ? "Tốt lắm! Cố gắng thêm nhé! 💪" : "Ôn lại từ vựng rồi thử lại nhé! 📚"}
           </p>
           <div className="flex gap-3">
             <motion.button whileTap={{ scale: 0.95 }} onClick={() => { setCurrentIndex(0); setScore(0); setSelected(null); setFinished(false); }}
-              className="flex-1 bg-primary text-primary-foreground py-3 rounded-xl font-display font-bold">
-              Làm lại
+              className="flex-1 gradient-primary text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
+              Làm lại 🔄
             </motion.button>
             <motion.button whileTap={{ scale: 0.95 }} onClick={() => navigate(-1)}
-              className="flex-1 bg-muted text-foreground py-3 rounded-xl font-display font-bold">
+              className="flex-1 bg-card text-foreground py-3.5 rounded-2xl font-display font-bold shadow-card border border-white/50">
               Quay lại
             </motion.button>
           </div>
@@ -63,64 +72,66 @@ const QuizPage = () => {
 
   const q = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
-  const isCorrect = selected === q.word.vietnamese;
 
   const handleSelect = (v: string) => {
     if (selected) return;
     setSelected(v);
     if (v === q.word.vietnamese) setScore((s) => s + 1);
     setTimeout(() => {
-      if (currentIndex < questions.length - 1) {
-        setCurrentIndex((i) => i + 1);
-        setSelected(null);
-      } else {
-        setFinished(true);
-      }
-    }, 800);
+      if (currentIndex < questions.length - 1) { setCurrentIndex((i) => i + 1); setSelected(null); }
+      else setFinished(true);
+    }, 900);
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-muted/30">
       <div className="flex items-center gap-3 px-5 pt-12 pb-4">
-        <button onClick={() => navigate(-1)} className="p-2 rounded-xl bg-muted text-foreground">
+        <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)} className="p-2.5 rounded-xl bg-card shadow-card text-foreground">
           <ArrowLeft className="h-5 w-5" />
-        </button>
+        </motion.button>
         <div className="flex-1">
-          <p className="font-display font-bold text-sm">{unit.name} — Trắc nghiệm</p>
+          <p className="font-display font-bold text-sm">{unit.name} — Trắc nghiệm 🧠</p>
         </div>
-        <span className="text-xs text-muted-foreground font-medium">{currentIndex + 1}/{questions.length}</span>
+        <span className="text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">{currentIndex + 1}/{questions.length}</span>
       </div>
-      <Progress value={progress} className="mx-5 h-2 rounded-full" />
+      <Progress value={progress} className="mx-5 h-2.5 rounded-full" />
 
       <div className="flex-1 flex flex-col items-center justify-center px-5 py-8">
-        <motion.div key={currentIndex} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }}
+        <motion.div key={currentIndex} initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", stiffness: 300 }}
           className="w-full max-w-sm">
-          <div className="bg-card rounded-3xl p-8 shadow-card text-center mb-6">
-            <p className="text-sm text-muted-foreground mb-2">Từ này nghĩa là gì?</p>
-            <h2 className="font-display font-bold text-3xl text-foreground">{q.word.english}</h2>
-            <p className="text-muted-foreground mt-1">{q.word.phonetic}</p>
+          <div className="gradient-card rounded-3xl p-8 shadow-card-hover text-center mb-6 border border-white/50 relative overflow-hidden">
+            <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-accent/10 float-animation" />
+            <p className="text-sm text-muted-foreground mb-3">Từ này nghĩa là gì? 🤔</p>
+            <h2 className="font-display font-bold text-4xl text-foreground relative z-10">{q.word.english}</h2>
+            <p className="text-muted-foreground mt-2">{q.word.phonetic}</p>
           </div>
 
           <div className="flex flex-col gap-3">
-            {q.options.map((opt) => {
-              let optClass = "bg-card border-2 border-border text-foreground";
+            {q.options.map((opt, i) => {
+              let cls = "gradient-card border-2 border-white/50 text-foreground shadow-card";
               if (selected) {
-                if (opt.vietnamese === q.word.vietnamese) {
-                  optClass = "bg-success/10 border-2 border-success text-success";
-                } else if (opt.vietnamese === selected) {
-                  optClass = "bg-destructive/10 border-2 border-destructive text-destructive";
-                }
+                if (opt.vietnamese === q.word.vietnamese) cls = "bg-success/15 border-2 border-success text-success shadow-md";
+                else if (opt.vietnamese === selected) cls = "bg-destructive/15 border-2 border-destructive text-destructive shadow-md";
               }
               return (
                 <motion.button
                   key={opt.english}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.05 }}
                   whileTap={!selected ? { scale: 0.96 } : {}}
+                  whileHover={!selected ? { scale: 1.02 } : {}}
                   onClick={() => handleSelect(opt.vietnamese)}
-                  className={`${optClass} rounded-2xl py-4 px-5 text-left font-medium transition-colors flex items-center justify-between`}
+                  className={`${cls} rounded-2xl py-4 px-5 text-left font-semibold transition-all flex items-center justify-between`}
                 >
                   <span>{opt.vietnamese}</span>
-                  {selected && opt.vietnamese === q.word.vietnamese && <CheckCircle2 className="h-5 w-5 text-success" />}
-                  {selected && opt.vietnamese === selected && opt.vietnamese !== q.word.vietnamese && <XCircle className="h-5 w-5 text-destructive" />}
+                  {selected && opt.vietnamese === q.word.vietnamese && (
+                    <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}><CheckCircle2 className="h-5 w-5 text-success" /></motion.div>
+                  )}
+                  {selected && opt.vietnamese === selected && opt.vietnamese !== q.word.vietnamese && (
+                    <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}><XCircle className="h-5 w-5 text-destructive" /></motion.div>
+                  )}
                 </motion.button>
               );
             })}

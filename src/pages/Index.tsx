@@ -19,37 +19,8 @@ const Index = () => {
         <div className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-[hsl(45,90%,90%)] blur-[120px] opacity-40" />
       </div>
 
-      {/* Floating decorative elements */}
-      <div className="fixed inset-0 -z-5 pointer-events-none overflow-hidden">
-        <motion.div
-          animate={{ y: [-10, 10, -10], rotate: [0, 10, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-32 left-[8%] text-4xl"
-        >
-          ✨
-        </motion.div>
-        <motion.div
-          animate={{ y: [10, -10, 10], rotate: [0, -15, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute top-48 right-[12%] text-3xl"
-        >
-          🎯
-        </motion.div>
-        <motion.div
-          animate={{ y: [-8, 12, -8], rotate: [0, 20, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute top-72 left-[15%] text-2xl"
-        >
-          📚
-        </motion.div>
-        <motion.div
-          animate={{ y: [5, -15, 5] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-          className="absolute top-60 right-[20%] text-3xl"
-        >
-          🏆
-        </motion.div>
-      </div>
+
+
 
       {/* Announcement Pill */}
       <div className="pt-32 pb-6 flex justify-center px-4">

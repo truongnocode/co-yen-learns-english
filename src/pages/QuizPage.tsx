@@ -74,10 +74,6 @@ const QuizPage = () => {
   const q = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
 
-  // Auto-read the English word when question changes
-  useEffect(() => {
-    if (q) speakUS(q.word.english);
-  }, [currentIndex, q]);
 
   const handleSelect = (v: string) => {
     if (selected) return;

@@ -601,7 +601,7 @@ const VocabPage = () => {
 
   return (
     <PageShell withNavbar={false}>
-      <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-20">
+      <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-6 flex flex-col min-h-screen">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
             className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-white/50">

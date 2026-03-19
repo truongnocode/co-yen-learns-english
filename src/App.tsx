@@ -9,6 +9,10 @@ import GradePage from "./pages/GradePage";
 import VocabPage from "./pages/VocabPage";
 import GrammarPage from "./pages/GrammarPage";
 import ExercisesPage from "./pages/ExercisesPage";
+import Grade10VocabPage from "./pages/Grade10VocabPage";
+import Grade10GrammarPage from "./pages/Grade10GrammarPage";
+import Grade10ReadingPage from "./pages/Grade10ReadingPage";
+import Grade10TestsPage from "./pages/Grade10TestsPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
 import NotFound from "./pages/NotFound";
@@ -24,6 +28,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/grades" element={<GradesPage />} />
+          <Route path="/grade/10/vocab" element={<Grade10VocabPage />} />
+          <Route path="/grade/10/grammar" element={<Grade10GrammarPage />} />
+          <Route path="/grade/10/exercises" element={<Grade10ReadingPage />} />
+          <Route path="/grade/10/tests" element={<Grade10TestsPage />} />
           <Route path="/grade/:gradeId" element={<GradePage />} />
           <Route path="/grade/:gradeId/vocab/:unitKey" element={<VocabPage />} />
           <Route path="/grade/:gradeId/grammar/:unitKey" element={<GrammarPage />} />

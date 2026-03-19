@@ -1,0 +1,2147 @@
+{
+  "1.1.1": {
+    "name": "Local community",
+    "questions": [
+      {
+        "q": "Our tour guide encouraged us to ___ the village slowly to learn about local life and traditional houses.",
+        "opts": [
+          "look around",
+          "get on with",
+          "run out of",
+          "take care of"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The teacher's responsibility is to ___ students on how to use study tools effectively.",
+        "opts": [
+          "instruct",
+          "study",
+          "observe",
+          "encourage"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "My friends sometimes ___ me to join community events by sending messages about meeting times and activities.",
+        "opts": [
+          "support",
+          "generate",
+          "remind",
+          "monitor"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "My grandmother lovingly ___ her treasured necklace, a precious object that carries our family's history.",
+        "opts": [
+          "handed down",
+          "gave out",
+          "took off",
+          "got up"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Many people find it ___ to shop online because they can buy things from home without travelling anywhere.",
+        "opts": [
+          "convenient",
+          "connected",
+          "scenic",
+          "inconvenient"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "My grandmother bought a beautiful ___ made by local artisans.",
+        "opts": [
+          "facility",
+          "handicraft",
+          "connection",
+          "symbol"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Thanks to fast Wi-Fi, students feel more ___ during group projects because they can share ideas quickly and easily.",
+        "opts": [
+          "connected",
+          "convenient",
+          "special",
+          "original"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The new sports ___ in our town has a swimming pool, a gym and several rooms for indoor games.",
+        "opts": [
+          "neighbor",
+          "connection",
+          "facility",
+          "convenience"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The shop will ___ of rice soon because many people are buying it today.",
+        "opts": [
+          "run out",
+          "look around",
+          "cut down",
+          "pass down"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Each region has its own food ___ that attracts visitors who want to try unique local dishes.",
+        "opts": [
+          "speciality",
+          "helper",
+          "appliance",
+          "origin"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Even though they sometimes argue, the sisters still have good ___ with each other and share everything.",
+        "opts": [
+          "origin",
+          "relationship",
+          "generation",
+          "symbol"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "___, we intended to go camping with my classmates, but then we won the trip to Ha Long Bay.",
+        "opts": [
+          "Origin",
+          "Original",
+          "Originate",
+          "Originally"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "That ___ helper collects old clothes and gives them to poor families.",
+        "opts": [
+          "artisan",
+          "community",
+          "neighborhood",
+          "garbage"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Our ___ often visit us during the holidays, and we always exchange homemade food and small gifts.",
+        "opts": [
+          "neighbors",
+          "connections",
+          "facilities",
+          "conveniences"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  "1.1.2": {
+    "name": "City Life",
+    "questions": [
+      {
+        "q": "He couldn't join us at the shopping mall because he ___ a bad cold this morning.",
+        "opts": [
+          "came up with",
+          "kept up with",
+          "came down with",
+          "got on with"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The shop window was decorated ___ with colorful lights to make more customers stop and look inside.",
+        "opts": [
+          "attraction",
+          "attractive",
+          "attract",
+          "attractively"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "After years of rapid development, the city became terribly ___, making it difficult for cars to move during rush hour.",
+        "opts": [
+          "congest",
+          "congestion",
+          "congested",
+          "congesting"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Many children feel ___ after spending too much time outdoors in the strong sunlight.",
+        "opts": [
+          "itch",
+          "itchy",
+          "itching",
+          "itchiness"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Some visitors feel uncomfortable in the city centre because it looks like a concrete ___ with tall buildings and busy streets everywhere.",
+        "opts": [
+          "jungle",
+          "forest",
+          "garden",
+          "market"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "After the heavy rain, many cars began to ___ stuck under the bridge because the water level suddenly rose.",
+        "opts": [
+          "get",
+          "go",
+          "take",
+          "turn"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The workers put up warning signs around the ___ to keep residents safe while new apartments were being built.",
+        "opts": [
+          "tourist attraction",
+          "public amenity",
+          "concrete jungle",
+          "construction site"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "The city has a new metro system that helps people ___ easily without spending too much time in traffic jams.",
+        "opts": [
+          "get around",
+          "pass down",
+          "look around",
+          "deal with"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The local government will ___ a survey to find out what residents need in their neighborhood.",
+        "opts": [
+          "run out",
+          "carry out",
+          "hang out",
+          "break down"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The bus suddenly ___ in the middle of the busy street, causing a long line of cars behind it.",
+        "opts": [
+          "came across",
+          "got on",
+          "broke down",
+          "looked up"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The neighborhood is very safe because the police work hard to ___ reduce and protect residents.",
+        "opts": [
+          "crime",
+          "attraction",
+          "stress",
+          "expenses"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Many teenagers like to ___ at the new community centre after school because it has games and free Wi-Fi.",
+        "opts": [
+          "break down",
+          "look after",
+          "hang out",
+          "get off"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "We used the mobile app to ___ the latest information about bus schedules in the city.",
+        "opts": [
+          "update",
+          "monitor",
+          "delete",
+          "announce"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The park, library and playground are considered important ___ because they provide helpful services for everyone living in the neighborhood.",
+        "opts": [
+          "tourist attractions",
+          "public amenities",
+          "concrete jungles",
+          "construction sites"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The old house will be cheaper to buy, but fixing it may be quite ___ for young families.",
+        "opts": [
+          "pricey",
+          "itchy",
+          "criminal",
+          "crowded"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The government plans to ___ new road rules to make travelling safer for everyone in the city.",
+        "opts": [
+          "implement",
+          "break",
+          "disobey",
+          "ban"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The old town becomes very ___ during festival seasons because many tourists visit the shops, markets and food stalls.",
+        "opts": [
+          "bustling",
+          "blank",
+          "harmful",
+          "grateful"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "After the big family meal, we saved all the ___ for lunch the next day.",
+        "opts": [
+          "cuisines",
+          "ingredients",
+          "leftovers",
+          "recipes"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The government decided to ___ smoking in public buildings to protect people's health.",
+        "opts": [
+          "ban",
+          "implement",
+          "advertise",
+          "encourage"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The coach believes the young athlete has great ___ and might become a national champion in the future.",
+        "opts": [
+          "skill",
+          "talent",
+          "inability",
+          "potential"
+        ],
+        "ans": 3
+      }
+    ]
+  },
+  "1.1.3": {
+    "name": "Healthy Living For Teens",
+    "questions": [
+      {
+        "q": "Even if the test is difficult, students are encouraged to ___ their best and stay confident.",
+        "opts": [
+          "bring",
+          "get",
+          "make",
+          "do"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "It's important to ___ between studying and relaxing so that you won't feel tired all the time.",
+        "opts": [
+          "balance",
+          "maintain",
+          "limit",
+          "measure"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Many students find it hard to study when loud noises ___ them from concentrating on their schoolwork.",
+        "opts": [
+          "distraction",
+          "distracted",
+          "distract",
+          "distracting"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Fruits and vegetables provide essential ___ that helps teenagers grow well and stay healthy.",
+        "opts": [
+          "nutritionist",
+          "nutrients",
+          "nutritious",
+          "nutritiously"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Eating whole grains and drinking enough water are ___ for teens who want to improve their health and fitness.",
+        "opts": [
+          "beneficial",
+          "benefit",
+          "benefits",
+          "beneficially"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "She always eats a(n) ___ diet with vegetables, fruit and protein to stay healthy and full of energy.",
+        "opts": [
+          "well-balanced",
+          "unhealthy",
+          "unbalanced",
+          "well-prepared"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Even when facing difficulties, he stays ___ and believes everything will get better soon.",
+        "opts": [
+          "optimistic",
+          "stressed-out",
+          "pessimistic",
+          "exhausted"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "She worked hard to ___ her goal of finishing the school project before the weekend.",
+        "opts": [
+          "get",
+          "miss",
+          "accomplish",
+          "end"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Regular bike checks are important for the ___ of the bicycle, especially if you ride it to school every day.",
+        "opts": [
+          "maintenance",
+          "appearance",
+          "design",
+          "comfort"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "He felt completely ___ after studying for hours without taking a break.",
+        "opts": [
+          "stressed out",
+          "relaxed",
+          "optimistic",
+          "cheerful"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "She decided to ___ her body by drinking more water and avoiding fast food for a few days.",
+        "opts": [
+          "balance",
+          "nourish",
+          "detox",
+          "strengthen"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The new school rule helped ___ positive changes, making students more polite and responsible.",
+        "opts": [
+          "turn down",
+          "get on",
+          "take off",
+          "bring about"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Parents usually ___ their children by cooking meals, helping with homework and keeping them safe.",
+        "opts": [
+          "look after",
+          "bring about",
+          "get around",
+          "hang out"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "When students feel stressed, they can talk to the school ___ for advice and support.",
+        "opts": [
+          "customer",
+          "visitor",
+          "counsellor",
+          "librarian"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Teenagers should avoid ___ snacks because they can quickly lead to weight gain and unhealthy eating habits.",
+        "opts": [
+          "fattening",
+          "healthy",
+          "nutritious",
+          "expensive"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  "1.2.1": {
+    "name": "Life in the past",
+    "questions": [
+      {
+        "q": "In many families, the father is the main ___ who earns money to support everyone at home.",
+        "opts": [
+          "breadwinner",
+          "ancestor",
+          "homemaker",
+          "neighbour"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "From the top of the hill, we had a ___ view of the whole valley and river.",
+        "opts": [
+          "tiny",
+          "magnificent",
+          "boring",
+          "dark"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Some families prefer living in a(n) ___ family, with parents and children only.",
+        "opts": [
+          "extended",
+          "large",
+          "nuclear",
+          "mixed"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "In the past, many villages were ___ by foreign armies during long wars.",
+        "opts": [
+          "recognized",
+          "occupied",
+          "observed",
+          "followed"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "My great-grandfather collected many ___ objects from the old village that now belong to our family.",
+        "opts": [
+          "ancient",
+          "modern",
+          "practical",
+          "contemporary"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Many people visit the old buildings because they are still ___ and show the city's long history.",
+        "opts": [
+          "deep-rooted",
+          "relative",
+          "well-preserved",
+          "religious"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "I didn't ___ my teacher at first because she was wearing traditional clothes for the festival.",
+        "opts": [
+          "recognise",
+          "observe",
+          "overcome",
+          "occupy"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "She felt truly ___ for the support her family gave her during difficult times.",
+        "opts": [
+          "thank",
+          "thankful",
+          "thankfully",
+          "thankless"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "A grandmother, grandfather, aunts and cousins all belong to a(n) ___ family, which is larger than the nuclear one.",
+        "opts": [
+          "nuclear",
+          "single-parent",
+          "blended",
+          "extended"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "My uncle told us the story of how he first ___ in love with my aunt at university.",
+        "opts": [
+          "took",
+          "fell",
+          "made",
+          "got"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The local museum wants young people to ___ a contribution to protecting traditional crafts.",
+        "opts": [
+          "make",
+          "take",
+          "give",
+          "show"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The family tradition has become so ___ that everyone follows it without question every year.",
+        "opts": [
+          "thankful",
+          "deep-rooted",
+          "historic",
+          "relative"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "During the celebration, villagers ___ gratitude to their ancestors by offering fruit and lighting incense.",
+        "opts": [
+          "show",
+          "get",
+          "break",
+          "fall"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Our grandparents always tell us to ___ pride in our traditions and family history.",
+        "opts": [
+          "make",
+          "take",
+          "give",
+          "keep"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The story tells how the hero managed to ___ many challenges and protect his village.",
+        "opts": [
+          "recognize",
+          "overcome",
+          "observe",
+          "fall"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "At the family reunion, every ___ shared stories about their childhood and past memories.",
+        "opts": [
+          "relative",
+          "ancestor",
+          "observer",
+          "homemaker"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Old family photos help us remember where we come from and honor every ___ in our family tree.",
+        "opts": [
+          "homemaker",
+          "ancestor",
+          "neighbour",
+          "breadwinner"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "From the top of the tower, tourists can ___ the busy streets and enjoy the beautiful view of the city.",
+        "opts": [
+          "observe",
+          "occupy",
+          "overcome",
+          "recognize"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The city has many ___ buildings that show its long history and attract visitors from around the world.",
+        "opts": [
+          "modern",
+          "historic",
+          "peaceful",
+          "simple"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The town is famous for its ___ temples, where many local people come to pray every weekend.",
+        "opts": [
+          "noisy",
+          "crowded",
+          "dangerous",
+          "religious"
+        ],
+        "ans": 3
+      }
+    ]
+  },
+  "1.2.2": {
+    "name": "Our experience",
+    "questions": [
+      {
+        "q": "Some students feel scared to go to school because an older boy tries to ___ them every day during break time.",
+        "opts": [
+          "bully",
+          "explore",
+          "revise",
+          "amaze"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The museum has a special room showing ___ tools that early humans used thousands of years ago.",
+        "opts": [
+          "unpleasant",
+          "prehistoric",
+          "exhilarating",
+          "brilliant"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "We had a(n) ___ smell coming from the kitchen because someone burned the rice while cooking.",
+        "opts": [
+          "unpleasant",
+          "unforgettable",
+          "thrilling",
+          "amazing"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "He tried to answer the final question, but his mind suddenly went ___ and he couldn't say a word.",
+        "opts": [
+          "brilliant",
+          "prehistoric",
+          "embarrassing",
+          "blank"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Before the big exam, students are advised to ___ all the lessons they have already learned in class.",
+        "opts": [
+          "revise",
+          "skip",
+          "attend",
+          "repeat"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The boat trip along the river was so ___ that everyone screamed and laughed the whole way.",
+        "opts": [
+          "thrilling",
+          "uncomfortable",
+          "prehistoric",
+          "brilliant"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The school will ___ posters around the building to inform students about the fundraising event this weekend.",
+        "opts": [
+          "turn up",
+          "bring about",
+          "hang out",
+          "put up"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "When visiting new places, many tourists like to ___ pictures to remember the beautiful moments they experience.",
+        "opts": [
+          "take",
+          "get",
+          "do",
+          "bring"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "It was very ___ for her to drop her lunch tray in front of everyone in the cafeteria.",
+        "opts": [
+          "embarrassing",
+          "amazing",
+          "satisfying",
+          "relaxing"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "I did it ___ although I know it would annoy her.",
+        "opts": [
+          "by chance",
+          "on purpose",
+          "by mistake",
+          "by rote"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "I only managed to remember the vocabulary because I learnt the list ___ every night before the test.",
+        "opts": [
+          "by heart",
+          "by mistake",
+          "on purpose",
+          "by chance"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Watching the forest from the top of the mountain is an amazing ___.",
+        "opts": [
+          "habit",
+          "sight",
+          "experience",
+          "accident"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The trip to the waterfall was an ___ experience that everyone in our class will remember for many years.",
+        "opts": [
+          "unforgettable",
+          "forget",
+          "forgetful",
+          "forgetfully"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The guide asked us to ___ the old town carefully so we wouldn't miss any of its beautiful historic houses.",
+        "opts": [
+          "explorer",
+          "exploration",
+          "exploring",
+          "explore"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Our class joined a(n) ___ to learn about local plants, animals and ways to protect the environment.",
+        "opts": [
+          "voyage",
+          "journey",
+          "exploration",
+          "eco-tour"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "The group's science project was so ___ that the teacher praised them for their creativity and teamwork.",
+        "opts": [
+          "mistaken",
+          "brilliant",
+          "stressful",
+          "narrow"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "He sent the wrong homework file to his teacher ___ and quickly apologised for the confusion.",
+        "opts": [
+          "by mistake",
+          "on purpose",
+          "by heart",
+          "by rote"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Some students still prefer to learn new vocabulary ___, repeating each word many times until they remember it.",
+        "opts": [
+          "by chance",
+          "by accident",
+          "by rote",
+          "by mistake"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The view from the mountain was so ___ that we couldn't stop taking photos of the beautiful landscape.",
+        "opts": [
+          "stressful",
+          "amazing",
+          "confusing",
+          "harmful"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Riding a fast zipline over the forest was a(n) ___ experience that made everyone scream with excitement.",
+        "opts": [
+          "exhilarating",
+          "embarrassing",
+          "boring",
+          "disappointing"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  "1.2.3": {
+    "name": "Vietnam: Then and Now",
+    "questions": [
+      {
+        "q": "The neighbourhood is very ___, with many parks and safe spaces where parents and children can spend time together.",
+        "opts": [
+          "family-oriented",
+          "hi-tech",
+          "professional",
+          "stressful"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "People today often ___ their personal time because modern life is fast and they have less chance to relax.",
+        "opts": [
+          "support",
+          "value",
+          "replace",
+          "influence"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Thanks to new jobs in the city, young people now have greater ___ to build better lives for their families.",
+        "opts": [
+          "opportunities",
+          "privacies",
+          "memories",
+          "influences"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The government is working to improve the ___ in rural areas, so families can enjoy safer homes and cleaner water.",
+        "opts": [
+          "home entertainment",
+          "sports facilities",
+          "public transport",
+          "living conditions"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "The country's living ___ has improved as people now have better jobs, safer homes and more comfortable living conditions.",
+        "opts": [
+          "standard",
+          "support",
+          "opportunity",
+          "profession"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "City apartment buildings are becoming more popular because they offer private rooms where residents can enjoy more ___.",
+        "opts": [
+          "privacy",
+          "gathering",
+          "popularity",
+          "variety"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "At the meeting, students were asked to ___ notes so that they could remember important ideas for their group projects.",
+        "opts": [
+          "make",
+          "give",
+          "hold",
+          "take"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "City life encourages frequent family ___ such as weekend meals or birthday celebrations where everyone shares stories about their week.",
+        "opts": [
+          "opportunities",
+          "gatherings",
+          "memories",
+          "privacies"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Many young people worry that social media can strongly ___ the way teenagers dress or behave today.",
+        "opts": [
+          "influence",
+          "replace",
+          "pursue",
+          "support"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The lifestyle of modern teenagers often ___ their interests, daily habits and the technology they use at home.",
+        "opts": [
+          "replaces",
+          "depends",
+          "reflects",
+          "supports"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The elderly in rural areas sometimes feel ___ when they cannot travel to the clinic without help from their neighbors.",
+        "opts": [
+          "helpless",
+          "democratic",
+          "supportive",
+          "independent"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Many parents want a ___ education system where all children have equal access to good schools and learning opportunities.",
+        "opts": [
+          "popular",
+          "democratic",
+          "dependent",
+          "hi-tech"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The company looks for ___ workers who can communicate well, meet deadlines and solve problems on their own.",
+        "opts": [
+          "amateur",
+          "unfriendly",
+          "professional",
+          "hi-tech"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The ___ of smartphones has changed the way people shop, learn, and stay in contact with their relatives.",
+        "opts": [
+          "popularity",
+          "gathering",
+          "privacy",
+          "opportunity"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "City life often offers a wide ___ of foods, activities and entertainment options for young people to enjoy.",
+        "opts": [
+          "variety",
+          "dependence",
+          "reflection",
+          "helplessness"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "___ equipment in hospitals helps doctors treat patients more quickly and safely than before.",
+        "opts": [
+          "Basic",
+          "Hi-tech",
+          "Conventional",
+          "Traditional"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "In many rural villages, families work ___ because they still need to rely on one another during busy farming seasons.",
+        "opts": [
+          "dependently",
+          "helpfully",
+          "actively",
+          "memorably"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "She wants to ___ a career in medicine because she enjoys helping people and learning about health.",
+        "opts": [
+          "support",
+          "reflect",
+          "pursue",
+          "replace"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Good teachers always ___ their students by giving feedback, explaining lessons clearly and encouraging them to try harder.",
+        "opts": [
+          "support",
+          "pursue",
+          "impress",
+          "balance"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Older students sometimes help younger ones ___ important dates and facts by using drawings or simple word games.",
+        "opts": [
+          "memorize",
+          "memory",
+          "memorable",
+          "memorably"
+        ],
+        "ans": 0
+      }
+    ]
+  },
+  "1.3.1": {
+    "name": "Natural wonders",
+    "questions": [
+      {
+        "q": "The Grand Canyon in the USA is considered a famous natural ___.",
+        "opts": [
+          "aquarium",
+          "wonder",
+          "rank",
+          "snowfall"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Many travellers are ___ natural wonders like Ha Long Bay or the Grand Canyon; they are willing to travel long distances to see them once in their lives.",
+        "opts": [
+          "bored with",
+          "crazy about",
+          "angry about",
+          "nervous about"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "South America has glaciers, waterfalls, and diverse ___ from desert to jungle.",
+        "opts": [
+          "paradises",
+          "ecosystems",
+          "monuments",
+          "landscapes"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "It takes from 5 to 10 hours for climbers to climb to the ___ of Mount Fuji.",
+        "opts": [
+          "peak",
+          "foot",
+          "bottom",
+          "sum"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "They hired a local guide to ___ the large cave system safely because it had many dark and narrow paths.",
+        "opts": [
+          "explorer",
+          "exploration",
+          "explore",
+          "exploring"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Did the film crew have to ask for ___ to film inside the national park?",
+        "opts": [
+          "admiration",
+          "exploration",
+          "permission",
+          "possession"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The number of visitors to Son Doong each year is ___ to protect the cave from damage.",
+        "opts": [
+          "maximised",
+          "located",
+          "hesitated",
+          "limited"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Virtual Reality aims to give us artificial worlds to ___ outside normal space and time.",
+        "opts": [
+          "possess",
+          "explore",
+          "support",
+          "save"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The project to protect the ___ of this national park will create more jobs for residents.",
+        "opts": [
+          "diversity",
+          "mixture",
+          "difference",
+          "complex"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "With a short hike, you can ___ breathtaking views from the mountain peak.",
+        "opts": [
+          "access",
+          "accessible",
+          "inaccessible",
+          "accessibly"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "There is a(n) ___ need to preserve the biological diversity of our national parks.",
+        "opts": [
+          "annual",
+          "urgent",
+          "majestic",
+          "crazy"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "When I asked her to go to Lan Ha Bay with me, she agreed without ___.",
+        "opts": [
+          "hesitation",
+          "location",
+          "formation",
+          "destination"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "If the companies build too many hotels, they will ___ the beach, and people won't visit it anymore.",
+        "opts": [
+          "spoil",
+          "locate",
+          "consider",
+          "discover"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "When we met the ___, he told us not to start any fires in the forest he looks after.",
+        "opts": [
+          "adventurer",
+          "ranger",
+          "explorer",
+          "government"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "___ suggest ways to preserve natural wonders, and support ___ development.",
+        "opts": [
+          "fine",
+          "sustainable",
+          "crazy",
+          "urgent"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The mountain ___ was so stunning that tourists stopped many times to take photos of the valleys and rivers below.",
+        "opts": [
+          "scenically",
+          "scenery",
+          "scenic",
+          "scenes"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The volcano rumbled, then erupted, painting the sky with fiery red ___.",
+        "opts": [
+          "spectacle",
+          "spectacular",
+          "unspectacular",
+          "spectacularly"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "In Son Doong Cave, water moving down for millions of years created amazing rock ___.",
+        "opts": [
+          "outcrop",
+          "rainforest",
+          "formation",
+          "summit"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Avebury in England is a ___ stone circle. Its stone monuments are the largest in the world.",
+        "opts": [
+          "minor",
+          "majestic",
+          "sustainable",
+          "supportive"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Junko Tabei was the first ___ to reach the summit of Mount Everest.",
+        "opts": [
+          "mount",
+          "mountainous",
+          "mountaineer",
+          "mounting"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  "1.3.2": {
+    "name": "Tourism",
+    "questions": [
+      {
+        "q": "The Taj Mahal's marble architecture never fails to ___ visitors.",
+        "opts": [
+          "impressive",
+          "impression",
+          "impress",
+          "impressively"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Choosing a proper ___ for a self-guided tour is not an easy task for people who don't go much.",
+        "opts": [
+          "destination",
+          "departure",
+          "travel agency",
+          "tour guide"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "If you want to apply for a visa to visit a specific country, you need to contact their ___ in your home country.",
+        "opts": [
+          "immigration office",
+          "travel agency",
+          "embassy office",
+          "international airport"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Stacy visited the Temple of Literature and she ___ the 82 Doctor's stone tablets inside.",
+        "opts": [
+          "admired",
+          "admiration",
+          "admiring",
+          "admirer"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The ___ adventure offered an unforgettable experience as we travelled the vast wilderness, spotting magnificent animals in their natural habitat.",
+        "opts": [
+          "wildlife",
+          "camping",
+          "beach",
+          "safari"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Noi Bai airport has two terminals: one for international flights and one for ___ flights.",
+        "opts": [
+          "fixed",
+          "online",
+          "national",
+          "domestic"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Another word for ___ is vacationer, who is away from their homes for leisure purposes.",
+        "opts": [
+          "travel agency",
+          "holidaymaker",
+          "tour guide",
+          "tour operator"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "John stayed in a nice ___ just off the main square while traveling alone in Italy.",
+        "opts": [
+          "hostel",
+          "restaurant",
+          "pharmacy",
+          "store"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "We offer the best-value ___ holidays in Europe. You can be sure every cost is included in the price.",
+        "opts": [
+          "pack-back",
+          "package",
+          "self-guided",
+          "solo"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Many travelers prefer a ___ tour so that they can explore the city at their own pace without following a fixed schedule.",
+        "opts": [
+          "guided",
+          "self-guided",
+          "package",
+          "private"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The tour operator will arrange transport and plan your ___; thus the route and places will be provided in advance.",
+        "opts": [
+          "itinerary",
+          "reservation",
+          "ticket",
+          "destination"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "One of the most iconic sights in Sa Pa is the landscape dominated by ___, which are stair-like rice paddies carved into the mountainsides.",
+        "opts": [
+          "dense rainforests",
+          "sand dunes",
+          "terraced fields",
+          "winding rivers"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The aroma of freshly baked bread was ___, making my stomach rumble.",
+        "opts": [
+          "healthy",
+          "nutritious",
+          "mouth-watering",
+          "indifferent"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "You will have a ___ trip if you have a tour guide to take care of your tour.",
+        "opts": [
+          "rough",
+          "solo",
+          "smooth",
+          "quick"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The restaurant is likely to be busy, so you should definitely ___.",
+        "opts": [
+          "make a reservation",
+          "call the travel agency",
+          "have a package holiday",
+          "book online"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "If you are travelling abroad for the first time, it's better to look for a good travel ___ to arrange everything for you.",
+        "opts": [
+          "insurance",
+          "agency",
+          "brochure",
+          "service"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "During our trip to the countryside, we stayed at a charming ___ where the hosts served homemade jams and freshly baked bread every morning.",
+        "opts": [
+          "ancient village monument",
+          "bed and breakfast",
+          "cheap youth hostel",
+          "luxurious five-star hotel"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Before you leave for your trip, you should ___ your phone's data plan so that you can stay connected during your trip.",
+        "opts": [
+          "look up",
+          "bring up",
+          "come up",
+          "top up"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "We need to ___ the travel details, like transportation and accommodation, before booking our flights.",
+        "opts": [
+          "bring about",
+          "pass down",
+          "work out",
+          "look up"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "When planning a summer trip, many students spend hours online ___ for the best travel deals and discounts.",
+        "opts": [
+          "buying",
+          "booking",
+          "hunting",
+          "ordering"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  "1.3.3": {
+    "name": "English in the world",
+    "questions": [
+      {
+        "q": "Before you submit your test, you should ___ you have answered all the questions carefully.",
+        "opts": [
+          "make mistakes",
+          "make progress",
+          "make an attempt",
+          "make sure"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "When you visit a foreign country, it is ___ to familiarize yourself with the language.",
+        "opts": [
+          "weird",
+          "essential",
+          "unsuitable",
+          "polite"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Many ___ from Asia and Africa bring diverse cultural traditions and customs, which enrich the culture of English-speaking communities.",
+        "opts": [
+          "immigrants",
+          "migration",
+          "migrants",
+          "immigration"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Please ___ the meaning of the word so that you don't misuse it.",
+        "opts": [
+          "make sure",
+          "check out",
+          "figure out",
+          "double-check"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "If you don't know what a word ___, try to guess its meaning first.",
+        "opts": [
+          "represents",
+          "means",
+          "expresses",
+          "describes"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "___ students often find it challenging to adapt to a new education system.",
+        "opts": [
+          "Exchange",
+          "Local",
+          "Bilingual",
+          "Standard"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "In 1985, Kachru ___ a model of the different uses of English around the world.",
+        "opts": [
+          "consisted",
+          "proposed",
+          "belonged",
+          "posted"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Viet is ___ in English and Vietnamese so that he can communicate effectively in both languages.",
+        "opts": [
+          "excellent",
+          "bilingual",
+          "international",
+          "knowledgeable"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Practising with native speakers can help learners become ___ in a language.",
+        "opts": [
+          "correct",
+          "simple",
+          "fluent",
+          "rusty"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "English can be learned in ___ circles, from basic vocabulary and grammar to complex sentences and idiomatic expressions.",
+        "opts": [
+          "inner",
+          "concentric",
+          "expanding",
+          "outer"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "English is used as the ___ language in countries such as the United States, Canada, Australia, and New Zealand.",
+        "opts": [
+          "official",
+          "foreign",
+          "local",
+          "optional"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "With so many online resources available, it's easier than ever to ___ basic English on your own.",
+        "opts": [
+          "note down",
+          "go over",
+          "look up",
+          "pick up"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Before you submit your essay, remember to ___ the spelling.",
+        "opts": [
+          "go over",
+          "turn up",
+          "take into",
+          "carry on"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "After spending an hour on the school's website, I have ___ some helpful information about the application process.",
+        "opts": [
+          "come over",
+          "come on",
+          "come across",
+          "come along"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Remember to ___ the difficult words that you might come across when reading the book.",
+        "opts": [
+          "carry out",
+          "turn off",
+          "look up",
+          "go over"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "If you hear any new words during the lesson, you should ___ them ___ so that you can review them later.",
+        "opts": [
+          "cut - down",
+          "note - down",
+          "pass - down",
+          "sit - down"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Before you leave the classroom, please ___ the lights.",
+        "opts": [
+          "turn off",
+          "turn up",
+          "turn on",
+          "turn into"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "He ___ the tap, but could get no water.",
+        "opts": [
+          "turned on",
+          "turned off",
+          "turned over",
+          "turned out"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "As the foreign student can't speak English, he often feels like he doesn't ___ the community.",
+        "opts": [
+          "rely on",
+          "agree with",
+          "belong to",
+          "listen to"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "After much effort, the students finally ___ the answer to the challenging practice question.",
+        "opts": [
+          "look around",
+          "look for",
+          "carry on",
+          "figure out"
+        ],
+        "ans": 3
+      }
+    ]
+  },
+  "1.4.1": {
+    "name": "Living environment",
+    "questions": [
+      {
+        "q": "Plants, animals, and humans are all examples of ___ that need air, water, and sunlight to survive.",
+        "opts": [
+          "non-living things",
+          "air pollution",
+          "natural habitats",
+          "living things"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Astronauts travel to ___ to conduct scientific experiments and explore the universe.",
+        "opts": [
+          "outer space",
+          "the ocean",
+          "the desert",
+          "the mountains"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Modern ___ such as washing machines and microwave ovens help make daily chores easier and faster.",
+        "opts": [
+          "musical instruments",
+          "school supplies",
+          "garden tools",
+          "household appliances"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "The robot's built-in ___ detected the approaching fire, triggering the alarm.",
+        "opts": [
+          "camera",
+          "screen",
+          "sensor",
+          "speaker"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Mountains, valleys, and plains are examples of different ___ on Earth.",
+        "opts": [
+          "climates",
+          "ecosystems",
+          "landforms",
+          "species"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Millions of animals die every year because man has ___ their natural home or habitat.",
+        "opts": [
+          "pollutants",
+          "polluted",
+          "pollution",
+          "unpolluted"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Some clearly seen examples of water ___ are lakes, streams, and rivers.",
+        "opts": [
+          "bodies",
+          "transport",
+          "existence",
+          "parts"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Cuc Phuong National Park is the natural ___ for many rare species, both plants and animals.",
+        "opts": [
+          "habitat",
+          "accommodation",
+          "land",
+          "fauna"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "Clearing ___ for new housing projects destroys the natural habitats of many wild animals.",
+        "opts": [
+          "grassland",
+          "dreamland",
+          "wonderland",
+          "fatherland"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "A food ___ shows you the order in which living things depend on each other for food.",
+        "opts": [
+          "chain",
+          "source",
+          "sample",
+          "provider"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "___ are areas where flora and fauna are reserved and managed for conservation.",
+        "opts": [
+          "Nature reserves",
+          "Park",
+          "Theme parks",
+          "Natural reserve"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "In winter, I love reading books in a ___ corner with a blanket and a cup of hot chocolate.",
+        "opts": [
+          "noisy",
+          "crowded",
+          "dirty",
+          "cozy"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Flora and fauna are vital to the environment because they create ___.",
+        "opts": [
+          "natural reserve",
+          "climate change",
+          "ecological balance",
+          "habitat loss"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "The ___ of forests in maintaining Earth's climate cannot be overstated.",
+        "opts": [
+          "significant",
+          "significantly",
+          "significance",
+          "signify"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "My phone's ___ can read me the news while I cook, keeping me up-to-date without looking at a screen.",
+        "opts": [
+          "notification system",
+          "writing app",
+          "keyboard",
+          "voice assistant"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Biodiversity is ___ for the health and resilience of ecosystems on Earth.",
+        "opts": [
+          "vital",
+          "harmful",
+          "ecological",
+          "threatening"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "The people on the island ___ the supplies that were brought from the mainland.",
+        "opts": [
+          "passed over",
+          "relied on",
+          "complained about",
+          "looked after"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Bees play an important ___ in pollinating plants and maintaining biodiversity.",
+        "opts": [
+          "problem",
+          "part",
+          "disadvantage",
+          "obstacle"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The campaign aims to raise ___ of the dangers of taking illegal drugs.",
+        "opts": [
+          "attention",
+          "awareness",
+          "information",
+          "discussion"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Female students ___ about 60% of the class.",
+        "opts": [
+          "turn up",
+          "give away",
+          "make up",
+          "get over"
+        ],
+        "ans": 2
+      }
+    ]
+  },
+  "1.4.2": {
+    "name": "Jobs in the future",
+    "questions": [
+      {
+        "q": "Career ___ programmes are helpful because they help students make good decisions about their future jobs.",
+        "opts": [
+          "orientation",
+          "pressure",
+          "tradition",
+          "income"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "A ___ is a person who supports others with their emotions, listens to their problems and gives helpful advice.",
+        "opts": [
+          "dentist",
+          "psychologist",
+          "cashier",
+          "engineer"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "If you have problems with your skin and want professional advice, you should see a ___.",
+        "opts": [
+          "shop assistant",
+          "dental specialist",
+          "video producer",
+          "skincare specialist"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "When people start creating more ___ content, the demand for good content writers and producers will rise.",
+        "opts": [
+          "personalized",
+          "demanding",
+          "professional",
+          "vocational"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "She ___ a living by selling home-made foods.",
+        "opts": [
+          "takes",
+          "earns",
+          "does",
+          "gets"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "His job as a ___ requires him to interact with customers daily.",
+        "opts": [
+          "surgeon",
+          "mathematician",
+          "fashion designer",
+          "bartender"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "People ___ with each other so often that teamwork and communication skills are now increasingly important.",
+        "opts": [
+          "employ",
+          "earn",
+          "research",
+          "collaborate"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "My cat needs a checkup, so I'm going to make an appointment with a ___.",
+        "opts": [
+          "dentist",
+          "veterinarian",
+          "specialist",
+          "pharmacist"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "The best future jobs will require people who can ___ and adapt to changing technology.",
+        "opts": [
+          "innovate",
+          "innovative",
+          "innovation",
+          "innovatively"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "At the end of secondary school, many students feel stressed because they have to ___ that may affect their whole future.",
+        "opts": [
+          "take notice of",
+          "take an extra class",
+          "do a part-time job",
+          "make a career choice"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "A dentist needs good ___ to carefully examine teeth and use delicate tools.",
+        "opts": [
+          "communication skills",
+          "hand-eye coordination",
+          "physical strength",
+          "hands-on management"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "To be successful in a(n) ___ career, you must have good hand-eye coordination.",
+        "opts": [
+          "mechanic",
+          "surgeon",
+          "accountant",
+          "photographer"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "People really want ___ content. They don't want to watch the same thing as everyone else.",
+        "opts": [
+          "repetitive",
+          "well-paid",
+          "personalized",
+          "hands-on"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "In the electronics factory, a(n) ___ is responsible for putting small parts together on the production line.",
+        "opts": [
+          "office clerk",
+          "tour guide",
+          "store cashier",
+          "assembly worker"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "A cashier has to do ___ tasks, such as receiving money and printing receipts.",
+        "opts": [
+          "effective",
+          "creative",
+          "decisive",
+          "repetitive"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Students who have more skills and knowledge can get a ___ job in the future.",
+        "opts": [
+          "low-paid",
+          "low-wage",
+          "well-paid",
+          "poorly-paid"
+        ],
+        "ans": 2
+      },
+      {
+        "q": "Teaching young children can be challenging, but the ___ moments make it worthwhile.",
+        "opts": [
+          "rewarding",
+          "demanding",
+          "repetitive",
+          "boring"
+        ],
+        "ans": 0
+      },
+      {
+        "q": "A surgeon's job is ___. They work long hours and occasionally deal with life-and-death situations.",
+        "opts": [
+          "easy",
+          "demanding",
+          "rewarding",
+          "stress-free"
+        ],
+        "ans": 1
+      },
+      {
+        "q": "Working as a ___ requires good computer skills and the ability to solve problems.",
+        "opts": [
+          "mechanic",
+          "cashier",
+          "fashion designer",
+          "software engineer"
+        ],
+        "ans": 3
+      },
+      {
+        "q": "Many students prefer ___ activities where they can practice real skills instead of just listening to theory.",
+        "opts": [
+          "boring",
+          "traditional",
+          "theoretical",
+          "hands-on"
+        ],
+        "ans": 3
+      }
+    ]
+  }
+}

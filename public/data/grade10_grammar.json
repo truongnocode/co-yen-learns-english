@@ -1,0 +1,1890 @@
+{
+  "2.1": {
+    "name": "Verb Tenses",
+    "exercises": {
+      "mcq": {
+        "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "The school ___ a project about reducing plastic waste every year.",
+            "opts": [
+              "organize",
+              "organizes",
+              "is organizing",
+              "has organized"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "Tom and his group ___ about water pollution in their project now.",
+            "opts": [
+              "writes",
+              "were writing",
+              "are writing",
+              "wrote"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Listen! Someone ___ the violin in the music room.",
+            "opts": [
+              "plays",
+              "played",
+              "has played",
+              "is playing"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "They ___ an interview with a community helper at the moment.",
+            "opts": [
+              "are doing",
+              "did",
+              "do",
+              "have done"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "I ___ to someone from a different culture before.",
+            "opts": [
+              "have never talked",
+              "am never talking",
+              "never have talked",
+              "never talk"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "My friend ___ part in any clean-up campaigns yet.",
+            "opts": [
+              "won't take",
+              "didn't take",
+              "isn't taking",
+              "hasn't taken"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "The class ___ the issue of food waste yesterday afternoon.",
+            "opts": [
+              "discussed",
+              "has discussed",
+              "discusses",
+              "was discussing"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "___ we ___ the map of Vietnam during geography class last Monday?",
+            "opts": [
+              "Have - studied",
+              "Do - study",
+              "Did - study",
+              "Were - studying"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "At 6:45 this morning, we ___ breakfast together.",
+            "opts": [
+              "have had",
+              "were having",
+              "had",
+              "are having"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "While Minh ___ his speech, the audience was listening carefully.",
+            "opts": [
+              "gives",
+              "gave",
+              "was giving",
+              "is giving"
+            ],
+            "ans": 2
+          }
+        ]
+      },
+      "rearrange": {
+        "instruction": "Rearrange the order of the given words to make complete sentences.",
+        "questions": [
+          {
+            "q": "for / as a volunteer / She / 3 years. / has worked /",
+            "answer": [
+              "She has worked as a volunteer for 3 years."
+            ]
+          },
+          {
+            "q": "since 2020. / the War Remnants Museum / visited / We / haven't /",
+            "answer": [
+              "We haven't visited the War Remnants Museum since 2020."
+            ]
+          },
+          {
+            "q": "statues / While / arrived. / in / bronze / were / the workshop, / the artisans / casting / the tourists /",
+            "answer": [
+              "While the artisans were casting bronze statues in the workshop, the tourists arrived."
+            ]
+          },
+          {
+            "q": "raises / a question. / She / always / before / her hand / asking /",
+            "answer": [
+              "She always raises her hand before asking a question."
+            ]
+          },
+          {
+            "q": "playing / My brother / at the moment. / a computer game / is /",
+            "answer": [
+              "My brother is playing a computer game at the moment."
+            ]
+          },
+          {
+            "q": "the classroom / turned / She / yesterday. / the lights / before / off / leaving /",
+            "answer": [
+              "She turned off the lights before leaving the classroom yesterday."
+            ]
+          },
+          {
+            "q": "taking / They / when / a tour / the city / were / it / of / to rain. / started /",
+            "answer": [
+              "They were taking a tour of the city when it started to rain."
+            ]
+          },
+          {
+            "q": "submitted / He / already / his digital presentation. / has /",
+            "answer": [
+              "He has already submitted his digital presentation."
+            ]
+          },
+          {
+            "q": "AI / many / future. / in / replace / think / jobs / I / will /",
+            "answer": [
+              "I think AI will replace many jobs in the future."
+            ]
+          },
+          {
+            "q": "plastic / campaign / are / launch / They / about / waste / going / to / soon. /",
+            "answer": [
+              "They are going to launch a campaign about plastic waste soon."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.2": {
+    "name": "Gerunds and Infinitives",
+    "exercises": {
+      "mcq": {
+        "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "The villagers decided ___ the old communal house last year.",
+            "opts": [
+              "restore",
+              "to restore",
+              "restoring",
+              "restored"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "My grandmother enjoys ___ old stories about her childhood.",
+            "opts": [
+              "tell",
+              "to tell",
+              "telling",
+              "told"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "We plan ___ our school tradition of collecting books.",
+            "opts": [
+              "to keep",
+              "keep",
+              "keeping",
+              "kept"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Are you interested in ___ traditional games like tug of war?",
+            "opts": [
+              "playing",
+              "to play",
+              "play",
+              "played"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "He stopped ___ a newspaper on his way home yesterday.",
+            "opts": [
+              "buy",
+              "buying",
+              "to buy",
+              "bought"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "My parents suggest ___ the museum to learn about our history.",
+            "opts": [
+              "visit",
+              "visiting",
+              "to visit",
+              "visited"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "I promise ___ hard to preserve our cultural heritage.",
+            "opts": [
+              "working",
+              "work",
+              "to work",
+              "works"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "She is fond of ___ bare-footed on the grass.",
+            "opts": [
+              "run",
+              "running",
+              "to run",
+              "ran"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "Please remember ___ off the lights before leaving the classroom.",
+            "opts": [
+              "turn",
+              "turning",
+              "to turn",
+              "turned"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Children in my village used to practise ___ out stories.",
+            "opts": [
+              "acting",
+              "to act",
+              "act",
+              "acted"
+            ],
+            "ans": 0
+          }
+        ]
+      },
+      "rearrange": {
+        "instruction": "Rearrange the order of the given words to make complete sentences.",
+        "questions": [
+          {
+            "q": "to preserve / We / our / traditions. / hope / cultural /",
+            "answer": [
+              "We hope to preserve our cultural traditions."
+            ]
+          },
+          {
+            "q": "old / fancy / items? / collecting / Do / you /",
+            "answer": [
+              "Do you fancy collecting old items?"
+            ]
+          },
+          {
+            "q": "to cook / My mother / me / traditional / taught / dishes. /",
+            "answer": [
+              "My mother taught me to cook traditional dishes."
+            ]
+          },
+          {
+            "q": "avoid / bad / habits. / We / should / forming /",
+            "answer": [
+              "We should avoid forming bad habits."
+            ]
+          },
+          {
+            "q": "to visit / agreed / The / historic / class / the / monument. /",
+            "answer": [
+              "The class agreed to visit the historic monument."
+            ]
+          },
+          {
+            "q": "writing / finished / She / the / about / past. / essay / has / the /",
+            "answer": [
+              "She has finished writing the essay about the past."
+            ]
+          },
+          {
+            "q": "keen on / about / learning / history. / I / am / not /",
+            "answer": [
+              "I am not keen on learning about history."
+            ]
+          },
+          {
+            "q": "offer. / refused / He / job / to / take / the /",
+            "answer": [
+              "He refused to take the job offer."
+            ]
+          },
+          {
+            "q": "forward to / looking / the / festival. / We / are / attending /",
+            "answer": [
+              "We are looking forward to attending the festival."
+            ]
+          },
+          {
+            "q": "to lock / Don't / the / forget / door. / front /",
+            "answer": [
+              "Don't forget to lock the front door."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.3": {
+    "name": "Conditional Sentences Type 1",
+    "exercises": {
+      "mcq": {
+        "instruction": "Circle the letter A, B, C or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "If the local artisans ___ hard, they will finish this batch of pottery vases on time.",
+            "opts": [
+              "work",
+              "works",
+              "will work",
+              "worked"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "You ___ stuck in a traffic jam if you go to the city centre during rush hour.",
+            "opts": [
+              "get",
+              "got",
+              "will get",
+              "gets"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "If we don't preserve our cultural heritage, future generations ___ about our history.",
+            "opts": [
+              "won't know",
+              "don't know",
+              "didn't know",
+              "wouldn't know"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "If Mai ___ to reduce stress, she should try to maintain a well-balanced life.",
+            "opts": [
+              "want",
+              "wants",
+              "will want",
+              "wanted"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "The city authorities ___ solve the traffic congestion problem if they build more sky trains.",
+            "opts": [
+              "should",
+              "might",
+              "must",
+              "could"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "If you ___ too much time on social media, it will become a big distraction from your studies.",
+            "opts": [
+              "spend",
+              "spends",
+              "will spend",
+              "spent"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "We will explore the limestone caves if the weather ___ good tomorrow.",
+            "opts": [
+              "will be",
+              "is",
+              "was",
+              "be"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "If the garbage collector ___ soon, the rubbish bins will overflow.",
+            "opts": [
+              "doesn't come",
+              "won't come",
+              "didn't come",
+              "don't come"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "If you want to become a skilled artisan in this pottery village, you ___ learn how to use the wheel patiently.",
+            "opts": [
+              "might",
+              "may",
+              "must",
+              "could"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "If he ___ fluent in English, he will easily get a job in a multinational company.",
+            "opts": [
+              "become",
+              "becomes",
+              "will become",
+              "became"
+            ],
+            "ans": 1
+          }
+        ]
+      },
+      "rearrange": {
+        "instruction": "Rearrange the order of the given words to make complete sentences.",
+        "questions": [
+          {
+            "q": "recycle / save / If / bottles, / plastic / will / money. / you / you",
+            "answer": [
+              "If you recycle plastic bottles, you will save money."
+            ]
+          },
+          {
+            "q": "village / famous / will / promote / The / if / become / it. / craft / we",
+            "answer": [
+              "The craft village will become famous if we promote it."
+            ]
+          },
+          {
+            "q": "pass / hard, / studies / exam. / she / Unless / won't / the / she",
+            "answer": [
+              "Unless she studies hard, she won't pass the exam."
+            ]
+          },
+          {
+            "q": "should / feel / If / stressed, / rest. / take / you / you / a",
+            "answer": [
+              "If you feel stressed, you should take a rest."
+            ]
+          },
+          {
+            "q": "book / itinerary. / you / worry about / have to / won't / the / If / package tour, / a / you /",
+            "answer": [
+              "If you book a package tour, you won't have to worry about the itinerary."
+            ]
+          }
+        ]
+      },
+      "completion": {
+        "instruction": "Complete the following sentences with NO MORE THAN THREE WORDS.",
+        "questions": [
+          {
+            "q": "If the government doesn't act now, the city will face serious traffic congestion. -> Unless the government ___, the city will face serious traffic congestion.",
+            "answer": [
+              "acts now"
+            ]
+          },
+          {
+            "q": "Visit the village fair to find unique handicrafts made by local artisans. -> If you visit the village fair, ___ unique handicrafts made by local artisans.",
+            "answer": [
+              "you can find",
+              "you will find"
+            ]
+          },
+          {
+            "q": "Hurry up, or you will be late for school. -> If you ___, you will be late for school.",
+            "answer": [
+              "don't hurry up"
+            ]
+          },
+          {
+            "q": "Unless she practices speaking English daily, she can't improve her skill. -> If she ___ English daily, she can't improve her skill.",
+            "answer": [
+              "doesn't practice speaking"
+            ]
+          },
+          {
+            "q": "Do morning exercise regularly and you will have a healthy body. -> If you ___ regularly, you will have a healthy body.",
+            "answer": [
+              "do morning exercise"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.4": {
+    "name": "Present Wish",
+    "exercises": {
+      "mcq": {
+        "instruction": "Circle the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "I wish my neighbourhood ___ quieter; the construction site nearby is too noisy.",
+            "opts": [
+              "is",
+              "were",
+              "will be",
+              "has been"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "Lan wishes she ___ how to make traditional handicrafts like her grandmother.",
+            "opts": [
+              "knows",
+              "known",
+              "knew",
+              "will know"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Do you wish you ___ in a smart city with modern facilities?",
+            "opts": [
+              "live",
+              "lived",
+              "are living",
+              "will live"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "I wish the sky train ___ crowded during rush hour so I could get a seat.",
+            "opts": [
+              "wasn't",
+              "isn't",
+              "won't be",
+              "hasn't been"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The students wish they ___ more time to explore the botanical garden.",
+            "opts": [
+              "have",
+              "having",
+              "had",
+              "will have"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "My brother wishes he ___ so stressed out about his upcoming exams.",
+            "opts": [
+              "didn't feel",
+              "doesn't feel",
+              "won't feel",
+              "can't feel"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "I wish I ___ eliminate all distractions when I study at home.",
+            "opts": [
+              "can",
+              "could",
+              "will",
+              "may"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "We wish the local authority ___ the old communal house immediately.",
+            "opts": [
+              "preserves",
+              "will preserve",
+              "preserved",
+              "is preserving"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Do they wish they ___ skilled artisans?",
+            "opts": [
+              "is",
+              "were",
+              "will be",
+              "has been"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "They wish they ___ to deal with traffic congestion every morning.",
+            "opts": [
+              "didn't have",
+              "don't have",
+              "won't have",
+              "haven't had"
+            ],
+            "ans": 0
+          }
+        ]
+      },
+      "rearrange": {
+        "instruction": "Rearrange the order of the given words to make complete sentences.",
+        "questions": [
+          {
+            "q": "in music. / my / I / supported / wish / choice / my parents /",
+            "answer": [
+              "I wish my parents supported my choice in music."
+            ]
+          },
+          {
+            "q": "foreigners. / she / speak / could / wishes / to communicate / fluently / English / She / with /",
+            "answer": [
+              "She wishes she could speak English fluently to communicate with foreigners."
+            ]
+          },
+          {
+            "q": "rubbish / I / drop / in the public places. / didn't / wish / people /",
+            "answer": [
+              "I wish people didn't drop rubbish in the public places."
+            ]
+          },
+          {
+            "q": "this summer. / to Europe / afford / He / wishes / a package tour / he / could /",
+            "answer": [
+              "He wishes he could afford a package tour to Europe this summer."
+            ]
+          },
+          {
+            "q": "so much. / on / rely / didn't / They / their / electronic devices / wish / they /",
+            "answer": [
+              "They wish they didn't rely on their electronic devices so much."
+            ]
+          }
+        ]
+      },
+      "completion": {
+        "instruction": "Complete the following sentences with NO MORE THAN THREE WORDS.",
+        "questions": [
+          {
+            "q": "The air in the downtown area is very polluted. -> I wish the air in the downtown area ___ polluted.",
+            "answer": [
+              "weren't",
+              "wasn't"
+            ]
+          },
+          {
+            "q": "My sister doesn't have a well-balanced life between work and family. -> My sister wishes she ___ life between work and family.",
+            "answer": [
+              "had a well-balanced"
+            ]
+          },
+          {
+            "q": "I don't know the itinerary for our trip well. -> I wish I ___ for our trip better.",
+            "answer": [
+              "knew the itinerary"
+            ]
+          },
+          {
+            "q": "Mai can't go to the suburbs to visit her grandparents right now. -> Mai wishes she ___ to the suburbs to visit her grandparents right now.",
+            "answer": [
+              "could go"
+            ]
+          },
+          {
+            "q": "It's a shame that we don't have enough time to explore the city. -> We wish we ___ to explore the city.",
+            "answer": [
+              "had enough time"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.5": {
+    "name": "Comparison",
+    "exercises": {
+      "mcq": {
+        "instruction": "Circle the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "This is ___ film I've ever seen.",
+            "opts": [
+              "more exciting",
+              "the more exciting",
+              "the most exciting",
+              "as exciting as"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Carol sings as beautifully as Mary, but Cindy sings ___.",
+            "opts": [
+              "more beautiful",
+              "more beautifully",
+              "the most beautiful",
+              "the more beautifully"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "Your accent is ___ than mine.",
+            "opts": [
+              "worse",
+              "badder",
+              "worst",
+              "the worse"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Being a firefighter is ___ than being a builder.",
+            "opts": [
+              "more dangerously",
+              "more dangerous",
+              "the more dangerous",
+              "the most dangerously"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "I'll try to finish the job ___ than the due date.",
+            "opts": [
+              "quicker",
+              "quickly",
+              "the quicker",
+              "more quickly"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "I prefer this chair to the other one. It's ___.",
+            "opts": [
+              "the most comfortably",
+              "more comfortable",
+              "more comfortably",
+              "as comfortable as"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "I'd like some ___ information about your courses.",
+            "opts": [
+              "the farther",
+              "farthest",
+              "further",
+              "the further"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "People say that Chinese is ___ to learn than English.",
+            "opts": [
+              "the most difficult",
+              "as difficult",
+              "more difficulty",
+              "more difficult"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "This student is by far ___ in my class.",
+            "opts": [
+              "the most hard-working",
+              "hard-working",
+              "the more hard-working",
+              "the hardest-working"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "John is a ___ driver than Jim and he drives ___.",
+            "opts": [
+              "faster - more careful",
+              "fastest - more careful",
+              "faster - more carefully",
+              "fast - more carefully"
+            ],
+            "ans": 2
+          }
+        ]
+      },
+      "rewrite": {
+        "instruction": "Rewrite these sentences so that the meaning is similar to the first one.",
+        "questions": [
+          {
+            "q": "This machine works better than that one. -> That machine works ___",
+            "answer": [
+              "That machine works worse than this machine."
+            ]
+          },
+          {
+            "q": "No one in my class is taller than Patrick. -> Patrick is ___",
+            "answer": [
+              "Patrik is the tallest in my class."
+            ]
+          },
+          {
+            "q": "He drives more carefully than his wife does. -> His wife drives ___",
+            "answer": [
+              "His wife drives less carefully than",
+              "more carelessly than him."
+            ]
+          },
+          {
+            "q": "This film is more interesting than that one. -> That film is ___",
+            "answer": [
+              "That film is less interesting than",
+              "more boring than this one."
+            ]
+          },
+          {
+            "q": "That car is the most expensive we have ever sold. -> We have never ___",
+            "answer": [
+              "We have never sold a more expensive car than this."
+            ]
+          },
+          {
+            "q": "Hoa studies better than Nga. -> Hoa is ___",
+            "answer": [
+              "Hoa is a better student than Nga."
+            ]
+          },
+          {
+            "q": "Lan has never seen a more exciting match than this. -> This is ___",
+            "answer": [
+              "This is the most exciting match Lan has ever seen."
+            ]
+          },
+          {
+            "q": "No river in the world is larger than the Amazon. -> The Amazon is ___",
+            "answer": [
+              "The Amazon is the largest river in the world.",
+              "The Amazon is the largest in the world."
+            ]
+          },
+          {
+            "q": "My mother is a more careful worker than her mother. -> My mother works ___",
+            "answer": [
+              "My mother works more carefully than her mother."
+            ]
+          },
+          {
+            "q": "A house in the country is cheaper than a house in the city. -> A house in the city ___",
+            "answer": [
+              "A house in the city is more expensive than a house in the country."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.6": {
+    "name": "Subordinate Clauses",
+    "exercises": {
+      "mcq": {
+        "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "___ it was chilly outside, we went out for some drink.",
+            "opts": [
+              "Despite",
+              "If",
+              "Though",
+              "Because"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Despite ___, Mai still caught her bus to work.",
+            "opts": [
+              "she got up late",
+              "she gets up late",
+              "got up late",
+              "getting up late"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "The children slept deeply ___ the noisy talk.",
+            "opts": [
+              "because",
+              "because of",
+              "even though",
+              "in spite of"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "The weather was bad, ___ we went for a picnic.",
+            "opts": [
+              "but",
+              "and",
+              "so",
+              "though"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "___ of her bad luck, she won the medal.",
+            "opts": [
+              "Despite",
+              "In spite",
+              "However",
+              "Though"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "The project was delayed ___ the team lacked resources.",
+            "opts": [
+              "because of",
+              "though",
+              "because",
+              "due to"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "The flight was cancelled ___ the thick fog.",
+            "opts": [
+              "because of",
+              "since",
+              "due to",
+              "in spite of"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "The meeting was postponed ___ the manager's absence.",
+            "opts": [
+              "though",
+              "as",
+              "because",
+              "because of"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "___ pollution was increasing rapidly, the government introduced stricter laws.",
+            "opts": [
+              "Even though",
+              "Because",
+              "Because of",
+              "If"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "Because of ___, he achieved great success.",
+            "opts": [
+              "he worked hard",
+              "his hard-working",
+              "working hard",
+              "working hardly"
+            ],
+            "ans": 2
+          }
+        ]
+      },
+      "rearrange": {
+        "instruction": "Rearrange the order of the given words to make completed sentences.",
+        "questions": [
+          {
+            "q": "although we / We hardly ever / the same street. / see each other / live on",
+            "answer": [
+              "We hardly ever see each other although we live on the same street."
+            ]
+          },
+          {
+            "q": "Despite the fact that / to the nearest village. / my foot / I managed to walk / was injured,",
+            "answer": [
+              "Despite the fact that my foot was injured, I managed to walk to the nearest village."
+            ]
+          },
+          {
+            "q": "difficult to make / Although she earns / she finds it / a good salary, / both ends meet.",
+            "answer": [
+              "Although she earns a good salary, she finds it difficult to make both ends meet."
+            ]
+          },
+          {
+            "q": "to spend quality time / she makes it a point / working three jobs / in a day, / In spite of / with her kids.",
+            "answer": [
+              "In spite of working three jobs in a day, she makes it a point to spend quality time with her kids."
+            ]
+          },
+          {
+            "q": "Though he has / he never asks the adults / to make informed decisions. / some problems, / for support and guidance",
+            "answer": [
+              "Though he has some problems, he never asks the adults for support and guidance to make informed decisions."
+            ]
+          },
+          {
+            "q": "students never felt bored / Although the schools / computers or projectors, / with the lessons. / didn't have",
+            "answer": [
+              "Although the schools didn't have computers or projectors, students never felt bored with the lessons."
+            ]
+          },
+          {
+            "q": "their traditional ways of / Though / of artisans, / the crafts village / the villagers / is facing the lack / try to keep / making silk products.",
+            "answer": [
+              "Though the crafts village is facing a lack of artisans, the villagers try to keep their traditional ways of making silk products."
+            ]
+          },
+          {
+            "q": "Ha Long Bay / is also home / to high biodiversity / with typical ecosystems / and thousands of / fauna and / flora species.",
+            "answer": [
+              "Ha Long Bay is also home to high biodiversity with typical ecosystems and thousands of fauna and flora species."
+            ]
+          },
+          {
+            "q": "to get a place / for their small girl / They were hopeless / because / in the kindergarten / the application form. / they couldn't get",
+            "answer": [
+              "They were hopeless to get a place in the kindergarten for their small girl because they couldn't get the application form."
+            ]
+          },
+          {
+            "q": "Children / still eager / eat it / to make / they can / before Tet / are / although / all the year round. / chung cake",
+            "answer": [
+              "Children are still eager to make Chung cake before Tet although they can eat it all the year round."
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.7": {
+    "name": "Reported Speech",
+    "exercises": {
+      "mcq": {
+        "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "The doctor told him he ___ drink beer, but not too much.",
+            "opts": [
+              "can",
+              "could",
+              "will",
+              "must"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "I wanted to know ___ return home.",
+            "opts": [
+              "when would she",
+              "when she would",
+              "when she will",
+              "when will she"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "Sara said she was leaving for Los Angeles ___.",
+            "opts": [
+              "next week",
+              "the week previous",
+              "following week",
+              "the following week"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "Jackie said he ___ home the following Sunday.",
+            "opts": [
+              "will return",
+              "would return",
+              "returned",
+              "had returned"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "He wanted to know where Minh ___ then.",
+            "opts": [
+              "was living",
+              "did live",
+              "was lived",
+              "was being lived"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Emma asked him ___.",
+            "opts": [
+              "what time does the meeting end",
+              "what time the meeting end",
+              "what time the meeting ended",
+              "what time did the meeting end"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "He ___ me there had been an accident on Tran Phu Street.",
+            "opts": [
+              "asked",
+              "said",
+              "spoke",
+              "told"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "Huong asked where ___.",
+            "opts": [
+              "her book is",
+              "her book was",
+              "was her book",
+              "her book will be"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "David wondered ___ doing well at school.",
+            "opts": [
+              "whether his sisters are",
+              "if his sisters was",
+              "if his sisters were",
+              "his sisters are if"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Mai asked Trang why ___ the film the next day.",
+            "opts": [
+              "didn't she watch",
+              "wouldn't she watch",
+              "she won't watch",
+              "she wouldn't watch"
+            ],
+            "ans": 3
+          }
+        ]
+      },
+      "completion": {
+        "instruction": "Complete the following sentences with NO MORE THAN THREE WORDS.",
+        "questions": [
+          {
+            "q": "\"I don't like this red carpet,\" I said. -> I said that ___ that red carpet.",
+            "answer": [
+              "I didn't like"
+            ]
+          },
+          {
+            "q": "\"We can't concentrate on our lessons now.\" -> The students said ___ on their lessons then.",
+            "answer": [
+              "they couldn't concentrate"
+            ]
+          },
+          {
+            "q": "\"Can you speak Korean during your holiday?\" -> My teacher asked me ___ speak Korean during my holiday.",
+            "answer": [
+              "if I could",
+              "whether I could"
+            ]
+          },
+          {
+            "q": "\"Where is my umbrella?\", Linda asked. -> Linda asked ___ was.",
+            "answer": [
+              "where her umbrella"
+            ]
+          },
+          {
+            "q": "\"Will you come to my wedding?\", Trang said to them. -> Trang asked them ___ come to her wedding.",
+            "answer": [
+              "if they would",
+              "whether they would"
+            ]
+          },
+          {
+            "q": "\"How will you get to the campsite?\" Kai asked me. -> Kai wanted to know ___ get to the campsite.",
+            "answer": [
+              "how I would"
+            ]
+          },
+          {
+            "q": "\"Do you want a new jacket for your birthday?\", she said to her son. -> She asked her son ___ a new jacket for his birthday.",
+            "answer": [
+              "if he wanted",
+              "whether he wanted"
+            ]
+          },
+          {
+            "q": "\"Why do you forget to turn on the light?\", Jimmy said to Jane. -> Jimmy asked Jane ___ to turn on the light.",
+            "answer": [
+              "why she forgot"
+            ]
+          },
+          {
+            "q": "\"Will you come to my house for a meal?\" Lan said to Ba. -> Lan asked Ba if ___ to her house for a meal.",
+            "answer": [
+              "he would come"
+            ]
+          },
+          {
+            "q": "\"Does your father work as an engineer?\", my friend told me. -> My friend asked me if ___ as an engineer.",
+            "answer": [
+              "my father worked"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.8": {
+    "name": "Relative Clauses",
+    "exercises": {
+      "mcq": {
+        "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "I have never heard of the singer ___ became famous overnight.",
+            "opts": [
+              "whom",
+              "whose",
+              "who",
+              "which"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Jack bought a book ___ covered all kinds of subjects.",
+            "opts": [
+              "which",
+              "who",
+              "whom",
+              "where"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Have they called the scientist ___ they are going to visit tomorrow?",
+            "opts": [
+              "whose",
+              "whom",
+              "who",
+              "Both B & C"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "Tom would like to talk with you about something ___ you did at school.",
+            "opts": [
+              "what",
+              "who",
+              "which",
+              "when"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "I don't know much about the girl ___ parents have moved to the countryside.",
+            "opts": [
+              "whose",
+              "who",
+              "whom",
+              "that"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Please pass me the dictionary ___ cover is blue.",
+            "opts": [
+              "which",
+              "whose",
+              "that",
+              "whom"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "I will never forget the day ___ he saved my son from the river.",
+            "opts": [
+              "which",
+              "that",
+              "in which",
+              "when"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "Ms Lan, ___ is our English teacher, is always fashionably dressed.",
+            "opts": [
+              "that",
+              "whom",
+              "who",
+              "whose"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "They didn't want to sell the house ___ they used to live for many years.",
+            "opts": [
+              "on which",
+              "where",
+              "which",
+              "which in"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "This picture, ___ was painted by a famous Spanish artist, is worth millions of dollars.",
+            "opts": [
+              "that",
+              "who",
+              "what",
+              "which"
+            ],
+            "ans": 3
+          }
+        ]
+      },
+      "completion": {
+        "instruction": "Combine these pairs of sentences using a relative pronoun. You should write NO MORE THAN THREE WORDS.",
+        "questions": [
+          {
+            "q": "I will show you the man. I spoke to him the other day. -> I will show you the man ___ to the other day.",
+            "answer": [
+              "who whom I spoke",
+              "who that I spoke",
+              "who I spoke"
+            ]
+          },
+          {
+            "q": "I really like the car. I bought it last year. -> I really like the car ___ last year.",
+            "answer": [
+              "which I bought",
+              "that I bought",
+              "I bought"
+            ]
+          },
+          {
+            "q": "Mr. Smith took over the company. His wife died last year. -> Mr. Smith, ___ last year, took over the company.",
+            "answer": [
+              "whose wife died"
+            ]
+          },
+          {
+            "q": "The restaurant is the best in town. We usually eat there. -> The restaurant ___ eat is the best in town.",
+            "answer": [
+              "where we usually"
+            ]
+          },
+          {
+            "q": "The film is about a woman. Her son mysteriously disappears. -> The film is about ___ son mysteriously disappears.",
+            "answer": [
+              "the woman whose"
+            ]
+          },
+          {
+            "q": "The man was arrested yesterday. He escaped from prison a week ago. -> The man ___ prison a week ago was arrested yesterday.",
+            "answer": [
+              "who that escaped from",
+              "who escaped from"
+            ]
+          },
+          {
+            "q": "The bag is heavy. It contains a lot of presents. -> The ___ a lot of presents is heavy.",
+            "answer": [
+              "bag which that contains",
+              "bag which contains"
+            ]
+          },
+          {
+            "q": "My friend's father gave us the tickets. He owns a travel agency. -> My friend's father, ___ travel agency, gave us the tickets.",
+            "answer": [
+              "who owns a"
+            ]
+          },
+          {
+            "q": "The test was very complicated. Nobody could do it. -> The test ___ do was very complicated.",
+            "answer": [
+              "which that nobody could",
+              "which nobody could"
+            ]
+          },
+          {
+            "q": "Can you tell me about the time? You feel most frustrated then. -> Can you tell me the time ___ most frustrated?",
+            "answer": [
+              "when you feel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "2.mixed": {
+    "name": "Mixed Grammar Practice",
+    "exercises": {
+      "mcq": {
+        "instruction": "Mark the letter A, B, C, or D to indicate the best answer to each of the following questions.",
+        "questions": [
+          {
+            "q": "We ___ a workshop on plastic waste last Friday.",
+            "opts": [
+              "have",
+              "are having",
+              "have had",
+              "had"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "At 9 p.m last night, I ___ a documentary about the environment.",
+            "opts": [
+              "was watching",
+              "watched",
+              "watching",
+              "watch"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "I ___ making a solar oven before.",
+            "opts": [
+              "never / tried",
+              "am never trying",
+              "have never tried",
+              "will never try"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "If the government ___ more on education, the country will develop faster.",
+            "opts": [
+              "are spending",
+              "spends",
+              "will spend",
+              "spent"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "We ___ a memorable experience if we join the traditional cooking class in Hoi An.",
+            "opts": [
+              "have",
+              "had",
+              "having",
+              "will have"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "If you ___ care of your physical health, you won't be able to work effectively.",
+            "opts": [
+              "don't take",
+              "won't take",
+              "didn't take",
+              "haven't taken"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Unless he ___ his presentation skills, he won't pass the oral exam.",
+            "opts": [
+              "improve",
+              "improved",
+              "improves",
+              "will improve"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "I wish my house ___ closer to the metro station so I could travel easily.",
+            "opts": [
+              "is",
+              "were",
+              "will be",
+              "has been"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "The artisan wishes he ___ enough money to expand his workshop.",
+            "opts": [
+              "has",
+              "having",
+              "had",
+              "will have"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "Do you wish you ___ how to play a musical instrument like the guitar?",
+            "opts": [
+              "know",
+              "knew",
+              "known",
+              "will know"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "___ he had enough money, he refused to buy a house.",
+            "opts": [
+              "When",
+              "If",
+              "Although",
+              "Because"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "___ her lack of hard work, she was promoted.",
+            "opts": [
+              "Even though",
+              "In spite of",
+              "Because of",
+              "If"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "They are looking for the man and his dog ___ have lost the way in the forest.",
+            "opts": [
+              "that",
+              "which",
+              "who",
+              "whose"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Red Rain was aired in Quang Tri citadel, ___ the war against the American took place for 81 days.",
+            "opts": [
+              "which",
+              "that",
+              "where",
+              "when"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "George is ___ person I have ever met.",
+            "opts": [
+              "the most dependable",
+              "more dependable",
+              "the more dependable",
+              "a more dependable"
+            ],
+            "ans": 0
+          },
+          {
+            "q": "Mr. Ba usually works ___ than Mr. Nam.",
+            "opts": [
+              "more effective",
+              "more effectively",
+              "the most effective",
+              "the most effectively"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "She asked who was coming to the party ___.",
+            "opts": [
+              "the night before",
+              "that night",
+              "this night",
+              "tonight"
+            ],
+            "ans": 1
+          },
+          {
+            "q": "They asked what time the train ___.",
+            "opts": [
+              "would leaving",
+              "will leave",
+              "left",
+              "did leave"
+            ],
+            "ans": 2
+          },
+          {
+            "q": "___ the friendly atmosphere, all the guests felt relaxed after the party.",
+            "opts": [
+              "Despite",
+              "Although",
+              "Since",
+              "Because of"
+            ],
+            "ans": 3
+          },
+          {
+            "q": "Because of ___, all the crops in Thanh Hoa were destroyed.",
+            "opts": [
+              "the severe floods",
+              "the severely floods",
+              "the floods are severe",
+              "the floods were severely"
+            ],
+            "ans": 0
+          }
+        ]
+      },
+      "completion": {
+        "instruction": "Complete the following sentences with NO MORE THAN THREE WORDS.",
+        "questions": [
+          {
+            "q": "I don't like the boy. Sue is going out with him. -> I don't like the boy with ___ going out.",
+            "answer": [
+              "whom Sue is"
+            ]
+          },
+          {
+            "q": "The postman is very old. He works in the village. -> The postman ___ the village is very old.",
+            "answer": [
+              "who",
+              "that works in"
+            ]
+          },
+          {
+            "q": "I don't remember the lesson. My teacher explained it to us last week. -> I don't remember the lesson which my teacher ___ last week.",
+            "answer": [
+              "explained to us"
+            ]
+          },
+          {
+            "q": "\"Are you going to Ho Chi Minh City next week?\", Tom asked Jane. -> Tom asked Jane ___ going to Ho Chi Minh City the next week.",
+            "answer": [
+              "if",
+              "whether she was"
+            ]
+          },
+          {
+            "q": "\"Have you finished your homework?\", Mom asked me. -> Mom asked if I ___ homework.",
+            "answer": [
+              "had finished my"
+            ]
+          },
+          {
+            "q": "\"Does your brother live in London, Nam?\", Lan asked. -> Lan asked Nam if ___ in London.",
+            "answer": [
+              "his brother lived"
+            ]
+          },
+          {
+            "q": "Mai rarely eats fast food, so she looks fit and healthy. -> Because ___ fast food, she looks fit and healthy.",
+            "answer": [
+              "Mai rarely eats"
+            ]
+          },
+          {
+            "q": "They weren't allowed to get on the plane because they forgot their passports. -> Because of ___, they weren't allowed to get on the plane.",
+            "answer": [
+              "forgetting their passports"
+            ]
+          },
+          {
+            "q": "Because she was seriously ill, the teacher told her to stay indoors during break time. -> Because of ___, the teacher told her to stay indoors during break time.",
+            "answer": [
+              "her serious illness"
+            ]
+          },
+          {
+            "q": "The camera looks new, but she doesn't want to buy it. -> Although the camera looks new, ___ to buy it.",
+            "answer": [
+              "she doesn't want"
+            ]
+          },
+          {
+            "q": "Though she lives near the beach, she rarely goes swimming there. -> Despite ___ beach, she rarely goes swimming there.",
+            "answer": [
+              "living near the"
+            ]
+          },
+          {
+            "q": "In spite of the rough sea, the yacht started its cruise. -> Even though the ___, the yacht started its cruise.",
+            "answer": [
+              "sea was rough"
+            ]
+          },
+          {
+            "q": "Linda dances more gracefully than Laura. -> Laura dances ___ Linda.",
+            "answer": [
+              "less gracefully than"
+            ]
+          },
+          {
+            "q": "Hoa is the best singer in this club. -> Nobody in this club ___ Hoa.",
+            "answer": [
+              "sings better than"
+            ]
+          },
+          {
+            "q": "We have never gone to a more expensive restaurant than this. -> This is the ___ we have ever gone to.",
+            "answer": [
+              "most expensive restaurant"
+            ]
+          },
+          {
+            "q": "I started learning English 5 years ago. -> I ___ for 5 years.",
+            "answer": [
+              "have learned  English",
+              "have learned learnt English"
+            ]
+          },
+          {
+            "q": "Unless we protect the environment, we will suffer from pollution. -> If we ___ environment, we will suffer from pollution.",
+            "answer": [
+              "don't protect the"
+            ]
+          },
+          {
+            "q": "The last time we went to the cinema was two months ago. -> We ___ the cinema for two months.",
+            "answer": [
+              "haven't gone to"
+            ]
+          },
+          {
+            "q": "I don't know what I should do to deal with exam stress. -> I wish ___ I should do to deal with exam stress.",
+            "answer": [
+              "I knew what"
+            ]
+          },
+          {
+            "q": "Unless he attends a vocational school, he won't learn these practical skills. -> If he ___ vocational school, he won't learn these practical skills.",
+            "answer": [
+              "doesn't attend a"
+            ]
+          }
+        ]
+      },
+      "rearrange": {
+        "instruction": "Rearrange the order of the given words to make completed sentences.",
+        "questions": [
+          {
+            "q": "walk to school / they were small. / They used to / when",
+            "answer": [
+              "They used to walk to school when they were small."
+            ]
+          },
+          {
+            "q": "which the receptionist / The information / was very useful. / gave me",
+            "answer": [
+              "The information which the receptionist gave me was very useful."
+            ]
+          },
+          {
+            "q": "He decided to take / in America. / before going to work / an English course",
+            "answer": [
+              "He decided to take an English course before going to work in America."
+            ]
+          },
+          {
+            "q": "a traditional market. / an old building / while they were / We were visiting / going to",
+            "answer": [
+              "We were visiting an old building while they were going to a traditional market."
+            ]
+          },
+          {
+            "q": "he likes / He's going to / because / designing and engineering. / be an architect",
+            "answer": [
+              "He's going to be an architect because he likes designing and engineering."
+            ]
+          },
+          {
+            "q": "too much time / his son / playing games. / He wishes / did not spend",
+            "answer": [
+              "He wishes his son did not spend too much time playing games."
+            ]
+          },
+          {
+            "q": "because they are / These products / with lacquer. / lacquer wares / decoratively covered / are called",
+            "answer": [
+              "These products are called lacquer wares because they are decoratively covered with lacquer."
+            ]
+          },
+          {
+            "q": "a teacher will act / a facilitator / than a giver / In the near future, / of knowledge. / more like",
+            "answer": [
+              "In the near future, a teacher will act more like a facilitator than a giver of knowledge."
+            ]
+          },
+          {
+            "q": "successfully landed / In 2014 / part of the Rosetta mission, / on a comet. / a robot named Philae,",
+            "answer": [
+              "In 2014 a robot named Philae, part of the Rosetta mission, successfully landed on a comet."
+            ]
+          },
+          {
+            "q": "will / in / play more / the classroom. / Students / active roles",
+            "answer": [
+              "Students will play more active roles in the classroom."
+            ]
+          },
+          {
+            "q": "Although / she / a successful woman. / a physical handicap, / has become / she has",
+            "answer": [
+              "Although she has a physical handicap, she has become a successful woman."
+            ]
+          },
+          {
+            "q": "good at / native speakers of English. / the language / who are / because she has / Mai is so / some friends",
+            "answer": [
+              "Mai is so good at the language because she has some friends who are native speakers of English."
+            ]
+          },
+          {
+            "q": "and / I've / a travel photographer / take pictures / always wanted / of exotic places. / to be",
+            "answer": [
+              "I've always wanted to be a travel photographer and take pictures of exotic places."
+            ]
+          },
+          {
+            "q": "crowded towns / are expected / within two years. / The sleepy villages / to mushroom into",
+            "answer": [
+              "The sleepy villages are expected to mushroom into crowded towns within two years."
+            ]
+          },
+          {
+            "q": "natural wonder of / going to / a famous / Vietnam. / Phong Nha Cave / He suggested / since it's",
+            "answer": [
+              "He suggested going to Phong Nha Cave since it's a famous natural wonder of Vietnam."
+            ]
+          },
+          {
+            "q": "seen / I / never / have / such / a / beautiful / wonder. / natural",
+            "answer": [
+              "I have never seen such a beautiful natural wonder."
+            ]
+          },
+          {
+            "q": "you / don't / If / hurry, / miss / you / the / will / last / bus.",
+            "answer": [
+              "If you don't hurry, you will miss the last bus."
+            ]
+          },
+          {
+            "q": "ago. / started / The / metro / construction / two / on / the / years",
+            "answer": [
+              "The construction on the metro started two years ago."
+            ]
+          },
+          {
+            "q": "playing / were / The / tug of war / it / children / began / when / to / rain.",
+            "answer": [
+              "The children were playing tug of war when it began to rain."
+            ]
+          },
+          {
+            "q": "English / He / everyday / skills. / to / his / speaks / improve",
+            "answer": [
+              "He speaks English everyday to improve his skills."
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

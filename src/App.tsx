@@ -6,9 +6,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index";
 import GradesPage from "./pages/GradesPage";
 import GradePage from "./pages/GradePage";
-import FlashcardPage from "./pages/FlashcardPage";
-import QuizPage from "./pages/QuizPage";
-import SpellingPage from "./pages/SpellingPage";
+import VocabPage from "./pages/VocabPage";
+import GrammarPage from "./pages/GrammarPage";
+import ExercisesPage from "./pages/ExercisesPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
 import NotFound from "./pages/NotFound";
@@ -25,9 +25,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/grades" element={<GradesPage />} />
           <Route path="/grade/:gradeId" element={<GradePage />} />
-          <Route path="/learn/:unitId/flashcard" element={<FlashcardPage />} />
-          <Route path="/learn/:unitId/quiz" element={<QuizPage />} />
-          <Route path="/learn/:unitId/spelling" element={<SpellingPage />} />
+          <Route path="/grade/:gradeId/vocab/:unitKey" element={<VocabPage />} />
+          <Route path="/grade/:gradeId/grammar/:unitKey" element={<GrammarPage />} />
+          <Route path="/grade/:gradeId/exercises/:unitKey" element={<ExercisesPage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/practice" element={<PracticePage />} />
           <Route path="*" element={<NotFound />} />

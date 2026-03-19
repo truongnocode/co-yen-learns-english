@@ -1,26 +1,33 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
-import { UserCircle2, LogOut } from "lucide-react";
+import { UserCircle2, LogOut, LayoutDashboard } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-
-const navLinks = [
-  { label: "📚 Góc ôn tập", to: "/grades" },
-  { label: "🏆 Thi đua", to: "/progress" },
-  { label: "🎯 Nhiệm vụ", to: "/practice" },
-];
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, signInWithGoogle, logout } = useAuth();
+  const { user, profile, signInWithGoogle, logout } = useAuth();
   const [scrolled, setScrolled] = useState(false);
+  const grade = profile?.grade;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const navLinks = user && grade
+    ? [
+        { label: "📚 Bài học", to: `/grade/${grade}` },
+        { label: "📊 Tiến trình", to: "/progress" },
+        { label: "🏠 Dashboard", to: "/dashboard" },
+      ]
+    : [
+        { label: "📚 Góc ôn tập", to: "/grades" },
+        { label: "🏆 Thi đua", to: "/progress" },
+        { label: "🎯 Nhiệm vụ", to: "/practice" },
+      ];
 
   return (
     <motion.header
@@ -36,7 +43,6 @@ const Navbar = () => {
             : "bg-card/50 backdrop-blur-lg shadow-md border border-white/40"
         }`}
       >
-        {/* Logo */}
         <button
           onClick={() => navigate("/")}
           className="relative z-10 flex items-center gap-2.5 hover:opacity-80 transition-opacity shrink-0"
@@ -50,14 +56,13 @@ const Navbar = () => {
           </span>
         </button>
 
-        {/* Nav Links */}
         <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <button
               key={link.to}
               onClick={() => navigate(link.to)}
               className={`text-sm font-bold transition-all hover:text-primary hover:scale-105 ${
-                location.pathname === link.to
+                location.pathname === link.to || location.pathname.startsWith(link.to + "/")
                   ? "text-primary"
                   : "text-muted-foreground"
               }`}
@@ -67,18 +72,22 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Auth button */}
         {user ? (
           <div className="relative z-10 flex items-center gap-3 shrink-0">
-            <img
-              src={user.photoURL || ""}
-              alt={user.displayName || "Avatar"}
-              className="w-9 h-9 rounded-full border-2 border-primary/40 object-cover shadow-sm"
-              referrerPolicy="no-referrer"
-            />
-            <span className="hidden sm:inline text-xs font-bold text-foreground max-w-[100px] truncate">
-              {user.displayName?.split(" ")[0]}
-            </span>
+            <button
+              onClick={() => navigate("/dashboard")}
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
+              <img
+                src={user.photoURL || ""}
+                alt={user.displayName || "Avatar"}
+                className="w-9 h-9 rounded-full border-2 border-primary/40 object-cover shadow-sm"
+                referrerPolicy="no-referrer"
+              />
+              <span className="hidden sm:inline text-xs font-bold text-foreground max-w-[100px] truncate">
+                {user.displayName?.split(" ")[0]}
+              </span>
+            </button>
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

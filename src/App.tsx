@@ -32,6 +32,10 @@ const App = () => (
           <Route path="/grade/:gradeId/vocab/:unitKey" element={<VocabPage />} />
           <Route path="/grade/:gradeId/grammar/:unitKey" element={<GrammarPage />} />
           <Route path="/grade/:gradeId/exercises/:unitKey" element={<ExercisesPage />} />
+          <Route path="/grade/10/vocab" element={<Grade10VocabPage />} />
+          <Route path="/grade/10/grammar" element={<Grade10GrammarPage />} />
+          <Route path="/grade/10/exercises" element={<Grade10ReadingPage />} />
+          <Route path="/grade/10/tests" element={<Grade10TestsPage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/practice" element={<PracticePage />} />
           <Route path="*" element={<NotFound />} />

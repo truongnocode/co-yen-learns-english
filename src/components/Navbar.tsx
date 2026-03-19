@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-full px-4"
+      initial={{ y: -20, opacity: 0, x: "-50%" }}
+      animate={{ y: 0, opacity: 1, x: "-50%" }}
+      className="fixed top-5 left-1/2 z-50 w-full px-4"
     >
       <div
         className={`max-w-6xl mx-auto rounded-full w-full px-5 py-2.5 relative flex items-center justify-between gap-3 transition-all duration-500 ${

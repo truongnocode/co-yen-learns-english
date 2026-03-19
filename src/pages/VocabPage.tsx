@@ -439,7 +439,7 @@ const VocabPage = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="list"><VocabListTab words={unit.vocabulary} /></TabsContent>
+          <TabsContent value="list"><DictionaryTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="flashcard"><FlashcardTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="quiz"><QuizTab words={unit.vocabulary} /></TabsContent>
           <TabsContent value="spelling"><SpellingTab words={unit.vocabulary} /></TabsContent>

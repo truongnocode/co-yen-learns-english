@@ -8,13 +8,9 @@ import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PageShell from "@/components/PageShell";
 import { getWordIcon } from "@/lib/wordIcons";
+import { speakUS } from "@/lib/tts";
 
-const speak = (text: string) => {
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = "en-US";
-  u.rate = 0.85;
-  speechSynthesis.speak(u);
-};
+const speak = (text: string) => speakUS(text);
 
 // ===== FLASHCARD TAB =====
 const FlashcardTab = ({ words }: { words: VocabItem[] }) => {

@@ -1,13 +1,14 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft, Home, Volume2 } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/contexts/AuthContext";
 import { saveQuizResult } from "@/lib/progress";
 import PageShell from "@/components/PageShell";
+import { speakUS } from "@/lib/tts";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
@@ -30,6 +31,14 @@ const ExercisesPage = () => {
     }).finally(() => setLoading(false));
   }, [grade, unitKey]);
 
+  const exercises = unit?.exercises || [];
+  const q = exercises[current];
+
+  // Auto-read the question
+  useEffect(() => {
+    if (q && !finished && !loading) speakUS(q.q);
+  }, [current, q, finished, loading]);
+
   if (loading) return (
     <PageShell withNavbar={false}>
       <div className="flex items-center justify-center pt-40">
@@ -45,8 +54,6 @@ const ExercisesPage = () => {
     </PageShell>
   );
 
-  const exercises = unit.exercises;
-  const q = exercises[current];
   const progress = ((current + 1) / exercises.length) * 100;
   const score = answers.filter((a, i) => a === exercises[i].ans).length;
 
@@ -124,7 +131,17 @@ const ExercisesPage = () => {
           transition={smooth}
           className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6"
         >
-          <p className="font-display font-extrabold text-lg text-foreground leading-relaxed">{q.q}</p>
+          <div className="flex items-start justify-between gap-3">
+            <p className="font-display font-extrabold text-lg text-foreground leading-relaxed flex-1">{q.q}</p>
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              onClick={() => speakUS(q.q)}
+              className="p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors shrink-0"
+              title="Nghe câu hỏi"
+            >
+              <Volume2 className="h-5 w-5 text-primary" />
+            </motion.button>
+          </div>
         </motion.div>
 
         <div className="flex flex-col gap-3">

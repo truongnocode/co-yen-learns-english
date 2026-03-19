@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { gradesData } from "@/data/vocabulary";
 import { motion } from "framer-motion";
-import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowLeft, CheckCircle2, XCircle, Volume2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
+import { speakUS } from "@/lib/tts";
 
 const SpellingPage = () => {
   const { unitId } = useParams();
@@ -16,9 +17,15 @@ const SpellingPage = () => {
   const [finished, setFinished] = useState(false);
 
   const unit = gradesData.flatMap((g) => g.units).find((u) => u.id === unitId);
+  const word = unit?.words[currentIndex];
+
+  // Auto-read the word
+  useEffect(() => {
+    if (word && !finished) speakUS(word.english);
+  }, [currentIndex, word, finished]);
+
   if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy.</div>;
 
-  const word = unit.words[currentIndex];
   const progress = ((currentIndex + 1) / unit.words.length) * 100;
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -80,6 +87,14 @@ const SpellingPage = () => {
               <p className="text-sm text-muted-foreground mb-3">Viết từ tiếng Anh cho: ✏️</p>
               <h2 className="font-display font-bold text-4xl text-foreground mb-2 relative z-10">{word.vietnamese}</h2>
               <p className="text-muted-foreground text-sm">{word.phonetic}</p>
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={() => speakUS(word.english)}
+                className="mt-3 p-2.5 rounded-full bg-success/10 hover:bg-success/20 transition-colors relative z-10"
+                title="Nghe phát âm"
+              >
+                <Volume2 className="h-5 w-5 text-success" />
+              </motion.button>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">

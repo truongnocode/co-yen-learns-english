@@ -1,9 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { gradesData } from "@/data/vocabulary";
 import { motion } from "framer-motion";
-import { ArrowLeft, CheckCircle2, XCircle } from "lucide-react";
+import { ArrowLeft, CheckCircle2, XCircle, Volume2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
+import { speakUS } from "@/lib/tts";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -31,6 +32,14 @@ const QuizPage = () => {
       return { word, options: shuffle([word, ...wrong]) };
     });
   }, [unit]);
+
+  // Auto-read the English word when question changes
+  useEffect(() => {
+    if (questions.length > 0 && !finished) {
+      const q = questions[currentIndex];
+      if (q) speakUS(q.word.english);
+    }
+  }, [currentIndex, questions, finished]);
 
   if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy.</div>;
 
@@ -65,6 +74,7 @@ const QuizPage = () => {
   const q = questions[currentIndex];
   const progress = ((currentIndex + 1) / questions.length) * 100;
 
+
   const handleSelect = (v: string) => {
     if (selected) return;
     setSelected(v);
@@ -97,6 +107,14 @@ const QuizPage = () => {
               <p className="text-sm text-muted-foreground mb-3">Từ này nghĩa là gì? 🤔</p>
               <h2 className="font-display font-bold text-4xl text-foreground relative z-10">{q.word.english}</h2>
               <p className="text-muted-foreground mt-2">{q.word.phonetic}</p>
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                onClick={() => speakUS(q.word.english)}
+                className="mt-3 p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10"
+                title="Nghe phát âm"
+              >
+                <Volume2 className="h-5 w-5 text-primary" />
+              </motion.button>
             </div>
 
             <div className="flex flex-col gap-3">

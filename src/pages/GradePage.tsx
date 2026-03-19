@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { gradesData, getGradeStyle } from "@/data/vocabulary";
 import UnitCard from "@/components/UnitCard";
-import BottomNav from "@/components/BottomNav";
+import Navbar from "@/components/Navbar";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -34,37 +34,32 @@ const GradePage = () => {
   }
 
   return (
-    <div className="min-h-screen pb-20 overflow-hidden">
-      <div className={`bg-gradient-to-br ${gradient} text-white px-5 pt-12 pb-8 rounded-b-[2.5rem] relative overflow-hidden`}>
-        {/* Decorative circles */}
-        <div className="absolute top-4 right-6 w-20 h-20 rounded-full bg-white/10 float-animation" />
-        <div className="absolute bottom-2 right-20 w-10 h-10 rounded-full bg-white/15 float-animation-delay" />
+    <div className="min-h-screen gradient-hero">
+      <Navbar />
 
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex items-center gap-3 relative z-10">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => navigate("/")}
-            className="p-2.5 rounded-xl bg-white/20 backdrop-blur-sm border border-white/20"
+      {/* Grade header */}
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-6">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <button
+            onClick={() => navigate("/grades")}
+            className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 mb-4 transition-colors"
           >
-            <ArrowLeft className="h-5 w-5" />
-          </motion.button>
-          <div>
-            <h1 className="font-display font-bold text-2xl">
-              {style.emoji} {data.label}
-            </h1>
-            <p className="text-sm opacity-80">{data.units.length} bài học</p>
+            <ArrowLeft className="h-4 w-4" /> Chọn lớp
+          </button>
+          <div className={`bg-gradient-to-r ${gradient} text-white rounded-3xl p-6 sm:p-8 relative overflow-hidden`}>
+            <div className="absolute top-4 right-6 w-20 h-20 rounded-full bg-white/10 float-animation" />
+            <span className="text-4xl">{style.emoji}</span>
+            <h1 className="font-display font-bold text-3xl mt-2">{data.label}</h1>
+            <p className="text-white/80 text-sm">{data.units.length} bài học · Từ vựng theo SGK</p>
           </div>
         </motion.div>
       </div>
 
-      <div className="px-5 mt-6 flex flex-col gap-4">
+      <div className="max-w-3xl mx-auto px-5 pb-20 flex flex-col gap-4">
         {data.units.map((unit, i) => (
           <UnitCard key={unit.id} unit={unit} grade={grade} index={i} />
         ))}
       </div>
-
-      <BottomNav />
     </div>
   );
 };

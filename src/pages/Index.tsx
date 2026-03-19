@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, UserCircle2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import foxMascot from "@/assets/fox-mascot.png";
@@ -22,8 +22,11 @@ const Index = () => {
           <span className="bg-accent text-accent-foreground text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
             Thông báo
           </span>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-muted-foreground hidden sm:inline">
             Chào mừng các em học sinh đến với không gian của cô Yến
+          </span>
+          <span className="text-sm text-muted-foreground sm:hidden">
+            Chào mừng các em đến lớp cô Yến
           </span>
           <Sparkles className="h-4 w-4 text-accent" />
         </motion.div>
@@ -120,16 +123,10 @@ const Index = () => {
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               Hoàn thành bài tập đúng hạn để nhận xu và đua top với các bạn.
             </p>
-            {/* Fake avatars */}
             <div className="flex items-center">
               <div className="flex -space-x-2">
                 {["🧒", "👧", "👦"].map((e, i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full bg-muted border-2 border-card flex items-center justify-center text-sm"
-                  >
-                    {e}
-                  </div>
+                  <div key={i} className="w-8 h-8 rounded-full bg-muted border-2 border-card flex items-center justify-center text-sm">{e}</div>
                 ))}
               </div>
               <span className="text-xs text-muted-foreground ml-2 font-medium">+30</span>
@@ -153,7 +150,6 @@ const Index = () => {
             <p className="text-muted-foreground text-sm leading-relaxed mb-5">
               Làm các mini-game trắc nghiệm, điền từ để nắm chắc cấu trúc câu.
             </p>
-            {/* Fake progress bar */}
             <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
               <div className="h-full w-3/5 gradient-primary rounded-full" />
             </div>
@@ -167,23 +163,16 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="md:col-span-2 gradient-orange-card rounded-3xl p-7 sm:p-8 text-white relative overflow-hidden cursor-pointer group min-h-[200px] flex flex-col justify-between"
           >
-            {/* Sound wave decoration */}
             <div className="absolute right-6 bottom-6 flex items-end gap-1 opacity-40">
               {[20, 35, 50, 30, 45, 25, 40, 55, 35, 20, 45, 30].map((h, i) => (
-                <div
-                  key={i}
-                  className="w-2 bg-white/60 rounded-full"
-                  style={{ height: `${h}px` }}
-                />
+                <div key={i} className="w-2 bg-white/60 rounded-full" style={{ height: `${h}px` }} />
               ))}
             </div>
             <div className="w-11 h-11 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
               <Volume2 className="h-5 w-5" />
             </div>
             <div className="mt-4 relative z-10 max-w-[65%]">
-              <h3 className="font-display font-bold text-2xl sm:text-3xl mb-2">
-                Luyện phát âm chuẩn
-              </h3>
+              <h3 className="font-display font-bold text-2xl sm:text-3xl mb-2">Luyện phát âm chuẩn</h3>
               <p className="text-white/80 text-sm leading-relaxed mb-4">
                 Nghe phiên âm chuẩn và luyện tập chính tả để nhớ lâu và đọc đúng.
               </p>
@@ -221,7 +210,6 @@ const Index = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate("/grades")}
             className="bg-foreground text-background rounded-full px-8 py-4 text-base font-display font-bold inline-flex items-center gap-3 shadow-xl"
           >
             <UserCircle2 className="h-5 w-5" />
@@ -239,8 +227,5 @@ const Index = () => {
     </div>
   );
 };
-
-// Need to import UserCircle2 at top
-import { UserCircle2 } from "lucide-react";
 
 export default Index;

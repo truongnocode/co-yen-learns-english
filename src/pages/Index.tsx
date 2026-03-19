@@ -320,6 +320,9 @@ const Index = () => {
           © 2026 Học tiếng Anh với cô Yến · Thiết kế dành riêng cho học sinh lớp 6–10 ❤️
         </p>
       </footer>
+
+      {/* Grade Select Dialog */}
+      <GradeSelectDialog open={showGradeSelect} onSelect={handleGradeSelected} />
     </div>
   );
 };

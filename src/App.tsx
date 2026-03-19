@@ -16,6 +16,7 @@ import Grade10ReadingPage from "./pages/Grade10ReadingPage";
 import Grade10TestsPage from "./pages/Grade10TestsPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
+import DashboardPage from "./pages/DashboardPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

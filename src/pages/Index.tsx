@@ -132,7 +132,7 @@ const Index = () => {
               <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6 max-w-md font-medium">
                 Hệ thống ôn luyện toàn diện với 11 chủ đề từ vựng, 9 chủ đề ngữ pháp, bài đọc hiểu, viết và 15 đề thi thử có chấm điểm.
               </p>
-              <span className="bg-white text-[hsl(270,80%,35%)] font-display font-extrabold rounded-full px-8 py-3.5 text-sm shadow-xl inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-500">
+              <span className="bg-white text-[hsl(215,70%,25%)] font-display font-extrabold rounded-full px-8 py-3.5 text-sm shadow-xl inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-500">
                 <Rocket className="h-4 w-4" />
                 Bắt đầu ôn thi ngay
                 <ArrowRight className="h-4 w-4" />

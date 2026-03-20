@@ -55,13 +55,13 @@ const Index = () => {
       {/* Soft Animated Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <motion.div animate={{ x: [0, 30, 0], y: [0, -20, 0] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-[-25%] left-[-15%] w-[70vw] h-[70vw] rounded-full bg-[hsl(270,70%,92%)] blur-[180px] opacity-60" />
+          className="absolute top-[-25%] left-[-15%] w-[70vw] h-[70vw] rounded-full bg-[hsl(210,50%,92%)] blur-[180px] opacity-60" />
         <motion.div animate={{ x: [0, -25, 0], y: [0, 30, 0] }} transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute top-[5%] right-[-20%] w-[60vw] h-[60vw] rounded-full bg-[hsl(335,70%,92%)] blur-[180px] opacity-50" />
+          className="absolute top-[5%] right-[-20%] w-[60vw] h-[60vw] rounded-full bg-[hsl(175,50%,90%)] blur-[180px] opacity-50" />
         <motion.div animate={{ x: [0, 20, 0], y: [0, 25, 0] }} transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[-15%] left-[10%] w-[65vw] h-[65vw] rounded-full bg-[hsl(30,80%,92%)] blur-[160px] opacity-45" />
+          className="absolute bottom-[-15%] left-[10%] w-[65vw] h-[65vw] rounded-full bg-[hsl(12,50%,92%)] blur-[160px] opacity-45" />
         <motion.div animate={{ x: [0, -15, 0], y: [0, -20, 0] }} transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-[hsl(45,90%,92%)] blur-[150px] opacity-35" />
+          className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-[hsl(45,70%,92%)] blur-[150px] opacity-35" />
       </div>
 
       {/* Announcement Pill */}

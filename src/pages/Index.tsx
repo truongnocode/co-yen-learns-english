@@ -94,7 +94,7 @@ const Index = () => {
           initial={{ opacity: 0, scale: 0.9, filter: "blur(6px)" }} animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }} transition={{ ...smooth, delay: 0.8 }}
           whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.97 }}
           onClick={handleCTA}
-          className="gradient-purple-card text-primary-foreground rounded-full px-10 py-4 sm:px-14 sm:py-5 text-base sm:text-xl font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(270,75%,55%,0.35)] hover:shadow-[0_16px_60px_hsl(335,80%,58%,0.4)] transition-shadow duration-500 pulse-glow"
+          className="gradient-purple-card text-primary-foreground rounded-full px-10 py-4 sm:px-14 sm:py-5 text-base sm:text-xl font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(215,70%,32%,0.35)] hover:shadow-[0_16px_60px_hsl(195,65%,45%,0.4)] transition-shadow duration-500 pulse-glow"
         >
           <Rocket className="h-5 w-5" />
           {user ? (grade ? "Vào lớp ngay" : "Chọn lớp để bắt đầu") : "Đăng nhập & vào lớp"}

@@ -13,7 +13,7 @@ const PageShell = ({ children, withNavbar = true }: { children: React.ReactNode;
       <motion.div
         animate={{ x: [0, 25, 0], y: [0, -15, 0] }}
         transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute top-[-20%] left-[-10%] w-[55vw] h-[55vw] rounded-full bg-[hsl(210,50%,92%)] blur-[180px] opacity-50"
+        className="absolute top-[-20%] left-[-10%] w-[55vw] h-[55vw] rounded-full bg-[hsl(215,50%,92%)] blur-[180px] opacity-50"
       />
       <motion.div
         animate={{ x: [0, -20, 0], y: [0, 20, 0] }}

@@ -55,7 +55,7 @@ const DashboardPage = () => {
         <motion.div
           animate={{ x: [0, -20, 0], y: [0, 20, 0] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[hsl(335,70%,93%)] blur-[160px] opacity-40"
+          className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-[hsl(175,50%,90%)] blur-[160px] opacity-40"
         />
       </div>
 

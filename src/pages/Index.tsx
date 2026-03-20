@@ -114,7 +114,7 @@ const Index = () => {
           className="relative rounded-3xl overflow-hidden cursor-pointer group shadow-2xl"
         >
           {/* Gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(215,70%,25%)] via-[hsl(205,65%,35%)] to-[hsl(195,65%,45%)]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(220,85%,50%)] via-[hsl(210,82%,55%)] to-[hsl(200,80%,58%)]" />
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvc3ZnPg==')] opacity-60" />
           <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl" />
           <div className="absolute bottom-0 left-0 w-56 h-56 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />

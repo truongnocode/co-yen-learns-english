@@ -228,7 +228,7 @@ const LearningPath = ({ progress }: Props) => {
                 <h3 className="font-display font-extrabold text-lg sm:text-xl">Ôn thi vào lớp 10</h3>
                 <p className="text-white/75 text-xs sm:text-sm mt-0.5">15 đề thi thử · Từ vựng · Ngữ pháp · Đọc hiểu · Viết</p>
               </div>
-              <span className="bg-white text-[hsl(215,70%,25%)] font-display font-extrabold text-xs px-5 py-2.5 rounded-full shadow-lg inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
+              <span className="bg-white text-[hsl(220,85%,50%)] font-display font-extrabold text-xs px-5 py-2.5 rounded-full shadow-lg inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
                 Vào ôn thi <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </div>

@@ -62,7 +62,7 @@ const GradePage = () => {
             transition={smooth}
             className="relative rounded-3xl overflow-hidden shadow-xl mb-8"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[hsl(215,70%,25%)] via-[hsl(205,65%,35%)] to-[hsl(195,65%,45%)]" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[hsl(220,85%,50%)] via-[hsl(210,82%,55%)] to-[hsl(200,80%,58%)]" />
             <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
             <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
             <div className="relative z-10 p-8">

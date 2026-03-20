@@ -215,7 +215,7 @@ const LearningPath = ({ progress }: Props) => {
             onClick={() => navigate("/grade/10")}
             className="mt-8 relative rounded-2xl overflow-hidden cursor-pointer group shadow-xl hover:shadow-2xl transition-shadow duration-500"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-[hsl(270,80%,35%)] via-[hsl(300,70%,40%)] to-[hsl(335,80%,45%)]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[hsl(215,70%,25%)] via-[hsl(205,65%,35%)] to-[hsl(195,65%,45%)]" />
             <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl" />
             <div className="relative z-10 px-6 py-5 flex items-center gap-4">
               <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg shrink-0">

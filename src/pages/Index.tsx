@@ -55,13 +55,13 @@ const Index = () => {
       {/* Soft Animated Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <motion.div animate={{ x: [0, 30, 0], y: [0, -20, 0] }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-          className="absolute top-[-25%] left-[-15%] w-[70vw] h-[70vw] rounded-full bg-[hsl(270,70%,92%)] blur-[180px] opacity-60" />
+          className="absolute top-[-25%] left-[-15%] w-[70vw] h-[70vw] rounded-full bg-[hsl(210,50%,92%)] blur-[180px] opacity-60" />
         <motion.div animate={{ x: [0, -25, 0], y: [0, 30, 0] }} transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute top-[5%] right-[-20%] w-[60vw] h-[60vw] rounded-full bg-[hsl(335,70%,92%)] blur-[180px] opacity-50" />
+          className="absolute top-[5%] right-[-20%] w-[60vw] h-[60vw] rounded-full bg-[hsl(175,50%,90%)] blur-[180px] opacity-50" />
         <motion.div animate={{ x: [0, 20, 0], y: [0, 25, 0] }} transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[-15%] left-[10%] w-[65vw] h-[65vw] rounded-full bg-[hsl(30,80%,92%)] blur-[160px] opacity-45" />
+          className="absolute bottom-[-15%] left-[10%] w-[65vw] h-[65vw] rounded-full bg-[hsl(12,50%,92%)] blur-[160px] opacity-45" />
         <motion.div animate={{ x: [0, -15, 0], y: [0, -20, 0] }} transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-[hsl(45,90%,92%)] blur-[150px] opacity-35" />
+          className="absolute bottom-[20%] right-[10%] w-[40vw] h-[40vw] rounded-full bg-[hsl(45,70%,92%)] blur-[150px] opacity-35" />
       </div>
 
       {/* Announcement Pill */}
@@ -94,7 +94,7 @@ const Index = () => {
           initial={{ opacity: 0, scale: 0.9, filter: "blur(6px)" }} animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }} transition={{ ...smooth, delay: 0.8 }}
           whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.97 }}
           onClick={handleCTA}
-          className="gradient-purple-card text-primary-foreground rounded-full px-10 py-4 sm:px-14 sm:py-5 text-base sm:text-xl font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(270,75%,55%,0.35)] hover:shadow-[0_16px_60px_hsl(335,80%,58%,0.4)] transition-shadow duration-500 pulse-glow"
+          className="gradient-purple-card text-primary-foreground rounded-full px-10 py-4 sm:px-14 sm:py-5 text-base sm:text-xl font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(215,70%,32%,0.35)] hover:shadow-[0_16px_60px_hsl(195,65%,45%,0.4)] transition-shadow duration-500 pulse-glow"
         >
           <Rocket className="h-5 w-5" />
           {user ? (grade ? "Vào lớp ngay" : "Chọn lớp để bắt đầu") : "Đăng nhập & vào lớp"}
@@ -114,7 +114,7 @@ const Index = () => {
           className="relative rounded-3xl overflow-hidden cursor-pointer group shadow-2xl"
         >
           {/* Gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(270,80%,35%)] via-[hsl(300,70%,40%)] to-[hsl(335,80%,45%)]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[hsl(215,70%,25%)] via-[hsl(205,65%,35%)] to-[hsl(195,65%,45%)]" />
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvc3ZnPg==')] opacity-60" />
           <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl" />
           <div className="absolute bottom-0 left-0 w-56 h-56 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
@@ -132,7 +132,7 @@ const Index = () => {
               <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6 max-w-md font-medium">
                 Hệ thống ôn luyện toàn diện với 11 chủ đề từ vựng, 9 chủ đề ngữ pháp, bài đọc hiểu, viết và 15 đề thi thử có chấm điểm.
               </p>
-              <span className="bg-white text-[hsl(270,80%,35%)] font-display font-extrabold rounded-full px-8 py-3.5 text-sm shadow-xl inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-500">
+              <span className="bg-white text-[hsl(215,70%,25%)] font-display font-extrabold rounded-full px-8 py-3.5 text-sm shadow-xl inline-flex items-center gap-2 group-hover:gap-3 transition-all duration-500">
                 <Rocket className="h-4 w-4" />
                 Bắt đầu ôn thi ngay
                 <ArrowRight className="h-4 w-4" />
@@ -273,7 +273,7 @@ const Index = () => {
             Cô Yến đã cập nhật đầy đủ bài tập và từ vựng mới cho các lớp. Các em nhớ hoàn thành nhiệm vụ trước hạn chót để nhận thưởng nhé! 🎁
           </p>
           <motion.button whileHover={{ scale: 1.04, y: -2 }} whileTap={{ scale: 0.97 }} onClick={handleCTA}
-            className="bg-foreground text-background rounded-full px-10 py-5 text-lg font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(260,30%,15%,0.2)] hover:shadow-[0_18px_50px_hsl(260,30%,15%,0.3)] transition-all duration-500">
+            className="bg-foreground text-background rounded-full px-10 py-5 text-lg font-display font-extrabold inline-flex items-center gap-3 shadow-[0_12px_40px_hsl(215,35%,15%,0.2)] hover:shadow-[0_18px_50px_hsl(215,35%,15%,0.3)] transition-all duration-500">
             <Flame className="h-5 w-5" />
             {user ? (grade ? "Vào trang cá nhân" : "Chọn lớp để bắt đầu") : "Đăng nhập để bắt đầu"}
           </motion.button>

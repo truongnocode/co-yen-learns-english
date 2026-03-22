@@ -98,7 +98,7 @@ const LearningOverview = ({ progress }: Props) => {
       transition={{ ...smooth, delay: 0.25 }}
       className="flex flex-col gap-4"
     >
-      <div className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-5">
+      <div className="glass rounded-2xl p-5">
         {/* Top row: actions */}
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-display font-extrabold text-sm text-foreground">Tổng quan</h2>
@@ -121,11 +121,11 @@ const LearningOverview = ({ progress }: Props) => {
         {/* Avatar + name */}
         <div className="flex items-center gap-3 mb-4">
           <div className="relative shrink-0 group">
-            <div className="w-14 h-14 rounded-full gradient-purple-card p-[2px] shadow-lg">
+            <div className="w-14 h-14 rounded-xl bg-primary/10 p-[2px]">
               <img
                 src={user?.photoURL || ""}
                 alt="Avatar"
-                className="w-full h-full rounded-full object-cover border-2 border-card"
+                className="w-full h-full rounded-xl object-cover border-2 border-card"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -179,7 +179,7 @@ const LearningOverview = ({ progress }: Props) => {
                     <img
                       src={previewUrl || editPhoto || ""}
                       alt="Preview"
-                      className="w-full h-full rounded-full object-cover border-2 border-card"
+                      className="w-full h-full rounded-xl object-cover border-2 border-card"
                       referrerPolicy="no-referrer"
                     />
                   </div>

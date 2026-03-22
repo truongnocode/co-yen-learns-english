@@ -6,7 +6,7 @@ import { calcXP, getLeaderboard, type LeaderboardEntry, type UserProgress } from
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
 const MEDAL = ["🥇", "🥈", "🥉"];
-const COLORS = ["gradient-energy", "gradient-cool", "gradient-accent"];
+const COLORS = ["bg-amber-500", "bg-slate-400", "bg-orange-400"];
 
 interface Props {
   progress: UserProgress | null;
@@ -36,7 +36,7 @@ const Leaderboard = ({ progress }: Props) => {
       initial={{ opacity: 0, y: 15, filter: "blur(8px)" }}
       animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{ ...smooth, delay: 0.35 }}
-      className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-3xl p-5"
+      className="glass rounded-2xl p-5"
     >
       <h3 className="font-display font-extrabold text-sm text-foreground mb-4 flex items-center gap-2">
         🏆 Xếp hạng Khối {grade}

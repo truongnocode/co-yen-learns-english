@@ -34,7 +34,7 @@ const ReviewCorner = () => {
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate(act.path)}
-            className="bg-card/80 backdrop-blur-sm border border-white/60 rounded-2xl p-4 flex flex-col items-center gap-3 hover:shadow-lg transition-all duration-300 hover:border-primary/30"
+            className="glass glass-hover rounded-2xl p-4 flex flex-col items-center gap-3 transition-all duration-300"
           >
             <div className={`w-12 h-12 rounded-xl ${act.gradient} flex items-center justify-center shadow-md`}>
               <act.icon className="h-5 w-5 text-white" />

@@ -39,7 +39,6 @@ const GradePage = () => {
     { key: "grammar", label: "Ngữ pháp", desc: "9 chủ đề ngữ pháp cốt lõi", icon: Zap, gradient: "gradient-cool" },
     { key: "exercises", label: "Đọc hiểu & Viết", desc: "7 dạng bài luyện kỹ năng", icon: FileText, gradient: "gradient-accent" },
     { key: "tests", label: "Đề thi thử", desc: "15 đề thi vào 10 có chấm điểm", icon: ClipboardList, gradient: "gradient-orange-card" },
-    { key: "camera", label: "Camera tương tác", desc: "Trả lời bằng cử chỉ cơ thể qua webcam", icon: Camera, gradient: "gradient-purple-card" },
   ];
 
   return (
@@ -101,6 +100,7 @@ const GradePage = () => {
               className="w-8 h-8 border-3 border-primary border-t-transparent rounded-full mx-auto" />
           </div>
         ) : isGrade10 ? (
+          <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {grade10Sections.map((sec, i) => (
               <motion.button
@@ -120,6 +120,35 @@ const GradePage = () => {
               </motion.button>
             ))}
           </div>
+
+          {/* Camera tương tác — full-width highlight card */}
+          <motion.button
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ ...smooth, delay: 0.5 }}
+            whileHover={{ scale: 1.02, y: -3 }}
+            whileTap={{ scale: 0.97 }}
+            onClick={() => navigate("/grade/10/camera")}
+            className="w-full mt-4 relative rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500 text-left"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500" />
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
+            <div className="relative z-10 p-6 flex items-center gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
+                <Camera className="h-7 w-7 text-white" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-extrabold text-xl text-white">Camera tương tác</h3>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">New</span>
+                </div>
+                <p className="text-white/70 text-sm">Trả lời câu hỏi bằng cử chỉ cơ thể qua webcam — vừa học vừa vận động!</p>
+              </div>
+              <ArrowLeft className="h-5 w-5 text-white/50 rotate-180 flex-shrink-0" />
+            </div>
+          </motion.button>
+          </>
         ) : data ? (
           <div className="flex flex-col gap-4">
             {Object.entries(data.units).map(([unitKey, unit], i) => (

@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, Star, Flame, Rocket, GraduationCap } from "lucide-react";
+import { ArrowRight, BookOpen, Trophy, Zap, Volume2, Sparkles, Star, Flame, Rocket, GraduationCap, Camera } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
@@ -161,6 +161,36 @@ const Index = () => {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Camera Interactive — Highlight Banner */}
+      <section className="max-w-5xl mx-auto px-5 pb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          whileHover={{ scale: 1.01, y: -3 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={smoothCard}
+          onClick={() => smartNavigate("/grade/10/camera")}
+          className="relative rounded-3xl overflow-hidden cursor-pointer group shadow-xl"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500" />
+          <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
+          <div className="relative z-10 p-8 sm:p-10 flex items-center gap-6">
+            <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center shadow-lg">
+              <Camera className="h-8 w-8 text-white" />
+            </div>
+            <div className="flex-1 min-w-0 text-white">
+              <div className="flex items-center gap-2.5 mb-1.5">
+                <h3 className="font-display font-extrabold text-2xl sm:text-3xl">Camera tương tác</h3>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 px-2.5 py-1 rounded-full">New</span>
+              </div>
+              <p className="text-white/75 text-sm sm:text-base font-medium">Trả lời câu hỏi bằng cử chỉ cơ thể qua webcam — vừa học vừa vận động!</p>
+            </div>
+            <ArrowRight className="h-6 w-6 text-white/50 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
           </div>
         </motion.div>
       </section>

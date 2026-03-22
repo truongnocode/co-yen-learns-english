@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc, updateDoc, arrayUnion, increment } from "firebase/firestore";
+import { doc, getDoc, setDoc, updateDoc, arrayUnion, increment, collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
 
 export interface UserProfile {
@@ -101,4 +101,73 @@ export const addLearnedWords = async (uid: string, words: string[]) => {
   } else {
     await setDoc(ref, { ...defaultProgress, wordsLearned: words });
   }
+};
+
+// --- XP calculation ---
+
+export const calcXP = (p: UserProgress): number =>
+  (p.wordsLearned?.length || 0) * 10 + (p.quizzesDone || 0) * 30;
+
+// --- Leaderboard ---
+
+export interface LeaderboardEntry {
+  uid: string;
+  displayName: string;
+  photoURL: string;
+  grade: number | null;
+  xp: number;
+}
+
+export const getLeaderboard = async (gradeFilter?: number): Promise<LeaderboardEntry[]> => {
+  // Fetch all users and their progress in parallel
+  const [usersSnap, progressSnap] = await Promise.all([
+    getDocs(collection(db, "users")),
+    getDocs(collection(db, "progress")),
+  ]);
+
+  const progressMap = new Map<string, UserProgress>();
+  progressSnap.forEach((d) => progressMap.set(d.id, d.data() as UserProgress));
+
+  const entries: LeaderboardEntry[] = [];
+  usersSnap.forEach((d) => {
+    const profile = d.data() as UserProfile;
+    if (gradeFilter && profile.grade !== gradeFilter) return;
+    const progress = progressMap.get(d.id) || defaultProgress;
+    const xp = calcXP(progress);
+    if (xp > 0) {
+      entries.push({
+        uid: d.id,
+        displayName: profile.displayName,
+        photoURL: profile.photoURL,
+        grade: profile.grade,
+        xp,
+      });
+    }
+  });
+
+  entries.sort((a, b) => b.xp - a.xp);
+  return entries.slice(0, 20);
+};
+
+// --- Weekly Missions ---
+
+export interface WeeklyMission {
+  completed: number;
+  target: number;
+}
+
+export const getWeeklyMission = (progress: UserProgress): WeeklyMission => {
+  const target = 5;
+  const now = new Date();
+  // Get Monday of current week
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+  monday.setHours(0, 0, 0, 0);
+
+  const completed = (progress.quizHistory || []).filter((q) => {
+    const d = new Date(q.date);
+    return d >= monday;
+  }).length;
+
+  return { completed: Math.min(completed, target), target };
 };

@@ -60,7 +60,7 @@ const DashboardPage = () => {
       </div>
 
       <div className="flex min-h-screen">
-        <DashboardSidebar />
+        <DashboardSidebar progress={progress} />
 
         {/* Middle column: Hero + Learning Path */}
         <main className="flex-1 px-5 lg:px-6 py-6 lg:py-8 min-w-0 flex flex-col max-h-screen">

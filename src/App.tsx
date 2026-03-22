@@ -17,6 +17,7 @@ import Grade10TestsPage from "./pages/Grade10TestsPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
 import DashboardPage from "./pages/DashboardPage";
+import CameraPage from "./pages/CameraPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/grade/:gradeId/vocab/:unitKey" element={<VocabPage />} />
           <Route path="/grade/:gradeId/grammar/:unitKey" element={<GrammarPage />} />
           <Route path="/grade/:gradeId/exercises/:unitKey" element={<ExercisesPage />} />
+          <Route path="/grade/:gradeId/camera" element={<CameraPage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/practice" element={<PracticePage />} />
           <Route path="*" element={<NotFound />} />

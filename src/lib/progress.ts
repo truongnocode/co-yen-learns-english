@@ -8,11 +8,21 @@ export interface UserProfile {
   createdAt: string;
 }
 
+export interface DailyTasks {
+  date: string;
+  reviewWords: boolean;
+  quizDone: boolean;
+  listenDone: boolean;
+}
+
 export interface UserProgress {
   quizzesDone: number;
   highScore: number;
   wordsLearned: string[];
   quizHistory: { date: string; grade: number; unit: string; score: number; total: number }[];
+  dailyStreak: number;
+  lastActiveDate: string;
+  dailyTasks: DailyTasks;
 }
 
 const defaultProgress: UserProgress = {
@@ -20,6 +30,9 @@ const defaultProgress: UserProgress = {
   highScore: 0,
   wordsLearned: [],
   quizHistory: [],
+  dailyStreak: 0,
+  lastActiveDate: "",
+  dailyTasks: { date: "", reviewWords: false, quizDone: false, listenDone: false },
 };
 
 // --- Profile ---
@@ -105,8 +118,12 @@ export const addLearnedWords = async (uid: string, words: string[]) => {
 
 // --- XP calculation ---
 
-export const calcXP = (p: UserProgress): number =>
-  (p.wordsLearned?.length || 0) * 10 + (p.quizzesDone || 0) * 30;
+export const calcXP = (p: UserProgress): number => {
+  const base = (p.wordsLearned?.length || 0) * 10 + (p.quizzesDone || 0) * 30;
+  const streak = p.dailyStreak || 0;
+  const multiplier = streak >= 8 ? 2 : streak >= 4 ? 1.5 : 1;
+  return Math.round(base * multiplier);
+};
 
 // --- Leaderboard ---
 

@@ -4,7 +4,7 @@ import { BookOpen, Zap, Mic, Award, Flame, Star, Bell, LogOut, Pencil, Camera, X
 import { updateProfile } from "firebase/auth";
 import { useAuth } from "@/contexts/AuthContext";
 import { gradeConfig } from "@/data/types";
-import { updateUserProfile } from "@/lib/progress";
+import { updateUserProfile, calcXP } from "@/lib/progress";
 import type { UserProgress } from "@/lib/progress";
 import { toast } from "sonner";
 
@@ -18,8 +18,8 @@ const LearningOverview = ({ progress }: Props) => {
   const { user, profile, logout, refreshProfile } = useAuth();
   const grade = profile?.grade || 6;
   const cfg = gradeConfig[grade];
-  const streak = Math.min(progress?.quizzesDone || 0, 7);
-  const xp = (progress?.wordsLearned?.length || 0) * 10 + (progress?.quizzesDone || 0) * 30;
+  const streak = progress?.dailyStreak || 0;
+  const xp = progress ? calcXP(progress) : 0;
 
   const [editing, setEditing] = useState(false);
   const [editName, setEditName] = useState("");

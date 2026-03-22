@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { gradesData } from "@/data/vocabulary";
 import { motion } from "framer-motion";
@@ -6,15 +6,20 @@ import { ArrowLeft, CheckCircle2, XCircle, Volume2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { Input } from "@/components/ui/input";
 import { speakUS } from "@/lib/tts";
+import { useAuth } from "@/contexts/AuthContext";
+import { getProgress } from "@/lib/progress";
+import { completeDailyTask } from "@/lib/daily";
 
 const SpellingPage = () => {
   const { unitId } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answer, setAnswer] = useState("");
   const [status, setStatus] = useState<"idle" | "correct" | "wrong">("idle");
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  const dailyTriggered = useRef(false);
 
   const unit = gradesData.flatMap((g) => g.units).find((u) => u.id === unitId);
   const word = unit?.words[currentIndex];
@@ -36,7 +41,13 @@ const SpellingPage = () => {
     if (isCorrect) setScore((s) => s + 1);
     setTimeout(() => {
       if (currentIndex < unit.words.length - 1) { setCurrentIndex((i) => i + 1); setAnswer(""); setStatus("idle"); }
-      else setFinished(true);
+      else {
+        setFinished(true);
+        if (user && !dailyTriggered.current) {
+          dailyTriggered.current = true;
+          getProgress(user.uid).then(p => completeDailyTask(user.uid, "listenDone", p)).catch(() => {});
+        }
+      }
     }, 1200);
   };
 

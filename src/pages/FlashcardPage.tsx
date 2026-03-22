@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { gradesData } from "@/data/vocabulary";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ChevronLeft, ChevronRight, RotateCcw } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
+import { useAuth } from "@/contexts/AuthContext";
+import { getProgress } from "@/lib/progress";
+import { completeDailyTask } from "@/lib/daily";
 
 const FlashcardPage = () => {
   const { unitId } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const dailyTriggered = useRef(false);
 
   const unit = gradesData.flatMap((g) => g.units).find((u) => u.id === unitId);
   if (!unit) return <div className="min-h-screen flex items-center justify-center text-muted-foreground">Không tìm thấy bài học.</div>;
@@ -17,7 +22,17 @@ const FlashcardPage = () => {
   const word = unit.words[currentIndex];
   const progress = ((currentIndex + 1) / unit.words.length) * 100;
 
-  const goNext = () => { if (currentIndex < unit.words.length - 1) { setFlipped(false); setCurrentIndex((i) => i + 1); } };
+  const goNext = () => {
+    if (currentIndex < unit.words.length - 1) {
+      setFlipped(false);
+      setCurrentIndex((i) => i + 1);
+      // Trigger daily task when reaching last card
+      if (currentIndex === unit.words.length - 2 && user && !dailyTriggered.current) {
+        dailyTriggered.current = true;
+        getProgress(user.uid).then(p => completeDailyTask(user.uid, "reviewWords", p)).catch(() => {});
+      }
+    }
+  };
   const goPrev = () => { if (currentIndex > 0) { setFlipped(false); setCurrentIndex((i) => i - 1); } };
 
   return (

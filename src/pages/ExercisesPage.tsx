@@ -6,7 +6,8 @@ import { loadSGKData } from "@/data/loader";
 import { type SGKUnit } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import { useAuth } from "@/contexts/AuthContext";
-import { saveQuizResult } from "@/lib/progress";
+import { saveQuizResult, getProgress } from "@/lib/progress";
+import { completeDailyTask } from "@/lib/daily";
 import PageShell from "@/components/PageShell";
 import { speakUS } from "@/lib/tts";
 
@@ -70,6 +71,7 @@ const ExercisesPage = () => {
         if (user) {
           const finalScore = newAnswers.filter((a, i) => a === exercises[i].ans).length;
           saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
+          getProgress(user.uid).then(p => completeDailyTask(user.uid, "quizDone", p)).catch(() => {});
         }
       }
     }, 1200);

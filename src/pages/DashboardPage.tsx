@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { getProgress, type UserProgress } from "@/lib/progress";
+import { checkAndUpdateStreak } from "@/lib/daily";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
 import HeroBanner from "@/components/dashboard/HeroBanner";
@@ -20,7 +21,11 @@ const DashboardPage = () => {
 
   useEffect(() => {
     if (!user) { navigate("/"); return; }
-    getProgress(user.uid).then(setProgress).finally(() => setLoading(false));
+    getProgress(user.uid).then(async (p) => {
+      // Check and update daily streak
+      const { streak } = await checkAndUpdateStreak(user.uid, p);
+      setProgress({ ...p, dailyStreak: streak, lastActiveDate: new Date().toISOString().slice(0, 10) });
+    }).catch(() => {}).finally(() => setLoading(false));
   }, [user, navigate]);
 
   useEffect(() => {
@@ -65,7 +70,7 @@ const DashboardPage = () => {
         {/* Middle column: Hero + Learning Path */}
         <main className="flex-1 px-5 lg:px-6 py-6 lg:py-8 min-w-0 flex flex-col max-h-screen">
           <div className="shrink-0">
-            <HeroBanner />
+            <HeroBanner progress={progress} />
           </div>
           <div className="mt-6 flex-1 overflow-y-auto min-h-0 pr-1">
             <LearningPath progress={progress} />

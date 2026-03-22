@@ -18,6 +18,13 @@ import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
 import DashboardPage from "./pages/DashboardPage";
 import CameraPage from "./pages/CameraPage";
+import WordMatchGame from "./pages/games/WordMatchGame";
+import ListenChooseGame from "./pages/games/ListenChooseGame";
+import SentencePuzzle from "./pages/games/SentencePuzzle";
+import ShadowingPage from "./pages/games/ShadowingPage";
+import SRSReviewPage from "./pages/SRSReviewPage";
+import PhoneticsPage from "./pages/PhoneticsPage";
+import DynamicTestPage from "./pages/DynamicTestPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +51,13 @@ const App = () => (
           <Route path="/grade/:gradeId/camera" element={<CameraPage />} />
           <Route path="/progress" element={<ProgressPage />} />
           <Route path="/practice" element={<PracticePage />} />
+          <Route path="/practice/word-match/:gradeId" element={<WordMatchGame />} />
+          <Route path="/practice/listen/:gradeId" element={<ListenChooseGame />} />
+          <Route path="/practice/sentence-puzzle/:gradeId" element={<SentencePuzzle />} />
+          <Route path="/practice/shadowing/:gradeId" element={<ShadowingPage />} />
+          <Route path="/practice/srs-review" element={<SRSReviewPage />} />
+          <Route path="/phonetics/:gradeId" element={<PhoneticsPage />} />
+          <Route path="/test/custom" element={<DynamicTestPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

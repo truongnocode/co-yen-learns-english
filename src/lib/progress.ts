@@ -1,5 +1,6 @@
 import { doc, getDoc, setDoc, updateDoc, arrayUnion, increment, collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
+import type { SRSItem } from "./srs";
 
 export interface UserProfile {
   displayName: string;
@@ -23,6 +24,7 @@ export interface UserProgress {
   dailyStreak: number;
   lastActiveDate: string;
   dailyTasks: DailyTasks;
+  srsData: Record<string, SRSItem>;
 }
 
 const defaultProgress: UserProgress = {
@@ -33,6 +35,7 @@ const defaultProgress: UserProgress = {
   dailyStreak: 0,
   lastActiveDate: "",
   dailyTasks: { date: "", reviewWords: false, quizDone: false, listenDone: false },
+  srsData: {},
 };
 
 // --- Profile ---

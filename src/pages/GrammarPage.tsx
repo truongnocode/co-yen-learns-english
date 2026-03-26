@@ -35,14 +35,45 @@ const GrammarPage = () => {
   );
 
   const parseNotes = (notes: string) => {
-    const parts = notes.split(". ").filter(Boolean);
-    return parts.map(p => {
-      const colonIdx = p.indexOf(":");
-      if (colonIdx > 0 && colonIdx < 40 && p.substring(0, colonIdx).split(" ").length <= 8) {
-        return { heading: p.substring(0, colonIdx), body: p.substring(colonIdx + 1).trim() };
+    // Split by newline sections for detailed grammar notes
+    const lines = notes.split("\n").filter(l => l.trim());
+    const sections: { heading: string | null; body: string }[] = [];
+    let currentBody: string[] = [];
+    let currentHeading: string | null = null;
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      // Detect section headings (numbered sections like "1.", "2.", or ALL CAPS, or lines ending with ":")
+      const isHeading = /^(\d+\.\s+[A-Z])/.test(trimmed) ||
+        (trimmed === trimmed.toUpperCase() && trimmed.length > 3 && trimmed.length < 80) ||
+        (/^[a-z]\)/.test(trimmed) && trimmed.length < 60);
+
+      if (isHeading && currentBody.length > 0) {
+        sections.push({ heading: currentHeading, body: currentBody.join("\n") });
+        currentBody = [];
+        currentHeading = trimmed;
+      } else if (isHeading) {
+        currentHeading = trimmed;
+      } else {
+        currentBody.push(trimmed);
       }
-      return { heading: null, body: p };
-    });
+    }
+    if (currentBody.length > 0 || currentHeading) {
+      sections.push({ heading: currentHeading, body: currentBody.join("\n") });
+    }
+
+    // Fallback for old-style single-line notes
+    if (sections.length === 0) {
+      const parts = notes.split(". ").filter(Boolean);
+      return parts.map(p => {
+        const colonIdx = p.indexOf(":");
+        if (colonIdx > 0 && colonIdx < 40 && p.substring(0, colonIdx).split(" ").length <= 8) {
+          return { heading: p.substring(0, colonIdx), body: p.substring(colonIdx + 1).trim() };
+        }
+        return { heading: null, body: p };
+      });
+    }
+    return sections;
   };
 
   const notes = parseNotes(unit.grammar_notes);
@@ -77,11 +108,28 @@ const GrammarPage = () => {
         <motion.div initial={{ opacity: 0, y: 20, filter: "blur(6px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={{ ...smooth, delay: 0.1 }}
           className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-8">
           <h3 className="font-display font-extrabold text-lg text-foreground mb-4">📖 Ghi nhớ ngữ pháp</h3>
-          <div className="space-y-3">
+          <div className="space-y-4">
             {notes.map((n, i) => (
               <div key={i}>
-                {n.heading && <p className="font-bold text-primary text-sm">{n.heading}:</p>}
-                <p className="text-muted-foreground text-sm leading-relaxed">{n.body}.</p>
+                {n.heading && <p className="font-bold text-primary text-sm mb-1">{n.heading}</p>}
+                <div className="text-muted-foreground text-sm leading-relaxed space-y-1">
+                  {n.body.split("\n").map((line, j) => {
+                    const trimmed = line.trim();
+                    if (!trimmed) return null;
+                    // Highlight examples (lines starting with - or Ví dụ or Ex:)
+                    const isExample = /^[-–•]/.test(trimmed) || /^(Ví dụ|Ex|E\.g)/i.test(trimmed);
+                    // Highlight formulas (lines with + or →)
+                    const isFormula = /^(S\s*\+|If\s*\+|\(\+\)|\(-\)|\(\?\))/.test(trimmed);
+                    return (
+                      <p key={j} className={
+                        isFormula ? "font-mono text-xs bg-primary/5 px-2 py-1 rounded-lg text-primary/80" :
+                        isExample ? "pl-3 border-l-2 border-primary/20 text-foreground/80" : ""
+                      }>
+                        {trimmed}
+                      </p>
+                    );
+                  })}
+                </div>
               </div>
             ))}
           </div>

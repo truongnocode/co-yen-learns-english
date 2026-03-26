@@ -199,7 +199,8 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
                   <div className="p-3 rounded-2xl bg-primary/10 mb-4 relative z-10">
                     <WordIcon className="h-8 w-8 text-primary" />
                   </div>
-                  <span className="text-4xl font-display font-bold text-foreground mb-2 relative z-10">{word.en}</span>
+                  <span className="text-4xl font-display font-bold text-foreground mb-1 relative z-10">{word.en}</span>
+                  {word.ipa && <span className="text-sm text-muted-foreground/80 font-mono mb-1 relative z-10">{word.ipa}</span>}
                   <span className="text-xs text-muted-foreground bg-muted/50 px-3 py-1 rounded-full mb-3 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
                   <button onClick={(e) => { e.stopPropagation(); speak(word.en); }} className="p-2.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors relative z-10">
                     <Volume2 className="h-5 w-5 text-primary" />
@@ -213,6 +214,7 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
                   </div>
                   <span className="text-3xl font-display font-bold mb-2 relative z-10">{word.vi}</span>
                   <span className="text-lg opacity-90 relative z-10">{word.en}</span>
+                  {word.ipa && <span className="text-sm opacity-60 font-mono relative z-10">{word.ipa}</span>}
                   <span className="text-sm opacity-70 mt-1 relative z-10">{wordTypeLabels[word.type] || word.type}</span>
                   <span className="text-[10px] opacity-50 mt-4 bg-white/10 px-3 py-1 rounded-full relative z-10">👆 Nhấn để quay lại</span>
                 </>
@@ -524,6 +526,7 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
                           {wordTypeLabels[w.type] || w.type}
                         </span>
                       </div>
+                      {w.ipa && <p className="text-primary/60 text-[11px] font-mono mt-0.5">{w.ipa}</p>}
                       <p className="text-muted-foreground text-xs mt-0.5 truncate">{w.vi}</p>
                     </div>
                     <button onClick={(e) => { e.stopPropagation(); speak(w.en); }}

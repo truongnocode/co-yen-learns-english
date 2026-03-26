@@ -2,7 +2,8 @@
 
 export interface VocabItem {
   en: string;
-  type: string; // "n", "v", "adj", "adv", "prep", "idiom", "n/v", "v phr"
+  ipa?: string; // IPA pronunciation e.g. "/ˈɑːtɪzæn/"
+  type: string; // "n", "v", "adj", "adv", "prep", "idiom", "n/v", "v phr", "phr"
   vi: string;
 }
 
@@ -69,4 +70,6 @@ export const wordTypeLabels: Record<string, string> = {
   idiom: "Thành ngữ",
   "n/v": "Danh/Động từ",
   "v phr": "Cụm động từ",
+  phr: "Cụm từ",
+  "v/n": "Động/Danh từ",
 };

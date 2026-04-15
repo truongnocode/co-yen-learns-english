@@ -7,6 +7,7 @@
   "observability": {
     "enabled": true
   },
+  "workers_dev": true,
   "routes": [
     // Bind to api subdomain once DNS is configured.
     // { "pattern": "api.tienganhcoyen.online/*", "zone_name": "tienganhcoyen.online" }
@@ -16,8 +17,5 @@
     "FIREBASE_PROJECT_ID": "english-class-28f06"
   }
   // Secrets (set via `wrangler secret put`):
-  //   ANTHROPIC_API_KEY
-  //   OPENAI_API_KEY          (for Whisper speaking scoring)
-  //   FIREBASE_CLIENT_EMAIL   (service account email)
-  //   FIREBASE_PRIVATE_KEY    (service account private key, keep \n literal)
+  //   GEMINI_API_KEY          (Gemini 2.5 for content extraction + speech scoring)
 }

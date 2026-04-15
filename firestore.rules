@@ -1,0 +1,74 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ─── Helpers ──────────────────────────────────────────────────────────
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    // ─── Per-user documents: users / progress / pets ─────────────────────
+    // Owner reads/writes own; admin reads all (needed for teacher analytics).
+    // Listing the collection is restricted to admins — students shouldn't
+    // be able to enumerate everyone. Individual docs are owner-or-admin.
+    match /users/{uid} {
+      allow get:    if isOwner(uid) || isAdmin();
+      allow list:   if isAdmin();
+      allow create: if isOwner(uid);
+      allow update: if isOwner(uid) || isAdmin();
+      allow delete: if false;
+    }
+
+    match /progress/{uid} {
+      allow get:    if isOwner(uid) || isAdmin();
+      allow list:   if isAdmin();
+      allow create, update: if isOwner(uid);
+      allow delete: if false;
+    }
+
+    match /pets/{uid} {
+      allow get:    if isOwner(uid) || isAdmin();
+      allow list:   if isAdmin();
+      allow create, update: if isOwner(uid);
+      allow delete: if false;
+    }
+
+    // ─── Admin-managed content: exams / sgk ─────────────────────────────
+    // Anyone signed in can read (students need to take exams / view units).
+    // Only admins can write (upload/edit via /admin panel).
+    match /exams/{grade}/tests/{examId} {
+      allow read:  if isSignedIn();
+      allow write: if isAdmin();
+    }
+    match /sgk/{grade}/units/{unitId} {
+      allow read:  if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // ─── AI grading attempts: speaking / writing ─────────────────────────
+    // Owner creates + reads their own; admin reads all for review.
+    // Nobody updates/deletes — attempts are append-only history.
+    match /speaking_attempts/{uid}/items/{attemptId} {
+      allow get, list: if isOwner(uid) || isAdmin();
+      allow create:    if isOwner(uid);
+      allow update, delete: if false;
+    }
+    match /writing_attempts/{uid}/items/{attemptId} {
+      allow get, list: if isOwner(uid) || isAdmin();
+      allow create:    if isOwner(uid);
+      allow update, delete: if false;
+    }
+
+    // ─── Deny everything else by default ────────────────────────────────
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

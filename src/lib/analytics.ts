@@ -59,10 +59,14 @@ export interface AnalyticsBundle {
   classAvgPercent: number;
 }
 
-function daysAgo(n: number): Date {
-  const d = new Date();
-  d.setDate(d.getDate() - n);
-  d.setHours(0, 0, 0, 0);
+function daysAgo(n: number, now: Date = new Date()): Date {
+  // UTC-normalized so the date buckets match quiz `date.slice(0, 10)` values
+  // (which are derived from ISO strings, i.e. UTC). Using local midnight here
+  // would bleed a day across UTC midnight for students outside UTC.
+  const d = new Date(
+    Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()),
+  );
+  d.setUTCDate(d.getUTCDate() - n);
   return d;
 }
 
@@ -79,14 +83,30 @@ export async function loadAnalytics(): Promise<AnalyticsBundle> {
   const profiles = new Map<string, UserProfile>();
   usersSnap.forEach((d) => profiles.set(d.id, d.data() as UserProfile));
 
+  const progressRows: Array<{ uid: string; progress: UserProgress }> = [];
+  progressSnap.forEach((d) =>
+    progressRows.push({ uid: d.id, progress: d.data() as UserProgress }),
+  );
+
+  return aggregateAnalytics(profiles, progressRows, new Date());
+}
+
+/**
+ * Pure aggregator — extracted so it can be unit-tested without Firestore.
+ *
+ * `now` is an injected clock so tests can pin the 30-day window.
+ */
+export function aggregateAnalytics(
+  profiles: Map<string, UserProfile>,
+  progressRows: Array<{ uid: string; progress: UserProgress }>,
+  now: Date = new Date(),
+): AnalyticsBundle {
   const attempts: AttemptRow[] = [];
   const studentMap = new Map<string, StudentSummary>();
   const unitMap = new Map<string, UnitSummary>();
   const dailyMap = new Map<string, { attempts: number; sumPercent: number }>();
 
-  progressSnap.forEach((d) => {
-    const uid = d.id;
-    const p = d.data() as UserProgress;
+  for (const { uid, progress: p } of progressRows) {
     const profile = profiles.get(uid);
     const displayName = profile?.displayName || "(Unknown)";
     const grade = profile?.grade ?? null;
@@ -156,7 +176,7 @@ export async function loadAnalytics(): Promise<AnalyticsBundle> {
         totalXp: (p.wordsLearned?.length ?? 0) * 10 + (p.quizzesDone ?? 0) * 30,
       });
     }
-  });
+  }
 
   // Also include profile-only students (haven't taken any quiz yet).
   profiles.forEach((profile, uid) => {
@@ -183,7 +203,7 @@ export async function loadAnalytics(): Promise<AnalyticsBundle> {
   // Daily series — fill in the last 30 days for a continuous chart.
   const daily: DailyPoint[] = [];
   for (let i = 29; i >= 0; i--) {
-    const day = formatDate(daysAgo(i));
+    const day = formatDate(daysAgo(i, now));
     const agg = dailyMap.get(day);
     daily.push({
       date: day,
@@ -192,8 +212,8 @@ export async function loadAnalytics(): Promise<AnalyticsBundle> {
     });
   }
 
-  const weekCutoff = daysAgo(7).toISOString();
-  const monthCutoff = daysAgo(30).toISOString();
+  const weekCutoff = daysAgo(7, now).toISOString();
+  const monthCutoff = daysAgo(30, now).toISOString();
   const activeWeek = students.filter(
     (s) => s.lastActive && s.lastActive >= weekCutoff,
   ).length;

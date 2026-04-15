@@ -207,15 +207,21 @@ app.post("/api/import/save", requireAdmin, async (c) => {
 });
 
 function resolveDocPath(result: z.infer<typeof ImportResultSchema>): string {
+  // Firestore paths: collections must have an odd number of segments and
+  // documents an even number. We key content under these top-level collections:
+  //   exams/grade{N}/tests/{examId}       — 3-part collection `exams/grade{N}/tests`
+  //   sgk/grade{N}/units/{unitKey}        — 3-part collection `sgk/grade{N}/units`
+  //   grade10_vocab/{topicId}             — 1-part collection
+  //   grade10_grammar/{topicId}           — 1-part collection
   switch (result.kind) {
     case "exam":
       return `exams/grade${result.exam.grade}/tests/${slugify(result.exam.title)}`;
     case "sgk_unit":
       return `sgk/grade${result.grade}/units/${result.unitKey}`;
     case "grade10_vocab":
-      return `grade10/vocab/${result.topicId}`;
+      return `grade10_vocab/${result.topicId}`;
     case "grade10_grammar":
-      return `grade10/grammar/${result.topicId}`;
+      return `grade10_grammar/${result.topicId}`;
   }
 }
 

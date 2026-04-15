@@ -117,6 +117,27 @@ export interface Grade10Test {
   partC?: Grade10TestPartC;
 }
 
+// ===== Grade 10 Writing data (practice sections) =====
+
+/** MCQ-style section: pick the correct arrangement from A/B/C/D. */
+export interface Grade10WritingArrangeSection {
+  instruction: string;
+  questions: MCQuestion[];
+}
+
+/** Free-answer section: user types an answer we match against accepted variants. */
+export interface Grade10WritingFreeAnswerSection {
+  instruction: string;
+  questions: { q: string; answer: string[] }[];
+}
+
+export interface Grade10WritingData {
+  letterArranging?: Grade10WritingArrangeSection;
+  paragraphArranging?: Grade10WritingArrangeSection;
+  sentenceArranging?: Grade10WritingFreeAnswerSection;
+  sentenceRewriting?: Grade10WritingFreeAnswerSection;
+}
+
 export type Grade10TestsData = Record<string, Grade10Test>;
 
 // ===== Grade metadata =====

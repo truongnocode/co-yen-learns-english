@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera } from "lucide-react";
+import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine } from "lucide-react";
 import { gradeConfig, type SGKData } from "@/data/types";
 import { loadSGKData } from "@/data/loader";
 import PageShell from "@/components/PageShell";
@@ -37,7 +37,8 @@ const GradePage = () => {
   const grade10Sections = [
     { key: "vocab", label: "Từ vựng", desc: "11 chủ đề từ vựng trọng tâm", icon: BookOpen, gradient: "gradient-primary" },
     { key: "grammar", label: "Ngữ pháp", desc: "9 chủ đề ngữ pháp cốt lõi", icon: Zap, gradient: "gradient-cool" },
-    { key: "exercises", label: "Đọc hiểu & Viết", desc: "7 dạng bài luyện kỹ năng", icon: FileText, gradient: "gradient-accent" },
+    { key: "exercises", label: "Đọc hiểu", desc: "7 dạng bài luyện kỹ năng", icon: FileText, gradient: "gradient-accent" },
+    { key: "writing", label: "Viết", desc: "Sắp xếp câu, viết lại, thư/đoạn văn", icon: PenLine, gradient: "gradient-purple-card" },
     { key: "tests", label: "Đề thi thử", desc: "15 đề thi vào 10 có chấm điểm", icon: ClipboardList, gradient: "gradient-orange-card" },
   ];
 

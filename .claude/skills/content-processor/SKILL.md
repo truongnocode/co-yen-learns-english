@@ -1,210 +1,141 @@
 ---
 name: content-processor
 description: >
-  Process educational documents (PDF, DOCX, XLSX) into structured JSON content for the
+  Process educational documents (PDF, DOCX, XLSX) into structured JSON for the
   co-yen-learns-english web app. Extracts vocabulary, grammar, exercises, reading passages,
-  and mock exams from textbook files (SGK Global Success grades 6-9, Grade 10 prep) and
-  outputs production-ready JSON matching the app's TypeScript interfaces. Also generates
-  supplementary exercises when source material is thin. Use this skill whenever the user
-  mentions: "xử lý tài liệu", "import sách", "chuyển đổi nội dung", "process content",
-  "import textbook", "nhập dữ liệu bài học", "xử lý file sách", "content processor",
-  "tạo nội dung từ file", "thêm bài học", "thêm unit", "cập nhật dữ liệu sách",
-  "add lesson data", or provides a PDF/DOCX/XLSX file containing English textbook content.
-  Even if the user just drops a file and says something casual like "xử lý cái này cho tôi"
-  or "thêm vào trang web", trigger this skill.
+  and mock exams from textbook files (SGK iLearn Smart Start grades 3-5, Global Success
+  grades 6-9, Grade 10 prep) and outputs JSON that matches the Zod schemas in
+  `src/lib/content-schema.ts`. Also generates supplementary exercises when source
+  material is thin. Trigger this skill when the user mentions: "xử lý tài liệu",
+  "import sách", "chuyển đổi nội dung", "process content", "import textbook",
+  "nhập dữ liệu bài học", "xử lý file sách", "thêm đề thi", "thêm unit", "cập nhật dữ
+  liệu sách", "add exam", "add lesson data", or drops a PDF/DOCX/XLSX with English
+  textbook content. Even casual requests like "xử lý cái này cho tôi" or "thêm vào
+  trang web" should trigger this skill.
 ---
 
-# Content Processor — SGK to JSON Pipeline
+# Content Processor — Docs to JSON Pipeline
 
-You are a content extraction and transformation engine. Your job: take raw educational
-documents and produce structured JSON that the co-yen-learns-english web app can consume
-directly.
+You are a content-extraction engine for co-yen-learns-english. Your job: take raw
+educational documents and produce structured JSON that the React app can consume
+directly (either via Firestore after admin upload, or by merging into the legacy
+`public/data/*.json` files).
 
-## Step 1: Read the source file
+## When this skill runs
 
-Use the appropriate skill to read the input:
-- **PDF** → use `/pdf` skill to extract text
-- **DOCX** → use `/docx` skill to extract text
-- **XLSX** → use `/xlsx` skill to extract structured data
+Two entry points:
 
-If the user provides multiple files, process them in order. If the user pastes raw text
-instead of a file, that works too — skip the file reading step.
+1. **Admin panel (production)** — the teacher uploads a file at `/admin/import`.
+   The Cloudflare Worker `workers/content-importer` calls Claude with
+   `output_format: json_schema`, validates the result with Zod, and returns a
+   preview to the admin UI. **You (the skill) are not invoked in this path.**
 
-## Step 2: Identify the content type
+2. **Local batch (this skill)** — the user runs Claude Code in the repo with a
+   stack of files. You read them, produce JSON, and either:
+   - Save to `public/data/*.json` (bootstrap/fallback dataset), or
+   - Write to Firestore via the helper at `scripts/seed-firestore.ts`.
 
-Scan the extracted text and classify it. The source material will be one or more of:
+Both paths produce JSON matching the same schemas.
 
-| Content Type | How to Recognize | Output Format |
+## Step 1 — Read the source
+
+- **PDF** → use the `/pdf` skill
+- **DOCX** → use the `/docx` skill
+- **XLSX** → use the `/xlsx` skill
+- **Raw text** → skip file reading
+
+For long files, feed the file reference directly rather than dumping the whole
+extracted text into prompts — keeps token usage down and quality up.
+
+## Step 2 — Classify content type
+
+Scan the source and decide which Zod schema from `src/lib/content-schema.ts` applies:
+
+| Source | Schema | Output location |
 |---|---|---|
-| **SGK Unit (grades 6-9)** | Unit number + title, word lists, grammar explanations, exercises | `SGKUnit` → merge into `sgk_eng{grade}_data.json` |
-| **Grade 10 Vocabulary** | Topic-based vocab exercises, MCQ format | `Grade10VocabTopic` → merge into `grade10_vocab.json` |
-| **Grade 10 Grammar** | Grammar topic + mixed exercise types (MCQ, rearrange, rewrite) | `Grade10GrammarTopic` → merge into `grade10_grammar.json` |
-| **Mock Exam** | Full test with parts A-D, 40 questions, 60 minutes | Test object → merge into `grade10_tests.json` |
-| **Reading Comprehension** | Passages + comprehension questions | Reading exercises → merge into `grade10_reading.json` |
-| **Writing Exercises** | Sentence rearrangement, word formation, rewrite | Writing exercises → merge into `grade10_writing.json` |
-| **Raw word list** | Just English-Vietnamese pairs without structure | `VocabItem[]` — needs unit assignment |
+| Full mock exam (40Q, parts A/B/C) | `ExamSchema` | `public/data/grade10_tests.json` → add new `testN` key |
+| SGK unit (grades 3-9) | `SgkUnitSchema` | `public/data/sgk_eng{grade}_data.json` → add to `units` map |
+| Grade 10 vocabulary topic | `Grade10VocabTopicSchema` | `public/data/grade10_vocab.json` → add topic key |
+| Grade 10 grammar topic | `Grade10GrammarTopicSchema` | `public/data/grade10_grammar.json` → add topic key |
+| Reading comprehension only | `ReadingPassageSchema[]` | `public/data/grade10_reading.json` |
+| Writing prompts only | `WritingPromptSchema[]` | `public/data/grade10_writing.json` |
+| Raw vocab list | `VocabItem[]` | Needs unit assignment — ask user |
 
-If unclear, ask the user: "Nội dung này thuộc lớp mấy và unit nào?"
+If ambiguous, ask: "Nội dung này thuộc lớp mấy và loại gì (đề thi / unit SGK / vocab /
+grammar)?"
 
-## Step 3: Extract and structure data
+## Step 3 — Extract with Claude's structured output
 
-### For SGK Units (grades 6-9)
+**When working server-side (Worker)**: pass the raw file bytes + the JSON Schema
+derived from the Zod schema. Claude's `output_format: json_schema` enforces the
+shape, so you mostly need a good system prompt and examples.
 
-Each unit MUST produce this structure:
+**When working as this skill in Claude Code**: you ARE the extraction engine. Produce
+JSON directly matching the schema. After generation, you MUST run `z.safeParse()` in
+your head (or via a small test script) against the schema — if any field fails, fix
+it before writing.
 
-```json
-{
-  "title": "Unit Title in English",
-  "vocabulary": [
-    { "en": "word", "type": "n", "vi": "nghĩa tiếng Việt" }
-  ],
-  "grammar": ["Grammar Topic 1", "Grammar Topic 2"],
-  "grammar_notes": "Giải thích ngữ pháp bằng tiếng Việt. Chi tiết, có ví dụ minh họa.",
-  "exercises": [
-    { "q": "Question text with _____ blank.", "opts": ["A", "B", "C", "D"], "ans": 0 }
-  ]
-}
-```
+### Required validations
 
-**Quality benchmarks per unit:**
-- Vocabulary: **35-45 items** (extract all from source, supplement if < 35)
-- Grammar topics: **1-3 topics** per unit
-- Grammar notes: **200-500 words** in Vietnamese, with examples
-- Exercises: **20 MCQ** (extract from source, generate more if < 20)
+Every output must pass these checks:
 
-**Vocabulary `type` field values:**
-`n` (noun), `v` (verb), `adj` (adjective), `adv` (adverb), `prep` (preposition),
-`idiom`, `n/v` (can be both), `v phr` (verb phrase), `phr` (phrase),
-`conj` (conjunction), `det` (determiner)
+1. **MCQ shape**: exactly 4 `opts`, `ans` ∈ 0..3, and `ans` points to the genuinely
+   correct option (verify against grammar rules).
+2. **No empty strings** in required fields (`q`, `en`, `vi`, `title`, `passage`).
+3. **Passages verbatim**: reading/cloze text is copied without paraphrasing.
+4. **Vietnamese explanations**: every MCQ's `explain` field is in Vietnamese, 1-2
+   sentences, says why the correct answer is right. Add explanations for questions
+   that are missing them in the source.
+5. **No duplicates** within the same unit/exam.
+6. **Vocabulary `type`** only uses enum values from the schema: `n`, `v`, `adj`, `adv`,
+   `prep`, `idiom`, `n/v`, `v/n`, `v phr`, `phr`, `conj`, `det`.
 
-### For Grade 10 Vocabulary
+### Minimum counts per SGK unit
 
-```json
-{
-  "topic_id": {
-    "name": "Topic Name",
-    "questions": [
-      { "q": "Sentence with _____ blank.", "opts": ["A", "B", "C", "D"], "ans": 0 }
-    ]
-  }
-}
-```
+If source is thin, **generate supplementary items** to hit these floors:
 
-Use hierarchical IDs like `"1.1.1"`, `"1.1.2"`, etc.
+- Vocabulary: 35 items
+- Exercises: 20 MCQ
+- Grammar notes: 200-500 words Vietnamese with examples
 
-### For Grade 10 Grammar
+Supplementary items must stay within the unit's topic and grammar scope — do not
+drift to unrelated vocabulary.
 
-```json
-{
-  "topic_id": {
-    "name": "Grammar Topic Name",
-    "exercises": {
-      "mcq": {
-        "instruction": "Mark the letter A, B, C, or D...",
-        "questions": [{ "q": "...", "opts": ["A","B","C","D"], "ans": 0 }]
-      },
-      "rearrange": {
-        "instruction": "Rearrange the words/phrases...",
-        "questions": [{ "q": "scrambled / words / here", "answer": ["correct", "order", "here"] }]
-      },
-      "completion": {
-        "instruction": "Complete using the correct form...",
-        "questions": [{ "q": "Sentence with (word)...", "answer": ["correct form"] }]
-      },
-      "rewrite": {
-        "instruction": "Rewrite the sentence...",
-        "questions": [{ "q": "Original sentence → ...", "answer": ["rewritten sentence"] }]
-      }
-    }
-  }
-}
-```
+## Step 4 — Merge, don't overwrite
 
-Not all exercise types are required — include only what the source material provides.
-Use IDs like `"2.1"`, `"2.2"`, etc.
+Read the existing JSON file from `public/data/` first, merge the new content, and
+write back.
 
-### For Mock Exams
+**Never overwrite** existing keys unless the user explicitly says "replace test2" or
+similar. Default: add alongside. This is also a project rule
+(`feedback_no_delete_data` in user memory).
 
-```json
-{
-  "test_id": {
-    "title": "Practice Test N",
-    "partA": { "instruction": "...", "questions": [MCQuestion] },
-    "partB": { "instruction": "...", "questions": [MCQuestion] },
-    "partC": { "instruction": "...", "questions": [MCQuestion] },
-    "partD": { "instruction": "...", "questions": [MCQuestion] }
-  }
-}
-```
+**Idempotent runs**: before generating a unit, check if the target unit key already
+exists in the output file with non-trivial content. If yes, skip (log "already
+processed, skipping"). This matches the `feedback_skip_existing` rule.
 
-## Step 4: Validate
-
-Run these checks before writing output:
-
-1. **MCQ validation**: Every `MCQuestion` has exactly 4 `opts` and `ans` is 0-3
-2. **No empty fields**: All `en`, `vi`, `q` fields are non-empty strings
-3. **Answer correctness**: Verify `ans` index points to the actually correct option
-4. **Vietnamese content**: `grammar_notes` is written in Vietnamese
-5. **Minimum counts**: vocabulary ≥ 35, exercises ≥ 20 per unit
-6. **No duplicates**: No duplicate vocabulary items within the same unit
-7. **Type accuracy**: `type` field uses only the allowed values listed above
-
-If any check fails, fix it before proceeding. If vocabulary or exercises are below
-minimum, generate additional items that match the unit's topic and difficulty level.
-
-## Step 5: Merge into existing data
-
-Read the existing JSON file from `public/data/`, merge the new content, and write back.
-
-**IMPORTANT**: Never overwrite existing units/topics unless the user explicitly says to
-replace them. Default behavior is to ADD new content alongside existing content.
+## Step 5 — Report
 
 ```
-Existing file: public/data/sgk_eng6_data.json
-→ Read current JSON
-→ Add new unit(s) to the "units" object
-→ Write back the merged JSON
-```
-
-If creating a completely new file, match the naming convention:
-- `sgk_eng{grade}_data.json` for grades 6-9
-- `grade10_{type}.json` for grade 10 content
-
-## Step 6: Report to user
-
-After processing, show a summary:
-
-```
-✓ Đã xử lý: [filename]
-  Lớp: [grade] | Unit: [unit numbers]
-  Từ vựng: [count] items
-  Ngữ pháp: [count] topics
-  Bài tập: [count] MCQ
+✓ Processed: [filename]
+  Kind: [exam | sgk_unit | grade10_vocab | grade10_grammar]
+  Grade: [N] | Unit/Test: [id]
+  Stats: [N vocab, N MCQ, N reading passages, ...]
   Output: public/data/[filename].json
-
-  [Any warnings about generated/supplemented content]
+  Generated (supplementary): [N items — always reported when > 0]
 ```
 
-## Generating supplementary exercises
+If anything was generated (not from source), always call it out so the teacher can
+review.
 
-When source material has fewer than 20 exercises per unit, generate additional MCQ
-following these patterns:
+## References
 
-1. **Vocabulary MCQ**: "The word '___' means..." or "Choose the correct word for..."
-2. **Grammar MCQ**: "She _____ to school every day." (test the unit's grammar point)
-3. **Fill-in-blank**: Contextual sentences using unit vocabulary
-4. **Error identification**: "Find the mistake in the sentence..."
-
-All generated exercises must:
-- Use vocabulary FROM the same unit
-- Test grammar points FROM the same unit
-- Have exactly 4 plausible options (no obvious wrong answers)
-- Include the correct answer at a random position (not always option A)
-
-## Reference: Existing data files
-
-Read these for format reference if needed:
-- `public/data/sgk_eng6_data.json` — Grade 6 example (12 units)
-- `public/data/grade10_vocab.json` — Grade 10 vocab format
-- `public/data/grade10_grammar.json` — Grade 10 grammar format
-- `public/data/grade10_tests.json` — Mock exam format
+- Authoritative schemas: [src/lib/content-schema.ts](../../../src/lib/content-schema.ts)
+- App types: [src/data/types.ts](../../../src/data/types.ts)
+- Existing data files (read for format examples):
+  - `public/data/sgk_eng6_data.json` — SGK unit format
+  - `public/data/grade10_vocab.json` — Grade 10 vocab
+  - `public/data/grade10_grammar.json` — Grade 10 grammar
+  - `public/data/grade10_tests.json` — Mock exam
+  - `public/data/grade10_reading.json` — Reading
+  - `public/data/grade10_writing.json` — Writing prompts

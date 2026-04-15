@@ -17,6 +17,10 @@ dist-ssr
 .env.local
 .env.*.local
 
+# Firebase service account (do NOT commit)
+serviceAccount.json
+*-firebase-adminsdk-*.json
+
 # Test results
 test-results/
 playwright-report/

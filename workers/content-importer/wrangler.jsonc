@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "co-yen-content-importer",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "routes": [
+    // Bind to api subdomain once DNS is configured.
+    // { "pattern": "api.tienganhcoyen.online/*", "zone_name": "tienganhcoyen.online" }
+  ],
+  "vars": {
+    "ALLOWED_ORIGIN": "https://tienganhcoyen.online",
+    "FIREBASE_PROJECT_ID": "english-class-28f06"
+  }
+  // Secrets (set via `wrangler secret put`):
+  //   ANTHROPIC_API_KEY
+  //   OPENAI_API_KEY          (for Whisper speaking scoring)
+  //   FIREBASE_CLIENT_EMAIL   (service account email)
+  //   FIREBASE_PRIVATE_KEY    (service account private key, keep \n literal)
+}

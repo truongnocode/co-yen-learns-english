@@ -1,0 +1,23 @@
+{
+  "name": "co-yen-content-importer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "deploy": "wrangler deploy",
+    "types": "tsc --noEmit",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "hono": "^4.6.0",
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.24.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251015.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.0.0"
+  }
+}

@@ -29,6 +29,11 @@ import FlashcardMatchGame from "./pages/games/FlashcardMatchGame";
 import ListenChoosePicture from "./pages/games/ListenChoosePicture";
 import VirtualPetPage from "./pages/VirtualPetPage";
 import NotFound from "./pages/NotFound";
+import { RequireAdmin } from "@/components/admin/RequireAdmin";
+import { AdminLayout } from "@/components/admin/AdminLayout";
+import ImportExamPage from "./pages/admin/ImportExam";
+import ExamListPage from "./pages/admin/ExamList";
+import AnalyticsPage from "./pages/admin/Analytics";
 
 const queryClient = new QueryClient();
 
@@ -64,6 +69,19 @@ const App = () => (
           <Route path="/phonetics/:gradeId" element={<PhoneticsPage />} />
           <Route path="/pet" element={<VirtualPetPage />} />
           <Route path="/test/custom" element={<DynamicTestPage />} />
+          <Route
+            path="/admin"
+            element={
+              <RequireAdmin>
+                <AdminLayout />
+              </RequireAdmin>
+            }
+          >
+            <Route index element={<ImportExamPage />} />
+            <Route path="import" element={<ImportExamPage />} />
+            <Route path="exams" element={<ExamListPage />} />
+            <Route path="analytics" element={<AnalyticsPage />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

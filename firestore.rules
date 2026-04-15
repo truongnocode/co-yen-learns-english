@@ -15,27 +15,26 @@ service cloud.firestore {
     }
 
     // ─── Per-user documents: users / progress / pets ─────────────────────
-    // Owner reads/writes own; admin reads all (needed for teacher analytics).
-    // Listing the collection is restricted to admins — students shouldn't
-    // be able to enumerate everyone. Individual docs are owner-or-admin.
+    // Reads (get + list) are open to any signed-in user — this is what the
+    // leaderboard + analytics dashboards both rely on; matches the previous
+    // rules so existing student flows don't break. Writes are locked down:
+    // only the owner can create/update their own doc; admin can update users
+    // for moderation; nobody can delete.
     match /users/{uid} {
-      allow get:    if isOwner(uid) || isAdmin();
-      allow list:   if isAdmin();
+      allow read:   if isSignedIn();
       allow create: if isOwner(uid);
       allow update: if isOwner(uid) || isAdmin();
       allow delete: if false;
     }
 
     match /progress/{uid} {
-      allow get:    if isOwner(uid) || isAdmin();
-      allow list:   if isAdmin();
+      allow read:   if isSignedIn();
       allow create, update: if isOwner(uid);
       allow delete: if false;
     }
 
     match /pets/{uid} {
-      allow get:    if isOwner(uid) || isAdmin();
-      allow list:   if isAdmin();
+      allow read:   if isSignedIn();
       allow create, update: if isOwner(uid);
       allow delete: if false;
     }

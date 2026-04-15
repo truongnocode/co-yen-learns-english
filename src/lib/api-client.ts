@@ -3,9 +3,14 @@
  *
  * Base URL comes from `VITE_API_BASE_URL`. Every call attaches the current
  * user's Firebase ID token so the Worker can verify admin custom claims.
+ *
+ * Firestore writes (saveImportResult) happen directly via the Firebase SDK —
+ * the Worker stays credential-light (only Gemini API key), and the user's own
+ * identity + Firestore security rules gate the write.
  */
 
-import { auth } from "@/lib/firebase";
+import { auth, db } from "@/lib/firebase";
+import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import type {
   Exam,
   ImportResult,
@@ -104,20 +109,75 @@ export async function gradeSpeaking(
   return (await res.json()) as SpeakingVerdict;
 }
 
+// ─── Firestore save (client-side via Firebase SDK) ──────────────────────────
+
+function resolveDocPath(result: ImportResult): string {
+  switch (result.kind) {
+    case "exam":
+      return `exams/grade${result.exam.grade}/tests/${slugify(result.exam.title)}`;
+    case "sgk_unit":
+      return `sgk/grade${result.grade}/units/${result.unitKey}`;
+    case "grade10_vocab":
+      return `grade10_vocab/${result.topicId}`;
+    case "grade10_grammar":
+      return `grade10_grammar/${result.topicId}`;
+  }
+}
+
+function flattenResult(result: ImportResult): Record<string, unknown> {
+  switch (result.kind) {
+    case "exam":
+      return { kind: "exam", ...result.exam };
+    case "sgk_unit":
+      return {
+        kind: "sgk_unit",
+        grade: result.grade,
+        unitKey: result.unitKey,
+        ...result.unit,
+      };
+    case "grade10_vocab":
+      return { kind: "grade10_vocab", topicId: result.topicId, ...result.topic };
+    case "grade10_grammar":
+      return { kind: "grade10_grammar", topicId: result.topicId, ...result.topic };
+  }
+}
+
+function slugify(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+
 export async function saveImportResult(
   result: ImportResult,
   overwrite = false,
 ): Promise<{ ok: true; docPath: string }> {
-  const res = await fetch(`${BASE_URL}/api/import/save`, {
-    method: "POST",
-    headers: {
-      ...(await authHeader()),
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ result, overwrite }),
+  const u = auth.currentUser;
+  if (!u) throw new Error("Not signed in");
+
+  const docPath = resolveDocPath(result);
+  const ref = doc(db, docPath);
+
+  if (!overwrite) {
+    const snap = await getDoc(ref);
+    if (snap.exists()) {
+      const err = new Error(
+        `Document already exists at ${docPath}. Pass overwrite=true to replace.`,
+      );
+      (err as Error & { status?: number }).status = 409;
+      throw err;
+    }
+  }
+
+  await setDoc(ref, {
+    ...flattenResult(result),
+    updatedAt: serverTimestamp(),
+    updatedBy: u.uid,
   });
-  if (!res.ok) throw await toError(res);
-  return (await res.json()) as { ok: true; docPath: string };
+
+  return { ok: true, docPath };
 }
 
 async function toError(res: Response): Promise<Error> {

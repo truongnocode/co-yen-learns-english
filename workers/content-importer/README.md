@@ -7,14 +7,17 @@ Cloudflare Worker backend for the Co Yến admin panel and AI scoring features.
 | Method | Path                   | Auth        | Purpose                                           |
 |--------|------------------------|-------------|---------------------------------------------------|
 | GET    | `/health`              | public      | Liveness probe                                    |
-| POST   | `/api/import/exam`     | admin       | Upload PDF/DOCX exam → Claude → preview JSON      |
+| POST   | `/api/import/exam`     | admin       | Upload PDF/DOCX exam → Gemini → preview JSON      |
 | POST   | `/api/import/sgk`      | admin       | Upload source → SGK unit preview                  |
-| POST   | `/api/import/save`     | admin       | Persist a verified `ImportResult` to Firestore    |
-| POST   | `/api/grade/speaking`  | any user    | Score a shadowing attempt (Whisper + Claude)      |
+| POST   | `/api/grade/speaking`  | any user    | Score a shadowing attempt (Gemini native audio)   |
 
 Auth is a Firebase ID token in `Authorization: Bearer <token>`. Admin routes
 additionally require the `admin: true` custom claim (set via
 `scripts/grant-admin.mjs` in the repo root).
+
+Firestore writes happen **client-side** via the Firebase SDK, not through this
+Worker — `src/lib/api-client.ts::saveImportResult` uses the admin user's own
+ID token + Firestore security rules. The Worker stays credential-light.
 
 ## Setup
 
@@ -26,16 +29,29 @@ npm install
 ### Configure secrets
 
 ```bash
-npx wrangler secret put ANTHROPIC_API_KEY
-npx wrangler secret put OPENAI_API_KEY          # for Whisper / speaking
-npx wrangler secret put FIREBASE_CLIENT_EMAIL   # service-account email
-npx wrangler secret put FIREBASE_PRIVATE_KEY    # service-account private key
+npx wrangler secret put GEMINI_API_KEY   # get one at https://aistudio.google.com/apikey
 ```
 
-The `FIREBASE_PRIVATE_KEY` value should be the full PEM with literal `\n`
-newlines preserved (copy the string from your JSON service account file
-exactly). Vars (`ALLOWED_ORIGIN`, `FIREBASE_PROJECT_ID`) live in
-`wrangler.jsonc`.
+That's the only Worker secret — Gemini handles both PDF/DOCX parsing and
+native audio scoring. Firestore writes happen client-side via the admin user's
+own Firebase SDK session. Vars (`ALLOWED_ORIGIN`, `FIREBASE_PROJECT_ID`) live
+in `wrangler.jsonc`.
+
+### Error handling
+
+Gemini failures are classified into typed responses (see `GeminiError` in
+`src/gemini.ts`):
+
+| `kind`         | HTTP | Surfaced Vietnamese message |
+|----------------|-----:|-----------------------------|
+| `quota`        |  429 | "Gemini API đã hết quota. Cô Yến vui lòng đợi vài phút rồi thử lại…" |
+| `auth`         |  502 | "Gemini API key không hợp lệ hoặc đã bị thu hồi." |
+| `unavailable`  |  503 | "Gemini tạm thời gián đoạn. Xin thử lại sau ít phút." |
+| `invalid_input`|  400 | "File hoặc dữ liệu gửi lên không hợp lệ…" |
+| `unknown`      |  502 | "Gemini trả lỗi không xác định…" |
+
+The admin UI / shadowing page `toast.error()` on `res.error` so the student
+sees the VI message directly.
 
 ## Local dev
 

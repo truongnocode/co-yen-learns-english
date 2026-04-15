@@ -3,27 +3,28 @@
  *
  * Routes:
  *   GET  /health                     — liveness check
- *   POST /api/import/exam            — upload PDF/DOCX → Claude → preview JSON
+ *   POST /api/import/exam            — upload PDF/DOCX → Gemini → preview JSON
  *   POST /api/import/sgk             — upload source → SGK unit preview
- *   POST /api/import/save            — save verified JSON to Firestore
+ *   POST /api/grade/speaking         — student audio → Gemini → pronunciation verdict
+ *
+ * Firestore writes happen client-side (Firebase SDK from the admin UI) so this
+ * Worker doesn't need a Firebase service account — only a Gemini API key.
  *
  * All /api/import/* routes require a Firebase ID token with `admin: true` custom claim.
+ * /api/grade/speaking requires any signed-in user.
  */
 
 import { Hono, type Context } from "hono";
 import { cors } from "hono/cors";
-import { z } from "zod";
 
 import {
   EXAM_IMPORT_SYSTEM_PROMPT,
   ExamSchema,
-  ImportResultSchema,
   SgkUnitSchema,
 } from "../../../src/lib/content-schema";
 import type { Env } from "./env";
 import { requireAdmin, requireUser, type DecodedToken } from "./auth";
-import { extractStructured } from "./claude";
-import { setDocument, getDocument } from "./firestore";
+import { extractStructured, GeminiError } from "./gemini";
 import { scoreSpeaking } from "./speaking";
 
 type Variables = { user: DecodedToken };
@@ -44,6 +45,34 @@ app.use("*", async (c, next) => {
 app.get("/health", (c) =>
   c.json({ ok: true, service: "co-yen-content-importer", ts: Date.now() }),
 );
+
+// ─── Error helper: map GeminiError to a client-friendly response ────────────
+function geminiErrorResponse(c: AppContext, e: unknown): Response {
+  if (e instanceof GeminiError) {
+    const httpStatus =
+      e.kind === "quota"
+        ? 429
+        : e.kind === "auth"
+          ? 502
+          : e.kind === "unavailable"
+            ? 503
+            : e.kind === "invalid_input"
+              ? 400
+              : 502;
+    return c.json(
+      {
+        error: e.vi,
+        kind: e.kind,
+        detail: e.message,
+      },
+      httpStatus,
+    );
+  }
+  return c.json(
+    { error: "Internal error", detail: (e as Error).message },
+    502,
+  );
+}
 
 // ─── Import: exam ────────────────────────────────────────────────────────
 const MAX_BYTES = 20 * 1024 * 1024; // 20 MB
@@ -97,7 +126,7 @@ app.post("/api/import/exam", requireAdmin, async (c) => {
 
   try {
     const { data, attempts } = await extractStructured({
-      apiKey: c.env.ANTHROPIC_API_KEY,
+      apiKey: c.env.GEMINI_API_KEY,
       filename: upload.filename,
       fileBytes: upload.bytes,
       mimeType: upload.mimeType,
@@ -106,16 +135,9 @@ app.post("/api/import/exam", requireAdmin, async (c) => {
       userInstruction: `Extract this exam paper as JSON. Target grade level: ${grade}. The paper likely has Part A (MCQ), Part B (cloze / signs / reading), and Part C (arrange / fill-in / writing). Preserve original question numbering in Part C.`,
     });
 
-    return c.json({
-      kind: "exam",
-      exam: data,
-      attempts,
-    });
+    return c.json({ kind: "exam", exam: data, attempts });
   } catch (e) {
-    return c.json(
-      { error: "Extraction failed", detail: (e as Error).message },
-      502,
-    );
+    return geminiErrorResponse(c, e);
   }
 });
 
@@ -134,7 +156,7 @@ app.post("/api/import/sgk", requireAdmin, async (c) => {
 
   try {
     const { data, attempts } = await extractStructured({
-      apiKey: c.env.ANTHROPIC_API_KEY,
+      apiKey: c.env.GEMINI_API_KEY,
       filename: upload.filename,
       fileBytes: upload.bytes,
       mimeType: upload.mimeType,
@@ -151,119 +173,25 @@ app.post("/api/import/sgk", requireAdmin, async (c) => {
       attempts,
     });
   } catch (e) {
-    return c.json(
-      { error: "Extraction failed", detail: (e as Error).message },
-      502,
-    );
+    return geminiErrorResponse(c, e);
   }
 });
 
-// ─── Save: write verified JSON to Firestore ─────────────────────────────
-const SaveBodySchema = z.object({
-  result: ImportResultSchema,
-  /**
-   * If true, overwrite an existing doc at the target path. Defaults to false —
-   * matches the `feedback_skip_existing` project rule.
-   */
-  overwrite: z.boolean().optional().default(false),
-});
+// ─── Speaking: Gemini native audio scoring ─────────────────────────────────
 
-app.post("/api/import/save", requireAdmin, async (c) => {
-  const raw = await c.req.json().catch(() => null);
-  const parsed = SaveBodySchema.safeParse(raw);
-  if (!parsed.success) {
-    return c.json(
-      { error: "Invalid body", issues: parsed.error.issues },
-      400,
-    );
-  }
-  const { result, overwrite } = parsed.data;
-  const user = c.get("user");
-
-  const docPath = resolveDocPath(result);
-
-  if (!overwrite) {
-    const existing = await getDocument(c.env, docPath);
-    if (existing && Object.keys(existing).length > 0) {
-      return c.json(
-        {
-          error: "Document already exists",
-          docPath,
-          hint: "Pass overwrite: true to replace.",
-        },
-        409,
-      );
-    }
-  }
-
-  const payload: Record<string, unknown> = {
-    ...flattenResult(result),
-    updatedAt: new Date(),
-    updatedBy: user.uid,
-  };
-
-  await setDocument(c.env, docPath, payload);
-
-  return c.json({ ok: true, docPath });
-});
-
-function resolveDocPath(result: z.infer<typeof ImportResultSchema>): string {
-  // Firestore paths: collections must have an odd number of segments and
-  // documents an even number. We key content under these top-level collections:
-  //   exams/grade{N}/tests/{examId}       — 3-part collection `exams/grade{N}/tests`
-  //   sgk/grade{N}/units/{unitKey}        — 3-part collection `sgk/grade{N}/units`
-  //   grade10_vocab/{topicId}             — 1-part collection
-  //   grade10_grammar/{topicId}           — 1-part collection
-  switch (result.kind) {
-    case "exam":
-      return `exams/grade${result.exam.grade}/tests/${slugify(result.exam.title)}`;
-    case "sgk_unit":
-      return `sgk/grade${result.grade}/units/${result.unitKey}`;
-    case "grade10_vocab":
-      return `grade10_vocab/${result.topicId}`;
-    case "grade10_grammar":
-      return `grade10_grammar/${result.topicId}`;
-  }
-}
-
-function flattenResult(
-  result: z.infer<typeof ImportResultSchema>,
-): Record<string, unknown> {
-  switch (result.kind) {
-    case "exam":
-      return { kind: "exam", ...result.exam };
-    case "sgk_unit":
-      return {
-        kind: "sgk_unit",
-        grade: result.grade,
-        unitKey: result.unitKey,
-        ...result.unit,
-      };
-    case "grade10_vocab":
-      return { kind: "grade10_vocab", topicId: result.topicId, ...result.topic };
-    case "grade10_grammar":
-      return { kind: "grade10_grammar", topicId: result.topicId, ...result.topic };
-  }
-}
-
-function slugify(s: string): string {
-  return s
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
-}
-
-// ─── Speaking: Whisper + Claude scoring ─────────────────────────────────────
-const AUDIO_MAX_BYTES = 10 * 1024 * 1024; // 10 MB is plenty for a single shadow
+const AUDIO_MAX_BYTES = 10 * 1024 * 1024; // 10 MB
 const AUDIO_MIMES = new Set([
   "audio/webm",
   "audio/webm;codecs=opus",
   "audio/ogg",
   "audio/mpeg",
+  "audio/mp3",
   "audio/wav",
+  "audio/wave",
+  "audio/x-wav",
   "audio/mp4",
   "audio/m4a",
+  "audio/aac",
 ]);
 
 app.post("/api/grade/speaking", requireUser, async (c) => {
@@ -286,9 +214,9 @@ app.post("/api/grade/speaking", requireUser, async (c) => {
   if (blob.size > AUDIO_MAX_BYTES) {
     return c.json({ error: `Audio too large (${blob.size} bytes)` }, 413);
   }
-  // Whisper accepts a range of mimes; we allow any audio/* but warn on unknowns.
   const mime = blob.type || "audio/webm";
-  if (!AUDIO_MIMES.has(mime.split(";")[0]) && !mime.startsWith("audio/")) {
+  const baseMime = mime.split(";")[0];
+  if (!AUDIO_MIMES.has(baseMime) && !mime.startsWith("audio/")) {
     return c.json({ error: `Unsupported audio type: ${mime}` }, 415);
   }
   const bytes = await blob.arrayBuffer();
@@ -302,10 +230,7 @@ app.post("/api/grade/speaking", requireUser, async (c) => {
     });
     return c.json(verdict);
   } catch (e) {
-    return c.json(
-      { error: "Speaking scoring failed", detail: (e as Error).message },
-      502,
-    );
+    return geminiErrorResponse(c, e);
   }
 });
 

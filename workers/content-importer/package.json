@@ -10,7 +10,6 @@
     "tail": "wrangler tail"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.40.0",
     "hono": "^4.6.0",
     "zod": "^3.25.76",
     "zod-to-json-schema": "^3.24.0"

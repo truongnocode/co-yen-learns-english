@@ -1,0 +1,2727 @@
+{
+  "units": {
+    "0": {
+      "title": "Getting Started",
+      "vocabulary": [
+        {
+          "en": "stand up",
+          "type": "v phr",
+          "vi": "đứng lên"
+        },
+        {
+          "en": "sit down",
+          "type": "v phr",
+          "vi": "ngồi xuống"
+        },
+        {
+          "en": "hands up",
+          "type": "v phr",
+          "vi": "giơ tay lên"
+        },
+        {
+          "en": "hands down",
+          "type": "v phr",
+          "vi": "hạ tay xuống"
+        },
+        {
+          "en": "open your book",
+          "type": "v phr",
+          "vi": "mở sách ra"
+        },
+        {
+          "en": "close your book",
+          "type": "v phr",
+          "vi": "đóng sách lại"
+        },
+        {
+          "en": "hello",
+          "type": "n",
+          "vi": "xin chào"
+        },
+        {
+          "en": "goodbye",
+          "type": "n",
+          "vi": "tạm biệt"
+        },
+        {
+          "en": "please",
+          "type": "adv",
+          "vi": "làm ơn"
+        },
+        {
+          "en": "teacher",
+          "type": "n",
+          "vi": "giáo viên"
+        },
+        {
+          "en": "yes",
+          "type": "adv",
+          "vi": "vâng, có"
+        },
+        {
+          "en": "no",
+          "type": "adv",
+          "vi": "không"
+        },
+        {
+          "en": "red",
+          "type": "adj",
+          "vi": "màu đỏ"
+        },
+        {
+          "en": "yellow",
+          "type": "adj",
+          "vi": "màu vàng"
+        },
+        {
+          "en": "blue",
+          "type": "adj",
+          "vi": "màu xanh dương"
+        },
+        {
+          "en": "black",
+          "type": "adj",
+          "vi": "màu đen"
+        },
+        {
+          "en": "white",
+          "type": "adj",
+          "vi": "màu trắng"
+        },
+        {
+          "en": "one",
+          "type": "n",
+          "vi": "số một"
+        },
+        {
+          "en": "two",
+          "type": "n",
+          "vi": "số hai"
+        },
+        {
+          "en": "three",
+          "type": "n",
+          "vi": "số ba"
+        },
+        {
+          "en": "four",
+          "type": "n",
+          "vi": "số bốn"
+        },
+        {
+          "en": "five",
+          "type": "n",
+          "vi": "số năm"
+        },
+        {
+          "en": "six",
+          "type": "n",
+          "vi": "số sáu"
+        },
+        {
+          "en": "seven",
+          "type": "n",
+          "vi": "số bảy"
+        },
+        {
+          "en": "eight",
+          "type": "n",
+          "vi": "số tám"
+        },
+        {
+          "en": "nine",
+          "type": "n",
+          "vi": "số chín"
+        },
+        {
+          "en": "ten",
+          "type": "n",
+          "vi": "số mười"
+        },
+        {
+          "en": "name",
+          "type": "n",
+          "vi": "tên"
+        }
+      ],
+      "grammar": [
+        "Classroom instructions: Stand up / Sit down / Hands up / Hands down",
+        "Greetings: Hello / Goodbye",
+        "What's your name? - My name's ___.",
+        "What color is it? - It's ___.",
+        "How old are you? - I'm ___.",
+        "Numbers 1-10",
+        "Colors"
+      ],
+      "grammar_notes": "Bài mở đầu giới thiệu các câu lệnh trong lớp học và cách chào hỏi cơ bản.\n\n1. Câu lệnh trong lớp:\n- \"Stand up, please.\" = Đứng lên nào.\n- \"Sit down, please.\" = Ngồi xuống nào.\n- \"Open your book.\" = Mở sách ra.\n- \"Close your book.\" = Đóng sách lại.\n\n2. Chào hỏi:\n- \"Hello. What's your name?\" = Xin chào. Bạn tên gì?\n- \"My name's Tom.\" = Tên tôi là Tom.\n- \"Goodbye.\" = Tạm biệt.\n\n3. Hỏi tuổi:\n- \"How old are you?\" = Bạn bao nhiêu tuổi?\n- \"I'm seven.\" = Tôi bảy tuổi.\n\n4. Màu sắc:\n- \"What color is it?\" = Nó màu gì?\n- \"It's yellow.\" = Nó màu vàng.",
+      "exercises": [
+        {
+          "q": "_____, please.",
+          "opts": [
+            "Stand up",
+            "Stand down",
+            "Sit up",
+            "Hand up"
+          ],
+          "ans": 0,
+          "explain": "\"Stand up\" nghĩa là đứng lên. Đây là câu lệnh trong lớp học."
+        },
+        {
+          "q": "_____ your book.",
+          "opts": [
+            "Stand",
+            "Sit",
+            "Open",
+            "Hand"
+          ],
+          "ans": 2,
+          "explain": "\"Open your book\" nghĩa là mở sách ra."
+        },
+        {
+          "q": "Hello. What's your _____?",
+          "opts": [
+            "color",
+            "name",
+            "old",
+            "book"
+          ],
+          "ans": 1,
+          "explain": "\"What's your name?\" nghĩa là bạn tên gì."
+        },
+        {
+          "q": "My _____ Tom.",
+          "opts": [
+            "name",
+            "name's",
+            "names",
+            "is name"
+          ],
+          "ans": 1,
+          "explain": "\"My name's\" = \"My name is\" nghĩa là tên tôi là."
+        },
+        {
+          "q": "How old _____ you?",
+          "opts": [
+            "is",
+            "am",
+            "are",
+            "do"
+          ],
+          "ans": 2,
+          "explain": "Với \"you\" ta dùng \"are\". \"How old are you?\" = Bạn bao nhiêu tuổi?"
+        },
+        {
+          "q": "I'm _____.",
+          "opts": [
+            "seven",
+            "sevens",
+            "the seven",
+            "a seven"
+          ],
+          "ans": 0,
+          "explain": "Khi nói tuổi, ta nói \"I'm + số\". Ví dụ: I'm seven = Tôi 7 tuổi."
+        },
+        {
+          "q": "What _____ is it? - It's red.",
+          "opts": [
+            "name",
+            "old",
+            "color",
+            "number"
+          ],
+          "ans": 2,
+          "explain": "\"What color is it?\" nghĩa là nó màu gì."
+        },
+        {
+          "q": "_____, Teacher.",
+          "opts": [
+            "Yes",
+            "No",
+            "Hello",
+            "Color"
+          ],
+          "ans": 0,
+          "explain": "Khi cô giáo hỏi, học sinh trả lời \"Yes, Teacher\" = Vâng, thưa cô."
+        },
+        {
+          "q": "Hands _____, please.",
+          "opts": [
+            "up",
+            "in",
+            "on",
+            "at"
+          ],
+          "ans": 0,
+          "explain": "\"Hands up\" nghĩa là giơ tay lên."
+        },
+        {
+          "q": "Close your _____.",
+          "opts": [
+            "hand",
+            "name",
+            "book",
+            "color"
+          ],
+          "ans": 2,
+          "explain": "\"Close your book\" nghĩa là đóng sách lại."
+        },
+        {
+          "q": "It's _____. (màu xanh dương)",
+          "opts": [
+            "red",
+            "yellow",
+            "blue",
+            "black"
+          ],
+          "ans": 2,
+          "explain": "\"Blue\" nghĩa là màu xanh dương."
+        },
+        {
+          "q": "_____ are you? - I'm eight.",
+          "opts": [
+            "What",
+            "How old",
+            "Where",
+            "Who"
+          ],
+          "ans": 1,
+          "explain": "\"How old are you?\" dùng để hỏi tuổi."
+        },
+        {
+          "q": "Goodbye, _____.",
+          "opts": [
+            "please",
+            "Tom",
+            "stand",
+            "open"
+          ],
+          "ans": 1,
+          "explain": "\"Goodbye, Tom\" = Tạm biệt, Tom."
+        },
+        {
+          "q": "_____ down, please.",
+          "opts": [
+            "Stand",
+            "Sit",
+            "Open",
+            "Close"
+          ],
+          "ans": 1,
+          "explain": "\"Sit down\" nghĩa là ngồi xuống."
+        },
+        {
+          "q": "Three + four = _____.",
+          "opts": [
+            "six",
+            "seven",
+            "eight",
+            "five"
+          ],
+          "ans": 1,
+          "explain": "Ba cộng bốn bằng bảy. 3 + 4 = 7 (seven)."
+        }
+      ]
+    },
+    "1": {
+      "title": "My Friends",
+      "vocabulary": [
+        {
+          "en": "the alphabet",
+          "type": "n",
+          "vi": "bảng chữ cái"
+        },
+        {
+          "en": "spell",
+          "type": "v",
+          "vi": "đánh vần"
+        },
+        {
+          "en": "the USA",
+          "type": "n",
+          "vi": "nước Mỹ"
+        },
+        {
+          "en": "the UK",
+          "type": "n",
+          "vi": "nước Anh"
+        },
+        {
+          "en": "Italy",
+          "type": "n",
+          "vi": "nước Ý"
+        },
+        {
+          "en": "India",
+          "type": "n",
+          "vi": "nước Ấn Độ"
+        },
+        {
+          "en": "Japan",
+          "type": "n",
+          "vi": "nước Nhật Bản"
+        },
+        {
+          "en": "dancing",
+          "type": "n",
+          "vi": "nhảy múa"
+        },
+        {
+          "en": "singing",
+          "type": "n",
+          "vi": "ca hát"
+        },
+        {
+          "en": "drawing",
+          "type": "n",
+          "vi": "vẽ"
+        },
+        {
+          "en": "reading",
+          "type": "n",
+          "vi": "đọc sách"
+        },
+        {
+          "en": "painting",
+          "type": "n",
+          "vi": "vẽ tranh"
+        },
+        {
+          "en": "hi",
+          "type": "n",
+          "vi": "xin chào (thân mật)"
+        },
+        {
+          "en": "good",
+          "type": "adj",
+          "vi": "tốt, khỏe"
+        },
+        {
+          "en": "great",
+          "type": "adj",
+          "vi": "tuyệt vời"
+        },
+        {
+          "en": "nice",
+          "type": "adj",
+          "vi": "vui, tốt đẹp"
+        },
+        {
+          "en": "friend",
+          "type": "n",
+          "vi": "bạn bè"
+        },
+        {
+          "en": "from",
+          "type": "prep",
+          "vi": "từ, đến từ"
+        },
+        {
+          "en": "meet",
+          "type": "v",
+          "vi": "gặp"
+        },
+        {
+          "en": "welcome",
+          "type": "adj",
+          "vi": "không có gì (đáp lại lời cảm ơn)"
+        },
+        {
+          "en": "thank you",
+          "type": "phr",
+          "vi": "cảm ơn bạn"
+        },
+        {
+          "en": "like",
+          "type": "v",
+          "vi": "thích"
+        }
+      ],
+      "grammar": [
+        "How do you spell ___? - A-L-F-I-E.",
+        "Where are you from? - I'm from ___.",
+        "Where's he/she from? - He's/She's from ___.",
+        "Do your friends like ___? - Yes, they do. / No, they don't.",
+        "How are you? - I'm good/great, and you?",
+        "It's nice to meet you. - It's nice to meet you, too.",
+        "Thank you. - You're welcome."
+      ],
+      "grammar_notes": "Bài 1 học về bạn bè: cách đánh vần tên, hỏi quê quán và sở thích.\n\n1. Đánh vần tên:\n- \"How do you spell 'Tom'?\" = Bạn đánh vần 'Tom' như thế nào?\n- \"T-O-M.\" = T-O-M.\n\n2. Hỏi quê quán:\n- \"Where are you from?\" = Bạn đến từ đâu?\n- \"I'm from the USA.\" = Tôi đến từ nước Mỹ.\n- \"Where's she from?\" = Cô ấy đến từ đâu?\n- \"She's from Japan.\" = Cô ấy đến từ Nhật Bản.\n\n3. Hỏi sở thích bạn bè:\n- \"Do your friends like dancing?\" = Bạn bè của bạn có thích nhảy không?\n- \"Yes, they do.\" = Có, họ thích.\n- \"No, they don't.\" = Không, họ không thích.\n\n4. Chào hỏi lịch sự:\n- \"How are you?\" = Bạn khỏe không?\n- \"I'm good, and you?\" = Tôi khỏe, còn bạn?\n- \"It's nice to meet you.\" = Rất vui được gặp bạn.\n- \"Thank you.\" - \"You're welcome.\" = Cảm ơn - Không có gì.",
+      "exercises": [
+        {
+          "q": "How do you _____ 'Nick'?",
+          "opts": [
+            "say",
+            "spell",
+            "read",
+            "write"
+          ],
+          "ans": 1,
+          "explain": "\"Spell\" nghĩa là đánh vần. \"How do you spell...?\" = Bạn đánh vần... như thế nào?"
+        },
+        {
+          "q": "Where _____ you from?",
+          "opts": [
+            "is",
+            "am",
+            "are",
+            "do"
+          ],
+          "ans": 2,
+          "explain": "Với \"you\" ta dùng \"are\". \"Where are you from?\" = Bạn đến từ đâu?"
+        },
+        {
+          "q": "I'm _____ the USA.",
+          "opts": [
+            "in",
+            "from",
+            "at",
+            "on"
+          ],
+          "ans": 1,
+          "explain": "\"I'm from\" nghĩa là tôi đến từ. \"I'm from the USA\" = Tôi đến từ nước Mỹ."
+        },
+        {
+          "q": "Where's _____ from? - She's from Japan.",
+          "opts": [
+            "he",
+            "she",
+            "they",
+            "you"
+          ],
+          "ans": 1,
+          "explain": "Vì câu trả lời là \"She's from Japan\" nên câu hỏi phải dùng \"she\"."
+        },
+        {
+          "q": "Do your friends like _____?",
+          "opts": [
+            "dance",
+            "dances",
+            "dancing",
+            "to dancing"
+          ],
+          "ans": 2,
+          "explain": "Sau \"like\" ta dùng V-ing. \"Like dancing\" = thích nhảy múa."
+        },
+        {
+          "q": "Do your friends like singing? - Yes, they _____.",
+          "opts": [
+            "are",
+            "is",
+            "does",
+            "do"
+          ],
+          "ans": 3,
+          "explain": "Câu hỏi dùng \"Do\" nên câu trả lời dùng \"do\". \"Yes, they do.\""
+        },
+        {
+          "q": "Do your friends like reading? - No, they _____.",
+          "opts": [
+            "don't",
+            "doesn't",
+            "aren't",
+            "isn't"
+          ],
+          "ans": 0,
+          "explain": "Câu hỏi dùng \"Do\" nên phủ định dùng \"don't\". \"No, they don't.\""
+        },
+        {
+          "q": "How _____ you? - I'm good.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "do"
+          ],
+          "ans": 1,
+          "explain": "\"How are you?\" nghĩa là bạn khỏe không. Dùng \"are\" với \"you\"."
+        },
+        {
+          "q": "It's nice to _____ you.",
+          "opts": [
+            "see",
+            "meet",
+            "spell",
+            "like"
+          ],
+          "ans": 1,
+          "explain": "\"It's nice to meet you.\" nghĩa là rất vui được gặp bạn."
+        },
+        {
+          "q": "Thank you. - You're _____.",
+          "opts": [
+            "good",
+            "great",
+            "welcome",
+            "nice"
+          ],
+          "ans": 2,
+          "explain": "\"You're welcome\" nghĩa là không có gì, đáp lại lời cảm ơn."
+        },
+        {
+          "q": "He's _____ the UK.",
+          "opts": [
+            "in",
+            "from",
+            "at",
+            "to"
+          ],
+          "ans": 1,
+          "explain": "\"He's from the UK\" = Anh ấy đến từ nước Anh."
+        },
+        {
+          "q": "I'm good, _____ you?",
+          "opts": [
+            "or",
+            "but",
+            "and",
+            "with"
+          ],
+          "ans": 2,
+          "explain": "\"I'm good, and you?\" = Tôi khỏe, còn bạn thì sao?"
+        },
+        {
+          "q": "_____ is Tom from? - He's from Italy.",
+          "opts": [
+            "What",
+            "How",
+            "Where",
+            "Who"
+          ],
+          "ans": 2,
+          "explain": "\"Where\" dùng để hỏi nơi chốn. \"Where is Tom from?\" = Tom đến từ đâu?"
+        },
+        {
+          "q": "Do you like _____? - Yes, I do.",
+          "opts": [
+            "paint",
+            "painted",
+            "painting",
+            "paints"
+          ],
+          "ans": 2,
+          "explain": "Sau \"like\" dùng V-ing. \"Painting\" = vẽ tranh."
+        },
+        {
+          "q": "My friends like _____.",
+          "opts": [
+            "draw",
+            "drew",
+            "drawing",
+            "draws"
+          ],
+          "ans": 2,
+          "explain": "Sau \"like\" dùng V-ing. \"Drawing\" = vẽ."
+        }
+      ]
+    },
+    "2": {
+      "title": "Family",
+      "vocabulary": [
+        {
+          "en": "father",
+          "type": "n",
+          "vi": "bố"
+        },
+        {
+          "en": "mother",
+          "type": "n",
+          "vi": "mẹ"
+        },
+        {
+          "en": "brother",
+          "type": "n",
+          "vi": "anh/em trai"
+        },
+        {
+          "en": "sister",
+          "type": "n",
+          "vi": "chị/em gái"
+        },
+        {
+          "en": "grandfather",
+          "type": "n",
+          "vi": "ông"
+        },
+        {
+          "en": "grandmother",
+          "type": "n",
+          "vi": "bà"
+        },
+        {
+          "en": "uncle",
+          "type": "n",
+          "vi": "chú/bác/cậu"
+        },
+        {
+          "en": "aunt",
+          "type": "n",
+          "vi": "cô/dì/bác gái"
+        },
+        {
+          "en": "cousin",
+          "type": "n",
+          "vi": "anh/chị/em họ"
+        },
+        {
+          "en": "family",
+          "type": "n",
+          "vi": "gia đình"
+        },
+        {
+          "en": "dog",
+          "type": "n",
+          "vi": "con chó"
+        },
+        {
+          "en": "cat",
+          "type": "n",
+          "vi": "con mèo"
+        },
+        {
+          "en": "fish",
+          "type": "n",
+          "vi": "con cá"
+        },
+        {
+          "en": "bird",
+          "type": "n",
+          "vi": "con chim"
+        },
+        {
+          "en": "clean your room",
+          "type": "v phr",
+          "vi": "dọn phòng"
+        },
+        {
+          "en": "do your homework",
+          "type": "v phr",
+          "vi": "làm bài tập"
+        },
+        {
+          "en": "wake up",
+          "type": "v phr",
+          "vi": "thức dậy"
+        },
+        {
+          "en": "go to bed",
+          "type": "v phr",
+          "vi": "đi ngủ"
+        },
+        {
+          "en": "pet",
+          "type": "n",
+          "vi": "thú cưng"
+        },
+        {
+          "en": "love",
+          "type": "v",
+          "vi": "yêu thương"
+        }
+      ],
+      "grammar": [
+        "This is my ___. (father/mother/brother/sister)",
+        "Who's he/she? - He's/She's my ___.",
+        "What's his/her name? - His/Her name's ___.",
+        "I like ___. / I don't like ___.",
+        "Instructions: Clean your room! / Wake up! / Go to bed! / Do your homework!"
+      ],
+      "grammar_notes": "Bài 2 học về gia đình: giới thiệu các thành viên và thú cưng.\n\n1. Giới thiệu gia đình:\n- \"This is my father.\" = Đây là bố tôi.\n- \"This is my sister, Lucy.\" = Đây là chị/em gái tôi, Lucy.\n\n2. Hỏi về ai đó:\n- \"Who's he?\" = Anh ấy là ai?\n- \"He's my uncle.\" = Anh ấy là chú/bác tôi.\n- \"Who's she?\" = Cô ấy là ai?\n- \"She's my aunt.\" = Cô ấy là cô/dì tôi.\n\n3. Hỏi tên:\n- \"What's his name?\" = Tên anh ấy là gì?\n- \"His name's Bill.\" = Tên anh ấy là Bill.\n- \"What's her name?\" = Tên cô ấy là gì?\n- \"Her name's May.\" = Tên cô ấy là May.\n\n4. Nói về thú cưng:\n- \"I like cats.\" = Tôi thích mèo.\n- \"I don't like dogs.\" = Tôi không thích chó.\n\n5. Câu lệnh ở nhà:\n- \"Clean your room!\" = Dọn phòng đi!\n- \"Do your homework!\" = Làm bài tập đi!\n- \"Wake up!\" = Thức dậy đi!\n- \"Go to bed!\" = Đi ngủ đi!",
+      "exercises": [
+        {
+          "q": "This is _____ father.",
+          "opts": [
+            "my",
+            "I",
+            "me",
+            "mine"
+          ],
+          "ans": 0,
+          "explain": "\"My\" là tính từ sở hữu của \"I\". \"This is my father\" = Đây là bố tôi."
+        },
+        {
+          "q": "Who's _____? - She's my mother.",
+          "opts": [
+            "he",
+            "she",
+            "they",
+            "it"
+          ],
+          "ans": 1,
+          "explain": "Vì câu trả lời dùng \"She\" nên câu hỏi cũng dùng \"she\"."
+        },
+        {
+          "q": "What's _____ name? - His name's Tom.",
+          "opts": [
+            "her",
+            "his",
+            "my",
+            "your"
+          ],
+          "ans": 1,
+          "explain": "Vì câu trả lời là \"His name's\" nên câu hỏi dùng \"his\"."
+        },
+        {
+          "q": "She's my _____. (bà)",
+          "opts": [
+            "grandfather",
+            "grandmother",
+            "uncle",
+            "aunt"
+          ],
+          "ans": 1,
+          "explain": "\"Grandmother\" nghĩa là bà. Vì dùng \"She\" nên phải là \"grandmother\"."
+        },
+        {
+          "q": "He's my _____. (ông)",
+          "opts": [
+            "grandmother",
+            "grandfather",
+            "aunt",
+            "sister"
+          ],
+          "ans": 1,
+          "explain": "\"Grandfather\" nghĩa là ông. Vì dùng \"He\" nên phải là \"grandfather\"."
+        },
+        {
+          "q": "What's _____ name? - Her name's Lucy.",
+          "opts": [
+            "his",
+            "her",
+            "my",
+            "your"
+          ],
+          "ans": 1,
+          "explain": "Vì câu trả lời là \"Her name's\" nên câu hỏi dùng \"her\"."
+        },
+        {
+          "q": "I _____ cats.",
+          "opts": [
+            "likes",
+            "like",
+            "liking",
+            "liked"
+          ],
+          "ans": 1,
+          "explain": "Với chủ ngữ \"I\" ta dùng \"like\" (không thêm s)."
+        },
+        {
+          "q": "I don't like _____.",
+          "opts": [
+            "dog",
+            "dogs",
+            "a dogs",
+            "the dog"
+          ],
+          "ans": 1,
+          "explain": "Khi nói chung về một loài vật, ta dùng danh từ số nhiều."
+        },
+        {
+          "q": "_____ your room!",
+          "opts": [
+            "Clean",
+            "Do",
+            "Wake",
+            "Go"
+          ],
+          "ans": 0,
+          "explain": "\"Clean your room!\" nghĩa là dọn phòng đi!"
+        },
+        {
+          "q": "_____ up!",
+          "opts": [
+            "Clean",
+            "Go",
+            "Wake",
+            "Do"
+          ],
+          "ans": 2,
+          "explain": "\"Wake up!\" nghĩa là thức dậy đi!"
+        },
+        {
+          "q": "Go to _____!",
+          "opts": [
+            "room",
+            "bed",
+            "school",
+            "homework"
+          ],
+          "ans": 1,
+          "explain": "\"Go to bed!\" nghĩa là đi ngủ đi!"
+        },
+        {
+          "q": "Do your _____!",
+          "opts": [
+            "room",
+            "bed",
+            "homework",
+            "book"
+          ],
+          "ans": 2,
+          "explain": "\"Do your homework!\" nghĩa là làm bài tập đi!"
+        },
+        {
+          "q": "This is my _____, Ben. (anh/em trai)",
+          "opts": [
+            "sister",
+            "brother",
+            "father",
+            "mother"
+          ],
+          "ans": 1,
+          "explain": "\"Brother\" nghĩa là anh/em trai. Ben là tên con trai nên dùng \"brother\"."
+        },
+        {
+          "q": "Who's he? - He's my _____. (chú/bác)",
+          "opts": [
+            "aunt",
+            "uncle",
+            "cousin",
+            "sister"
+          ],
+          "ans": 1,
+          "explain": "\"Uncle\" nghĩa là chú/bác/cậu. Vì dùng \"He\" nên phải là \"uncle\"."
+        },
+        {
+          "q": "Who's she? - She's my _____. (cô/dì)",
+          "opts": [
+            "uncle",
+            "brother",
+            "aunt",
+            "father"
+          ],
+          "ans": 2,
+          "explain": "\"Aunt\" nghĩa là cô/dì/bác gái. Vì dùng \"She\" nên phải là \"aunt\"."
+        },
+        {
+          "q": "He's my _____. (anh/chị/em họ)",
+          "opts": [
+            "brother",
+            "sister",
+            "cousin",
+            "friend"
+          ],
+          "ans": 2,
+          "explain": "\"Cousin\" nghĩa là anh/chị/em họ, dùng cho cả nam và nữ."
+        }
+      ]
+    },
+    "3": {
+      "title": "School",
+      "vocabulary": [
+        {
+          "en": "eraser",
+          "type": "n",
+          "vi": "cục tẩy"
+        },
+        {
+          "en": "ruler",
+          "type": "n",
+          "vi": "thước kẻ"
+        },
+        {
+          "en": "pencil",
+          "type": "n",
+          "vi": "bút chì"
+        },
+        {
+          "en": "notebook",
+          "type": "n",
+          "vi": "vở"
+        },
+        {
+          "en": "pencil case",
+          "type": "n",
+          "vi": "hộp bút"
+        },
+        {
+          "en": "math",
+          "type": "n",
+          "vi": "môn toán"
+        },
+        {
+          "en": "English",
+          "type": "n",
+          "vi": "môn tiếng Anh"
+        },
+        {
+          "en": "art",
+          "type": "n",
+          "vi": "môn mỹ thuật"
+        },
+        {
+          "en": "P.E.",
+          "type": "n",
+          "vi": "môn thể dục"
+        },
+        {
+          "en": "music",
+          "type": "n",
+          "vi": "môn âm nhạc"
+        },
+        {
+          "en": "Monday",
+          "type": "n",
+          "vi": "thứ Hai"
+        },
+        {
+          "en": "Tuesday",
+          "type": "n",
+          "vi": "thứ Ba"
+        },
+        {
+          "en": "Wednesday",
+          "type": "n",
+          "vi": "thứ Tư"
+        },
+        {
+          "en": "Thursday",
+          "type": "n",
+          "vi": "thứ Năm"
+        },
+        {
+          "en": "Friday",
+          "type": "n",
+          "vi": "thứ Sáu"
+        },
+        {
+          "en": "Saturday",
+          "type": "n",
+          "vi": "thứ Bảy"
+        },
+        {
+          "en": "Sunday",
+          "type": "n",
+          "vi": "Chủ Nhật"
+        },
+        {
+          "en": "school",
+          "type": "n",
+          "vi": "trường học"
+        },
+        {
+          "en": "green",
+          "type": "adj",
+          "vi": "màu xanh lá"
+        },
+        {
+          "en": "orange",
+          "type": "adj",
+          "vi": "màu cam"
+        },
+        {
+          "en": "pink",
+          "type": "adj",
+          "vi": "màu hồng"
+        },
+        {
+          "en": "purple",
+          "type": "adj",
+          "vi": "màu tím"
+        },
+        {
+          "en": "gray",
+          "type": "adj",
+          "vi": "màu xám"
+        },
+        {
+          "en": "favorite",
+          "type": "adj",
+          "vi": "yêu thích"
+        }
+      ],
+      "grammar": [
+        "Is this your ___? - Yes, it is. / No, it isn't.",
+        "Are these your ___? - Yes, they are. / No, they aren't.",
+        "Do you like ___? - Yes, I do. / No, I don't.",
+        "When do you have ___? - I have ___ on ___ and ___.",
+        "What's your favorite color? - My favorite color is ___."
+      ],
+      "grammar_notes": "Bài 3 học về trường học: đồ dùng học tập, môn học, các ngày trong tuần.\n\n1. Hỏi về đồ vật (số ít):\n- \"Is this your eraser?\" = Đây có phải cục tẩy của bạn không?\n- \"Yes, it is.\" = Vâng, đúng rồi.\n- \"No, it isn't.\" = Không, không phải.\n\n2. Hỏi về đồ vật (số nhiều):\n- \"Are these your notebooks?\" = Đây có phải những quyển vở của bạn không?\n- \"Yes, they are.\" = Vâng, đúng rồi.\n- \"No, they aren't.\" = Không, không phải.\n\n3. Hỏi về sở thích môn học:\n- \"Do you like math?\" = Bạn có thích môn toán không?\n- \"Yes, I do.\" = Có, tôi thích.\n- \"No, I don't.\" = Không, tôi không thích.\n\n4. Hỏi về thời khóa biểu:\n- \"When do you have English?\" = Khi nào bạn có môn tiếng Anh?\n- \"I have English on Wednesdays and Fridays.\" = Tôi có tiếng Anh vào thứ Tư và thứ Sáu.\n\n5. Màu sắc yêu thích:\n- \"What's your favorite color?\" = Màu yêu thích của bạn là gì?\n- \"My favorite color is orange.\" = Màu yêu thích của tôi là màu cam.",
+      "exercises": [
+        {
+          "q": "Is this your _____?",
+          "opts": [
+            "erasers",
+            "eraser",
+            "erasing",
+            "erase"
+          ],
+          "ans": 1,
+          "explain": "\"This\" dùng cho số ít nên dùng \"eraser\" (số ít)."
+        },
+        {
+          "q": "Is this your ruler? - Yes, it _____.",
+          "opts": [
+            "are",
+            "is",
+            "am",
+            "do"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi dùng \"Is\" nên trả lời \"Yes, it is.\""
+        },
+        {
+          "q": "Are _____ your pencils?",
+          "opts": [
+            "this",
+            "that",
+            "these",
+            "it"
+          ],
+          "ans": 2,
+          "explain": "\"These\" dùng cho số nhiều. \"Are these your pencils?\""
+        },
+        {
+          "q": "Are these your notebooks? - No, they _____.",
+          "opts": [
+            "isn't",
+            "aren't",
+            "don't",
+            "doesn't"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi dùng \"Are\" nên phủ định dùng \"aren't\"."
+        },
+        {
+          "q": "Do you like _____? - Yes, I do.",
+          "opts": [
+            "math",
+            "maths",
+            "a math",
+            "the math"
+          ],
+          "ans": 0,
+          "explain": "Các môn học không cần mạo từ. \"Do you like math?\""
+        },
+        {
+          "q": "Do you like art? - No, I _____.",
+          "opts": [
+            "don't",
+            "doesn't",
+            "aren't",
+            "isn't"
+          ],
+          "ans": 0,
+          "explain": "Câu hỏi dùng \"Do\" nên phủ định dùng \"don't\"."
+        },
+        {
+          "q": "_____ do you have English?",
+          "opts": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "ans": 2,
+          "explain": "\"When\" dùng để hỏi thời gian. \"When do you have English?\""
+        },
+        {
+          "q": "I have music _____ Tuesdays.",
+          "opts": [
+            "in",
+            "at",
+            "on",
+            "to"
+          ],
+          "ans": 2,
+          "explain": "Trước các ngày trong tuần ta dùng \"on\". \"On Tuesdays\" = vào các ngày thứ Ba."
+        },
+        {
+          "q": "I have art on Mondays and _____.",
+          "opts": [
+            "Wednesdays",
+            "wednesday",
+            "wednesdays",
+            "Wednesday"
+          ],
+          "ans": 0,
+          "explain": "Các ngày trong tuần viết hoa chữ cái đầu và thêm s khi nói lặp lại."
+        },
+        {
+          "q": "What's your _____ color?",
+          "opts": [
+            "like",
+            "love",
+            "favorite",
+            "best"
+          ],
+          "ans": 2,
+          "explain": "\"Favorite\" nghĩa là yêu thích. \"What's your favorite color?\""
+        },
+        {
+          "q": "My favorite color is _____. (màu cam)",
+          "opts": [
+            "green",
+            "orange",
+            "purple",
+            "pink"
+          ],
+          "ans": 1,
+          "explain": "\"Orange\" nghĩa là màu cam."
+        },
+        {
+          "q": "Is this your pencil _____?",
+          "opts": [
+            "box",
+            "case",
+            "bag",
+            "room"
+          ],
+          "ans": 1,
+          "explain": "\"Pencil case\" nghĩa là hộp bút."
+        },
+        {
+          "q": "Here you _____.",
+          "opts": [
+            "go",
+            "come",
+            "are",
+            "is"
+          ],
+          "ans": 2,
+          "explain": "\"Here you are.\" nghĩa là \"Của bạn đây\" khi đưa đồ vật cho ai."
+        },
+        {
+          "q": "I have P.E. on _____ and Thursdays.",
+          "opts": [
+            "Monday",
+            "Tuesdays",
+            "Wednesday",
+            "Friday"
+          ],
+          "ans": 1,
+          "explain": "Khi nói về thời khóa biểu lặp lại, dùng ngày ở dạng số nhiều (thêm s)."
+        },
+        {
+          "q": "_____ you. (cảm ơn khi nhận đồ)",
+          "opts": [
+            "Hello",
+            "Goodbye",
+            "Thank",
+            "Sorry"
+          ],
+          "ans": 2,
+          "explain": "\"Thank you\" nghĩa là cảm ơn bạn."
+        }
+      ]
+    },
+    "4": {
+      "title": "Home",
+      "vocabulary": [
+        {
+          "en": "living room",
+          "type": "n",
+          "vi": "phòng khách"
+        },
+        {
+          "en": "bedroom",
+          "type": "n",
+          "vi": "phòng ngủ"
+        },
+        {
+          "en": "kitchen",
+          "type": "n",
+          "vi": "nhà bếp"
+        },
+        {
+          "en": "bathroom",
+          "type": "n",
+          "vi": "phòng tắm"
+        },
+        {
+          "en": "yard",
+          "type": "n",
+          "vi": "sân"
+        },
+        {
+          "en": "cleaning",
+          "type": "n",
+          "vi": "dọn dẹp"
+        },
+        {
+          "en": "playing",
+          "type": "n",
+          "vi": "chơi"
+        },
+        {
+          "en": "eating",
+          "type": "n",
+          "vi": "ăn"
+        },
+        {
+          "en": "sleeping",
+          "type": "n",
+          "vi": "ngủ"
+        },
+        {
+          "en": "cooking",
+          "type": "n",
+          "vi": "nấu ăn"
+        },
+        {
+          "en": "mirror",
+          "type": "n",
+          "vi": "gương"
+        },
+        {
+          "en": "picture",
+          "type": "n",
+          "vi": "bức tranh"
+        },
+        {
+          "en": "sofa",
+          "type": "n",
+          "vi": "ghế sô-pha"
+        },
+        {
+          "en": "table",
+          "type": "n",
+          "vi": "cái bàn"
+        },
+        {
+          "en": "box",
+          "type": "n",
+          "vi": "cái hộp"
+        },
+        {
+          "en": "house",
+          "type": "n",
+          "vi": "ngôi nhà"
+        },
+        {
+          "en": "bed",
+          "type": "n",
+          "vi": "giường"
+        },
+        {
+          "en": "closet",
+          "type": "n",
+          "vi": "tủ quần áo"
+        },
+        {
+          "en": "chair",
+          "type": "n",
+          "vi": "cái ghế"
+        },
+        {
+          "en": "desk",
+          "type": "n",
+          "vi": "bàn học"
+        },
+        {
+          "en": "TV",
+          "type": "n",
+          "vi": "ti vi"
+        },
+        {
+          "en": "room",
+          "type": "n",
+          "vi": "phòng"
+        },
+        {
+          "en": "street",
+          "type": "n",
+          "vi": "đường phố"
+        }
+      ],
+      "grammar": [
+        "Where's ___? - He's/She's in the ___.",
+        "What's he/she doing? - He's/She's ___ing.",
+        "Is the ___ in the ___? - Yes, it is. / No, it isn't.",
+        "Where do you live? - I live on ___ Street in ___.",
+        "My bedroom has a ___, a ___, and a ___."
+      ],
+      "grammar_notes": "Bài 4 học về ngôi nhà: các phòng, đồ vật trong nhà, và đang làm gì.\n\n1. Hỏi ai đó ở đâu:\n- \"Where's Dad?\" = Bố ở đâu?\n- \"He's in the yard.\" = Bố ở ngoài sân.\n- \"Where's Grandma?\" = Bà ở đâu?\n- \"She's in the kitchen.\" = Bà ở trong bếp.\n\n2. Hỏi ai đó đang làm gì:\n- \"What's he doing?\" = Anh ấy đang làm gì?\n- \"He's sleeping.\" = Anh ấy đang ngủ.\n- \"What's she doing?\" = Cô ấy đang làm gì?\n- \"She's cooking.\" = Cô ấy đang nấu ăn.\n\n3. Hỏi đồ vật ở đâu:\n- \"Is the picture in the living room?\" = Bức tranh có ở phòng khách không?\n- \"Yes, it is.\" = Có.\n- \"No, it isn't.\" = Không.\n\n4. Nói về nơi ở:\n- \"Where do you live?\" = Bạn sống ở đâu?\n- \"I live on Le Thanh Street in Hanoi.\" = Tôi sống trên đường Lê Thành ở Hà Nội.\n- \"My bedroom has a bed, a TV, and two chairs.\" = Phòng ngủ của tôi có một giường, một ti vi và hai ghế.",
+      "exercises": [
+        {
+          "q": "Where's Dad? - He's in the _____.",
+          "opts": [
+            "yard",
+            "yards",
+            "a yard",
+            "the yards"
+          ],
+          "ans": 0,
+          "explain": "\"He's in the yard\" = Bố ở ngoài sân."
+        },
+        {
+          "q": "Where's Mom? - _____ in the kitchen.",
+          "opts": [
+            "He's",
+            "She's",
+            "It's",
+            "They're"
+          ],
+          "ans": 1,
+          "explain": "Mom là mẹ (nữ) nên dùng \"She's\"."
+        },
+        {
+          "q": "What's he _____? - He's sleeping.",
+          "opts": [
+            "do",
+            "does",
+            "doing",
+            "done"
+          ],
+          "ans": 2,
+          "explain": "\"What's he doing?\" dùng thì hiện tại tiếp diễn để hỏi đang làm gì."
+        },
+        {
+          "q": "She's _____. (đang nấu ăn)",
+          "opts": [
+            "cleaning",
+            "cooking",
+            "sleeping",
+            "eating"
+          ],
+          "ans": 1,
+          "explain": "\"Cooking\" nghĩa là đang nấu ăn."
+        },
+        {
+          "q": "He's _____. (đang dọn dẹp)",
+          "opts": [
+            "playing",
+            "eating",
+            "cleaning",
+            "sleeping"
+          ],
+          "ans": 2,
+          "explain": "\"Cleaning\" nghĩa là đang dọn dẹp."
+        },
+        {
+          "q": "Is the picture in the _____?",
+          "opts": [
+            "living room",
+            "living rooms",
+            "a living room",
+            "live room"
+          ],
+          "ans": 0,
+          "explain": "\"Living room\" nghĩa là phòng khách."
+        },
+        {
+          "q": "Is the sofa in the bedroom? - No, it _____.",
+          "opts": [
+            "is",
+            "isn't",
+            "aren't",
+            "doesn't"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi \"Is...?\" phủ định trả lời \"No, it isn't.\""
+        },
+        {
+          "q": "I live _____ Le Thanh Street.",
+          "opts": [
+            "in",
+            "at",
+            "on",
+            "to"
+          ],
+          "ans": 2,
+          "explain": "Trước tên đường dùng \"on\". \"I live on Le Thanh Street.\""
+        },
+        {
+          "q": "My bedroom _____ a bed and a desk.",
+          "opts": [
+            "have",
+            "has",
+            "is",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "\"My bedroom\" là chủ ngữ số ít nên dùng \"has\"."
+        },
+        {
+          "q": "Where's Tom? - He's in the _____. (phòng ngủ)",
+          "opts": [
+            "kitchen",
+            "bathroom",
+            "bedroom",
+            "yard"
+          ],
+          "ans": 2,
+          "explain": "\"Bedroom\" nghĩa là phòng ngủ."
+        },
+        {
+          "q": "What's she doing? - She's _____. (đang chơi)",
+          "opts": [
+            "playing",
+            "sleeping",
+            "cooking",
+            "cleaning"
+          ],
+          "ans": 0,
+          "explain": "\"Playing\" nghĩa là đang chơi."
+        },
+        {
+          "q": "Is the mirror in the _____? (phòng tắm)",
+          "opts": [
+            "kitchen",
+            "bedroom",
+            "bathroom",
+            "yard"
+          ],
+          "ans": 2,
+          "explain": "\"Bathroom\" nghĩa là phòng tắm."
+        },
+        {
+          "q": "The _____ is in the living room. (ghế sô-pha)",
+          "opts": [
+            "bed",
+            "sofa",
+            "mirror",
+            "box"
+          ],
+          "ans": 1,
+          "explain": "\"Sofa\" nghĩa là ghế sô-pha, thường đặt ở phòng khách."
+        },
+        {
+          "q": "Where do you _____? - I live in Hanoi.",
+          "opts": [
+            "living",
+            "lived",
+            "live",
+            "lives"
+          ],
+          "ans": 2,
+          "explain": "Với \"you\" ta dùng \"live\" (nguyên mẫu). \"Where do you live?\""
+        },
+        {
+          "q": "He's in the _____. (nhà bếp)",
+          "opts": [
+            "bedroom",
+            "bathroom",
+            "yard",
+            "kitchen"
+          ],
+          "ans": 3,
+          "explain": "\"Kitchen\" nghĩa là nhà bếp."
+        }
+      ]
+    },
+    "5": {
+      "title": "Sports and Hobbies",
+      "vocabulary": [
+        {
+          "en": "badminton",
+          "type": "n",
+          "vi": "cầu lông"
+        },
+        {
+          "en": "tennis",
+          "type": "n",
+          "vi": "quần vợt"
+        },
+        {
+          "en": "volleyball",
+          "type": "n",
+          "vi": "bóng chuyền"
+        },
+        {
+          "en": "basketball",
+          "type": "n",
+          "vi": "bóng rổ"
+        },
+        {
+          "en": "soccer",
+          "type": "n",
+          "vi": "bóng đá"
+        },
+        {
+          "en": "hitting",
+          "type": "n",
+          "vi": "đánh (bóng)"
+        },
+        {
+          "en": "kicking",
+          "type": "n",
+          "vi": "đá"
+        },
+        {
+          "en": "catching",
+          "type": "n",
+          "vi": "bắt (bóng)"
+        },
+        {
+          "en": "throwing",
+          "type": "n",
+          "vi": "ném"
+        },
+        {
+          "en": "watch TV",
+          "type": "v phr",
+          "vi": "xem ti vi"
+        },
+        {
+          "en": "go skateboarding",
+          "type": "v phr",
+          "vi": "đi trượt ván"
+        },
+        {
+          "en": "go out",
+          "type": "v phr",
+          "vi": "đi ra ngoài"
+        },
+        {
+          "en": "go swimming",
+          "type": "v phr",
+          "vi": "đi bơi"
+        },
+        {
+          "en": "hand",
+          "type": "n",
+          "vi": "bàn tay"
+        },
+        {
+          "en": "arm",
+          "type": "n",
+          "vi": "cánh tay"
+        },
+        {
+          "en": "foot",
+          "type": "n",
+          "vi": "bàn chân"
+        },
+        {
+          "en": "leg",
+          "type": "n",
+          "vi": "chân"
+        },
+        {
+          "en": "head",
+          "type": "n",
+          "vi": "đầu"
+        },
+        {
+          "en": "body",
+          "type": "n",
+          "vi": "cơ thể"
+        },
+        {
+          "en": "play",
+          "type": "v",
+          "vi": "chơi"
+        },
+        {
+          "en": "sport",
+          "type": "n",
+          "vi": "thể thao"
+        },
+        {
+          "en": "hobby",
+          "type": "n",
+          "vi": "sở thích"
+        }
+      ],
+      "grammar": [
+        "Can you play ___? - Yes, I can. / No, I can't.",
+        "What are you good at? - I'm good at ___ing.",
+        "May I ___? - Yes, you may. / No, you may not.",
+        "I can use my ___ and ___ in ___.",
+        "I can kick/hit/catch/throw the ball."
+      ],
+      "grammar_notes": "Bài 5 học về thể thao và sở thích: nói về khả năng và xin phép.\n\n1. Hỏi về khả năng chơi thể thao:\n- \"Can you play soccer?\" = Bạn có biết chơi bóng đá không?\n- \"Yes, I can.\" = Có, tôi biết.\n- \"No, I can't.\" = Không, tôi không biết.\n\n2. Hỏi về sở trường:\n- \"What are you good at?\" = Bạn giỏi gì?\n- \"I'm good at kicking.\" = Tôi giỏi đá bóng.\n\n3. Xin phép:\n- \"May I watch TV?\" = Con có thể xem ti vi được không?\n- \"Yes, you may.\" = Được, con có thể.\n- \"No, you may not.\" = Không, con không được.\n\n4. Các bộ phận cơ thể trong thể thao:\n- \"I can use my legs and feet in soccer.\" = Tôi dùng chân trong bóng đá.\n- \"I can kick the ball.\" = Tôi có thể đá bóng.",
+      "exercises": [
+        {
+          "q": "Can you _____ soccer?",
+          "opts": [
+            "playing",
+            "plays",
+            "play",
+            "played"
+          ],
+          "ans": 2,
+          "explain": "Sau \"can\" dùng động từ nguyên mẫu. \"Can you play soccer?\""
+        },
+        {
+          "q": "Can you play basketball? - Yes, I _____.",
+          "opts": [
+            "do",
+            "am",
+            "can",
+            "may"
+          ],
+          "ans": 2,
+          "explain": "Câu hỏi dùng \"Can\" nên trả lời \"Yes, I can.\""
+        },
+        {
+          "q": "Can you play tennis? - No, I _____.",
+          "opts": [
+            "don't",
+            "can't",
+            "am not",
+            "may not"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi dùng \"Can\" nên phủ định dùng \"can't\"."
+        },
+        {
+          "q": "What are you good _____?",
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "ans": 2,
+          "explain": "\"Good at\" là cụm từ cố định nghĩa là giỏi về."
+        },
+        {
+          "q": "I'm good at _____.",
+          "opts": [
+            "kick",
+            "kicked",
+            "kicks",
+            "kicking"
+          ],
+          "ans": 3,
+          "explain": "Sau \"good at\" dùng V-ing. \"I'm good at kicking.\""
+        },
+        {
+          "q": "_____ I watch TV?",
+          "opts": [
+            "Do",
+            "Am",
+            "Can",
+            "May"
+          ],
+          "ans": 3,
+          "explain": "\"May\" dùng để xin phép lịch sự. \"May I watch TV?\""
+        },
+        {
+          "q": "May I go swimming? - Yes, you _____.",
+          "opts": [
+            "can",
+            "may",
+            "do",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi dùng \"May\" nên trả lời \"Yes, you may.\""
+        },
+        {
+          "q": "May I go out? - No, you may _____.",
+          "opts": [
+            "no",
+            "don't",
+            "not",
+            "can't"
+          ],
+          "ans": 2,
+          "explain": "\"No, you may not.\" nghĩa là không, bạn không được phép."
+        },
+        {
+          "q": "I can _____ the ball. (đá)",
+          "opts": [
+            "kick",
+            "catch",
+            "throw",
+            "hit"
+          ],
+          "ans": 0,
+          "explain": "\"Kick\" nghĩa là đá. \"I can kick the ball.\""
+        },
+        {
+          "q": "I can _____ the ball. (bắt)",
+          "opts": [
+            "kick",
+            "throw",
+            "catch",
+            "hit"
+          ],
+          "ans": 2,
+          "explain": "\"Catch\" nghĩa là bắt. \"I can catch the ball.\""
+        },
+        {
+          "q": "I can _____ the ball. (ném)",
+          "opts": [
+            "kick",
+            "catch",
+            "hit",
+            "throw"
+          ],
+          "ans": 3,
+          "explain": "\"Throw\" nghĩa là ném. \"I can throw the ball.\""
+        },
+        {
+          "q": "May I go _____? (đi trượt ván)",
+          "opts": [
+            "swimming",
+            "skateboarding",
+            "soccer",
+            "TV"
+          ],
+          "ans": 1,
+          "explain": "\"Go skateboarding\" nghĩa là đi trượt ván."
+        },
+        {
+          "q": "I'm good at _____ the ball.",
+          "opts": [
+            "throw",
+            "threw",
+            "throwing",
+            "throws"
+          ],
+          "ans": 2,
+          "explain": "Sau \"at\" dùng V-ing. \"I'm good at throwing.\""
+        },
+        {
+          "q": "Can you play _____? (cầu lông)",
+          "opts": [
+            "soccer",
+            "basketball",
+            "badminton",
+            "tennis"
+          ],
+          "ans": 2,
+          "explain": "\"Badminton\" nghĩa là cầu lông."
+        },
+        {
+          "q": "Can you play _____? (bóng chuyền)",
+          "opts": [
+            "soccer",
+            "volleyball",
+            "basketball",
+            "tennis"
+          ],
+          "ans": 1,
+          "explain": "\"Volleyball\" nghĩa là bóng chuyền."
+        }
+      ]
+    },
+    "6": {
+      "title": "Clothes",
+      "vocabulary": [
+        {
+          "en": "dress",
+          "type": "n",
+          "vi": "váy đầm"
+        },
+        {
+          "en": "shirt",
+          "type": "n",
+          "vi": "áo sơ mi"
+        },
+        {
+          "en": "shorts",
+          "type": "n",
+          "vi": "quần đùi"
+        },
+        {
+          "en": "socks",
+          "type": "n",
+          "vi": "tất, vớ"
+        },
+        {
+          "en": "pants",
+          "type": "n",
+          "vi": "quần dài"
+        },
+        {
+          "en": "skirt",
+          "type": "n",
+          "vi": "váy ngắn"
+        },
+        {
+          "en": "jacket",
+          "type": "n",
+          "vi": "áo khoác"
+        },
+        {
+          "en": "jeans",
+          "type": "n",
+          "vi": "quần bò/jeans"
+        },
+        {
+          "en": "boots",
+          "type": "n",
+          "vi": "ủng, giày bốt"
+        },
+        {
+          "en": "T-shirt",
+          "type": "n",
+          "vi": "áo phông"
+        },
+        {
+          "en": "belt",
+          "type": "n",
+          "vi": "thắt lưng"
+        },
+        {
+          "en": "scarf",
+          "type": "n",
+          "vi": "khăn quàng"
+        },
+        {
+          "en": "sweater",
+          "type": "n",
+          "vi": "áo len"
+        },
+        {
+          "en": "pajamas",
+          "type": "n",
+          "vi": "đồ ngủ"
+        },
+        {
+          "en": "uniform",
+          "type": "n",
+          "vi": "đồng phục"
+        },
+        {
+          "en": "polo shirt",
+          "type": "n",
+          "vi": "áo polo"
+        },
+        {
+          "en": "tie",
+          "type": "n",
+          "vi": "cà vạt"
+        },
+        {
+          "en": "sneakers",
+          "type": "n",
+          "vi": "giày thể thao"
+        },
+        {
+          "en": "skiing",
+          "type": "n",
+          "vi": "trượt tuyết"
+        },
+        {
+          "en": "wear",
+          "type": "v",
+          "vi": "mặc"
+        },
+        {
+          "en": "want",
+          "type": "v",
+          "vi": "muốn"
+        }
+      ],
+      "grammar": [
+        "What do you want? - I want a ___. / I want some ___.",
+        "What are you wearing? - I'm wearing ___.",
+        "Is that your ___? - Yes, it is. / No, it isn't.",
+        "Are those your ___? - Yes, they are. / No, they aren't.",
+        "What do you wear at school? - I wear a ___."
+      ],
+      "grammar_notes": "Bài 6 học về quần áo: nói về muốn gì, đang mặc gì.\n\n1. Hỏi muốn gì:\n- \"What do you want?\" = Bạn muốn gì?\n- \"I want a dress.\" = Tôi muốn một chiếc váy. (số ít dùng \"a\")\n- \"I want some socks.\" = Tôi muốn vài đôi tất. (số nhiều dùng \"some\")\n\n2. Hỏi đang mặc gì:\n- \"What are you wearing?\" = Bạn đang mặc gì?\n- \"I'm wearing blue jeans.\" = Tôi đang mặc quần bò xanh.\n- \"I'm wearing a red jacket.\" = Tôi đang mặc áo khoác đỏ.\n\n3. Hỏi về đồ vật (số ít):\n- \"Is that your belt?\" = Đó có phải thắt lưng của bạn không?\n- \"Yes, it is.\" / \"No, it isn't.\"\n\n4. Hỏi về đồ vật (số nhiều):\n- \"Are those your pajamas?\" = Đó có phải đồ ngủ của bạn không?\n- \"Yes, they are.\" / \"No, they aren't.\"\n\n5. Nói về đồng phục:\n- \"What do you wear at school?\" = Bạn mặc gì ở trường?\n- \"I wear a blue tie.\" = Tôi đeo cà vạt xanh.",
+      "exercises": [
+        {
+          "q": "What do you _____? - I want a dress.",
+          "opts": [
+            "wear",
+            "wearing",
+            "want",
+            "like"
+          ],
+          "ans": 2,
+          "explain": "\"What do you want?\" nghĩa là bạn muốn gì?"
+        },
+        {
+          "q": "I want _____ shirt.",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "many"
+          ],
+          "ans": 0,
+          "explain": "\"Shirt\" là danh từ số ít nên dùng \"a\"."
+        },
+        {
+          "q": "I want _____ socks.",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "one"
+          ],
+          "ans": 2,
+          "explain": "\"Socks\" là số nhiều nên dùng \"some\"."
+        },
+        {
+          "q": "What are you _____?",
+          "opts": [
+            "wear",
+            "wears",
+            "wore",
+            "wearing"
+          ],
+          "ans": 3,
+          "explain": "\"What are you wearing?\" dùng thì hiện tại tiếp diễn (be + V-ing)."
+        },
+        {
+          "q": "I'm wearing blue _____.",
+          "opts": [
+            "jean",
+            "jeans",
+            "a jeans",
+            "the jean"
+          ],
+          "ans": 1,
+          "explain": "\"Jeans\" luôn ở dạng số nhiều."
+        },
+        {
+          "q": "I'm wearing a red _____. (áo khoác)",
+          "opts": [
+            "dress",
+            "skirt",
+            "jacket",
+            "shorts"
+          ],
+          "ans": 2,
+          "explain": "\"Jacket\" nghĩa là áo khoác."
+        },
+        {
+          "q": "Is that your _____? (thắt lưng)",
+          "opts": [
+            "scarf",
+            "belt",
+            "tie",
+            "boots"
+          ],
+          "ans": 1,
+          "explain": "\"Belt\" nghĩa là thắt lưng."
+        },
+        {
+          "q": "Is that your sweater? - Yes, it _____.",
+          "opts": [
+            "are",
+            "is",
+            "am",
+            "do"
+          ],
+          "ans": 1,
+          "explain": "\"That\" là số ít nên trả lời \"Yes, it is.\""
+        },
+        {
+          "q": "Are those your _____? (đồ ngủ)",
+          "opts": [
+            "scarf",
+            "belt",
+            "pajamas",
+            "jacket"
+          ],
+          "ans": 2,
+          "explain": "\"Pajamas\" nghĩa là đồ ngủ."
+        },
+        {
+          "q": "Are those your boots? - No, they _____.",
+          "opts": [
+            "isn't",
+            "aren't",
+            "don't",
+            "doesn't"
+          ],
+          "ans": 1,
+          "explain": "\"Those\" và \"they\" là số nhiều nên dùng \"aren't\"."
+        },
+        {
+          "q": "What do you _____ at school?",
+          "opts": [
+            "want",
+            "like",
+            "wear",
+            "have"
+          ],
+          "ans": 2,
+          "explain": "\"What do you wear at school?\" = Bạn mặc gì ở trường?"
+        },
+        {
+          "q": "I wear a blue _____. (cà vạt)",
+          "opts": [
+            "belt",
+            "scarf",
+            "tie",
+            "boot"
+          ],
+          "ans": 2,
+          "explain": "\"Tie\" nghĩa là cà vạt."
+        },
+        {
+          "q": "Do you like your _____? (đồng phục)",
+          "opts": [
+            "dress",
+            "uniform",
+            "pajamas",
+            "jeans"
+          ],
+          "ans": 1,
+          "explain": "\"Uniform\" nghĩa là đồng phục."
+        },
+        {
+          "q": "She's wearing a yellow _____. (váy ngắn)",
+          "opts": [
+            "shorts",
+            "pants",
+            "skirt",
+            "jeans"
+          ],
+          "ans": 2,
+          "explain": "\"Skirt\" nghĩa là váy ngắn."
+        },
+        {
+          "q": "He's wearing red _____. (ủng)",
+          "opts": [
+            "socks",
+            "sneakers",
+            "boots",
+            "shoes"
+          ],
+          "ans": 2,
+          "explain": "\"Boots\" nghĩa là ủng/giày bốt."
+        }
+      ]
+    },
+    "7": {
+      "title": "Toys",
+      "vocabulary": [
+        {
+          "en": "robot",
+          "type": "n",
+          "vi": "người máy"
+        },
+        {
+          "en": "doll",
+          "type": "n",
+          "vi": "búp bê"
+        },
+        {
+          "en": "big",
+          "type": "adj",
+          "vi": "to, lớn"
+        },
+        {
+          "en": "small",
+          "type": "adj",
+          "vi": "nhỏ, bé"
+        },
+        {
+          "en": "car",
+          "type": "n",
+          "vi": "ô tô"
+        },
+        {
+          "en": "card",
+          "type": "n",
+          "vi": "thẻ, lá bài"
+        },
+        {
+          "en": "block",
+          "type": "n",
+          "vi": "khối xếp hình"
+        },
+        {
+          "en": "dice",
+          "type": "n",
+          "vi": "xúc xắc"
+        },
+        {
+          "en": "marble",
+          "type": "n",
+          "vi": "viên bi"
+        },
+        {
+          "en": "under",
+          "type": "prep",
+          "vi": "ở dưới"
+        },
+        {
+          "en": "on",
+          "type": "prep",
+          "vi": "ở trên"
+        },
+        {
+          "en": "in",
+          "type": "prep",
+          "vi": "ở trong"
+        },
+        {
+          "en": "toy box",
+          "type": "n",
+          "vi": "hộp đồ chơi"
+        },
+        {
+          "en": "wardrobe",
+          "type": "n",
+          "vi": "tủ quần áo"
+        },
+        {
+          "en": "ball",
+          "type": "n",
+          "vi": "quả bóng"
+        },
+        {
+          "en": "book",
+          "type": "n",
+          "vi": "quyển sách"
+        },
+        {
+          "en": "eleven",
+          "type": "n",
+          "vi": "số mười một"
+        },
+        {
+          "en": "twelve",
+          "type": "n",
+          "vi": "số mười hai"
+        },
+        {
+          "en": "thirteen",
+          "type": "n",
+          "vi": "số mười ba"
+        },
+        {
+          "en": "fourteen",
+          "type": "n",
+          "vi": "số mười bốn"
+        },
+        {
+          "en": "fifteen",
+          "type": "n",
+          "vi": "số mười lăm"
+        },
+        {
+          "en": "sixteen",
+          "type": "n",
+          "vi": "số mười sáu"
+        },
+        {
+          "en": "seventeen",
+          "type": "n",
+          "vi": "số mười bảy"
+        },
+        {
+          "en": "eighteen",
+          "type": "n",
+          "vi": "số mười tám"
+        },
+        {
+          "en": "nineteen",
+          "type": "n",
+          "vi": "số mười chín"
+        },
+        {
+          "en": "twenty",
+          "type": "n",
+          "vi": "số hai mươi"
+        },
+        {
+          "en": "plus",
+          "type": "n",
+          "vi": "cộng"
+        },
+        {
+          "en": "minus",
+          "type": "n",
+          "vi": "trừ"
+        },
+        {
+          "en": "toy",
+          "type": "n",
+          "vi": "đồ chơi"
+        }
+      ],
+      "grammar": [
+        "What can you see? - I can see a big/small ___.",
+        "How many ___ do you have? - I have ___ ___.",
+        "Put the ___ on/in/under the ___.",
+        "___ plus ___ is ___. / ___ minus ___ is ___.",
+        "Numbers 11-20"
+      ],
+      "grammar_notes": "Bài 7 học về đồ chơi: mô tả đồ chơi, đếm số, vị trí đồ vật.\n\n1. Hỏi nhìn thấy gì:\n- \"What can you see?\" = Bạn nhìn thấy gì?\n- \"I can see a big doll.\" = Tôi nhìn thấy một con búp bê to.\n- \"I can see a small robot.\" = Tôi nhìn thấy một người máy nhỏ.\n\n2. Hỏi số lượng:\n- \"How many marbles do you have?\" = Bạn có bao nhiêu viên bi?\n- \"I have five marbles.\" = Tôi có năm viên bi.\n\n3. Ra lệnh đặt đồ vật:\n- \"Put the ball on the chair.\" = Đặt quả bóng lên ghế.\n- \"Put the doll in the toy box.\" = Đặt búp bê vào hộp đồ chơi.\n- \"Put the car under the bed.\" = Đặt ô tô dưới giường.\n\n4. Phép cộng trừ (11-20):\n- \"Seven plus twelve is nineteen.\" = 7 + 12 = 19.\n- \"Twenty minus six is fourteen.\" = 20 - 6 = 14.",
+      "exercises": [
+        {
+          "q": "What can you _____? - I can see a big doll.",
+          "opts": [
+            "look",
+            "watch",
+            "see",
+            "read"
+          ],
+          "ans": 2,
+          "explain": "\"See\" nghĩa là nhìn thấy. \"What can you see?\""
+        },
+        {
+          "q": "I can see a _____ robot. (nhỏ)",
+          "opts": [
+            "big",
+            "small",
+            "tall",
+            "long"
+          ],
+          "ans": 1,
+          "explain": "\"Small\" nghĩa là nhỏ."
+        },
+        {
+          "q": "I can see a _____ car. (to)",
+          "opts": [
+            "small",
+            "little",
+            "big",
+            "thin"
+          ],
+          "ans": 2,
+          "explain": "\"Big\" nghĩa là to, lớn."
+        },
+        {
+          "q": "How _____ marbles do you have?",
+          "opts": [
+            "much",
+            "many",
+            "old",
+            "big"
+          ],
+          "ans": 1,
+          "explain": "\"How many\" dùng để hỏi số lượng với danh từ đếm được."
+        },
+        {
+          "q": "How many cards do you have? - I have _____ cards.",
+          "opts": [
+            "a",
+            "an",
+            "nine",
+            "much"
+          ],
+          "ans": 2,
+          "explain": "Trả lời với số đếm cụ thể. \"I have nine cards.\""
+        },
+        {
+          "q": "Put the ball _____ the chair.",
+          "opts": [
+            "at",
+            "on",
+            "to",
+            "from"
+          ],
+          "ans": 1,
+          "explain": "\"On\" nghĩa là ở trên. \"Put the ball on the chair.\""
+        },
+        {
+          "q": "Put the doll _____ the toy box.",
+          "opts": [
+            "on",
+            "under",
+            "in",
+            "at"
+          ],
+          "ans": 2,
+          "explain": "\"In\" nghĩa là ở trong. \"Put the doll in the toy box.\""
+        },
+        {
+          "q": "Put the book _____ the bed.",
+          "opts": [
+            "in",
+            "on",
+            "under",
+            "at"
+          ],
+          "ans": 2,
+          "explain": "\"Under\" nghĩa là ở dưới. \"Put the book under the bed.\""
+        },
+        {
+          "q": "Seven plus twelve is _____.",
+          "opts": [
+            "seventeen",
+            "eighteen",
+            "nineteen",
+            "twenty"
+          ],
+          "ans": 2,
+          "explain": "7 + 12 = 19 (nineteen)."
+        },
+        {
+          "q": "Eleven plus five is _____.",
+          "opts": [
+            "fifteen",
+            "sixteen",
+            "seventeen",
+            "fourteen"
+          ],
+          "ans": 1,
+          "explain": "11 + 5 = 16 (sixteen)."
+        },
+        {
+          "q": "Twenty minus six is _____.",
+          "opts": [
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen"
+          ],
+          "ans": 2,
+          "explain": "20 - 6 = 14 (fourteen)."
+        },
+        {
+          "q": "Nine _____ eight is seventeen.",
+          "opts": [
+            "minus",
+            "plus",
+            "is",
+            "and"
+          ],
+          "ans": 1,
+          "explain": "\"Plus\" nghĩa là cộng. 9 + 8 = 17."
+        },
+        {
+          "q": "Eighteen _____ three is fifteen.",
+          "opts": [
+            "plus",
+            "minus",
+            "is",
+            "and"
+          ],
+          "ans": 1,
+          "explain": "\"Minus\" nghĩa là trừ. 18 - 3 = 15."
+        },
+        {
+          "q": "Put the robot _____ the wardrobe.",
+          "opts": [
+            "on",
+            "in",
+            "under",
+            "at"
+          ],
+          "ans": 2,
+          "explain": "\"Under the wardrobe\" = dưới tủ quần áo."
+        },
+        {
+          "q": "I have _____ blocks. (13)",
+          "opts": [
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen"
+          ],
+          "ans": 1,
+          "explain": "13 = thirteen (mười ba)."
+        },
+        {
+          "q": "How many dice do you _____?",
+          "opts": [
+            "has",
+            "having",
+            "have",
+            "had"
+          ],
+          "ans": 2,
+          "explain": "Với \"you\" ta dùng \"have\". \"How many dice do you have?\""
+        }
+      ]
+    },
+    "8": {
+      "title": "Food",
+      "vocabulary": [
+        {
+          "en": "apple",
+          "type": "n",
+          "vi": "quả táo"
+        },
+        {
+          "en": "banana",
+          "type": "n",
+          "vi": "quả chuối"
+        },
+        {
+          "en": "carrot",
+          "type": "n",
+          "vi": "cà rốt"
+        },
+        {
+          "en": "cupcake",
+          "type": "n",
+          "vi": "bánh cupcake"
+        },
+        {
+          "en": "donut",
+          "type": "n",
+          "vi": "bánh donut"
+        },
+        {
+          "en": "onion",
+          "type": "n",
+          "vi": "hành tây"
+        },
+        {
+          "en": "tomato",
+          "type": "n",
+          "vi": "cà chua"
+        },
+        {
+          "en": "egg",
+          "type": "n",
+          "vi": "quả trứng"
+        },
+        {
+          "en": "potato",
+          "type": "n",
+          "vi": "khoai tây"
+        },
+        {
+          "en": "lime",
+          "type": "n",
+          "vi": "quả chanh"
+        },
+        {
+          "en": "fries",
+          "type": "n",
+          "vi": "khoai tây chiên"
+        },
+        {
+          "en": "pizza",
+          "type": "n",
+          "vi": "bánh pizza"
+        },
+        {
+          "en": "cake",
+          "type": "n",
+          "vi": "bánh ngọt"
+        },
+        {
+          "en": "ice cream",
+          "type": "n",
+          "vi": "kem"
+        },
+        {
+          "en": "chicken",
+          "type": "n",
+          "vi": "thịt gà"
+        },
+        {
+          "en": "fish",
+          "type": "n",
+          "vi": "cá"
+        },
+        {
+          "en": "knife",
+          "type": "n",
+          "vi": "con dao"
+        },
+        {
+          "en": "fork",
+          "type": "n",
+          "vi": "cái nĩa"
+        },
+        {
+          "en": "spoon",
+          "type": "n",
+          "vi": "cái thìa"
+        },
+        {
+          "en": "chopsticks",
+          "type": "n",
+          "vi": "đũa"
+        },
+        {
+          "en": "noodles",
+          "type": "n",
+          "vi": "mì"
+        },
+        {
+          "en": "rice",
+          "type": "n",
+          "vi": "cơm, gạo"
+        },
+        {
+          "en": "favorite",
+          "type": "adj",
+          "vi": "yêu thích"
+        },
+        {
+          "en": "food",
+          "type": "n",
+          "vi": "thức ăn"
+        }
+      ],
+      "grammar": [
+        "There is a/an ___. / There are some ___.",
+        "Are there any ___? - Yes, there are. / No, there aren't.",
+        "Is there a/an ___? - Yes, there is. / No, there isn't.",
+        "Would you like some ___? - Yes, please. / No, thank you.",
+        "We eat ___ with a ___.",
+        "My favorite food is ___."
+      ],
+      "grammar_notes": "Bài 8 học về thức ăn: nói về có/không có, mời ăn, dụng cụ ăn.\n\n1. Nói về có (số ít):\n- \"There is an apple.\" = Có một quả táo.\n- \"There is a cupcake.\" = Có một chiếc cupcake.\n\n2. Nói về có (số nhiều):\n- \"There are some tomatoes.\" = Có một vài quả cà chua.\n\n3. Hỏi có không (số nhiều):\n- \"Are there any tomatoes?\" = Có cà chua nào không?\n- \"Yes, there are.\" = Có.\n- \"No, there aren't.\" = Không có.\n\n4. Hỏi có không (số ít):\n- \"Is there an onion?\" = Có hành tây không?\n- \"Yes, there is.\" = Có.\n- \"No, there isn't.\" = Không có.\n\n5. Mời ăn:\n- \"Would you like some fries?\" = Bạn có muốn khoai tây chiên không?\n- \"Yes, please.\" = Vâng, xin mời.\n- \"No, thank you.\" = Không, cảm ơn.\n\n6. Dụng cụ ăn:\n- \"We eat ice cream with a spoon.\" = Chúng ta ăn kem bằng thìa.\n- \"We eat noodles with chopsticks.\" = Chúng ta ăn mì bằng đũa.\n- \"My favorite food is fish.\" = Món ăn yêu thích của tôi là cá.",
+      "exercises": [
+        {
+          "q": "There _____ an apple.",
+          "opts": [
+            "are",
+            "is",
+            "am",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "\"An apple\" là số ít nên dùng \"There is\"."
+        },
+        {
+          "q": "There _____ some tomatoes.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "\"Some tomatoes\" là số nhiều nên dùng \"There are\"."
+        },
+        {
+          "q": "Are there _____ carrots?",
+          "opts": [
+            "a",
+            "an",
+            "any",
+            "some"
+          ],
+          "ans": 2,
+          "explain": "Trong câu hỏi dùng \"any\". \"Are there any carrots?\""
+        },
+        {
+          "q": "Are there any bananas? - Yes, there _____.",
+          "opts": [
+            "is",
+            "are",
+            "isn't",
+            "aren't"
+          ],
+          "ans": 1,
+          "explain": "\"Bananas\" là số nhiều nên dùng \"are\"."
+        },
+        {
+          "q": "Are there any eggs? - No, there _____.",
+          "opts": [
+            "isn't",
+            "aren't",
+            "is",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "\"Eggs\" là số nhiều, phủ định dùng \"aren't\"."
+        },
+        {
+          "q": "Is there _____ onion?",
+          "opts": [
+            "a",
+            "an",
+            "any",
+            "some"
+          ],
+          "ans": 1,
+          "explain": "\"Onion\" bắt đầu bằng nguyên âm \"o\" nên dùng \"an\"."
+        },
+        {
+          "q": "Is there a potato? - No, there _____.",
+          "opts": [
+            "aren't",
+            "isn't",
+            "are",
+            "is"
+          ],
+          "ans": 1,
+          "explain": "\"A potato\" là số ít, phủ định dùng \"isn't\"."
+        },
+        {
+          "q": "Would you like _____ fries?",
+          "opts": [
+            "a",
+            "an",
+            "any",
+            "some"
+          ],
+          "ans": 3,
+          "explain": "Trong câu mời dùng \"some\". \"Would you like some fries?\""
+        },
+        {
+          "q": "Would you like some cake? - Yes, _____.",
+          "opts": [
+            "thanks",
+            "please",
+            "sorry",
+            "welcome"
+          ],
+          "ans": 1,
+          "explain": "\"Yes, please.\" dùng khi nhận lời mời."
+        },
+        {
+          "q": "Would you like some pizza? - No, _____ you.",
+          "opts": [
+            "please",
+            "sorry",
+            "thank",
+            "welcome"
+          ],
+          "ans": 2,
+          "explain": "\"No, thank you.\" dùng khi từ chối lời mời lịch sự."
+        },
+        {
+          "q": "We eat ice cream with a _____.",
+          "opts": [
+            "knife",
+            "fork",
+            "spoon",
+            "chopsticks"
+          ],
+          "ans": 2,
+          "explain": "\"Spoon\" nghĩa là cái thìa. Chúng ta ăn kem bằng thìa."
+        },
+        {
+          "q": "We eat noodles with _____.",
+          "opts": [
+            "a knife",
+            "a fork",
+            "a spoon",
+            "chopsticks"
+          ],
+          "ans": 3,
+          "explain": "\"Chopsticks\" nghĩa là đũa. Chúng ta ăn mì bằng đũa."
+        },
+        {
+          "q": "My _____ food is fish.",
+          "opts": [
+            "like",
+            "love",
+            "best",
+            "favorite"
+          ],
+          "ans": 3,
+          "explain": "\"Favorite\" nghĩa là yêu thích."
+        },
+        {
+          "q": "There is _____ cupcake.",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "any"
+          ],
+          "ans": 0,
+          "explain": "\"Cupcake\" bắt đầu bằng phụ âm \"c\" nên dùng \"a\"."
+        },
+        {
+          "q": "There are _____ donuts.",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "any"
+          ],
+          "ans": 2,
+          "explain": "\"Donuts\" là số nhiều, câu khẳng định dùng \"some\"."
+        },
+        {
+          "q": "We eat fish with a _____ and a fork.",
+          "opts": [
+            "spoon",
+            "chopsticks",
+            "knife",
+            "bowl"
+          ],
+          "ans": 2,
+          "explain": "\"Knife\" nghĩa là con dao. Người phương Tây ăn cá bằng dao và nĩa."
+        }
+      ]
+    }
+  }
+}

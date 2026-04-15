@@ -1,0 +1,5305 @@
+{
+  "units": {
+    "1": {
+      "title": "Local Community",
+      "vocabulary": [
+        {
+          "en": "artisan",
+          "ipa": "/ˌɑːtɪˈzæn/",
+          "type": "n",
+          "vi": "thợ làm nghề thủ công"
+        },
+        {
+          "en": "community",
+          "ipa": "/kəˈmjuːnəti/",
+          "type": "n",
+          "vi": "cộng đồng"
+        },
+        {
+          "en": "community helper",
+          "ipa": "/kəˈmjuːnəti ˈhelpə/",
+          "type": "n",
+          "vi": "người phục vụ cộng đồng"
+        },
+        {
+          "en": "craft village",
+          "ipa": "/ˌkrɑːft ˈvɪlɪdʒ/",
+          "type": "n",
+          "vi": "làng nghề thủ công"
+        },
+        {
+          "en": "cut down on",
+          "ipa": "/kʌt daʊn ɒn/",
+          "type": "v phr",
+          "vi": "cắt giảm"
+        },
+        {
+          "en": "delivery person",
+          "ipa": "/dɪˈlɪvəri ˈpɜːsn/",
+          "type": "n",
+          "vi": "nhân viên giao hàng"
+        },
+        {
+          "en": "electrician",
+          "ipa": "/ɪˌlekˈtrɪʃn/",
+          "type": "n",
+          "vi": "thợ điện"
+        },
+        {
+          "en": "facilities",
+          "ipa": "/fəˈsɪlətiz/",
+          "type": "n",
+          "vi": "cơ sở vật chất"
+        },
+        {
+          "en": "firefighter",
+          "ipa": "/ˈfaɪəfaɪtə/",
+          "type": "n",
+          "vi": "lính cứu hoả"
+        },
+        {
+          "en": "fragrance",
+          "ipa": "/ˈfreɪɡrəns/",
+          "type": "n",
+          "vi": "hương thơm"
+        },
+        {
+          "en": "function",
+          "ipa": "/ˈfʌŋkʃn/",
+          "type": "n",
+          "vi": "chức năng"
+        },
+        {
+          "en": "garbage collector",
+          "ipa": "/ˈɡɑːbɪdʒ kəlektə/",
+          "type": "n",
+          "vi": "nhân viên dọn vệ sinh"
+        },
+        {
+          "en": "get on with",
+          "ipa": "/ɡet ɒn wɪð/",
+          "type": "v phr",
+          "vi": "có quan hệ tốt với"
+        },
+        {
+          "en": "hand down",
+          "ipa": "/hænd daʊn/",
+          "type": "v phr",
+          "vi": "truyền lại"
+        },
+        {
+          "en": "handicraft",
+          "ipa": "/ˈhændikrɑːft/",
+          "type": "n",
+          "vi": "sản phẩm thủ công"
+        },
+        {
+          "en": "look around",
+          "ipa": "/lʊk əˈraʊnd/",
+          "type": "v phr",
+          "vi": "ngắm nghía xung quanh"
+        },
+        {
+          "en": "original",
+          "ipa": "/əˈrɪdʒənl/",
+          "type": "adj",
+          "vi": "nguyên bản"
+        },
+        {
+          "en": "pass down",
+          "ipa": "/pɑːs daʊn/",
+          "type": "v phr",
+          "vi": "truyền lại"
+        },
+        {
+          "en": "police officer",
+          "ipa": "/pəˈliːs ɒfɪsə/",
+          "type": "n",
+          "vi": "công an"
+        },
+        {
+          "en": "pottery",
+          "ipa": "/ˈpɒtəri/",
+          "type": "n",
+          "vi": "đồ gốm"
+        },
+        {
+          "en": "preserve",
+          "ipa": "/prɪˈzɜːv/",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "run out of",
+          "ipa": "/rʌn aʊt əv/",
+          "type": "v phr",
+          "vi": "hết, cạn kiệt"
+        },
+        {
+          "en": "speciality",
+          "ipa": "/ˌspeʃiˈæləti/",
+          "type": "n",
+          "vi": "đặc sản"
+        },
+        {
+          "en": "suburb",
+          "ipa": "/ˈsʌbɜːb/",
+          "type": "n",
+          "vi": "vùng ngoại ô"
+        },
+        {
+          "en": "tourist attraction",
+          "ipa": "/ˈtʊərɪst əˈtrækʃn/",
+          "type": "n",
+          "vi": "điểm du lịch"
+        },
+        {
+          "en": "set up",
+          "ipa": "/set ʌp/",
+          "type": "v phr",
+          "vi": "thành lập"
+        },
+        {
+          "en": "turn down",
+          "ipa": "/tɜːn daʊn/",
+          "type": "v phr",
+          "vi": "từ chối"
+        },
+        {
+          "en": "take over",
+          "ipa": "/teɪk ˈəʊvə/",
+          "type": "v phr",
+          "vi": "tiếp quản"
+        },
+        {
+          "en": "look forward to",
+          "ipa": "/lʊk ˈfɔːwəd tuː/",
+          "type": "v phr",
+          "vi": "mong chờ"
+        },
+        {
+          "en": "find out",
+          "ipa": "/faɪnd aʊt/",
+          "type": "v phr",
+          "vi": "tìm ra, phát hiện"
+        },
+        {
+          "en": "come back",
+          "ipa": "/kʌm bæk/",
+          "type": "v phr",
+          "vi": "trở lại"
+        },
+        {
+          "en": "well-known",
+          "ipa": "/ˌwel ˈnəʊn/",
+          "type": "adj",
+          "vi": "nổi tiếng"
+        },
+        {
+          "en": "hand-embroidered",
+          "ipa": "/hænd ɪmˈbrɔɪdəd/",
+          "type": "adj",
+          "vi": "thêu tay"
+        },
+        {
+          "en": "deal with",
+          "ipa": "/diːl wɪð/",
+          "type": "v phr",
+          "vi": "giải quyết"
+        },
+        {
+          "en": "encourage",
+          "ipa": "/ɪnˈkʌrɪdʒ/",
+          "type": "v",
+          "vi": "khuyến khích"
+        }
+      ],
+      "grammar": [
+        "Question words before to-infinitives",
+        "Phrasal verbs"
+      ],
+      "grammar_notes": "1. QUESTION WORDS BEFORE TO-INFINITIVE\nChúng ta sử dụng từ để hỏi (who, what, where, when, how) trước động từ nguyên thể có 'to' để diễn tả câu hỏi gián tiếp.\nCác động từ thường đứng trước: know, wonder, ask, tell, decide, explain, show, forget, remember, learn, find out.\nVí dụ:\n- We don't know what to do to help the community.\n- She asked how to get to the nearest shopping mall.\n- Can you tell me where to buy authentic lacquerware?\n- He showed me how to make a conical hat.\nCũng dùng sau giới từ: I was worried about what to wear.\n\n2. PHRASAL VERBS (Cụm động từ)\nLà động từ kết hợp với tiểu từ (trạng từ/giới từ) tạo nghĩa mới.\nMột số cụm động từ quan trọng:\n- pass down / hand down: truyền lại (qua các thế hệ)\n- cut down on: cắt giảm = reduce\n- run out of: hết, cạn kiệt\n- get on with: có quan hệ tốt với\n- set up: thành lập\n- turn down: từ chối\n- take over: tiếp quản\n- find out: tìm ra\n- look around: ngắm nghía xung quanh\n- come back: trở lại\n- deal with: giải quyết = solve",
+      "exercises": [
+        {
+          "q": "She doesn't know _____ to make pottery.",
+          "opts": [
+            "what",
+            "how",
+            "where",
+            "when"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng vì \"how to + V\" dùng để diễn tả cách làm một việc gì đó. Cô ấy không biết cách làm gốm."
+        },
+        {
+          "q": "What does 'artisan' mean in Vietnamese?",
+          "opts": [
+            "nghệ sĩ",
+            "thợ thủ công",
+            "thương nhân",
+            "nông dân"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. \"Artisan\" trong tiếng Anh có nghĩa là người thợ thủ công, người làm đồ mỹ nghệ."
+        },
+        {
+          "q": "Traditional crafts should be _____ to the next generation.",
+          "opts": [
+            "passed down",
+            "turned down",
+            "set up",
+            "looked up"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Cụm \"pass down\" có nghĩa là truyền lại cho thế hệ sau. Nghề thủ công nên được truyền lại cho thế hệ sau."
+        },
+        {
+          "q": "Can you tell me where _____ authentic lacquerware?",
+          "opts": [
+            "buy",
+            "buying",
+            "to buy",
+            "bought"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Sau \"tell me where\" ta dùng \"to + V\" để hỏi về địa điểm làm gì đó. Bạn có thể cho tôi biết mua đồ sơn mài đích thực ở đâu không?"
+        },
+        {
+          "q": "They decided _____ a craft workshop in the village.",
+          "opts": [
+            "set up",
+            "to set up",
+            "setting up",
+            "sets up"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. Động từ \"decide\" theo sau bởi \"to + V\". Họ quyết định thành lập một xưởng thủ công."
+        },
+        {
+          "q": "He showed me how _____ a conical hat.",
+          "opts": [
+            "make",
+            "making",
+            "to make",
+            "made"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Cụm \"show someone how to do something\" có nghĩa là chỉ cho ai đó cách làm gì. Anh ấy chỉ tôi cách làm nón lá."
+        },
+        {
+          "q": "The artisan _____ down the offer to work in the city.",
+          "opts": [
+            "turned",
+            "passed",
+            "set",
+            "took"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Cụm \"turn down\" có nghĩa là từ chối. Người thợ thủ công đã từ chối lời đề nghị làm việc ở thành phố."
+        },
+        {
+          "q": "I wonder _____ to visit in Bat Trang village.",
+          "opts": [
+            "how",
+            "what",
+            "when",
+            "why"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. \"Wonder what to + V\" dùng để diễn tả sự băn khoăn về việc làm gì. Tôi tự hỏi nên tham quan cái gì ở làng Bát Tràng."
+        },
+        {
+          "q": "This craft has been _____ from generation to generation.",
+          "opts": [
+            "set up",
+            "turned down",
+            "passed down",
+            "looked up"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Cụm \"pass down\" có nghĩa là được truyền lại qua nhiều thế hệ. Nghề thủ công này đã được truyền từ đời này sang đời khác."
+        },
+        {
+          "q": "She asked me what _____ for a souvenir.",
+          "opts": [
+            "buy",
+            "buying",
+            "to buy",
+            "bought"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Sau \"what\" trong câu gián tiếp này, ta dùng \"to + V\" để diễn tả việc cần làm. Cô ấy hỏi tôi nên mua gì làm quà lưu niệm."
+        },
+        {
+          "q": "Bat Trang is well-known _____ its pottery.",
+          "opts": [
+            "for",
+            "in",
+            "at",
+            "on"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Giới từ \"for\" đi với \"be well-known\" để chỉ lý do nổi tiếng. Bát Tràng nổi tiếng về đồ gốm của nó."
+        },
+        {
+          "q": "He doesn't know when _____ the craft village.",
+          "opts": [
+            "visit",
+            "visiting",
+            "to visit",
+            "visited"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Tương tự câu 3, \"know when to + V\" diễn tả việc biết thời điểm thích hợp để làm gì. Anh ấy không biết khi nào nên thăm làng nghề."
+        },
+        {
+          "q": "She is looking forward _____ visiting the silk village.",
+          "opts": [
+            "for",
+            "at",
+            "in",
+            "to"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D là đúng. Cụm \"look forward to + V-ing\" có nghĩa là mong chờ điều gì đó. Cô ấy mong chờ việc đi thăm làng lụa."
+        },
+        {
+          "q": "His son will _____ the workshop when he retires.",
+          "opts": [
+            "take over",
+            "turn down",
+            "set up",
+            "pass down"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Cụm \"take over\" có nghĩa là tiếp quản. Con trai ông ấy sẽ tiếp quản xưởng khi ông nghỉ hưu."
+        },
+        {
+          "q": "We need to _____ on electricity usage.",
+          "opts": [
+            "cut down",
+            "run out",
+            "get on",
+            "look around"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Cụm \"cut down on\" có nghĩa là cắt giảm, giảm bớt. Chúng ta cần cắt giảm việc sử dụng điện."
+        },
+        {
+          "q": "She _____ with all her colleagues at work.",
+          "opts": [
+            "gets on",
+            "runs out",
+            "cuts down",
+            "passes down"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Cụm \"get on with\" có nghĩa là hòa hợp, có mối quan hệ tốt với ai đó. Cô ấy hòa hợp với tất cả đồng nghiệp tại nơi làm việc."
+        },
+        {
+          "q": "They have _____ of food supplies.",
+          "opts": [
+            "cut down",
+            "run out",
+            "set up",
+            "got on"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. Cụm \"run out of\" có nghĩa là hết, cạn kiệt. Họ đã hết nguồn cung cấp thực phẩm."
+        },
+        {
+          "q": "What does 'preserve' mean?",
+          "opts": [
+            "phá hủy",
+            "bảo tồn",
+            "thay đổi",
+            "bán"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. \"Preserve\" trong tiếng Anh có nghĩa là bảo tồn, gìn giữ."
+        },
+        {
+          "q": "The village is famous _____ its hand-embroidered pictures.",
+          "opts": [
+            "for",
+            "of",
+            "with",
+            "about"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. Giới từ \"for\" đi với \"be famous\" để chỉ lý do nổi tiếng. Ngôi làng nổi tiếng về những bức tranh thêu tay của nó."
+        },
+        {
+          "q": "I was worried about what _____ to the party.",
+          "opts": [
+            "wear",
+            "wearing",
+            "to wear",
+            "wore"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Sau \"worried about what\", ta dùng \"to + V\" để diễn tả điều cần làm. Tôi đã lo lắng về việc nên mặc gì đến bữa tiệc."
+        }
+      ]
+    },
+    "2": {
+      "title": "City Life",
+      "vocabulary": [
+        {
+          "en": "bustling",
+          "ipa": "/ˈbʌslɪŋ/",
+          "type": "adj",
+          "vi": "hối hả, nhộn nhịp, náo nhiệt"
+        },
+        {
+          "en": "carry out",
+          "ipa": "/ˈkæri aʊt/",
+          "type": "v phr",
+          "vi": "tiến hành (nghiên cứu, nhiệm vụ)"
+        },
+        {
+          "en": "come down with",
+          "ipa": "/kʌm daʊn wɪð/",
+          "type": "v phr",
+          "vi": "bị ốm (vì bệnh gì)"
+        },
+        {
+          "en": "concrete jungle",
+          "ipa": "/ˌkɒŋkriːt ˈdʒʌŋɡl/",
+          "type": "n",
+          "vi": "rừng bê tông"
+        },
+        {
+          "en": "congested",
+          "ipa": "/kənˈdʒestɪd/",
+          "type": "adj",
+          "vi": "tắc nghẽn (giao thông)"
+        },
+        {
+          "en": "construction site",
+          "ipa": "/kənˈstrʌkʃn saɪt/",
+          "type": "n",
+          "vi": "công trường xây dựng"
+        },
+        {
+          "en": "downtown",
+          "ipa": "/ˌdaʊnˈtaʊn/",
+          "type": "n",
+          "vi": "khu trung tâm thành phố"
+        },
+        {
+          "en": "get around",
+          "ipa": "/ɡet əˈraʊnd/",
+          "type": "v phr",
+          "vi": "di chuyển từ nơi này đến nơi khác"
+        },
+        {
+          "en": "hang out with",
+          "ipa": "/hæŋ aʊt wɪð/",
+          "type": "v phr",
+          "vi": "đi chơi (cùng ai)"
+        },
+        {
+          "en": "hygiene",
+          "ipa": "/ˈhaɪdʒiːn/",
+          "type": "n",
+          "vi": "vệ sinh"
+        },
+        {
+          "en": "itchy",
+          "ipa": "/ˈɪtʃi/",
+          "type": "adj",
+          "vi": "ngứa, gây ngứa"
+        },
+        {
+          "en": "leftover",
+          "ipa": "/ˈleftəʊvə/",
+          "type": "n",
+          "vi": "thức ăn thừa"
+        },
+        {
+          "en": "liveable",
+          "ipa": "/ˈlɪvəbl/",
+          "type": "adj",
+          "vi": "đáng sống"
+        },
+        {
+          "en": "metro",
+          "ipa": "/ˈmetrəʊ/",
+          "type": "n",
+          "vi": "hệ thống tàu điện ngầm"
+        },
+        {
+          "en": "pricey",
+          "ipa": "/ˈpraɪsi/",
+          "type": "adj",
+          "vi": "đắt đỏ"
+        },
+        {
+          "en": "process",
+          "ipa": "/ˈprəʊses/",
+          "type": "v",
+          "vi": "xử lí"
+        },
+        {
+          "en": "public amenities",
+          "ipa": "/ˈpʌblɪk əˈmiːnətiz/",
+          "type": "n",
+          "vi": "tiện ích công cộng"
+        },
+        {
+          "en": "rush hour",
+          "ipa": "/ˈrʌʃ aʊə/",
+          "type": "n",
+          "vi": "giờ cao điểm"
+        },
+        {
+          "en": "sky train",
+          "ipa": "/skaɪ treɪn/",
+          "type": "n",
+          "vi": "tàu điện trên không"
+        },
+        {
+          "en": "tram",
+          "ipa": "/træm/",
+          "type": "n",
+          "vi": "xe điện"
+        },
+        {
+          "en": "underground",
+          "ipa": "/ˌʌndəˈɡraʊnd/",
+          "type": "n",
+          "vi": "tàu điện ngầm"
+        },
+        {
+          "en": "entertainment center",
+          "ipa": "/ˌentəˈteɪnmənt ˈsentə/",
+          "type": "n",
+          "vi": "trung tâm giải trí"
+        },
+        {
+          "en": "commuter",
+          "ipa": "/kəˈmjuːtə/",
+          "type": "n",
+          "vi": "người đi lại bằng phương tiện công cộng"
+        },
+        {
+          "en": "traffic congestion",
+          "ipa": "/ˈtræfɪk kənˈdʒestʃən/",
+          "type": "n",
+          "vi": "tắc nghẽn giao thông"
+        },
+        {
+          "en": "reliable",
+          "ipa": "/rɪˈlaɪəbl/",
+          "type": "adj",
+          "vi": "đáng tin cậy"
+        },
+        {
+          "en": "authority",
+          "ipa": "/ɔːˈθɒrəti/",
+          "type": "n",
+          "vi": "chính quyền"
+        },
+        {
+          "en": "crime rate",
+          "ipa": "/kraɪm reɪt/",
+          "type": "n",
+          "vi": "tỷ lệ tội phạm"
+        },
+        {
+          "en": "affordable",
+          "ipa": "/əˈfɔːdəbl/",
+          "type": "adj",
+          "vi": "phải chăng, hợp túi tiền"
+        },
+        {
+          "en": "convenience",
+          "ipa": "/kənˈviːniəns/",
+          "type": "n",
+          "vi": "tiện nghi"
+        },
+        {
+          "en": "exhausted",
+          "ipa": "/ɪɡˈzɔːstɪd/",
+          "type": "adj",
+          "vi": "kiệt sức"
+        },
+        {
+          "en": "fabulous",
+          "ipa": "/ˈfæbjələs/",
+          "type": "adj",
+          "vi": "tuyệt vời"
+        },
+        {
+          "en": "cut down on",
+          "ipa": "/kʌt daʊn ɒn/",
+          "type": "v phr",
+          "vi": "cắt giảm"
+        },
+        {
+          "en": "conflict",
+          "ipa": "/ˈkɒnflɪkt/",
+          "type": "n",
+          "vi": "xung đột"
+        },
+        {
+          "en": "urban",
+          "ipa": "/ˈɜːbən/",
+          "type": "adj",
+          "vi": "thuộc thành thị"
+        },
+        {
+          "en": "rural",
+          "ipa": "/ˈrʊərəl/",
+          "type": "adj",
+          "vi": "thuộc nông thôn"
+        }
+      ],
+      "grammar": [
+        "Double comparatives",
+        "Comparisons of adjectives and adverbs"
+      ],
+      "grammar_notes": "1. DOUBLE COMPARATIVES (So sánh kép)\nDùng để diễn tả sự thay đổi song song giữa hai vế.\n\na) Comparative and Comparative (càng ngày càng):\n- Tính từ ngắn: S + V + adj-er + and + adj-er\n  Ví dụ: Our embroidering skill is getting better and better.\n- Tính từ dài: S + V + more and more + adj\n  Ví dụ: Life in the city is more and more stressful.\n\nb) The comparative... the comparative... (càng... càng...):\n- The + comparative + S + V, the + comparative + S + V\n  Ví dụ: The harder you work, the more you accomplish.\n  The more crowded the city is, the more polluted it becomes.\n  The better the quality is, the more expensive it will be.\n\nc) Với danh từ: The more/less + N + S + V, the more/less + N + S + V\n  Ví dụ: The less paper we waste, the more trees we will save.\n\n2. COMPARISONS OF ADJECTIVES AND ADVERBS\n- So sánh bằng: S + be/V + as + adj/adv + as\n- So sánh hơn: S + be/V + adj/adv-er + than (ngắn) / more + adj/adv + than (dài)\n- So sánh nhất: S + be/V + the + adj-est / the most + adj\n- Nhấn mạnh: much/far/a lot + comparative\n- Tính từ đặc biệt: good→better→best, bad→worse→worst, far→farther→farthest",
+      "exercises": [
+        {
+          "q": "The _____ you study, the _____ your results will be.",
+          "opts": [
+            "harder / better",
+            "more hard / more good",
+            "hardest / best",
+            "hard / good"
+          ],
+          "ans": 0,
+          "explain": "Đây là cấu trúc so sánh kép 'The + so sánh hơn, the + so sánh hơn'. 'Harder' và 'better' là dạng so sánh hơn của 'hard' và 'good'."
+        },
+        {
+          "q": "Life in the city is getting more and more _____.",
+          "opts": [
+            "stress",
+            "stressful",
+            "stressfully",
+            "stressed"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một tính từ để bổ nghĩa cho danh từ 'life'. 'Stressful' (gây căng thẳng) là tính từ phù hợp, còn 'stress' là danh từ, 'stressfully' là trạng từ, 'stressed' là tính từ chỉ sự bị động (bị căng thẳng)."
+        },
+        {
+          "q": "What does 'bustling' mean?",
+          "opts": [
+            "yên tĩnh",
+            "nhộn nhịp",
+            "buồn tẻ",
+            "nguy hiểm"
+          ],
+          "ans": 1,
+          "explain": "'Bustling' có nghĩa là có nhiều hoạt động và sự di chuyển, giống như 'nhộn nhịp'."
+        },
+        {
+          "q": "I chose to _____ by bus when I was in town.",
+          "opts": [
+            "get around",
+            "carry out",
+            "hang out",
+            "come down"
+          ],
+          "ans": 0,
+          "explain": "Cụm 'get around' có nghĩa là di chuyển từ nơi này đến nơi khác. Các cụm khác không phù hợp với ngữ cảnh đi lại bằng xe buýt."
+        },
+        {
+          "q": "The authority is _____ a plan to solve traffic congestion.",
+          "opts": [
+            "getting around",
+            "carrying out",
+            "hanging out",
+            "coming down"
+          ],
+          "ans": 1,
+          "explain": "Cụm 'carry out' có nghĩa là thực hiện hoặc triển khai một kế hoạch. Các lựa chọn khác không diễn tả đúng hành động của chính quyền với kế hoạch."
+        },
+        {
+          "q": "I'm _____ with a cold. I have a sore throat.",
+          "opts": [
+            "getting around",
+            "carrying out",
+            "coming down",
+            "hanging out"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'come down with' có nghĩa là bắt đầu bị ốm. 'Coming down with a cold' là cách diễn đạt phổ biến khi bị cảm lạnh."
+        },
+        {
+          "q": "The more guests we invite, the _____ the party will be.",
+          "opts": [
+            "fun",
+            "more fun",
+            "most fun",
+            "funner"
+          ],
+          "ans": 1,
+          "explain": "Đây là cấu trúc so sánh kép 'The more + danh từ, the + so sánh hơn'. 'More fun' là dạng so sánh hơn của 'fun' khi đi với 'the'."
+        },
+        {
+          "q": "This city is _____ expensive than that one.",
+          "opts": [
+            "more",
+            "most",
+            "much",
+            "the"
+          ],
+          "ans": 0,
+          "explain": "Câu này dùng để so sánh hơn giữa hai thành phố. 'More expensive' là dạng so sánh hơn của 'expensive'."
+        },
+        {
+          "q": "Tokyo is one of the _____ cities in the world.",
+          "opts": [
+            "most liveable",
+            "more liveable",
+            "liveable",
+            "liveablest"
+          ],
+          "ans": 0,
+          "explain": "Đây là cấu trúc so sánh nhất 'one of the + tính từ đuôi -est/most'. 'Most liveable' là dạng so sánh nhất của 'liveable'."
+        },
+        {
+          "q": "What does 'congested' mean?",
+          "opts": [
+            "rộng rãi",
+            "tắc nghẽn",
+            "yên tĩnh",
+            "đẹp"
+          ],
+          "ans": 1,
+          "explain": "'Congested' mô tả tình trạng đường xá, giao thông bị kẹt cứng, không di chuyển được, tức là 'tắc nghẽn'."
+        },
+        {
+          "q": "She is as _____ as her sister.",
+          "opts": [
+            "tall",
+            "taller",
+            "tallest",
+            "more tall"
+          ],
+          "ans": 0,
+          "explain": "Câu này sử dụng cấu trúc so sánh ngang bằng 'as + tính từ + as'. Vì vậy, ta dùng 'tall' (tính từ nguyên mẫu)."
+        },
+        {
+          "q": "The _____ the weather is, the _____ I feel.",
+          "opts": [
+            "hotter / more tired",
+            "hot / tired",
+            "hottest / most tired",
+            "more hot / more tired"
+          ],
+          "ans": 0,
+          "explain": "Đây là cấu trúc so sánh kép 'The + so sánh hơn, the + so sánh hơn'. 'Hotter' là so sánh hơn của 'hot', và 'more tired' là so sánh hơn của 'tired'."
+        },
+        {
+          "q": "This restaurant is _____ expensive than the other one.",
+          "opts": [
+            "less",
+            "least",
+            "fewer",
+            "little"
+          ],
+          "ans": 0,
+          "explain": "Câu này so sánh hai nhà hàng và nói một cái 'ít' tốn kém hơn cái kia. 'Less expensive' là dạng so sánh hơn dùng cho 'ít hơn' với tính từ dài."
+        },
+        {
+          "q": "We need to _____ on using plastic bags.",
+          "opts": [
+            "cut down",
+            "get around",
+            "carry out",
+            "hang out"
+          ],
+          "ans": 0,
+          "explain": "Cụm 'cut down on' có nghĩa là giảm bớt việc gì đó. Chúng ta cần giảm bớt việc sử dụng túi nhựa."
+        },
+        {
+          "q": "Where do teenagers often _____ with each other?",
+          "opts": [
+            "get around",
+            "carry out",
+            "come down",
+            "hang out"
+          ],
+          "ans": 3,
+          "explain": "Cụm 'hang out' có nghĩa là đi chơi, tụ tập. Đây là hoạt động phổ biến của thanh thiếu niên."
+        },
+        {
+          "q": "What does 'liveable' mean?",
+          "opts": [
+            "sống động",
+            "đáng sống",
+            "buồn tẻ",
+            "đông đúc"
+          ],
+          "ans": 1,
+          "explain": "'Liveable' mô tả một nơi tốt để sinh sống, có điều kiện thuận lợi, tức là 'đáng sống'."
+        },
+        {
+          "q": "Her husband is twice as _____ as she is.",
+          "opts": [
+            "old",
+            "older",
+            "oldest",
+            "elder"
+          ],
+          "ans": 0,
+          "explain": "Cấu trúc 'twice as + tính từ + as' dùng để so sánh gấp đôi. Ta dùng tính từ nguyên mẫu 'old'."
+        },
+        {
+          "q": "Osaka is the second _____ city in Japan.",
+          "opts": [
+            "largest",
+            "larger",
+            "large",
+            "most large"
+          ],
+          "ans": 0,
+          "explain": "Câu này dùng để so sánh nhất vì có 'the second'. 'Largest' là dạng so sánh nhất của 'large'."
+        },
+        {
+          "q": "The noise makes me _____ stressed and tired.",
+          "opts": [
+            "feel",
+            "to feel",
+            "feeling",
+            "felt"
+          ],
+          "ans": 0,
+          "explain": "Sau động từ chỉ tri giác như 'make', ta dùng tân ngữ rồi đến động từ nguyên mẫu (không 'to'). 'Make me feel' là cấu trúc đúng."
+        },
+        {
+          "q": "What does 'pricey' mean?",
+          "opts": [
+            "rẻ",
+            "miễn phí",
+            "đắt đỏ",
+            "bình thường"
+          ],
+          "ans": 2,
+          "explain": "'Pricey' là một từ lóng, có nghĩa là rất đắt, tương tự như 'expensive', nên đáp án là 'đắt đỏ'."
+        }
+      ]
+    },
+    "3": {
+      "title": "Healthy Living for Teens",
+      "vocabulary": [
+        {
+          "en": "accomplish",
+          "ipa": "/əˈkʌmplɪʃ/",
+          "type": "v",
+          "vi": "hoàn thành, đạt được"
+        },
+        {
+          "en": "additional",
+          "ipa": "/əˈdɪʃənl/",
+          "type": "adj",
+          "vi": "thêm, thêm vào"
+        },
+        {
+          "en": "anxiety",
+          "ipa": "/æŋˈzaɪəti/",
+          "type": "n",
+          "vi": "nỗi lo, sự lo lắng"
+        },
+        {
+          "en": "appropriately",
+          "ipa": "/əˈprəʊpriətli/",
+          "type": "adv",
+          "vi": "phù hợp, thích đáng"
+        },
+        {
+          "en": "assignment",
+          "ipa": "/əˈsaɪnmənt/",
+          "type": "n",
+          "vi": "nhiệm vụ, bài tập"
+        },
+        {
+          "en": "counsellor",
+          "ipa": "/ˈkaʊnsələ/",
+          "type": "n",
+          "vi": "cố vấn, người tư vấn"
+        },
+        {
+          "en": "deadline",
+          "ipa": "/ˈdedlaɪn/",
+          "type": "n",
+          "vi": "thời hạn cuối cùng"
+        },
+        {
+          "en": "delay",
+          "ipa": "/dɪˈleɪ/",
+          "type": "v",
+          "vi": "trì hoãn, chậm trễ"
+        },
+        {
+          "en": "distraction",
+          "ipa": "/dɪˈstrækʃn/",
+          "type": "n",
+          "vi": "điều làm sao lãng"
+        },
+        {
+          "en": "due date",
+          "ipa": "/ˈdjuː deɪt/",
+          "type": "n",
+          "vi": "hạn chót"
+        },
+        {
+          "en": "fattening",
+          "ipa": "/ˈfætnɪŋ/",
+          "type": "adj",
+          "vi": "gây béo phì"
+        },
+        {
+          "en": "mental",
+          "ipa": "/ˈmentl/",
+          "type": "adj",
+          "vi": "thuộc tinh thần, trí tuệ"
+        },
+        {
+          "en": "minimise",
+          "ipa": "/ˈmɪnɪmaɪz/",
+          "type": "v",
+          "vi": "giảm đến mức tối thiểu"
+        },
+        {
+          "en": "mood",
+          "ipa": "/muːd/",
+          "type": "n",
+          "vi": "tâm trạng"
+        },
+        {
+          "en": "optimistic",
+          "ipa": "/ˌɒptɪˈmɪstɪk/",
+          "type": "adj",
+          "vi": "lạc quan"
+        },
+        {
+          "en": "physical",
+          "ipa": "/ˈfɪzɪkl/",
+          "type": "adj",
+          "vi": "thuộc thể chất"
+        },
+        {
+          "en": "priority",
+          "ipa": "/praɪˈɒrəti/",
+          "type": "n",
+          "vi": "sự ưu tiên"
+        },
+        {
+          "en": "stressed out",
+          "ipa": "/strest aʊt/",
+          "type": "adj",
+          "vi": "căng thẳng"
+        },
+        {
+          "en": "well-balanced",
+          "ipa": "/ˌwel ˈbælənst/",
+          "type": "adj",
+          "vi": "cân bằng, đúng mực"
+        },
+        {
+          "en": "maintain",
+          "ipa": "/meɪnˈteɪn/",
+          "type": "v",
+          "vi": "duy trì"
+        },
+        {
+          "en": "support",
+          "ipa": "/səˈpɔːt/",
+          "type": "v",
+          "vi": "nâng đỡ, ủng hộ"
+        },
+        {
+          "en": "schedule",
+          "ipa": "/ˈʃedjuːl/",
+          "type": "n",
+          "vi": "thời khóa biểu, lịch trình"
+        },
+        {
+          "en": "obstacle",
+          "ipa": "/ˈɒbstəkl/",
+          "type": "n",
+          "vi": "chướng ngại"
+        },
+        {
+          "en": "instructor",
+          "ipa": "/ɪnˈstrʌktə/",
+          "type": "n",
+          "vi": "người hướng dẫn"
+        },
+        {
+          "en": "improve",
+          "ipa": "/ɪmˈpruːv/",
+          "type": "v",
+          "vi": "nâng cao, cải thiện"
+        },
+        {
+          "en": "feedback",
+          "ipa": "/ˈfiːdbæk/",
+          "type": "n",
+          "vi": "phản hồi"
+        },
+        {
+          "en": "ingredient",
+          "ipa": "/ɪnˈɡriːdiənt/",
+          "type": "n",
+          "vi": "thành phần"
+        },
+        {
+          "en": "pessimistic",
+          "ipa": "/ˌpesɪˈmɪstɪk/",
+          "type": "adj",
+          "vi": "bi quan"
+        },
+        {
+          "en": "concentrate",
+          "ipa": "/ˈkɒnsntreɪt/",
+          "type": "v",
+          "vi": "tập trung"
+        },
+        {
+          "en": "communicate",
+          "ipa": "/kəˈmjuːnɪkeɪt/",
+          "type": "v",
+          "vi": "giao tiếp"
+        },
+        {
+          "en": "poster",
+          "ipa": "/ˈpəʊstə/",
+          "type": "n",
+          "vi": "áp phích, pano"
+        },
+        {
+          "en": "template",
+          "ipa": "/ˈtempleɪt/",
+          "type": "n",
+          "vi": "mẫu"
+        },
+        {
+          "en": "negative",
+          "ipa": "/ˈneɡətɪv/",
+          "type": "adj",
+          "vi": "tiêu cực"
+        },
+        {
+          "en": "positive",
+          "ipa": "/ˈpɒzətɪv/",
+          "type": "adj",
+          "vi": "tích cực"
+        },
+        {
+          "en": "healthy",
+          "ipa": "/ˈhelθi/",
+          "type": "adj",
+          "vi": "khỏe mạnh"
+        }
+      ],
+      "grammar": [
+        "Conditional sentences",
+        "Complex sentences"
+      ],
+      "grammar_notes": "1. CONDITIONAL SENTENCES (Câu điều kiện)\n\na) Modal verbs trong câu điều kiện loại 1:\nThay vì will, có thể dùng can, must, may, might, should.\nVí dụ:\n- If she trains harder, she can run faster. (khả năng)\n- If you want good mental health, you should balance study and life. (lời khuyên)\n- You must get rid of distractions if you want to manage time effectively. (cần thiết)\n\nb) Các loại câu điều kiện:\n- Loại 0: If + hiện tại đơn, hiện tại đơn (sự thật hiển nhiên)\n- Loại 1: If + hiện tại đơn, S + will/can/should + V (có thể xảy ra ở hiện tại)\n- Loại 2: If + quá khứ đơn, S + would/could/might + V (không có thật ở hiện tại)\n- Loại 3: If + quá khứ hoàn thành, S + would/could + have + V3 (không có thật trong quá khứ)\n- Unless = If...not\n\nc) Đảo ngữ:\n- Loại 1: Should + S + V, S + will + V\n- Loại 2: Were + S + to + V, S + would + V\n- Loại 3: Had + S + V3, S + would have + V3\n\n2. COMPLEX SENTENCES (Câu phức)\nGồm mệnh đề chính + mệnh đề phụ thuộc, nối bằng: because, when, if, although, so that...",
+      "exercises": [
+        {
+          "q": "If you do exercise regularly, your health _____.",
+          "opts": [
+            "improve",
+            "improves",
+            "will improve",
+            "improved"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng câu điều kiện loại 1, diễn tả một sự thật hoặc thói quen. Chủ ngữ 'your health' là ngôi thứ ba số ít nên động từ 'improve' phải chia là 'improves'. Tuy nhiên, cấu trúc 'If + S + V(hiện tại đơn), S + will + V(nguyên mẫu)' mới phù hợp với ý nghĩa một hành động có thể xảy ra trong tương lai."
+        },
+        {
+          "q": "What does 'accomplish' mean?",
+          "opts": [
+            "từ bỏ",
+            "hoàn thành",
+            "trì hoãn",
+            "lo lắng"
+          ],
+          "ans": 1,
+          "explain": "'Accomplish' có nghĩa là hoàn thành một việc gì đó. Các lựa chọn khác như 'từ bỏ', 'trì hoãn', 'lo lắng' không mang nghĩa tương tự."
+        },
+        {
+          "q": "If she _____ harder, she can run faster.",
+          "opts": [
+            "train",
+            "trains",
+            "trained",
+            "training"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 1, diễn tả một điều có thể xảy ra ở hiện tại hoặc tương lai. Chủ ngữ 'she' là ngôi thứ ba số ít, nên động từ 'train' phải chia ở dạng hiện tại đơn là 'trains'."
+        },
+        {
+          "q": "_____ you study hard, you won't pass the exam.",
+          "opts": [
+            "If",
+            "When",
+            "Unless",
+            "Although"
+          ],
+          "ans": 2,
+          "explain": "'Unless' có nghĩa là 'trừ khi', phù hợp với ngữ cảnh câu này: 'Trừ khi bạn học chăm chỉ, bạn sẽ không đỗ kỳ thi'. 'If' (nếu) sẽ tạo ra câu có nghĩa khác, 'When' (khi) và 'Although' (mặc dù) không phù hợp về nghĩa."
+        },
+        {
+          "q": "What does 'anxiety' mean?",
+          "opts": [
+            "sự vui vẻ",
+            "sự lo lắng",
+            "sự tự tin",
+            "sự lười biếng"
+          ],
+          "ans": 1,
+          "explain": "'Anxiety' trong tiếng Anh có nghĩa là sự lo lắng, bồn chồn. Các từ còn lại là 'sự vui vẻ', 'sự tự tin', 'sự lười biếng' đều có nghĩa khác."
+        },
+        {
+          "q": "If I _____ you, I would study harder.",
+          "opts": [
+            "am",
+            "was",
+            "were",
+            "be"
+          ],
+          "ans": 2,
+          "explain": "Đây là câu điều kiện loại 2, dùng để diễn tả điều kiện không có thật ở hiện tại. Khi chia động từ 'to be' ở mệnh đề 'If' với ngôi thứ nhất 'I', ta dùng 'were' cho tất cả các ngôi (I were, you were, he/she/it were, we were, they were)."
+        },
+        {
+          "q": "If he had trained hard, he _____ the match.",
+          "opts": [
+            "will win",
+            "would win",
+            "would have won",
+            "wins"
+          ],
+          "ans": 2,
+          "explain": "Câu này là câu điều kiện loại 3, diễn tả điều kiện không có thật trong quá khứ. Cấu trúc đúng là 'If + S + had + V3/ed, S + would have + V3/ed'. Do đó, 'would have won' là đáp án chính xác."
+        },
+        {
+          "q": "You _____ get rid of distractions if you want to manage time.",
+          "opts": [
+            "can",
+            "must",
+            "may",
+            "might"
+          ],
+          "ans": 1,
+          "explain": "Trong ngữ cảnh này, 'must' diễn tả sự cần thiết, bắt buộc phải làm gì đó để quản lý thời gian hiệu quả. Các từ 'can', 'may', 'might' chỉ khả năng hoặc sự cho phép, không mạnh mẽ bằng 'must'."
+        },
+        {
+          "q": "What does 'priority' mean?",
+          "opts": [
+            "sự ưu tiên",
+            "sự trì hoãn",
+            "sự lo lắng",
+            "sự cân bằng"
+          ],
+          "ans": 0,
+          "explain": "'Priority' có nghĩa là sự ưu tiên, thứ tự quan trọng. Các lựa chọn khác như 'sự trì hoãn', 'sự lo lắng', 'sự cân bằng' không đúng với nghĩa của từ này."
+        },
+        {
+          "q": "He may get a good job if he _____ good at IT.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Câu này diễn tả một điều kiện có thể xảy ra ở hiện tại, thuộc câu điều kiện loại 1. Chủ ngữ 'he' là ngôi thứ ba số ít, nên động từ 'to be' ở hiện tại đơn chia là 'is'."
+        },
+        {
+          "q": "Should he _____ free time, he'll play tennis.",
+          "opts": [
+            "has",
+            "have",
+            "had",
+            "having"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 1, diễn tả điều kiện có thể xảy ra. Khi dùng 'If' với chủ ngữ 'he', động từ 'have' ở hiện tại đơn chia là 'has'. Tuy nhiên, trong câu điều kiện loại 1, ta có thể dùng cấu trúc 'If + S + V(nguyên mẫu)' với chủ ngữ số ít để diễn tả một tình huống giả định hoặc lời khuyên chung chung, hoặc dùng 'If + S + V(chia theo chủ ngữ)' để chỉ một khả năng cụ thể. Trong trường hợp này, 'have' là dạng nguyên mẫu, phù hợp với cấu trúc 'If + S + V(nguyên mẫu)' khi nói về một khả năng chung."
+        },
+        {
+          "q": "What does 'well-balanced' mean?",
+          "opts": [
+            "mất cân bằng",
+            "cân bằng",
+            "quá mức",
+            "thiếu hụt"
+          ],
+          "ans": 1,
+          "explain": "'Well-balanced' có nghĩa là cân bằng, hài hòa, không quá nhiều hay quá ít. Các lựa chọn khác như 'mất cân bằng', 'quá mức', 'thiếu hụt' đều trái nghĩa."
+        },
+        {
+          "q": "If it _____ tomorrow, we will cancel the trip.",
+          "opts": [
+            "rain",
+            "rains",
+            "rained",
+            "will rain"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 1, diễn tả điều kiện có thể xảy ra ở tương lai. Mệnh đề 'If' chia ở thì hiện tại đơn, và với chủ ngữ 'it' (ngôi thứ ba số ít), động từ 'rain' phải chia là 'rains'."
+        },
+        {
+          "q": "She went to bed early _____ she would be at school on time.",
+          "opts": [
+            "so that",
+            "because",
+            "although",
+            "unless"
+          ],
+          "ans": 0,
+          "explain": "'So that' được dùng để chỉ mục đích, có nghĩa là 'để mà'. Câu này diễn tả mục đích cô ấy đi ngủ sớm là để đến trường đúng giờ. 'Because' (bởi vì) chỉ lý do, 'although' (mặc dù) chỉ sự nhượng bộ, 'unless' (trừ khi) chỉ điều kiện loại trừ, đều không phù hợp."
+        },
+        {
+          "q": "What does 'minimise' mean?",
+          "opts": [
+            "tăng tối đa",
+            "giảm tối thiểu",
+            "duy trì",
+            "loại bỏ"
+          ],
+          "ans": 1,
+          "explain": "'Minimise' có nghĩa là giảm thiểu, làm cho nhỏ nhất có thể. Các lựa chọn khác như 'tăng tối đa', 'duy trì', 'loại bỏ' không đúng với nghĩa này."
+        },
+        {
+          "q": "_____ I tried my best, I couldn't pass the exam.",
+          "opts": [
+            "Because",
+            "If",
+            "Although",
+            "Unless"
+          ],
+          "ans": 2,
+          "explain": "'Although' có nghĩa là 'mặc dù', dùng để nối hai mệnh đề có ý nghĩa tương phản. Câu này diễn tả sự tương phản giữa việc cố gắng hết sức và việc không đỗ kỳ thi. Các từ khác như 'Because', 'If', 'Unless' không phù hợp về nghĩa."
+        },
+        {
+          "q": "The doctor suggests that he _____ some weight.",
+          "opts": [
+            "loses",
+            "lose",
+            "lost",
+            "losing"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc 'suggest that' theo sau bởi động từ ở dạng nguyên mẫu (V-infinitive) hoặc 'should + V-infinitive'. Trong trường hợp này, 'lose' là dạng nguyên mẫu, phù hợp với ngữ cảnh."
+        },
+        {
+          "q": "What does 'mental' mean?",
+          "opts": [
+            "thuộc thể chất",
+            "thuộc tinh thần",
+            "thuộc vật chất",
+            "thuộc xã hội"
+          ],
+          "ans": 1,
+          "explain": "'Mental' là tính từ có nghĩa là thuộc về tinh thần, tâm trí, trái ngược với 'physical' (thuộc thể chất). Các lựa chọn khác không đúng với nghĩa của từ."
+        },
+        {
+          "q": "If he _____ busy, he would have met you.",
+          "opts": [
+            "isn't",
+            "wasn't",
+            "hadn't been",
+            "weren't"
+          ],
+          "ans": 2,
+          "explain": "Đây là câu điều kiện loại 2, diễn tả điều kiện không có thật ở quá khứ. Cấu trúc đúng là 'If + S + had not + V3/ed, S + would + V(nguyên mẫu)'. Do đó, 'hadn't been' là đáp án chính xác."
+        },
+        {
+          "q": "I find it _____ to concentrate when there are distractions.",
+          "opts": [
+            "easy",
+            "difficult",
+            "difficulty",
+            "easily"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc 'find it + adj + to V' là phổ biến. 'Difficult' là tính từ, phù hợp để bổ nghĩa cho 'it' trong câu này, diễn tả việc khó khăn khi tập trung. 'Difficulty' là danh từ, 'easily' là trạng từ, không phù hợp ở vị trí này."
+        }
+      ]
+    },
+    "4": {
+      "title": "Remembering the Past",
+      "vocabulary": [
+        {
+          "en": "ancient",
+          "ipa": "/ˈeɪnʃənt/",
+          "type": "adj",
+          "vi": "cổ, lâu đời"
+        },
+        {
+          "en": "anniversary",
+          "ipa": "/ˌænɪˈvɜːrsəri/",
+          "type": "n",
+          "vi": "ngày kỷ niệm"
+        },
+        {
+          "en": "barefoot",
+          "ipa": "/ˈberfʊt/",
+          "type": "adj",
+          "vi": "chân trần"
+        },
+        {
+          "en": "basic",
+          "ipa": "/ˈbeɪsɪk/",
+          "type": "adj",
+          "vi": "cơ bản"
+        },
+        {
+          "en": "castle",
+          "ipa": "/ˈkæsl/",
+          "type": "n",
+          "vi": "lâu đài"
+        },
+        {
+          "en": "communal",
+          "ipa": "/kəˈmjuːnl/",
+          "type": "adj",
+          "vi": "dùng chung, thuộc cộng đồng"
+        },
+        {
+          "en": "complex",
+          "ipa": "/kəmˈpleks/",
+          "type": "n",
+          "vi": "khu phức hợp, quần thể"
+        },
+        {
+          "en": "deep-rooted",
+          "ipa": "/ˌdiːp ˈruːtɪd/",
+          "type": "adj",
+          "vi": "lâu đời, ăn sâu bén rễ"
+        },
+        {
+          "en": "found",
+          "ipa": "/faʊnd/",
+          "type": "v",
+          "vi": "thành lập"
+        },
+        {
+          "en": "generation",
+          "ipa": "/ˌdʒenəˈreɪʃn/",
+          "type": "n",
+          "vi": "thế hệ"
+        },
+        {
+          "en": "monument",
+          "ipa": "/ˈmɑːnjumənt/",
+          "type": "n",
+          "vi": "tượng đài"
+        },
+        {
+          "en": "observe",
+          "ipa": "/əbˈzɜːrv/",
+          "type": "v",
+          "vi": "quan sát, duy trì"
+        },
+        {
+          "en": "occupied",
+          "ipa": "/ˈɑːkjupaɪd/",
+          "type": "adj",
+          "vi": "có người ở"
+        },
+        {
+          "en": "occupy",
+          "ipa": "/ˈɑːkjupaɪ/",
+          "type": "v",
+          "vi": "chiếm giữ"
+        },
+        {
+          "en": "promote",
+          "ipa": "/prəˈməʊt/",
+          "type": "v",
+          "vi": "thúc đẩy"
+        },
+        {
+          "en": "recognise",
+          "ipa": "/ˈrekəɡnaɪz/",
+          "type": "v",
+          "vi": "công nhận"
+        },
+        {
+          "en": "religious",
+          "ipa": "/rɪˈlɪdʒəs/",
+          "type": "adj",
+          "vi": "tôn giáo"
+        },
+        {
+          "en": "structure",
+          "ipa": "/ˈstrʌktʃər/",
+          "type": "n",
+          "vi": "cấu trúc"
+        },
+        {
+          "en": "takeaway",
+          "ipa": "/ˈteɪkəweɪ/",
+          "type": "n",
+          "vi": "đồ ăn mang về"
+        },
+        {
+          "en": "historic",
+          "ipa": "/hɪˈstɔːrɪk/",
+          "type": "adj",
+          "vi": "thuộc về lịch sử"
+        },
+        {
+          "en": "magnificent",
+          "ipa": "/mæɡˈnɪfɪsnt/",
+          "type": "adj",
+          "vi": "tráng lệ, lộng lẫy"
+        },
+        {
+          "en": "preserve",
+          "ipa": "/prɪˈzɜːrv/",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "heritage",
+          "ipa": "/ˈherɪtɪdʒ/",
+          "type": "n",
+          "vi": "di sản"
+        },
+        {
+          "en": "effort",
+          "ipa": "/ˈefərt/",
+          "type": "n",
+          "vi": "nỗ lực"
+        },
+        {
+          "en": "contribution",
+          "ipa": "/ˌkɑːntrɪˈbjuːʃn/",
+          "type": "n",
+          "vi": "cống hiến"
+        },
+        {
+          "en": "dedicated",
+          "ipa": "/ˈdedɪkeɪtɪd/",
+          "type": "adj",
+          "vi": "tận tụy, tận tâm"
+        },
+        {
+          "en": "royal",
+          "ipa": "/ˈrɔɪəl/",
+          "type": "adj",
+          "vi": "thuộc về hoàng gia"
+        },
+        {
+          "en": "worship",
+          "ipa": "/ˈwɜːrʃɪp/",
+          "type": "v",
+          "vi": "thờ cúng"
+        },
+        {
+          "en": "dynasty",
+          "ipa": "/ˈdaɪnəsti/",
+          "type": "n",
+          "vi": "triều đại"
+        },
+        {
+          "en": "cuisine",
+          "ipa": "/kwɪˈziːn/",
+          "type": "n",
+          "vi": "ẩm thực"
+        },
+        {
+          "en": "ritual",
+          "ipa": "/ˈrɪtʃuəl/",
+          "type": "n",
+          "vi": "nghi thức"
+        },
+        {
+          "en": "survive",
+          "ipa": "/səˈvaɪv/",
+          "type": "v",
+          "vi": "sống sót"
+        },
+        {
+          "en": "behave",
+          "ipa": "/bɪˈheɪv/",
+          "type": "v",
+          "vi": "cư xử"
+        },
+        {
+          "en": "tradition",
+          "ipa": "/trəˈdɪʃn/",
+          "type": "n",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "pass on",
+          "ipa": "/pɑːs ɒn/",
+          "type": "v phr",
+          "vi": "truyền lại, kể lại"
+        }
+      ],
+      "grammar": [
+        "Past continuous tense",
+        "Wish sentences",
+        "Used to"
+      ],
+      "grammar_notes": "1. PAST CONTINUOUS TENSE (Thì quá khứ tiếp diễn)\nCấu trúc: S + was/were + V-ing\nCách dùng:\n- Diễn tả hành động đang xảy ra tại thời điểm xác định trong quá khứ.\n  Ví dụ: At 9.30 yesterday, we were learning English.\n- While + QKTD, QKTD: 2 hành động xảy ra song song.\n  Ví dụ: My mother was cooking while my father was reading.\n- When + QKĐ, QKTD: 1 hành động đang xảy ra thì hành động khác xen vào.\n  Ví dụ: We were having dinner when he came yesterday.\n\n2. WISH SENTENCES (Câu ước)\na) Ước không có thật ở hiện tại: S + wish(es) + S + V2/Ved (be → were)\n  Ví dụ: I wish Ben were here. / I wish I could swim.\nb) Ước không có thật ở quá khứ: S + wish(es) + S + had + V3/Ved\n  Ví dụ: She wishes she hadn't failed her exam.\nc) Ước về tương lai: S + wish(es) + S + would + V\n  Ví dụ: I wish you would stop smoking.\nLưu ý: wish = If only\n\n3. USED TO (Đã từng)\nDùng nói về thói quen trong quá khứ, giờ không còn nữa.\nCấu trúc: S + used to + V\nVí dụ: He used to play football when he was young.\nPhân biệt: be/get used to + V-ing (quen với việc gì)",
+      "exercises": [
+        {
+          "q": "We _____ dinner when he came yesterday.",
+          "opts": [
+            "have",
+            "had",
+            "were having",
+            "are having"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng thì Quá khứ Tiếp diễn (was/were + V-ing) để diễn tả hành động đang xảy ra thì hành động khác xen vào. 'He came' là hành động xen vào, nên 'we were having dinner' là đúng."
+        },
+        {
+          "q": "What does 'ancient' mean?",
+          "opts": [
+            "hiện đại",
+            "cổ, lâu đời",
+            "mới mẻ",
+            "trẻ"
+          ],
+          "ans": 1,
+          "explain": "'Ancient' có nghĩa là 'cổ, lâu đời'. Các từ còn lại như 'hiện đại', 'mới mẻ', 'trẻ' đều trái nghĩa."
+        },
+        {
+          "q": "I wish I _____ fly like a bird.",
+          "opts": [
+            "can",
+            "could",
+            "will",
+            "would"
+          ],
+          "ans": 1,
+          "explain": "Câu ước ở hiện tại về điều không có thật dùng 'wish + S + Quá khứ đơn/tiếp diễn'. 'Can' là hiện tại, nên ta dùng 'could' để diễn tả ước muốn có thể làm gì đó."
+        },
+        {
+          "q": "While they _____ TV, the phone rang.",
+          "opts": [
+            "watch",
+            "watched",
+            "were watching",
+            "are watching"
+          ],
+          "ans": 2,
+          "explain": "Mệnh đề 'while' diễn tả hành động đang xảy ra (Quá khứ Tiếp diễn) thì hành động khác (Quá khứ Đơn) xen vào. 'The phone rang' là quá khứ đơn, nên 'they were watching' là đúng."
+        },
+        {
+          "q": "She wishes she _____ failed her exam last year.",
+          "opts": [
+            "didn't",
+            "doesn't",
+            "hadn't",
+            "hasn't"
+          ],
+          "ans": 2,
+          "explain": "Câu ước ở quá khứ về điều hối tiếc dùng 'wish + S + Quá khứ Hoàn thành (had + V3/ed)'. Vì vậy, 'hadn't failed' là đáp án đúng để diễn tả ước gì đã không trượt."
+        },
+        {
+          "q": "What does 'heritage' mean?",
+          "opts": [
+            "di sản",
+            "lâu đài",
+            "tượng đài",
+            "triều đại"
+          ],
+          "ans": 0,
+          "explain": "'Heritage' có nghĩa là 'di sản', những giá trị được truyền lại từ quá khứ. Các lựa chọn khác như 'lâu đài', 'tượng đài', 'triều đại' không mang nghĩa này."
+        },
+        {
+          "q": "He _____ play football when he was young.",
+          "opts": [
+            "use to",
+            "used to",
+            "uses to",
+            "is used to"
+          ],
+          "ans": 1,
+          "explain": "'Used to + V' dùng để nói về thói quen hoặc hành động đã từng xảy ra trong quá khứ nhưng bây giờ không còn nữa. 'Used to' là dạng đúng, không có 's' và không có 'to' sau 'used'."
+        },
+        {
+          "q": "I wish you _____ stop smoking.",
+          "opts": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "ans": 1,
+          "explain": "Khi bày tỏ mong muốn ai đó làm gì (thường là hơi phàn nàn hoặc muốn thay đổi hành vi), ta dùng 'wish + S + would'. 'Would' là lựa chọn phù hợp nhất ở đây."
+        },
+        {
+          "q": "At 9.30 yesterday, we _____ English.",
+          "opts": [
+            "learn",
+            "learned",
+            "were learning",
+            "have learned"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'At 9.30 yesterday' chỉ một thời điểm cụ thể trong quá khứ, nên ta dùng thì Quá khứ Tiếp diễn (was/were + V-ing) để diễn tả hành động đang diễn ra tại thời điểm đó."
+        },
+        {
+          "q": "What does 'magnificent' mean?",
+          "opts": [
+            "nhỏ bé",
+            "bình thường",
+            "tráng lệ",
+            "đổ nát"
+          ],
+          "ans": 2,
+          "explain": "'Magnificent' có nghĩa là 'tráng lệ, hùng vĩ, tuyệt đẹp'. Các từ như 'nhỏ bé', 'bình thường', 'đổ nát' đều là ý nghĩa trái ngược."
+        },
+        {
+          "q": "Ben isn't here. I wish Ben _____ here.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "be"
+          ],
+          "ans": 2,
+          "explain": "Câu ước ở hiện tại về một điều trái với thực tế dùng 'wish + S + were'. Dù chủ ngữ là 'Ben' (ngôi thứ ba số ít), ta vẫn dùng 'were' trong câu ước."
+        },
+        {
+          "q": "She _____ to cook meals with a gas cooker.",
+          "opts": [
+            "didn't use",
+            "didn't used",
+            "doesn't use",
+            "isn't used"
+          ],
+          "ans": 0,
+          "explain": "Câu này diễn tả một thói quen hoặc sự việc đã từng xảy ra trong quá khứ nhưng bây giờ không còn nữa, dùng cấu trúc 'did not use to + V'. 'Didn't use' là dạng phủ định đúng của 'used to'."
+        },
+        {
+          "q": "My mother was cooking _____ my father was reading.",
+          "opts": [
+            "when",
+            "while",
+            "during",
+            "as soon as"
+          ],
+          "ans": 1,
+          "explain": "'While' dùng để nối hai hành động xảy ra song song cùng lúc trong quá khứ. 'My mother was cooking' và 'my father was reading' là hai hành động diễn ra đồng thời."
+        },
+        {
+          "q": "What does 'worship' mean?",
+          "opts": [
+            "làm việc",
+            "thờ cúng",
+            "ăn mừng",
+            "xây dựng"
+          ],
+          "ans": 1,
+          "explain": "'Worship' có nghĩa là 'thờ cúng', thể hiện sự tôn kính đối với thần linh hoặc một đối tượng thiêng liêng. Các lựa chọn khác không diễn tả đúng nghĩa này."
+        },
+        {
+          "q": "I am _____ to getting up early.",
+          "opts": [
+            "use",
+            "used",
+            "using",
+            "uses"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc 'be used to + V-ing/noun' có nghĩa là 'quen với việc gì đó'. Vì vậy, 'used' là đúng, theo sau là 'getting up'."
+        },
+        {
+          "q": "If only I _____ so fat.",
+          "opts": [
+            "am not",
+            "wasn't",
+            "weren't",
+            "isn't"
+          ],
+          "ans": 2,
+          "explain": "Câu ước ở hiện tại về một điều trái với thực tế dùng 'If only + S + Quá khứ đơn/tiếp diễn'. Với 'I', ta dùng 'weren't' cho câu ước, tương tự như 'wasn't'."
+        },
+        {
+          "q": "What does 'dynasty' mean?",
+          "opts": [
+            "lâu đài",
+            "triều đại",
+            "tượng đài",
+            "di sản"
+          ],
+          "ans": 1,
+          "explain": "'Dynasty' có nghĩa là 'triều đại', một dòng dõi những người cai trị nối tiếp nhau. Các từ như 'lâu đài', 'tượng đài', 'di sản' có nghĩa hoàn toàn khác."
+        },
+        {
+          "q": "He used to _____ in an office.",
+          "opts": [
+            "works",
+            "working",
+            "work",
+            "worked"
+          ],
+          "ans": 2,
+          "explain": "Cấu trúc 'used to + V' diễn tả thói quen trong quá khứ. Động từ theo sau 'used to' phải ở dạng nguyên mẫu không chia (V-infinitive), nên 'work' là đúng."
+        },
+        {
+          "q": "I regret not studying harder. I wish I _____ harder.",
+          "opts": [
+            "study",
+            "studied",
+            "had studied",
+            "would study"
+          ],
+          "ans": 2,
+          "explain": "Câu này diễn tả sự hối tiếc về một hành động trong quá khứ ('not studying harder'). Do đó, ta dùng 'wish + S + Quá khứ Hoàn thành (had + V3/ed)'."
+        },
+        {
+          "q": "What does 'cuisine' mean?",
+          "opts": [
+            "nấu ăn",
+            "ẩm thực",
+            "nguyên liệu",
+            "công thức"
+          ],
+          "ans": 1,
+          "explain": "'Cuisine' có nghĩa là 'ẩm thực', cách thức nấu nướng và các món ăn đặc trưng của một vùng hoặc quốc gia. 'Nấu ăn', 'nguyên liệu', 'công thức' là các khía cạnh khác nhau."
+        }
+      ]
+    },
+    "5": {
+      "title": "Our Experiences",
+      "vocabulary": [
+        {
+          "en": "amazing",
+          "ipa": "/əˈmeɪzɪŋ/",
+          "type": "adj",
+          "vi": "ngạc nhiên, thú vị"
+        },
+        {
+          "en": "army-like",
+          "ipa": "/ˈɑːrmi laɪk/",
+          "type": "adj",
+          "vi": "như trong quân đội"
+        },
+        {
+          "en": "brilliant",
+          "ipa": "/ˈbrɪliənt/",
+          "type": "adj",
+          "vi": "rất ấn tượng, xuất sắc"
+        },
+        {
+          "en": "campus",
+          "ipa": "/ˈkæmpəs/",
+          "type": "n",
+          "vi": "khuôn viên trường học"
+        },
+        {
+          "en": "confidence",
+          "ipa": "/ˈkɑːnfɪdəns/",
+          "type": "n",
+          "vi": "sự tự tin"
+        },
+        {
+          "en": "coral reef",
+          "ipa": "/ˈkɔːrəl riːf/",
+          "type": "n",
+          "vi": "rặng san hô"
+        },
+        {
+          "en": "eco-tour",
+          "ipa": "/ˈiːkəʊ tʊə/",
+          "type": "n",
+          "vi": "du lịch sinh thái"
+        },
+        {
+          "en": "embarrassing",
+          "ipa": "/ɪmˈbærəsɪŋ/",
+          "type": "adj",
+          "vi": "làm bối rối"
+        },
+        {
+          "en": "exhilarating",
+          "ipa": "/ɪɡˈzɪləreɪtɪŋ/",
+          "type": "adj",
+          "vi": "đầy phấn khích"
+        },
+        {
+          "en": "experience",
+          "ipa": "/ɪkˈspɪriəns/",
+          "type": "n",
+          "vi": "sự trải nghiệm"
+        },
+        {
+          "en": "explore",
+          "ipa": "/ɪkˈsplɔːr/",
+          "type": "v",
+          "vi": "khám phá"
+        },
+        {
+          "en": "fauna",
+          "ipa": "/ˈfɔːnə/",
+          "type": "n",
+          "vi": "tất cả động vật của một khu vực"
+        },
+        {
+          "en": "flora",
+          "ipa": "/ˈflɔːrə/",
+          "type": "n",
+          "vi": "tất cả thực vật của một khu vực"
+        },
+        {
+          "en": "lack",
+          "ipa": "/læk/",
+          "type": "v",
+          "vi": "thiếu"
+        },
+        {
+          "en": "learn by rote",
+          "ipa": "/lɜːn baɪ rəʊt/",
+          "type": "phr",
+          "vi": "học vẹt"
+        },
+        {
+          "en": "memorable",
+          "ipa": "/ˈmemərəbl/",
+          "type": "adj",
+          "vi": "đáng nhớ"
+        },
+        {
+          "en": "performance",
+          "ipa": "/pərˈfɔːrməns/",
+          "type": "n",
+          "vi": "sự trình diễn"
+        },
+        {
+          "en": "seabed",
+          "ipa": "/ˈsiːbed/",
+          "type": "n",
+          "vi": "đáy biển"
+        },
+        {
+          "en": "snorkelling",
+          "ipa": "/ˈsnɔːrkəlɪŋ/",
+          "type": "n",
+          "vi": "bơi lặn có ống thở"
+        },
+        {
+          "en": "theme",
+          "ipa": "/θiːm/",
+          "type": "n",
+          "vi": "chủ đề"
+        },
+        {
+          "en": "thrilling",
+          "ipa": "/ˈθrɪlɪŋ/",
+          "type": "adj",
+          "vi": "rất vui, phấn khích"
+        },
+        {
+          "en": "touching",
+          "ipa": "/ˈtʌtʃɪŋ/",
+          "type": "adj",
+          "vi": "gây xúc động"
+        },
+        {
+          "en": "tribal dance",
+          "ipa": "/ˈtraɪbl dɑːns/",
+          "type": "n",
+          "vi": "điệu múa bộ tộc"
+        },
+        {
+          "en": "unpleasant",
+          "ipa": "/ʌnˈpleznt/",
+          "type": "adj",
+          "vi": "không thoải mái"
+        },
+        {
+          "en": "specialities",
+          "ipa": "/ˌspeʃiˈæləti/",
+          "type": "n",
+          "vi": "đặc sản"
+        },
+        {
+          "en": "species",
+          "ipa": "/ˈspiːʃiːz/",
+          "type": "n",
+          "vi": "giống, loài"
+        },
+        {
+          "en": "purpose",
+          "ipa": "/ˈpɜːpəs/",
+          "type": "n",
+          "vi": "mục đích"
+        },
+        {
+          "en": "exhausted",
+          "ipa": "/ɪɡˈzɔːstɪd/",
+          "type": "adj",
+          "vi": "kiệt sức"
+        },
+        {
+          "en": "responsibility",
+          "ipa": "/rɪˌspɒnsəˈbɪləti/",
+          "type": "n",
+          "vi": "trách nhiệm"
+        },
+        {
+          "en": "protect",
+          "ipa": "/prəˈtekt/",
+          "type": "v",
+          "vi": "bảo vệ"
+        },
+        {
+          "en": "prehistoric",
+          "ipa": "/ˌpriːhɪˈstɒrɪk/",
+          "type": "adj",
+          "vi": "tiền sử"
+        },
+        {
+          "en": "attend",
+          "ipa": "/əˈtend/",
+          "type": "v",
+          "vi": "tham gia"
+        },
+        {
+          "en": "put up",
+          "ipa": "/pʊt ʌp/",
+          "type": "v phr",
+          "vi": "dựng lên (lều)"
+        },
+        {
+          "en": "by chance",
+          "ipa": "/baɪ tʃɑːns/",
+          "type": "phr",
+          "vi": "tình cờ"
+        },
+        {
+          "en": "be aware of",
+          "ipa": "/bi əˈweə ɒv/",
+          "type": "phr",
+          "vi": "nhận thức"
+        }
+      ],
+      "grammar": [
+        "Present perfect tense",
+        "Reported speech"
+      ],
+      "grammar_notes": "1. PRESENT PERFECT TENSE (Hiện tại hoàn thành)\nCấu trúc: S + have/has + V3/Ved\nDấu hiệu: already, just, yet, ever, never, since, for, so far, recently, lately\nCách dùng:\n- Hành động đã hoàn tất nhưng không rõ thời gian.\n- Hành động bắt đầu từ quá khứ kéo dài đến hiện tại (since/for).\n- Trải nghiệm: Have you ever visited Ha Long Bay?\n\n2. REPORTED SPEECH (Lời nói gián tiếp)\nQuy tắc chuyển đổi:\n- said → said that, said to sb → told sb\n- Lùi thì: present → past, past → past perfect, will → would\n- Đổi đại từ: I → he/she, you → I/he/she\n- Đổi trạng từ: now → then, today → that day, here → there, this → that\n\nCác loại câu tường thuật đặc biệt:\n- Commands: told/asked sb to-V / not to-V\n- Requests: asked sb to-V\n- Suggestions: suggested + V-ing / suggested that S + (should) + V\n- Promises: promised to-V\n- Warnings: warned sb not to-V / warned sb about + N\n\nVerb + to-infinitive: afford, agree, choose, decide, expect, hope, learn, offer, plan, promise, refuse, want...\nVerb + V-ing: avoid, consider, deny, enjoy, finish, keep, mind, practice, suggest...",
+      "exercises": [
+        {
+          "q": "She _____ to Hoi An twice.",
+          "opts": [
+            "has been",
+            "have been",
+            "was",
+            "went"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. Chủ ngữ \"She\" số ít dùng \"has been\". \"Have been\" dùng cho I/you/we/they. Thì hiện tại hoàn thành diễn tả trải nghiệm."
+        },
+        {
+          "q": "What does 'exhilarating' mean?",
+          "opts": [
+            "buồn chán",
+            "đầy phấn khích",
+            "đáng sợ",
+            "bình thường"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Exhilarating\" nghĩa là đầy phấn khích, hào hứng, thường dùng để mô tả trải nghiệm thú vị."
+        },
+        {
+          "q": "He said he _____ a student.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Trong câu tường thuật, \"am/is\" chuyển thành \"was\". He said (that) he was a student."
+        },
+        {
+          "q": "Have you ever _____ snorkelling?",
+          "opts": [
+            "go",
+            "went",
+            "gone",
+            "going"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Cấu trúc hiện tại hoàn thành: Have/Has + V3 (past participle). \"Gone\" là quá khứ phân từ của \"go\"."
+        },
+        {
+          "q": "She told me that she _____ visit me the next day.",
+          "opts": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Trong câu tường thuật, \"will\" chuyển thành \"would\". \"Tomorrow\" chuyển thành \"the next day\"."
+        },
+        {
+          "q": "What does 'memorable' mean?",
+          "opts": [
+            "dễ quên",
+            "đáng nhớ",
+            "bình thường",
+            "nhàm chán"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Memorable\" nghĩa là đáng nhớ, đáng ghi nhớ, dùng để mô tả kỷ niệm hay trải nghiệm."
+        },
+        {
+          "q": "They _____ lived here since 2010.",
+          "opts": [
+            "has",
+            "have",
+            "had",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Chủ ngữ \"They\" số nhiều nên dùng \"have\". Cấu trúc: have/has + V3 + since + mốc thời gian."
+        },
+        {
+          "q": "He said, 'I am tired.' → He said that he _____ tired.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "am"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Trong câu tường thuật, \"am\" chuyển thành \"was\". \"I am tired\" → He said that he was tired."
+        },
+        {
+          "q": "I have _____ finished my homework.",
+          "opts": [
+            "already",
+            "yet",
+            "never",
+            "ago"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Already\" dùng trong câu khẳng định của thì hiện tại hoàn thành, nghĩa là \"đã rồi\". \"Yet\" dùng trong câu phủ định và nghi vấn."
+        },
+        {
+          "q": "What does 'fauna' mean?",
+          "opts": [
+            "thực vật",
+            "động vật",
+            "san hô",
+            "đáy biển"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Fauna\" nghĩa là hệ động vật, các loài động vật trong một vùng. Đối lập với \"flora\" (thực vật)."
+        },
+        {
+          "q": "She asked me where _____ the tickets.",
+          "opts": [
+            "buy",
+            "buying",
+            "to buy",
+            "bought"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Cấu trúc: ask + O + wh-word + to V. \"She asked me where to buy the tickets\" = hỏi mua vé ở đâu."
+        },
+        {
+          "q": "He suggested _____ to the museum.",
+          "opts": [
+            "go",
+            "going",
+            "to go",
+            "went"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Suggest\" + V-ing (danh động từ). Không dùng \"suggest to V\". He suggested going to the museum."
+        },
+        {
+          "q": "I _____ never seen such a beautiful place.",
+          "opts": [
+            "has",
+            "have",
+            "had",
+            "am"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Chủ ngữ \"I\" dùng \"have\" trong thì hiện tại hoàn thành. Cấu trúc: I have never + V3."
+        },
+        {
+          "q": "What does 'coral reef' mean?",
+          "opts": [
+            "đáy biển",
+            "rặng san hô",
+            "bờ biển",
+            "hòn đảo"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Coral reef\" nghĩa là rặng san hô, hệ sinh thái dưới biển quan trọng."
+        },
+        {
+          "q": "He promised _____ me with the project.",
+          "opts": [
+            "help",
+            "helping",
+            "to help",
+            "helped"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Promise\" + to V (nguyên thể). He promised to help me = Anh ấy hứa giúp tôi."
+        },
+        {
+          "q": "She said, 'I will come tomorrow.' → She said she _____ come the next day.",
+          "opts": [
+            "will",
+            "would",
+            "shall",
+            "can"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Trong câu tường thuật: \"will\" → \"would\", \"tomorrow\" → \"the next day\"."
+        },
+        {
+          "q": "What does 'flora' mean?",
+          "opts": [
+            "động vật",
+            "thực vật",
+            "khoáng vật",
+            "sinh vật biển"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Flora\" nghĩa là hệ thực vật, các loài thực vật trong một vùng. Đối lập với \"fauna\" (động vật)."
+        },
+        {
+          "q": "He denied _____ the window.",
+          "opts": [
+            "break",
+            "breaking",
+            "to break",
+            "broke"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Deny\" + V-ing. He denied breaking the window = Anh ấy phủ nhận việc đập vỡ cửa sổ."
+        },
+        {
+          "q": "How long _____ you lived here?",
+          "opts": [
+            "do",
+            "did",
+            "have",
+            "are"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Câu hỏi thì hiện tại hoàn thành: How long + have/has + S + V3? Dùng \"have\" cho chủ ngữ \"you\"."
+        },
+        {
+          "q": "The teacher warned us not _____ late.",
+          "opts": [
+            "be",
+            "to be",
+            "being",
+            "been"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Warn + O + not to V\" = cảnh báo ai không làm gì. The teacher warned us not to be late."
+        }
+      ]
+    },
+    "6": {
+      "title": "Vietnamese Lifestyle: Then and Now",
+      "vocabulary": [
+        {
+          "en": "democratic",
+          "ipa": "/ˌdeməˈkrætɪk/",
+          "type": "adj",
+          "vi": "thuộc dân chủ"
+        },
+        {
+          "en": "dependent",
+          "ipa": "/dɪˈpendənt/",
+          "type": "adj",
+          "vi": "lệ thuộc vào"
+        },
+        {
+          "en": "dye",
+          "ipa": "/daɪ/",
+          "type": "v",
+          "vi": "nhuộm"
+        },
+        {
+          "en": "extended family",
+          "ipa": "/ɪkˈstendɪd ˈfæməli/",
+          "type": "n",
+          "vi": "gia đình nhiều thế hệ"
+        },
+        {
+          "en": "family-oriented",
+          "ipa": "/ˌfæməli ˈɔːrientɪd/",
+          "type": "adj",
+          "vi": "hướng về gia đình"
+        },
+        {
+          "en": "gap",
+          "ipa": "/ɡæp/",
+          "type": "n",
+          "vi": "khoảng cách"
+        },
+        {
+          "en": "generation",
+          "ipa": "/ˌdʒenəˈreɪʃn/",
+          "type": "n",
+          "vi": "thế hệ"
+        },
+        {
+          "en": "household",
+          "ipa": "/ˈhaʊshəʊld/",
+          "type": "n",
+          "vi": "hộ gia đình"
+        },
+        {
+          "en": "lifestyle",
+          "ipa": "/ˈlaɪfstaɪl/",
+          "type": "n",
+          "vi": "lối sống"
+        },
+        {
+          "en": "memorize",
+          "ipa": "/ˈmeməraɪz/",
+          "type": "v",
+          "vi": "ghi nhớ"
+        },
+        {
+          "en": "monk",
+          "ipa": "/mʌŋk/",
+          "type": "n",
+          "vi": "nhà sư"
+        },
+        {
+          "en": "nuclear family",
+          "ipa": "/ˈnuːkliər ˈfæməli/",
+          "type": "n",
+          "vi": "gia đình hạt nhân"
+        },
+        {
+          "en": "opportunity",
+          "ipa": "/ˌɑːpərˈtuːnəti/",
+          "type": "n",
+          "vi": "cơ hội"
+        },
+        {
+          "en": "popularity",
+          "ipa": "/ˌpɑːpjuˈlærəti/",
+          "type": "n",
+          "vi": "sự phổ biến"
+        },
+        {
+          "en": "privacy",
+          "ipa": "/ˈpraɪvəsi/",
+          "type": "n",
+          "vi": "sự riêng tư"
+        },
+        {
+          "en": "promise",
+          "ipa": "/ˈprɑːmɪs/",
+          "type": "n/v",
+          "vi": "lời hứa"
+        },
+        {
+          "en": "pursue",
+          "ipa": "/pərˈsuː/",
+          "type": "v",
+          "vi": "theo đuổi"
+        },
+        {
+          "en": "replace",
+          "ipa": "/rɪˈpleɪs/",
+          "type": "v",
+          "vi": "thay thế"
+        },
+        {
+          "en": "take notes",
+          "ipa": "/teɪk nəʊts/",
+          "type": "v phr",
+          "vi": "ghi chép"
+        },
+        {
+          "en": "trend",
+          "ipa": "/trend/",
+          "type": "n",
+          "vi": "xu hướng"
+        },
+        {
+          "en": "western",
+          "ipa": "/ˈwestərn/",
+          "type": "adj",
+          "vi": "thuộc phương tây"
+        },
+        {
+          "en": "material",
+          "ipa": "/məˈtɪriəl/",
+          "type": "n",
+          "vi": "nguyên liệu"
+        },
+        {
+          "en": "support",
+          "ipa": "/səˈpɔːrt/",
+          "type": "v",
+          "vi": "ủng hộ"
+        },
+        {
+          "en": "living standard",
+          "ipa": "/ˈlɪvɪŋ ˈstændərd/",
+          "type": "n",
+          "vi": "mức sống"
+        },
+        {
+          "en": "independent",
+          "ipa": "/ˌɪndɪˈpendənt/",
+          "type": "adj",
+          "vi": "độc lập"
+        },
+        {
+          "en": "freedom",
+          "ipa": "/ˈfriːdəm/",
+          "type": "n",
+          "vi": "tự do"
+        },
+        {
+          "en": "generation gap",
+          "ipa": "/ˌdʒenəˈreɪʃn ɡæp/",
+          "type": "n",
+          "vi": "khoảng cách thế hệ"
+        },
+        {
+          "en": "achieve",
+          "ipa": "/əˈtʃiːv/",
+          "type": "v",
+          "vi": "đạt được"
+        },
+        {
+          "en": "unique",
+          "ipa": "/juˈniːk/",
+          "type": "adj",
+          "vi": "duy nhất"
+        },
+        {
+          "en": "conflict",
+          "ipa": "/ˈkɒnflɪkt/",
+          "type": "n",
+          "vi": "xung đột"
+        },
+        {
+          "en": "reflect",
+          "ipa": "/rɪˈflekt/",
+          "type": "v",
+          "vi": "phản chiếu"
+        },
+        {
+          "en": "influence",
+          "ipa": "/ˈɪnfluəns/",
+          "type": "v",
+          "vi": "ảnh hưởng"
+        },
+        {
+          "en": "value",
+          "ipa": "/ˈvæljuː/",
+          "type": "n",
+          "vi": "giá trị"
+        },
+        {
+          "en": "exhibition",
+          "ipa": "/ˌeksɪˈbɪʃn/",
+          "type": "n",
+          "vi": "triển lãm"
+        },
+        {
+          "en": "respect",
+          "ipa": "/rɪˈspekt/",
+          "type": "v",
+          "vi": "tôn trọng"
+        }
+      ],
+      "grammar": [
+        "Verbs + to-infinitive / V-ing",
+        "Sentence patterns with adjectives",
+        "Articles"
+      ],
+      "grammar_notes": "1. VERBS + TO-INFINITIVE\nCác động từ theo sau bởi to-V: afford, agree, appear, arrange, attempt, choose, decide, expect, fail, hope, learn, manage, offer, plan, prepare, pretend, promise, refuse, seem, tend, want, wish...\nVí dụ: She decided to study abroad.\n\n2. VERBS + V-ING\nCác động từ theo sau bởi V-ing: admit, avoid, consider, delay, deny, enjoy, finish, imagine, keep, mind, miss, practice, quit, suggest...\nVí dụ: He enjoys playing football.\n\nCấu trúc + V-ing: be busy, be worth, can't help, can't stand, feel like, go + V-ing (go shopping, go swimming...)\n\n3. SENTENCE PATTERNS WITH ADJECTIVES\n- It + be + adj + to-V: It is difficult to learn English.\n- S + be + adj + to-V: English is difficult to learn.\n- S + be + adj + that clause: I am happy that you passed.\n\n4. ARTICLES (Mạo từ)\n- THE: dùng khi danh từ xác định, duy nhất (the sun), đã đề cập trước đó, có mệnh đề quan hệ xác định.\n- Zero article (không dùng mạo từ): danh từ chung số nhiều/không đếm được mang nghĩa chung, tên người/địa danh, môn học, bữa ăn.",
+      "exercises": [
+        {
+          "q": "She decided _____ abroad for further education.",
+          "opts": [
+            "study",
+            "studying",
+            "to study",
+            "studied"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Decide\" + to V (nguyên thể). She decided to study abroad = Cô ấy quyết định đi du học."
+        },
+        {
+          "q": "What does 'generation gap' mean?",
+          "opts": [
+            "khoảng cách thế hệ",
+            "gia đình lớn",
+            "mức sống",
+            "lối sống"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Generation gap\" nghĩa là khoảng cách thế hệ, sự khác biệt quan điểm giữa các thế hệ."
+        },
+        {
+          "q": "He enjoys _____ football with his friends.",
+          "opts": [
+            "play",
+            "to play",
+            "playing",
+            "played"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Enjoy\" + V-ing (danh động từ). He enjoys playing football. Không dùng \"enjoy to V\"."
+        },
+        {
+          "q": "It is difficult _____ a foreign language.",
+          "opts": [
+            "learn",
+            "learning",
+            "to learn",
+            "learned"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Cấu trúc: It is + adj + to V. \"It is difficult to learn\" = Thật khó để học."
+        },
+        {
+          "q": "What does 'nuclear family' mean?",
+          "opts": [
+            "gia đình nhiều thế hệ",
+            "gia đình hạt nhân",
+            "gia đình đơn thân",
+            "gia đình lớn"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Nuclear family\" nghĩa là gia đình hạt nhân, chỉ gồm bố mẹ và con cái."
+        },
+        {
+          "q": "She avoids _____ fast food.",
+          "opts": [
+            "eat",
+            "to eat",
+            "eating",
+            "ate"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Avoid\" + V-ing. She avoids eating fast food. Không dùng \"avoid to V\"."
+        },
+        {
+          "q": "They promised _____ us with the project.",
+          "opts": [
+            "help",
+            "helping",
+            "to help",
+            "helped"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Promise\" + to V. They promised to help us = Họ hứa giúp chúng tôi."
+        },
+        {
+          "q": "What does 'pursue' mean?",
+          "opts": [
+            "từ bỏ",
+            "theo đuổi",
+            "thay thế",
+            "ghi nhớ"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Pursue\" nghĩa là theo đuổi, tiếp tục làm gì đó với quyết tâm."
+        },
+        {
+          "q": "She suggested _____ to the museum on Sunday.",
+          "opts": [
+            "go",
+            "to go",
+            "going",
+            "went"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Suggest\" + V-ing. She suggested going to the museum. Không dùng \"suggest to V\"."
+        },
+        {
+          "q": "_____ sun rises in _____ east.",
+          "opts": [
+            "The / the",
+            "A / an",
+            "The / a",
+            "- / -"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. Dùng \"the\" trước danh từ chỉ sự vật duy nhất (mặt trời) và phương hướng. The sun rises in the east."
+        },
+        {
+          "q": "He can't help _____ when he watches comedy.",
+          "opts": [
+            "laugh",
+            "to laugh",
+            "laughing",
+            "laughed"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Can't help\" + V-ing = không thể nhịn được. He can't help laughing = không nhịn được cười."
+        },
+        {
+          "q": "What does 'privacy' mean?",
+          "opts": [
+            "sự công khai",
+            "sự riêng tư",
+            "sự phổ biến",
+            "sự dân chủ"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Privacy\" nghĩa là sự riêng tư, quyền được giữ bí mật cá nhân."
+        },
+        {
+          "q": "I am happy _____ you passed the exam.",
+          "opts": [
+            "that",
+            "what",
+            "which",
+            "who"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. Cấu trúc: S + be + adj + that + clause. \"I am happy that you passed\" = Tôi vui vì bạn đỗ."
+        },
+        {
+          "q": "She refused _____ the invitation.",
+          "opts": [
+            "accept",
+            "accepting",
+            "to accept",
+            "accepted"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Refuse\" + to V. She refused to accept the invitation = Cô ấy từ chối nhận lời mời."
+        },
+        {
+          "q": "What does 'memorize' mean?",
+          "opts": [
+            "quên",
+            "ghi nhớ",
+            "viết",
+            "đọc"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Memorize\" nghĩa là ghi nhớ, học thuộc lòng."
+        },
+        {
+          "q": "They go _____ every Sunday morning.",
+          "opts": [
+            "swim",
+            "to swim",
+            "swimming",
+            "swam"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Go\" + V-ing cho hoạt động thể thao/giải trí. Go swimming = đi bơi."
+        },
+        {
+          "q": "English is worth _____.",
+          "opts": [
+            "learn",
+            "to learn",
+            "learning",
+            "learned"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Cấu trúc: be worth + V-ing. English is worth learning = Tiếng Anh đáng để học."
+        },
+        {
+          "q": "He finished _____ his homework before dinner.",
+          "opts": [
+            "do",
+            "to do",
+            "doing",
+            "did"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Finish\" + V-ing. He finished doing his homework. Không dùng \"finish to V\"."
+        },
+        {
+          "q": "What does 'extended family' mean?",
+          "opts": [
+            "gia đình nhỏ",
+            "gia đình nhiều thế hệ",
+            "gia đình đơn thân",
+            "gia đình hạt nhân"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Extended family\" nghĩa là gia đình nhiều thế hệ, gồm ông bà, cô chú và các thành viên khác."
+        },
+        {
+          "q": "She tends _____ up late on weekends.",
+          "opts": [
+            "stay",
+            "staying",
+            "to stay",
+            "stayed"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Tend\" + to V. She tends to stay up late = Cô ấy có xu hướng thức khuya."
+        }
+      ]
+    },
+    "7": {
+      "title": "Natural Wonders of the World",
+      "vocabulary": [
+        {
+          "en": "access",
+          "ipa": "/ˈækses/",
+          "type": "n",
+          "vi": "tiếp cận, đến được"
+        },
+        {
+          "en": "annual",
+          "ipa": "/ˈænjuəl/",
+          "type": "adj",
+          "vi": "hằng năm"
+        },
+        {
+          "en": "biodiversity",
+          "ipa": "/ˌbaɪəʊdaɪˈvɜːsəti/",
+          "type": "n",
+          "vi": "đa dạng sinh học"
+        },
+        {
+          "en": "coral",
+          "ipa": "/ˈkɒrəl/",
+          "type": "n",
+          "vi": "san hô"
+        },
+        {
+          "en": "crazy about",
+          "ipa": "/ˈkreɪzi əˈbaʊt/",
+          "type": "phr",
+          "vi": "thích mê"
+        },
+        {
+          "en": "destination",
+          "ipa": "/ˌdestɪˈneɪʃn/",
+          "type": "n",
+          "vi": "điểm đến"
+        },
+        {
+          "en": "ecosystem",
+          "ipa": "/ˈiːkəʊsɪstəm/",
+          "type": "n",
+          "vi": "hệ sinh thái"
+        },
+        {
+          "en": "feature",
+          "ipa": "/ˈfiːtʃə/",
+          "type": "n",
+          "vi": "đặc điểm"
+        },
+        {
+          "en": "locate",
+          "ipa": "/ləʊˈkeɪt/",
+          "type": "v",
+          "vi": "định vị, đặt ở"
+        },
+        {
+          "en": "location",
+          "ipa": "/ləʊˈkeɪʃn/",
+          "type": "n",
+          "vi": "địa điểm"
+        },
+        {
+          "en": "majestic",
+          "ipa": "/məˈdʒestɪk/",
+          "type": "adj",
+          "vi": "uy nghi, tráng lệ"
+        },
+        {
+          "en": "occur",
+          "ipa": "/əˈkɜː/",
+          "type": "v",
+          "vi": "xảy ra"
+        },
+        {
+          "en": "paradise",
+          "ipa": "/ˈpærədaɪs/",
+          "type": "n",
+          "vi": "thiên đường"
+        },
+        {
+          "en": "peak",
+          "ipa": "/piːk/",
+          "type": "n",
+          "vi": "đỉnh, đỉnh núi"
+        },
+        {
+          "en": "permission",
+          "ipa": "/pəˈmɪʃn/",
+          "type": "n",
+          "vi": "sự cho phép"
+        },
+        {
+          "en": "permit",
+          "ipa": "/pəˈmɪt/",
+          "type": "v",
+          "vi": "cho phép"
+        },
+        {
+          "en": "possess",
+          "ipa": "/pəˈzes/",
+          "type": "v",
+          "vi": "có, sở hữu"
+        },
+        {
+          "en": "support",
+          "ipa": "/səˈpɔːt/",
+          "type": "v",
+          "vi": "ủng hộ, giúp đỡ"
+        },
+        {
+          "en": "sustainable",
+          "ipa": "/səˈsteɪnəbl/",
+          "type": "adj",
+          "vi": "bền vững"
+        },
+        {
+          "en": "travel destination",
+          "ipa": "/ˈtrævl ˌdestɪˈneɪʃn/",
+          "type": "n",
+          "vi": "điểm đến du lịch"
+        },
+        {
+          "en": "urgent",
+          "ipa": "/ˈɜːdʒənt/",
+          "type": "adj",
+          "vi": "gấp, cấp bách"
+        },
+        {
+          "en": "landscape",
+          "ipa": "/ˈlændskeɪp/",
+          "type": "n",
+          "vi": "phong cảnh"
+        },
+        {
+          "en": "territory",
+          "ipa": "/ˈterətɔːri/",
+          "type": "n",
+          "vi": "lãnh thổ"
+        },
+        {
+          "en": "diverse",
+          "ipa": "/daɪˈvɜːs/",
+          "type": "adj",
+          "vi": "đa dạng"
+        },
+        {
+          "en": "extinction",
+          "ipa": "/ɪkˈstɪŋkʃn/",
+          "type": "n",
+          "vi": "sự tuyệt chủng"
+        },
+        {
+          "en": "endangered species",
+          "ipa": "/ɪnˈdeɪndʒəd ˈspiːʃiːz/",
+          "type": "n",
+          "vi": "loài có nguy cơ tuyệt chủng"
+        },
+        {
+          "en": "dramatic",
+          "ipa": "/drəˈmætɪk/",
+          "type": "adj",
+          "vi": "ấn tượng, kịch tính"
+        },
+        {
+          "en": "magnificent",
+          "ipa": "/mæɡˈnɪfɪsnt/",
+          "type": "adj",
+          "vi": "tráng lệ"
+        },
+        {
+          "en": "explore",
+          "ipa": "/ɪkˈsplɔːr/",
+          "type": "v",
+          "vi": "khám phá"
+        },
+        {
+          "en": "possession",
+          "ipa": "/pəˈzeʃn/",
+          "type": "n",
+          "vi": "sở hữu"
+        },
+        {
+          "en": "supporter",
+          "ipa": "/səˈpɔːtə/",
+          "type": "n",
+          "vi": "nhà tài trợ"
+        },
+        {
+          "en": "coral reef",
+          "ipa": "/ˈkɒrəl riːf/",
+          "type": "n",
+          "vi": "rặng san hô"
+        },
+        {
+          "en": "preserve",
+          "ipa": "/prɪˈzɜːv/",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "species",
+          "ipa": "/ˈspiːʃiːz/",
+          "type": "n",
+          "vi": "loài"
+        },
+        {
+          "en": "protect",
+          "ipa": "/prəˈtekt/",
+          "type": "v",
+          "vi": "bảo vệ"
+        }
+      ],
+      "grammar": [
+        "Reported speech (full review)"
+      ],
+      "grammar_notes": "REPORTED SPEECH (Câu tường thuật - Ôn tập tổng hợp)\n\n1. Thay đổi động từ tường thuật:\n- said → said that\n- said to sb → told sb\n\n2. Lùi thì:\n- Simple present → Simple past\n- Present continuous → Past continuous\n- Present perfect → Past perfect\n- Simple past → Past perfect\n- will → would, can → could, may → might, must → had to\n\n3. Đổi đại từ: I → he/she, we → they, you → I/he/she/they\n\n4. Đổi trạng từ:\n- this → that, these → those, now → then\n- today → that day, yesterday → the day before\n- tomorrow → the next day, here → there\n- ago → before, last → the previous\n\n5. Các dạng đặc biệt:\na) Với to-infinitive: promised/agreed/offered/refused/threatened/warned/reminded/encouraged/invited to-V\nb) Với V-ing: admitted/denied/apologized for/accused sb of/congratulated sb on/insisted on/suggested/thanked sb for + V-ing\nc) Câu hỏi: asked if/whether (Yes/No), asked + wh-word\nd) Mệnh lệnh: told/asked/ordered sb to-V / not to-V",
+      "exercises": [
+        {
+          "q": "He said, 'I like my job.' → He said that he _____ his job.",
+          "opts": [
+            "like",
+            "likes",
+            "liked",
+            "liking"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Câu tường thuật: \"like\" lùi thì thành \"liked\". He said that he liked his job."
+        },
+        {
+          "q": "What does 'biodiversity' mean?",
+          "opts": [
+            "đa dạng sinh học",
+            "hệ sinh thái",
+            "sự bảo tồn",
+            "sự tuyệt chủng"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Biodiversity\" nghĩa là đa dạng sinh học, sự phong phú của các loài sinh vật."
+        },
+        {
+          "q": "She said, 'I am studying.' → She said she _____ studying.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "has been"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu tường thuật: \"am\" lùi thì thành \"was\". She said she was studying."
+        },
+        {
+          "q": "He said to me, 'I will come tomorrow.' → He told me he _____ come _____.",
+          "opts": [
+            "will / tomorrow",
+            "would / the next day",
+            "will / the next day",
+            "would / tomorrow"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu tường thuật: \"will\" → \"would\", \"tomorrow\" → \"the next day\"."
+        },
+        {
+          "q": "What does 'sustainable' mean?",
+          "opts": [
+            "tạm thời",
+            "bền vững",
+            "gấp",
+            "đa dạng"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Sustainable\" nghĩa là bền vững, có thể duy trì lâu dài mà không gây hại môi trường."
+        },
+        {
+          "q": "'I can swim,' she said. → She said she _____ swim.",
+          "opts": [
+            "can",
+            "could",
+            "may",
+            "might"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu tường thuật: \"can\" lùi thì thành \"could\". She said she could swim."
+        },
+        {
+          "q": "She asked me _____ I liked music.",
+          "opts": [
+            "that",
+            "what",
+            "if",
+            "do"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Câu hỏi Yes/No tường thuật dùng \"if\" hoặc \"whether\". She asked me if I liked music."
+        },
+        {
+          "q": "What does 'majestic' mean?",
+          "opts": [
+            "nhỏ bé",
+            "tráng lệ",
+            "bình thường",
+            "cổ kính"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Majestic\" nghĩa là tráng lệ, hùng vĩ, thường dùng mô tả cảnh thiên nhiên."
+        },
+        {
+          "q": "'Don't be late!' → The teacher told us _____ late.",
+          "opts": [
+            "don't be",
+            "not to be",
+            "not being",
+            "to not be"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu mệnh lệnh tường thuật: told + O + not to V. The teacher told us not to be late."
+        },
+        {
+          "q": "He promised _____ me with my homework.",
+          "opts": [
+            "help",
+            "helping",
+            "to help",
+            "helped"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Promise\" + to V. He promised to help me with my homework."
+        },
+        {
+          "q": "What does 'ecosystem' mean?",
+          "opts": [
+            "hệ sinh thái",
+            "san hô",
+            "đỉnh núi",
+            "thiên đường"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Ecosystem\" nghĩa là hệ sinh thái, bao gồm các sinh vật và môi trường sống của chúng."
+        },
+        {
+          "q": "'Where do you live?' → She asked me where I _____.",
+          "opts": [
+            "live",
+            "lived",
+            "living",
+            "lives"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu hỏi Wh- tường thuật: lùi thì \"live\" → \"lived\". She asked me where I lived."
+        },
+        {
+          "q": "He denied _____ the money.",
+          "opts": [
+            "steal",
+            "to steal",
+            "stealing",
+            "stolen"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Deny\" + V-ing. He denied stealing the money = Anh ấy phủ nhận ăn cắp tiền."
+        },
+        {
+          "q": "What does 'paradise' mean?",
+          "opts": [
+            "sa mạc",
+            "thiên đường",
+            "đại dương",
+            "rừng"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Paradise\" nghĩa là thiên đường, nơi tuyệt đẹp."
+        },
+        {
+          "q": "She apologized _____ being late.",
+          "opts": [
+            "to",
+            "for",
+            "about",
+            "of"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Apologize for\" + V-ing/N. She apologized for being late = Cô ấy xin lỗi vì đến muộn."
+        },
+        {
+          "q": "'Have you been there?' → He asked _____ I had been there.",
+          "opts": [
+            "that",
+            "what",
+            "if",
+            "when"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Câu hỏi Yes/No tường thuật dùng \"if/whether\". He asked if I had been there."
+        },
+        {
+          "q": "What does 'endangered species' mean?",
+          "opts": [
+            "loài phổ biến",
+            "loài tuyệt chủng",
+            "loài nguy cơ tuyệt chủng",
+            "loài mới"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Endangered species\" nghĩa là loài có nguy cơ tuyệt chủng, cần được bảo vệ."
+        },
+        {
+          "q": "The teacher reminded us _____ our homework.",
+          "opts": [
+            "do",
+            "doing",
+            "to do",
+            "did"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Remind + O + to V\". The teacher reminded us to do our homework."
+        },
+        {
+          "q": "She congratulated me _____ passing the exam.",
+          "opts": [
+            "for",
+            "on",
+            "about",
+            "to"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Congratulate + O + on\" + V-ing/N. She congratulated me on passing the exam."
+        },
+        {
+          "q": "He insisted _____ paying for the meal.",
+          "opts": [
+            "to",
+            "for",
+            "on",
+            "about"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Insist on\" + V-ing/N. He insisted on paying for the meal = Anh ấy khăng khăng trả tiền."
+        }
+      ]
+    },
+    "8": {
+      "title": "Tourism",
+      "vocabulary": [
+        {
+          "en": "agency",
+          "ipa": "/ˈeɪdʒənsi/",
+          "type": "n",
+          "vi": "hãng (du lịch)"
+        },
+        {
+          "en": "agent",
+          "ipa": "/ˈeɪdʒənt/",
+          "type": "n",
+          "vi": "nhân viên hãng"
+        },
+        {
+          "en": "brochure",
+          "ipa": "/ˈbrəʊʃə/",
+          "type": "n",
+          "vi": "quyển quảng cáo du lịch"
+        },
+        {
+          "en": "domestic tourism",
+          "ipa": "/dəˈmestɪk tʊərɪzəm/",
+          "type": "n",
+          "vi": "du lịch trong nước"
+        },
+        {
+          "en": "estimate",
+          "ipa": "/ˈestɪmeɪt/",
+          "type": "v",
+          "vi": "ước tính"
+        },
+        {
+          "en": "fixed",
+          "ipa": "/fɪkst/",
+          "type": "adj",
+          "vi": "cố định"
+        },
+        {
+          "en": "food tourism",
+          "ipa": "/fuːd ˈtʊərɪzəm/",
+          "type": "n",
+          "vi": "du lịch ẩm thực"
+        },
+        {
+          "en": "graveyard",
+          "ipa": "/ˈɡreɪvjɑːd/",
+          "type": "n",
+          "vi": "nghĩa địa"
+        },
+        {
+          "en": "holidaymaker",
+          "ipa": "/ˈhɒlədeɪmeɪkə/",
+          "type": "n",
+          "vi": "người đi nghỉ"
+        },
+        {
+          "en": "homestay",
+          "ipa": "/ˈhəʊmsteɪ/",
+          "type": "n",
+          "vi": "nhà trọ"
+        },
+        {
+          "en": "hop-on hop-off",
+          "ipa": "/hɒp ɒn hɒp ɒf/",
+          "type": "n",
+          "vi": "tour bằng xe buýt"
+        },
+        {
+          "en": "hunt",
+          "ipa": "/hʌnt/",
+          "type": "v",
+          "vi": "săn tìm"
+        },
+        {
+          "en": "itinerary",
+          "ipa": "/aɪˈtɪnərəri/",
+          "type": "n",
+          "vi": "lịch trình"
+        },
+        {
+          "en": "loft",
+          "ipa": "/lɒft/",
+          "type": "n",
+          "vi": "gác mái"
+        },
+        {
+          "en": "low season",
+          "ipa": "/ˈləʊ siːzn/",
+          "type": "n",
+          "vi": "mùa du lịch vắng khách"
+        },
+        {
+          "en": "package holiday",
+          "ipa": "/ˈpækɪdʒ hɒlədeɪ/",
+          "type": "n",
+          "vi": "kỳ nghỉ trọn gói"
+        },
+        {
+          "en": "ruinous",
+          "ipa": "/ˈruːɪnəs/",
+          "type": "adj",
+          "vi": "đổ nát"
+        },
+        {
+          "en": "self-guided",
+          "ipa": "/self ˈɡaɪdɪd/",
+          "type": "adj",
+          "vi": "tự tổ chức"
+        },
+        {
+          "en": "shopping tourism",
+          "ipa": "/ˈʃɒpɪŋ ˈtʊərɪzəm/",
+          "type": "n",
+          "vi": "du lịch mua sắm"
+        },
+        {
+          "en": "smooth",
+          "ipa": "/smuːð/",
+          "type": "adj",
+          "vi": "trôi chảy"
+        },
+        {
+          "en": "wander",
+          "ipa": "/ˈwɒndə/",
+          "type": "v",
+          "vi": "dạo chơi"
+        },
+        {
+          "en": "world-famous",
+          "ipa": "/ˌwɜːld ˈfeɪməs/",
+          "type": "adj",
+          "vi": "nổi tiếng thế giới"
+        },
+        {
+          "en": "work out",
+          "ipa": "/wɜːk aʊt/",
+          "type": "v phr",
+          "vi": "soạn thảo, lên kế hoạch"
+        },
+        {
+          "en": "peak season",
+          "ipa": "/piːk ˈsiːzn/",
+          "type": "n",
+          "vi": "mùa cao điểm"
+        },
+        {
+          "en": "online application",
+          "ipa": "/ˌɒnˈlaɪn ˌæplɪˈkeɪʃn/",
+          "type": "n",
+          "vi": "ứng dụng trên mạng"
+        },
+        {
+          "en": "carbon footprint",
+          "ipa": "/ˈkɑːbən ˈfʊtprɪnt/",
+          "type": "n",
+          "vi": "dấu chân carbon"
+        },
+        {
+          "en": "endangered",
+          "ipa": "/ɪnˈdeɪndʒəd/",
+          "type": "adj",
+          "vi": "có nguy cơ tuyệt chủng"
+        },
+        {
+          "en": "habitat",
+          "ipa": "/ˈhæbɪtæt/",
+          "type": "n",
+          "vi": "nơi ở"
+        },
+        {
+          "en": "oxygen",
+          "ipa": "/ˈɒksɪdʒən/",
+          "type": "n",
+          "vi": "khí ôxy"
+        },
+        {
+          "en": "toxic",
+          "ipa": "/ˈtɒksɪk/",
+          "type": "adj",
+          "vi": "độc hại"
+        },
+        {
+          "en": "single-use",
+          "ipa": "/ˌsɪŋɡl ˈjuːs/",
+          "type": "adj",
+          "vi": "sử dụng một lần"
+        },
+        {
+          "en": "absorb",
+          "ipa": "/əbˈzɔːb/",
+          "type": "v",
+          "vi": "hấp thụ"
+        },
+        {
+          "en": "wildlife",
+          "ipa": "/ˈwaɪldlaɪf/",
+          "type": "n",
+          "vi": "cuộc sống hoang dã"
+        },
+        {
+          "en": "global warming",
+          "ipa": "/ˌɡləʊbl ˈwɔːmɪŋ/",
+          "type": "n",
+          "vi": "sự nóng lên toàn cầu"
+        },
+        {
+          "en": "consumption",
+          "ipa": "/kənˈsʌmpʃn/",
+          "type": "n",
+          "vi": "sự tiêu thụ"
+        }
+      ],
+      "grammar": [
+        "Relative clauses"
+      ],
+      "grammar_notes": "RELATIVE CLAUSES (Mệnh đề quan hệ)\n\n1. Mệnh đề quan hệ xác định (Defining):\n- Cần thiết cho nghĩa câu, không có dấu phẩy.\n\n2. Mệnh đề quan hệ không xác định (Non-defining):\n- Cung cấp thêm thông tin, có dấu phẩy, có thể bỏ.\n- Dùng khi: danh từ riêng, có this/that/these/those, có TTSH.\n\n3. Đại từ quan hệ:\n- WHO: thay cho người (chủ ngữ)\n- WHOM: thay cho người (tân ngữ)\n- WHICH: thay cho vật\n- THAT: thay cho cả người và vật (chỉ trong mệnh đề xác định)\n- WHOSE: sở hữu (thay cho his, her, its, their)\n\n4. Trạng từ quan hệ:\n- WHERE: thay cho nơi chốn (in/at which)\n- WHEN: thay cho thời gian (in/on/at which)\n- WHY: thay cho lý do (for which)\n\n5. Rút gọn mệnh đề quan hệ:\n- Chủ động: V-ing (The man standing there is my teacher)\n- Bị động: V3/ed (The book written by him is interesting)\n- To-infinitive (The first person to arrive...)",
+      "exercises": [
+        {
+          "q": "The man _____ is standing there is my teacher.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Who\" thay thế cho danh từ chỉ người làm chủ ngữ. The man who is standing there..."
+        },
+        {
+          "q": "What does 'itinerary' mean?",
+          "opts": [
+            "vé máy bay",
+            "lịch trình",
+            "khách sạn",
+            "hãng du lịch"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Itinerary\" nghĩa là lịch trình, kế hoạch chi tiết cho chuyến đi."
+        },
+        {
+          "q": "The book _____ I bought yesterday is interesting.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Which\" thay thế cho danh từ chỉ vật. The book which I bought yesterday..."
+        },
+        {
+          "q": "Ha Long Bay, _____ is in Vietnam, is a UNESCO site.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "where"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Mệnh đề quan hệ không xác định (có dấu phẩy) không dùng \"that\", phải dùng \"which\" cho vật."
+        },
+        {
+          "q": "What does 'package holiday' mean?",
+          "opts": [
+            "du lịch mạo hiểm",
+            "kỳ nghỉ trọn gói",
+            "du lịch trong nước",
+            "du lịch ẩm thực"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Package holiday\" nghĩa là kỳ nghỉ trọn gói, bao gồm vé, khách sạn và các dịch vụ."
+        },
+        {
+          "q": "The girl _____ father is a doctor is my friend.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. \"Whose\" dùng để chỉ sở hữu. The girl whose father is a doctor = Cô gái mà bố cô ấy là bác sĩ."
+        },
+        {
+          "q": "This is the place _____ we first met.",
+          "opts": [
+            "which",
+            "that",
+            "where",
+            "when"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Where\" thay thế cho danh từ chỉ nơi chốn. This is the place where we first met."
+        },
+        {
+          "q": "What does 'ruinous' mean?",
+          "opts": [
+            "mới mẻ",
+            "đổ nát",
+            "sang trọng",
+            "bình thường"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Ruinous\" nghĩa là đổ nát, hoang tàn, thường mô tả các công trình cổ."
+        },
+        {
+          "q": "Sunday is the day _____ I usually go out.",
+          "opts": [
+            "which",
+            "that",
+            "where",
+            "when"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. \"When\" thay thế cho danh từ chỉ thời gian. Sunday is the day when I usually go out."
+        },
+        {
+          "q": "The reason _____ he was late was the traffic.",
+          "opts": [
+            "which",
+            "that",
+            "where",
+            "why"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. \"Why\" thay thế cho \"the reason\". The reason why he was late = Lý do tại sao anh ấy đến muộn."
+        },
+        {
+          "q": "What does 'homestay' mean?",
+          "opts": [
+            "khách sạn",
+            "nhà trọ",
+            "lều",
+            "tàu"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Homestay\" nghĩa là nhà trọ/ở nhà dân, du khách ở cùng gia đình địa phương."
+        },
+        {
+          "q": "The man _____ I spoke to was very kind.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Whom\" thay thế cho danh từ chỉ người làm tân ngữ. The man whom I spoke to..."
+        },
+        {
+          "q": "The woman _____ at the desk is the receptionist.",
+          "opts": [
+            "sit",
+            "sat",
+            "sitting",
+            "to sit"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Dùng V-ing (hiện tại phân từ) rút gọn mệnh đề quan hệ chủ động. The woman sitting at the desk..."
+        },
+        {
+          "q": "What does 'wander' mean?",
+          "opts": [
+            "chạy",
+            "dạo chơi",
+            "lái xe",
+            "bay"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Wander\" nghĩa là dạo chơi, đi lang thang không mục đích cụ thể."
+        },
+        {
+          "q": "The letter _____ by my grandmother was very touching.",
+          "opts": [
+            "write",
+            "wrote",
+            "writing",
+            "written"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. Dùng V3 (quá khứ phân từ) rút gọn mệnh đề quan hệ bị động. The letter written by my grandmother..."
+        },
+        {
+          "q": "She is the first person _____ the summit.",
+          "opts": [
+            "reach",
+            "reached",
+            "reaching",
+            "to reach"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. Cấu trúc: the first/second/last + N + to V. She is the first person to reach the summit."
+        },
+        {
+          "q": "What does 'domestic tourism' mean?",
+          "opts": [
+            "du lịch quốc tế",
+            "du lịch trong nước",
+            "du lịch mạo hiểm",
+            "du lịch biển"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Domestic tourism\" nghĩa là du lịch trong nước, du lịch nội địa."
+        },
+        {
+          "q": "Hue, _____ is the ancient capital, has many monuments.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "where"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Mệnh đề quan hệ không xác định cho danh từ riêng dùng \"which\", không dùng \"that\"."
+        },
+        {
+          "q": "The students _____ passed the exam were very happy.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Who\" thay thế cho danh từ chỉ người làm chủ ngữ. The students who passed the exam..."
+        },
+        {
+          "q": "What does 'global warming' mean?",
+          "opts": [
+            "sự nóng lên toàn cầu",
+            "biến đổi khí hậu",
+            "ô nhiễm",
+            "tuyệt chủng"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Global warming\" nghĩa là sự nóng lên toàn cầu, hiện tượng nhiệt độ Trái Đất tăng lên."
+        }
+      ]
+    },
+    "9": {
+      "title": "World Englishes",
+      "vocabulary": [
+        {
+          "en": "bilingual",
+          "ipa": "/baɪˈlɪŋɡwəl/",
+          "type": "adj",
+          "vi": "sử dụng được hai ngôn ngữ"
+        },
+        {
+          "en": "borrowed word",
+          "ipa": "/ˈbɒrəʊ wɜːd/",
+          "type": "n",
+          "vi": "từ mượn"
+        },
+        {
+          "en": "concentric",
+          "ipa": "/kənˈsentrɪk/",
+          "type": "adj",
+          "vi": "đồng tâm"
+        },
+        {
+          "en": "consist",
+          "ipa": "/kənˈsɪst/",
+          "type": "v",
+          "vi": "bao gồm"
+        },
+        {
+          "en": "copy",
+          "ipa": "/ˈkɒpi/",
+          "type": "v",
+          "vi": "chép lại"
+        },
+        {
+          "en": "establish",
+          "ipa": "/ɪˈstæblɪʃ/",
+          "type": "v",
+          "vi": "thành lập"
+        },
+        {
+          "en": "exchange student",
+          "ipa": "/ɪksˈtʃeɪndʒ stjuːdnt/",
+          "type": "n",
+          "vi": "học sinh trao đổi"
+        },
+        {
+          "en": "Expanding Circle",
+          "ipa": "/ɪkˈspændɪŋ sɜːkl/",
+          "type": "n",
+          "vi": "vòng tròn mở rộng"
+        },
+        {
+          "en": "first language",
+          "ipa": "/ˌfɜːst ˈlæŋɡwɪdʒ/",
+          "type": "n",
+          "vi": "ngôn ngữ thứ nhất"
+        },
+        {
+          "en": "fluent",
+          "ipa": "/ˈfluːənt/",
+          "type": "adj",
+          "vi": "trôi chảy, thành thạo"
+        },
+        {
+          "en": "go over",
+          "ipa": "/ɡəʊ ˈəʊvə/",
+          "type": "v phr",
+          "vi": "ôn tập lại"
+        },
+        {
+          "en": "immigrant",
+          "ipa": "/ˈɪmɪɡrənt/",
+          "type": "n",
+          "vi": "người nhập cư"
+        },
+        {
+          "en": "Inner Circle",
+          "ipa": "/ˌɪnə ˈsɜːkl/",
+          "type": "n",
+          "vi": "vòng tròn bên trong"
+        },
+        {
+          "en": "look up",
+          "ipa": "/lʊk ʌp/",
+          "type": "v phr",
+          "vi": "tra từ điển"
+        },
+        {
+          "en": "mean",
+          "ipa": "/miːn/",
+          "type": "v",
+          "vi": "nghĩa là"
+        },
+        {
+          "en": "model",
+          "ipa": "/ˈmɒdl/",
+          "type": "n",
+          "vi": "mô hình"
+        },
+        {
+          "en": "official language",
+          "ipa": "/ˌəfɪʃl ˈlæŋɡwɪdʒ/",
+          "type": "n",
+          "vi": "ngôn ngữ chính thức"
+        },
+        {
+          "en": "Outer Circle",
+          "ipa": "/ˌaʊtə ˈsɜːkl/",
+          "type": "n",
+          "vi": "vòng tròn bên ngoài"
+        },
+        {
+          "en": "pick up",
+          "ipa": "/pɪk ʌp/",
+          "type": "v phr",
+          "vi": "học ngôn ngữ tự nhiên"
+        },
+        {
+          "en": "propose",
+          "ipa": "/prəˈpəʊz/",
+          "type": "v",
+          "vi": "đề xuất"
+        },
+        {
+          "en": "second language",
+          "ipa": "/ˌsekənd ˈlæŋɡwɪdʒ/",
+          "type": "n",
+          "vi": "ngôn ngữ thứ hai"
+        },
+        {
+          "en": "standard",
+          "ipa": "/ˈstændəd/",
+          "type": "n",
+          "vi": "chuẩn mực"
+        },
+        {
+          "en": "translate",
+          "ipa": "/trænzˈleɪt/",
+          "type": "v",
+          "vi": "dịch"
+        },
+        {
+          "en": "variety",
+          "ipa": "/vəˈraɪəti/",
+          "type": "n",
+          "vi": "biến thể"
+        },
+        {
+          "en": "vocabulary",
+          "ipa": "/vəˈkæbjələri/",
+          "type": "n",
+          "vi": "từ vựng"
+        },
+        {
+          "en": "native language",
+          "ipa": "/ˈneɪtɪv ˈlæŋɡwɪdʒ/",
+          "type": "n",
+          "vi": "ngôn ngữ bản địa"
+        },
+        {
+          "en": "concentrate",
+          "ipa": "/ˈkɒnsntreɪt/",
+          "type": "v",
+          "vi": "tập trung"
+        },
+        {
+          "en": "proposal",
+          "ipa": "/prəˈpəʊzl/",
+          "type": "n",
+          "vi": "đề xuất"
+        },
+        {
+          "en": "dramatic",
+          "ipa": "/drəˈmætɪk/",
+          "type": "adj",
+          "vi": "ấn tượng"
+        },
+        {
+          "en": "landscape",
+          "ipa": "/ˈlændskeɪp/",
+          "type": "n",
+          "vi": "phong cảnh"
+        },
+        {
+          "en": "review",
+          "ipa": "/rɪˈvjuː/",
+          "type": "v",
+          "vi": "ôn tập"
+        },
+        {
+          "en": "diverse",
+          "ipa": "/daɪˈvɜːs/",
+          "type": "adj",
+          "vi": "đa dạng"
+        },
+        {
+          "en": "diversity",
+          "ipa": "/daɪˈvɜːsəti/",
+          "type": "n",
+          "vi": "sự đa dạng"
+        },
+        {
+          "en": "plenty of",
+          "ipa": "/ˈplenti ɒv/",
+          "type": "phr",
+          "vi": "nhiều"
+        },
+        {
+          "en": "fluently",
+          "ipa": "/ˈfluːəntli/",
+          "type": "adv",
+          "vi": "một cách trôi chảy"
+        }
+      ],
+      "grammar": [
+        "Passive voice",
+        "Adjectives vs. adverbs"
+      ],
+      "grammar_notes": "1. PASSIVE VOICE (Câu bị động)\nCấu trúc: S + be + V3/Ved + (by O)\n\nBảng các thì:\n- Simple present: am/is/are + V3\n- Present continuous: am/is/are + being + V3\n- Present perfect: have/has + been + V3\n- Simple past: was/were + V3\n- Past continuous: was/were + being + V3\n- Past perfect: had + been + V3\n- Simple future: will + be + V3\n- Modal: can/must/should/may + be + V3\n\nLưu ý:\n- Bỏ by + people/someone/they\n- Giữ by + danh từ riêng/chung\n- 2 tân ngữ: đưa tân ngữ gián tiếp lên làm chủ ngữ\n  He was given a book (by me). / A book was given to him.\n- Động từ đi với TO: give, send, show, lend, tell, pay...\n- Động từ đi với FOR: make, buy, get, order, do...\n\n2. ADJECTIVES vs. ADVERBS\n- Adjective: bổ nghĩa cho danh từ (a careful driver)\n- Adverb: bổ nghĩa cho động từ (drive carefully)\n- Quy tắc: adj + ly = adv (careful → carefully, quick → quickly)\n- Ngoại lệ: good → well, fast → fast, hard → hard, late → late",
+      "exercises": [
+        {
+          "q": "Rice _____ in many Asian countries.",
+          "opts": [
+            "grows",
+            "is grown",
+            "grew",
+            "growing"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động thì hiện tại đơn: S + is/are + V3. Rice is grown = Lúa được trồng."
+        },
+        {
+          "q": "What does 'bilingual' mean?",
+          "opts": [
+            "đơn ngữ",
+            "song ngữ",
+            "đa ngữ",
+            "không ngôn ngữ"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Bilingual\" nghĩa là song ngữ, sử dụng được hai ngôn ngữ."
+        },
+        {
+          "q": "The dishes _____ washed by her every day.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Chủ ngữ \"The dishes\" số nhiều nên dùng \"are\" + V3 (bị động hiện tại đơn)."
+        },
+        {
+          "q": "This house _____ painted by my father last year.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. Câu bị động thì quá khứ đơn: S + was/were + V3. \"This house\" số ít nên dùng \"was\"."
+        },
+        {
+          "q": "What does 'fluent' mean?",
+          "opts": [
+            "chậm chạp",
+            "trôi chảy",
+            "khó khăn",
+            "bối rối"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Fluent\" nghĩa là trôi chảy, thành thạo, thường dùng để mô tả khả năng ngôn ngữ."
+        },
+        {
+          "q": "The dishes have just _____ washed.",
+          "opts": [
+            "be",
+            "been",
+            "being",
+            "is"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động hiện tại hoàn thành: have/has + been + V3. The dishes have just been washed."
+        },
+        {
+          "q": "English _____ all over the world.",
+          "opts": [
+            "speaks",
+            "is spoken",
+            "spoke",
+            "speaking"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động: English is spoken all over the world = Tiếng Anh được nói trên toàn thế giới."
+        },
+        {
+          "q": "What does 'borrowed word' mean?",
+          "opts": [
+            "từ mới",
+            "từ cổ",
+            "từ mượn",
+            "từ đồng nghĩa"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Borrowed word\" nghĩa là từ mượn, từ được lấy từ ngôn ngữ khác vào tiếng Anh."
+        },
+        {
+          "q": "The cake _____ being made when I arrived.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động thì quá khứ tiếp diễn: was/were + being + V3. \"The cake\" số ít dùng \"was\"."
+        },
+        {
+          "q": "He drives very _____.",
+          "opts": [
+            "careful",
+            "carefully",
+            "carefulness",
+            "caring"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Carefully\" là trạng từ bổ nghĩa cho động từ \"drives\". Tính từ \"careful\" + ly = trạng từ."
+        },
+        {
+          "q": "What does 'official language' mean?",
+          "opts": [
+            "ngôn ngữ bản địa",
+            "ngôn ngữ chính thức",
+            "ngôn ngữ thứ hai",
+            "tiếng lóng"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Official language\" nghĩa là ngôn ngữ chính thức, ngôn ngữ được nhà nước công nhận."
+        },
+        {
+          "q": "She sings _____.",
+          "opts": [
+            "beautiful",
+            "beautifully",
+            "beauty",
+            "beautify"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Beautifully\" là trạng từ bổ nghĩa cho động từ \"sings\". Beautiful + ly = beautifully."
+        },
+        {
+          "q": "The letter _____ written by her yesterday.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động quá khứ đơn: was + V3. \"The letter\" số ít dùng \"was\"."
+        },
+        {
+          "q": "He is a _____ runner. He runs very _____.",
+          "opts": [
+            "fast / fast",
+            "fastly / fast",
+            "fast / fastly",
+            "fastly / fastly"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Fast\" vừa là tính từ vừa là trạng từ, không thêm \"-ly\". A fast runner / He runs fast."
+        },
+        {
+          "q": "What does 'translate' mean?",
+          "opts": [
+            "viết",
+            "đọc",
+            "dịch",
+            "nói"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Translate\" nghĩa là dịch, chuyển đổi từ ngôn ngữ này sang ngôn ngữ khác."
+        },
+        {
+          "q": "This bridge _____ built in 1990.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "has"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động quá khứ đơn: \"This bridge\" số ít dùng \"was\" + V3 (built)."
+        },
+        {
+          "q": "She speaks English _____.",
+          "opts": [
+            "fluent",
+            "fluently",
+            "fluence",
+            "fluency"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Fluently\" là trạng từ bổ nghĩa cho động từ \"speaks\". Fluent + ly = fluently."
+        },
+        {
+          "q": "A new school _____ be built next year.",
+          "opts": [
+            "can",
+            "will",
+            "is",
+            "has"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Câu bị động tương lai đơn: will + be + V3. A new school will be built next year."
+        },
+        {
+          "q": "What does 'immigrant' mean?",
+          "opts": [
+            "người xuất cư",
+            "người nhập cư",
+            "người bản địa",
+            "du khách"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Immigrant\" nghĩa là người nhập cư, người đến sống ở nước khác."
+        },
+        {
+          "q": "He was given a book _____ his teacher.",
+          "opts": [
+            "from",
+            "by",
+            "for",
+            "to"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Trong câu bị động, tác nhân được giới thiệu bằng giới từ \"by\". He was given a book by his teacher."
+        }
+      ]
+    },
+    "10": {
+      "title": "Planet Earth",
+      "vocabulary": [
+        {
+          "en": "affect",
+          "ipa": "/əˈfekt/",
+          "type": "v",
+          "vi": "gây ảnh hưởng"
+        },
+        {
+          "en": "appreciate",
+          "ipa": "/əˈpriːʃieɪt/",
+          "type": "v",
+          "vi": "đánh giá cao"
+        },
+        {
+          "en": "climate change",
+          "ipa": "/ˈklaɪmət tʃeɪndʒ/",
+          "type": "n",
+          "vi": "biến đổi khí hậu"
+        },
+        {
+          "en": "droppings",
+          "ipa": "/ˈdrɒpɪŋz/",
+          "type": "n",
+          "vi": "phân động vật"
+        },
+        {
+          "en": "essential",
+          "ipa": "/ɪˈsenʃl/",
+          "type": "adj",
+          "vi": "vô cùng quan trọng"
+        },
+        {
+          "en": "ecological balance",
+          "ipa": "/ˌiːkəˈlɒdʒɪkl ˈbæləns/",
+          "type": "n",
+          "vi": "cân bằng sinh thái"
+        },
+        {
+          "en": "fascinating",
+          "ipa": "/ˈfæsɪneɪtɪŋ/",
+          "type": "adj",
+          "vi": "rất thú vị và hấp dẫn"
+        },
+        {
+          "en": "fertilizer",
+          "ipa": "/ˈfɜːtəlaɪzə/",
+          "type": "n",
+          "vi": "phân bón"
+        },
+        {
+          "en": "food chain",
+          "ipa": "/ˈfuːd tʃeɪn/",
+          "type": "n",
+          "vi": "chuỗi thức ăn"
+        },
+        {
+          "en": "grassland",
+          "ipa": "/ˈɡrɑːslænd/",
+          "type": "n",
+          "vi": "khu vực đồng cỏ"
+        },
+        {
+          "en": "habitat",
+          "ipa": "/ˈhæbɪtæt/",
+          "type": "n",
+          "vi": "môi trường sống"
+        },
+        {
+          "en": "harm",
+          "ipa": "/hɑːm/",
+          "type": "v",
+          "vi": "làm hại"
+        },
+        {
+          "en": "landform",
+          "ipa": "/ˈlændfɔːm/",
+          "type": "n",
+          "vi": "dạng địa hình"
+        },
+        {
+          "en": "nature reserve",
+          "ipa": "/ˈneɪtʃə rɪzɜːv/",
+          "type": "n",
+          "vi": "khu bảo tồn thiên nhiên"
+        },
+        {
+          "en": "observe",
+          "ipa": "/əbˈzɜːv/",
+          "type": "v",
+          "vi": "quan sát, chú ý"
+        },
+        {
+          "en": "orbit",
+          "ipa": "/ˈɔːbɪt/",
+          "type": "v",
+          "vi": "quay quanh quỹ đạo"
+        },
+        {
+          "en": "outer space",
+          "ipa": "/ˌaʊtə ˈspeɪs/",
+          "type": "n",
+          "vi": "ngoài vũ trụ"
+        },
+        {
+          "en": "pesticide",
+          "ipa": "/ˈpestɪsaɪd/",
+          "type": "n",
+          "vi": "thuốc trừ sâu"
+        },
+        {
+          "en": "pole",
+          "ipa": "/pəʊl/",
+          "type": "n",
+          "vi": "cực (bắc/nam)"
+        },
+        {
+          "en": "preserve",
+          "ipa": "/prɪˈzɜːv/",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "threat",
+          "ipa": "/θret/",
+          "type": "n",
+          "vi": "nỗi đe dọa"
+        },
+        {
+          "en": "vital",
+          "ipa": "/ˈvaɪtl/",
+          "type": "adj",
+          "vi": "quan trọng mức sống còn"
+        },
+        {
+          "en": "global warming",
+          "ipa": "/ˌɡləʊbl ˈwɔːmɪŋ/",
+          "type": "n",
+          "vi": "sự nóng lên toàn cầu"
+        },
+        {
+          "en": "flora",
+          "ipa": "/ˈflɔːrə/",
+          "type": "n",
+          "vi": "thực vật"
+        },
+        {
+          "en": "fauna",
+          "ipa": "/ˈfɔːnə/",
+          "type": "n",
+          "vi": "động vật"
+        },
+        {
+          "en": "water body",
+          "ipa": "/ˈwɔːtə ˈbɒdi/",
+          "type": "n",
+          "vi": "vùng nước"
+        },
+        {
+          "en": "protect",
+          "ipa": "/prəˈtekt/",
+          "type": "v",
+          "vi": "bảo vệ"
+        },
+        {
+          "en": "endangered",
+          "ipa": "/ɪnˈdeɪndʒəd/",
+          "type": "adj",
+          "vi": "có nguy cơ tuyệt chủng"
+        },
+        {
+          "en": "species",
+          "ipa": "/ˈspiːʃiːz/",
+          "type": "n",
+          "vi": "loài"
+        },
+        {
+          "en": "significant",
+          "ipa": "/sɪɡˈnɪfɪkənt/",
+          "type": "adj",
+          "vi": "quan trọng, đáng kể"
+        },
+        {
+          "en": "remarkable",
+          "ipa": "/rɪˈmɑːkəbl/",
+          "type": "adj",
+          "vi": "đáng chú ý"
+        },
+        {
+          "en": "extinction",
+          "ipa": "/ɪkˈstɪŋkʃn/",
+          "type": "n",
+          "vi": "sự tuyệt chủng"
+        },
+        {
+          "en": "preservation",
+          "ipa": "/ˌprezəˈveɪʃn/",
+          "type": "n",
+          "vi": "sự bảo tồn"
+        },
+        {
+          "en": "protection",
+          "ipa": "/prəˈtekʃn/",
+          "type": "n",
+          "vi": "sự bảo vệ"
+        },
+        {
+          "en": "meadow",
+          "ipa": "/ˈmedəʊ/",
+          "type": "n",
+          "vi": "đồng cỏ"
+        }
+      ],
+      "grammar": [
+        "Non-defining relative clauses"
+      ],
+      "grammar_notes": "NON-DEFINING RELATIVE CLAUSES (Mệnh đề quan hệ không xác định)\n\nĐặc điểm:\n- Cung cấp thêm thông tin về danh từ đã xác định.\n- Có dấu phẩy ngăn cách.\n- Có thể bỏ đi mà câu vẫn đủ nghĩa.\n- KHÔNG dùng THAT.\n\nDùng khi:\n- Danh từ là tên riêng: Hanoi, which is the capital of Vietnam, is very crowded.\n- Có this/that/these/those: This book, which I bought yesterday, is very interesting.\n- Có tính từ sở hữu: My father, who is a doctor, works at the hospital.\n\nĐại từ quan hệ:\n- WHO: cho người (chủ ngữ)\n- WHOM: cho người (tân ngữ)\n- WHICH: cho vật, hoặc thay cho cả mệnh đề trước\n  Ví dụ: He passed the exam, which made his parents happy.\n- WHOSE: sở hữu\n\nLưu ý: WHICH có thể thay thế cho cả mệnh đề:\n- She won the prize, which surprised everyone.\n- He arrived late, which annoyed the teacher.",
+      "exercises": [
+        {
+          "q": "Hanoi, _____ is the capital of Vietnam, is very crowded.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "where"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Mệnh đề quan hệ không xác định (có dấu phẩy) dùng \"which\" cho vật/cả mệnh đề, không dùng \"that\"."
+        },
+        {
+          "q": "What does 'ecological balance' mean?",
+          "opts": [
+            "chuỗi thức ăn",
+            "cân bằng sinh thái",
+            "biến đổi khí hậu",
+            "ô nhiễm"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Ecological balance\" nghĩa là cân bằng sinh thái, trạng thái ổn định của hệ sinh thái."
+        },
+        {
+          "q": "My father, _____ is a doctor, works at the hospital.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "whom"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Who\" thay thế cho danh từ chỉ người làm chủ ngữ trong mệnh đề quan hệ không xác định."
+        },
+        {
+          "q": "She won the prize, _____ surprised everyone.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "what"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Which\" có thể thay thế cho cả mệnh đề trước đó. Việc cô ấy thắng giải đã làm mọi người ngạc nhiên."
+        },
+        {
+          "q": "What does 'habitat' mean?",
+          "opts": [
+            "thức ăn",
+            "môi trường sống",
+            "nơi du lịch",
+            "đồng cỏ"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Habitat\" nghĩa là môi trường sống tự nhiên của động thực vật."
+        },
+        {
+          "q": "Mr. Smith, _____ daughter is a teacher, lives next door.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. \"Whose\" chỉ sở hữu. Mr. Smith, whose daughter is a teacher = Ông Smith mà con gái ông ấy là giáo viên."
+        },
+        {
+          "q": "This book, _____ I bought yesterday, is very interesting.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "whose"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Mệnh đề quan hệ không xác định dùng \"which\", không dùng \"that\"."
+        },
+        {
+          "q": "What does 'pesticide' mean?",
+          "opts": [
+            "phân bón",
+            "thuốc trừ sâu",
+            "thuốc bảo vệ",
+            "nước tưới"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Pesticide\" nghĩa là thuốc trừ sâu, hóa chất diệt côn trùng có hại."
+        },
+        {
+          "q": "He arrived late, _____ annoyed the teacher.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "what"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Which\" thay thế cho cả mệnh đề trước. Việc anh ấy đến muộn làm giáo viên khó chịu."
+        },
+        {
+          "q": "Paris, _____ I visited last year, is beautiful.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "where"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Mệnh đề quan hệ không xác định cho danh từ riêng (Paris) dùng \"which\", không dùng \"that\"."
+        },
+        {
+          "q": "What does 'food chain' mean?",
+          "opts": [
+            "chuỗi nhà hàng",
+            "chuỗi thức ăn",
+            "chuỗi cung ứng",
+            "thực phẩm"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Food chain\" nghĩa là chuỗi thức ăn, mối quan hệ ăn-bị ăn giữa các sinh vật."
+        },
+        {
+          "q": "The Mekong River, _____ flows through Vietnam, is very long.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "whose"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Which\" dùng cho sông (vật) trong mệnh đề quan hệ không xác định."
+        },
+        {
+          "q": "My teacher, _____ I admire greatly, retired last year.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Whom\" thay thế cho người làm tân ngữ. My teacher, whom I admire greatly..."
+        },
+        {
+          "q": "What does 'vital' mean?",
+          "opts": [
+            "bình thường",
+            "không quan trọng",
+            "sống còn",
+            "nhỏ bé"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Vital\" nghĩa là sống còn, cực kỳ quan trọng, thiết yếu."
+        },
+        {
+          "q": "London, _____ is the capital of England, attracts millions of tourists.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "where"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Danh từ riêng (London) dùng mệnh đề quan hệ không xác định với \"which\"."
+        },
+        {
+          "q": "She passed the exam, _____ made her parents proud.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "whom"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Which\" thay thế cho cả mệnh đề trước. Việc cô ấy đỗ làm bố mẹ tự hào."
+        },
+        {
+          "q": "What does 'nature reserve' mean?",
+          "opts": [
+            "công viên",
+            "khu bảo tồn",
+            "sở thú",
+            "rừng quốc gia"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Nature reserve\" nghĩa là khu bảo tồn thiên nhiên."
+        },
+        {
+          "q": "Da Nang, _____ beaches are beautiful, is a popular destination.",
+          "opts": [
+            "who",
+            "whom",
+            "which",
+            "whose"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng. \"Whose\" chỉ sở hữu. Da Nang, whose beaches are beautiful = Đà Nẵng mà bãi biển của nó rất đẹp."
+        },
+        {
+          "q": "The car, _____ was very expensive, broke down.",
+          "opts": [
+            "that",
+            "which",
+            "who",
+            "whose"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Mệnh đề quan hệ không xác định (có dấu phẩy) dùng \"which\" cho vật, không dùng \"that\"."
+        },
+        {
+          "q": "What does 'climate change' mean?",
+          "opts": [
+            "thời tiết",
+            "biến đổi khí hậu",
+            "ô nhiễm",
+            "nóng lên"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Climate change\" nghĩa là biến đổi khí hậu, sự thay đổi lâu dài của thời tiết toàn cầu."
+        }
+      ]
+    },
+    "11": {
+      "title": "Electronic Devices",
+      "vocabulary": [
+        {
+          "en": "aluminium",
+          "ipa": "/ˌæljəˈmɪniəm/",
+          "type": "n",
+          "vi": "nhôm"
+        },
+        {
+          "en": "camcorder",
+          "ipa": "/ˈkæmkɔːdə/",
+          "type": "n",
+          "vi": "máy quay phim xách tay"
+        },
+        {
+          "en": "cardboard",
+          "ipa": "/ˈkɑːdbɔːd/",
+          "type": "n",
+          "vi": "bìa cứng, các tông"
+        },
+        {
+          "en": "copper",
+          "ipa": "/ˈkɒpə/",
+          "type": "n",
+          "vi": "đồng"
+        },
+        {
+          "en": "e-reader",
+          "ipa": "/ˈiː riːdə/",
+          "type": "n",
+          "vi": "máy đọc sách điện tử"
+        },
+        {
+          "en": "leaflet",
+          "ipa": "/ˈliːflət/",
+          "type": "n",
+          "vi": "tờ rơi quảng cáo"
+        },
+        {
+          "en": "plastic",
+          "ipa": "/ˈplæstɪk/",
+          "type": "n",
+          "vi": "chất dẻo"
+        },
+        {
+          "en": "portable",
+          "ipa": "/ˈpɔːtəbl/",
+          "type": "adj",
+          "vi": "có thể mang theo, xách tay"
+        },
+        {
+          "en": "portable music player",
+          "ipa": "/ˈpɔːtəbl ˈmjuːzɪk ˌpleɪə/",
+          "type": "n",
+          "vi": "máy nghe nhạc cầm tay"
+        },
+        {
+          "en": "robotic vacuum cleaner",
+          "ipa": "/rəʊˈbɒtɪk ˈvækjuːm ˌkliːnə/",
+          "type": "n",
+          "vi": "robot hút bụi tự động"
+        },
+        {
+          "en": "rubber",
+          "ipa": "/ˈrʌbə/",
+          "type": "n",
+          "vi": "cao su"
+        },
+        {
+          "en": "self-portrait",
+          "ipa": "/ˌself ˈpɔːtreɪt/",
+          "type": "n",
+          "vi": "ảnh chân dung tự chụp"
+        },
+        {
+          "en": "smartwatch",
+          "ipa": "/ˈsmɑːtwɒtʃ/",
+          "type": "n",
+          "vi": "đồng hồ thông minh"
+        },
+        {
+          "en": "steel",
+          "ipa": "/stiːl/",
+          "type": "n",
+          "vi": "thép"
+        },
+        {
+          "en": "stylish",
+          "ipa": "/ˈstaɪlɪʃ/",
+          "type": "adj",
+          "vi": "hợp thời trang, kiểu cách"
+        },
+        {
+          "en": "suck",
+          "ipa": "/sʌk/",
+          "type": "v",
+          "vi": "hút"
+        },
+        {
+          "en": "touchscreen",
+          "ipa": "/ˈtʌtʃskriːn/",
+          "type": "n",
+          "vi": "màn hình cảm ứng"
+        },
+        {
+          "en": "virtual",
+          "ipa": "/ˈvɜːtʃuəl/",
+          "type": "adj",
+          "vi": "ảo"
+        },
+        {
+          "en": "window shade",
+          "ipa": "/ˈwɪndəʊ ʃeɪd/",
+          "type": "n",
+          "vi": "mành cửa sổ"
+        },
+        {
+          "en": "wireless",
+          "ipa": "/ˈwaɪələs/",
+          "type": "adj",
+          "vi": "không dây, vô tuyến"
+        },
+        {
+          "en": "device",
+          "ipa": "/dɪˈvaɪs/",
+          "type": "n",
+          "vi": "thiết bị"
+        },
+        {
+          "en": "technology",
+          "ipa": "/tekˈnɒlədʒi/",
+          "type": "n",
+          "vi": "công nghệ"
+        },
+        {
+          "en": "innovation",
+          "ipa": "/ˌɪnəˈveɪʃn/",
+          "type": "n",
+          "vi": "sự đổi mới"
+        },
+        {
+          "en": "battery",
+          "ipa": "/ˈbætəri/",
+          "type": "n",
+          "vi": "pin"
+        },
+        {
+          "en": "charge",
+          "ipa": "/tʃɑːdʒ/",
+          "type": "v",
+          "vi": "sạc"
+        },
+        {
+          "en": "digital",
+          "ipa": "/ˈdɪdʒɪtl/",
+          "type": "adj",
+          "vi": "kỹ thuật số"
+        },
+        {
+          "en": "automatic",
+          "ipa": "/ˌɔːtəˈmætɪk/",
+          "type": "adj",
+          "vi": "tự động"
+        },
+        {
+          "en": "convenient",
+          "ipa": "/kənˈviːniənt/",
+          "type": "adj",
+          "vi": "tiện lợi"
+        },
+        {
+          "en": "screen",
+          "ipa": "/skriːn/",
+          "type": "n",
+          "vi": "màn hình"
+        },
+        {
+          "en": "lightweight",
+          "ipa": "/ˈlaɪtweɪt/",
+          "type": "adj",
+          "vi": "nhẹ"
+        },
+        {
+          "en": "waterproof",
+          "ipa": "/ˈwɔːtəpruːf/",
+          "type": "adj",
+          "vi": "chống nước"
+        },
+        {
+          "en": "eco-friendly",
+          "ipa": "/ˌiːkəʊ ˈfrendli/",
+          "type": "adj",
+          "vi": "thân thiện với môi trường"
+        },
+        {
+          "en": "recycle",
+          "ipa": "/ˌriːˈsaɪkl/",
+          "type": "v",
+          "vi": "tái chế"
+        },
+        {
+          "en": "material",
+          "ipa": "/məˈtɪriəl/",
+          "type": "n",
+          "vi": "nguyên liệu, chất liệu"
+        },
+        {
+          "en": "suggestion",
+          "ipa": "/səˈdʒestʃən/",
+          "type": "n",
+          "vi": "gợi ý, đề nghị"
+        }
+      ],
+      "grammar": [
+        "Suggestions"
+      ],
+      "grammar_notes": "SUGGESTIONS (Cấu trúc gợi ý/đề nghị)\n\n12 cấu trúc đề nghị:\n1. S + suggest/recommend/advise + V-ing\n   Ví dụ: He suggested travelling together for safety.\n2. S + suggest/advise/recommend + (that) + S + (should) + V\n   Ví dụ: I suggest (that) we go out to have dinner.\n3. Let's + V\n   Ví dụ: Let's go to the cinema.\n4. Why don't we/you + V?\n   Ví dụ: Why don't we try a new restaurant?\n5. Should/Shall we + V?\n   Ví dụ: Shall we go for a walk?\n6. What about/How about + V-ing?\n   Ví dụ: How about going shopping?\n7. Why not + V?\n   Ví dụ: Why not buy a smartwatch?\n8. I think we/you should + V\n   Ví dụ: I think you should buy an e-reader.\n9. Would/Do you mind + V-ing?\n10. Would you mind if + V quá khứ?\n11. Do you mind if + V hiện tại?\n12. Would you like to + V? (mời)\n\nLưu ý: Sau suggest that + S, động từ luôn ở nguyên thể không 'to'.\nVí dụ: The doctor suggests that he lose some weight.",
+      "exercises": [
+        {
+          "q": "He suggested _____ together for safety.",
+          "opts": [
+            "travel",
+            "travelling",
+            "to travel",
+            "travelled"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Suggest\" + V-ing. He suggested travelling together. Không dùng \"suggest to V\"."
+        },
+        {
+          "q": "What does 'touchscreen' mean?",
+          "opts": [
+            "bàn phím",
+            "màn hình cảm ứng",
+            "chuột máy tính",
+            "loa"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Touchscreen\" nghĩa là màn hình cảm ứng, có thể điều khiển bằng tay chạm."
+        },
+        {
+          "q": "I suggest that we _____ out to have dinner.",
+          "opts": [
+            "go",
+            "going",
+            "to go",
+            "goes"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. Cấu trúc: suggest that S + V(nguyên thể). I suggest that we go out. Dùng subjunctive mood."
+        },
+        {
+          "q": "Why don't we _____ a new restaurant?",
+          "opts": [
+            "try",
+            "trying",
+            "to try",
+            "tried"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Why don't we\" + V(nguyên thể)? Cấu trúc đề nghị. Why don't we try a new restaurant?"
+        },
+        {
+          "q": "What does 'wireless' mean?",
+          "opts": [
+            "có dây",
+            "không dây",
+            "kỹ thuật số",
+            "tự động"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Wireless\" nghĩa là không dây, kết nối không cần dây cáp."
+        },
+        {
+          "q": "How about _____ to the museum?",
+          "opts": [
+            "go",
+            "going",
+            "to go",
+            "went"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"How about\" + V-ing? Cấu trúc đề nghị. How about going to the museum?"
+        },
+        {
+          "q": "Let's _____ a smartwatch for dad.",
+          "opts": [
+            "buy",
+            "buying",
+            "to buy",
+            "bought"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Let's\" + V(nguyên thể). Let's buy a smartwatch = Chúng ta hãy mua đồng hồ thông minh."
+        },
+        {
+          "q": "What does 'portable' mean?",
+          "opts": [
+            "nặng",
+            "xách tay",
+            "cố định",
+            "đắt"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Portable\" nghĩa là xách tay, có thể mang theo dễ dàng."
+        },
+        {
+          "q": "Shall we _____ for a walk?",
+          "opts": [
+            "go",
+            "going",
+            "to go",
+            "went"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Shall we\" + V(nguyên thể)? Cấu trúc đề nghị. Shall we go for a walk?"
+        },
+        {
+          "q": "The doctor suggests that he _____ some weight.",
+          "opts": [
+            "loses",
+            "lose",
+            "lost",
+            "losing"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Suggest that S + V(nguyên thể)\" (subjunctive). The doctor suggests that he lose weight, không chia \"s\"."
+        },
+        {
+          "q": "What does 'virtual' mean?",
+          "opts": [
+            "thực tế",
+            "ảo",
+            "vật chất",
+            "tự nhiên"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Virtual\" nghĩa là ảo, không có thật, được tạo bởi công nghệ."
+        },
+        {
+          "q": "Why not _____ an e-reader instead?",
+          "opts": [
+            "buy",
+            "buying",
+            "to buy",
+            "bought"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Why not\" + V(nguyên thể)? Cấu trúc đề nghị. Why not buy an e-reader?"
+        },
+        {
+          "q": "I think you _____ buy a robotic vacuum cleaner.",
+          "opts": [
+            "should",
+            "would",
+            "could",
+            "might"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Should\" dùng để đưa ra lời khuyên. I think you should buy = Tôi nghĩ bạn nên mua."
+        },
+        {
+          "q": "What does 'aluminium' mean?",
+          "opts": [
+            "thép",
+            "đồng",
+            "nhôm",
+            "cao su"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Aluminium\" nghĩa là nhôm, kim loại nhẹ thường dùng trong sản xuất."
+        },
+        {
+          "q": "Would you mind _____ the window?",
+          "opts": [
+            "open",
+            "opening",
+            "to open",
+            "opened"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Would you mind\" + V-ing? Would you mind opening the window? = Bạn có phiền mở cửa sổ không?"
+        },
+        {
+          "q": "She recommended _____ that new app.",
+          "opts": [
+            "download",
+            "downloading",
+            "to download",
+            "downloaded"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Recommend\" + V-ing. She recommended downloading that new app."
+        },
+        {
+          "q": "What does 'eco-friendly' mean?",
+          "opts": [
+            "gây ô nhiễm",
+            "thân thiện môi trường",
+            "đắt đỏ",
+            "hiện đại"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Eco-friendly\" nghĩa là thân thiện với môi trường, không gây ô nhiễm."
+        },
+        {
+          "q": "Would you like _____ a cup of coffee?",
+          "opts": [
+            "have",
+            "having",
+            "to have",
+            "had"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Would you like\" + to V? Would you like to have a cup of coffee? = Bạn có muốn uống cà phê không?"
+        },
+        {
+          "q": "Do you mind if I _____ here?",
+          "opts": [
+            "sit",
+            "sitting",
+            "to sit",
+            "sat"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng. \"Do you mind if I\" + V(hiện tại đơn)? Do you mind if I sit here? = Bạn có phiền nếu tôi ngồi đây?"
+        },
+        {
+          "q": "What does 'smartwatch' mean?",
+          "opts": [
+            "điện thoại",
+            "đồng hồ thông minh",
+            "máy tính bảng",
+            "tai nghe"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Smartwatch\" nghĩa là đồng hồ thông minh, có nhiều chức năng như điện thoại."
+        }
+      ]
+    },
+    "12": {
+      "title": "Career Choices",
+      "vocabulary": [
+        {
+          "en": "agriculture engineering",
+          "ipa": "/ˈæɡrɪkʌltʃə ˌendʒɪˈnɪərɪŋ/",
+          "type": "n",
+          "vi": "kỹ thuật nông nghiệp"
+        },
+        {
+          "en": "assembly worker",
+          "ipa": "/əˈsembli ˈwɜːkə/",
+          "type": "n",
+          "vi": "công nhân lắp ráp"
+        },
+        {
+          "en": "bartender",
+          "ipa": "/ˈbɑːtendə/",
+          "type": "n",
+          "vi": "nhân viên pha chế"
+        },
+        {
+          "en": "career",
+          "ipa": "/kəˈrɪə/",
+          "type": "n",
+          "vi": "sự nghiệp"
+        },
+        {
+          "en": "cashier",
+          "ipa": "/kæˈʃɪə/",
+          "type": "n",
+          "vi": "nhân viên thu ngân"
+        },
+        {
+          "en": "decisive",
+          "ipa": "/dɪˈsaɪsɪv/",
+          "type": "adj",
+          "vi": "quyết đoán"
+        },
+        {
+          "en": "demanding",
+          "ipa": "/dɪˈmɑːndɪŋ/",
+          "type": "adj",
+          "vi": "đòi hỏi cao"
+        },
+        {
+          "en": "fabric",
+          "ipa": "/ˈfæbrɪk/",
+          "type": "n",
+          "vi": "vải"
+        },
+        {
+          "en": "garment worker",
+          "ipa": "/ˈɡɑːmənt ˈwɜːkə/",
+          "type": "n",
+          "vi": "công nhân may"
+        },
+        {
+          "en": "vocational",
+          "ipa": "/vəʊˈkeɪʃənl/",
+          "type": "adj",
+          "vi": "thuộc nghề nghiệp, dạy nghề"
+        },
+        {
+          "en": "well-paid",
+          "ipa": "/ˌwel ˈpeɪd/",
+          "type": "adj",
+          "vi": "lương cao"
+        },
+        {
+          "en": "rewarding",
+          "ipa": "/rɪˈwɔːdɪŋ/",
+          "type": "adj",
+          "vi": "bổ ích, đáng giá"
+        },
+        {
+          "en": "skill",
+          "ipa": "/skɪl/",
+          "type": "n",
+          "vi": "kỹ năng"
+        },
+        {
+          "en": "qualification",
+          "ipa": "/ˌkwɒlɪfɪˈkeɪʃn/",
+          "type": "n",
+          "vi": "bằng cấp, trình độ"
+        },
+        {
+          "en": "opportunity",
+          "ipa": "/ˌɒpəˈtjuːnəti/",
+          "type": "n",
+          "vi": "cơ hội"
+        },
+        {
+          "en": "employment",
+          "ipa": "/ɪmˈplɔɪmənt/",
+          "type": "n",
+          "vi": "việc làm"
+        },
+        {
+          "en": "profession",
+          "ipa": "/prəˈfeʃn/",
+          "type": "n",
+          "vi": "nghề nghiệp"
+        },
+        {
+          "en": "salary",
+          "ipa": "/ˈsæləri/",
+          "type": "n",
+          "vi": "lương"
+        },
+        {
+          "en": "experience",
+          "ipa": "/ɪkˈspɪriəns/",
+          "type": "n",
+          "vi": "kinh nghiệm"
+        },
+        {
+          "en": "interview",
+          "ipa": "/ˈɪntəvjuː/",
+          "type": "n",
+          "vi": "cuộc phỏng vấn"
+        },
+        {
+          "en": "apply",
+          "ipa": "/əˈplaɪ/",
+          "type": "v",
+          "vi": "nộp đơn"
+        },
+        {
+          "en": "apprentice",
+          "ipa": "/əˈprentɪs/",
+          "type": "n",
+          "vi": "người học việc"
+        },
+        {
+          "en": "ambitious",
+          "ipa": "/æmˈbɪʃəs/",
+          "type": "adj",
+          "vi": "tham vọng"
+        },
+        {
+          "en": "creative",
+          "ipa": "/kriˈeɪtɪv/",
+          "type": "adj",
+          "vi": "sáng tạo"
+        },
+        {
+          "en": "responsible",
+          "ipa": "/rɪˈspɒnsəbl/",
+          "type": "adj",
+          "vi": "có trách nhiệm"
+        },
+        {
+          "en": "flexible",
+          "ipa": "/ˈfleksəbl/",
+          "type": "adj",
+          "vi": "linh hoạt"
+        },
+        {
+          "en": "hardworking",
+          "ipa": "/ˌhɑːdˈwɜːkɪŋ/",
+          "type": "adj",
+          "vi": "chăm chỉ"
+        },
+        {
+          "en": "reliable",
+          "ipa": "/rɪˈlaɪəbl/",
+          "type": "adj",
+          "vi": "đáng tin cậy"
+        },
+        {
+          "en": "teamwork",
+          "ipa": "/ˈtiːmwɜːk/",
+          "type": "n",
+          "vi": "làm việc nhóm"
+        },
+        {
+          "en": "independence",
+          "ipa": "/ˌɪndɪˈpendəns/",
+          "type": "n",
+          "vi": "sự độc lập"
+        },
+        {
+          "en": "determination",
+          "ipa": "/dɪˌtɜːmɪˈneɪʃn/",
+          "type": "n",
+          "vi": "sự quyết tâm"
+        },
+        {
+          "en": "resume",
+          "ipa": "/rɪˈzjuːm/",
+          "type": "n",
+          "vi": "sơ yếu lý lịch"
+        },
+        {
+          "en": "entrepreneur",
+          "ipa": "/ˌɒntrəprəˈnɜː/",
+          "type": "n",
+          "vi": "doanh nhân"
+        },
+        {
+          "en": "freelancer",
+          "ipa": "/ˈfriːlɑːnsə/",
+          "type": "n",
+          "vi": "người làm tự do"
+        },
+        {
+          "en": "intern",
+          "ipa": "/ˈɪntɜːn/",
+          "type": "n",
+          "vi": "thực tập sinh"
+        }
+      ],
+      "grammar": [
+        "Dependent adverbial clauses"
+      ],
+      "grammar_notes": "DEPENDENT ADVERBIAL CLAUSES (Mệnh đề trạng ngữ phụ thuộc)\n\n1. Mệnh đề chỉ thời gian (Time):\nLiên từ: after, before, until, when, since, as soon as, while, by the time\nVí dụ: Before I leave, I'll give you a call.\nAfter + S + had + V3, S + V quá khứ\n\n2. Mệnh đề chỉ nơi chốn (Place):\nLiên từ: where, wherever, anywhere, everywhere\nVí dụ: Wherever there is life, there is love.\n\n3. Mệnh đề chỉ lý do (Reason):\nLiên từ: because, as, since → so/therefore\nBecause of + V-ing / N phrase\nVí dụ: We cancelled the trip because our mother was ill.\n\n4. Mệnh đề chỉ sự nhượng bộ (Concession):\nLiên từ: although, though, even though → but\nDespite/In spite of + N phrase/V-ing\nVí dụ: Although I tried my best, I couldn't pass the exam.\n\n5. Mệnh đề chỉ mục đích (Purpose):\nLiên từ: so that, in order that, in case, for fear that\nIn order to / so as to + V\nVí dụ: She went to bed early so that she would be on time.\n\n6. Mệnh đề chỉ kết quả (Result):\nso + adj/adv + that / such (a) + N + that\nVí dụ: His actions are so quick that we can't match him.",
+      "exercises": [
+        {
+          "q": "_____ I leave, I'll give you a call.",
+          "opts": [
+            "After",
+            "Before",
+            "During",
+            "While"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Before\" = trước khi. Trước khi tôi đi, tôi sẽ gọi cho bạn. \"After\" nghĩa là sau khi."
+        },
+        {
+          "q": "What does 'career' mean?",
+          "opts": [
+            "sở thích",
+            "sự nghiệp",
+            "trường học",
+            "gia đình"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Career\" nghĩa là sự nghiệp, con đường nghề nghiệp lâu dài."
+        },
+        {
+          "q": "We cancelled the trip _____ our mother was ill.",
+          "opts": [
+            "although",
+            "because",
+            "so that",
+            "unless"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Because\" chỉ nguyên nhân. Chúng tôi hủy chuyến đi vì mẹ bị ốm."
+        },
+        {
+          "q": "_____ I tried my best, I couldn't pass the exam.",
+          "opts": [
+            "Because",
+            "Although",
+            "Since",
+            "So that"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Although\" chỉ sự tương phản. Mặc dù tôi đã cố gắng hết sức, tôi không đỗ được."
+        },
+        {
+          "q": "What does 'demanding' mean?",
+          "opts": [
+            "dễ dàng",
+            "đòi hỏi cao",
+            "nhàm chán",
+            "thú vị"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Demanding\" nghĩa là đòi hỏi cao, yêu cầu nhiều nỗ lực và kỹ năng."
+        },
+        {
+          "q": "She went to bed early _____ she would be on time.",
+          "opts": [
+            "because",
+            "although",
+            "so that",
+            "unless"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"So that\" chỉ mục đích. Cô ấy đi ngủ sớm để đến đúng giờ."
+        },
+        {
+          "q": "His actions are _____ quick that we can't match him.",
+          "opts": [
+            "such",
+            "so",
+            "very",
+            "too"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Cấu trúc: so + adj/adv + that. His actions are so quick that... \"Such\" đi với danh từ."
+        },
+        {
+          "q": "What does 'vocational' mean?",
+          "opts": [
+            "học thuật",
+            "dạy nghề",
+            "giải trí",
+            "thể thao"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Vocational\" nghĩa là dạy nghề, liên quan đến đào tạo kỹ năng nghề nghiệp."
+        },
+        {
+          "q": "_____ the cold weather, she went out.",
+          "opts": [
+            "Because",
+            "Although",
+            "Despite",
+            "Since"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"Despite\" + N/V-ing = mặc dù. Despite the cold weather = Mặc dù thời tiết lạnh. \"Although\" + clause."
+        },
+        {
+          "q": "They are _____ wonderful players that no one can beat them.",
+          "opts": [
+            "so",
+            "such",
+            "very",
+            "too"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Cấu trúc: such + adj + N(số nhiều) + that. They are such wonderful players that..."
+        },
+        {
+          "q": "What does 'well-paid' mean?",
+          "opts": [
+            "lương thấp",
+            "lương cao",
+            "không lương",
+            "bán thời gian"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Well-paid\" nghĩa là lương cao, được trả lương tốt."
+        },
+        {
+          "q": "I met him _____ I was crossing the street.",
+          "opts": [
+            "after",
+            "before",
+            "while",
+            "until"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"While\" = trong khi, diễn tả hai hành động xảy ra đồng thời. I met him while I was crossing..."
+        },
+        {
+          "q": "_____ there is life, there is love.",
+          "opts": [
+            "Where",
+            "Wherever",
+            "When",
+            "Because"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Wherever\" = bất cứ nơi đâu, ở đâu cũng. Wherever there is life, there is love."
+        },
+        {
+          "q": "What does 'flexible' mean?",
+          "opts": [
+            "cứng nhắc",
+            "linh hoạt",
+            "lười biếng",
+            "nghiêm khắc"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Flexible\" nghĩa là linh hoạt, có thể thay đổi dễ dàng để phù hợp."
+        },
+        {
+          "q": "He took a raincoat _____ it might rain.",
+          "opts": [
+            "because",
+            "although",
+            "in case",
+            "so that"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"In case\" = phòng khi, trong trường hợp. He took a raincoat in case it might rain."
+        },
+        {
+          "q": "She works hard _____ she can support her family.",
+          "opts": [
+            "because",
+            "although",
+            "so that",
+            "despite"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng. \"So that\" chỉ mục đích. She works hard so that she can support her family."
+        },
+        {
+          "q": "What does 'entrepreneur' mean?",
+          "opts": [
+            "nhân viên",
+            "doanh nhân",
+            "giáo viên",
+            "bác sĩ"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Entrepreneur\" nghĩa là doanh nhân, người khởi nghiệp kinh doanh."
+        },
+        {
+          "q": "_____ he had eaten dinner, he went to bed.",
+          "opts": [
+            "Before",
+            "After",
+            "While",
+            "Until"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"After\" = sau khi. After he had eaten dinner, he went to bed."
+        },
+        {
+          "q": "The exam was _____ difficult that many students failed.",
+          "opts": [
+            "such",
+            "so",
+            "very",
+            "quite"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. Cấu trúc: so + adj + that. The exam was so difficult that... \"Such\" đi với danh từ."
+        },
+        {
+          "q": "What does 'rewarding' mean?",
+          "opts": [
+            "nhàm chán",
+            "bổ ích",
+            "khó khăn",
+            "nguy hiểm"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng. \"Rewarding\" nghĩa là bổ ích, đáng giá, mang lại sự hài lòng."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1090 @@
+{
+  "units": {
+    "1": {
+      "title": "Animals",
+      "vocabulary": [
+        { "en": "snake", "type": "n", "vi": "con r\u1eafn" },
+        { "en": "monkey", "type": "n", "vi": "con kh\u1ec9" },
+        { "en": "horse", "type": "n", "vi": "con ng\u1ef1a" },
+        { "en": "camel", "type": "n", "vi": "con l\u1ea1c \u0111\u00e0" },
+        { "en": "hippo", "type": "n", "vi": "con h\u00e0 m\u00e3" },
+        { "en": "rhino", "type": "n", "vi": "con t\u00ea gi\u00e1c" },
+        { "en": "panda", "type": "n", "vi": "con g\u1ea5u tr\u00fac" },
+        { "en": "giraffe", "type": "n", "vi": "con h\u01b0\u01a1u cao c\u1ed5" },
+        { "en": "lion", "type": "n", "vi": "con s\u01b0 t\u1eed" },
+        { "en": "dolphin", "type": "n", "vi": "con c\u00e1 heo" },
+        { "en": "tiger", "type": "n", "vi": "con h\u1ed5" },
+        { "en": "zebra", "type": "n", "vi": "con ng\u1ef1a v\u1eb1n" },
+        { "en": "crocodile", "type": "n", "vi": "con c\u00e1 s\u1ea5u" },
+        { "en": "bat", "type": "n", "vi": "con d\u01a1i" },
+        { "en": "shark", "type": "n", "vi": "con c\u00e1 m\u1eadp" },
+        { "en": "penguin", "type": "n", "vi": "con ch\u00edm c\u00e1nh c\u1ee5t" },
+        { "en": "kangaroo", "type": "n", "vi": "con chu\u1ed9t t\u00fai" },
+        { "en": "elephant", "type": "n", "vi": "con voi" },
+        { "en": "wing", "type": "n", "vi": "c\u00e1nh" },
+        { "en": "feather", "type": "n", "vi": "l\u00f4ng v\u0169" },
+        { "en": "tail", "type": "n", "vi": "\u0111u\u00f4i" },
+        { "en": "fin", "type": "n", "vi": "v\u00e2y c\u00e1" },
+        { "en": "fur", "type": "n", "vi": "l\u00f4ng (th\u00fa)" },
+        { "en": "claw", "type": "n", "vi": "vu\u1ed1t, m\u00f3ng vu\u1ed1t" }
+      ],
+      "grammar": [
+        "This / That / These / Those",
+        "What's this? / What's that? / What are these? / What are those?"
+      ],
+      "grammar_notes": "This/That/These/Those: D\u00f9ng 'this' (c\u00e1i n\u00e0y) v\u00e0 'these' (nh\u1eefng c\u00e1i n\u00e0y) cho v\u1eadt \u1edf g\u1ea7n. D\u00f9ng 'that' (c\u00e1i kia) v\u00e0 'those' (nh\u1eefng c\u00e1i kia) cho v\u1eadt \u1edf xa. V\u00ed d\u1ee5: This is a monkey. / Those are snakes. 'This/That' \u0111i v\u1edbi \u0111\u1ed9ng t\u1eeb s\u1ed1 \u00edt (is), 'These/Those' \u0111i v\u1edbi \u0111\u1ed9ng t\u1eeb s\u1ed1 nhi\u1ec1u (are). C\u00e2u h\u1ecfi: What's this? - It's a panda. What are those? - They're bats.",
+      "exercises": [
+        {
+          "q": "_____ is a monkey.",
+          "opts": ["This", "These", "Those", "They"],
+          "ans": 0,
+          "explain": "'This' d\u00f9ng cho danh t\u1eeb s\u1ed1 \u00edt \u1edf g\u1ea7n. 'A monkey' l\u00e0 s\u1ed1 \u00edt n\u00ean d\u00f9ng 'This'."
+        },
+        {
+          "q": "_____ are elephants.",
+          "opts": ["This", "That", "Those", "It"],
+          "ans": 2,
+          "explain": "'Elephants' l\u00e0 s\u1ed1 nhi\u1ec1u, n\u00ean d\u00f9ng 'Those' (s\u1ed1 nhi\u1ec1u, \u1edf xa) ho\u1eb7c 'These' (s\u1ed1 nhi\u1ec1u, \u1edf g\u1ea7n). \u0110\u00e1p \u00e1n \u0111\u00fang l\u00e0 'Those'."
+        },
+        {
+          "q": "What's this? - _____ a dolphin.",
+          "opts": ["It's", "They're", "These are", "Those are"],
+          "ans": 0,
+          "explain": "Tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi 'What's this?' b\u1eb1ng 'It's + danh t\u1eeb s\u1ed1 \u00edt'."
+        },
+        {
+          "q": "What are those? - _____ penguins.",
+          "opts": ["It's", "That's", "They're", "This is"],
+          "ans": 2,
+          "explain": "Tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi 'What are those?' b\u1eb1ng 'They're + danh t\u1eeb s\u1ed1 nhi\u1ec1u'."
+        },
+        {
+          "q": "A 'giraffe' in Vietnamese is _____.",
+          "opts": ["con voi", "con h\u01b0\u01a1u cao c\u1ed5", "con ng\u1ef1a v\u1eb1n", "con g\u1ea5u tr\u00fac"],
+          "ans": 1,
+          "explain": "'Giraffe' = con h\u01b0\u01a1u cao c\u1ed5. 'Elephant' = con voi, 'zebra' = con ng\u1ef1a v\u1eb1n."
+        },
+        {
+          "q": "_____ that? - It's a rhino.",
+          "opts": ["What", "What's", "What are", "Who"],
+          "ans": 1,
+          "explain": "'That' l\u00e0 s\u1ed1 \u00edt n\u00ean d\u00f9ng 'What's' (What is). C\u00e2u h\u1ecfi: What's that? - It's a rhino."
+        },
+        {
+          "q": "Birds have _____, two wings, and two legs.",
+          "opts": ["fins", "feathers", "fur", "claws"],
+          "ans": 1,
+          "explain": "Chim c\u00f3 l\u00f4ng v\u0169 (feathers), hai c\u00e1nh (wings) v\u00e0 hai ch\u00e2n (legs)."
+        },
+        {
+          "q": "Sharks have big _____.",
+          "opts": ["wings", "feathers", "fins", "claws"],
+          "ans": 2,
+          "explain": "C\u00e1 m\u1eadp c\u00f3 v\u00e2y (fins) l\u1edbn. 'Wings' = c\u00e1nh, 'feathers' = l\u00f4ng v\u0169."
+        },
+        {
+          "q": "A 'crocodile' is _____.",
+          "opts": ["con c\u00e1 heo", "con c\u00e1 m\u1eadp", "con c\u00e1 s\u1ea5u", "con r\u1eafn"],
+          "ans": 2,
+          "explain": "'Crocodile' = con c\u00e1 s\u1ea5u. 'Dolphin' = c\u00e1 heo, 'shark' = c\u00e1 m\u1eadp."
+        },
+        {
+          "q": "These _____ kangaroos.",
+          "opts": ["is", "are", "am", "was"],
+          "ans": 1,
+          "explain": "'These' l\u00e0 s\u1ed1 nhi\u1ec1u n\u00ean \u0111\u1ed9ng t\u1eeb to be ph\u1ea3i l\u00e0 'are'."
+        },
+        {
+          "q": "That _____ a bat.",
+          "opts": ["are", "is", "am", "were"],
+          "ans": 1,
+          "explain": "'That' l\u00e0 s\u1ed1 \u00edt n\u00ean \u0111\u1ed9ng t\u1eeb to be ph\u1ea3i l\u00e0 'is'."
+        },
+        {
+          "q": "Lions have fur and _____.",
+          "opts": ["fins", "feathers", "claws", "wings"],
+          "ans": 2,
+          "explain": "S\u01b0 t\u1eed c\u00f3 l\u00f4ng (fur) v\u00e0 vu\u1ed1t (claws). 'Fins' = v\u00e2y c\u00e1, 'feathers' = l\u00f4ng v\u0169."
+        },
+        {
+          "q": "What animal has a very long neck?",
+          "opts": ["elephant", "giraffe", "hippo", "rhino"],
+          "ans": 1,
+          "explain": "H\u01b0\u01a1u cao c\u1ed5 (giraffe) c\u00f3 c\u00e1i c\u1ed5 r\u1ea5t d\u00e0i."
+        },
+        {
+          "q": "_____ are those? - They're zebras.",
+          "opts": ["What", "Who", "Where", "How"],
+          "ans": 0,
+          "explain": "D\u00f9ng 'What' \u0111\u1ec3 h\u1ecfi v\u1ec1 v\u1eadt. 'What are those? - They're zebras.'"
+        },
+        {
+          "q": "Penguins use their _____ to swim.",
+          "opts": ["tails", "claws", "wings", "feathers"],
+          "ans": 2,
+          "explain": "Ch\u00edm c\u00e1nh c\u1ee5t d\u00f9ng c\u00e1nh (wings) \u0111\u1ec3 b\u01a1i."
+        },
+        {
+          "q": "A 'hippo' in Vietnamese is _____.",
+          "opts": ["con h\u1ed5", "con h\u00e0 m\u00e3", "con t\u00ea gi\u00e1c", "con voi"],
+          "ans": 1,
+          "explain": "'Hippo' = con h\u00e0 m\u00e3. 'Tiger' = con h\u1ed5, 'rhino' = con t\u00ea gi\u00e1c."
+        },
+        {
+          "q": "This is _____ snake.",
+          "opts": ["a", "an", "the", "two"],
+          "ans": 0,
+          "explain": "'Snake' b\u1eaft \u0111\u1ea7u b\u1eb1ng ph\u1ee5 \u00e2m n\u00ean d\u00f9ng m\u1ea1o t\u1eeb 'a'. D\u00f9ng 'an' khi t\u1eeb b\u1eaft \u0111\u1ea7u b\u1eb1ng nguy\u00ean \u00e2m."
+        },
+        {
+          "q": "That's _____ elephant.",
+          "opts": ["a", "an", "the", "two"],
+          "ans": 1,
+          "explain": "'Elephant' b\u1eaft \u0111\u1ea7u b\u1eb1ng nguy\u00ean \u00e2m 'e' n\u00ean d\u00f9ng m\u1ea1o t\u1eeb 'an'."
+        }
+      ]
+    },
+    "2": {
+      "title": "What I Can Do",
+      "vocabulary": [
+        { "en": "dance", "type": "v", "vi": "nh\u1ea3y m\u00faa" },
+        { "en": "sing", "type": "v", "vi": "h\u00e1t" },
+        { "en": "play the keyboard", "type": "v phr", "vi": "ch\u01a1i \u0111\u00e0n ph\u00edm" },
+        { "en": "paint", "type": "v", "vi": "v\u1ebd (b\u1eb1ng m\u00e0u)" },
+        { "en": "draw", "type": "v", "vi": "v\u1ebd (b\u1eb1ng b\u00fat)" },
+        { "en": "act", "type": "v", "vi": "di\u1ec5n xu\u1ea5t" },
+        { "en": "hop", "type": "v", "vi": "nh\u1ea3y l\u00f2 c\u00f2" },
+        { "en": "fly", "type": "v", "vi": "bay" },
+        { "en": "jump rope", "type": "v phr", "vi": "nh\u1ea3y d\u00e2y" },
+        { "en": "swim", "type": "v", "vi": "b\u01a1i" },
+        { "en": "run", "type": "v", "vi": "ch\u1ea1y" },
+        { "en": "climb a tree", "type": "v phr", "vi": "leo c\u00e2y" },
+        { "en": "play the guitar", "type": "v phr", "vi": "ch\u01a1i guitar" },
+        { "en": "play the piano", "type": "v phr", "vi": "ch\u01a1i piano" },
+        { "en": "drive a car", "type": "v phr", "vi": "l\u00e1i xe h\u01a1i" },
+        { "en": "ride a bike", "type": "v phr", "vi": "\u0111i xe \u0111\u1ea1p" },
+        { "en": "do gymnastics", "type": "v phr", "vi": "t\u1eadp th\u1ec3 d\u1ee5c d\u1ee5ng c\u1ee5" },
+        { "en": "play the drums", "type": "v phr", "vi": "ch\u01a1i tr\u1ed1ng" },
+        { "en": "cook", "type": "v", "vi": "n\u1ea5u \u0103n" },
+        { "en": "make", "type": "v", "vi": "l\u00e0m, t\u1ea1o" },
+        { "en": "salad", "type": "n", "vi": "m\u00f3n salad" },
+        { "en": "pasta", "type": "n", "vi": "m\u00f3n m\u1ef3 \u00dd" },
+        { "en": "pancakes", "type": "n", "vi": "b\u00e1nh k\u1ebfp" },
+        { "en": "spring rolls", "type": "n", "vi": "ch\u1ea3 gi\u00f2" },
+        { "en": "soup", "type": "n", "vi": "canh, s\u00fap" }
+      ],
+      "grammar": [
+        "Can / Can't for ability",
+        "What can you do?"
+      ],
+      "grammar_notes": "Can / Can't: D\u00f9ng 'can' \u0111\u1ec3 n\u00f3i v\u1ec1 kh\u1ea3 n\u0103ng (c\u00f3 th\u1ec3 l\u00e0m \u0111\u01b0\u1ee3c). D\u00f9ng 'can't' (cannot) khi kh\u00f4ng l\u00e0m \u0111\u01b0\u1ee3c. C\u1ea5u tr\u00fac: I can dance. / I can't draw. C\u00e2u h\u1ecfi: Can you swim? - Yes, I can. / No, I can't. Can she hop? - Yes, she can. / No, she can't. L\u01b0u \u00fd: Sau 'can/can't' lu\u00f4n d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu (kh\u00f4ng th\u00eam s/es). V\u00ed d\u1ee5: She can sing. (kh\u00f4ng ph\u1ea3i She can sings.)",
+      "exercises": [
+        {
+          "q": "I _____ dance very well.",
+          "opts": ["can", "cans", "am can", "do can"],
+          "ans": 0,
+          "explain": "D\u00f9ng 'can' + \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu \u0111\u1ec3 n\u00f3i v\u1ec1 kh\u1ea3 n\u0103ng. Kh\u00f4ng chia 'can' theo ch\u1ee7 ng\u1eef."
+        },
+        {
+          "q": "She _____ swim. She's afraid of water.",
+          "opts": ["can", "can't", "cans", "don't"],
+          "ans": 1,
+          "explain": "C\u00f4 \u1ea5y kh\u00f4ng bi\u1ebft b\u01a1i v\u00ec s\u1ee3 n\u01b0\u1edbc, n\u00ean d\u00f9ng 'can't' (kh\u00f4ng th\u1ec3)."
+        },
+        {
+          "q": "_____ you play the piano?",
+          "opts": ["Do", "Are", "Can", "Is"],
+          "ans": 2,
+          "explain": "H\u1ecfi v\u1ec1 kh\u1ea3 n\u0103ng d\u00f9ng 'Can': Can you play the piano?"
+        },
+        {
+          "q": "Can Tom run? - Yes, he _____.",
+          "opts": ["can", "can't", "is", "does"],
+          "ans": 0,
+          "explain": "Tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi Can...? kh\u1eb3ng \u0111\u1ecbnh: Yes, he can."
+        },
+        {
+          "q": "A 'ride a bike' in Vietnamese is _____.",
+          "opts": ["l\u00e1i xe h\u01a1i", "\u0111i xe \u0111\u1ea1p", "nh\u1ea3y d\u00e2y", "leo c\u00e2y"],
+          "ans": 1,
+          "explain": "'Ride a bike' = \u0111i xe \u0111\u1ea1p. 'Drive a car' = l\u00e1i xe h\u01a1i."
+        },
+        {
+          "q": "My sister can _____ very beautiful pictures.",
+          "opts": ["paint", "paints", "painting", "painted"],
+          "ans": 0,
+          "explain": "Sau 'can' lu\u00f4n d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu (kh\u00f4ng th\u00eam s/es/ing)."
+        },
+        {
+          "q": "What can you do? - I can _____.",
+          "opts": ["sings", "singing", "sing", "sang"],
+          "ans": 2,
+          "explain": "Sau 'can' d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu: I can sing."
+        },
+        {
+          "q": "Can they jump rope? - No, they _____.",
+          "opts": ["can", "can't", "don't", "aren't"],
+          "ans": 1,
+          "explain": "Tr\u1ea3 l\u1eddi ph\u1ee7 \u0111\u1ecbnh c\u00e2u h\u1ecfi Can...?: No, they can't."
+        },
+        {
+          "q": "I can make _____ but I can't make soup.",
+          "opts": ["salad", "dance", "swim", "fly"],
+          "ans": 0,
+          "explain": "'Make salad' = l\u00e0m salad. 'Dance', 'swim', 'fly' kh\u00f4ng \u0111i v\u1edbi 'make'."
+        },
+        {
+          "q": "'Do gymnastics' means _____.",
+          "opts": ["ch\u01a1i guitar", "t\u1eadp th\u1ec3 d\u1ee5c d\u1ee5ng c\u1ee5", "nh\u1ea3y m\u00faa", "ch\u1ea1y"],
+          "ans": 1,
+          "explain": "'Do gymnastics' = t\u1eadp th\u1ec3 d\u1ee5c d\u1ee5ng c\u1ee5."
+        },
+        {
+          "q": "Ben can play the _____. He loves music.",
+          "opts": ["bike", "car", "drums", "tree"],
+          "ans": 2,
+          "explain": "'Play the drums' = ch\u01a1i tr\u1ed1ng. 'Bike', 'car', 'tree' kh\u00f4ng ph\u1ea3i nh\u1ea1c c\u1ee5."
+        },
+        {
+          "q": "Lucy _____ cook pasta.",
+          "opts": ["can", "cans", "is", "are"],
+          "ans": 0,
+          "explain": "'Can' kh\u00f4ng thay \u0111\u1ed5i theo ch\u1ee7 ng\u1eef. Lucy can cook pasta."
+        },
+        {
+          "q": "Can your mom _____ a car?",
+          "opts": ["drive", "drives", "driving", "to drive"],
+          "ans": 0,
+          "explain": "Sau 'can' d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu: Can your mom drive a car?"
+        },
+        {
+          "q": "'Spring rolls' in Vietnamese is _____.",
+          "opts": ["b\u00e1nh k\u1ebfp", "m\u00f3n m\u1ef3 \u00dd", "ch\u1ea3 gi\u00f2", "canh"],
+          "ans": 2,
+          "explain": "'Spring rolls' = ch\u1ea3 gi\u00f2. 'Pancakes' = b\u00e1nh k\u1ebfp, 'pasta' = m\u00f3n m\u1ef3 \u00dd."
+        },
+        {
+          "q": "What _____ your friends do?",
+          "opts": ["can", "are", "is", "do"],
+          "ans": 0,
+          "explain": "H\u1ecfi v\u1ec1 kh\u1ea3 n\u0103ng: What can your friends do?"
+        },
+        {
+          "q": "He can climb a _____ very fast.",
+          "opts": ["bike", "tree", "piano", "drum"],
+          "ans": 1,
+          "explain": "'Climb a tree' = leo c\u00e2y. \u0110\u00e2y l\u00e0 c\u1ee5m t\u1eeb c\u1ed1 \u0111\u1ecbnh."
+        },
+        {
+          "q": "My brother can't _____. He takes the bus.",
+          "opts": ["sing", "dance", "drive a car", "play the guitar"],
+          "ans": 2,
+          "explain": "Anh \u1ea5y kh\u00f4ng l\u00e1i xe \u0111\u01b0\u1ee3c n\u00ean \u0111i xe bu\u00fdt. 'Drive a car' = l\u00e1i xe h\u01a1i."
+        }
+      ]
+    },
+    "3": {
+      "title": "Weather",
+      "vocabulary": [
+        { "en": "sunny", "type": "adj", "vi": "c\u00f3 n\u1eafng" },
+        { "en": "rainy", "type": "adj", "vi": "c\u00f3 m\u01b0a" },
+        { "en": "snowy", "type": "adj", "vi": "c\u00f3 tuy\u1ebft" },
+        { "en": "cloudy", "type": "adj", "vi": "nhi\u1ec1u m\u00e2y" },
+        { "en": "windy", "type": "adj", "vi": "c\u00f3 gi\u00f3" },
+        { "en": "foggy", "type": "adj", "vi": "c\u00f3 s\u01b0\u01a1ng m\u00f9" },
+        { "en": "do arts and crafts", "type": "v phr", "vi": "l\u00e0m th\u1ee7 c\u00f4ng" },
+        { "en": "fly a kite", "type": "v phr", "vi": "th\u1ea3 di\u1ec1u" },
+        { "en": "have a picnic", "type": "v phr", "vi": "\u0111i d\u00e3 ngo\u1ea1i" },
+        { "en": "make a snowman", "type": "v phr", "vi": "l\u00e0m ng\u01b0\u1eddi tuy\u1ebft" },
+        { "en": "go skiing", "type": "v phr", "vi": "\u0111i tr\u01b0\u1ee3t tuy\u1ebft" },
+        { "en": "go for a walk", "type": "v phr", "vi": "\u0111i d\u1ea1o" },
+        { "en": "sunglasses", "type": "n", "vi": "k\u00ednh r\u00e2m" },
+        { "en": "coat", "type": "n", "vi": "\u00e1o kho\u00e1c" },
+        { "en": "cap", "type": "n", "vi": "m\u0169 l\u01b0\u1ee1i trai" },
+        { "en": "raincoat", "type": "n", "vi": "\u00e1o m\u01b0a" },
+        { "en": "umbrella", "type": "n", "vi": "\u00f4, d\u00f9" },
+        { "en": "gloves", "type": "n", "vi": "g\u0103ng tay" },
+        { "en": "hot", "type": "adj", "vi": "n\u00f3ng" },
+        { "en": "cold", "type": "adj", "vi": "l\u1ea1nh" },
+        { "en": "warm", "type": "adj", "vi": "\u1ea5m" },
+        { "en": "freezing", "type": "adj", "vi": "r\u1ea5t l\u1ea1nh, \u0111\u00f3ng b\u0103ng" },
+        { "en": "stormy", "type": "adj", "vi": "c\u00f3 b\u00e3o" }
+      ],
+      "grammar": [
+        "What's the weather like today?",
+        "Would you like to...?",
+        "Bring your... because it's..."
+      ],
+      "grammar_notes": "What's the weather like today?: D\u00f9ng \u0111\u1ec3 h\u1ecfi th\u1eddi ti\u1ebft h\u00f4m nay. Tr\u1ea3 l\u1eddi: It's sunny. / It's rainy. Would you like to...?: D\u00f9ng \u0111\u1ec3 m\u1eddi ai l\u00e0m g\u00ec. V\u00ed d\u1ee5: Would you like to fly a kite with me? Tr\u1ea3 l\u1eddi: Yes, I'd love to. / No, thanks. Bring your... because it's...: D\u00f9ng \u0111\u1ec3 khuy\u00ean ai mang theo \u0111\u1ed3 v\u00ec th\u1eddi ti\u1ebft. V\u00ed d\u1ee5: Bring your umbrella because it's rainy.",
+      "exercises": [
+        {
+          "q": "What's the weather _____ today?",
+          "opts": ["like", "look", "is", "does"],
+          "ans": 0,
+          "explain": "C\u00e2u h\u1ecfi th\u1eddi ti\u1ebft: What's the weather like today? 'Like' l\u00e0 t\u1eeb c\u1ed1 \u0111\u1ecbnh trong c\u00e2u h\u1ecfi n\u00e0y."
+        },
+        {
+          "q": "It's _____. There are many clouds in the sky.",
+          "opts": ["sunny", "cloudy", "snowy", "hot"],
+          "ans": 1,
+          "explain": "Nhi\u1ec1u m\u00e2y tr\u00ean tr\u1eddi n\u00ean th\u1eddi ti\u1ebft l\u00e0 'cloudy' (nhi\u1ec1u m\u00e2y)."
+        },
+        {
+          "q": "Would you like _____ go skiing?",
+          "opts": ["to", "for", "in", "at"],
+          "ans": 0,
+          "explain": "C\u1ea5u tr\u00fac: Would you like to + \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu."
+        },
+        {
+          "q": "Bring your _____ because it's rainy.",
+          "opts": ["sunglasses", "cap", "umbrella", "shorts"],
+          "ans": 2,
+          "explain": "Tr\u1eddi m\u01b0a (rainy) th\u00ec c\u1ea7n mang \u00f4 (umbrella)."
+        },
+        {
+          "q": "It's sunny today. I like _____.",
+          "opts": ["making a snowman", "going skiing", "flying a kite", "staying at home"],
+          "ans": 2,
+          "explain": "Tr\u1eddi n\u1eafng ph\u00f9 h\u1ee3p \u0111\u1ec3 th\u1ea3 di\u1ec1u (fly a kite). L\u00e0m ng\u01b0\u1eddi tuy\u1ebft v\u00e0 tr\u01b0\u1ee3t tuy\u1ebft c\u1ea7n c\u00f3 tuy\u1ebft."
+        },
+        {
+          "q": "'Foggy' in Vietnamese means _____.",
+          "opts": ["c\u00f3 n\u1eafng", "c\u00f3 gi\u00f3", "c\u00f3 s\u01b0\u01a1ng m\u00f9", "c\u00f3 m\u01b0a"],
+          "ans": 2,
+          "explain": "'Foggy' = c\u00f3 s\u01b0\u01a1ng m\u00f9. 'Sunny' = c\u00f3 n\u1eafng, 'windy' = c\u00f3 gi\u00f3."
+        },
+        {
+          "q": "Would you like to make a snowman? - Yes, I'd _____ to.",
+          "opts": ["like", "love", "want", "go"],
+          "ans": 1,
+          "explain": "Tr\u1ea3 l\u1eddi \u0111\u1ed3ng \u00fd: Yes, I'd love to. (\u0110\u00e2y l\u00e0 c\u00e1ch n\u00f3i l\u1ecbch s\u1ef1.)"
+        },
+        {
+          "q": "Bring your _____ because it's sunny.",
+          "opts": ["umbrella", "raincoat", "sunglasses", "gloves"],
+          "ans": 2,
+          "explain": "Tr\u1eddi n\u1eafng c\u1ea7n mang k\u00ednh r\u00e2m (sunglasses). Umbrella/raincoat d\u00f9ng khi m\u01b0a."
+        },
+        {
+          "q": "It's very cold and _____. Let's go skiing!",
+          "opts": ["sunny", "hot", "snowy", "foggy"],
+          "ans": 2,
+          "explain": "Tr\u01b0\u1ee3t tuy\u1ebft (go skiing) c\u1ea7n th\u1eddi ti\u1ebft l\u1ea1nh v\u00e0 c\u00f3 tuy\u1ebft (snowy)."
+        },
+        {
+          "q": "What do you like doing when it's hot? - I like _____.",
+          "opts": ["going skiing", "making a snowman", "swimming", "wearing gloves"],
+          "ans": 2,
+          "explain": "Tr\u1eddi n\u00f3ng th\u00ec n\u00ean b\u01a1i (swimming). Tr\u01b0\u1ee3t tuy\u1ebft v\u00e0 l\u00e0m ng\u01b0\u1eddi tuy\u1ebft c\u1ea7n tuy\u1ebft."
+        },
+        {
+          "q": "It's _____ today. The wind is blowing very hard.",
+          "opts": ["sunny", "cloudy", "windy", "foggy"],
+          "ans": 2,
+          "explain": "Gi\u00f3 th\u1ed5i m\u1ea1nh (wind is blowing) n\u00ean th\u1eddi ti\u1ebft l\u00e0 'windy' (c\u00f3 gi\u00f3)."
+        },
+        {
+          "q": "'Raincoat' in Vietnamese is _____.",
+          "opts": ["\u00e1o kho\u00e1c", "\u00e1o m\u01b0a", "g\u0103ng tay", "m\u0169 l\u01b0\u1ee1i trai"],
+          "ans": 1,
+          "explain": "'Raincoat' = \u00e1o m\u01b0a. 'Coat' = \u00e1o kho\u00e1c, 'gloves' = g\u0103ng tay."
+        },
+        {
+          "q": "Would you like to go for a _____?",
+          "opts": ["swim", "walk", "kite", "snowman"],
+          "ans": 1,
+          "explain": "'Go for a walk' = \u0111i d\u1ea1o. \u0110\u00e2y l\u00e0 c\u1ee5m t\u1eeb c\u1ed1 \u0111\u1ecbnh."
+        },
+        {
+          "q": "Bring your coat and _____ because it's freezing.",
+          "opts": ["sunglasses", "cap", "gloves", "shorts"],
+          "ans": 2,
+          "explain": "Tr\u1eddi r\u1ea5t l\u1ea1nh (freezing) c\u1ea7n mang \u00e1o kho\u00e1c (coat) v\u00e0 g\u0103ng tay (gloves)."
+        },
+        {
+          "q": "No, _____. I don't want to go skiing.",
+          "opts": ["thanks", "please", "yes", "sure"],
+          "ans": 0,
+          "explain": "T\u1eeb ch\u1ed1i l\u1ecbch s\u1ef1: No, thanks. (Kh\u00f4ng, c\u1ea3m \u01a1n.)"
+        },
+        {
+          "q": "It's rainy. Let's do arts and _____.",
+          "opts": ["kites", "crafts", "walks", "picnics"],
+          "ans": 1,
+          "explain": "'Do arts and crafts' = l\u00e0m th\u1ee7 c\u00f4ng. \u0110\u00e2y l\u00e0 c\u1ee5m t\u1eeb c\u1ed1 \u0111\u1ecbnh."
+        }
+      ]
+    },
+    "4": {
+      "title": "Activities",
+      "vocabulary": [
+        { "en": "play a board game", "type": "v phr", "vi": "ch\u01a1i tr\u00f2 ch\u01a1i b\u00e0n c\u1edd" },
+        { "en": "do a puzzle", "type": "v phr", "vi": "x\u1ebfp h\u00ecnh" },
+        { "en": "read a comic book", "type": "v phr", "vi": "\u0111\u1ecdc truy\u1ec7n tranh" },
+        { "en": "eat snacks", "type": "v phr", "vi": "\u0103n v\u1eb7t" },
+        { "en": "take photos", "type": "v phr", "vi": "ch\u1ee5p \u1ea3nh" },
+        { "en": "play video games", "type": "v phr", "vi": "ch\u01a1i tr\u00f2 ch\u01a1i \u0111i\u1ec7n t\u1eed" },
+        { "en": "listen to music", "type": "v phr", "vi": "nghe nh\u1ea1c" },
+        { "en": "watch television", "type": "v phr", "vi": "xem ti vi" },
+        { "en": "play table tennis", "type": "v phr", "vi": "ch\u01a1i b\u00f3ng b\u00e0n" },
+        { "en": "do martial arts", "type": "v phr", "vi": "t\u1eadp v\u00f5" },
+        { "en": "skate", "type": "v", "vi": "tr\u01b0\u1ee3t patin" },
+        { "en": "play chess", "type": "v phr", "vi": "ch\u01a1i c\u1edd" },
+        { "en": "library", "type": "n", "vi": "th\u01b0 vi\u1ec7n" },
+        { "en": "stadium", "type": "n", "vi": "s\u00e2n v\u1eadn \u0111\u1ed9ng" },
+        { "en": "park", "type": "n", "vi": "c\u00f4ng vi\u00ean" },
+        { "en": "market", "type": "n", "vi": "ch\u1ee3" },
+        { "en": "water park", "type": "n", "vi": "c\u00f4ng vi\u00ean n\u01b0\u1edbc" },
+        { "en": "swimming pool", "type": "n", "vi": "h\u1ed3 b\u01a1i" },
+        { "en": "studio", "type": "n", "vi": "ph\u00f2ng thu, x\u01b0\u1edfng v\u1ebd" },
+        { "en": "soccer field", "type": "n", "vi": "s\u00e2n b\u00f3ng \u0111\u00e1" },
+        { "en": "arcade", "type": "n", "vi": "khu tr\u00f2 ch\u01a1i \u0111i\u1ec7n t\u1eed" },
+        { "en": "skate park", "type": "n", "vi": "s\u00e2n tr\u01b0\u1ee3t patin" },
+        { "en": "coffee shop", "type": "n", "vi": "qu\u00e1n c\u00e0 ph\u00ea" }
+      ],
+      "grammar": [
+        "Present Continuous (Are you...ing?)",
+        "What are you doing?"
+      ],
+      "grammar_notes": "Present Continuous (Th\u00ec hi\u1ec7n t\u1ea1i ti\u1ebfp di\u1ec5n): D\u00f9ng \u0111\u1ec3 n\u00f3i v\u1ec1 h\u00e0nh \u0111\u1ed9ng \u0111ang x\u1ea3y ra ngay l\u00fac n\u00f3i. C\u1ea5u tr\u00fac: S + am/is/are + V-ing. V\u00ed d\u1ee5: I'm reading a comic book. She's playing chess. C\u00e2u h\u1ecfi: Are you reading? - Yes, I am. / No, I'm not. What are you doing? - I'm swimming at the pool. L\u01b0u \u00fd: am \u0111i v\u1edbi I, is \u0111i v\u1edbi he/she/it, are \u0111i v\u1edbi you/we/they.",
+      "exercises": [
+        {
+          "q": "Are you _____ a comic book?",
+          "opts": ["read", "reads", "reading", "to read"],
+          "ans": 2,
+          "explain": "Th\u00ec hi\u1ec7n t\u1ea1i ti\u1ebfp di\u1ec5n: am/is/are + V-ing. N\u00ean d\u00f9ng 'reading'."
+        },
+        {
+          "q": "What are you doing? - I'm _____ at the pool.",
+          "opts": ["swim", "swims", "swimming", "swam"],
+          "ans": 2,
+          "explain": "Hi\u1ec7n t\u1ea1i ti\u1ebfp di\u1ec5n: I'm + V-ing. 'Swim' th\u00eam 'ming' = swimming."
+        },
+        {
+          "q": "_____ they playing video games? - No, they aren't.",
+          "opts": ["Is", "Are", "Do", "Can"],
+          "ans": 1,
+          "explain": "'They' l\u00e0 s\u1ed1 nhi\u1ec1u n\u00ean d\u00f9ng 'Are'. Are they playing...?"
+        },
+        {
+          "q": "She _____ watching television now.",
+          "opts": ["am", "is", "are", "be"],
+          "ans": 1,
+          "explain": "'She' l\u00e0 ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt n\u00ean d\u00f9ng 'is'. She is watching television."
+        },
+        {
+          "q": "Is he playing chess? - Yes, he _____.",
+          "opts": ["is", "are", "does", "can"],
+          "ans": 0,
+          "explain": "Tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi Is he...?: Yes, he is."
+        },
+        {
+          "q": "'Play table tennis' in Vietnamese is _____.",
+          "opts": ["ch\u01a1i c\u1edd", "ch\u01a1i b\u00f3ng b\u00e0n", "ch\u01a1i tr\u00f2 ch\u01a1i b\u00e0n c\u1edd", "t\u1eadp v\u00f5"],
+          "ans": 1,
+          "explain": "'Play table tennis' = ch\u01a1i b\u00f3ng b\u00e0n. 'Play chess' = ch\u01a1i c\u1edd."
+        },
+        {
+          "q": "We _____ eating snacks at the market.",
+          "opts": ["am", "is", "are", "be"],
+          "ans": 2,
+          "explain": "'We' l\u00e0 s\u1ed1 nhi\u1ec1u n\u00ean d\u00f9ng 'are'. We are eating snacks."
+        },
+        {
+          "q": "I'm _____ at the library.",
+          "opts": ["reading", "swimming", "skating", "skiing"],
+          "ans": 0,
+          "explain": "\u1ede th\u01b0 vi\u1ec7n (library) th\u00ec ph\u00f9 h\u1ee3p l\u00e0 \u0111\u1ecdc s\u00e1ch (reading)."
+        },
+        {
+          "q": "They're running at the _____.",
+          "opts": ["library", "stadium", "coffee shop", "market"],
+          "ans": 1,
+          "explain": "Ch\u1ea1y (running) ph\u00f9 h\u1ee3p \u1edf s\u00e2n v\u1eadn \u0111\u1ed9ng (stadium)."
+        },
+        {
+          "q": "What _____ she doing? - She's taking photos.",
+          "opts": ["is", "are", "am", "does"],
+          "ans": 0,
+          "explain": "'She' l\u00e0 ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt n\u00ean d\u00f9ng 'is'. What is she doing?"
+        },
+        {
+          "q": "Are you doing a puzzle? - No, I'm _____.",
+          "opts": ["don't", "not", "isn't", "aren't"],
+          "ans": 1,
+          "explain": "Tr\u1ea3 l\u1eddi ph\u1ee7 \u0111\u1ecbnh v\u1edbi 'I': No, I'm not. (I am not)"
+        },
+        {
+          "q": "'Do martial arts' means _____.",
+          "opts": ["ch\u01a1i b\u00f3ng b\u00e0n", "t\u1eadp v\u00f5", "ch\u01a1i c\u1edd", "tr\u01b0\u1ee3t patin"],
+          "ans": 1,
+          "explain": "'Do martial arts' = t\u1eadp v\u00f5."
+        },
+        {
+          "q": "We're playing at the _____ park.",
+          "opts": ["water", "coffee", "library", "market"],
+          "ans": 0,
+          "explain": "'Water park' = c\u00f4ng vi\u00ean n\u01b0\u1edbc. \u0110\u00e2y l\u00e0 n\u01a1i ch\u01a1i v\u1edbi n\u01b0\u1edbc."
+        },
+        {
+          "q": "My dad _____ listening to music right now.",
+          "opts": ["am", "is", "are", "do"],
+          "ans": 1,
+          "explain": "'My dad' = he (ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt) n\u00ean d\u00f9ng 'is'."
+        },
+        {
+          "q": "I'm skating at the _____.",
+          "opts": ["library", "hospital", "skate park", "market"],
+          "ans": 2,
+          "explain": "Tr\u01b0\u1ee3t patin (skating) \u1edf s\u00e2n tr\u01b0\u1ee3t patin (skate park)."
+        },
+        {
+          "q": "_____ am playing a board game with my friends.",
+          "opts": ["He", "She", "I", "They"],
+          "ans": 2,
+          "explain": "'Am' ch\u1ec9 \u0111i v\u1edbi ch\u1ee7 ng\u1eef 'I'. I am playing a board game."
+        }
+      ]
+    },
+    "5": {
+      "title": "Getting Around",
+      "vocabulary": [
+        { "en": "stop", "type": "v", "vi": "d\u1eebng l\u1ea1i" },
+        { "en": "do not enter", "type": "phr", "vi": "c\u1ea5m v\u00e0o" },
+        { "en": "turn left", "type": "v phr", "vi": "r\u1ebd tr\u00e1i" },
+        { "en": "turn right", "type": "v phr", "vi": "r\u1ebd ph\u1ea3i" },
+        { "en": "no parking", "type": "phr", "vi": "c\u1ea5m \u0111\u1ed7 xe" },
+        { "en": "near", "type": "prep", "vi": "g\u1ea7n" },
+        { "en": "behind", "type": "prep", "vi": "ph\u00eda sau" },
+        { "en": "next to", "type": "prep", "vi": "b\u00ean c\u1ea1nh" },
+        { "en": "opposite", "type": "prep", "vi": "\u0111\u1ed1i di\u1ec7n" },
+        { "en": "in front of", "type": "prep", "vi": "ph\u00eda tr\u01b0\u1edbc" },
+        { "en": "go straight", "type": "v phr", "vi": "\u0111i th\u1eb3ng" },
+        { "en": "go over", "type": "v phr", "vi": "\u0111i qua" },
+        { "en": "traffic lights", "type": "n", "vi": "\u0111\u00e8n giao th\u00f4ng" },
+        { "en": "corner", "type": "n", "vi": "g\u00f3c \u0111\u01b0\u1eddng" },
+        { "en": "bridge", "type": "n", "vi": "c\u1ea7u" },
+        { "en": "on the left", "type": "phr", "vi": "\u1edf b\u00ean tr\u00e1i" },
+        { "en": "on the right", "type": "phr", "vi": "\u1edf b\u00ean ph\u1ea3i" },
+        { "en": "by motorbike", "type": "phr", "vi": "b\u1eb1ng xe m\u00e1y" },
+        { "en": "by taxi", "type": "phr", "vi": "b\u1eb1ng taxi" },
+        { "en": "by subway", "type": "phr", "vi": "b\u1eb1ng t\u00e0u \u0111i\u1ec7n ng\u1ea7m" },
+        { "en": "on foot", "type": "phr", "vi": "\u0111i b\u1ed9" },
+        { "en": "by bus", "type": "phr", "vi": "b\u1eb1ng xe bu\u00fdt" },
+        { "en": "by train", "type": "phr", "vi": "b\u1eb1ng t\u00e0u h\u1ecfa" }
+      ],
+      "grammar": [
+        "What does that sign mean?",
+        "Where's the...? / It's next to the...",
+        "How do I get to...? / Go straight. Then, turn left."
+      ],
+      "grammar_notes": "What does that sign mean?: D\u00f9ng \u0111\u1ec3 h\u1ecfi \u00fd ngh\u0129a c\u1ee7a bi\u1ec3n b\u00e1o. Tr\u1ea3 l\u1eddi: It means 'Stop'. / It means 'No parking'. Where's the park?: H\u1ecfi v\u1ecb tr\u00ed. Tr\u1ea3 l\u1eddi: It's next to the library. / It's opposite the school. C\u00e1c gi\u1edbi t\u1eeb ch\u1ec9 v\u1ecb tr\u00ed: near (\u1edf g\u1ea7n), behind (ph\u00eda sau), next to (b\u00ean c\u1ea1nh), opposite (\u0111\u1ed1i di\u1ec7n), in front of (ph\u00eda tr\u01b0\u1edbc). How do I get to the swimming pool?: H\u1ecfi \u0111\u01b0\u1eddng. Tr\u1ea3 l\u1eddi: Go straight. Then, turn left. It's on the right.",
+      "exercises": [
+        {
+          "q": "What does that sign _____?",
+          "opts": ["mean", "means", "meaning", "meant"],
+          "ans": 0,
+          "explain": "Sau 'does', \u0111\u1ed9ng t\u1eeb \u1edf d\u1ea1ng nguy\u00ean m\u1eabu: What does that sign mean?"
+        },
+        {
+          "q": "It means '_____'. You can't park here.",
+          "opts": ["Stop", "Do not enter", "No parking", "Turn left"],
+          "ans": 2,
+          "explain": "Kh\u00f4ng \u0111\u01b0\u1ee3c \u0111\u1ed7 xe \u1edf \u0111\u00e2y = 'No parking' (c\u1ea5m \u0111\u1ed7 xe)."
+        },
+        {
+          "q": "Where's the park? - It's _____ the library.",
+          "opts": ["next to", "next", "near to", "beside to"],
+          "ans": 0,
+          "explain": "'Next to' = b\u00ean c\u1ea1nh. C\u00f4ng vi\u00ean \u1edf b\u00ean c\u1ea1nh th\u01b0 vi\u1ec7n."
+        },
+        {
+          "q": "How do I _____ to the swimming pool?",
+          "opts": ["go", "get", "come", "walk"],
+          "ans": 1,
+          "explain": "C\u00e2u h\u1ecfi \u0111\u01b0\u1eddng: How do I get to + \u0111\u1ecba \u0111i\u1ec3m?"
+        },
+        {
+          "q": "Go _____. Then, turn left at the traffic lights.",
+          "opts": ["left", "right", "straight", "back"],
+          "ans": 2,
+          "explain": "'Go straight' = \u0111i th\u1eb3ng. Sau \u0111\u00f3 r\u1ebd tr\u00e1i \u1edf \u0111\u00e8n giao th\u00f4ng."
+        },
+        {
+          "q": "The school is _____ the hospital.",
+          "opts": ["opposite", "opposites", "opposite to", "on opposite"],
+          "ans": 0,
+          "explain": "'Opposite' = \u0111\u1ed1i di\u1ec7n. Tr\u01b0\u1eddng h\u1ecdc \u0111\u1ed1i di\u1ec7n b\u1ec7nh vi\u1ec7n."
+        },
+        {
+          "q": "'Traffic lights' in Vietnamese is _____.",
+          "opts": ["c\u1ea7u", "g\u00f3c \u0111\u01b0\u1eddng", "\u0111\u00e8n giao th\u00f4ng", "bi\u1ec3n b\u00e1o"],
+          "ans": 2,
+          "explain": "'Traffic lights' = \u0111\u00e8n giao th\u00f4ng."
+        },
+        {
+          "q": "The library is _____ the left.",
+          "opts": ["in", "on", "at", "to"],
+          "ans": 1,
+          "explain": "'On the left' = \u1edf b\u00ean tr\u00e1i. D\u00f9ng gi\u1edbi t\u1eeb 'on'."
+        },
+        {
+          "q": "Turn left at the _____. The zoo is near there.",
+          "opts": ["bridge", "corner", "park", "pool"],
+          "ans": 1,
+          "explain": "'Corner' = g\u00f3c \u0111\u01b0\u1eddng. R\u1ebd tr\u00e1i \u1edf g\u00f3c \u0111\u01b0\u1eddng."
+        },
+        {
+          "q": "How do you go to school? - I go _____ bus.",
+          "opts": ["on", "in", "by", "at"],
+          "ans": 2,
+          "explain": "D\u00f9ng 'by' + ph\u01b0\u01a1ng ti\u1ec7n: by bus, by train, by taxi."
+        },
+        {
+          "q": "I go to school _____ foot.",
+          "opts": ["by", "on", "in", "at"],
+          "ans": 1,
+          "explain": "'On foot' = \u0111i b\u1ed9. \u0110\u00e2y l\u00e0 ngo\u1ea1i l\u1ec7, kh\u00f4ng d\u00f9ng 'by'."
+        },
+        {
+          "q": "The market is _____ the school.",
+          "opts": ["behind", "behinds", "behind of", "in behind"],
+          "ans": 0,
+          "explain": "'Behind' = ph\u00eda sau. Kh\u00f4ng c\u1ea7n th\u00eam 'of' hay 'in'."
+        },
+        {
+          "q": "Go over the _____. The park is on the right.",
+          "opts": ["traffic lights", "corner", "bridge", "sign"],
+          "ans": 2,
+          "explain": "'Go over the bridge' = \u0111i qua c\u1ea7u."
+        },
+        {
+          "q": "It means '_____'. You must turn left here.",
+          "opts": ["Stop", "Turn left", "Turn right", "No parking"],
+          "ans": 1,
+          "explain": "Ph\u1ea3i r\u1ebd tr\u00e1i = 'Turn left'."
+        },
+        {
+          "q": "The bank is in _____ of the school.",
+          "opts": ["front", "behind", "next", "near"],
+          "ans": 0,
+          "explain": "'In front of' = ph\u00eda tr\u01b0\u1edbc. Ng\u00e2n h\u00e0ng \u1edf ph\u00eda tr\u01b0\u1edbc tr\u01b0\u1eddng."
+        },
+        {
+          "q": "'By subway' means _____.",
+          "opts": ["b\u1eb1ng xe bu\u00fdt", "b\u1eb1ng t\u00e0u h\u1ecfa", "b\u1eb1ng t\u00e0u \u0111i\u1ec7n ng\u1ea7m", "b\u1eb1ng xe m\u00e1y"],
+          "ans": 2,
+          "explain": "'By subway' = b\u1eb1ng t\u00e0u \u0111i\u1ec7n ng\u1ea7m. 'By bus' = b\u1eb1ng xe bu\u00fdt."
+        }
+      ]
+    },
+    "6": {
+      "title": "Describing People",
+      "vocabulary": [
+        { "en": "tall", "type": "adj", "vi": "cao" },
+        { "en": "short", "type": "adj", "vi": "th\u1ea5p, l\u00f9n" },
+        { "en": "big", "type": "adj", "vi": "to, l\u1edbn" },
+        { "en": "slim", "type": "adj", "vi": "m\u1ea3nh kh\u1ea3nh, th\u00f4n th\u1ea3" },
+        { "en": "strong", "type": "adj", "vi": "kh\u1ecfe m\u1ea1nh" },
+        { "en": "weak", "type": "adj", "vi": "y\u1ebfu" },
+        { "en": "eyes", "type": "n", "vi": "m\u1eaft" },
+        { "en": "ears", "type": "n", "vi": "tai" },
+        { "en": "mouth", "type": "n", "vi": "mi\u1ec7ng" },
+        { "en": "nose", "type": "n", "vi": "m\u0169i" },
+        { "en": "mustache", "type": "n", "vi": "r\u00e2u m\u00e9p" },
+        { "en": "beard", "type": "n", "vi": "r\u00e2u" },
+        { "en": "hair", "type": "n", "vi": "t\u00f3c" },
+        { "en": "long", "type": "adj", "vi": "d\u00e0i" },
+        { "en": "straight", "type": "adj", "vi": "th\u1eb3ng" },
+        { "en": "curly", "type": "adj", "vi": "xo\u0103n" },
+        { "en": "blond", "type": "adj", "vi": "v\u00e0ng h\u1ede" },
+        { "en": "brown", "type": "adj", "vi": "n\u00e2u" },
+        { "en": "black", "type": "adj", "vi": "\u0111en" },
+        { "en": "gray", "type": "adj", "vi": "x\u00e1m, b\u1ea1c" },
+        { "en": "handsome", "type": "adj", "vi": "\u0111\u1eb9p trai" },
+        { "en": "pretty", "type": "adj", "vi": "xinh \u0111\u1eb9p" },
+        { "en": "cute", "type": "adj", "vi": "d\u1ec5 th\u01b0\u01a1ng" },
+        { "en": "young", "type": "adj", "vi": "tr\u1ebb" },
+        { "en": "old", "type": "adj", "vi": "gi\u00e0" }
+      ],
+      "grammar": [
+        "Is your father tall or short?",
+        "Does your brother have long hair?",
+        "My dad has big eyes."
+      ],
+      "grammar_notes": "M\u00f4 t\u1ea3 ng\u01b0\u1eddi: D\u00f9ng 'is' + t\u00ednh t\u1eeb \u0111\u1ec3 m\u00f4 t\u1ea3 v\u00f3c d\u00e1ng: He's tall. She's slim. D\u00f9ng 'has/have' + danh t\u1eeb \u0111\u1ec3 m\u00f4 t\u1ea3 b\u1ed9 ph\u1eadn c\u01a1 th\u1ec3: My dad has big eyes. She has long, curly hair. C\u00e2u h\u1ecfi l\u1ef1a ch\u1ecdn: Is your sister tall or short? - She's tall. C\u00e2u h\u1ecfi v\u1edbi Does: Does your mother have long hair? - Yes, she does. / No, she doesn't. She has short hair. L\u01b0u \u00fd: He/She/It + has. I/You/We/They + have.",
+      "exercises": [
+        {
+          "q": "Is your father tall _____ short?",
+          "opts": ["and", "or", "but", "with"],
+          "ans": 1,
+          "explain": "C\u00e2u h\u1ecfi l\u1ef1a ch\u1ecdn d\u00f9ng 'or': tall or short?"
+        },
+        {
+          "q": "My dad _____ big eyes.",
+          "opts": ["have", "has", "is", "are"],
+          "ans": 1,
+          "explain": "'My dad' = he (ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt) n\u00ean d\u00f9ng 'has'."
+        },
+        {
+          "q": "She's _____. She's not tall.",
+          "opts": ["big", "slim", "short", "strong"],
+          "ans": 2,
+          "explain": "C\u00f4 \u1ea5y kh\u00f4ng cao, n\u00ean c\u00f4 \u1ea5y 'short' (th\u1ea5p)."
+        },
+        {
+          "q": "Does your brother _____ long hair?",
+          "opts": ["has", "have", "is", "are"],
+          "ans": 1,
+          "explain": "Sau 'Does' d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu: Does your brother have...?"
+        },
+        {
+          "q": "My sister has long, _____ hair.",
+          "opts": ["curly", "big", "small", "tall"],
+          "ans": 0,
+          "explain": "'Curly hair' = t\u00f3c xo\u0103n. 'Big', 'small', 'tall' kh\u00f4ng d\u00f9ng m\u00f4 t\u1ea3 t\u00f3c."
+        },
+        {
+          "q": "'Mustache' in Vietnamese is _____.",
+          "opts": ["r\u00e2u", "r\u00e2u m\u00e9p", "t\u00f3c", "m\u0169i"],
+          "ans": 1,
+          "explain": "'Mustache' = r\u00e2u m\u00e9p. 'Beard' = r\u00e2u (quai n\u00f3n/c\u1eb1m)."
+        },
+        {
+          "q": "He's _____ and handsome.",
+          "opts": ["tall", "talls", "talling", "to tall"],
+          "ans": 0,
+          "explain": "T\u00ednh t\u1eeb kh\u00f4ng chia theo ch\u1ee7 ng\u1eef. He's tall and handsome."
+        },
+        {
+          "q": "My grandfather has _____ hair.",
+          "opts": ["blond", "gray", "long", "young"],
+          "ans": 1,
+          "explain": "\u00d4ng n\u1ed9i th\u01b0\u1eddng c\u00f3 t\u00f3c b\u1ea1c (gray hair). 'Young' l\u00e0 t\u00ednh t\u1eeb ch\u1ec9 tu\u1ed5i."
+        },
+        {
+          "q": "Does she have straight hair? - No, she _____.",
+          "opts": ["don't", "doesn't", "isn't", "hasn't"],
+          "ans": 1,
+          "explain": "Tr\u1ea3 l\u1eddi ph\u1ee7 \u0111\u1ecbnh v\u1edbi Does: No, she doesn't."
+        },
+        {
+          "q": "My mom doesn't have big _____.",
+          "opts": ["ears", "tall", "strong", "slim"],
+          "ans": 0,
+          "explain": "'Ears' l\u00e0 danh t\u1eeb (tai), c\u00f3 th\u1ec3 \u0111i sau 'have'. C\u00e1c t\u1eeb c\u00f2n l\u1ea1i l\u00e0 t\u00ednh t\u1eeb."
+        },
+        {
+          "q": "He's very _____. He can lift heavy things.",
+          "opts": ["weak", "slim", "short", "strong"],
+          "ans": 3,
+          "explain": "N\u00e2ng \u0111\u01b0\u1ee3c v\u1eadt n\u1eb7ng n\u00ean r\u1ea5t kh\u1ecfe m\u1ea1nh (strong)."
+        },
+        {
+          "q": "My friend has short, _____ hair.",
+          "opts": ["straight", "big", "tall", "strong"],
+          "ans": 0,
+          "explain": "'Straight hair' = t\u00f3c th\u1eb3ng. 'Big', 'tall', 'strong' kh\u00f4ng m\u00f4 t\u1ea3 t\u00f3c."
+        },
+        {
+          "q": "I _____ brown eyes.",
+          "opts": ["has", "have", "am", "is"],
+          "ans": 1,
+          "explain": "'I' d\u00f9ng 'have' (kh\u00f4ng d\u00f9ng 'has'). I have brown eyes."
+        },
+        {
+          "q": "'Slim' in Vietnamese means _____.",
+          "opts": ["kh\u1ecfe m\u1ea1nh", "y\u1ebfu", "m\u1ea3nh kh\u1ea3nh", "to l\u1edbn"],
+          "ans": 2,
+          "explain": "'Slim' = m\u1ea3nh kh\u1ea3nh, th\u00f4n th\u1ea3. 'Strong' = kh\u1ecfe m\u1ea1nh."
+        },
+        {
+          "q": "What does your brother look like? - He's tall and _____.",
+          "opts": ["handsome", "handsomes", "handsoming", "to handsome"],
+          "ans": 0,
+          "explain": "T\u00ednh t\u1eeb kh\u00f4ng chia: He's tall and handsome."
+        },
+        {
+          "q": "My baby sister is very _____.",
+          "opts": ["old", "gray", "cute", "weak"],
+          "ans": 2,
+          "explain": "Em g\u00e1i b\u00e9 (baby sister) th\u01b0\u1eddng r\u1ea5t d\u1ec5 th\u01b0\u01a1ng (cute)."
+        }
+      ]
+    },
+    "7": {
+      "title": "My Family",
+      "vocabulary": [
+        { "en": "cashier", "type": "n", "vi": "thu ng\u00e2n" },
+        { "en": "doctor", "type": "n", "vi": "b\u00e1c s\u0129" },
+        { "en": "office worker", "type": "n", "vi": "nh\u00e2n vi\u00ean v\u0103n ph\u00f2ng" },
+        { "en": "factory worker", "type": "n", "vi": "c\u00f4ng nh\u00e2n nh\u00e0 m\u00e1y" },
+        { "en": "farmer", "type": "n", "vi": "n\u00f4ng d\u00e2n" },
+        { "en": "waiter", "type": "n", "vi": "ng\u01b0\u1eddi ph\u1ee5c v\u1ee5" },
+        { "en": "store", "type": "n", "vi": "c\u1eeda h\u00e0ng" },
+        { "en": "hospital", "type": "n", "vi": "b\u1ec7nh vi\u1ec7n" },
+        { "en": "restaurant", "type": "n", "vi": "nh\u00e0 h\u00e0ng" },
+        { "en": "office", "type": "n", "vi": "v\u0103n ph\u00f2ng" },
+        { "en": "farm", "type": "n", "vi": "n\u00f4ng tr\u1ea1i" },
+        { "en": "bank", "type": "n", "vi": "ng\u00e2n h\u00e0ng" },
+        { "en": "set the table", "type": "v phr", "vi": "d\u1ecdn b\u00e0n (\u0103n)" },
+        { "en": "water the plants", "type": "v phr", "vi": "t\u01b0\u1edbi c\u00e2y" },
+        { "en": "walk the dog", "type": "v phr", "vi": "d\u1eaft ch\u00f3 \u0111i d\u1ea1o" },
+        { "en": "feed the cat", "type": "v phr", "vi": "cho m\u00e8o \u0103n" },
+        { "en": "mop the floor", "type": "v phr", "vi": "lau nh\u00e0" },
+        { "en": "do the laundry", "type": "v phr", "vi": "gi\u1eb7t \u0111\u1ed3" },
+        { "en": "put away groceries", "type": "v phr", "vi": "c\u1ea5t \u0111\u1ed3 \u0111i ch\u1ee3" },
+        { "en": "clear the table", "type": "v phr", "vi": "d\u1ecdn b\u00e0n" },
+        { "en": "sweep the floor", "type": "v phr", "vi": "qu\u00e9t nh\u00e0" },
+        { "en": "take out the trash", "type": "v phr", "vi": "\u0111\u1ed5 r\u00e1c" },
+        { "en": "wash the dishes", "type": "v phr", "vi": "r\u1eeda b\u00e1t" }
+      ],
+      "grammar": [
+        "What does your father do? - He's a doctor.",
+        "Where does your father work? - He works at a hospital.",
+        "How do you help at home?"
+      ],
+      "grammar_notes": "H\u1ecfi v\u1ec1 ngh\u1ec1 nghi\u1ec7p: What does your father do? - He's a doctor. (B\u1ed1 b\u1ea1n l\u00e0m ngh\u1ec1 g\u00ec? - \u00d4ng \u1ea5y l\u00e0 b\u00e1c s\u0129.) H\u1ecfi n\u01a1i l\u00e0m vi\u1ec7c: Where does your mother work? - She works at a hospital. (M\u1eb9 b\u1ea1n l\u00e0m \u1edf \u0111\u00e2u? - B\u00e0 \u1ea5y l\u00e0m \u1edf b\u1ec7nh vi\u1ec7n.) L\u01b0u \u00fd: works at + n\u01a1i l\u00e0m vi\u1ec7c. works on + n\u00f4ng tr\u1ea1i (a farm). H\u1ecfi gi\u00fap vi\u1ec7c nh\u00e0: How do you help at home? - I set the table. / My brother mops the floor.",
+      "exercises": [
+        {
+          "q": "What does your mother _____?",
+          "opts": ["does", "do", "doing", "is"],
+          "ans": 1,
+          "explain": "Sau 'does' d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu: What does your mother do?"
+        },
+        {
+          "q": "My father is a _____. He works at a hospital.",
+          "opts": ["farmer", "cashier", "doctor", "waiter"],
+          "ans": 2,
+          "explain": "L\u00e0m vi\u1ec7c \u1edf b\u1ec7nh vi\u1ec7n (hospital) n\u00ean l\u00e0 b\u00e1c s\u0129 (doctor)."
+        },
+        {
+          "q": "She works _____ a farm. She's a farmer.",
+          "opts": ["at", "on", "in", "to"],
+          "ans": 1,
+          "explain": "'Works on a farm' = l\u00e0m vi\u1ec7c \u1edf n\u00f4ng tr\u1ea1i. D\u00f9ng 'on' v\u1edbi farm."
+        },
+        {
+          "q": "How do you _____ at home? - I water the plants.",
+          "opts": ["work", "help", "do", "play"],
+          "ans": 1,
+          "explain": "H\u1ecfi gi\u00fap vi\u1ec7c nh\u00e0: How do you help at home?"
+        },
+        {
+          "q": "My sister _____ the table every evening.",
+          "opts": ["set", "sets", "setting", "to set"],
+          "ans": 1,
+          "explain": "'My sister' l\u00e0 ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt, th\u00ec hi\u1ec7n t\u1ea1i \u0111\u01a1n, \u0111\u1ed9ng t\u1eeb th\u00eam 's': sets."
+        },
+        {
+          "q": "'Cashier' in Vietnamese is _____.",
+          "opts": ["n\u00f4ng d\u00e2n", "thu ng\u00e2n", "b\u00e1c s\u0129", "c\u00f4ng nh\u00e2n"],
+          "ans": 1,
+          "explain": "'Cashier' = thu ng\u00e2n. 'Farmer' = n\u00f4ng d\u00e2n, 'doctor' = b\u00e1c s\u0129."
+        },
+        {
+          "q": "Where does your father work? - He works _____ a bank.",
+          "opts": ["on", "at", "in", "to"],
+          "ans": 1,
+          "explain": "'Works at + n\u01a1i l\u00e0m vi\u1ec7c': He works at a bank."
+        },
+        {
+          "q": "My brother _____ the dog every morning.",
+          "opts": ["walks", "walk", "walking", "walked"],
+          "ans": 0,
+          "explain": "'My brother' l\u00e0 ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt, th\u00ec hi\u1ec7n t\u1ea1i \u0111\u01a1n: walks."
+        },
+        {
+          "q": "A 'waiter' works at a _____.",
+          "opts": ["hospital", "farm", "restaurant", "office"],
+          "ans": 2,
+          "explain": "Ng\u01b0\u1eddi ph\u1ee5c v\u1ee5 (waiter) l\u00e0m vi\u1ec7c \u1edf nh\u00e0 h\u00e0ng (restaurant)."
+        },
+        {
+          "q": "I _____ the floor after dinner.",
+          "opts": ["mop", "mops", "mopping", "mopped"],
+          "ans": 0,
+          "explain": "'I' d\u00f9ng \u0111\u1ed9ng t\u1eeb nguy\u00ean m\u1eabu trong th\u00ec hi\u1ec7n t\u1ea1i \u0111\u01a1n: I mop the floor."
+        },
+        {
+          "q": "'Do the laundry' means _____.",
+          "opts": ["lau nh\u00e0", "gi\u1eb7t \u0111\u1ed3", "d\u1ecdn b\u00e0n", "t\u01b0\u1edbi c\u00e2y"],
+          "ans": 1,
+          "explain": "'Do the laundry' = gi\u1eb7t \u0111\u1ed3. 'Mop the floor' = lau nh\u00e0."
+        },
+        {
+          "q": "My mom is an office _____. She works at an office.",
+          "opts": ["farmer", "worker", "doctor", "waiter"],
+          "ans": 1,
+          "explain": "'Office worker' = nh\u00e2n vi\u00ean v\u0103n ph\u00f2ng."
+        },
+        {
+          "q": "Who _____ the cat in your family?",
+          "opts": ["feed", "feeds", "feeding", "fed"],
+          "ans": 1,
+          "explain": "'Who' \u0111\u01b0\u1ee3c coi nh\u01b0 ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt n\u00ean d\u00f9ng 'feeds'."
+        },
+        {
+          "q": "My uncle works at a _____. He's a cashier.",
+          "opts": ["farm", "hospital", "store", "office"],
+          "ans": 2,
+          "explain": "Thu ng\u00e2n (cashier) l\u00e0m vi\u1ec7c \u1edf c\u1eeda h\u00e0ng (store)."
+        },
+        {
+          "q": "How does your sister help at home? - She _____ the dishes.",
+          "opts": ["wash", "washes", "washing", "washed"],
+          "ans": 1,
+          "explain": "'She' (ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt) + V-es: washes."
+        },
+        {
+          "q": "A 'factory worker' works at a _____.",
+          "opts": ["store", "factory", "restaurant", "bank"],
+          "ans": 1,
+          "explain": "C\u00f4ng nh\u00e2n nh\u00e0 m\u00e1y (factory worker) l\u00e0m vi\u1ec7c \u1edf nh\u00e0 m\u00e1y (factory)."
+        }
+      ]
+    },
+    "8": {
+      "title": "My Friends and I",
+      "vocabulary": [
+        { "en": "hungry", "type": "adj", "vi": "\u0111\u00f3i" },
+        { "en": "thirsty", "type": "adj", "vi": "kh\u00e1t" },
+        { "en": "scared", "type": "adj", "vi": "s\u1ee3 h\u00e3i" },
+        { "en": "surprised", "type": "adj", "vi": "ng\u1ea1c nhi\u00ean" },
+        { "en": "tired", "type": "adj", "vi": "m\u1ec7t" },
+        { "en": "excited", "type": "adj", "vi": "ph\u1ea5n kh\u00edch, h\u00e0o h\u1ee9ng" },
+        { "en": "yesterday", "type": "adv", "vi": "h\u00f4m qua" },
+        { "en": "last night", "type": "phr", "vi": "t\u1ed1i qua" },
+        { "en": "last Tuesday", "type": "phr", "vi": "th\u1ee9 Ba tu\u1ea7n tr\u01b0\u1edbc" },
+        { "en": "last week", "type": "phr", "vi": "tu\u1ea7n tr\u01b0\u1edbc" },
+        { "en": "last weekend", "type": "phr", "vi": "cu\u1ed1i tu\u1ea7n tr\u01b0\u1edbc" },
+        { "en": "last month", "type": "phr", "vi": "th\u00e1ng tr\u01b0\u1edbc" },
+        { "en": "movie theater", "type": "n", "vi": "r\u1ea1p chi\u1ebfu phim" },
+        { "en": "playground", "type": "n", "vi": "s\u00e2n ch\u01a1i" },
+        { "en": "museum", "type": "n", "vi": "b\u1ea3o t\u00e0ng" },
+        { "en": "mall", "type": "n", "vi": "trung t\u00e2m th\u01b0\u01a1ng m\u1ea1i" },
+        { "en": "supermarket", "type": "n", "vi": "si\u00eau th\u1ecb" },
+        { "en": "amusement park", "type": "n", "vi": "c\u00f4ng vi\u00ean gi\u1ea3i tr\u00ed" },
+        { "en": "fun", "type": "adj", "vi": "vui" },
+        { "en": "exciting", "type": "adj", "vi": "th\u00fa v\u1ecb, h\u1ea5p d\u1eabn" },
+        { "en": "relaxing", "type": "adj", "vi": "th\u01b0 gi\u00e3n" },
+        { "en": "boring", "type": "adj", "vi": "nh\u00e0m ch\u00e1n" }
+      ],
+      "grammar": [
+        "Past Simple of 'be' (was/were)",
+        "Were you at the park yesterday?"
+      ],
+      "grammar_notes": "Past Simple c\u1ee7a 'be' (was/were): D\u00f9ng \u0111\u1ec3 n\u00f3i v\u1ec1 tr\u1ea1ng th\u00e1i trong qu\u00e1 kh\u1ee9. 'Was' d\u00f9ng v\u1edbi I/he/she/it. 'Were' d\u00f9ng v\u1edbi you/we/they. Kh\u1eb3ng \u0111\u1ecbnh: I was tired. They were excited. Ph\u1ee7 \u0111\u1ecbnh: I wasn't thirsty. They weren't scared. C\u00e2u h\u1ecfi: Were you at the park yesterday? - Yes, I was. / No, I wasn't. Was she hungry? - Yes, she was. / No, she wasn't. Tr\u1ea1ng t\u1eeb th\u1eddi gian: yesterday (h\u00f4m qua), last night (t\u1ed1i qua), last week (tu\u1ea7n tr\u01b0\u1edbc), last month (th\u00e1ng tr\u01b0\u1edbc).",
+      "exercises": [
+        {
+          "q": "I _____ tired yesterday.",
+          "opts": ["was", "were", "am", "is"],
+          "ans": 0,
+          "explain": "'I' d\u00f9ng 'was' trong qu\u00e1 kh\u1ee9. I was tired yesterday."
+        },
+        {
+          "q": "They _____ at the park last weekend.",
+          "opts": ["was", "were", "is", "are"],
+          "ans": 1,
+          "explain": "'They' d\u00f9ng 'were' trong qu\u00e1 kh\u1ee9. They were at the park."
+        },
+        {
+          "q": "_____ you at the movie theater last night?",
+          "opts": ["Was", "Were", "Are", "Is"],
+          "ans": 1,
+          "explain": "'You' d\u00f9ng 'Were' trong c\u00e2u h\u1ecfi qu\u00e1 kh\u1ee9: Were you...?"
+        },
+        {
+          "q": "She _____ scared. She was excited.",
+          "opts": ["was", "wasn't", "weren't", "isn't"],
+          "ans": 1,
+          "explain": "'She' d\u00f9ng 'wasn't' (was not) trong ph\u1ee7 \u0111\u1ecbnh qu\u00e1 kh\u1ee9."
+        },
+        {
+          "q": "Was he hungry? - Yes, he _____.",
+          "opts": ["was", "were", "is", "does"],
+          "ans": 0,
+          "explain": "Tr\u1ea3 l\u1eddi c\u00e2u h\u1ecfi Was he...?: Yes, he was."
+        },
+        {
+          "q": "'Scared' in Vietnamese means _____.",
+          "opts": ["\u0111\u00f3i", "kh\u00e1t", "s\u1ee3 h\u00e3i", "m\u1ec7t"],
+          "ans": 2,
+          "explain": "'Scared' = s\u1ee3 h\u00e3i. 'Hungry' = \u0111\u00f3i, 'thirsty' = kh\u00e1t."
+        },
+        {
+          "q": "We _____ at the museum last Tuesday.",
+          "opts": ["was", "were", "is", "are"],
+          "ans": 1,
+          "explain": "'We' d\u00f9ng 'were' trong qu\u00e1 kh\u1ee9: We were at the museum."
+        },
+        {
+          "q": "Lucy and Ben _____ surprised.",
+          "opts": ["was", "were", "is", "am"],
+          "ans": 1,
+          "explain": "'Lucy and Ben' = they (s\u1ed1 nhi\u1ec1u) n\u00ean d\u00f9ng 'were'."
+        },
+        {
+          "q": "Were they at the playground? - No, they _____.",
+          "opts": ["was", "wasn't", "weren't", "isn't"],
+          "ans": 2,
+          "explain": "'They' d\u00f9ng 'weren't' (were not) trong ph\u1ee7 \u0111\u1ecbnh qu\u00e1 kh\u1ee9."
+        },
+        {
+          "q": "I was at the _____ last Friday. I watched a movie.",
+          "opts": ["museum", "mall", "movie theater", "supermarket"],
+          "ans": 2,
+          "explain": "Xem phim (watched a movie) \u1edf r\u1ea1p chi\u1ebfu phim (movie theater)."
+        },
+        {
+          "q": "'Last weekend' in Vietnamese is _____.",
+          "opts": ["h\u00f4m qua", "t\u1ed1i qua", "cu\u1ed1i tu\u1ea7n tr\u01b0\u1edbc", "tu\u1ea7n tr\u01b0\u1edbc"],
+          "ans": 2,
+          "explain": "'Last weekend' = cu\u1ed1i tu\u1ea7n tr\u01b0\u1edbc. 'Yesterday' = h\u00f4m qua."
+        },
+        {
+          "q": "The party _____ fun and exciting.",
+          "opts": ["was", "were", "is", "are"],
+          "ans": 0,
+          "explain": "'The party' l\u00e0 s\u1ed1 \u00edt n\u00ean d\u00f9ng 'was': The party was fun."
+        },
+        {
+          "q": "Was Tom at the _____ yesterday? - Yes, he was at the supermarket.",
+          "opts": ["playground", "supermarket", "museum", "mall"],
+          "ans": 1,
+          "explain": "C\u00e2u tr\u1ea3 l\u1eddi n\u00f3i 'supermarket' n\u00ean c\u00e2u h\u1ecfi c\u0169ng l\u00e0 supermarket."
+        },
+        {
+          "q": "I _____ thirsty. I wanted some water.",
+          "opts": ["was", "were", "am", "is"],
+          "ans": 0,
+          "explain": "'I' d\u00f9ng 'was' trong qu\u00e1 kh\u1ee9. 'Wanted' x\u00e1c nh\u1eadn c\u00e2u n\u00e0y \u1edf qu\u00e1 kh\u1ee9."
+        },
+        {
+          "q": "'Amusement park' in Vietnamese is _____.",
+          "opts": ["s\u00e2n ch\u01a1i", "c\u00f4ng vi\u00ean gi\u1ea3i tr\u00ed", "si\u00eau th\u1ecb", "b\u1ea3o t\u00e0ng"],
+          "ans": 1,
+          "explain": "'Amusement park' = c\u00f4ng vi\u00ean gi\u1ea3i tr\u00ed. 'Playground' = s\u00e2n ch\u01a1i."
+        },
+        {
+          "q": "Where _____ you last Saturday?",
+          "opts": ["was", "were", "is", "are"],
+          "ans": 1,
+          "explain": "'You' d\u00f9ng 'were': Where were you last Saturday?"
+        },
+        {
+          "q": "It was _____. I didn't enjoy the trip.",
+          "opts": ["fun", "exciting", "relaxing", "boring"],
+          "ans": 3,
+          "explain": "Kh\u00f4ng th\u00edch chuy\u1ebfn \u0111i n\u00ean n\u00f3 nh\u00e0m ch\u00e1n (boring)."
+        },
+        {
+          "q": "She _____ at the mall last month.",
+          "opts": ["was", "were", "is", "are"],
+          "ans": 0,
+          "explain": "'She' l\u00e0 ng\u00f4i th\u1ee9 3 s\u1ed1 \u00edt, d\u00f9ng 'was' trong qu\u00e1 kh\u1ee9."
+        }
+      ]
+    }
+  }
+}

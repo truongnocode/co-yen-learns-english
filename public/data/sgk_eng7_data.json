@@ -1,0 +1,4903 @@
+{
+  "units": {
+    "1": {
+      "title": "Hobbies",
+      "vocabulary": [
+        {
+          "en": "hobby",
+          "type": "n",
+          "vi": "sở thích"
+        },
+        {
+          "en": "arranging flowers",
+          "type": "n",
+          "vi": "cắm hoa"
+        },
+        {
+          "en": "bird-watching",
+          "type": "n",
+          "vi": "quan sát chim"
+        },
+        {
+          "en": "board game",
+          "type": "n",
+          "vi": "trò chơi trên bàn cờ"
+        },
+        {
+          "en": "collecting",
+          "type": "n",
+          "vi": "sưu tập"
+        },
+        {
+          "en": "cooking",
+          "type": "n",
+          "vi": "nấu ăn"
+        },
+        {
+          "en": "cycling",
+          "type": "n",
+          "vi": "đạp xe"
+        },
+        {
+          "en": "dancing",
+          "type": "n",
+          "vi": "nhảy múa"
+        },
+        {
+          "en": "drawing",
+          "type": "n",
+          "vi": "vẽ"
+        },
+        {
+          "en": "gardening",
+          "type": "n",
+          "vi": "làm vườn"
+        },
+        {
+          "en": "ice-skating",
+          "type": "n",
+          "vi": "trượt băng"
+        },
+        {
+          "en": "painting",
+          "type": "n",
+          "vi": "vẽ tranh"
+        },
+        {
+          "en": "photography",
+          "type": "n",
+          "vi": "nhiếp ảnh"
+        },
+        {
+          "en": "reading",
+          "type": "n",
+          "vi": "đọc sách"
+        },
+        {
+          "en": "swimming",
+          "type": "n",
+          "vi": "bơi lội"
+        },
+        {
+          "en": "carve",
+          "type": "v",
+          "vi": "chạm, khắc"
+        },
+        {
+          "en": "collect",
+          "type": "v",
+          "vi": "sưu tập"
+        },
+        {
+          "en": "enjoy",
+          "type": "v",
+          "vi": "thích, tận hưởng"
+        },
+        {
+          "en": "find",
+          "type": "v",
+          "vi": "tìm thấy"
+        },
+        {
+          "en": "join",
+          "type": "v",
+          "vi": "tham gia"
+        },
+        {
+          "en": "share",
+          "type": "v",
+          "vi": "chia sẻ"
+        },
+        {
+          "en": "eggshell",
+          "type": "n",
+          "vi": "vỏ trứng"
+        },
+        {
+          "en": "collage",
+          "type": "n",
+          "vi": "tranh cắt dán"
+        },
+        {
+          "en": "model",
+          "type": "n",
+          "vi": "mô hình"
+        },
+        {
+          "en": "unusual",
+          "type": "adj",
+          "vi": "khác thường"
+        },
+        {
+          "en": "common",
+          "type": "adj",
+          "vi": "phổ biến"
+        },
+        {
+          "en": "creative",
+          "type": "adj",
+          "vi": "sáng tạo"
+        },
+        {
+          "en": "difficult",
+          "type": "adj",
+          "vi": "khó"
+        },
+        {
+          "en": "easy",
+          "type": "adj",
+          "vi": "dễ"
+        },
+        {
+          "en": "exciting",
+          "type": "adj",
+          "vi": "thú vị"
+        },
+        {
+          "en": "free",
+          "type": "adj",
+          "vi": "rảnh rỗi"
+        },
+        {
+          "en": "interesting",
+          "type": "adj",
+          "vi": "thú vị, hấp dẫn"
+        },
+        {
+          "en": "patient",
+          "type": "adj",
+          "vi": "kiên nhẫn"
+        },
+        {
+          "en": "a piece of cake",
+          "type": "idiom",
+          "vi": "dễ ợt"
+        },
+        {
+          "en": "spare time",
+          "type": "n",
+          "vi": "thời gian rảnh"
+        }
+      ],
+      "grammar": [
+        "Present Simple with hobbies",
+        "Verbs of liking + V-ing"
+      ],
+      "grammar_notes": "Present Simple: Dùng để diễn tả thói quen, sở thích, sự thật hiển nhiên. Cấu trúc: S + V(s/es). Phủ định: S + don't/doesn't + V. Nghi vấn: Do/Does + S + V? Verbs of liking + V-ing: Các động từ chỉ sở thích như like, love, enjoy, hate, dislike + V-ing. Ví dụ: I enjoy reading books. She loves painting. He hates doing homework.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "She enjoys _____ flowers at the weekend.",
+          "opts": [
+            "arrange",
+            "arranging",
+            "arranged",
+            "arranges"
+          ],
+          "ans": 1,
+          "explain": "Động từ \"enjoy\" luôn theo sau bởi một động từ ở dạng V-ing (danh động từ) để diễn tả sự yêu thích. Vì vậy, \"arranging\" là đáp án đúng."
+        },
+        {
+          "type": "mc",
+          "q": "What is the Vietnamese meaning of 'bird-watching'?",
+          "opts": [
+            "nuôi chim",
+            "bắt chim",
+            "quan sát chim",
+            "bán chim"
+          ],
+          "ans": 2,
+          "explain": "\"Bird-watching\" là một hoạt động giải trí có nghĩa là ngắm hoặc quan sát chim trong tự nhiên. Các lựa chọn khác không đúng với nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "My brother _____ stamps as a hobby.",
+          "opts": [
+            "collect",
+            "collects",
+            "collecting",
+            "collected"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"My brother\" là ngôi thứ ba số ít, nên động từ ở thì hiện tại đơn phải thêm \"s\". \"Collects\" là dạng đúng."
+        },
+        {
+          "type": "mc",
+          "q": "They love _____ board games together.",
+          "opts": [
+            "play",
+            "plays",
+            "playing",
+            "played"
+          ],
+          "ans": 2,
+          "explain": "Động từ \"love\" có thể theo sau bởi V-ing hoặc \"to V\" để diễn tả sở thích. Trong các lựa chọn, \"playing\" là dạng V-ing đúng."
+        },
+        {
+          "type": "mc",
+          "q": "A 'collage' is a picture made from _____.",
+          "opts": [
+            "paint only",
+            "many small pictures",
+            "clay",
+            "wood"
+          ],
+          "ans": 1,
+          "explain": "Một \"collage\" là một bức tranh được tạo ra bằng cách dán nhiều mảnh ảnh nhỏ, giấy hoặc vật liệu khác lại với nhau."
+        },
+        {
+          "type": "mc",
+          "q": "_____ your sister like gardening?",
+          "opts": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu hỏi ở thì hiện tại đơn. Chủ ngữ \"your sister\" là ngôi thứ ba số ít, nên chúng ta dùng trợ động từ \"Does\"."
+        },
+        {
+          "type": "mc",
+          "q": "He finds ice-skating very _____.",
+          "opts": [
+            "excite",
+            "excited",
+            "exciting",
+            "excites"
+          ],
+          "ans": 2,
+          "explain": "Tính từ \"exciting\" dùng để miêu tả bản chất của sự vật, sự việc (trượt băng rất thú vị). \"Excited\" dùng để miêu tả cảm xúc của người."
+        },
+        {
+          "type": "mc",
+          "q": "I hate _____ up early on Sundays.",
+          "opts": [
+            "get",
+            "gets",
+            "getting",
+            "got"
+          ],
+          "ans": 2,
+          "explain": "Động từ \"hate\" có thể theo sau bởi V-ing hoặc \"to V\" để diễn tả sự ghét bỏ. Trong các lựa chọn, \"getting\" là dạng V-ing đúng."
+        },
+        {
+          "type": "mc",
+          "q": "Carving eggshells is a(n) _____ hobby.",
+          "opts": [
+            "usual",
+            "unusual",
+            "usually",
+            "use"
+          ],
+          "ans": 1,
+          "explain": "\"Carving eggshells\" (khắc vỏ trứng) là một sở thích không phổ biến, độc đáo, nên chúng ta dùng tính từ \"unusual\" (không bình thường, độc đáo) để miêu tả."
+        },
+        {
+          "type": "mc",
+          "q": "She _____ not enjoy cooking.",
+          "opts": [
+            "do",
+            "does",
+            "is",
+            "has"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu phủ định ở thì hiện tại đơn. Chủ ngữ \"She\" là ngôi thứ ba số ít, nên chúng ta dùng trợ động từ \"does\" để tạo thành \"does not\"."
+        },
+        {
+          "type": "mc",
+          "q": "Photography is his favourite _____.",
+          "opts": [
+            "subject",
+            "hobby",
+            "job",
+            "sport"
+          ],
+          "ans": 1,
+          "explain": "\"Photography\" (nhiếp ảnh) là một hoạt động giải trí yêu thích, nên từ phù hợp nhất để điền vào chỗ trống là \"hobby\" (sở thích)."
+        },
+        {
+          "type": "mc",
+          "q": "We _____ swimming every Saturday.",
+          "opts": [
+            "goes",
+            "go",
+            "going",
+            "gone"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ \"go swimming\" dùng để chỉ hoạt động bơi lội. Chủ ngữ \"We\" là số nhiều, nên động từ ở thì hiện tại đơn giữ nguyên dạng \"go\"."
+        },
+        {
+          "type": "mc",
+          "q": "This math exercise is a piece of _____.",
+          "opts": [
+            "bread",
+            "pie",
+            "cake",
+            "biscuit"
+          ],
+          "ans": 2,
+          "explain": "Cụm thành ngữ \"a piece of cake\" có nghĩa là \"rất dễ dàng\". Vì vậy, bài tập toán này rất dễ."
+        },
+        {
+          "type": "mc",
+          "q": "Do you like _____ in your spare time?",
+          "opts": [
+            "read",
+            "reads",
+            "reading",
+            "to reads"
+          ],
+          "ans": 2,
+          "explain": "Động từ \"like\" có thể theo sau bởi V-ing hoặc \"to V\" để diễn tả sở thích. Trong các lựa chọn, \"reading\" là dạng V-ing đúng."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'patient' mean in Vietnamese?",
+          "opts": [
+            "thông minh",
+            "kiên nhẫn",
+            "chăm chỉ",
+            "lười biếng"
+          ],
+          "ans": 1,
+          "explain": "Từ \"patient\" có nghĩa là \"kiên nhẫn\" trong tiếng Việt, miêu tả một đức tính tốt."
+        },
+        {
+          "type": "mc",
+          "q": "He _____ cycling after school every day.",
+          "opts": [
+            "go",
+            "goes",
+            "going",
+            "is go"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ \"go cycling\" dùng để chỉ hoạt động đạp xe. Chủ ngữ \"He\" là ngôi thứ ba số ít, nên động từ ở thì hiện tại đơn phải thêm \"es\" thành \"goes\"."
+        },
+        {
+          "type": "mc",
+          "q": "My mother loves _____ flowers in the garden.",
+          "opts": [
+            "plant",
+            "plants",
+            "planting",
+            "planted"
+          ],
+          "ans": 2,
+          "explain": "Động từ \"love\" có thể theo sau bởi V-ing hoặc \"to V\" để diễn tả sở thích. Trong các lựa chọn, \"planting\" là dạng V-ing đúng."
+        },
+        {
+          "type": "mc",
+          "q": "Painting is a _____ hobby.",
+          "opts": [
+            "create",
+            "creative",
+            "creation",
+            "creator"
+          ],
+          "ans": 1,
+          "explain": "Chúng ta cần một tính từ để bổ nghĩa cho danh từ \"hobby\" (sở thích). \"Creative\" (sáng tạo) là tính từ phù hợp nhất, miêu tả hội họa là một sở thích mang tính sáng tạo."
+        },
+        {
+          "type": "mc",
+          "q": "_____ they enjoy dancing?",
+          "opts": [
+            "Do",
+            "Does",
+            "Is",
+            "Are"
+          ],
+          "ans": 0,
+          "explain": "Đây là câu hỏi ở thì hiện tại đơn. Chủ ngữ \"they\" là số nhiều, nên chúng ta dùng trợ động từ \"Do\"."
+        },
+        {
+          "type": "mc",
+          "q": "She spends her _____ time doing photography.",
+          "opts": [
+            "busy",
+            "free",
+            "difficult",
+            "hard"
+          ],
+          "ans": 1,
+          "explain": "\"Free time\" (thời gian rảnh rỗi) là cụm từ đúng để chỉ khoảng thời gian không bận rộn, dùng cho các hoạt động giải trí như chụp ảnh."
+        }
+      ]
+    },
+    "2": {
+      "title": "Healthy Living",
+      "vocabulary": [
+        {
+          "en": "healthy",
+          "type": "adj",
+          "vi": "khỏe mạnh"
+        },
+        {
+          "en": "sunburn",
+          "type": "n",
+          "vi": "cháy nắng"
+        },
+        {
+          "en": "suncream",
+          "type": "n",
+          "vi": "kem chống nắng"
+        },
+        {
+          "en": "lip balm",
+          "type": "n",
+          "vi": "son dưỡng môi"
+        },
+        {
+          "en": "chapped",
+          "type": "adj",
+          "vi": "nứt nẻ"
+        },
+        {
+          "en": "acne",
+          "type": "n",
+          "vi": "mụn trứng cá"
+        },
+        {
+          "en": "pimple",
+          "type": "n",
+          "vi": "mụn nhọt"
+        },
+        {
+          "en": "diet",
+          "type": "n",
+          "vi": "chế độ ăn uống"
+        },
+        {
+          "en": "disease",
+          "type": "n",
+          "vi": "bệnh tật"
+        },
+        {
+          "en": "exercise",
+          "type": "n/v",
+          "vi": "tập thể dục, bài tập"
+        },
+        {
+          "en": "outdoor",
+          "type": "adj",
+          "vi": "ngoài trời"
+        },
+        {
+          "en": "indoor",
+          "type": "adj",
+          "vi": "trong nhà"
+        },
+        {
+          "en": "countryside",
+          "type": "n",
+          "vi": "nông thôn, miền quê"
+        },
+        {
+          "en": "neighbourhood",
+          "type": "n",
+          "vi": "khu dân cư, hàng xóm"
+        },
+        {
+          "en": "dim",
+          "type": "adj",
+          "vi": "mờ, tối"
+        },
+        {
+          "en": "soft drink",
+          "type": "n",
+          "vi": "nước ngọt có ga"
+        },
+        {
+          "en": "fast food",
+          "type": "n",
+          "vi": "đồ ăn nhanh"
+        },
+        {
+          "en": "avoid",
+          "type": "v",
+          "vi": "tránh"
+        },
+        {
+          "en": "affect",
+          "type": "v",
+          "vi": "ảnh hưởng"
+        },
+        {
+          "en": "fit",
+          "type": "adj",
+          "vi": "khỏe mạnh, cân đối"
+        },
+        {
+          "en": "harmful",
+          "type": "adj",
+          "vi": "có hại"
+        },
+        {
+          "en": "habit",
+          "type": "n",
+          "vi": "thói quen"
+        },
+        {
+          "en": "surroundings",
+          "type": "n",
+          "vi": "môi trường xung quanh"
+        },
+        {
+          "en": "eyedrops",
+          "type": "n",
+          "vi": "thuốc nhỏ mắt"
+        },
+        {
+          "en": "overweight",
+          "type": "adj",
+          "vi": "thừa cân"
+        },
+        {
+          "en": "stay healthy",
+          "type": "v phr",
+          "vi": "giữ gìn sức khỏe"
+        },
+        {
+          "en": "catch a cold",
+          "type": "v phr",
+          "vi": "bị cảm lạnh"
+        },
+        {
+          "en": "work out",
+          "type": "v phr",
+          "vi": "tập thể dục"
+        },
+        {
+          "en": "put on",
+          "type": "v phr",
+          "vi": "bôi, thoa (kem)"
+        },
+        {
+          "en": "cut down on",
+          "type": "v phr",
+          "vi": "cắt giảm"
+        },
+        {
+          "en": "keep clean",
+          "type": "v phr",
+          "vi": "giữ sạch sẽ"
+        },
+        {
+          "en": "allergy",
+          "type": "n",
+          "vi": "dị ứng"
+        },
+        {
+          "en": "serious",
+          "type": "adj",
+          "vi": "nghiêm trọng"
+        },
+        {
+          "en": "injury",
+          "type": "n",
+          "vi": "chấn thương"
+        },
+        {
+          "en": "medicine",
+          "type": "n",
+          "vi": "thuốc"
+        }
+      ],
+      "grammar": [
+        "Imperative sentences",
+        "Compound sentences with and/but/or/so"
+      ],
+      "grammar_notes": "Imperative sentences (Câu mệnh lệnh): Dùng để đưa ra lời khuyên, yêu cầu. Khẳng định: V + ... (Drink more water!). Phủ định: Don't + V + ... (Don't eat too much fast food!). Compound sentences (Câu ghép): Nối hai mệnh đề độc lập bằng liên từ and (và), but (nhưng), or (hoặc), so (vì vậy). Ví dụ: She wants to lose weight, so she exercises every day. I like fruit, but I don't like vegetables.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "You should _____ sunscreen before going out.",
+          "opts": [
+            "put in",
+            "put on",
+            "put off",
+            "put up"
+          ],
+          "ans": 1,
+          "explain": "Cụm động từ 'put on' có nghĩa là bôi, thoa (kem chống nắng, mỹ phẩm) hoặc mặc (quần áo). Các lựa chọn khác không phù hợp về nghĩa trong ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "Eating too much fast food is _____ for your health.",
+          "opts": [
+            "harm",
+            "harmful",
+            "harmless",
+            "harming"
+          ],
+          "ans": 1,
+          "explain": "Sau động từ 'is' cần một tính từ để mô tả chủ ngữ. 'Harmful' (có hại) là tính từ phù hợp về nghĩa, diễn tả đồ ăn nhanh có hại cho sức khỏe. 'Harm' là danh từ/động từ, 'harmless' là vô hại, 'harming' là dạng V-ing."
+        },
+        {
+          "type": "mc",
+          "q": "She has _____, so she uses eyedrops.",
+          "opts": [
+            "a cold",
+            "sore eyes",
+            "acne",
+            "sunburn"
+          ],
+          "ans": 1,
+          "explain": "Thuốc nhỏ mắt ('eyedrops') được dùng để điều trị các vấn đề về mắt. 'Sore eyes' (đau mắt) là tình trạng phù hợp nhất với việc sử dụng thuốc nhỏ mắt."
+        },
+        {
+          "type": "mc",
+          "q": "_____ stay up too late at night.",
+          "opts": [
+            "Do",
+            "Does",
+            "Don't",
+            "Doesn't"
+          ],
+          "ans": 2,
+          "explain": "Đây là câu mệnh lệnh phủ định, dùng để khuyên hoặc cấm không làm gì. Cấu trúc đúng là 'Don't + động từ nguyên mẫu'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'avoid' mean in Vietnamese?",
+          "opts": [
+            "chấp nhận",
+            "tránh",
+            "thử",
+            "thích"
+          ],
+          "ans": 1,
+          "explain": "'Avoid' trong tiếng Anh có nghĩa là 'tránh' hoặc 'tránh xa'. Các lựa chọn khác không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "He wants to stay fit, _____ he exercises daily.",
+          "opts": [
+            "but",
+            "or",
+            "so",
+            "because"
+          ],
+          "ans": 2,
+          "explain": "'So' (vì vậy, do đó) dùng để chỉ kết quả của một hành động hoặc tình huống. Anh ấy muốn giữ dáng (nguyên nhân), vì vậy anh ấy tập thể dục hàng ngày (kết quả)."
+        },
+        {
+          "type": "mc",
+          "q": "Drinking _____ is not good for your teeth.",
+          "opts": [
+            "water",
+            "milk",
+            "soft drinks",
+            "juice"
+          ],
+          "ans": 2,
+          "explain": "'Soft drinks' (nước ngọt) thường chứa nhiều đường và axit, không tốt cho men răng. Các loại đồ uống khác như nước, sữa, nước ép thường lành mạnh hơn cho răng."
+        },
+        {
+          "type": "mc",
+          "q": "You should _____ on sugary food.",
+          "opts": [
+            "cut down",
+            "cut up",
+            "cut off",
+            "cut in"
+          ],
+          "ans": 0,
+          "explain": "Cụm động từ 'cut down on' có nghĩa là cắt giảm, hạn chế. Trong ngữ cảnh này, nó có nghĩa là hạn chế ăn đồ ngọt."
+        },
+        {
+          "type": "mc",
+          "q": "She often _____ in the park every morning.",
+          "opts": [
+            "work out",
+            "works out",
+            "working out",
+            "worked out"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu ở thì hiện tại đơn, diễn tả một thói quen hàng ngày. Chủ ngữ 'She' là ngôi thứ ba số ít, nên động từ 'work out' phải thêm 's' thành 'works out'."
+        },
+        {
+          "type": "mc",
+          "q": "An 'allergy' in Vietnamese is _____.",
+          "opts": [
+            "cảm cúm",
+            "dị ứng",
+            "chấn thương",
+            "đau đầu"
+          ],
+          "ans": 1,
+          "explain": "'Allergy' trong tiếng Anh có nghĩa là 'dị ứng'. Các lựa chọn khác không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "_____ more vegetables and fruit!",
+          "opts": [
+            "Eat",
+            "Eats",
+            "Eating",
+            "To eat"
+          ],
+          "ans": 0,
+          "explain": "Đây là câu mệnh lệnh khẳng định, dùng để khuyên hoặc yêu cầu. Động từ trong câu mệnh lệnh luôn ở dạng nguyên mẫu không 'to'."
+        },
+        {
+          "type": "mc",
+          "q": "He is _____, so the doctor told him to eat less.",
+          "opts": [
+            "thin",
+            "overweight",
+            "tall",
+            "short"
+          ],
+          "ans": 1,
+          "explain": "Bác sĩ khuyên ăn ít hơn khi một người bị 'overweight' (thừa cân). Các lựa chọn khác như gầy, cao, thấp không liên quan đến lời khuyên này."
+        },
+        {
+          "type": "mc",
+          "q": "I like playing outdoors, _____ my sister prefers staying indoors.",
+          "opts": [
+            "and",
+            "but",
+            "so",
+            "or"
+          ],
+          "ans": 1,
+          "explain": "'But' (nhưng) dùng để nối hai ý hoặc hai mệnh đề có nghĩa đối lập nhau. Tôi thích chơi ngoài trời, nhưng chị tôi lại thích ở trong nhà."
+        },
+        {
+          "type": "mc",
+          "q": "You should use _____ to protect your lips.",
+          "opts": [
+            "suncream",
+            "eyedrops",
+            "lip balm",
+            "medicine"
+          ],
+          "ans": 2,
+          "explain": "'Lip balm' (son dưỡng môi) được sử dụng để bảo vệ và dưỡng ẩm cho môi. Các lựa chọn khác không phù hợp để bảo vệ môi."
+        },
+        {
+          "type": "mc",
+          "q": "A good _____ includes lots of fruit and vegetables.",
+          "opts": [
+            "diet",
+            "disease",
+            "exercise",
+            "habit"
+          ],
+          "ans": 0,
+          "explain": "'Diet' (chế độ ăn uống) là từ phù hợp nhất để nói về việc ăn uống lành mạnh bao gồm nhiều rau và trái cây. Các lựa chọn khác không đúng ngữ cảnh."
+        },
+        {
+          "type": "mc",
+          "q": "_____ read in dim light.",
+          "opts": [
+            "Do",
+            "Please",
+            "Don't",
+            "Let's"
+          ],
+          "ans": 2,
+          "explain": "Đây là câu mệnh lệnh phủ định, dùng để khuyên không nên làm gì. Cấu trúc đúng là 'Don't + động từ nguyên mẫu'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'neighbourhood' mean?",
+          "opts": [
+            "trường học",
+            "khu dân cư",
+            "bệnh viện",
+            "công viên"
+          ],
+          "ans": 1,
+          "explain": "'Neighbourhood' trong tiếng Anh có nghĩa là 'khu dân cư' hoặc 'khu phố'. Các lựa chọn khác không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "She caught a _____ because she didn't wear warm clothes.",
+          "opts": [
+            "disease",
+            "cold",
+            "sunburn",
+            "pimple"
+          ],
+          "ans": 1,
+          "explain": "Không mặc quần áo ấm là nguyên nhân phổ biến dẫn đến việc bị 'cold' (cảm lạnh). Các lựa chọn khác không phù hợp với ngữ cảnh."
+        },
+        {
+          "type": "mc",
+          "q": "Exercise regularly _____ you will be healthy.",
+          "opts": [
+            "but",
+            "or",
+            "and",
+            "so"
+          ],
+          "ans": 2,
+          "explain": "'And' (và) dùng để nối hai mệnh đề có quan hệ bổ sung hoặc chỉ kết quả tích cực. Tập thể dục thường xuyên VÀ bạn sẽ khỏe mạnh."
+        },
+        {
+          "type": "mc",
+          "q": "Too much sun can cause _____.",
+          "opts": [
+            "acne",
+            "allergy",
+            "sunburn",
+            "chapped lips"
+          ],
+          "ans": 2,
+          "explain": "Tiếp xúc quá nhiều với ánh nắng mặt trời ('too much sun') có thể gây ra 'sunburn' (cháy nắng). Các lựa chọn khác không phải là hậu quả trực tiếp của việc này."
+        }
+      ]
+    },
+    "3": {
+      "title": "Community Service",
+      "vocabulary": [
+        {
+          "en": "community",
+          "type": "n",
+          "vi": "cộng đồng"
+        },
+        {
+          "en": "volunteer",
+          "type": "n/v",
+          "vi": "tình nguyện viên, tình nguyện"
+        },
+        {
+          "en": "donate",
+          "type": "v",
+          "vi": "quyên góp, tặng"
+        },
+        {
+          "en": "homeless",
+          "type": "adj",
+          "vi": "vô gia cư"
+        },
+        {
+          "en": "elderly",
+          "type": "adj/n",
+          "vi": "người cao tuổi"
+        },
+        {
+          "en": "orphanage",
+          "type": "n",
+          "vi": "trại trẻ mồ côi"
+        },
+        {
+          "en": "plant",
+          "type": "v",
+          "vi": "trồng (cây)"
+        },
+        {
+          "en": "recycle",
+          "type": "v",
+          "vi": "tái chế"
+        },
+        {
+          "en": "tutor",
+          "type": "n/v",
+          "vi": "gia sư, dạy kèm"
+        },
+        {
+          "en": "exchange",
+          "type": "v",
+          "vi": "trao đổi"
+        },
+        {
+          "en": "rural",
+          "type": "adj",
+          "vi": "thuộc nông thôn"
+        },
+        {
+          "en": "mountainous",
+          "type": "adj",
+          "vi": "miền núi"
+        },
+        {
+          "en": "flooded",
+          "type": "adj",
+          "vi": "bị ngập lụt"
+        },
+        {
+          "en": "lonely",
+          "type": "adj",
+          "vi": "cô đơn"
+        },
+        {
+          "en": "patient",
+          "type": "adj",
+          "vi": "kiên nhẫn"
+        },
+        {
+          "en": "fantastic",
+          "type": "adj",
+          "vi": "tuyệt vời"
+        },
+        {
+          "en": "neighbourhood",
+          "type": "n",
+          "vi": "khu phố, hàng xóm"
+        },
+        {
+          "en": "feed",
+          "type": "v",
+          "vi": "cho ăn"
+        },
+        {
+          "en": "water",
+          "type": "v",
+          "vi": "tưới nước"
+        },
+        {
+          "en": "clean up",
+          "type": "v phr",
+          "vi": "dọn dẹp sạch sẽ"
+        },
+        {
+          "en": "pick up",
+          "type": "v phr",
+          "vi": "nhặt lên"
+        },
+        {
+          "en": "lend a hand",
+          "type": "v phr",
+          "vi": "giúp một tay"
+        },
+        {
+          "en": "get involved",
+          "type": "v phr",
+          "vi": "tham gia vào"
+        },
+        {
+          "en": "give back",
+          "type": "v phr",
+          "vi": "đền đáp, trả lại"
+        },
+        {
+          "en": "provide",
+          "type": "v",
+          "vi": "cung cấp"
+        },
+        {
+          "en": "benefit",
+          "type": "n/v",
+          "vi": "lợi ích, mang lại lợi ích"
+        },
+        {
+          "en": "charity",
+          "type": "n",
+          "vi": "từ thiện"
+        },
+        {
+          "en": "disabled",
+          "type": "adj",
+          "vi": "khuyết tật"
+        },
+        {
+          "en": "fortunate",
+          "type": "adj",
+          "vi": "may mắn"
+        },
+        {
+          "en": "generous",
+          "type": "adj",
+          "vi": "hào phóng"
+        }
+      ],
+      "grammar": [
+        "Past Simple",
+        "Simple sentences"
+      ],
+      "grammar_notes": "Past Simple (Thì quá khứ đơn): Dùng để diễn tả hành động đã xảy ra và kết thúc trong quá khứ. Khẳng định: S + V-ed/V2. Phủ định: S + didn't + V. Nghi vấn: Did + S + V? Dấu hiệu: yesterday, last week/month/year, ago, in 2020. Động từ có quy tắc: thêm -ed (planted, donated). Động từ bất quy tắc: go-went, give-gave, feed-fed. Simple sentences (Câu đơn): Câu chỉ có một mệnh đề độc lập. Cấu trúc: S + V, S + V + O, S + V + O + A.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "Last Sunday, we _____ trees in the park.",
+          "opts": [
+            "plant",
+            "plants",
+            "planted",
+            "planting"
+          ],
+          "ans": 2,
+          "explain": "Cụm từ \"Last Sunday\" (Chủ nhật tuần trước) cho biết đây là thì quá khứ đơn. Vì vậy, động từ \"plant\" phải được chia ở dạng quá khứ là \"planted\"."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'donate' mean in Vietnamese?",
+          "opts": [
+            "mua",
+            "bán",
+            "quyên góp",
+            "vay mượn"
+          ],
+          "ans": 2,
+          "explain": "Từ \"donate\" trong tiếng Anh có nghĩa là đóng góp, cho đi một thứ gì đó (tiền, đồ vật) vì mục đích tốt đẹp. Do đó, \"quyên góp\" là đáp án chính xác nhất."
+        },
+        {
+          "type": "mc",
+          "q": "She _____ food to the homeless last week.",
+          "opts": [
+            "give",
+            "gives",
+            "gave",
+            "giving"
+          ],
+          "ans": 2,
+          "explain": "Cụm từ \"last week\" (tuần trước) cho biết đây là thì quá khứ đơn. Động từ \"give\" khi chia ở thì quá khứ đơn sẽ thành \"gave\"."
+        },
+        {
+          "type": "mc",
+          "q": "The children at the _____ need our help.",
+          "opts": [
+            "hospital",
+            "orphanage",
+            "school",
+            "park"
+          ],
+          "ans": 1,
+          "explain": "Ngữ cảnh \"The children at the _____ need our help\" (Những đứa trẻ ở _____ cần sự giúp đỡ của chúng ta) gợi ý một nơi mà trẻ em cần sự hỗ trợ. \"Orphanage\" (trại trẻ mồ côi) là nơi phù hợp nhất."
+        },
+        {
+          "type": "mc",
+          "q": "_____ you volunteer at the hospital yesterday?",
+          "opts": [
+            "Do",
+            "Does",
+            "Did",
+            "Are"
+          ],
+          "ans": 2,
+          "explain": "Từ \"yesterday\" (hôm qua) cho biết đây là thì quá khứ đơn. Để đặt câu hỏi trong thì quá khứ đơn, chúng ta dùng trợ động từ \"Did\"."
+        },
+        {
+          "type": "mc",
+          "q": "We should _____ a hand to people in need.",
+          "opts": [
+            "give",
+            "lend",
+            "take",
+            "put"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ \"lend a hand\" là một thành ngữ tiếng Anh có nghĩa là giúp đỡ ai đó. Các lựa chọn khác không tạo thành thành ngữ này."
+        },
+        {
+          "type": "mc",
+          "q": "They _____ old newspapers and bottles last month.",
+          "opts": [
+            "recycle",
+            "recycled",
+            "recycling",
+            "recycles"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ \"last month\" (tháng trước) cho biết đây là thì quá khứ đơn. Động từ \"recycle\" khi chia ở thì quá khứ đơn sẽ thành \"recycled\"."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ people in the village need warm clothes.",
+          "opts": [
+            "rich",
+            "young",
+            "elderly",
+            "happy"
+          ],
+          "ans": 2,
+          "explain": "Ngữ cảnh \"The _____ people in the village need warm clothes\" (Những người _____ trong làng cần quần áo ấm) gợi ý một nhóm người dễ bị tổn thương. \"Elderly\" (người cao tuổi) thường là nhóm cần sự giúp đỡ này."
+        },
+        {
+          "type": "mc",
+          "q": "She didn't _____ in the community service last week.",
+          "opts": [
+            "participate",
+            "participated",
+            "participates",
+            "participating"
+          ],
+          "ans": 0,
+          "explain": "Trong câu phủ định thì quá khứ đơn với \"didn't\", động từ chính phải ở dạng nguyên mẫu không \"to\". Vì vậy, \"participate\" là đáp án đúng."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'rural' mean?",
+          "opts": [
+            "thành thị",
+            "nông thôn",
+            "miền núi",
+            "ven biển"
+          ],
+          "ans": 1,
+          "explain": "Từ \"rural\" trong tiếng Anh có nghĩa là thuộc về nông thôn, vùng quê, trái ngược với thành thị. Do đó, \"nông thôn\" là đáp án chính xác."
+        },
+        {
+          "type": "mc",
+          "q": "He _____ English to poor children every Sunday.",
+          "opts": [
+            "tutor",
+            "tutors",
+            "tutored",
+            "tutoring"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ \"every Sunday\" (mỗi Chủ nhật) cho biết đây là một hành động lặp lại thường xuyên, nên dùng thì hiện tại đơn. Chủ ngữ \"He\" (ngôi thứ ba số ít) nên động từ \"tutor\" phải thêm \"s\" thành \"tutors\"."
+        },
+        {
+          "type": "mc",
+          "q": "We cleaned _____ the beach after the storm.",
+          "opts": [
+            "on",
+            "in",
+            "up",
+            "off"
+          ],
+          "ans": 2,
+          "explain": "Cụm động từ \"clean up\" có nghĩa là dọn dẹp sạch sẽ một nơi nào đó. Đây là cụm từ phù hợp nhất với ngữ cảnh dọn dẹp bãi biển."
+        },
+        {
+          "type": "mc",
+          "q": "The flood _____ many houses in the area.",
+          "opts": [
+            "destroy",
+            "destroys",
+            "destroyed",
+            "destroying"
+          ],
+          "ans": 2,
+          "explain": "Câu này miêu tả một sự việc đã xảy ra trong quá khứ (cơn lũ đã phá hủy nhà cửa). Do đó, động từ \"destroy\" phải ở thì quá khứ đơn là \"destroyed\"."
+        },
+        {
+          "type": "mc",
+          "q": "A 'volunteer' is someone who works _____.",
+          "opts": [
+            "for money",
+            "without pay",
+            "part-time",
+            "at night"
+          ],
+          "ans": 1,
+          "explain": "Một \"volunteer\" (tình nguyện viên) là người làm việc một cách tự nguyện mà không nhận thù lao. \"Without pay\" có nghĩa là không được trả lương."
+        },
+        {
+          "type": "mc",
+          "q": "_____ they clean the park yesterday?",
+          "opts": [
+            "Do",
+            "Does",
+            "Did",
+            "Were"
+          ],
+          "ans": 2,
+          "explain": "Từ \"yesterday\" (hôm qua) cho biết đây là thì quá khứ đơn. Để đặt câu hỏi trong thì quá khứ đơn, chúng ta dùng trợ động từ \"Did\"."
+        },
+        {
+          "type": "mc",
+          "q": "She is very _____ — she always helps others.",
+          "opts": [
+            "selfish",
+            "lazy",
+            "generous",
+            "mean"
+          ],
+          "ans": 2,
+          "explain": "Câu \"She always helps others\" (Cô ấy luôn giúp đỡ người khác) miêu tả một người có tính cách tốt, hào phóng. \"Generous\" có nghĩa là hào phóng, rộng lượng."
+        },
+        {
+          "type": "mc",
+          "q": "We _____ books to the mountainous school.",
+          "opts": [
+            "donate",
+            "donated",
+            "donating",
+            "donates"
+          ],
+          "ans": 1,
+          "explain": "Câu này miêu tả một hành động đã hoàn thành (chúng tôi đã quyên góp sách). Do đó, động từ \"donate\" phải ở thì quá khứ đơn là \"donated\"."
+        },
+        {
+          "type": "mc",
+          "q": "The community service project was _____.",
+          "opts": [
+            "boring",
+            "terrible",
+            "fantastic",
+            "awful"
+          ],
+          "ans": 2,
+          "explain": "Để miêu tả một dự án cộng đồng thành công hoặc thú vị, chúng ta dùng tính từ tích cực. \"Fantastic\" có nghĩa là tuyệt vời, rất hay."
+        },
+        {
+          "type": "mc",
+          "q": "They _____ not go to the charity event last night.",
+          "opts": [
+            "do",
+            "does",
+            "did",
+            "were"
+          ],
+          "ans": 2,
+          "explain": "Cụm từ \"last night\" (tối qua) cho biết đây là thì quá khứ đơn. Để tạo câu phủ định trong thì quá khứ đơn, chúng ta dùng trợ động từ \"did not\" (hoặc \"didn't\")."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'disabled' mean in Vietnamese?",
+          "opts": [
+            "khỏe mạnh",
+            "khuyết tật",
+            "thông minh",
+            "giàu có"
+          ],
+          "ans": 1,
+          "explain": "Từ \"disabled\" trong tiếng Anh có nghĩa là bị khuyết tật, không có khả năng hoạt động bình thường về thể chất hoặc tinh thần. Do đó, \"khuyết tật\" là đáp án chính xác."
+        }
+      ]
+    },
+    "4": {
+      "title": "Music and Arts",
+      "vocabulary": [
+        {
+          "en": "classical music",
+          "type": "n",
+          "vi": "nhạc cổ điển"
+        },
+        {
+          "en": "folk music",
+          "type": "n",
+          "vi": "nhạc dân gian"
+        },
+        {
+          "en": "pop music",
+          "type": "n",
+          "vi": "nhạc pop"
+        },
+        {
+          "en": "rock music",
+          "type": "n",
+          "vi": "nhạc rock"
+        },
+        {
+          "en": "concert",
+          "type": "n",
+          "vi": "buổi hòa nhạc"
+        },
+        {
+          "en": "gallery",
+          "type": "n",
+          "vi": "phòng trưng bày"
+        },
+        {
+          "en": "exhibition",
+          "type": "n",
+          "vi": "triển lãm"
+        },
+        {
+          "en": "instrument",
+          "type": "n",
+          "vi": "nhạc cụ"
+        },
+        {
+          "en": "sculpture",
+          "type": "n",
+          "vi": "tác phẩm điêu khắc"
+        },
+        {
+          "en": "portrait",
+          "type": "n",
+          "vi": "chân dung"
+        },
+        {
+          "en": "landscape",
+          "type": "n",
+          "vi": "phong cảnh"
+        },
+        {
+          "en": "puppet",
+          "type": "n",
+          "vi": "con rối"
+        },
+        {
+          "en": "anthem",
+          "type": "n",
+          "vi": "quốc ca, bài ca"
+        },
+        {
+          "en": "compose",
+          "type": "v",
+          "vi": "sáng tác"
+        },
+        {
+          "en": "perform",
+          "type": "v",
+          "vi": "biểu diễn, trình diễn"
+        },
+        {
+          "en": "originate",
+          "type": "v",
+          "vi": "bắt nguồn"
+        },
+        {
+          "en": "prefer",
+          "type": "v",
+          "vi": "thích hơn"
+        },
+        {
+          "en": "character",
+          "type": "n",
+          "vi": "nhân vật"
+        },
+        {
+          "en": "festival",
+          "type": "n",
+          "vi": "lễ hội"
+        },
+        {
+          "en": "melody",
+          "type": "n",
+          "vi": "giai điệu"
+        },
+        {
+          "en": "rhythm",
+          "type": "n",
+          "vi": "nhịp điệu"
+        },
+        {
+          "en": "lyrics",
+          "type": "n",
+          "vi": "lời bài hát"
+        },
+        {
+          "en": "genre",
+          "type": "n",
+          "vi": "thể loại"
+        },
+        {
+          "en": "solo",
+          "type": "n/adj",
+          "vi": "đơn ca, solo"
+        },
+        {
+          "en": "chorus",
+          "type": "n",
+          "vi": "điệp khúc, hợp xướng"
+        },
+        {
+          "en": "creative",
+          "type": "adj",
+          "vi": "sáng tạo"
+        },
+        {
+          "en": "traditional",
+          "type": "adj",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "modern",
+          "type": "adj",
+          "vi": "hiện đại"
+        },
+        {
+          "en": "talented",
+          "type": "adj",
+          "vi": "tài năng"
+        },
+        {
+          "en": "spare time",
+          "type": "n",
+          "vi": "thời gian rảnh"
+        }
+      ],
+      "grammar": [
+        "Comparisons: as...as, different from",
+        "Too + adj, (not) adj + enough"
+      ],
+      "grammar_notes": "So sánh bằng (as...as): S + be + as + adj + as + N/pronoun. Ví dụ: This song is as beautiful as that one. Phủ định: S + be + not + as + adj + as. Cấu trúc different from: S + be + different from + N. Ví dụ: Folk music is different from pop music. Too + adj: quá... (mang nghĩa tiêu cực). Ví dụ: The music is too loud. Adj + enough: đủ... Ví dụ: She is talented enough to win the contest. Not + adj + enough: không đủ... Ví dụ: He is not old enough to go to the concert alone.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "Pop music is _____ from classical music.",
+          "opts": [
+            "differ",
+            "different",
+            "difference",
+            "differently"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc đúng để diễn tả sự khác biệt là 'be different from'. 'Different' là tính từ, phù hợp đứng sau động từ 'is'. Các lựa chọn khác là động từ, danh từ hoặc trạng từ nên không đúng."
+        },
+        {
+          "type": "mc",
+          "q": "She can play three musical _____.",
+          "opts": [
+            "instruments",
+            "concerts",
+            "galleries",
+            "festivals"
+          ],
+          "ans": 0,
+          "explain": "'Musical instruments' là cụm danh từ có nghĩa là 'nhạc cụ'. Đây là từ phù hợp nhất để chỉ những thứ có thể chơi được trong ngữ cảnh âm nhạc."
+        },
+        {
+          "type": "mc",
+          "q": "This painting is as _____ as that one.",
+          "opts": [
+            "beauty",
+            "beautiful",
+            "beautifully",
+            "beautify"
+          ],
+          "ans": 1,
+          "explain": "Trong cấu trúc so sánh bằng 'as... as', chúng ta cần dùng một tính từ (adjective) ở giữa. 'Beautiful' là tính từ, còn 'beauty' là danh từ và 'beautifully' là trạng từ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'compose' mean in Vietnamese?",
+          "opts": [
+            "biểu diễn",
+            "sáng tác",
+            "hát",
+            "nhảy"
+          ],
+          "ans": 1,
+          "explain": "'Compose' có nghĩa là 'sáng tác', thường dùng để nói về việc sáng tác nhạc hoặc thơ. Các lựa chọn khác không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "The concert was _____ loud for the children.",
+          "opts": [
+            "enough",
+            "too",
+            "very",
+            "so"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc 'too + tính từ/trạng từ + for someone/something' dùng để diễn tả điều gì đó quá mức, không phù hợp. Ở đây, buổi hòa nhạc quá ồn ào đối với trẻ em."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is a picture of a person.",
+          "opts": [
+            "landscape",
+            "sculpture",
+            "portrait",
+            "puppet"
+          ],
+          "ans": 2,
+          "explain": "'Portrait' là bức chân dung, tức là một bức tranh hoặc ảnh chụp một người. Các lựa chọn khác không phù hợp với định nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "She is talented _____ to become a singer.",
+          "opts": [
+            "too",
+            "enough",
+            "very",
+            "so"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc 'tính từ/trạng từ + enough + to V' dùng để diễn tả đủ khả năng hoặc điều kiện để làm gì đó. 'Talented enough' nghĩa là đủ tài năng."
+        },
+        {
+          "type": "mc",
+          "q": "Water puppetry _____ in Vietnam.",
+          "opts": [
+            "originated",
+            "original",
+            "origin",
+            "originally"
+          ],
+          "ans": 0,
+          "explain": "Chúng ta cần một động từ ở thì quá khứ đơn để nói về nguồn gốc của múa rối nước. 'Originated' là động từ quá khứ, nghĩa là 'có nguồn gốc từ'."
+        },
+        {
+          "type": "mc",
+          "q": "My sister _____ pop music to rock music.",
+          "opts": [
+            "prefer",
+            "prefers",
+            "preferred",
+            "preferring"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ 'My sister' là ngôi thứ ba số ít, nên động từ 'prefer' phải thêm 's' thành 'prefers' ở thì hiện tại đơn. Cấu trúc 'prefer A to B' nghĩa là thích A hơn B."
+        },
+        {
+          "type": "mc",
+          "q": "An 'exhibition' in Vietnamese is _____.",
+          "opts": [
+            "buổi hòa nhạc",
+            "triển lãm",
+            "phòng trưng bày",
+            "lễ hội"
+          ],
+          "ans": 1,
+          "explain": "'Exhibition' trong tiếng Việt có nghĩa là 'triển lãm'. Đây là nơi trưng bày các tác phẩm nghệ thuật hoặc hiện vật."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of that song is very catchy.",
+          "opts": [
+            "melody",
+            "gallery",
+            "sculpture",
+            "portrait"
+          ],
+          "ans": 0,
+          "explain": "'Melody' có nghĩa là 'giai điệu'. Giai điệu là thứ thường được miêu tả là 'catchy' (bắt tai, dễ nhớ) trong một bài hát."
+        },
+        {
+          "type": "mc",
+          "q": "He is not _____ enough to understand opera.",
+          "opts": [
+            "old",
+            "young",
+            "tall",
+            "short"
+          ],
+          "ans": 0,
+          "explain": "Cấu trúc 'not + tính từ + enough + to V' diễn tả không đủ... để làm gì. 'Not old enough' nghĩa là chưa đủ lớn/trưởng thành để hiểu opera."
+        },
+        {
+          "type": "mc",
+          "q": "Folk music is as _____ as modern music.",
+          "opts": [
+            "interest",
+            "interesting",
+            "interested",
+            "interestingly"
+          ],
+          "ans": 1,
+          "explain": "Trong cấu trúc so sánh bằng 'as... as', chúng ta cần dùng một tính từ (adjective) ở giữa. 'Interesting' là tính từ chỉ tính chất của sự vật (âm nhạc), còn 'interested' dùng cho người."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is a type of show with dolls.",
+          "opts": [
+            "concert",
+            "puppet show",
+            "gallery",
+            "exhibition"
+          ],
+          "ans": 1,
+          "explain": "'Puppet show' là 'múa rối' hoặc 'chương trình múa rối', là loại hình biểu diễn sử dụng búp bê hoặc con rối."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'lyrics' mean?",
+          "opts": [
+            "nhịp điệu",
+            "giai điệu",
+            "lời bài hát",
+            "thể loại"
+          ],
+          "ans": 2,
+          "explain": "'Lyrics' có nghĩa là 'lời bài hát'. Đây là phần văn bản được hát trong một bài hát."
+        },
+        {
+          "type": "mc",
+          "q": "The artist _____ many beautiful paintings.",
+          "opts": [
+            "performs",
+            "composes",
+            "creates",
+            "sings"
+          ],
+          "ans": 2,
+          "explain": "Nghệ sĩ (artist) thường 'creates' (sáng tạo, tạo ra) các tác phẩm nghệ thuật như tranh vẽ. Các động từ khác không phù hợp với 'paintings'."
+        },
+        {
+          "type": "mc",
+          "q": "Rock music is _____ from folk music.",
+          "opts": [
+            "differ",
+            "different",
+            "difference",
+            "differs"
+          ],
+          "ans": 1,
+          "explain": "Tương tự câu 0, cấu trúc đúng để diễn tả sự khác biệt là 'be different from'. 'Different' là tính từ, phù hợp đứng sau động từ 'is'."
+        },
+        {
+          "type": "mc",
+          "q": "She likes to visit art _____ in her free time.",
+          "opts": [
+            "concerts",
+            "galleries",
+            "stadiums",
+            "cinemas"
+          ],
+          "ans": 1,
+          "explain": "'Art galleries' là 'phòng trưng bày nghệ thuật', là nơi người ta đến để xem các tác phẩm nghệ thuật. Các lựa chọn khác không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is a piece of art made from stone or wood.",
+          "opts": [
+            "painting",
+            "portrait",
+            "sculpture",
+            "collage"
+          ],
+          "ans": 2,
+          "explain": "'Sculpture' là 'tác phẩm điêu khắc', là một loại hình nghệ thuật được tạo ra từ các vật liệu như đá hoặc gỗ. Các lựa chọn khác không đúng định nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "He is _____ creative. He can write beautiful songs.",
+          "opts": [
+            "too",
+            "enough",
+            "very",
+            "not"
+          ],
+          "ans": 2,
+          "explain": "'Very' dùng để nhấn mạnh mức độ của tính từ 'creative' (rất sáng tạo), phù hợp với vế sau 'He can write beautiful songs'. 'Too' diễn tả quá mức tiêu cực, không phù hợp ở đây."
+        }
+      ]
+    },
+    "5": {
+      "title": "Food and Drink",
+      "vocabulary": [
+        {
+          "en": "beef",
+          "type": "n",
+          "vi": "thịt bò"
+        },
+        {
+          "en": "pork",
+          "type": "n",
+          "vi": "thịt lợn"
+        },
+        {
+          "en": "chicken",
+          "type": "n",
+          "vi": "thịt gà"
+        },
+        {
+          "en": "shrimp",
+          "type": "n",
+          "vi": "tôm"
+        },
+        {
+          "en": "tofu",
+          "type": "n",
+          "vi": "đậu phụ"
+        },
+        {
+          "en": "noodles",
+          "type": "n",
+          "vi": "mì, bún, phở"
+        },
+        {
+          "en": "pancake",
+          "type": "n",
+          "vi": "bánh xèo, bánh kếp"
+        },
+        {
+          "en": "spring roll",
+          "type": "n",
+          "vi": "chả giò, nem cuốn"
+        },
+        {
+          "en": "omelette",
+          "type": "n",
+          "vi": "trứng tráng"
+        },
+        {
+          "en": "ingredient",
+          "type": "n",
+          "vi": "nguyên liệu"
+        },
+        {
+          "en": "recipe",
+          "type": "n",
+          "vi": "công thức nấu ăn"
+        },
+        {
+          "en": "spice",
+          "type": "n",
+          "vi": "gia vị"
+        },
+        {
+          "en": "sauce",
+          "type": "n",
+          "vi": "nước sốt"
+        },
+        {
+          "en": "turmeric",
+          "type": "n",
+          "vi": "nghệ"
+        },
+        {
+          "en": "lemongrass",
+          "type": "n",
+          "vi": "sả"
+        },
+        {
+          "en": "pepper",
+          "type": "n",
+          "vi": "tiêu, ớt"
+        },
+        {
+          "en": "onion",
+          "type": "n",
+          "vi": "hành"
+        },
+        {
+          "en": "garlic",
+          "type": "n",
+          "vi": "tỏi"
+        },
+        {
+          "en": "slice",
+          "type": "v/n",
+          "vi": "cắt lát, lát"
+        },
+        {
+          "en": "stir-fry",
+          "type": "v",
+          "vi": "xào"
+        },
+        {
+          "en": "steam",
+          "type": "v",
+          "vi": "hấp"
+        },
+        {
+          "en": "boil",
+          "type": "v",
+          "vi": "luộc, đun sôi"
+        },
+        {
+          "en": "grill",
+          "type": "v",
+          "vi": "nướng"
+        },
+        {
+          "en": "fry",
+          "type": "v",
+          "vi": "chiên, rán"
+        },
+        {
+          "en": "pour",
+          "type": "v",
+          "vi": "rót, đổ"
+        },
+        {
+          "en": "mix",
+          "type": "v",
+          "vi": "trộn"
+        },
+        {
+          "en": "delicious",
+          "type": "adj",
+          "vi": "ngon"
+        },
+        {
+          "en": "tasty",
+          "type": "adj",
+          "vi": "ngon, có vị"
+        },
+        {
+          "en": "sour",
+          "type": "adj",
+          "vi": "chua"
+        },
+        {
+          "en": "salty",
+          "type": "adj",
+          "vi": "mặn"
+        },
+        {
+          "en": "sweet",
+          "type": "adj",
+          "vi": "ngọt"
+        },
+        {
+          "en": "bitter",
+          "type": "adj",
+          "vi": "đắng"
+        },
+        {
+          "en": "spicy",
+          "type": "adj",
+          "vi": "cay"
+        },
+        {
+          "en": "dish",
+          "type": "n",
+          "vi": "món ăn"
+        },
+        {
+          "en": "snack",
+          "type": "n",
+          "vi": "đồ ăn nhẹ"
+        }
+      ],
+      "grammar": [
+        "How much / How many",
+        "a/an, some, any"
+      ],
+      "grammar_notes": "How much + danh từ không đếm được: How much water do you need? How many + danh từ đếm được số nhiều: How many eggs do you need? A/an: dùng với danh từ đếm được số ít (a tomato, an egg). Some: dùng trong câu khẳng định với cả danh từ đếm được và không đếm được (some sugar, some eggs). Any: dùng trong câu phủ định và nghi vấn (Do you have any milk? I don't have any onions).",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "How _____ sugar do you need?",
+          "opts": [
+            "many",
+            "much",
+            "often",
+            "long"
+          ],
+          "ans": 1,
+          "explain": "\"Sugar\" (đường) là danh từ không đếm được, nên ta dùng \"much\" để hỏi về số lượng. \"Many\" dùng cho danh từ đếm được."
+        },
+        {
+          "type": "mc",
+          "q": "What is the Vietnamese meaning of 'ingredient'?",
+          "opts": [
+            "món ăn",
+            "nguyên liệu",
+            "gia vị",
+            "công thức"
+          ],
+          "ans": 1,
+          "explain": "\"Ingredient\" có nghĩa là nguyên liệu hoặc thành phần, dùng để chỉ các thứ cần thiết để làm ra một món ăn."
+        },
+        {
+          "type": "mc",
+          "q": "_____ you like some spring rolls?",
+          "opts": [
+            "Do",
+            "Would",
+            "Are",
+            "Have"
+          ],
+          "ans": 1,
+          "explain": "\"Would you like...?\" là cách hỏi hoặc mời lịch sự trong tiếng Anh, có nghĩa là \"Bạn có muốn... không?\"."
+        },
+        {
+          "type": "mc",
+          "q": "To make pho, you need to _____ the broth.",
+          "opts": [
+            "fry",
+            "grill",
+            "boil",
+            "stir-fry"
+          ],
+          "ans": 2,
+          "explain": "\"Boil\" có nghĩa là đun sôi. Để làm phở, chúng ta cần đun sôi nước dùng (broth). Các từ khác như \"fry\" (chiên), \"grill\" (nướng) không phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "How _____ tomatoes do we need for the salad?",
+          "opts": [
+            "much",
+            "many",
+            "some",
+            "any"
+          ],
+          "ans": 1,
+          "explain": "\"Tomatoes\" (cà chua) là danh từ đếm được số nhiều, nên ta dùng \"many\" để hỏi về số lượng. \"Much\" dùng cho danh từ không đếm được."
+        },
+        {
+          "type": "mc",
+          "q": "There isn't _____ milk in the fridge.",
+          "opts": [
+            "some",
+            "any",
+            "a",
+            "many"
+          ],
+          "ans": 1,
+          "explain": "Trong câu phủ định (có \"isn't\"), chúng ta dùng \"any\" để chỉ \"một chút nào đó\" hoặc \"bất kỳ\". \"Some\" thường dùng trong câu khẳng định hoặc lời mời/đề nghị."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'stir-fry' mean?",
+          "opts": [
+            "luộc",
+            "hấp",
+            "xào",
+            "nướng"
+          ],
+          "ans": 2,
+          "explain": "\"Stir-fry\" là một phương pháp nấu ăn trong đó thức ăn được xào nhanh trên lửa lớn, thường dùng trong ẩm thực châu Á."
+        },
+        {
+          "type": "mc",
+          "q": "The soup is too _____. Please add some water.",
+          "opts": [
+            "sweet",
+            "salty",
+            "sour",
+            "bitter"
+          ],
+          "ans": 1,
+          "explain": "Nếu súp quá \"salty\" (mặn), chúng ta cần thêm nước để làm loãng bớt. Các vị khác như ngọt, chua, đắng không cần thêm nước để điều chỉnh."
+        },
+        {
+          "type": "mc",
+          "q": "Would you like _____ egg for breakfast?",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "any"
+          ],
+          "ans": 1,
+          "explain": "Từ \"egg\" bắt đầu bằng một nguyên âm (e), nên chúng ta dùng mạo từ \"an\" trước nó."
+        },
+        {
+          "type": "mc",
+          "q": "We need _____ onions and garlic for this recipe.",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "much"
+          ],
+          "ans": 2,
+          "explain": "\"Some\" được dùng để chỉ một lượng không xác định của cả danh từ đếm được số nhiều (\"onions\") và danh từ không đếm được (\"garlic\") trong câu khẳng định."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'delicious' mean in Vietnamese?",
+          "opts": [
+            "chua",
+            "mặn",
+            "ngon",
+            "cay"
+          ],
+          "ans": 2,
+          "explain": "\"Delicious\" là một tính từ dùng để miêu tả món ăn rất ngon, hấp dẫn."
+        },
+        {
+          "type": "mc",
+          "q": "She _____ the vegetables before cooking them.",
+          "opts": [
+            "sliced",
+            "slices",
+            "slice",
+            "slicing"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"She\" là ngôi thứ ba số ít, nên động từ ở thì hiện tại đơn phải thêm \"s\" hoặc \"es\". \"Slices\" là dạng đúng."
+        },
+        {
+          "type": "mc",
+          "q": "Do you have _____ pepper?",
+          "opts": [
+            "some",
+            "any",
+            "a",
+            "many"
+          ],
+          "ans": 1,
+          "explain": "Trong câu hỏi, chúng ta thường dùng \"any\" để hỏi về sự tồn tại của một lượng không xác định. \"Some\" thường dùng trong câu khẳng định hoặc lời mời/đề nghị."
+        },
+        {
+          "type": "mc",
+          "q": "Banh xeo is a Vietnamese _____.",
+          "opts": [
+            "drink",
+            "pancake",
+            "soup",
+            "salad"
+          ],
+          "ans": 1,
+          "explain": "Bánh xèo là một món ăn truyền thống của Việt Nam, có hình dạng và cách làm tương tự như một loại bánh kếp (pancake)."
+        },
+        {
+          "type": "mc",
+          "q": "_____ the water into the pot.",
+          "opts": [
+            "Pour",
+            "Pours",
+            "Pouring",
+            "Poured"
+          ],
+          "ans": 0,
+          "explain": "Đây là một câu mệnh lệnh, yêu cầu thực hiện hành động. Trong câu mệnh lệnh, động từ luôn ở dạng nguyên mẫu không \"to\". \"Pour\" có nghĩa là đổ, rót."
+        },
+        {
+          "type": "mc",
+          "q": "Lemongrass in Vietnamese is _____.",
+          "opts": [
+            "nghệ",
+            "tỏi",
+            "sả",
+            "hành"
+          ],
+          "ans": 2,
+          "explain": "\"Lemongrass\" là tên tiếng Anh của cây sả, một loại gia vị và thảo mộc phổ biến trong ẩm thực Việt Nam."
+        },
+        {
+          "type": "mc",
+          "q": "How _____ rice do we need to cook?",
+          "opts": [
+            "many",
+            "much",
+            "often",
+            "long"
+          ],
+          "ans": 1,
+          "explain": "\"Rice\" (gạo/cơm) là danh từ không đếm được, nên ta dùng \"much\" để hỏi về số lượng. \"Many\" dùng cho danh từ đếm được."
+        },
+        {
+          "type": "mc",
+          "q": "She doesn't like _____ food.",
+          "opts": [
+            "spice",
+            "spicy",
+            "spicier",
+            "spiciest"
+          ],
+          "ans": 1,
+          "explain": "Cần một tính từ để bổ nghĩa cho danh từ \"food\" (thức ăn). \"Spicy\" là tính từ có nghĩa là \"cay\", phù hợp với ngữ cảnh. \"Spice\" là danh từ (gia vị)."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is a set of instructions for cooking.",
+          "opts": [
+            "recipe",
+            "ingredient",
+            "dish",
+            "spice"
+          ],
+          "ans": 0,
+          "explain": "\"Recipe\" có nghĩa là công thức nấu ăn, là một tập hợp các hướng dẫn để chuẩn bị một món ăn cụ thể."
+        },
+        {
+          "type": "mc",
+          "q": "There are _____ shrimps in the basket.",
+          "opts": [
+            "a",
+            "an",
+            "some",
+            "much"
+          ],
+          "ans": 2,
+          "explain": "\"Shrimps\" (tôm) là danh từ đếm được số nhiều. Trong câu khẳng định, \"some\" được dùng để chỉ một lượng không xác định của danh từ đếm được số nhiều."
+        }
+      ]
+    },
+    "6": {
+      "title": "A Visit to a School",
+      "vocabulary": [
+        {
+          "en": "entrance examination",
+          "type": "n",
+          "vi": "kỳ thi tuyển sinh"
+        },
+        {
+          "en": "midterm test",
+          "type": "n",
+          "vi": "bài kiểm tra giữa kỳ"
+        },
+        {
+          "en": "gifted",
+          "type": "adj",
+          "vi": "có năng khiếu"
+        },
+        {
+          "en": "facility",
+          "type": "n",
+          "vi": "cơ sở vật chất"
+        },
+        {
+          "en": "intelligent",
+          "type": "adj",
+          "vi": "thông minh"
+        },
+        {
+          "en": "lower secondary school",
+          "type": "n",
+          "vi": "trường trung học cơ sở"
+        },
+        {
+          "en": "classmate",
+          "type": "n",
+          "vi": "bạn cùng lớp"
+        },
+        {
+          "en": "school library",
+          "type": "n",
+          "vi": "thư viện trường"
+        },
+        {
+          "en": "project",
+          "type": "n",
+          "vi": "dự án, đề tài"
+        },
+        {
+          "en": "remind",
+          "type": "v",
+          "vi": "nhắc nhở"
+        },
+        {
+          "en": "modern",
+          "type": "adj",
+          "vi": "hiện đại"
+        },
+        {
+          "en": "pass",
+          "type": "v",
+          "vi": "đỗ, vượt qua"
+        },
+        {
+          "en": "break time",
+          "type": "n",
+          "vi": "giờ ra chơi"
+        },
+        {
+          "en": "board",
+          "type": "n",
+          "vi": "bảng"
+        },
+        {
+          "en": "teach",
+          "type": "v",
+          "vi": "dạy"
+        },
+        {
+          "en": "lesson",
+          "type": "n",
+          "vi": "bài học"
+        },
+        {
+          "en": "grade",
+          "type": "n",
+          "vi": "lớp, điểm số"
+        },
+        {
+          "en": "fail",
+          "type": "v",
+          "vi": "trượt, thất bại"
+        },
+        {
+          "en": "graduate",
+          "type": "v",
+          "vi": "tốt nghiệp"
+        },
+        {
+          "en": "uniform",
+          "type": "n",
+          "vi": "đồng phục"
+        },
+        {
+          "en": "discipline",
+          "type": "n",
+          "vi": "kỷ luật"
+        },
+        {
+          "en": "respect",
+          "type": "v/n",
+          "vi": "tôn trọng, sự tôn trọng"
+        },
+        {
+          "en": "diploma",
+          "type": "n",
+          "vi": "bằng cấp, chứng chỉ"
+        },
+        {
+          "en": "scholarship",
+          "type": "n",
+          "vi": "học bổng"
+        },
+        {
+          "en": "take part in",
+          "type": "v phr",
+          "vi": "tham gia"
+        },
+        {
+          "en": "academic",
+          "type": "adj",
+          "vi": "thuộc học thuật"
+        },
+        {
+          "en": "laboratory",
+          "type": "n",
+          "vi": "phòng thí nghiệm"
+        },
+        {
+          "en": "equipment",
+          "type": "n",
+          "vi": "thiết bị"
+        },
+        {
+          "en": "encourage",
+          "type": "v",
+          "vi": "khuyến khích"
+        },
+        {
+          "en": "campus",
+          "type": "n",
+          "vi": "khuôn viên trường"
+        }
+      ],
+      "grammar": [
+        "Present Simple passive",
+        "Prepositions of place"
+      ],
+      "grammar_notes": "Thể bị động thì hiện tại đơn (Present Simple Passive): S + am/is/are + V-ed/V3. Ví dụ: English is taught in this school. Books are borrowed from the library. Phủ định: S + am/is/are + not + V-ed/V3. Nghi vấn: Am/Is/Are + S + V-ed/V3? Giới từ chỉ nơi chốn: in (trong), on (trên), at (tại), between (giữa), next to (bên cạnh), opposite (đối diện), behind (phía sau), in front of (phía trước).",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "English _____ taught in this school.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ \"English\" (tiếng Anh) là danh từ số ít, không đếm được, nên ta dùng \"is\" trong câu bị động (is taught). \"Are\" dùng cho danh từ số nhiều."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'facility' mean in Vietnamese?",
+          "opts": [
+            "bài học",
+            "cơ sở vật chất",
+            "kỷ luật",
+            "lớp học"
+          ],
+          "ans": 1,
+          "explain": "Từ \"facility\" trong tiếng Anh có nghĩa là cơ sở vật chất, trang thiết bị. Đây là nghĩa đúng và phù hợp nhất."
+        },
+        {
+          "type": "mc",
+          "q": "The school is _____ the post office and the bank.",
+          "opts": [
+            "in",
+            "on",
+            "between",
+            "at"
+          ],
+          "ans": 2,
+          "explain": "Giới từ \"between\" được dùng để chỉ vị trí ở giữa hai vật hoặc hai địa điểm cụ thể (the post office AND the bank). Các giới từ khác không phù hợp trong ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "Students _____ encouraged to join school clubs.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"Students\" (học sinh) là danh từ số nhiều, nên ta dùng \"are\" trong câu bị động (are encouraged). \"Is\" dùng cho danh từ số ít."
+        },
+        {
+          "type": "mc",
+          "q": "She passed the _____ examination to enter the school.",
+          "opts": [
+            "entrance",
+            "midterm",
+            "final",
+            "oral"
+          ],
+          "ans": 0,
+          "explain": "\"Entrance examination\" là cụm từ cố định có nghĩa là kỳ thi tuyển sinh hoặc kỳ thi đầu vào để nhập học. Các lựa chọn khác không đúng với ngữ cảnh \"to enter the school\"."
+        },
+        {
+          "type": "mc",
+          "q": "The library is _____ the science building.",
+          "opts": [
+            "next to",
+            "next",
+            "near to",
+            "nearby to"
+          ],
+          "ans": 0,
+          "explain": "\"Next to\" là cụm giới từ đúng để chỉ vị trí \"bên cạnh\" một cái gì đó. Các lựa chọn khác không đúng cấu trúc ngữ pháp."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'scholarship' mean?",
+          "opts": [
+            "bài tập",
+            "học bổng",
+            "bằng cấp",
+            "kỳ thi"
+          ],
+          "ans": 1,
+          "explain": "Từ \"scholarship\" có nghĩa là học bổng, một khoản tiền hỗ trợ cho việc học tập. Đây là nghĩa chính xác của từ này."
+        },
+        {
+          "type": "mc",
+          "q": "Books _____ borrowed from the library every day.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"Books\" (sách) là danh từ số nhiều, và hành động diễn ra \"every day\" (mỗi ngày) nên dùng thì hiện tại đơn. Do đó, ta dùng \"are\" trong câu bị động (are borrowed)."
+        },
+        {
+          "type": "mc",
+          "q": "The school has modern _____ like a lab and a gym.",
+          "opts": [
+            "uniforms",
+            "facilities",
+            "lessons",
+            "grades"
+          ],
+          "ans": 1,
+          "explain": "\"Facilities\" (cơ sở vật chất, trang thiết bị) là từ phù hợp nhất để chỉ các hạng mục như phòng thí nghiệm (lab) và phòng tập thể dục (gym) mà trường học có."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ student has a natural ability to learn.",
+          "opts": [
+            "lazy",
+            "gifted",
+            "boring",
+            "slow"
+          ],
+          "ans": 1,
+          "explain": "\"Gifted student\" (học sinh năng khiếu) là cụm từ dùng để chỉ học sinh có khả năng học tập tự nhiên vượt trội. Các từ khác mang nghĩa tiêu cực hoặc không phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "The playground is _____ front of the main building.",
+          "opts": [
+            "at",
+            "on",
+            "in",
+            "to"
+          ],
+          "ans": 2,
+          "explain": "Cụm giới từ đúng để chỉ vị trí \"ở phía trước\" là \"in front of\". Các giới từ khác không tạo thành cụm từ đúng trong ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "Many activities _____ organized during break time.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"Many activities\" (nhiều hoạt động) là danh từ số nhiều, nên ta dùng \"are\" trong câu bị động (are organized). \"Is\" dùng cho danh từ số ít."
+        },
+        {
+          "type": "mc",
+          "q": "He wants to _____ in the science competition.",
+          "opts": [
+            "take part",
+            "take place",
+            "take care",
+            "take off"
+          ],
+          "ans": 0,
+          "explain": "Cụm động từ \"take part in\" có nghĩa là tham gia vào một hoạt động hoặc sự kiện. Các cụm từ khác không phù hợp với ngữ cảnh \"science competition\"."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'graduate' mean?",
+          "opts": [
+            "nhập học",
+            "tốt nghiệp",
+            "nghỉ học",
+            "chuyển trường"
+          ],
+          "ans": 1,
+          "explain": "Động từ \"graduate\" có nghĩa là tốt nghiệp, hoàn thành một khóa học hoặc bậc học. Đây là nghĩa đúng của từ này."
+        },
+        {
+          "type": "mc",
+          "q": "The new _____ was built last year.",
+          "opts": [
+            "laboratory",
+            "uniform",
+            "grade",
+            "lesson"
+          ],
+          "ans": 0,
+          "explain": "\"Laboratory\" (phòng thí nghiệm) là một loại công trình hoặc tòa nhà có thể được \"built\" (xây dựng). Các lựa chọn khác không phải là thứ được xây dựng."
+        },
+        {
+          "type": "mc",
+          "q": "Students _____ required to wear uniforms.",
+          "opts": [
+            "is",
+            "are",
+            "has",
+            "have"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"Students\" (học sinh) là danh từ số nhiều, nên ta dùng \"are\" trong câu bị động (are required). \"Is\" dùng cho danh từ số ít."
+        },
+        {
+          "type": "mc",
+          "q": "The school is _____ 15 Nguyen Hue Street.",
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "by"
+          ],
+          "ans": 2,
+          "explain": "Giới từ \"at\" được dùng để chỉ địa điểm cụ thể, chính xác, đặc biệt là khi có số nhà. \"In\" dùng cho thành phố/quốc gia, \"on\" dùng cho đường phố (không có số nhà cụ thể)."
+        },
+        {
+          "type": "mc",
+          "q": "Homework _____ given every day.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ \"Homework\" (bài tập về nhà) là danh từ không đếm được, luôn được coi là số ít. Do đó, ta dùng \"is\" trong câu bị động thì hiện tại đơn (is given)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'discipline' mean in Vietnamese?",
+          "opts": [
+            "tự do",
+            "kỷ luật",
+            "thưởng",
+            "nghỉ ngơi"
+          ],
+          "ans": 1,
+          "explain": "Từ \"discipline\" trong tiếng Anh có nghĩa là kỷ luật, sự tuân thủ các quy tắc. Đây là nghĩa đúng và phù hợp nhất."
+        },
+        {
+          "type": "mc",
+          "q": "The teacher _____ us to study harder.",
+          "opts": [
+            "encourage",
+            "encourages",
+            "encouraging",
+            "encouraged"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ \"The teacher\" (giáo viên) là danh từ số ít, nên động từ ở thì hiện tại đơn phải thêm \"s\" (encourages). \"Encourage\" là dạng nguyên mẫu, dùng cho chủ ngữ số nhiều."
+        }
+      ]
+    },
+    "7": {
+      "title": "Traffic",
+      "vocabulary": [
+        {
+          "en": "traffic",
+          "type": "n",
+          "vi": "giao thông"
+        },
+        {
+          "en": "traffic jam",
+          "type": "n",
+          "vi": "tắc đường"
+        },
+        {
+          "en": "traffic light",
+          "type": "n",
+          "vi": "đèn giao thông"
+        },
+        {
+          "en": "road sign",
+          "type": "n",
+          "vi": "biển báo giao thông"
+        },
+        {
+          "en": "pavement",
+          "type": "n",
+          "vi": "vỉa hè"
+        },
+        {
+          "en": "lane",
+          "type": "n",
+          "vi": "làn đường"
+        },
+        {
+          "en": "zebra crossing",
+          "type": "n",
+          "vi": "vạch qua đường"
+        },
+        {
+          "en": "pedestrian",
+          "type": "n",
+          "vi": "người đi bộ"
+        },
+        {
+          "en": "passenger",
+          "type": "n",
+          "vi": "hành khách"
+        },
+        {
+          "en": "helmet",
+          "type": "n",
+          "vi": "mũ bảo hiểm"
+        },
+        {
+          "en": "motorbike",
+          "type": "n",
+          "vi": "xe máy"
+        },
+        {
+          "en": "bicycle",
+          "type": "n",
+          "vi": "xe đạp"
+        },
+        {
+          "en": "handlebar",
+          "type": "n",
+          "vi": "tay lái"
+        },
+        {
+          "en": "vehicle",
+          "type": "n",
+          "vi": "phương tiện giao thông"
+        },
+        {
+          "en": "cycle",
+          "type": "v",
+          "vi": "đạp xe"
+        },
+        {
+          "en": "cross",
+          "type": "v",
+          "vi": "băng qua"
+        },
+        {
+          "en": "turn",
+          "type": "v",
+          "vi": "rẽ, quay"
+        },
+        {
+          "en": "obey",
+          "type": "v",
+          "vi": "tuân theo"
+        },
+        {
+          "en": "indicate",
+          "type": "v",
+          "vi": "ra hiệu, chỉ dẫn"
+        },
+        {
+          "en": "allow",
+          "type": "v",
+          "vi": "cho phép"
+        },
+        {
+          "en": "dangerous",
+          "type": "adj",
+          "vi": "nguy hiểm"
+        },
+        {
+          "en": "careful",
+          "type": "adj",
+          "vi": "cẩn thận"
+        },
+        {
+          "en": "especially",
+          "type": "adv",
+          "vi": "đặc biệt"
+        },
+        {
+          "en": "overweight",
+          "type": "adj",
+          "vi": "quá tải"
+        },
+        {
+          "en": "stuck",
+          "type": "adj",
+          "vi": "bị kẹt"
+        },
+        {
+          "en": "waste",
+          "type": "v/n",
+          "vi": "lãng phí"
+        },
+        {
+          "en": "footpath",
+          "type": "n",
+          "vi": "đường dành cho người đi bộ"
+        },
+        {
+          "en": "distance",
+          "type": "n",
+          "vi": "khoảng cách"
+        },
+        {
+          "en": "accident",
+          "type": "n",
+          "vi": "tai nạn"
+        },
+        {
+          "en": "speed",
+          "type": "n",
+          "vi": "tốc độ"
+        }
+      ],
+      "grammar": [
+        "It indicating distance",
+        "Should / Shouldn't"
+      ],
+      "grammar_notes": "Cấu trúc 'It' chỉ khoảng cách: It is + khoảng cách + from + A + to + B. Ví dụ: It is 5 kilometres from my house to school. Câu hỏi: How far is it from A to B? Should / Shouldn't: dùng để đưa ra lời khuyên. Should + V: nên làm gì. Ví dụ: You should wear a helmet. Shouldn't + V: không nên làm gì. Ví dụ: You shouldn't ride too fast.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "You _____ wear a helmet when riding a motorbike.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "mustn't",
+            "can't"
+          ],
+          "ans": 0,
+          "explain": "Khi đi xe máy, bạn \"nên\" (should) đội mũ bảo hiểm để đảm bảo an toàn. \"Should\" dùng để đưa ra lời khuyên."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'pedestrian' mean in Vietnamese?",
+          "opts": [
+            "tài xế",
+            "hành khách",
+            "người đi bộ",
+            "cảnh sát"
+          ],
+          "ans": 2,
+          "explain": "\"Pedestrian\" nghĩa là \"người đi bộ\". Các lựa chọn khác: tài xế (driver), hành khách (passenger), cảnh sát (police)."
+        },
+        {
+          "type": "mc",
+          "q": "It _____ 3 km from my house to school.",
+          "opts": [
+            "are",
+            "is",
+            "am",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "Khoảng cách dùng cấu trúc \"It is + khoảng cách + from...to...\". Chủ ngữ \"It\" là ngôi thứ ba số ít nên dùng \"is\"."
+        },
+        {
+          "type": "mc",
+          "q": "You _____ cross the road at the zebra crossing.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "don't",
+            "aren't"
+          ],
+          "ans": 0,
+          "explain": "\"Should\" dùng để khuyên ai đó nên làm gì. Bạn nên qua đường ở vạch kẻ đường dành cho người đi bộ (zebra crossing)."
+        },
+        {
+          "type": "mc",
+          "q": "A 'traffic jam' in Vietnamese is _____.",
+          "opts": [
+            "đèn giao thông",
+            "tai nạn",
+            "tắc đường",
+            "biển báo"
+          ],
+          "ans": 2,
+          "explain": "\"Traffic jam\" là \"tắc đường\". Đèn giao thông = traffic light, tai nạn = accident, biển báo = sign."
+        },
+        {
+          "type": "mc",
+          "q": "How _____ is it from here to the airport?",
+          "opts": [
+            "long",
+            "far",
+            "much",
+            "many"
+          ],
+          "ans": 1,
+          "explain": "Hỏi khoảng cách dùng \"How far\" (bao xa). \"How long\" hỏi thời gian, \"how much/many\" hỏi số lượng."
+        },
+        {
+          "type": "mc",
+          "q": "She shouldn't _____ too fast on this road.",
+          "opts": [
+            "drive",
+            "drives",
+            "driving",
+            "drove"
+          ],
+          "ans": 0,
+          "explain": "Sau \"shouldn't\" (modal verb), động từ phải ở dạng nguyên thể (V-bare). Vì vậy đáp án đúng là \"drive\"."
+        },
+        {
+          "type": "mc",
+          "q": "Pedestrians should walk on the _____.",
+          "opts": [
+            "lane",
+            "road",
+            "pavement",
+            "highway"
+          ],
+          "ans": 2,
+          "explain": "Người đi bộ nên đi trên \"pavement\" (vỉa hè). Lane = làn đường, road = đường, highway = đường cao tốc."
+        },
+        {
+          "type": "mc",
+          "q": "It is about 10 km _____ my school to the city center.",
+          "opts": [
+            "to",
+            "from",
+            "at",
+            "in"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc diễn tả khoảng cách: \"It is + khoảng cách + from + nơi A + to + nơi B\". Ở đây dùng \"from\" vì đã có \"to\" phía sau."
+        },
+        {
+          "type": "mc",
+          "q": "You should _____ the traffic rules.",
+          "opts": [
+            "break",
+            "obey",
+            "ignore",
+            "forget"
+          ],
+          "ans": 1,
+          "explain": "Bạn nên \"obey\" (tuân thủ) luật giao thông. Break = phá vỡ, ignore = bỏ qua, forget = quên - đều không phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'dangerous' mean?",
+          "opts": [
+            "an toàn",
+            "nguy hiểm",
+            "cẩn thận",
+            "nhanh"
+          ],
+          "ans": 1,
+          "explain": "\"Dangerous\" nghĩa là \"nguy hiểm\". An toàn = safe, cẩn thận = careful, nhanh = fast."
+        },
+        {
+          "type": "mc",
+          "q": "Children shouldn't _____ alone on busy streets.",
+          "opts": [
+            "walk",
+            "walks",
+            "walking",
+            "walked"
+          ],
+          "ans": 0,
+          "explain": "Sau \"shouldn't\" (modal verb), động từ phải ở dạng nguyên thể không chia. Vì vậy \"walk\" là đáp án đúng."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ shows drivers where to stop.",
+          "opts": [
+            "pavement",
+            "lane",
+            "road sign",
+            "handlebar"
+          ],
+          "ans": 2,
+          "explain": "\"Road sign\" (biển báo giao thông) cho tài xế biết nơi phải dừng lại. Pavement = vỉa hè, lane = làn đường, handlebar = tay lái."
+        },
+        {
+          "type": "mc",
+          "q": "You should be _____ when crossing the street.",
+          "opts": [
+            "careless",
+            "careful",
+            "quick",
+            "slow"
+          ],
+          "ans": 1,
+          "explain": "Bạn nên \"careful\" (cẩn thận) khi qua đường. Careless = bất cẩn, quick = nhanh, slow = chậm - không phù hợp với ngữ cảnh an toàn."
+        },
+        {
+          "type": "mc",
+          "q": "How far _____ it from Hanoi to Ho Chi Minh City?",
+          "opts": [
+            "are",
+            "is",
+            "does",
+            "do"
+          ],
+          "ans": 1,
+          "explain": "Hỏi khoảng cách dùng \"How far is it...?\". Chủ ngữ \"it\" là số ít nên dùng \"is\"."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'vehicle' mean?",
+          "opts": [
+            "đường",
+            "phương tiện giao thông",
+            "tốc độ",
+            "khoảng cách"
+          ],
+          "ans": 1,
+          "explain": "\"Vehicle\" nghĩa là \"phương tiện giao thông\". Đường = road, tốc độ = speed, khoảng cách = distance."
+        },
+        {
+          "type": "mc",
+          "q": "You shouldn't _____ your phone while driving.",
+          "opts": [
+            "use",
+            "uses",
+            "using",
+            "used"
+          ],
+          "ans": 0,
+          "explain": "Sau \"shouldn't\" (modal verb), động từ phải ở dạng nguyên thể. Vì vậy \"use\" là đáp án đúng."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ turned red, so we stopped.",
+          "opts": [
+            "road sign",
+            "traffic light",
+            "pavement",
+            "lane"
+          ],
+          "ans": 1,
+          "explain": "\"Traffic light\" (đèn giao thông) chuyển đỏ thì phải dừng lại. Road sign = biển báo, pavement = vỉa hè, lane = làn đường."
+        },
+        {
+          "type": "mc",
+          "q": "There was a terrible traffic _____ this morning.",
+          "opts": [
+            "light",
+            "sign",
+            "jam",
+            "lane"
+          ],
+          "ans": 2,
+          "explain": "\"Traffic jam\" (tắc đường) là cụm từ cố định. Traffic light = đèn giao thông, traffic sign = biển báo, lane = làn đường."
+        },
+        {
+          "type": "mc",
+          "q": "It is 500 metres _____ my house _____ the bus stop.",
+          "opts": [
+            "from...to",
+            "to...from",
+            "at...in",
+            "in...at"
+          ],
+          "ans": 0,
+          "explain": "Cấu trúc khoảng cách: \"It is + khoảng cách + from + A + to + B\". \"From...to\" là cặp giới từ đúng để diễn tả từ nơi này đến nơi kia."
+        }
+      ]
+    },
+    "8": {
+      "title": "Films",
+      "vocabulary": [
+        {
+          "en": "film",
+          "type": "n",
+          "vi": "bộ phim"
+        },
+        {
+          "en": "comedy",
+          "type": "n",
+          "vi": "phim hài"
+        },
+        {
+          "en": "horror",
+          "type": "n",
+          "vi": "phim kinh dị"
+        },
+        {
+          "en": "action",
+          "type": "n",
+          "vi": "phim hành động"
+        },
+        {
+          "en": "cartoon",
+          "type": "n",
+          "vi": "phim hoạt hình"
+        },
+        {
+          "en": "documentary",
+          "type": "n",
+          "vi": "phim tài liệu"
+        },
+        {
+          "en": "science fiction",
+          "type": "n",
+          "vi": "phim khoa học viễn tưởng"
+        },
+        {
+          "en": "romantic",
+          "type": "adj",
+          "vi": "lãng mạn"
+        },
+        {
+          "en": "actor",
+          "type": "n",
+          "vi": "diễn viên nam"
+        },
+        {
+          "en": "actress",
+          "type": "n",
+          "vi": "diễn viên nữ"
+        },
+        {
+          "en": "director",
+          "type": "n",
+          "vi": "đạo diễn"
+        },
+        {
+          "en": "audience",
+          "type": "n",
+          "vi": "khán giả"
+        },
+        {
+          "en": "scene",
+          "type": "n",
+          "vi": "cảnh phim"
+        },
+        {
+          "en": "plot",
+          "type": "n",
+          "vi": "cốt truyện"
+        },
+        {
+          "en": "star",
+          "type": "v/n",
+          "vi": "đóng vai chính, ngôi sao"
+        },
+        {
+          "en": "review",
+          "type": "n/v",
+          "vi": "bài đánh giá, đánh giá"
+        },
+        {
+          "en": "recommend",
+          "type": "v",
+          "vi": "giới thiệu, đề nghị"
+        },
+        {
+          "en": "boring",
+          "type": "adj",
+          "vi": "nhàm chán"
+        },
+        {
+          "en": "exciting",
+          "type": "adj",
+          "vi": "hấp dẫn, thú vị"
+        },
+        {
+          "en": "scary",
+          "type": "adj",
+          "vi": "đáng sợ"
+        },
+        {
+          "en": "funny",
+          "type": "adj",
+          "vi": "hài hước"
+        },
+        {
+          "en": "moving",
+          "type": "adj",
+          "vi": "cảm động"
+        },
+        {
+          "en": "disappointing",
+          "type": "adj",
+          "vi": "đáng thất vọng"
+        },
+        {
+          "en": "entertaining",
+          "type": "adj",
+          "vi": "giải trí, thú vị"
+        },
+        {
+          "en": "special effects",
+          "type": "n",
+          "vi": "hiệu ứng đặc biệt"
+        },
+        {
+          "en": "soundtrack",
+          "type": "n",
+          "vi": "nhạc phim"
+        },
+        {
+          "en": "subtitle",
+          "type": "n",
+          "vi": "phụ đề"
+        },
+        {
+          "en": "cinema",
+          "type": "n",
+          "vi": "rạp chiếu phim"
+        },
+        {
+          "en": "box office",
+          "type": "n",
+          "vi": "phòng vé"
+        },
+        {
+          "en": "release",
+          "type": "v/n",
+          "vi": "phát hành, ra mắt"
+        }
+      ],
+      "grammar": [
+        "Connectors: although, however, nevertheless",
+        "Adverbs and adjectives"
+      ],
+      "grammar_notes": "Connectors (Liên từ): Although + clause: mặc dù. Ví dụ: Although the film was long, it was interesting. However: tuy nhiên (đứng đầu câu, sau dấu chấm phẩy). Ví dụ: The film got bad reviews. However, I enjoyed it. Nevertheless: tuy nhiên, dù vậy (tương tự however). Adjectives vs Adverbs: Adjectives (tính từ) bổ nghĩa cho danh từ: a funny film. Adverbs (trạng từ) bổ nghĩa cho động từ: She acted brilliantly. Thường thêm -ly vào tính từ để thành trạng từ: quick → quickly, beautiful → beautifully.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "_____ the film was scary, I still enjoyed it.",
+          "opts": [
+            "Because",
+            "Although",
+            "So",
+            "But"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng vì 'Although' dùng để diễn tả sự nhượng bộ, có nghĩa là 'mặc dù'. Câu này có nghĩa là 'Mặc dù bộ phim đáng sợ, tôi vẫn thích nó'. 'Because' (bởi vì) và 'So' (vì vậy) không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "What is a 'documentary'?",
+          "opts": [
+            "phim hoạt hình",
+            "phim tài liệu",
+            "phim hài",
+            "phim kinh dị"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Documentary' trong tiếng Anh có nghĩa là 'phim tài liệu'. Các lựa chọn khác là 'phim hoạt hình', 'phim hài', và 'phim kinh dị'."
+        },
+        {
+          "type": "mc",
+          "q": "The actor performed _____.",
+          "opts": [
+            "brilliant",
+            "brilliantly",
+            "brilliance",
+            "more brilliant"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Brilliantly' là một trạng từ, bổ nghĩa cho động từ 'performed' (biểu diễn). Câu này có nghĩa là 'Diễn viên đã biểu diễn một cách xuất sắc'. 'Brilliant' là tính từ, 'brilliance' là danh từ."
+        },
+        {
+          "type": "mc",
+          "q": "The movie was boring. _____, my friend liked it.",
+          "opts": [
+            "So",
+            "Because",
+            "However",
+            "Although"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. 'However' (tuy nhiên) dùng để nối hai câu có ý nghĩa trái ngược nhau. Câu này có nghĩa là 'Bộ phim nhàm chán. Tuy nhiên, bạn tôi lại thích nó'. 'So' và 'Because' diễn tả quan hệ nguyên nhân - kết quả."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'audience' mean in Vietnamese?",
+          "opts": [
+            "đạo diễn",
+            "diễn viên",
+            "khán giả",
+            "nhà sản xuất"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. 'Audience' trong tiếng Anh có nghĩa là 'khán giả'. Các lựa chọn khác là 'đạo diễn', 'diễn viên', và 'nhà sản xuất'."
+        },
+        {
+          "type": "mc",
+          "q": "She _____ that we watch the new comedy.",
+          "opts": [
+            "recommend",
+            "recommends",
+            "recommended",
+            "recommending"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. Chủ ngữ 'She' là ngôi thứ ba số ít, nên động từ 'recommend' phải chia ở thì hiện tại đơn là 'recommends'. Câu này có nghĩa là 'Cô ấy đề nghị chúng ta xem phim hài mới'."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of the movie was very unpredictable.",
+          "opts": [
+            "scene",
+            "plot",
+            "actor",
+            "cinema"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Plot' là 'cốt truyện', là yếu tố có thể 'unpredictable' (khó đoán). 'Scene' là cảnh quay, 'actor' là diễn viên, 'cinema' là rạp chiếu phim, những từ này không phù hợp với ngữ cảnh."
+        },
+        {
+          "type": "mc",
+          "q": "Although he is young, he acts very _____.",
+          "opts": [
+            "good",
+            "well",
+            "better",
+            "best"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Well' là trạng từ, bổ nghĩa cho động từ 'acts' (hành động, cư xử). Câu này có nghĩa là 'Mặc dù anh ấy còn trẻ, anh ấy cư xử rất tốt'. 'Good' là tính từ."
+        },
+        {
+          "type": "mc",
+          "q": "The film has amazing special _____.",
+          "opts": [
+            "affects",
+            "effects",
+            "effective",
+            "effecting"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Effects' (hiệu ứng) là danh từ số nhiều, phù hợp với ngữ cảnh 'special effects' (hiệu ứng đặc biệt). 'Affects' là động từ, 'effective' là tính từ."
+        },
+        {
+          "type": "mc",
+          "q": "A 'subtitle' in Vietnamese is _____.",
+          "opts": [
+            "nhạc phim",
+            "phụ đề",
+            "cốt truyện",
+            "cảnh phim"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Subtitle' trong tiếng Anh có nghĩa là 'phụ đề'. Các lựa chọn khác là 'nhạc phim', 'cốt truyện', và 'cảnh phim'."
+        },
+        {
+          "type": "mc",
+          "q": "The horror film was really _____.",
+          "opts": [
+            "scare",
+            "scared",
+            "scary",
+            "scaring"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. 'Scary' là tính từ, dùng để miêu tả bộ phim kinh dị. Câu này có nghĩa là 'Bộ phim kinh dị thực sự rất đáng sợ'. 'Scared' là dạng bị động (bị làm cho sợ), 'scaring' là động từ thêm -ing."
+        },
+        {
+          "type": "mc",
+          "q": "I didn't like the film. _____, the acting was good.",
+          "opts": [
+            "Although",
+            "Nevertheless",
+            "Because",
+            "So"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Nevertheless' (tuy nhiên, dù vậy) dùng để nối hai mệnh đề có ý nghĩa trái ngược nhau, tương tự 'however'. Câu này có nghĩa là 'Tôi không thích bộ phim. Tuy nhiên, diễn xuất thì tốt'."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ directed many famous films.",
+          "opts": [
+            "actor",
+            "actress",
+            "director",
+            "audience"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. 'Director' là 'đạo diễn', người có vai trò chỉ đạo làm phim. Các lựa chọn khác là 'diễn viên' (nam/nữ) và 'khán giả'."
+        },
+        {
+          "type": "mc",
+          "q": "He spoke _____ during the presentation.",
+          "opts": [
+            "confident",
+            "confidently",
+            "confidence",
+            "confide"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Confidently' là trạng từ, bổ nghĩa cho động từ 'spoke' (nói). Câu này có nghĩa là 'Anh ấy đã nói một cách tự tin trong suốt bài thuyết trình'. 'Confident' là tính từ, 'confidence' là danh từ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'release' mean?",
+          "opts": [
+            "phát hành",
+            "thu hồi",
+            "quay phim",
+            "biên kịch"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. 'Release' trong ngữ cảnh phim ảnh có nghĩa là 'phát hành'. Các lựa chọn khác là 'thu hồi', 'quay phim', và 'biên kịch'."
+        },
+        {
+          "type": "mc",
+          "q": "Although the _____ was bad, the film was a hit.",
+          "opts": [
+            "review",
+            "reviews",
+            "reviewing",
+            "reviewed"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. 'Review' là 'bài đánh giá', là danh từ số ít, phù hợp với ngữ cảnh này. Câu này có nghĩa là 'Mặc dù bài đánh giá về bộ phim không tốt, bộ phim vẫn thành công'."
+        },
+        {
+          "type": "mc",
+          "q": "The comedy was very _____. We laughed a lot.",
+          "opts": [
+            "funny",
+            "funnily",
+            "fun",
+            "funnier"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. 'Funny' là tính từ, miêu tả bộ phim hài. Câu này có nghĩa là 'Bộ phim hài rất buồn cười. Chúng tôi đã cười rất nhiều'. 'Funnily' là trạng từ, 'fun' là danh từ hoặc tính từ khác."
+        },
+        {
+          "type": "mc",
+          "q": "She went to the _____ to watch the new movie.",
+          "opts": [
+            "library",
+            "cinema",
+            "gallery",
+            "museum"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Cinema' là 'rạp chiếu phim', nơi mọi người đến xem phim. Các lựa chọn khác là thư viện, phòng trưng bày nghệ thuật và bảo tàng."
+        },
+        {
+          "type": "mc",
+          "q": "The film was _____. I almost fell asleep.",
+          "opts": [
+            "exciting",
+            "interesting",
+            "boring",
+            "scary"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. 'Boring' là tính từ, miêu tả bộ phim nhàm chán, khiến người xem buồn ngủ. Câu này có nghĩa là 'Bộ phim nhàm chán. Tôi suýt ngủ gật'. 'Exciting' và 'interesting' có nghĩa trái ngược."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of the film was beautiful.",
+          "opts": [
+            "soundtrack",
+            "subtitle",
+            "box office",
+            "review"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A là đúng. 'Soundtrack' là 'nhạc phim', là yếu tố có thể đẹp. 'Subtitle' là phụ đề, 'box office' là phòng vé, 'review' là bài đánh giá."
+        }
+      ]
+    },
+    "9": {
+      "title": "Festivals Around the World",
+      "vocabulary": [
+        {
+          "en": "festival",
+          "type": "n",
+          "vi": "lễ hội"
+        },
+        {
+          "en": "celebrate",
+          "type": "v",
+          "vi": "tổ chức lễ, ăn mừng"
+        },
+        {
+          "en": "celebration",
+          "type": "n",
+          "vi": "sự kỷ niệm, lễ kỷ niệm"
+        },
+        {
+          "en": "parade",
+          "type": "n",
+          "vi": "cuộc diễu hành"
+        },
+        {
+          "en": "costume",
+          "type": "n",
+          "vi": "trang phục"
+        },
+        {
+          "en": "decoration",
+          "type": "n",
+          "vi": "đồ trang trí"
+        },
+        {
+          "en": "fireworks",
+          "type": "n",
+          "vi": "pháo hoa"
+        },
+        {
+          "en": "lantern",
+          "type": "n",
+          "vi": "đèn lồng"
+        },
+        {
+          "en": "carnival",
+          "type": "n",
+          "vi": "lễ hội hóa trang"
+        },
+        {
+          "en": "harvest",
+          "type": "n",
+          "vi": "mùa gặt, thu hoạch"
+        },
+        {
+          "en": "ceremony",
+          "type": "n",
+          "vi": "nghi lễ"
+        },
+        {
+          "en": "tradition",
+          "type": "n",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "custom",
+          "type": "n",
+          "vi": "phong tục"
+        },
+        {
+          "en": "worship",
+          "type": "v",
+          "vi": "thờ cúng"
+        },
+        {
+          "en": "pray",
+          "type": "v",
+          "vi": "cầu nguyện"
+        },
+        {
+          "en": "take place",
+          "type": "v phr",
+          "vi": "diễn ra"
+        },
+        {
+          "en": "attend",
+          "type": "v",
+          "vi": "tham dự"
+        },
+        {
+          "en": "decorate",
+          "type": "v",
+          "vi": "trang trí"
+        },
+        {
+          "en": "float",
+          "type": "n",
+          "vi": "xe hoa"
+        },
+        {
+          "en": "gather",
+          "type": "v",
+          "vi": "tụ họp"
+        },
+        {
+          "en": "annual",
+          "type": "adj",
+          "vi": "hàng năm"
+        },
+        {
+          "en": "religious",
+          "type": "adj",
+          "vi": "thuộc tôn giáo"
+        },
+        {
+          "en": "cultural",
+          "type": "adj",
+          "vi": "thuộc văn hóa"
+        },
+        {
+          "en": "colourful",
+          "type": "adj",
+          "vi": "đầy màu sắc"
+        },
+        {
+          "en": "joyful",
+          "type": "adj",
+          "vi": "vui vẻ"
+        },
+        {
+          "en": "atmosphere",
+          "type": "n",
+          "vi": "không khí, bầu không khí"
+        },
+        {
+          "en": "performance",
+          "type": "n",
+          "vi": "buổi biểu diễn"
+        },
+        {
+          "en": "offering",
+          "type": "n",
+          "vi": "lễ vật, đồ cúng"
+        },
+        {
+          "en": "luck",
+          "type": "n",
+          "vi": "sự may mắn"
+        },
+        {
+          "en": "feast",
+          "type": "n",
+          "vi": "bữa tiệc"
+        }
+      ],
+      "grammar": [
+        "Adverbial phrases of time",
+        "Wh-questions review"
+      ],
+      "grammar_notes": "Trạng ngữ chỉ thời gian (Adverbial phrases of time): Vị trí thường đặt ở đầu hoặc cuối câu. Ví dụ: On New Year's Eve, people watch fireworks. The festival takes place in January every year. Các giới từ thường dùng: in + tháng/năm/mùa (in January, in 2024, in summer), on + ngày/ngày tháng (on Monday, on March 5th), at + giờ/thời điểm (at 7 o'clock, at night). Câu hỏi Wh-: When does the festival take place? Where is it held? What do people do during the festival?",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "The festival _____ place in October every year.",
+          "opts": [
+            "take",
+            "takes",
+            "took",
+            "taking"
+          ],
+          "ans": 1,
+          "explain": "Câu này dùng thì hiện tại đơn vì \"every year\" chỉ sự việc lặp đi lặp lại. Chủ ngữ \"The festival\" là số ít nên động từ \"take\" phải chia là \"takes\"."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'parade' mean in Vietnamese?",
+          "opts": [
+            "lễ hội",
+            "cuộc diễu hành",
+            "nghi lễ",
+            "pháo hoa"
+          ],
+          "ans": 1,
+          "explain": "Trong tiếng Việt, \"parade\" có nghĩa là \"cuộc diễu hành\". \"Lễ hội\" là festival, \"nghi lễ\" là ceremony, còn \"pháo hoa\" là fireworks."
+        },
+        {
+          "type": "mc",
+          "q": "People watch _____ on New Year's Eve.",
+          "opts": [
+            "lanterns",
+            "parades",
+            "fireworks",
+            "costumes"
+          ],
+          "ans": 2,
+          "explain": "Vào đêm Giao thừa (New Year's Eve), mọi người thường xem pháo hoa. \"Lanterns\" là đèn lồng, \"parades\" là diễu hành, \"costumes\" là trang phục."
+        },
+        {
+          "type": "mc",
+          "q": "The carnival is held _____ February.",
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "ans": 0,
+          "explain": "Chúng ta dùng giới từ \"in\" để chỉ tháng. \"On\" dùng cho ngày cụ thể, \"at\" dùng cho giờ hoặc những dịp rất cụ thể như \"at night\"."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'celebrate' mean?",
+          "opts": [
+            "tổ chức lễ",
+            "trang trí",
+            "cầu nguyện",
+            "diễu hành"
+          ],
+          "ans": 0,
+          "explain": "Động từ \"celebrate\" có nghĩa là \"tổ chức lễ\" hoặc \"ăn mừng\". Các lựa chọn khác như \"trang trí\" (decorate), \"cầu nguyện\" (pray), \"diễu hành\" (parade) không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "_____ is the Mid-Autumn Festival? — In September or October.",
+          "opts": [
+            "What",
+            "Where",
+            "When",
+            "Why"
+          ],
+          "ans": 2,
+          "explain": "Câu hỏi đang hỏi về thời gian diễn ra lễ hội (\"In September or October\"), nên ta dùng từ để hỏi \"When\" (Khi nào)."
+        },
+        {
+          "type": "mc",
+          "q": "Children carry _____ during the Mid-Autumn Festival.",
+          "opts": [
+            "fireworks",
+            "costumes",
+            "lanterns",
+            "offerings"
+          ],
+          "ans": 2,
+          "explain": "Trong Tết Trung Thu, trẻ em thường cầm đèn lồng. \"Fireworks\" là pháo hoa, \"costumes\" là trang phục, \"offerings\" là đồ cúng."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of the festival was very lively.",
+          "opts": [
+            "atmosphere",
+            "costume",
+            "parade",
+            "float"
+          ],
+          "ans": 0,
+          "explain": "Từ \"atmosphere\" có nghĩa là bầu không khí, không khí chung của một sự kiện. Câu này mô tả không khí của lễ hội rất sôi động."
+        },
+        {
+          "type": "mc",
+          "q": "She _____ the Christmas celebration last year.",
+          "opts": [
+            "attend",
+            "attends",
+            "attended",
+            "attending"
+          ],
+          "ans": 2,
+          "explain": "Cụm từ \"last year\" chỉ hành động đã xảy ra trong quá khứ, nên ta dùng thì quá khứ đơn với động từ \"attended\"."
+        },
+        {
+          "type": "mc",
+          "q": "A 'feast' in Vietnamese is _____.",
+          "opts": [
+            "lễ hội",
+            "nghi lễ",
+            "bữa tiệc",
+            "truyền thống"
+          ],
+          "ans": 2,
+          "explain": "Trong tiếng Việt, \"feast\" có nghĩa là một bữa ăn thịnh soạn, \"bữa tiệc\". Các từ khác như \"lễ hội\" (festival), \"nghi lễ\" (ceremony), \"truyền thống\" (tradition) không tương đương."
+        },
+        {
+          "type": "mc",
+          "q": "The house was beautifully _____ for Tet.",
+          "opts": [
+            "decorate",
+            "decorated",
+            "decorating",
+            "decorates"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một động từ ở dạng bị động vì ngôi nhà được trang trí. \"Decorated\" là dạng quá khứ phân từ, phù hợp với cấu trúc bị động \"was decorated\"."
+        },
+        {
+          "type": "mc",
+          "q": "People _____ to have good luck in the new year.",
+          "opts": [
+            "play",
+            "pray",
+            "pay",
+            "say"
+          ],
+          "ans": 1,
+          "explain": "Vào năm mới, mọi người \"cầu nguyện\" (pray) để có may mắn. \"Play\" là chơi, \"pay\" là trả, \"say\" là nói."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'annual' mean?",
+          "opts": [
+            "hàng ngày",
+            "hàng tuần",
+            "hàng tháng",
+            "hàng năm"
+          ],
+          "ans": 3,
+          "explain": "Tính từ \"annual\" có nghĩa là \"hàng năm\", chỉ sự việc diễn ra mỗi năm một lần."
+        },
+        {
+          "type": "mc",
+          "q": "The festival is a _____ event in the community.",
+          "opts": [
+            "culture",
+            "cultural",
+            "culturally",
+            "cultures"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một tính từ bổ nghĩa cho danh từ \"event\". \"Cultural\" là tính từ, có nghĩa là thuộc về văn hóa."
+        },
+        {
+          "type": "mc",
+          "q": "Families _____ together during the holiday.",
+          "opts": [
+            "gather",
+            "gathers",
+            "gathered",
+            "gathering"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ \"Families\" là số nhiều, nên động từ ở thì hiện tại đơn phải ở dạng nguyên mẫu \"gather\". \"Gathers\" là cho chủ ngữ số ít."
+        },
+        {
+          "type": "mc",
+          "q": "_____ do people celebrate this festival? — By dancing and singing.",
+          "opts": [
+            "When",
+            "Where",
+            "How",
+            "Why"
+          ],
+          "ans": 2,
+          "explain": "Câu hỏi đang hỏi về cách thức tổ chức lễ hội (\"By dancing and singing\"), nên ta dùng từ để hỏi \"How\" (Như thế nào)."
+        },
+        {
+          "type": "mc",
+          "q": "The Rio Carnival is famous for its colourful _____.",
+          "opts": [
+            "costumes",
+            "lanterns",
+            "fireworks",
+            "offerings"
+          ],
+          "ans": 0,
+          "explain": "Lễ hội Carnival nổi tiếng với những bộ trang phục \"costumes\" sặc sỡ. \"Lanterns\" là đèn lồng, \"fireworks\" là pháo hoa, \"offerings\" là đồ cúng."
+        },
+        {
+          "type": "mc",
+          "q": "_____ New Year's Day, people visit their relatives.",
+          "opts": [
+            "In",
+            "On",
+            "At",
+            "By"
+          ],
+          "ans": 1,
+          "explain": "Chúng ta dùng giới từ \"on\" với các ngày lễ, ngày cụ thể trong tuần như \"on New Year's Day\"."
+        },
+        {
+          "type": "mc",
+          "q": "A 'ceremony' is a formal _____.",
+          "opts": [
+            "party",
+            "event",
+            "game",
+            "show"
+          ],
+          "ans": 1,
+          "explain": "Một \"ceremony\" là một \"event\" (sự kiện) mang tính nghi thức, trang trọng. Các lựa chọn khác như \"party\" (buổi tiệc), \"game\" (trò chơi), \"show\" (buổi biểu diễn) không bao quát hết nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'worship' mean in Vietnamese?",
+          "opts": [
+            "trang trí",
+            "diễu hành",
+            "thờ cúng",
+            "kỷ niệm"
+          ],
+          "ans": 2,
+          "explain": "Trong tiếng Việt, \"worship\" có nghĩa là \"thờ cúng\". Các từ khác như \"trang trí\" (decorate), \"diễu hành\" (parade), \"kỷ niệm\" (commemorate) không đúng nghĩa."
+        }
+      ]
+    },
+    "10": {
+      "title": "Sources of Energy",
+      "vocabulary": [
+        {
+          "en": "energy",
+          "type": "n",
+          "vi": "năng lượng"
+        },
+        {
+          "en": "solar energy",
+          "type": "n",
+          "vi": "năng lượng mặt trời"
+        },
+        {
+          "en": "wind energy",
+          "type": "n",
+          "vi": "năng lượng gió"
+        },
+        {
+          "en": "nuclear energy",
+          "type": "n",
+          "vi": "năng lượng hạt nhân"
+        },
+        {
+          "en": "hydroelectric",
+          "type": "adj",
+          "vi": "thủy điện"
+        },
+        {
+          "en": "renewable",
+          "type": "adj",
+          "vi": "tái tạo được"
+        },
+        {
+          "en": "non-renewable",
+          "type": "adj",
+          "vi": "không tái tạo được"
+        },
+        {
+          "en": "fossil fuel",
+          "type": "n",
+          "vi": "nhiên liệu hóa thạch"
+        },
+        {
+          "en": "coal",
+          "type": "n",
+          "vi": "than đá"
+        },
+        {
+          "en": "oil",
+          "type": "n",
+          "vi": "dầu mỏ"
+        },
+        {
+          "en": "natural gas",
+          "type": "n",
+          "vi": "khí thiên nhiên"
+        },
+        {
+          "en": "electricity",
+          "type": "n",
+          "vi": "điện"
+        },
+        {
+          "en": "solar panel",
+          "type": "n",
+          "vi": "tấm pin mặt trời"
+        },
+        {
+          "en": "wind turbine",
+          "type": "n",
+          "vi": "tuabin gió"
+        },
+        {
+          "en": "dam",
+          "type": "n",
+          "vi": "đập nước"
+        },
+        {
+          "en": "produce",
+          "type": "v",
+          "vi": "sản xuất"
+        },
+        {
+          "en": "generate",
+          "type": "v",
+          "vi": "tạo ra (điện)"
+        },
+        {
+          "en": "save",
+          "type": "v",
+          "vi": "tiết kiệm"
+        },
+        {
+          "en": "waste",
+          "type": "v",
+          "vi": "lãng phí"
+        },
+        {
+          "en": "reduce",
+          "type": "v",
+          "vi": "giảm"
+        },
+        {
+          "en": "pollute",
+          "type": "v",
+          "vi": "gây ô nhiễm"
+        },
+        {
+          "en": "pollution",
+          "type": "n",
+          "vi": "sự ô nhiễm"
+        },
+        {
+          "en": "environment",
+          "type": "n",
+          "vi": "môi trường"
+        },
+        {
+          "en": "harmful",
+          "type": "adj",
+          "vi": "có hại"
+        },
+        {
+          "en": "abundant",
+          "type": "adj",
+          "vi": "dồi dào"
+        },
+        {
+          "en": "limited",
+          "type": "adj",
+          "vi": "hạn chế"
+        },
+        {
+          "en": "efficient",
+          "type": "adj",
+          "vi": "hiệu quả"
+        },
+        {
+          "en": "run out",
+          "type": "v phr",
+          "vi": "cạn kiệt"
+        },
+        {
+          "en": "turn off",
+          "type": "v phr",
+          "vi": "tắt"
+        },
+        {
+          "en": "turn on",
+          "type": "v phr",
+          "vi": "bật"
+        }
+      ],
+      "grammar": [
+        "Future Simple: will",
+        "Modal verb: might"
+      ],
+      "grammar_notes": "Thì tương lai đơn (Future Simple): Dùng will + V để nói về dự đoán, quyết định tức thì, lời hứa. Khẳng định: S + will + V. Phủ định: S + will not (won't) + V. Nghi vấn: Will + S + V? Ví dụ: Solar energy will become more popular. We won't use fossil fuels in the future. Modal verb 'might': Dùng để diễn tả khả năng có thể xảy ra (không chắc chắn). S + might + V. Ví dụ: We might run out of oil soon. It might rain tomorrow.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "Solar energy _____ become more popular in the future.",
+          "opts": [
+            "is",
+            "was",
+            "will",
+            "has"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì câu nói về tương lai, nên cần dùng 'will' để chỉ hành động hoặc sự việc sẽ xảy ra. Các đáp án khác không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'renewable' mean in Vietnamese?",
+          "opts": [
+            "không tái tạo",
+            "tái tạo được",
+            "hạn chế",
+            "dồi dào"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Renewable' có nghĩa là có thể tái tạo, làm mới lại được, giống như năng lượng mặt trời hay gió. Đáp án A ('không tái tạo') và C ('hạn chế') là sai nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "We should _____ off the lights when leaving the room.",
+          "opts": [
+            "turn",
+            "put",
+            "take",
+            "give"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'turn off' là cụm động từ có nghĩa là 'tắt' (đèn, thiết bị). Chúng ta cần tắt đèn khi rời phòng để tiết kiệm năng lượng. Các lựa chọn khác không tạo thành cụm từ phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "Fossil fuels _____ run out in the future.",
+          "opts": [
+            "will",
+            "might",
+            "are",
+            "is"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'might' diễn tả một khả năng có thể xảy ra trong tương lai, không chắc chắn. Nhiên liệu hóa thạch có thể cạn kiệt. 'Will' (A) thì chắc chắn hơn, còn 'are' (C) và 'is' (D) không phù hợp về thì và cấu trúc."
+        },
+        {
+          "type": "mc",
+          "q": "What is 'coal' in Vietnamese?",
+          "opts": [
+            "dầu mỏ",
+            "than đá",
+            "khí ga",
+            "điện"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Coal' trong tiếng Anh có nghĩa là 'than đá'. Các lựa chọn khác là 'dầu mỏ' (oil), 'khí ga' (gas), và 'điện' (electricity)."
+        },
+        {
+          "type": "mc",
+          "q": "Wind turbines _____ electricity.",
+          "opts": [
+            "produce",
+            "pollute",
+            "reduce",
+            "waste"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'produce' có nghĩa là 'sản xuất' hoặc 'tạo ra'. Tua-bin gió tạo ra điện. Các từ khác như 'pollute' (gây ô nhiễm), 'reduce' (giảm bớt), 'waste' (lãng phí) không có nghĩa phù hợp ở đây."
+        },
+        {
+          "type": "mc",
+          "q": "We won't _____ fossil fuels forever.",
+          "opts": [
+            "use",
+            "uses",
+            "using",
+            "used"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì sau 'won't' (will not) là động từ nguyên mẫu. Câu này có nghĩa là chúng ta sẽ không sử dụng nhiên liệu hóa thạch mãi mãi. Các lựa chọn B, C, D sai ngữ pháp."
+        },
+        {
+          "type": "mc",
+          "q": "Solar panels convert sunlight into _____.",
+          "opts": [
+            "water",
+            "gas",
+            "electricity",
+            "oil"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Tấm pin mặt trời có chức năng chuyển đổi ánh sáng mặt trời thành điện năng. Các lựa chọn khác như nước, khí, dầu không phải là sản phẩm trực tiếp của quá trình này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'generate' mean?",
+          "opts": [
+            "tiêu thụ",
+            "lãng phí",
+            "tạo ra",
+            "giảm"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. 'Generate' có nghĩa là 'tạo ra', 'sản sinh ra'. Ví dụ, tua-bin gió tạo ra điện. Các từ khác như 'tiêu thụ' (consume), 'lãng phí' (waste), 'giảm' (reduce) có nghĩa khác."
+        },
+        {
+          "type": "mc",
+          "q": "Nuclear energy _____ be dangerous if not managed well.",
+          "opts": [
+            "should",
+            "might",
+            "must",
+            "will"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'might' diễn tả một khả năng có thể xảy ra, không chắc chắn. Năng lượng hạt nhân có thể nguy hiểm nếu không được quản lý tốt. 'Must' (C) và 'will' (D) mang tính chắc chắn hơn."
+        },
+        {
+          "type": "mc",
+          "q": "Oil is a _____ source of energy.",
+          "opts": [
+            "renewable",
+            "non-renewable",
+            "abundant",
+            "clean"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. Dầu mỏ là một nguồn năng lượng không thể tái tạo, nghĩa là nó sẽ cạn kiệt và không thể tạo ra lại một cách tự nhiên trong thời gian ngắn. 'Renewable' (A) là trái nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "We _____ save energy to protect the environment.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "might not",
+            "won't"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'should' dùng để đưa ra lời khuyên. Chúng ta nên tiết kiệm năng lượng để bảo vệ môi trường. 'Shouldn't' (B) mang nghĩa phủ định, không phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'pollution' mean?",
+          "opts": [
+            "năng lượng",
+            "sự ô nhiễm",
+            "môi trường",
+            "nhiên liệu"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Pollution' trong tiếng Anh có nghĩa là 'sự ô nhiễm'. Đây là hậu quả của việc sử dụng một số nguồn năng lượng không sạch."
+        },
+        {
+          "type": "mc",
+          "q": "Hydroelectric power comes from _____.",
+          "opts": [
+            "wind",
+            "sun",
+            "water",
+            "coal"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Thủy điện (hydroelectric power) là điện được tạo ra từ sức mạnh của nước chảy, thường là qua đập thủy điện. Các lựa chọn khác như gió, mặt trời, than đá không phải là nguồn gốc của thủy điện."
+        },
+        {
+          "type": "mc",
+          "q": "Fossil fuels are _____. They will run out one day.",
+          "opts": [
+            "renewable",
+            "abundant",
+            "limited",
+            "clean"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Câu này nói rằng nhiên liệu hóa thạch là có hạn và sẽ cạn kiệt. 'Limited' có nghĩa là có giới hạn, hữu hạn. 'Renewable' (A) là trái nghĩa, 'abundant' (B) nghĩa là dồi dào, 'clean' (D) nghĩa là sạch."
+        },
+        {
+          "type": "mc",
+          "q": "_____ you turn off the TV, please?",
+          "opts": [
+            "Will",
+            "Are",
+            "Do",
+            "Have"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'Will you...?' là cách lịch sự để yêu cầu ai đó làm gì. Câu này có nghĩa là 'Bạn tắt TV giúp tôi được không?'. Các lựa chọn khác không tạo thành câu yêu cầu phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is built across a river to generate electricity.",
+          "opts": [
+            "solar panel",
+            "wind turbine",
+            "dam",
+            "factory"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C là đúng. Đập (dam) được xây dựng trên sông để tích nước và tạo ra điện từ sức nước. Tấm pin mặt trời (A) và tua-bin gió (B) là các thiết bị khác."
+        },
+        {
+          "type": "mc",
+          "q": "We might _____ new sources of energy in the future.",
+          "opts": [
+            "discover",
+            "discovers",
+            "discovered",
+            "discovering"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì sau 'might' (có thể) là động từ nguyên mẫu. Câu này có nghĩa là chúng ta có thể khám phá ra những nguồn năng lượng mới trong tương lai. Các lựa chọn khác sai ngữ pháp."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'efficient' mean in Vietnamese?",
+          "opts": [
+            "lãng phí",
+            "hiệu quả",
+            "có hại",
+            "nguy hiểm"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B là đúng. 'Efficient' có nghĩa là 'hiệu quả', tức là làm việc tốt và không lãng phí tài nguyên. Đáp án A ('lãng phí') là trái nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "Burning coal _____ the air.",
+          "opts": [
+            "cleans",
+            "saves",
+            "pollutes",
+            "reduces"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'pollutes' có nghĩa là 'gây ô nhiễm'. Việc đốt than thải ra khói và các chất độc hại làm ô nhiễm không khí. Các từ khác như 'cleans' (làm sạch), 'saves' (tiết kiệm), 'reduces' (giảm bớt) không phù hợp."
+        }
+      ]
+    },
+    "11": {
+      "title": "Travelling in the Future",
+      "vocabulary": [
+        {
+          "en": "travel",
+          "type": "v/n",
+          "vi": "du lịch, đi lại"
+        },
+        {
+          "en": "means of transport",
+          "type": "n",
+          "vi": "phương tiện giao thông"
+        },
+        {
+          "en": "flying car",
+          "type": "n",
+          "vi": "ô tô bay"
+        },
+        {
+          "en": "driverless car",
+          "type": "n",
+          "vi": "xe không người lái"
+        },
+        {
+          "en": "bullet train",
+          "type": "n",
+          "vi": "tàu cao tốc"
+        },
+        {
+          "en": "hyperloop",
+          "type": "n",
+          "vi": "tàu siêu tốc"
+        },
+        {
+          "en": "jetpack",
+          "type": "n",
+          "vi": "ba lô phản lực"
+        },
+        {
+          "en": "solar-powered",
+          "type": "adj",
+          "vi": "chạy bằng năng lượng mặt trời"
+        },
+        {
+          "en": "autonomous",
+          "type": "adj",
+          "vi": "tự động, tự hành"
+        },
+        {
+          "en": "high-speed",
+          "type": "adj",
+          "vi": "tốc độ cao"
+        },
+        {
+          "en": "eco-friendly",
+          "type": "adj",
+          "vi": "thân thiện với môi trường"
+        },
+        {
+          "en": "comfortable",
+          "type": "adj",
+          "vi": "thoải mái"
+        },
+        {
+          "en": "convenient",
+          "type": "adj",
+          "vi": "thuận tiện"
+        },
+        {
+          "en": "passenger",
+          "type": "n",
+          "vi": "hành khách"
+        },
+        {
+          "en": "traffic congestion",
+          "type": "n",
+          "vi": "tắc nghẽn giao thông"
+        },
+        {
+          "en": "destination",
+          "type": "n",
+          "vi": "điểm đến"
+        },
+        {
+          "en": "invention",
+          "type": "n",
+          "vi": "phát minh"
+        },
+        {
+          "en": "imagine",
+          "type": "v",
+          "vi": "tưởng tượng"
+        },
+        {
+          "en": "predict",
+          "type": "v",
+          "vi": "dự đoán"
+        },
+        {
+          "en": "replace",
+          "type": "v",
+          "vi": "thay thế"
+        },
+        {
+          "en": "operate",
+          "type": "v",
+          "vi": "vận hành"
+        },
+        {
+          "en": "fuel",
+          "type": "n",
+          "vi": "nhiên liệu"
+        },
+        {
+          "en": "emission",
+          "type": "n",
+          "vi": "khí thải"
+        },
+        {
+          "en": "reduce",
+          "type": "v",
+          "vi": "giảm bớt"
+        },
+        {
+          "en": "speed",
+          "type": "n",
+          "vi": "tốc độ"
+        },
+        {
+          "en": "safety",
+          "type": "n",
+          "vi": "sự an toàn"
+        },
+        {
+          "en": "technology",
+          "type": "n",
+          "vi": "công nghệ"
+        },
+        {
+          "en": "modern",
+          "type": "adj",
+          "vi": "hiện đại"
+        },
+        {
+          "en": "advanced",
+          "type": "adj",
+          "vi": "tiên tiến"
+        },
+        {
+          "en": "possible",
+          "type": "adj",
+          "vi": "có thể"
+        }
+      ],
+      "grammar": [
+        "Will for future predictions",
+        "Possessive pronouns"
+      ],
+      "grammar_notes": "Will cho dự đoán tương lai: Dùng will + V để đưa ra dự đoán về tương lai. Ví dụ: People will travel in flying cars. There won't be traffic jams. Possessive pronouns (Đại từ sở hữu): mine (của tôi), yours (của bạn), his (của anh ấy), hers (của cô ấy), ours (của chúng tôi), theirs (của họ). Đại từ sở hữu đứng một mình, không cần danh từ theo sau. Ví dụ: This car is mine. = This is my car. That bicycle is hers. = That is her bicycle.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "People _____ travel in flying cars in the future.",
+          "opts": [
+            "are",
+            "were",
+            "will",
+            "have"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì câu nói về tương lai, nên ta dùng 'will' để chỉ hành động sẽ xảy ra. 'Are', 'were', 'have' không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'driverless car' mean?",
+          "opts": [
+            "xe buýt",
+            "xe không người lái",
+            "xe đạp",
+            "xe lửa"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'driverless car' có nghĩa là 'xe không có người lái'. Các lựa chọn khác như 'xe buýt', 'xe đạp', 'xe lửa' là các loại xe khác."
+        },
+        {
+          "type": "mc",
+          "q": "This bicycle is _____. (belong to me)",
+          "opts": [
+            "my",
+            "me",
+            "mine",
+            "I"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'mine' là đại từ sở hữu, đứng cuối câu và thay thế cho 'my bicycle'. 'My' cần có danh từ theo sau, 'me' và 'I' là đại từ nhân xưng."
+        },
+        {
+          "type": "mc",
+          "q": "Bullet trains travel at very high _____.",
+          "opts": [
+            "speed",
+            "speeds",
+            "speedy",
+            "speeding"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'high' là tính từ, bổ nghĩa cho danh từ 'speeds' (số nhiều). Tàu cao tốc có nhiều tốc độ khác nhau, nên dùng số nhiều."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'eco-friendly' mean?",
+          "opts": [
+            "rẻ tiền",
+            "thân thiện với môi trường",
+            "tốc độ cao",
+            "nguy hiểm"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'eco-friendly' có nghĩa là 'thân thiện với môi trường'. Các lựa chọn khác không diễn tả đúng ý nghĩa của từ này."
+        },
+        {
+          "type": "mc",
+          "q": "That car is _____. (belong to them)",
+          "opts": [
+            "their",
+            "them",
+            "they",
+            "theirs"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì 'theirs' là đại từ sở hữu, đứng cuối câu và thay thế cho 'their car'. 'Their' cần có danh từ theo sau, 'them' và 'they' là đại từ nhân xưng."
+        },
+        {
+          "type": "mc",
+          "q": "Flying cars _____ reduce traffic congestion.",
+          "opts": [
+            "is",
+            "are",
+            "will",
+            "was"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì câu nói về khả năng trong tương lai, nên ta dùng 'will' để chỉ hành động sẽ xảy ra. 'Is', 'are', 'was' không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "Solar-powered vehicles don't produce _____.",
+          "opts": [
+            "speed",
+            "emissions",
+            "passengers",
+            "destinations"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì xe chạy bằng năng lượng mặt trời không thải ra 'khí thải' (emissions). 'Speed', 'passengers', 'destinations' không phải là thứ mà xe tạo ra."
+        },
+        {
+          "type": "mc",
+          "q": "Is this your bag? — No, _____ is over there.",
+          "opts": [
+            "my",
+            "me",
+            "mine",
+            "I"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'mine' là đại từ sở hữu, đứng cuối câu và thay thế cho 'my bag'. 'My' cần có danh từ theo sau, 'me' và 'I' là đại từ nhân xưng."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'predict' mean in Vietnamese?",
+          "opts": [
+            "phát minh",
+            "dự đoán",
+            "thay thế",
+            "vận hành"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'predict' trong tiếng Anh có nghĩa là 'dự đoán' trong tiếng Việt. Các từ khác như 'phát minh', 'thay thế', 'vận hành' có nghĩa khác."
+        },
+        {
+          "type": "mc",
+          "q": "There _____ be more electric cars in 2050.",
+          "opts": [
+            "is",
+            "are",
+            "will",
+            "was"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì câu nói về tương lai (năm 2050), nên ta dùng 'will' để chỉ sự tồn tại trong tương lai. 'Is', 'are', 'was' không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "A 'jetpack' in Vietnamese is _____.",
+          "opts": [
+            "tàu cao tốc",
+            "ba lô phản lực",
+            "xe bay",
+            "máy bay"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'jetpack' trong tiếng Việt có nghĩa là 'ba lô phản lực'. Các lựa chọn khác là các phương tiện di chuyển khác."
+        },
+        {
+          "type": "mc",
+          "q": "Her bag is blue. _____ is red.",
+          "opts": [
+            "My",
+            "Mine",
+            "Me",
+            "I"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'mine' là đại từ sở hữu, đứng cuối câu và thay thế cho 'her bag'. 'My' cần có danh từ theo sau, 'me' và 'I' là đại từ nhân xưng."
+        },
+        {
+          "type": "mc",
+          "q": "New technology will make travel more _____.",
+          "opts": [
+            "convenience",
+            "convenient",
+            "conveniently",
+            "convene"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'convenient' là tính từ, bổ nghĩa cho 'travel' (di chuyển). 'Convenience' là danh từ, 'conveniently' là trạng từ, 'convene' là động từ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'autonomous' mean?",
+          "opts": [
+            "tự động",
+            "nhanh",
+            "chậm",
+            "rẻ"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'autonomous' có nghĩa là 'tự động', ám chỉ xe có thể tự lái. Các lựa chọn khác không diễn tả đúng ý nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "We _____ use hyperloops to travel between cities.",
+          "opts": [
+            "will",
+            "are",
+            "is",
+            "was"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì câu nói về tương lai, nên ta dùng 'will' để chỉ hành động sẽ xảy ra. 'Are', 'is', 'was' không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "These books are ours, and those books are _____.",
+          "opts": [
+            "your",
+            "you",
+            "yours",
+            "yourself"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'yours' là đại từ sở hữu, đứng cuối câu và thay thế cho 'your books'. 'Your' cần có danh từ theo sau, 'you' là đại từ nhân xưng, 'yourself' là đại từ phản thân."
+        },
+        {
+          "type": "mc",
+          "q": "Electric cars are _____ than petrol cars.",
+          "opts": [
+            "clean",
+            "cleaner",
+            "cleanest",
+            "cleaning"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì câu so sánh hơn giữa hai loại xe, nên ta dùng dạng so sánh hơn 'cleaner'. 'Clean' là tính từ nguyên mẫu, 'cleanest' là so sánh nhất, 'cleaning' là V-ing."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is a place you travel to.",
+          "opts": [
+            "fuel",
+            "emission",
+            "destination",
+            "invention"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'destination' là nơi bạn đến, là điểm đến của chuyến đi. Các lựa chọn khác là 'nhiên liệu', 'khí thải', 'phát minh'."
+        },
+        {
+          "type": "mc",
+          "q": "_____ won't be any traffic jams in the future.",
+          "opts": [
+            "It",
+            "There",
+            "This",
+            "That"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì cấu trúc 'There won't be' dùng để nói về sự không tồn tại của một cái gì đó trong tương lai. 'It', 'this', 'that' không phù hợp trong trường hợp này."
+        }
+      ]
+    },
+    "12": {
+      "title": "English-speaking Countries",
+      "vocabulary": [
+        {
+          "en": "English-speaking",
+          "type": "adj",
+          "vi": "nói tiếng Anh"
+        },
+        {
+          "en": "country",
+          "type": "n",
+          "vi": "quốc gia, đất nước"
+        },
+        {
+          "en": "population",
+          "type": "n",
+          "vi": "dân số"
+        },
+        {
+          "en": "capital",
+          "type": "n",
+          "vi": "thủ đô"
+        },
+        {
+          "en": "continent",
+          "type": "n",
+          "vi": "lục địa, châu lục"
+        },
+        {
+          "en": "currency",
+          "type": "n",
+          "vi": "đơn vị tiền tệ"
+        },
+        {
+          "en": "official language",
+          "type": "n",
+          "vi": "ngôn ngữ chính thức"
+        },
+        {
+          "en": "native speaker",
+          "type": "n",
+          "vi": "người bản ngữ"
+        },
+        {
+          "en": "symbol",
+          "type": "n",
+          "vi": "biểu tượng"
+        },
+        {
+          "en": "landmark",
+          "type": "n",
+          "vi": "địa danh nổi tiếng"
+        },
+        {
+          "en": "accent",
+          "type": "n",
+          "vi": "giọng, âm sắc"
+        },
+        {
+          "en": "culture",
+          "type": "n",
+          "vi": "văn hóa"
+        },
+        {
+          "en": "diverse",
+          "type": "adj",
+          "vi": "đa dạng"
+        },
+        {
+          "en": "multicultural",
+          "type": "adj",
+          "vi": "đa văn hóa"
+        },
+        {
+          "en": "scenery",
+          "type": "n",
+          "vi": "phong cảnh"
+        },
+        {
+          "en": "landscape",
+          "type": "n",
+          "vi": "cảnh quan"
+        },
+        {
+          "en": "kangaroo",
+          "type": "n",
+          "vi": "con chuột túi"
+        },
+        {
+          "en": "maple",
+          "type": "n",
+          "vi": "cây phong"
+        },
+        {
+          "en": "bald eagle",
+          "type": "n",
+          "vi": "đại bàng đầu trắng"
+        },
+        {
+          "en": "kiwi",
+          "type": "n",
+          "vi": "chim kiwi"
+        },
+        {
+          "en": "located",
+          "type": "adj",
+          "vi": "nằm ở, tọa lạc"
+        },
+        {
+          "en": "border",
+          "type": "n/v",
+          "vi": "biên giới, giáp"
+        },
+        {
+          "en": "island",
+          "type": "n",
+          "vi": "hòn đảo"
+        },
+        {
+          "en": "attract",
+          "type": "v",
+          "vi": "thu hút"
+        },
+        {
+          "en": "tourist",
+          "type": "n",
+          "vi": "du khách"
+        },
+        {
+          "en": "consist of",
+          "type": "v phr",
+          "vi": "bao gồm"
+        },
+        {
+          "en": "belong to",
+          "type": "v phr",
+          "vi": "thuộc về"
+        },
+        {
+          "en": "area",
+          "type": "n",
+          "vi": "diện tích, khu vực"
+        },
+        {
+          "en": "famous",
+          "type": "adj",
+          "vi": "nổi tiếng"
+        },
+        {
+          "en": "wonderful",
+          "type": "adj",
+          "vi": "tuyệt vời"
+        }
+      ],
+      "grammar": [
+        "Articles: a/an/the/zero article",
+        "Tag questions"
+      ],
+      "grammar_notes": "Mạo từ (Articles): a/an (mạo từ không xác định) dùng với danh từ đếm được số ít khi nói lần đầu. The (mạo từ xác định) dùng khi cả người nói và người nghe đều biết. The dùng trước tên sông, biển, đại dương, dãy núi: the Amazon, the Pacific. Không dùng mạo từ (zero article) trước tên nước, thành phố, lục địa, hồ: Vietnam, London, Asia, Lake Michigan. Tag questions (Câu hỏi đuôi): Câu khẳng định → đuôi phủ định: She is from Australia, isn't she? Câu phủ định → đuôi khẳng định: They don't speak French, do they?",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "Australia is _____ English-speaking country.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 1,
+          "explain": "Ta dùng 'an' trước các danh từ số ít bắt đầu bằng nguyên âm (a, e, i, o, u). 'English-speaking' bắt đầu bằng 'E', nên ta dùng 'an'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'population' mean in Vietnamese?",
+          "opts": [
+            "diện tích",
+            "dân số",
+            "thủ đô",
+            "biên giới"
+          ],
+          "ans": 1,
+          "explain": "Từ 'population' trong tiếng Anh có nghĩa là 'dân số'. Các từ còn lại có nghĩa là diện tích, thủ đô và biên giới."
+        },
+        {
+          "type": "mc",
+          "q": "Canada is in _____ North America.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 3,
+          "explain": "Khi nói về các châu lục như North America, ta không dùng mạo từ 'a', 'an', hay 'the'."
+        },
+        {
+          "type": "mc",
+          "q": "London is the capital of England, _____ it?",
+          "opts": [
+            "is",
+            "isn't",
+            "does",
+            "doesn't"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu hỏi đuôi. Mệnh đề chính 'London is the capital of England' là khẳng định, nên câu hỏi đuôi phải là phủ định: 'isn't it?'."
+        },
+        {
+          "type": "mc",
+          "q": "What is the symbol of Australia?",
+          "opts": [
+            "bald eagle",
+            "maple leaf",
+            "kangaroo",
+            "kiwi"
+          ],
+          "ans": 2,
+          "explain": "Biểu tượng của Úc là con chuột túi (kangaroo). Chim đại bàng hói là biểu tượng của Mỹ, lá phong là của Canada, còn chim kiwi là của New Zealand."
+        },
+        {
+          "type": "mc",
+          "q": "They don't speak French, _____ they?",
+          "opts": [
+            "don't",
+            "do",
+            "aren't",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi đuôi phải trái ngược với mệnh đề chính. Mệnh đề chính 'They don't speak French' là phủ định, nên câu hỏi đuôi phải là khẳng định: 'do they?'."
+        },
+        {
+          "type": "mc",
+          "q": "_____ United Kingdom consists of four countries.",
+          "opts": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "ans": 2,
+          "explain": "Ta dùng mạo từ 'the' trước tên các quốc gia hoặc liên hiệp các quốc gia như 'the United Kingdom'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'landmark' mean?",
+          "opts": [
+            "dân số",
+            "đơn vị tiền tệ",
+            "địa danh nổi tiếng",
+            "biểu tượng"
+          ],
+          "ans": 2,
+          "explain": "'Landmark' có nghĩa là 'địa danh nổi tiếng', là một nơi dễ nhận biết hoặc có ý nghĩa lịch sử, văn hóa."
+        },
+        {
+          "type": "mc",
+          "q": "New Zealand is famous for its beautiful _____.",
+          "opts": [
+            "scenery",
+            "currency",
+            "population",
+            "accent"
+          ],
+          "ans": 0,
+          "explain": "New Zealand nổi tiếng với cảnh đẹp. 'Scenery' có nghĩa là cảnh quan, phong cảnh."
+        },
+        {
+          "type": "mc",
+          "q": "She is from _____ United States.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 2,
+          "explain": "Ta dùng 'the' trước tên các quốc gia số nhiều hoặc có chứa từ 'United', 'States', 'Republic', 'Kingdom'."
+        },
+        {
+          "type": "mc",
+          "q": "You've been to London, _____ you?",
+          "opts": [
+            "have",
+            "haven't",
+            "do",
+            "don't"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi đuôi phải trái ngược với mệnh đề chính. Mệnh đề chính 'She has been to London' là khẳng định, nên câu hỏi đuôi phải là phủ định: 'haven't you?'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'diverse' mean in Vietnamese?",
+          "opts": [
+            "đơn giản",
+            "đa dạng",
+            "nhỏ bé",
+            "lớn"
+          ],
+          "ans": 1,
+          "explain": "Từ 'diverse' trong tiếng Anh có nghĩa là 'đa dạng', chỉ sự khác biệt và phong phú."
+        },
+        {
+          "type": "mc",
+          "q": "The kiwi is _____ symbol of New Zealand.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 0,
+          "explain": "Ta dùng mạo từ 'a' trước danh từ số ít bắt đầu bằng phụ âm. 'Symbol' bắt đầu bằng 's', là một phụ âm."
+        },
+        {
+          "type": "mc",
+          "q": "English is the _____ language of the UK.",
+          "opts": [
+            "office",
+            "official",
+            "officer",
+            "officially"
+          ],
+          "ans": 1,
+          "explain": "Ta cần một tính từ để bổ nghĩa cho danh từ 'language'. 'Official' (chính thức) là tính từ phù hợp trong trường hợp này."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is someone who speaks a language as their first language.",
+          "opts": [
+            "tourist",
+            "native speaker",
+            "foreigner",
+            "student"
+          ],
+          "ans": 1,
+          "explain": "'Native speaker' là người bản xứ, tức là người nói ngôn ngữ đó từ khi còn nhỏ hoặc là tiếng mẹ đẻ."
+        },
+        {
+          "type": "mc",
+          "q": "Canada borders _____ USA.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 2,
+          "explain": "Khi nói về các quốc gia có tên gọi số nhiều hoặc có từ 'States', ta dùng mạo từ 'the', ví dụ 'the USA'."
+        },
+        {
+          "type": "mc",
+          "q": "Sydney is in Australia, _____ it?",
+          "opts": [
+            "is",
+            "isn't",
+            "does",
+            "doesn't"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi đuôi phải trái ngược với mệnh đề chính. Mệnh đề chính 'Sydney is in Australia' là khẳng định, nên câu hỏi đuôi phải là phủ định: 'isn't it?'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'currency' mean?",
+          "opts": [
+            "ngôn ngữ",
+            "dân số",
+            "đơn vị tiền tệ",
+            "diện tích"
+          ],
+          "ans": 2,
+          "explain": "'Currency' có nghĩa là 'đơn vị tiền tệ', là tiền được sử dụng ở một quốc gia."
+        },
+        {
+          "type": "mc",
+          "q": "The maple leaf is the symbol of _____.",
+          "opts": [
+            "Australia",
+            "New Zealand",
+            "Canada",
+            "England"
+          ],
+          "ans": 2,
+          "explain": "Lá phong (maple leaf) là biểu tượng quốc gia của Canada."
+        },
+        {
+          "type": "mc",
+          "q": "_____ Amazon is the longest river in South America.",
+          "opts": [
+            "A",
+            "An",
+            "The",
+            "—"
+          ],
+          "ans": 2,
+          "explain": "Ta dùng mạo từ 'the' trước tên các con sông như 'the Amazon'."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="400" height="420">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#f0c000"/>
+    </linearGradient>
+  </defs>
+  <polygon points="200,20 380,340 20,340" fill="url(#bg)" stroke="#333" stroke-width="14" stroke-linejoin="round" filter="url(#shadow)"/>
+  <text x="200" y="220" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="50" fill="#333">🔊</text>
+  <text x="200" y="400" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="22" fill="#333">CAUTION: HIGH NOISE</text>
+</svg>

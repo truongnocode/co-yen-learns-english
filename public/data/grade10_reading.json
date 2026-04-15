@@ -1,0 +1,2018 @@
+{
+  "signs": {
+    "exercise1": {
+      "instruction": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "sign": "NO SMOKING sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You are allowed to smoke anywhere, including in this area.",
+            "Smoking is only permitted in specific areas that are marked for it.",
+            "Smoking is not allowed at all in this area to keep it clean and safe.",
+            "Smoking is encouraged and welcome in this area."
+          ],
+          "ans": 2,
+          "explain": "Biển 'NO SMOKING' nghĩa là cấm hút thuốc hoàn toàn. Đáp án C đúng vì nói rõ không được hút thuốc trong khu vực này. Các đáp án khác sai vì cho phép hoặc khuyến khích hút thuốc."
+        },
+        {
+          "sign": "FREE WI-FI sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "There is no Wi-Fi service in this area.",
+            "You can connect to the Wi-Fi here without paying.",
+            "You have to pay to use the Wi-Fi.",
+            "Wi-Fi is only available in some specific areas."
+          ],
+          "ans": 1,
+          "explain": "Biển 'FREE WI-FI' nghĩa là Wi-Fi miễn phí. Đáp án B đúng vì bạn có thể kết nối Wi-Fi mà không phải trả tiền."
+        },
+        {
+          "sign": "NO SWIMMING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Swimming is allowed in this area.",
+            "It is not recommended to swim in this area.",
+            "Swimming is forbidden here at certain times.",
+            "Swimming is completely prohibited in this area."
+          ],
+          "ans": 3,
+          "explain": "Biển 'NO SWIMMING' nghĩa là cấm bơi. Đáp án D 'completely prohibited' (cấm hoàn toàn) đúng nhất. Đáp án B chỉ nói 'not recommended' (không khuyến khích) thì chưa đủ mạnh."
+        },
+        {
+          "sign": "NO CLIMBING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You are permitted to climb here.",
+            "Climbing is not advised or recommended here.",
+            "Climbing is encouraged here, and you should do it here.",
+            "Climbing is not allowed in this area."
+          ],
+          "ans": 3,
+          "explain": "Biển 'NO CLIMBING' nghĩa là cấm leo trèo. Đáp án D 'not allowed' (không được phép) là đúng. Đáp án B chỉ nói 'not advised' (không khuyên) thì yếu hơn ý nghĩa biển cấm."
+        },
+        {
+          "sign": "TURN OFF LIGHT sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "Turn off the light when there are few people in the room.",
+            "Turn off the light when you are not using it.",
+            "You are not allowed to switch off the night light.",
+            "Always keep the light on when you go out."
+          ],
+          "ans": 1,
+          "explain": "Biển 'TURN OFF LIGHT' nhắc nhở tắt đèn khi không sử dụng. Đáp án B đúng vì nói tắt đèn khi không dùng."
+        },
+        {
+          "sign": "CAUTION HIGH NOISE AREA sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "This area is quiet.",
+            "This area has high noise levels.",
+            "Noise is prohibited in this area.",
+            "Noise levels are moderate."
+          ],
+          "ans": 1,
+          "explain": "Biển 'CAUTION HIGH NOISE AREA' cảnh báo khu vực có tiếng ồn lớn. Đáp án B đúng vì nói khu vực này có mức tiếng ồn cao."
+        },
+        {
+          "sign": "RESTROOMS sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "The restrooms are in the opposite direction.",
+            "Follow the sign to find the restrooms.",
+            "The restrooms are currently closed to the public.",
+            "The restrooms are located outside."
+          ],
+          "ans": 1,
+          "explain": "Biển 'RESTROOMS' chỉ hướng đến nhà vệ sinh. Đáp án B đúng vì bảng hướng dẫn đến nhà vệ sinh."
+        },
+        {
+          "sign": "Art Workshop Saturdays",
+          "q": "Which information is correct from the announcement?",
+          "opts": [
+            "There will be five workshops each week.",
+            "You don't have to be talented to go to the workshop.",
+            "The final workshop is on Saturday, 15 September.",
+            "The workshop is for good painters."
+          ],
+          "ans": 1,
+          "explain": "Thông báo về lớp vẽ vào thứ Bảy dành cho mọi người. Đáp án B đúng vì bạn không cần phải có tài năng để tham gia. Các đáp án khác không phù hợp với nội dung thông báo."
+        },
+        {
+          "sign": "FACE MASK REQUIRED sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Buy mask when you come here.",
+            "Do not remove your mask when you leave here.",
+            "Put on a mask before entering this location.",
+            "Make sure the mask covers your mouth all day."
+          ],
+          "ans": 2,
+          "explain": "Biển 'FACE MASK REQUIRED' yêu cầu đeo khẩu trang. Đáp án C đúng vì phải đeo khẩu trang trước khi vào. Đáp án A (mua), D (cả ngày) không chính xác."
+        },
+        {
+          "sign": "WET PAINT sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "The paint is dry and safe to touch.",
+            "The paint is still wet, so you should avoid touching it.",
+            "People are encouraged to touch the paint.",
+            "The paint is not meant for anyone to use."
+          ],
+          "ans": 1,
+          "explain": "Biển 'WET PAINT' nghĩa là sơn còn ướt. Đáp án B đúng vì cảnh báo sơn còn ướt, không nên chạm vào."
+        },
+        {
+          "sign": "CAMERAS RECORDING 24/7 sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "There are no security cameras operating in this area.",
+            "Security cameras are actively monitoring and recording here.",
+            "This building has no security cameras installed.",
+            "The security cameras work only at night."
+          ],
+          "ans": 1,
+          "explain": "Biển 'CAMERAS RECORDING 24/7' nghĩa là camera giám sát hoạt động 24/7. Đáp án B đúng vì camera đang ghi hình liên tục."
+        },
+        {
+          "sign": "DANGER NO OPEN FLAMES sign",
+          "q": "What does the sign indicate?",
+          "opts": [
+            "It's safe to start a fire in this area because there is no danger.",
+            "You are not allowed to use any open flames, like candles or matches, here.",
+            "Only small fires, like campfires or candles, are permitted in this area.",
+            "Fire can be used in this area only when the weather is very cold outside."
+          ],
+          "ans": 1,
+          "explain": "Biển 'DANGER NO OPEN FLAMES' cấm sử dụng lửa. Đáp án B đúng vì không được dùng bất kỳ ngọn lửa nào như nến, diêm trong khu vực này."
+        },
+        {
+          "sign": "NO PHOTOGRAPHY sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You are allowed to take photos in this area.",
+            "Photography is not allowed in this area at any time.",
+            "You can take photos if you have permission.",
+            "Taking photos is encouraged and permitted here."
+          ],
+          "ans": 1,
+          "explain": "Biển 'NO PHOTOGRAPHY' nghĩa là cấm chụp ảnh. Đáp án B đúng vì không được phép chụp ảnh trong khu vực này."
+        },
+        {
+          "sign": "STOP BULLYING sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "Ignore bullying unless it's serious.",
+            "Stand up against bullying and speak out.",
+            "Stop bullying only if you're directly involved.",
+            "Speak about bullying to students."
+          ],
+          "ans": 1,
+          "explain": "Biển 'STOP BULLYING' kêu gọi chống bắt nạt. Đáp án B đúng vì khuyến khích mọi người đứng lên chống lại hành vi bắt nạt và lên tiếng."
+        },
+        {
+          "sign": "DAN'S ICE CREAMS Buy one, get one free! 12-2 p.m.",
+          "q": "Which of the following information is correct?",
+          "opts": [
+            "The ice cream shop is open for only 2 hours.",
+            "Two ice creams will cost the same as one.",
+            "You can get free ice cream all afternoon.",
+            "You can only buy 2 ice creams at a time."
+          ],
+          "ans": 1,
+          "explain": "Chương trình 'Buy one, get one free' nghĩa là mua 1 tặng 1. Đáp án B đúng vì hai cây kem chỉ tốn tiền một cây. Ưu đãi chỉ từ 12-2 giờ chiều, không phải cả buổi chiều."
+        },
+        {
+          "sign": "OPEN - DINE IN ONLY sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You can eat in this restaurant.",
+            "This restaurant cannot be open at the moment.",
+            "You can't eat inside this restaurant.",
+            "You can't buy any food in this restaurant."
+          ],
+          "ans": 2,
+          "explain": "Biển 'OPEN - DINE IN ONLY' nghĩa là nhà hàng đang mở và chỉ phục vụ ăn tại chỗ, không mang đi. Đáp án C nói đúng ý nghĩa của biển."
+        },
+        {
+          "sign": "DON'T USE CELL PHONE WHILE PUMPING GAS sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Using mobile phones is allowed when pumping gas.",
+            "Using mobile phones is prohibited when pumping gas.",
+            "Making a phone call is allowed while pumping gas.",
+            "Using a mobile phone isn't dangerous when pumping gas."
+          ],
+          "ans": 1,
+          "explain": "Biển cấm sử dụng điện thoại khi đổ xăng. Đáp án B đúng vì 'prohibited' nghĩa là bị cấm. Dùng điện thoại khi đổ xăng có thể gây nguy hiểm."
+        },
+        {
+          "sign": "ELEVATOR OUT OF ORDER sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "The elevator is working well, and you can use it.",
+            "The elevator is not working, and you cannot use it.",
+            "The elevator is being repaired and will work again soon.",
+            "The elevator is for special use only and not for everyone."
+          ],
+          "ans": 1,
+          "explain": "Biển 'ELEVATOR OUT OF ORDER' nghĩa là thang máy bị hỏng. Đáp án B đúng vì thang máy không hoạt động và không thể sử dụng được."
+        },
+        {
+          "sign": "BRING YOUR ID CARD sign",
+          "q": "What should you do with your ID card?",
+          "opts": [
+            "Leave your ID card at home.",
+            "Remember to bring your ID card when you enter the building.",
+            "Do not bring your ID card.",
+            "Show your ID card upon entry."
+          ],
+          "ans": 3,
+          "explain": "Biển 'BRING YOUR ID CARD' yêu cầu mang theo thẻ căn cước. Đáp án D 'Show your ID card upon entry' (xuất trình thẻ khi vào) đúng nhất vì biển yêu cầu có thẻ khi vào tòa nhà."
+        },
+        {
+          "sign": "HELP DESK sign",
+          "q": "What does the sign say?",
+          "opts": [
+            "You can get assistance and help at this desk.",
+            "This desk is closed and cannot assist you.",
+            "At the moment, no help is available at this desk.",
+            "This desk is for staff only and not for visitors."
+          ],
+          "ans": 0,
+          "explain": "Biển 'HELP DESK' là quầy hỗ trợ. Đáp án A đúng vì bạn có thể nhận được sự trợ giúp tại quầy này."
+        }
+      ]
+    },
+    "exercise2": {
+      "instruction": "Choose the best answer for each question.",
+      "questions": [
+        {
+          "sign": "NO EATING OR DRINKING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You are allowed to eat and drink here without any restrictions.",
+            "Eating and drinking are not permitted in this area at all times.",
+            "You can bring drinks but not food into this area.",
+            "Food is permitted in this area without any special restrictions."
+          ],
+          "ans": 1,
+          "explain": "Biển 'NO EATING OR DRINKING' nghĩa là cấm ăn uống. Đáp án B đúng vì không được phép ăn uống trong khu vực này."
+        },
+        {
+          "sign": "DO NOT FEED THE ANIMALS sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Visitors are allowed to interact with the animals here.",
+            "Visitors are not permitted to feed the animals.",
+            "It is allowed to disturb the wildlife in this area.",
+            "The animals here require food to survive."
+          ],
+          "ans": 1,
+          "explain": "Biển 'DO NOT FEED THE ANIMALS' nghĩa là không được cho động vật ăn. Đáp án B đúng vì du khách không được phép cho động vật ăn."
+        },
+        {
+          "sign": "NO LITTERING sign",
+          "q": "What does this sign indicate?",
+          "opts": [
+            "You are allowed to litter anywhere.",
+            "You mustn't litter anywhere; put it in the trash bin.",
+            "You can only throw trash in the trash bin.",
+            "If you can't put trash in the bin, leave it where you want."
+          ],
+          "ans": 1,
+          "explain": "Biển 'NO LITTERING' nghĩa là cấm xả rác. Đáp án B đúng vì không được vứt rác bừa bãi, phải bỏ vào thùng rác."
+        },
+        {
+          "sign": "ELDERLY CROSSING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Be cautious as elderly people may be crossing the road.",
+            "Notice the elderly people in this area.",
+            "Be careless as elderly people may be crossing the road.",
+            "Observe the way people are dressed here."
+          ],
+          "ans": 0,
+          "explain": "Biển 'ELDERLY CROSSING' cảnh báo có người già qua đường. Đáp án A đúng vì cần thận trọng khi lái xe vì có thể có người già băng qua đường."
+        },
+        {
+          "sign": "NO FLASH PHOTOGRAPHY sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Flash photography is allowed.",
+            "Flash photography is encouraged here.",
+            "Flash use is not allowed at certain times.",
+            "Taking pictures with a flash is not allowed."
+          ],
+          "ans": 3,
+          "explain": "Biển 'NO FLASH PHOTOGRAPHY' cấm chụp ảnh có đèn flash. Đáp án D đúng vì không được phép chụp ảnh với đèn flash. Chú ý: biển chỉ cấm flash, không cấm chụp ảnh hoàn toàn."
+        },
+        {
+          "sign": "FALLING ROCKS warning sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Falling rocks",
+            "Slippery road",
+            "Dropping objects",
+            "Landslide area"
+          ],
+          "ans": 0,
+          "explain": "Biển cảnh báo 'FALLING ROCKS' nghĩa là đá rơi. Đáp án A đúng. 'Slippery road' là đường trơn, 'landslide' là sạt lở đất - khác với đá rơi."
+        },
+        {
+          "sign": "WATERFALL 5 KM sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "The waterfall is popular with walkers.",
+            "You'll see a waterfall five kilometers from here.",
+            "The waterfall stretches across five kilometers.",
+            "Walk five kilometers to get to the waterfall."
+          ],
+          "ans": 3,
+          "explain": "Biển 'WATERFALL 5 KM' nghĩa là thác nước cách đây 5 km. Đáp án D đúng vì bạn cần đi 5 km để đến thác nước. Đáp án C sai vì thác không dài 5 km."
+        },
+        {
+          "sign": "PUT WASTE IN BIN sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Please help protect the environment.",
+            "Please put waste into the garbage bin.",
+            "Don't throw rubbish into the bin.",
+            "Please keep the water clean."
+          ],
+          "ans": 1,
+          "explain": "Biển 'PUT WASTE IN BIN' yêu cầu bỏ rác vào thùng. Đáp án B đúng vì nói rõ hãy bỏ rác vào thùng rác."
+        },
+        {
+          "sign": "CHILDREN MUST WEAR HELMETS sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Make sure children wear a helmet when riding a bicycle.",
+            "Helmets are provided for both boys and girls.",
+            "A mother is riding a bicycle with her child.",
+            "The mother is allowed to ride without a helmet."
+          ],
+          "ans": 0,
+          "explain": "Biển yêu cầu trẻ em phải đội mũ bảo hiểm. Đáp án A đúng vì trẻ em phải đội mũ bảo hiểm khi đi xe đạp. 'Must' nghĩa là bắt buộc."
+        },
+        {
+          "sign": "DANGER ELECTRICITY sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Be careful! You may be struck by lightning.",
+            "Be careful! Electricity can kill.",
+            "Be careful! A thunderstorm is approaching.",
+            "Be careful! Do not touch electrical sockets."
+          ],
+          "ans": 1,
+          "explain": "Biển 'DANGER ELECTRICITY' cảnh báo nguy hiểm điện. Đáp án B đúng vì điện có thể gây chết người. Đáp án A (sét), C (bão) không đúng."
+        },
+        {
+          "sign": "BEWARE OF DOOR sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Keep a safe distance from the door.",
+            "Beware of the door opening suddenly.",
+            "Be ready to stop immediately.",
+            "Do not enter without permission."
+          ],
+          "ans": 1,
+          "explain": "Biển 'BEWARE OF DOOR' cảnh báo cẩn thận với cửa. Đáp án B đúng vì cửa có thể mở bất ngờ, cần chú ý."
+        },
+        {
+          "sign": "FIRE ALARM BUTTON sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Press the button to activate the fire alarm.",
+            "Touch this button to create a fire.",
+            "Please put your finger to make a fire.",
+            "Press here in case of fire."
+          ],
+          "ans": 3,
+          "explain": "Biển chỉ nút báo cháy. Đáp án D 'Press here in case of fire' đúng vì chỉ nhấn nút khi có cháy. Đáp án A nghe có vẻ đúng nhưng D chính xác hơn vì nhấn mạnh chỉ nhấn khi có cháy."
+        },
+        {
+          "sign": "CASH ONLY sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You can pay either by cash or by credit card.",
+            "You must not pay by credit card here.",
+            "You cannot pay by cash here.",
+            "You needn't pay by cash here."
+          ],
+          "ans": 2,
+          "explain": "Biển 'CASH ONLY' nghĩa là chỉ chấp nhận thanh toán bằng tiền mặt, không dùng thẻ tín dụng. Đáp án C nêu đúng ý nghĩa của biển."
+        },
+        {
+          "sign": "DO NOT LEAN OUT OF WINDOW sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Leaning out of the window is prohibited for passengers.",
+            "The window is required to be opened by passengers.",
+            "Looking out of the window is not allowed for passengers.",
+            "This window is not intended to be used by passengers."
+          ],
+          "ans": 0,
+          "explain": "Biển 'DO NOT LEAN OUT OF WINDOW' cấm thò người ra cửa sổ. Đáp án A đúng vì hành khách bị cấm nghiêng người ra ngoài cửa sổ. 'Prohibited' = bị cấm."
+        },
+        {
+          "sign": "NO PHONE CHARGING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Please do not use smartphones here.",
+            "Please note that there is no power supply available here.",
+            "Please keep your phone away from this area.",
+            "Please do not charge your phone here."
+          ],
+          "ans": 3,
+          "explain": "Biển 'NO PHONE CHARGING' nghĩa là không được sạc điện thoại. Đáp án D đúng vì nói rõ không được sạc điện thoại ở đây. Đáp án B (không có nguồn điện) không đúng ý biển cấm."
+        },
+        {
+          "sign": "NO STRAIGHT AHEAD sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You must change direction instead of going straight.",
+            "You are allowed to continue straight ahead.",
+            "You can go straight ahead first and turn at a later point.",
+            "Traffic lights should be ignored."
+          ],
+          "ans": 0,
+          "explain": "Biển 'NO STRAIGHT AHEAD' nghĩa là không được đi thẳng. Đáp án A đúng vì bạn phải đổi hướng thay vì đi thẳng."
+        },
+        {
+          "sign": "FASTEN SEAT BELT sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You are required to keep your seat belt fastened at all times.",
+            "You may choose whether or not to wear a seat belt.",
+            "Fastening your seat belt is not recommended.",
+            "You are advised to bring a seat belt with you."
+          ],
+          "ans": 0,
+          "explain": "Biển 'FASTEN SEAT BELT' yêu cầu thắt dây an toàn. Đáp án A đúng vì bạn phải thắt dây an toàn mọi lúc. 'Required' = bắt buộc."
+        },
+        {
+          "sign": "NO SHARP OBJECTS ON PLANE sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You can't use scissors and knives at the same time on the plane.",
+            "You can't buy any scissors or knives on the plane.",
+            "You can't bring any sharp objects on the plane.",
+            "You can't use scissors or knives because they are sharp."
+          ],
+          "ans": 2,
+          "explain": "Biển cấm mang vật sắc nhọn lên máy bay. Đáp án C đúng vì không được mang bất kỳ vật sắc nhọn nào lên máy bay, bao gồm kéo và dao."
+        },
+        {
+          "sign": "NO CUTTING TREES sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "You shouldn't cut down trees in this area.",
+            "You mustn't cut down trees in this area.",
+            "Cutting down trees is allowed in this area.",
+            "Trees in this area are too difficult for you to cut down."
+          ],
+          "ans": 1,
+          "explain": "Biển 'NO CUTTING TREES' cấm chặt cây. Đáp án B 'mustn't' (không được phép) đúng vì biển cấm có tính bắt buộc. Đáp án A dùng 'shouldn't' (không nên) thì yếu hơn."
+        },
+        {
+          "sign": "NO CAMPING sign",
+          "q": "What does this sign mean?",
+          "opts": [
+            "Camping is strictly prohibited in this area.",
+            "Camping is allowed in this area.",
+            "This place is designated as a campsite.",
+            "Visitors are required to bring their own tents."
+          ],
+          "ans": 0,
+          "explain": "Biển 'NO CAMPING' nghĩa là cấm cắm trại. Đáp án A đúng vì cắm trại bị cấm nghiêm ngặt trong khu vực này."
+        }
+      ]
+    }
+  },
+  "cloze": [
+    {
+      "title": "HANDICRAFT FAIR ANNOUNCEMENT",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "some",
+            "much",
+            "all",
+            "each"
+          ],
+          "ans": 2,
+          "explain": "'All' (tất cả) đúng vì muốn nói tất cả mọi người đều được chào đón. 'Some' (một số), 'much' (nhiều - không đếm được), 'each' (mỗi) không phù hợp ngữ cảnh."
+        },
+        {
+          "opts": [
+            "from",
+            "at",
+            "during",
+            "in"
+          ],
+          "ans": 0,
+          "explain": "'From' đúng vì dùng trong cấu trúc 'from... to...' chỉ khoảng thời gian. Ví dụ: from 9 a.m. to 5 p.m."
+        },
+        {
+          "opts": [
+            "If",
+            "Because",
+            "When",
+            "Although"
+          ],
+          "ans": 0,
+          "explain": "'If' (nếu) đúng vì câu mang nghĩa điều kiện: 'Nếu bạn quan tâm, hãy...' 'Because' (vì), 'When' (khi), 'Although' (mặc dù) không phù hợp ngữ cảnh."
+        },
+        {
+          "opts": [
+            "facilities",
+            "suburbs",
+            "handicrafts",
+            "electricians"
+          ],
+          "ans": 2,
+          "explain": "'Handicrafts' (đồ thủ công) đúng vì bài nói về hội chợ thủ công. 'Facilities' (cơ sở), 'suburbs' (ngoại ô), 'electricians' (thợ điện) không liên quan."
+        }
+      ]
+    },
+    {
+      "title": "CITY DISCOVERY TOUR - FOR TEENS",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "rural",
+            "urban",
+            "remote",
+            "simple"
+          ],
+          "ans": 1,
+          "explain": "'Urban' (đô thị) đúng vì bài nói về tour khám phá thành phố. 'Rural' (nông thôn), 'remote' (xa xôi), 'simple' (đơn giản) không phù hợp."
+        },
+        {
+          "opts": [
+            "from",
+            "on",
+            "at",
+            "in"
+          ],
+          "ans": 2,
+          "explain": "'At' đúng vì dùng với thời điểm cụ thể, ví dụ 'at 9 a.m.' Giới từ 'on' dùng cho ngày, 'in' dùng cho tháng/năm."
+        },
+        {
+          "opts": [
+            "If",
+            "So",
+            "Because",
+            "When"
+          ],
+          "ans": 0,
+          "explain": "'If' (nếu) đúng vì câu mang nghĩa điều kiện: 'Nếu bạn muốn tham gia...'"
+        },
+        {
+          "opts": [
+            "much",
+            "most",
+            "some",
+            "few"
+          ],
+          "ans": 3,
+          "explain": "'Few' (ít - đếm được) đúng vì chỗ có hạn. 'Much' và 'most' dùng cho danh từ không đếm được. 'Some' không diễn tả đúng ý chỗ còn ít."
+        }
+      ]
+    },
+    {
+      "title": "TAKE CARE OF YOUR MENTAL HEALTH",
+      "instruction": "Read the following public message and circle the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "anxious",
+            "happy",
+            "relaxed",
+            "confident"
+          ],
+          "ans": 0,
+          "explain": "'Anxious' (lo lắng) đúng vì bài nói về chăm sóc sức khỏe tinh thần, khi cảm thấy lo lắng. 'Happy', 'relaxed', 'confident' đều là cảm xúc tích cực, không cần tìm kiếm sự giúp đỡ."
+        },
+        {
+          "opts": [
+            "when",
+            "because",
+            "although",
+            "unless"
+          ],
+          "ans": 0,
+          "explain": "'When' (khi) đúng vì diễn tả thời điểm: 'Khi bạn cảm thấy...' 'Because' (vì), 'although' (mặc dù), 'unless' (trừ khi) không phù hợp ngữ cảnh."
+        },
+        {
+          "opts": [
+            "much",
+            "many",
+            "little",
+            "few"
+          ],
+          "ans": 1,
+          "explain": "'Many' (nhiều) đúng vì đi với danh từ đếm được số nhiều. 'Much' đi với danh từ không đếm được. 'Little' và 'few' nghĩa là ít."
+        },
+        {
+          "opts": [
+            "which",
+            "where",
+            "who",
+            "whose"
+          ],
+          "ans": 2,
+          "explain": "'Who' đúng vì dùng đại từ quan hệ thay thế cho người. 'Which' dùng cho vật, 'where' dùng cho nơi chốn, 'whose' chỉ sở hữu."
+        }
+      ]
+    },
+    {
+      "title": "TRADITIONAL LIVING DAY",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option.",
+      "questions": [
+        {
+          "opts": [
+            "cultural",
+            "harmful",
+            "modern",
+            "traditional"
+          ],
+          "ans": 3,
+          "explain": "'Traditional' (truyền thống) đúng vì bài nói về ngày sống truyền thống. 'Cultural' (văn hóa), 'modern' (hiện đại), 'harmful' (có hại) không phù hợp tiêu đề."
+        },
+        {
+          "opts": [
+            "at",
+            "during",
+            "in",
+            "on"
+          ],
+          "ans": 0,
+          "explain": "'At' đúng vì dùng với địa điểm cụ thể. Ví dụ: 'at the community center.'"
+        },
+        {
+          "opts": [
+            "nobody",
+            "everybody",
+            "someone",
+            "anybody"
+          ],
+          "ans": 1,
+          "explain": "'Everybody' (mọi người) đúng vì sự kiện mở cho tất cả mọi người. 'Nobody' (không ai), 'someone' (ai đó), 'anybody' (bất kỳ ai) không phù hợp ngữ cảnh mời."
+        },
+        {
+          "opts": [
+            "classes",
+            "dishes",
+            "slots",
+            "costumes"
+          ],
+          "ans": 2,
+          "explain": "'Slots' (suất/chỗ) đúng vì nói về số chỗ tham gia có hạn. 'Classes' (lớp học), 'dishes' (món ăn), 'costumes' (trang phục) không phù hợp."
+        }
+      ]
+    },
+    {
+      "title": "DISCOVER PHONG NHA - ONE-DAY TOUR",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "beautiful",
+            "terrible",
+            "boring",
+            "popular"
+          ],
+          "ans": 0,
+          "explain": "'Beautiful' (đẹp) đúng vì mô tả vẻ đẹp của Phong Nha. 'Terrible' (khủng khiếp), 'boring' (nhàm chán) mang nghĩa tiêu cực."
+        },
+        {
+          "opts": [
+            "on",
+            "into",
+            "at",
+            "of"
+          ],
+          "ans": 2,
+          "explain": "'At' đúng vì dùng với thời điểm cụ thể hoặc địa điểm cụ thể. Ví dụ: 'at the entrance.'"
+        },
+        {
+          "opts": [
+            "Because",
+            "Although",
+            "If",
+            "So"
+          ],
+          "ans": 1,
+          "explain": "'Although' (mặc dù) đúng vì câu mang nghĩa nhượng bộ: 'Mặc dù... nhưng...' Tạo sự tương phản giữa hai vế câu."
+        },
+        {
+          "opts": [
+            "each",
+            "much",
+            "a little",
+            "a few"
+          ],
+          "ans": 3,
+          "explain": "'A few' (một vài) đúng vì dùng với danh từ đếm được số nhiều. 'Much' và 'a little' dùng cho danh từ không đếm được. 'Each' dùng cho từng cái một."
+        }
+      ]
+    },
+    {
+      "title": "CLEAN-UP FRIDAY!",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "give up",
+            "pick up",
+            "take off",
+            "bring up"
+          ],
+          "ans": 1,
+          "explain": "'Pick up' (nhặt lên) đúng vì nói về việc nhặt rác. 'Give up' (từ bỏ), 'take off' (cất cánh/cởi), 'bring up' (nuôi dưỡng) không phù hợp."
+        },
+        {
+          "opts": [
+            "at",
+            "on",
+            "in",
+            "from"
+          ],
+          "ans": 0,
+          "explain": "'At' đúng vì dùng với thời điểm cụ thể. Ví dụ: 'at 3 p.m.'"
+        },
+        {
+          "opts": [
+            "When",
+            "So",
+            "Although",
+            "Because"
+          ],
+          "ans": 2,
+          "explain": "'Although' (mặc dù) đúng vì câu mang nghĩa nhượng bộ: mặc dù điều này nhưng điều kia vẫn xảy ra."
+        },
+        {
+          "opts": [
+            "many",
+            "a little",
+            "much",
+            "little"
+          ],
+          "ans": 1,
+          "explain": "'A little' (một ít) đúng vì dùng với danh từ không đếm được, mang nghĩa tích cực (có một ít). 'Little' (ít) mang nghĩa tiêu cực (gần như không có)."
+        }
+      ]
+    },
+    {
+      "title": "HEALTHY EATING WEEK",
+      "instruction": "Read the following poster and circle the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "many",
+            "much",
+            "little",
+            "a little"
+          ],
+          "ans": 0,
+          "explain": "'Many' (nhiều) đúng vì dùng với danh từ đếm được số nhiều. 'Much' dùng cho danh từ không đếm được. 'Little/a little' cũng dùng cho không đếm được."
+        },
+        {
+          "opts": [
+            "of",
+            "with",
+            "in",
+            "on"
+          ],
+          "ans": 3,
+          "explain": "'On' đúng vì dùng với ngày trong tuần hoặc ngày cụ thể. Ví dụ: 'on Monday.'"
+        },
+        {
+          "opts": [
+            "Because",
+            "Although",
+            "So",
+            "Unless"
+          ],
+          "ans": 1,
+          "explain": "'Although' (mặc dù) đúng vì tạo sự tương phản: 'Mặc dù bạn thích đồ ngọt, hãy thử...'"
+        },
+        {
+          "opts": [
+            "spicy",
+            "healthy",
+            "junk",
+            "dry"
+          ],
+          "ans": 1,
+          "explain": "'Healthy' (lành mạnh) đúng vì bài nói về ăn uống lành mạnh. 'Junk' (rác) dùng trong 'junk food' là đồ ăn vặt, trái ngược ý bài."
+        }
+      ]
+    },
+    {
+      "title": "ENGLISH CAMP TRIP TO DA NANG!",
+      "instruction": "Read the following notice and circle the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "many",
+            "a few",
+            "some",
+            "all"
+          ],
+          "ans": 2,
+          "explain": "'Some' (một số) đúng vì nói về một số hoạt động. 'Many' (nhiều), 'a few' (vài), 'all' (tất cả) không phù hợp ngữ cảnh."
+        },
+        {
+          "opts": [
+            "put out",
+            "look after",
+            "take off",
+            "turn up"
+          ],
+          "ans": 3,
+          "explain": "'Turn up' (đến/xuất hiện) đúng vì nói về việc có mặt. 'Put out' (dập tắt), 'look after' (chăm sóc), 'take off' (cất cánh) không phù hợp."
+        },
+        {
+          "opts": [
+            "Because",
+            "Unless",
+            "While",
+            "When"
+          ],
+          "ans": 0,
+          "explain": "'Because' (vì) đúng vì giải thích lý do. Câu nêu nguyên nhân tại sao nên tham gia."
+        },
+        {
+          "opts": [
+            "lesson",
+            "event",
+            "opportunity",
+            "thing"
+          ],
+          "ans": 2,
+          "explain": "'Opportunity' (cơ hội) đúng vì nói về cơ hội học hỏi. 'Lesson' (bài học), 'event' (sự kiện), 'thing' (thứ) không diễn tả đúng ý."
+        }
+      ]
+    },
+    {
+      "title": "JOIN THE GLOBAL ENGLISH QUIZ!",
+      "instruction": "Read the following instruction and mark the letter A, B, C, or D to indicate the correct option that best fits each gap.",
+      "questions": [
+        {
+          "opts": [
+            "all",
+            "every",
+            "much",
+            "a little"
+          ],
+          "ans": 0,
+          "explain": "'All' (tất cả) đúng vì nói tất cả học sinh đều có thể tham gia. 'Every' đi với danh từ số ít. 'Much' và 'a little' dùng cho không đếm được."
+        },
+        {
+          "opts": [
+            "on",
+            "at",
+            "of",
+            "in"
+          ],
+          "ans": 0,
+          "explain": "'On' đúng vì dùng với ngày cụ thể hoặc ngày trong tuần. Ví dụ: 'on Friday.'"
+        },
+        {
+          "opts": [
+            "So",
+            "Because",
+            "While",
+            "Unless"
+          ],
+          "ans": 2,
+          "explain": "'While' (trong khi) đúng vì diễn tả hai hành động xảy ra đồng thời. 'So' (vì vậy), 'because' (vì), 'unless' (trừ khi) không phù hợp."
+        },
+        {
+          "opts": [
+            "present",
+            "gift",
+            "award",
+            "prize"
+          ],
+          "ans": 3,
+          "explain": "'Prize' (giải thưởng) đúng vì nói về giải thưởng cuộc thi. 'Present/gift' (quà tặng) là quà thông thường. 'Award' (giải thưởng danh dự) thường dùng cho thành tựu lớn."
+        }
+      ]
+    },
+    {
+      "title": "SPACE TALK WITH AN ASTRONAUT",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct option.",
+      "questions": [
+        {
+          "opts": [
+            "on",
+            "for",
+            "in",
+            "under"
+          ],
+          "ans": 2,
+          "explain": "'In' đúng vì dùng với lĩnh vực hoặc chủ đề: 'interested in' (quan tâm đến). Đây là giới từ cố định đi với 'interested.'"
+        },
+        {
+          "opts": [
+            "Unless",
+            "Although",
+            "While",
+            "Since"
+          ],
+          "ans": 3,
+          "explain": "'Since' (vì/kể từ) đúng vì giải thích lý do. Dùng 'since' để nêu nguyên nhân. 'Unless' (trừ khi), 'although' (mặc dù) không phù hợp."
+        },
+        {
+          "opts": [
+            "boring",
+            "useless",
+            "fascinating",
+            "simple"
+          ],
+          "ans": 2,
+          "explain": "'Fascinating' (hấp dẫn) đúng vì bài nói về buổi nói chuyện thú vị về vũ trụ. 'Boring' (nhàm chán), 'useless' (vô dụng) mang nghĩa tiêu cực."
+        },
+        {
+          "opts": [
+            "a few",
+            "many",
+            "much",
+            "little"
+          ],
+          "ans": 0,
+          "explain": "'A few' (một vài) đúng vì dùng với danh từ đếm được số nhiều. 'Much' và 'little' dùng cho không đếm được. 'Many' quá nhiều, không phù hợp."
+        }
+      ]
+    },
+    {
+      "title": "MESSAGE FROM THE SCHOOL COUNCIL",
+      "instruction": "Read the following invitation and mark the letter A, B, C, or D to indicate the correct word that best fits each numbered blank.",
+      "questions": [
+        {
+          "opts": [
+            "traditional",
+            "popular",
+            "modern",
+            "careful"
+          ],
+          "ans": 0,
+          "explain": "'Traditional' (truyền thống) đúng vì bài nói về hoạt động truyền thống của trường. 'Popular' (phổ biến), 'modern' (hiện đại) không phù hợp ngữ cảnh."
+        },
+        {
+          "opts": [
+            "with",
+            "in",
+            "on",
+            "at"
+          ],
+          "ans": 1,
+          "explain": "'In' đúng vì dùng với tháng, mùa, năm. Ví dụ: 'in October', 'in the morning.'"
+        },
+        {
+          "opts": [
+            "Unless",
+            "Because",
+            "When",
+            "While"
+          ],
+          "ans": 2,
+          "explain": "'When' (khi) đúng vì diễn tả thời điểm. 'Unless' (trừ khi), 'while' (trong khi) không phù hợp ngữ cảnh."
+        },
+        {
+          "opts": [
+            "all",
+            "much",
+            "few",
+            "every"
+          ],
+          "ans": 0,
+          "explain": "'All' (tất cả) đúng vì nói tất cả đều được chào đón. 'Much' dùng cho không đếm được, 'few' (ít), 'every' đi với danh từ số ít."
+        }
+      ]
+    },
+    {
+      "title": "CAREER TALK FOR STUDENTS",
+      "instruction": "Read the following invitation and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "subjects",
+            "schedules",
+            "careers",
+            "talents"
+          ],
+          "ans": 2,
+          "explain": "'Careers' (nghề nghiệp) đúng vì bài nói về buổi nói chuyện hướng nghiệp. 'Subjects' (môn học), 'schedules' (lịch trình), 'talents' (tài năng) không phù hợp."
+        },
+        {
+          "opts": [
+            "at",
+            "in",
+            "on",
+            "to"
+          ],
+          "ans": 1,
+          "explain": "'In' đúng vì dùng trong cụm 'in different fields' (trong các lĩnh vực khác nhau). Giới từ 'in' dùng cho lĩnh vực/ngành."
+        },
+        {
+          "opts": [
+            "a little",
+            "much",
+            "each",
+            "many"
+          ],
+          "ans": 3,
+          "explain": "'Many' (nhiều) đúng vì dùng với danh từ đếm được số nhiều. 'Much' dùng cho không đếm được. 'A little' dùng cho không đếm được."
+        },
+        {
+          "opts": [
+            "whose",
+            "who",
+            "where",
+            "that"
+          ],
+          "ans": 0,
+          "explain": "'Whose' (của ai) đúng vì dùng đại từ quan hệ chỉ sở hữu. Ví dụ: 'speakers whose experience...' (diễn giả có kinh nghiệm...)."
+        }
+      ]
+    },
+    {
+      "title": "SCHOOL ANNOUNCEMENT: CLEAN-UP DAY",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "take part in",
+            "take off",
+            "take after",
+            "take away"
+          ],
+          "ans": 0,
+          "explain": "'Take part in' (tham gia) đúng vì mời học sinh tham gia ngày dọn dẹp. 'Take off' (cất cánh), 'take after' (giống), 'take away' (mang đi) không phù hợp."
+        },
+        {
+          "opts": [
+            "at",
+            "for",
+            "on",
+            "to"
+          ],
+          "ans": 3,
+          "explain": "'To' đúng vì dùng trong cụm 'contribute to' (đóng góp cho) hoặc chỉ hướng đến mục đích."
+        },
+        {
+          "opts": [
+            "which",
+            "whose",
+            "who",
+            "where"
+          ],
+          "ans": 2,
+          "explain": "'Who' đúng vì dùng đại từ quan hệ thay thế cho người. 'Which' dùng cho vật, 'where' cho nơi chốn, 'whose' chỉ sở hữu."
+        },
+        {
+          "opts": [
+            "many",
+            "little",
+            "much",
+            "each"
+          ],
+          "ans": 0,
+          "explain": "'Many' (nhiều) đúng vì dùng với danh từ đếm được số nhiều. 'Much' dùng cho không đếm được, 'little' cũng dùng cho không đếm được."
+        }
+      ]
+    },
+    {
+      "title": "CHANGES TO CITY BUS ROUTES",
+      "instruction": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "a little",
+            "all",
+            "each",
+            "little"
+          ],
+          "ans": 1,
+          "explain": "'All' (tất cả) đúng vì nói về tất cả các tuyến xe buýt. 'A little' và 'little' dùng cho không đếm được. 'Each' đi với danh từ số ít."
+        },
+        {
+          "opts": [
+            "on",
+            "at",
+            "under",
+            "between"
+          ],
+          "ans": 0,
+          "explain": "'On' đúng vì dùng với đường phố, tuyến đường. Ví dụ: 'on Route 5', 'on the street.'"
+        },
+        {
+          "opts": [
+            "Because",
+            "If",
+            "Unless",
+            "Though"
+          ],
+          "ans": 3,
+          "explain": "'Though' (mặc dù) đúng vì tạo sự tương phản giữa hai vế câu. 'Because' (vì), 'if' (nếu), 'unless' (trừ khi) không phù hợp."
+        },
+        {
+          "opts": [
+            "car",
+            "travel",
+            "transport",
+            "bus"
+          ],
+          "ans": 3,
+          "explain": "'Bus' đúng vì bài nói về thay đổi tuyến xe buýt. 'Car' (ô tô), 'travel' (du lịch), 'transport' (giao thông) không cụ thể bằng."
+        }
+      ]
+    },
+    {
+      "title": "VOLUNTEER TO PRESERVE HISTORY!",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "many",
+            "few",
+            "little",
+            "much"
+          ],
+          "ans": 0,
+          "explain": "'Many' (nhiều) đúng vì dùng với danh từ đếm được số nhiều. 'Few' (ít), 'little' (ít - không đếm được), 'much' (nhiều - không đếm được) không phù hợp ngữ cảnh tích cực."
+        },
+        {
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "ans": 3,
+          "explain": "'To' đúng vì dùng trong cụm 'contribute to' (đóng góp cho) hoặc 'go to' chỉ hướng."
+        },
+        {
+          "opts": [
+            "which",
+            "whom",
+            "who",
+            "where"
+          ],
+          "ans": 2,
+          "explain": "'Who' đúng vì dùng đại từ quan hệ thay thế cho người. Ví dụ: 'volunteers who want to help.' 'Which' dùng cho vật."
+        },
+        {
+          "opts": [
+            "help",
+            "experience",
+            "advice",
+            "weight"
+          ],
+          "ans": 1,
+          "explain": "'Experience' (kinh nghiệm) đúng vì tình nguyện giúp có thêm kinh nghiệm. 'Help' (giúp đỡ), 'advice' (lời khuyên), 'weight' (cân nặng) không phù hợp."
+        }
+      ]
+    },
+    {
+      "title": "INVITATION TO YOUTH TECH FAIR",
+      "instruction": "Read the following invitation and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "much",
+            "a little",
+            "a",
+            "any"
+          ],
+          "ans": 3,
+          "explain": "'Any' (bất kỳ) đúng vì dùng trong câu hỏi hoặc câu mời: 'Do you have any interest...' 'Much' (nhiều - không đếm được), 'a little' (một ít) không phù hợp."
+        },
+        {
+          "opts": [
+            "at",
+            "on",
+            "for",
+            "of"
+          ],
+          "ans": 0,
+          "explain": "'At' đúng vì dùng với địa điểm cụ thể. Ví dụ: 'at the tech center.'"
+        },
+        {
+          "opts": [
+            "So",
+            "Unless",
+            "If",
+            "Although"
+          ],
+          "ans": 2,
+          "explain": "'If' (nếu) đúng vì câu điều kiện: 'Nếu bạn quan tâm, hãy đăng ký.' 'So' (vì vậy), 'unless' (trừ khi) không phù hợp."
+        },
+        {
+          "opts": [
+            "boring",
+            "interactive",
+            "annual",
+            "normal"
+          ],
+          "ans": 1,
+          "explain": "'Interactive' (tương tác) đúng vì hội chợ công nghệ có các hoạt động tương tác. 'Boring' (nhàm chán) mang nghĩa tiêu cực. 'Annual' (hàng năm), 'normal' (bình thường) không phù hợp."
+        }
+      ]
+    },
+    {
+      "title": "EXPLORE THE BEAUTY OF HALONG BAY!",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "another",
+            "other",
+            "every",
+            "one"
+          ],
+          "ans": 1,
+          "explain": "'Other' (khác) đúng vì dùng trong cụm 'other activities' (các hoạt động khác). 'Another' đi với danh từ số ít, 'every' (mọi), 'one' (một) không phù hợp."
+        },
+        {
+          "opts": [
+            "above",
+            "under",
+            "between",
+            "on"
+          ],
+          "ans": 2,
+          "explain": "'Between' đúng vì dùng để chỉ giữa hai mốc thời gian hoặc hai điểm. Ví dụ: 'between 8 a.m. and 5 p.m.'"
+        },
+        {
+          "opts": [
+            "Unless",
+            "So",
+            "While",
+            "Whether"
+          ],
+          "ans": 3,
+          "explain": "'Whether' (dù cho/liệu) đúng vì diễn tả hai lựa chọn: 'Dù bạn thích A hay B.' 'Unless' (trừ khi), 'so' (vì vậy), 'while' (trong khi) không phù hợp."
+        },
+        {
+          "opts": [
+            "wonderful",
+            "boring",
+            "terrible",
+            "common"
+          ],
+          "ans": 0,
+          "explain": "'Wonderful' (tuyệt vời) đúng vì mô tả vẻ đẹp Vịnh Hạ Long. 'Boring' (nhàm chán), 'terrible' (khủng khiếp), 'common' (bình thường) đều không phù hợp quảng cáo du lịch."
+        }
+      ]
+    },
+    {
+      "title": "YOUTH CLIMATE VOICE - JOIN THE ACTION!",
+      "instruction": "Read the following public message and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "for",
+            "in",
+            "on",
+            "of"
+          ],
+          "ans": 0,
+          "explain": "'For' đúng vì dùng trong cụm 'care for' (quan tâm đến) hoặc 'fight for' (đấu tranh cho). Giới từ cố định."
+        },
+        {
+          "opts": [
+            "much",
+            "some",
+            "a little",
+            "an"
+          ],
+          "ans": 1,
+          "explain": "'Some' (một số) đúng vì nói về một số ý tưởng hoặc hoạt động. 'Much' dùng cho không đếm được, 'a little' cũng vậy."
+        },
+        {
+          "opts": [
+            "where",
+            "who",
+            "when",
+            "which"
+          ],
+          "ans": 0,
+          "explain": "'Where' đúng vì dùng đại từ quan hệ chỉ nơi chốn. Ví dụ: 'a place where you can share ideas.'"
+        },
+        {
+          "opts": [
+            "memory",
+            "motive",
+            "feeling",
+            "sense"
+          ],
+          "ans": 3,
+          "explain": "'Sense' (cảm giác/ý thức) đúng vì dùng trong cụm 'a sense of responsibility' (ý thức trách nhiệm). 'Memory' (ký ức), 'motive' (động cơ), 'feeling' (cảm xúc) không phù hợp."
+        }
+      ]
+    },
+    {
+      "title": "JOIN OUR TEEN CHEF COOKING CLASS!",
+      "instruction": "Read the following advertisement and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "at",
+            "on",
+            "for",
+            "in"
+          ],
+          "ans": 2,
+          "explain": "'For' đúng vì dùng trong cụm 'for teens' hoặc 'for beginners' chỉ đối tượng. 'At' (tại), 'on' (trên), 'in' (trong) không phù hợp."
+        },
+        {
+          "opts": [
+            "many",
+            "few",
+            "an",
+            "much"
+          ],
+          "ans": 3,
+          "explain": "'Much' (nhiều) đúng vì dùng với danh từ không đếm được như 'fun' (niềm vui). 'Many' dùng cho đếm được, 'an' là mạo từ, 'few' dùng cho đếm được."
+        },
+        {
+          "opts": [
+            "tools",
+            "skills",
+            "appliances",
+            "furniture"
+          ],
+          "ans": 1,
+          "explain": "'Skills' (kỹ năng) đúng vì lớp nấu ăn giúp học kỹ năng nấu nướng. 'Tools' (dụng cụ), 'appliances' (thiết bị), 'furniture' (đồ nội thất) không phù hợp."
+        },
+        {
+          "opts": [
+            "because",
+            "although",
+            "but",
+            "so"
+          ],
+          "ans": 3,
+          "explain": "'So' (vì vậy) đúng vì nối hai vế có quan hệ nguyên nhân - kết quả. 'Because' (vì) nêu nguyên nhân, 'although' (mặc dù) nhượng bộ, 'but' (nhưng) tương phản."
+        }
+      ]
+    },
+    {
+      "title": "HOW TO ENROLL IN OUR GLOBAL ENGLISH COURSE",
+      "instruction": "Read the following instruction and mark the letter A, B, C, or D to indicate the correct option that best fits each of the numbered blanks.",
+      "questions": [
+        {
+          "opts": [
+            "grammar",
+            "level",
+            "accent",
+            "subject"
+          ],
+          "ans": 1,
+          "explain": "'Level' (trình độ) đúng vì nói về trình độ tiếng Anh khi đăng ký khóa học. 'Grammar' (ngữ pháp), 'accent' (giọng), 'subject' (môn học) không phù hợp."
+        },
+        {
+          "opts": [
+            "much",
+            "all",
+            "every",
+            "most"
+          ],
+          "ans": 1,
+          "explain": "'All' (tất cả) đúng vì nói tất cả tài liệu hoặc thông tin cần thiết. 'Much' (nhiều - không đếm được), 'every' (mọi - số ít), 'most' (hầu hết) không phù hợp."
+        },
+        {
+          "opts": [
+            "which",
+            "when",
+            "where",
+            "who"
+          ],
+          "ans": 2,
+          "explain": "'Where' đúng vì dùng đại từ quan hệ chỉ nơi chốn. Ví dụ: 'a place where you can practice.'"
+        },
+        {
+          "opts": [
+            "to",
+            "in",
+            "at",
+            "by"
+          ],
+          "ans": 3,
+          "explain": "'By' đúng vì dùng trong cụm chỉ phương tiện hoặc cách thức: 'by email', 'by phone.' 'To' (đến), 'in' (trong), 'at' (tại) không phù hợp."
+        }
+      ]
+    }
+  ],
+  "comprehension": [
+    {
+      "title": "Tan Cuong Tea",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "The landscapes of Thai Nguyen.",
+            "The specialty tea from Thai Nguyen.",
+            "How to process tea leaves.",
+            "How to grow tea trees."
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì toàn bài nói về trà đặc sản Tân Cương của Thái Nguyên - nguồn gốc, cách trồng và giá trị của nó."
+        },
+        {
+          "q": "According to the passage, Tan Cuong Tea is unique because ___.",
+          "opts": [
+            "it is free from harmful pesticides",
+            "it is harvested in a traditional way",
+            "it is stored to maintain the quality",
+            "it is exported to many countries"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì bài viết nói trà Tân Cương đặc biệt vì không sử dụng thuốc trừ sâu có hại, đảm bảo an toàn cho sức khỏe."
+        },
+        {
+          "q": "Why has there been support for businesses and farmers in tea cultivation?",
+          "opts": [
+            "To preserve and expand the unique Tan Cuong tea-producing region.",
+            "To ensure tea trees are free from harmful pesticide.",
+            "To maintain the quality of tea leaves.",
+            "To help tea farm owners establish facilities for tourists."
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì chính quyền hỗ trợ doanh nghiệp và nông dân nhằm bảo tồn và mở rộng vùng trà Tân Cương đặc trưng."
+        },
+        {
+          "q": "The word 'preserve' in paragraph 3 is closest in meaning to ___.",
+          "opts": [
+            "destroy",
+            "damage",
+            "protect",
+            "provide"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'preserve' nghĩa là bảo tồn, gần nghĩa nhất với 'protect' (bảo vệ). 'Destroy' (phá hủy) và 'damage' (làm hư hại) trái nghĩa."
+        },
+        {
+          "q": "According to the passage, visitors to Tan Cuong Commune can do all of the following EXCEPT ___.",
+          "opts": [
+            "staying overnight",
+            "enjoying tea",
+            "seeing tea hills",
+            "harvesting tea"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì bài không đề cập du khách có thể thu hoạch trà. Bài chỉ nói du khách có thể ngắm đồi trà, thưởng trà và nghỉ qua đêm."
+        }
+      ]
+    },
+    {
+      "title": "Unusual Community Helper Jobs",
+      "questions": [
+        {
+          "q": "Which best serves as the title for the passage?",
+          "opts": [
+            "Typical Jobs",
+            "Well-paid Jobs",
+            "Unusual Jobs",
+            "Low-paid Jobs"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C 'Unusual Jobs' (Nghề nghiệp bất thường) đúng vì bài giới thiệu các công việc kỳ lạ như oshiya, người rửa tòa nhà cao tầng, người lặn nhặt bóng golf."
+        },
+        {
+          "q": "The word 'overcrowded' in paragraph A is CLOSEST in meaning to ___.",
+          "opts": [
+            "packed",
+            "peaceful",
+            "empty",
+            "unlimited"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'overcrowded' nghĩa là quá đông đúc, gần nghĩa với 'packed' (chật kín). 'Peaceful' (yên bình) và 'empty' (trống) trái nghĩa."
+        },
+        {
+          "q": "According to paragraph A, what do 'oshiya' do during rush hour?",
+          "opts": [
+            "They count the number of commuters.",
+            "They endure the pain inside the train.",
+            "They push passengers into trains.",
+            "They pay attention to each commuter."
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì theo bài, 'oshiya' là người đẩy hành khách vào tàu điện trong giờ cao điểm ở Nhật Bản."
+        },
+        {
+          "q": "How long does it take to clean the Burj Khalifa in Dubai?",
+          "opts": [
+            "800 days",
+            "three months",
+            "36 weeks",
+            "more than three months"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì theo bài, việc lau rửa tòa Burj Khalifa ở Dubai mất ba tháng."
+        },
+        {
+          "q": "All of the following are said about golf ball divers EXCEPT ___.",
+          "opts": [
+            "most of them are scuba divers",
+            "they clean the balls before selling or recycling them",
+            "they look for lost golf balls in lakes and ponds",
+            "they make a very high salary from this job"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì bài KHÔNG nói người lặn bóng golf kiếm lương rất cao. Bài nói họ nhặt bóng, rửa sạch và bán/tái chế."
+        }
+      ]
+    },
+    {
+      "title": "Problems in Johannesburg",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "Johannesburg is a clean and safe city.",
+            "Johannesburg has some problems and possible solutions.",
+            "The government doesn't care about the people.",
+            "People don't want to live there anymore."
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài nói về các vấn đề của Johannesburg (tội phạm, nhà ở, ô nhiễm) và các giải pháp có thể."
+        },
+        {
+          "q": "The word 'They' in paragraph 2 refers to ___.",
+          "opts": [
+            "cities",
+            "people living in Johannesburg",
+            "criminals",
+            "government"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'They' ở đoạn 2 chỉ người dân sống ở Johannesburg, được đề cập trước đó trong đoạn văn."
+        },
+        {
+          "q": "Which best describes the impact of crime on people's daily lives?",
+          "opts": [
+            "They choose to leave the city permanently.",
+            "They are unable to maintain a normal way of life.",
+            "They are forced to commit crimes to survive.",
+            "They can no longer receive support from the government."
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì tội phạm khiến người dân không thể duy trì cuộc sống bình thường, ảnh hưởng đến sinh hoạt hàng ngày."
+        },
+        {
+          "q": "Which of the following is TRUE about Johannesburg?",
+          "opts": [
+            "There won't be enough homes for people in the future.",
+            "There aren't enough jobs for people.",
+            "Johannesburg doesn't have any homeless people anymore.",
+            "There aren't many apartment buildings now."
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì bài nói trong tương lai sẽ không đủ nhà ở cho người dân do dân số tăng nhanh."
+        },
+        {
+          "q": "Which solutions are suggested to improve living conditions?",
+          "opts": [
+            "Reducing the city's population.",
+            "Focusing mainly on economic growth.",
+            "Encouraging people to use private cars.",
+            "Improving public safety, housing conditions, and environmental quality."
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì bài đề xuất cải thiện an ninh công cộng, điều kiện nhà ở và chất lượng môi trường."
+        }
+      ]
+    },
+    {
+      "title": "Advantages of Living in Cities",
+      "questions": [
+        {
+          "q": "What could be the best title for the passage?",
+          "opts": [
+            "Advantages of living in Cities",
+            "Features of Dynamic Cities",
+            "Education and Employment in Cities",
+            "High-skilled and Low-skilled Labour Forces"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì toàn bài nói về các lợi thế khi sống ở thành phố: giáo dục, việc làm, dịch vụ."
+        },
+        {
+          "q": "The word 'pro' is closest in meaning to ___.",
+          "opts": [
+            "disadvantage",
+            "advantage",
+            "trouble",
+            "feature"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'pro' nghĩa là lợi thế, ưu điểm. Trái nghĩa với 'con' (nhược điểm). 'Disadvantage' (bất lợi) là trái nghĩa."
+        },
+        {
+          "q": "Why do pre-school teachers prefer working in cities?",
+          "opts": [
+            "Because parents leave their kids at preschool.",
+            "Because they can earn high salaries.",
+            "Because they can have access to great education.",
+            "Because they can have more job opportunities."
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì theo bài, giáo viên mầm non thích làm việc ở thành phố vì có thể kiếm được lương cao hơn."
+        },
+        {
+          "q": "How many advantages of living in cities are mentioned?",
+          "opts": [
+            "four",
+            "three",
+            "two",
+            "one"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì bài đề cập hai lợi thế chính: giáo dục tốt hơn và nhiều cơ hội việc làm hơn."
+        },
+        {
+          "q": "Which of the following statements is TRUE?",
+          "opts": [
+            "Pre-school education in cities is of good quality because of well-trained teachers.",
+            "People living in cities find it difficult to get a job.",
+            "Families in cities cannot choose suitable schools.",
+            "City life offers few chances for both skilled and unskilled workers."
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì bài nói giáo dục mầm non ở thành phố có chất lượng tốt nhờ giáo viên được đào tạo bài bản. Các đáp án khác trái với nội dung bài."
+        }
+      ]
+    },
+    {
+      "title": "Making Homework Less Stressful",
+      "questions": [
+        {
+          "q": "The first thing to do to make homework less stressful is ___.",
+          "opts": [
+            "to remember the deadline",
+            "to understand what you have to do in your assignment",
+            "to go to the school library as soon as possible",
+            "to know what it can do for you"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bước đầu tiên là hiểu rõ bài tập được giao, biết mình cần làm gì trước khi bắt đầu."
+        },
+        {
+          "q": "The word 'stressful' in paragraph 1 is opposite in meaning to ___.",
+          "opts": [
+            "annoying",
+            "relaxing",
+            "tiring",
+            "wasteful"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'stressful' (căng thẳng) trái nghĩa với 'relaxing' (thư giãn). 'Annoying' (khó chịu) và 'tiring' (mệt mỏi) là từ gần nghĩa, không phải trái nghĩa."
+        },
+        {
+          "q": "What should you do if you have extra time at school?",
+          "opts": [
+            "spend time with your friends",
+            "use it to make your day planner",
+            "use it to understand the assignment",
+            "study or get your homework done"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì bài khuyên tận dụng thời gian rảnh ở trường để học bài hoặc làm bài tập về nhà."
+        },
+        {
+          "q": "Who is the first person to ask when a student needs some help?",
+          "opts": [
+            "the best student at school",
+            "his teacher",
+            "a member of his family",
+            "his friend"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài nói người đầu tiên nên hỏi khi cần giúp đỡ là giáo viên (teacher)."
+        },
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "Some tips to avoid worrying about homework",
+            "Some ways to look after your physical health",
+            "Some advice to get on with friends at school",
+            "Some reasons to do homework in school libraries"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì bài đưa ra các mẹo giúp giảm lo lắng về bài tập: lên kế hoạch, hiểu bài, nhờ giúp đỡ."
+        }
+      ]
+    },
+    {
+      "title": "Time Management - Jane and Jack",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "How teenagers and adults use technology to relax",
+            "Balancing work, study, and personal life through good time management",
+            "Differences between a student's lifestyle and an adult's family responsibilities",
+            "Ways people can improve their health by doing volunteer work"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì bài so sánh lối sống của Jane (học sinh) và Jack (người lớn) về cách quản lý thời gian trong cuộc sống hàng ngày."
+        },
+        {
+          "q": "What is the main difference between Jane and Jack's approach?",
+          "opts": [
+            "Jane limits her social media use, while Jack avoids distractions by turning off notifications.",
+            "Jane uses a to-do list, while Jack does not use any planning tools.",
+            "Jane frequently works overtime, while Jack has a flexible work schedule.",
+            "Jane spends a lot of time on social media, while Jack spends little time with his family."
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì Jane giới hạn thời gian dùng mạng xã hội, còn Jack tắt thông báo để tránh bị phân tâm. Đây là sự khác biệt chính."
+        },
+        {
+          "q": "Which word is closest in meaning to 'organized'?",
+          "opts": [
+            "arranged",
+            "ignored",
+            "delayed",
+            "confused"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'organized' (có tổ chức) gần nghĩa với 'arranged' (được sắp xếp). 'Ignored' (bị bỏ qua), 'delayed' (bị trì hoãn) khác nghĩa."
+        },
+        {
+          "q": "Why does Jane limit her social media time?",
+          "opts": [
+            "To avoid wasting time and stay focused",
+            "To relax and clear her mind",
+            "To focus on volunteer work",
+            "To spend more time with her family"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì Jane giới hạn thời gian dùng mạng xã hội để tránh lãng phí thời gian và tập trung hơn vào việc học."
+        },
+        {
+          "q": "Which statement is NOT TRUE based on the text?",
+          "opts": [
+            "Jack frequently checks social media notifications at work.",
+            "Jane uses a daily to-do list to stay focused.",
+            "Jack turns off notifications to avoid distractions.",
+            "Jane enjoys volunteering at a local charity."
+          ],
+          "ans": 0,
+          "explain": "Đáp án A sai (NOT TRUE) vì bài nói Jack tắt thông báo mạng xã hội khi làm việc, không phải thường xuyên kiểm tra."
+        }
+      ]
+    },
+    {
+      "title": "My First Group Discussion",
+      "questions": [
+        {
+          "q": "What is the main idea of the passage?",
+          "opts": [
+            "A group of students discuss how to protect the environment.",
+            "A student learns to become more confident after preparing well for a group discussion.",
+            "A teacher praises her students for their good teamwork skills.",
+            "A student searches for information about recycling."
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài kể về quá trình một học sinh chuẩn bị kỹ và trở nên tự tin hơn sau buổi thảo luận nhóm đầu tiên."
+        },
+        {
+          "q": "What did the speaker do to prepare for the discussion?",
+          "opts": [
+            "Read books about animals",
+            "Practiced speaking and wrote notes",
+            "Asked the teacher for help",
+            "Talked to friends about sports"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài nói người kể đã luyện nói và viết ghi chú để chuẩn bị cho buổi thảo luận."
+        },
+        {
+          "q": "How did the speaker feel at the beginning of the discussion?",
+          "opts": [
+            "Relaxed",
+            "Excited",
+            "Nervous",
+            "Confident"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì lúc đầu người kể cảm thấy lo lắng (nervous) trước buổi thảo luận nhóm đầu tiên."
+        },
+        {
+          "q": "The word 'praised' in paragraph 4 is closest in meaning to ___.",
+          "opts": [
+            "criticized",
+            "admired",
+            "complimented",
+            "ignored"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'praised' nghĩa là khen ngợi, gần nghĩa với 'complimented' (khen). 'Criticized' (chỉ trích) và 'ignored' (bỏ qua) trái nghĩa."
+        },
+        {
+          "q": "Which of the following is NOT true?",
+          "opts": [
+            "The speaker practiced speaking several times.",
+            "The group discussion topic was about protecting the environment.",
+            "The teacher was unhappy with the group's performance.",
+            "The speaker felt more confident after finishing the discussion."
+          ],
+          "ans": 2,
+          "explain": "Đáp án C sai (NOT true) vì bài nói giáo viên hài lòng và khen ngợi nhóm, không phải không vui. Các đáp án khác đều đúng theo bài."
+        }
+      ]
+    },
+    {
+      "title": "The Impact of Experiences on Personal Growth",
+      "questions": [
+        {
+          "q": "What is the main topic of the passage?",
+          "opts": [
+            "The role of traveling in learning about different cultures",
+            "The benefits of attending workshops on communication",
+            "The importance of dealing with academic challenges",
+            "The overall impact of experiences on personal growth"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì bài nói tổng quát về tác động của trải nghiệm đến sự phát triển cá nhân, bao gồm du lịch, thử thách và hội thảo."
+        },
+        {
+          "q": "The word 'difficult' in paragraph 3 means ___.",
+          "opts": [
+            "easy",
+            "simple",
+            "hard",
+            "fun"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì 'difficult' nghĩa là khó khăn, đồng nghĩa với 'hard'. 'Easy' (dễ) và 'simple' (đơn giản) trái nghĩa."
+        },
+        {
+          "q": "How does traveling help us?",
+          "opts": [
+            "By making us more physically fit",
+            "By teaching us about different cultures and ways of life",
+            "By providing financial benefits",
+            "By improving academic grades"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài nói du lịch giúp ta tìm hiểu về các nền văn hóa và lối sống khác nhau."
+        },
+        {
+          "q": "The word 'They' in paragraph 5 refers to ___.",
+          "opts": [
+            "experiences",
+            "workshops",
+            "challenges",
+            "school projects"
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì 'They' ở đoạn 5 chỉ 'experiences' (những trải nghiệm) được đề cập trước đó."
+        },
+        {
+          "q": "Which statement is NOT true about experiences?",
+          "opts": [
+            "Traveling helps us learn about different cultures.",
+            "Facing challenges teaches us to keep trying.",
+            "Attending workshops makes us better at communication.",
+            "Experiences only include major life events."
+          ],
+          "ans": 3,
+          "explain": "Đáp án D sai (NOT true) vì bài nói trải nghiệm bao gồm cả những việc nhỏ hàng ngày, không chỉ những sự kiện lớn trong đời."
+        }
+      ]
+    },
+    {
+      "title": "Trang An Landscape Complex",
+      "questions": [
+        {
+          "q": "What is the passage mainly about?",
+          "opts": [
+            "The history of Ninh Binh Province",
+            "The beauty and value of Trang An Landscape Complex",
+            "The development of tourism in Vietnam",
+            "The caves and mountains in Ha Long Bay"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài nói chính về vẻ đẹp và giá trị của Quần thể Danh thắng Tràng An."
+        },
+        {
+          "q": "When was Trang An recognized as a World Heritage Site?",
+          "opts": [
+            "In 1989",
+            "In 1995",
+            "In 2014",
+            "In 2020"
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì theo bài, Tràng An được UNESCO công nhận là Di sản Thế giới năm 2014."
+        },
+        {
+          "q": "The word 'breathtaking' in paragraph 2 is closest in meaning to ___.",
+          "opts": [
+            "ordinary",
+            "impressive",
+            "boring",
+            "dangerous"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'breathtaking' nghĩa là ngoạn mục, gần nghĩa với 'impressive' (ấn tượng). 'Ordinary' (bình thường) và 'boring' (nhàm chán) trái nghĩa."
+        },
+        {
+          "q": "Which of the following statements is TRUE?",
+          "opts": [
+            "Trang An was once the capital of Vietnam in ancient times.",
+            "Trang An is famous only for its temples and pagodas.",
+            "There are no rivers or caves in the Trang An area.",
+            "The local authorities don't care about protecting the environment."
+          ],
+          "ans": 0,
+          "explain": "Đáp án A đúng vì bài đề cập Tràng An từng là kinh đô của Việt Nam thời cổ đại (cố đô Hoa Lư)."
+        },
+        {
+          "q": "Which of the following is NOT mentioned in the passage?",
+          "opts": [
+            "The cultural and historical significance of Trang An.",
+            "The effort to protect the site for future generations.",
+            "The exact number of tourists visiting Trang An each year.",
+            "The comparison between Trang An and Ha Long Bay."
+          ],
+          "ans": 2,
+          "explain": "Đáp án C đúng vì bài KHÔNG đề cập số lượng du khách chính xác đến Tràng An mỗi năm. Các thông tin khác đều có trong bài."
+        }
+      ]
+    },
+    {
+      "title": "Career Guidance in British Schools",
+      "questions": [
+        {
+          "q": "What does Mr. Hemmings say about his job as a careers teacher?",
+          "opts": [
+            "It is a stressful job.",
+            "It is an easy job.",
+            "It is a challenging experience.",
+            "It is a rewarding experience."
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì thầy Hemmings nói công việc giáo viên hướng nghiệp là một trải nghiệm đáng giá (rewarding). 'Stressful' (căng thẳng) và 'easy' (dễ) không đúng."
+        },
+        {
+          "q": "How often do British students have careers lessons?",
+          "opts": [
+            "Once a fortnight",
+            "Twice a month",
+            "Twice a week",
+            "Once a week"
+          ],
+          "ans": 3,
+          "explain": "Đáp án D đúng vì theo bài, học sinh Anh có tiết hướng nghiệp mỗi tuần một lần (once a week). 'Fortnight' là hai tuần."
+        },
+        {
+          "q": "The word 'accurately' in paragraph 2 is closest in meaning to ___.",
+          "opts": [
+            "frequently",
+            "exactly",
+            "usually",
+            "incorrectly"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'accurately' nghĩa là chính xác, đồng nghĩa với 'exactly'. 'Frequently' (thường xuyên), 'incorrectly' (không chính xác) khác nghĩa."
+        },
+        {
+          "q": "The word 'They' in paragraph 3 refers to ___.",
+          "opts": [
+            "the senses",
+            "some youngsters",
+            "personal skills",
+            "office jobs"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì 'They' ở đoạn 3 chỉ 'some youngsters' (một số bạn trẻ) được đề cập trước đó trong câu."
+        },
+        {
+          "q": "What does the passage mainly discuss?",
+          "opts": [
+            "Merits of British career teachers",
+            "Challenges faced by British careers teachers and their students in career advice",
+            "Rewards for British career teachers",
+            "Excitement among British career teachers"
+          ],
+          "ans": 1,
+          "explain": "Đáp án B đúng vì bài chủ yếu thảo luận về những thách thức mà giáo viên hướng nghiệp và học sinh gặp phải trong tư vấn nghề nghiệp ở Anh."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2808 @@
+{
+  "units": {
+    "1": {
+      "title": "School",
+      "vocabulary": [
+        {
+          "en": "geography",
+          "type": "n",
+          "vi": "môn địa lý"
+        },
+        {
+          "en": "history",
+          "type": "n",
+          "vi": "môn lịch sử"
+        },
+        {
+          "en": "science",
+          "type": "n",
+          "vi": "môn khoa học"
+        },
+        {
+          "en": "I.T.",
+          "type": "n",
+          "vi": "môn tin học"
+        },
+        {
+          "en": "Vietnamese",
+          "type": "n",
+          "vi": "môn tiếng Việt"
+        },
+        {
+          "en": "ethics",
+          "type": "n",
+          "vi": "môn đạo đức"
+        },
+        {
+          "en": "math",
+          "type": "n",
+          "vi": "môn toán"
+        },
+        {
+          "en": "English",
+          "type": "n",
+          "vi": "môn tiếng Anh"
+        },
+        {
+          "en": "art",
+          "type": "n",
+          "vi": "môn mỹ thuật"
+        },
+        {
+          "en": "music",
+          "type": "n",
+          "vi": "môn âm nhạc"
+        },
+        {
+          "en": "P.E.",
+          "type": "n",
+          "vi": "môn thể dục"
+        },
+        {
+          "en": "subject",
+          "type": "n",
+          "vi": "môn học"
+        },
+        {
+          "en": "solving problems",
+          "type": "v phr",
+          "vi": "giải quyết vấn đề"
+        },
+        {
+          "en": "doing experiments",
+          "type": "v phr",
+          "vi": "làm thí nghiệm"
+        },
+        {
+          "en": "making things",
+          "type": "v phr",
+          "vi": "làm đồ vật"
+        },
+        {
+          "en": "using computers",
+          "type": "v phr",
+          "vi": "sử dụng máy tính"
+        },
+        {
+          "en": "reading stories",
+          "type": "v phr",
+          "vi": "đọc truyện"
+        },
+        {
+          "en": "learning languages",
+          "type": "v phr",
+          "vi": "học ngôn ngữ"
+        },
+        {
+          "en": "always",
+          "type": "adv",
+          "vi": "luôn luôn (100%)"
+        },
+        {
+          "en": "usually",
+          "type": "adv",
+          "vi": "thường xuyên (80%)"
+        },
+        {
+          "en": "often",
+          "type": "adv",
+          "vi": "thường (70%)"
+        },
+        {
+          "en": "sometimes",
+          "type": "adv",
+          "vi": "thỉnh thoảng (50%)"
+        },
+        {
+          "en": "rarely",
+          "type": "adv",
+          "vi": "hiếm khi (5%)"
+        },
+        {
+          "en": "never",
+          "type": "adv",
+          "vi": "không bao giờ (0%)"
+        },
+        {
+          "en": "a.m.",
+          "type": "n",
+          "vi": "buổi sáng (trước 12 giờ trưa)"
+        },
+        {
+          "en": "p.m.",
+          "type": "n",
+          "vi": "buổi chiều/tối (sau 12 giờ trưa)"
+        },
+        {
+          "en": "o'clock",
+          "type": "n",
+          "vi": "giờ đúng"
+        },
+        {
+          "en": "a quarter to",
+          "type": "phr",
+          "vi": "kém 15 phút"
+        },
+        {
+          "en": "a quarter past",
+          "type": "phr",
+          "vi": "15 phút (hơn)"
+        },
+        {
+          "en": "timetable",
+          "type": "n",
+          "vi": "thời khóa biểu"
+        }
+      ],
+      "grammar": [
+        "Which subject do you like? - I like + subject.",
+        "Why do you like + subject? - Because I like + V-ing.",
+        "Adverbs of frequency: always, usually, often, sometimes, rarely, never",
+        "What time does your ... class start? - It starts at + time."
+      ],
+      "grammar_notes": "1. Hỏi về môn học yêu thích:\n- Which subject do you like? (Bạn thích môn nào?) → I like science. (Mình thích khoa học.)\n- Which subject does he/she like? (Anh/Cô ấy thích môn nào?) → He/She likes English.\n\n2. Hỏi lý do tại sao thích:\n- Why do you like math? (Tại sao bạn thích toán?) → Because I like solving problems. (Vì mình thích giải bài toán.)\n\n3. Trạng từ chỉ tần suất (đứng trước động từ thường, sau 'to be'):\n- always (luôn luôn - 100%), usually (thường xuyên - 80%), often (thường - 70%), sometimes (thỉnh thoảng - 50%), rarely (hiếm khi - 5%), never (không bao giờ - 0%)\n- Ví dụ: I always learn new words in English class. / He sometimes does experiments.\n\n4. Hỏi giờ bắt đầu:\n- What time does your English class start? → It starts at eight o'clock / a quarter past nine.",
+      "exercises": [
+        {
+          "q": "Which subject _____ you like?",
+          "opts": [
+            "do",
+            "does",
+            "is",
+            "are"
+          ],
+          "ans": 0,
+          "explain": "'you' đi với trợ động từ 'do' trong câu hỏi."
+        },
+        {
+          "q": "Which subject does she _____?",
+          "opts": [
+            "likes",
+            "like",
+            "liking",
+            "liked"
+          ],
+          "ans": 1,
+          "explain": "Sau 'does' động từ giữ nguyên dạng (không thêm s)."
+        },
+        {
+          "q": "I like science _____ I like doing experiments.",
+          "opts": [
+            "so",
+            "but",
+            "because",
+            "and"
+          ],
+          "ans": 2,
+          "explain": "'because' dùng để nêu lý do (vì)."
+        },
+        {
+          "q": "Why do you like I.T.? - Because I like _____ computers.",
+          "opts": [
+            "use",
+            "uses",
+            "using",
+            "used"
+          ],
+          "ans": 2,
+          "explain": "Sau 'like' + V-ing (thích làm gì)."
+        },
+        {
+          "q": "He _____ learns new words in English class. (100%)",
+          "opts": [
+            "always",
+            "sometimes",
+            "rarely",
+            "never"
+          ],
+          "ans": 0,
+          "explain": "'always' nghĩa là luôn luôn, tần suất 100%."
+        },
+        {
+          "q": "She _____ use computers in P.E. class. (0%)",
+          "opts": [
+            "always",
+            "usually",
+            "sometimes",
+            "never"
+          ],
+          "ans": 3,
+          "explain": "'never' nghĩa là không bao giờ, tần suất 0%. Lưu ý: never + động từ không chia (không có 's')."
+        },
+        {
+          "q": "I _____ do experiments in science class.",
+          "opts": [
+            "usual",
+            "usually",
+            "usual to",
+            "am usually"
+          ],
+          "ans": 1,
+          "explain": "'usually' là trạng từ chỉ tần suất, đứng trước động từ thường."
+        },
+        {
+          "q": "What time does your math class _____?",
+          "opts": [
+            "starts",
+            "start",
+            "starting",
+            "started"
+          ],
+          "ans": 1,
+          "explain": "Sau 'does' động từ giữ nguyên dạng."
+        },
+        {
+          "q": "It starts _____ eight o'clock.",
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "ans": 2,
+          "explain": "Dùng 'at' trước giờ cụ thể."
+        },
+        {
+          "q": "My geography class starts at a quarter _____ nine.",
+          "opts": [
+            "at",
+            "past",
+            "in",
+            "on"
+          ],
+          "ans": 1,
+          "explain": "'a quarter past nine' = 9 giờ 15 phút."
+        },
+        {
+          "q": "She likes history because she likes _____ about the past.",
+          "opts": [
+            "learn",
+            "learns",
+            "learning",
+            "to learns"
+          ],
+          "ans": 2,
+          "explain": "Sau 'like' + V-ing."
+        },
+        {
+          "q": "They _____ solve problems in math class.",
+          "opts": [
+            "sometimes",
+            "sometime",
+            "some time",
+            "some times"
+          ],
+          "ans": 0,
+          "explain": "'sometimes' (thỉnh thoảng) là trạng từ chỉ tần suất."
+        },
+        {
+          "q": "_____ subject does he like? - He likes science.",
+          "opts": [
+            "What",
+            "Which",
+            "Who",
+            "Where"
+          ],
+          "ans": 1,
+          "explain": "'Which' dùng để hỏi chọn lựa giữa các môn học."
+        },
+        {
+          "q": "What time does your Vietnamese class start? - It starts at _____ to four.",
+          "opts": [
+            "quarter",
+            "a quarter",
+            "half",
+            "thirty"
+          ],
+          "ans": 1,
+          "explain": "'a quarter to four' = 3 giờ 45 (4 giờ kém 15)."
+        },
+        {
+          "q": "He rarely _____ swimming in P.E. class.",
+          "opts": [
+            "go",
+            "goes",
+            "going",
+            "to go"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ 'He' (ngôi 3 số ít) → động từ thêm 's/es'. 'rarely' không ảnh hưởng cách chia động từ."
+        },
+        {
+          "q": "I like art _____ I like making things.",
+          "opts": [
+            "so",
+            "because",
+            "but",
+            "or"
+          ],
+          "ans": 1,
+          "explain": "'because' nêu lý do tại sao thích."
+        },
+        {
+          "q": "My English class starts at two-_____.",
+          "opts": [
+            "thirteen",
+            "thirty",
+            "three",
+            "third"
+          ],
+          "ans": 1,
+          "explain": "'two-thirty' = 2 giờ 30 phút."
+        },
+        {
+          "q": "We _____ use computers in I.T. class.",
+          "opts": [
+            "never",
+            "always",
+            "rarely",
+            "sometimes"
+          ],
+          "ans": 1,
+          "explain": "Trong giờ tin học luôn luôn dùng máy tính, nên dùng 'always'."
+        }
+      ]
+    },
+    "2": {
+      "title": "Holidays",
+      "vocabulary": [
+        {
+          "en": "Halloween",
+          "type": "n",
+          "vi": "lễ Halloween (31/10)"
+        },
+        {
+          "en": "New Year's Eve",
+          "type": "n",
+          "vi": "đêm giao thừa (31/12)"
+        },
+        {
+          "en": "Lunar New Year",
+          "type": "n",
+          "vi": "Tết Nguyên Đán"
+        },
+        {
+          "en": "Christmas",
+          "type": "n",
+          "vi": "lễ Giáng sinh (25/12)"
+        },
+        {
+          "en": "Teachers' Day",
+          "type": "n",
+          "vi": "ngày Nhà giáo (20/11)"
+        },
+        {
+          "en": "Children's Day",
+          "type": "n",
+          "vi": "ngày Quốc tế Thiếu nhi (1/6)"
+        },
+        {
+          "en": "first",
+          "type": "adj",
+          "vi": "thứ nhất"
+        },
+        {
+          "en": "second",
+          "type": "adj",
+          "vi": "thứ hai"
+        },
+        {
+          "en": "third",
+          "type": "adj",
+          "vi": "thứ ba"
+        },
+        {
+          "en": "fourth",
+          "type": "adj",
+          "vi": "thứ tư"
+        },
+        {
+          "en": "fifth",
+          "type": "adj",
+          "vi": "thứ năm"
+        },
+        {
+          "en": "put up colored paper",
+          "type": "v phr",
+          "vi": "treo giấy màu"
+        },
+        {
+          "en": "buy candy",
+          "type": "v phr",
+          "vi": "mua kẹo"
+        },
+        {
+          "en": "invite friends",
+          "type": "v phr",
+          "vi": "mời bạn bè"
+        },
+        {
+          "en": "blow up the balloons",
+          "type": "v phr",
+          "vi": "thổi bóng bay"
+        },
+        {
+          "en": "make a cake",
+          "type": "v phr",
+          "vi": "làm bánh"
+        },
+        {
+          "en": "wrap the presents",
+          "type": "v phr",
+          "vi": "gói quà"
+        },
+        {
+          "en": "put up a Christmas tree",
+          "type": "v phr",
+          "vi": "dựng cây thông Noel"
+        },
+        {
+          "en": "give presents",
+          "type": "v phr",
+          "vi": "tặng quà"
+        },
+        {
+          "en": "watch fireworks",
+          "type": "v phr",
+          "vi": "xem pháo hoa"
+        },
+        {
+          "en": "wear costumes",
+          "type": "v phr",
+          "vi": "mặc trang phục hóa trang"
+        },
+        {
+          "en": "give lucky money",
+          "type": "v phr",
+          "vi": "lì xì, mừng tuổi"
+        },
+        {
+          "en": "watch the lion dance",
+          "type": "v phr",
+          "vi": "xem múa lân"
+        },
+        {
+          "en": "holiday",
+          "type": "n",
+          "vi": "ngày lễ, kỳ nghỉ"
+        },
+        {
+          "en": "favorite",
+          "type": "adj",
+          "vi": "yêu thích nhất"
+        },
+        {
+          "en": "celebrate",
+          "type": "v",
+          "vi": "kỷ niệm, tổ chức"
+        },
+        {
+          "en": "candy",
+          "type": "n",
+          "vi": "kẹo"
+        },
+        {
+          "en": "balloon",
+          "type": "n",
+          "vi": "bóng bay"
+        },
+        {
+          "en": "present",
+          "type": "n",
+          "vi": "quà tặng"
+        },
+        {
+          "en": "costume",
+          "type": "n",
+          "vi": "trang phục hóa trang"
+        }
+      ],
+      "grammar": [
+        "What's your favorite holiday? - It's + holiday.",
+        "When's Christmas Day? - It's on December twenty-fifth.",
+        "Ordinal numbers: first, second, third, fourth, fifth...",
+        "Could you + V? - Yes, sure.",
+        "What do people do to celebrate ...? - They + V."
+      ],
+      "grammar_notes": "1. Hỏi ngày lễ yêu thích:\n- What's your favorite holiday? (Ngày lễ yêu thích của bạn là gì?) → It's Halloween / Christmas.\n- What's his/her favorite holiday? → It's Lunar New Year.\n\n2. Hỏi ngày lễ diễn ra khi nào:\n- When's Christmas Day? (Giáng sinh là ngày nào?) → It's on December twenty-fifth. (Ngày 25 tháng 12.)\n- Dùng 'on' trước ngày tháng cụ thể.\n- Số thứ tự: first (1st), second (2nd), third (3rd), fourth (4th), fifth (5th)...\n\n3. Nhờ ai làm gì (lịch sự):\n- Could you blow up the balloons? (Bạn thổi bóng bay được không?) → Yes, sure. (Được chứ.)\n- Could you + động từ nguyên mẫu?\n\n4. Hỏi hoạt động trong ngày lễ:\n- What do people do to celebrate Christmas? → They put up a Christmas tree. / They give presents.\n- What do people do to celebrate Lunar New Year? → They watch the lion dance. / They give lucky money.",
+      "exercises": [
+        {
+          "q": "What's your favorite _____?",
+          "opts": [
+            "holiday",
+            "holidays",
+            "holidaying",
+            "holidayed"
+          ],
+          "ans": 0,
+          "explain": "'holiday' là danh từ số ít dùng sau 'favorite'."
+        },
+        {
+          "q": "_____ favorite holiday is Christmas.",
+          "opts": [
+            "I",
+            "Me",
+            "My",
+            "Mine"
+          ],
+          "ans": 2,
+          "explain": "'My' là tính từ sở hữu đứng trước danh từ."
+        },
+        {
+          "q": "When's Children's Day? - It's _____ June first.",
+          "opts": [
+            "in",
+            "at",
+            "on",
+            "to"
+          ],
+          "ans": 2,
+          "explain": "Dùng 'on' trước ngày tháng cụ thể."
+        },
+        {
+          "q": "Christmas Day is on December _____.",
+          "opts": [
+            "twenty-five",
+            "twenty-fifth",
+            "the twenty-five",
+            "twentyfive"
+          ],
+          "ans": 1,
+          "explain": "Dùng số thứ tự (ordinal number) khi nói về ngày: twenty-fifth (thứ 25)."
+        },
+        {
+          "q": "Halloween is on October _____.",
+          "opts": [
+            "thirty-one",
+            "thirty-first",
+            "thirtieth-one",
+            "the thirty"
+          ],
+          "ans": 1,
+          "explain": "Ngày 31 tháng 10 → October thirty-first (dùng số thứ tự)."
+        },
+        {
+          "q": "Could you _____ the balloons?",
+          "opts": [
+            "blow up",
+            "blows up",
+            "blowing up",
+            "blown up"
+          ],
+          "ans": 0,
+          "explain": "Sau 'Could you' + động từ nguyên mẫu (V)."
+        },
+        {
+          "q": "Could you make a cake? - Yes, _____.",
+          "opts": [
+            "I could",
+            "sure",
+            "I do",
+            "please"
+          ],
+          "ans": 1,
+          "explain": "Trả lời đồng ý lịch sự: 'Yes, sure.' (Vâng, được chứ.)"
+        },
+        {
+          "q": "What do people do to _____ Christmas?",
+          "opts": [
+            "celebrates",
+            "celebrate",
+            "celebrating",
+            "celebrated"
+          ],
+          "ans": 1,
+          "explain": "Sau 'to' + động từ nguyên mẫu."
+        },
+        {
+          "q": "They _____ a Christmas tree to celebrate Christmas.",
+          "opts": [
+            "put on",
+            "put up",
+            "put in",
+            "put out"
+          ],
+          "ans": 1,
+          "explain": "'put up' = dựng lên, trang trí. 'put up a Christmas tree' = dựng cây thông Noel."
+        },
+        {
+          "q": "People _____ lucky money on Lunar New Year.",
+          "opts": [
+            "make",
+            "take",
+            "give",
+            "put"
+          ],
+          "ans": 2,
+          "explain": "'give lucky money' = lì xì, mừng tuổi."
+        },
+        {
+          "q": "We _____ fireworks on New Year's Eve.",
+          "opts": [
+            "look",
+            "see",
+            "watch",
+            "hear"
+          ],
+          "ans": 2,
+          "explain": "'watch fireworks' = xem pháo hoa."
+        },
+        {
+          "q": "Children wear _____ on Halloween.",
+          "opts": [
+            "uniforms",
+            "costumes",
+            "presents",
+            "balloons"
+          ],
+          "ans": 1,
+          "explain": "'wear costumes' = mặc trang phục hóa trang."
+        },
+        {
+          "q": "_____ is your favorite holiday? - It's Lunar New Year.",
+          "opts": [
+            "When",
+            "Where",
+            "What",
+            "Why"
+          ],
+          "ans": 2,
+          "explain": "'What' dùng để hỏi về thông tin (ngày lễ nào)."
+        },
+        {
+          "q": "Could you _____ friends to the party?",
+          "opts": [
+            "invite",
+            "invites",
+            "inviting",
+            "invited"
+          ],
+          "ans": 0,
+          "explain": "Sau 'Could you' + động từ nguyên mẫu."
+        },
+        {
+          "q": "Teachers' Day is on November _____.",
+          "opts": [
+            "twenty",
+            "twentieth",
+            "the twenty",
+            "twenties"
+          ],
+          "ans": 1,
+          "explain": "Ngày 20 → twentieth (số thứ tự)."
+        },
+        {
+          "q": "They watch the _____ dance on Lunar New Year.",
+          "opts": [
+            "dragon",
+            "lion",
+            "cat",
+            "dog"
+          ],
+          "ans": 1,
+          "explain": "'watch the lion dance' = xem múa lân."
+        },
+        {
+          "q": "It's the _____ of January. (3rd)",
+          "opts": [
+            "three",
+            "third",
+            "thirdth",
+            "thirteen"
+          ],
+          "ans": 1,
+          "explain": "Số thứ tự của 3 là 'third'."
+        },
+        {
+          "q": "Could you wrap the _____?",
+          "opts": [
+            "present",
+            "presents",
+            "presenting",
+            "presented"
+          ],
+          "ans": 1,
+          "explain": "'the presents' (số nhiều) = các món quà."
+        }
+      ]
+    },
+    "3": {
+      "title": "My Friends and I",
+      "vocabulary": [
+        {
+          "en": "slowly",
+          "type": "adv",
+          "vi": "chậm, từ từ"
+        },
+        {
+          "en": "fast",
+          "type": "adv",
+          "vi": "nhanh"
+        },
+        {
+          "en": "badly",
+          "type": "adv",
+          "vi": "dở, tệ"
+        },
+        {
+          "en": "well",
+          "type": "adv",
+          "vi": "giỏi, tốt"
+        },
+        {
+          "en": "hard",
+          "type": "adv",
+          "vi": "mạnh, chăm chỉ"
+        },
+        {
+          "en": "noisy",
+          "type": "adj",
+          "vi": "ồn ào"
+        },
+        {
+          "en": "quiet",
+          "type": "adj",
+          "vi": "yên tĩnh"
+        },
+        {
+          "en": "busy",
+          "type": "adj",
+          "vi": "bận rộn"
+        },
+        {
+          "en": "delicious",
+          "type": "adj",
+          "vi": "ngon"
+        },
+        {
+          "en": "yucky",
+          "type": "adj",
+          "vi": "dở, khó ăn"
+        },
+        {
+          "en": "scary",
+          "type": "adj",
+          "vi": "đáng sợ"
+        },
+        {
+          "en": "bake cupcakes",
+          "type": "v phr",
+          "vi": "nướng bánh cupcake"
+        },
+        {
+          "en": "paint a picture",
+          "type": "v phr",
+          "vi": "vẽ tranh"
+        },
+        {
+          "en": "plant some flowers",
+          "type": "v phr",
+          "vi": "trồng hoa"
+        },
+        {
+          "en": "visit my grandparents",
+          "type": "v phr",
+          "vi": "thăm ông bà"
+        },
+        {
+          "en": "stay at home",
+          "type": "v phr",
+          "vi": "ở nhà"
+        },
+        {
+          "en": "study",
+          "type": "v",
+          "vi": "học bài"
+        },
+        {
+          "en": "have a sleepover",
+          "type": "v phr",
+          "vi": "ngủ lại nhà bạn"
+        },
+        {
+          "en": "go camping",
+          "type": "v phr",
+          "vi": "đi cắm trại"
+        },
+        {
+          "en": "have a barbecue",
+          "type": "v phr",
+          "vi": "tổ chức tiệc nướng"
+        },
+        {
+          "en": "sing karaoke",
+          "type": "v phr",
+          "vi": "hát karaoke"
+        },
+        {
+          "en": "go bowling",
+          "type": "v phr",
+          "vi": "đi chơi bowling"
+        },
+        {
+          "en": "make paper crafts",
+          "type": "v phr",
+          "vi": "làm đồ thủ công bằng giấy"
+        },
+        {
+          "en": "yesterday",
+          "type": "adv",
+          "vi": "hôm qua"
+        },
+        {
+          "en": "last week",
+          "type": "phr",
+          "vi": "tuần trước"
+        },
+        {
+          "en": "last weekend",
+          "type": "phr",
+          "vi": "cuối tuần trước"
+        },
+        {
+          "en": "last month",
+          "type": "phr",
+          "vi": "tháng trước"
+        },
+        {
+          "en": "movie theater",
+          "type": "n",
+          "vi": "rạp chiếu phim"
+        },
+        {
+          "en": "restaurant",
+          "type": "n",
+          "vi": "nhà hàng"
+        },
+        {
+          "en": "swimming pool",
+          "type": "n",
+          "vi": "hồ bơi"
+        },
+        {
+          "en": "stadium",
+          "type": "n",
+          "vi": "sân vận động"
+        }
+      ],
+      "grammar": [
+        "Adverbs of manner: slowly, fast, badly, well, hard",
+        "Where were you yesterday? - I was at + place. The ... was + adj.",
+        "Past simple: I planted some flowers yesterday. (regular verbs: +ed)",
+        "Irregular past: go-went, have-had, make-made, sing-sang, come-came"
+      ],
+      "grammar_notes": "1. Trạng từ chỉ cách thức (adverbs of manner):\n- Mô tả cách ai đó làm việc gì: He kicks the ball hard. (Anh ấy đá bóng mạnh.)\n- slowly (chậm), fast (nhanh), badly (dở), well (giỏi), hard (mạnh/chăm chỉ)\n- Trạng từ đứng sau động từ: She runs fast. / He sings badly.\n\n2. Hỏi ai đó ở đâu trong quá khứ (thì quá khứ đơn của 'be'):\n- Where were you yesterday? (Hôm qua bạn ở đâu?) → I was at a restaurant. The food was delicious.\n- was (I/he/she/it), were (you/we/they)\n\n3. Thì quá khứ đơn (Past Simple) - Động từ có quy tắc:\n- Thêm -ed: bake→baked, paint→painted, plant→planted, visit→visited, stay→stayed, study→studied\n- I painted a picture last weekend. (Tôi đã vẽ tranh cuối tuần trước.)\n\n4. Động từ bất quy tắc thường gặp:\n- go→went, have→had, make→made, sing→sang, come→came, see→saw, say→said\n- I went camping last month. / She had a barbecue last Saturday.",
+      "exercises": [
+        {
+          "q": "Tom kicks the ball _____. He's a great player.",
+          "opts": [
+            "hard",
+            "hardly",
+            "slow",
+            "bad"
+          ],
+          "ans": 0,
+          "explain": "'hard' (mạnh) - trạng từ mô tả cách đá bóng. Lưu ý: 'hardly' có nghĩa khác (hầu như không)."
+        },
+        {
+          "q": "She sings very _____. Everyone loves her voice.",
+          "opts": [
+            "bad",
+            "badly",
+            "well",
+            "slow"
+          ],
+          "ans": 2,
+          "explain": "'well' (giỏi, hay) - mô tả cô ấy hát hay."
+        },
+        {
+          "q": "He runs _____. He can't win the race.",
+          "opts": [
+            "fast",
+            "well",
+            "slowly",
+            "hard"
+          ],
+          "ans": 2,
+          "explain": "'slowly' (chậm) - chạy chậm nên không thắng được."
+        },
+        {
+          "q": "Where _____ you last night?",
+          "opts": [
+            "was",
+            "were",
+            "are",
+            "is"
+          ],
+          "ans": 1,
+          "explain": "'you' luôn đi với 'were' trong quá khứ."
+        },
+        {
+          "q": "I _____ at the movie theater yesterday.",
+          "opts": [
+            "were",
+            "am",
+            "was",
+            "is"
+          ],
+          "ans": 2,
+          "explain": "'I' đi với 'was' trong quá khứ."
+        },
+        {
+          "q": "The food _____ delicious at the restaurant.",
+          "opts": [
+            "were",
+            "is",
+            "was",
+            "are"
+          ],
+          "ans": 2,
+          "explain": "'The food' (số ít) đi với 'was'."
+        },
+        {
+          "q": "I _____ a picture last weekend.",
+          "opts": [
+            "paint",
+            "paints",
+            "painting",
+            "painted"
+          ],
+          "ans": 3,
+          "explain": "Quá khứ đơn: paint → painted. 'last weekend' = thời gian quá khứ."
+        },
+        {
+          "q": "She _____ some flowers yesterday.",
+          "opts": [
+            "plant",
+            "plants",
+            "planted",
+            "planting"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn: plant → planted."
+        },
+        {
+          "q": "They _____ cupcakes last Saturday.",
+          "opts": [
+            "bake",
+            "baked",
+            "baking",
+            "bakes"
+          ],
+          "ans": 1,
+          "explain": "Quá khứ đơn: bake → baked."
+        },
+        {
+          "q": "We _____ camping last month.",
+          "opts": [
+            "go",
+            "goes",
+            "going",
+            "went"
+          ],
+          "ans": 3,
+          "explain": "'go' là động từ bất quy tắc: go → went."
+        },
+        {
+          "q": "She _____ a sleepover last Friday.",
+          "opts": [
+            "have",
+            "has",
+            "having",
+            "had"
+          ],
+          "ans": 3,
+          "explain": "'have' là động từ bất quy tắc: have → had."
+        },
+        {
+          "q": "He _____ karaoke last night.",
+          "opts": [
+            "sing",
+            "sings",
+            "sang",
+            "singed"
+          ],
+          "ans": 2,
+          "explain": "'sing' là động từ bất quy tắc: sing → sang."
+        },
+        {
+          "q": "We _____ paper crafts yesterday.",
+          "opts": [
+            "make",
+            "made",
+            "maked",
+            "making"
+          ],
+          "ans": 1,
+          "explain": "'make' là động từ bất quy tắc: make → made."
+        },
+        {
+          "q": "I visited my grandparents _____.",
+          "opts": [
+            "tomorrow",
+            "next week",
+            "yesterday",
+            "always"
+          ],
+          "ans": 2,
+          "explain": "'yesterday' (hôm qua) là mốc thời gian quá khứ, phù hợp với thì quá khứ đơn."
+        },
+        {
+          "q": "The movie _____ scary.",
+          "opts": [
+            "were",
+            "was",
+            "is",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "'The movie' (số ít) + 'was' trong câu quá khứ."
+        },
+        {
+          "q": "Where were you last Monday? - I _____ at the library.",
+          "opts": [
+            "am",
+            "is",
+            "was",
+            "were"
+          ],
+          "ans": 2,
+          "explain": "'I' đi với 'was' trong quá khứ."
+        },
+        {
+          "q": "Ben plays soccer _____. He needs more practice.",
+          "opts": [
+            "well",
+            "badly",
+            "fast",
+            "hard"
+          ],
+          "ans": 1,
+          "explain": "'badly' (dở) - cần luyện tập thêm."
+        },
+        {
+          "q": "Lucy _____ at home last Sunday.",
+          "opts": [
+            "stay",
+            "stays",
+            "stayed",
+            "staying"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn: stay → stayed."
+        }
+      ]
+    },
+    "4": {
+      "title": "Travel",
+      "vocabulary": [
+        {
+          "en": "mountain",
+          "type": "n",
+          "vi": "núi"
+        },
+        {
+          "en": "lake",
+          "type": "n",
+          "vi": "hồ"
+        },
+        {
+          "en": "river",
+          "type": "n",
+          "vi": "sông"
+        },
+        {
+          "en": "beach",
+          "type": "n",
+          "vi": "bãi biển"
+        },
+        {
+          "en": "ocean",
+          "type": "n",
+          "vi": "đại dương"
+        },
+        {
+          "en": "forest",
+          "type": "n",
+          "vi": "rừng"
+        },
+        {
+          "en": "Canada",
+          "type": "n",
+          "vi": "nước Canada"
+        },
+        {
+          "en": "France",
+          "type": "n",
+          "vi": "nước Pháp"
+        },
+        {
+          "en": "South Korea",
+          "type": "n",
+          "vi": "Hàn Quốc"
+        },
+        {
+          "en": "Brazil",
+          "type": "n",
+          "vi": "nước Brazil"
+        },
+        {
+          "en": "Germany",
+          "type": "n",
+          "vi": "nước Đức"
+        },
+        {
+          "en": "Spain",
+          "type": "n",
+          "vi": "nước Tây Ban Nha"
+        },
+        {
+          "en": "ferry",
+          "type": "n",
+          "vi": "phà"
+        },
+        {
+          "en": "minibus",
+          "type": "n",
+          "vi": "xe buýt nhỏ"
+        },
+        {
+          "en": "plane",
+          "type": "n",
+          "vi": "máy bay"
+        },
+        {
+          "en": "helicopter",
+          "type": "n",
+          "vi": "trực thăng"
+        },
+        {
+          "en": "van",
+          "type": "n",
+          "vi": "xe tải nhỏ"
+        },
+        {
+          "en": "speedboat",
+          "type": "n",
+          "vi": "ca nô, tàu cao tốc"
+        },
+        {
+          "en": "Laos",
+          "type": "n",
+          "vi": "nước Lào"
+        },
+        {
+          "en": "Cambodia",
+          "type": "n",
+          "vi": "nước Campuchia"
+        },
+        {
+          "en": "China",
+          "type": "n",
+          "vi": "nước Trung Quốc"
+        },
+        {
+          "en": "Thailand",
+          "type": "n",
+          "vi": "nước Thái Lan"
+        },
+        {
+          "en": "Singapore",
+          "type": "n",
+          "vi": "nước Singapore"
+        },
+        {
+          "en": "Indonesia",
+          "type": "n",
+          "vi": "nước Indonesia"
+        },
+        {
+          "en": "postcard",
+          "type": "n",
+          "vi": "bưu thiếp"
+        }
+      ],
+      "grammar": [
+        "I didn't go to the river. I went to the beach.",
+        "Past simple negative: didn't + V",
+        "I went to South Korea last month. Did you sing karaoke? Yes, I did. / No, I didn't.",
+        "How did you get there? - We went by helicopter.",
+        "What did you do there? - I watched a soccer game."
+      ],
+      "grammar_notes": "1. Thì quá khứ đơn - Dạng phủ định:\n- didn't + động từ nguyên mẫu: I didn't go to the river. (Tôi đã không đi đến sông.)\n- She didn't go to the mountain.\n\n2. Thì quá khứ đơn - Dạng câu hỏi Yes/No:\n- Did + S + V? → Yes, S did. / No, S didn't.\n- Did you sing karaoke? → Yes, I did. / No, I didn't.\n\n3. Hỏi phương tiện di chuyển:\n- How did you get there? (Bạn đến đó bằng gì?) → We went by helicopter/plane/ferry.\n- Dùng 'by' + phương tiện (không có 'a/the'): by plane, by ferry, by van.\n\n4. Hỏi hoạt động trong quá khứ:\n- What did you do there? (Bạn đã làm gì ở đó?) → I watched a soccer game. / I sang karaoke.\n\n5. Động từ bất quy tắc thêm:\n- ride→rode, swim→swam, eat→ate, see→saw, come→came, say→said, make→made",
+      "exercises": [
+        {
+          "q": "I _____ go to the river. I went to the beach.",
+          "opts": [
+            "don't",
+            "doesn't",
+            "didn't",
+            "wasn't"
+          ],
+          "ans": 2,
+          "explain": "Phủ định quá khứ đơn: didn't + V nguyên mẫu."
+        },
+        {
+          "q": "She didn't _____ to the mountain.",
+          "opts": [
+            "go",
+            "goes",
+            "went",
+            "going"
+          ],
+          "ans": 0,
+          "explain": "Sau 'didn't' + động từ nguyên mẫu."
+        },
+        {
+          "q": "They _____ to the forest last weekend.",
+          "opts": [
+            "go",
+            "goes",
+            "went",
+            "going"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn khẳng định: go → went."
+        },
+        {
+          "q": "_____ you go to South Korea last month?",
+          "opts": [
+            "Do",
+            "Does",
+            "Did",
+            "Are"
+          ],
+          "ans": 2,
+          "explain": "Câu hỏi quá khứ đơn dùng 'Did'."
+        },
+        {
+          "q": "Did she sing karaoke? - No, she _____.",
+          "opts": [
+            "don't",
+            "doesn't",
+            "didn't",
+            "wasn't"
+          ],
+          "ans": 2,
+          "explain": "Trả lời phủ định: No, she didn't."
+        },
+        {
+          "q": "How did you _____ there?",
+          "opts": [
+            "go",
+            "get",
+            "got",
+            "getting"
+          ],
+          "ans": 1,
+          "explain": "'How did you get there?' là cách hỏi phương tiện di chuyển. Sau 'did' dùng V nguyên mẫu."
+        },
+        {
+          "q": "We went there _____ plane.",
+          "opts": [
+            "on",
+            "in",
+            "at",
+            "by"
+          ],
+          "ans": 3,
+          "explain": "Dùng 'by' + phương tiện: by plane (bằng máy bay)."
+        },
+        {
+          "q": "I went to France _____ ferry.",
+          "opts": [
+            "by",
+            "on",
+            "in",
+            "at"
+          ],
+          "ans": 0,
+          "explain": "'by ferry' = bằng phà."
+        },
+        {
+          "q": "What _____ you do there?",
+          "opts": [
+            "do",
+            "does",
+            "did",
+            "doing"
+          ],
+          "ans": 2,
+          "explain": "Câu hỏi quá khứ đơn dùng 'did'."
+        },
+        {
+          "q": "I _____ a soccer game in Brazil.",
+          "opts": [
+            "watch",
+            "watches",
+            "watched",
+            "watching"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn: watch → watched."
+        },
+        {
+          "q": "He went to the beach. He _____ in the ocean.",
+          "opts": [
+            "swim",
+            "swims",
+            "swam",
+            "swimming"
+          ],
+          "ans": 2,
+          "explain": "'swim' là động từ bất quy tắc: swim → swam."
+        },
+        {
+          "q": "She _____ to Cambodia last month.",
+          "opts": [
+            "go",
+            "goes",
+            "went",
+            "going"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn: go → went."
+        },
+        {
+          "q": "They didn't go to the lake. They went to the _____.",
+          "opts": [
+            "plane",
+            "van",
+            "ocean",
+            "ferry"
+          ],
+          "ans": 2,
+          "explain": "'ocean' (đại dương) là địa điểm, giống lake. Plane, van, ferry là phương tiện."
+        },
+        {
+          "q": "We _____ by helicopter to the island.",
+          "opts": [
+            "go",
+            "goes",
+            "went",
+            "going"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn: go → went."
+        },
+        {
+          "q": "Did they visit Singapore? - Yes, they _____.",
+          "opts": [
+            "do",
+            "does",
+            "did",
+            "were"
+          ],
+          "ans": 2,
+          "explain": "Trả lời khẳng định: Yes, they did."
+        },
+        {
+          "q": "I _____ my grandparents in Thailand.",
+          "opts": [
+            "visit",
+            "visits",
+            "visited",
+            "visiting"
+          ],
+          "ans": 2,
+          "explain": "Quá khứ đơn: visit → visited."
+        },
+        {
+          "q": "He _____ delicious food in China.",
+          "opts": [
+            "eat",
+            "eats",
+            "ate",
+            "eating"
+          ],
+          "ans": 2,
+          "explain": "'eat' là động từ bất quy tắc: eat → ate."
+        },
+        {
+          "q": "How did she get there? - She went by _____.",
+          "opts": [
+            "speedboat",
+            "slowly",
+            "fast",
+            "badly"
+          ],
+          "ans": 0,
+          "explain": "'by speedboat' (bằng ca nô) - phương tiện di chuyển."
+        }
+      ]
+    },
+    "5": {
+      "title": "Health",
+      "vocabulary": [
+        {
+          "en": "the flu",
+          "type": "n",
+          "vi": "bệnh cúm"
+        },
+        {
+          "en": "the chickenpox",
+          "type": "n",
+          "vi": "bệnh thủy đậu"
+        },
+        {
+          "en": "a toothache",
+          "type": "n",
+          "vi": "đau răng"
+        },
+        {
+          "en": "a stomachache",
+          "type": "n",
+          "vi": "đau bụng"
+        },
+        {
+          "en": "a headache",
+          "type": "n",
+          "vi": "đau đầu"
+        },
+        {
+          "en": "an earache",
+          "type": "n",
+          "vi": "đau tai"
+        },
+        {
+          "en": "terrible",
+          "type": "adj",
+          "vi": "tệ, kinh khủng"
+        },
+        {
+          "en": "sleepy",
+          "type": "adj",
+          "vi": "buồn ngủ"
+        },
+        {
+          "en": "weak",
+          "type": "adj",
+          "vi": "yếu, mệt"
+        },
+        {
+          "en": "sick",
+          "type": "adj",
+          "vi": "ốm, bệnh"
+        },
+        {
+          "en": "sore",
+          "type": "adj",
+          "vi": "đau, rát"
+        },
+        {
+          "en": "stuffed up",
+          "type": "adj",
+          "vi": "nghẹt mũi"
+        },
+        {
+          "en": "see a dentist",
+          "type": "v phr",
+          "vi": "đi gặp nha sĩ"
+        },
+        {
+          "en": "take some medicine",
+          "type": "v phr",
+          "vi": "uống thuốc"
+        },
+        {
+          "en": "get some rest",
+          "type": "v phr",
+          "vi": "nghỉ ngơi"
+        },
+        {
+          "en": "stay up late",
+          "type": "v phr",
+          "vi": "thức khuya"
+        },
+        {
+          "en": "take a bath",
+          "type": "v phr",
+          "vi": "tắm"
+        },
+        {
+          "en": "skip breakfast",
+          "type": "v phr",
+          "vi": "bỏ bữa sáng"
+        },
+        {
+          "en": "do exercise",
+          "type": "v phr",
+          "vi": "tập thể dục"
+        },
+        {
+          "en": "eat fast food",
+          "type": "v phr",
+          "vi": "ăn đồ ăn nhanh"
+        },
+        {
+          "en": "eat vegetables",
+          "type": "v phr",
+          "vi": "ăn rau"
+        },
+        {
+          "en": "wash your hands",
+          "type": "v phr",
+          "vi": "rửa tay"
+        },
+        {
+          "en": "play outside",
+          "type": "v phr",
+          "vi": "chơi ngoài trời"
+        },
+        {
+          "en": "eat too much",
+          "type": "v phr",
+          "vi": "ăn quá nhiều"
+        },
+        {
+          "en": "healthy",
+          "type": "adj",
+          "vi": "khỏe mạnh"
+        }
+      ],
+      "grammar": [
+        "What's wrong? - I have a stomachache / the flu.",
+        "How do you feel? - I feel weak / sleepy / terrible.",
+        "You should see a dentist. / You shouldn't stay up late.",
+        "What should I do to be healthy? - You should do exercise. You shouldn't eat fast food."
+      ],
+      "grammar_notes": "1. Hỏi ai đó bị làm sao:\n- What's wrong? (Bạn bị làm sao?) → I have a stomachache. (Tôi bị đau bụng.)\n- Dùng 'have' + bệnh: have a toothache, have a headache, have the flu.\n\n2. Hỏi cảm giác thế nào:\n- How do you feel? (Bạn cảm thấy thế nào?) → I feel weak/sleepy/terrible/sick.\n- That's too bad. / Oh, I'm sorry. (Để an ủi.)\n\n3. Cho lời khuyên với should / shouldn't:\n- should + V (nên làm gì): You should see a dentist. (Bạn nên đi gặp nha sĩ.)\n- shouldn't + V (không nên): You shouldn't stay up late. (Bạn không nên thức khuya.)\n\n4. Hỏi cách sống khỏe mạnh:\n- What should I do to be healthy? (Tôi nên làm gì để khỏe mạnh?)\n- You should do exercise / eat vegetables / wash your hands.\n- You shouldn't eat fast food / eat too much / skip breakfast.",
+      "exercises": [
+        {
+          "q": "What's _____? - I have a stomachache.",
+          "opts": [
+            "matter",
+            "wrong",
+            "happen",
+            "problem"
+          ],
+          "ans": 1,
+          "explain": "'What's wrong?' là cách hỏi ai đó bị làm sao."
+        },
+        {
+          "q": "I have _____ headache.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "ans": 0,
+          "explain": "Dùng 'a' trước 'headache': a headache."
+        },
+        {
+          "q": "She has _____ flu.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "ans": 2,
+          "explain": "Dùng 'the' trước 'flu': the flu."
+        },
+        {
+          "q": "How do you _____? - I feel terrible.",
+          "opts": [
+            "feels",
+            "feel",
+            "feeling",
+            "felt"
+          ],
+          "ans": 1,
+          "explain": "Sau 'do you' + V nguyên mẫu: feel."
+        },
+        {
+          "q": "I feel very _____. I want to go to bed.",
+          "opts": [
+            "sleepy",
+            "sore",
+            "stuffed up",
+            "healthy"
+          ],
+          "ans": 0,
+          "explain": "'sleepy' (buồn ngủ) - muốn đi ngủ."
+        },
+        {
+          "q": "You _____ see a dentist.",
+          "opts": [
+            "can",
+            "should",
+            "must",
+            "will"
+          ],
+          "ans": 1,
+          "explain": "'should' dùng để khuyên ai nên làm gì."
+        },
+        {
+          "q": "You _____ stay up late. It's bad for your health.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "can",
+            "will"
+          ],
+          "ans": 1,
+          "explain": "'shouldn't' = không nên. Thức khuya có hại cho sức khỏe."
+        },
+        {
+          "q": "You should _____ some medicine.",
+          "opts": [
+            "take",
+            "takes",
+            "taking",
+            "took"
+          ],
+          "ans": 0,
+          "explain": "Sau 'should' + V nguyên mẫu."
+        },
+        {
+          "q": "What should I do to be _____?",
+          "opts": [
+            "health",
+            "healthy",
+            "healthily",
+            "healthful"
+          ],
+          "ans": 1,
+          "explain": "'healthy' (khỏe mạnh) là tính từ dùng sau 'be'."
+        },
+        {
+          "q": "You should _____ exercise every day.",
+          "opts": [
+            "make",
+            "do",
+            "have",
+            "take"
+          ],
+          "ans": 1,
+          "explain": "'do exercise' = tập thể dục."
+        },
+        {
+          "q": "You shouldn't eat _____ food. It's not healthy.",
+          "opts": [
+            "slow",
+            "good",
+            "fast",
+            "delicious"
+          ],
+          "ans": 2,
+          "explain": "'fast food' (đồ ăn nhanh) không tốt cho sức khỏe."
+        },
+        {
+          "q": "He has _____ earache. He should see a doctor.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "some"
+          ],
+          "ans": 1,
+          "explain": "Dùng 'an' trước nguyên âm: an earache."
+        },
+        {
+          "q": "You shouldn't _____ breakfast.",
+          "opts": [
+            "eat",
+            "have",
+            "skip",
+            "take"
+          ],
+          "ans": 2,
+          "explain": "'skip breakfast' = bỏ bữa sáng. Không nên bỏ bữa sáng."
+        },
+        {
+          "q": "She feels _____. She has the chickenpox.",
+          "opts": [
+            "well",
+            "good",
+            "sick",
+            "healthy"
+          ],
+          "ans": 2,
+          "explain": "'sick' (ốm) - bị thủy đậu nên cảm thấy ốm."
+        },
+        {
+          "q": "You should _____ your hands before eating.",
+          "opts": [
+            "clean",
+            "wash",
+            "take",
+            "get"
+          ],
+          "ans": 1,
+          "explain": "'wash your hands' = rửa tay."
+        },
+        {
+          "q": "My nose is _____. I can't breathe well.",
+          "opts": [
+            "sore",
+            "weak",
+            "stuffed up",
+            "sleepy"
+          ],
+          "ans": 2,
+          "explain": "'stuffed up' (nghẹt mũi) - không thở được."
+        },
+        {
+          "q": "You should eat more _____.",
+          "opts": [
+            "candy",
+            "fast food",
+            "vegetables",
+            "cake"
+          ],
+          "ans": 2,
+          "explain": "Ăn rau (vegetables) tốt cho sức khỏe."
+        },
+        {
+          "q": "I have a _____. I can't eat anything.",
+          "opts": [
+            "headache",
+            "earache",
+            "stomachache",
+            "toothache"
+          ],
+          "ans": 2,
+          "explain": "'stomachache' (đau bụng) - không ăn được gì."
+        }
+      ]
+    },
+    "6": {
+      "title": "Food and Drinks",
+      "vocabulary": [
+        {
+          "en": "sugar",
+          "type": "n",
+          "vi": "đường"
+        },
+        {
+          "en": "butter",
+          "type": "n",
+          "vi": "bơ"
+        },
+        {
+          "en": "flour",
+          "type": "n",
+          "vi": "bột mì"
+        },
+        {
+          "en": "chocolate chips",
+          "type": "n",
+          "vi": "vụn sô-cô-la"
+        },
+        {
+          "en": "oil",
+          "type": "n",
+          "vi": "dầu ăn"
+        },
+        {
+          "en": "milk",
+          "type": "n",
+          "vi": "sữa"
+        },
+        {
+          "en": "soda",
+          "type": "n",
+          "vi": "nước ngọt có ga"
+        },
+        {
+          "en": "smoothie",
+          "type": "n",
+          "vi": "sinh tố"
+        },
+        {
+          "en": "tea",
+          "type": "n",
+          "vi": "trà"
+        },
+        {
+          "en": "lemonade",
+          "type": "n",
+          "vi": "nước chanh"
+        },
+        {
+          "en": "juice",
+          "type": "n",
+          "vi": "nước ép"
+        },
+        {
+          "en": "hot chocolate",
+          "type": "n",
+          "vi": "ca cao nóng"
+        },
+        {
+          "en": "hamburger",
+          "type": "n",
+          "vi": "bánh hamburger"
+        },
+        {
+          "en": "sandwich",
+          "type": "n",
+          "vi": "bánh mì kẹp"
+        },
+        {
+          "en": "steak",
+          "type": "n",
+          "vi": "bít tết"
+        },
+        {
+          "en": "pie",
+          "type": "n",
+          "vi": "bánh nướng nhân"
+        },
+        {
+          "en": "rice",
+          "type": "n",
+          "vi": "cơm, gạo"
+        },
+        {
+          "en": "curry",
+          "type": "n",
+          "vi": "cà ri"
+        },
+        {
+          "en": "breakfast",
+          "type": "n",
+          "vi": "bữa sáng"
+        },
+        {
+          "en": "lunch",
+          "type": "n",
+          "vi": "bữa trưa"
+        },
+        {
+          "en": "dinner",
+          "type": "n",
+          "vi": "bữa tối"
+        },
+        {
+          "en": "bread",
+          "type": "n",
+          "vi": "bánh mì"
+        },
+        {
+          "en": "meat",
+          "type": "n",
+          "vi": "thịt"
+        },
+        {
+          "en": "cereal",
+          "type": "n",
+          "vi": "ngũ cốc"
+        },
+        {
+          "en": "countable",
+          "type": "adj",
+          "vi": "đếm được"
+        },
+        {
+          "en": "uncountable",
+          "type": "adj",
+          "vi": "không đếm được"
+        }
+      ],
+      "grammar": [
+        "I need a lot of / some / a little / a few + noun.",
+        "Countable vs Uncountable nouns",
+        "Let's make smoothies. - OK, I'll bring milk.",
+        "Will you bring pie? - Yes, I will. / No, I won't.",
+        "What do people in the USA usually eat for breakfast?"
+      ],
+      "grammar_notes": "1. Lượng từ (Quantifiers):\n- a lot of + danh từ đếm được/không đếm được: I need a lot of flour. (Tôi cần nhiều bột mì.)\n- some + danh từ đếm được (số nhiều)/không đếm được: She needs some butter. / some oranges.\n- a little + danh từ không đếm được: a little sugar (một chút đường)\n- a few + danh từ đếm được số nhiều: a few eggs (vài quả trứng)\n\n2. Danh từ đếm được (Countable) vs Không đếm được (Uncountable):\n- Đếm được: hamburger, sandwich, steak, smoothie, orange, egg\n- Không đếm được: soda, tea, milk, juice, sugar, butter, flour, rice, curry\n\n3. Rủ ai làm gì và đề nghị mang đồ:\n- Let's make orange juice. (Chúng ta làm nước cam nhé.) → OK, I'll bring oranges and sugar.\n\n4. Hỏi ai đó có mang gì không (will):\n- Will you bring pie? (Bạn sẽ mang bánh pie chứ?) → Yes, I will. / No, I won't.\n\n5. Hỏi về thói quen ăn uống:\n- What do people in the USA usually eat for breakfast? → They usually eat cereal with milk.",
+      "exercises": [
+        {
+          "q": "I need a _____ of flour.",
+          "opts": [
+            "lot",
+            "little",
+            "few",
+            "many"
+          ],
+          "ans": 0,
+          "explain": "'a lot of' + danh từ không đếm được (flour). Lưu ý: phải có 'of' sau 'a lot'."
+        },
+        {
+          "q": "She needs _____ butter for the cake.",
+          "opts": [
+            "a few",
+            "many",
+            "a little",
+            "few"
+          ],
+          "ans": 2,
+          "explain": "'a little' + danh từ không đếm được (butter)."
+        },
+        {
+          "q": "We need _____ eggs to make pancakes.",
+          "opts": [
+            "a little",
+            "a lot",
+            "a few",
+            "much"
+          ],
+          "ans": 2,
+          "explain": "'a few' + danh từ đếm được số nhiều (eggs)."
+        },
+        {
+          "q": "Milk is a/an _____ noun.",
+          "opts": [
+            "countable",
+            "uncountable",
+            "plural",
+            "singular"
+          ],
+          "ans": 1,
+          "explain": "'milk' (sữa) là danh từ không đếm được."
+        },
+        {
+          "q": "Let's make _____. I'll bring oranges.",
+          "opts": [
+            "orange juice",
+            "hamburgers",
+            "steak",
+            "rice"
+          ],
+          "ans": 0,
+          "explain": "Cam (oranges) dùng để làm nước cam (orange juice)."
+        },
+        {
+          "q": "Will you bring _____? - Yes, I will.",
+          "opts": [
+            "pie",
+            "a pie",
+            "pies",
+            "the pie"
+          ],
+          "ans": 0,
+          "explain": "'pie' (không đếm được khi nói chung) dùng không có mạo từ."
+        },
+        {
+          "q": "_____ you bring some milk? - No, I won't.",
+          "opts": [
+            "Do",
+            "Does",
+            "Will",
+            "Did"
+          ],
+          "ans": 2,
+          "explain": "'Will' dùng để hỏi trong tương lai."
+        },
+        {
+          "q": "OK, I'll _____ some sugar.",
+          "opts": [
+            "bring",
+            "brings",
+            "bringing",
+            "brought"
+          ],
+          "ans": 0,
+          "explain": "Sau 'will' (viết tắt 'll) + V nguyên mẫu."
+        },
+        {
+          "q": "What do people in the USA usually eat for _____?",
+          "opts": [
+            "breakfast",
+            "break",
+            "breaking",
+            "broke"
+          ],
+          "ans": 0,
+          "explain": "'breakfast' (bữa sáng) - bữa ăn đầu ngày."
+        },
+        {
+          "q": "They usually eat _____ with milk.",
+          "opts": [
+            "rice",
+            "cereal",
+            "steak",
+            "curry"
+          ],
+          "ans": 1,
+          "explain": "Người Mỹ thường ăn ngũ cốc (cereal) với sữa vào bữa sáng."
+        },
+        {
+          "q": "I need _____ lot of sugar for the cake.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "some"
+          ],
+          "ans": 0,
+          "explain": "'a lot of' là cụm cố định."
+        },
+        {
+          "q": "Hamburger is a _____ noun.",
+          "opts": [
+            "countable",
+            "uncountable",
+            "collective",
+            "proper"
+          ],
+          "ans": 0,
+          "explain": "'hamburger' là danh từ đếm được (có thể đếm: one hamburger, two hamburgers)."
+        },
+        {
+          "q": "She needs some _____ to make sandwiches.",
+          "opts": [
+            "bread",
+            "breads",
+            "a bread",
+            "the bread"
+          ],
+          "ans": 0,
+          "explain": "'bread' là danh từ không đếm được, không thêm 's'."
+        },
+        {
+          "q": "Let's make hot chocolate. I'll bring _____ and milk.",
+          "opts": [
+            "flour",
+            "oil",
+            "chocolate chips",
+            "rice"
+          ],
+          "ans": 2,
+          "explain": "Hot chocolate cần chocolate chips và sữa."
+        },
+        {
+          "q": "Will she bring steak? - No, she _____.",
+          "opts": [
+            "will",
+            "won't",
+            "don't",
+            "doesn't"
+          ],
+          "ans": 1,
+          "explain": "Phủ định: No, she won't. ('won't' = will not)"
+        },
+        {
+          "q": "We need _____ oil for cooking.",
+          "opts": [
+            "a few",
+            "many",
+            "a little",
+            "few"
+          ],
+          "ans": 2,
+          "explain": "'a little' + danh từ không đếm được (oil)."
+        },
+        {
+          "q": "What do people in India usually eat for dinner? - They usually eat _____ and rice.",
+          "opts": [
+            "cereal",
+            "curry",
+            "sandwich",
+            "pie"
+          ],
+          "ans": 1,
+          "explain": "Người Ấn Độ thường ăn cà ri (curry) với cơm."
+        },
+        {
+          "q": "I need some _____ to make lemonade.",
+          "opts": [
+            "lemons",
+            "lemon",
+            "a lemon",
+            "lemoning"
+          ],
+          "ans": 0,
+          "explain": "'some' + danh từ đếm được số nhiều: some lemons."
+        }
+      ]
+    },
+    "7": {
+      "title": "Jobs",
+      "vocabulary": [
+        {
+          "en": "scientist",
+          "type": "n",
+          "vi": "nhà khoa học"
+        },
+        {
+          "en": "pilot",
+          "type": "n",
+          "vi": "phi công"
+        },
+        {
+          "en": "tour guide",
+          "type": "n",
+          "vi": "hướng dẫn viên du lịch"
+        },
+        {
+          "en": "business person",
+          "type": "n",
+          "vi": "doanh nhân"
+        },
+        {
+          "en": "hairdresser",
+          "type": "n",
+          "vi": "thợ làm tóc"
+        },
+        {
+          "en": "designer",
+          "type": "n",
+          "vi": "nhà thiết kế"
+        },
+        {
+          "en": "soccer player",
+          "type": "n",
+          "vi": "cầu thủ bóng đá"
+        },
+        {
+          "en": "singer",
+          "type": "n",
+          "vi": "ca sĩ"
+        },
+        {
+          "en": "nurse",
+          "type": "n",
+          "vi": "y tá"
+        },
+        {
+          "en": "driver",
+          "type": "n",
+          "vi": "tài xế"
+        },
+        {
+          "en": "police officer",
+          "type": "n",
+          "vi": "cảnh sát"
+        },
+        {
+          "en": "actor",
+          "type": "n",
+          "vi": "diễn viên"
+        },
+        {
+          "en": "writer",
+          "type": "n",
+          "vi": "nhà văn"
+        },
+        {
+          "en": "piano player",
+          "type": "n",
+          "vi": "nghệ sĩ piano"
+        },
+        {
+          "en": "zookeeper",
+          "type": "n",
+          "vi": "người trông coi vườn thú"
+        },
+        {
+          "en": "baker",
+          "type": "n",
+          "vi": "thợ làm bánh"
+        },
+        {
+          "en": "chef",
+          "type": "n",
+          "vi": "đầu bếp"
+        },
+        {
+          "en": "artist",
+          "type": "n",
+          "vi": "nghệ sĩ, họa sĩ"
+        },
+        {
+          "en": "engineer",
+          "type": "n",
+          "vi": "kỹ sư"
+        },
+        {
+          "en": "biologist",
+          "type": "n",
+          "vi": "nhà sinh vật học"
+        },
+        {
+          "en": "vet",
+          "type": "n",
+          "vi": "bác sĩ thú y"
+        },
+        {
+          "en": "astronaut",
+          "type": "n",
+          "vi": "phi hành gia"
+        },
+        {
+          "en": "mechanic",
+          "type": "n",
+          "vi": "thợ máy, thợ cơ khí"
+        },
+        {
+          "en": "chemist",
+          "type": "n",
+          "vi": "nhà hóa học"
+        },
+        {
+          "en": "grow up",
+          "type": "v phr",
+          "vi": "lớn lên"
+        }
+      ],
+      "grammar": [
+        "What would you like to be when you grow up? - I'd like to be a scientist.",
+        "Tom likes sports. I think he'll be a soccer player.",
+        "Will you be a baker in the future? - Yes, I will. / No, I won't.",
+        "What jobs will people do in the future? - I think many people will be engineers."
+      ],
+      "grammar_notes": "1. Hỏi ước mơ nghề nghiệp:\n- What would you like to be when you grow up? (Bạn muốn làm nghề gì khi lớn lên?)\n- I'd like to be a scientist. (Mình muốn làm nhà khoa học.)\n- 'I'd like' = 'I would like' (muốn)\n\n2. Dự đoán nghề nghiệp cho người khác:\n- Tom likes sports. I think he'll be a soccer player. (Tom thích thể thao. Mình nghĩ anh ấy sẽ thành cầu thủ.)\n- She likes cooking. I think she'll be a chef.\n- 'he'll' = 'he will', 'she'll' = 'she will'\n\n3. Hỏi về tương lai với 'will':\n- Will you be a baker in the future? (Bạn sẽ làm thợ bánh trong tương lai chứ?)\n- Yes, I will. I love baking. / No, I won't. I don't like baking.\n\n4. Nói về nghề nghiệp trong tương lai:\n- What jobs will people do in the future? (Mọi người sẽ làm nghề gì trong tương lai?)\n- I think many people will be engineers / astronauts / biologists.",
+      "exercises": [
+        {
+          "q": "What would you like to _____ when you grow up?",
+          "opts": [
+            "do",
+            "be",
+            "have",
+            "make"
+          ],
+          "ans": 1,
+          "explain": "'like to be' = muốn trở thành (nghề gì)."
+        },
+        {
+          "q": "I'd like to be _____ scientist.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "ans": 0,
+          "explain": "Dùng 'a' trước phụ âm: a scientist."
+        },
+        {
+          "q": "She likes animals. I think she'll be a _____.",
+          "opts": [
+            "pilot",
+            "driver",
+            "vet",
+            "baker"
+          ],
+          "ans": 2,
+          "explain": "'vet' (bác sĩ thú y) - người thích động vật phù hợp làm bác sĩ thú y."
+        },
+        {
+          "q": "He likes cooking. I think he'll be a _____.",
+          "opts": [
+            "singer",
+            "chef",
+            "pilot",
+            "writer"
+          ],
+          "ans": 1,
+          "explain": "'chef' (đầu bếp) - người thích nấu ăn."
+        },
+        {
+          "q": "Tom likes sports. I think _____ be a soccer player.",
+          "opts": [
+            "he",
+            "he'll",
+            "he's",
+            "he'd"
+          ],
+          "ans": 1,
+          "explain": "'he'll' = he will (anh ấy sẽ) - dùng 'will' cho dự đoán tương lai."
+        },
+        {
+          "q": "_____ you be a baker in the future?",
+          "opts": [
+            "Do",
+            "Does",
+            "Are",
+            "Will"
+          ],
+          "ans": 3,
+          "explain": "'Will' dùng cho câu hỏi về tương lai."
+        },
+        {
+          "q": "Will she be a nurse? - No, she _____.",
+          "opts": [
+            "will",
+            "won't",
+            "don't",
+            "isn't"
+          ],
+          "ans": 1,
+          "explain": "Phủ định tương lai: No, she won't."
+        },
+        {
+          "q": "I think many people _____ be engineers in the future.",
+          "opts": [
+            "are",
+            "were",
+            "will",
+            "do"
+          ],
+          "ans": 2,
+          "explain": "'will' dùng cho dự đoán tương lai."
+        },
+        {
+          "q": "She likes painting. I think she'll be _____ artist.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "ans": 1,
+          "explain": "Dùng 'an' trước nguyên âm: an artist."
+        },
+        {
+          "q": "A _____ works in a zoo and takes care of animals.",
+          "opts": [
+            "baker",
+            "zookeeper",
+            "mechanic",
+            "pilot"
+          ],
+          "ans": 1,
+          "explain": "'zookeeper' (người trông coi vườn thú) làm việc ở sở thú."
+        },
+        {
+          "q": "He likes writing books. I think he'll be a _____.",
+          "opts": [
+            "singer",
+            "driver",
+            "writer",
+            "designer"
+          ],
+          "ans": 2,
+          "explain": "'writer' (nhà văn) - người thích viết sách."
+        },
+        {
+          "q": "A _____ flies airplanes.",
+          "opts": [
+            "driver",
+            "pilot",
+            "mechanic",
+            "engineer"
+          ],
+          "ans": 1,
+          "explain": "'pilot' (phi công) - người lái máy bay."
+        },
+        {
+          "q": "What _____ will people do in the future?",
+          "opts": [
+            "jobs",
+            "job",
+            "working",
+            "work"
+          ],
+          "ans": 0,
+          "explain": "'jobs' (số nhiều) - hỏi về các nghề nghiệp."
+        },
+        {
+          "q": "I'd _____ to be a designer.",
+          "opts": [
+            "want",
+            "like",
+            "love",
+            "wish"
+          ],
+          "ans": 1,
+          "explain": "'I'd like to be' = I would like to be (muốn trở thành)."
+        },
+        {
+          "q": "A _____ fixes cars and machines.",
+          "opts": [
+            "chemist",
+            "biologist",
+            "mechanic",
+            "astronaut"
+          ],
+          "ans": 2,
+          "explain": "'mechanic' (thợ cơ khí) sửa xe và máy móc."
+        },
+        {
+          "q": "She likes music. I think she'll be a _____ player.",
+          "opts": [
+            "soccer",
+            "piano",
+            "basketball",
+            "tennis"
+          ],
+          "ans": 1,
+          "explain": "'piano player' (nghệ sĩ piano) - người thích âm nhạc."
+        },
+        {
+          "q": "An _____ travels to space.",
+          "opts": [
+            "engineer",
+            "astronaut",
+            "actor",
+            "artist"
+          ],
+          "ans": 1,
+          "explain": "'astronaut' (phi hành gia) - người du hành vào vũ trụ."
+        },
+        {
+          "q": "Will you be a police officer? - Yes, I _____.",
+          "opts": [
+            "do",
+            "am",
+            "will",
+            "can"
+          ],
+          "ans": 2,
+          "explain": "Trả lời câu hỏi Will: Yes, I will."
+        }
+      ]
+    },
+    "8": {
+      "title": "Weather",
+      "vocabulary": [
+        {
+          "en": "tonight",
+          "type": "adv",
+          "vi": "tối nay"
+        },
+        {
+          "en": "tomorrow",
+          "type": "adv",
+          "vi": "ngày mai"
+        },
+        {
+          "en": "tomorrow morning",
+          "type": "phr",
+          "vi": "sáng mai"
+        },
+        {
+          "en": "next week",
+          "type": "phr",
+          "vi": "tuần sau"
+        },
+        {
+          "en": "next Wednesday",
+          "type": "phr",
+          "vi": "thứ Tư tuần sau"
+        },
+        {
+          "en": "next weekend",
+          "type": "phr",
+          "vi": "cuối tuần sau"
+        },
+        {
+          "en": "sunny",
+          "type": "adj",
+          "vi": "nắng, có nắng"
+        },
+        {
+          "en": "windy",
+          "type": "adj",
+          "vi": "có gió"
+        },
+        {
+          "en": "snowy",
+          "type": "adj",
+          "vi": "có tuyết"
+        },
+        {
+          "en": "cool",
+          "type": "adj",
+          "vi": "mát mẻ"
+        },
+        {
+          "en": "warm",
+          "type": "adj",
+          "vi": "ấm áp"
+        },
+        {
+          "en": "humid",
+          "type": "adj",
+          "vi": "ẩm ướt"
+        },
+        {
+          "en": "dry",
+          "type": "adj",
+          "vi": "khô"
+        },
+        {
+          "en": "calm",
+          "type": "adj",
+          "vi": "yên lặng, lặng gió"
+        },
+        {
+          "en": "breezy",
+          "type": "adj",
+          "vi": "có gió nhẹ"
+        },
+        {
+          "en": "clear",
+          "type": "adj",
+          "vi": "quang đãng"
+        },
+        {
+          "en": "gray",
+          "type": "adj",
+          "vi": "xám xịt, u ám"
+        },
+        {
+          "en": "snowstorm",
+          "type": "n",
+          "vi": "bão tuyết"
+        },
+        {
+          "en": "thunderstorm",
+          "type": "n",
+          "vi": "bão có sấm sét"
+        },
+        {
+          "en": "rainstorm",
+          "type": "n",
+          "vi": "bão mưa"
+        },
+        {
+          "en": "flood",
+          "type": "n",
+          "vi": "lũ lụt"
+        },
+        {
+          "en": "sunshine",
+          "type": "n",
+          "vi": "ánh nắng"
+        },
+        {
+          "en": "shower",
+          "type": "n",
+          "vi": "mưa rào"
+        },
+        {
+          "en": "spring",
+          "type": "n",
+          "vi": "mùa xuân"
+        },
+        {
+          "en": "summer",
+          "type": "n",
+          "vi": "mùa hè"
+        },
+        {
+          "en": "fall",
+          "type": "n",
+          "vi": "mùa thu"
+        },
+        {
+          "en": "winter",
+          "type": "n",
+          "vi": "mùa đông"
+        },
+        {
+          "en": "umbrella",
+          "type": "n",
+          "vi": "ô, dù"
+        },
+        {
+          "en": "raincoat",
+          "type": "n",
+          "vi": "áo mưa"
+        }
+      ],
+      "grammar": [
+        "I'm going to visit the beach tomorrow. I hope the weather is sunny.",
+        "It's humid today. Oh, then I'm going to visit the water park.",
+        "There will be some showers, so I'm going to bring my umbrella.",
+        "What's the weather like in Melbourne in the summer? - It's warm and dry."
+      ],
+      "grammar_notes": "1. Nói về kế hoạch tương lai (be going to):\n- I'm going to visit the beach tomorrow. (Ngày mai mình sẽ đi biển.)\n- She's going to fly a kite next weekend.\n- Cấu trúc: S + am/is/are + going to + V\n\n2. Hy vọng thời tiết:\n- I hope the weather is sunny/cool/warm. (Mình mong thời tiết nắng/mát/ấm.)\n\n3. Mô tả thời tiết hôm nay:\n- It's humid/dry/calm/breezy/clear/gray today.\n- Dùng 'It's' + tính từ thời tiết.\n\n4. Dự báo thời tiết (there will be):\n- There will be some showers. (Sẽ có mưa rào.)\n- There will be a snowstorm/thunderstorm/flood.\n- So I'm going to bring my umbrella/raincoat.\n\n5. Hỏi thời tiết ở một nơi:\n- What's the weather like in Melbourne in the summer? (Thời tiết ở Melbourne mùa hè thế nào?)\n- It's warm and dry. / It's hot and humid.",
+      "exercises": [
+        {
+          "q": "I'm _____ to visit the beach tomorrow.",
+          "opts": [
+            "go",
+            "goes",
+            "going",
+            "went"
+          ],
+          "ans": 2,
+          "explain": "'be going to' = sắp/sẽ (nói về kế hoạch). I'm going to = Tôi sẽ."
+        },
+        {
+          "q": "She _____ going to fly a kite next weekend.",
+          "opts": [
+            "am",
+            "is",
+            "are",
+            "was"
+          ],
+          "ans": 1,
+          "explain": "'She' đi với 'is': She is going to."
+        },
+        {
+          "q": "I hope the weather _____ sunny.",
+          "opts": [
+            "am",
+            "is",
+            "are",
+            "be"
+          ],
+          "ans": 1,
+          "explain": "'the weather' (số ít) + 'is'."
+        },
+        {
+          "q": "It's _____ today. I need to drink a lot of water.",
+          "opts": [
+            "snowy",
+            "humid",
+            "calm",
+            "clear"
+          ],
+          "ans": 1,
+          "explain": "'humid' (ẩm ướt/nóng bức) → cần uống nhiều nước."
+        },
+        {
+          "q": "It's _____ today. Let's fly a kite!",
+          "opts": [
+            "calm",
+            "windy",
+            "gray",
+            "humid"
+          ],
+          "ans": 1,
+          "explain": "'windy' (có gió) - cần gió để thả diều."
+        },
+        {
+          "q": "There will _____ some showers tomorrow.",
+          "opts": [
+            "is",
+            "are",
+            "be",
+            "being"
+          ],
+          "ans": 2,
+          "explain": "'There will be' = Sẽ có. Sau 'will' + V nguyên mẫu (be)."
+        },
+        {
+          "q": "There will be a _____, so I'm going to bring my umbrella.",
+          "opts": [
+            "sunshine",
+            "rainstorm",
+            "calm",
+            "clear"
+          ],
+          "ans": 1,
+          "explain": "'rainstorm' (bão mưa) → cần mang ô dù."
+        },
+        {
+          "q": "What's the weather _____ in Paris in the fall?",
+          "opts": [
+            "look",
+            "feel",
+            "like",
+            "seem"
+          ],
+          "ans": 2,
+          "explain": "'What's the weather like...?' là cách hỏi thời tiết."
+        },
+        {
+          "q": "It's warm and _____ in Melbourne in the summer.",
+          "opts": [
+            "snowy",
+            "dry",
+            "cold",
+            "freezing"
+          ],
+          "ans": 1,
+          "explain": "Melbourne mùa hè thường ấm và khô."
+        },
+        {
+          "q": "We're going to have a picnic _____ weekend.",
+          "opts": [
+            "last",
+            "this",
+            "next",
+            "every"
+          ],
+          "ans": 2,
+          "explain": "'next weekend' (cuối tuần sau) - kế hoạch tương lai."
+        },
+        {
+          "q": "It's _____ today. I can see the blue sky.",
+          "opts": [
+            "gray",
+            "clear",
+            "humid",
+            "rainy"
+          ],
+          "ans": 1,
+          "explain": "'clear' (quang đãng) - nhìn thấy bầu trời xanh."
+        },
+        {
+          "q": "There will be a _____ with heavy snow.",
+          "opts": [
+            "thunderstorm",
+            "flood",
+            "snowstorm",
+            "shower"
+          ],
+          "ans": 2,
+          "explain": "'snowstorm' (bão tuyết) - có tuyết rơi nhiều."
+        },
+        {
+          "q": "It's gray and cold. I'm going to _____ at home.",
+          "opts": [
+            "go",
+            "stay",
+            "visit",
+            "play"
+          ],
+          "ans": 1,
+          "explain": "Trời u ám và lạnh → ở nhà (stay at home)."
+        },
+        {
+          "q": "He's going to bring his _____ because there will be rain.",
+          "opts": [
+            "kite",
+            "ball",
+            "umbrella",
+            "hat"
+          ],
+          "ans": 2,
+          "explain": "'umbrella' (ô dù) - mang theo khi trời mưa."
+        },
+        {
+          "q": "What's the weather like in Hanoi in the _____? - It's cold.",
+          "opts": [
+            "summer",
+            "spring",
+            "fall",
+            "winter"
+          ],
+          "ans": 3,
+          "explain": "'winter' (mùa đông) - Hà Nội mùa đông lạnh."
+        },
+        {
+          "q": "It's _____ today. There's a light wind.",
+          "opts": [
+            "calm",
+            "breezy",
+            "stormy",
+            "humid"
+          ],
+          "ans": 1,
+          "explain": "'breezy' (có gió nhẹ) - gió nhẹ."
+        },
+        {
+          "q": "There will be some _____. Don't forget your raincoat.",
+          "opts": [
+            "sunshine",
+            "showers",
+            "snowstorms",
+            "floods"
+          ],
+          "ans": 1,
+          "explain": "'showers' (mưa rào) - cần mang áo mưa."
+        },
+        {
+          "q": "They _____ going to visit the mountains next week.",
+          "opts": [
+            "am",
+            "is",
+            "are",
+            "was"
+          ],
+          "ans": 2,
+          "explain": "'They' đi với 'are': They are going to."
+        }
+      ]
+    }
+  }
+}

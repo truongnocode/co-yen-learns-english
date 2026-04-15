@@ -1,0 +1,2356 @@
+{
+  "1.1.1": {
+    "name": "Local community",
+    "questions": [
+      {
+        "q": "Our tour guide encouraged us to ___ the village slowly to learn about local life and traditional houses.",
+        "opts": [
+          "look around",
+          "get on with",
+          "run out of",
+          "take care of"
+        ],
+        "ans": 0,
+        "explain": "\"Look around\" nghĩa là đi xung quanh để quan sát, phù hợp với ngữ cảnh tham quan làng. \"Get on with\" = hòa hợp, \"run out of\" = hết, \"take care of\" = chăm sóc."
+      },
+      {
+        "q": "The teacher's responsibility is to ___ students on how to use study tools effectively.",
+        "opts": [
+          "instruct",
+          "study",
+          "observe",
+          "encourage"
+        ],
+        "ans": 0,
+        "explain": "\"Instruct\" = hướng dẫn, chỉ dạy. Phù hợp với vai trò của giáo viên. \"Study\" = học, \"observe\" = quan sát, \"encourage\" = khuyến khích - không hợp nghĩa."
+      },
+      {
+        "q": "My friends sometimes ___ me to join community events by sending messages about meeting times and activities.",
+        "opts": [
+          "support",
+          "generate",
+          "remind",
+          "monitor"
+        ],
+        "ans": 2,
+        "explain": "\"Remind\" = nhắc nhở. Bạn bè nhắc nhở tham gia bằng cách gửi tin nhắn. \"Support\" = hỗ trợ, \"generate\" = tạo ra, \"monitor\" = giám sát."
+      },
+      {
+        "q": "My grandmother lovingly ___ her treasured necklace, a precious object that carries our family's history.",
+        "opts": [
+          "handed down",
+          "gave out",
+          "took off",
+          "got up"
+        ],
+        "ans": 0,
+        "explain": "\"Handed down\" = truyền lại (từ đời này sang đời khác). Phù hợp với ngữ cảnh truyền gia bảo. \"Gave out\" = phát, \"took off\" = cất cánh/cởi, \"got up\" = thức dậy."
+      },
+      {
+        "q": "Many people find it ___ to shop online because they can buy things from home without travelling anywhere.",
+        "opts": [
+          "convenient",
+          "connected",
+          "scenic",
+          "inconvenient"
+        ],
+        "ans": 0,
+        "explain": "\"Convenient\" = tiện lợi. Mua sắm online tiện vì không cần đi đâu. \"Inconvenient\" = bất tiện (trái nghĩa), \"connected\" = kết nối, \"scenic\" = phong cảnh đẹp."
+      },
+      {
+        "q": "My grandmother bought a beautiful ___ made by local artisans.",
+        "opts": [
+          "facility",
+          "handicraft",
+          "connection",
+          "symbol"
+        ],
+        "ans": 1,
+        "explain": "\"Handicraft\" = đồ thủ công mỹ nghệ, do nghệ nhân địa phương làm. \"Facility\" = cơ sở vật chất, \"connection\" = kết nối, \"symbol\" = biểu tượng."
+      },
+      {
+        "q": "Thanks to fast Wi-Fi, students feel more ___ during group projects because they can share ideas quickly and easily.",
+        "opts": [
+          "connected",
+          "convenient",
+          "special",
+          "original"
+        ],
+        "ans": 0,
+        "explain": "\"Connected\" = kết nối, cảm thấy gắn kết. Wi-Fi nhanh giúp học sinh kết nối trong dự án nhóm. \"Convenient\" = tiện lợi, \"special\" = đặc biệt, \"original\" = ban đầu."
+      },
+      {
+        "q": "The new sports ___ in our town has a swimming pool, a gym and several rooms for indoor games.",
+        "opts": [
+          "neighbor",
+          "connection",
+          "facility",
+          "convenience"
+        ],
+        "ans": 2,
+        "explain": "\"Facility\" = cơ sở vật chất, công trình. Có hồ bơi, phòng gym nên đây là cơ sở thể thao. \"Neighbor\" = hàng xóm, \"connection\" = kết nối, \"convenience\" = sự tiện lợi."
+      },
+      {
+        "q": "The shop will ___ of rice soon because many people are buying it today.",
+        "opts": [
+          "run out",
+          "look around",
+          "cut down",
+          "pass down"
+        ],
+        "ans": 0,
+        "explain": "\"Run out (of)\" = hết, cạn kiệt. Cửa hàng sắp hết gạo vì nhiều người mua. \"Look around\" = nhìn xung quanh, \"cut down\" = cắt giảm, \"pass down\" = truyền lại."
+      },
+      {
+        "q": "Each region has its own food ___ that attracts visitors who want to try unique local dishes.",
+        "opts": [
+          "speciality",
+          "helper",
+          "appliance",
+          "origin"
+        ],
+        "ans": 0,
+        "explain": "\"Speciality\" = đặc sản. Mỗi vùng có đặc sản riêng thu hút du khách. \"Helper\" = người giúp đỡ, \"appliance\" = thiết bị, \"origin\" = nguồn gốc."
+      },
+      {
+        "q": "Even though they sometimes argue, the sisters still have good ___ with each other and share everything.",
+        "opts": [
+          "origin",
+          "relationship",
+          "generation",
+          "symbol"
+        ],
+        "ans": 1,
+        "explain": "\"Relationship\" = mối quan hệ. Dù hay cãi nhau nhưng vẫn có mối quan hệ tốt. \"Origin\" = nguồn gốc, \"generation\" = thế hệ, \"symbol\" = biểu tượng."
+      },
+      {
+        "q": "___, we intended to go camping with my classmates, but then we won the trip to Ha Long Bay.",
+        "opts": [
+          "Origin",
+          "Original",
+          "Originate",
+          "Originally"
+        ],
+        "ans": 3,
+        "explain": "\"Originally\" là trạng từ, đứng đầu câu bổ nghĩa cho cả câu. \"Origin\" (danh từ), \"Original\" (tính từ), \"Originate\" (động từ) không phù hợp vị trí ngữ pháp."
+      },
+      {
+        "q": "That ___ helper collects old clothes and gives them to poor families.",
+        "opts": [
+          "artisan",
+          "community",
+          "neighborhood",
+          "garbage"
+        ],
+        "ans": 1,
+        "explain": "\"Community helper\" = người giúp đỡ cộng đồng. Đây là cụm từ cố định chỉ người làm việc thiện nguyện cho cộng đồng."
+      },
+      {
+        "q": "Our ___ often visit us during the holidays, and we always exchange homemade food and small gifts.",
+        "opts": [
+          "neighbors",
+          "connections",
+          "facilities",
+          "conveniences"
+        ],
+        "ans": 0,
+        "explain": "\"Neighbors\" = hàng xóm. Hàng xóm đến thăm vào dịp lễ và trao đổi quà. \"Connections\" = kết nối, \"facilities\" = cơ sở vật chất, \"conveniences\" = tiện nghi."
+      }
+    ]
+  },
+  "1.1.2": {
+    "name": "City Life",
+    "questions": [
+      {
+        "q": "He couldn't join us at the shopping mall because he ___ a bad cold this morning.",
+        "opts": [
+          "came up with",
+          "kept up with",
+          "came down with",
+          "got on with"
+        ],
+        "ans": 2,
+        "explain": "\"Came down with\" = mắc bệnh, bị ốm. Anh ấy bị cảm nặng. \"Came up with\" = nghĩ ra, \"kept up with\" = theo kịp, \"got on with\" = hòa hợp."
+      },
+      {
+        "q": "The shop window was decorated ___ with colorful lights to make more customers stop and look inside.",
+        "opts": [
+          "attraction",
+          "attractive",
+          "attract",
+          "attractively"
+        ],
+        "ans": 3,
+        "explain": "Cần trạng từ (adverb) bổ nghĩa cho động từ \"decorated\". \"Attractively\" là trạng từ. \"Attraction\" (danh từ), \"attractive\" (tính từ), \"attract\" (động từ)."
+      },
+      {
+        "q": "After years of rapid development, the city became terribly ___, making it difficult for cars to move during rush hour.",
+        "opts": [
+          "congest",
+          "congestion",
+          "congested",
+          "congesting"
+        ],
+        "ans": 2,
+        "explain": "Cần tính từ sau \"became\". \"Congested\" = tắc nghẽn. \"Congest\" (động từ), \"congestion\" (danh từ), \"congesting\" (V-ing) không đúng vị trí."
+      },
+      {
+        "q": "Many children feel ___ after spending too much time outdoors in the strong sunlight.",
+        "opts": [
+          "itch",
+          "itchy",
+          "itching",
+          "itchiness"
+        ],
+        "ans": 1,
+        "explain": "Cần tính từ sau \"feel\". \"Itchy\" = ngứa ngáy. \"Itch\" (danh từ/động từ), \"itching\" (V-ing), \"itchiness\" (danh từ) không phù hợp."
+      },
+      {
+        "q": "Some visitors feel uncomfortable in the city centre because it looks like a concrete ___ with tall buildings and busy streets everywhere.",
+        "opts": [
+          "jungle",
+          "forest",
+          "garden",
+          "market"
+        ],
+        "ans": 0,
+        "explain": "\"Concrete jungle\" = rừng bê tông, chỉ thành phố đầy nhà cao tầng. Đây là thành ngữ phổ biến trong tiếng Anh."
+      },
+      {
+        "q": "After the heavy rain, many cars began to ___ stuck under the bridge because the water level suddenly rose.",
+        "opts": [
+          "get",
+          "go",
+          "take",
+          "turn"
+        ],
+        "ans": 0,
+        "explain": "\"Get stuck\" = bị kẹt, mắc kẹt. Đây là cụm từ cố định. \"Go/take/turn\" không kết hợp với \"stuck\"."
+      },
+      {
+        "q": "The workers put up warning signs around the ___ to keep residents safe while new apartments were being built.",
+        "opts": [
+          "tourist attraction",
+          "public amenity",
+          "concrete jungle",
+          "construction site"
+        ],
+        "ans": 3,
+        "explain": "\"Construction site\" = công trường xây dựng. Có biển cảnh báo khi đang xây chung cư mới. \"Tourist attraction\" = điểm du lịch, \"public amenity\" = tiện ích công cộng."
+      },
+      {
+        "q": "The city has a new metro system that helps people ___ easily without spending too much time in traffic jams.",
+        "opts": [
+          "get around",
+          "pass down",
+          "look around",
+          "deal with"
+        ],
+        "ans": 0,
+        "explain": "\"Get around\" = di chuyển xung quanh. Hệ thống tàu điện giúp di chuyển dễ dàng. \"Pass down\" = truyền lại, \"look around\" = nhìn xung quanh, \"deal with\" = giải quyết."
+      },
+      {
+        "q": "The local government will ___ a survey to find out what residents need in their neighborhood.",
+        "opts": [
+          "run out",
+          "carry out",
+          "hang out",
+          "break down"
+        ],
+        "ans": 1,
+        "explain": "\"Carry out\" = tiến hành, thực hiện (khảo sát). \"Run out\" = hết, \"hang out\" = đi chơi, \"break down\" = hỏng."
+      },
+      {
+        "q": "The bus suddenly ___ in the middle of the busy street, causing a long line of cars behind it.",
+        "opts": [
+          "came across",
+          "got on",
+          "broke down",
+          "looked up"
+        ],
+        "ans": 2,
+        "explain": "\"Broke down\" = hỏng, ngừng hoạt động (xe cộ). Xe buýt hỏng giữa đường. \"Came across\" = tình cờ gặp, \"got on\" = lên xe, \"looked up\" = tra cứu."
+      },
+      {
+        "q": "The neighborhood is very safe because the police work hard to ___ reduce and protect residents.",
+        "opts": [
+          "crime",
+          "attraction",
+          "stress",
+          "expenses"
+        ],
+        "ans": 0,
+        "explain": "\"Crime\" = tội phạm. Cảnh sát làm việc để giảm tội phạm. \"Attraction\" = điểm thu hút, \"stress\" = căng thẳng, \"expenses\" = chi phí."
+      },
+      {
+        "q": "Many teenagers like to ___ at the new community centre after school because it has games and free Wi-Fi.",
+        "opts": [
+          "break down",
+          "look after",
+          "hang out",
+          "get off"
+        ],
+        "ans": 2,
+        "explain": "\"Hang out\" = đi chơi, tụ tập. Thanh thiếu niên thích tụ tập ở trung tâm cộng đồng. \"Break down\" = hỏng, \"look after\" = chăm sóc, \"get off\" = xuống xe."
+      },
+      {
+        "q": "We used the mobile app to ___ the latest information about bus schedules in the city.",
+        "opts": [
+          "update",
+          "monitor",
+          "delete",
+          "announce"
+        ],
+        "ans": 0,
+        "explain": "\"Update\" = cập nhật. Dùng ứng dụng để cập nhật thông tin lịch xe buýt. \"Monitor\" = giám sát, \"delete\" = xóa, \"announce\" = thông báo."
+      },
+      {
+        "q": "The park, library and playground are considered important ___ because they provide helpful services for everyone living in the neighborhood.",
+        "opts": [
+          "tourist attractions",
+          "public amenities",
+          "concrete jungles",
+          "construction sites"
+        ],
+        "ans": 1,
+        "explain": "\"Public amenities\" = tiện ích công cộng (công viên, thư viện, sân chơi). Cung cấp dịch vụ hữu ích cho mọi người. \"Tourist attractions\" = điểm du lịch."
+      },
+      {
+        "q": "The old house will be cheaper to buy, but fixing it may be quite ___ for young families.",
+        "opts": [
+          "pricey",
+          "itchy",
+          "criminal",
+          "crowded"
+        ],
+        "ans": 0,
+        "explain": "\"Pricey\" = đắt đỏ. Sửa nhà cũ có thể tốn kém. \"Itchy\" = ngứa, \"criminal\" = tội phạm, \"crowded\" = đông đúc."
+      },
+      {
+        "q": "The government plans to ___ new road rules to make travelling safer for everyone in the city.",
+        "opts": [
+          "implement",
+          "break",
+          "disobey",
+          "ban"
+        ],
+        "ans": 0,
+        "explain": "\"Implement\" = thực hiện, triển khai (luật lệ). Chính phủ triển khai luật giao thông mới. \"Break\" = phá vỡ, \"disobey\" = không tuân theo, \"ban\" = cấm."
+      },
+      {
+        "q": "The old town becomes very ___ during festival seasons because many tourists visit the shops, markets and food stalls.",
+        "opts": [
+          "bustling",
+          "blank",
+          "harmful",
+          "grateful"
+        ],
+        "ans": 0,
+        "explain": "\"Bustling\" = nhộn nhịp, sôi động. Phố cổ nhộn nhịp mùa lễ hội. \"Blank\" = trống, \"harmful\" = có hại, \"grateful\" = biết ơn."
+      },
+      {
+        "q": "After the big family meal, we saved all the ___ for lunch the next day.",
+        "opts": [
+          "cuisines",
+          "ingredients",
+          "leftovers",
+          "recipes"
+        ],
+        "ans": 2,
+        "explain": "\"Leftovers\" = đồ ăn thừa. Sau bữa ăn lớn, để dành đồ thừa cho ngày mai. \"Cuisines\" = ẩm thực, \"ingredients\" = nguyên liệu, \"recipes\" = công thức."
+      },
+      {
+        "q": "The government decided to ___ smoking in public buildings to protect people's health.",
+        "opts": [
+          "ban",
+          "implement",
+          "advertise",
+          "encourage"
+        ],
+        "ans": 0,
+        "explain": "\"Ban\" = cấm. Chính phủ cấm hút thuốc nơi công cộng. \"Implement\" = thực hiện, \"advertise\" = quảng cáo, \"encourage\" = khuyến khích."
+      },
+      {
+        "q": "The coach believes the young athlete has great ___ and might become a national champion in the future.",
+        "opts": [
+          "skill",
+          "talent",
+          "inability",
+          "potential"
+        ],
+        "ans": 3,
+        "explain": "\"Potential\" = tiềm năng. Huấn luyện viên tin vận động viên trẻ có tiềm năng lớn. \"Skill\" = kỹ năng, \"talent\" = tài năng, \"inability\" = sự bất lực."
+      }
+    ]
+  },
+  "1.1.3": {
+    "name": "Healthy Living For Teens",
+    "questions": [
+      {
+        "q": "Even if the test is difficult, students are encouraged to ___ their best and stay confident.",
+        "opts": [
+          "bring",
+          "get",
+          "make",
+          "do"
+        ],
+        "ans": 3,
+        "explain": "\"Do one's best\" = cố gắng hết sức. Đây là cụm từ cố định. Không dùng \"bring/get/make\" với \"best\"."
+      },
+      {
+        "q": "It's important to ___ between studying and relaxing so that you won't feel tired all the time.",
+        "opts": [
+          "balance",
+          "maintain",
+          "limit",
+          "measure"
+        ],
+        "ans": 0,
+        "explain": "\"Balance\" = cân bằng. Cần cân bằng giữa học và nghỉ ngơi. \"Maintain\" = duy trì, \"limit\" = giới hạn, \"measure\" = đo lường."
+      },
+      {
+        "q": "Many students find it hard to study when loud noises ___ them from concentrating on their schoolwork.",
+        "opts": [
+          "distraction",
+          "distracted",
+          "distract",
+          "distracting"
+        ],
+        "ans": 2,
+        "explain": "Cần động từ nguyên mẫu sau chủ ngữ \"noises\". \"Distract\" = làm mất tập trung. \"Distraction\" (danh từ), \"distracted\" (tính từ), \"distracting\" (tính từ) không phù hợp."
+      },
+      {
+        "q": "Fruits and vegetables provide essential ___ that helps teenagers grow well and stay healthy.",
+        "opts": [
+          "nutritionist",
+          "nutrients",
+          "nutritious",
+          "nutritiously"
+        ],
+        "ans": 1,
+        "explain": "Cần danh từ sau \"essential\". \"Nutrients\" = chất dinh dưỡng. \"Nutritionist\" = chuyên gia dinh dưỡng, \"nutritious\" (tính từ), \"nutritiously\" (trạng từ)."
+      },
+      {
+        "q": "Eating whole grains and drinking enough water are ___ for teens who want to improve their health and fitness.",
+        "opts": [
+          "beneficial",
+          "benefit",
+          "benefits",
+          "beneficially"
+        ],
+        "ans": 0,
+        "explain": "Cần tính từ sau \"are\". \"Beneficial\" = có lợi. \"Benefit\" (danh từ/động từ), \"benefits\" (danh từ số nhiều), \"beneficially\" (trạng từ)."
+      },
+      {
+        "q": "She always eats a(n) ___ diet with vegetables, fruit and protein to stay healthy and full of energy.",
+        "opts": [
+          "well-balanced",
+          "unhealthy",
+          "unbalanced",
+          "well-prepared"
+        ],
+        "ans": 0,
+        "explain": "\"Well-balanced diet\" = chế độ ăn cân bằng. Bao gồm rau, trái cây và protein. \"Unhealthy\" = không lành mạnh, \"unbalanced\" = mất cân bằng."
+      },
+      {
+        "q": "Even when facing difficulties, he stays ___ and believes everything will get better soon.",
+        "opts": [
+          "optimistic",
+          "stressed-out",
+          "pessimistic",
+          "exhausted"
+        ],
+        "ans": 0,
+        "explain": "\"Optimistic\" = lạc quan. Dù khó khăn vẫn tin mọi thứ sẽ tốt hơn. \"Stressed-out\" = căng thẳng, \"pessimistic\" = bi quan, \"exhausted\" = kiệt sức."
+      },
+      {
+        "q": "She worked hard to ___ her goal of finishing the school project before the weekend.",
+        "opts": [
+          "get",
+          "miss",
+          "accomplish",
+          "end"
+        ],
+        "ans": 2,
+        "explain": "\"Accomplish\" = hoàn thành, đạt được (mục tiêu). \"Get\" không đi với \"goal\", \"miss\" = bỏ lỡ, \"end\" = kết thúc."
+      },
+      {
+        "q": "Regular bike checks are important for the ___ of the bicycle, especially if you ride it to school every day.",
+        "opts": [
+          "maintenance",
+          "appearance",
+          "design",
+          "comfort"
+        ],
+        "ans": 0,
+        "explain": "\"Maintenance\" = bảo trì, bảo dưỡng. Kiểm tra xe đạp thường xuyên quan trọng cho việc bảo trì. \"Appearance\" = ngoại hình, \"design\" = thiết kế."
+      },
+      {
+        "q": "He felt completely ___ after studying for hours without taking a break.",
+        "opts": [
+          "stressed out",
+          "relaxed",
+          "optimistic",
+          "cheerful"
+        ],
+        "ans": 0,
+        "explain": "\"Stressed out\" = căng thẳng, kiệt sức. Học nhiều giờ không nghỉ sẽ căng thẳng. \"Relaxed\" = thư giãn, \"optimistic\" = lạc quan, \"cheerful\" = vui vẻ."
+      },
+      {
+        "q": "She decided to ___ her body by drinking more water and avoiding fast food for a few days.",
+        "opts": [
+          "balance",
+          "nourish",
+          "detox",
+          "strengthen"
+        ],
+        "ans": 2,
+        "explain": "\"Detox\" = thải độc. Uống nhiều nước và tránh đồ ăn nhanh để thải độc cơ thể. \"Balance\" = cân bằng, \"nourish\" = nuôi dưỡng, \"strengthen\" = tăng cường."
+      },
+      {
+        "q": "The new school rule helped ___ positive changes, making students more polite and responsible.",
+        "opts": [
+          "turn down",
+          "get on",
+          "take off",
+          "bring about"
+        ],
+        "ans": 3,
+        "explain": "\"Bring about\" = gây ra, tạo nên (thay đổi). Quy tắc mới tạo nên thay đổi tích cực. \"Turn down\" = từ chối, \"get on\" = lên xe, \"take off\" = cất cánh."
+      },
+      {
+        "q": "Parents usually ___ their children by cooking meals, helping with homework and keeping them safe.",
+        "opts": [
+          "look after",
+          "bring about",
+          "get around",
+          "hang out"
+        ],
+        "ans": 0,
+        "explain": "\"Look after\" = chăm sóc. Cha mẹ chăm sóc con cái. \"Bring about\" = gây ra, \"get around\" = di chuyển, \"hang out\" = đi chơi."
+      },
+      {
+        "q": "When students feel stressed, they can talk to the school ___ for advice and support.",
+        "opts": [
+          "customer",
+          "visitor",
+          "counsellor",
+          "librarian"
+        ],
+        "ans": 2,
+        "explain": "\"Counsellor\" = chuyên viên tư vấn. Học sinh căng thẳng có thể nói chuyện với chuyên viên tư vấn trường. \"Customer\" = khách hàng, \"visitor\" = khách thăm."
+      },
+      {
+        "q": "Teenagers should avoid ___ snacks because they can quickly lead to weight gain and unhealthy eating habits.",
+        "opts": [
+          "fattening",
+          "healthy",
+          "nutritious",
+          "expensive"
+        ],
+        "ans": 0,
+        "explain": "\"Fattening\" = gây béo. Đồ ăn vặt gây béo dẫn đến tăng cân. \"Healthy\" = lành mạnh, \"nutritious\" = bổ dưỡng, \"expensive\" = đắt tiền."
+      }
+    ]
+  },
+  "1.2.1": {
+    "name": "Life in the past",
+    "questions": [
+      {
+        "q": "In many families, the father is the main ___ who earns money to support everyone at home.",
+        "opts": [
+          "breadwinner",
+          "ancestor",
+          "homemaker",
+          "neighbour"
+        ],
+        "ans": 0,
+        "explain": "\"Breadwinner\" = trụ cột gia đình, người kiếm tiền nuôi gia đình. \"Ancestor\" = tổ tiên, \"homemaker\" = người nội trợ, \"neighbour\" = hàng xóm."
+      },
+      {
+        "q": "From the top of the hill, we had a ___ view of the whole valley and river.",
+        "opts": [
+          "tiny",
+          "magnificent",
+          "boring",
+          "dark"
+        ],
+        "ans": 1,
+        "explain": "\"Magnificent\" = hùng vĩ, tráng lệ. Nhìn từ đỉnh đồi thấy toàn cảnh thung lũng. \"Tiny\" = nhỏ xíu, \"boring\" = nhàm chán, \"dark\" = tối."
+      },
+      {
+        "q": "Some families prefer living in a(n) ___ family, with parents and children only.",
+        "opts": [
+          "extended",
+          "large",
+          "nuclear",
+          "mixed"
+        ],
+        "ans": 2,
+        "explain": "\"Nuclear family\" = gia đình hạt nhân (chỉ có bố mẹ và con). \"Extended\" = mở rộng, \"large\" = lớn, \"mixed\" = hỗn hợp."
+      },
+      {
+        "q": "In the past, many villages were ___ by foreign armies during long wars.",
+        "opts": [
+          "recognized",
+          "occupied",
+          "observed",
+          "followed"
+        ],
+        "ans": 1,
+        "explain": "\"Occupied\" = chiếm đóng. Làng bị quân đội nước ngoài chiếm đóng. \"Recognized\" = nhận ra, \"observed\" = quan sát, \"followed\" = theo dõi."
+      },
+      {
+        "q": "My great-grandfather collected many ___ objects from the old village that now belong to our family.",
+        "opts": [
+          "ancient",
+          "modern",
+          "practical",
+          "contemporary"
+        ],
+        "ans": 0,
+        "explain": "\"Ancient\" = cổ xưa. Đồ vật cổ từ ngôi làng cũ. \"Modern\" = hiện đại, \"practical\" = thực tế, \"contemporary\" = đương đại."
+      },
+      {
+        "q": "Many people visit the old buildings because they are still ___ and show the city's long history.",
+        "opts": [
+          "deep-rooted",
+          "relative",
+          "well-preserved",
+          "religious"
+        ],
+        "ans": 2,
+        "explain": "\"Well-preserved\" = được bảo tồn tốt. Công trình cổ vẫn còn nguyên vẹn. \"Deep-rooted\" = ăn sâu, \"relative\" = tương đối, \"religious\" = tôn giáo."
+      },
+      {
+        "q": "I didn't ___ my teacher at first because she was wearing traditional clothes for the festival.",
+        "opts": [
+          "recognise",
+          "observe",
+          "overcome",
+          "occupy"
+        ],
+        "ans": 0,
+        "explain": "\"Recognise\" = nhận ra. Không nhận ra cô giáo vì mặc trang phục truyền thống. \"Observe\" = quan sát, \"overcome\" = vượt qua, \"occupy\" = chiếm đóng."
+      },
+      {
+        "q": "She felt truly ___ for the support her family gave her during difficult times.",
+        "opts": [
+          "thank",
+          "thankful",
+          "thankfully",
+          "thankless"
+        ],
+        "ans": 1,
+        "explain": "Cần tính từ sau \"felt\". \"Thankful\" = biết ơn. \"Thank\" (động từ), \"thankfully\" (trạng từ), \"thankless\" (vô ơn) không phù hợp."
+      },
+      {
+        "q": "A grandmother, grandfather, aunts and cousins all belong to a(n) ___ family, which is larger than the nuclear one.",
+        "opts": [
+          "nuclear",
+          "single-parent",
+          "blended",
+          "extended"
+        ],
+        "ans": 3,
+        "explain": "\"Extended family\" = đại gia đình (gồm ông bà, cô chú, anh chị em họ). \"Nuclear\" = hạt nhân, \"single-parent\" = đơn thân, \"blended\" = ghép."
+      },
+      {
+        "q": "My uncle told us the story of how he first ___ in love with my aunt at university.",
+        "opts": [
+          "took",
+          "fell",
+          "made",
+          "got"
+        ],
+        "ans": 1,
+        "explain": "\"Fell in love\" = phải lòng, yêu. Đây là cụm từ cố định. Không dùng \"took/made/got\" với \"in love\"."
+      },
+      {
+        "q": "The local museum wants young people to ___ a contribution to protecting traditional crafts.",
+        "opts": [
+          "make",
+          "take",
+          "give",
+          "show"
+        ],
+        "ans": 0,
+        "explain": "\"Make a contribution\" = đóng góp. Đây là cụm từ cố định. Không dùng \"take/give/show\" với \"contribution\"."
+      },
+      {
+        "q": "The family tradition has become so ___ that everyone follows it without question every year.",
+        "opts": [
+          "thankful",
+          "deep-rooted",
+          "historic",
+          "relative"
+        ],
+        "ans": 1,
+        "explain": "\"Deep-rooted\" = ăn sâu, bám rễ. Truyền thống ăn sâu đến mức ai cũng tuân theo. \"Thankful\" = biết ơn, \"historic\" = lịch sử, \"relative\" = tương đối."
+      },
+      {
+        "q": "During the celebration, villagers ___ gratitude to their ancestors by offering fruit and lighting incense.",
+        "opts": [
+          "show",
+          "get",
+          "break",
+          "fall"
+        ],
+        "ans": 0,
+        "explain": "\"Show gratitude\" = bày tỏ lòng biết ơn. Đây là cụm từ cố định. Không dùng \"get/break/fall\" với \"gratitude\"."
+      },
+      {
+        "q": "Our grandparents always tell us to ___ pride in our traditions and family history.",
+        "opts": [
+          "make",
+          "take",
+          "give",
+          "keep"
+        ],
+        "ans": 1,
+        "explain": "\"Take pride in\" = tự hào về. Đây là cụm từ cố định. Không dùng \"make/give/keep\" với \"pride in\"."
+      },
+      {
+        "q": "The story tells how the hero managed to ___ many challenges and protect his village.",
+        "opts": [
+          "recognize",
+          "overcome",
+          "observe",
+          "fall"
+        ],
+        "ans": 1,
+        "explain": "\"Overcome\" = vượt qua (thử thách). Người anh hùng vượt qua nhiều thử thách. \"Recognize\" = nhận ra, \"observe\" = quan sát, \"fall\" = rơi."
+      },
+      {
+        "q": "At the family reunion, every ___ shared stories about their childhood and past memories.",
+        "opts": [
+          "relative",
+          "ancestor",
+          "observer",
+          "homemaker"
+        ],
+        "ans": 0,
+        "explain": "\"Relative\" = người thân, họ hàng. Tại buổi họp mặt gia đình, mỗi người thân chia sẻ câu chuyện. \"Ancestor\" = tổ tiên, \"observer\" = người quan sát."
+      },
+      {
+        "q": "Old family photos help us remember where we come from and honor every ___ in our family tree.",
+        "opts": [
+          "homemaker",
+          "ancestor",
+          "neighbour",
+          "breadwinner"
+        ],
+        "ans": 1,
+        "explain": "\"Ancestor\" = tổ tiên. Ảnh gia đình cũ giúp nhớ về tổ tiên. \"Homemaker\" = nội trợ, \"neighbour\" = hàng xóm, \"breadwinner\" = trụ cột."
+      },
+      {
+        "q": "From the top of the tower, tourists can ___ the busy streets and enjoy the beautiful view of the city.",
+        "opts": [
+          "observe",
+          "occupy",
+          "overcome",
+          "recognize"
+        ],
+        "ans": 0,
+        "explain": "\"Observe\" = quan sát. Từ đỉnh tháp, du khách có thể quan sát đường phố. \"Occupy\" = chiếm đóng, \"overcome\" = vượt qua, \"recognize\" = nhận ra."
+      },
+      {
+        "q": "The city has many ___ buildings that show its long history and attract visitors from around the world.",
+        "opts": [
+          "modern",
+          "historic",
+          "peaceful",
+          "simple"
+        ],
+        "ans": 1,
+        "explain": "\"Historic\" = có tính lịch sử. Thành phố có nhiều công trình lịch sử. \"Modern\" = hiện đại, \"peaceful\" = yên bình, \"simple\" = đơn giản."
+      },
+      {
+        "q": "The town is famous for its ___ temples, where many local people come to pray every weekend.",
+        "opts": [
+          "noisy",
+          "crowded",
+          "dangerous",
+          "religious"
+        ],
+        "ans": 3,
+        "explain": "\"Religious\" = tôn giáo, liên quan đến tín ngưỡng. Ngôi chùa tôn giáo nơi mọi người đến cầu nguyện. \"Noisy\" = ồn ào, \"crowded\" = đông, \"dangerous\" = nguy hiểm."
+      }
+    ]
+  },
+  "1.2.2": {
+    "name": "Our experience",
+    "questions": [
+      {
+        "q": "Some students feel scared to go to school because an older boy tries to ___ them every day during break time.",
+        "opts": [
+          "bully",
+          "explore",
+          "revise",
+          "amaze"
+        ],
+        "ans": 0,
+        "explain": "\"Bully\" = bắt nạt. Một học sinh lớn hơn cố bắt nạt mỗi ngày. \"Explore\" = khám phá, \"revise\" = ôn tập, \"amaze\" = làm kinh ngạc."
+      },
+      {
+        "q": "The museum has a special room showing ___ tools that early humans used thousands of years ago.",
+        "opts": [
+          "unpleasant",
+          "prehistoric",
+          "exhilarating",
+          "brilliant"
+        ],
+        "ans": 1,
+        "explain": "\"Prehistoric\" = tiền sử. Công cụ mà người tiền sử sử dụng hàng ngàn năm trước. \"Unpleasant\" = khó chịu, \"exhilarating\" = phấn khích, \"brilliant\" = xuất sắc."
+      },
+      {
+        "q": "We had a(n) ___ smell coming from the kitchen because someone burned the rice while cooking.",
+        "opts": [
+          "unpleasant",
+          "unforgettable",
+          "thrilling",
+          "amazing"
+        ],
+        "ans": 0,
+        "explain": "\"Unpleasant\" = khó chịu. Mùi khó chịu vì ai đó làm cháy cơm. \"Unforgettable\" = khó quên, \"thrilling\" = hồi hộp, \"amazing\" = tuyệt vời."
+      },
+      {
+        "q": "He tried to answer the final question, but his mind suddenly went ___ and he couldn't say a word.",
+        "opts": [
+          "brilliant",
+          "prehistoric",
+          "embarrassing",
+          "blank"
+        ],
+        "ans": 3,
+        "explain": "\"Go blank\" = trống rỗng (đầu óc). Đầu óc trống rỗng không nói được gì. \"Brilliant\" = xuất sắc, \"prehistoric\" = tiền sử, \"embarrassing\" = xấu hổ."
+      },
+      {
+        "q": "Before the big exam, students are advised to ___ all the lessons they have already learned in class.",
+        "opts": [
+          "revise",
+          "skip",
+          "attend",
+          "repeat"
+        ],
+        "ans": 0,
+        "explain": "\"Revise\" = ôn tập. Trước kỳ thi lớn cần ôn tập lại bài đã học. \"Skip\" = bỏ qua, \"attend\" = tham dự, \"repeat\" = lặp lại."
+      },
+      {
+        "q": "The boat trip along the river was so ___ that everyone screamed and laughed the whole way.",
+        "opts": [
+          "thrilling",
+          "uncomfortable",
+          "prehistoric",
+          "brilliant"
+        ],
+        "ans": 0,
+        "explain": "\"Thrilling\" = hồi hộp, ly kỳ. Chuyến đi thuyền khiến mọi người la hét và cười. \"Uncomfortable\" = không thoải mái, \"brilliant\" = xuất sắc."
+      },
+      {
+        "q": "The school will ___ posters around the building to inform students about the fundraising event this weekend.",
+        "opts": [
+          "turn up",
+          "bring about",
+          "hang out",
+          "put up"
+        ],
+        "ans": 3,
+        "explain": "\"Put up\" = treo, dán (áp phích). Trường sẽ dán áp phích thông báo. \"Turn up\" = xuất hiện, \"bring about\" = gây ra, \"hang out\" = đi chơi."
+      },
+      {
+        "q": "When visiting new places, many tourists like to ___ pictures to remember the beautiful moments they experience.",
+        "opts": [
+          "take",
+          "get",
+          "do",
+          "bring"
+        ],
+        "ans": 0,
+        "explain": "\"Take pictures\" = chụp ảnh. Đây là cụm từ cố định. Không dùng \"get/do/bring\" với \"pictures\" theo nghĩa chụp ảnh."
+      },
+      {
+        "q": "It was very ___ for her to drop her lunch tray in front of everyone in the cafeteria.",
+        "opts": [
+          "embarrassing",
+          "amazing",
+          "satisfying",
+          "relaxing"
+        ],
+        "ans": 0,
+        "explain": "\"Embarrassing\" = xấu hổ, ngượng ngùng. Làm rơi khay đồ ăn trước mặt mọi người rất xấu hổ. \"Amazing\" = tuyệt vời, \"satisfying\" = thỏa mãn."
+      },
+      {
+        "q": "I did it ___ although I know it would annoy her.",
+        "opts": [
+          "by chance",
+          "on purpose",
+          "by mistake",
+          "by rote"
+        ],
+        "ans": 1,
+        "explain": "\"On purpose\" = cố ý, có chủ đích. Biết sẽ làm phiền nhưng vẫn cố ý làm. \"By chance\" = tình cờ, \"by mistake\" = nhầm lẫn, \"by rote\" = thuộc lòng."
+      },
+      {
+        "q": "I only managed to remember the vocabulary because I learnt the list ___ every night before the test.",
+        "opts": [
+          "by heart",
+          "by mistake",
+          "on purpose",
+          "by chance"
+        ],
+        "ans": 0,
+        "explain": "\"By heart\" = thuộc lòng. Học thuộc danh sách từ vựng mỗi tối. \"By mistake\" = nhầm lẫn, \"on purpose\" = cố ý, \"by chance\" = tình cờ."
+      },
+      {
+        "q": "Watching the forest from the top of the mountain is an amazing ___.",
+        "opts": [
+          "habit",
+          "sight",
+          "experience",
+          "accident"
+        ],
+        "ans": 2,
+        "explain": "\"Experience\" = trải nghiệm. Ngắm rừng từ đỉnh núi là trải nghiệm tuyệt vời. \"Habit\" = thói quen, \"sight\" = cảnh, \"accident\" = tai nạn."
+      },
+      {
+        "q": "The trip to the waterfall was an ___ experience that everyone in our class will remember for many years.",
+        "opts": [
+          "unforgettable",
+          "forget",
+          "forgetful",
+          "forgetfully"
+        ],
+        "ans": 0,
+        "explain": "\"Unforgettable\" = khó quên. Chuyến đi đến thác nước là trải nghiệm khó quên. \"Forget\" (động từ), \"forgetful\" (hay quên), \"forgetfully\" (trạng từ)."
+      },
+      {
+        "q": "The guide asked us to ___ the old town carefully so we wouldn't miss any of its beautiful historic houses.",
+        "opts": [
+          "explorer",
+          "exploration",
+          "exploring",
+          "explore"
+        ],
+        "ans": 3,
+        "explain": "Cần động từ nguyên mẫu sau \"to\". \"Explore\" là động từ nguyên mẫu = khám phá. \"Explorer\" (danh từ), \"exploration\" (danh từ), \"exploring\" (V-ing)."
+      },
+      {
+        "q": "Our class joined a(n) ___ to learn about local plants, animals and ways to protect the environment.",
+        "opts": [
+          "voyage",
+          "journey",
+          "exploration",
+          "eco-tour"
+        ],
+        "ans": 3,
+        "explain": "\"Eco-tour\" = chuyến du lịch sinh thái. Học về thực vật, động vật và bảo vệ môi trường. \"Voyage\" = chuyến hành trình dài, \"journey\" = cuộc hành trình."
+      },
+      {
+        "q": "The group's science project was so ___ that the teacher praised them for their creativity and teamwork.",
+        "opts": [
+          "mistaken",
+          "brilliant",
+          "stressful",
+          "narrow"
+        ],
+        "ans": 1,
+        "explain": "\"Brilliant\" = xuất sắc, tuyệt vời. Dự án khoa học được giáo viên khen ngợi. \"Mistaken\" = nhầm lẫn, \"stressful\" = căng thẳng, \"narrow\" = hẹp."
+      },
+      {
+        "q": "He sent the wrong homework file to his teacher ___ and quickly apologised for the confusion.",
+        "opts": [
+          "by mistake",
+          "on purpose",
+          "by heart",
+          "by rote"
+        ],
+        "ans": 0,
+        "explain": "\"By mistake\" = do nhầm lẫn. Gửi nhầm file và nhanh chóng xin lỗi. \"On purpose\" = cố ý, \"by heart\" = thuộc lòng, \"by rote\" = thuộc lòng."
+      },
+      {
+        "q": "Some students still prefer to learn new vocabulary ___, repeating each word many times until they remember it.",
+        "opts": [
+          "by chance",
+          "by accident",
+          "by rote",
+          "by mistake"
+        ],
+        "ans": 2,
+        "explain": "\"By rote\" = học vẹt, học thuộc lòng bằng cách lặp đi lặp lại. \"By chance\" = tình cờ, \"by accident\" = vô tình, \"by mistake\" = nhầm lẫn."
+      },
+      {
+        "q": "The view from the mountain was so ___ that we couldn't stop taking photos of the beautiful landscape.",
+        "opts": [
+          "stressful",
+          "amazing",
+          "confusing",
+          "harmful"
+        ],
+        "ans": 1,
+        "explain": "\"Amazing\" = tuyệt vời, kinh ngạc. Cảnh đẹp khiến không ngừng chụp ảnh. \"Stressful\" = căng thẳng, \"confusing\" = khó hiểu, \"harmful\" = có hại."
+      },
+      {
+        "q": "Riding a fast zipline over the forest was a(n) ___ experience that made everyone scream with excitement.",
+        "opts": [
+          "exhilarating",
+          "embarrassing",
+          "boring",
+          "disappointing"
+        ],
+        "ans": 0,
+        "explain": "\"Exhilarating\" = phấn khích, hào hứng. Trượt zipline nhanh qua rừng rất phấn khích. \"Embarrassing\" = xấu hổ, \"boring\" = nhàm chán, \"disappointing\" = thất vọng."
+      }
+    ]
+  },
+  "1.2.3": {
+    "name": "Vietnam: Then and Now",
+    "questions": [
+      {
+        "q": "The neighbourhood is very ___, with many parks and safe spaces where parents and children can spend time together.",
+        "opts": [
+          "family-oriented",
+          "hi-tech",
+          "professional",
+          "stressful"
+        ],
+        "ans": 0,
+        "explain": "\"Family-oriented\" = hướng về gia đình. Khu phố có nhiều công viên và không gian an toàn cho gia đình. \"Hi-tech\" = công nghệ cao, \"professional\" = chuyên nghiệp."
+      },
+      {
+        "q": "People today often ___ their personal time because modern life is fast and they have less chance to relax.",
+        "opts": [
+          "support",
+          "value",
+          "replace",
+          "influence"
+        ],
+        "ans": 1,
+        "explain": "\"Value\" = trân trọng, đánh giá cao. Cuộc sống hiện đại nhanh nên người ta trân trọng thời gian cá nhân. \"Support\" = hỗ trợ, \"replace\" = thay thế."
+      },
+      {
+        "q": "Thanks to new jobs in the city, young people now have greater ___ to build better lives for their families.",
+        "opts": [
+          "opportunities",
+          "privacies",
+          "memories",
+          "influences"
+        ],
+        "ans": 0,
+        "explain": "\"Opportunities\" = cơ hội. Công việc mới mang đến cơ hội lớn hơn. \"Privacies\" = sự riêng tư, \"memories\" = kỷ niệm, \"influences\" = ảnh hưởng."
+      },
+      {
+        "q": "The government is working to improve the ___ in rural areas, so families can enjoy safer homes and cleaner water.",
+        "opts": [
+          "home entertainment",
+          "sports facilities",
+          "public transport",
+          "living conditions"
+        ],
+        "ans": 3,
+        "explain": "\"Living conditions\" = điều kiện sống. Chính phủ cải thiện điều kiện sống ở nông thôn. \"Home entertainment\" = giải trí tại nhà, \"public transport\" = giao thông công cộng."
+      },
+      {
+        "q": "The country's living ___ has improved as people now have better jobs, safer homes and more comfortable living conditions.",
+        "opts": [
+          "standard",
+          "support",
+          "opportunity",
+          "profession"
+        ],
+        "ans": 0,
+        "explain": "\"Living standard\" = mức sống. Mức sống cải thiện khi có việc tốt hơn. \"Support\" = hỗ trợ, \"opportunity\" = cơ hội, \"profession\" = nghề nghiệp."
+      },
+      {
+        "q": "City apartment buildings are becoming more popular because they offer private rooms where residents can enjoy more ___.",
+        "opts": [
+          "privacy",
+          "gathering",
+          "popularity",
+          "variety"
+        ],
+        "ans": 0,
+        "explain": "\"Privacy\" = sự riêng tư. Căn hộ có phòng riêng nên cư dân có sự riêng tư. \"Gathering\" = cuộc tụ họp, \"popularity\" = sự phổ biến, \"variety\" = sự đa dạng."
+      },
+      {
+        "q": "At the meeting, students were asked to ___ notes so that they could remember important ideas for their group projects.",
+        "opts": [
+          "make",
+          "give",
+          "hold",
+          "take"
+        ],
+        "ans": 3,
+        "explain": "\"Take notes\" = ghi chú. Đây là cụm từ cố định. Không dùng \"make/give/hold\" với \"notes\" trong ngữ cảnh này (\"make notes\" cũng đúng nhưng \"take notes\" phổ biến hơn)."
+      },
+      {
+        "q": "City life encourages frequent family ___ such as weekend meals or birthday celebrations where everyone shares stories about their week.",
+        "opts": [
+          "opportunities",
+          "gatherings",
+          "memories",
+          "privacies"
+        ],
+        "ans": 1,
+        "explain": "\"Gatherings\" = cuộc tụ họp. Bữa ăn cuối tuần hay tiệc sinh nhật là các cuộc tụ họp gia đình. \"Opportunities\" = cơ hội, \"memories\" = kỷ niệm."
+      },
+      {
+        "q": "Many young people worry that social media can strongly ___ the way teenagers dress or behave today.",
+        "opts": [
+          "influence",
+          "replace",
+          "pursue",
+          "support"
+        ],
+        "ans": 0,
+        "explain": "\"Influence\" = ảnh hưởng. Mạng xã hội ảnh hưởng mạnh đến cách ăn mặc của thanh thiếu niên. \"Replace\" = thay thế, \"pursue\" = theo đuổi, \"support\" = hỗ trợ."
+      },
+      {
+        "q": "The lifestyle of modern teenagers often ___ their interests, daily habits and the technology they use at home.",
+        "opts": [
+          "replaces",
+          "depends",
+          "reflects",
+          "supports"
+        ],
+        "ans": 2,
+        "explain": "\"Reflects\" = phản ánh. Lối sống phản ánh sở thích và thói quen. \"Replaces\" = thay thế, \"depends\" = phụ thuộc, \"supports\" = hỗ trợ."
+      },
+      {
+        "q": "The elderly in rural areas sometimes feel ___ when they cannot travel to the clinic without help from their neighbors.",
+        "opts": [
+          "helpless",
+          "democratic",
+          "supportive",
+          "independent"
+        ],
+        "ans": 0,
+        "explain": "\"Helpless\" = bất lực, không tự lo được. Người già không thể tự đi khám bệnh. \"Democratic\" = dân chủ, \"supportive\" = hỗ trợ, \"independent\" = độc lập."
+      },
+      {
+        "q": "Many parents want a ___ education system where all children have equal access to good schools and learning opportunities.",
+        "opts": [
+          "popular",
+          "democratic",
+          "dependent",
+          "hi-tech"
+        ],
+        "ans": 1,
+        "explain": "\"Democratic\" = dân chủ, công bằng. Hệ thống giáo dục công bằng cho mọi trẻ em. \"Popular\" = phổ biến, \"dependent\" = phụ thuộc, \"hi-tech\" = công nghệ cao."
+      },
+      {
+        "q": "The company looks for ___ workers who can communicate well, meet deadlines and solve problems on their own.",
+        "opts": [
+          "amateur",
+          "unfriendly",
+          "professional",
+          "hi-tech"
+        ],
+        "ans": 2,
+        "explain": "\"Professional\" = chuyên nghiệp. Giao tiếp tốt, đúng hạn, giải quyết vấn đề. \"Amateur\" = nghiệp dư, \"unfriendly\" = không thân thiện."
+      },
+      {
+        "q": "The ___ of smartphones has changed the way people shop, learn, and stay in contact with their relatives.",
+        "opts": [
+          "popularity",
+          "gathering",
+          "privacy",
+          "opportunity"
+        ],
+        "ans": 0,
+        "explain": "\"Popularity\" = sự phổ biến. Sự phổ biến của smartphone đã thay đổi cách sống. \"Gathering\" = tụ họp, \"privacy\" = riêng tư, \"opportunity\" = cơ hội."
+      },
+      {
+        "q": "City life often offers a wide ___ of foods, activities and entertainment options for young people to enjoy.",
+        "opts": [
+          "variety",
+          "dependence",
+          "reflection",
+          "helplessness"
+        ],
+        "ans": 0,
+        "explain": "\"Variety\" = sự đa dạng. Cuộc sống thành phố có nhiều loại đồ ăn, hoạt động. \"Dependence\" = sự phụ thuộc, \"reflection\" = sự phản ánh."
+      },
+      {
+        "q": "___ equipment in hospitals helps doctors treat patients more quickly and safely than before.",
+        "opts": [
+          "Basic",
+          "Hi-tech",
+          "Conventional",
+          "Traditional"
+        ],
+        "ans": 1,
+        "explain": "\"Hi-tech\" = công nghệ cao. Thiết bị công nghệ cao trong bệnh viện giúp điều trị nhanh hơn. \"Basic\" = cơ bản, \"conventional\" = truyền thống."
+      },
+      {
+        "q": "In many rural villages, families work ___ because they still need to rely on one another during busy farming seasons.",
+        "opts": [
+          "dependently",
+          "helpfully",
+          "actively",
+          "memorably"
+        ],
+        "ans": 0,
+        "explain": "\"Dependently\" = một cách phụ thuộc. Gia đình nông thôn làm việc phụ thuộc lẫn nhau. \"Helpfully\" = hữu ích, \"actively\" = tích cực, \"memorably\" = đáng nhớ."
+      },
+      {
+        "q": "She wants to ___ a career in medicine because she enjoys helping people and learning about health.",
+        "opts": [
+          "support",
+          "reflect",
+          "pursue",
+          "replace"
+        ],
+        "ans": 2,
+        "explain": "\"Pursue\" = theo đuổi (sự nghiệp). Theo đuổi sự nghiệp y khoa. \"Support\" = hỗ trợ, \"reflect\" = phản ánh, \"replace\" = thay thế."
+      },
+      {
+        "q": "Good teachers always ___ their students by giving feedback, explaining lessons clearly and encouraging them to try harder.",
+        "opts": [
+          "support",
+          "pursue",
+          "impress",
+          "balance"
+        ],
+        "ans": 0,
+        "explain": "\"Support\" = hỗ trợ. Giáo viên tốt hỗ trợ học sinh bằng phản hồi và khuyến khích. \"Pursue\" = theo đuổi, \"impress\" = gây ấn tượng, \"balance\" = cân bằng."
+      },
+      {
+        "q": "Older students sometimes help younger ones ___ important dates and facts by using drawings or simple word games.",
+        "opts": [
+          "memorize",
+          "memory",
+          "memorable",
+          "memorably"
+        ],
+        "ans": 0,
+        "explain": "Cần động từ nguyên mẫu. \"Memorize\" = ghi nhớ, học thuộc. \"Memory\" (danh từ), \"memorable\" (tính từ), \"memorably\" (trạng từ) không phù hợp vị trí."
+      }
+    ]
+  },
+  "1.3.1": {
+    "name": "Natural wonders",
+    "questions": [
+      {
+        "q": "The Grand Canyon in the USA is considered a famous natural ___.",
+        "opts": [
+          "aquarium",
+          "wonder",
+          "rank",
+          "snowfall"
+        ],
+        "ans": 1,
+        "explain": "\"Wonder\" = kỳ quan. Grand Canyon là kỳ quan thiên nhiên nổi tiếng. \"Aquarium\" = thủy cung, \"rank\" = xếp hạng, \"snowfall\" = tuyết rơi."
+      },
+      {
+        "q": "Many travellers are ___ natural wonders like Ha Long Bay or the Grand Canyon; they are willing to travel long distances to see them once in their lives.",
+        "opts": [
+          "bored with",
+          "crazy about",
+          "angry about",
+          "nervous about"
+        ],
+        "ans": 1,
+        "explain": "\"Crazy about\" = mê, say mê. Du khách say mê các kỳ quan thiên nhiên. \"Bored with\" = chán, \"angry about\" = tức giận, \"nervous about\" = lo lắng."
+      },
+      {
+        "q": "South America has glaciers, waterfalls, and diverse ___ from desert to jungle.",
+        "opts": [
+          "paradises",
+          "ecosystems",
+          "monuments",
+          "landscapes"
+        ],
+        "ans": 3,
+        "explain": "\"Landscapes\" = phong cảnh, địa hình. Từ sa mạc đến rừng rậm là các dạng phong cảnh đa dạng. \"Paradises\" = thiên đường, \"ecosystems\" = hệ sinh thái, \"monuments\" = tượng đài."
+      },
+      {
+        "q": "It takes from 5 to 10 hours for climbers to climb to the ___ of Mount Fuji.",
+        "opts": [
+          "peak",
+          "foot",
+          "bottom",
+          "sum"
+        ],
+        "ans": 0,
+        "explain": "\"Peak\" = đỉnh núi. Leo lên đỉnh núi Phú Sĩ mất 5-10 giờ. \"Foot\" = chân núi, \"bottom\" = đáy, \"sum\" = tổng."
+      },
+      {
+        "q": "They hired a local guide to ___ the large cave system safely because it had many dark and narrow paths.",
+        "opts": [
+          "explorer",
+          "exploration",
+          "explore",
+          "exploring"
+        ],
+        "ans": 2,
+        "explain": "Cần động từ nguyên mẫu sau \"to\". \"Explore\" = khám phá. \"Explorer\" (danh từ), \"exploration\" (danh từ), \"exploring\" (V-ing) không đúng."
+      },
+      {
+        "q": "Did the film crew have to ask for ___ to film inside the national park?",
+        "opts": [
+          "admiration",
+          "exploration",
+          "permission",
+          "possession"
+        ],
+        "ans": 2,
+        "explain": "\"Permission\" = sự cho phép. Đoàn phim cần xin phép để quay trong vườn quốc gia. \"Admiration\" = sự ngưỡng mộ, \"exploration\" = sự khám phá, \"possession\" = sở hữu."
+      },
+      {
+        "q": "The number of visitors to Son Doong each year is ___ to protect the cave from damage.",
+        "opts": [
+          "maximised",
+          "located",
+          "hesitated",
+          "limited"
+        ],
+        "ans": 3,
+        "explain": "\"Limited\" = bị giới hạn. Số lượng du khách bị giới hạn để bảo vệ hang động. \"Maximised\" = tối đa hóa, \"located\" = nằm ở, \"hesitated\" = do dự."
+      },
+      {
+        "q": "Virtual Reality aims to give us artificial worlds to ___ outside normal space and time.",
+        "opts": [
+          "possess",
+          "explore",
+          "support",
+          "save"
+        ],
+        "ans": 1,
+        "explain": "\"Explore\" = khám phá. VR tạo thế giới ảo để khám phá. \"Possess\" = sở hữu, \"support\" = hỗ trợ, \"save\" = cứu."
+      },
+      {
+        "q": "The project to protect the ___ of this national park will create more jobs for residents.",
+        "opts": [
+          "diversity",
+          "mixture",
+          "difference",
+          "complex"
+        ],
+        "ans": 0,
+        "explain": "\"Diversity\" = sự đa dạng. Bảo vệ sự đa dạng sinh học. \"Mixture\" = hỗn hợp, \"difference\" = sự khác biệt, \"complex\" = phức hợp."
+      },
+      {
+        "q": "With a short hike, you can ___ breathtaking views from the mountain peak.",
+        "opts": [
+          "access",
+          "accessible",
+          "inaccessible",
+          "accessibly"
+        ],
+        "ans": 0,
+        "explain": "Cần động từ nguyên mẫu. \"Access\" = tiếp cận, đến được. \"Accessible\" (tính từ), \"inaccessible\" (không thể tiếp cận), \"accessibly\" (trạng từ)."
+      },
+      {
+        "q": "There is a(n) ___ need to preserve the biological diversity of our national parks.",
+        "opts": [
+          "annual",
+          "urgent",
+          "majestic",
+          "crazy"
+        ],
+        "ans": 1,
+        "explain": "\"Urgent\" = cấp bách, khẩn cấp. Cần bảo tồn đa dạng sinh học một cách cấp bách. \"Annual\" = hàng năm, \"majestic\" = hùng vĩ, \"crazy\" = điên."
+      },
+      {
+        "q": "When I asked her to go to Lan Ha Bay with me, she agreed without ___.",
+        "opts": [
+          "hesitation",
+          "location",
+          "formation",
+          "destination"
+        ],
+        "ans": 0,
+        "explain": "\"Hesitation\" = sự do dự. Đồng ý ngay không do dự. \"Location\" = vị trí, \"formation\" = sự hình thành, \"destination\" = điểm đến."
+      },
+      {
+        "q": "If the companies build too many hotels, they will ___ the beach, and people won't visit it anymore.",
+        "opts": [
+          "spoil",
+          "locate",
+          "consider",
+          "discover"
+        ],
+        "ans": 0,
+        "explain": "\"Spoil\" = làm hỏng, phá hoại. Xây quá nhiều khách sạn sẽ phá hoại bãi biển. \"Locate\" = xác định vị trí, \"consider\" = cân nhắc, \"discover\" = khám phá."
+      },
+      {
+        "q": "When we met the ___, he told us not to start any fires in the forest he looks after.",
+        "opts": [
+          "adventurer",
+          "ranger",
+          "explorer",
+          "government"
+        ],
+        "ans": 1,
+        "explain": "\"Ranger\" = kiểm lâm. Người kiểm lâm quản lý và bảo vệ rừng. \"Adventurer\" = nhà phiêu lưu, \"explorer\" = nhà thám hiểm, \"government\" = chính phủ."
+      },
+      {
+        "q": "___ suggest ways to preserve natural wonders, and support ___ development.",
+        "opts": [
+          "fine",
+          "sustainable",
+          "crazy",
+          "urgent"
+        ],
+        "ans": 1,
+        "explain": "\"Sustainable\" = bền vững. Đề xuất cách bảo tồn kỳ quan và phát triển bền vững. \"Fine\" = tốt, \"crazy\" = điên, \"urgent\" = cấp bách."
+      },
+      {
+        "q": "The mountain ___ was so stunning that tourists stopped many times to take photos of the valleys and rivers below.",
+        "opts": [
+          "scenically",
+          "scenery",
+          "scenic",
+          "scenes"
+        ],
+        "ans": 1,
+        "explain": "Cần danh từ. \"Scenery\" = phong cảnh (danh từ không đếm được). \"Scenically\" (trạng từ), \"scenic\" (tính từ), \"scenes\" (cảnh - đếm được)."
+      },
+      {
+        "q": "The volcano rumbled, then erupted, painting the sky with fiery red ___.",
+        "opts": [
+          "spectacle",
+          "spectacular",
+          "unspectacular",
+          "spectacularly"
+        ],
+        "ans": 3,
+        "explain": "Cần trạng từ bổ nghĩa cho động từ \"painted\". \"Spectacularly\" = một cách ngoạn mục. \"Spectacle\" (danh từ), \"spectacular\" (tính từ), \"unspectacular\" (không ngoạn mục)."
+      },
+      {
+        "q": "In Son Doong Cave, water moving down for millions of years created amazing rock ___.",
+        "opts": [
+          "outcrop",
+          "rainforest",
+          "formation",
+          "summit"
+        ],
+        "ans": 2,
+        "explain": "\"Formation\" = sự hình thành, thành tạo. Nước tạo nên các thành tạo đá kỳ diệu trong hang. \"Outcrop\" = mỏm đá, \"rainforest\" = rừng mưa, \"summit\" = đỉnh."
+      },
+      {
+        "q": "Avebury in England is a ___ stone circle. Its stone monuments are the largest in the world.",
+        "opts": [
+          "minor",
+          "majestic",
+          "sustainable",
+          "supportive"
+        ],
+        "ans": 1,
+        "explain": "\"Majestic\" = hùng vĩ, trang nghiêm. Vòng tròn đá hùng vĩ lớn nhất thế giới. \"Minor\" = nhỏ, \"sustainable\" = bền vững, \"supportive\" = hỗ trợ."
+      },
+      {
+        "q": "Junko Tabei was the first ___ to reach the summit of Mount Everest.",
+        "opts": [
+          "mount",
+          "mountainous",
+          "mountaineer",
+          "mounting"
+        ],
+        "ans": 2,
+        "explain": "Cần danh từ chỉ người. \"Mountaineer\" = người leo núi. \"Mount\" (ngọn núi), \"mountainous\" (nhiều núi), \"mounting\" (đang tăng) không phù hợp."
+      }
+    ]
+  },
+  "1.3.2": {
+    "name": "Tourism",
+    "questions": [
+      {
+        "q": "The Taj Mahal's marble architecture never fails to ___ visitors.",
+        "opts": [
+          "impressive",
+          "impression",
+          "impress",
+          "impressively"
+        ],
+        "ans": 2,
+        "explain": "Cần động từ nguyên mẫu sau \"to\". \"Impress\" = gây ấn tượng. \"Impressive\" (tính từ), \"impression\" (danh từ), \"impressively\" (trạng từ)."
+      },
+      {
+        "q": "Choosing a proper ___ for a self-guided tour is not an easy task for people who don't go much.",
+        "opts": [
+          "destination",
+          "departure",
+          "travel agency",
+          "tour guide"
+        ],
+        "ans": 0,
+        "explain": "\"Destination\" = điểm đến. Chọn điểm đến phù hợp cho chuyến đi tự túc. \"Departure\" = sự khởi hành, \"travel agency\" = công ty du lịch."
+      },
+      {
+        "q": "If you want to apply for a visa to visit a specific country, you need to contact their ___ in your home country.",
+        "opts": [
+          "immigration office",
+          "travel agency",
+          "embassy office",
+          "international airport"
+        ],
+        "ans": 2,
+        "explain": "\"Embassy office\" = đại sứ quán. Cần liên hệ đại sứ quán để xin visa. \"Immigration office\" = cơ quan xuất nhập cảnh, \"travel agency\" = công ty du lịch."
+      },
+      {
+        "q": "Stacy visited the Temple of Literature and she ___ the 82 Doctor's stone tablets inside.",
+        "opts": [
+          "admired",
+          "admiration",
+          "admiring",
+          "admirer"
+        ],
+        "ans": 0,
+        "explain": "Cần động từ quá khứ đơn. \"Admired\" = ngưỡng mộ. \"Admiration\" (danh từ), \"admiring\" (V-ing), \"admirer\" (người hâm mộ)."
+      },
+      {
+        "q": "The ___ adventure offered an unforgettable experience as we travelled the vast wilderness, spotting magnificent animals in their natural habitat.",
+        "opts": [
+          "wildlife",
+          "camping",
+          "beach",
+          "safari"
+        ],
+        "ans": 3,
+        "explain": "\"Safari\" = chuyến du lịch safari (xem động vật hoang dã). Ngắm động vật trong môi trường tự nhiên. \"Wildlife\" = động vật hoang dã, \"camping\" = cắm trại."
+      },
+      {
+        "q": "Noi Bai airport has two terminals: one for international flights and one for ___ flights.",
+        "opts": [
+          "fixed",
+          "online",
+          "national",
+          "domestic"
+        ],
+        "ans": 3,
+        "explain": "\"Domestic flights\" = chuyến bay nội địa. Đối lập với chuyến bay quốc tế. \"Fixed\" = cố định, \"online\" = trực tuyến, \"national\" = quốc gia."
+      },
+      {
+        "q": "Another word for ___ is vacationer, who is away from their homes for leisure purposes.",
+        "opts": [
+          "travel agency",
+          "holidaymaker",
+          "tour guide",
+          "tour operator"
+        ],
+        "ans": 1,
+        "explain": "\"Holidaymaker\" = người đi nghỉ mát. Từ đồng nghĩa với vacationer. \"Travel agency\" = công ty du lịch, \"tour guide\" = hướng dẫn viên."
+      },
+      {
+        "q": "John stayed in a nice ___ just off the main square while traveling alone in Italy.",
+        "opts": [
+          "hostel",
+          "restaurant",
+          "pharmacy",
+          "store"
+        ],
+        "ans": 0,
+        "explain": "\"Hostel\" = nhà trọ giá rẻ cho khách du lịch ba lô. \"Restaurant\" = nhà hàng, \"pharmacy\" = hiệu thuốc, \"store\" = cửa hàng."
+      },
+      {
+        "q": "We offer the best-value ___ holidays in Europe. You can be sure every cost is included in the price.",
+        "opts": [
+          "pack-back",
+          "package",
+          "self-guided",
+          "solo"
+        ],
+        "ans": 1,
+        "explain": "\"Package holidays\" = kỳ nghỉ trọn gói. Mọi chi phí đã bao gồm trong giá. \"Pack-back\" không tồn tại, \"self-guided\" = tự túc, \"solo\" = một mình."
+      },
+      {
+        "q": "Many travelers prefer a ___ tour so that they can explore the city at their own pace without following a fixed schedule.",
+        "opts": [
+          "guided",
+          "self-guided",
+          "package",
+          "private"
+        ],
+        "ans": 1,
+        "explain": "\"Self-guided tour\" = tour tự túc. Khám phá thành phố theo tốc độ riêng, không theo lịch cố định. \"Guided\" = có hướng dẫn, \"package\" = trọn gói."
+      },
+      {
+        "q": "The tour operator will arrange transport and plan your ___; thus the route and places will be provided in advance.",
+        "opts": [
+          "itinerary",
+          "reservation",
+          "ticket",
+          "destination"
+        ],
+        "ans": 0,
+        "explain": "\"Itinerary\" = lịch trình. Nhà điều hành tour sắp xếp phương tiện và lên lịch trình. \"Reservation\" = đặt chỗ, \"ticket\" = vé, \"destination\" = điểm đến."
+      },
+      {
+        "q": "One of the most iconic sights in Sa Pa is the landscape dominated by ___, which are stair-like rice paddies carved into the mountainsides.",
+        "opts": [
+          "dense rainforests",
+          "sand dunes",
+          "terraced fields",
+          "winding rivers"
+        ],
+        "ans": 2,
+        "explain": "\"Terraced fields\" = ruộng bậc thang. Cảnh tượng mang tính biểu tượng ở Sa Pa. \"Dense rainforests\" = rừng mưa rậm rạp, \"sand dunes\" = cồn cát."
+      },
+      {
+        "q": "The aroma of freshly baked bread was ___, making my stomach rumble.",
+        "opts": [
+          "healthy",
+          "nutritious",
+          "mouth-watering",
+          "indifferent"
+        ],
+        "ans": 2,
+        "explain": "\"Mouth-watering\" = hấp dẫn, thèm chảy nước miếng. Mùi thơm bánh mì nướng khiến bụng sôi. \"Healthy\" = lành mạnh, \"nutritious\" = bổ dưỡng."
+      },
+      {
+        "q": "You will have a ___ trip if you have a tour guide to take care of your tour.",
+        "opts": [
+          "rough",
+          "solo",
+          "smooth",
+          "quick"
+        ],
+        "ans": 2,
+        "explain": "\"Smooth\" = suôn sẻ, trôi chảy. Có hướng dẫn viên giúp chuyến đi suôn sẻ. \"Rough\" = khó khăn, \"solo\" = một mình, \"quick\" = nhanh."
+      },
+      {
+        "q": "The restaurant is likely to be busy, so you should definitely ___.",
+        "opts": [
+          "make a reservation",
+          "call the travel agency",
+          "have a package holiday",
+          "book online"
+        ],
+        "ans": 0,
+        "explain": "\"Make a reservation\" = đặt chỗ trước. Nhà hàng đông nên cần đặt chỗ. Đây là cụm từ cố định."
+      },
+      {
+        "q": "If you are travelling abroad for the first time, it's better to look for a good travel ___ to arrange everything for you.",
+        "opts": [
+          "insurance",
+          "agency",
+          "brochure",
+          "service"
+        ],
+        "ans": 1,
+        "explain": "\"Travel agency\" = công ty du lịch. Lần đầu đi nước ngoài nên tìm công ty du lịch tốt. \"Insurance\" = bảo hiểm, \"brochure\" = tờ rơi, \"service\" = dịch vụ."
+      },
+      {
+        "q": "During our trip to the countryside, we stayed at a charming ___ where the hosts served homemade jams and freshly baked bread every morning.",
+        "opts": [
+          "ancient village monument",
+          "bed and breakfast",
+          "cheap youth hostel",
+          "luxurious five-star hotel"
+        ],
+        "ans": 1,
+        "explain": "\"Bed and breakfast\" (B&B) = nhà nghỉ kiểu gia đình có phục vụ bữa sáng. Chủ nhà phục vụ mứt tự làm và bánh mì nướng."
+      },
+      {
+        "q": "Before you leave for your trip, you should ___ your phone's data plan so that you can stay connected during your trip.",
+        "opts": [
+          "look up",
+          "bring up",
+          "come up",
+          "top up"
+        ],
+        "ans": 3,
+        "explain": "\"Top up\" = nạp thêm (tiền điện thoại, dữ liệu). Nạp gói dữ liệu trước khi đi. \"Look up\" = tra cứu, \"bring up\" = nuôi dưỡng/đề cập, \"come up\" = nảy ra."
+      },
+      {
+        "q": "We need to ___ the travel details, like transportation and accommodation, before booking our flights.",
+        "opts": [
+          "bring about",
+          "pass down",
+          "work out",
+          "look up"
+        ],
+        "ans": 2,
+        "explain": "\"Work out\" = tính toán, giải quyết. Cần tính toán chi tiết chuyến đi trước khi đặt vé. \"Bring about\" = gây ra, \"pass down\" = truyền lại, \"look up\" = tra cứu."
+      },
+      {
+        "q": "When planning a summer trip, many students spend hours online ___ for the best travel deals and discounts.",
+        "opts": [
+          "buying",
+          "booking",
+          "hunting",
+          "ordering"
+        ],
+        "ans": 2,
+        "explain": "\"Hunting\" = săn lùng, tìm kiếm. Sinh viên dành hàng giờ tìm kiếm ưu đãi du lịch tốt nhất. \"Buying\" = mua, \"booking\" = đặt, \"ordering\" = đặt hàng."
+      }
+    ]
+  },
+  "1.3.3": {
+    "name": "English in the world",
+    "questions": [
+      {
+        "q": "Before you submit your test, you should ___ you have answered all the questions carefully.",
+        "opts": [
+          "make mistakes",
+          "make progress",
+          "make an attempt",
+          "make sure"
+        ],
+        "ans": 3,
+        "explain": "\"Make sure\" = đảm bảo, chắc chắn. Đảm bảo đã trả lời hết câu hỏi. \"Make mistakes\" = mắc lỗi, \"make progress\" = tiến bộ, \"make an attempt\" = cố gắng."
+      },
+      {
+        "q": "When you visit a foreign country, it is ___ to familiarize yourself with the language.",
+        "opts": [
+          "weird",
+          "essential",
+          "unsuitable",
+          "polite"
+        ],
+        "ans": 1,
+        "explain": "\"Essential\" = thiết yếu, cần thiết. Làm quen với ngôn ngữ là điều cần thiết khi đi nước ngoài. \"Weird\" = kỳ lạ, \"unsuitable\" = không phù hợp."
+      },
+      {
+        "q": "Many ___ from Asia and Africa bring diverse cultural traditions and customs, which enrich the culture of English-speaking communities.",
+        "opts": [
+          "immigrants",
+          "migration",
+          "migrants",
+          "immigration"
+        ],
+        "ans": 0,
+        "explain": "\"Immigrants\" = người nhập cư (danh từ chỉ người). \"Migration\" = sự di cư (danh từ trừu tượng), \"migrants\" = người di cư (ít chính thức hơn), \"immigration\" = việc nhập cư."
+      },
+      {
+        "q": "Please ___ the meaning of the word so that you don't misuse it.",
+        "opts": [
+          "make sure",
+          "check out",
+          "figure out",
+          "double-check"
+        ],
+        "ans": 3,
+        "explain": "\"Double-check\" = kiểm tra kỹ lại. Kiểm tra kỹ nghĩa của từ để không dùng sai. \"Make sure\" = đảm bảo, \"check out\" = xem qua, \"figure out\" = tìm ra."
+      },
+      {
+        "q": "If you don't know what a word ___, try to guess its meaning first.",
+        "opts": [
+          "represents",
+          "means",
+          "expresses",
+          "describes"
+        ],
+        "ans": 1,
+        "explain": "\"Means\" = có nghĩa là. Nếu không biết từ đó nghĩa gì, thử đoán. \"Represents\" = đại diện, \"expresses\" = diễn đạt, \"describes\" = mô tả."
+      },
+      {
+        "q": "___ students often find it challenging to adapt to a new education system.",
+        "opts": [
+          "Exchange",
+          "Local",
+          "Bilingual",
+          "Standard"
+        ],
+        "ans": 0,
+        "explain": "\"Exchange students\" = học sinh trao đổi. Học sinh trao đổi thường khó thích nghi hệ thống giáo dục mới. \"Local\" = địa phương, \"bilingual\" = song ngữ."
+      },
+      {
+        "q": "In 1985, Kachru ___ a model of the different uses of English around the world.",
+        "opts": [
+          "consisted",
+          "proposed",
+          "belonged",
+          "posted"
+        ],
+        "ans": 1,
+        "explain": "\"Proposed\" = đề xuất. Năm 1985, Kachru đề xuất mô hình. \"Consisted\" = bao gồm, \"belonged\" = thuộc về, \"posted\" = đăng."
+      },
+      {
+        "q": "Viet is ___ in English and Vietnamese so that he can communicate effectively in both languages.",
+        "opts": [
+          "excellent",
+          "bilingual",
+          "international",
+          "knowledgeable"
+        ],
+        "ans": 1,
+        "explain": "\"Bilingual\" = song ngữ. Thông thạo cả tiếng Anh và tiếng Việt. \"Excellent\" = xuất sắc, \"international\" = quốc tế, \"knowledgeable\" = hiểu biết."
+      },
+      {
+        "q": "Practising with native speakers can help learners become ___ in a language.",
+        "opts": [
+          "correct",
+          "simple",
+          "fluent",
+          "rusty"
+        ],
+        "ans": 2,
+        "explain": "\"Fluent\" = thông thạo, lưu loát. Luyện tập với người bản ngữ giúp thông thạo ngôn ngữ. \"Correct\" = chính xác, \"simple\" = đơn giản, \"rusty\" = rỉ sét/kém đi."
+      },
+      {
+        "q": "English can be learned in ___ circles, from basic vocabulary and grammar to complex sentences and idiomatic expressions.",
+        "opts": [
+          "inner",
+          "concentric",
+          "expanding",
+          "outer"
+        ],
+        "ans": 1,
+        "explain": "\"Concentric circles\" = các vòng tròn đồng tâm. Đây là thuật ngữ trong mô hình Kachru về tiếng Anh. \"Inner\" = trong, \"expanding\" = mở rộng, \"outer\" = ngoài."
+      },
+      {
+        "q": "English is used as the ___ language in countries such as the United States, Canada, Australia, and New Zealand.",
+        "opts": [
+          "official",
+          "foreign",
+          "local",
+          "optional"
+        ],
+        "ans": 0,
+        "explain": "\"Official language\" = ngôn ngữ chính thức. Tiếng Anh là ngôn ngữ chính thức ở Mỹ, Canada, Úc. \"Foreign\" = ngoại ngữ, \"local\" = địa phương, \"optional\" = tùy chọn."
+      },
+      {
+        "q": "With so many online resources available, it's easier than ever to ___ basic English on your own.",
+        "opts": [
+          "note down",
+          "go over",
+          "look up",
+          "pick up"
+        ],
+        "ans": 3,
+        "explain": "\"Pick up\" = học được (một cách tự nhiên). Với nhiều tài nguyên online, dễ dàng tự học tiếng Anh cơ bản. \"Note down\" = ghi chú, \"go over\" = ôn lại, \"look up\" = tra cứu."
+      },
+      {
+        "q": "Before you submit your essay, remember to ___ the spelling.",
+        "opts": [
+          "go over",
+          "turn up",
+          "take into",
+          "carry on"
+        ],
+        "ans": 0,
+        "explain": "\"Go over\" = xem lại, ôn lại. Ôn lại chính tả trước khi nộp bài. \"Turn up\" = xuất hiện, \"take into\" = xem xét, \"carry on\" = tiếp tục."
+      },
+      {
+        "q": "After spending an hour on the school's website, I have ___ some helpful information about the application process.",
+        "opts": [
+          "come over",
+          "come on",
+          "come across",
+          "come along"
+        ],
+        "ans": 2,
+        "explain": "\"Come across\" = tình cờ tìm thấy. Tình cờ tìm được thông tin hữu ích trên trang web. \"Come over\" = đến, \"come on\" = nào, \"come along\" = đi cùng."
+      },
+      {
+        "q": "Remember to ___ the difficult words that you might come across when reading the book.",
+        "opts": [
+          "carry out",
+          "turn off",
+          "look up",
+          "go over"
+        ],
+        "ans": 2,
+        "explain": "\"Look up\" = tra cứu (từ điển). Tra cứu những từ khó khi đọc sách. \"Carry out\" = thực hiện, \"turn off\" = tắt, \"go over\" = ôn lại."
+      },
+      {
+        "q": "If you hear any new words during the lesson, you should ___ them ___ so that you can review them later.",
+        "opts": [
+          "cut - down",
+          "note - down",
+          "pass - down",
+          "sit - down"
+        ],
+        "ans": 1,
+        "explain": "\"Note down\" = ghi chép lại. Ghi chép từ mới để ôn tập sau. \"Cut down\" = cắt giảm, \"pass down\" = truyền lại, \"sit down\" = ngồi xuống."
+      },
+      {
+        "q": "Before you leave the classroom, please ___ the lights.",
+        "opts": [
+          "turn off",
+          "turn up",
+          "turn on",
+          "turn into"
+        ],
+        "ans": 0,
+        "explain": "\"Turn off\" = tắt. Tắt đèn trước khi rời lớp. \"Turn up\" = vặn to, \"turn on\" = bật, \"turn into\" = biến thành."
+      },
+      {
+        "q": "He ___ the tap, but could get no water.",
+        "opts": [
+          "turned on",
+          "turned off",
+          "turned over",
+          "turned out"
+        ],
+        "ans": 0,
+        "explain": "\"Turned on\" = bật. Mở vòi nhưng không có nước. \"Turned off\" = tắt, \"turned over\" = lật, \"turned out\" = hóa ra."
+      },
+      {
+        "q": "As the foreign student can't speak English, he often feels like he doesn't ___ the community.",
+        "opts": [
+          "rely on",
+          "agree with",
+          "belong to",
+          "listen to"
+        ],
+        "ans": 2,
+        "explain": "\"Belong to\" = thuộc về. Học sinh nước ngoài cảm thấy không thuộc về cộng đồng. \"Rely on\" = dựa vào, \"agree with\" = đồng ý, \"listen to\" = lắng nghe."
+      },
+      {
+        "q": "After much effort, the students finally ___ the answer to the challenging practice question.",
+        "opts": [
+          "look around",
+          "look for",
+          "carry on",
+          "figure out"
+        ],
+        "ans": 3,
+        "explain": "\"Figure out\" = tìm ra (đáp án). Cuối cùng tìm ra đáp án cho câu hỏi khó. \"Look around\" = nhìn xung quanh, \"look for\" = tìm kiếm, \"carry on\" = tiếp tục."
+      }
+    ]
+  },
+  "1.4.1": {
+    "name": "Living environment",
+    "questions": [
+      {
+        "q": "Plants, animals, and humans are all examples of ___ that need air, water, and sunlight to survive.",
+        "opts": [
+          "non-living things",
+          "air pollution",
+          "natural habitats",
+          "living things"
+        ],
+        "ans": 3,
+        "explain": "\"Living things\" = sinh vật sống. Thực vật, động vật, con người đều là sinh vật sống. \"Non-living things\" = vật không sống, \"air pollution\" = ô nhiễm không khí."
+      },
+      {
+        "q": "Astronauts travel to ___ to conduct scientific experiments and explore the universe.",
+        "opts": [
+          "outer space",
+          "the ocean",
+          "the desert",
+          "the mountains"
+        ],
+        "ans": 0,
+        "explain": "\"Outer space\" = không gian vũ trụ. Phi hành gia du hành vào vũ trụ. \"The ocean\" = đại dương, \"the desert\" = sa mạc, \"the mountains\" = núi."
+      },
+      {
+        "q": "Modern ___ such as washing machines and microwave ovens help make daily chores easier and faster.",
+        "opts": [
+          "musical instruments",
+          "school supplies",
+          "garden tools",
+          "household appliances"
+        ],
+        "ans": 3,
+        "explain": "\"Household appliances\" = thiết bị gia dụng. Máy giặt, lò vi sóng là thiết bị gia dụng. \"Musical instruments\" = nhạc cụ, \"school supplies\" = đồ dùng học tập."
+      },
+      {
+        "q": "The robot's built-in ___ detected the approaching fire, triggering the alarm.",
+        "opts": [
+          "camera",
+          "screen",
+          "sensor",
+          "speaker"
+        ],
+        "ans": 2,
+        "explain": "\"Sensor\" = cảm biến. Robot có cảm biến tích hợp phát hiện lửa. \"Camera\" = máy ảnh, \"screen\" = màn hình, \"speaker\" = loa."
+      },
+      {
+        "q": "Mountains, valleys, and plains are examples of different ___ on Earth.",
+        "opts": [
+          "climates",
+          "ecosystems",
+          "landforms",
+          "species"
+        ],
+        "ans": 2,
+        "explain": "\"Landforms\" = địa hình. Núi, thung lũng, đồng bằng là các dạng địa hình. \"Climates\" = khí hậu, \"ecosystems\" = hệ sinh thái, \"species\" = loài."
+      },
+      {
+        "q": "Millions of animals die every year because man has ___ their natural home or habitat.",
+        "opts": [
+          "pollutants",
+          "polluted",
+          "pollution",
+          "unpolluted"
+        ],
+        "ans": 1,
+        "explain": "Cần tính từ/V-ed sau \"have\". \"Polluted\" = ô nhiễm, làm ô nhiễm. \"Pollutants\" (danh từ - chất gây ô nhiễm), \"pollution\" (danh từ), \"unpolluted\" (không ô nhiễm)."
+      },
+      {
+        "q": "Some clearly seen examples of water ___ are lakes, streams, and rivers.",
+        "opts": [
+          "bodies",
+          "transport",
+          "existence",
+          "parts"
+        ],
+        "ans": 0,
+        "explain": "\"Water bodies\" = các vùng nước (hồ, suối, sông). Đây là thuật ngữ địa lý. \"Transport\" = giao thông, \"existence\" = sự tồn tại, \"parts\" = phần."
+      },
+      {
+        "q": "Cuc Phuong National Park is the natural ___ for many rare species, both plants and animals.",
+        "opts": [
+          "habitat",
+          "accommodation",
+          "land",
+          "fauna"
+        ],
+        "ans": 0,
+        "explain": "\"Habitat\" = môi trường sống tự nhiên. Vườn quốc gia Cúc Phương là nơi sống tự nhiên của nhiều loài quý hiếm. \"Accommodation\" = chỗ ở, \"land\" = đất, \"fauna\" = hệ động vật."
+      },
+      {
+        "q": "Clearing ___ for new housing projects destroys the natural habitats of many wild animals.",
+        "opts": [
+          "grassland",
+          "dreamland",
+          "wonderland",
+          "fatherland"
+        ],
+        "ans": 0,
+        "explain": "\"Grassland\" = đồng cỏ. Phá đồng cỏ để xây nhà phá hủy môi trường sống tự nhiên. \"Dreamland\" = vùng đất mơ, \"wonderland\" = xứ thần tiên, \"fatherland\" = tổ quốc."
+      },
+      {
+        "q": "A food ___ shows you the order in which living things depend on each other for food.",
+        "opts": [
+          "chain",
+          "source",
+          "sample",
+          "provider"
+        ],
+        "ans": 0,
+        "explain": "\"Food chain\" = chuỗi thức ăn. Cho thấy thứ tự sinh vật phụ thuộc nhau về thức ăn. \"Source\" = nguồn, \"sample\" = mẫu, \"provider\" = nhà cung cấp."
+      },
+      {
+        "q": "___ are areas where flora and fauna are reserved and managed for conservation.",
+        "opts": [
+          "Nature reserves",
+          "Park",
+          "Theme parks",
+          "Natural reserve"
+        ],
+        "ans": 0,
+        "explain": "\"Nature reserves\" = khu bảo tồn thiên nhiên. Nơi động thực vật được bảo vệ và quản lý. \"Park\" = công viên, \"theme parks\" = công viên chủ đề."
+      },
+      {
+        "q": "In winter, I love reading books in a ___ corner with a blanket and a cup of hot chocolate.",
+        "opts": [
+          "noisy",
+          "crowded",
+          "dirty",
+          "cozy"
+        ],
+        "ans": 3,
+        "explain": "\"Cozy\" = ấm cúng. Góc ấm cúng với chăn và ca cô lạc nóng. \"Noisy\" = ồn ào, \"crowded\" = đông, \"dirty\" = bẩn."
+      },
+      {
+        "q": "Flora and fauna are vital to the environment because they create ___.",
+        "opts": [
+          "natural reserve",
+          "climate change",
+          "ecological balance",
+          "habitat loss"
+        ],
+        "ans": 2,
+        "explain": "\"Ecological balance\" = cân bằng sinh thái. Hệ động thực vật tạo nên cân bằng sinh thái. \"Natural reserve\" = khu bảo tồn, \"climate change\" = biến đổi khí hậu."
+      },
+      {
+        "q": "The ___ of forests in maintaining Earth's climate cannot be overstated.",
+        "opts": [
+          "significant",
+          "significantly",
+          "significance",
+          "signify"
+        ],
+        "ans": 2,
+        "explain": "Cần danh từ sau mạo từ \"the\". \"Significance\" = tầm quan trọng. \"Significant\" (tính từ), \"significantly\" (trạng từ), \"signify\" (động từ)."
+      },
+      {
+        "q": "My phone's ___ can read me the news while I cook, keeping me up-to-date without looking at a screen.",
+        "opts": [
+          "notification system",
+          "writing app",
+          "keyboard",
+          "voice assistant"
+        ],
+        "ans": 3,
+        "explain": "\"Voice assistant\" = trợ lý giọng nói. Đọc tin tức trong khi nấu ăn mà không cần nhìn màn hình. \"Notification system\" = hệ thống thông báo."
+      },
+      {
+        "q": "Biodiversity is ___ for the health and resilience of ecosystems on Earth.",
+        "opts": [
+          "vital",
+          "harmful",
+          "ecological",
+          "threatening"
+        ],
+        "ans": 0,
+        "explain": "\"Vital\" = thiết yếu, quan trọng. Đa dạng sinh học thiết yếu cho sức khỏe hệ sinh thái. \"Harmful\" = có hại, \"ecological\" = sinh thái, \"threatening\" = đe dọa."
+      },
+      {
+        "q": "The people on the island ___ the supplies that were brought from the mainland.",
+        "opts": [
+          "passed over",
+          "relied on",
+          "complained about",
+          "looked after"
+        ],
+        "ans": 1,
+        "explain": "\"Relied on\" = dựa vào, phụ thuộc vào. Người trên đảo phụ thuộc vào nguồn tiếp tế từ đất liền. \"Passed over\" = bỏ qua, \"complained about\" = phàn nàn."
+      },
+      {
+        "q": "Bees play an important ___ in pollinating plants and maintaining biodiversity.",
+        "opts": [
+          "problem",
+          "part",
+          "disadvantage",
+          "obstacle"
+        ],
+        "ans": 1,
+        "explain": "\"Play a part\" = đóng vai trò. Ong đóng vai trò quan trọng trong thụ phấn. \"Problem\" = vấn đề, \"disadvantage\" = bất lợi, \"obstacle\" = trở ngại."
+      },
+      {
+        "q": "The campaign aims to raise ___ of the dangers of taking illegal drugs.",
+        "opts": [
+          "attention",
+          "awareness",
+          "information",
+          "discussion"
+        ],
+        "ans": 1,
+        "explain": "\"Raise awareness\" = nâng cao nhận thức. Chiến dịch nâng cao nhận thức về nguy hiểm của ma túy. \"Attention\" = sự chú ý, \"information\" = thông tin."
+      },
+      {
+        "q": "Female students ___ about 60% of the class.",
+        "opts": [
+          "turn up",
+          "give away",
+          "make up",
+          "get over"
+        ],
+        "ans": 2,
+        "explain": "\"Make up\" = chiếm (tỷ lệ). Nữ sinh chiếm khoảng 60% lớp. \"Turn up\" = xuất hiện, \"give away\" = cho đi, \"get over\" = vượt qua."
+      }
+    ]
+  },
+  "1.4.2": {
+    "name": "Jobs in the future",
+    "questions": [
+      {
+        "q": "Career ___ programmes are helpful because they help students make good decisions about their future jobs.",
+        "opts": [
+          "orientation",
+          "pressure",
+          "tradition",
+          "income"
+        ],
+        "ans": 0,
+        "explain": "\"Career orientation\" = hướng nghiệp. Chương trình hướng nghiệp giúp học sinh chọn nghề. \"Pressure\" = áp lực, \"tradition\" = truyền thống, \"income\" = thu nhập."
+      },
+      {
+        "q": "A ___ is a person who supports others with their emotions, listens to their problems and gives helpful advice.",
+        "opts": [
+          "dentist",
+          "psychologist",
+          "cashier",
+          "engineer"
+        ],
+        "ans": 1,
+        "explain": "\"Psychologist\" = nhà tâm lý học. Lắng nghe vấn đề và đưa lời khuyên. \"Dentist\" = nha sĩ, \"cashier\" = thu ngân, \"engineer\" = kỹ sư."
+      },
+      {
+        "q": "If you have problems with your skin and want professional advice, you should see a ___.",
+        "opts": [
+          "shop assistant",
+          "dental specialist",
+          "video producer",
+          "skincare specialist"
+        ],
+        "ans": 3,
+        "explain": "\"Skincare specialist\" = chuyên gia chăm sóc da. Cần lời khuyên chuyên môn về da. \"Shop assistant\" = nhân viên bán hàng, \"dental specialist\" = nha khoa."
+      },
+      {
+        "q": "When people start creating more ___ content, the demand for good content writers and producers will rise.",
+        "opts": [
+          "personalized",
+          "demanding",
+          "professional",
+          "vocational"
+        ],
+        "ans": 2,
+        "explain": "\"Professional\" = chuyên nghiệp. Nội dung chuyên nghiệp hơn sẽ tăng nhu cầu. \"Personalized\" = cá nhân hóa, \"demanding\" = đòi hỏi, \"vocational\" = nghề nghiệp."
+      },
+      {
+        "q": "She ___ a living by selling home-made foods.",
+        "opts": [
+          "takes",
+          "earns",
+          "does",
+          "gets"
+        ],
+        "ans": 1,
+        "explain": "\"Earns a living\" = kiếm sống. Đây là cụm từ cố định. Không dùng \"takes/does/gets\" với \"a living\"."
+      },
+      {
+        "q": "His job as a ___ requires him to interact with customers daily.",
+        "opts": [
+          "surgeon",
+          "mathematician",
+          "fashion designer",
+          "bartender"
+        ],
+        "ans": 3,
+        "explain": "\"Bartender\" = nhân viên pha chế. Công việc đòi hỏi tiếp xúc khách hàng hàng ngày. \"Surgeon\" = bác sĩ phẫu thuật, \"mathematician\" = nhà toán học."
+      },
+      {
+        "q": "People ___ with each other so often that teamwork and communication skills are now increasingly important.",
+        "opts": [
+          "employ",
+          "earn",
+          "research",
+          "collaborate"
+        ],
+        "ans": 3,
+        "explain": "\"Collaborate\" = hợp tác, cộng tác. Mọi người hợp tác với nhau thường xuyên. \"Employ\" = thuê, \"earn\" = kiếm, \"research\" = nghiên cứu."
+      },
+      {
+        "q": "My cat needs a checkup, so I'm going to make an appointment with a ___.",
+        "opts": [
+          "dentist",
+          "veterinarian",
+          "specialist",
+          "pharmacist"
+        ],
+        "ans": 1,
+        "explain": "\"Veterinarian\" = bác sĩ thú y. Mèo cần khám bệnh nên đến bác sĩ thú y. \"Dentist\" = nha sĩ, \"specialist\" = chuyên gia, \"pharmacist\" = dược sĩ."
+      },
+      {
+        "q": "The best future jobs will require people who can ___ and adapt to changing technology.",
+        "opts": [
+          "innovate",
+          "innovative",
+          "innovation",
+          "innovatively"
+        ],
+        "ans": 0,
+        "explain": "Cần động từ nguyên mẫu sau \"can\". \"Innovate\" = đổi mới, sáng tạo. \"Innovative\" (tính từ), \"innovation\" (danh từ), \"innovatively\" (trạng từ)."
+      },
+      {
+        "q": "At the end of secondary school, many students feel stressed because they have to ___ that may affect their whole future.",
+        "opts": [
+          "take notice of",
+          "take an extra class",
+          "do a part-time job",
+          "make a career choice"
+        ],
+        "ans": 3,
+        "explain": "\"Make a career choice\" = chọn nghề nghiệp. Cuối cấp 2, học sinh phải chọn nghề. \"Take notice of\" = chú ý đến, \"take an extra class\" = học thêm."
+      },
+      {
+        "q": "A dentist needs good ___ to carefully examine teeth and use delicate tools.",
+        "opts": [
+          "communication skills",
+          "hand-eye coordination",
+          "physical strength",
+          "hands-on management"
+        ],
+        "ans": 1,
+        "explain": "\"Hand-eye coordination\" = phối hợp tay-mắt. Nha sĩ cần phối hợp tay-mắt tốt để kiểm tra răng và dùng dụng cụ. \"Communication skills\" = kỹ năng giao tiếp."
+      },
+      {
+        "q": "To be successful in a(n) ___ career, you must have good hand-eye coordination.",
+        "opts": [
+          "mechanic",
+          "surgeon",
+          "accountant",
+          "photographer"
+        ],
+        "ans": 1,
+        "explain": "\"Surgeon\" = bác sĩ phẫu thuật. Nghề phẫu thuật cần phối hợp tay-mắt tốt. \"Mechanic\" = thợ máy, \"accountant\" = kế toán, \"photographer\" = nhiếp ảnh gia."
+      },
+      {
+        "q": "People really want ___ content. They don't want to watch the same thing as everyone else.",
+        "opts": [
+          "repetitive",
+          "well-paid",
+          "personalized",
+          "hands-on"
+        ],
+        "ans": 2,
+        "explain": "\"Personalized\" = cá nhân hóa. Mọi người muốn nội dung riêng, không giống ai khác. \"Repetitive\" = lặp lại, \"well-paid\" = lương cao, \"hands-on\" = thực hành."
+      },
+      {
+        "q": "In the electronics factory, a(n) ___ is responsible for putting small parts together on the production line.",
+        "opts": [
+          "office clerk",
+          "tour guide",
+          "store cashier",
+          "assembly worker"
+        ],
+        "ans": 3,
+        "explain": "\"Assembly worker\" = công nhân lắp ráp. Lắp ráp các bộ phận nhỏ trên dây chuyền sản xuất. \"Office clerk\" = nhân viên văn phòng, \"tour guide\" = hướng dẫn viên."
+      },
+      {
+        "q": "A cashier has to do ___ tasks, such as receiving money and printing receipts.",
+        "opts": [
+          "effective",
+          "creative",
+          "decisive",
+          "repetitive"
+        ],
+        "ans": 3,
+        "explain": "\"Repetitive\" = lặp đi lặp lại. Nhận tiền và in hóa đơn là công việc lặp lại. \"Effective\" = hiệu quả, \"creative\" = sáng tạo, \"decisive\" = quyết đoán."
+      },
+      {
+        "q": "Students who have more skills and knowledge can get a ___ job in the future.",
+        "opts": [
+          "low-paid",
+          "low-wage",
+          "well-paid",
+          "poorly-paid"
+        ],
+        "ans": 2,
+        "explain": "\"Well-paid\" = lương cao. Có nhiều kỹ năng và kiến thức sẽ có việc lương cao. \"Low-paid/low-wage/poorly-paid\" đều nghĩa là lương thấp."
+      },
+      {
+        "q": "Teaching young children can be challenging, but the ___ moments make it worthwhile.",
+        "opts": [
+          "rewarding",
+          "demanding",
+          "repetitive",
+          "boring"
+        ],
+        "ans": 0,
+        "explain": "\"Rewarding\" = bổ ích, đáng giá. Dạy trẻ em có những khoảnh khắc đáng giá. \"Demanding\" = đòi hỏi, \"repetitive\" = lặp lại, \"boring\" = nhàm chán."
+      },
+      {
+        "q": "A surgeon's job is ___. They work long hours and occasionally deal with life-and-death situations.",
+        "opts": [
+          "easy",
+          "demanding",
+          "rewarding",
+          "stress-free"
+        ],
+        "ans": 1,
+        "explain": "\"Demanding\" = đòi hỏi, áp lực. Bác sĩ phẫu thuật làm việc nhiều giờ, đối mặt tình huống sống còn. \"Easy\" = dễ, \"rewarding\" = bổ ích, \"stress-free\" = không áp lực."
+      },
+      {
+        "q": "Working as a ___ requires good computer skills and the ability to solve problems.",
+        "opts": [
+          "mechanic",
+          "cashier",
+          "fashion designer",
+          "software engineer"
+        ],
+        "ans": 3,
+        "explain": "\"Software engineer\" = kỹ sư phần mềm. Cần kỹ năng máy tính và giải quyết vấn đề. \"Mechanic\" = thợ máy, \"cashier\" = thu ngân, \"fashion designer\" = nhà thiết kế."
+      },
+      {
+        "q": "Many students prefer ___ activities where they can practice real skills instead of just listening to theory.",
+        "opts": [
+          "boring",
+          "traditional",
+          "theoretical",
+          "hands-on"
+        ],
+        "ans": 3,
+        "explain": "\"Hands-on\" = thực hành, trực tiếp. Học sinh thích hoạt động thực hành hơn nghe lý thuyết. \"Boring\" = nhàm chán, \"traditional\" = truyền thống, \"theoretical\" = lý thuyết."
+      }
+    ]
+  }
+}

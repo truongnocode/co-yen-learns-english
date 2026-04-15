@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vương Quốc Tiếng Anh - Global Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Nền Dopamine rực rỡ và chuyển động liên tục */
+        body {
+            background: linear-gradient(120deg, #ff9a9e, #fecfef, #a1c4fd, #c2e9fb);
+            background-size: 300% 300%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Nunito', sans-serif;
+            color: #2d3748;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden; /* Chống cuộn toàn trang, chỉ cuộn cột */
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        /* Vật liệu Liquid Glass Kẹo Dẻo */
+       .liquid-glass {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 10px 30px rgba(31, 38, 135, 0.1);
+            border-radius: 32px;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+       .liquid-glass:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(31, 38, 135, 0.15);
+            background: rgba(255, 255, 255, 0.65);
+        }
+        /* Nút bấm nổi bật phong cách Game */
+       .btn-playful {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+            border: 3px solid #FFF;
+            box-shadow: 0 6px 0 #D94545;
+            border-radius: 9999px;
+            transition: all 0.1s;
+        }
+       .btn-playful:active {
+            transform: translateY(6px);
+            box-shadow: 0 0 0 #D94545;
+        }
+        /* Cột sóng âm Shadowing */
+       .wave-bar {
+            width: 8px;
+            border-radius: 999px;
+            background: linear-gradient(to top, #4FACFE, #00F2FE);
+            animation: wave 1s ease-in-out infinite alternate;
+        }
+       .wave-bar:nth-child(2) { animation-delay: 0.2s; }
+       .wave-bar:nth-child(3) { animation-delay: 0.4s; }
+       .wave-bar:nth-child(4) { animation-delay: 0.1s; }
+        @keyframes wave {
+            0% { height: 12px; }
+            100% { height: 35px; }
+        }
+        /* Ẩn thanh cuộn nhưng vẫn cho phép cuộn */
+       .no-scrollbar::-webkit-scrollbar { display: none; }
+       .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="p-4 md:p-6">
+    <div class="max-w-[1600px] mx-auto h-full flex flex-col lg:flex-row gap-6">
+        <nav class="w-full lg:w-64 flex-shrink-0 liquid-glass p-6 flex flex-col justify-between hidden lg:flex">
+            <div>
+                <div class="flex items-center gap-3 mb-10">
+                    <div class="text-4xl hover:rotate-12 transition-transform cursor-pointer">🚀</div>
+                    <h1 class="text-2xl font-black text-indigo-800 leading-tight">Global<br>Success</h1>
+                </div>
+
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 bg-white/80 p-3 rounded-2xl cursor-pointer shadow-sm text-indigo-900 font-bold border-2 border-white">
+                        <span class="text-2xl">🗺️</span> Bản Đồ Phiêu Lưu
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-white/50 p-3 rounded-2xl cursor-pointer text-indigo-700 font-bold transition-colors">
+                        <span class="text-2xl">🎙️</span> Phòng Thu Shadow
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-white/50 p-3 rounded-2xl cursor-pointer text-indigo-700 font-bold transition-colors">
+                        <span class="text-2xl">⚔️</span> Đấu Trường Lớp 9
+                    </li>
+                    <li class="flex items-center gap-4 hover:bg-white/50 p-3 rounded-2xl cursor-pointer text-indigo-700 font-bold transition-colors">
+                        <span class="text-2xl">🎒</span> Cửa Hàng Đồ
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-indigo-100/50 p-4 rounded-2xl border-2 border-white text-center">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=b6e3f4" alt="Avatar" class="w-16 h-16 mx-auto rounded-full border-4 border-white shadow-md mb-2">
+                <h3 class="font-black text-indigo-900">Chiến binh 8A</h3>
+                <p class="text-sm font-bold text-orange-500">⭐ 1,250 XP</p>
+            </div>
+        </nav>
+        <main class="flex-1 flex flex-col gap-6 overflow-y-auto no-scrollbar pb-6">
+
+            <div class="liquid-glass p-8 relative overflow-hidden bg-white/40">
+                <div class="absolute -right-10 -top-10 text-9xl opacity-20">🌋</div>
+                <div class="relative z-10">
+                    <span class="inline-block bg-indigo-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 shadow-md">
+                        Nhiệm vụ hôm nay
+                    </span>
+                    <h2 class="text-4xl font-black text-indigo-900 mb-2">Unit 3: Thung lũng Cú Pháp</h2>
+                    <p class="text-indigo-700 font-semibold mb-6">Đánh bại quái vật Câu Ghép (Compound Sentences) bằng các liên từ nối!</p>
+
+                    <div class="space-y-4">
+                        <div class="bg-white/90 rounded-2xl p-4 flex items-center justify-between border-2 border-indigo-300 shadow-md hover:scale-[1.02] transition-transform cursor-pointer relative overflow-hidden">
+                            <div class="absolute left-0 top-0 bottom-0 w-2 bg-indigo-500"></div>
+                            <span class="flex items-center gap-3 font-bold text-lg text-indigo-900"><div class="text-2xl">🧩</div> Xếp gạch câu ghép</span>
+                            <button class="btn-playful px-6 py-2 font-black text-sm">CHƠI NGAY</button>
+                        </div>
+                        <div class="bg-white/50 rounded-2xl p-4 flex items-center justify-between border-2 border-white shadow-sm cursor-not-allowed opacity-70">
+                            <span class="flex items-center gap-3 font-bold text-lg"><div class="text-2xl">🎯</div> Trắc nghiệm siêu tốc</span>
+                            <span class="bg-gray-300 text-gray-600 px-3 py-1 rounded-full text-sm font-bold">Khóa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="liquid-glass p-6 bg-gradient-to-r from-blue-100/50 to-purple-100/50">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-black text-blue-900 flex items-center gap-2">🎙️ Trạm Thu Âm</h3>
+                    <span class="bg-blue-200 text-blue-800 text-xs font-bold px-3 py-1 rounded-full border border-blue-300">Gửi Cô Giáo</span>
+                </div>
+
+                <div class="bg-white/80 rounded-3xl p-6 border-2 border-white shadow-inner text-center">
+                    <p class="text-2xl font-bold leading-relaxed mb-6">
+                        <span class="text-gray-400">"I think we should</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 scale-110 inline-block drop-shadow-sm px-2">reduce our carbon footprint</span>
+                        <span class="text-gray-400">immediately."</span>
+                    </p>
+
+                    <div class="flex justify-center items-end gap-2 h-10 mb-6">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar" style="height: 25px"></div>
+                        <div class="wave-bar" style="height: 35px"></div>
+                        <div class="wave-bar" style="height: 20px"></div>
+                        <div class="wave-bar" style="height: 30px"></div>
+                    </div>
+                    <button class="bg-gradient-to-r from-pink-500 to-rose-500 text-white font-black py-4 px-10 rounded-full shadow-[0_6px_0_#be123c] hover:translate-y-1 hover:shadow-[0_2px_0_#be123c] transition-all text-lg mx-auto block">
+                        🔴 NHẠI ÂM VÀ NỘP BÀI
+                    </button>
+                </div>
+            </div>
+
+        </main>
+        <aside class="w-full lg:w-80 flex-shrink-0 flex flex-col gap-6 overflow-y-auto no-scrollbar pb-6">
+
+            <div class="liquid-glass p-6 flex flex-col items-center justify-center text-center bg-gradient-to-b from-white/40 to-yellow-100/40">
+                <div class="text-6xl mb-2 filter drop-shadow-lg hover:scale-110 transition-transform cursor-pointer">🔥</div>
+                <h3 class="text-5xl font-black text-orange-500 drop-shadow-sm">14</h3>
+                <p class="text-lg font-bold text-orange-700 mt-1">Ngày liên tiếp</p>
+            </div>
+            <div class="liquid-glass p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-black text-purple-900">Bảng Xếp Hạng 🏆</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex justify-between items-center bg-white/60 rounded-xl p-3 shadow-sm">
+                        <span class="font-bold">1. Mèo Mướp</span>
+                        <span class="font-black text-purple-600">1500</span>
+                    </li>
+                    <li class="flex justify-between items-center bg-purple-500 text-white rounded-xl p-3 shadow-md transform scale-105 border-2 border-purple-300 z-10">
+                        <span class="font-bold">2. Bạn</span>
+                        <span class="font-black text-yellow-300">1250</span>
+                    </li>
+                    <li class="flex justify-between items-center bg-white/60 rounded-xl p-3 shadow-sm">
+                        <span class="font-bold">3. Cún Con</span>
+                        <span class="font-black text-purple-600">1100</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="liquid-glass p-6">
+                <h3 class="text-lg font-black text-indigo-900 mb-3">Công Cụ Nhanh 🧰</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white/60 p-4 rounded-xl text-center border border-white hover:bg-white transition-colors cursor-pointer shadow-sm">
+                        <div class="text-3xl mb-1">📖</div>
+                        <span class="text-sm font-bold text-indigo-800">Từ Điển</span>
+                    </div>
+                    <div class="bg-white/60 p-4 rounded-xl text-center border border-white hover:bg-white transition-colors cursor-pointer shadow-sm">
+                        <div class="text-3xl mb-1">📝</div>
+                        <span class="text-sm font-bold text-indigo-800">Ghi Chú</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

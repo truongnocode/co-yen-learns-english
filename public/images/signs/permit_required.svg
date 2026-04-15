@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6" flood-opacity="0.2"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="185" r="160" fill="url(#bg)" stroke="#1e40af" stroke-width="8" filter="url(#shadow)"/>
+  <g transform="translate(155,80) scale(3)">
+    <rect x="3" y="15" width="24" height="20" rx="3" fill="white" stroke="white" stroke-width="2"/>
+    <path d="M8 15 L8 10 C8 3 22 3 22 10 L22 15" fill="none" stroke="white" stroke-width="3.5"/>
+    <circle cx="15" cy="26" r="3" fill="#1d4ed8"/>
+  </g>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="22" fill="#333">PERMIT REQUIRED</text>
+</svg>

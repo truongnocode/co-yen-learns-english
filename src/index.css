@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Dopamine Candy Glass Design System
+   ============================================================ */
+
+@layer base {
+  :root {
+    /* --- Surface Colors --- */
+    --background: 0 0% 100%;
+    --foreground: 230 25% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 25% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 25% 18%;
+
+    /* --- Brand Colors (vivid & playful) --- */
+    --primary: 234 70% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 234 80% 65%;
+
+    --secondary: 230 30% 95%;
+    --secondary-foreground: 230 25% 18%;
+
+    --muted: 230 15% 92%;
+    --muted-foreground: 230 12% 46%;
+
+    --accent: 14 90% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --energy: 38 95% 55%;
+    --energy-foreground: 30 50% 15%;
+
+    --pink: 340 75% 58%;
+    --pink-foreground: 0 0% 100%;
+
+    --cyan: 185 70% 45%;
+    --cyan-foreground: 0 0% 100%;
+
+    /* --- UI Chrome --- */
+    --border: 230 20% 90%;
+    --input: 230 20% 90%;
+    --ring: 234 70% 55%;
+
+    /* --- Candy Radius (rounder = friendlier) --- */
+    --radius: 16px;
+
+    /* --- Typography --- */
+    --font-display: 'Baloo 2', cursive;
+    --font-body: 'Nunito', sans-serif;
+
+    /* --- Candy Glass Properties --- */
+    --glass-bg: rgba(255, 255, 255, 0.50);
+    --glass-bg-hover: rgba(255, 255, 255, 0.65);
+    --glass-bg-active: rgba(255, 255, 255, 0.40);
+    --glass-border: rgba(255, 255, 255, 0.80);
+    --glass-border-subtle: rgba(255, 255, 255, 0.50);
+    --glass-blur: 20px;
+    --glass-saturate: 150%;
+    --glass-shadow: 0 10px 30px rgba(31, 38, 135, 0.10);
+    --glass-shadow-hover: 0 15px 35px rgba(31, 38, 135, 0.18);
+
+    /* --- Sidebar --- */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 234 30% 28%;
+    --sidebar-primary: 234 60% 25%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 230 25% 95%;
+    --sidebar-accent-foreground: 234 50% 25%;
+    --sidebar-border: 230 20% 90%;
+    --sidebar-ring: 234 70% 55%;
+  }
+
+  /* --- Dark Mode --- */
+  .dark {
+    --background: 230 20% 8%;
+    --foreground: 220 15% 93%;
+
+    --card: 230 15% 12%;
+    --card-foreground: 220 15% 93%;
+
+    --popover: 230 15% 12%;
+    --popover-foreground: 220 15% 93%;
+
+    --primary: 234 65% 62%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 234 70% 68%;
+
+    --secondary: 230 12% 16%;
+    --secondary-foreground: 220 15% 93%;
+
+    --muted: 230 10% 18%;
+    --muted-foreground: 230 10% 55%;
+
+    --accent: 14 80% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 145 55% 48%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --energy: 38 85% 55%;
+    --energy-foreground: 30 40% 15%;
+
+    --pink: 340 65% 60%;
+    --pink-foreground: 0 0% 100%;
+
+    --cyan: 185 60% 50%;
+    --cyan-foreground: 0 0% 100%;
+
+    --border: 230 10% 18%;
+    --input: 230 10% 18%;
+    --ring: 234 65% 62%;
+
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-bg-hover: rgba(255, 255, 255, 0.14);
+    --glass-bg-active: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-border-subtle: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    --glass-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.35);
+
+    --sidebar-background: 230 20% 8%;
+    --sidebar-foreground: 220 12% 75%;
+    --sidebar-primary: 234 60% 62%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 10% 14%;
+    --sidebar-accent-foreground: 220 12% 85%;
+    --sidebar-border: 230 10% 16%;
+    --sidebar-ring: 234 65% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(234 50% 55% / 0.2) transparent;
+  }
+
+  *::-webkit-scrollbar { width: 6px; height: 6px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(234 50% 55% / 0.15);
+    border-radius: 9999px;
+  }
+  *::-webkit-scrollbar-thumb:hover { background: hsl(234 50% 55% / 0.3); }
+
+  body {
+    @apply text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-display { font-family: var(--font-display); }
+
+  /* ============================================================
+     Candy Glass Material Classes
+     ============================================================ */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+    border: 2px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: 32px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .glass:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--glass-shadow-hover);
+    background: var(--glass-bg-hover);
+  }
+
+  .glass-subtle {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 2px solid var(--glass-border-subtle);
+    border-radius: 32px;
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 12px 32px rgba(31, 38, 135, 0.12);
+    border-radius: 32px;
+  }
+
+  .dark .glass-strong {
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-hover {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .glass-hover:hover {
+    transform: translateY(-4px);
+    background: var(--glass-bg-hover);
+    box-shadow: var(--glass-shadow-hover);
+  }
+
+  .glass-active:active {
+    background: var(--glass-bg-active);
+    transform: scale(0.97);
+  }
+
+  /* ============================================================
+     Dopamine Animated Background
+     ============================================================ */
+  .gradient-hero {
+    background: linear-gradient(120deg, #ff9a9e, #fecfef, #a1c4fd, #c2e9fb);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+  .dark .gradient-hero {
+    background: linear-gradient(120deg, #1a1025, #15162a, #0f1a2e, #121530);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* ============================================================
+     Playful Gradients
+     ============================================================ */
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(234, 70%, 55%), hsl(200, 70%, 55%));
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(14, 90%, 58%), hsl(38, 92%, 55%));
+  }
+
+  .gradient-success {
+    background: linear-gradient(135deg, hsl(145, 65%, 45%), hsl(170, 60%, 48%));
+  }
+
+  .gradient-warm {
+    background: linear-gradient(135deg, hsl(14, 90%, 58%) 0%, hsl(340, 75%, 58%) 100%);
+  }
+
+  .gradient-cool {
+    background: linear-gradient(135deg, hsl(185, 70%, 45%) 0%, hsl(234, 70%, 55%) 100%);
+  }
+
+  .gradient-purple-card {
+    background: linear-gradient(135deg, hsl(234, 70%, 52%) 0%, hsl(210, 75%, 55%) 50%, hsl(200, 70%, 55%) 100%);
+  }
+
+  .gradient-orange-card {
+    background: linear-gradient(135deg, hsl(14, 90%, 58%) 0%, hsl(38, 95%, 55%) 100%);
+  }
+
+  .gradient-energy {
+    background: linear-gradient(135deg, hsl(38, 95%, 55%) 0%, hsl(14, 90%, 58%) 50%, hsl(340, 75%, 58%) 100%);
+  }
+
+  .gradient-rainbow {
+    background: linear-gradient(135deg,
+      hsl(234, 70%, 55%) 0%,
+      hsl(185, 70%, 45%) 25%,
+      hsl(14, 90%, 58%) 50%,
+      hsl(38, 95%, 55%) 75%,
+      hsl(145, 65%, 45%) 100%
+    );
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(234, 70%, 50%), hsl(200, 70%, 48%), hsl(14, 90%, 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-energy {
+    background: linear-gradient(135deg, hsl(14, 90%, 55%), hsl(38, 95%, 52%), hsl(340, 75%, 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-card-bg {
+    background: linear-gradient(145deg, hsl(0, 0%, 100%) 0%, hsl(230, 25%, 98%) 100%);
+  }
+
+  /* ============================================================
+     Playful Button Style (3D press effect)
+     ============================================================ */
+  .btn-playful {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+    color: white;
+    border: 3px solid #FFF;
+    box-shadow: 0 6px 0 #D94545;
+    border-radius: 9999px;
+    transition: all 0.1s;
+    font-weight: 900;
+  }
+  .btn-playful:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 #D94545;
+  }
+
+  /* ============================================================
+     Animations
+     ============================================================ */
+  .float-animation { animation: float 6s ease-in-out infinite; }
+  .float-animation-delay { animation: float 6s ease-in-out 2s infinite; }
+  .float-animation-slow { animation: float 8s ease-in-out 1s infinite; }
+  .shimmer {
+    background: linear-gradient(90deg, transparent, hsl(0, 0%, 100%, 0.5), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  .sound-wave { animation: soundWave 1.2s ease-in-out infinite alternate; }
+  .pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
+  .bounce-gentle { animation: bounceGentle 2s ease-in-out infinite; }
+
+  .glass-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .glass-shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: glassShimmer 4s ease-in-out infinite;
+  }
+}
+
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes soundWave { 0% { transform: scaleY(0.4); } 100% { transform: scaleY(1); } }
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 20px hsl(234, 70%, 55%, 0.3); }
+  50% { box-shadow: 0 0 35px hsl(200, 70%, 55%, 0.45), 0 0 55px hsl(14, 90%, 58%, 0.2); }
+}
+@keyframes bounceGentle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-6px) rotate(-2deg); }
+  75% { transform: translateY(-3px) rotate(2deg); }
+}
+@keyframes glassShimmer {
+  0% { left: -100%; }
+  50%, 100% { left: 200%; }
+}

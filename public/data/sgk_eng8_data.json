@@ -1,0 +1,4828 @@
+{
+  "units": {
+    "1": {
+      "title": "Leisure Activities",
+      "vocabulary": [
+        {
+          "en": "leisure",
+          "type": "n",
+          "vi": "sự giải trí, thời gian rảnh"
+        },
+        {
+          "en": "activity",
+          "type": "n",
+          "vi": "hoạt động"
+        },
+        {
+          "en": "socialise",
+          "type": "v",
+          "vi": "giao lưu, giao tiếp xã hội"
+        },
+        {
+          "en": "communicate",
+          "type": "v",
+          "vi": "giao tiếp"
+        },
+        {
+          "en": "balance",
+          "type": "n/v",
+          "vi": "sự cân bằng, cân bằng"
+        },
+        {
+          "en": "trick",
+          "type": "n",
+          "vi": "trò, mẹo"
+        },
+        {
+          "en": "savings",
+          "type": "n",
+          "vi": "tiền tiết kiệm"
+        },
+        {
+          "en": "muscle",
+          "type": "n",
+          "vi": "cơ bắp"
+        },
+        {
+          "en": "comedy",
+          "type": "n",
+          "vi": "hài kịch"
+        },
+        {
+          "en": "melody",
+          "type": "n",
+          "vi": "giai điệu"
+        },
+        {
+          "en": "poetry",
+          "type": "n",
+          "vi": "thơ ca"
+        },
+        {
+          "en": "train",
+          "type": "v",
+          "vi": "tập luyện, huấn luyện"
+        },
+        {
+          "en": "detest",
+          "type": "v",
+          "vi": "ghét, căm ghét"
+        },
+        {
+          "en": "fancy",
+          "type": "v",
+          "vi": "thích, muốn"
+        },
+        {
+          "en": "fold",
+          "type": "v",
+          "vi": "gấp, xếp"
+        },
+        {
+          "en": "prefer",
+          "type": "v",
+          "vi": "thích hơn"
+        },
+        {
+          "en": "adore",
+          "type": "v",
+          "vi": "yêu thích, mến mộ"
+        },
+        {
+          "en": "exist",
+          "type": "v",
+          "vi": "tồn tại"
+        },
+        {
+          "en": "educate",
+          "type": "v",
+          "vi": "giáo dục"
+        },
+        {
+          "en": "crazy",
+          "type": "adj",
+          "vi": "điên cuồng, mê mệt"
+        },
+        {
+          "en": "cruel",
+          "type": "adj",
+          "vi": "tàn nhẫn"
+        },
+        {
+          "en": "fond",
+          "type": "adj",
+          "vi": "yêu thích"
+        },
+        {
+          "en": "keen",
+          "type": "adj",
+          "vi": "say mê, nhiệt tình"
+        },
+        {
+          "en": "satisfied",
+          "type": "adj",
+          "vi": "hài lòng"
+        },
+        {
+          "en": "addicted",
+          "type": "adj",
+          "vi": "nghiện, bị cuốn hút"
+        },
+        {
+          "en": "weird",
+          "type": "adj",
+          "vi": "kỳ lạ"
+        },
+        {
+          "en": "irritated",
+          "type": "adj",
+          "vi": "bực mình, khó chịu"
+        },
+        {
+          "en": "keep in touch",
+          "type": "v phr",
+          "vi": "giữ liên lạc"
+        },
+        {
+          "en": "stay in shape",
+          "type": "v phr",
+          "vi": "giữ dáng"
+        },
+        {
+          "en": "hang out",
+          "type": "v phr",
+          "vi": "đi chơi, la cà"
+        }
+      ],
+      "grammar": [
+        "Verbs of liking + V-ing / to-V",
+        "Verbs of liking + V-ing only"
+      ],
+      "grammar_notes": "Động từ chỉ sự yêu thích + V-ing hoặc to-V: Một số động từ có thể theo sau bởi cả V-ing và to-V mà không thay đổi nghĩa: like, love, hate, prefer. Ví dụ: I like reading / I like to read. Một số động từ chỉ đi với V-ing: enjoy, adore, fancy, mind, dislike, detest. Ví dụ: She enjoys swimming. He detests doing homework. KHÔNG nói: She enjoys to swim. Can't stand cũng chỉ đi với V-ing: I can't stand waiting.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "She enjoys _____ to music in her free time.",
+          "opts": [
+            "listen",
+            "to listen",
+            "listening",
+            "listens"
+          ],
+          "ans": 2,
+          "explain": "Động từ 'enjoy' theo sau bởi V-ing. Vì vậy, 'listening' là đúng. 'Listen' và 'listens' là dạng nguyên thể hoặc chia theo ngôi thứ ba số ít, còn 'to listen' không phù hợp sau 'enjoy'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'leisure' mean in Vietnamese?",
+          "opts": [
+            "công việc",
+            "sự giải trí",
+            "bài tập",
+            "kỳ nghỉ"
+          ],
+          "ans": 1,
+          "explain": "'Leisure' có nghĩa là thời gian rảnh rỗi, không làm việc gì cả, nên đáp án đúng là 'sự giải trí'. 'Công việc', 'bài tập' và 'kỳ nghỉ' có nghĩa khác."
+        },
+        {
+          "type": "mc",
+          "q": "He detests _____ early in the morning.",
+          "opts": [
+            "wake up",
+            "waking up",
+            "to wake up",
+            "woken up"
+          ],
+          "ans": 1,
+          "explain": "Động từ 'detest' (ghét) theo sau bởi V-ing hoặc nguyên thể có 'to'. Tuy nhiên, trong trường hợp này, 'waking up' (V-ing) là cách dùng phổ biến và tự nhiên hơn. 'Wake up' và 'woken up' không đúng ngữ pháp ở đây."
+        },
+        {
+          "type": "mc",
+          "q": "They prefer _____ at home to going out.",
+          "opts": [
+            "stay",
+            "staying",
+            "stayed",
+            "stays"
+          ],
+          "ans": 1,
+          "explain": "Động từ 'prefer' có thể theo sau bởi V-ing hoặc nguyên thể có 'to'. Ở đây, 'staying' (V-ing) là lựa chọn đúng. 'Stay', 'stayed', 'stays' không phù hợp về ngữ pháp."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'addicted' mean?",
+          "opts": [
+            "hài lòng",
+            "bực mình",
+            "nghiện",
+            "yêu thích"
+          ],
+          "ans": 2,
+          "explain": "'Addicted' có nghĩa là bị lệ thuộc vào một thứ gì đó, không thể bỏ được, tức là 'nghiện'. Các lựa chọn khác như 'hài lòng', 'bực mình', 'yêu thích' không diễn tả đúng nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "Do you fancy _____ to the cinema tonight?",
+          "opts": [
+            "go",
+            "to go",
+            "going",
+            "goes"
+          ],
+          "ans": 2,
+          "explain": "Động từ 'fancy' (thích, muốn) luôn theo sau bởi V-ing. Vì vậy, 'going' là đúng. 'Go', 'to go', 'goes' không phù hợp sau 'fancy'."
+        },
+        {
+          "type": "mc",
+          "q": "She can't stand _____ in traffic jams.",
+          "opts": [
+            "sit",
+            "to sit",
+            "sitting",
+            "sat"
+          ],
+          "ans": 2,
+          "explain": "Động từ 'can't stand' (không thể chịu đựng được) theo sau bởi V-ing. Do đó, 'sitting' là đúng. 'Sit', 'to sit', 'sat' không đúng ngữ pháp trong trường hợp này."
+        },
+        {
+          "type": "mc",
+          "q": "He is very _____ on playing football.",
+          "opts": [
+            "fond",
+            "keen",
+            "crazy",
+            "addicted"
+          ],
+          "ans": 1,
+          "explain": "Cụm 'be keen on' có nghĩa là rất thích, say mê một cái gì đó. Các lựa chọn khác như 'fond' (thích), 'crazy' (điên rồ vì cái gì đó), 'addicted' (nghiện) cũng diễn tả sự yêu thích nhưng 'keen' phù hợp nhất với cấu trúc này."
+        },
+        {
+          "type": "mc",
+          "q": "I like _____ books before going to bed.",
+          "opts": [
+            "read",
+            "reading",
+            "reads",
+            "to reading"
+          ],
+          "ans": 1,
+          "explain": "Động từ 'like' có thể theo sau bởi V-ing hoặc nguyên thể có 'to'. Ở đây, 'reading' (V-ing) là lựa chọn đúng. 'Read', 'reads' không phù hợp về ngữ pháp, còn 'to reading' là sai."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'socialise' mean?",
+          "opts": [
+            "học tập",
+            "giao lưu",
+            "làm việc",
+            "nghỉ ngơi"
+          ],
+          "ans": 1,
+          "explain": "'Socialise' có nghĩa là gặp gỡ và nói chuyện với người khác, đặc biệt là trong các sự kiện xã hội, tức là 'giao lưu'. Các lựa chọn khác như 'học tập', 'làm việc', 'nghỉ ngơi' không diễn tả đúng nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "My sister adores _____ origami.",
+          "opts": [
+            "make",
+            "to make",
+            "making",
+            "makes"
+          ],
+          "ans": 2,
+          "explain": "Động từ 'adore' (yêu thích, rất thích) theo sau bởi V-ing. Vì vậy, 'making' là đúng. 'Make', 'to make', 'makes' không phù hợp sau 'adore'."
+        },
+        {
+          "type": "mc",
+          "q": "We should _____ in shape by exercising regularly.",
+          "opts": [
+            "keep",
+            "stay",
+            "get",
+            "go"
+          ],
+          "ans": 1,
+          "explain": "Cụm 'stay in shape' có nghĩa là giữ gìn vóc dáng, sức khỏe. 'Keep', 'get', 'go' không tạo thành cụm từ có nghĩa tương tự trong ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "He doesn't mind _____ the dishes.",
+          "opts": [
+            "wash",
+            "washing",
+            "to wash",
+            "washed"
+          ],
+          "ans": 1,
+          "explain": "Động từ 'mind' (phiền, ngại) theo sau bởi V-ing. Do đó, 'washing' là đúng. 'Wash', 'to wash', 'washed' không phù hợp với cấu trúc này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'weird' mean in Vietnamese?",
+          "opts": [
+            "bình thường",
+            "kỳ lạ",
+            "đẹp",
+            "xấu"
+          ],
+          "ans": 1,
+          "explain": "'Weird' có nghĩa là khác thường, không giống bình thường, nên đáp án đúng là 'kỳ lạ'. 'Bình thường', 'đẹp', 'xấu' là những từ có nghĩa khác."
+        },
+        {
+          "type": "mc",
+          "q": "She loves _____ poetry in her spare time.",
+          "opts": [
+            "write",
+            "writes",
+            "writing",
+            "wrote"
+          ],
+          "ans": 2,
+          "explain": "Động từ 'love' (yêu thích) theo sau bởi V-ing hoặc nguyên thể có 'to'. Ở đây, 'writing' (V-ing) là lựa chọn đúng. 'Write', 'writes', 'wrote' không phù hợp về ngữ pháp."
+        },
+        {
+          "type": "mc",
+          "q": "They often _____ out with friends at the weekend.",
+          "opts": [
+            "hand",
+            "hang",
+            "held",
+            "hold"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ 'hang out' có nghĩa là đi chơi, tụ tập với bạn bè. Vì vậy, 'hang' là đúng. 'Hand', 'held', 'hold' không tạo thành cụm từ có nghĩa tương tự."
+        },
+        {
+          "type": "mc",
+          "q": "I am fond _____ watching comedies.",
+          "opts": [
+            "in",
+            "at",
+            "of",
+            "on"
+          ],
+          "ans": 2,
+          "explain": "Cụm từ 'be fond of' có nghĩa là thích cái gì đó. Vì vậy, giới từ 'of' là đúng. Các giới từ khác không tạo thành cụm từ này."
+        },
+        {
+          "type": "mc",
+          "q": "He dislikes _____ up early.",
+          "opts": [
+            "get",
+            "getting",
+            "to get",
+            "got"
+          ],
+          "ans": 1,
+          "explain": "Động từ 'dislike' (không thích) theo sau bởi V-ing hoặc nguyên thể có 'to'. Ở đây, 'getting' (V-ing) là lựa chọn đúng. 'Get', 'to get', 'got' không phù hợp về ngữ pháp."
+        },
+        {
+          "type": "mc",
+          "q": "We keep _____ touch through social media.",
+          "opts": [
+            "on",
+            "in",
+            "at",
+            "of"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ 'keep in touch' có nghĩa là giữ liên lạc. Vì vậy, giới từ 'in' là đúng. Các giới từ khác không tạo thành cụm từ này."
+        },
+        {
+          "type": "mc",
+          "q": "She is _____ about K-pop music.",
+          "opts": [
+            "fond",
+            "keen",
+            "crazy",
+            "satisfied"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'be crazy about' có nghĩa là cực kỳ thích, phát cuồng vì cái gì đó. Trong trường hợp này, nó diễn tả sự yêu thích mãnh liệt K-pop. 'Fond' và 'keen' cũng chỉ sự thích thú nhưng 'crazy' thể hiện mức độ cao hơn."
+        }
+      ]
+    },
+    "2": {
+      "title": "Life in the Countryside",
+      "vocabulary": [
+        {
+          "en": "countryside",
+          "type": "n",
+          "vi": "miền quê, nông thôn"
+        },
+        {
+          "en": "harvest",
+          "type": "n/v",
+          "vi": "mùa gặt, thu hoạch"
+        },
+        {
+          "en": "buffalo",
+          "type": "n",
+          "vi": "con trâu"
+        },
+        {
+          "en": "paddy field",
+          "type": "n",
+          "vi": "cánh đồng lúa"
+        },
+        {
+          "en": "crop",
+          "type": "n",
+          "vi": "mùa màng, vụ mùa"
+        },
+        {
+          "en": "rural",
+          "type": "adj",
+          "vi": "thuộc nông thôn"
+        },
+        {
+          "en": "peaceful",
+          "type": "adj",
+          "vi": "yên bình"
+        },
+        {
+          "en": "quiet",
+          "type": "adj",
+          "vi": "yên tĩnh"
+        },
+        {
+          "en": "fresh air",
+          "type": "n",
+          "vi": "không khí trong lành"
+        },
+        {
+          "en": "vast",
+          "type": "adj",
+          "vi": "rộng lớn"
+        },
+        {
+          "en": "nomadic",
+          "type": "adj",
+          "vi": "du mục"
+        },
+        {
+          "en": "herd",
+          "type": "v/n",
+          "vi": "chăn, đàn (gia súc)"
+        },
+        {
+          "en": "cattle",
+          "type": "n",
+          "vi": "gia súc"
+        },
+        {
+          "en": "pasture",
+          "type": "n",
+          "vi": "đồng cỏ"
+        },
+        {
+          "en": "pick",
+          "type": "v",
+          "vi": "hái, nhặt"
+        },
+        {
+          "en": "grow",
+          "type": "v",
+          "vi": "trồng, mọc"
+        },
+        {
+          "en": "scenery",
+          "type": "n",
+          "vi": "phong cảnh"
+        },
+        {
+          "en": "landscape",
+          "type": "n",
+          "vi": "cảnh quan"
+        },
+        {
+          "en": "slow",
+          "type": "adj",
+          "vi": "chậm"
+        },
+        {
+          "en": "boring",
+          "type": "adj",
+          "vi": "buồn chán"
+        },
+        {
+          "en": "convenient",
+          "type": "adj",
+          "vi": "thuận tiện"
+        },
+        {
+          "en": "inconvenient",
+          "type": "adj",
+          "vi": "bất tiện"
+        },
+        {
+          "en": "facility",
+          "type": "n",
+          "vi": "cơ sở vật chất"
+        },
+        {
+          "en": "villager",
+          "type": "n",
+          "vi": "dân làng"
+        },
+        {
+          "en": "neighbour",
+          "type": "n",
+          "vi": "hàng xóm"
+        },
+        {
+          "en": "generous",
+          "type": "adj",
+          "vi": "hào phóng"
+        },
+        {
+          "en": "friendly",
+          "type": "adj",
+          "vi": "thân thiện"
+        },
+        {
+          "en": "simple",
+          "type": "adj",
+          "vi": "đơn giản"
+        },
+        {
+          "en": "tradition",
+          "type": "n",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "lifestyle",
+          "type": "n",
+          "vi": "lối sống"
+        }
+      ],
+      "grammar": [
+        "Comparative forms of adverbs",
+        "Compound sentences"
+      ],
+      "grammar_notes": "So sánh hơn của trạng từ (Comparative adverbs): Trạng từ ngắn (1 âm tiết hoặc giống tính từ): thêm -er. Ví dụ: hard → harder, fast → faster. Trạng từ dài (2 âm tiết trở lên, thường kết thúc bằng -ly): thêm more. Ví dụ: slowly → more slowly, carefully → more carefully. Bất quy tắc: well → better, badly → worse. Câu ghép (Compound sentences): Nối hai mệnh đề độc lập bằng and, but, or, so. Ví dụ: Life in the countryside is peaceful, but it can be inconvenient.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "Life in the countryside is _____ than in the city.",
+          "opts": [
+            "more peaceful",
+            "peacefuller",
+            "most peaceful",
+            "peaceful"
+          ],
+          "ans": 0,
+          "explain": "Câu này so sánh hai đối tượng (nông thôn và thành phố) nên ta dùng dạng so sánh hơn. \"Peaceful\" là tính từ dài, nên ta thêm \"more\" phía trước, không thêm \"-er\" hay \"-est\"."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'paddy field' mean?",
+          "opts": [
+            "cánh đồng lúa",
+            "đồng cỏ",
+            "vườn hoa",
+            "ao cá"
+          ],
+          "ans": 0,
+          "explain": "Trong tiếng Anh, \"paddy field\" có nghĩa là ruộng lúa, đồng lúa. Các lựa chọn khác như \"đồng cỏ\", \"vườn hoa\", \"ao cá\" không đúng với nghĩa của từ này."
+        },
+        {
+          "type": "mc",
+          "q": "Farmers work _____ during the harvest season.",
+          "opts": [
+            "hard",
+            "harder",
+            "hardest",
+            "hardly"
+          ],
+          "ans": 1,
+          "explain": "Câu này so sánh mức độ làm việc của người nông dân trong mùa gặt với một tiêu chuẩn ngầm (thường ngày). \"Hard\" là trạng từ, \"harder\" là dạng so sánh hơn của \"hard\", dùng để bổ nghĩa cho động từ \"work\"."
+        },
+        {
+          "type": "mc",
+          "q": "The countryside has _____ air than the city.",
+          "opts": [
+            "fresh",
+            "fresher",
+            "freshest",
+            "more fresh"
+          ],
+          "ans": 1,
+          "explain": "Chúng ta đang so sánh không khí ở hai nơi (nông thôn và thành phố). \"Fresh\" là tính từ ngắn, nên dạng so sánh hơn là \"fresher\". \"More fresh\" là cách dùng sai."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'nomadic' mean in Vietnamese?",
+          "opts": [
+            "du mục",
+            "nông nghiệp",
+            "công nghiệp",
+            "thành thị"
+          ],
+          "ans": 0,
+          "explain": "Từ \"nomadic\" trong tiếng Anh mô tả những người hay di chuyển, không có nơi ở cố định, giống như người du mục. Các lựa chọn khác chỉ các hoạt động hoặc nơi chốn khác."
+        },
+        {
+          "type": "mc",
+          "q": "She picked fruit, _____ her brother herded the cattle.",
+          "opts": [
+            "but",
+            "and",
+            "or",
+            "so"
+          ],
+          "ans": 1,
+          "explain": "Hai hành động \"cô ấy hái quả\" và \"anh trai cô ấy chăn gia súc\" xảy ra đồng thời và không đối lập, nên ta dùng liên từ \"and\" để nối chúng."
+        },
+        {
+          "type": "mc",
+          "q": "He drives more _____ on country roads.",
+          "opts": [
+            "careful",
+            "carefully",
+            "careless",
+            "care"
+          ],
+          "ans": 1,
+          "explain": "Động từ \"drives\" (lái xe) cần được bổ nghĩa bởi một trạng từ. \"Carefully\" là trạng từ, diễn tả cách anh ấy lái xe cẩn thận hơn trên đường quê."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is a person who lives in a village.",
+          "opts": [
+            "citizen",
+            "villager",
+            "tourist",
+            "foreigner"
+          ],
+          "ans": 1,
+          "explain": "Một người sống ở làng thì được gọi là \"villager\". \"Citizen\" là công dân nói chung, \"tourist\" là khách du lịch, \"foreigner\" là người nước ngoài."
+        },
+        {
+          "type": "mc",
+          "q": "The countryside has fewer _____ than the city.",
+          "opts": [
+            "fields",
+            "trees",
+            "facilities",
+            "animals"
+          ],
+          "ans": 2,
+          "explain": "Câu này nói về sự khác biệt giữa nông thôn và thành phố. Thành phố có nhiều \"facilities\" (tiện nghi, cơ sở vật chất) hơn nông thôn, còn nông thôn có ít hơn."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'vast' mean?",
+          "opts": [
+            "nhỏ bé",
+            "hẹp",
+            "rộng lớn",
+            "sâu"
+          ],
+          "ans": 2,
+          "explain": "Trong tiếng Anh, \"vast\" có nghĩa là rất rộng, bao la. Các từ như \"nhỏ bé\", \"hẹp\", \"sâu\" không diễn tả đúng nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "He runs _____ than his brother.",
+          "opts": [
+            "fast",
+            "faster",
+            "fastest",
+            "more fast"
+          ],
+          "ans": 1,
+          "explain": "Câu này so sánh tốc độ chạy của hai người (anh ấy và anh trai). \"Fast\" là tính từ/trạng từ, \"faster\" là dạng so sánh hơn, dùng khi so sánh hai đối tượng."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ in the countryside is beautiful.",
+          "opts": [
+            "traffic",
+            "pollution",
+            "scenery",
+            "noise"
+          ],
+          "ans": 2,
+          "explain": "Trong bối cảnh miêu tả vẻ đẹp của vùng nông thôn, \"scenery\" (phong cảnh) là từ phù hợp nhất. \"Traffic\" (giao thông), \"pollution\" (ô nhiễm), \"noise\" (tiếng ồn) thường không được coi là đẹp."
+        },
+        {
+          "type": "mc",
+          "q": "Country people are often _____ and friendly.",
+          "opts": [
+            "rude",
+            "mean",
+            "generous",
+            "selfish"
+          ],
+          "ans": 2,
+          "explain": "Câu này miêu tả tính cách của người dân quê. Nếu họ thân thiện, thì họ thường cũng \"generous\" (hào phóng). Các từ \"rude\" (thô lỗ), \"mean\" (keo kiệt), \"selfish\" (ích kỷ) mang nghĩa tiêu cực, trái ngược với \"friendly\"."
+        },
+        {
+          "type": "mc",
+          "q": "She speaks English more _____ than her classmate.",
+          "opts": [
+            "fluent",
+            "fluently",
+            "fluency",
+            "fluenter"
+          ],
+          "ans": 1,
+          "explain": "Động từ \"speaks\" (nói) cần được bổ nghĩa bởi một trạng từ. \"Fluently\" là trạng từ của \"fluent\", diễn tả cách cô ấy nói tiếng Anh trôi chảy hơn."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'harvest' mean?",
+          "opts": [
+            "gieo hạt",
+            "thu hoạch",
+            "tưới nước",
+            "cày ruộng"
+          ],
+          "ans": 1,
+          "explain": "Trong nông nghiệp, \"harvest\" là hành động thu hoạch nông sản sau khi trồng trọt. Các từ khác chỉ các giai đoạn khác của việc trồng trọt."
+        },
+        {
+          "type": "mc",
+          "q": "Life here is simple, _____ people are happy.",
+          "opts": [
+            "so",
+            "but",
+            "or",
+            "and"
+          ],
+          "ans": 1,
+          "explain": "Câu này đưa ra hai ý tưởng có vẻ mâu thuẫn: cuộc sống đơn giản nhưng người dân vẫn hạnh phúc. Liên từ \"but\" (nhưng) dùng để nối hai ý đối lập này."
+        },
+        {
+          "type": "mc",
+          "q": "Buffaloes are used to plough the _____ fields.",
+          "opts": [
+            "corn",
+            "paddy",
+            "flower",
+            "grass"
+          ],
+          "ans": 1,
+          "explain": "Trâu thường được dùng để cày \"paddy fields\", tức là ruộng lúa. Các loại đồng khác như \"corn\" (ngô), \"flower\" (hoa), \"grass\" (cỏ) không phải là nơi trâu thường cày bừa."
+        },
+        {
+          "type": "mc",
+          "q": "People in the countryside live more _____ than in the city.",
+          "opts": [
+            "slow",
+            "slowly",
+            "slower",
+            "slowest"
+          ],
+          "ans": 1,
+          "explain": "Câu này so sánh nhịp sống ở hai nơi. \"Slowly\" là trạng từ, bổ nghĩa cho động từ \"live\" (sống), diễn tả cách sống chậm rãi hơn ở nông thôn."
+        },
+        {
+          "type": "mc",
+          "q": "The countryside is quiet _____ peaceful.",
+          "opts": [
+            "but",
+            "or",
+            "and",
+            "so"
+          ],
+          "ans": 2,
+          "explain": "Câu này liệt kê hai đặc điểm của vùng nông thôn là yên tĩnh và thanh bình. Vì hai đặc điểm này đều tích cực và bổ sung cho nhau, ta dùng liên từ \"and\" (và)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'lifestyle' mean in Vietnamese?",
+          "opts": [
+            "cuộc sống",
+            "lối sống",
+            "gia đình",
+            "công việc"
+          ],
+          "ans": 1,
+          "explain": "Trong tiếng Anh, \"lifestyle\" có nghĩa là cách sống, bao gồm thói quen, sinh hoạt và quan điểm của một người hoặc một nhóm người. \"Cuộc sống\" là \"life\", \"gia đình\" là \"family\", \"công việc\" là \"job/work\"."
+        }
+      ]
+    },
+    "3": {
+      "title": "Peoples of Vietnam",
+      "vocabulary": [
+        {
+          "en": "ethnic group",
+          "type": "n",
+          "vi": "nhóm dân tộc"
+        },
+        {
+          "en": "ethnic minority",
+          "type": "n",
+          "vi": "dân tộc thiểu số"
+        },
+        {
+          "en": "majority",
+          "type": "n",
+          "vi": "đa số"
+        },
+        {
+          "en": "stilt house",
+          "type": "n",
+          "vi": "nhà sàn"
+        },
+        {
+          "en": "terraced field",
+          "type": "n",
+          "vi": "ruộng bậc thang"
+        },
+        {
+          "en": "communal house",
+          "type": "n",
+          "vi": "nhà rông"
+        },
+        {
+          "en": "costume",
+          "type": "n",
+          "vi": "trang phục"
+        },
+        {
+          "en": "tradition",
+          "type": "n",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "custom",
+          "type": "n",
+          "vi": "phong tục"
+        },
+        {
+          "en": "festival",
+          "type": "n",
+          "vi": "lễ hội"
+        },
+        {
+          "en": "ceremony",
+          "type": "n",
+          "vi": "nghi lễ"
+        },
+        {
+          "en": "population",
+          "type": "n",
+          "vi": "dân số"
+        },
+        {
+          "en": "highland",
+          "type": "n",
+          "vi": "cao nguyên, vùng cao"
+        },
+        {
+          "en": "lowland",
+          "type": "n",
+          "vi": "đồng bằng, vùng trũng"
+        },
+        {
+          "en": "mountainous",
+          "type": "adj",
+          "vi": "miền núi"
+        },
+        {
+          "en": "diverse",
+          "type": "adj",
+          "vi": "đa dạng"
+        },
+        {
+          "en": "unique",
+          "type": "adj",
+          "vi": "độc đáo"
+        },
+        {
+          "en": "colourful",
+          "type": "adj",
+          "vi": "đầy màu sắc"
+        },
+        {
+          "en": "preserve",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "weave",
+          "type": "v",
+          "vi": "dệt"
+        },
+        {
+          "en": "worship",
+          "type": "v",
+          "vi": "thờ cúng"
+        },
+        {
+          "en": "cultivate",
+          "type": "v",
+          "vi": "canh tác, trồng trọt"
+        },
+        {
+          "en": "livestock",
+          "type": "n",
+          "vi": "gia súc"
+        },
+        {
+          "en": "bamboo",
+          "type": "n",
+          "vi": "tre, trúc"
+        },
+        {
+          "en": "craft",
+          "type": "n",
+          "vi": "nghề thủ công"
+        },
+        {
+          "en": "pottery",
+          "type": "n",
+          "vi": "đồ gốm"
+        },
+        {
+          "en": "tribe",
+          "type": "n",
+          "vi": "bộ tộc"
+        },
+        {
+          "en": "ancestor",
+          "type": "n",
+          "vi": "tổ tiên"
+        },
+        {
+          "en": "heritage",
+          "type": "n",
+          "vi": "di sản"
+        },
+        {
+          "en": "identity",
+          "type": "n",
+          "vi": "bản sắc"
+        }
+      ],
+      "grammar": [
+        "Questions: review of Wh-questions",
+        "Articles with proper nouns"
+      ],
+      "grammar_notes": "Ôn tập câu hỏi Wh-: Who: hỏi về người. What: hỏi về vật/sự việc. Where: hỏi về nơi chốn. When: hỏi về thời gian. Why: hỏi về lý do. How: hỏi về cách thức. How many: hỏi về số lượng (đếm được). How much: hỏi về số lượng (không đếm được). Mạo từ với danh từ riêng: Dùng 'the' trước tên các dân tộc: the Kinh, the Tay, the H'Mong. Không dùng mạo từ trước tên riêng của người, thành phố: Ha Noi, Sa Pa.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "_____ ethnic groups are there in Vietnam?",
+          "opts": [
+            "How much",
+            "How many",
+            "How often",
+            "How long"
+          ],
+          "ans": 1,
+          "explain": "Chúng ta dùng 'How many' để hỏi về số lượng của những danh từ đếm được, ví dụ như 'ethnic groups'. 'How much' dùng cho danh từ không đếm được."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'stilt house' mean?",
+          "opts": [
+            "nhà sàn",
+            "nhà rông",
+            "nhà mái tranh",
+            "nhà bê tông"
+          ],
+          "ans": 0,
+          "explain": "'Stilt house' có nghĩa là 'nhà sàn', là kiểu nhà phổ biến của nhiều dân tộc thiểu số. 'Nhà rông' là nhà sinh hoạt cộng đồng."
+        },
+        {
+          "type": "mc",
+          "q": "The Kinh people make up _____ majority of the population.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 2,
+          "explain": "Ta dùng mạo từ 'the' khi nói về một đối tượng đã được xác định hoặc là duy nhất, như 'the majority' (phần lớn nhất)."
+        },
+        {
+          "type": "mc",
+          "q": "_____ do the H'Mong people live?",
+          "opts": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "ans": 1,
+          "explain": "Câu hỏi này muốn biết địa điểm sinh sống, vì vậy ta dùng 'Where'. 'What' hỏi về sự vật, 'When' hỏi về thời gian, 'Who' hỏi về người."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'terraced field' mean in Vietnamese?",
+          "opts": [
+            "cánh đồng lúa",
+            "ruộng bậc thang",
+            "vườn hoa",
+            "đồng cỏ"
+          ],
+          "ans": 1,
+          "explain": "'Terraced field' là hình ảnh những thửa ruộng bậc thang trên núi, nên đáp án đúng là 'ruộng bậc thang'."
+        },
+        {
+          "type": "mc",
+          "q": "Many ethnic minorities _____ their traditional crafts.",
+          "opts": [
+            "preserve",
+            "preserves",
+            "preserved",
+            "preserving"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ 'Many ethnic minorities' là số nhiều, nên động từ chia ở dạng nguyên mẫu 'preserve'. 'Preserves' dùng cho chủ ngữ số ít."
+        },
+        {
+          "type": "mc",
+          "q": "_____ is the festival celebrated? — In spring.",
+          "opts": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "ans": 2,
+          "explain": "Câu trả lời 'In spring' (Vào mùa xuân) cho biết thời gian diễn ra lễ hội, nên ta dùng 'When' để hỏi."
+        },
+        {
+          "type": "mc",
+          "q": "The communal house is _____ to the community.",
+          "opts": [
+            "importance",
+            "important",
+            "importantly",
+            "import"
+          ],
+          "ans": 1,
+          "explain": "Sau động từ 'to be' (is), ta cần một tính từ để bổ nghĩa cho danh từ 'house'. 'Important' là tính từ, còn 'importance' là danh từ."
+        },
+        {
+          "type": "mc",
+          "q": "Women of the Cham people are famous for _____.",
+          "opts": [
+            "cooking",
+            "weaving",
+            "fishing",
+            "hunting"
+          ],
+          "ans": 1,
+          "explain": "Phụ nữ Chăm nổi tiếng với nghề dệt vải thủ công truyền thống, nên đáp án là 'weaving'. 'Cooking' là nấu ăn, 'fishing' là câu cá."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'ethnic minority' mean?",
+          "opts": [
+            "dân tộc đa số",
+            "dân tộc thiểu số",
+            "nhóm người",
+            "bộ tộc"
+          ],
+          "ans": 1,
+          "explain": "'Ethnic minority' có nghĩa là 'dân tộc thiểu số', chỉ nhóm dân tộc có số dân ít hơn trong một quốc gia."
+        },
+        {
+          "type": "mc",
+          "q": "_____ is the traditional costume of the Tay people?",
+          "opts": [
+            "Who",
+            "When",
+            "What",
+            "Where"
+          ],
+          "ans": 2,
+          "explain": "Câu hỏi muốn biết về trang phục truyền thống, là một sự vật, nên ta dùng 'What'. 'Who' hỏi về người, 'When' hỏi về thời gian."
+        },
+        {
+          "type": "mc",
+          "q": "Vietnam has 54 different _____ groups.",
+          "opts": [
+            "ethnic",
+            "ethics",
+            "ethnicity",
+            "ethnical"
+          ],
+          "ans": 0,
+          "explain": "Ta cần một tính từ để bổ nghĩa cho danh từ 'groups'. 'Ethnic' là tính từ, còn 'ethnicity' là danh từ chỉ dân tộc."
+        },
+        {
+          "type": "mc",
+          "q": "They live in _____ mountainous areas of northern Vietnam.",
+          "opts": [
+            "a",
+            "an",
+            "the",
+            "—"
+          ],
+          "ans": 2,
+          "explain": "Ta dùng 'the' để chỉ một khu vực cụ thể, đã được xác định, đó là 'vùng núi phía bắc Việt Nam'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'heritage' mean?",
+          "opts": [
+            "phong tục",
+            "di sản",
+            "nghi lễ",
+            "truyền thống"
+          ],
+          "ans": 1,
+          "explain": "'Heritage' có nghĩa là 'di sản', bao gồm những giá trị văn hóa, lịch sử được truyền lại từ thế hệ trước."
+        },
+        {
+          "type": "mc",
+          "q": "The Ede people _____ in the Central Highlands.",
+          "opts": [
+            "lives",
+            "live",
+            "living",
+            "lived"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ 'The Ede people' là số nhiều, nên động từ chia ở dạng nguyên mẫu 'live'. 'Lives' dùng cho chủ ngữ số ít."
+        },
+        {
+          "type": "mc",
+          "q": "_____ do they worship? — Their ancestors.",
+          "opts": [
+            "What",
+            "Where",
+            "When",
+            "Who"
+          ],
+          "ans": 3,
+          "explain": "Câu trả lời 'Their ancestors' (Tổ tiên của họ) cho biết đối tượng thờ cúng, nên ta dùng 'Who' để hỏi."
+        },
+        {
+          "type": "mc",
+          "q": "Their traditional _____ are very colourful.",
+          "opts": [
+            "costumes",
+            "houses",
+            "foods",
+            "animals"
+          ],
+          "ans": 0,
+          "explain": "Câu này nói về trang phục truyền thống có màu sắc sặc sỡ, nên ta dùng 'costumes'. 'Houses' là nhà cửa, 'foods' là thức ăn."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'cultivate' mean in Vietnamese?",
+          "opts": [
+            "thu hoạch",
+            "canh tác",
+            "chăn nuôi",
+            "đánh bắt"
+          ],
+          "ans": 1,
+          "explain": "'Cultivate' có nghĩa là 'canh tác', tức là trồng trọt trên đất đai. 'Thu hoạch' là kết thúc vụ mùa."
+        },
+        {
+          "type": "mc",
+          "q": "_____ is pottery important? — Because it is part of their culture.",
+          "opts": [
+            "What",
+            "Where",
+            "When",
+            "Why"
+          ],
+          "ans": 3,
+          "explain": "Câu trả lời 'Because it is part of their culture' (Vì đó là một phần văn hóa của họ) giải thích lý do, nên ta dùng 'Why' để hỏi."
+        },
+        {
+          "type": "mc",
+          "q": "Each ethnic group has its own _____ and traditions.",
+          "opts": [
+            "custom",
+            "customs",
+            "customer",
+            "customize"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ 'Each ethnic group' là số ít, và câu nói về nhiều phong tục, nên ta dùng danh từ số nhiều 'customs'. 'Custom' là số ít, 'customer' là khách hàng."
+        }
+      ]
+    },
+    "4": {
+      "title": "Our Customs and Traditions",
+      "vocabulary": [
+        {
+          "en": "custom",
+          "type": "n",
+          "vi": "phong tục"
+        },
+        {
+          "en": "tradition",
+          "type": "n",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "greeting",
+          "type": "n",
+          "vi": "lời chào"
+        },
+        {
+          "en": "respect",
+          "type": "n/v",
+          "vi": "sự tôn trọng, tôn trọng"
+        },
+        {
+          "en": "politeness",
+          "type": "n",
+          "vi": "sự lịch sự"
+        },
+        {
+          "en": "generation",
+          "type": "n",
+          "vi": "thế hệ"
+        },
+        {
+          "en": "ancestor",
+          "type": "n",
+          "vi": "tổ tiên"
+        },
+        {
+          "en": "worship",
+          "type": "v",
+          "vi": "thờ cúng"
+        },
+        {
+          "en": "altar",
+          "type": "n",
+          "vi": "bàn thờ"
+        },
+        {
+          "en": "incense",
+          "type": "n",
+          "vi": "nhang, hương"
+        },
+        {
+          "en": "pagoda",
+          "type": "n",
+          "vi": "chùa"
+        },
+        {
+          "en": "temple",
+          "type": "n",
+          "vi": "đền"
+        },
+        {
+          "en": "bow",
+          "type": "v/n",
+          "vi": "cúi chào"
+        },
+        {
+          "en": "shake hands",
+          "type": "v phr",
+          "vi": "bắt tay"
+        },
+        {
+          "en": "pray",
+          "type": "v",
+          "vi": "cầu nguyện"
+        },
+        {
+          "en": "offer",
+          "type": "v",
+          "vi": "dâng, tặng"
+        },
+        {
+          "en": "wrap",
+          "type": "v",
+          "vi": "gói, bọc"
+        },
+        {
+          "en": "remove",
+          "type": "v",
+          "vi": "bỏ ra, tháo"
+        },
+        {
+          "en": "obey",
+          "type": "v",
+          "vi": "tuân theo, vâng lời"
+        },
+        {
+          "en": "believe",
+          "type": "v",
+          "vi": "tin tưởng"
+        },
+        {
+          "en": "superstition",
+          "type": "n",
+          "vi": "mê tín dị đoan"
+        },
+        {
+          "en": "taboo",
+          "type": "n",
+          "vi": "điều cấm kỵ"
+        },
+        {
+          "en": "value",
+          "type": "n",
+          "vi": "giá trị"
+        },
+        {
+          "en": "manner",
+          "type": "n",
+          "vi": "cách cư xử, phép tắc"
+        },
+        {
+          "en": "host",
+          "type": "n/v",
+          "vi": "chủ nhà, tiếp đón"
+        },
+        {
+          "en": "guest",
+          "type": "n",
+          "vi": "khách"
+        },
+        {
+          "en": "elderly",
+          "type": "adj/n",
+          "vi": "người cao tuổi"
+        },
+        {
+          "en": "polite",
+          "type": "adj",
+          "vi": "lịch sự"
+        },
+        {
+          "en": "rude",
+          "type": "adj",
+          "vi": "thô lỗ"
+        },
+        {
+          "en": "traditional",
+          "type": "adj",
+          "vi": "truyền thống"
+        }
+      ],
+      "grammar": [
+        "Should / Shouldn't for advice",
+        "Have to / Don't have to"
+      ],
+      "grammar_notes": "Should / Shouldn't: Dùng để đưa ra lời khuyên. Should + V: nên làm gì. Shouldn't + V: không nên làm gì. Ví dụ: You should bow when greeting elderly people. You shouldn't point at people. Have to / Don't have to: Have to + V: phải làm gì (bắt buộc). Don't have to + V: không cần phải làm gì (không bắt buộc). Ví dụ: You have to remove your shoes before entering the house. You don't have to bring a gift, but it is nice to do so.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "You _____ remove your shoes before entering the house.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "don't have to",
+            "mustn't"
+          ],
+          "ans": 0,
+          "explain": "Câu A đúng vì 'should' dùng để khuyên ai đó nên làm gì. Việc cởi giày trước khi vào nhà là một lời khuyên lịch sự, không phải là bắt buộc (mustn't) hay không cần thiết (don't have to)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'custom' mean in Vietnamese?",
+          "opts": [
+            "truyền thống",
+            "phong tục",
+            "nghi lễ",
+            "lễ hội"
+          ],
+          "ans": 1,
+          "explain": "Từ 'custom' trong tiếng Anh có nghĩa là 'phong tục', là những thói quen, tập quán được truyền từ đời này sang đời khác. 'Truyền thống' (tradition) gần nghĩa nhưng 'phong tục' là sát nghĩa nhất."
+        },
+        {
+          "type": "mc",
+          "q": "You _____ point at people. It is rude.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "have to",
+            "must"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì 'shouldn't' dùng để khuyên ai đó không nên làm gì. Việc chỉ tay vào người khác bị coi là thô lỗ, vì vậy chúng ta không nên làm vậy."
+        },
+        {
+          "type": "mc",
+          "q": "She _____ to wear a uniform at her school.",
+          "opts": [
+            "has",
+            "have",
+            "having",
+            "had"
+          ],
+          "ans": 0,
+          "explain": "Câu A đúng vì 'She' là chủ ngữ ngôi thứ ba số ít, nên động từ 'have' phải chia ở dạng 'has' khi đi với 'to wear' để diễn tả sự bắt buộc hoặc quy định."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'worship' mean?",
+          "opts": [
+            "cầu nguyện",
+            "thờ cúng",
+            "tôn trọng",
+            "chào hỏi"
+          ],
+          "ans": 1,
+          "explain": "Từ 'worship' có nghĩa là 'thờ cúng', thể hiện sự tôn kính sâu sắc đối với thần linh hoặc tổ tiên. Các lựa chọn khác như 'cầu nguyện' hay 'tôn trọng' chỉ là một phần của hành động thờ cúng."
+        },
+        {
+          "type": "mc",
+          "q": "You don't _____ to bring a gift, but it is polite.",
+          "opts": [
+            "has",
+            "have",
+            "had",
+            "having"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì cấu trúc 'don't have to' dùng để diễn tả sự không cần thiết phải làm gì. Chủ ngữ 'You' đi với 'have', không phải 'has' hay 'had'."
+        },
+        {
+          "type": "mc",
+          "q": "In Vietnam, people often _____ hands when meeting.",
+          "opts": [
+            "wave",
+            "shake",
+            "hold",
+            "clap"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì 'shake hands' là cụm từ cố định có nghĩa là 'bắt tay'. Đây là một hành động chào hỏi phổ biến ở nhiều nền văn hóa, bao gồm cả Việt Nam."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'altar' mean in Vietnamese?",
+          "opts": [
+            "chùa",
+            "đền",
+            "bàn thờ",
+            "nhà thờ"
+          ],
+          "ans": 2,
+          "explain": "Từ 'altar' trong tiếng Anh có nghĩa là 'bàn thờ', nơi con người đặt đồ cúng để tưởng nhớ tổ tiên hoặc thờ cúng thần linh."
+        },
+        {
+          "type": "mc",
+          "q": "You should _____ to elderly people.",
+          "opts": [
+            "shout",
+            "bow",
+            "run",
+            "point"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì 'bow' có nghĩa là 'cúi đầu', là một hành động thể hiện sự tôn trọng đối với người lớn tuổi, đặc biệt là trong văn hóa Á Đông."
+        },
+        {
+          "type": "mc",
+          "q": "It is a _____ to believe in bad luck on Friday the 13th.",
+          "opts": [
+            "tradition",
+            "custom",
+            "superstition",
+            "manner"
+          ],
+          "ans": 2,
+          "explain": "Câu C đúng vì 'superstition' là niềm tin vào điều may rủi, thường không có cơ sở khoa học, như tin vào sự xui xẻo của ngày thứ Sáu ngày 13."
+        },
+        {
+          "type": "mc",
+          "q": "Visitors _____ to take off their hats in the temple.",
+          "opts": [
+            "has",
+            "have",
+            "having",
+            "had"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì 'have to' diễn tả sự bắt buộc hoặc quy định. Du khách được yêu cầu (bắt buộc) phải bỏ mũ khi vào đền thờ theo quy tắc."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'taboo' mean?",
+          "opts": [
+            "phong tục",
+            "truyền thống",
+            "điều cấm kỵ",
+            "nghi lễ"
+          ],
+          "ans": 2,
+          "explain": "Từ 'taboo' có nghĩa là 'điều cấm kỵ', là những hành động hoặc chủ đề bị xã hội hoặc một nhóm người coi là không được phép làm hoặc nói đến."
+        },
+        {
+          "type": "mc",
+          "q": "You _____ be rude to your elders.",
+          "opts": [
+            "should",
+            "shouldn't",
+            "have to",
+            "has to"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì 'shouldn't' dùng để khuyên không nên làm gì. Việc bất lịch sự với người lớn tuổi là điều không nên làm trong mọi nền văn hóa."
+        },
+        {
+          "type": "mc",
+          "q": "Being _____ is important in Vietnamese culture.",
+          "opts": [
+            "rude",
+            "impolite",
+            "polite",
+            "noisy"
+          ],
+          "ans": 2,
+          "explain": "Câu C đúng vì 'polite' có nghĩa là lịch sự, là một đức tính quan trọng trong văn hóa Việt Nam, thể hiện sự tôn trọng người khác."
+        },
+        {
+          "type": "mc",
+          "q": "We should _____ our traditions for future generations.",
+          "opts": [
+            "destroy",
+            "forget",
+            "preserve",
+            "ignore"
+          ],
+          "ans": 2,
+          "explain": "Câu C đúng vì 'preserve' có nghĩa là bảo tồn, gìn giữ. Chúng ta nên bảo tồn các truyền thống để thế hệ sau có thể tiếp nối."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ welcomes guests into the house.",
+          "opts": [
+            "guest",
+            "visitor",
+            "host",
+            "stranger"
+          ],
+          "ans": 2,
+          "explain": "Câu C đúng vì 'host' là người chủ nhà, là người đón tiếp và tiếp đãi khách. Khách (guest) hoặc người lạ (stranger) là người được đón tiếp."
+        },
+        {
+          "type": "mc",
+          "q": "You _____ have to wear formal clothes to the party.",
+          "opts": [
+            "does",
+            "do",
+            "don't",
+            "doesn't"
+          ],
+          "ans": 2,
+          "explain": "Câu C đúng vì 'don't have to' diễn tả sự không cần thiết. Câu này có nghĩa là bạn không nhất thiết phải mặc đồ trang trọng đến bữa tiệc, nhưng có thể nếu muốn."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'generation' mean in Vietnamese?",
+          "opts": [
+            "gia đình",
+            "thế hệ",
+            "xã hội",
+            "cộng đồng"
+          ],
+          "ans": 1,
+          "explain": "Từ 'generation' trong tiếng Anh có nghĩa là 'thế hệ', chỉ một nhóm người sinh ra và sống cùng thời điểm, thường là con cái của một thế hệ trước."
+        },
+        {
+          "type": "mc",
+          "q": "People light _____ on the altar.",
+          "opts": [
+            "candles",
+            "incense",
+            "fireworks",
+            "lanterns"
+          ],
+          "ans": 1,
+          "explain": "Câu B đúng vì 'incense' là nhang, thường được thắp trên bàn thờ để thể hiện lòng thành kính với tổ tiên hoặc thần linh."
+        },
+        {
+          "type": "mc",
+          "q": "You should _____ gifts with both hands.",
+          "opts": [
+            "give",
+            "throw",
+            "drop",
+            "hide"
+          ],
+          "ans": 0,
+          "explain": "Câu A đúng vì 'give' có nghĩa là đưa, trao. Trong văn hóa Việt Nam, việc tặng quà bằng cả hai tay thể hiện sự tôn trọng đối với người nhận."
+        }
+      ]
+    },
+    "5": {
+      "title": "Festivals in Vietnam",
+      "vocabulary": [
+        {
+          "en": "festival",
+          "type": "n",
+          "vi": "lễ hội"
+        },
+        {
+          "en": "celebration",
+          "type": "n",
+          "vi": "sự ăn mừng, lễ kỷ niệm"
+        },
+        {
+          "en": "ceremony",
+          "type": "n",
+          "vi": "nghi lễ"
+        },
+        {
+          "en": "tradition",
+          "type": "n",
+          "vi": "truyền thống"
+        },
+        {
+          "en": "procession",
+          "type": "n",
+          "vi": "đoàn rước"
+        },
+        {
+          "en": "offering",
+          "type": "n",
+          "vi": "lễ vật, đồ cúng"
+        },
+        {
+          "en": "incense",
+          "type": "n",
+          "vi": "nhang, hương"
+        },
+        {
+          "en": "worship",
+          "type": "v",
+          "vi": "thờ cúng"
+        },
+        {
+          "en": "pray",
+          "type": "v",
+          "vi": "cầu nguyện"
+        },
+        {
+          "en": "preserve",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "admire",
+          "type": "v",
+          "vi": "ngưỡng mộ"
+        },
+        {
+          "en": "contestant",
+          "type": "n",
+          "vi": "thí sinh, người thi"
+        },
+        {
+          "en": "spirit",
+          "type": "n",
+          "vi": "tinh thần"
+        },
+        {
+          "en": "awareness",
+          "type": "n",
+          "vi": "nhận thức"
+        },
+        {
+          "en": "laughter",
+          "type": "n",
+          "vi": "tiếng cười"
+        },
+        {
+          "en": "atmosphere",
+          "type": "n",
+          "vi": "không khí, bầu không khí"
+        },
+        {
+          "en": "tourist",
+          "type": "n",
+          "vi": "du khách"
+        },
+        {
+          "en": "value",
+          "type": "n",
+          "vi": "giá trị"
+        },
+        {
+          "en": "acrobatics",
+          "type": "n",
+          "vi": "nhào lộn, xiếc"
+        },
+        {
+          "en": "decorative",
+          "type": "adj",
+          "vi": "trang trí"
+        },
+        {
+          "en": "ornamental",
+          "type": "adj",
+          "vi": "có tính trang trí"
+        },
+        {
+          "en": "cultural",
+          "type": "adj",
+          "vi": "thuộc văn hóa"
+        },
+        {
+          "en": "annual",
+          "type": "adj",
+          "vi": "hàng năm"
+        },
+        {
+          "en": "memorial",
+          "type": "adj",
+          "vi": "tưởng niệm"
+        },
+        {
+          "en": "compete",
+          "type": "v",
+          "vi": "thi đấu, cạnh tranh"
+        },
+        {
+          "en": "attract",
+          "type": "v",
+          "vi": "thu hút"
+        },
+        {
+          "en": "take place",
+          "type": "v phr",
+          "vi": "diễn ra"
+        },
+        {
+          "en": "cheer",
+          "type": "v",
+          "vi": "cổ vũ"
+        },
+        {
+          "en": "crowded",
+          "type": "adj",
+          "vi": "đông đúc"
+        },
+        {
+          "en": "exciting",
+          "type": "adj",
+          "vi": "thú vị, hấp dẫn"
+        }
+      ],
+      "grammar": [
+        "Simple and compound sentences review",
+        "Adverbial phrases of time"
+      ],
+      "grammar_notes": "Câu đơn và câu ghép: Câu đơn (Simple sentence): một mệnh đề độc lập. Ví dụ: The festival takes place in spring. Câu ghép (Compound sentence): hai mệnh đề nối bằng and, but, or, so. Ví dụ: The festival is exciting, and it attracts many tourists. Trạng ngữ chỉ thời gian: Dùng in + tháng/năm, on + ngày cụ thể, at + giờ. Ví dụ: The Hung King Temple Festival is held on the 10th day of the 3rd lunar month. It takes place in spring every year.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "The festival _____ place in January every year.",
+          "opts": [
+            "take",
+            "takes",
+            "took",
+            "taking"
+          ],
+          "ans": 1,
+          "explain": "Câu này chia ở thì hiện tại đơn vì có 'every year' (mỗi năm). Chủ ngữ 'The festival' là số ít, nên động từ 'take' phải thêm 's' thành 'takes'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'procession' mean in Vietnamese?",
+          "opts": [
+            "lễ hội",
+            "đoàn rước",
+            "buổi lễ",
+            "cuộc thi"
+          ],
+          "ans": 1,
+          "explain": "'Procession' có nghĩa là 'đoàn rước', thường là một nhóm người đi cùng nhau trong một dịp đặc biệt. Các lựa chọn khác không diễn tả đúng nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "Many tourists are _____ to the festival.",
+          "opts": [
+            "attract",
+            "attracted",
+            "attractive",
+            "attracting"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần dùng dạng bị động vì 'tourists' (khách du lịch) là đối tượng bị thu hút. 'Attracted' là quá khứ phân từ, dùng trong cấu trúc bị động."
+        },
+        {
+          "type": "mc",
+          "q": "The festival is held _____ the third lunar month.",
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "by"
+          ],
+          "ans": 0,
+          "explain": "Chúng ta dùng giới từ 'in' để chỉ tháng hoặc một khoảng thời gian trong năm. 'On' dùng cho ngày cụ thể, 'at' dùng cho giờ hoặc địa điểm cụ thể."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'contestant' mean?",
+          "opts": [
+            "khán giả",
+            "thí sinh",
+            "trọng tài",
+            "đạo diễn"
+          ],
+          "ans": 1,
+          "explain": "'Contestant' là người tham gia một cuộc thi hoặc cuộc thi đấu. 'Thí sinh' là từ tiếng Việt tương ứng chính xác nhất."
+        },
+        {
+          "type": "mc",
+          "q": "People _____ to have good luck, _____ they also celebrate the harvest.",
+          "opts": [
+            "pray...and",
+            "pray...but",
+            "prays...or",
+            "prayed...so"
+          ],
+          "ans": 0,
+          "explain": "Vế đầu nói về việc mọi người cầu nguyện để may mắn, vế sau nói về việc họ cũng ăn mừng vụ mùa. Hai ý này bổ sung cho nhau nên dùng 'and'. Chủ ngữ 'People' số nhiều nên động từ 'pray' không thêm 's'."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of the festival was exciting.",
+          "opts": [
+            "atmosphere",
+            "offering",
+            "incense",
+            "spirit"
+          ],
+          "ans": 0,
+          "explain": "'Atmosphere' có nghĩa là không khí, bầu không khí của một sự kiện. Từ này phù hợp nhất để miêu tả sự sôi động, náo nhiệt của lễ hội."
+        },
+        {
+          "type": "mc",
+          "q": "The Hung King Temple Festival is a _____ festival.",
+          "opts": [
+            "memory",
+            "memorial",
+            "memorize",
+            "memorable"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một tính từ để bổ nghĩa cho danh từ 'festival'. 'Memorial' là tính từ có nghĩa là 'tưởng niệm', phù hợp với lễ hội Giỗ Tổ Hùng Vương."
+        },
+        {
+          "type": "mc",
+          "q": "People _____ offerings on the altar.",
+          "opts": [
+            "put",
+            "place",
+            "set",
+            "all are correct"
+          ],
+          "ans": 3,
+          "explain": "Cả ba động từ 'put', 'place', và 'set' đều có thể dùng với nghĩa 'đặt', 'để' trong ngữ cảnh này. Vì vậy, tất cả các đáp án đều đúng."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'preserve' mean?",
+          "opts": [
+            "phá hủy",
+            "bảo tồn",
+            "thay đổi",
+            "quên"
+          ],
+          "ans": 1,
+          "explain": "'Preserve' có nghĩa là giữ gìn, bảo tồn để không bị mất đi hoặc hư hỏng. 'Bảo tồn' là từ tiếng Việt tương ứng."
+        },
+        {
+          "type": "mc",
+          "q": "The boat racing festival _____ many people.",
+          "opts": [
+            "attract",
+            "attracts",
+            "attracted",
+            "attracting"
+          ],
+          "ans": 1,
+          "explain": "Thì hiện tại đơn được dùng vì 'festival' diễn ra thường xuyên. Chủ ngữ 'The boat racing festival' là số ít, nên động từ 'attract' phải thêm 's' thành 'attracts'."
+        },
+        {
+          "type": "mc",
+          "q": "Contestants _____ in traditional games.",
+          "opts": [
+            "compete",
+            "competes",
+            "competing",
+            "competed"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ 'Contestants' là số nhiều, nên động từ chia ở dạng nguyên mẫu. 'Compete' có nghĩa là thi đấu, phù hợp với ngữ cảnh."
+        },
+        {
+          "type": "mc",
+          "q": "The festival is exciting, _____ it is also crowded.",
+          "opts": [
+            "and",
+            "but",
+            "or",
+            "so"
+          ],
+          "ans": 1,
+          "explain": "Câu này đưa ra hai ý tương phản: lễ hội thú vị nhưng cũng đông đúc. Từ nối 'but' (nhưng) dùng để chỉ sự đối lập này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'acrobatics' mean in Vietnamese?",
+          "opts": [
+            "ca nhạc",
+            "nhào lộn",
+            "hội họa",
+            "điêu khắc"
+          ],
+          "ans": 1,
+          "explain": "'Acrobatics' là các màn biểu diễn nhào lộn, uốn dẻo đòi hỏi kỹ năng cao. 'Nhào lộn' là nghĩa tiếng Việt chính xác."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of the festival should be preserved.",
+          "opts": [
+            "values",
+            "prices",
+            "costs",
+            "numbers"
+          ],
+          "ans": 0,
+          "explain": "Trong ngữ cảnh này, 'values' có nghĩa là những giá trị văn hóa, tinh thần của lễ hội cần được giữ gìn. Các từ khác không phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "People _____ for the participants during the race.",
+          "opts": [
+            "cry",
+            "shout",
+            "cheer",
+            "scream"
+          ],
+          "ans": 2,
+          "explain": "'Cheer' có nghĩa là hò reo cổ vũ cho ai đó. Đây là hành động phổ biến khi mọi người xem thi đấu thể thao hoặc lễ hội."
+        },
+        {
+          "type": "mc",
+          "q": "This festival is held _____ every year.",
+          "opts": [
+            "annual",
+            "annually",
+            "annum",
+            "annuals"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một trạng từ để bổ nghĩa cho động từ 'held' (được tổ chức). 'Annually' là trạng từ có nghĩa là 'hàng năm'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'awareness' mean?",
+          "opts": [
+            "nhận thức",
+            "tinh thần",
+            "tiếng cười",
+            "không khí"
+          ],
+          "ans": 0,
+          "explain": "'Awareness' có nghĩa là sự nhận biết, ý thức về một vấn đề gì đó. 'Nhận thức' là từ tiếng Việt tương ứng."
+        },
+        {
+          "type": "mc",
+          "q": "The festival starts _____ 8 a.m.",
+          "opts": [
+            "in",
+            "on",
+            "at",
+            "by"
+          ],
+          "ans": 2,
+          "explain": "Chúng ta dùng giới từ 'at' để chỉ một thời điểm cụ thể trong ngày, như giờ giấc. 'In' dùng cho tháng, năm, mùa; 'on' dùng cho ngày."
+        },
+        {
+          "type": "mc",
+          "q": "We should _____ our cultural traditions.",
+          "opts": [
+            "forget",
+            "destroy",
+            "preserve",
+            "ignore"
+          ],
+          "ans": 2,
+          "explain": "'Preserve' có nghĩa là giữ gìn, bảo tồn. Chúng ta cần giữ gìn các truyền thống văn hóa của dân tộc."
+        }
+      ]
+    },
+    "6": {
+      "title": "Folk Tales",
+      "vocabulary": [
+        {
+          "en": "folk tale",
+          "type": "n",
+          "vi": "truyện dân gian"
+        },
+        {
+          "en": "fairy tale",
+          "type": "n",
+          "vi": "truyện cổ tích"
+        },
+        {
+          "en": "legend",
+          "type": "n",
+          "vi": "truyền thuyết"
+        },
+        {
+          "en": "fable",
+          "type": "n",
+          "vi": "truyện ngụ ngôn"
+        },
+        {
+          "en": "character",
+          "type": "n",
+          "vi": "nhân vật"
+        },
+        {
+          "en": "hero",
+          "type": "n",
+          "vi": "anh hùng"
+        },
+        {
+          "en": "villain",
+          "type": "n",
+          "vi": "nhân vật phản diện"
+        },
+        {
+          "en": "moral",
+          "type": "n",
+          "vi": "bài học đạo đức"
+        },
+        {
+          "en": "plot",
+          "type": "n",
+          "vi": "cốt truyện"
+        },
+        {
+          "en": "scene",
+          "type": "n",
+          "vi": "cảnh, bối cảnh"
+        },
+        {
+          "en": "setting",
+          "type": "n",
+          "vi": "bối cảnh"
+        },
+        {
+          "en": "kingdom",
+          "type": "n",
+          "vi": "vương quốc"
+        },
+        {
+          "en": "emperor",
+          "type": "n",
+          "vi": "hoàng đế"
+        },
+        {
+          "en": "princess",
+          "type": "n",
+          "vi": "công chúa"
+        },
+        {
+          "en": "prince",
+          "type": "n",
+          "vi": "hoàng tử"
+        },
+        {
+          "en": "witch",
+          "type": "n",
+          "vi": "phù thủy"
+        },
+        {
+          "en": "giant",
+          "type": "n",
+          "vi": "người khổng lồ"
+        },
+        {
+          "en": "dragon",
+          "type": "n",
+          "vi": "con rồng"
+        },
+        {
+          "en": "brave",
+          "type": "adj",
+          "vi": "dũng cảm"
+        },
+        {
+          "en": "wicked",
+          "type": "adj",
+          "vi": "xấu xa, độc ác"
+        },
+        {
+          "en": "kind",
+          "type": "adj",
+          "vi": "tốt bụng"
+        },
+        {
+          "en": "greedy",
+          "type": "adj",
+          "vi": "tham lam"
+        },
+        {
+          "en": "cunning",
+          "type": "adj",
+          "vi": "xảo quyệt, ranh mãnh"
+        },
+        {
+          "en": "defeat",
+          "type": "v",
+          "vi": "đánh bại"
+        },
+        {
+          "en": "rescue",
+          "type": "v",
+          "vi": "giải cứu"
+        },
+        {
+          "en": "punish",
+          "type": "v",
+          "vi": "trừng phạt"
+        },
+        {
+          "en": "reward",
+          "type": "v/n",
+          "vi": "thưởng, phần thưởng"
+        },
+        {
+          "en": "transform",
+          "type": "v",
+          "vi": "biến đổi"
+        },
+        {
+          "en": "once upon a time",
+          "type": "phr",
+          "vi": "ngày xửa ngày xưa"
+        },
+        {
+          "en": "happily ever after",
+          "type": "phr",
+          "vi": "hạnh phúc mãi mãi"
+        }
+      ],
+      "grammar": [
+        "Past Continuous",
+        "Past Simple vs Past Continuous"
+      ],
+      "grammar_notes": "Thì quá khứ tiếp diễn (Past Continuous): Diễn tả hành động đang xảy ra tại một thời điểm trong quá khứ. Cấu trúc: S + was/were + V-ing. Ví dụ: The princess was sleeping in the tower. Past Simple vs Past Continuous: Dùng khi một hành động đang xảy ra (Past Continuous) thì bị một hành động khác chen vào (Past Simple). Dùng 'when' trước Past Simple, 'while' trước Past Continuous. Ví dụ: While the prince was walking in the forest, he met a dragon. The witch was casting a spell when the hero arrived.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "While the princess _____ in the garden, she found a frog.",
+          "opts": [
+            "walk",
+            "walks",
+            "was walking",
+            "walked"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng thì quá khứ tiếp diễn (was walking) để diễn tả hành động đang diễn ra trong quá khứ thì hành động khác (found) xen vào. \"Walk\" và \"walks\" là thì hiện tại, \"walked\" là quá khứ đơn, không phù hợp với cấu trúc này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'folk tale' mean in Vietnamese?",
+          "opts": [
+            "truyện ngụ ngôn",
+            "truyện dân gian",
+            "truyện cổ tích",
+            "truyền thuyết"
+          ],
+          "ans": 1,
+          "explain": "'Folk tale' có nghĩa là truyện dân gian, là những câu chuyện truyền miệng trong dân tộc. 'Truyện ngụ ngôn' (fable), 'truyện cổ tích' (fairy tale) và 'truyền thuyết' (legend) là các thể loại khác."
+        },
+        {
+          "type": "mc",
+          "q": "The hero _____ the dragon and saved the village.",
+          "opts": [
+            "defeat",
+            "defeats",
+            "defeated",
+            "defeating"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'đánh bại' (defeated) đã xảy ra trong quá khứ, tương ứng với thời điểm câu chuyện diễn ra. \"Defeat\", \"defeats\" là thì hiện tại, \"defeating\" là dạng V-ing không đứng một mình ở đây."
+        },
+        {
+          "type": "mc",
+          "q": "She was reading a book when the phone _____.",
+          "opts": [
+            "ring",
+            "rings",
+            "ringing",
+            "rang"
+          ],
+          "ans": 3,
+          "explain": "Hành động 'chuông reo' (rang) là hành động xen vào, xảy ra đột ngột khi hành động đọc sách (was reading) đang diễn ra. Vì vậy, ta dùng thì quá khứ đơn (rang)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'wicked' mean?",
+          "opts": [
+            "tốt bụng",
+            "dũng cảm",
+            "xấu xa",
+            "thông minh"
+          ],
+          "ans": 2,
+          "explain": "'Wicked' có nghĩa là xấu xa, độc ác, thường dùng để chỉ nhân vật phản diện trong truyện cổ tích. Các lựa chọn khác như tốt bụng, dũng cảm, thông minh đều trái nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "_____ the children were playing, it started to rain.",
+          "opts": [
+            "When",
+            "While",
+            "After",
+            "Before"
+          ],
+          "ans": 1,
+          "explain": "'While' dùng để nối hai hành động xảy ra đồng thời trong quá khứ, một hành động kéo dài và một hành động xen vào. 'When' cũng có thể dùng nhưng 'while' nhấn mạnh sự đồng thời hơn."
+        },
+        {
+          "type": "mc",
+          "q": "The king _____ the brave soldier.",
+          "opts": [
+            "reward",
+            "rewards",
+            "rewarded",
+            "rewarding"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'thưởng' (rewarded) cho người lính đã xảy ra trong quá khứ. \"Reward\" và \"rewards\" là thì hiện tại, \"rewarding\" là V-ing."
+        },
+        {
+          "type": "mc",
+          "q": "A 'fable' is a story that teaches a _____.",
+          "opts": [
+            "joke",
+            "moral",
+            "song",
+            "game"
+          ],
+          "ans": 1,
+          "explain": "Truyện 'fable' (ngụ ngôn) là truyện có bài học về đạo đức, cách cư xử đúng đắn. Bài học này được gọi là 'moral'."
+        },
+        {
+          "type": "mc",
+          "q": "When the prince arrived, the witch _____ a spell.",
+          "opts": [
+            "cast",
+            "casts",
+            "was casting",
+            "casting"
+          ],
+          "ans": 2,
+          "explain": "Câu này mô tả hành động 'phù phép' (was casting) đang diễn ra khi hoàng tử đến. Thì quá khứ tiếp diễn (was casting) diễn tả hành động kéo dài này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'cunning' mean in Vietnamese?",
+          "opts": [
+            "tham lam",
+            "xảo quyệt",
+            "dũng cảm",
+            "tốt bụng"
+          ],
+          "ans": 1,
+          "explain": "'Cunning' có nghĩa là xảo quyệt, ranh mãnh, thường dùng để chỉ những nhân vật thông minh nhưng dùng mưu mẹo không tốt."
+        },
+        {
+          "type": "mc",
+          "q": "The story begins with '_____ upon a time'.",
+          "opts": [
+            "One",
+            "Once",
+            "Ones",
+            "Only"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ quen thuộc để bắt đầu một câu chuyện cổ tích là 'Once upon a time', có nghĩa là 'Ngày xửa ngày xưa'."
+        },
+        {
+          "type": "mc",
+          "q": "While the giant _____ sleeping, Jack climbed the beanstalk.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "Mệnh đề 'while' diễn tả hành động đang diễn ra trong quá khứ ('was sleeping'), hành động này kéo dài và hành động khác ('climbed') xen vào. Chủ ngữ là 'giant' (số ít) nên dùng 'was'."
+        },
+        {
+          "type": "mc",
+          "q": "The villain was _____ by the hero.",
+          "opts": [
+            "defeat",
+            "defeated",
+            "defeating",
+            "defeats"
+          ],
+          "ans": 1,
+          "explain": "Câu này ở dạng bị động, diễn tả nhân vật phản diện ('villain') đã bị anh hùng đánh bại. Vì vậy, ta dùng 'was defeated' (quá khứ đơn bị động)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'rescue' mean?",
+          "opts": [
+            "bắt cóc",
+            "giải cứu",
+            "trừng phạt",
+            "thưởng"
+          ],
+          "ans": 1,
+          "explain": "'Rescue' có nghĩa là giải cứu, cứu thoát khỏi nguy hiểm. Các từ khác như bắt cóc, trừng phạt, thưởng đều không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "They _____ when the earthquake happened.",
+          "opts": [
+            "sleep",
+            "slept",
+            "were sleeping",
+            "sleeping"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'đang ngủ' (were sleeping) diễn tả một hành động kéo dài trong quá khứ, khi một sự kiện khác (earthquake happened) bất ngờ xảy ra. Chủ ngữ 'They' là số nhiều nên dùng 'were sleeping'."
+        },
+        {
+          "type": "mc",
+          "q": "The greedy man was _____ at the end of the story.",
+          "opts": [
+            "rewarded",
+            "praised",
+            "punished",
+            "rescued"
+          ],
+          "ans": 2,
+          "explain": "Người tham lam thường bị trừng phạt ở cuối truyện cổ tích. 'Punished' có nghĩa là bị trừng phạt, khác với được thưởng, được khen hay được giải cứu."
+        },
+        {
+          "type": "mc",
+          "q": "A 'legend' in Vietnamese is _____.",
+          "opts": [
+            "truyện cổ tích",
+            "truyền thuyết",
+            "truyện ngụ ngôn",
+            "truyện dân gian"
+          ],
+          "ans": 1,
+          "explain": "'Legend' trong tiếng Anh có nghĩa là truyền thuyết, là những câu chuyện lịch sử được kể lại và có thể thêm thắt yếu tố kỳ ảo."
+        },
+        {
+          "type": "mc",
+          "q": "When the door opened, everyone _____ happily.",
+          "opts": [
+            "sing",
+            "sang",
+            "was singing",
+            "singing"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'hát' (was singing) diễn tả hành động đang diễn ra khi cánh cửa mở ra. Thì quá khứ tiếp diễn (was singing) nhấn mạnh hành động kéo dài này."
+        },
+        {
+          "type": "mc",
+          "q": "The witch _____ the prince into a frog.",
+          "opts": [
+            "transform",
+            "transforms",
+            "transformed",
+            "transforming"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'biến' (transformed) hoàng tử thành ếch đã xảy ra và hoàn thành trong quá khứ. Vì vậy, ta dùng thì quá khứ đơn (transformed)."
+        },
+        {
+          "type": "mc",
+          "q": "They lived _____ ever after.",
+          "opts": [
+            "happy",
+            "happily",
+            "happiness",
+            "happier"
+          ],
+          "ans": 1,
+          "explain": "Cụm từ 'happily ever after' có nghĩa là 'hạnh phúc mãi mãi về sau', đây là một thành ngữ quen thuộc kết thúc truyện cổ tích. 'Happily' là trạng từ bổ nghĩa cho động từ 'lived'."
+        }
+      ]
+    },
+    "7": {
+      "title": "Pollution",
+      "vocabulary": [
+        {
+          "en": "pollution",
+          "type": "n",
+          "vi": "sự ô nhiễm"
+        },
+        {
+          "en": "air pollution",
+          "type": "n",
+          "vi": "ô nhiễm không khí"
+        },
+        {
+          "en": "water pollution",
+          "type": "n",
+          "vi": "ô nhiễm nước"
+        },
+        {
+          "en": "noise pollution",
+          "type": "n",
+          "vi": "ô nhiễm tiếng ồn"
+        },
+        {
+          "en": "soil pollution",
+          "type": "n",
+          "vi": "ô nhiễm đất"
+        },
+        {
+          "en": "environment",
+          "type": "n",
+          "vi": "môi trường"
+        },
+        {
+          "en": "carbon dioxide",
+          "type": "n",
+          "vi": "khí CO2"
+        },
+        {
+          "en": "carbon footprint",
+          "type": "n",
+          "vi": "dấu chân carbon"
+        },
+        {
+          "en": "oxygen",
+          "type": "n",
+          "vi": "khí oxy"
+        },
+        {
+          "en": "habitat",
+          "type": "n",
+          "vi": "môi trường sống"
+        },
+        {
+          "en": "extinction",
+          "type": "n",
+          "vi": "sự tuyệt chủng"
+        },
+        {
+          "en": "toxic",
+          "type": "adj",
+          "vi": "độc hại"
+        },
+        {
+          "en": "renewable",
+          "type": "adj",
+          "vi": "tái tạo được"
+        },
+        {
+          "en": "plastic",
+          "type": "n/adj",
+          "vi": "nhựa, bằng nhựa"
+        },
+        {
+          "en": "reduce",
+          "type": "v",
+          "vi": "giảm"
+        },
+        {
+          "en": "reuse",
+          "type": "v",
+          "vi": "tái sử dụng"
+        },
+        {
+          "en": "recycle",
+          "type": "v",
+          "vi": "tái chế"
+        },
+        {
+          "en": "protect",
+          "type": "v",
+          "vi": "bảo vệ"
+        },
+        {
+          "en": "conserve",
+          "type": "v",
+          "vi": "bảo tồn"
+        },
+        {
+          "en": "absorb",
+          "type": "v",
+          "vi": "hấp thụ"
+        },
+        {
+          "en": "endanger",
+          "type": "v",
+          "vi": "gây nguy hiểm"
+        },
+        {
+          "en": "participate",
+          "type": "v",
+          "vi": "tham gia"
+        },
+        {
+          "en": "resident",
+          "type": "n",
+          "vi": "cư dân"
+        },
+        {
+          "en": "transport",
+          "type": "n",
+          "vi": "giao thông, vận tải"
+        },
+        {
+          "en": "wild",
+          "type": "adj",
+          "vi": "hoang dã"
+        },
+        {
+          "en": "turn off",
+          "type": "v phr",
+          "vi": "tắt"
+        },
+        {
+          "en": "cut down on",
+          "type": "v phr",
+          "vi": "cắt giảm"
+        },
+        {
+          "en": "clean up",
+          "type": "v phr",
+          "vi": "dọn sạch"
+        },
+        {
+          "en": "pick up",
+          "type": "v phr",
+          "vi": "nhặt lên"
+        },
+        {
+          "en": "dump",
+          "type": "v",
+          "vi": "đổ rác, vứt bỏ"
+        }
+      ],
+      "grammar": [
+        "Conditional sentences type 1",
+        "Passive voice review"
+      ],
+      "grammar_notes": "Câu điều kiện loại 1 (First Conditional): Diễn tả điều kiện có thể xảy ra ở hiện tại hoặc tương lai. Cấu trúc: If + S + V (present simple), S + will + V. Ví dụ: If we reduce waste, we will protect the environment. If people pollute water, fish will die. Thể bị động (Passive voice): S + am/is/are + V-ed/V3 (Present). S + was/were + V-ed/V3 (Past). Ví dụ: Trees are cut down every day. The river was polluted by the factory.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "If we _____ trees, we will have more oxygen.",
+          "opts": [
+            "plant",
+            "plants",
+            "planted",
+            "planting"
+          ],
+          "ans": 0,
+          "explain": "Câu này dùng câu điều kiện loại 1, diễn tả điều có thể xảy ra ở hiện tại hoặc tương lai. Vì vậy, mệnh đề 'If' dùng thì hiện tại đơn, và chủ ngữ 'we' số nhiều nên dùng động từ nguyên mẫu 'plant'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'pollution' mean in Vietnamese?",
+          "opts": [
+            "sự bảo vệ",
+            "sự ô nhiễm",
+            "sự tái chế",
+            "sự tiêu thụ"
+          ],
+          "ans": 1,
+          "explain": "'Pollution' trong tiếng Anh có nghĩa là 'sự ô nhiễm'. Các từ còn lại có nghĩa là bảo vệ, tái chế và tiêu thụ."
+        },
+        {
+          "type": "mc",
+          "q": "The river _____ polluted by factory waste.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Câu này dùng cấu trúc bị động ở thì hiện tại đơn. 'The river' là chủ ngữ số ít, nên ta dùng 'is' thay vì 'are', 'am' hay 'be'."
+        },
+        {
+          "type": "mc",
+          "q": "If you don't recycle, you _____ more waste.",
+          "opts": [
+            "create",
+            "creates",
+            "will create",
+            "creating"
+          ],
+          "ans": 2,
+          "explain": "Đây là câu điều kiện loại 1. Mệnh đề chính diễn tả kết quả có thể xảy ra nên dùng 'will + động từ nguyên mẫu'. Chủ ngữ 'you' số nhiều nên dùng 'will create'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'toxic' mean?",
+          "opts": [
+            "sạch",
+            "an toàn",
+            "độc hại",
+            "trong lành"
+          ],
+          "ans": 2,
+          "explain": "'Toxic' có nghĩa là 'độc hại', chỉ những chất có thể gây hại cho sức khỏe hoặc môi trường. Các lựa chọn khác đều mang nghĩa tích cực hoặc trung tính."
+        },
+        {
+          "type": "mc",
+          "q": "Plastic bags should be _____ to protect the environment.",
+          "opts": [
+            "reduce",
+            "reduced",
+            "reducing",
+            "reduces"
+          ],
+          "ans": 1,
+          "explain": "Câu này dùng cấu trúc bị động. 'Plastic bags' là chủ ngữ, và chúng cần được 'giảm thiểu' (reduce), nên ta dùng dạng bị động 'should be reduced'."
+        },
+        {
+          "type": "mc",
+          "q": "If factories _____ chemicals into rivers, fish will die.",
+          "opts": [
+            "dump",
+            "dumps",
+            "dumped",
+            "dumping"
+          ],
+          "ans": 0,
+          "explain": "Câu này là câu điều kiện loại 1. Mệnh đề 'If' chia ở thì hiện tại đơn. Chủ ngữ 'factories' số nhiều nên động từ 'dump' giữ nguyên dạng nguyên mẫu."
+        },
+        {
+          "type": "mc",
+          "q": "Trees _____ carbon dioxide and produce oxygen.",
+          "opts": [
+            "observe",
+            "absorb",
+            "attract",
+            "contain"
+          ],
+          "ans": 1,
+          "explain": "Động từ 'absorb' có nghĩa là 'hấp thụ'. Cây xanh hấp thụ khí carbon dioxide và tạo ra oxy. Các từ còn lại không phù hợp về nghĩa trong ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'habitat' mean?",
+          "opts": [
+            "thói quen",
+            "môi trường sống",
+            "sự tuyệt chủng",
+            "loài vật"
+          ],
+          "ans": 1,
+          "explain": "'Habitat' trong tiếng Anh có nghĩa là 'môi trường sống', nơi sinh sống tự nhiên của động thực vật."
+        },
+        {
+          "type": "mc",
+          "q": "We should _____ up rubbish in the park.",
+          "opts": [
+            "put",
+            "pick",
+            "give",
+            "take"
+          ],
+          "ans": 1,
+          "explain": "Cụm động từ 'pick up' có nghĩa là 'nhặt lên'. Chúng ta nên nhặt rác lên để giữ sạch công viên."
+        },
+        {
+          "type": "mc",
+          "q": "If we use less plastic, we _____ reduce pollution.",
+          "opts": [
+            "can",
+            "will",
+            "should",
+            "all are correct"
+          ],
+          "ans": 3,
+          "explain": "Cả ba động từ khuyết thiếu 'can', 'will', 'should' đều có thể đứng sau 'If' trong câu điều kiện loại 1 để diễn tả khả năng, kết quả hoặc lời khuyên, nên tất cả các đáp án đều đúng."
+        },
+        {
+          "type": "mc",
+          "q": "Many animals are _____ because of pollution.",
+          "opts": [
+            "danger",
+            "endanger",
+            "endangered",
+            "dangerous"
+          ],
+          "ans": 2,
+          "explain": "Câu này cần một tính từ để bổ nghĩa cho danh từ 'animals'. 'Endangered' có nghĩa là 'có nguy cơ tuyệt chủng', phù hợp với ngữ cảnh nhiều loài vật đang bị đe dọa vì ô nhiễm."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'conserve' mean in Vietnamese?",
+          "opts": [
+            "phá hủy",
+            "bảo tồn",
+            "ô nhiễm",
+            "lãng phí"
+          ],
+          "ans": 1,
+          "explain": "'Conserve' trong tiếng Anh có nghĩa là 'bảo tồn', giữ gìn để không bị mất đi hoặc hư hỏng."
+        },
+        {
+          "type": "mc",
+          "q": "Noise _____ can cause health problems.",
+          "opts": [
+            "pollute",
+            "polluted",
+            "pollution",
+            "polluting"
+          ],
+          "ans": 2,
+          "explain": "Câu này cần một danh từ làm chủ ngữ. 'Noise pollution' (ô nhiễm tiếng ồn) là cụm danh từ chỉ loại ô nhiễm có thể gây ra vấn đề sức khỏe."
+        },
+        {
+          "type": "mc",
+          "q": "If you _____ off the lights, you save electricity.",
+          "opts": [
+            "turns",
+            "turn",
+            "turned",
+            "turning"
+          ],
+          "ans": 1,
+          "explain": "Câu này là câu điều kiện loại 1. Mệnh đề 'If' chia ở thì hiện tại đơn. Chủ ngữ 'you' số nhiều nên động từ 'turn' giữ nguyên dạng nguyên mẫu."
+        },
+        {
+          "type": "mc",
+          "q": "The 3Rs stand for Reduce, Reuse, and _____.",
+          "opts": [
+            "Repair",
+            "Recycle",
+            "Replace",
+            "Remove"
+          ],
+          "ans": 1,
+          "explain": "Ba chữ R trong bảo vệ môi trường lần lượt là Reduce (Giảm thiểu), Reuse (Tái sử dụng) và Recycle (Tái chế)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'carbon footprint' mean?",
+          "opts": [
+            "bước chân",
+            "dấu chân carbon",
+            "chất thải",
+            "nhiên liệu"
+          ],
+          "ans": 1,
+          "explain": "'Carbon footprint' là một thuật ngữ tiếng Anh, dịch sát nghĩa là 'dấu chân carbon', dùng để chỉ lượng khí thải carbon mà một người hoặc hoạt động tạo ra."
+        },
+        {
+          "type": "mc",
+          "q": "If we don't act now, many species _____ extinct.",
+          "opts": [
+            "become",
+            "becomes",
+            "will become",
+            "becoming"
+          ],
+          "ans": 2,
+          "explain": "Đây là câu điều kiện loại 1, diễn tả một sự việc có thể xảy ra trong tương lai. Mệnh đề chính cần dùng 'will + động từ nguyên mẫu' để chỉ kết quả, nên ta dùng 'will become'."
+        },
+        {
+          "type": "mc",
+          "q": "Waste _____ dumped into the river last year.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng cấu trúc bị động ở thì quá khứ đơn. 'Waste' là danh từ không đếm được hoặc số ít, và hành động xảy ra 'last year' (năm ngoái) nên ta dùng 'was dumped'."
+        },
+        {
+          "type": "mc",
+          "q": "Residents should _____ in clean-up activities.",
+          "opts": [
+            "participate",
+            "participates",
+            "participated",
+            "participating"
+          ],
+          "ans": 0,
+          "explain": "Câu này cần một động từ nguyên mẫu sau 'should' để diễn tả lời khuyên. 'Participate' có nghĩa là 'tham gia', phù hợp với ngữ cảnh khuyến khích người dân tham gia các hoạt động dọn dẹp."
+        }
+      ]
+    },
+    "8": {
+      "title": "English Speaking Countries",
+      "vocabulary": [
+        {
+          "en": "continent",
+          "type": "n",
+          "vi": "châu lục"
+        },
+        {
+          "en": "population",
+          "type": "n",
+          "vi": "dân số"
+        },
+        {
+          "en": "capital",
+          "type": "n",
+          "vi": "thủ đô"
+        },
+        {
+          "en": "currency",
+          "type": "n",
+          "vi": "đơn vị tiền tệ"
+        },
+        {
+          "en": "official language",
+          "type": "n",
+          "vi": "ngôn ngữ chính thức"
+        },
+        {
+          "en": "native",
+          "type": "adj/n",
+          "vi": "bản xứ, người bản xứ"
+        },
+        {
+          "en": "accent",
+          "type": "n",
+          "vi": "giọng nói"
+        },
+        {
+          "en": "landmark",
+          "type": "n",
+          "vi": "thắng cảnh nổi tiếng"
+        },
+        {
+          "en": "icon",
+          "type": "n",
+          "vi": "biểu tượng"
+        },
+        {
+          "en": "castle",
+          "type": "n",
+          "vi": "lâu đài"
+        },
+        {
+          "en": "tower",
+          "type": "n",
+          "vi": "tháp"
+        },
+        {
+          "en": "opera house",
+          "type": "n",
+          "vi": "nhà hát opera"
+        },
+        {
+          "en": "multicultural",
+          "type": "adj",
+          "vi": "đa văn hóa"
+        },
+        {
+          "en": "diverse",
+          "type": "adj",
+          "vi": "đa dạng"
+        },
+        {
+          "en": "scenery",
+          "type": "n",
+          "vi": "phong cảnh"
+        },
+        {
+          "en": "climate",
+          "type": "n",
+          "vi": "khí hậu"
+        },
+        {
+          "en": "wildlife",
+          "type": "n",
+          "vi": "động vật hoang dã"
+        },
+        {
+          "en": "located",
+          "type": "adj",
+          "vi": "tọa lạc, nằm ở"
+        },
+        {
+          "en": "attract",
+          "type": "v",
+          "vi": "thu hút"
+        },
+        {
+          "en": "explore",
+          "type": "v",
+          "vi": "khám phá"
+        },
+        {
+          "en": "consist of",
+          "type": "v phr",
+          "vi": "bao gồm"
+        },
+        {
+          "en": "border",
+          "type": "v/n",
+          "vi": "giáp, biên giới"
+        },
+        {
+          "en": "island",
+          "type": "n",
+          "vi": "hòn đảo"
+        },
+        {
+          "en": "coastal",
+          "type": "adj",
+          "vi": "ven biển"
+        },
+        {
+          "en": "vast",
+          "type": "adj",
+          "vi": "rộng lớn"
+        },
+        {
+          "en": "ancient",
+          "type": "adj",
+          "vi": "cổ đại"
+        },
+        {
+          "en": "modern",
+          "type": "adj",
+          "vi": "hiện đại"
+        },
+        {
+          "en": "impressive",
+          "type": "adj",
+          "vi": "ấn tượng"
+        },
+        {
+          "en": "unique",
+          "type": "adj",
+          "vi": "độc đáo"
+        },
+        {
+          "en": "fascinating",
+          "type": "adj",
+          "vi": "hấp dẫn, quyến rũ"
+        }
+      ],
+      "grammar": [
+        "Present Simple for facts",
+        "Passive voice: Present Simple"
+      ],
+      "grammar_notes": "Thì hiện tại đơn cho sự thật (Present Simple for facts): Dùng để nói về các sự thật, thông tin chung. Ví dụ: Australia is the smallest continent. English is spoken in many countries. Thể bị động hiện tại đơn: S + am/is/are + V-ed/V3. Ví dụ: English is spoken as a native language in the UK. The Sydney Opera House is visited by millions of tourists each year.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "English _____ spoken in many countries around the world.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Ta dùng 'is' vì 'English' là danh từ số ít, và đây là câu bị động ở thì hiện tại đơn. 'Are', 'am', 'be' không phù hợp về chia động từ và thì."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'landmark' mean in Vietnamese?",
+          "opts": [
+            "dân số",
+            "thắng cảnh nổi tiếng",
+            "biên giới",
+            "thủ đô"
+          ],
+          "ans": 1,
+          "explain": "'Landmark' có nghĩa là một địa điểm hoặc công trình nổi bật, dễ nhận biết, tương tự như 'thắng cảnh nổi tiếng'. Các lựa chọn khác như 'dân số', 'biên giới', 'thủ đô' không đúng nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "The UK _____ of four countries.",
+          "opts": [
+            "consist",
+            "consists",
+            "consisted",
+            "consisting"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ 'The UK' là số ít, nên động từ 'consist' phải chia ở ngôi thứ ba số ít, thành 'consists'. 'Consist', 'consisted', 'consisting' không đúng ngữ pháp ở đây."
+        },
+        {
+          "type": "mc",
+          "q": "Sydney is _____ in Australia.",
+          "opts": [
+            "locate",
+            "locates",
+            "located",
+            "locating"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng cấu trúc bị động ở thì hiện tại đơn. 'Sydney' là chủ ngữ số ít, và hành động 'được đặt tại' là bị động, nên ta dùng 'is located'. 'Locate', 'locates', 'locating' không đúng."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'multicultural' mean?",
+          "opts": [
+            "đơn văn hóa",
+            "đa văn hóa",
+            "không văn hóa",
+            "cổ đại"
+          ],
+          "ans": 1,
+          "explain": "'Multicultural' có nghĩa là có nhiều nền văn hóa khác nhau cùng tồn tại, trái ngược với 'đơn văn hóa'. 'Không văn hóa' và 'cổ đại' không liên quan."
+        },
+        {
+          "type": "mc",
+          "q": "The Statue of Liberty _____ visited by millions each year.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "ans": 0,
+          "explain": "Tượng Nữ thần Tự do là số ít, và hành động 'được ghé thăm' là bị động ở hiện tại. Do đó, ta dùng 'is visited'. 'Are', 'was', 'were' không đúng vì chủ ngữ số ít hoặc sai thì."
+        },
+        {
+          "type": "mc",
+          "q": "Canada _____ the United States to the south.",
+          "opts": [
+            "borders",
+            "border",
+            "bordered",
+            "bordering"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ 'Canada' là số ít, và hành động 'giáp ranh' đang diễn ra ở hiện tại. Vì vậy, động từ 'border' phải chia ở ngôi thứ ba số ít thành 'borders'. Các lựa chọn khác sai ngữ pháp hoặc thì."
+        },
+        {
+          "type": "mc",
+          "q": "What is the capital of Australia?",
+          "opts": [
+            "Sydney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+          ],
+          "ans": 2,
+          "explain": "Thủ đô của Úc là Canberra. Sydney và Melbourne là các thành phố lớn nhưng không phải thủ đô, còn Brisbane cũng là một thành phố lớn khác."
+        },
+        {
+          "type": "mc",
+          "q": "New Zealand is famous for its beautiful _____.",
+          "opts": [
+            "pollution",
+            "scenery",
+            "currency",
+            "population"
+          ],
+          "ans": 1,
+          "explain": "'Scenery' có nghĩa là cảnh quan thiên nhiên đẹp, rất phù hợp với mô tả về New Zealand. 'Pollution' (ô nhiễm), 'currency' (tiền tệ), 'population' (dân số) không phải là đặc điểm nổi bật về thiên nhiên."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'fascinating' mean?",
+          "opts": [
+            "nhàm chán",
+            "bình thường",
+            "hấp dẫn",
+            "khó chịu"
+          ],
+          "ans": 2,
+          "explain": "'Fascinating' có nghĩa là vô cùng thú vị, lôi cuốn, hấp dẫn. Các từ còn lại như 'nhàm chán', 'bình thường', 'khó chịu' đều mang nghĩa tiêu cực hoặc trung tính."
+        },
+        {
+          "type": "mc",
+          "q": "The dollar _____ used as currency in the US.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ 'The dollar' là số ít, và đây là câu bị động ở thì hiện tại đơn. Vì vậy, ta dùng 'is used'. 'Are', 'am', 'be' không phù hợp về chia động từ và thì."
+        },
+        {
+          "type": "mc",
+          "q": "Big Ben is a famous _____ in London.",
+          "opts": [
+            "island",
+            "castle",
+            "tower",
+            "opera house"
+          ],
+          "ans": 2,
+          "explain": "Big Ben là một tháp đồng hồ nổi tiếng ở London. 'Island' (hòn đảo), 'castle' (lâu đài), 'opera house' (nhà hát opera) là những công trình khác."
+        },
+        {
+          "type": "mc",
+          "q": "Australia is _____ for its unique wildlife.",
+          "opts": [
+            "know",
+            "knows",
+            "known",
+            "knowing"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng cấu trúc bị động ở thì hiện tại đơn. 'Australia' là chủ ngữ số ít, và hành động 'được biết đến' là bị động, nên ta dùng 'is known'. 'Know', 'knows', 'knowing' không đúng."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'climate' mean in Vietnamese?",
+          "opts": [
+            "thời tiết",
+            "khí hậu",
+            "mùa",
+            "bão"
+          ],
+          "ans": 1,
+          "explain": "'Climate' có nghĩa là khí hậu, là kiểu thời tiết trung bình trong một thời gian dài ở một khu vực. 'Thời tiết' chỉ tình trạng ngắn hạn."
+        },
+        {
+          "type": "mc",
+          "q": "The UK _____ an island nation.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ 'The UK' là số ít, và đây là câu khẳng định ở thì hiện tại đơn. Vì vậy, ta dùng 'is'. 'Are', 'am', 'be' không phù hợp về chia động từ."
+        },
+        {
+          "type": "mc",
+          "q": "Many tourists _____ attracted to London every year.",
+          "opts": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "ans": 1,
+          "explain": "Chủ ngữ 'tourists' là số nhiều, và hành động 'bị thu hút' là bị động ở hiện tại. Do đó, ta dùng 'are attracted'. 'Is', 'was', 'were' không phù hợp với chủ ngữ số nhiều hoặc sai thì."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'coastal' mean?",
+          "opts": [
+            "trên núi",
+            "ven biển",
+            "đồng bằng",
+            "sa mạc"
+          ],
+          "ans": 1,
+          "explain": "'Coastal' có nghĩa là thuộc về vùng ven biển, gần bờ biển. Các lựa chọn khác như 'trên núi', 'đồng bằng', 'sa mạc' chỉ các địa hình khác."
+        },
+        {
+          "type": "mc",
+          "q": "The Great Barrier Reef _____ located in Australia.",
+          "opts": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "ans": 0,
+          "explain": "Chủ ngữ 'The Great Barrier Reef' là số ít, và hành động 'được đặt tại' là bị động ở hiện tại. Vì vậy, ta dùng 'is located'. 'Are', 'am', 'be' không phù hợp về chia động từ."
+        },
+        {
+          "type": "mc",
+          "q": "An _____ is a piece of land surrounded by water.",
+          "opts": [
+            "coast",
+            "border",
+            "island",
+            "continent"
+          ],
+          "ans": 2,
+          "explain": "'Island' là một vùng đất được bao quanh bởi nước. 'Coast' là bờ biển, 'border' là biên giới, 'continent' là lục địa, không khớp với định nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "The _____ of the United States is Washington, D.C.",
+          "opts": [
+            "population",
+            "currency",
+            "capital",
+            "continent"
+          ],
+          "ans": 2,
+          "explain": "Câu này đang hỏi về 'thủ đô' của Hoa Kỳ. 'Population' là dân số, 'currency' là tiền tệ, 'continent' là lục địa, không phải là thông tin được hỏi."
+        }
+      ]
+    },
+    "9": {
+      "title": "Natural Disasters",
+      "vocabulary": [
+        {
+          "en": "natural disaster",
+          "type": "n",
+          "vi": "thảm họa thiên nhiên"
+        },
+        {
+          "en": "earthquake",
+          "type": "n",
+          "vi": "động đất"
+        },
+        {
+          "en": "tsunami",
+          "type": "n",
+          "vi": "sóng thần"
+        },
+        {
+          "en": "flood",
+          "type": "n",
+          "vi": "lũ lụt"
+        },
+        {
+          "en": "drought",
+          "type": "n",
+          "vi": "hạn hán"
+        },
+        {
+          "en": "typhoon",
+          "type": "n",
+          "vi": "bão"
+        },
+        {
+          "en": "tornado",
+          "type": "n",
+          "vi": "lốc xoáy"
+        },
+        {
+          "en": "volcanic eruption",
+          "type": "n",
+          "vi": "phun trào núi lửa"
+        },
+        {
+          "en": "landslide",
+          "type": "n",
+          "vi": "lở đất"
+        },
+        {
+          "en": "wildfire",
+          "type": "n",
+          "vi": "cháy rừng"
+        },
+        {
+          "en": "destruction",
+          "type": "n",
+          "vi": "sự tàn phá"
+        },
+        {
+          "en": "damage",
+          "type": "n/v",
+          "vi": "thiệt hại, gây thiệt hại"
+        },
+        {
+          "en": "victim",
+          "type": "n",
+          "vi": "nạn nhân"
+        },
+        {
+          "en": "survivor",
+          "type": "n",
+          "vi": "người sống sót"
+        },
+        {
+          "en": "rescue",
+          "type": "v/n",
+          "vi": "cứu hộ"
+        },
+        {
+          "en": "evacuate",
+          "type": "v",
+          "vi": "sơ tán"
+        },
+        {
+          "en": "shelter",
+          "type": "n",
+          "vi": "nơi trú ẩn"
+        },
+        {
+          "en": "warning",
+          "type": "n",
+          "vi": "cảnh báo"
+        },
+        {
+          "en": "predict",
+          "type": "v",
+          "vi": "dự đoán"
+        },
+        {
+          "en": "collapse",
+          "type": "v",
+          "vi": "sụp đổ"
+        },
+        {
+          "en": "destroy",
+          "type": "v",
+          "vi": "phá hủy"
+        },
+        {
+          "en": "erupt",
+          "type": "v",
+          "vi": "phun trào"
+        },
+        {
+          "en": "strike",
+          "type": "v",
+          "vi": "tấn công, đánh"
+        },
+        {
+          "en": "injured",
+          "type": "adj",
+          "vi": "bị thương"
+        },
+        {
+          "en": "homeless",
+          "type": "adj",
+          "vi": "vô gia cư"
+        },
+        {
+          "en": "severe",
+          "type": "adj",
+          "vi": "nghiêm trọng"
+        },
+        {
+          "en": "emergency",
+          "type": "n",
+          "vi": "tình huống khẩn cấp"
+        },
+        {
+          "en": "supply",
+          "type": "n/v",
+          "vi": "đồ tiếp tế, cung cấp"
+        },
+        {
+          "en": "relief",
+          "type": "n",
+          "vi": "sự cứu trợ"
+        },
+        {
+          "en": "impact",
+          "type": "n/v",
+          "vi": "tác động"
+        }
+      ],
+      "grammar": [
+        "Past Perfect",
+        "Reported speech: statements"
+      ],
+      "grammar_notes": "Thì quá khứ hoàn thành (Past Perfect): Diễn tả hành động xảy ra trước một hành động khác trong quá khứ. Cấu trúc: S + had + V-ed/V3. Ví dụ: The earthquake had already struck before the rescue team arrived. By the time help came, the flood had destroyed many houses. Câu tường thuật (Reported Speech - Statements): Lùi thì khi thuật lại. Present Simple → Past Simple. Present Continuous → Past Continuous. Ví dụ: He said, 'The flood is dangerous.' → He said that the flood was dangerous.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "By the time help arrived, the flood _____ many houses.",
+          "opts": [
+            "destroy",
+            "destroys",
+            "had destroyed",
+            "destroying"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng thì quá khứ hoàn thành (had destroyed) vì hành động 'bị phá hủy' xảy ra trước một hành động khác trong quá khứ là 'sự giúp đỡ đến'. Đáp án A, B sai vì không đúng thì, D sai vì là dạng V-ing."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'earthquake' mean in Vietnamese?",
+          "opts": [
+            "bão",
+            "sóng thần",
+            "động đất",
+            "lũ lụt"
+          ],
+          "ans": 2,
+          "explain": "'Earthquake' trong tiếng Việt có nghĩa là 'động đất'. Các từ còn lại có nghĩa là bão, sóng thần và lũ lụt."
+        },
+        {
+          "type": "mc",
+          "q": "He said that the typhoon _____ very dangerous.",
+          "opts": [
+            "is",
+            "was",
+            "has been",
+            "will be"
+          ],
+          "ans": 1,
+          "explain": "Khi tường thuật lại lời nói trong quá khứ ('He said'), động từ ở mệnh đề theo sau lùi về một thì. Vì vậy, 'is' (hiện tại) lùi về 'was' (quá khứ)."
+        },
+        {
+          "type": "mc",
+          "q": "The volcano _____ before anyone could evacuate.",
+          "opts": [
+            "erupt",
+            "erupts",
+            "had erupted",
+            "erupting"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'núi lửa phun trào' (had erupted) xảy ra trước hành động 'mọi người kịp sơ tán' (could evacuate) trong quá khứ, nên dùng quá khứ hoàn thành."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'evacuate' mean?",
+          "opts": [
+            "xây dựng",
+            "sơ tán",
+            "phá hủy",
+            "trú ẩn"
+          ],
+          "ans": 1,
+          "explain": "'Evacuate' có nghĩa là 'sơ tán', tức là di chuyển mọi người ra khỏi một nơi nguy hiểm."
+        },
+        {
+          "type": "mc",
+          "q": "She said that she _____ afraid of earthquakes.",
+          "opts": [
+            "is",
+            "was",
+            "am",
+            "are"
+          ],
+          "ans": 1,
+          "explain": "Tương tự câu 2, khi tường thuật lại lời nói trong quá khứ ('She said'), động từ 'is' (hiện tại) lùi về 'was' (quá khứ)."
+        },
+        {
+          "type": "mc",
+          "q": "The people had _____ to the shelter before the storm came.",
+          "opts": [
+            "go",
+            "goes",
+            "went",
+            "gone"
+          ],
+          "ans": 3,
+          "explain": "Câu này dùng thì quá khứ hoàn thành (had gone). Động từ 'gone' là dạng quá khứ phân từ của 'go', cần thiết cho thì này để diễn tả hành động 'đã đi' xảy ra trước một hành động khác trong quá khứ ('the storm came')."
+        },
+        {
+          "type": "mc",
+          "q": "A 'drought' is a long period without _____.",
+          "opts": [
+            "wind",
+            "rain",
+            "sun",
+            "snow"
+          ],
+          "ans": 1,
+          "explain": "'Drought' là hạn hán, là một thời kỳ dài không có 'rain' (mưa)."
+        },
+        {
+          "type": "mc",
+          "q": "They said the _____ had caused a lot of damage.",
+          "opts": [
+            "landslide",
+            "party",
+            "picnic",
+            "holiday"
+          ],
+          "ans": 0,
+          "explain": "Trong ngữ cảnh thiên tai, 'landslide' (sạt lở đất) là nguyên nhân hợp lý gây ra nhiều thiệt hại, khác với các từ chỉ sự kiện vui vẻ như 'party', 'picnic', 'holiday'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'victim' mean?",
+          "opts": [
+            "anh hùng",
+            "nạn nhân",
+            "người cứu hộ",
+            "tình nguyện viên"
+          ],
+          "ans": 1,
+          "explain": "'Victim' trong tiếng Việt có nghĩa là 'nạn nhân', người bị ảnh hưởng bởi một sự kiện xấu."
+        },
+        {
+          "type": "mc",
+          "q": "The buildings _____ before the rescue team came.",
+          "opts": [
+            "collapse",
+            "collapsed",
+            "had collapsed",
+            "collapsing"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'tòa nhà sụp đổ' (had collapsed) xảy ra trước khi 'đội cứu hộ đến' (came) trong quá khứ, nên ta dùng thì quá khứ hoàn thành."
+        },
+        {
+          "type": "mc",
+          "q": "He told me that a tornado _____ his town.",
+          "opts": [
+            "hit",
+            "hits",
+            "had hit",
+            "hitting"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'cơn lốc xoáy tấn công' (had hit) xảy ra trước khi người nói kể lại (He told me), nên dùng thì quá khứ hoàn thành."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'severe' mean in Vietnamese?",
+          "opts": [
+            "nhẹ",
+            "nghiêm trọng",
+            "bình thường",
+            "nhỏ"
+          ],
+          "ans": 1,
+          "explain": "'Severe' trong tiếng Việt có nghĩa là 'nghiêm trọng', dùng để miêu tả mức độ nặng nề của một sự việc."
+        },
+        {
+          "type": "mc",
+          "q": "After the tsunami _____, people needed emergency supplies.",
+          "opts": [
+            "strike",
+            "strikes",
+            "had struck",
+            "striking"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'sóng thần tấn công' (had struck) xảy ra trước khi 'mọi người cần đồ tiếp tế' (needed) trong quá khứ, nên dùng thì quá khứ hoàn thành."
+        },
+        {
+          "type": "mc",
+          "q": "She said the _____ team had already arrived.",
+          "opts": [
+            "rescue",
+            "destroy",
+            "damage",
+            "victim"
+          ],
+          "ans": 0,
+          "explain": "Trong ngữ cảnh này, 'rescue' (cứu hộ) là đội đến để giúp đỡ, phù hợp với tình huống sau thiên tai. Các từ khác như 'destroy', 'damage', 'victim' không chỉ đội đến giúp đỡ."
+        },
+        {
+          "type": "mc",
+          "q": "A wildfire is a fire that spreads through _____.",
+          "opts": [
+            "water",
+            "buildings",
+            "forests",
+            "cities"
+          ],
+          "ans": 2,
+          "explain": "'Wildfire' là cháy rừng, là đám cháy lan rộng qua 'forests' (rừng cây)."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'shelter' mean?",
+          "opts": [
+            "nơi trú ẩn",
+            "cảnh báo",
+            "nạn nhân",
+            "thiệt hại"
+          ],
+          "ans": 0,
+          "explain": "'Shelter' có nghĩa là 'nơi trú ẩn', nơi an toàn để tránh khỏi nguy hiểm."
+        },
+        {
+          "type": "mc",
+          "q": "He said that the earthquake _____ severe.",
+          "opts": [
+            "is",
+            "was",
+            "has been",
+            "will be"
+          ],
+          "ans": 1,
+          "explain": "Tương tự câu 2 và 5, khi tường thuật lại lời nói trong quá khứ ('He said'), động từ 'is' (hiện tại) lùi về 'was' (quá khứ)."
+        },
+        {
+          "type": "mc",
+          "q": "Many people were _____ homeless after the flood.",
+          "opts": [
+            "leave",
+            "left",
+            "leaving",
+            "leaves"
+          ],
+          "ans": 1,
+          "explain": "Cấu trúc 'be left homeless' có nghĩa là 'bị biến thành vô gia cư'. Động từ 'left' ở đây là dạng quá khứ phân từ, đóng vai trò như tính từ bổ nghĩa cho 'people'."
+        },
+        {
+          "type": "mc",
+          "q": "Before the relief arrived, many people _____ injured.",
+          "opts": [
+            "are",
+            "is",
+            "had been",
+            "have been"
+          ],
+          "ans": 2,
+          "explain": "Hành động 'bị thương' (had been injured) xảy ra trước khi 'sự cứu trợ đến' (relief arrived) trong quá khứ, nên dùng thì quá khứ hoàn thành."
+        }
+      ]
+    },
+    "10": {
+      "title": "Communication",
+      "vocabulary": [
+        {
+          "en": "communication",
+          "type": "n",
+          "vi": "giao tiếp, truyền thông"
+        },
+        {
+          "en": "social network",
+          "type": "n",
+          "vi": "mạng xã hội"
+        },
+        {
+          "en": "smartphone",
+          "type": "n",
+          "vi": "điện thoại thông minh"
+        },
+        {
+          "en": "tablet",
+          "type": "n",
+          "vi": "máy tính bảng"
+        },
+        {
+          "en": "video conference",
+          "type": "n",
+          "vi": "cuộc họp video"
+        },
+        {
+          "en": "webcam",
+          "type": "n",
+          "vi": "camera máy tính"
+        },
+        {
+          "en": "emoji",
+          "type": "n",
+          "vi": "biểu tượng cảm xúc"
+        },
+        {
+          "en": "voice message",
+          "type": "n",
+          "vi": "tin nhắn thoại"
+        },
+        {
+          "en": "group call",
+          "type": "n",
+          "vi": "cuộc gọi nhóm"
+        },
+        {
+          "en": "carrier pigeon",
+          "type": "n",
+          "vi": "bồ câu đưa thư"
+        },
+        {
+          "en": "Internet connection",
+          "type": "n",
+          "vi": "kết nối Internet"
+        },
+        {
+          "en": "high-speed",
+          "type": "adj",
+          "vi": "tốc độ cao"
+        },
+        {
+          "en": "online",
+          "type": "adj/adv",
+          "vi": "trực tuyến"
+        },
+        {
+          "en": "face-to-face",
+          "type": "adj",
+          "vi": "mặt đối mặt"
+        },
+        {
+          "en": "adjust",
+          "type": "v",
+          "vi": "điều chỉnh"
+        },
+        {
+          "en": "focus on",
+          "type": "v phr",
+          "vi": "tập trung vào"
+        },
+        {
+          "en": "zoom in",
+          "type": "v phr",
+          "vi": "phóng to"
+        },
+        {
+          "en": "chat",
+          "type": "v/n",
+          "vi": "trò chuyện"
+        },
+        {
+          "en": "connect",
+          "type": "v",
+          "vi": "kết nối"
+        },
+        {
+          "en": "interact",
+          "type": "v",
+          "vi": "tương tác"
+        },
+        {
+          "en": "share",
+          "type": "v",
+          "vi": "chia sẻ"
+        },
+        {
+          "en": "post",
+          "type": "v/n",
+          "vi": "đăng, bài đăng"
+        },
+        {
+          "en": "upload",
+          "type": "v",
+          "vi": "tải lên"
+        },
+        {
+          "en": "download",
+          "type": "v",
+          "vi": "tải xuống"
+        },
+        {
+          "en": "message",
+          "type": "n/v",
+          "vi": "tin nhắn, nhắn tin"
+        },
+        {
+          "en": "digital",
+          "type": "adj",
+          "vi": "kỹ thuật số"
+        },
+        {
+          "en": "convenient",
+          "type": "adj",
+          "vi": "thuận tiện"
+        },
+        {
+          "en": "instant",
+          "type": "adj",
+          "vi": "tức thì, nhanh chóng"
+        },
+        {
+          "en": "effective",
+          "type": "adj",
+          "vi": "hiệu quả"
+        },
+        {
+          "en": "signal",
+          "type": "n",
+          "vi": "tín hiệu"
+        }
+      ],
+      "grammar": [
+        "Future continuous",
+        "Verbs + to-infinitive"
+      ],
+      "grammar_notes": "Thì tương lai tiếp diễn (Future Continuous): Diễn tả hành động sẽ đang xảy ra tại một thời điểm trong tương lai. Cấu trúc: S + will be + V-ing. Ví dụ: At 8 p.m. tonight, I will be chatting with my friends online. This time next year, we will be using new technology. Verbs + to-infinitive: Một số động từ theo sau bởi to-V: want, need, hope, plan, decide, agree, promise, offer, learn. Ví dụ: She wants to learn how to use the new app. They decided to communicate by video call.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "At 9 p.m. tonight, she _____ with her friend online.",
+          "opts": [
+            "chats",
+            "chatting",
+            "will be chatting",
+            "chatted"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng thì tương lai tiếp diễn (will be + V-ing) để diễn tả hành động sẽ đang xảy ra tại một thời điểm cụ thể trong tương lai ('9 p.m. tonight'). Đáp án A, B, D sai vì không diễn tả đúng ý nghĩa này."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'social network' mean in Vietnamese?",
+          "opts": [
+            "mạng xã hội",
+            "mạng lưới",
+            "kết nối",
+            "truyền thông"
+          ],
+          "ans": 0,
+          "explain": "'Social network' có nghĩa là 'mạng xã hội' trong tiếng Việt. Đáp án B ('mạng lưới') và D ('truyền thông') có nghĩa khác."
+        },
+        {
+          "type": "mc",
+          "q": "He decided _____ a video message instead.",
+          "opts": [
+            "send",
+            "sending",
+            "to send",
+            "sent"
+          ],
+          "ans": 2,
+          "explain": "Sau động từ 'decided', chúng ta cần dùng 'to + V' (to send) để diễn tả quyết định làm gì. Đáp án A và D sai ngữ pháp, còn B chỉ dùng khi 'decided' là chủ ngữ."
+        },
+        {
+          "type": "mc",
+          "q": "This time tomorrow, we _____ a video conference.",
+          "opts": [
+            "have",
+            "having",
+            "will be having",
+            "had"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'This time tomorrow' chỉ một hành động sẽ đang diễn ra tại một thời điểm trong tương lai, nên ta dùng thì tương lai tiếp diễn (will be having). Đáp án A, B, D sai."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'carrier pigeon' mean?",
+          "opts": [
+            "chim sẻ",
+            "bồ câu đưa thư",
+            "chim ưng",
+            "vẹt"
+          ],
+          "ans": 1,
+          "explain": "'Carrier pigeon' là bồ câu được huấn luyện để đưa thư. Đáp án A ('chim sẻ') và D ('vẹt') là các loài chim khác."
+        },
+        {
+          "type": "mc",
+          "q": "She hopes _____ her grandmother this weekend.",
+          "opts": [
+            "visit",
+            "visiting",
+            "to visit",
+            "visited"
+          ],
+          "ans": 2,
+          "explain": "Sau động từ 'hopes', chúng ta cần dùng 'to + V' (to visit) để diễn tả hy vọng làm gì. Đáp án A và D sai ngữ pháp, còn B chỉ dùng khi 'hopes' là chủ ngữ."
+        },
+        {
+          "type": "mc",
+          "q": "People in the past _____ carrier pigeons to send messages.",
+          "opts": [
+            "use",
+            "used",
+            "using",
+            "uses"
+          ],
+          "ans": 1,
+          "explain": "Câu này nói về hành động trong quá khứ ('People in the past'), nên ta dùng động từ chia ở thì quá khứ đơn ('used'). Đáp án A, C, D sai."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'interact' mean?",
+          "opts": [
+            "tương tác",
+            "phá hủy",
+            "sao chép",
+            "xóa"
+          ],
+          "ans": 0,
+          "explain": "'Interact' trong tiếng Anh có nghĩa là 'tương tác' trong tiếng Việt. Các đáp án khác như 'phá hủy', 'sao chép', 'xóa' có nghĩa hoàn toàn khác."
+        },
+        {
+          "type": "mc",
+          "q": "He will be _____ photos on social media at 7 p.m.",
+          "opts": [
+            "post",
+            "posts",
+            "posting",
+            "posted"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'at 7 p.m.' chỉ một thời điểm trong tương lai, và hành động 'be _____ photos' sẽ đang diễn ra, nên ta dùng thì tương lai tiếp diễn (will be posting). Đáp án A, B, D sai."
+        },
+        {
+          "type": "mc",
+          "q": "They want _____ a new communication app.",
+          "opts": [
+            "try",
+            "trying",
+            "to try",
+            "tried"
+          ],
+          "ans": 2,
+          "explain": "Sau động từ 'want', chúng ta cần dùng 'to + V' (to try) để diễn tả mong muốn làm gì. Đáp án A và D sai ngữ pháp, còn B chỉ dùng khi 'want' là chủ ngữ."
+        },
+        {
+          "type": "mc",
+          "q": "Smartphones make communication more _____.",
+          "opts": [
+            "convenience",
+            "convenient",
+            "conveniently",
+            "convene"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một tính từ để bổ nghĩa cho danh từ 'communication'. 'Convenient' (thuận tiện) là tính từ phù hợp. Đáp án A là danh từ, C là trạng từ, D là động từ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'upload' mean in Vietnamese?",
+          "opts": [
+            "tải xuống",
+            "tải lên",
+            "xóa",
+            "mở"
+          ],
+          "ans": 1,
+          "explain": "'Upload' có nghĩa là 'tải lên' máy tính hoặc mạng. Đáp án A ('tải xuống') là nghĩa ngược lại."
+        },
+        {
+          "type": "mc",
+          "q": "At this time next week, I _____ English with my pen pal.",
+          "opts": [
+            "practise",
+            "practised",
+            "will be practising",
+            "practising"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'At this time next week' chỉ một hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai, nên ta dùng thì tương lai tiếp diễn (will be practising). Đáp án A, B, D sai."
+        },
+        {
+          "type": "mc",
+          "q": "She agreed _____ the group call at 5 p.m.",
+          "opts": [
+            "join",
+            "joining",
+            "to join",
+            "joined"
+          ],
+          "ans": 2,
+          "explain": "Sau động từ 'agreed', chúng ta cần dùng 'to + V' (to join) để diễn tả sự đồng ý làm gì. Đáp án A và D sai ngữ pháp, còn B chỉ dùng khi 'agreed' là chủ ngữ."
+        },
+        {
+          "type": "mc",
+          "q": "An 'emoji' is a small _____ used in messages.",
+          "opts": [
+            "letter",
+            "number",
+            "picture",
+            "word"
+          ],
+          "ans": 2,
+          "explain": "Emoji là những hình ảnh nhỏ dùng để thể hiện cảm xúc hoặc ý tưởng trong tin nhắn. Đáp án A, B, D không mô tả đúng bản chất của emoji."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'digital' mean?",
+          "opts": [
+            "analog",
+            "kỹ thuật số",
+            "truyền thống",
+            "cổ điển"
+          ],
+          "ans": 1,
+          "explain": "'Digital' có nghĩa là 'kỹ thuật số', liên quan đến công nghệ máy tính. Đáp án A ('analog') là nghĩa đối lập."
+        },
+        {
+          "type": "mc",
+          "q": "He plans _____ a new webcam for video calls.",
+          "opts": [
+            "buy",
+            "buying",
+            "to buy",
+            "bought"
+          ],
+          "ans": 2,
+          "explain": "Sau động từ 'plans', chúng ta cần dùng 'to + V' (to buy) để diễn tả kế hoạch làm gì. Đáp án A và D sai ngữ pháp, còn B chỉ dùng khi 'plans' là chủ ngữ."
+        },
+        {
+          "type": "mc",
+          "q": "We need a good Internet _____ for video calls.",
+          "opts": [
+            "connect",
+            "connection",
+            "connected",
+            "connecting"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một danh từ để chỉ sự kết nối Internet. 'Connection' (sự kết nối) là danh từ phù hợp. Đáp án A là động từ, C và D là dạng khác của động từ."
+        },
+        {
+          "type": "mc",
+          "q": "Face-to-face communication is more _____ than texting.",
+          "opts": [
+            "effect",
+            "effective",
+            "effectively",
+            "effecting"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một tính từ để bổ nghĩa cho danh từ 'communication'. 'Effective' (hiệu quả) là tính từ phù hợp. Đáp án A là danh từ, C là trạng từ, D là động từ."
+        },
+        {
+          "type": "mc",
+          "q": "This time next month, they _____ a new app.",
+          "opts": [
+            "use",
+            "used",
+            "will be using",
+            "using"
+          ],
+          "ans": 2,
+          "explain": "Cụm 'This time next month' chỉ một hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai, nên ta dùng thì tương lai tiếp diễn (will be using). Đáp án A, B, D sai."
+        }
+      ]
+    },
+    "11": {
+      "title": "Science and Technology",
+      "vocabulary": [
+        {
+          "en": "science",
+          "type": "n",
+          "vi": "khoa học"
+        },
+        {
+          "en": "technology",
+          "type": "n",
+          "vi": "công nghệ"
+        },
+        {
+          "en": "invention",
+          "type": "n",
+          "vi": "phát minh"
+        },
+        {
+          "en": "robot",
+          "type": "n",
+          "vi": "người máy"
+        },
+        {
+          "en": "device",
+          "type": "n",
+          "vi": "thiết bị"
+        },
+        {
+          "en": "computer",
+          "type": "n",
+          "vi": "máy tính"
+        },
+        {
+          "en": "telephone",
+          "type": "n",
+          "vi": "điện thoại"
+        },
+        {
+          "en": "contact lens",
+          "type": "n",
+          "vi": "kính áp tròng"
+        },
+        {
+          "en": "fingerprint scanner",
+          "type": "n",
+          "vi": "máy quét vân tay"
+        },
+        {
+          "en": "face recognition",
+          "type": "n",
+          "vi": "nhận diện khuôn mặt"
+        },
+        {
+          "en": "video conferencing",
+          "type": "n",
+          "vi": "hội nghị video"
+        },
+        {
+          "en": "application",
+          "type": "n",
+          "vi": "ứng dụng"
+        },
+        {
+          "en": "experiment",
+          "type": "n",
+          "vi": "thí nghiệm"
+        },
+        {
+          "en": "discover",
+          "type": "v",
+          "vi": "khám phá"
+        },
+        {
+          "en": "create",
+          "type": "v",
+          "vi": "tạo ra"
+        },
+        {
+          "en": "develop",
+          "type": "v",
+          "vi": "phát triển"
+        },
+        {
+          "en": "introduce",
+          "type": "v",
+          "vi": "giới thiệu"
+        },
+        {
+          "en": "interact",
+          "type": "v",
+          "vi": "tương tác"
+        },
+        {
+          "en": "convenient",
+          "type": "adj",
+          "vi": "thuận tiện"
+        },
+        {
+          "en": "helpful",
+          "type": "adj",
+          "vi": "hữu ích"
+        },
+        {
+          "en": "independent",
+          "type": "adj",
+          "vi": "độc lập"
+        },
+        {
+          "en": "effortless",
+          "type": "adj",
+          "vi": "không tốn sức"
+        },
+        {
+          "en": "biometric",
+          "type": "adj",
+          "vi": "sinh trắc học"
+        },
+        {
+          "en": "digital",
+          "type": "adj",
+          "vi": "kỹ thuật số"
+        },
+        {
+          "en": "artificial intelligence",
+          "type": "n",
+          "vi": "trí tuệ nhân tạo"
+        },
+        {
+          "en": "software",
+          "type": "n",
+          "vi": "phần mềm"
+        },
+        {
+          "en": "hardware",
+          "type": "n",
+          "vi": "phần cứng"
+        },
+        {
+          "en": "data",
+          "type": "n",
+          "vi": "dữ liệu"
+        },
+        {
+          "en": "innovation",
+          "type": "n",
+          "vi": "sự đổi mới"
+        },
+        {
+          "en": "automate",
+          "type": "v",
+          "vi": "tự động hóa"
+        }
+      ],
+      "grammar": [
+        "Future Simple review",
+        "Conditional sentences type 1 review"
+      ],
+      "grammar_notes": "Ôn tập thì tương lai đơn: S + will + V: dự đoán, quyết định tức thì, lời hứa. Ví dụ: Robots will help us with housework. Technology will change our lives. Ôn tập câu điều kiện loại 1: If + S + V (present), S + will + V. Ví dụ: If scientists develop better AI, robots will become smarter. If we use technology wisely, it will improve our lives. Unless = If not: Unless we are careful, technology might cause problems.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "In the future, robots _____ do most household chores.",
+          "opts": [
+            "can",
+            "could",
+            "will",
+            "would"
+          ],
+          "ans": 2,
+          "explain": "Câu này nói về tương lai nên ta dùng 'will' để diễn tả một hành động chắc chắn sẽ xảy ra. 'Can' chỉ khả năng, 'could' và 'would' thường dùng trong câu điều kiện hoặc quá khứ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'invention' mean in Vietnamese?",
+          "opts": [
+            "khám phá",
+            "phát minh",
+            "thí nghiệm",
+            "nghiên cứu"
+          ],
+          "ans": 1,
+          "explain": "'Invention' có nghĩa là 'phát minh', tức là tạo ra một cái gì đó mới. 'Khám phá' là tìm ra cái đã có, 'thí nghiệm' là thử nghiệm, còn 'nghiên cứu' là tìm hiểu sâu."
+        },
+        {
+          "type": "mc",
+          "q": "If we _____ technology wisely, it will help us.",
+          "opts": [
+            "use",
+            "uses",
+            "used",
+            "using"
+          ],
+          "ans": 0,
+          "explain": "Đây là câu điều kiện loại 1, với mệnh đề 'if' chia ở thì hiện tại đơn. Chủ ngữ 'we' là số nhiều nên động từ 'use' không chia thêm 's'."
+        },
+        {
+          "type": "mc",
+          "q": "Artificial intelligence _____ change many industries.",
+          "opts": [
+            "is",
+            "are",
+            "will",
+            "was"
+          ],
+          "ans": 2,
+          "explain": "Câu này dự đoán về tương lai, nên ta dùng 'will' để diễn tả một sự thay đổi có thể xảy ra. 'Is' và 'are' là thì hiện tại, 'was' là thì quá khứ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'biometric' mean?",
+          "opts": [
+            "sinh trắc học",
+            "kỹ thuật số",
+            "tự động",
+            "nhân tạo"
+          ],
+          "ans": 0,
+          "explain": "'Biometric' là một thuật ngữ khoa học liên quan đến việc đo lường và phân tích các đặc điểm sinh học của con người, nên nghĩa tiếng Việt là 'sinh trắc học'."
+        },
+        {
+          "type": "mc",
+          "q": "If scientists _____ a cure for cancer, millions will be saved.",
+          "opts": [
+            "find",
+            "finds",
+            "found",
+            "finding"
+          ],
+          "ans": 0,
+          "explain": "Câu điều kiện loại 1, mệnh đề 'if' chia ở thì hiện tại đơn. Chủ ngữ 'scientists' là số nhiều, nên động từ 'find' giữ nguyên dạng."
+        },
+        {
+          "type": "mc",
+          "q": "The new _____ can recognize faces instantly.",
+          "opts": [
+            "device",
+            "experiment",
+            "data",
+            "software"
+          ],
+          "ans": 0,
+          "explain": "Câu này cần một danh từ chỉ một vật có chức năng nhận dạng khuôn mặt. 'Device' (thiết bị) phù hợp nhất, còn 'experiment' (thí nghiệm), 'data' (dữ liệu), 'software' (phần mềm) không đúng ngữ cảnh."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'effortless' mean?",
+          "opts": [
+            "khó khăn",
+            "tốn sức",
+            "không tốn sức",
+            "phức tạp"
+          ],
+          "ans": 2,
+          "explain": "'Effortless' là tính từ có nghĩa là 'không cần cố gắng', 'dễ dàng'. Các lựa chọn khác như 'khó khăn', 'tốn sức', 'phức tạp' đều trái nghĩa."
+        },
+        {
+          "type": "mc",
+          "q": "Technology will make our lives more _____.",
+          "opts": [
+            "convenience",
+            "convenient",
+            "conveniently",
+            "convene"
+          ],
+          "ans": 1,
+          "explain": "Sau động từ 'make', ta cần một tính từ để bổ nghĩa cho 'lives'. 'Convenient' là tính từ có nghĩa là 'tiện lợi', phù hợp với ngữ cảnh công nghệ làm cuộc sống tốt hơn."
+        },
+        {
+          "type": "mc",
+          "q": "If you download this _____, you can learn English easily.",
+          "opts": [
+            "application",
+            "experiment",
+            "hardware",
+            "robot"
+          ],
+          "ans": 0,
+          "explain": "Để học tiếng Anh dễ dàng qua điện thoại hoặc máy tính, ta cần một 'ứng dụng' (application). 'Experiment' (thí nghiệm), 'hardware' (phần cứng), 'robot' (robot) không phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "Scientists _____ many new things every year.",
+          "opts": [
+            "discover",
+            "discovers",
+            "discovered",
+            "discovering"
+          ],
+          "ans": 0,
+          "explain": "Câu này nói về một sự thật hoặc thói quen lặp đi lặp lại ở hiện tại, nên dùng thì hiện tại đơn. Chủ ngữ 'scientists' số nhiều, nên động từ 'discover' giữ nguyên."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'artificial intelligence' mean?",
+          "opts": [
+            "trí tuệ tự nhiên",
+            "trí tuệ nhân tạo",
+            "thông minh",
+            "sáng tạo"
+          ],
+          "ans": 1,
+          "explain": "'Artificial intelligence' là một thuật ngữ công nghệ, dịch sang tiếng Việt là 'trí tuệ nhân tạo', chỉ khả năng của máy móc hoạt động như con người."
+        },
+        {
+          "type": "mc",
+          "q": "Robots won't _____ humans completely.",
+          "opts": [
+            "replace",
+            "replaces",
+            "replaced",
+            "replacing"
+          ],
+          "ans": 0,
+          "explain": "Câu này diễn tả một khả năng hoặc dự đoán trong tương lai, nên động từ chính sau 'won't' (will not) phải ở dạng nguyên mẫu. 'Replace' là dạng nguyên mẫu phù hợp."
+        },
+        {
+          "type": "mc",
+          "q": "A fingerprint _____ is used for security.",
+          "opts": [
+            "scan",
+            "scanner",
+            "scanning",
+            "scanned"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một danh từ chỉ thiết bị dùng để quét vân tay. 'Scanner' (máy quét) là danh từ phù hợp nhất trong trường hợp này."
+        },
+        {
+          "type": "mc",
+          "q": "If technology _____ too fast, some people might not adapt.",
+          "opts": [
+            "develop",
+            "develops",
+            "developed",
+            "developing"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 1, mệnh đề 'if' chia ở thì hiện tại đơn. Chủ ngữ 'technology' là số ít, nên động từ 'develop' cần thêm 's' thành 'develops'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'software' mean in Vietnamese?",
+          "opts": [
+            "phần cứng",
+            "phần mềm",
+            "dữ liệu",
+            "thiết bị"
+          ],
+          "ans": 1,
+          "explain": "'Software' là thuật ngữ chỉ các chương trình máy tính, ứng dụng, hệ điều hành, có nghĩa tiếng Việt là 'phần mềm'."
+        },
+        {
+          "type": "mc",
+          "q": "New _____ in medicine will save many lives.",
+          "opts": [
+            "innovate",
+            "innovations",
+            "innovative",
+            "innovating"
+          ],
+          "ans": 1,
+          "explain": "Câu này cần một danh từ số nhiều để làm chủ ngữ. 'Innovations' (những sự đổi mới) là danh từ số nhiều, phù hợp với ngữ cảnh y học."
+        },
+        {
+          "type": "mc",
+          "q": "This experiment will help us _____ more about the brain.",
+          "opts": [
+            "learn",
+            "learns",
+            "learned",
+            "learning"
+          ],
+          "ans": 0,
+          "explain": "Sau động từ 'help', ta có thể dùng động từ nguyên mẫu (learn) hoặc nguyên mẫu có 'to' (to learn) để chỉ mục đích. Ở đây, 'learn' là lựa chọn đúng."
+        },
+        {
+          "type": "mc",
+          "q": "If she _____ hard, she will become a great scientist.",
+          "opts": [
+            "study",
+            "studies",
+            "studied",
+            "studying"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 1, mệnh đề 'if' chia ở thì hiện tại đơn. Chủ ngữ 'she' là ngôi thứ ba số ít, nên động từ 'study' phải chia thành 'studies'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'data' mean?",
+          "opts": [
+            "thiết bị",
+            "phần mềm",
+            "dữ liệu",
+            "ứng dụng"
+          ],
+          "ans": 2,
+          "explain": "'Data' là thuật ngữ tiếng Anh dùng để chỉ thông tin, số liệu, có nghĩa tiếng Việt là 'dữ liệu'."
+        }
+      ]
+    },
+    "12": {
+      "title": "Life on Other Planets",
+      "vocabulary": [
+        {
+          "en": "planet",
+          "type": "n",
+          "vi": "hành tinh"
+        },
+        {
+          "en": "solar system",
+          "type": "n",
+          "vi": "hệ mặt trời"
+        },
+        {
+          "en": "galaxy",
+          "type": "n",
+          "vi": "thiên hà"
+        },
+        {
+          "en": "universe",
+          "type": "n",
+          "vi": "vũ trụ"
+        },
+        {
+          "en": "spaceship",
+          "type": "n",
+          "vi": "tàu vũ trụ"
+        },
+        {
+          "en": "rocket",
+          "type": "n",
+          "vi": "tên lửa"
+        },
+        {
+          "en": "astronaut",
+          "type": "n",
+          "vi": "phi hành gia"
+        },
+        {
+          "en": "alien",
+          "type": "n",
+          "vi": "người ngoài hành tinh"
+        },
+        {
+          "en": "creature",
+          "type": "n",
+          "vi": "sinh vật"
+        },
+        {
+          "en": "UFO",
+          "type": "n",
+          "vi": "vật thể bay không xác định"
+        },
+        {
+          "en": "telescope",
+          "type": "n",
+          "vi": "kính thiên văn"
+        },
+        {
+          "en": "atmosphere",
+          "type": "n",
+          "vi": "bầu khí quyển"
+        },
+        {
+          "en": "crater",
+          "type": "n",
+          "vi": "miệng hố"
+        },
+        {
+          "en": "gravity",
+          "type": "n",
+          "vi": "trọng lực"
+        },
+        {
+          "en": "orbit",
+          "type": "n/v",
+          "vi": "quỹ đạo, quay quanh"
+        },
+        {
+          "en": "explore",
+          "type": "v",
+          "vi": "khám phá"
+        },
+        {
+          "en": "discover",
+          "type": "v",
+          "vi": "phát hiện"
+        },
+        {
+          "en": "destroy",
+          "type": "v",
+          "vi": "phá hủy"
+        },
+        {
+          "en": "attack",
+          "type": "v",
+          "vi": "tấn công"
+        },
+        {
+          "en": "take over",
+          "type": "v phr",
+          "vi": "chiếm lấy"
+        },
+        {
+          "en": "break down",
+          "type": "v phr",
+          "vi": "hỏng, hư"
+        },
+        {
+          "en": "oppose",
+          "type": "v",
+          "vi": "chống lại"
+        },
+        {
+          "en": "commander",
+          "type": "n",
+          "vi": "chỉ huy"
+        },
+        {
+          "en": "possibility",
+          "type": "n",
+          "vi": "khả năng"
+        },
+        {
+          "en": "science fiction",
+          "type": "n",
+          "vi": "khoa học viễn tưởng"
+        },
+        {
+          "en": "stormy",
+          "type": "adj",
+          "vi": "có bão"
+        },
+        {
+          "en": "habitable",
+          "type": "adj",
+          "vi": "có thể sống được"
+        },
+        {
+          "en": "mysterious",
+          "type": "adj",
+          "vi": "bí ẩn"
+        },
+        {
+          "en": "survive",
+          "type": "v",
+          "vi": "sống sót"
+        },
+        {
+          "en": "existence",
+          "type": "n",
+          "vi": "sự tồn tại"
+        }
+      ],
+      "grammar": [
+        "Conditional sentences type 2",
+        "Reported speech review"
+      ],
+      "grammar_notes": "Câu điều kiện loại 2 (Second Conditional): Diễn tả điều kiện không có thật ở hiện tại, mang tính giả định. Cấu trúc: If + S + V-ed/V2, S + would + V. Ví dụ: If I were an astronaut, I would explore Mars. If we lived on another planet, we would need spacesuits. Lưu ý: dùng 'were' cho tất cả các ngôi. Ôn tập câu tường thuật: He said, 'I want to be an astronaut.' → He said that he wanted to be an astronaut.",
+      "exercises": [
+        {
+          "type": "mc",
+          "q": "If I _____ an astronaut, I would go to Mars.",
+          "opts": [
+            "am",
+            "is",
+            "were",
+            "was"
+          ],
+          "ans": 2,
+          "explain": "Câu này dùng câu điều kiện loại 2, diễn tả điều không có thật ở hiện tại. Trong câu điều kiện loại 2, ta dùng 'were' cho tất cả các ngôi, kể cả 'I'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'galaxy' mean in Vietnamese?",
+          "opts": [
+            "hành tinh",
+            "thiên hà",
+            "vũ trụ",
+            "ngôi sao"
+          ],
+          "ans": 1,
+          "explain": "'Galaxy' trong tiếng Việt có nghĩa là 'thiên hà'. 'Hành tinh' là planet, 'vũ trụ' là universe, và 'ngôi sao' là star."
+        },
+        {
+          "type": "mc",
+          "q": "If we lived on Mars, we _____ need oxygen tanks.",
+          "opts": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 2, diễn tả tình huống giả định ở hiện tại. Mệnh đề 'if' dùng quá khứ đơn ('lived'), mệnh đề chính dùng 'would' + động từ nguyên mẫu."
+        },
+        {
+          "type": "mc",
+          "q": "He said that he _____ to be an astronaut.",
+          "opts": [
+            "want",
+            "wants",
+            "wanted",
+            "wanting"
+          ],
+          "ans": 2,
+          "explain": "Khi tường thuật lại lời nói ở quá khứ ('said'), động từ trong câu tường thuật lùi về một thì. 'Want' ở hiện tại trở thành 'wanted' ở quá khứ."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'UFO' stand for?",
+          "opts": [
+            "Unknown Flying Object",
+            "Unidentified Flying Object",
+            "United Flying Object",
+            "Universal Flying Object"
+          ],
+          "ans": 1,
+          "explain": "'UFO' là viết tắt của 'Unidentified Flying Object', có nghĩa là 'Vật thể bay không xác định'."
+        },
+        {
+          "type": "mc",
+          "q": "If there _____ life on Mars, scientists would study it.",
+          "opts": [
+            "is",
+            "are",
+            "were",
+            "was"
+          ],
+          "ans": 2,
+          "explain": "Câu này là câu điều kiện loại 2, diễn tả điều không có thật hoặc không chắc chắn ở hiện tại. Ta dùng 'were' cho tất cả các ngôi trong mệnh đề 'if' của câu điều kiện loại 2."
+        },
+        {
+          "type": "mc",
+          "q": "A _____ is used to observe distant stars.",
+          "opts": [
+            "microscope",
+            "telescope",
+            "periscope",
+            "kaleidoscope"
+          ],
+          "ans": 1,
+          "explain": "Một 'telescope' là dụng cụ dùng để quan sát các vật thể ở xa như các vì sao. 'Microscope' dùng để xem vật nhỏ, 'periscope' dùng trong tàu ngầm, 'kaleidoscope' là kính vạn hoa."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'gravity' mean?",
+          "opts": [
+            "không khí",
+            "trọng lực",
+            "ánh sáng",
+            "nhiệt độ"
+          ],
+          "ans": 1,
+          "explain": "'Gravity' trong tiếng Việt có nghĩa là 'trọng lực', lực hút của các vật thể có khối lượng. Các lựa chọn khác là 'không khí' (air), 'ánh sáng' (light), và 'nhiệt độ' (temperature)."
+        },
+        {
+          "type": "mc",
+          "q": "She said she _____ like to visit another planet.",
+          "opts": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "ans": 1,
+          "explain": "Khi tường thuật lại lời nói ở quá khứ ('said'), động từ 'will' lùi về thành 'would'. Câu này diễn tả mong muốn trong quá khứ."
+        },
+        {
+          "type": "mc",
+          "q": "If I had a spaceship, I _____ travel to Jupiter.",
+          "opts": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 2, diễn tả điều giả định không có thật ở hiện tại ('If I had a spaceship'). Mệnh đề chính dùng 'would' + động từ nguyên mẫu."
+        },
+        {
+          "type": "mc",
+          "q": "An 'alien' in Vietnamese is _____.",
+          "opts": [
+            "phi hành gia",
+            "nhà khoa học",
+            "người ngoài hành tinh",
+            "sinh vật biển"
+          ],
+          "ans": 2,
+          "explain": "'Alien' trong tiếng Việt có nghĩa là 'người ngoài hành tinh'. 'Phi hành gia' là astronaut, 'nhà khoa học' là scientist, và 'sinh vật biển' là sea creature."
+        },
+        {
+          "type": "mc",
+          "q": "If Earth _____ habitable, we would need to find another planet.",
+          "opts": [
+            "is",
+            "isn't",
+            "were",
+            "weren't"
+          ],
+          "ans": 3,
+          "explain": "Câu này là câu điều kiện loại 2, diễn tả một tình huống giả định không có thật ở hiện tại. Vì vậy, ta dùng 'weren't' (phủ định của 'were') cho ngôi 'Earth'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'explore' mean?",
+          "opts": [
+            "phá hủy",
+            "khám phá",
+            "tấn công",
+            "bảo vệ"
+          ],
+          "ans": 1,
+          "explain": "'Explore' có nghĩa là 'khám phá', tìm hiểu về một nơi hoặc một điều gì đó mới lạ. Các từ khác có nghĩa là 'phá hủy' (destroy), 'tấn công' (attack), và 'bảo vệ' (protect)."
+        },
+        {
+          "type": "mc",
+          "q": "The spaceship _____ down in the middle of the mission.",
+          "opts": [
+            "break",
+            "broke",
+            "broken",
+            "breaking"
+          ],
+          "ans": 1,
+          "explain": "Câu này kể về một sự việc đã xảy ra trong quá khứ ('in the middle of the mission'). Do đó, ta dùng động từ chia ở thì quá khứ đơn là 'broke'."
+        },
+        {
+          "type": "mc",
+          "q": "If we could travel at the speed of light, we _____ reach distant galaxies.",
+          "opts": [
+            "will",
+            "would",
+            "can",
+            "shall"
+          ],
+          "ans": 1,
+          "explain": "Đây là câu điều kiện loại 2, diễn tả khả năng giả định trong hiện tại. Mệnh đề 'if' dùng quá khứ đơn ('could travel'), mệnh đề chính dùng 'would' + động từ nguyên mẫu."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'atmosphere' mean in this context?",
+          "opts": [
+            "không khí lễ hội",
+            "bầu khí quyển",
+            "thời tiết",
+            "nhiệt độ"
+          ],
+          "ans": 1,
+          "explain": "Trong ngữ cảnh du hành vũ trụ, 'atmosphere' có nghĩa là 'bầu khí quyển', lớp khí bao quanh một hành tinh. Các lựa chọn khác không phù hợp với ngữ cảnh này."
+        },
+        {
+          "type": "mc",
+          "q": "He told me that the planet _____ habitable.",
+          "opts": [
+            "is",
+            "was",
+            "were",
+            "been"
+          ],
+          "ans": 1,
+          "explain": "Khi tường thuật lại lời nói ở quá khứ ('told me'), động từ 'is' lùi về thì quá khứ đơn thành 'was'."
+        },
+        {
+          "type": "mc",
+          "q": "A 'crater' is a large hole on the surface of a _____.",
+          "opts": [
+            "sea",
+            "river",
+            "planet",
+            "forest"
+          ],
+          "ans": 2,
+          "explain": "Một 'crater' là một hố lớn trên bề mặt của một hành tinh hoặc mặt trăng, thường do va chạm thiên thạch. Nó không phải là đặc điểm của biển, sông hay rừng."
+        },
+        {
+          "type": "mc",
+          "q": "If aliens _____ Earth, what would happen?",
+          "opts": [
+            "visit",
+            "visits",
+            "visited",
+            "visiting"
+          ],
+          "ans": 2,
+          "explain": "Câu này là câu điều kiện loại 2, diễn tả một tình huống giả định. Mệnh đề 'if' dùng động từ chia ở thì quá khứ đơn, nên 'visit' trở thành 'visited'."
+        },
+        {
+          "type": "mc",
+          "q": "What does 'survive' mean in Vietnamese?",
+          "opts": [
+            "chết",
+            "sống sót",
+            "chiến đấu",
+            "trốn thoát"
+          ],
+          "ans": 1,
+          "explain": "'Survive' trong tiếng Việt có nghĩa là 'sống sót', tức là tiếp tục sống sau một tình huống nguy hiểm. Các lựa chọn khác là 'chết' (die), 'chiến đấu' (fight), và 'trốn thoát' (escape)."
+        }
+      ]
+    }
+  }
+}

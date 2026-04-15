@@ -235,4 +235,22 @@ export const requireAdmin: MiddlewareHandler<{ Bindings: Env; Variables: { user:
     await next();
   };
 
+/** Hono middleware: requires a valid Firebase ID token (any signed-in user). */
+export const requireUser: MiddlewareHandler<{ Bindings: Env; Variables: { user: DecodedToken } }> =
+  async (c, next) => {
+    const authHeader = c.req.header("Authorization") ?? "";
+    const m = authHeader.match(/^Bearer\s+(.+)$/i);
+    if (!m) return c.json({ error: "Missing Bearer token" }, 401);
+
+    let decoded: DecodedToken;
+    try {
+      decoded = await verifyFirebaseIdToken(m[1], c.env);
+    } catch (e) {
+      return c.json({ error: `Invalid token: ${(e as Error).message}` }, 401);
+    }
+
+    c.set("user", decoded);
+    await next();
+  };
+
 export type { DecodedToken };

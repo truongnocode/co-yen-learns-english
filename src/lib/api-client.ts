@@ -73,6 +73,37 @@ export async function importSgkUnit(
   return (await res.json()) as ImportSgkResponse;
 }
 
+export interface SpeakingVerdict {
+  overall_score: number;
+  accuracy_score: number;
+  fluency_score: number;
+  words: Array<{
+    target: string;
+    heard: string;
+    verdict: "correct" | "close" | "wrong" | "missing";
+    tip?: string;
+  }>;
+  extra_words: string[];
+  vn_feedback: string;
+  transcript: string;
+}
+
+export async function gradeSpeaking(
+  audio: Blob,
+  targetText: string,
+): Promise<SpeakingVerdict> {
+  const form = new FormData();
+  form.append("audio", audio, "speech.webm");
+  form.append("target", targetText);
+  const res = await fetch(`${BASE_URL}/api/grade/speaking`, {
+    method: "POST",
+    headers: await authHeader(),
+    body: form,
+  });
+  if (!res.ok) throw await toError(res);
+  return (await res.json()) as SpeakingVerdict;
+}
+
 export async function saveImportResult(
   result: ImportResult,
   overwrite = false,

@@ -21,9 +21,10 @@ import {
   SgkUnitSchema,
 } from "../../../src/lib/content-schema";
 import type { Env } from "./env";
-import { requireAdmin, type DecodedToken } from "./auth";
+import { requireAdmin, requireUser, type DecodedToken } from "./auth";
 import { extractStructured } from "./claude";
 import { setDocument, getDocument } from "./firestore";
+import { scoreSpeaking } from "./speaking";
 
 type Variables = { user: DecodedToken };
 
@@ -252,6 +253,61 @@ function slugify(s: string): string {
     .replace(/^-+|-+$/g, "")
     .slice(0, 80);
 }
+
+// ─── Speaking: Whisper + Claude scoring ─────────────────────────────────────
+const AUDIO_MAX_BYTES = 10 * 1024 * 1024; // 10 MB is plenty for a single shadow
+const AUDIO_MIMES = new Set([
+  "audio/webm",
+  "audio/webm;codecs=opus",
+  "audio/ogg",
+  "audio/mpeg",
+  "audio/wav",
+  "audio/mp4",
+  "audio/m4a",
+]);
+
+app.post("/api/grade/speaking", requireUser, async (c) => {
+  const ct = c.req.header("content-type") ?? "";
+  if (!ct.includes("multipart/form-data")) {
+    return c.json({ error: "Expected multipart/form-data" }, 400);
+  }
+  const form = await c.req.formData();
+  const file = form.get("audio");
+  const targetText = String(form.get("target") ?? "").trim();
+  if (!targetText) return c.json({ error: "Missing `target` field" }, 400);
+  if (
+    !file ||
+    typeof file === "string" ||
+    typeof (file as Blob).arrayBuffer !== "function"
+  ) {
+    return c.json({ error: "Missing `audio` field" }, 400);
+  }
+  const blob = file as Blob & { name?: string };
+  if (blob.size > AUDIO_MAX_BYTES) {
+    return c.json({ error: `Audio too large (${blob.size} bytes)` }, 413);
+  }
+  // Whisper accepts a range of mimes; we allow any audio/* but warn on unknowns.
+  const mime = blob.type || "audio/webm";
+  if (!AUDIO_MIMES.has(mime.split(";")[0]) && !mime.startsWith("audio/")) {
+    return c.json({ error: `Unsupported audio type: ${mime}` }, 415);
+  }
+  const bytes = await blob.arrayBuffer();
+
+  try {
+    const verdict = await scoreSpeaking(c.env, {
+      audio: bytes,
+      mime,
+      filename: blob.name ?? "audio.webm",
+      targetText,
+    });
+    return c.json(verdict);
+  } catch (e) {
+    return c.json(
+      { error: "Speaking scoring failed", detail: (e as Error).message },
+      502,
+    );
+  }
+});
 
 // ─── Error boundary ──────────────────────────────────────────────────────
 app.onError((err, c) => {

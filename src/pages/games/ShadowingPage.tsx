@@ -1,12 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Play, Pause, Mic, Square, SkipForward, Eye, EyeOff, Volume2 } from "lucide-react";
+import { ArrowLeft, Home, Play, Pause, Mic, Square, SkipForward, Eye, EyeOff, Volume2, Sparkles } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import { speakUS } from "@/lib/tts";
 import { startRecording, stopRecording, isRecordingSupported, getAudioUrl, isRecording } from "@/lib/recorder";
 import PageShell from "@/components/PageShell";
+import { SpeakingFeedback } from "@/components/SpeakingFeedback";
+import { gradeSpeaking, type SpeakingVerdict } from "@/lib/api-client";
+import { useAuth } from "@/contexts/AuthContext";
+import { useToast } from "@/hooks/use-toast";
 
 const smooth = { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const };
 
@@ -38,8 +42,13 @@ const ShadowingPage = () => {
   const [phase, setPhase] = useState<Phase>("listen");
   const [recording, setRecording] = useState(false);
   const [recordingUrl, setRecordingUrl] = useState<string | null>(null);
+  const [recordingBlob, setRecordingBlob] = useState<Blob | null>(null);
   const [loading, setLoading] = useState(true);
+  const [verdict, setVerdict] = useState<SpeakingVerdict | null>(null);
+  const [scoring, setScoring] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const { user } = useAuth();
+  const { toast } = useToast();
 
   // Build sentences from vocabulary
   useEffect(() => {
@@ -74,13 +83,44 @@ const ShadowingPage = () => {
     if (recording) {
       const blob = await stopRecording();
       setRecording(false);
+      setRecordingBlob(blob);
       setRecordingUrl(getAudioUrl(blob));
     } else {
       setRecordingUrl(null);
+      setRecordingBlob(null);
+      setVerdict(null);
       await startRecording();
       setRecording(true);
       // Auto-play the sentence while recording
       speak();
+    }
+  };
+
+  const handleGradeWithAI = async () => {
+    if (!recordingBlob) return;
+    if (!user) {
+      toast({
+        variant: "destructive",
+        title: "Cần đăng nhập",
+        description: "Em hãy đăng nhập Google để dùng chấm điểm AI.",
+      });
+      return;
+    }
+    const target = sentences[current]?.en;
+    if (!target) return;
+    setScoring(true);
+    setVerdict(null);
+    try {
+      const v = await gradeSpeaking(recordingBlob, target);
+      setVerdict(v);
+    } catch (e) {
+      toast({
+        variant: "destructive",
+        title: "Chấm điểm thất bại",
+        description: (e as Error).message,
+      });
+    } finally {
+      setScoring(false);
     }
   };
 
@@ -89,6 +129,8 @@ const ShadowingPage = () => {
       setCurrent((c) => c + 1);
       setPhase("listen");
       setRecordingUrl(null);
+      setRecordingBlob(null);
+      setVerdict(null);
     } else {
       setPhase("done");
     }
@@ -137,7 +179,7 @@ const ShadowingPage = () => {
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">Hoàn thành!</h2>
             <p className="text-muted-foreground text-sm mb-6">Em đã luyện {sentences.length} cụm từ</p>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-              onClick={() => { setCurrent(0); setPhase("listen"); setRecordingUrl(null); }}
+              onClick={() => { setCurrent(0); setPhase("listen"); setRecordingUrl(null); setRecordingBlob(null); setVerdict(null); }}
               className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold shadow-lg">
               Luyện lại
             </motion.button>
@@ -212,6 +254,38 @@ const ShadowingPage = () => {
               <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-4 mb-4 shadow-lg border border-border/30">
                 <p className="text-xs font-bold text-foreground mb-2">Bản ghi âm của em:</p>
                 <audio ref={audioRef} src={recordingUrl} controls className="w-full h-10" />
+              </div>
+            )}
+
+            {/* AI feedback */}
+            {phase === "record" && !recording && recordingBlob && !verdict && (
+              <motion.button
+                initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
+                onClick={handleGradeWithAI}
+                disabled={scoring}
+                className="w-full mb-3 gradient-cool text-white rounded-2xl py-3 font-display font-extrabold shadow-lg inline-flex items-center justify-center gap-2 disabled:opacity-60"
+              >
+                {scoring ? (
+                  <>
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                      className="w-4 h-4 border-2 border-white border-t-transparent rounded-full"
+                    />
+                    Đang chấm…
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="h-4 w-4" /> Cô AI chấm giúp em
+                  </>
+                )}
+              </motion.button>
+            )}
+
+            {verdict && (
+              <div className="mb-4">
+                <SpeakingFeedback verdict={verdict} />
               </div>
             )}
 

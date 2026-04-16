@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, Send, ChevronRight, Home, Trophy, Lightbulb } from "lucide-react";
+import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, Send, ChevronRight, Home, Trophy, Lightbulb, Search, X, ChevronLeft } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
 import { loadGrade10Tests } from "@/data/loader";
 import {
@@ -28,25 +28,82 @@ interface FlatQuestion extends MCQuestion {
   sign?: string;
 }
 
+// Extract a short display label from a verbose Vietnamese exam title.
+// Examples:
+//   "Đề thi tuyển sinh lớp 10 THPT - Trường THCS Chính Lý, Xã Lý Nhân, Tỉnh Ninh Bình (2026-2027)"
+//     → "THCS Chính Lý, Xã Lý Nhân"
+//   "Đề Tuyển Sinh Lớp 10 THPT - Trường THCS Lam Hạ, Phường Hà Nam"
+//     → "THCS Lam Hạ, Phường Hà Nam"
+const shortTitle = (title: string): string => {
+  // Take the part after the first "—", "–", "-" that follows a chunk containing "THPT" / "Tiếng Anh" / "Lớp 10".
+  // Otherwise, take from "THCS" onwards. Otherwise, fall back to the original.
+  const afterDash = title.split(/[-–—]/).slice(1).join(" ").trim();
+  const base = afterDash || title;
+  // Drop leading "Trường " and trailing "(Năm học ...)", "(2025-2026)", "(Tỉnh Ninh Bình)" noise.
+  return base
+    .replace(/^Trường\s+/, "")
+    .replace(/\s*\((Năm\s+học|Tỉnh|Sở|20\d{2}).*?\)\s*$/i, "")
+    .replace(/\s*,\s*Tỉnh\s+[^,]+$/i, "")
+    .replace(/\s*–\s*Năm\s+Học\s+.*$/i, "")
+    .trim();
+};
+
+const PAGE_SIZE = 24;
+
 const Grade10TestsPage = () => {
   const navigate = useNavigate();
   const [data, setData] = useState<Record<string, TestData> | null>(null);
   const [loading, setLoading] = useState(true);
   const [selectedTest, setSelectedTest] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     loadGrade10Tests().then(d => setData(d as Record<string, TestData>)).finally(() => setLoading(false));
   }, []);
 
+  // Normalize a string for accent-insensitive Vietnamese search.
+  const normalize = useCallback((s: string) =>
+    s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d"), []);
+
+  const allTests = useMemo(() => {
+    if (!data) return [] as [string, TestData][];
+    return Object.entries(data).sort(([a], [b]) => {
+      // Sort by numeric suffix: test001, test002, ... test1, test2, ... legacy at the end.
+      const na = parseInt(a.replace(/^test/, ""), 10);
+      const nb = parseInt(b.replace(/^test/, ""), 10);
+      if (isNaN(na) && isNaN(nb)) return a.localeCompare(b);
+      if (isNaN(na)) return 1;
+      if (isNaN(nb)) return -1;
+      return na - nb;
+    });
+  }, [data]);
+
+  const filtered = useMemo(() => {
+    if (!query.trim()) return allTests;
+    const q = normalize(query.trim());
+    return allTests.filter(([key, t]) =>
+      normalize(t.title).includes(q) || key.toLowerCase().includes(q.toLowerCase()),
+    );
+  }, [allTests, query, normalize]);
+
+  // Reset to page 1 whenever the search query changes.
+  useEffect(() => { setPage(1); }, [query]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const pageSafe = Math.min(page, totalPages);
+  const visible = useMemo(
+    () => filtered.slice((pageSafe - 1) * PAGE_SIZE, pageSafe * PAGE_SIZE),
+    [filtered, pageSafe],
+  );
+
   if (loading) return <PageShell><div className="flex items-center justify-center pt-40 text-muted-foreground">Đang tải...</div></PageShell>;
   if (!data) return <PageShell><div className="flex items-center justify-center pt-40 text-muted-foreground">Không có dữ liệu.</div></PageShell>;
-
-  const tests = Object.entries(data);
 
   if (!selectedTest) {
     return (
       <PageShell>
-        <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
+        <div className="max-w-5xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-6">
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
               className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
@@ -67,29 +124,121 @@ const Grade10TestsPage = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
             <ClipboardList className="h-8 w-8 mb-2 opacity-80 relative z-10" />
             <h1 className="font-display font-extrabold text-2xl relative z-10">Đề thi thử vào 10</h1>
-            <p className="text-white/70 text-sm relative z-10">{tests.length} đề thi</p>
+            <p className="text-white/70 text-sm relative z-10">{allTests.length} đề thi từ các trường THCS</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {tests.map(([key, test], i) => (
-              <motion.button key={key}
-                initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                transition={{ ...smooth, delay: i * 0.04 }}
-                whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}
-                onClick={() => setSelectedTest(key)}
-                className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 text-left border border-border/30 shadow-lg hover:shadow-xl transition-all"
+          {/* Search bar */}
+          <div className="relative mb-5">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Tìm theo tên trường, xã, phường, hoặc mã đề..."
+              className="w-full bg-card/80 backdrop-blur-xl border border-border/30 rounded-2xl pl-11 pr-11 py-3 text-sm text-foreground shadow-lg focus:outline-none focus:border-primary transition-colors"
+            />
+            {query && (
+              <button
+                type="button"
+                onClick={() => setQuery("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 rounded-full hover:bg-muted transition-colors"
+                aria-label="Xóa tìm kiếm"
               >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <h3 className="font-display font-bold text-foreground">{test.title}</h3>
-                    <p className="text-xs text-muted-foreground mt-1">3 phần · Part A, B, C</p>
-                  </div>
-                  <ChevronRight className="h-5 w-5 text-muted-foreground" />
-                </div>
-              </motion.button>
-            ))}
+                <X className="h-4 w-4 text-muted-foreground" />
+              </button>
+            )}
           </div>
+
+          {/* Result count / pagination summary */}
+          <div className="flex items-center justify-between mb-3 px-1">
+            <p className="text-xs text-muted-foreground">
+              {filtered.length === 0
+                ? "Không tìm thấy đề phù hợp"
+                : `Hiển thị ${(pageSafe - 1) * PAGE_SIZE + 1}–${Math.min(pageSafe * PAGE_SIZE, filtered.length)} trên ${filtered.length} đề`}
+            </p>
+            {totalPages > 1 && (
+              <p className="text-xs text-muted-foreground">Trang {pageSafe}/{totalPages}</p>
+            )}
+          </div>
+
+          {/* Compact grid */}
+          {visible.length === 0 ? (
+            <div className="text-center py-16 text-muted-foreground text-sm">
+              Không có đề phù hợp với từ khóa "{query}".
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {visible.map(([key, test]) => {
+                // Test number badge: "test002" → "002", "test12" → "12"
+                const num = key.replace(/^test/, "");
+                return (
+                  <motion.button
+                    key={key}
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={() => setSelectedTest(key)}
+                    className="bg-card/80 backdrop-blur-xl rounded-2xl p-4 text-left border border-border/30 shadow-md hover:shadow-lg hover:border-primary/30 transition-all flex items-start gap-3"
+                  >
+                    <div className="shrink-0 w-11 h-11 rounded-xl gradient-orange-card text-white flex items-center justify-center font-display font-extrabold text-xs">
+                      #{num}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-display font-bold text-foreground text-sm leading-snug line-clamp-2">
+                        {shortTitle(test.title)}
+                      </h3>
+                      <p className="text-[11px] text-muted-foreground mt-1">3 phần · Part A, B, C</p>
+                    </div>
+                    <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0 mt-2" />
+                  </motion.button>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-6">
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={pageSafe === 1}
+                className="p-2 rounded-xl bg-card/80 backdrop-blur-xl shadow-md border border-border/30 disabled:opacity-40 disabled:cursor-not-allowed"
+                aria-label="Trang trước"
+              >
+                <ChevronLeft className="h-4 w-4 text-foreground" />
+              </motion.button>
+
+              {/* Page number buttons: first, current ± 1, last */}
+              {Array.from({ length: totalPages }, (_, i) => i + 1)
+                .filter((n) => n === 1 || n === totalPages || Math.abs(n - pageSafe) <= 1)
+                .map((n, i, arr) => (
+                  <div key={n} className="flex items-center gap-2">
+                    {i > 0 && arr[i - 1] !== n - 1 && <span className="text-muted-foreground text-xs px-1">…</span>}
+                    <motion.button
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => setPage(n)}
+                      className={`min-w-[2.25rem] h-9 px-3 rounded-xl shadow-md border text-sm font-display font-bold transition-colors ${
+                        n === pageSafe
+                          ? "gradient-primary text-white border-transparent"
+                          : "bg-card/80 backdrop-blur-xl border-border/30 text-foreground hover:border-primary/30"
+                      }`}
+                    >
+                      {n}
+                    </motion.button>
+                  </div>
+                ))}
+
+              <motion.button
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                disabled={pageSafe === totalPages}
+                className="p-2 rounded-xl bg-card/80 backdrop-blur-xl shadow-md border border-border/30 disabled:opacity-40 disabled:cursor-not-allowed"
+                aria-label="Trang sau"
+              >
+                <ChevronRight className="h-4 w-4 text-foreground" />
+              </motion.button>
+            </div>
+          )}
         </div>
       </PageShell>
     );

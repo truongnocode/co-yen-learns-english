@@ -4,6 +4,7 @@ import { ArrowRight, Rocket, Sparkles, Camera, GraduationCap, Mic, Map, Target }
 import { useNavigate } from "react-router-dom";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "@/hooks/use-toast";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
@@ -15,17 +16,27 @@ const Index = () => {
 
   const handleCTA = useCallback(async () => {
     if (!user) {
-      try { await signInWithGoogle(); } catch { return; }
+      try {
+        await signInWithGoogle();
+      } catch (err) {
+        console.error("Sign-in failed:", err);
+        toast({
+          title: "Đăng nhập thất bại",
+          description: "Vui lòng cho phép popup hoặc thử lại.",
+          variant: "destructive",
+        });
+        return;
+      }
       return;
     }
     if (!grade) { setShowGradeSelect(true); } else { navigate("/dashboard"); }
   }, [user, grade, signInWithGoogle, navigate]);
 
-  const smartNavigate = useCallback(async (path: string) => {
-    if (!user) { try { await signInWithGoogle(); } catch { return; } return; }
-    if (!grade) { setShowGradeSelect(true); return; }
+  // Nav links should always navigate — browsing should NOT require login.
+  // Protected pages handle their own auth gating.
+  const smartNavigate = useCallback((path: string) => {
     navigate(path);
-  }, [user, grade, signInWithGoogle, navigate]);
+  }, [navigate]);
 
   const handleGradeSelected = async (g: number) => {
     await selectGrade(g);

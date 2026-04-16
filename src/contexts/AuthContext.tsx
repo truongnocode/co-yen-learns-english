@@ -1,5 +1,12 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import { onAuthStateChanged, signInWithPopup, signOut, type User } from "firebase/auth";
+import {
+  onAuthStateChanged,
+  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
+  signOut,
+  type User,
+} from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase";
 import { getUserProfile, createUserProfile, setUserGrade, type UserProfile } from "@/lib/progress";
 
@@ -38,6 +45,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   useEffect(() => {
+    // Pick up redirect result on page load (used when popup was blocked and we fell back to redirect).
+    getRedirectResult(auth).catch((err) => {
+      // Ignore cancelled / no-result cases; real failures still surface via the sign-in call.
+      console.warn("getRedirectResult:", err?.code || err);
+    });
     const unsub = onAuthStateChanged(auth, async (u) => {
       setUser(u);
       if (u) {
@@ -51,7 +63,23 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   const signInWithGoogle = async () => {
-    await signInWithPopup(auth, googleProvider);
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch (err: unknown) {
+      const code = (err as { code?: string })?.code;
+      // When the popup is blocked or the user closes it, fall back to a full-page redirect so
+      // sign-in still completes. Other errors (network, cancelled, etc.) bubble up to the caller.
+      if (
+        code === "auth/popup-blocked" ||
+        code === "auth/popup-closed-by-user" ||
+        code === "auth/cancelled-popup-request" ||
+        code === "auth/operation-not-supported-in-this-environment"
+      ) {
+        await signInWithRedirect(auth, googleProvider);
+        return;
+      }
+      throw err;
+    }
   };
 
   const logout = async () => {

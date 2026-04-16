@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 import { UserCircle2, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "@/hooks/use-toast";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -105,7 +106,18 @@ const Navbar = () => {
         ) : (
           <motion.button
             whileTap={{ scale: 0.97 }}
-            onClick={signInWithGoogle}
+            onClick={async () => {
+              try {
+                await signInWithGoogle();
+              } catch (err) {
+                console.error("Sign-in failed:", err);
+                toast({
+                  title: "Đăng nhập thất bại",
+                  description: "Vui lòng cho phép popup hoặc thử lại.",
+                  variant: "destructive",
+                });
+              }
+            }}
             className="relative z-10 bg-primary text-primary-foreground rounded-xl px-4 py-2 text-xs font-bold flex items-center gap-1.5 shadow-sm shrink-0 hover:brightness-110 transition-all active:scale-[0.97]"
           >
             <UserCircle2 className="h-3.5 w-3.5" />

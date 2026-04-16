@@ -26,6 +26,10 @@ test-results/
 playwright-report/
 coverage/
 
+# Batch-import workspace (large intermediates, never commit)
+tmp/
+scripts/run-batch.bat
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

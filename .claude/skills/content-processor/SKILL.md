@@ -1,141 +1,195 @@
 ---
 name: content-processor
 description: >
-  Process educational documents (PDF, DOCX, XLSX) into structured JSON for the
-  co-yen-learns-english web app. Extracts vocabulary, grammar, exercises, reading passages,
-  and mock exams from textbook files (SGK iLearn Smart Start grades 3-5, Global Success
-  grades 6-9, Grade 10 prep) and outputs JSON that matches the Zod schemas in
-  `src/lib/content-schema.ts`. Also generates supplementary exercises when source
-  material is thin. Trigger this skill when the user mentions: "xử lý tài liệu",
-  "import sách", "chuyển đổi nội dung", "process content", "import textbook",
-  "nhập dữ liệu bài học", "xử lý file sách", "thêm đề thi", "thêm unit", "cập nhật dữ
-  liệu sách", "add exam", "add lesson data", or drops a PDF/DOCX/XLSX with English
-  textbook content. Even casual requests like "xử lý cái này cho tôi" or "thêm vào
-  trang web" should trigger this skill.
+  Process Vietnamese English-textbook PDFs, DOCX, and XLSX files into structured JSON
+  for the co-yen-learns-english web app (tienganhcoyen.online). Covers SGK iLearn
+  Smart Start grades 3-5, SGK Global Success grades 6-9, and Grade 10 prep materials.
+  Extracts vocabulary, grammar notes, MCQ exercises, reading passages, cloze tests,
+  sentence-rearrange items, and mock exams. PRESERVES embedded images (signs, diagrams,
+  vocabulary illustrations) and binds them to the correct questions. Validates output
+  against the project's Zod schemas before writing. Trigger on: "xử lý tài liệu",
+  "import sách", "chuyển đổi nội dung", "thêm đề thi", "thêm unit", "process content",
+  "import textbook", "add lesson data", "add exam", or when the user drops a PDF/DOCX/XLSX.
+  Casual prompts like "xử lý cái này cho tôi" or "thêm vào trang web" should also trigger.
 ---
 
-# Content Processor — Docs to JSON Pipeline
+# Content Processor — Textbook to JSON Pipeline
 
-You are a content-extraction engine for co-yen-learns-english. Your job: take raw
-educational documents and produce structured JSON that the React app can consume
-directly (either via Firestore after admin upload, or by merging into the legacy
-`public/data/*.json` files).
+You are the content-extraction engine for co-yen-learns-english, running inside Claude
+Code. Your job: take raw educational documents and produce structured JSON the React
+app can consume directly, with **real embedded images preserved** (no auto-generated
+placeholder icons).
 
-## When this skill runs
+**You ARE the extraction brain.** Helper scripts handle the mechanical work (PDF/DOCX
+parsing, image extraction, schema validation); you do the classification, structuring,
+explanation-writing, and supplementary generation.
 
-Two entry points:
+## Prerequisites (first run only)
 
-1. **Admin panel (production)** — the teacher uploads a file at `/admin/import`.
-   The Cloudflare Worker `workers/content-importer` calls Claude with
-   `output_format: json_schema`, validates the result with Zod, and returns a
-   preview to the admin UI. **You (the skill) are not invoked in this path.**
+Install Python deps for the extractor scripts (one-time):
 
-2. **Local batch (this skill)** — the user runs Claude Code in the repo with a
-   stack of files. You read them, produce JSON, and either:
-   - Save to `public/data/*.json` (bootstrap/fallback dataset), or
-   - Write to Firestore via the helper at `scripts/seed-firestore.ts`.
+```bash
+pip install -r .claude/skills/content-processor/requirements.txt
+```
 
-Both paths produce JSON matching the same schemas.
+This installs `pymupdf4llm` (PDF), `mammoth` (DOCX), `pillow`, `beautifulsoup4`. All
+work on Windows with no GPU.
 
-## Step 1 — Read the source
+Bun is already the project's runtime — no extra install needed for `validate.ts`.
 
-- **PDF** → use the `/pdf` skill
-- **DOCX** → use the `/docx` skill
-- **XLSX** → use the `/xlsx` skill
-- **Raw text** → skip file reading
+## The 7 steps
 
-For long files, feed the file reference directly rather than dumping the whole
-extracted text into prompts — keeps token usage down and quality up.
+### Step 1 — Run the extractor
 
-## Step 2 — Classify content type
+Produce markdown + real images from the source file:
 
-Scan the source and decide which Zod schema from `src/lib/content-schema.ts` applies:
+```bash
+# PDF
+python .claude/skills/content-processor/scripts/extract_pdf.py <input.pdf>
 
-| Source | Schema | Output location |
+# DOCX
+python .claude/skills/content-processor/scripts/extract_docx.py <input.docx>
+
+# XLSX
+# Use the built-in /xlsx skill — no custom wrapper needed.
+```
+
+Output lands in `tmp/extract/<stem>/`:
+- `source.md` — markdown with `![](images/…)` placeholders at correct positions
+- `images/` — real PNG/JPG files extracted from the document
+- `images.json` — per-image metadata (bbox, size, SHA-256)
+- `extraction.json` — summary + `needs_ocr` flag if source is scanned
+
+Read `extraction.json` first. If `needs_ocr: true`, the source is scanned — stop and
+tell the user to provide a text-layer PDF or export from Word (scanned OCR is a future
+enhancement).
+
+If the user pasted raw text instead of a file, skip this step.
+
+### Step 2 — Classify the content type
+
+Scan `source.md` and pick ONE schema from
+[src/lib/content-schema.ts](../../src/lib/content-schema.ts):
+
+| Source looks like | Schema | Output target |
 |---|---|---|
-| Full mock exam (40Q, parts A/B/C) | `ExamSchema` | `public/data/grade10_tests.json` → add new `testN` key |
-| SGK unit (grades 3-9) | `SgkUnitSchema` | `public/data/sgk_eng{grade}_data.json` → add to `units` map |
-| Grade 10 vocabulary topic | `Grade10VocabTopicSchema` | `public/data/grade10_vocab.json` → add topic key |
-| Grade 10 grammar topic | `Grade10GrammarTopicSchema` | `public/data/grade10_grammar.json` → add topic key |
-| Reading comprehension only | `ReadingPassageSchema[]` | `public/data/grade10_reading.json` |
+| SGK unit (grades 3-9), title + vocab + grammar + exercises | `SgkUnitSchema` | `public/data/sgk_eng{grade}_data.json` → `units.{key}` |
+| Mock exam with Parts A/B/C | `ExamSchema` | `public/data/grade10_tests.json` → new `testN` key |
+| Grade 10 vocab topic (MCQ-only) | `Grade10VocabTopicSchema` | `public/data/grade10_vocab.json` → hierarchical key e.g. `"1.1.1"` |
+| Grade 10 grammar topic (MCQ+rearrange+completion+rewrite) | `Grade10GrammarTopicSchema` | `public/data/grade10_grammar.json` → key e.g. `"2.1"` |
+| Reading passages only | `ReadingPassageSchema[]` | `public/data/grade10_reading.json` |
 | Writing prompts only | `WritingPromptSchema[]` | `public/data/grade10_writing.json` |
-| Raw vocab list | `VocabItem[]` | Needs unit assignment — ask user |
+| Raw word list, no structure | `VocabItem[]` | Ask user where to merge |
 
-If ambiguous, ask: "Nội dung này thuộc lớp mấy và loại gì (đề thi / unit SGK / vocab /
-grammar)?"
+If unclear, ask: **"Nội dung này thuộc lớp mấy và loại gì (đề thi / unit SGK / vocab /
+grammar)?"**
 
-## Step 3 — Extract with Claude's structured output
+### Step 3 — Extract per content type
 
-**When working server-side (Worker)**: pass the raw file bytes + the JSON Schema
-derived from the Zod schema. Claude's `output_format: json_schema` enforces the
-shape, so you mostly need a good system prompt and examples.
+Process **one content type at a time**, in this order for full units/exams:
 
-**When working as this skill in Claude Code**: you ARE the extraction engine. Produce
-JSON directly matching the schema. After generation, you MUST run `z.safeParse()` in
-your head (or via a small test script) against the schema — if any field fails, fix
-it before writing.
+1. Title + metadata
+2. Vocabulary list (all items from source first, then supplement to ≥ 35)
+3. Grammar notes (Vietnamese, 200-500 words, with examples)
+4. Exercises (extract from source first, then supplement MCQ to ≥ 20)
+5. Reading passages (verbatim, no paraphrase)
+6. Writing prompts
 
-### Required validations
+**Full playbook + per-type checklist**: [references/prompt_patterns.md](references/prompt_patterns.md)
 
-Every output must pass these checks:
+**Fully-worked examples to match**: [references/extraction_examples.md](references/extraction_examples.md)
 
-1. **MCQ shape**: exactly 4 `opts`, `ans` ∈ 0..3, and `ans` points to the genuinely
-   correct option (verify against grammar rules).
-2. **No empty strings** in required fields (`q`, `en`, `vi`, `title`, `passage`).
-3. **Passages verbatim**: reading/cloze text is copied without paraphrasing.
-4. **Vietnamese explanations**: every MCQ's `explain` field is in Vietnamese, 1-2
-   sentences, says why the correct answer is right. Add explanations for questions
-   that are missing them in the source.
-5. **No duplicates** within the same unit/exam.
-6. **Vocabulary `type`** only uses enum values from the schema: `n`, `v`, `adj`, `adv`,
-   `prep`, `idiom`, `n/v`, `v/n`, `v phr`, `phr`, `conj`, `det`.
+### Step 4 — Handle images
 
-### Minimum counts per SGK unit
+When the markdown has `![](images/p3-2.png)` right before a question, that image
+belongs to that question. Copy the path into the appropriate schema field:
 
-If source is thin, **generate supplementary items** to hit these floors:
+- `McqSchema.image` — question references a diagram/illustration
+- `SignQuestionSchema.image` — exam sign questions (always set)
+- `ReadingPassageSchema.image` — passage header illustration
 
-- Vocabulary: 35 items
-- Exercises: 20 MCQ
-- Grammar notes: 200-500 words Vietnamese with examples
+**Full binding rules + fallback heuristics**: [references/image_handling.md](references/image_handling.md)
 
-Supplementary items must stay within the unit's topic and grammar scope — do not
-drift to unrelated vocabulary.
+**Never auto-generate icons**. If an image is missing from the source, leave the
+`image` field unset — the UI falls back to text-only rendering.
 
-## Step 4 — Merge, don't overwrite
+### Step 5 — Validate
 
-Read the existing JSON file from `public/data/` first, merge the new content, and
-write back.
+Before writing to `public/data/`, run:
 
-**Never overwrite** existing keys unless the user explicitly says "replace test2" or
-similar. Default: add alongside. This is also a project rule
-(`feedback_no_delete_data` in user memory).
-
-**Idempotent runs**: before generating a unit, check if the target unit key already
-exists in the output file with non-trivial content. If yes, skip (log "already
-processed, skipping"). This matches the `feedback_skip_existing` rule.
-
-## Step 5 — Report
-
-```
-✓ Processed: [filename]
-  Kind: [exam | sgk_unit | grade10_vocab | grade10_grammar]
-  Grade: [N] | Unit/Test: [id]
-  Stats: [N vocab, N MCQ, N reading passages, ...]
-  Output: public/data/[filename].json
-  Generated (supplementary): [N items — always reported when > 0]
+```bash
+bun .claude/skills/content-processor/scripts/validate.ts <output.json> --kind <kind>
 ```
 
-If anything was generated (not from source), always call it out so the teacher can
-review.
+Where `<kind>` is one of: `exam | sgk_unit | grade10_vocab | grade10_grammar | reading | writing | vocab_list`.
 
-## References
+Exit 0 = safe to write. Exit 1 = fix the reported errors and re-validate. Do not
+write a file that fails validation.
 
-- Authoritative schemas: [src/lib/content-schema.ts](../../../src/lib/content-schema.ts)
-- App types: [src/data/types.ts](../../../src/data/types.ts)
-- Existing data files (read for format examples):
+### Step 6 — Merge + persist images
+
+**Idempotent check first**: read the target JSON file. If the target key already
+exists with non-trivial content, skip (log `"already processed, skipping"`). To force
+re-generation, the user must explicitly say "replace" or "overwrite".
+
+**Never overwrite** existing keys. Default behavior is ADD alongside. (Matches global
+rules `feedback_no_delete_data` and `feedback_skip_existing`.)
+
+Then:
+
+1. Copy images from `tmp/extract/<stem>/images/*` to a stable webapp location:
+   - SGK: `public/data/images/extracted/sgk{grade}/unit{key}/`
+   - Exam: `public/data/images/extracted/grade10/test{N}/`
+   - Vocab topic: `public/data/images/extracted/grade10/vocab-{key}/`
+   - Grammar topic: `public/data/images/extracted/grade10/grammar-{key}/`
+2. Rewrite `image` paths in the JSON from `images/p3-2.png` → `data/images/extracted/<folder>/<stable-name>.png`.
+3. Merge the JSON entry into the target file.
+4. Write the file back.
+
+### Step 7 — Report
+
+```
+✓ Đã xử lý: <filename>
+  Loại: <kind>
+  Lớp: <N>  |  Unit/Test/Topic: <key>
+  Từ vựng: <N items>  Bài tập: <N MCQ>  Reading: <N>  Writing: <N>
+  Ảnh giữ lại: <N files>  →  public/data/images/extracted/<folder>/
+  Output: public/data/<filename>.json
+  Đã bổ sung (generated): <N items — call out when > 0>
+  Validate: ok
+```
+
+If you generated supplementary items (not from source), **always say so** so the
+teacher can review before pushing to Firestore.
+
+## Pushing to Firestore (optional)
+
+After `public/data/*.json` is updated, the user may want the new content live:
+
+```bash
+node scripts/migrate-json-to-firestore.mjs
+```
+
+Uses `setIfMissing` — safe to re-run, won't overwrite existing Firestore docs.
+
+Images in `public/data/images/extracted/` ship with the static build (GitHub Pages
+deploy) — no separate CDN step needed.
+
+## References (bundled with the skill)
+
+- [references/extraction_examples.md](references/extraction_examples.md) — fully-worked examples for each schema kind
+- [references/prompt_patterns.md](references/prompt_patterns.md) — per-type checklists + self-correction loop
+- [references/image_handling.md](references/image_handling.md) — bbox correlation, filtering, ingest
+
+## External references (project files)
+
+- **Authoritative Zod schemas** → [src/lib/content-schema.ts](../../src/lib/content-schema.ts)
+- **Runtime types** → [src/data/types.ts](../../src/data/types.ts)
+- **Firestore seed script** → [scripts/migrate-json-to-firestore.mjs](../../scripts/migrate-json-to-firestore.mjs)
+- **Existing data files (format examples)**:
   - `public/data/sgk_eng6_data.json` — SGK unit format
-  - `public/data/grade10_vocab.json` — Grade 10 vocab
-  - `public/data/grade10_grammar.json` — Grade 10 grammar
-  - `public/data/grade10_tests.json` — Mock exam
-  - `public/data/grade10_reading.json` — Reading
-  - `public/data/grade10_writing.json` — Writing prompts
+  - `public/data/grade10_tests.json` — mock exam format
+  - `public/data/grade10_vocab.json` — vocab topic format
+  - `public/data/grade10_grammar.json` — grammar topic format
+  - `public/data/grade10_reading.json` — reading passages
+  - `public/data/grade10_writing.json` — writing prompts

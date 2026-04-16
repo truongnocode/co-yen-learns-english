@@ -24,6 +24,14 @@ export const McqSchema = z.object({
     .string()
     .optional()
     .describe("Short Vietnamese explanation of why the correct answer is right"),
+  image: z
+    .string()
+    .optional()
+    .describe(
+      "Optional path to a source-extracted image that belongs to this question, " +
+        "relative to public/ (e.g. 'data/images/extracted/grade10/test3/vocab-5.png'). " +
+        "Set when the question references a diagram, chart, or illustration.",
+    ),
 });
 export type Mcq = z.infer<typeof McqSchema>;
 
@@ -31,7 +39,23 @@ export const VocabItemSchema = z.object({
   en: z.string().min(1),
   ipa: z.string().optional().describe("IPA pronunciation, e.g. '/ˈɑːtɪzæn/'"),
   type: z
-    .enum(["n", "v", "adj", "adv", "prep", "idiom", "n/v", "v/n", "v phr", "phr", "conj", "det"])
+    .enum([
+      "n",
+      "v",
+      "adj",
+      "adv",
+      "prep",
+      "idiom",
+      "conj",
+      "det",
+      "phr",
+      "v phr",
+      "n/v",
+      "v/n",
+      "n/adj",
+      "adj/n",
+      "adj/adv",
+    ])
     .describe("Word class"),
   vi: z.string().min(1).describe("Vietnamese meaning"),
 });
@@ -51,12 +75,27 @@ export type FreeAnswerQuestion = z.infer<typeof FreeAnswerQuestionSchema>;
 export const ReadingPassageSchema = z.object({
   title: z.string().min(1),
   passage: z.string().min(20),
+  image: z
+    .string()
+    .optional()
+    .describe(
+      "Optional header illustration extracted from the source PDF, relative to public/ " +
+        "(e.g. 'data/images/extracted/grade10/test3/reading1-hero.png').",
+    ),
   questions: z.array(McqSchema).min(1),
 });
 export type ReadingPassage = z.infer<typeof ReadingPassageSchema>;
 
 export const SignQuestionSchema = z.object({
   sign: z.string().describe("Sign text or emoji, may contain <b>...</b> HTML for bold"),
+  image: z
+    .string()
+    .optional()
+    .describe(
+      "Path to the extracted sign image, relative to public/ " +
+        "(e.g. 'data/images/extracted/grade10/test3/sign-1.png'). " +
+        "Prefer this over the legacy 'images/signs/*.png' icons for source-based content.",
+    ),
   q: z.string(),
   opts: z.array(z.string()).length(4),
   ans: z.number().int().min(0).max(3),
@@ -128,7 +167,16 @@ export const ExamPartCSchema = z.object({
 
 export const ExamSchema = z.object({
   title: z.string().min(1),
-  grade: z.number().int().min(3).max(12).describe("Target grade level"),
+  grade: z
+    .number()
+    .int()
+    .min(3)
+    .max(12)
+    .optional()
+    .describe(
+      "Target grade level. Optional for legacy grade10_tests.json entries (implicitly 10); " +
+        "new imports should always set this.",
+    ),
   partA: ExamPartASchema,
   partB: ExamPartBSchema,
   partC: ExamPartCSchema.optional(),

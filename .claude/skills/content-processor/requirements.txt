@@ -1,0 +1,12 @@
+# Python deps for content-processor skill — local extraction tools.
+# Install with: pip install -r .claude/skills/content-processor/requirements.txt
+#
+# License note: PyMuPDF / pymupdf4llm are AGPL-3.0 (Artifex commercial license available).
+# We use them only as a local CLI to produce JSON+PNG artifacts that ship with the webapp;
+# the webapp itself does not link or distribute PyMuPDF, so AGPL terms are satisfied.
+
+pymupdf4llm>=0.0.17    # PDF -> Markdown with embedded image extraction (write_images=True)
+pymupdf>=1.24          # Lower-level access for bbox correlation when needed
+mammoth>=1.8           # DOCX -> HTML with embedded image extraction
+beautifulsoup4>=4.12   # Parse mammoth HTML output to walk image-text neighbors
+pillow>=10.0           # PNG/JPG validation, resizing if images are too large

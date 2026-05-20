@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 import { UserCircle2, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-import { toast } from "@/hooks/use-toast";
 
 const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, profile, signInWithGoogle, logout } = useAuth();
+  const { user, profile, logout } = useAuth();
   const [scrolled, setScrolled] = useState(false);
   const grade = profile?.grade;
+  const isGuest = user?.isAnonymous ?? true;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -78,8 +78,8 @@ const Navbar = () => {
           })}
         </nav>
 
-        {/* Auth */}
-        {user ? (
+        {/* Auth: anonymous guest gets a quiet icon; signed-in Google user gets avatar + logout */}
+        {user && !isGuest ? (
           <div className="relative z-10 flex items-center gap-2 shrink-0">
             <button
               onClick={() => navigate("/dashboard")}
@@ -104,26 +104,14 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          <motion.button
-            whileTap={{ scale: 0.97 }}
-            onClick={async () => {
-              try {
-                await signInWithGoogle();
-              } catch (err) {
-                console.error("Sign-in failed:", err);
-                toast({
-                  title: "Đăng nhập thất bại",
-                  description: "Vui lòng cho phép popup hoặc thử lại.",
-                  variant: "destructive",
-                });
-              }
-            }}
-            className="relative z-10 bg-primary text-primary-foreground rounded-xl px-4 py-2 text-xs font-bold flex items-center gap-1.5 shadow-sm shrink-0 hover:brightness-110 transition-all active:scale-[0.97]"
+          <button
+            onClick={() => navigate("/dashboard")}
+            className="relative z-10 flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors shrink-0"
+            title="Trang cá nhân"
           >
-            <UserCircle2 className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Đăng nhập</span>
-            <span className="sm:hidden">Login</span>
-          </motion.button>
+            <UserCircle2 className="h-5 w-5" />
+            <span className="hidden sm:inline text-xs font-bold">Học sinh</span>
+          </button>
         )}
       </div>
     </motion.header>

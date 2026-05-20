@@ -14,7 +14,7 @@ import { useAuth } from "@/contexts/AuthContext";
 type AdminState = "checking" | "granted" | "denied";
 
 export function RequireAdmin({ children }: { children: ReactNode }) {
-  const { user, loading } = useAuth();
+  const { user, loading, signInWithGoogle } = useAuth();
   const [state, setState] = useState<AdminState>("checking");
 
   useEffect(() => {
@@ -39,6 +39,23 @@ export function RequireAdmin({ children }: { children: ReactNode }) {
 
   if (state === "denied") {
     if (!user) return <Navigate to="/" replace />;
+    // Anonymous guest needs to log in with their Google admin account.
+    if (user.isAnonymous) {
+      return (
+        <div className="flex flex-col items-center justify-center min-h-screen gap-4 p-6 text-center">
+          <h1 className="text-xl font-semibold">Cần đăng nhập</h1>
+          <p className="text-sm text-muted-foreground max-w-md">
+            Trang quản trị yêu cầu tài khoản giáo viên có quyền admin.
+          </p>
+          <button
+            onClick={() => signInWithGoogle().catch((err) => console.error("admin sign-in failed:", err))}
+            className="bg-primary text-primary-foreground rounded-xl px-5 py-2.5 text-sm font-bold shadow-sm hover:brightness-110 transition-all"
+          >
+            Đăng nhập với Google
+          </button>
+        </div>
+      );
+    }
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-2 p-6 text-center">
         <h1 className="text-xl font-semibold">Không có quyền</h1>

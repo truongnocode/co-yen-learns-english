@@ -15,19 +15,20 @@ import PetWidget from "@/components/dashboard/PetWidget";
 
 const DashboardPage = () => {
   const navigate = useNavigate();
-  const { user, profile, selectGrade } = useAuth();
+  const { user, profile, selectGrade, loading: authLoading } = useAuth();
   const [progress, setProgress] = useState<UserProgress | null>(null);
   const [loading, setLoading] = useState(true);
   const [showGradeSelect, setShowGradeSelect] = useState(false);
 
   useEffect(() => {
+    if (authLoading) return;
     if (!user) { navigate("/"); return; }
     getProgress(user.uid).then(async (p) => {
       // Check and update daily streak
       const { streak } = await checkAndUpdateStreak(user.uid, p);
       setProgress({ ...p, dailyStreak: streak, lastActiveDate: new Date().toISOString().slice(0, 10) });
     }).catch(() => {}).finally(() => setLoading(false));
-  }, [user, navigate]);
+  }, [user, authLoading, navigate]);
 
   useEffect(() => {
     if (user && profile && !profile.grade) {

@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import {
   onAuthStateChanged,
+  signInAnonymously,
   signInWithPopup,
   signInWithRedirect,
   getRedirectResult,
@@ -50,13 +51,28 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       // Ignore cancelled / no-result cases; real failures still surface via the sign-in call.
       console.warn("getRedirectResult:", err?.code || err);
     });
+    let anonInFlight = false;
     const unsub = onAuthStateChanged(auth, async (u) => {
-      setUser(u);
-      if (u) {
-        await loadProfile(u);
-      } else {
-        setProfile(null);
+      if (!u) {
+        // Guest mode: any visitor without a Google session gets an anonymous Firebase
+        // identity so progress, pet, etc. work device-locally without an explicit login.
+        // The auth state listener will fire again once signInAnonymously completes.
+        if (anonInFlight) return;
+        anonInFlight = true;
+        try {
+          await signInAnonymously(auth);
+        } catch (err) {
+          anonInFlight = false;
+          console.warn("anonymous sign-in failed:", err);
+          setUser(null);
+          setProfile(null);
+          setLoading(false);
+        }
+        return;
       }
+      anonInFlight = false;
+      setUser(u);
+      await loadProfile(u);
       setLoading(false);
     });
     return unsub;

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, Send, ChevronRight, Home, Trophy, Lightbulb, Search, X, ChevronLeft } from "lucide-react";
@@ -50,8 +50,19 @@ const shortTitle = (title: string): string => {
 
 const PAGE_SIZE = 24;
 
+// Curated collections of test keys grouped by source/publisher.
+const COLLECTIONS: Record<string, { title: string; subtitle: string; keys: string[] }> = {
+  "du-doan-ninh-binh": {
+    title: "25 Đề Dự Đoán Vào 10 Ninh Bình",
+    subtitle: "Ms Mai Phương · 2026-2027",
+    keys: Array.from({ length: 17 }, (_, i) => `test${601 + i}`),
+  },
+};
+
 const Grade10TestsPage = () => {
   const navigate = useNavigate();
+  const { collection } = useParams<{ collection?: string }>();
+  const activeCollection = collection ? COLLECTIONS[collection] : undefined;
   const [data, setData] = useState<Record<string, TestData> | null>(null);
   const [loading, setLoading] = useState(true);
   const [selectedTest, setSelectedTest] = useState<string | null>(null);
@@ -68,7 +79,12 @@ const Grade10TestsPage = () => {
 
   const allTests = useMemo(() => {
     if (!data) return [] as [string, TestData][];
-    return Object.entries(data).sort(([a], [b]) => {
+    const entries = activeCollection
+      ? activeCollection.keys
+          .filter((k) => data[k])
+          .map((k) => [k, data[k]] as [string, TestData])
+      : Object.entries(data);
+    return entries.sort(([a], [b]) => {
       // Sort by numeric suffix: test001, test002, ... test1, test2, ... legacy at the end.
       const na = parseInt(a.replace(/^test/, ""), 10);
       const nb = parseInt(b.replace(/^test/, ""), 10);
@@ -77,7 +93,7 @@ const Grade10TestsPage = () => {
       if (isNaN(nb)) return -1;
       return na - nb;
     });
-  }, [data]);
+  }, [data, activeCollection]);
 
   const filtered = useMemo(() => {
     if (!query.trim()) return allTests;
@@ -105,13 +121,13 @@ const Grade10TestsPage = () => {
       <PageShell>
         <div className="max-w-5xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-6">
-            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
+            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(activeCollection ? "/grade/10/tests" : "/grade/10")}
               className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
               <ArrowLeft className="h-5 w-5" />
             </motion.button>
             <div className="flex-1">
               <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
-              <p className="text-xs text-muted-foreground">Đề thi thử</p>
+              <p className="text-xs text-muted-foreground">{activeCollection ? activeCollection.title : "Đề thi thử"}</p>
             </div>
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
               className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
@@ -123,8 +139,12 @@ const Grade10TestsPage = () => {
             className="gradient-orange-card text-white rounded-3xl p-6 mb-6 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
             <ClipboardList className="h-8 w-8 mb-2 opacity-80 relative z-10" />
-            <h1 className="font-display font-extrabold text-2xl relative z-10">Đề thi thử vào 10</h1>
-            <p className="text-white/70 text-sm relative z-10">{allTests.length} đề thi từ các trường THCS</p>
+            <h1 className="font-display font-extrabold text-2xl relative z-10">{activeCollection ? activeCollection.title : "Đề thi thử vào 10"}</h1>
+            <p className="text-white/70 text-sm relative z-10">
+              {activeCollection
+                ? `${activeCollection.subtitle} · ${allTests.length} đề`
+                : `${allTests.length} đề thi từ các trường THCS`}
+            </p>
           </motion.div>
 
           {/* Search bar */}

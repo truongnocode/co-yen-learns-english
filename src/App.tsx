@@ -53,6 +53,7 @@ const App = () => (
           <Route path="/grade/10/grammar" element={<Grade10GrammarPage />} />
           <Route path="/grade/10/exercises" element={<Grade10ReadingPage />} />
           <Route path="/grade/10/tests" element={<Grade10TestsPage />} />
+          <Route path="/grade/10/tests/:collection" element={<Grade10TestsPage />} />
           <Route path="/grade/10/writing" element={<Grade10WritingPage />} />
           <Route path="/grade/:gradeId" element={<GradePage />} />
           <Route path="/grade/:gradeId/vocab/:unitKey" element={<VocabPage />} />

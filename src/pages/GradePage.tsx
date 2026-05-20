@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine } from "lucide-react";
+import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine, Sparkles } from "lucide-react";
 import { gradeConfig, type SGKData } from "@/data/types";
 import { loadSGKData } from "@/data/loader";
 import PageShell from "@/components/PageShell";
@@ -121,6 +121,34 @@ const GradePage = () => {
               </motion.button>
             ))}
           </div>
+
+          {/* 25 Đề Dự Đoán Ninh Bình — featured collection */}
+          <motion.button
+            initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ ...smooth, delay: 0.45 }}
+            whileHover={{ scale: 1.02, y: -3 }}
+            whileTap={{ scale: 0.97 }}
+            onClick={() => navigate("/grade/10/tests/du-doan-ninh-binh")}
+            className="w-full mt-4 relative rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500 text-left"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500" />
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
+            <div className="relative z-10 p-6 flex items-center gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
+                <Sparkles className="h-7 w-7 text-white" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-display font-extrabold text-xl text-white">25 Đề Dự Đoán Vào 10 Ninh Bình</h3>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">New</span>
+                </div>
+                <p className="text-white/75 text-sm">Ms Mai Phương · Năm học 2026-2027 · 17 đề đã ra mắt</p>
+              </div>
+              <ArrowLeft className="h-5 w-5 text-white/50 rotate-180 flex-shrink-0" />
+            </div>
+          </motion.button>
 
           {/* Camera tương tác — full-width highlight card */}
           <motion.button

@@ -30,6 +30,11 @@ coverage/
 tmp/
 scripts/run-batch.bat
 
+# TuDien deliverables (generated outputs, do not commit; the TuDien_make_docx*.cjs generator scripts ARE committed)
+TuDien_*.docx
+TuDien_*.json
+TuDien_*.csv
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

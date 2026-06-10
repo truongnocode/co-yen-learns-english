@@ -5,176 +5,211 @@
       "vocabulary": [
         {
           "en": "hobby",
+          "ipa": "/ˈhɒbi/",
           "type": "n",
           "vi": "sở thích"
         },
         {
           "en": "arranging flowers",
+          "ipa": "/əˈreɪndʒɪŋ ˈflaʊəz/",
           "type": "n",
           "vi": "cắm hoa"
         },
         {
           "en": "bird-watching",
+          "ipa": "/ˈbɜːd wɒtʃɪŋ/",
           "type": "n",
           "vi": "quan sát chim"
         },
         {
           "en": "board game",
+          "ipa": "/ˈbɔːd ɡeɪm/",
           "type": "n",
           "vi": "trò chơi trên bàn cờ"
         },
         {
           "en": "collecting",
+          "ipa": "/kəˈlektɪŋ/",
           "type": "n",
           "vi": "sưu tập"
         },
         {
           "en": "cooking",
+          "ipa": "/ˈkʊkɪŋ/",
           "type": "n",
           "vi": "nấu ăn"
         },
         {
           "en": "cycling",
+          "ipa": "/ˈsaɪklɪŋ/",
           "type": "n",
           "vi": "đạp xe"
         },
         {
           "en": "dancing",
+          "ipa": "/ˈdɑːnsɪŋ/",
           "type": "n",
           "vi": "nhảy múa"
         },
         {
           "en": "drawing",
+          "ipa": "/ˈdrɔːɪŋ/",
           "type": "n",
           "vi": "vẽ"
         },
         {
           "en": "gardening",
+          "ipa": "/ˈɡɑːdnɪŋ/",
           "type": "n",
           "vi": "làm vườn"
         },
         {
           "en": "ice-skating",
+          "ipa": "/ˈaɪs skeɪtɪŋ/",
           "type": "n",
           "vi": "trượt băng"
         },
         {
           "en": "painting",
+          "ipa": "/ˈpeɪntɪŋ/",
           "type": "n",
           "vi": "vẽ tranh"
         },
         {
           "en": "photography",
+          "ipa": "/fəˈtɒɡrəfi/",
           "type": "n",
           "vi": "nhiếp ảnh"
         },
         {
           "en": "reading",
+          "ipa": "/ˈriːdɪŋ/",
           "type": "n",
           "vi": "đọc sách"
         },
         {
           "en": "swimming",
+          "ipa": "/ˈswɪmɪŋ/",
           "type": "n",
           "vi": "bơi lội"
         },
         {
           "en": "carve",
+          "ipa": "/kɑːv/",
           "type": "v",
           "vi": "chạm, khắc"
         },
         {
           "en": "collect",
+          "ipa": "/kəˈlekt/",
           "type": "v",
           "vi": "sưu tập"
         },
         {
           "en": "enjoy",
+          "ipa": "/ɪnˈdʒɔɪ/",
           "type": "v",
           "vi": "thích, tận hưởng"
         },
         {
           "en": "find",
+          "ipa": "/faɪnd/",
           "type": "v",
           "vi": "tìm thấy"
         },
         {
           "en": "join",
+          "ipa": "/dʒɔɪn/",
           "type": "v",
           "vi": "tham gia"
         },
         {
           "en": "share",
+          "ipa": "/ʃeə/",
           "type": "v",
           "vi": "chia sẻ"
         },
         {
           "en": "eggshell",
+          "ipa": "/ˈeɡʃel/",
           "type": "n",
           "vi": "vỏ trứng"
         },
         {
           "en": "collage",
+          "ipa": "/ˈkɒlɑːʒ/",
           "type": "n",
           "vi": "tranh cắt dán"
         },
         {
           "en": "model",
+          "ipa": "/ˈmɒdl/",
           "type": "n",
           "vi": "mô hình"
         },
         {
           "en": "unusual",
+          "ipa": "/ʌnˈjuːʒuəl/",
           "type": "adj",
           "vi": "khác thường"
         },
         {
           "en": "common",
+          "ipa": "/ˈkɒmən/",
           "type": "adj",
           "vi": "phổ biến"
         },
         {
           "en": "creative",
+          "ipa": "/kriˈeɪtɪv/",
           "type": "adj",
           "vi": "sáng tạo"
         },
         {
           "en": "difficult",
+          "ipa": "/ˈdɪfɪkəlt/",
           "type": "adj",
           "vi": "khó"
         },
         {
           "en": "easy",
+          "ipa": "/ˈiːzi/",
           "type": "adj",
           "vi": "dễ"
         },
         {
           "en": "exciting",
+          "ipa": "/ɪkˈsaɪtɪŋ/",
           "type": "adj",
           "vi": "thú vị"
         },
         {
           "en": "free",
+          "ipa": "/friː/",
           "type": "adj",
           "vi": "rảnh rỗi"
         },
         {
           "en": "interesting",
+          "ipa": "/ˈɪntrəstɪŋ/",
           "type": "adj",
           "vi": "thú vị, hấp dẫn"
         },
         {
           "en": "patient",
+          "ipa": "/ˈpeɪʃnt/",
           "type": "adj",
           "vi": "kiên nhẫn"
         },
         {
           "en": "a piece of cake",
+          "ipa": "/ə piːs əv keɪk/",
           "type": "idiom",
           "vi": "dễ ợt"
         },
         {
           "en": "spare time",
+          "ipa": "/speə taɪm/",
           "type": "n",
           "vi": "thời gian rảnh"
         }
@@ -432,176 +467,211 @@
       "vocabulary": [
         {
           "en": "healthy",
+          "ipa": "/ˈhelθi/",
           "type": "adj",
           "vi": "khỏe mạnh"
         },
         {
           "en": "sunburn",
+          "ipa": "/ˈsʌnbɜːn/",
           "type": "n",
           "vi": "cháy nắng"
         },
         {
           "en": "suncream",
+          "ipa": "/ˈsʌnkriːm/",
           "type": "n",
           "vi": "kem chống nắng"
         },
         {
           "en": "lip balm",
+          "ipa": "/lɪp bɑːm/",
           "type": "n",
           "vi": "son dưỡng môi"
         },
         {
           "en": "chapped",
+          "ipa": "/tʃæpt/",
           "type": "adj",
           "vi": "nứt nẻ"
         },
         {
           "en": "acne",
+          "ipa": "/ˈækni/",
           "type": "n",
           "vi": "mụn trứng cá"
         },
         {
           "en": "pimple",
+          "ipa": "/ˈpɪmpl/",
           "type": "n",
           "vi": "mụn nhọt"
         },
         {
           "en": "diet",
+          "ipa": "/ˈdaɪət/",
           "type": "n",
           "vi": "chế độ ăn uống"
         },
         {
           "en": "disease",
+          "ipa": "/dɪˈziːz/",
           "type": "n",
           "vi": "bệnh tật"
         },
         {
           "en": "exercise",
+          "ipa": "/ˈeksəsaɪz/",
           "type": "n/v",
           "vi": "tập thể dục, bài tập"
         },
         {
           "en": "outdoor",
+          "ipa": "/ˈaʊtdɔː/",
           "type": "adj",
           "vi": "ngoài trời"
         },
         {
           "en": "indoor",
+          "ipa": "/ˈɪndɔː/",
           "type": "adj",
           "vi": "trong nhà"
         },
         {
           "en": "countryside",
+          "ipa": "/ˈkʌntrisaɪd/",
           "type": "n",
           "vi": "nông thôn, miền quê"
         },
         {
           "en": "neighbourhood",
+          "ipa": "/ˈneɪbəhʊd/",
           "type": "n",
           "vi": "khu dân cư, hàng xóm"
         },
         {
           "en": "dim",
+          "ipa": "/dɪm/",
           "type": "adj",
           "vi": "mờ, tối"
         },
         {
           "en": "soft drink",
+          "ipa": "/sɒft drɪŋk/",
           "type": "n",
           "vi": "nước ngọt có ga"
         },
         {
           "en": "fast food",
+          "ipa": "/fɑːst fuːd/",
           "type": "n",
           "vi": "đồ ăn nhanh"
         },
         {
           "en": "avoid",
+          "ipa": "/əˈvɔɪd/",
           "type": "v",
           "vi": "tránh"
         },
         {
           "en": "affect",
+          "ipa": "/əˈfekt/",
           "type": "v",
           "vi": "ảnh hưởng"
         },
         {
           "en": "fit",
+          "ipa": "/fɪt/",
           "type": "adj",
           "vi": "khỏe mạnh, cân đối"
         },
         {
           "en": "harmful",
+          "ipa": "/ˈhɑːmfl/",
           "type": "adj",
           "vi": "có hại"
         },
         {
           "en": "habit",
+          "ipa": "/ˈhæbɪt/",
           "type": "n",
           "vi": "thói quen"
         },
         {
           "en": "surroundings",
+          "ipa": "/səˈraʊndɪŋz/",
           "type": "n",
           "vi": "môi trường xung quanh"
         },
         {
           "en": "eyedrops",
+          "ipa": "/ˈaɪdrɒps/",
           "type": "n",
           "vi": "thuốc nhỏ mắt"
         },
         {
           "en": "overweight",
+          "ipa": "/ˌəʊvəˈweɪt/",
           "type": "adj",
           "vi": "thừa cân"
         },
         {
           "en": "stay healthy",
+          "ipa": "/steɪ ˈhelθi/",
           "type": "v phr",
           "vi": "giữ gìn sức khỏe"
         },
         {
           "en": "catch a cold",
+          "ipa": "/kætʃ ə kəʊld/",
           "type": "v phr",
           "vi": "bị cảm lạnh"
         },
         {
           "en": "work out",
+          "ipa": "/wɜːk ˈaʊt/",
           "type": "v phr",
           "vi": "tập thể dục"
         },
         {
           "en": "put on",
+          "ipa": "/pʊt ɒn/",
           "type": "v phr",
           "vi": "bôi, thoa (kem)"
         },
         {
           "en": "cut down on",
+          "ipa": "/kʌt daʊn ɒn/",
           "type": "v phr",
           "vi": "cắt giảm"
         },
         {
           "en": "keep clean",
+          "ipa": "/kiːp kliːn/",
           "type": "v phr",
           "vi": "giữ sạch sẽ"
         },
         {
           "en": "allergy",
+          "ipa": "/ˈælədʒi/",
           "type": "n",
           "vi": "dị ứng"
         },
         {
           "en": "serious",
+          "ipa": "/ˈsɪəriəs/",
           "type": "adj",
           "vi": "nghiêm trọng"
         },
         {
           "en": "injury",
+          "ipa": "/ˈɪndʒəri/",
           "type": "n",
           "vi": "chấn thương"
         },
         {
           "en": "medicine",
+          "ipa": "/ˈmedsn/",
           "type": "n",
           "vi": "thuốc"
         }
@@ -859,151 +929,181 @@
       "vocabulary": [
         {
           "en": "community",
+          "ipa": "/kəˈmjuːnəti/",
           "type": "n",
           "vi": "cộng đồng"
         },
         {
           "en": "volunteer",
+          "ipa": "/ˌvɒlənˈtɪə/",
           "type": "n/v",
           "vi": "tình nguyện viên, tình nguyện"
         },
         {
           "en": "donate",
+          "ipa": "/dəʊˈneɪt/",
           "type": "v",
           "vi": "quyên góp, tặng"
         },
         {
           "en": "homeless",
+          "ipa": "/ˈhəʊmləs/",
           "type": "adj",
           "vi": "vô gia cư"
         },
         {
           "en": "elderly",
+          "ipa": "/ˈeldəli/",
           "type": "adj/n",
           "vi": "người cao tuổi"
         },
         {
           "en": "orphanage",
+          "ipa": "/ˈɔːfənɪdʒ/",
           "type": "n",
           "vi": "trại trẻ mồ côi"
         },
         {
           "en": "plant",
+          "ipa": "/plɑːnt/",
           "type": "v",
           "vi": "trồng (cây)"
         },
         {
           "en": "recycle",
+          "ipa": "/ˌriːˈsaɪkl/",
           "type": "v",
           "vi": "tái chế"
         },
         {
           "en": "tutor",
+          "ipa": "/ˈtjuːtə/",
           "type": "n/v",
           "vi": "gia sư, dạy kèm"
         },
         {
           "en": "exchange",
+          "ipa": "/ɪksˈtʃeɪndʒ/",
           "type": "v",
           "vi": "trao đổi"
         },
         {
           "en": "rural",
+          "ipa": "/ˈrʊərəl/",
           "type": "adj",
           "vi": "thuộc nông thôn"
         },
         {
           "en": "mountainous",
+          "ipa": "/ˈmaʊntɪnəs/",
           "type": "adj",
           "vi": "miền núi"
         },
         {
           "en": "flooded",
+          "ipa": "/ˈflʌdɪd/",
           "type": "adj",
           "vi": "bị ngập lụt"
         },
         {
           "en": "lonely",
+          "ipa": "/ˈləʊnli/",
           "type": "adj",
           "vi": "cô đơn"
         },
         {
           "en": "patient",
+          "ipa": "/ˈpeɪʃnt/",
           "type": "adj",
           "vi": "kiên nhẫn"
         },
         {
           "en": "fantastic",
+          "ipa": "/fænˈtæstɪk/",
           "type": "adj",
           "vi": "tuyệt vời"
         },
         {
           "en": "neighbourhood",
+          "ipa": "/ˈneɪbəhʊd/",
           "type": "n",
           "vi": "khu phố, hàng xóm"
         },
         {
           "en": "feed",
+          "ipa": "/fiːd/",
           "type": "v",
           "vi": "cho ăn"
         },
         {
           "en": "water",
+          "ipa": "/ˈwɔːtə/",
           "type": "v",
           "vi": "tưới nước"
         },
         {
           "en": "clean up",
+          "ipa": "/kliːn ˈʌp/",
           "type": "v phr",
           "vi": "dọn dẹp sạch sẽ"
         },
         {
           "en": "pick up",
+          "ipa": "/pɪk ˈʌp/",
           "type": "v phr",
           "vi": "nhặt lên"
         },
         {
           "en": "lend a hand",
+          "ipa": "/lend ə hænd/",
           "type": "v phr",
           "vi": "giúp một tay"
         },
         {
           "en": "get involved",
+          "ipa": "/ɡet ɪnˈvɒlvd/",
           "type": "v phr",
           "vi": "tham gia vào"
         },
         {
           "en": "give back",
+          "ipa": "/ɡɪv bæk/",
           "type": "v phr",
           "vi": "đền đáp, trả lại"
         },
         {
           "en": "provide",
+          "ipa": "/prəˈvaɪd/",
           "type": "v",
           "vi": "cung cấp"
         },
         {
           "en": "benefit",
+          "ipa": "/ˈbenɪfɪt/",
           "type": "n/v",
           "vi": "lợi ích, mang lại lợi ích"
         },
         {
           "en": "charity",
+          "ipa": "/ˈtʃærəti/",
           "type": "n",
           "vi": "từ thiện"
         },
         {
           "en": "disabled",
+          "ipa": "/dɪsˈeɪbld/",
           "type": "adj",
           "vi": "khuyết tật"
         },
         {
           "en": "fortunate",
+          "ipa": "/ˈfɔːtʃənət/",
           "type": "adj",
           "vi": "may mắn"
         },
         {
           "en": "generous",
+          "ipa": "/ˈdʒenərəs/",
           "type": "adj",
           "vi": "hào phóng"
         }
@@ -1261,151 +1361,181 @@
       "vocabulary": [
         {
           "en": "classical music",
+          "ipa": "/ˈklæsɪkl ˈmjuːzɪk/",
           "type": "n",
           "vi": "nhạc cổ điển"
         },
         {
           "en": "folk music",
+          "ipa": "/fəʊk ˈmjuːzɪk/",
           "type": "n",
           "vi": "nhạc dân gian"
         },
         {
           "en": "pop music",
+          "ipa": "/pɒp ˈmjuːzɪk/",
           "type": "n",
           "vi": "nhạc pop"
         },
         {
           "en": "rock music",
+          "ipa": "/rɒk ˈmjuːzɪk/",
           "type": "n",
           "vi": "nhạc rock"
         },
         {
           "en": "concert",
+          "ipa": "/ˈkɒnsət/",
           "type": "n",
           "vi": "buổi hòa nhạc"
         },
         {
           "en": "gallery",
+          "ipa": "/ˈɡæləri/",
           "type": "n",
           "vi": "phòng trưng bày"
         },
         {
           "en": "exhibition",
+          "ipa": "/ˌeksɪˈbɪʃn/",
           "type": "n",
           "vi": "triển lãm"
         },
         {
           "en": "instrument",
+          "ipa": "/ˈɪnstrəmənt/",
           "type": "n",
           "vi": "nhạc cụ"
         },
         {
           "en": "sculpture",
+          "ipa": "/ˈskʌlptʃə/",
           "type": "n",
           "vi": "tác phẩm điêu khắc"
         },
         {
           "en": "portrait",
+          "ipa": "/ˈpɔːtrɪt/",
           "type": "n",
           "vi": "chân dung"
         },
         {
           "en": "landscape",
+          "ipa": "/ˈlændskeɪp/",
           "type": "n",
           "vi": "phong cảnh"
         },
         {
           "en": "puppet",
+          "ipa": "/ˈpʌpɪt/",
           "type": "n",
           "vi": "con rối"
         },
         {
           "en": "anthem",
+          "ipa": "/ˈænθəm/",
           "type": "n",
           "vi": "quốc ca, bài ca"
         },
         {
           "en": "compose",
+          "ipa": "/kəmˈpəʊz/",
           "type": "v",
           "vi": "sáng tác"
         },
         {
           "en": "perform",
+          "ipa": "/pəˈfɔːm/",
           "type": "v",
           "vi": "biểu diễn, trình diễn"
         },
         {
           "en": "originate",
+          "ipa": "/əˈrɪdʒɪneɪt/",
           "type": "v",
           "vi": "bắt nguồn"
         },
         {
           "en": "prefer",
+          "ipa": "/prɪˈfɜː/",
           "type": "v",
           "vi": "thích hơn"
         },
         {
           "en": "character",
+          "ipa": "/ˈkærəktə/",
           "type": "n",
           "vi": "nhân vật"
         },
         {
           "en": "festival",
+          "ipa": "/ˈfestɪvl/",
           "type": "n",
           "vi": "lễ hội"
         },
         {
           "en": "melody",
+          "ipa": "/ˈmelədi/",
           "type": "n",
           "vi": "giai điệu"
         },
         {
           "en": "rhythm",
+          "ipa": "/ˈrɪðəm/",
           "type": "n",
           "vi": "nhịp điệu"
         },
         {
           "en": "lyrics",
+          "ipa": "/ˈlɪrɪks/",
           "type": "n",
           "vi": "lời bài hát"
         },
         {
           "en": "genre",
+          "ipa": "/ˈʒɒnrə/",
           "type": "n",
           "vi": "thể loại"
         },
         {
           "en": "solo",
+          "ipa": "/ˈsəʊləʊ/",
           "type": "n/adj",
           "vi": "đơn ca, solo"
         },
         {
           "en": "chorus",
+          "ipa": "/ˈkɔːrəs/",
           "type": "n",
           "vi": "điệp khúc, hợp xướng"
         },
         {
           "en": "creative",
+          "ipa": "/kriˈeɪtɪv/",
           "type": "adj",
           "vi": "sáng tạo"
         },
         {
           "en": "traditional",
+          "ipa": "/trəˈdɪʃənl/",
           "type": "adj",
           "vi": "truyền thống"
         },
         {
           "en": "modern",
+          "ipa": "/ˈmɒdn/",
           "type": "adj",
           "vi": "hiện đại"
         },
         {
           "en": "talented",
+          "ipa": "/ˈtæləntɪd/",
           "type": "adj",
           "vi": "tài năng"
         },
         {
           "en": "spare time",
+          "ipa": "/speə taɪm/",
           "type": "n",
           "vi": "thời gian rảnh"
         }
@@ -1663,176 +1793,211 @@
       "vocabulary": [
         {
           "en": "beef",
+          "ipa": "/biːf/",
           "type": "n",
           "vi": "thịt bò"
         },
         {
           "en": "pork",
+          "ipa": "/pɔːk/",
           "type": "n",
           "vi": "thịt lợn"
         },
         {
           "en": "chicken",
+          "ipa": "/ˈtʃɪkɪn/",
           "type": "n",
           "vi": "thịt gà"
         },
         {
           "en": "shrimp",
+          "ipa": "/ʃrɪmp/",
           "type": "n",
           "vi": "tôm"
         },
         {
           "en": "tofu",
+          "ipa": "/ˈtəʊfuː/",
           "type": "n",
           "vi": "đậu phụ"
         },
         {
           "en": "noodles",
+          "ipa": "/ˈnuːdlz/",
           "type": "n",
           "vi": "mì, bún, phở"
         },
         {
           "en": "pancake",
+          "ipa": "/ˈpænkeɪk/",
           "type": "n",
           "vi": "bánh xèo, bánh kếp"
         },
         {
           "en": "spring roll",
+          "ipa": "/sprɪŋ rəʊl/",
           "type": "n",
           "vi": "chả giò, nem cuốn"
         },
         {
           "en": "omelette",
+          "ipa": "/ˈɒmlɪt/",
           "type": "n",
           "vi": "trứng tráng"
         },
         {
           "en": "ingredient",
+          "ipa": "/ɪnˈɡriːdiənt/",
           "type": "n",
           "vi": "nguyên liệu"
         },
         {
           "en": "recipe",
+          "ipa": "/ˈresɪpi/",
           "type": "n",
           "vi": "công thức nấu ăn"
         },
         {
           "en": "spice",
+          "ipa": "/spaɪs/",
           "type": "n",
           "vi": "gia vị"
         },
         {
           "en": "sauce",
+          "ipa": "/sɔːs/",
           "type": "n",
           "vi": "nước sốt"
         },
         {
           "en": "turmeric",
+          "ipa": "/ˈtɜːmərɪk/",
           "type": "n",
           "vi": "nghệ"
         },
         {
           "en": "lemongrass",
+          "ipa": "/ˈlemənɡrɑːs/",
           "type": "n",
           "vi": "sả"
         },
         {
           "en": "pepper",
+          "ipa": "/ˈpepə/",
           "type": "n",
           "vi": "tiêu, ớt"
         },
         {
           "en": "onion",
+          "ipa": "/ˈʌnjən/",
           "type": "n",
           "vi": "hành"
         },
         {
           "en": "garlic",
+          "ipa": "/ˈɡɑːlɪk/",
           "type": "n",
           "vi": "tỏi"
         },
         {
           "en": "slice",
+          "ipa": "/slaɪs/",
           "type": "v/n",
           "vi": "cắt lát, lát"
         },
         {
           "en": "stir-fry",
+          "ipa": "/ˈstɜː fraɪ/",
           "type": "v",
           "vi": "xào"
         },
         {
           "en": "steam",
+          "ipa": "/stiːm/",
           "type": "v",
           "vi": "hấp"
         },
         {
           "en": "boil",
+          "ipa": "/bɔɪl/",
           "type": "v",
           "vi": "luộc, đun sôi"
         },
         {
           "en": "grill",
+          "ipa": "/ɡrɪl/",
           "type": "v",
           "vi": "nướng"
         },
         {
           "en": "fry",
+          "ipa": "/fraɪ/",
           "type": "v",
           "vi": "chiên, rán"
         },
         {
           "en": "pour",
+          "ipa": "/pɔː/",
           "type": "v",
           "vi": "rót, đổ"
         },
         {
           "en": "mix",
+          "ipa": "/mɪks/",
           "type": "v",
           "vi": "trộn"
         },
         {
           "en": "delicious",
+          "ipa": "/dɪˈlɪʃəs/",
           "type": "adj",
           "vi": "ngon"
         },
         {
           "en": "tasty",
+          "ipa": "/ˈteɪsti/",
           "type": "adj",
           "vi": "ngon, có vị"
         },
         {
           "en": "sour",
+          "ipa": "/ˈsaʊə/",
           "type": "adj",
           "vi": "chua"
         },
         {
           "en": "salty",
+          "ipa": "/ˈsɔːlti/",
           "type": "adj",
           "vi": "mặn"
         },
         {
           "en": "sweet",
+          "ipa": "/swiːt/",
           "type": "adj",
           "vi": "ngọt"
         },
         {
           "en": "bitter",
+          "ipa": "/ˈbɪtə/",
           "type": "adj",
           "vi": "đắng"
         },
         {
           "en": "spicy",
+          "ipa": "/ˈspaɪsi/",
           "type": "adj",
           "vi": "cay"
         },
         {
           "en": "dish",
+          "ipa": "/dɪʃ/",
           "type": "n",
           "vi": "món ăn"
         },
         {
           "en": "snack",
+          "ipa": "/snæk/",
           "type": "n",
           "vi": "đồ ăn nhẹ"
         }
@@ -2090,151 +2255,181 @@
       "vocabulary": [
         {
           "en": "entrance examination",
+          "ipa": "/ˈentrəns ɪɡˌzæmɪˈneɪʃn/",
           "type": "n",
           "vi": "kỳ thi tuyển sinh"
         },
         {
           "en": "midterm test",
+          "ipa": "/ˈmɪdtɜːm test/",
           "type": "n",
           "vi": "bài kiểm tra giữa kỳ"
         },
         {
           "en": "gifted",
+          "ipa": "/ˈɡɪftɪd/",
           "type": "adj",
           "vi": "có năng khiếu"
         },
         {
           "en": "facility",
+          "ipa": "/fəˈsɪləti/",
           "type": "n",
           "vi": "cơ sở vật chất"
         },
         {
           "en": "intelligent",
+          "ipa": "/ɪnˈtelɪdʒənt/",
           "type": "adj",
           "vi": "thông minh"
         },
         {
           "en": "lower secondary school",
+          "ipa": "/ˈləʊə ˈsekəndri skuːl/",
           "type": "n",
           "vi": "trường trung học cơ sở"
         },
         {
           "en": "classmate",
+          "ipa": "/ˈklɑːsmeɪt/",
           "type": "n",
           "vi": "bạn cùng lớp"
         },
         {
           "en": "school library",
+          "ipa": "/skuːl ˈlaɪbrəri/",
           "type": "n",
           "vi": "thư viện trường"
         },
         {
           "en": "project",
+          "ipa": "/ˈprɒdʒekt/",
           "type": "n",
           "vi": "dự án, đề tài"
         },
         {
           "en": "remind",
+          "ipa": "/rɪˈmaɪnd/",
           "type": "v",
           "vi": "nhắc nhở"
         },
         {
           "en": "modern",
+          "ipa": "/ˈmɒdn/",
           "type": "adj",
           "vi": "hiện đại"
         },
         {
           "en": "pass",
+          "ipa": "/pɑːs/",
           "type": "v",
           "vi": "đỗ, vượt qua"
         },
         {
           "en": "break time",
+          "ipa": "/breɪk taɪm/",
           "type": "n",
           "vi": "giờ ra chơi"
         },
         {
           "en": "board",
+          "ipa": "/bɔːd/",
           "type": "n",
           "vi": "bảng"
         },
         {
           "en": "teach",
+          "ipa": "/tiːtʃ/",
           "type": "v",
           "vi": "dạy"
         },
         {
           "en": "lesson",
+          "ipa": "/ˈlesn/",
           "type": "n",
           "vi": "bài học"
         },
         {
           "en": "grade",
+          "ipa": "/ɡreɪd/",
           "type": "n",
           "vi": "lớp, điểm số"
         },
         {
           "en": "fail",
+          "ipa": "/feɪl/",
           "type": "v",
           "vi": "trượt, thất bại"
         },
         {
           "en": "graduate",
+          "ipa": "/ˈɡrædʒueɪt/",
           "type": "v",
           "vi": "tốt nghiệp"
         },
         {
           "en": "uniform",
+          "ipa": "/ˈjuːnɪfɔːm/",
           "type": "n",
           "vi": "đồng phục"
         },
         {
           "en": "discipline",
+          "ipa": "/ˈdɪsɪplɪn/",
           "type": "n",
           "vi": "kỷ luật"
         },
         {
           "en": "respect",
+          "ipa": "/rɪˈspekt/",
           "type": "v/n",
           "vi": "tôn trọng, sự tôn trọng"
         },
         {
           "en": "diploma",
+          "ipa": "/dɪˈpləʊmə/",
           "type": "n",
           "vi": "bằng cấp, chứng chỉ"
         },
         {
           "en": "scholarship",
+          "ipa": "/ˈskɒləʃɪp/",
           "type": "n",
           "vi": "học bổng"
         },
         {
           "en": "take part in",
+          "ipa": "/teɪk pɑːt ɪn/",
           "type": "v phr",
           "vi": "tham gia"
         },
         {
           "en": "academic",
+          "ipa": "/ˌækəˈdemɪk/",
           "type": "adj",
           "vi": "thuộc học thuật"
         },
         {
           "en": "laboratory",
+          "ipa": "/ləˈbɒrətri/",
           "type": "n",
           "vi": "phòng thí nghiệm"
         },
         {
           "en": "equipment",
+          "ipa": "/ɪˈkwɪpmənt/",
           "type": "n",
           "vi": "thiết bị"
         },
         {
           "en": "encourage",
+          "ipa": "/ɪnˈkʌrɪdʒ/",
           "type": "v",
           "vi": "khuyến khích"
         },
         {
           "en": "campus",
+          "ipa": "/ˈkæmpəs/",
           "type": "n",
           "vi": "khuôn viên trường"
         }
@@ -2492,151 +2687,181 @@
       "vocabulary": [
         {
           "en": "traffic",
+          "ipa": "/ˈtræfɪk/",
           "type": "n",
           "vi": "giao thông"
         },
         {
           "en": "traffic jam",
+          "ipa": "/ˈtræfɪk dʒæm/",
           "type": "n",
           "vi": "tắc đường"
         },
         {
           "en": "traffic light",
+          "ipa": "/ˈtræfɪk laɪt/",
           "type": "n",
           "vi": "đèn giao thông"
         },
         {
           "en": "road sign",
+          "ipa": "/rəʊd saɪn/",
           "type": "n",
           "vi": "biển báo giao thông"
         },
         {
           "en": "pavement",
+          "ipa": "/ˈpeɪvmənt/",
           "type": "n",
           "vi": "vỉa hè"
         },
         {
           "en": "lane",
+          "ipa": "/leɪn/",
           "type": "n",
           "vi": "làn đường"
         },
         {
           "en": "zebra crossing",
+          "ipa": "/ˈziːbrə ˈkrɒsɪŋ/",
           "type": "n",
           "vi": "vạch qua đường"
         },
         {
           "en": "pedestrian",
+          "ipa": "/pɪˈdestriən/",
           "type": "n",
           "vi": "người đi bộ"
         },
         {
           "en": "passenger",
+          "ipa": "/ˈpæsɪndʒə/",
           "type": "n",
           "vi": "hành khách"
         },
         {
           "en": "helmet",
+          "ipa": "/ˈhelmɪt/",
           "type": "n",
           "vi": "mũ bảo hiểm"
         },
         {
           "en": "motorbike",
+          "ipa": "/ˈməʊtəbaɪk/",
           "type": "n",
           "vi": "xe máy"
         },
         {
           "en": "bicycle",
+          "ipa": "/ˈbaɪsɪkl/",
           "type": "n",
           "vi": "xe đạp"
         },
         {
           "en": "handlebar",
+          "ipa": "/ˈhændlbɑː/",
           "type": "n",
           "vi": "tay lái"
         },
         {
           "en": "vehicle",
+          "ipa": "/ˈviːɪkl/",
           "type": "n",
           "vi": "phương tiện giao thông"
         },
         {
           "en": "cycle",
+          "ipa": "/ˈsaɪkl/",
           "type": "v",
           "vi": "đạp xe"
         },
         {
           "en": "cross",
+          "ipa": "/krɒs/",
           "type": "v",
           "vi": "băng qua"
         },
         {
           "en": "turn",
+          "ipa": "/tɜːn/",
           "type": "v",
           "vi": "rẽ, quay"
         },
         {
           "en": "obey",
+          "ipa": "/əˈbeɪ/",
           "type": "v",
           "vi": "tuân theo"
         },
         {
           "en": "indicate",
+          "ipa": "/ˈɪndɪkeɪt/",
           "type": "v",
           "vi": "ra hiệu, chỉ dẫn"
         },
         {
           "en": "allow",
+          "ipa": "/əˈlaʊ/",
           "type": "v",
           "vi": "cho phép"
         },
         {
           "en": "dangerous",
+          "ipa": "/ˈdeɪndʒərəs/",
           "type": "adj",
           "vi": "nguy hiểm"
         },
         {
           "en": "careful",
+          "ipa": "/ˈkeəfl/",
           "type": "adj",
           "vi": "cẩn thận"
         },
         {
           "en": "especially",
+          "ipa": "/ɪˈspeʃəli/",
           "type": "adv",
           "vi": "đặc biệt"
         },
         {
           "en": "overweight",
+          "ipa": "/ˌəʊvəˈweɪt/",
           "type": "adj",
           "vi": "quá tải"
         },
         {
           "en": "stuck",
+          "ipa": "/stʌk/",
           "type": "adj",
           "vi": "bị kẹt"
         },
         {
           "en": "waste",
+          "ipa": "/weɪst/",
           "type": "v/n",
           "vi": "lãng phí"
         },
         {
           "en": "footpath",
+          "ipa": "/ˈfʊtpɑːθ/",
           "type": "n",
           "vi": "đường dành cho người đi bộ"
         },
         {
           "en": "distance",
+          "ipa": "/ˈdɪstəns/",
           "type": "n",
           "vi": "khoảng cách"
         },
         {
           "en": "accident",
+          "ipa": "/ˈæksɪdənt/",
           "type": "n",
           "vi": "tai nạn"
         },
         {
           "en": "speed",
+          "ipa": "/spiːd/",
           "type": "n",
           "vi": "tốc độ"
         }
@@ -2894,151 +3119,181 @@
       "vocabulary": [
         {
           "en": "film",
+          "ipa": "/fɪlm/",
           "type": "n",
           "vi": "bộ phim"
         },
         {
           "en": "comedy",
+          "ipa": "/ˈkɒmədi/",
           "type": "n",
           "vi": "phim hài"
         },
         {
           "en": "horror",
+          "ipa": "/ˈhɒrə/",
           "type": "n",
           "vi": "phim kinh dị"
         },
         {
           "en": "action",
+          "ipa": "/ˈækʃn/",
           "type": "n",
           "vi": "phim hành động"
         },
         {
           "en": "cartoon",
+          "ipa": "/kɑːˈtuːn/",
           "type": "n",
           "vi": "phim hoạt hình"
         },
         {
           "en": "documentary",
+          "ipa": "/ˌdɒkjuˈmentri/",
           "type": "n",
           "vi": "phim tài liệu"
         },
         {
           "en": "science fiction",
+          "ipa": "/ˈsaɪəns ˈfɪkʃn/",
           "type": "n",
           "vi": "phim khoa học viễn tưởng"
         },
         {
           "en": "romantic",
+          "ipa": "/rəˈmæntɪk/",
           "type": "adj",
           "vi": "lãng mạn"
         },
         {
           "en": "actor",
+          "ipa": "/ˈæktə/",
           "type": "n",
           "vi": "diễn viên nam"
         },
         {
           "en": "actress",
+          "ipa": "/ˈæktrəs/",
           "type": "n",
           "vi": "diễn viên nữ"
         },
         {
           "en": "director",
+          "ipa": "/dɪˈrektə/",
           "type": "n",
           "vi": "đạo diễn"
         },
         {
           "en": "audience",
+          "ipa": "/ˈɔːdiəns/",
           "type": "n",
           "vi": "khán giả"
         },
         {
           "en": "scene",
+          "ipa": "/siːn/",
           "type": "n",
           "vi": "cảnh phim"
         },
         {
           "en": "plot",
+          "ipa": "/plɒt/",
           "type": "n",
           "vi": "cốt truyện"
         },
         {
           "en": "star",
+          "ipa": "/stɑː/",
           "type": "v/n",
           "vi": "đóng vai chính, ngôi sao"
         },
         {
           "en": "review",
+          "ipa": "/rɪˈvjuː/",
           "type": "n/v",
           "vi": "bài đánh giá, đánh giá"
         },
         {
           "en": "recommend",
+          "ipa": "/ˌrekəˈmend/",
           "type": "v",
           "vi": "giới thiệu, đề nghị"
         },
         {
           "en": "boring",
+          "ipa": "/ˈbɔːrɪŋ/",
           "type": "adj",
           "vi": "nhàm chán"
         },
         {
           "en": "exciting",
+          "ipa": "/ɪkˈsaɪtɪŋ/",
           "type": "adj",
           "vi": "hấp dẫn, thú vị"
         },
         {
           "en": "scary",
+          "ipa": "/ˈskeəri/",
           "type": "adj",
           "vi": "đáng sợ"
         },
         {
           "en": "funny",
+          "ipa": "/ˈfʌni/",
           "type": "adj",
           "vi": "hài hước"
         },
         {
           "en": "moving",
+          "ipa": "/ˈmuːvɪŋ/",
           "type": "adj",
           "vi": "cảm động"
         },
         {
           "en": "disappointing",
+          "ipa": "/ˌdɪsəˈpɔɪntɪŋ/",
           "type": "adj",
           "vi": "đáng thất vọng"
         },
         {
           "en": "entertaining",
+          "ipa": "/ˌentəˈteɪnɪŋ/",
           "type": "adj",
           "vi": "giải trí, thú vị"
         },
         {
           "en": "special effects",
+          "ipa": "/ˈspeʃl ɪˈfekts/",
           "type": "n",
           "vi": "hiệu ứng đặc biệt"
         },
         {
           "en": "soundtrack",
+          "ipa": "/ˈsaʊndtræk/",
           "type": "n",
           "vi": "nhạc phim"
         },
         {
           "en": "subtitle",
+          "ipa": "/ˈsʌbtaɪtl/",
           "type": "n",
           "vi": "phụ đề"
         },
         {
           "en": "cinema",
+          "ipa": "/ˈsɪnəmə/",
           "type": "n",
           "vi": "rạp chiếu phim"
         },
         {
           "en": "box office",
+          "ipa": "/bɒks ˈɒfɪs/",
           "type": "n",
           "vi": "phòng vé"
         },
         {
           "en": "release",
+          "ipa": "/rɪˈliːs/",
           "type": "v/n",
           "vi": "phát hành, ra mắt"
         }
@@ -3296,151 +3551,181 @@
       "vocabulary": [
         {
           "en": "festival",
+          "ipa": "/ˈfestɪvl/",
           "type": "n",
           "vi": "lễ hội"
         },
         {
           "en": "celebrate",
+          "ipa": "/ˈselɪbreɪt/",
           "type": "v",
           "vi": "tổ chức lễ, ăn mừng"
         },
         {
           "en": "celebration",
+          "ipa": "/ˌselɪˈbreɪʃn/",
           "type": "n",
           "vi": "sự kỷ niệm, lễ kỷ niệm"
         },
         {
           "en": "parade",
+          "ipa": "/pəˈreɪd/",
           "type": "n",
           "vi": "cuộc diễu hành"
         },
         {
           "en": "costume",
+          "ipa": "/ˈkɒstjuːm/",
           "type": "n",
           "vi": "trang phục"
         },
         {
           "en": "decoration",
+          "ipa": "/ˌdekəˈreɪʃn/",
           "type": "n",
           "vi": "đồ trang trí"
         },
         {
           "en": "fireworks",
+          "ipa": "/ˈfaɪəwɜːks/",
           "type": "n",
           "vi": "pháo hoa"
         },
         {
           "en": "lantern",
+          "ipa": "/ˈlæntən/",
           "type": "n",
           "vi": "đèn lồng"
         },
         {
           "en": "carnival",
+          "ipa": "/ˈkɑːnɪvl/",
           "type": "n",
           "vi": "lễ hội hóa trang"
         },
         {
           "en": "harvest",
+          "ipa": "/ˈhɑːvɪst/",
           "type": "n",
           "vi": "mùa gặt, thu hoạch"
         },
         {
           "en": "ceremony",
+          "ipa": "/ˈserɪməni/",
           "type": "n",
           "vi": "nghi lễ"
         },
         {
           "en": "tradition",
+          "ipa": "/trəˈdɪʃn/",
           "type": "n",
           "vi": "truyền thống"
         },
         {
           "en": "custom",
+          "ipa": "/ˈkʌstəm/",
           "type": "n",
           "vi": "phong tục"
         },
         {
           "en": "worship",
+          "ipa": "/ˈwɜːʃɪp/",
           "type": "v",
           "vi": "thờ cúng"
         },
         {
           "en": "pray",
+          "ipa": "/preɪ/",
           "type": "v",
           "vi": "cầu nguyện"
         },
         {
           "en": "take place",
+          "ipa": "/teɪk pleɪs/",
           "type": "v phr",
           "vi": "diễn ra"
         },
         {
           "en": "attend",
+          "ipa": "/əˈtend/",
           "type": "v",
           "vi": "tham dự"
         },
         {
           "en": "decorate",
+          "ipa": "/ˈdekəreɪt/",
           "type": "v",
           "vi": "trang trí"
         },
         {
           "en": "float",
+          "ipa": "/fləʊt/",
           "type": "n",
           "vi": "xe hoa"
         },
         {
           "en": "gather",
+          "ipa": "/ˈɡæðə/",
           "type": "v",
           "vi": "tụ họp"
         },
         {
           "en": "annual",
+          "ipa": "/ˈænjuəl/",
           "type": "adj",
           "vi": "hàng năm"
         },
         {
           "en": "religious",
+          "ipa": "/rɪˈlɪdʒəs/",
           "type": "adj",
           "vi": "thuộc tôn giáo"
         },
         {
           "en": "cultural",
+          "ipa": "/ˈkʌltʃərəl/",
           "type": "adj",
           "vi": "thuộc văn hóa"
         },
         {
           "en": "colourful",
+          "ipa": "/ˈkʌləfl/",
           "type": "adj",
           "vi": "đầy màu sắc"
         },
         {
           "en": "joyful",
+          "ipa": "/ˈdʒɔɪfl/",
           "type": "adj",
           "vi": "vui vẻ"
         },
         {
           "en": "atmosphere",
+          "ipa": "/ˈætməsfɪə/",
           "type": "n",
           "vi": "không khí, bầu không khí"
         },
         {
           "en": "performance",
+          "ipa": "/pəˈfɔːməns/",
           "type": "n",
           "vi": "buổi biểu diễn"
         },
         {
           "en": "offering",
+          "ipa": "/ˈɒfərɪŋ/",
           "type": "n",
           "vi": "lễ vật, đồ cúng"
         },
         {
           "en": "luck",
+          "ipa": "/lʌk/",
           "type": "n",
           "vi": "sự may mắn"
         },
         {
           "en": "feast",
+          "ipa": "/fiːst/",
           "type": "n",
           "vi": "bữa tiệc"
         }
@@ -3698,151 +3983,181 @@
       "vocabulary": [
         {
           "en": "energy",
+          "ipa": "/ˈenədʒi/",
           "type": "n",
           "vi": "năng lượng"
         },
         {
           "en": "solar energy",
+          "ipa": "/ˈsəʊlər ˈenədʒi/",
           "type": "n",
           "vi": "năng lượng mặt trời"
         },
         {
           "en": "wind energy",
+          "ipa": "/wɪnd ˈenədʒi/",
           "type": "n",
           "vi": "năng lượng gió"
         },
         {
           "en": "nuclear energy",
+          "ipa": "/ˈnjuːkliə ˈenədʒi/",
           "type": "n",
           "vi": "năng lượng hạt nhân"
         },
         {
           "en": "hydroelectric",
+          "ipa": "/ˌhaɪdrəʊɪˈlektrɪk/",
           "type": "adj",
           "vi": "thủy điện"
         },
         {
           "en": "renewable",
+          "ipa": "/rɪˈnjuːəbl/",
           "type": "adj",
           "vi": "tái tạo được"
         },
         {
           "en": "non-renewable",
+          "ipa": "/nɒn rɪˈnjuːəbl/",
           "type": "adj",
           "vi": "không tái tạo được"
         },
         {
           "en": "fossil fuel",
+          "ipa": "/ˈfɒsl fjuːəl/",
           "type": "n",
           "vi": "nhiên liệu hóa thạch"
         },
         {
           "en": "coal",
+          "ipa": "/kəʊl/",
           "type": "n",
           "vi": "than đá"
         },
         {
           "en": "oil",
+          "ipa": "/ɔɪl/",
           "type": "n",
           "vi": "dầu mỏ"
         },
         {
           "en": "natural gas",
+          "ipa": "/ˈnætʃrəl ɡæs/",
           "type": "n",
           "vi": "khí thiên nhiên"
         },
         {
           "en": "electricity",
+          "ipa": "/ɪˌlekˈtrɪsəti/",
           "type": "n",
           "vi": "điện"
         },
         {
           "en": "solar panel",
+          "ipa": "/ˈsəʊlə ˈpænl/",
           "type": "n",
           "vi": "tấm pin mặt trời"
         },
         {
           "en": "wind turbine",
+          "ipa": "/wɪnd ˈtɜːbaɪn/",
           "type": "n",
           "vi": "tuabin gió"
         },
         {
           "en": "dam",
+          "ipa": "/dæm/",
           "type": "n",
           "vi": "đập nước"
         },
         {
           "en": "produce",
+          "ipa": "/prəˈdjuːs/",
           "type": "v",
           "vi": "sản xuất"
         },
         {
           "en": "generate",
+          "ipa": "/ˈdʒenəreɪt/",
           "type": "v",
           "vi": "tạo ra (điện)"
         },
         {
           "en": "save",
+          "ipa": "/seɪv/",
           "type": "v",
           "vi": "tiết kiệm"
         },
         {
           "en": "waste",
+          "ipa": "/weɪst/",
           "type": "v",
           "vi": "lãng phí"
         },
         {
           "en": "reduce",
+          "ipa": "/rɪˈdjuːs/",
           "type": "v",
           "vi": "giảm"
         },
         {
           "en": "pollute",
+          "ipa": "/pəˈluːt/",
           "type": "v",
           "vi": "gây ô nhiễm"
         },
         {
           "en": "pollution",
+          "ipa": "/pəˈluːʃn/",
           "type": "n",
           "vi": "sự ô nhiễm"
         },
         {
           "en": "environment",
+          "ipa": "/ɪnˈvaɪərənmənt/",
           "type": "n",
           "vi": "môi trường"
         },
         {
           "en": "harmful",
+          "ipa": "/ˈhɑːmfl/",
           "type": "adj",
           "vi": "có hại"
         },
         {
           "en": "abundant",
+          "ipa": "/əˈbʌndənt/",
           "type": "adj",
           "vi": "dồi dào"
         },
         {
           "en": "limited",
+          "ipa": "/ˈlɪmɪtɪd/",
           "type": "adj",
           "vi": "hạn chế"
         },
         {
           "en": "efficient",
+          "ipa": "/ɪˈfɪʃnt/",
           "type": "adj",
           "vi": "hiệu quả"
         },
         {
           "en": "run out",
+          "ipa": "/rʌn ˈaʊt/",
           "type": "v phr",
           "vi": "cạn kiệt"
         },
         {
           "en": "turn off",
+          "ipa": "/tɜːn ɒf/",
           "type": "v phr",
           "vi": "tắt"
         },
         {
           "en": "turn on",
+          "ipa": "/tɜːn ɒn/",
           "type": "v phr",
           "vi": "bật"
         }
@@ -4100,151 +4415,181 @@
       "vocabulary": [
         {
           "en": "travel",
+          "ipa": "/ˈtrævl/",
           "type": "v/n",
           "vi": "du lịch, đi lại"
         },
         {
           "en": "means of transport",
+          "ipa": "/miːnz əv ˈtrænspɔːt/",
           "type": "n",
           "vi": "phương tiện giao thông"
         },
         {
           "en": "flying car",
+          "ipa": "/ˈflaɪɪŋ kɑː/",
           "type": "n",
           "vi": "ô tô bay"
         },
         {
           "en": "driverless car",
+          "ipa": "/ˈdraɪvələs kɑː/",
           "type": "n",
           "vi": "xe không người lái"
         },
         {
           "en": "bullet train",
+          "ipa": "/ˈbʊlɪt treɪn/",
           "type": "n",
           "vi": "tàu cao tốc"
         },
         {
           "en": "hyperloop",
+          "ipa": "/ˈhaɪpəluːp/",
           "type": "n",
           "vi": "tàu siêu tốc"
         },
         {
           "en": "jetpack",
+          "ipa": "/ˈdʒetpæk/",
           "type": "n",
           "vi": "ba lô phản lực"
         },
         {
           "en": "solar-powered",
+          "ipa": "/ˈsəʊlə ˈpaʊəd/",
           "type": "adj",
           "vi": "chạy bằng năng lượng mặt trời"
         },
         {
           "en": "autonomous",
+          "ipa": "/ɔːˈtɒnəməs/",
           "type": "adj",
           "vi": "tự động, tự hành"
         },
         {
           "en": "high-speed",
+          "ipa": "/ˌhaɪ ˈspiːd/",
           "type": "adj",
           "vi": "tốc độ cao"
         },
         {
           "en": "eco-friendly",
+          "ipa": "/ˌiːkəʊ ˈfrendli/",
           "type": "adj",
           "vi": "thân thiện với môi trường"
         },
         {
           "en": "comfortable",
+          "ipa": "/ˈkʌmftəbl/",
           "type": "adj",
           "vi": "thoải mái"
         },
         {
           "en": "convenient",
+          "ipa": "/kənˈviːniənt/",
           "type": "adj",
           "vi": "thuận tiện"
         },
         {
           "en": "passenger",
+          "ipa": "/ˈpæsɪndʒə/",
           "type": "n",
           "vi": "hành khách"
         },
         {
           "en": "traffic congestion",
+          "ipa": "/ˈtræfɪk kənˈdʒestʃən/",
           "type": "n",
           "vi": "tắc nghẽn giao thông"
         },
         {
           "en": "destination",
+          "ipa": "/ˌdestɪˈneɪʃn/",
           "type": "n",
           "vi": "điểm đến"
         },
         {
           "en": "invention",
+          "ipa": "/ɪnˈvenʃn/",
           "type": "n",
           "vi": "phát minh"
         },
         {
           "en": "imagine",
+          "ipa": "/ɪˈmædʒɪn/",
           "type": "v",
           "vi": "tưởng tượng"
         },
         {
           "en": "predict",
+          "ipa": "/prɪˈdɪkt/",
           "type": "v",
           "vi": "dự đoán"
         },
         {
           "en": "replace",
+          "ipa": "/rɪˈpleɪs/",
           "type": "v",
           "vi": "thay thế"
         },
         {
           "en": "operate",
+          "ipa": "/ˈɒpəreɪt/",
           "type": "v",
           "vi": "vận hành"
         },
         {
           "en": "fuel",
+          "ipa": "/fjuːəl/",
           "type": "n",
           "vi": "nhiên liệu"
         },
         {
           "en": "emission",
+          "ipa": "/ɪˈmɪʃn/",
           "type": "n",
           "vi": "khí thải"
         },
         {
           "en": "reduce",
+          "ipa": "/rɪˈdjuːs/",
           "type": "v",
           "vi": "giảm bớt"
         },
         {
           "en": "speed",
+          "ipa": "/spiːd/",
           "type": "n",
           "vi": "tốc độ"
         },
         {
           "en": "safety",
+          "ipa": "/ˈseɪfti/",
           "type": "n",
           "vi": "sự an toàn"
         },
         {
           "en": "technology",
+          "ipa": "/tekˈnɒlədʒi/",
           "type": "n",
           "vi": "công nghệ"
         },
         {
           "en": "modern",
+          "ipa": "/ˈmɒdn/",
           "type": "adj",
           "vi": "hiện đại"
         },
         {
           "en": "advanced",
+          "ipa": "/ədˈvɑːnst/",
           "type": "adj",
           "vi": "tiên tiến"
         },
         {
           "en": "possible",
+          "ipa": "/ˈpɒsəbl/",
           "type": "adj",
           "vi": "có thể"
         }
@@ -4502,151 +4847,181 @@
       "vocabulary": [
         {
           "en": "English-speaking",
+          "ipa": "/ˈɪŋɡlɪʃ ˌspiːkɪŋ/",
           "type": "adj",
           "vi": "nói tiếng Anh"
         },
         {
           "en": "country",
+          "ipa": "/ˈkʌntri/",
           "type": "n",
           "vi": "quốc gia, đất nước"
         },
         {
           "en": "population",
+          "ipa": "/ˌpɒpjuˈleɪʃn/",
           "type": "n",
           "vi": "dân số"
         },
         {
           "en": "capital",
+          "ipa": "/ˈkæpɪtl/",
           "type": "n",
           "vi": "thủ đô"
         },
         {
           "en": "continent",
+          "ipa": "/ˈkɒntɪnənt/",
           "type": "n",
           "vi": "lục địa, châu lục"
         },
         {
           "en": "currency",
+          "ipa": "/ˈkʌrənsi/",
           "type": "n",
           "vi": "đơn vị tiền tệ"
         },
         {
           "en": "official language",
+          "ipa": "/əˈfɪʃl ˈlæŋɡwɪdʒ/",
           "type": "n",
           "vi": "ngôn ngữ chính thức"
         },
         {
           "en": "native speaker",
+          "ipa": "/ˈneɪtɪv ˈspiːkə/",
           "type": "n",
           "vi": "người bản ngữ"
         },
         {
           "en": "symbol",
+          "ipa": "/ˈsɪmbl/",
           "type": "n",
           "vi": "biểu tượng"
         },
         {
           "en": "landmark",
+          "ipa": "/ˈlændmɑːk/",
           "type": "n",
           "vi": "địa danh nổi tiếng"
         },
         {
           "en": "accent",
+          "ipa": "/ˈæksənt/",
           "type": "n",
           "vi": "giọng, âm sắc"
         },
         {
           "en": "culture",
+          "ipa": "/ˈkʌltʃə/",
           "type": "n",
           "vi": "văn hóa"
         },
         {
           "en": "diverse",
+          "ipa": "/daɪˈvɜːs/",
           "type": "adj",
           "vi": "đa dạng"
         },
         {
           "en": "multicultural",
+          "ipa": "/ˌmʌltiˈkʌltʃərəl/",
           "type": "adj",
           "vi": "đa văn hóa"
         },
         {
           "en": "scenery",
+          "ipa": "/ˈsiːnəri/",
           "type": "n",
           "vi": "phong cảnh"
         },
         {
           "en": "landscape",
+          "ipa": "/ˈlændskeɪp/",
           "type": "n",
           "vi": "cảnh quan"
         },
         {
           "en": "kangaroo",
+          "ipa": "/ˌkæŋɡəˈruː/",
           "type": "n",
           "vi": "con chuột túi"
         },
         {
           "en": "maple",
+          "ipa": "/ˈmeɪpl/",
           "type": "n",
           "vi": "cây phong"
         },
         {
           "en": "bald eagle",
+          "ipa": "/bɔːld ˈiːɡl/",
           "type": "n",
           "vi": "đại bàng đầu trắng"
         },
         {
           "en": "kiwi",
+          "ipa": "/ˈkiːwiː/",
           "type": "n",
           "vi": "chim kiwi"
         },
         {
           "en": "located",
+          "ipa": "/ləʊˈkeɪtɪd/",
           "type": "adj",
           "vi": "nằm ở, tọa lạc"
         },
         {
           "en": "border",
+          "ipa": "/ˈbɔːdə/",
           "type": "n/v",
           "vi": "biên giới, giáp"
         },
         {
           "en": "island",
+          "ipa": "/ˈaɪlənd/",
           "type": "n",
           "vi": "hòn đảo"
         },
         {
           "en": "attract",
+          "ipa": "/əˈtrækt/",
           "type": "v",
           "vi": "thu hút"
         },
         {
           "en": "tourist",
+          "ipa": "/ˈtʊərɪst/",
           "type": "n",
           "vi": "du khách"
         },
         {
           "en": "consist of",
+          "ipa": "/kənˈsɪst əv/",
           "type": "v phr",
           "vi": "bao gồm"
         },
         {
           "en": "belong to",
+          "ipa": "/bɪˈlɒŋ tə/",
           "type": "v phr",
           "vi": "thuộc về"
         },
         {
           "en": "area",
+          "ipa": "/ˈeəriə/",
           "type": "n",
           "vi": "diện tích, khu vực"
         },
         {
           "en": "famous",
+          "ipa": "/ˈfeɪməs/",
           "type": "adj",
           "vi": "nổi tiếng"
         },
         {
           "en": "wonderful",
+          "ipa": "/ˈwʌndəfl/",
           "type": "adj",
           "vi": "tuyệt vời"
         }

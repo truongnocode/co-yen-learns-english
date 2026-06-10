@@ -15,7 +15,7 @@ English learning platform for Vietnamese students (grades 3–10). Production: *
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Router 6, TanStack Query, Framer Motion, Recharts
 - **Auth & DB**: Firebase Auth (Google), Firestore
 - **Backend API**: Cloudflare Worker (Hono) — handles AI content import, writing grading, speech scoring
-- **AI**: Claude API (structured outputs for content extraction + writing feedback) + Whisper API (pronunciation scoring)
+- **AI**: Gemini (structured outputs for content extraction + writing feedback + pronunciation scoring) — migrated from Claude+Whisper 2026-04-15
 - **Hosting**: GitHub Pages (static site) + Cloudflare Workers (API at `api.tienganhcoyen.online`)
 
 ## Repo layout
@@ -85,7 +85,7 @@ Legacy JSON files in `public/data/` remain as the bootstrap dataset (never delet
 
 ## Security notes
 
-- Firebase web API key **was previously hardcoded** in `src/lib/firebase.ts` — it has been moved to env vars. Rotate the leaked key `AIzaSyBU_...` in Firebase Console if it has not been rotated yet.
+- Firebase web API key was previously hardcoded in `src/lib/firebase.ts`; moved to env vars in commit `4109ff7` (2026-04-15). The new key is referrer-restricted (`tienganhcoyen.online`, `truongnocode.github.io`, `localhost:5173`). Verify the old key `AIzaSyBU_...` is disabled in Firebase Console.
 - `.env.local` is gitignored. Never commit real keys.
 - Firestore security rules (`firestore.rules`) restrict writes to owners and admins.
 - Cloudflare Worker verifies Firebase ID tokens and requires admin claim for content-mutation routes.

@@ -26,7 +26,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 // ─── Config ─────────────────────────────────────────────────────────────────
-const CLAUDE_EXE = "C:\\Users\\Truong\\AppData\\Roaming\\Claude\\claude-code\\2.1.92\\claude.exe";
+const CLAUDE_EXE = "C:\\Users\\Truong\\AppData\\Roaming\\Claude\\claude-code\\2.1.142\\claude.exe";
 const UNRAR_EXE = "C:\\Program Files\\WinRAR\\UnRAR.exe";
 const PYTHON = "python";
 

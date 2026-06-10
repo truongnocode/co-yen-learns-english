@@ -31,7 +31,7 @@ const UNRAR_EXE = "C:\\Program Files\\WinRAR\\UnRAR.exe";
 const PYTHON = "python";
 
 const PROJECT_ROOT = path.resolve(import.meta.dir, "..");
-const INPUT_ROOT = "D:\\WORK\\Claude\\downloads\\tienganh\\files";
+const INPUT_ROOT = path.join(PROJECT_ROOT, "content-sources", "tienganh", "files");
 const WORK_ROOT = path.join(PROJECT_ROOT, "tmp", "batch-import");
 const IMAGES_ROOT = path.join(PROJECT_ROOT, "public", "data", "images", "extracted", "grade10");
 const TESTS_JSON = path.join(PROJECT_ROOT, "public", "data", "grade10_tests.json");

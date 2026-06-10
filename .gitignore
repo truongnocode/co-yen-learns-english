@@ -30,7 +30,13 @@ coverage/
 tmp/
 scripts/run-batch.bat
 
-# TuDien deliverables (generated outputs, do not commit; the TuDien_make_docx*.cjs generator scripts ARE committed)
+# Source documents (exam DOCX archives etc.) — binary inputs, never commit
+content-sources/
+
+# Generated deliverables (dictionary docx/csv etc.) — outputs, never commit
+deliverables/
+
+# TuDien deliverables (generated outputs, do not commit; generator scripts live in tmp/dict)
 TuDien_*.docx
 TuDien_*.json
 TuDien_*.csv

@@ -85,10 +85,10 @@ async function run(cmd: string[], opts?: { cwd?: string; timeout?: number; stdin
   if (useFiles) {
     await proc.exited;
     clearTimeout(timer);
-    try { stdout = await Bun.file(tmpStdout).text(); } catch {}
-    try { stderr = await Bun.file(tmpStderr).text(); } catch {}
-    if (!opts?.stdoutFile) { try { await rm(tmpStdout); } catch {} }
-    if (!opts?.stderrFile) { try { await rm(tmpStderr); } catch {} }
+    try { stdout = await Bun.file(tmpStdout).text(); } catch { /* file may not exist */ }
+    try { stderr = await Bun.file(tmpStderr).text(); } catch { /* file may not exist */ }
+    if (!opts?.stdoutFile) { try { await rm(tmpStdout); } catch { /* best-effort cleanup */ } }
+    if (!opts?.stderrFile) { try { await rm(tmpStderr); } catch { /* best-effort cleanup */ } }
   } else {
     [stdout, stderr] = await Promise.all([new Response(proc.stdout).text(), new Response(proc.stderr).text()]);
     await proc.exited;
@@ -323,10 +323,11 @@ async function main() {
         if (!res.ok) failures.push({ folder, reason: res.reason || "unknown" });
         else existingKeys.add(res.testKey);
         await log(`PROGRESS ${done}/${todo.length} | ${res.ok ? "✓" : "✗"} ${res.testKey}${res.ok ? "" : " — " + (res.reason || "unknown")}`);
-      } catch (e: any) {
+      } catch (e) {
+        const msg = e instanceof Error ? e.message : String(e);
         done++;
-        failures.push({ folder, reason: `exception: ${e.message}` });
-        await log(`PROGRESS ${done}/${todo.length} | ✗ EXCEPTION ${folder}: ${e.message}`);
+        failures.push({ folder, reason: `exception: ${msg}` });
+        await log(`PROGRESS ${done}/${todo.length} | ✗ EXCEPTION ${folder}: ${msg}`);
       }
     }
   }

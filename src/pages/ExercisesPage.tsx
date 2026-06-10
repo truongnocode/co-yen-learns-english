@@ -46,6 +46,25 @@ const ExercisesPage = () => {
     if (q && !finished && !loading) speakUS(q.q);
   }, [current, q, finished, loading]);
 
+  // Hooks must run unconditionally — keep these above the early returns below.
+  const finishQuiz = useCallback((currentAnswers: (number | null)[]) => {
+    setFinished(true);
+    if (user) {
+      const finalScore = currentAnswers.filter((a, i) => a === exercises[i]?.ans).length;
+      saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
+      getProgress(user.uid).then(p => completeDailyTask(user.uid, "quizDone", p)).catch(() => {});
+    }
+  }, [user, exercises, grade, unitKey]);
+
+  const handleTimeUp = useCallback(() => {
+    setFinished(true);
+    if (user) {
+      const finalScore = answers.filter((a, i) => a === exercises[i]?.ans).length;
+      saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
+      getProgress(user.uid).then(p => completeDailyTask(user.uid, "quizDone", p)).catch(() => {});
+    }
+  }, [user, answers, exercises, grade, unitKey]);
+
   if (loading) return (
     <PageShell withNavbar={false}>
       <div className="flex items-center justify-center pt-40">
@@ -63,15 +82,6 @@ const ExercisesPage = () => {
 
   const progress = ((current + 1) / exercises.length) * 100;
   const score = answers.filter((a, i) => a === exercises[i].ans).length;
-
-  const finishQuiz = useCallback((currentAnswers: (number | null)[]) => {
-    setFinished(true);
-    if (user) {
-      const finalScore = currentAnswers.filter((a, i) => a === exercises[i]?.ans).length;
-      saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
-      getProgress(user.uid).then(p => completeDailyTask(user.uid, "quizDone", p)).catch(() => {});
-    }
-  }, [user, exercises, grade, unitKey]);
 
   const handleSelect = (idx: number) => {
     if (selected !== null) return;
@@ -98,15 +108,6 @@ const ExercisesPage = () => {
       finishQuiz(answers);
     }
   };
-
-  const handleTimeUp = useCallback(() => {
-    setFinished(true);
-    if (user) {
-      const finalScore = answers.filter((a, i) => a === exercises[i]?.ans).length;
-      saveQuizResult(user.uid, grade, unitKey!, finalScore, exercises.length);
-      getProgress(user.uid).then(p => completeDailyTask(user.uid, "quizDone", p)).catch(() => {});
-    }
-  }, [user, answers, exercises, grade, unitKey]);
 
   if (finished) {
     const isGood = score >= exercises.length * 0.7;

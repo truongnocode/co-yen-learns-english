@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, FileText, CheckCircle2, XCircle, BookOpen, Eye, PenTool, Send, Home, Trophy } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
 import { loadGrade10Reading, loadGrade10Writing } from "@/data/loader";
-import { type MCQuestion } from "@/data/types";
+import { type MCQuestion, type Grade10WritingData } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import PageShell from "@/components/PageShell";
 import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";
@@ -14,6 +14,19 @@ import { matchAnswer } from "@/lib/answerMatch";
 import SignVisual from "@/components/SignVisual";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
+
+// Shape of public/data/grade10_reading.json (loader returns it untyped).
+interface ReadingExerciseItem {
+  title?: string;
+  instruction?: string;
+  passage?: string;
+  questions: MCQuestion[];
+}
+interface Grade10ReadingData {
+  signs?: Record<string, ReadingExerciseItem>;
+  cloze?: ReadingExerciseItem[];
+  comprehension?: ReadingExerciseItem[];
+}
 
 // Shared result
 const ResultCard = ({ score, total, onRetry }: { score: number; total: number; onRetry: () => void }) => {
@@ -81,7 +94,7 @@ const MCQQuiz = ({ questions, title, reviewMode = "instant", timeLimit = 0, onTi
       ans: question.ans,
       explain: question.explain,
       selected: answers[i] ?? null,
-      sign: (question as any).sign,
+      sign: question.sign,
     })) : [];
 
     return (
@@ -126,7 +139,7 @@ const MCQQuiz = ({ questions, title, reviewMode = "instant", timeLimit = 0, onTi
       <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
       <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
         className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
-        {(q as any).sign && <SignVisual sign={(q as any).sign} />}
+        {q.sign && <SignVisual sign={q.sign} />}
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed">{q.q}</p>
         <div className="flex flex-col gap-2.5">
           {q.opts.map((opt, idx) => {
@@ -303,8 +316,8 @@ const TextInputExercise = ({ questions, instruction, reviewMode = "instant" }: {
 
 const Grade10ReadingPage = () => {
   const navigate = useNavigate();
-  const [readingData, setReadingData] = useState<any>(null);
-  const [writingData, setWritingData] = useState<any>(null);
+  const [readingData, setReadingData] = useState<Grade10ReadingData | null>(null);
+  const [writingData, setWritingData] = useState<Grade10WritingData | null>(null);
   const [loading, setLoading] = useState(true);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [activeSubIdx, setActiveSubIdx] = useState(0);
@@ -313,14 +326,14 @@ const Grade10ReadingPage = () => {
 
   useEffect(() => {
     Promise.all([loadGrade10Reading(), loadGrade10Writing()])
-      .then(([r, w]) => { setReadingData(r); setWritingData(w); })
+      .then(([r, w]) => { setReadingData(r as Grade10ReadingData); setWritingData(w); })
       .finally(() => setLoading(false));
   }, []);
 
   if (loading) return <PageShell><div className="flex items-center justify-center pt-40 text-muted-foreground">Đang tải...</div></PageShell>;
 
   const sections = [
-    { key: "signs", label: "Đọc biển báo", icon: Eye, desc: `${readingData?.signs ? Object.values(readingData.signs).reduce((sum: number, ex: any) => sum + (ex.questions?.length || 0), 0) : 0} câu`, color: "gradient-primary" },
+    { key: "signs", label: "Đọc biển báo", icon: Eye, desc: `${readingData?.signs ? Object.values(readingData.signs).reduce((sum, ex) => sum + (ex.questions?.length || 0), 0) : 0} câu`, color: "gradient-primary" },
     { key: "cloze", label: "Điền từ vào đoạn văn", icon: BookOpen, desc: `${readingData?.cloze?.length || 0} đoạn`, color: "gradient-accent" },
     { key: "comprehension", label: "Đọc hiểu", icon: FileText, desc: `${readingData?.comprehension?.length || 0} bài`, color: "gradient-purple-card" },
     { key: "letterArranging", label: "Sắp xếp thư/email", icon: PenTool, desc: `${writingData?.letterArranging?.questions?.length || 0} câu`, color: "gradient-success" },
@@ -406,7 +419,7 @@ const Grade10ReadingPage = () => {
         <div>
           {items.length > 1 && (
             <div className="flex gap-2 mb-4 flex-wrap">
-              {items.map((it: any, i: number) => (
+              {items.map((it, i) => (
                 <button key={i} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-white" : "bg-card/80 border border-border/30 text-muted-foreground"}`}>{it.title?.substring(0, 20) || `Bài ${i + 1}`}</button>
               ))}
             </div>
@@ -425,7 +438,7 @@ const Grade10ReadingPage = () => {
         <div>
           {items.length > 1 && (
             <div className="flex gap-2 mb-4 flex-wrap">
-              {items.map((it: any, i: number) => (
+              {items.map((it, i) => (
                 <button key={i} onClick={() => setActiveSubIdx(i)} className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all ${i === activeSubIdx ? "gradient-primary text-white" : "bg-card/80 border border-border/30 text-muted-foreground"}`}>{it.title?.substring(0, 25) || `Bài ${i + 1}`}</button>
               ))}
             </div>

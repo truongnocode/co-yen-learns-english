@@ -12,6 +12,7 @@ export interface MCQuestion {
   opts: string[];
   ans: number;
   explain?: string; // Brief explanation: why correct answer is right & why others are wrong
+  sign?: string; // Optional sign/symbol key rendered by SignVisual (grade 10 reading "signs" section)
 }
 
 export interface SGKUnit {

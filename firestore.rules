@@ -13,35 +13,41 @@ service cloud.firestore {
     function isAdmin() {
       return isSignedIn() && request.auth.token.admin == true;
     }
+    // Guest mode cấp identity ẩn danh cho MỌI khách vãng lai, nên
+    // isSignedIn() một mình không còn là rào chắn. isPermanent() phân biệt
+    // tài khoản thật (Google) với tài khoản ẩn danh.
+    function isPermanent() {
+      return isSignedIn() && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
 
     // ─── Per-user documents: users / progress / pets ─────────────────────
-    // Reads (get + list) are open to any signed-in user — this is what the
-    // leaderboard + analytics dashboards both rely on; matches the previous
-    // rules so existing student flows don't break. Writes are locked down:
-    // only the owner can create/update their own doc; admin can update users
-    // for moderation; nobody can delete.
+    // Đọc chéo (leaderboard/analytics) chỉ dành cho tài khoản thật hoặc
+    // admin — khách ẩn danh KHÔNG được liệt kê dữ liệu của người khác,
+    // chỉ đọc/ghi doc của chính mình. Ghi: chỉ chính chủ tạo/sửa doc của
+    // mình; admin được sửa users để kiểm duyệt; không ai được xoá.
     match /users/{uid} {
-      allow read:   if isSignedIn();
+      allow read:   if isOwner(uid) || isPermanent() || isAdmin();
       allow create: if isOwner(uid);
       allow update: if isOwner(uid) || isAdmin();
       allow delete: if false;
     }
 
     match /progress/{uid} {
-      allow read:   if isSignedIn();
+      allow read:   if isOwner(uid) || isPermanent() || isAdmin();
       allow create, update: if isOwner(uid);
       allow delete: if false;
     }
 
+    // Pet chỉ được chính chủ đọc trong app — không cần đọc chéo.
     match /pets/{uid} {
-      allow read:   if isSignedIn();
+      allow read:   if isOwner(uid) || isAdmin();
       allow create, update: if isOwner(uid);
       allow delete: if false;
     }
 
     // ─── Admin-managed content: exams / sgk ─────────────────────────────
-    // Anyone signed in can read (students need to take exams / view units).
-    // Only admins can write (upload/edit via /admin panel).
+    // Mọi user đã đăng nhập (kể cả khách ẩn danh) đọc được — nội dung học
+    // là tính năng guest mode. Chỉ admin được ghi (upload/sửa qua /admin).
     match /exams/{grade}/tests/{examId} {
       allow read:  if isSignedIn();
       allow write: if isAdmin();

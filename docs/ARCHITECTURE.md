@@ -238,16 +238,18 @@ Tệp `firestore.rules` là cốt lõi kiểm soát quyền. Tóm tắt:
 
 | Collection / path | Đọc | Ghi |
 |---|---|---|
-| `users/{uid}` | mọi user đã đăng nhập (cho leaderboard/analytics) | tạo: chính chủ; sửa: chính chủ hoặc admin; xoá: cấm |
-| `progress/{uid}` | mọi user đã đăng nhập | tạo/sửa: chính chủ; xoá: cấm |
-| `pets/{uid}` | mọi user đã đăng nhập | tạo/sửa: chính chủ; xoá: cấm |
-| `exams/{grade}/tests/{examId}` | mọi user đã đăng nhập | chỉ admin |
-| `sgk/{grade}/units/{unitId}` | mọi user đã đăng nhập | chỉ admin |
+| `users/{uid}` | chính chủ, tài khoản thật (Google) hoặc admin — khách ẩn danh chỉ đọc doc của mình | tạo: chính chủ; sửa: chính chủ hoặc admin; xoá: cấm |
+| `progress/{uid}` | chính chủ, tài khoản thật hoặc admin | tạo/sửa: chính chủ; xoá: cấm |
+| `pets/{uid}` | chính chủ hoặc admin | tạo/sửa: chính chủ; xoá: cấm |
+| `exams/{grade}/tests/{examId}` | mọi user đã đăng nhập (kể cả ẩn danh) | chỉ admin |
+| `sgk/{grade}/units/{unitId}` | mọi user đã đăng nhập (kể cả ẩn danh) | chỉ admin |
 | `speaking_attempts/{uid}/items/{attemptId}` | chính chủ hoặc admin | tạo: chính chủ; sửa/xoá: cấm (append-only) |
 | `writing_attempts/{uid}/items/{attemptId}` | chính chủ hoặc admin | tạo: chính chủ; sửa/xoá: cấm (append-only) |
 | mọi path khác | cấm | cấm |
 
-Helper trong rules: `isSignedIn()`, `isOwner(uid)` (`request.auth.uid == uid`), `isAdmin()` (`request.auth.token.admin == true`).
+Helper trong rules: `isSignedIn()`, `isOwner(uid)` (`request.auth.uid == uid`), `isAdmin()` (`request.auth.token.admin == true`), `isPermanent()` (đã đăng nhập và `sign_in_provider != 'anonymous'` — phân biệt tài khoản thật với khách ẩn danh do guest mode tự cấp).
+
+> Hệ quả của việc siết guest mode: khách ẩn danh không liệt kê được `users`/`progress` của người khác, nên **leaderboard chỉ hiển thị với tài khoản Google** (component `Leaderboard` tự degrade về trạng thái rỗng, không vỡ UI). Rules trong repo chỉ có hiệu lực trên production sau khi chạy `firebase deploy --only firestore:rules` (xem [OPERATIONS.md](./OPERATIONS.md)) — CI **không** tự deploy rules.
 
 > Lưu ý: có thêm collection `grade10_vocab/{topicId}` và `grade10_grammar/{topicId}` được `api-client.ts::saveImportResult` và `loader.ts` dùng. Hiện chưa có rule riêng cho hai path này nên chúng rơi vào quy tắc "cấm mọi path khác" — chỉ ghi/đọc được nếu bổ sung rule. Đề thi và unit SGK (`exams/*`, `sgk/*`) là hai loại đã có rule đầy đủ và đang hoạt động.
 

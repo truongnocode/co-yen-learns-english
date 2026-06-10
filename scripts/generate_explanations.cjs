@@ -11,7 +11,12 @@
 const fs = require("fs");
 const path = require("path");
 
-const GEMINI_API_KEY = "AIzaSyBFT2EEz_Gtv_O7YD9r5stkhMTknLhEMSM";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+if (!GEMINI_API_KEY) {
+  console.error("ERROR: GEMINI_API_KEY environment variable is not set.");
+  console.error("Set it before running, e.g.: set GEMINI_API_KEY=your-key (Windows) or export GEMINI_API_KEY=your-key (bash).");
+  process.exit(1);
+}
 const MODELS = [
   "gemini-2.5-flash",
   "gemini-2.0-flash-lite",

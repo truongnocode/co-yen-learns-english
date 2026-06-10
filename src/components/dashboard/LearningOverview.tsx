@@ -82,14 +82,12 @@ const LearningOverview = ({ progress }: Props) => {
       // Force re-render by reloading user
       toast.success("Đã cập nhật hồ sơ!");
       setEditing(false);
-    } catch (err) {
+    } catch {
       toast.error("Lỗi khi cập nhật hồ sơ");
     } finally {
       setSaving(false);
     }
   };
-
-  const displayPhoto = previewUrl || user?.photoURL || "";
 
   return (
     <motion.div

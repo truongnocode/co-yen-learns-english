@@ -10,7 +10,7 @@ interface ExplanationBoxProps {
   selectedIndex: number | null;
 }
 
-const ExplanationBox = ({ explain, isCorrect, correctAnswer, correctIndex, opts, selectedIndex }: ExplanationBoxProps) => {
+const ExplanationBox = ({ explain }: ExplanationBoxProps) => {
   if (!explain) return null;
 
   return (

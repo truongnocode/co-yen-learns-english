@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Rocket, Sparkles, Camera, GraduationCap, Mic, Map, Target } from "lucide-react";
+import { Mic } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import { useAuth } from "@/contexts/AuthContext";

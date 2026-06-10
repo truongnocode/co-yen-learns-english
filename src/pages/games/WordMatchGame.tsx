@@ -1,12 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowLeft, Home, Timer, RotateCcw } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import PageShell from "@/components/PageShell";
 
-const smooth = { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const };
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];

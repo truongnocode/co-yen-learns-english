@@ -4,7 +4,7 @@
  */
 
 import { useEffect, useMemo, useState } from "react";
-import { collection, collectionGroup, getDocs, orderBy, query } from "firebase/firestore";
+import { collectionGroup, getDocs, orderBy, query } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import {
   Table,

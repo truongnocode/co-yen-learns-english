@@ -1,18 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Play, Pause, Mic, Square, SkipForward, Eye, EyeOff, Volume2, Sparkles } from "lucide-react";
+import { ArrowLeft, Home, Play, Mic, Square, SkipForward, Eye, EyeOff, Volume2, Sparkles } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import { speakUS } from "@/lib/tts";
-import { startRecording, stopRecording, isRecordingSupported, getAudioUrl, isRecording } from "@/lib/recorder";
+import { startRecording, stopRecording, isRecordingSupported, getAudioUrl } from "@/lib/recorder";
 import PageShell from "@/components/PageShell";
 import { SpeakingFeedback } from "@/components/SpeakingFeedback";
 import { gradeSpeaking, type SpeakingVerdict } from "@/lib/api-client";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/hooks/use-toast";
 
-const smooth = { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const };
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];

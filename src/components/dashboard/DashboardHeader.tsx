@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Search, Flame, Star, Bell, LogOut, ChevronDown } from "lucide-react";
+import { Flame, Star, Bell, LogOut } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-import { gradeConfig } from "@/data/types";
 import type { UserProgress } from "@/lib/progress";
 
 const smooth = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
@@ -11,9 +10,7 @@ interface Props {
 }
 
 const DashboardHeader = ({ progress }: Props) => {
-  const { user, profile, logout } = useAuth();
-  const grade = profile?.grade || 6;
-  const cfg = gradeConfig[grade];
+  const { logout } = useAuth();
   const streak = Math.min(progress?.quizzesDone || 0, 7);
   const xp = (progress?.wordsLearned?.length || 0) * 10 + (progress?.quizzesDone || 0) * 30;
 

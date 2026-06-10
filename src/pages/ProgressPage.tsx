@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Trophy, BookOpen, Target, TrendingUp, ArrowRight } from "lucide-react";
+import { Trophy, BookOpen, Target, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { useEffect, useState } from "react";

@@ -15,7 +15,7 @@ const modes = [
   { key: "spelling", label: "Chính tả", icon: Pencil, gradient: "gradient-success" },
 ];
 
-const UnitCard = ({ unit, grade, index }: UnitCardProps) => {
+const UnitCard = ({ unit, index }: UnitCardProps) => {
   const navigate = useNavigate();
 
   return (

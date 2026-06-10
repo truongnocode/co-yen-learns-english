@@ -55,7 +55,7 @@ const ResultCard = ({ score, total, onRetry }: { score: number; total: number; o
   );
 };
 
-const MCQQuiz = ({ questions, title, reviewMode = "instant", timeLimit = 0, onTimeUp }: {
+const MCQQuiz = ({ questions, reviewMode = "instant", timeLimit = 0, onTimeUp }: {
   questions: MCQuestion[];
   title?: string;
   reviewMode?: ReviewMode;

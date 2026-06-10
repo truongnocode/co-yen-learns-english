@@ -7,7 +7,6 @@ import type { VocabItem } from "@/data/types";
 import { filterWithEmoji } from "@/data/emojiMap";
 import PageShell from "@/components/PageShell";
 
-const smooth = { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const };
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];

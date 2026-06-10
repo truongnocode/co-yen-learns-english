@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "@/contexts/AuthContext";
-import { getPetData, createPet, PET_TYPES, PET_STAGES, getPetEmoji, getStageLabel, getNextStage } from "@/lib/pet";
+import { getPetData, createPet, PET_STAGES, getPetEmoji, getStageLabel, getNextStage } from "@/lib/pet";
 import type { PetData, PetType } from "@/lib/pet";
 import PageShell from "@/components/PageShell";
 import { Progress } from "@/components/ui/progress";

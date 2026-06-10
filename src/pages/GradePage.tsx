@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine, Sparkles } from "lucide-react";
 import { gradeConfig, type SGKData } from "@/data/types";
-import { loadSGKData } from "@/data/loader";
 import PageShell from "@/components/PageShell";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -13,7 +12,7 @@ const GradePage = () => {
   const navigate = useNavigate();
   const grade = Number(gradeId);
   const cfg = gradeConfig[grade];
-  const [data, setData] = useState<SGKData | null>(null);
+  const [data] = useState<SGKData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

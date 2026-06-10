@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, BookOpen, CheckCircle2, XCircle, Home, Trophy } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
 import { loadGrade10Vocab } from "@/data/loader";
-import { type Grade10VocabData, type MCQuestion } from "@/data/types";
+import { type Grade10VocabData } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import PageShell from "@/components/PageShell";
 import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";

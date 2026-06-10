@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, Send, ChevronRight, Home, Trophy, Lightbulb, Search, X, ChevronLeft } from "lucide-react";
+import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, ChevronRight, Home, Trophy, Search, X, ChevronLeft } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
 import { loadGrade10Tests } from "@/data/loader";
 import {

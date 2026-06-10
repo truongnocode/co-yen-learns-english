@@ -13,7 +13,7 @@
  *   - sub (uid) present
  */
 
-import type { Context, MiddlewareHandler } from "hono";
+import type { MiddlewareHandler } from "hono";
 import type { Env } from "./env";
 
 const GOOGLE_CERTS_URL =

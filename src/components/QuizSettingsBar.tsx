@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Eye, EyeOff, Timer } from "lucide-react";
 
 export type ReviewMode = "instant" | "after";

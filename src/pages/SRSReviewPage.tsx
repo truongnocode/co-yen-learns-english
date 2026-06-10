@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Home, RotateCcw, ThumbsDown, Minus, ThumbsUp } from "lucide-react";
+import { ArrowLeft, Home, ThumbsDown, Minus, ThumbsUp } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { getProgress } from "@/lib/progress";
 import { loadSGKData } from "@/data/loader";
@@ -12,7 +12,6 @@ import PageShell from "@/components/PageShell";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
-const smooth = { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const };
 
 const SRSReviewPage = () => {
   const navigate = useNavigate();

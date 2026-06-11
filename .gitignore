@@ -23,7 +23,6 @@ serviceAccount.json
 
 # Test results
 test-results/
-playwright-report/
 coverage/
 
 # Batch-import workspace (large intermediates, never commit)

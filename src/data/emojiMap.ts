@@ -7,7 +7,7 @@ const emojiMap: Record<string, string> = {
   // Animals
   cat: "🐱", dog: "🐶", bird: "🐦", fish: "🐟", rabbit: "🐰", mouse: "🐭",
   elephant: "🐘", lion: "🦁", tiger: "🐯", monkey: "🐒", bear: "🐻", horse: "🐴",
-  cow: "🐄", pig: "🐷", sheep: "🐑", chicken: "🐔", duck: "🦆", frog: "🐸",
+  cow: "🐄", pig: "🐷", sheep: "🐑", duck: "🦆", frog: "🐸",
   snake: "🐍", turtle: "🐢", whale: "🐳", dolphin: "🐬", butterfly: "🦋",
   bee: "🐝", ant: "🐜", spider: "🕷️", penguin: "🐧", owl: "🦉", fox: "🦊",
   deer: "🦌", giraffe: "🦒", zebra: "🦓", gorilla: "🦍", parrot: "🦜",
@@ -15,7 +15,7 @@ const emojiMap: Record<string, string> = {
   crocodile: "🐊", camel: "🐫", dragon: "🐉", dinosaur: "🦕",
 
   // Food & Drinks
-  apple: "🍎", banana: "🍌", orange: "🍊", grape: "🍇", strawberry: "🍓",
+  apple: "🍎", banana: "🍌", grape: "🍇", strawberry: "🍓",
   watermelon: "🍉", lemon: "🍋", peach: "🍑", cherry: "🍒", pineapple: "🍍",
   mango: "🥭", coconut: "🥥", tomato: "🍅", corn: "🌽", carrot: "🥕",
   potato: "🥔", onion: "🧅", garlic: "🧄", pepper: "🌶️", mushroom: "🍄",
@@ -28,7 +28,7 @@ const emojiMap: Record<string, string> = {
 
   // School & Stationery
   book: "📖", pencil: "✏️", pen: "🖊️", ruler: "📏", eraser: "🧹",
-  bag: "🎒", backpack: "🎒", notebook: "📓", school: "🏫", teacher: "👩‍🏫",
+  backpack: "🎒", notebook: "📓", school: "🏫", teacher: "👩‍🏫",
   student: "👨‍🎓", desk: "🪑", chair: "🪑", clock: "🕐", computer: "💻",
   calculator: "🧮", globe: "🌍", map: "🗺️", library: "📚",
 

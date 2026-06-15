@@ -4,33 +4,18 @@ import { Mic } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import { useAuth } from "@/contexts/AuthContext";
-import { toast } from "@/hooks/use-toast";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
 const Index = () => {
   const navigate = useNavigate();
-  const { user, profile, signInWithGoogle, selectGrade } = useAuth();
+  const { profile, selectGrade } = useAuth();
   const [showGradeSelect, setShowGradeSelect] = useState(false);
   const grade = profile?.grade;
 
   const handleCTA = useCallback(async () => {
-    if (!user) {
-      try {
-        await signInWithGoogle();
-      } catch (err) {
-        console.error("Sign-in failed:", err);
-        toast({
-          title: "Đăng nhập thất bại",
-          description: "Vui lòng cho phép popup hoặc thử lại.",
-          variant: "destructive",
-        });
-        return;
-      }
-      return;
-    }
     if (!grade) { setShowGradeSelect(true); } else { navigate("/dashboard"); }
-  }, [user, grade, signInWithGoogle, navigate]);
+  }, [grade, navigate]);
 
   // Nav links should always navigate — browsing should NOT require login.
   // Protected pages handle their own auth gating.
@@ -61,8 +46,7 @@ const Index = () => {
           </div>
           <motion.button whileTap={{ scale: 0.95 }} onClick={handleCTA}
             className="bg-white hover:bg-indigo-50 text-indigo-600 font-bold py-2 px-6 rounded-full border-2 border-indigo-100 shadow-sm transition-all flex items-center gap-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-4 h-4" />
-            {user ? "Vào học" : "Đăng nhập"}
+            Vào học
           </motion.button>
         </div>
       </nav>
@@ -86,8 +70,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <motion.button whileTap={{ scale: 0.95 }} onClick={handleCTA}
                 className="btn-playful py-4 px-8 text-xl font-black flex items-center justify-center gap-3">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-6 h-6 bg-white rounded-full p-1" />
-                {user ? (grade ? "Vào lớp học" : "Chọn lớp") : "Bắt đầu miễn phí"}
+                {grade ? "Vào lớp học" : "Chọn lớp"}
               </motion.button>
               <motion.button whileTap={{ scale: 0.95 }} onClick={() => smartNavigate("/grades")}
                 className="bg-white/80 text-indigo-600 border-2 border-white rounded-full shadow-[0_4px_0_#d1d5db] active:translate-y-1 active:shadow-[0_0_0_#d1d5db] py-4 px-8 text-xl font-bold flex items-center justify-center gap-2 transition-all">

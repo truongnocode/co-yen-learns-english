@@ -21,6 +21,7 @@ const Navbar = () => {
   const navLinks = user && grade
     ? [
         { label: "Bài học", to: `/grade/${grade}` },
+        { label: "Video", to: "/video-lessons" },
         { label: "Tiến trình", to: "/progress" },
         { label: "Dashboard", to: "/dashboard" },
       ]

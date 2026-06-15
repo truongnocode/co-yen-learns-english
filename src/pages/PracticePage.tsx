@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, Home, Shuffle, Headphones, PuzzleIcon, Mic, LayoutGrid, ImageIcon } from "lucide-react";
+import { ArrowLeft, Home, Shuffle, Headphones, PuzzleIcon, Mic, LayoutGrid, ImageIcon, Film } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import PageShell from "@/components/PageShell";
 
@@ -13,6 +13,7 @@ const games = [
   { key: "shadowing", label: "Luyện Shadowing", desc: "Nghe, nhại âm và ghi âm giọng nói", icon: Mic, gradient: "gradient-purple-card" },
   { key: "flashcard-match", label: "Lật Thẻ Ghép Cặp", desc: "Lật thẻ tìm cặp hình ảnh và từ tiếng Anh", icon: LayoutGrid, gradient: "gradient-accent" },
   { key: "listen-picture", label: "Nghe và Chọn Tranh", desc: "Nghe từ tiếng Anh và chọn tranh đúng", icon: ImageIcon, gradient: "gradient-cool" },
+  { key: "video-lessons", label: "Học thuộc video", desc: "Nghe video, nhại theo, che chữ rồi đọc thuộc", icon: Film, gradient: "gradient-success" },
 ];
 
 const PracticePage = () => {
@@ -47,7 +48,7 @@ const PracticePage = () => {
               transition={{ ...smooth, delay: 0.1 + i * 0.08 }}
               whileHover={{ scale: 1.03, y: -3 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() => navigate(`/practice/${game.key}/${grade}`)}
+              onClick={() => navigate(game.key === "video-lessons" ? "/video-lessons" : `/practice/${game.key}/${grade}`)}
               className={`${game.gradient} text-white rounded-3xl p-6 text-left relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow`}
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-2xl" />

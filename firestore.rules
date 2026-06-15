@@ -11,7 +11,8 @@ service cloud.firestore {
       return isSignedIn() && request.auth.uid == uid;
     }
     function isAdmin() {
-      return isSignedIn() && request.auth.token.admin == true;
+      return isSignedIn()
+        && request.auth.token.email in ["truongnq.vie@gmail.com", "buiyen.701@gmail.com"];
     }
     // Guest mode cấp identity ẩn danh cho MỌI khách vãng lai, nên
     // isSignedIn() một mình không còn là rào chắn. isPermanent() phân biệt
@@ -55,6 +56,19 @@ service cloud.firestore {
     match /sgk/{grade}/units/{unitId} {
       allow read:  if isSignedIn();
       allow write: if isAdmin();
+    }
+
+    // Video lessons: cô giáo tạo bài từ URL YouTube; học sinh đọc để luyện thuộc.
+    match /video_lessons/{lessonId} {
+      allow read:  if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Tiến độ học thuộc video theo từng học sinh.
+    match /video_lesson_progress/{uid}/lessons/{lessonId} {
+      allow get, list: if isOwner(uid) || isAdmin();
+      allow create, update: if isOwner(uid);
+      allow delete: if false;
     }
 
     // ─── AI grading attempts: speaking / writing ─────────────────────────

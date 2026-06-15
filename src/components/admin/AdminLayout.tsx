@@ -36,6 +36,14 @@ export function AdminLayout() {
               >
                 Analytics
               </NavLink>
+              <NavLink
+                to="/admin/video-lessons"
+                className={({ isActive }) =>
+                  isActive ? "font-medium" : "text-muted-foreground hover:text-foreground"
+                }
+              >
+                Video
+              </NavLink>
             </nav>
           </div>
           <div className="flex items-center gap-3 text-sm">

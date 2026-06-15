@@ -100,8 +100,8 @@ const ShadowingPage = () => {
     if (!user) {
       toast({
         variant: "destructive",
-        title: "Cần đăng nhập",
-        description: "Em hãy đăng nhập Google để dùng chấm điểm AI.",
+        title: "Chưa sẵn sàng",
+        description: "Hệ thống đang tạo phiên học tự động. Em thử lại sau vài giây.",
       });
       return;
     }

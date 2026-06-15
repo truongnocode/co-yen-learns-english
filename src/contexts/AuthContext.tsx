@@ -1,10 +1,12 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import {
+  browserLocalPersistence,
+  getRedirectResult,
   onAuthStateChanged,
+  setPersistence,
   signInAnonymously,
   signInWithPopup,
   signInWithRedirect,
-  getRedirectResult,
   signOut,
   type User,
 } from "firebase/auth";
@@ -15,6 +17,7 @@ interface AuthContextType {
   user: User | null;
   profile: UserProfile | null;
   loading: boolean;
+  authError: string | null;
   signInWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
   selectGrade: (grade: number) => Promise<void>;
@@ -33,6 +36,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(true);
+  const [authError, setAuthError] = useState<string | null>(null);
+  const googleRedirectInFlight = useRef(false);
 
   const loadProfile = async (u: User) => {
     let p = await getUserProfile(u.uid);
@@ -46,14 +51,20 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   useEffect(() => {
-    // Pick up redirect result on page load (used when popup was blocked and we fell back to redirect).
-    getRedirectResult(auth).catch((err) => {
-      // Ignore cancelled / no-result cases; real failures still surface via the sign-in call.
-      console.warn("getRedirectResult:", err?.code || err);
-    });
+    let disposed = false;
     let anonInFlight = false;
-    const unsub = onAuthStateChanged(auth, async (u) => {
+    let unsub: (() => void) | undefined;
+    const isAdminRoute = window.location.pathname.startsWith("/admin");
+
+    const handleAuthState = async (u: User | null) => {
       if (!u) {
+        if (googleRedirectInFlight.current) return;
+        if (isAdminRoute) {
+          setUser(null);
+          setProfile(null);
+          setLoading(false);
+          return;
+        }
         // Guest mode: any visitor without a Google session gets an anonymous Firebase
         // identity so progress, pet, etc. work device-locally without an explicit login.
         // The auth state listener will fire again once signInAnonymously completes.
@@ -71,29 +82,52 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         return;
       }
       anonInFlight = false;
+      if (disposed) return;
+      setAuthError(null);
       setUser(u);
       await loadProfile(u);
-      setLoading(false);
-    });
-    return unsub;
+      if (!disposed) setLoading(false);
+    };
+
+    (async () => {
+      try {
+        await setPersistence(auth, browserLocalPersistence);
+        await getRedirectResult(auth);
+      } catch (err) {
+        setAuthError(firebaseErrorMessage(err));
+        console.warn("getRedirectResult:", err?.code || err);
+      }
+      if (disposed) return;
+      unsub = onAuthStateChanged(auth, handleAuthState);
+    })();
+
+    return () => {
+      disposed = true;
+      unsub?.();
+    };
   }, []);
 
   const signInWithGoogle = async () => {
+    googleRedirectInFlight.current = true;
+    setAuthError(null);
     try {
-      await signInWithPopup(auth, googleProvider);
-    } catch (err: unknown) {
+      await setPersistence(auth, browserLocalPersistence);
+      const result = await signInWithPopup(auth, googleProvider);
+      googleRedirectInFlight.current = false;
+      setUser(result.user);
+      await loadProfile(result.user);
+      setLoading(false);
+    } catch (err) {
       const code = (err as { code?: string })?.code;
-      // When the popup is blocked or the user closes it, fall back to a full-page redirect so
-      // sign-in still completes. Other errors (network, cancelled, etc.) bubble up to the caller.
       if (
         code === "auth/popup-blocked" ||
-        code === "auth/popup-closed-by-user" ||
-        code === "auth/cancelled-popup-request" ||
         code === "auth/operation-not-supported-in-this-environment"
       ) {
         await signInWithRedirect(auth, googleProvider);
         return;
       }
+      googleRedirectInFlight.current = false;
+      setAuthError(firebaseErrorMessage(err));
       throw err;
     }
   };
@@ -114,8 +148,22 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, profile, loading, signInWithGoogle, logout, selectGrade, refreshProfile }}>
+    <AuthContext.Provider value={{ user, profile, loading, authError, signInWithGoogle, logout, selectGrade, refreshProfile }}>
       {children}
     </AuthContext.Provider>
   );
 };
+
+function firebaseErrorMessage(err: unknown): string {
+  const code = (err as { code?: string })?.code;
+  if (code === "auth/unauthorized-domain") {
+    return "Domain hiện tại chưa được thêm vào Firebase Authentication > Authorized domains.";
+  }
+  if (code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request") {
+    return "Cửa sổ đăng nhập đã bị đóng trước khi hoàn tất.";
+  }
+  if (code === "auth/account-exists-with-different-credential") {
+    return "Email này đã tồn tại với cách đăng nhập khác.";
+  }
+  return code ? `Lỗi đăng nhập Firebase: ${code}` : "Không hoàn tất được đăng nhập Google.";
+}

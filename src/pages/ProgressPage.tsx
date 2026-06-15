@@ -9,7 +9,7 @@ import PageShell from "@/components/PageShell";
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
 const ProgressPage = () => {
-  const { user, profile, signInWithGoogle } = useAuth();
+  const { user, profile } = useAuth();
   const navigate = useNavigate();
   const [progress, setProgress] = useState<UserProgress | null>(null);
 
@@ -36,12 +36,8 @@ const ProgressPage = () => {
           <motion.div initial={{ opacity: 0, y: 20, filter: "blur(6px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={{ ...smooth, delay: 0.1 }}
             className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg text-center border border-white/60">
             <span className="text-5xl mb-3 block">🚀</span>
-            <h3 className="font-display font-extrabold text-xl text-foreground mb-2">Đăng nhập để lưu tiến trình!</h3>
-            <p className="text-sm text-muted-foreground mb-6">Đăng nhập bằng Gmail để lưu tiến trình và xem thống kê chi tiết nhé!</p>
-            <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={signInWithGoogle}
-              className="gradient-purple-card text-white rounded-full px-8 py-3 font-display font-extrabold shadow-lg">
-              Đăng nhập ngay
-            </motion.button>
+            <h3 className="font-display font-extrabold text-xl text-foreground mb-2">Đang chuẩn bị tiến trình</h3>
+            <p className="text-sm text-muted-foreground">Hệ thống sẽ tự lưu tiến trình trên thiết bị này.</p>
           </motion.div>
         ) : (
           <>

@@ -26,6 +26,7 @@ import type { Env } from "./env";
 import { requireAdmin, requireUser, type DecodedToken } from "./auth";
 import { extractStructured, GeminiError } from "./gemini";
 import { scoreSpeaking } from "./speaking";
+import { fetchYouTubeTranscript } from "./youtube";
 
 type Variables = { user: DecodedToken };
 
@@ -174,6 +175,28 @@ app.post("/api/import/sgk", requireAdmin, async (c) => {
     });
   } catch (e) {
     return geminiErrorResponse(c, e);
+  }
+});
+
+// ─── Video lessons: YouTube URL → public captions / Gemini transcript ───────
+
+app.post("/api/video-lessons/transcript", requireAdmin, async (c) => {
+  let body: { url?: string } = {};
+  try {
+    body = (await c.req.json()) as { url?: string };
+  } catch {
+    return c.json({ error: "Expected JSON body: { url: string }" }, 400);
+  }
+
+  const url = String(body.url ?? "").trim();
+  if (!url) return c.json({ error: "Thiếu URL YouTube." }, 400);
+
+  try {
+    const transcript = await fetchYouTubeTranscript(url, c.env.GEMINI_API_KEY);
+    return c.json(transcript);
+  } catch (e) {
+    if (e instanceof GeminiError) return geminiErrorResponse(c, e);
+    return c.json({ error: (e as Error).message }, 422);
   }
 });
 

@@ -1,68 +1,72 @@
-/**
- * Gate admin routes behind: (1) signed in, (2) Firebase custom claim `admin: true`.
- *
- * Custom claims live in the ID token. We read them from `user.getIdTokenResult()`
- * and cache the result for the lifetime of the component. If a teacher gets a
- * fresh admin grant while logged in, they'll need to sign out and back in (or
- * we can call `getIdToken(true)` to force refresh — see `refresh()` below).
- */
-
 import { useEffect, useState, type ReactNode } from "react";
-import { Navigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
+import { isAdminEmail } from "@/lib/admin";
 
 type AdminState = "checking" | "granted" | "denied";
 
 export function RequireAdmin({ children }: { children: ReactNode }) {
-  const { user, loading, signInWithGoogle } = useAuth();
+  const { user, loading, authError, signInWithGoogle } = useAuth();
   const [state, setState] = useState<AdminState>("checking");
 
   useEffect(() => {
-    if (loading) return;
+    if (loading) {
+      setState("checking");
+      return;
+    }
     if (!user) {
       setState("denied");
       return;
     }
+
+    let active = true;
+    setState("checking");
     (async () => {
-      const tokenResult = await user.getIdTokenResult();
-      setState(tokenResult.claims.admin === true ? "granted" : "denied");
+      try {
+        const tokenResult = await user.getIdTokenResult(true);
+        const email = typeof tokenResult.claims.email === "string" ? tokenResult.claims.email : user.email;
+        if (active) setState(isAdminEmail(email) ? "granted" : "denied");
+      } catch (err) {
+        console.error("admin token check failed:", err);
+        if (active) setState("denied");
+      }
     })();
+
+    return () => {
+      active = false;
+    };
   }, [user, loading]);
 
   if (loading || state === "checking") {
     return (
-      <div className="flex items-center justify-center min-h-screen text-sm text-muted-foreground">
-        Đang kiểm tra quyền quản trị…
+      <div className="flex min-h-screen items-center justify-center text-sm text-muted-foreground">
+        Đang kiểm tra quyền quản trị...
       </div>
     );
   }
 
   if (state === "denied") {
-    if (!user) return <Navigate to="/" replace />;
-    // Anonymous guest needs to log in with their Google admin account.
-    if (user.isAnonymous) {
-      return (
-        <div className="flex flex-col items-center justify-center min-h-screen gap-4 p-6 text-center">
-          <h1 className="text-xl font-semibold">Cần đăng nhập</h1>
-          <p className="text-sm text-muted-foreground max-w-md">
-            Trang quản trị yêu cầu tài khoản giáo viên có quyền admin.
-          </p>
-          <button
-            onClick={() => signInWithGoogle().catch((err) => console.error("admin sign-in failed:", err))}
-            className="bg-primary text-primary-foreground rounded-xl px-5 py-2.5 text-sm font-bold shadow-sm hover:brightness-110 transition-all"
-          >
-            Đăng nhập với Google
-          </button>
-        </div>
-      );
-    }
+    const needsGoogle = !user || user.isAnonymous;
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen gap-2 p-6 text-center">
-        <h1 className="text-xl font-semibold">Không có quyền</h1>
-        <p className="text-sm text-muted-foreground max-w-md">
-          Tài khoản {user.email} không có quyền truy cập trang quản trị. Nếu bạn
-          là giáo viên, liên hệ admin để được cấp quyền.
+      <div className="flex min-h-screen flex-col items-center justify-center gap-4 p-6 text-center">
+        <h1 className="text-xl font-semibold">
+          {needsGoogle ? "Cần đăng nhập giáo viên" : "Không có quyền quản trị"}
+        </h1>
+        <p className="max-w-md text-sm text-muted-foreground">
+          {needsGoogle
+            ? "Trang quản trị chỉ dành cho tài khoản Google của giáo viên có quyền admin."
+            : `Tài khoản ${user.email ?? "hiện tại"} không nằm trong danh sách admin được phép.`}
         </p>
+        {authError && (
+          <p className="max-w-md rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+            {authError}
+          </p>
+        )}
+        <button
+          onClick={() => signInWithGoogle().catch((err) => console.error("admin sign-in failed:", err))}
+          className="rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-sm transition-all hover:brightness-110"
+        >
+          Đăng nhập Google giáo viên
+        </button>
       </div>
     );
   }

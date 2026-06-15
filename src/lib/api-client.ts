@@ -10,6 +10,7 @@
  */
 
 import { auth, db } from "@/lib/firebase";
+import { apiBaseUrl } from "@/lib/apiBase";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import type {
   Exam,
@@ -17,8 +18,7 @@ import type {
   SgkUnit,
 } from "@/lib/content-schema";
 
-const BASE_URL =
-  import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "") ?? "http://localhost:8787";
+const BASE_URL = apiBaseUrl();
 
 async function authHeader(): Promise<Record<string, string>> {
   const u = auth.currentUser;

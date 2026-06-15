@@ -104,15 +104,17 @@ const LearningOverview = ({ progress }: Props) => {
             <button className="p-1.5 rounded-full hover:bg-muted/60 transition-colors">
               <Bell className="h-4 w-4 text-muted-foreground" />
             </button>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={logout}
-              className="p-1.5 rounded-full hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors"
-              title="Đăng xuất"
-            >
-              <LogOut className="h-4 w-4" />
-            </motion.button>
+            {user && !user.isAnonymous && (
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={logout}
+                className="p-1.5 rounded-full hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors"
+                title="Đăng xuất"
+              >
+                <LogOut className="h-4 w-4" />
+              </motion.button>
+            )}
           </div>
         </div>
 

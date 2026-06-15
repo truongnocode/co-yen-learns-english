@@ -18,6 +18,7 @@ import type { Env } from "./env";
 
 const GOOGLE_CERTS_URL =
   "https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com";
+const ADMIN_EMAILS = new Set(["truongnq.vie@gmail.com", "buiyen.701@gmail.com"]);
 
 interface DecodedToken {
   uid: string;
@@ -208,12 +209,12 @@ export async function verifyFirebaseIdToken(
   return {
     uid,
     email: typeof payload.email === "string" ? payload.email : undefined,
-    admin: payload.admin === true,
+    admin: typeof payload.email === "string" && ADMIN_EMAILS.has(payload.email.toLowerCase()),
     raw: payload,
   };
 }
 
-/** Hono middleware: requires a valid Firebase ID token with admin custom claim. */
+/** Hono middleware: requires a valid Firebase ID token from an allowed admin email. */
 export const requireAdmin: MiddlewareHandler<{ Bindings: Env; Variables: { user: DecodedToken } }> =
   async (c, next) => {
     const authHeader = c.req.header("Authorization") ?? "";
@@ -228,7 +229,7 @@ export const requireAdmin: MiddlewareHandler<{ Bindings: Env; Variables: { user:
     }
 
     if (!decoded.admin) {
-      return c.json({ error: "Admin claim required" }, 403);
+      return c.json({ error: "Admin email required" }, 403);
     }
 
     c.set("user", decoded);

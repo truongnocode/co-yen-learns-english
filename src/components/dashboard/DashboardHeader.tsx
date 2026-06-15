@@ -10,7 +10,7 @@ interface Props {
 }
 
 const DashboardHeader = ({ progress }: Props) => {
-  const { logout } = useAuth();
+  const { user, logout } = useAuth();
   const streak = Math.min(progress?.quizzesDone || 0, 7);
   const xp = (progress?.wordsLearned?.length || 0) * 10 + (progress?.quizzesDone || 0) * 30;
 
@@ -38,15 +38,17 @@ const DashboardHeader = ({ progress }: Props) => {
         <button className="p-2 rounded-full hover:bg-muted/60 transition-colors relative">
           <Bell className="h-5 w-5 text-muted-foreground" />
         </button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          onClick={logout}
-          className="p-2 rounded-full hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors"
-          title="Đăng xuất"
-        >
-          <LogOut className="h-4 w-4" />
-        </motion.button>
+        {user && !user.isAnonymous && (
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={logout}
+            className="p-2 rounded-full hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors"
+            title="Đăng xuất"
+          >
+            <LogOut className="h-4 w-4" />
+          </motion.button>
+        )}
       </div>
     </motion.div>
   );

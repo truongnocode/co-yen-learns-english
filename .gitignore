@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+.wrangler/
 *.local
 
 # Env files — only .env.example is committed

@@ -18,6 +18,4 @@
   }
   // Secrets (set via `wrangler secret put`):
   //   GEMINI_API_KEY          (Gemini 2.5 for content extraction + speech scoring)
-  //   TRANSCRIPT_EXTRACTOR_URL    (Node yt-dlp transcript service, optional)
-  //   TRANSCRIPT_EXTRACTOR_TOKEN  (shared token for transcript service, optional)
 }

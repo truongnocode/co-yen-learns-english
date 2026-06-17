@@ -1,5 +1,7 @@
 # ReadFlow — Đề xuất cải tiến chất lượng ngắt nhịp
 
+> 📌 **CẬP NHẬT (2026-06-18) — engine đã chốt.** Hướng cuối cùng KHÔNG phải syntax-first trên server. Engine hiện hành = **audio-faithful**, bám pause thật của speaker từ caption word-timing: `scripts/rhythm-from-captions.mjs` (rhythmSource `caption-audio-v1`), publish qua admin "Nhập JSON nhịp". Toàn bộ `services/transcript-extractor/server.mjs` + `syntax-boundaries.py` + worker transcript path đã bị **gỡ bỏ** trong đợt dọn dẹp — nên mọi citation `server.mjs:*` / §8–§9 dưới đây là **tư liệu lịch sử** về pipeline cũ, không còn trong code.
+
 Ngày tạo: 2026-06-17
 Tác giả: Claude (review độc lập, đa-góc-nhìn + verify trực tiếp trong code)
 Đọc kèm: [READFLOW-CURRENT-SYSTEM-REPORT-2026-06-17.md](./READFLOW-CURRENT-SYSTEM-REPORT-2026-06-17.md) (mô tả hệ thống hiện tại)

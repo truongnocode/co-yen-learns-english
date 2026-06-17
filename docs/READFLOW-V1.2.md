@@ -1,5 +1,7 @@
 # ReadFlow v1.2 - Ke hoach nang cap he thong hien co
 
+> ⚠️ **SUPERSEDED (2026-06-18).** Kế hoạch này dựa trên engine WhisperX-default đã bị gỡ. Kỹ thuật hiện hành = audio-faithful caption skill (`scripts/rhythm-from-captions.mjs`). Giữ làm tư liệu lịch sử.
+
 ## 0. Ket luan dieu hanh
 
 ReadFlow v1.2 khong phai la mot du an viet lai tu dau. Du an hien tai da co cac lop quan trong:

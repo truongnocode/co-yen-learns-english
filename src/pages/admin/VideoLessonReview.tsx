@@ -1,11 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { ArrowLeft, CheckCircle2, Loader2, RefreshCw, Save, Trash2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Loader2, Save, Trash2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import {
-  createTranscriptFromYouTube,
   getVideoLesson,
   saveVideoLessonReview,
   type VideoLesson,
@@ -22,7 +21,6 @@ export default function VideoLessonReviewPage() {
   const [lines, setLines] = useState<VideoLessonLine[]>([]);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
-  const [refreshing, setRefreshing] = useState(false);
   const [dirty, setDirty] = useState(false);
 
   useEffect(() => {
@@ -121,42 +119,6 @@ export default function VideoLessonReviewPage() {
     }
   };
 
-  const refreshRhythm = async () => {
-    if (!lessonId || !lesson) return;
-    setRefreshing(true);
-    try {
-      const preview = await createTranscriptFromYouTube(lesson.youtubeUrl || `https://www.youtube.com/watch?v=${lesson.videoId}`, {
-        grade: lesson.grade,
-      });
-      if (preview.videoId !== lesson.videoId) {
-        throw new Error("Transcript moi khong khop video hien tai.");
-      }
-
-      const nextLines = preview.lines.map(cloneLine);
-      await saveVideoLessonReview({
-        lessonId,
-        lines: nextLines,
-        rhythmSource: preview.rhythmSource,
-      });
-
-      setLesson({ ...lesson, rhythmSource: preview.rhythmSource });
-      setLines(nextLines);
-      setDirty(false);
-      toast({
-        title: "Da tao lai nhip",
-        description: `${nextLines.length} cau da duoc cap nhat bang ${preview.rhythmSource ?? "none"}.`,
-      });
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Chua tao lai duoc nhip",
-        description: (error as Error).message,
-      });
-    } finally {
-      setRefreshing(false);
-    }
-  };
-
   if (loading) {
     return (
       <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -196,10 +158,6 @@ export default function VideoLessonReviewPage() {
           </Badge>
           <Badge variant="outline">{stats.boundaries} dau ngat</Badge>
           <Badge variant="outline">{stats.major} ngat dai</Badge>
-          <Button variant="outline" onClick={refreshRhythm} disabled={refreshing || saving}>
-            {refreshing ? <Loader2 className="h-4 w-4 animate-spin" /> : <RefreshCw className="h-4 w-4" />}
-            Tao lai nhip
-          </Button>
           <Button onClick={save} disabled={saving || !dirty}>
             {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
             Luu review

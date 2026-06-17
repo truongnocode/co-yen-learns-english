@@ -9,9 +9,6 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "transcript:dev": "node services/transcript-extractor/server.mjs",
-    "transcript:extract": "node services/transcript-extractor/server.mjs --extract",
-    "rhythm:evaluate": "node scripts/evaluate-rhythm-engines.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

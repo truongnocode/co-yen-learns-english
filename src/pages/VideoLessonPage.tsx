@@ -18,12 +18,9 @@ import { Button } from "@/components/ui/button";
 import YouTubeSegmentPlayer, { type YouTubeSegmentPlayerHandle } from "@/components/YouTubeSegmentPlayer";
 import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/hooks/use-toast";
-import { isAdminEmail } from "@/lib/admin";
 import {
   getVideoLesson,
   getVideoLessonProgress,
-  isLatestVideoLessonRhythmSource,
-  refreshVideoLessonRhythm,
   saveVideoLessonProgress,
   type VideoLesson,
   type VideoLessonLine,
@@ -59,13 +56,11 @@ const VideoLessonPage = () => {
   const blockTimerRefs = useRef<ReturnType<typeof setTimeout>[]>([]);
   const chunkHighlightTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lineStopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const autoRefreshLessonRef = useRef<string | null>(null);
 
   const [lesson, setLesson] = useState<VideoLesson | null>(null);
   const [progress, setProgress] = useState<VideoLessonProgress | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
-  const [refreshingRhythm, setRefreshingRhythm] = useState(false);
   const [looping, setLooping] = useState(false);
   const [linePlaying, setLinePlaying] = useState(false);
   const [playbackRateIndex, setPlaybackRateIndex] = useState(0);
@@ -100,40 +95,6 @@ const VideoLessonPage = () => {
       setLoading(false);
     });
   }, [authLoading, user, lessonId, toast]);
-
-  useEffect(() => {
-    if (!lesson || !user || refreshingRhythm) return;
-    if (!isAdminEmail(user.email)) return;
-    if (isLatestVideoLessonRhythmSource(lesson.rhythmSource)) return;
-    if (autoRefreshLessonRef.current === lesson.id) return;
-
-    autoRefreshLessonRef.current = lesson.id;
-    setRefreshingRhythm(true);
-    toast({
-      title: "Đang tự cập nhật nhịp đọc",
-      description: "Bài này đang được tạo lại bằng WhisperX và cú pháp mới.",
-    });
-
-    refreshVideoLessonRhythm(lesson)
-      .then((updatedLesson) => {
-        setLesson(updatedLesson);
-        setCurrentChunkIndex(0);
-        setActiveChunkIndex(null);
-        toast({
-          title: "Đã cập nhật nhịp đọc mới",
-          description: "Dữ liệu bài học đã được ghi lại vào Firestore.",
-        });
-      })
-      .catch((e) => {
-        console.error("auto rhythm refresh failed:", e);
-        toast({
-          variant: "destructive",
-          title: "Chưa tự cập nhật được nhịp",
-          description: (e as Error).message,
-        });
-      })
-      .finally(() => setRefreshingRhythm(false));
-  }, [lesson, refreshingRhythm, toast, user]);
 
   const lines = useMemo(() => lesson?.lines ?? [], [lesson?.lines]);
   const currentLine = lines[currentIndex];
@@ -603,17 +564,8 @@ function getRhythmChunks(line?: VideoLessonLine, trustStoredRhythm = false): Dis
 }
 
 function isTrustedRhythmSource(source: string | undefined): boolean {
-  return (
-    source === "ffmpeg-hybrid-v1" ||
-    source === "ffmpeg-syntax-v2" ||
-    source === "ffmpeg-syntax-v3" ||
-    source === "ffmpeg-syntax-v4" ||
-    source === "whisperx-hybrid-v1" ||
-    source === "whisperx-syntax-v3" ||
-    source === "whisperx-syntax-v4" ||
-    source === "whisperx-syntax-v2" ||
-    source === "caption-audio-v1"
-  );
+  // Only the audio-faithful skill (caption-audio-v1) produces trusted rhythm.
+  return source === "caption-audio-v1";
 }
 
 function hasUsableStoredRhythm(line: VideoLessonLine): boolean {
@@ -643,82 +595,7 @@ function normalizeStoredRhythmChunks(line: VideoLessonLine, trustStoredRhythm: b
     })
     .filter((chunk): chunk is DisplayRhythmChunk => Boolean(chunk));
 
-  const repaired = repairProtectedStoredRhythmChunks(normalized);
-  return repaired.length > 1 ? repaired : [];
-}
-
-function repairProtectedStoredRhythmChunks(chunks: DisplayRhythmChunk[]): DisplayRhythmChunk[] {
-  const repaired = chunks.map((chunk) => ({
-    ...chunk,
-    boundaryAfter: chunk.boundaryAfter
-      ? {
-          ...chunk.boundaryAfter,
-          sources: [...chunk.boundaryAfter.sources],
-        }
-      : undefined,
-  }));
-
-  for (let index = 0; index < repaired.length - 1; index++) {
-    const current = repaired[index];
-    const next = repaired[index + 1];
-    if (!shouldMoveLeadingToLeft(current.text, next.text)) continue;
-
-    const nextWords = splitLessonWords(next.text);
-    const movedWord = nextWords[0];
-    const remainingWords = nextWords.slice(1);
-    current.text = normalizeLessonText(`${current.text} ${movedWord}`);
-
-    const nextDuration = Math.max(0, next.end - next.start);
-    const movedDuration = roundLessonTime(Math.min(0.38, Math.max(0.12, nextDuration / nextWords.length)));
-    const movedEnd = roundLessonTime(Math.min(next.end, next.start + movedDuration));
-    current.end = Math.max(current.end, movedEnd);
-
-    next.text = normalizeLessonText(remainingWords.join(" "));
-    next.start = Math.min(next.end, current.end);
-
-    if (!next.text || next.end <= next.start) {
-      current.end = Math.max(current.end, next.end);
-      current.boundaryAfter = next.boundaryAfter;
-      repaired.splice(index + 1, 1);
-      index--;
-    }
-  }
-
-  return repaired.filter((chunk) => chunk.text);
-}
-
-function shouldMoveLeadingToLeft(leftText: string, rightText: string): boolean {
-  const leftWords = splitLessonWords(leftText).map(coreLessonWord);
-  const rightWords = splitLessonWords(rightText).map(coreLessonWord);
-  if (rightWords[0] !== "to" || !isLikelyLessonInfinitivePhrase(rightWords)) return false;
-
-  const previousCore = leftWords[leftWords.length - 1] ?? "";
-  const previousPreviousCore = leftWords[leftWords.length - 2] ?? "";
-  return (
-    RHYTHM_TO_LEFT_TRIGGERS.has(previousCore) ||
-    RHYTHM_TO_LEFT_TRIGGERS.has(previousPreviousCore)
-  );
-}
-
-function splitLessonWords(text: string): string[] {
-  return normalizeLessonText(text).split(" ").filter(Boolean);
-}
-
-function coreLessonWord(text: string): string {
-  return normalizeLessonText(text)
-    .toLowerCase()
-    .replace(/^[^a-z0-9']+|[^a-z0-9']+$/g, "");
-}
-
-function isLikelyLessonInfinitiveVerb(core: string | undefined): boolean {
-  if (!core || !/^[a-z][a-z']*$/.test(core)) return false;
-  if (core === "be" || core === "do" || core === "have") return true;
-  return !RHYTHM_TO_OBJECT_STARTERS.has(core);
-}
-
-function isLikelyLessonInfinitivePhrase(words: string[]): boolean {
-  const headCore = RHYTHM_TO_SKIP_WORDS.has(words[1] ?? "") ? words[2] : words[1];
-  return isLikelyLessonInfinitiveVerb(headCore);
+  return normalized.length > 1 ? normalized : [];
 }
 
 function normalizeBoundaryAfter(boundary: VideoLessonRhythmChunk["boundaryAfter"]): VideoLessonRhythmChunk["boundaryAfter"] | undefined {
@@ -758,172 +635,6 @@ function normalizeLessonText(text: string): string {
 function roundLessonTime(value: number): number {
   return Math.max(0, Math.round(Number(value) * 100) / 100);
 }
-
-const RHYTHM_DETERMINER_WORDS = new Set([
-  "a",
-  "an",
-  "the",
-  "this",
-  "that",
-  "these",
-  "those",
-  "my",
-  "your",
-  "our",
-  "their",
-  "his",
-  "her",
-  "its",
-]);
-
-const RHYTHM_PREPOSITION_WORDS = new Set([
-  "of",
-  "in",
-  "on",
-  "at",
-  "for",
-  "with",
-  "from",
-  "by",
-  "about",
-  "into",
-  "over",
-  "under",
-  "through",
-  "between",
-  "among",
-]);
-
-const RHYTHM_TO_LEFT_TRIGGERS = new Set([
-  "able",
-  "about",
-  "afford",
-  "affords",
-  "afforded",
-  "aim",
-  "aims",
-  "aimed",
-  "allow",
-  "allows",
-  "allowed",
-  "attempt",
-  "attempts",
-  "attempted",
-  "attempting",
-  "begin",
-  "begins",
-  "began",
-  "begun",
-  "choose",
-  "chooses",
-  "chose",
-  "decide",
-  "decides",
-  "decided",
-  "enough",
-  "expect",
-  "expects",
-  "expected",
-  "fail",
-  "fails",
-  "failed",
-  "going",
-  "had",
-  "has",
-  "have",
-  "help",
-  "helps",
-  "helped",
-  "hope",
-  "hopes",
-  "hoped",
-  "how",
-  "learn",
-  "learns",
-  "learned",
-  "learning",
-  "like",
-  "likes",
-  "liked",
-  "love",
-  "loves",
-  "loved",
-  "need",
-  "needs",
-  "needed",
-  "order",
-  "plan",
-  "plans",
-  "planned",
-  "promise",
-  "promises",
-  "promised",
-  "ready",
-  "refuse",
-  "refuses",
-  "refused",
-  "seem",
-  "seems",
-  "seemed",
-  "start",
-  "starts",
-  "started",
-  "supposed",
-  "tend",
-  "tends",
-  "tended",
-  "time",
-  "try",
-  "tries",
-  "tried",
-  "trying",
-  "used",
-  "want",
-  "wants",
-  "wanted",
-  "way",
-  "wish",
-  "wishes",
-  "wished",
-]);
-
-const RHYTHM_TO_OBJECT_STARTERS = new Set([
-  ...RHYTHM_DETERMINER_WORDS,
-  ...RHYTHM_PREPOSITION_WORDS,
-  "and",
-  "but",
-  "because",
-  "before",
-  "after",
-  "when",
-  "while",
-  "where",
-  "which",
-  "who",
-  "that",
-  "if",
-  "so",
-  "i",
-  "you",
-  "he",
-  "she",
-  "it",
-  "we",
-  "they",
-  "me",
-  "him",
-  "her",
-  "us",
-  "them",
-  "not",
-  "n't",
-  "too",
-  "very",
-  "more",
-  "most",
-]);
-
-const RHYTHM_TO_SKIP_WORDS = new Set(["not", "never", "just", "really", "quickly", "slowly"]);
 
 function maskText(text: string, level: number): string {
   if (level <= 0) return text;

@@ -52,6 +52,6 @@ TuDien_*.csv
 *.sln
 *.sw?
 
-# Python bytecode (services/transcript-extractor parser)
+# Python bytecode
 __pycache__/
 *.pyc

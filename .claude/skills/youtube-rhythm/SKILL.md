@@ -63,13 +63,12 @@ Run everything from the repo root `D:\co-yen-learns-english`.
 
 ## Important notes
 
-- **Do NOT tell the user to press "Tạo lại nhịp" in the admin Review screen** — that button
-  re-runs the OLD server-side extractor pipeline (syntax-based) and would overwrite this
-  audio-faithful data. Re-run this skill instead to regenerate.
-- **One-time frontend deploy.** `caption-audio-v1` was added to the trust/latest lists in
-  `src/lib/videoLessons.ts` and `src/pages/VideoLessonPage.tsx`. The GitHub Pages frontend
-  must be deployed once (push `main`) for older deployments to render it; after that all
-  future videos work with no redeploy.
+- This caption-audio skill is the **only** rhythm engine. The old server-side extractor
+  (WhisperX/benepar) + worker transcript path + the admin "Tạo bài from URL" / "Tạo lại nhịp"
+  buttons were removed (cleanup 2026-06-18). To change a lesson's rhythm, re-run this skill
+  and re-publish; the admin Review screen still allows manual `/`//` tweaks.
+- The frontend already trusts `caption-audio-v1` and is deployed — published lessons render
+  with no further deploy.
 - **yt-dlp** must be on PATH. The script uses player clients `tv,mweb,web` and ignores
   DRM/format errors so captions download even when the media is DRM-protected.
 - Lessons are static data — each video is processed **once**. To change density or fix a

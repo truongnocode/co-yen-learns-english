@@ -1,5 +1,7 @@
 # ReadFlow / Video Lessons - Current System Report
 
+> ⚠️ **SUPERSEDED (2026-06-18).** Tài liệu này mô tả pipeline cũ (WhisperX + ffmpeg + spaCy/benepar server-side extractor + worker transcript). Pipeline đó đã bị **gỡ bỏ** trong đợt dọn dẹp. Kỹ thuật hiện hành = **audio-faithful caption skill**: `scripts/rhythm-from-captions.mjs` + skill `.claude/skills/youtube-rhythm` → publish qua admin "Nhập JSON nhịp" (`importVideoLesson`). Giữ file này làm tư liệu lịch sử. Thiết kế nhịp xem [READFLOW-IMPROVEMENT-PROPOSAL-2026-06-17.md](./READFLOW-IMPROVEMENT-PROPOSAL-2026-06-17.md).
+
 Ngay tao: 2026-06-17
 
 Muc dich: tai lieu nay mo ta trang thai he thong hien tai de Claude hoac mot nguoi review ben ngoai co the doc, nhan xet va de xuat cai tien. Bao cao tap trung vao module Video Lessons / ReadFlow: tao bai tu YouTube, phan tich nhip doc, luu Firestore, giao dien hoc sinh va admin.

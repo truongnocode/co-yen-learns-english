@@ -21,6 +21,8 @@ interface YTPlayer {
   loadVideoById: (args: { videoId: string; startSeconds?: number; endSeconds?: number }) => void;
   pauseVideo: () => void;
   setPlaybackRate: (rate: number) => void;
+  loadModule?: (module: string) => void;
+  setOption?: (module: string, option: string, value: unknown) => void;
   destroy: () => void;
 }
 
@@ -70,6 +72,15 @@ function loadYouTubeApi(): Promise<void> {
   return youtubeApiPromise;
 }
 
+function enableEnglishCaptions(player: YTPlayer | null) {
+  try {
+    player?.loadModule?.("captions");
+    player?.setOption?.("captions", "track", { languageCode: "en" });
+  } catch {
+    // Caption module support varies by video/browser; playerVars still request English CC.
+  }
+}
+
 const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegmentPlayerProps>(
   ({ videoId, className }, ref) => {
     const hostRef = useRef<HTMLDivElement | null>(null);
@@ -93,8 +104,15 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
           videoId,
           playerVars: {
             playsinline: 1,
+            controls: 0,
+            disablekb: 1,
+            fs: 0,
             rel: 0,
             modestbranding: 1,
+            iv_load_policy: 3,
+            cc_load_policy: 1,
+            cc_lang_pref: "en",
+            hl: "en",
             origin: window.location.origin,
           },
           events: {
@@ -102,6 +120,8 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
               if (cancelled) return;
               setReady(true);
               playerRef.current?.cueVideoById({ videoId, startSeconds: 0 });
+              enableEnglishCaptions(playerRef.current);
+              window.setTimeout(() => enableEnglishCaptions(playerRef.current), 300);
             },
           },
         });
@@ -127,12 +147,14 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
 
         const playOnce = () => {
           player.loadVideoById({ videoId, startSeconds: start, endSeconds: end });
+          enableEnglishCaptions(player);
           window.setTimeout(() => {
             try {
               player.setPlaybackRate(rate);
             } catch {
               // YouTube may reject an unavailable rate for some videos; default playback still works.
             }
+            enableEnglishCaptions(player);
           }, 250);
 
           timerRef.current = window.setTimeout(() => {
@@ -156,7 +178,9 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
             Đang tải video…
           </div>
         )}
-        <div ref={hostRef} className="h-full w-full" />
+        <div className="h-full w-full pointer-events-none">
+          <div ref={hostRef} className="h-full w-full" />
+        </div>
       </div>
     );
   },

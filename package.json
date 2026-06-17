@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp dist/index.html dist/404.html",
+    "build": "vite build && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
+    "transcript:dev": "node services/transcript-extractor/server.mjs",
+    "transcript:extract": "node services/transcript-extractor/server.mjs --extract",
+    "rhythm:evaluate": "node scripts/evaluate-rhythm-engines.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

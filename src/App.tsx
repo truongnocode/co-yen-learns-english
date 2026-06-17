@@ -38,6 +38,7 @@ import ImportExamPage from "./pages/admin/ImportExam";
 import ExamListPage from "./pages/admin/ExamList";
 import AnalyticsPage from "./pages/admin/Analytics";
 import VideoLessonsAdminPage from "./pages/admin/VideoLessons";
+import VideoLessonReviewPage from "./pages/admin/VideoLessonReview";
 
 const queryClient = new QueryClient();
 
@@ -90,6 +91,7 @@ const App = () => (
             <Route path="exams" element={<ExamListPage />} />
             <Route path="analytics" element={<AnalyticsPage />} />
             <Route path="video-lessons" element={<VideoLessonsAdminPage />} />
+            <Route path="video-lessons/:lessonId" element={<VideoLessonReviewPage />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

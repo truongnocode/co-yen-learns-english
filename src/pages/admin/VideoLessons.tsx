@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useState } from "react";
-import { AlertCircle, CheckCircle2, Link2, Loader2, PlayCircle, RefreshCw } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { AlertCircle, CheckCircle2, Link2, Loader2, PlayCircle, RefreshCw, Upload } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import {
   createTranscriptFromYouTube,
+  importVideoLesson,
   listVideoLessons,
   saveVideoLesson,
   type VideoLesson,
@@ -25,7 +26,9 @@ export default function VideoLessonsAdminPage() {
   const [lessons, setLessons] = useState<VideoLesson[]>([]);
   const [loading, setLoading] = useState(true);
   const [creating, setCreating] = useState(false);
+  const [importing, setImporting] = useState(false);
   const [lastCreatedId, setLastCreatedId] = useState<string | null>(null);
+  const importInputRef = useRef<HTMLInputElement>(null);
 
   const grade = useMemo(() => {
     const n = Number(gradeText);
@@ -66,7 +69,7 @@ export default function VideoLessonsAdminPage() {
     setCreating(true);
     setLastCreatedId(null);
     try {
-      const preview = await createTranscriptFromYouTube(cleanUrl);
+      const preview = await createTranscriptFromYouTube(cleanUrl, { grade });
       const id = await saveVideoLesson({
         youtubeUrl: cleanUrl,
         grade,
@@ -89,6 +92,31 @@ export default function VideoLessonsAdminPage() {
       });
     } finally {
       setCreating(false);
+    }
+  };
+
+  const handleImportFile = async (file: File | undefined) => {
+    if (!file) return;
+    setImporting(true);
+    setLastCreatedId(null);
+    try {
+      const lesson = JSON.parse(await file.text());
+      const id = await importVideoLesson(lesson);
+      setLastCreatedId(id);
+      await refresh();
+      toast({
+        title: "Đã nhập bài học",
+        description: `${lesson.title ?? id} · ${lesson.lines?.length ?? 0} câu (nhịp từ skill).`,
+      });
+    } catch (e) {
+      toast({
+        variant: "destructive",
+        title: "Chưa nhập được JSON",
+        description: (e as Error).message,
+      });
+    } finally {
+      setImporting(false);
+      if (importInputRef.current) importInputRef.current.value = "";
     }
   };
 
@@ -147,6 +175,28 @@ export default function VideoLessonsAdminPage() {
             sẽ thử dùng AI để tạo transcript khi Worker đã cấu hình Gemini API key.
           </p>
         </div>
+
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <input
+            ref={importInputRef}
+            type="file"
+            accept="application/json,.json"
+            className="hidden"
+            onChange={(e) => handleImportFile(e.target.files?.[0])}
+          />
+          <Button
+            variant="outline"
+            size="sm"
+            disabled={importing}
+            onClick={() => importInputRef.current?.click()}
+          >
+            {importing ? <Loader2 className="h-4 w-4 animate-spin" /> : <Upload className="h-4 w-4" />}
+            Nhập JSON nhịp (từ skill)
+          </Button>
+          <span className="text-xs text-muted-foreground">
+            Nhịp audio-faithful tạo sẵn bằng skill — bám giọng đọc thật, không cần GPU/Worker.
+          </span>
+        </div>
       </div>
 
       {lastCreatedId && (
@@ -189,6 +239,11 @@ export default function VideoLessonsAdminPage() {
                   <Badge variant={lesson.source === "caption" ? "default" : "secondary"}>
                     {sourceLabel(lesson.source)}
                   </Badge>
+                  <Button asChild variant="secondary" size="sm">
+                    <a href={`/admin/video-lessons/${lesson.id}`}>
+                      Xem nhịp
+                    </a>
+                  </Button>
                   <Button asChild variant="outline" size="sm">
                     <a href={`/video-lessons/${lesson.id}`} target="_blank" rel="noreferrer">
                       Xem bài

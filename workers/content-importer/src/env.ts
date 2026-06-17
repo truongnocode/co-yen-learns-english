@@ -10,4 +10,6 @@ export interface Env {
 
   // Secrets
   GEMINI_API_KEY: string;
+  TRANSCRIPT_EXTRACTOR_URL?: string;
+  TRANSCRIPT_EXTRACTOR_TOKEN?: string;
 }

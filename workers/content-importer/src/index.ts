@@ -181,7 +181,7 @@ app.post("/api/import/sgk", requireAdmin, async (c) => {
 // ─── Video lessons: YouTube URL → public captions / Gemini transcript ───────
 
 app.post("/api/video-lessons/transcript", requireAdmin, async (c) => {
-  let body: { url?: string } = {};
+  let body: { url?: string; grade?: number | null } = {};
   try {
     body = (await c.req.json()) as { url?: string };
   } catch {
@@ -192,7 +192,12 @@ app.post("/api/video-lessons/transcript", requireAdmin, async (c) => {
   if (!url) return c.json({ error: "Thiếu URL YouTube." }, 400);
 
   try {
-    const transcript = await fetchYouTubeTranscript(url, c.env.GEMINI_API_KEY);
+    const transcript = await fetchYouTubeTranscript(url, {
+      apiKey: c.env.GEMINI_API_KEY,
+      extractorUrl: c.env.TRANSCRIPT_EXTRACTOR_URL,
+      extractorToken: c.env.TRANSCRIPT_EXTRACTOR_TOKEN,
+      grade: body.grade,
+    });
     return c.json(transcript);
   } catch (e) {
     if (e instanceof GeminiError) return geminiErrorResponse(c, e);

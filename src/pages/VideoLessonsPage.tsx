@@ -23,19 +23,26 @@ const VideoLessonsPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!user) {
-      if (!authLoading) setLoading(false);
-      return;
-    }
+    if (authLoading) return;
+    let cancelled = false;
+    setLoading(true);
     (async () => {
       const rows = await listVideoLessons();
+      if (cancelled) return;
       setLessons(rows);
-      const pairs = await Promise.all(
-        rows.map(async (lesson) => [lesson.id, await getVideoLessonProgress(user.uid, lesson.id)] as const),
-      );
-      setProgressMap(Object.fromEntries(pairs));
+      if (user) {
+        const pairs = await Promise.all(
+          rows.map(async (lesson) => [lesson.id, await getVideoLessonProgress(user.uid, lesson.id)] as const),
+        );
+        if (!cancelled) setProgressMap(Object.fromEntries(pairs));
+      } else {
+        setProgressMap({});
+      }
       setLoading(false);
     })().catch(() => setLoading(false));
+    return () => {
+      cancelled = true;
+    };
   }, [user, authLoading]);
 
   const visibleLessons = useMemo(() => {

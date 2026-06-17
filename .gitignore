@@ -51,3 +51,7 @@ TuDien_*.csv
 *.njsproj
 *.sln
 *.sw?
+
+# Python bytecode (services/transcript-extractor parser)
+__pycache__/
+*.pyc

@@ -6,6 +6,21 @@ export interface TranscriptLine {
   start: number;
   end: number;
   text: string;
+  rhythmChunks?: TranscriptRhythmChunk[];
+}
+
+export interface TranscriptRhythmChunk {
+  text: string;
+  start: number;
+  end: number;
+  boundaryAfter?: TranscriptRhythmBoundary;
+}
+
+export interface TranscriptRhythmBoundary {
+  type: "minor" | "major";
+  pauseMs: number;
+  confidence: number;
+  sources: Array<"silence" | "punctuation" | "syntax" | "length" | "audio">;
 }
 
 export interface YouTubeTranscriptResult {
@@ -14,6 +29,14 @@ export interface YouTubeTranscriptResult {
   source: "caption" | "auto_caption" | "gemini";
   languageCode: string;
   lines: TranscriptLine[];
+  rhythmSource?: string;
+}
+
+interface YouTubeTranscriptOptions {
+  apiKey?: string;
+  extractorUrl?: string;
+  extractorToken?: string;
+  grade?: number | null;
 }
 
 interface CaptionTrack {
@@ -26,6 +49,11 @@ interface CaptionTrack {
 
 interface PlayerResponse {
   videoDetails?: { title?: string; videoId?: string };
+  playabilityStatus?: {
+    status?: string;
+    reason?: string;
+    messages?: string[];
+  };
   captions?: {
     playerCaptionsTracklistRenderer?: {
       captionTracks?: CaptionTrack[];
@@ -36,12 +64,28 @@ interface PlayerResponse {
 interface TimedTextEvent {
   tStartMs?: number;
   dDurationMs?: number;
-  segs?: Array<{ utf8?: string }>;
+  segs?: Array<{ utf8?: string; tOffsetMs?: number }>;
 }
 
 interface TimedTextResponse {
   events?: TimedTextEvent[];
 }
+
+const RhythmBoundarySchema = z.object({
+  type: z.enum(["minor", "major"]),
+  pauseMs: z.number().min(0).optional(),
+  confidence: z.number().min(0).max(1).optional(),
+  sources: z
+    .array(z.enum(["silence", "punctuation", "syntax", "length", "audio"]))
+    .optional(),
+});
+
+const RhythmChunkSchema = z.object({
+  text: z.string().min(1),
+  start: z.number().min(0),
+  end: z.number().min(0),
+  boundaryAfter: RhythmBoundarySchema.optional(),
+});
 
 const GeminiTranscriptSchema = z.object({
   title: z.string().optional(),
@@ -51,6 +95,25 @@ const GeminiTranscriptSchema = z.object({
         start: z.number().min(0),
         end: z.number().min(0),
         text: z.string().min(1),
+      }),
+    )
+    .min(1),
+});
+
+const ExtractorTranscriptSchema = z.object({
+  videoId: z.string().min(1).optional(),
+  title: z.string().min(1).optional(),
+  source: z.enum(["caption", "auto_caption"]).optional(),
+  languageCode: z.string().min(1).optional(),
+  rhythmSource: z.string().min(1).optional(),
+  lines: z
+    .array(
+      z.object({
+        id: z.string().optional(),
+        start: z.number().min(0),
+        end: z.number().min(0),
+        text: z.string().min(1),
+        rhythmChunks: z.array(RhythmChunkSchema).optional(),
       }),
     )
     .min(1),
@@ -86,7 +149,7 @@ export function extractYouTubeVideoId(input: string): string | null {
 
 export async function fetchYouTubeTranscript(
   urlOrId: string,
-  apiKey?: string,
+  options: YouTubeTranscriptOptions = {},
 ): Promise<YouTubeTranscriptResult> {
   const videoId = extractYouTubeVideoId(urlOrId);
   if (!videoId) {
@@ -94,6 +157,15 @@ export async function fetchYouTubeTranscript(
   }
 
   const canonicalUrl = `https://www.youtube.com/watch?v=${videoId}`;
+  let extractorError: Error | null = null;
+  if (options.extractorUrl) {
+    try {
+      return await fetchTranscriptFromExtractor(canonicalUrl, videoId, options);
+    } catch (e) {
+      extractorError = e as Error;
+    }
+  }
+
   const watchUrl = `${canonicalUrl}&hl=en&persist_hl=1`;
   const res = await fetch(watchUrl, {
     headers: {
@@ -108,6 +180,15 @@ export async function fetchYouTubeTranscript(
 
   const html = await res.text();
   const playerResponse = extractPlayerResponse(html);
+  const playability = playerResponse.playabilityStatus;
+  if (playability?.status && playability.status !== "OK") {
+    const reason =
+      playability.reason ?? playability.messages?.find(Boolean) ?? playability.status;
+    throw new Error(
+      `Video YouTube không khả dụng với hệ thống (${reason}). Hãy dùng video public khác, hoặc video có thể xem được khi không đăng nhập.`,
+    );
+  }
+
   const title = playerResponse.videoDetails?.title ?? `YouTube ${videoId}`;
 
   let captionError: Error | null = null;
@@ -122,7 +203,7 @@ export async function fetchYouTubeTranscript(
       throw new Error("Không tìm thấy phụ đề tiếng Anh công khai trong video này.");
     }
 
-    const lines = await fetchCaptionLines(track.baseUrl);
+    const lines = stripRhythmChunks(await fetchCaptionLines(track.baseUrl));
     if (lines.length === 0) {
       throw new Error("Phụ đề của video này rỗng hoặc chưa đọc được.");
     }
@@ -133,22 +214,111 @@ export async function fetchYouTubeTranscript(
       source: track.kind === "asr" ? "auto_caption" : "caption",
       languageCode: track.languageCode ?? "en",
       lines,
+      rhythmSource: "none",
     };
   } catch (e) {
     captionError = e as Error;
   }
 
-  if (apiKey) {
+  if (options.apiKey) {
     return transcribeYouTubeWithGemini({
-      apiKey,
+      apiKey: options.apiKey,
       videoId,
       title,
       url: canonicalUrl,
     });
   }
 
+  const extractorDetail = extractorError
+    ? ` Dịch vụ yt-dlp cũng chưa lấy được: ${extractorError.message}`
+    : "";
   throw new Error(
-    `${captionError?.message ?? "Không đọc được phụ đề YouTube."} Nếu muốn tự tạo transcript cho video này, cần cấu hình GEMINI_API_KEY trên Worker.`,
+    `${captionError?.message ?? "Không đọc được phụ đề YouTube."}${extractorDetail} Nếu muốn tự tạo transcript cho video này, cần cấu hình GEMINI_API_KEY trên Worker.`,
+  );
+}
+
+async function fetchTranscriptFromExtractor(
+  url: string,
+  fallbackVideoId: string,
+  options: YouTubeTranscriptOptions,
+): Promise<YouTubeTranscriptResult> {
+  const endpoint = new URL("/api/transcript", options.extractorUrl).toString();
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 280_000);
+
+  try {
+    const headers: Record<string, string> = {
+      "content-type": "application/json",
+    };
+    if (options.extractorToken) {
+      headers.authorization = `Bearer ${options.extractorToken}`;
+    }
+
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({ url, grade: options.grade ?? undefined }),
+      signal: controller.signal,
+    });
+    const body = (await res.json().catch(() => null)) as unknown;
+    if (!res.ok) {
+      const error = body && typeof body === "object" && "error" in body
+        ? String((body as { error?: unknown }).error)
+        : `HTTP ${res.status}`;
+      throw new Error(error);
+    }
+
+    const parsed = ExtractorTranscriptSchema.parse(body);
+    const trustRhythm = isTrustedRhythmSource(parsed.rhythmSource);
+    const lines = parsed.lines
+      .map((line, index) => {
+        const start = roundTime(line.start);
+        const end = roundTime(line.end > line.start ? line.end : line.start + 2);
+        const text = normalizeCaptionText(line.text);
+        const rhythmChunks = trustRhythm ? normalizeRhythmChunks(line.rhythmChunks, start, end) : undefined;
+
+        return {
+          id: line.id || `line-${String(index + 1).padStart(3, "0")}`,
+          start,
+          end,
+          text,
+          ...(rhythmChunks ? { rhythmChunks } : {}),
+        };
+      })
+      .filter((line) => line.text && !isNoiseCaption(line.text));
+
+    if (lines.length === 0) {
+      throw new Error("Dịch vụ yt-dlp chưa trả về dòng phụ đề dùng được.");
+    }
+
+    return {
+      videoId: parsed.videoId || fallbackVideoId,
+      title: parsed.title || `YouTube ${fallbackVideoId}`,
+      source: parsed.source ?? "caption",
+      languageCode: parsed.languageCode ?? "en",
+      lines,
+      rhythmSource: trustRhythm ? parsed.rhythmSource : "none",
+    };
+  } catch (e) {
+    if ((e as Error).name === "AbortError") {
+      throw new Error("Dịch vụ yt-dlp phản hồi quá lâu.");
+    }
+    throw e;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function isTrustedRhythmSource(source: string | undefined): boolean {
+  return (
+    source === "ffmpeg-hybrid-v1" ||
+    source === "ffmpeg-syntax-v2" ||
+    source === "ffmpeg-syntax-v3" ||
+    source === "ffmpeg-syntax-v4" ||
+    source === "whisperx-syntax-v2" ||
+    source === "whisperx-syntax-v3" ||
+    source === "whisperx-syntax-v4" ||
+    source === "whisperx-hybrid-v1"
   );
 }
 
@@ -282,21 +452,25 @@ function compactCaptionEvents(events: TimedTextEvent[]): TranscriptLine[] {
   let start = 0;
   let end = 0;
   let text = "";
+  let rhythmChunks: TranscriptRhythmChunk[] = [];
 
   const flush = () => {
     const clean = normalizeCaptionText(text);
     if (clean) {
       const safeEnd = end > start ? end : start + 2;
+      const normalizedChunks = normalizeRhythmChunks(rhythmChunks, start, safeEnd);
       lines.push({
         id: `line-${String(lines.length + 1).padStart(3, "0")}`,
         start: roundTime(start),
         end: roundTime(safeEnd),
         text: clean,
+        ...(normalizedChunks ? { rhythmChunks: normalizedChunks } : {}),
       });
     }
     start = 0;
     end = 0;
     text = "";
+    rhythmChunks = [];
   };
 
   for (const event of events) {
@@ -310,6 +484,11 @@ function compactCaptionEvents(events: TimedTextEvent[]): TranscriptLine[] {
     if (!text) start = eventStart;
     text = joinCaptionText(text, chunk);
     end = eventEnd;
+    rhythmChunks.push({
+      text: chunk,
+      start: roundTime(eventStart),
+      end: roundTime(eventEnd > eventStart ? eventEnd : eventStart + 0.8),
+    });
 
     const duration = end - start;
     const words = text.split(/\s+/).filter(Boolean).length;
@@ -353,6 +532,13 @@ function parseWebVtt(vtt: string): TranscriptLine[] {
       start: roundTime(start),
       end: roundTime(end > start ? end : start + 2),
       text,
+      rhythmChunks: [
+        {
+          text,
+          start: roundTime(start),
+          end: roundTime(end > start ? end : start + 2),
+        },
+      ],
     });
   }
 
@@ -365,10 +551,14 @@ function mergeShortLines(input: TranscriptLine[]): TranscriptLine[] {
 
   const flush = () => {
     if (!current) return;
+    const line = { ...current };
+    delete line.rhythmChunks;
+    const rhythmChunks = normalizeRhythmChunks(current.rhythmChunks, current.start, current.end);
     merged.push({
-      ...current,
+      ...line,
       id: `line-${String(merged.length + 1).padStart(3, "0")}`,
       text: normalizeCaptionText(current.text),
+      ...(rhythmChunks ? { rhythmChunks } : {}),
     });
     current = null;
   };
@@ -377,6 +567,7 @@ function mergeShortLines(input: TranscriptLine[]): TranscriptLine[] {
     if (!current) {
       current = { ...line };
     } else {
+      current.rhythmChunks = [...rhythmChunksForLine(current), ...rhythmChunksForLine(line)];
       current.end = line.end;
       current.text = joinCaptionText(current.text, line.text);
     }
@@ -389,6 +580,66 @@ function mergeShortLines(input: TranscriptLine[]): TranscriptLine[] {
   }
   flush();
   return merged;
+}
+
+function rhythmChunksForLine(line: TranscriptLine): TranscriptRhythmChunk[] {
+  return normalizeRhythmChunks(line.rhythmChunks, line.start, line.end) ?? [
+    {
+      text: normalizeCaptionText(line.text),
+      start: roundTime(line.start),
+      end: roundTime(line.end > line.start ? line.end : line.start + 2),
+    },
+  ];
+}
+
+function normalizeRhythmChunks(
+  input: unknown,
+  lineStart: number,
+  lineEnd: number,
+): TranscriptRhythmChunk[] | undefined {
+  if (!Array.isArray(input)) return undefined;
+  const normalized = input
+    .map((chunk) => {
+      if (!chunk || typeof chunk !== "object") return null;
+      const raw = chunk as Partial<TranscriptRhythmChunk>;
+      const text = normalizeCaptionText(String(raw.text ?? ""));
+      const start = roundTime(Number(raw.start));
+      const end = roundTime(Number(raw.end));
+      if (!text || !Number.isFinite(start) || !Number.isFinite(end)) return null;
+      const safeStart = Math.max(roundTime(lineStart), start);
+      const safeEnd = Math.min(roundTime(lineEnd), end > safeStart ? end : safeStart + 0.35);
+      if (safeEnd <= safeStart) return null;
+      const boundaryAfter = normalizeRhythmBoundary(raw.boundaryAfter);
+      return { text, start: safeStart, end: safeEnd, ...(boundaryAfter ? { boundaryAfter } : {}) };
+    })
+    .filter((chunk): chunk is TranscriptRhythmChunk => Boolean(chunk));
+
+  return normalized.length > 1 ? normalized : undefined;
+}
+
+function normalizeRhythmBoundary(input: unknown): TranscriptRhythmBoundary | undefined {
+  if (!input || typeof input !== "object") return undefined;
+  const raw = input as Partial<TranscriptRhythmBoundary>;
+  const type = raw.type === "major" ? "major" : raw.type === "minor" ? "minor" : null;
+  if (!type) return undefined;
+  const allowed = new Set(["silence", "punctuation", "syntax", "length", "audio"]);
+  const sources = Array.isArray(raw.sources)
+    ? raw.sources.map((source) => String(source)).filter((source) => allowed.has(source))
+    : [];
+  return {
+    type,
+    pauseMs: Math.max(0, Math.round(Number(raw.pauseMs ?? 0))),
+    confidence: Math.max(0, Math.min(1, Math.round(Number(raw.confidence ?? 0.4) * 100) / 100)),
+    sources: [...new Set(sources)] as TranscriptRhythmBoundary["sources"],
+  };
+}
+
+function stripRhythmChunks(lines: TranscriptLine[]): TranscriptLine[] {
+  return lines.map((line) => {
+    const clean = { ...line };
+    delete clean.rhythmChunks;
+    return clean;
+  });
 }
 
 function parseVttTime(value: string): number {

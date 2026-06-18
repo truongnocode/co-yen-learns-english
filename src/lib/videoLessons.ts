@@ -70,6 +70,7 @@ export async function importVideoLesson(
     throw new Error("JSON không hợp lệ: cần có 'videoId' và 'lines'.");
   }
   const id = lesson.videoId;
+  const lines = normalizeLessonLines(lesson.lines);
   await setDoc(
     doc(db, "video_lessons", id),
     {
@@ -80,7 +81,7 @@ export async function importVideoLesson(
       languageCode: lesson.languageCode ?? "en",
       grade: lesson.grade ?? null,
       topic: (lesson.topic ?? "").trim(),
-      lines: lesson.lines,
+      lines,
       rhythmSource: trustedRhythmSource(lesson.rhythmSource),
       createdBy: u.uid,
       updatedAt: serverTimestamp(),
@@ -95,6 +96,29 @@ export async function importVideoLesson(
 // engine; it emits "caption-audio-v1". Anything else is treated as "no rhythm".
 function trustedRhythmSource(source: string | undefined): string {
   return source === "caption-audio-v1" ? source : "none";
+}
+
+// Every line's id is used by VideoLessonPage as the React key and as the per-line
+// progress key (completedLineIds, hideLevelByLine), so each must be a non-empty,
+// unique string. Hand-edited import JSON can break that. We mirror the skill's
+// positional ids (scripts/rhythm-from-captions.mjs: `l${i}`) for any line missing
+// one — preserving valid explicit ids so progress survives line reorders — then
+// reject leftover duplicates rather than silently corrupting the student view.
+function normalizeLessonLines(lines: VideoLessonLine[]): VideoLessonLine[] {
+  const normalized = lines.map((line, i) => {
+    const id = typeof line.id === "string" ? line.id.trim() : "";
+    return id ? { ...line, id } : { ...line, id: `l${i}` };
+  });
+  const seen = new Set<string>();
+  for (const line of normalized) {
+    if (seen.has(line.id)) {
+      throw new Error(
+        `JSON không hợp lệ: 'id' của dòng bị trùng lặp ("${line.id}"). Mỗi dòng cần một id duy nhất.`,
+      );
+    }
+    seen.add(line.id);
+  }
+  return normalized;
 }
 
 export async function listVideoLessons(): Promise<VideoLesson[]> {

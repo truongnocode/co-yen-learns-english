@@ -108,6 +108,10 @@ const VideoLessonPage = () => {
   const hasStoredRhythm = useMemo(() => lines.some(hasUsableStoredRhythm), [lines]);
   const canUseStoredRhythm = hasTrustedRhythm || hasStoredRhythm;
   const currentRhythmChunks = useMemo(() => getRhythmChunks(currentLine, canUseStoredRhythm), [currentLine, canUseStoredRhythm]);
+  const lineRhythmChunks = useMemo(
+    () => lines.map((line) => getRhythmChunks(line, canUseStoredRhythm)),
+    [lines, canUseStoredRhythm],
+  );
   const hasCurrentRhythm = currentRhythmChunks.length > 1 && currentRhythmChunks.some((chunk) => chunk.reliable);
   const canPlayChunk = hasCurrentRhythm;
   const dialogueTextClass = getDialogueTextClass(currentLine?.text ?? "");
@@ -521,6 +525,8 @@ const VideoLessonPage = () => {
                 {lines.map((line, index) => {
                   const active = index === currentIndex;
                   const done = completed.has(line.id);
+                  const chunks = lineRhythmChunks[index];
+                  const showMarks = showRhythmMarks && chunks.length > 1 && chunks.some((chunk) => chunk.reliable);
                   return (
                     <button
                       key={line.id}
@@ -541,7 +547,19 @@ const VideoLessonPage = () => {
                         <span className="font-display font-extrabold">Câu {index + 1}</span>
                         {done && <Check className="h-4 w-4" />}
                       </div>
-                      <p className="line-clamp-2">{line.text}</p>
+                      <p className="line-clamp-2">
+                        {showMarks
+                          ? chunks.map((chunk, chunkIndex) => (
+                              <span key={`${chunk.start}-${chunkIndex}`}>
+                                {chunk.text}
+                                {chunkIndex < chunks.length - 1 && (
+                                  <span className="px-1 font-display font-black text-primary">{boundaryMark(chunk)}</span>
+                                )}
+                                {chunkIndex < chunks.length - 1 ? " " : ""}
+                              </span>
+                            ))
+                          : line.text}
+                      </p>
                     </button>
                   );
                 })}

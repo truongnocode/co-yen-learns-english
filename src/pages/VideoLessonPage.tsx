@@ -368,11 +368,11 @@ const VideoLessonPage = () => {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={smooth}
-              className="rounded-2xl border border-border/30 bg-card/85 p-3 shadow-lg backdrop-blur-xl lg:h-[230px] lg:shrink-0"
+              className="rounded-2xl border border-border/30 bg-card/85 p-3 shadow-lg backdrop-blur-xl lg:min-h-[230px] lg:shrink-0"
             >
               <h1 className="sr-only">{lesson.title}</h1>
 
-              <div className="mb-2 flex h-[92px] items-center justify-center overflow-hidden rounded-2xl bg-secondary/60 px-3 sm:h-[98px] lg:h-[88px]">
+              <div className="mb-2 flex min-h-[92px] flex-col items-center justify-center gap-1.5 overflow-hidden rounded-2xl bg-secondary/60 px-3 py-2 sm:min-h-[104px] lg:min-h-[112px]">
                 <p className={`flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center font-display font-extrabold text-foreground ${dialogueTextClass}`}>
                   {currentRhythmChunks.map((chunk, index) => (
                     <span key={`${chunk.start}-${chunk.text}-${index}`} className="inline-flex items-center gap-2">
@@ -391,6 +391,11 @@ const VideoLessonPage = () => {
                     </span>
                   ))}
                 </p>
+                {currentLine?.vi && (
+                  <p className="max-w-2xl text-center text-sm font-medium leading-snug text-muted-foreground sm:text-base">
+                    {currentLine.vi}
+                  </p>
+                )}
               </div>
 
               <div className="grid gap-2 sm:grid-cols-[1fr_1.4fr_1fr]">

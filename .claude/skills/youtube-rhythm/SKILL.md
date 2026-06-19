@@ -40,6 +40,12 @@ Run everything from the repo root `D:\co-yen-learns-english`.
    tight unit is split oddly; pause density looks right for the grade. Show the user a few
    marked sentences. If density is off, re-run step 1 with a different `--density`.
 
+2b. **Add Vietnamese translation (`vi`).** The student UI shows a Vietnamese line under the
+   English in the control box (and it is searchable in Review). Claude translates each
+   line into natural, kid-friendly Vietnamese and writes it to `line.vi` for every line in
+   the lesson JSON (the script does not generate `vi`). Translate the *meaning* per sentence,
+   not word-for-word. Lines with no `vi` simply show no translation.
+
 3. **Publish.** Two ways — prefer whichever has credentials available:
 
    **(a) No service account (recommended, uses admin browser login):** keep the `--out`

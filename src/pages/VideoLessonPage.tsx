@@ -54,7 +54,6 @@ const VideoLessonPage = () => {
   const playerRef = useRef<YouTubeSegmentPlayerHandle | null>(null);
   const lineButtonRefs = useRef(new Map<string, HTMLButtonElement>());
   const blockTimerRefs = useRef<ReturnType<typeof setTimeout>[]>([]);
-  const chunkHighlightTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const lineStopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [lesson, setLesson] = useState<VideoLesson | null>(null);
@@ -64,9 +63,6 @@ const VideoLessonPage = () => {
   const [looping, setLooping] = useState(false);
   const [linePlaying, setLinePlaying] = useState(false);
   const [playbackRateIndex, setPlaybackRateIndex] = useState(0);
-  const [showRhythmMarks, setShowRhythmMarks] = useState(true);
-  const [currentChunkIndex, setCurrentChunkIndex] = useState(0);
-  const [activeChunkIndex, setActiveChunkIndex] = useState<number | null>(null);
 
   useEffect(() => {
     if (!lessonId) {
@@ -112,8 +108,6 @@ const VideoLessonPage = () => {
     () => lines.map((line) => getRhythmChunks(line, canUseStoredRhythm)),
     [lines, canUseStoredRhythm],
   );
-  const hasCurrentRhythm = currentRhythmChunks.length > 1 && currentRhythmChunks.some((chunk) => chunk.reliable);
-  const canPlayChunk = hasCurrentRhythm;
   const dialogueTextClass = getDialogueTextClass(currentLine?.text ?? "");
 
   const blockStart = Math.floor(currentIndex / 5) * 5;
@@ -124,12 +118,6 @@ const VideoLessonPage = () => {
     blockTimerRefs.current = [];
   }, []);
 
-  const clearChunkHighlight = useCallback(() => {
-    if (chunkHighlightTimerRef.current) clearTimeout(chunkHighlightTimerRef.current);
-    chunkHighlightTimerRef.current = null;
-    setActiveChunkIndex(null);
-  }, []);
-
   const clearLineStopTimer = useCallback(() => {
     if (lineStopTimerRef.current) clearTimeout(lineStopTimerRef.current);
     lineStopTimerRef.current = null;
@@ -137,12 +125,11 @@ const VideoLessonPage = () => {
 
   const stopPlayback = useCallback(() => {
     clearBlockTimers();
-    clearChunkHighlight();
     clearLineStopTimer();
     setLinePlaying(false);
     setLooping(false);
     playerRef.current?.stop();
-  }, [clearBlockTimers, clearChunkHighlight, clearLineStopTimer]);
+  }, [clearBlockTimers, clearLineStopTimer]);
 
   const scrollLineIntoView = useCallback(
     (index: number) => {
@@ -161,17 +148,14 @@ const VideoLessonPage = () => {
 
   useEffect(() => {
     scrollLineIntoView(currentIndex);
-    setCurrentChunkIndex(0);
-    clearChunkHighlight();
-  }, [clearChunkHighlight, currentIndex, scrollLineIntoView]);
+  }, [currentIndex, scrollLineIntoView]);
 
   useEffect(
     () => () => {
       clearBlockTimers();
-      clearChunkHighlight();
       clearLineStopTimer();
     },
-    [clearBlockTimers, clearChunkHighlight, clearLineStopTimer],
+    [clearBlockTimers, clearLineStopTimer],
   );
 
   const commitProgress = useCallback(
@@ -195,7 +179,6 @@ const VideoLessonPage = () => {
     if (!progress || lines.length === 0) return;
     const safe = Math.max(0, Math.min(index, lines.length - 1));
     clearBlockTimers();
-    clearChunkHighlight();
     clearLineStopTimer();
     setLinePlaying(false);
     setLooping(false);
@@ -208,7 +191,6 @@ const VideoLessonPage = () => {
   const playLine = (rate = 1, loop = false) => {
     if (!currentLine) return;
     clearBlockTimers();
-    clearChunkHighlight();
     clearLineStopTimer();
     setLinePlaying(!loop);
     setLooping(loop);
@@ -223,7 +205,6 @@ const VideoLessonPage = () => {
   const playBlock = () => {
     if (blockLines.length === 0) return;
     clearBlockTimers();
-    clearChunkHighlight();
     clearLineStopTimer();
     setLinePlaying(false);
     setLooping(false);
@@ -254,30 +235,9 @@ const VideoLessonPage = () => {
     setPlaybackRateIndex(nextIndex);
     if (looping && currentLine) {
       clearBlockTimers();
-      clearChunkHighlight();
       scrollLineIntoView(currentIndex);
       playerRef.current?.playSegment(currentLine, nextRate, true);
     }
-  };
-
-  const playCurrentChunk = () => {
-    if (!currentLine || currentRhythmChunks.length === 0) return;
-    clearBlockTimers();
-    clearChunkHighlight();
-    clearLineStopTimer();
-    setLinePlaying(false);
-    setLooping(false);
-    scrollLineIntoView(currentIndex);
-
-    const chunkIndex = Math.min(currentChunkIndex, currentRhythmChunks.length - 1);
-    const chunk = currentRhythmChunks[chunkIndex];
-    const segment = chunk.reliable ? chunk : currentLine;
-    const highlightDurationMs = ((segment.end - segment.start) / playbackRate) * 1000 + 350;
-
-    setActiveChunkIndex(chunkIndex);
-    playerRef.current?.playSegment(segment, playbackRate, false);
-    chunkHighlightTimerRef.current = window.setTimeout(() => setActiveChunkIndex(null), highlightDurationMs);
-    setCurrentChunkIndex((chunkIndex + 1) % currentRhythmChunks.length);
   };
 
   const increaseHideLevel = async () => {
@@ -300,7 +260,6 @@ const VideoLessonPage = () => {
   const markLearned = async () => {
     if (!progress || !currentLine) return;
     clearBlockTimers();
-    clearChunkHighlight();
     clearLineStopTimer();
     setLinePlaying(false);
     const nextCompleted = Array.from(new Set([...progress.completedLineIds, currentLine.id]));
@@ -380,14 +339,10 @@ const VideoLessonPage = () => {
                 <p className={`flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center font-display font-extrabold text-foreground sm:gap-x-2 ${dialogueTextClass}`}>
                   {currentRhythmChunks.map((chunk, index) => (
                     <span key={`${chunk.start}-${chunk.text}-${index}`} className="inline-flex items-center gap-1.5 sm:gap-2">
-                      <span
-                        className={`rounded-xl px-1.5 py-0.5 transition-colors ${
-                          activeChunkIndex === index ? "bg-primary/15 text-primary" : ""
-                        }`}
-                      >
+                      <span className="rounded-xl px-1.5 py-0.5">
                         {maskText(chunk.text, hideLevel)}
                       </span>
-                      {showRhythmMarks && index < currentRhythmChunks.length - 1 && (
+                      {index < currentRhythmChunks.length - 1 && (
                         <span className="font-display text-2xl font-black leading-none text-primary sm:text-4xl">
                           {boundaryMark(chunk)}
                         </span>
@@ -431,11 +386,7 @@ const VideoLessonPage = () => {
                 </Button>
               </div>
 
-              <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
-                <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="secondary" onClick={playCurrentChunk} disabled={!canPlayChunk}>
-                  <Play className="h-4 w-4" />
-                  Nghe cụm
-                </Button>
+              <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
                 <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="secondary" onClick={cyclePlaybackRate}>
                   <Gauge className="h-4 w-4" />
                   Tốc độ {playbackRateLabel}
@@ -459,17 +410,6 @@ const VideoLessonPage = () => {
                   <EyeOff className="h-4 w-4" />
                   {hideLevel >= 3 ? "Hiện lại" : "Che chữ"}
                 </Button>
-                <Button
-                  className="h-10"
-                  variant={showRhythmMarks ? "outline" : "secondary"}
-                  onClick={() => setShowRhythmMarks((value) => !value)}
-                  disabled={!hasCurrentRhythm}
-                >
-                  {hasCurrentRhythm ? (
-                    <span className="font-display text-base font-extrabold">/</span>
-                  ) : null}
-                  {hasCurrentRhythm ? (showRhythmMarks ? "Ẩn nhịp" : "Hiện nhịp") : "Không có nhịp"}
-                </Button>
                 <Button className="h-10 gap-1 px-2 text-xs font-extrabold sm:gap-2 sm:px-3 sm:text-sm bg-success text-success-foreground hover:bg-success/90" onClick={markLearned}>
                   <Check className="h-4 w-4" />
                   Đã thuộc
@@ -487,9 +427,8 @@ const VideoLessonPage = () => {
                     1. Dấu <span className="font-display text-2xl font-black leading-none text-primary">/</span> là ngắt ngắn,{" "}
                     <span className="font-display text-2xl font-black leading-none text-primary">//</span> là ngắt dài.
                   </li>
-                  <li>2. Bấm Nghe cụm để nhại một nhịp ngắn.</li>
-                  <li>3. Bấm Nghe, đọc cả câu đúng nhịp và nhấn nhá.</li>
-                  <li>4. Che chữ dần, vẫn giữ dấu / đến khi đọc thuộc.</li>
+                  <li>2. Bấm Nghe, đọc cả câu đúng nhịp và nhấn nhá.</li>
+                  <li>3. Che chữ dần, vẫn giữ dấu / đến khi đọc thuộc.</li>
                 </ol>
               ) : (
                 <ol className="mt-2 space-y-1.5 text-sm font-semibold text-muted-foreground">
@@ -509,7 +448,7 @@ const VideoLessonPage = () => {
                       Câu {currentIndex + 1}/{lines.length} · {hideLabels[hideLevel]}
                     </p>
                     <p className="mt-0.5 line-clamp-1 text-[11px] font-bold text-muted-foreground">
-                      {canUseStoredRhythm ? "Luyện nhịp bằng dấu / · nghe cụm · đọc thuộc" : "Luyện nghe · che chữ · đọc thuộc"}
+                      {canUseStoredRhythm ? "Luyện nhịp bằng dấu / · nghe câu · đọc thuộc" : "Luyện nghe · che chữ · đọc thuộc"}
                     </p>
                   </div>
                   <div className="rounded-full bg-success/10 px-3 py-1 text-center">
@@ -535,7 +474,7 @@ const VideoLessonPage = () => {
                   const active = index === currentIndex;
                   const done = completed.has(line.id);
                   const chunks = lineRhythmChunks[index];
-                  const showMarks = showRhythmMarks && chunks.length > 1 && chunks.some((chunk) => chunk.reliable);
+                  const showMarks = chunks.length > 1 && chunks.some((chunk) => chunk.reliable);
                   return (
                     <button
                       key={line.id}

@@ -34,15 +34,18 @@ const WORD_BASE_MS = 120; // onset cost of any word
 const PER_SYLLABLE_MS = 95; // spoken time per syllable
 
 function parseArgs(argv) {
-  const args = { url: null, grade: 6, topic: "", density: "moderate", out: null, write: false, source: RHYTHM_SOURCE };
+  const args = { url: null, grade: 6, topic: "", density: "moderate", out: null, write: false, source: RHYTHM_SOURCE, title: "" };
   for (let i = 2; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--write") args.write = true;
     else if (a === "--grade") args.grade = Number(argv[++i]);
+    else if (a === "--title") args.title = String(argv[++i]); // override video title (yt-dlp info-json is flaky)
     else if (a === "--topic") args.topic = String(argv[++i]);
     else if (a === "--density") args.density = String(argv[++i]);
     else if (a === "--out") args.out = String(argv[++i]);
     else if (a === "--source") args.source = String(argv[++i]); // override rhythmSource label
+    else if (a === "--captions-dir") args.captionsDir = String(argv[++i]); // use pre-fetched json3 caption files (skip yt-dlp)
+    else if (a === "--transcript-file") args.transcriptFile = String(argv[++i]); // punctuated transcript for auto-only videos
     else if (!args.url) args.url = a;
   }
   return args;
@@ -74,45 +77,71 @@ function run(cmd, cmdArgs, { cwd } = {}) {
   });
 }
 
-async function fetchCaptions(videoId, workDir) {
-  const url = `https://www.youtube.com/watch?v=${videoId}`;
-  // Player clients that return captions without a JS runtime; ignore DRM/format
-  // errors because we only need the subtitle tracks, not the media.
-  await run("yt-dlp", [
-    "--extractor-args", "youtube:player_client=tv,mweb,web",
-    "--ignore-no-formats-error", "--no-warnings", "--skip-download",
-    "--write-auto-subs", "--write-subs", "--sub-langs", "en.*", "--sub-format", "json3",
-    "--write-info-json",
-    "-o", path.join(workDir, "%(id)s.%(ext)s"), url,
-  ]);
-  const files = await readdir(workDir);
-  const pick = (re) => files.filter((f) => re.test(f)).sort((a, b) => a.length - b.length)[0];
-  // Punctuated track for display; *-orig auto track for word timing.
-  const cleanFile = pick(new RegExp(`^${videoId}\\.en(-en)?\\.json3$`)) || pick(/\.en[^.]*\.json3$/);
-  const wordFile = pick(new RegExp(`^${videoId}\\.en-orig\\.json3$`)) || cleanFile;
-  let title = `YouTube ${videoId}`;
-  const infoFile = pick(/\.info\.json$/);
-  if (infoFile) {
-    try { title = JSON.parse(await readFile(path.join(workDir, infoFile), "utf8")).title || title; } catch {}
+async function fetchCaptions(videoId, workDir, captionsDir) {
+  let dir = captionsDir;
+  if (!dir) {
+    const url = `https://www.youtube.com/watch?v=${videoId}`;
+    // Player clients that return captions without a JS runtime; ignore DRM/format
+    // errors because we only need the subtitle tracks. --sleep-requests throttles
+    // to avoid HTTP 429 from YouTube.
+    await run("yt-dlp", [
+      "--extractor-args", "youtube:player_client=tv,mweb,web",
+      "--ignore-no-formats-error", "--no-warnings", "--skip-download", "--sleep-requests", "2",
+      "--write-auto-subs", "--write-subs", "--sub-langs", "en.*", "--sub-format", "json3",
+      "--write-info-json",
+      "-o", path.join(workDir, "%(id)s.%(ext)s"), url,
+    ]);
+    dir = workDir;
   }
-  if (!cleanFile) throw new Error("No English captions found for this video.");
+
+  const files = (await readdir(dir)).filter((f) => f.startsWith(`${videoId}.`) && f.endsWith(".json3"));
+  if (files.length === 0) throw new Error("No English captions found for this video.");
+
+  // Score each track: a MANUAL track has sentence punctuation (best for text); an
+  // AUTO track has per-word timing (tOffsetMs, best for pause detection). YouTube
+  // exposes both (e.g. en-US = manual, en/en-orig = auto), so pick each by strength.
+  const tracks = [];
+  for (const f of files) {
+    let data;
+    try { data = JSON.parse(await readFile(path.join(dir, f), "utf8")); } catch { continue; }
+    const events = data.events ?? [];
+    const text = events.flatMap((e) => (e.segs ?? []).map((s) => s.utf8 ?? "")).join("");
+    const punct = (text.match(/[.!?]/g) ?? []).length;
+    const wordSegs = events.reduce((n, e) => n + (e.segs ?? []).filter((s) => Number.isFinite(s.tOffsetMs)).length, 0);
+    tracks.push({ f, raw: JSON.stringify(data), punct, wordSegs, isOrig: /-orig\.json3$/.test(f) });
+  }
+  if (tracks.length === 0) throw new Error("No readable English captions for this video.");
+
+  const cleanTrack = [...tracks].sort((a, b) => b.punct - a.punct || Number(a.isOrig) - Number(b.isOrig))[0];
+  const wordTrack = [...tracks].sort((a, b) => b.wordSegs - a.wordSegs)[0];
+
+  let title = `YouTube ${videoId}`;
+  try {
+    const info = (await readdir(dir)).find((f) => f === `${videoId}.info.json`);
+    if (info) title = JSON.parse(await readFile(path.join(dir, info), "utf8")).title || title;
+  } catch {}
+
   return {
     title,
-    lines: parseJson3Lines(await readFile(path.join(workDir, cleanFile), "utf8")),
-    words: parseJson3Words(await readFile(path.join(workDir, wordFile), "utf8")),
-    autoCaption: /-orig\.json3$/.test(cleanFile),
+    cleanText: trackText(cleanTrack.raw),
+    words: parseJson3Words(wordTrack.raw),
+    autoCaption: cleanTrack.punct === 0,
   };
 }
 
-function parseJson3Lines(raw) {
+// Join a caption track into one plain transcript string (strip [Music] etc.).
+// The TEXT comes from the punctuated/manual track; sentence splitting + accurate
+// per-sentence timing are done later by buildLinesFromTranscript against the
+// word-timed (auto) track — so a manual track with bad sentence-level timing
+// (some have all events squeezed into a few seconds) no longer breaks alignment.
+function trackText(raw) {
   const data = JSON.parse(raw);
-  const lines = [];
-  for (const ev of data.events ?? []) {
-    const text = (ev.segs ?? []).map((s) => s.utf8 ?? "").join("").replace(/\s+/g, " ").trim();
-    if (!text || /^\[.*\]$/.test(text)) continue; // skip [Music] etc.
-    lines.push({ text, startMs: ev.tStartMs ?? 0, endMs: (ev.tStartMs ?? 0) + (ev.dDurationMs ?? 0) });
-  }
-  return lines;
+  return (data.events ?? [])
+    .map((ev) => (ev.segs ?? []).map((s) => s.utf8 ?? "").join(""))
+    .join(" ")
+    .replace(/\[[^\]]*\]/g, " ") // [Music] [Applause]
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function parseJson3Words(raw) {
@@ -143,6 +172,43 @@ function lcsMatches(a, b) {
     else j++;
   }
   return matches;
+}
+
+// For videos with ONLY auto-captions (no punctuation), a human/LLM supplies a
+// punctuated transcript (same words, with capitalization + . ! ? added). We align
+// its tokens to the auto word-timing stream (LCS), give every token a time, then
+// cut into sentence lines. Result feeds buildRhythm exactly like a manual track.
+function buildLinesFromTranscript(text, words) {
+  const tokens = String(text).replace(/\s+/g, " ").trim().match(/\S+/g) ?? [];
+  if (tokens.length === 0 || words.length === 0) return [];
+  const firstMs = words[0].startMs;
+  const lastMs = words[words.length - 1].startMs + 500;
+  const matchByToken = new Map(lcsMatches(tokens.map(core), words.map((w) => w.core)).map((m) => [m.ai, m.bi]));
+  const times = tokens.map((_, i) => (matchByToken.has(i) ? words[matchByToken.get(i)].startMs : null));
+  const anchors = [
+    { i: -1, t: firstMs },
+    ...times.map((t, i) => (t != null ? { i, t } : null)).filter(Boolean),
+    { i: tokens.length, t: lastMs },
+  ];
+  for (let a = 0; a < anchors.length - 1; a++) {
+    const L = anchors[a], R = anchors[a + 1];
+    for (let i = L.i + 1; i < R.i; i++) times[i] = L.t + ((R.t - L.t) * (i - L.i)) / (R.i - L.i);
+  }
+  const lines = [];
+  let cur = [];
+  let curStart = firstMs;
+  const flush = () => {
+    if (!cur.length) return;
+    lines.push({ text: cur.map((c) => c.tok).join(" "), startMs: Math.round(curStart), endMs: Math.round(cur[cur.length - 1].t + 300) });
+    cur = [];
+  };
+  for (let i = 0; i < tokens.length; i++) {
+    if (!cur.length) curStart = times[i];
+    cur.push({ tok: tokens[i], t: times[i] });
+    if (/[.!?…]['")\]]*$/.test(tokens[i])) flush();
+  }
+  flush();
+  return lines;
 }
 
 // Assign each caption token a start time (seconds) using the word-timing stream
@@ -260,12 +326,15 @@ async function main() {
 
   const workDir = await mkdtemp(path.join(tmpdir(), "rhythm-cap-"));
   try {
-    const { title, lines, words, autoCaption } = await fetchCaptions(videoId, workDir);
-    const withRhythm = buildRhythm(lines, words, args.density);
-    const lesson = buildLesson({ videoId, title, grade: args.grade, topic: args.topic, lines: withRhythm, autoCaption, source: args.source });
+    const fetched = await fetchCaptions(videoId, workDir, args.captionsDir);
+    const title = args.title || fetched.title;
+    const cleanText = args.transcriptFile ? await readFile(args.transcriptFile, "utf8") : fetched.cleanText;
+    const lines = buildLinesFromTranscript(cleanText, fetched.words);
+    const withRhythm = buildRhythm(lines, fetched.words, args.density);
+    const lesson = buildLesson({ videoId, title, grade: args.grade, topic: args.topic, lines: withRhythm, autoCaption: fetched.autoCaption, source: args.source });
 
     const withMarks = withRhythm.filter((l) => l.rhythmChunks && l.rhythmChunks.length > 1).length;
-    console.error(`[rhythm] ${videoId} "${title}" — ${lines.length} lines, ${withMarks} with rhythm, density=${args.density}`);
+    console.error(`[rhythm] ${videoId} "${title}" — ${withRhythm.length} lines, ${withMarks} with rhythm, density=${args.density}`);
 
     if (args.out) await writeFile(args.out, JSON.stringify(lesson, null, 2), "utf8");
     if (args.write) { await writeToFirestore(lesson); console.error(`[rhythm] wrote video_lessons/${videoId} to Firestore`); }

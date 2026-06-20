@@ -67,6 +67,38 @@ Run everything from the repo root `D:\co-yen-learns-english`.
    is `caption-audio-v1`, which the frontend treats as trusted + latest, so it renders and
    is NOT auto-overwritten.
 
+## Flags
+
+`--grade N` `--topic "..."` `--title "..."` (yt-dlp's title is flaky for some videos — pass it)
+`--density moderate|faithful|sparse` `--out file.json` `--write` `--source <label>`
+`--captions-dir DIR` (use pre-fetched json3 caption files instead of calling yt-dlp)
+`--transcript-file FILE` (supply a punctuated transcript for auto-only videos — see below)
+
+The skill auto-picks the **most-punctuated** caption track for the TEXT and the
+**word-timed** (auto) track for TIMING, then aligns text→timing. So it tolerates a manual
+track whose own sentence timing is broken (some are squeezed into a few seconds).
+
+## Auto-only videos (no manual captions)
+
+Some videos (e.g. many Little Fox episodes) have ONLY auto-captions: lowercase, no
+punctuation, `[Music]` markers. Those make poor reading lessons. Fix:
+1. Dump the auto words (the script's word track), then **Claude restores punctuation +
+   capitalization + sentence breaks**, KEEPING the same words in order (fix only obvious
+   ASR slips). Write it to a `.transcript.txt` file.
+2. Run with `--transcript-file <that file>` (+ `--captions-dir` if pre-fetched). The
+   transcript becomes the text; timing still comes from the auto word track.
+
+## Whole playlists (batch)
+
+1. Enumerate: `yt-dlp --flat-playlist --print "%(id)s ::: %(title)s" "<playlist-url>"`.
+   Compilations usually duplicate the individual episodes — ask the user which to take.
+2. Fetch ALL captions once into a dir, **throttled** to avoid HTTP 429
+   (`--sleep-requests 5 --sleep-subtitles 3 --retries 12 --retry-sleep "http:25"
+   --write-auto-subs --write-subs --sub-langs "en.*" --sub-format json3 --write-info-json`).
+3. Run a Workflow with one agent per video — each restores punctuation (auto videos),
+   runs the skill with `--captions-dir`, and translates to `vi`. Then merge `vi` into each
+   lesson JSON and publish them all via the admin "Nhập JSON nhịp" (or `importVideoLesson`).
+
 ## Important notes
 
 - This caption-audio skill is the **only** rhythm engine. The old server-side extractor

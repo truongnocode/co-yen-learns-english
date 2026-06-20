@@ -170,6 +170,22 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
   }
+
+  /* Height of the fixed top navbar (top-4 gap + bar). Used so in-page anchors and
+     keyboard focus don't land hidden behind it (WCAG 2.4.11). */
+  :root { --nav-h: 5.5rem; }
+  html { scroll-padding-top: var(--nav-h); }
+
+  /* Never let media or long words push a horizontal scrollbar on phones. */
+  html, body { max-width: 100%; }
+  img, video, svg, canvas { max-width: 100%; height: auto; }
+
+  /* Instant taps (no legacy 300ms delay) + own the tap-highlight; interactive
+     elements provide their own :active feedback below. */
+  button, a, [role="button"], label, summary {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 @layer utilities {
@@ -188,10 +204,14 @@
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
-  .glass:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--glass-shadow-hover);
-    background: var(--glass-bg-hover);
+  /* Lift only on real hover-capable pointers — prevents the lift sticking after a
+     tap on touchscreens (mobile sticky-hover). */
+  @media (hover: hover) and (pointer: fine) {
+    .glass:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--glass-shadow-hover);
+      background: var(--glass-bg-hover);
+    }
   }
 
   .glass-subtle {
@@ -219,10 +239,12 @@
   .glass-hover {
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
-  .glass-hover:hover {
-    transform: translateY(-4px);
-    background: var(--glass-bg-hover);
-    box-shadow: var(--glass-shadow-hover);
+  @media (hover: hover) and (pointer: fine) {
+    .glass-hover:hover {
+      transform: translateY(-4px);
+      background: var(--glass-bg-hover);
+      box-shadow: var(--glass-shadow-hover);
+    }
   }
 
   .glass-active:active {
@@ -357,6 +379,15 @@
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
     animation: glassShimmer 4s ease-in-out infinite;
   }
+
+  /* Safe-area padding that always keeps a baseline gutter (env() = 0 on phones
+     without a notch, so max() guarantees real spacing). */
+  .pb-safe { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+  .pt-safe { padding-top: max(0.75rem, env(safe-area-inset-top)); }
+  .px-safe {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
 }
 
 @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
@@ -374,4 +405,40 @@
 @keyframes glassShimmer {
   0% { left: -100%; }
   50%, 100% { left: 200%; }
+}
+
+/* ============================================================
+   Mobile performance: backdrop-filter blur is the most expensive
+   filter and its cost scales with radius × area. On touch phones
+   cut the radius hard and slow the always-on gradient loop so it
+   stops thrashing the GPU / battery.
+   ============================================================ */
+@media (max-width: 768px) and (pointer: coarse) {
+  .glass { backdrop-filter: blur(8px) saturate(140%); -webkit-backdrop-filter: blur(8px) saturate(140%); }
+  .glass-subtle { backdrop-filter: blur(8px) saturate(130%); -webkit-backdrop-filter: blur(8px) saturate(130%); }
+  .glass-strong { backdrop-filter: blur(10px) saturate(150%); -webkit-backdrop-filter: blur(10px) saturate(150%); }
+  .gradient-hero { animation-duration: 40s; }
+}
+
+/* ============================================================
+   Respect the OS "reduce motion" setting (WCAG 2.3.3). We reduce/
+   replace motion rather than nuking it: animations resolve instantly
+   to their end-state, and the looping background becomes static.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .gradient-hero {
+    animation: none;
+    background: linear-gradient(120deg, #fde7ee, #eaf0fc);
+  }
+  .dark .gradient-hero {
+    background: linear-gradient(120deg, #17132a, #111528);
+  }
+  .float-animation, .float-animation-delay, .float-animation-slow,
+  .shimmer, .sound-wave, .pulse-glow, .bounce-gentle { animation: none !important; }
 }

@@ -169,7 +169,7 @@ const ListenChoosePicture = () => {
             </motion.button>
 
             {/* 2x2 Emoji Grid */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-4 sm:gap-3">
               {q.options.map((opt, i) => {
                 const isCorrect = i === q.correctIdx;
                 const isSelected = selected === i;

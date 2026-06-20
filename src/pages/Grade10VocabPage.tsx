@@ -227,7 +227,7 @@ const Grade10VocabPage = () => {
 
         <motion.div key={current} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }}
           className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
-          <p className="font-display font-bold text-foreground text-lg mb-6 leading-relaxed">{q.q}</p>
+          <p className="font-display font-bold text-foreground text-base sm:text-lg mb-6 leading-relaxed break-words">{q.q}</p>
           <div className="flex flex-col gap-2.5">
             {q.opts.map((opt, idx) => {
               let cls = "bg-secondary/50 border-2 border-transparent text-foreground hover:border-primary/30";

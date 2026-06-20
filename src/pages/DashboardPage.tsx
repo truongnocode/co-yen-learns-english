@@ -6,6 +6,8 @@ import { getProgress, type UserProgress } from "@/lib/progress";
 import { checkAndUpdateStreak } from "@/lib/daily";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
+import DashboardMobileNav from "@/components/dashboard/DashboardMobileNav";
+import DailyMission from "@/components/dashboard/DailyMission";
 import HeroBanner from "@/components/dashboard/HeroBanner";
 import LearningPath from "@/components/dashboard/LearningPath";
 import ReviewCorner from "@/components/dashboard/ReviewCorner";
@@ -66,16 +68,32 @@ const DashboardPage = () => {
         />
       </div>
 
-      <div className="flex min-h-screen">
+      <div className="flex min-h-svh">
         <DashboardSidebar progress={progress} />
 
-        {/* Middle column: Hero + Learning Path */}
-        <main className="flex-1 px-5 lg:px-6 py-6 lg:py-8 min-w-0 flex flex-col max-h-screen">
+        {/* Middle column: Hero + Learning Path. The fixed-height, internally-scrolling
+            app-shell only kicks in at lg+; on phones it's a normal flowing page. */}
+        <main className="flex-1 min-w-0 px-4 py-6 sm:px-5 lg:px-6 lg:py-8 lg:flex lg:flex-col lg:max-h-screen">
+          <DashboardMobileNav />
+
           <div className="shrink-0">
             <HeroBanner progress={progress} />
           </div>
-          <div className="mt-6 flex-1 overflow-y-auto min-h-0 pr-1">
+          <div className="mt-6 lg:flex-1 lg:overflow-y-auto lg:min-h-0 lg:pr-1">
             <LearningPath progress={progress} />
+
+            {/* Phones/tablets: surface the sidebar + right-column widgets inline
+                (they're hidden until the real sidebars appear at lg / xl). */}
+            <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:hidden">
+              <div className="lg:hidden sm:col-span-2">
+                <DailyMission progress={progress} />
+              </div>
+              <LearningOverview progress={progress} />
+              <ReviewCorner />
+              <Leaderboard progress={progress} />
+              <PetWidget />
+            </div>
+
             <div className="h-10" />
           </div>
         </main>

@@ -81,7 +81,7 @@ const GradePage = () => {
             initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={smooth}
-            className={`bg-gradient-to-r ${cfg.gradient} text-white rounded-3xl p-6 sm:p-8 relative overflow-hidden shadow-xl mb-8`}
+            className={`bg-gradient-to-r ${cfg.gradient} text-white rounded-3xl p-4 sm:p-8 relative overflow-hidden shadow-xl mb-8`}
           >
             <div className="absolute top-4 right-6 w-20 h-20 rounded-full bg-white/10 float-animation" />
             <span className="text-4xl">{cfg.emoji}</span>
@@ -198,17 +198,17 @@ const GradePage = () => {
                 <div className="flex gap-2.5 flex-wrap">
                   <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9 }}
                     onClick={() => navigate(`/grade/${grade}/vocab/${unitKey}`)}
-                    className="gradient-accent text-white flex-1 min-w-[80px] rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md">
+                    className="gradient-accent text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md break-words">
                     <BookOpen className="h-5 w-5" /> Từ vựng
                   </motion.button>
                   <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9 }}
                     onClick={() => navigate(`/grade/${grade}/grammar/${unitKey}`)}
-                    className="gradient-primary text-white flex-1 min-w-[80px] rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md">
+                    className="gradient-primary text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md break-words">
                     <Zap className="h-5 w-5" /> Ngữ pháp
                   </motion.button>
                   <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9 }}
                     onClick={() => navigate(`/grade/${grade}/exercises/${unitKey}`)}
-                    className="gradient-success text-white flex-1 min-w-[80px] rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md">
+                    className="gradient-success text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md break-words">
                     <FileText className="h-5 w-5" /> Bài tập
                   </motion.button>
                 </div>

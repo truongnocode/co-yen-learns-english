@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { MotionConfig } from "framer-motion";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
@@ -46,6 +47,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <AuthProvider>
     <TooltipProvider>
+    <MotionConfig reducedMotion="user">
       <Toaster />
       <Sonner />
       <BrowserRouter>
@@ -96,6 +98,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+    </MotionConfig>
     </TooltipProvider>
     </AuthProvider>
   </QueryClientProvider>

@@ -53,8 +53,8 @@ const PracticePage = () => {
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-2xl" />
               <game.icon className="h-8 w-8 mb-3 opacity-80 relative z-10" />
-              <h3 className="font-display font-extrabold text-xl mb-1 relative z-10">{game.label}</h3>
-              <p className="text-white/70 text-sm relative z-10">{game.desc}</p>
+              <h3 className="font-display font-extrabold text-lg sm:text-xl mb-1 relative z-10">{game.label}</h3>
+              <p className="text-white/70 text-xs sm:text-sm relative z-10">{game.desc}</p>
             </motion.button>
           ))}
         </div>

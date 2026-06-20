@@ -426,7 +426,7 @@ const Grade10ReadingPage = () => {
           )}
           {item.title && <h3 className="font-display font-bold text-foreground mb-2">{item.title}</h3>}
           {item.instruction && <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-sm text-foreground leading-relaxed border border-border/20 italic">{item.instruction}</div>}
-          {item.passage && <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-sm text-foreground leading-relaxed max-h-64 overflow-y-auto border border-border/20 whitespace-pre-line">{item.passage}</div>}
+          {item.passage && <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-base text-foreground leading-relaxed max-h-48 sm:max-h-64 overflow-y-auto border border-border/20 whitespace-pre-line">{item.passage}</div>}
           <MCQQuiz key={`${activeSubIdx}-${reviewMode}`} questions={item.questions} reviewMode={reviewMode} timeLimit={timeLimit} />
         </div>
       );
@@ -444,7 +444,7 @@ const Grade10ReadingPage = () => {
             </div>
           )}
           {item.title && <h3 className="font-display font-bold text-foreground mb-2">{item.title}</h3>}
-          {item.passage && <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-sm text-foreground leading-relaxed max-h-60 overflow-y-auto border border-border/20">{item.passage}</div>}
+          {item.passage && <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-base text-foreground leading-relaxed max-h-48 sm:max-h-60 overflow-y-auto border border-border/20">{item.passage}</div>}
           <MCQQuiz key={`${activeSubIdx}-${reviewMode}`} questions={item.questions} reviewMode={reviewMode} timeLimit={timeLimit} />
         </div>
       );

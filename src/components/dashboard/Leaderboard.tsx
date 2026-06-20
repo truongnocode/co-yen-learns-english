@@ -53,7 +53,7 @@ const Leaderboard = ({ progress }: Props) => {
           {top3.map((entry, i) => (
             <div
               key={entry.uid}
-              className={`flex items-center gap-2.5 rounded-xl px-3 py-2 ${
+              className={`flex items-center gap-2.5 rounded-xl px-3 py-2.5 ${
                 entry.uid === user?.uid ? "bg-primary/10 border border-primary/20" : "bg-muted/30"
               }`}
             >
@@ -76,7 +76,7 @@ const Leaderboard = ({ progress }: Props) => {
 
           {/* Show current user if not in top 3 */}
           {user && myRank < 0 && (
-            <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2 border border-primary/20">
+            <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2.5 border border-primary/20">
               <span className="text-xs font-bold text-muted-foreground w-4 text-center">—</span>
               <div className="w-7 h-7 rounded-full gradient-purple-card flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0 overflow-hidden">
                 {user.photoURL ? (
@@ -90,7 +90,7 @@ const Leaderboard = ({ progress }: Props) => {
             </div>
           )}
           {user && myRank >= 3 && (
-            <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2 border border-primary/20">
+            <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2.5 border border-primary/20">
               <span className="text-xs font-bold text-muted-foreground w-4 text-center">#{myRank + 1}</span>
               <div className="w-7 h-7 rounded-full gradient-purple-card flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0 overflow-hidden">
                 {user.photoURL ? (

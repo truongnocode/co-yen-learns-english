@@ -51,11 +51,11 @@ export function SpeakingFeedback({ verdict }: { verdict: SpeakingVerdict }) {
       {/* Color-coded transcript */}
       <div>
         <p className="text-xs font-semibold text-foreground mb-2">Từ em nói:</p>
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-2 sm:gap-1.5">
           {verdict.words.map((w, i) => (
             <span
               key={i}
-              className={`inline-flex items-center gap-1 rounded-lg border px-2 py-1 text-sm ${VERDICT_STYLE[w.verdict]}`}
+              className={`inline-flex items-center gap-1 rounded-lg border px-2.5 py-1.5 sm:px-2 sm:py-1 text-sm ${VERDICT_STYLE[w.verdict]}`}
               title={w.tip ? `${w.heard || "(không nghe thấy)"}  ·  ${w.tip}` : w.heard || "(không nghe thấy)"}
             >
               {w.verdict === "correct" && <CheckCircle2 className="h-3 w-3" />}

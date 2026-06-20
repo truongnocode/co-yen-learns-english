@@ -111,7 +111,7 @@ const SpellingPage = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="relative">
                 <Input value={answer} onChange={(e) => setAnswer(e.target.value)} placeholder="Nhập từ tiếng Anh..." autoFocus
-                  className={`text-center text-lg rounded-2xl h-14 font-medium shadow-md border-2 bg-card ${
+                  className={`text-center text-base sm:text-lg rounded-2xl h-14 font-medium shadow-md border-2 bg-card ${
                     status === "correct" ? "border-success bg-success/10" : status === "wrong" ? "border-destructive bg-destructive/10" : "border-white/50"
                   }`} disabled={status !== "idle"} />
                 {status === "correct" && <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="absolute right-4 top-1/2 -translate-y-1/2"><CheckCircle2 className="h-6 w-6 text-success" /></motion.div>}

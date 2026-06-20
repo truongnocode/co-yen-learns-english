@@ -41,10 +41,10 @@ const UnitCard = ({ unit, index }: UnitCardProps) => {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate(`/learn/${unit.id}/${mode.key}`)}
-            className={`${mode.gradient} text-white flex-1 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md hover:shadow-lg transition-shadow`}
+            className={`${mode.gradient} text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md hover:shadow-lg transition-shadow`}
           >
             <mode.icon className="h-5 w-5" />
-            {mode.label}
+            <span className="text-[10px] sm:text-xs">{mode.label}</span>
           </motion.button>
         ))}
       </div>

@@ -90,7 +90,7 @@ const LearningPath = ({ progress }: Props) => {
           <div className="relative z-10 px-5 py-4">
             <div className="flex items-center gap-2 mb-3">
               <Gamepad2 className="h-5 w-5 text-white" />
-              <h3 className="font-display font-extrabold text-base text-white">Tr&ograve; chơi</h3>
+              <h3 className="font-display font-extrabold text-base text-white">Trò chơi</h3>
             </div>
             <div className="grid grid-cols-3 gap-2.5">
               {[
@@ -106,7 +106,7 @@ const LearningPath = ({ progress }: Props) => {
                   className="bg-white/20 backdrop-blur-sm rounded-xl px-3 py-3 flex flex-col items-center gap-1.5 hover:bg-white/30 transition-colors"
                 >
                   <span className="text-2xl">{item.emoji}</span>
-                  <span className="text-white font-display font-bold text-xs">{item.label}</span>
+                  <span className="text-white font-display font-bold text-[11px] sm:text-xs whitespace-nowrap">{item.label}</span>
                 </motion.button>
               ))}
             </div>
@@ -197,7 +197,7 @@ const LearningPath = ({ progress }: Props) => {
                     >
                       {/* Label - positioned to the side */}
                       <div
-                        className={`absolute ${isLeft ? "right-[15%] lg:right-[20%]" : "left-[15%] lg:left-[20%]"} text-xs font-extrabold tracking-wider ${
+                        className={`absolute ${isLeft ? "right-full mr-2 lg:right-[20%] lg:mr-0" : "left-full ml-2 lg:left-[20%] lg:ml-0"} text-xs font-extrabold tracking-wider ${
                           stopUnlocked ? "text-muted-foreground" : "text-muted-foreground/40"
                         }`}
                       >

@@ -42,7 +42,7 @@ const CountdownTimer = ({ minutes, onTimeUp, started }: CountdownTimerProps) => 
 
   return (
     <div
-      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${
+      className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-bold transition-colors ${
         isUrgent
           ? "bg-destructive/10 text-destructive border border-destructive/30 animate-pulse"
           : "bg-card/80 text-foreground border border-border/30"

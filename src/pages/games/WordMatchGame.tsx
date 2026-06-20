@@ -128,7 +128,7 @@ const WordMatchGame = () => {
             </motion.button>
           </motion.div>
         ) : (
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
             {/* English column */}
             <div className="space-y-2.5">
               <div className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">English</div>
@@ -138,7 +138,7 @@ const WordMatchGame = () => {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleEnClick(idx)}
                   disabled={matched.has(idx)}
-                  className={`w-full py-3 px-4 rounded-2xl font-bold text-sm transition-all border ${
+                  className={`w-full py-3 px-4 rounded-2xl font-bold text-sm break-words transition-all border ${
                     matched.has(idx) ? "bg-emerald-100 border-emerald-300 text-emerald-700 opacity-60" :
                     wrong?.[0] === idx ? "bg-red-100 border-red-300 text-red-700 animate-pulse" :
                     selectedEn === idx ? "gradient-primary text-white border-transparent shadow-lg" :
@@ -159,7 +159,7 @@ const WordMatchGame = () => {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleViClick(idx)}
                   disabled={matched.has(idx)}
-                  className={`w-full py-3 px-4 rounded-2xl font-bold text-sm transition-all border ${
+                  className={`w-full py-3 px-4 rounded-2xl font-bold text-sm break-words transition-all border ${
                     matched.has(idx) ? "bg-emerald-100 border-emerald-300 text-emerald-700 opacity-60" :
                     wrong?.[1] === idx ? "bg-red-100 border-red-300 text-red-700 animate-pulse" :
                     selectedVi === idx ? "gradient-accent text-white border-transparent shadow-lg" :

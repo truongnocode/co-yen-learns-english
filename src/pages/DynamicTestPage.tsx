@@ -163,13 +163,13 @@ const DynamicTestPage = () => {
               <label className="text-xs font-bold text-foreground block mb-3">
                 Chọn Unit <span className="text-muted-foreground font-normal">(bỏ trống = tất cả)</span>
               </label>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-3 gap-2 sm:flex sm:flex-wrap">
                 {unitKeys.map((key) => {
                   const isSelected = selectedUnits.includes(key);
                   return (
                     <motion.button key={key} whileTap={{ scale: 0.9 }}
                       onClick={() => setSelectedUnits(isSelected ? selectedUnits.filter((k) => k !== key) : [...selectedUnits, key])}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap border transition-all ${
                         isSelected ? "gradient-accent text-white border-transparent" : "bg-card border-border/30 text-foreground"
                       }`}>
                       Unit {key}

@@ -339,7 +339,7 @@ const VideoLessonPage = () => {
 
   return (
     <PageShell>
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 pb-8 pt-24 sm:px-5 sm:pt-28 lg:box-border lg:h-screen lg:min-h-0 lg:overflow-hidden lg:pb-4 lg:pt-20 xl:max-w-7xl">
+      <div className="mx-auto flex min-h-svh max-w-6xl flex-col overflow-x-hidden px-4 pb-8 pt-24 sm:px-5 sm:pt-28 lg:box-border lg:h-screen lg:min-h-0 lg:overflow-hidden lg:pb-4 lg:pt-20 xl:max-w-7xl">
         <div className="mb-3 flex shrink-0 items-center gap-3 lg:hidden">
           <motion.button
             whileTap={{ scale: 0.9 }}
@@ -372,10 +372,10 @@ const VideoLessonPage = () => {
             >
               <h1 className="sr-only">{lesson.title}</h1>
 
-              <div className="mb-2 flex min-h-[92px] flex-col items-center justify-center gap-1.5 overflow-hidden rounded-2xl bg-secondary/60 px-3 py-2 sm:min-h-[104px] lg:min-h-[112px]">
-                <p className={`flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center font-display font-extrabold text-foreground ${dialogueTextClass}`}>
+              <div className="mb-2 flex min-h-[92px] flex-col items-center justify-center gap-1.5 overflow-hidden rounded-2xl bg-secondary/60 px-2.5 py-2 sm:min-h-[104px] sm:px-3 lg:min-h-[112px]">
+                <p className={`flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center font-display font-extrabold text-foreground sm:gap-x-2 ${dialogueTextClass}`}>
                   {currentRhythmChunks.map((chunk, index) => (
-                    <span key={`${chunk.start}-${chunk.text}-${index}`} className="inline-flex items-center gap-2">
+                    <span key={`${chunk.start}-${chunk.text}-${index}`} className="inline-flex items-center gap-1.5 sm:gap-2">
                       <span
                         className={`rounded-xl px-1.5 py-0.5 transition-colors ${
                           activeChunkIndex === index ? "bg-primary/15 text-primary" : ""
@@ -384,7 +384,7 @@ const VideoLessonPage = () => {
                         {maskText(chunk.text, hideLevel)}
                       </span>
                       {showRhythmMarks && index < currentRhythmChunks.length - 1 && (
-                        <span className="font-display text-3xl font-black leading-none text-primary sm:text-4xl">
+                        <span className="font-display text-2xl font-black leading-none text-primary sm:text-4xl">
                           {boundaryMark(chunk)}
                         </span>
                       )}
@@ -428,11 +428,11 @@ const VideoLessonPage = () => {
               </div>
 
               <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
-                <Button className="h-10" variant="secondary" onClick={playCurrentChunk} disabled={!canPlayChunk}>
+                <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="secondary" onClick={playCurrentChunk} disabled={!canPlayChunk}>
                   <Play className="h-4 w-4" />
                   Nghe cụm
                 </Button>
-                <Button className="h-10" variant="secondary" onClick={cyclePlaybackRate}>
+                <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="secondary" onClick={cyclePlaybackRate}>
                   <Gauge className="h-4 w-4" />
                   Tốc độ {playbackRateLabel}
                 </Button>
@@ -451,7 +451,7 @@ const VideoLessonPage = () => {
                   {looping ? <Square className="h-4 w-4" /> : <Repeat className="h-4 w-4" />}
                   {looping ? "Dừng" : "Lặp câu"}
                 </Button>
-                <Button className="h-10" variant="outline" onClick={hideLevel >= 3 ? resetHideLevel : increaseHideLevel}>
+                <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="outline" onClick={hideLevel >= 3 ? resetHideLevel : increaseHideLevel}>
                   <EyeOff className="h-4 w-4" />
                   {hideLevel >= 3 ? "Hiện lại" : "Che chữ"}
                 </Button>
@@ -466,7 +466,7 @@ const VideoLessonPage = () => {
                   ) : null}
                   {hasCurrentRhythm ? (showRhythmMarks ? "Ẩn nhịp" : "Hiện nhịp") : "Không có nhịp"}
                 </Button>
-                <Button className="h-10 bg-success font-extrabold text-success-foreground hover:bg-success/90" onClick={markLearned}>
+                <Button className="h-10 gap-1 px-2 text-xs font-extrabold sm:gap-2 sm:px-3 sm:text-sm bg-success text-success-foreground hover:bg-success/90" onClick={markLearned}>
                   <Check className="h-4 w-4" />
                   Đã thuộc
                 </Button>

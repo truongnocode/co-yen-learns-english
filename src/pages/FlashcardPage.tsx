@@ -83,17 +83,17 @@ const FlashcardPage = () => {
           </AnimatePresence>
         </div>
 
-        <div className="flex items-center justify-center gap-5 pb-12">
+        <div className="flex items-center justify-center gap-3 sm:gap-5 pb-12">
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.85 }} onClick={goPrev} disabled={currentIndex === 0}
-            className="p-4 rounded-full bg-card shadow-lg text-foreground disabled:opacity-30 border border-white/40">
+            className="p-3 sm:p-4 rounded-full bg-card shadow-lg text-foreground disabled:opacity-30 border border-white/40">
             <ChevronLeft className="h-6 w-6" />
           </motion.button>
           <motion.button whileHover={{ scale: 1.1, rotate: 180 }} whileTap={{ scale: 0.85 }} onClick={() => setFlipped(!flipped)}
-            className="p-4 rounded-full gradient-accent text-white shadow-lg">
+            className="p-3 sm:p-4 rounded-full gradient-accent text-white shadow-lg">
             <RotateCcw className="h-6 w-6" />
           </motion.button>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.85 }} onClick={goNext} disabled={currentIndex === unit.words.length - 1}
-            className="p-4 rounded-full gradient-primary text-white shadow-lg disabled:opacity-30">
+            className="p-3 sm:p-4 rounded-full gradient-primary text-white shadow-lg disabled:opacity-30">
             <ChevronRight className="h-6 w-6" />
           </motion.button>
         </div>

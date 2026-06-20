@@ -49,10 +49,10 @@ const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimi
           <Timer className="h-3.5 w-3.5 inline mr-1" />
           Hẹn giờ <span className="font-normal">(bỏ trống = không giới hạn)</span>
         </p>
-        <div className="flex gap-1.5 flex-wrap">
+        <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-2">
           <button
             onClick={() => onTimeLimitChange(0)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+            className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all ${
               timeLimit === 0
                 ? "bg-foreground text-background"
                 : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
@@ -64,7 +64,7 @@ const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimi
             <button
               key={t}
               onClick={() => onTimeLimitChange(t)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all ${
                 timeLimit === t
                   ? "bg-foreground text-background"
                   : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"

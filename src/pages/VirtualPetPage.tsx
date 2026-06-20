@@ -265,7 +265,7 @@ const VirtualPetPage = () => {
           className="glass rounded-2xl p-5 mb-6"
         >
           <h3 className="font-display font-bold text-sm text-foreground mb-4">Hành trình tiến hoá</h3>
-          <div className="flex items-center justify-between gap-1">
+          <div className="grid grid-cols-3 gap-3 sm:flex sm:items-center sm:justify-between sm:gap-1">
             {PET_STAGES.map((s, i) => {
               const isCurrent = s.stage === pet.stage;
               const isPast = i < currentStageIdx;

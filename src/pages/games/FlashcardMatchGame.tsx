@@ -205,7 +205,7 @@ const FlashcardMatchGame = () => {
             </motion.button>
           </motion.div>
         ) : (
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-4">
             {cards.map((card) => {
               const isFlipped = flipped.has(card.id) || matched.has(card.id);
               const isMatched = matched.has(card.id);

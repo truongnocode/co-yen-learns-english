@@ -60,22 +60,22 @@ const GradesPage = () => {
         </div>
 
         {/* Level filter tabs */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => navigate("/grades")}
-            className={`px-4 py-2 rounded-xl text-sm font-bold transition-all ${!level ? "gradient-primary text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${!level ? "gradient-primary text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
           >
             Tất cả
           </button>
           <button
             onClick={() => navigate("/grades?level=primary")}
-            className={`px-4 py-2 rounded-xl text-sm font-bold transition-all ${level === "primary" ? "gradient-accent text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${level === "primary" ? "gradient-accent text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
           >
             Cấp 1 (Lớp 3-5)
           </button>
           <button
             onClick={() => navigate("/grades?level=secondary")}
-            className={`px-4 py-2 rounded-xl text-sm font-bold transition-all ${level === "secondary" ? "gradient-cool text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${level === "secondary" ? "gradient-cool text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
           >
             Cấp 2 (Lớp 6-9)
           </button>

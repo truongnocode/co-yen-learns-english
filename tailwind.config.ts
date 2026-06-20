@@ -5,6 +5,9 @@ export default {
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
+  // Emit `hover:` utilities behind `@media (hover:hover)` so hover styles don't
+  // stick after a tap on touchscreens (mobile sticky-hover). Default in Tailwind v4.
+  future: { hoverOnlyWhenSupported: true },
   theme: {
     container: {
       center: true,
@@ -15,6 +18,22 @@ export default {
       fontFamily: {
         display: ["Baloo 2", "cursive"],
         body: ["Nunito", "sans-serif"],
+      },
+      // iOS safe-area insets (viewport-fit=cover is set in index.html). Mapped into
+      // the spacing scale so they compose with p-*, m-*, inset-*, scroll-m-*, etc.
+      spacing: {
+        "safe-t": "env(safe-area-inset-top)",
+        "safe-b": "env(safe-area-inset-bottom)",
+        "safe-l": "env(safe-area-inset-left)",
+        "safe-r": "env(safe-area-inset-right)",
+      },
+      // Fluid type that scales smoothly between phone and desktop. Each keeps a rem
+      // term inside the calc so browser zoom still works (WCAG 1.4.4).
+      fontSize: {
+        "fluid-base": "clamp(1rem, 0.9rem + 0.5vw, 1.125rem)",
+        "fluid-lg": "clamp(1.125rem, 1rem + 0.6vw, 1.375rem)",
+        "fluid-h2": "clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem)",
+        "fluid-h1": "clamp(1.875rem, 1.3rem + 2.75vw, 3.75rem)",
       },
       colors: {
         border: "hsl(var(--border))",

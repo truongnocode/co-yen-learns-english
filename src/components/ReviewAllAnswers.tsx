@@ -85,7 +85,7 @@ const ReviewAllAnswers = ({ questions }: ReviewAllAnswersProps) => {
                     {/* Options */}
                     <div className="flex flex-col gap-1 mb-2">
                       {q.opts.map((opt, j) => {
-                        let cls = "text-xs px-3 py-1.5 rounded-lg ";
+                        let cls = "text-xs px-3 py-1.5 rounded-lg break-words ";
                         if (j === q.ans) {
                           cls += "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold";
                         } else if (j === q.selected && j !== q.ans) {

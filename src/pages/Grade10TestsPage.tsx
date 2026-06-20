@@ -217,7 +217,7 @@ const Grade10TestsPage = () => {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-2 mt-6">
+            <div className="flex items-center justify-center gap-1 sm:gap-2 mt-6">
               <motion.button
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
@@ -237,7 +237,7 @@ const Grade10TestsPage = () => {
                     <motion.button
                       whileTap={{ scale: 0.95 }}
                       onClick={() => setPage(n)}
-                      className={`min-w-[2.25rem] h-9 px-3 rounded-xl shadow-md border text-sm font-display font-bold transition-colors ${
+                      className={`min-w-[1.75rem] h-8 px-2 text-xs sm:min-w-[2.25rem] sm:h-9 sm:px-3 sm:text-sm rounded-xl shadow-md border font-display font-bold transition-colors ${
                         n === pageSafe
                           ? "gradient-primary text-white border-transparent"
                           : "bg-card/80 backdrop-blur-xl border-border/30 text-foreground hover:border-primary/30"

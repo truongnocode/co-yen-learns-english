@@ -226,19 +226,19 @@ const LearningOverview = ({ progress }: Props) => {
         </AnimatePresence>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-2 mb-5">
-          <div className="bg-muted/40 rounded-xl px-2 py-2.5 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-5">
+          <div className="bg-muted/40 rounded-xl px-2 py-3 text-center">
             <span className="text-lg block mb-0.5">{cfg.emoji}</span>
             <span className="text-[10px] font-bold text-muted-foreground block">{cfg.label}</span>
           </div>
-          <div className="bg-muted/40 rounded-xl px-2 py-2.5 text-center">
+          <div className="bg-muted/40 rounded-xl px-2 py-3 text-center">
             <div className="flex items-center justify-center gap-1 mb-0.5">
               <Flame className="h-4 w-4 text-pink" />
               <span className="font-display font-extrabold text-base text-foreground">{streak}</span>
             </div>
             <span className="text-[10px] font-bold text-muted-foreground block">Streak</span>
           </div>
-          <div className="bg-muted/40 rounded-xl px-2 py-2.5 text-center">
+          <div className="bg-muted/40 rounded-xl px-2 py-3 text-center">
             <div className="flex items-center justify-center gap-1 mb-0.5">
               <Star className="h-4 w-4 text-energy" />
               <span className="font-display font-extrabold text-base text-foreground">{xp}</span>

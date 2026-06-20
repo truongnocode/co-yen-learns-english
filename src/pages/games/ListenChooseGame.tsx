@@ -115,8 +115,8 @@ const ListenChooseGame = () => {
               onClick={() => speakUS(q.word.en)}
               className="w-full bg-card/80 backdrop-blur-xl rounded-3xl p-8 mb-6 shadow-lg border border-border/30 flex flex-col items-center gap-3"
             >
-              <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center shadow-lg">
-                <Volume2 className="h-8 w-8 text-white" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full gradient-primary flex items-center justify-center shadow-lg">
+                <Volume2 className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <span className="text-sm text-muted-foreground font-bold">Nhấn để nghe lại</span>
             </motion.button>

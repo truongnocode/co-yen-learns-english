@@ -162,7 +162,7 @@ const PhoneticsPage = () => {
                     key={i}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => handleSelect(i)}
-                    className={`rounded-2xl p-4 font-bold text-center border transition-all ${
+                    className={`rounded-2xl p-3 sm:p-4 font-bold text-center border transition-all ${
                       selected !== null
                         ? isCorrect ? "bg-emerald-100 border-emerald-400 text-emerald-700" :
                           isSelected ? "bg-red-100 border-red-400 text-red-700" :
@@ -171,7 +171,7 @@ const PhoneticsPage = () => {
                     }`}
                   >
                     <span className="text-xs text-muted-foreground block mb-1">{String.fromCharCode(65 + i)}.</span>
-                    <span className="text-lg block mb-2">{word}</span>
+                    <span className="text-base sm:text-lg block mb-2">{word}</span>
                     <button
                       onClick={(e) => { e.stopPropagation(); speakUS(word); }}
                       className="mx-auto w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors"

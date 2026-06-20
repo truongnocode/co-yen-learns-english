@@ -395,7 +395,7 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
         <p className="font-display font-extrabold text-2xl text-foreground mb-1">{word.vi}</p>
         <p className="text-xs text-muted-foreground mb-4">{wordTypeLabels[word.type] || word.type}</p>
 
-        <div className="flex items-center justify-center gap-1.5 flex-wrap">
+        <div className="flex items-center justify-center gap-1 sm:gap-1.5 flex-wrap">
           {word.en.split("").map((char, idx) => {
             if (char === " ") return <div key={idx} className="w-4" />;
             const isCorrectChar = result === "correct";
@@ -411,7 +411,7 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
                 onKeyDown={(e) => handleKeyDown(idx, e)}
                 autoFocus={idx === 0}
                 disabled={!!result}
-                className={`w-10 h-12 text-center text-lg font-bold rounded-xl border-2 outline-none transition-all ${
+                className={`w-9 h-11 sm:w-10 sm:h-12 text-center text-lg font-bold rounded-xl border-2 outline-none transition-all ${
                   isCorrectChar
                     ? "border-success bg-success/10 text-success"
                     : isWrongChar

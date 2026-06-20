@@ -19,18 +19,18 @@ const GradeSelectDialog = ({ open, onSelect }: GradeSelectDialogProps) => {
 
   return (
     <Dialog open={open}>
-      <DialogContent className="sm:max-w-md border-none bg-card/95 backdrop-blur-2xl shadow-2xl rounded-3xl p-0 overflow-hidden">
+      <DialogContent className="max-w-[92vw] sm:max-w-md border-none bg-card/95 backdrop-blur-2xl shadow-2xl rounded-3xl p-0 overflow-hidden">
         <div className="gradient-purple-card p-6 pb-8 text-white text-center">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", delay: 0.1 }}
-            className="text-5xl mb-3"
+            className="text-3xl sm:text-5xl mb-1 sm:mb-3"
           >
             🎒
           </motion.div>
           <DialogHeader>
-            <DialogTitle className="text-white font-display font-extrabold text-2xl">
+            <DialogTitle className="text-white font-display font-extrabold text-lg sm:text-2xl">
               Chào mừng em!
             </DialogTitle>
             <DialogDescription className="text-white/80 font-medium mt-1">
@@ -40,7 +40,7 @@ const GradeSelectDialog = ({ open, onSelect }: GradeSelectDialogProps) => {
         </div>
 
         <div className="p-6">
-          <div className="grid grid-cols-5 gap-3 mb-6">
+          <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 md:grid-cols-5 sm:gap-3 mb-6">
             {SUPPORTED_GRADES.map((grade, i) => {
               const cfg = gradeConfig[grade];
               const isSelected = selected === grade;

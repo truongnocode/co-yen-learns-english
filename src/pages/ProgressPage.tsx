@@ -42,7 +42,7 @@ const ProgressPage = () => {
         ) : (
           <>
             <motion.div initial={{ opacity: 0, y: 20, filter: "blur(6px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={{ ...smooth, delay: 0.1 }}
-              className="grid grid-cols-3 gap-4 mb-8">
+              className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-8">
               {stats.map((s, i) => (
                 <motion.div key={s.label} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
                   transition={{ ...smooth, delay: 0.15 + i * 0.05 }}

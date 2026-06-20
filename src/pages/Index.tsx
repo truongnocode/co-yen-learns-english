@@ -1,8 +1,9 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Mic } from "lucide-react";
+import { Mic, Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { useAuth } from "@/contexts/AuthContext";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -11,7 +12,15 @@ const Index = () => {
   const navigate = useNavigate();
   const { profile, selectGrade } = useAuth();
   const [showGradeSelect, setShowGradeSelect] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const grade = profile?.grade;
+
+  const mobileLinks = [
+    { label: "Tính năng", to: "/grades" },
+    { label: "Cấp 1 (Lớp 3-5)", to: "/grades?level=primary" },
+    { label: "Cấp 2 (Lớp 6-9)", to: "/grades?level=secondary" },
+    { label: "Thi vào 10", to: "/grade/10" },
+  ];
 
   const handleCTA = useCallback(async () => {
     if (!grade) { setShowGradeSelect(true); } else { navigate("/dashboard"); }
@@ -33,10 +42,50 @@ const Index = () => {
     <div className="min-h-screen overflow-x-hidden gradient-hero">
       {/* ─── Navbar ─── */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
-        <div className="max-w-7xl mx-auto glass px-6 py-3 flex justify-between items-center !rounded-full">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
-            <span className="text-3xl">🚀</span>
-            <span className="text-xl font-black text-indigo-900 tracking-tight hidden sm:block font-display">Học cùng cô Yến</span>
+        <div className="max-w-7xl mx-auto glass px-4 sm:px-6 py-2.5 sm:py-3 flex justify-between items-center gap-2 !rounded-full">
+          {/* Mobile hamburger */}
+          <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
+            <SheetTrigger asChild>
+              <button
+                className="md:hidden flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-indigo-800 active:scale-95 transition-transform"
+                aria-label="Mở menu"
+              >
+                <Menu className="h-6 w-6" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[82vw] max-w-xs p-0" aria-describedby={undefined}>
+              <SheetTitle className="sr-only">Menu điều hướng</SheetTitle>
+              <div className="flex h-full flex-col">
+                <div className="flex items-center gap-2 px-5 pt-6 pb-5 border-b border-border/40">
+                  <span className="text-2xl">🚀</span>
+                  <span className="font-display text-base font-black text-foreground">Học cùng cô Yến</span>
+                </div>
+                <nav className="flex flex-col gap-1 p-3" aria-label="Chính">
+                  {mobileLinks.map((link) => (
+                    <button
+                      key={link.to}
+                      onClick={() => { setMenuOpen(false); navigate(link.to); }}
+                      className="flex min-h-12 items-center rounded-xl px-4 text-base font-bold text-foreground hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors active:scale-[0.98]"
+                    >
+                      {link.label}
+                    </button>
+                  ))}
+                </nav>
+                <div className="mt-auto border-t border-border/40 p-3">
+                  <button
+                    onClick={() => { setMenuOpen(false); handleCTA(); }}
+                    className="flex min-h-12 w-full items-center justify-center rounded-full bg-indigo-600 px-4 text-base font-bold text-white active:scale-[0.98] transition-transform"
+                  >
+                    {grade ? "Vào lớp học" : "Chọn lớp"}
+                  </button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
+
+          <div className="flex items-center gap-2 cursor-pointer mr-auto md:mr-0" onClick={() => navigate("/")}>
+            <span className="text-2xl sm:text-3xl">🚀</span>
+            <span className="text-lg sm:text-xl font-black text-indigo-900 tracking-tight hidden sm:block font-display">Học cùng cô Yến</span>
           </div>
           <div className="hidden md:flex gap-6 font-bold text-indigo-800">
             <button onClick={() => smartNavigate("/grades")} className="hover:text-pink-500 transition-colors">Tính năng</button>
@@ -60,7 +109,7 @@ const Index = () => {
             <div className="inline-block bg-white/70 text-indigo-800 text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 shadow-sm border border-white">
               🎯 Dành cho học sinh Tiểu học & THCS (Lớp 3 - Lớp 10)
             </div>
-            <h1 className="text-5xl lg:text-7xl font-black text-indigo-950 leading-tight mb-6 drop-shadow-sm font-display">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-indigo-950 leading-tight mb-4 sm:mb-6 drop-shadow-sm font-display">
               Học Tiếng Anh <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Vui Như Chơi Game!</span>
             </h1>

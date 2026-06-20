@@ -395,7 +395,7 @@ function CameraOverlay({
   return createPortal(
     <div className="fixed inset-0 z-[9999] flex flex-col bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300 text-slate-900">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-2.5 bg-white/60 backdrop-blur-xl border-b border-black/5 shrink-0">
+      <div className="flex items-center justify-between gap-2 px-5 py-2.5 bg-white/60 backdrop-blur-xl border-b border-black/5 shrink-0">
         <div className="font-bold text-sm">
           <span className="text-muted-foreground">Score:</span> {score}/{questions.length}
         </div>
@@ -404,7 +404,7 @@ function CameraOverlay({
         </div>
         <div className="flex items-center gap-3">
           <span className="text-sm font-semibold text-muted-foreground">{currentQ + 1}/{questions.length}</span>
-          <button onClick={handleClose} className="w-9 h-9 flex items-center justify-center rounded-xl bg-black/5 border border-black/8 hover:bg-red-500/15 hover:text-red-500 transition-colors text-lg">
+          <button onClick={handleClose} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-black/5 border border-black/8 hover:bg-red-500/15 hover:text-red-500 transition-colors text-lg">
             ✕
           </button>
         </div>
@@ -426,18 +426,18 @@ function CameraOverlay({
       {phase !== "countdown" && phase !== "finished" && (
         <div className="text-center px-5 py-3 bg-white/45 backdrop-blur-lg border-b border-black/4 shrink-0">
           <div className="text-xs text-primary font-bold uppercase tracking-widest mb-1">Câu {currentQ + 1}</div>
-          <div className="text-xl sm:text-2xl font-extrabold leading-relaxed max-w-3xl mx-auto px-5 py-3 bg-white/50 rounded-2xl border border-white/60 shadow-sm">
+          <div className="text-lg sm:text-2xl font-extrabold leading-relaxed max-w-3xl mx-auto px-5 py-3 bg-white/50 rounded-2xl border border-white/60 shadow-sm break-words">
             {q.text}
           </div>
         </div>
       )}
 
       {/* Body: A | Camera | B */}
-      <div className="flex-1 flex items-stretch gap-4 px-5 py-4 min-h-0 portrait:flex-col">
+      <div className="flex-1 flex items-stretch gap-4 px-5 py-4 min-h-0 portrait:flex-col max-sm:gap-2 max-sm:px-2">
         {/* Option A */}
         <div className={`flex-1 flex flex-col items-center justify-center text-center p-5 rounded-3xl font-bold text-xl backdrop-blur-lg transition-all duration-300
           ${detectedGesture === "A" ? "bg-primary text-white shadow-xl shadow-primary/30 scale-[1.03]" : "bg-primary/10 border-2 border-primary/20 text-slate-900"}`}>
-          <span className="text-3xl sm:text-4xl flex-1 flex items-center justify-center py-4">{q.optA}</span>
+          <span className="text-3xl sm:text-4xl flex-1 flex items-center justify-center py-4 break-words min-w-0">{q.optA}</span>
           <div className="text-xs opacity-40 border-t border-black/6 pt-2 w-full flex items-center justify-center gap-1.5">
             <Hand className="h-4 w-4 opacity-60" /> Tay trái / Nghiêng trái
           </div>
@@ -473,7 +473,7 @@ function CameraOverlay({
         {/* Option B */}
         <div className={`flex-1 flex flex-col items-center justify-center text-center p-5 rounded-3xl font-bold text-xl backdrop-blur-lg transition-all duration-300
           ${detectedGesture === "B" ? "bg-primary text-white shadow-xl shadow-primary/30 scale-[1.03]" : "bg-primary/10 border-2 border-primary/20 text-slate-900"}`}>
-          <span className="text-3xl sm:text-4xl flex-1 flex items-center justify-center py-4">{q.optB}</span>
+          <span className="text-3xl sm:text-4xl flex-1 flex items-center justify-center py-4 break-words min-w-0">{q.optB}</span>
           <div className="text-xs opacity-40 border-t border-black/6 pt-2 w-full flex items-center justify-center gap-1.5">
             <Hand className="h-4 w-4 opacity-60 -scale-x-100" /> Tay phải / Nghiêng phải
           </div>

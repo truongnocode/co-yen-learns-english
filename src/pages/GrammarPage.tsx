@@ -122,7 +122,7 @@ const GrammarPage = () => {
                     const isFormula = /^(S\s*\+|If\s*\+|\(\+\)|\(-\)|\(\?\))/.test(trimmed);
                     return (
                       <p key={j} className={
-                        isFormula ? "font-mono text-xs bg-primary/5 px-2 py-1 rounded-lg text-primary/80" :
+                        isFormula ? "font-mono text-xs bg-primary/5 px-2 py-1 rounded-lg text-primary/80 break-words whitespace-pre-wrap" :
                         isExample ? "pl-3 border-l-2 border-primary/20 text-foreground/80" : ""
                       }>
                         {trimmed}

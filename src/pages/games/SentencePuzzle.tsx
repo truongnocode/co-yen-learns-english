@@ -100,7 +100,7 @@ const SentencePuzzle = () => {
 
   return (
     <PageShell>
-      <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-lg mx-auto px-5 pt-28 pb-32 sm:pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
             className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
@@ -171,13 +171,13 @@ const SentencePuzzle = () => {
             )}
 
             {/* Word bank */}
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex flex-wrap gap-2.5 sm:gap-2 mb-6">
               {remaining.map((word, i) => (
                 <motion.button
                   key={`rem-${i}-${word}`}
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}
                   onClick={() => addWord(word, i)}
-                  className="bg-card/80 border border-border/40 rounded-xl px-3 py-1.5 text-sm font-bold text-foreground hover:border-primary/40 hover:shadow-md transition-all"
+                  className="bg-card/80 border border-border/40 rounded-xl px-4 py-2 sm:px-3 sm:py-1.5 text-sm font-bold text-foreground hover:border-primary/40 hover:shadow-md transition-all"
                 >
                   {word}
                 </motion.button>

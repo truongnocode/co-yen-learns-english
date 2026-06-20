@@ -218,7 +218,7 @@ const ExercisesPage = () => {
             }
             return (
               <motion.button key={idx} whileTap={{ scale: 0.97 }} onClick={() => handleSelect(idx)}
-                className={`p-4 rounded-2xl border text-left font-bold text-base transition-all ${style}`}>
+                className={`p-4 rounded-2xl border text-left font-bold text-base transition-all break-words ${style}`}>
                 <span className="text-muted-foreground/50 mr-2">{String.fromCharCode(65 + idx)}.</span> {opt}
               </motion.button>
             );

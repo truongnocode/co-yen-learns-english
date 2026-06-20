@@ -153,7 +153,7 @@ const QuizPage = () => {
   return (
     <div className="min-h-screen flex flex-col gradient-hero">
       <div className="max-w-lg mx-auto w-full flex-1 flex flex-col">
-        <div className="flex items-center gap-3 px-5 pt-12 pb-4">
+        <div className="flex items-center gap-3 px-5 pt-24 sm:pt-12 pb-4">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)} className="p-2.5 rounded-xl bg-card shadow-lg text-foreground border border-white/50">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
@@ -185,7 +185,7 @@ const QuizPage = () => {
               </motion.button>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-4">
               {q.options.map((opt, i) => {
                 let cls = "bg-card border-2 border-white/50 text-foreground shadow-md";
                 if (selected) {
@@ -202,8 +202,8 @@ const QuizPage = () => {
                   <motion.button key={opt.english} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }}
                     whileTap={!selected ? { scale: 0.96 } : {}} whileHover={!selected ? { scale: 1.02 } : {}}
                     onClick={() => handleSelect(opt.vietnamese)}
-                    className={`${cls} rounded-2xl py-4 px-5 text-left font-semibold transition-all flex items-center justify-between`}>
-                    <span>{opt.vietnamese}</span>
+                    className={`${cls} rounded-2xl py-5 sm:py-4 px-5 text-left font-semibold transition-all flex items-center justify-between`}>
+                    <span className="break-words">{opt.vietnamese}</span>
                     {selected && reviewMode === "instant" && opt.vietnamese === q.word.vietnamese && <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}><CheckCircle2 className="h-5 w-5 text-success" /></motion.div>}
                     {selected && reviewMode === "instant" && opt.vietnamese === selected && opt.vietnamese !== q.word.vietnamese && <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}><XCircle className="h-5 w-5 text-destructive" /></motion.div>}
                   </motion.button>

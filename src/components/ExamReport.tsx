@@ -25,9 +25,9 @@ const ExamReport = ({ report }: Props) => {
         <div className="space-y-3">
           {competencies.map((c) => (
             <div key={c.category}>
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-xs font-bold text-foreground">{c.label}</span>
-                <span className={`text-xs font-extrabold ${c.pct >= 70 ? "text-emerald-600" : c.pct >= 50 ? "text-amber-600" : "text-red-500"}`}>
+              <div className="flex items-center justify-between gap-2 mb-1">
+                <span className="text-xs font-bold text-foreground truncate min-w-0">{c.label}</span>
+                <span className={`text-xs font-extrabold shrink-0 ${c.pct >= 70 ? "text-emerald-600" : c.pct >= 50 ? "text-amber-600" : "text-red-500"}`}>
                   {c.correct}/{c.total} ({c.pct}%)
                 </span>
               </div>

@@ -148,6 +148,10 @@ const VideoLessonPage = () => {
     (index: number) => {
       const line = lines[index];
       if (!line) return;
+      // On mobile the line list sits in normal page flow, so scrollIntoView would
+      // yank the whole page down (away from the video + controls). Only auto-follow
+      // inside the desktop sidebar, which has its own internal scroll container.
+      if (typeof window !== "undefined" && !window.matchMedia("(min-width: 1024px)").matches) return;
       window.requestAnimationFrame(() => {
         lineButtonRefs.current.get(line.id)?.scrollIntoView({ block: "nearest", behavior: "smooth" });
       });

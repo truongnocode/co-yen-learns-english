@@ -20,6 +20,9 @@ interface YTPlayer {
   cueVideoById: (args: { videoId: string; startSeconds?: number }) => void;
   loadVideoById: (args: { videoId: string; startSeconds?: number; endSeconds?: number }) => void;
   pauseVideo: () => void;
+  playVideo: () => void;
+  seekTo: (seconds: number, allowSeekAhead: boolean) => void;
+  getCurrentTime: () => number;
   setPlaybackRate: (rate: number) => void;
   loadModule?: (module: string) => void;
   setOption?: (module: string, option: string, value: unknown) => void;
@@ -89,7 +92,7 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
     const [ready, setReady] = useState(false);
 
     const clearTimer = () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
+      if (timerRef.current) clearInterval(timerRef.current);
       timerRef.current = null;
     };
 
@@ -143,27 +146,50 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
         clearTimer();
         const start = Math.max(0, segment.start);
         const end = Math.max(start + 0.8, segment.end);
-        const durationMs = ((end - start) / Math.max(rate, 0.25)) * 1000 + 450;
 
-        const playOnce = () => {
-          player.loadVideoById({ videoId, startSeconds: start, endSeconds: end });
+        player.loadVideoById({ videoId, startSeconds: start, endSeconds: end });
+        enableEnglishCaptions(player);
+        window.setTimeout(() => {
+          try {
+            player.setPlaybackRate(rate);
+          } catch {
+            // YouTube may reject an unavailable rate for some videos; default playback still works.
+          }
           enableEnglishCaptions(player);
-          window.setTimeout(() => {
+        }, 250);
+
+        // Stop (or, when looping, restart) based on the ACTUAL playback position,
+        // not a fixed call-time timer. On mobile the video needs ~1–2s to load/seek
+        // before sound starts, so a call-time timer would pause after just 1–2 words.
+        // We ignore currentTime for a short arming window so the post-load seek can
+        // reset it, then watch it climb to `end`.
+        let armAt = Date.now() + 450;
+        timerRef.current = window.setInterval(() => {
+          if (Date.now() < armAt) return;
+          let t = 0;
+          try {
+            t = player.getCurrentTime?.() ?? 0;
+          } catch {
+            return;
+          }
+          if (t < end - 0.05) return;
+          if (loop) {
+            armAt = Date.now() + 450;
             try {
-              player.setPlaybackRate(rate);
+              player.seekTo(start, true);
+              player.playVideo();
             } catch {
-              // YouTube may reject an unavailable rate for some videos; default playback still works.
+              // ignore transient player errors; next tick retries
             }
-            enableEnglishCaptions(player);
-          }, 250);
-
-          timerRef.current = window.setTimeout(() => {
-            if (loop) playOnce();
-            else player.pauseVideo();
-          }, durationMs);
-        };
-
-        playOnce();
+          } else {
+            clearTimer();
+            try {
+              player.pauseVideo();
+            } catch {
+              // ignore
+            }
+          }
+        }, 100);
       },
       stop: () => {
         clearTimer();

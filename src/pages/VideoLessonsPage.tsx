@@ -51,6 +51,27 @@ const VideoLessonsPage = () => {
     return exact.length > 0 ? exact : lessons;
   }, [lessons, profile?.grade]);
 
+  // Group by series (lesson.topic) and order by episode number from the title, so
+  // each playlist shows its episodes 1, 2, 3 ... in order instead of newest-first.
+  const groups = useMemo(() => {
+    const episodeOf = (title: string) => {
+      const m = String(title).match(/\b(\d+)\b/);
+      return m ? Number(m[1]) : Number.POSITIVE_INFINITY;
+    };
+    const bySeries = new Map<string, VideoLesson[]>();
+    for (const lesson of visibleLessons) {
+      const key = (lesson.topic || "").trim() || "Khác";
+      if (!bySeries.has(key)) bySeries.set(key, []);
+      bySeries.get(key)!.push(lesson);
+    }
+    return [...bySeries.entries()]
+      .map(([series, items]) => ({
+        series,
+        items: [...items].sort((a, b) => episodeOf(a.title) - episodeOf(b.title) || a.title.localeCompare(b.title)),
+      }))
+      .sort((a, b) => a.series.localeCompare(b.series, "vi"));
+  }, [visibleLessons]);
+
   return (
     <PageShell>
       <div className="mx-auto max-w-4xl px-5 pb-20 pt-28">
@@ -93,51 +114,63 @@ const VideoLessonsPage = () => {
             <p className="mt-1 text-sm text-muted-foreground">Cô giáo sẽ thêm bài học bằng URL YouTube trong trang admin.</p>
           </div>
         ) : (
-          <div className="grid gap-4 sm:grid-cols-2">
-            {visibleLessons.map((lesson, index) => {
-              const progress = progressMap[lesson.id];
-              const total = lesson.lines?.length ?? 0;
-              const done = progress?.completedLineIds?.length ?? 0;
-              const pct = total ? Math.round((done / total) * 100) : 0;
-              return (
-                <motion.button
-                  key={lesson.id}
-                  initial={{ opacity: 0, y: 18, filter: "blur(5px)" }}
-                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                  transition={{ ...smooth, delay: index * 0.06 }}
-                  whileHover={{ scale: 1.02, y: -3 }}
-                  whileTap={{ scale: 0.97 }}
-                  onClick={() => navigate(`/video-lessons/${lesson.id}`)}
-                  className="rounded-3xl border border-border/30 bg-card/85 p-5 text-left shadow-lg backdrop-blur-xl transition-shadow hover:shadow-xl"
-                >
-                  <div className="mb-4 aspect-video overflow-hidden rounded-2xl bg-black">
-                    <img
-                      src={`https://img.youtube.com/vi/${lesson.videoId}/hqdefault.jpg`}
-                      alt=""
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <div className="mb-3 flex items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <h2 className="line-clamp-2 font-display text-xl font-extrabold text-foreground">
-                        {lesson.title}
-                      </h2>
-                      <p className="mt-1 text-xs font-semibold text-muted-foreground">
-                        {total} câu luyện thuộc{lesson.grade ? ` · Lớp ${lesson.grade}` : ""}
-                      </p>
-                    </div>
-                    <PlayCircle className="mt-1 h-6 w-6 shrink-0 text-primary" />
-                  </div>
-                  <div className="mb-2 flex items-center justify-between gap-2">
-                    <Badge variant={pct === 100 ? "default" : "secondary"}>{pct}%</Badge>
-                    <span className="text-xs font-bold text-muted-foreground">
-                      {done}/{total} câu đã thuộc
-                    </span>
-                  </div>
-                  <Progress value={pct} className="h-2 rounded-full" />
-                </motion.button>
-              );
-            })}
+          <div className="space-y-8">
+            {groups.map((group) => (
+              <section key={group.series}>
+                <h2 className="mb-3 flex items-center gap-2 font-display text-lg font-extrabold text-foreground">
+                  {group.series}
+                  <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-bold text-primary">
+                    {group.items.length} bài
+                  </span>
+                </h2>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {group.items.map((lesson, index) => {
+                    const progress = progressMap[lesson.id];
+                    const total = lesson.lines?.length ?? 0;
+                    const done = progress?.completedLineIds?.length ?? 0;
+                    const pct = total ? Math.round((done / total) * 100) : 0;
+                    return (
+                      <motion.button
+                        key={lesson.id}
+                        initial={{ opacity: 0, y: 18, filter: "blur(5px)" }}
+                        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                        transition={{ ...smooth, delay: Math.min(index * 0.04, 0.3) }}
+                        whileHover={{ scale: 1.02, y: -3 }}
+                        whileTap={{ scale: 0.97 }}
+                        onClick={() => navigate(`/video-lessons/${lesson.id}`)}
+                        className="rounded-3xl border border-border/30 bg-card/85 p-5 text-left shadow-lg backdrop-blur-xl transition-shadow hover:shadow-xl"
+                      >
+                        <div className="mb-4 aspect-video overflow-hidden rounded-2xl bg-black">
+                          <img
+                            src={`https://img.youtube.com/vi/${lesson.videoId}/hqdefault.jpg`}
+                            alt=""
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                        <div className="mb-3 flex items-start justify-between gap-3">
+                          <div className="min-w-0">
+                            <h2 className="line-clamp-2 font-display text-xl font-extrabold text-foreground">
+                              {lesson.title}
+                            </h2>
+                            <p className="mt-1 text-xs font-semibold text-muted-foreground">
+                              {total} câu luyện thuộc{lesson.grade ? ` · Lớp ${lesson.grade}` : ""}
+                            </p>
+                          </div>
+                          <PlayCircle className="mt-1 h-6 w-6 shrink-0 text-primary" />
+                        </div>
+                        <div className="mb-2 flex items-center justify-between gap-2">
+                          <Badge variant={pct === 100 ? "default" : "secondary"}>{pct}%</Badge>
+                          <span className="text-xs font-bold text-muted-foreground">
+                            {done}/{total} câu đã thuộc
+                          </span>
+                        </div>
+                        <Progress value={pct} className="h-2 rounded-full" />
+                      </motion.button>
+                    );
+                  })}
+                </div>
+              </section>
+            ))}
           </div>
         )}
       </div>

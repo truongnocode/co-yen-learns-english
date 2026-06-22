@@ -1,6 +1,8 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import { LogOut } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { LogOut, Flame, Star } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { getProgress, calcXP } from "@/lib/progress";
 import { HUBS, activeHubKey, type NavHub } from "@/data/nav";
 import { routes } from "@/data/routes";
 import bearUrl from "@/assets/emoji/bear.png";
@@ -18,6 +20,16 @@ const AppNav = () => {
   const isGuest = user?.isAnonymous ?? true;
   const grade = profile?.grade;
   const active = activeHubKey(location.pathname);
+
+  // Streak + XP chips — the single gamification display in the chrome.
+  const { data: progress } = useQuery({
+    queryKey: ["progress", user?.uid],
+    queryFn: () => getProgress(user!.uid),
+    enabled: !!user && !isGuest,
+    staleTime: 60_000,
+  });
+  const streak = progress?.dailyStreak ?? 0;
+  const xp = progress ? calcXP(progress) : 0;
 
   // "Học" goes straight to the student's grade once one is chosen.
   const hubTo = (h: NavHub) => (h.key === "hoc" && user && grade ? routes.grade(grade) : h.to);
@@ -56,6 +68,14 @@ const AppNav = () => {
 
           {user && !isGuest ? (
             <div className="flex shrink-0 items-center gap-1.5">
+              <div className="mr-1 hidden items-center gap-1.5 sm:flex">
+                <span className="inline-flex items-center gap-1 rounded-full bg-streak/15 px-2.5 py-1 text-sm font-extrabold text-foreground" title="Chuỗi ngày học">
+                  <Flame className="h-4 w-4 text-streak" aria-hidden /> {streak}
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-xp/20 px-2.5 py-1 text-sm font-extrabold text-foreground" title="Điểm XP">
+                  <Star className="h-4 w-4 text-xp" aria-hidden /> {xp}
+                </span>
+              </div>
               <button onClick={() => navigate(routes.dashboard)} className="flex items-center gap-2" aria-label="Trang cá nhân">
                 <img
                   src={user.photoURL || ""}

@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine, Sparkles } from "lucide-react";
+import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine, Sparkles, Volume2 } from "lucide-react";
 import { gradeConfig, type SGKData } from "@/data/types";
 import PageShell from "@/components/PageShell";
 
@@ -148,7 +148,7 @@ const GradePage = () => {
             transition={{ ...smooth, delay: 0.5 }}
             whileHover={{ scale: 1.02, y: -3 }}
             whileTap={{ scale: 0.97 }}
-            onClick={() => navigate(`/grade/${grade}/camera`)}
+            onClick={() => navigate(`/practice/camera/${grade}`)}
             className="w-full mt-4 relative rounded-2xl overflow-hidden bg-accent2 text-accent2-foreground shadow-1 hover:shadow-2 transition-shadow duration-500 text-left"
           >
             <div className="relative z-10 p-6 flex items-center gap-5">
@@ -203,6 +203,25 @@ const GradePage = () => {
                 </div>
               </motion.div>
             ))}
+
+            {/* Skills: phonetics drill for this grade */}
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={smooth}
+              whileTap={{ scale: 0.97 }}
+              onClick={() => navigate(`/phonetics/${grade}`)}
+              className="flex items-center gap-4 rounded-2xl bg-accent2 p-5 text-left text-accent2-foreground shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/15">
+                <Volume2 className="h-6 w-6" />
+              </div>
+              <div className="min-w-0">
+                <h3 className="font-display text-lg font-extrabold">Luyện phát âm</h3>
+                <p className="text-sm opacity-90">Chọn từ khác trọng âm / âm đầu — luyện nghe tinh tai.</p>
+              </div>
+            </motion.button>
           </div>
         ) : null}
       </div>

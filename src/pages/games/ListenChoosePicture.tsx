@@ -128,6 +128,14 @@ const ListenChoosePicture = () => {
           </span>
         </div>
 
+        {/* Mode toggle: meaning ↔ picture */}
+        <div className="mb-5 flex rounded-xl border border-border bg-card p-1 text-sm font-bold shadow-1">
+          <button onClick={() => navigate(`/practice/listen/${grade}`)} className="flex-1 rounded-lg py-1.5 text-center text-muted-foreground transition-colors hover:text-foreground">
+            Chọn nghĩa
+          </button>
+          <span className="flex-1 rounded-lg bg-primary py-1.5 text-center text-primary-foreground">Chọn tranh</span>
+        </div>
+
         {!finished && <Progress value={((current + 1) / questions.length) * 100} className="h-2 mb-6 rounded-full" />}
 
         {finished ? (

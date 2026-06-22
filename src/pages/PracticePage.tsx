@@ -1,62 +1,101 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, Home, Shuffle, Headphones, PuzzleIcon, Mic, LayoutGrid, ImageIcon, Film } from "lucide-react";
+import {
+  ArrowLeft,
+  Home,
+  Shuffle,
+  Headphones,
+  PuzzleIcon,
+  Mic,
+  LayoutGrid,
+  Camera,
+  RotateCcw,
+  FilePlus2,
+  GraduationCap,
+} from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import PageShell from "@/components/PageShell";
 
-const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
-
-const games = [
-  { key: "word-match", label: "Nối từ", desc: "Ghép cặp Anh-Việt nhanh nhất", icon: Shuffle, tone: "bg-accent text-accent-foreground" },
-  { key: "listen", label: "Nghe & Chọn", desc: "Nghe phát âm, chọn nghĩa đúng", icon: Headphones, tone: "bg-accent2 text-accent2-foreground" },
-  { key: "sentence-puzzle", label: "Xếp câu", desc: "Sắp xếp từ thành câu hoàn chỉnh", icon: PuzzleIcon, tone: "bg-primary text-primary-foreground" },
-  { key: "shadowing", label: "Luyện Shadowing", desc: "Nghe, nhại âm và ghi âm giọng nói", icon: Mic, tone: "bg-accent2 text-accent2-foreground" },
-  { key: "flashcard-match", label: "Lật Thẻ Ghép Cặp", desc: "Lật thẻ tìm cặp hình ảnh và từ tiếng Anh", icon: LayoutGrid, tone: "bg-accent text-accent-foreground" },
-  { key: "listen-picture", label: "Nghe và Chọn Tranh", desc: "Nghe từ tiếng Anh và chọn tranh đúng", icon: ImageIcon, tone: "bg-accent2 text-accent2-foreground" },
-  { key: "video-lessons", label: "Học thuộc video", desc: "Nghe video, nhại theo, che chữ rồi đọc thuộc", icon: Film, tone: "bg-success text-success-foreground" },
-];
+const smooth = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
 
 const PracticePage = () => {
   const navigate = useNavigate();
   const { profile } = useAuth();
   const grade = profile?.grade || 6;
 
+  const games = [
+    { label: "Nối từ", desc: "Ghép cặp Anh – Việt thật nhanh", icon: Shuffle, to: `/practice/word-match/${grade}`, tone: "bg-accent text-accent-foreground" },
+    { label: "Nghe & Chọn", desc: "Nghe phát âm, chọn nghĩa hoặc tranh đúng", icon: Headphones, to: `/practice/listen/${grade}`, tone: "bg-accent2 text-accent2-foreground" },
+    { label: "Xếp câu", desc: "Sắp xếp từ thành câu hoàn chỉnh", icon: PuzzleIcon, to: `/practice/sentence-puzzle/${grade}`, tone: "bg-primary text-primary-foreground" },
+    { label: "Lật thẻ ghép cặp", desc: "Lật thẻ tìm cặp hình ảnh và từ", icon: LayoutGrid, to: `/practice/flashcard-match/${grade}`, tone: "bg-accent text-accent-foreground" },
+    { label: "Luyện nói (Shadowing)", desc: "Nghe, nhại âm và tự ghi âm giọng nói", icon: Mic, to: `/practice/shadowing/${grade}`, tone: "bg-primary text-primary-foreground" },
+    { label: "Camera tương tác", desc: "Trả lời bằng cử chỉ trước camera", icon: Camera, to: `/practice/camera/${grade}`, tone: "bg-accent2 text-accent2-foreground" },
+  ];
+
+  const review = [
+    { label: "Ôn từ vựng thông minh", desc: "Học lại đúng lúc sắp quên (SRS)", icon: RotateCcw, to: "/practice/srs-review", tone: "bg-success text-success-foreground" },
+    { label: "Tạo đề kiểm tra", desc: "Tự chọn nội dung, làm bài chấm điểm", icon: FilePlus2, to: "/test/custom", tone: "bg-primary text-primary-foreground" },
+    { label: "Đề thi vào lớp 10", desc: "Đề thi thử có chấm điểm & chữa chi tiết", icon: GraduationCap, to: "/grade/10/tests", tone: "bg-accent text-accent-foreground" },
+  ];
+
+  const Card = ({ item, delay }: { item: (typeof games)[number]; delay: number }) => (
+    <motion.button
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ ...smooth, delay }}
+      whileTap={{ scale: 0.97 }}
+      onClick={() => navigate(item.to)}
+      className={`${item.tone} rounded-2xl p-5 text-left shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2`}
+    >
+      <item.icon className="mb-3 h-8 w-8 opacity-90" />
+      <h3 className="mb-1 font-display text-lg font-extrabold sm:text-xl">{item.label}</h3>
+      <p className="text-sm opacity-90">{item.desc}</p>
+    </motion.button>
+  );
+
   return (
     <PageShell>
-      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
-        <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
+      <div className="mx-auto max-w-4xl px-5 pb-20 pt-28">
+        <div className="mb-6 flex items-center gap-3">
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={() => navigate("/dashboard")}
+            className="rounded-xl border border-border bg-card p-2.5 text-foreground shadow-1"
+            aria-label="Trang chủ"
+          >
             <Home className="h-5 w-5" />
           </motion.button>
-          <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
+          <button
+            onClick={() => navigate(-1)}
+            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
         </div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth} className="mb-8">
-          <h1 className="font-display font-extrabold text-3xl text-foreground mb-2">Trò chơi luyện tập</h1>
-          <p className="text-muted-foreground text-base">Chọn một trò chơi để ôn luyện từ vựng và ngữ pháp.</p>
+          <h1 className="mb-2 font-display text-3xl font-extrabold text-foreground">Luyện tập</h1>
+          <p className="text-base text-muted-foreground">Chơi để nhớ từ, ôn lại điều sắp quên, và thử sức với đề kiểm tra.</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {games.map((game, i) => (
-            <motion.button
-              key={game.key}
-              initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ ...smooth, delay: 0.1 + i * 0.08 }}
-              whileHover={{ scale: 1.03, y: -3 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => navigate(game.key === "video-lessons" ? "/video-lessons" : `/practice/${game.key}/${grade}`)}
-              className={`${game.tone} rounded-2xl p-6 text-left relative overflow-hidden shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2`}
-            >
-              <game.icon className="h-8 w-8 mb-3 opacity-90 relative z-10" />
-              <h3 className="font-display font-extrabold text-lg sm:text-xl mb-1 relative z-10">{game.label}</h3>
-              <p className="opacity-80 text-sm relative z-10">{game.desc}</p>
-            </motion.button>
-          ))}
-        </div>
+        <section className="mb-10">
+          <h2 className="mb-3 font-display text-xl font-extrabold text-foreground">Trò chơi</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {games.map((item, i) => (
+              <Card key={item.label} item={item} delay={i * 0.05} />
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2 className="mb-3 font-display text-xl font-extrabold text-foreground">Ôn tập & Kiểm tra</h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {review.map((item, i) => (
+              <Card key={item.label} item={item} delay={i * 0.05} />
+            ))}
+          </div>
+        </section>
       </div>
     </PageShell>
   );

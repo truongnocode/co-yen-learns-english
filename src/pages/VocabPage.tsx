@@ -7,6 +7,7 @@ import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PageShell from "@/components/PageShell";
+import Breadcrumb from "@/components/Breadcrumb";
 import { getWordIcon } from "@/lib/wordIcons";
 import { speakUS } from "@/lib/tts";
 
@@ -607,6 +608,7 @@ const VocabPage = () => {
             <Home className="h-5 w-5" />
           </motion.button>
         </div>
+        <Breadcrumb />
 
         <Tabs defaultValue="list" className="w-full flex-1 flex flex-col min-h-0">
           <TabsList className="w-full grid grid-cols-4 mb-4 bg-card rounded-2xl p-1 border border-border shrink-0">

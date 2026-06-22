@@ -5,6 +5,7 @@ import { ArrowLeft, Home } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit } from "@/data/types";
 import PageShell from "@/components/PageShell";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
@@ -95,6 +96,7 @@ const GrammarPage = () => {
             <Home className="h-5 w-5" />
           </motion.button>
         </div>
+        <Breadcrumb />
 
         {/* Grammar topics */}
         <motion.div initial={{ opacity: 0, y: 15, filter: "blur(6px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} transition={smooth}

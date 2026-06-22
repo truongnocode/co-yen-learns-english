@@ -9,6 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { saveQuizResult, getProgress } from "@/lib/progress";
 import { completeDailyTask } from "@/lib/daily";
 import PageShell from "@/components/PageShell";
+import Breadcrumb from "@/components/Breadcrumb";
 import { speakUS } from "@/lib/tts";
 import ExplanationBox from "@/components/ExplanationBox";
 import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";
@@ -171,6 +172,7 @@ const ExercisesPage = () => {
             <Home className="h-5 w-5" />
           </motion.button>
         </div>
+        <Breadcrumb />
 
         <Progress value={progress} className="h-2.5 rounded-full mb-8" />
 

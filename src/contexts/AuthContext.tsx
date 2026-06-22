@@ -11,7 +11,7 @@ import {
   type User,
 } from "firebase/auth";
 import { auth, googleProvider } from "@/lib/firebase";
-import { getUserProfile, createUserProfile, setUserGrade, type UserProfile } from "@/lib/progress";
+import { getUserProfile, createUserProfile, setUserGrade, completeOnboarding as saveOnboarding, type UserProfile } from "@/lib/progress";
 
 interface AuthContextType {
   user: User | null;
@@ -21,6 +21,7 @@ interface AuthContextType {
   signInWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
   selectGrade: (grade: number) => Promise<void>;
+  completeOnboarding: (data: { studentName: string; grade: number; phone: string }) => Promise<void>;
   refreshProfile: () => Promise<void>;
 }
 
@@ -143,12 +144,18 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setProfile((prev) => prev ? { ...prev, grade } : null);
   };
 
+  const completeOnboarding = async (data: { studentName: string; grade: number; phone: string }) => {
+    if (!user) return;
+    await saveOnboarding(user.uid, data);
+    setProfile((prev) => prev ? { ...prev, ...data } : prev);
+  };
+
   const refreshProfile = async () => {
     if (user) await loadProfile(user);
   };
 
   return (
-    <AuthContext.Provider value={{ user, profile, loading, authError, signInWithGoogle, logout, selectGrade, refreshProfile }}>
+    <AuthContext.Provider value={{ user, profile, loading, authError, signInWithGoogle, logout, selectGrade, completeOnboarding, refreshProfile }}>
       {children}
     </AuthContext.Provider>
   );

@@ -19,6 +19,8 @@ import Grade10WritingPage from "./pages/Grade10WritingPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
 import DashboardPage from "./pages/DashboardPage";
+import OnboardingPage from "./pages/OnboardingPage";
+import OnboardingGate from "@/components/OnboardingGate";
 import CameraPage from "./pages/CameraPage";
 import WordMatchGame from "./pages/games/WordMatchGame";
 import ListenChooseGame from "./pages/games/ListenChooseGame";
@@ -51,8 +53,10 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <OnboardingGate />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/onboarding" element={<OnboardingPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/grades" element={<GradesPage />} />
           <Route path="/grade/10/vocab" element={<Grade10VocabPage />} />

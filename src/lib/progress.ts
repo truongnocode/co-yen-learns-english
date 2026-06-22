@@ -7,7 +7,13 @@ export interface UserProfile {
   photoURL: string;
   grade: number | null;
   createdAt: string;
+  studentName?: string;
+  phone?: string;
 }
+
+/** A profile is "onboarded" once it has the required student name, grade and phone. */
+export const isOnboarded = (p: UserProfile | null): boolean =>
+  !!(p && p.grade && p.studentName && p.phone);
 
 export interface DailyTasks {
   date: string;
@@ -61,6 +67,18 @@ export const createUserProfile = async (
 
 export const setUserGrade = async (uid: string, grade: number) => {
   await updateDoc(doc(db, "users", uid), { grade });
+};
+
+/** Required signup: write student name + grade + (format-validated) phone. */
+export const completeOnboarding = async (
+  uid: string,
+  data: { studentName: string; grade: number; phone: string }
+) => {
+  await updateDoc(doc(db, "users", uid), {
+    studentName: data.studentName,
+    grade: data.grade,
+    phone: data.phone,
+  });
 };
 
 export const updateUserProfile = async (

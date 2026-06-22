@@ -1,10 +1,10 @@
-import { useState, useCallback } from "react";
+import { useCallback } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import GradeSelectDialog from "@/components/GradeSelectDialog";
 import PageShell from "@/components/PageShell";
 import { useAuth } from "@/contexts/AuthContext";
+import { isOnboarded } from "@/lib/progress";
 import bearUrl from "@/assets/emoji/bear.png";
 import rabbitUrl from "@/assets/emoji/rabbit.png";
 import carrotUrl from "@/assets/emoji/carrot-char.svg";
@@ -20,26 +20,18 @@ const float = (d: number, delay = 0) => ({
 });
 
 /**
- * Trang chủ tinh gọn: chỉ là một "splash" có một nút vào học duy nhất + linh vật.
- * Điều hướng dùng chung AppNav (qua PageShell) — không còn menu tự chế / section trùng lặp.
- * CTA: chưa có lớp → mở hộp chọn lớp; đã có lớp → vào lớp học.
+ * Trang chủ tinh gọn: một "splash" có đúng một nút vào học + linh vật.
+ * Điều hướng dùng chung AppNav (qua PageShell) — không còn menu tự chế / section trùng.
+ * CTA: chưa tạo tài khoản → /onboarding; đã xong → /dashboard.
  */
 const Index = () => {
   const navigate = useNavigate();
-  const { profile, selectGrade } = useAuth();
-  const [showGradeSelect, setShowGradeSelect] = useState(false);
-  const grade = profile?.grade;
+  const { profile } = useAuth();
+  const onboarded = isOnboarded(profile);
 
   const handleCTA = useCallback(() => {
-    if (!grade) setShowGradeSelect(true);
-    else navigate("/dashboard");
-  }, [grade, navigate]);
-
-  const handleGradeSelected = async (g: number) => {
-    await selectGrade(g);
-    setShowGradeSelect(false);
-    navigate("/dashboard");
-  };
+    navigate(onboarded ? "/dashboard" : "/onboarding");
+  }, [onboarded, navigate]);
 
   return (
     <PageShell>
@@ -76,7 +68,7 @@ const Index = () => {
                 onClick={handleCTA}
                 className="btn-press flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-4 font-display text-lg font-extrabold text-primary-foreground sm:w-auto"
               >
-                {grade ? `Vào lớp học` : "Bắt đầu học"} <ArrowRight className="h-5 w-5" aria-hidden />
+                {onboarded ? "Vào lớp học" : "Bắt đầu học"} <ArrowRight className="h-5 w-5" aria-hidden />
               </button>
             </div>
           </motion.div>
@@ -111,8 +103,6 @@ const Index = () => {
       <footer className="border-t border-border py-8 text-center">
         <p className="text-sm font-semibold text-muted-foreground">© 2026 Học tiếng Anh cùng cô Yến ❤️</p>
       </footer>
-
-      <GradeSelectDialog open={showGradeSelect} onSelect={handleGradeSelected} />
     </PageShell>
   );
 };

@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Mic, Menu } from "lucide-react";
+import { Mic, Menu, PlayCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -17,6 +17,7 @@ const Index = () => {
 
   const mobileLinks = [
     { label: "Tính năng", to: "/grades" },
+    { label: "Học bằng video", to: "/video-lessons" },
     { label: "Cấp 1 (Lớp 3-5)", to: "/grades?level=primary" },
     { label: "Cấp 2 (Lớp 6-9)", to: "/grades?level=secondary" },
     { label: "Thi vào 10", to: "/grade/10" },
@@ -89,6 +90,7 @@ const Index = () => {
           </div>
           <div className="hidden md:flex gap-6 font-bold text-indigo-800">
             <button onClick={() => smartNavigate("/grades")} className="hover:text-pink-500 transition-colors">Tính năng</button>
+            <button onClick={() => smartNavigate("/video-lessons")} className="hover:text-pink-500 transition-colors">Video</button>
             <button onClick={() => smartNavigate("/grades?level=primary")} className="hover:text-pink-500 transition-colors">Cấp 1 (Lớp 3-5)</button>
             <button onClick={() => smartNavigate("/grades?level=secondary")} className="hover:text-pink-500 transition-colors">Cấp 2 (Lớp 6-9)</button>
             <button onClick={() => smartNavigate("/grade/10")} className="hover:text-pink-500 transition-colors">Thi vào 10</button>
@@ -179,6 +181,24 @@ const Index = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Video lessons — full-width lead card */}
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.05 }}
+            onClick={() => smartNavigate("/video-lessons")}
+            className="glass p-8 md:col-span-2 lg:col-span-3 relative overflow-hidden group cursor-pointer bg-gradient-to-br from-white/50 to-purple-100/40">
+            <div className="absolute -right-10 -top-10 w-64 h-64 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 group-hover:bg-indigo-400 transition-colors duration-700" />
+            <div className="relative z-10 flex flex-col md:flex-row gap-5 md:gap-6 items-center">
+              <div className="w-16 h-16 bg-white/80 rounded-2xl flex items-center justify-center text-4xl shadow-sm shrink-0 group-hover:scale-110 transition-transform">🎬</div>
+              <div className="flex-1 text-center md:text-left">
+                <div className="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full mb-3">Mới · Học thuộc lời thoại</div>
+                <h3 className="text-2xl sm:text-3xl font-black text-indigo-900 mb-2 font-display">Học tiếng Anh bằng video</h3>
+                <p className="text-indigo-800 font-medium">Xem video hoạt hình theo chủ đề, nghe từng câu rồi nhại theo đúng nhịp người bản xứ. Che chữ dần để đọc thuộc lời thoại.</p>
+              </div>
+              <span className="bg-indigo-900 text-white font-bold py-3 px-7 rounded-full inline-flex items-center gap-2 shrink-0 group-hover:bg-pink-500 transition-colors">
+                <PlayCircle className="h-5 w-5" /> Xem video
+              </span>
+            </div>
+          </motion.div>
+
           {/* Microlearning */}
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.1 }}
             onClick={() => smartNavigate(grade ? `/grade/${grade}` : "/grades")}

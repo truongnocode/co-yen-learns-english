@@ -97,7 +97,7 @@ const VideoLessonsPage = () => {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate("/dashboard")}
-            className="rounded-xl border border-border/30 bg-card/80 p-2.5 text-foreground shadow-lg backdrop-blur-xl"
+            className="rounded-xl border border-border bg-card p-2.5 text-foreground shadow-1"
             aria-label="Trang chủ"
           >
             <Home className="h-5 w-5" />
@@ -120,7 +120,7 @@ const VideoLessonsPage = () => {
         </div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth} className="mb-8">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/60 px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-primary shadow-sm">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-xl bg-card border border-border px-4 py-1.5 text-xs font-extrabold uppercase tracking-wider text-primary shadow-1">
             <Film className="h-4 w-4" />
             Học thuộc lời thoại
           </div>
@@ -146,13 +146,13 @@ const VideoLessonsPage = () => {
         </motion.div>
 
         {loading ? (
-          <div className="rounded-3xl border border-border/30 bg-card/80 p-8 text-center text-sm text-muted-foreground shadow-lg backdrop-blur-xl">
+          <div className="rounded-2xl border border-border bg-card p-8 text-center text-base text-muted-foreground shadow-1">
             Đang tải bài học…
           </div>
         ) : visibleLessons.length === 0 ? (
-          <div className="rounded-3xl border border-dashed border-border/50 bg-card/70 p-8 text-center shadow-lg backdrop-blur-xl">
+          <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center shadow-1">
             <p className="font-display text-xl font-bold text-foreground">Chưa có bài video</p>
-            <p className="mt-1 text-sm text-muted-foreground">Cô giáo sẽ thêm bài học bằng URL YouTube trong trang admin.</p>
+            <p className="mt-1 text-base text-muted-foreground">Cô giáo sẽ thêm bài học bằng URL YouTube trong trang admin.</p>
           </div>
         ) : selectedGroup ? (
           // ─── Topic detail: the lessons inside the chosen topic ───
@@ -168,7 +168,7 @@ const VideoLessonsPage = () => {
                   whileHover={{ scale: 1.02, y: -3 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => navigate(`/video-lessons/${lesson.id}`)}
-                  className="rounded-3xl border border-border/30 bg-card/85 p-5 text-left shadow-lg backdrop-blur-xl transition-shadow hover:shadow-xl"
+                  className="rounded-2xl border border-border bg-card p-5 text-left shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2"
                 >
                   <div className="mb-4 aspect-video overflow-hidden rounded-2xl bg-black">
                     <img
@@ -221,7 +221,7 @@ const VideoLessonsPage = () => {
                   whileHover={{ scale: 1.02, y: -3 }}
                   whileTap={{ scale: 0.97 }}
                   onClick={() => openTopic(group.series)}
-                  className="rounded-3xl border border-border/30 bg-card/85 p-5 text-left shadow-lg backdrop-blur-xl transition-shadow hover:shadow-xl"
+                  className="rounded-2xl border border-border bg-card p-5 text-left shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2"
                 >
                   <div className="relative mb-4 aspect-video overflow-hidden rounded-2xl bg-black">
                     {cover && (
@@ -231,7 +231,7 @@ const VideoLessonsPage = () => {
                         className="h-full w-full object-cover"
                       />
                     )}
-                    <span className="absolute right-2 top-2 rounded-full bg-black/65 px-2.5 py-1 text-xs font-extrabold text-white backdrop-blur-sm">
+                    <span className="absolute right-2 top-2 rounded-full bg-black/65 px-2.5 py-1 text-xs font-extrabold text-white">
                       {group.items.length} bài
                     </span>
                   </div>

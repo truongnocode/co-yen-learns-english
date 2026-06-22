@@ -103,13 +103,13 @@ const SentencePuzzle = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-32 sm:pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
-          <span className="ml-auto text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">
+          <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
             {current + 1}/{puzzles.length}
           </span>
         </div>
@@ -118,28 +118,28 @@ const SentencePuzzle = () => {
 
         {finished ? (
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30">
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border">
             <span className="text-6xl block mb-4">{score >= puzzles.length * 0.7 ? "🧩🎉" : "🧩📝"}</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">{score}/{puzzles.length} đúng</h2>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => { setCurrent(0); setScore(0); setFinished(false); }}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold inline-flex items-center gap-2 shadow-lg mt-4">
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold inline-flex items-center gap-2 shadow-1 mt-4">
               <RotateCcw className="h-4 w-4" /> Chơi lại
             </motion.button>
           </motion.div>
         ) : p ? (
           <div>
             {/* Question */}
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 mb-4 shadow-lg border border-border/30">
+            <div className="bg-card rounded-2xl p-5 mb-4 shadow-1 border border-border">
               <span className="text-xs text-primary font-bold uppercase tracking-wider">Câu hỏi</span>
-              <p className="font-bold text-foreground mt-1">{p.sentence}</p>
+              <p className="font-bold text-foreground mt-1 text-base">{p.sentence}</p>
             </div>
 
             {/* Answer area */}
             <div className={`min-h-[56px] rounded-2xl p-3 mb-4 flex flex-wrap gap-2 border-2 border-dashed transition-colors ${
-              status === "correct" ? "border-emerald-400 bg-emerald-50" :
-              status === "wrong" ? "border-red-400 bg-red-50" :
-              "border-border/40 bg-card/50"
+              status === "correct" ? "border-success bg-success/10" :
+              status === "wrong" ? "border-destructive bg-destructive/10" :
+              "border-border bg-card"
             }`}>
               <AnimatePresence>
                 {placed.map((word, i) => (
@@ -148,7 +148,7 @@ const SentencePuzzle = () => {
                     initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }}
                     whileTap={{ scale: 0.9 }}
                     onClick={() => removeWord(i)}
-                    className="bg-primary text-white rounded-xl px-3 py-1.5 text-sm font-bold shadow-sm"
+                    className="bg-primary text-primary-foreground rounded-xl px-3 py-1.5 text-sm font-bold shadow-1"
                   >
                     {word}
                   </motion.button>
@@ -163,7 +163,7 @@ const SentencePuzzle = () => {
             {status !== "playing" && (
               <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }}
                 className={`flex items-center gap-2 rounded-xl px-4 py-2 mb-4 text-sm font-bold ${
-                  status === "correct" ? "bg-emerald-100 text-emerald-700" : "bg-red-100 text-red-700"
+                  status === "correct" ? "bg-success/10 text-success" : "bg-destructive/10 text-destructive"
                 }`}>
                 {status === "correct" ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
                 {status === "correct" ? "Chính xác!" : `Đáp án: ${p.original}`}
@@ -177,7 +177,7 @@ const SentencePuzzle = () => {
                   key={`rem-${i}-${word}`}
                   whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}
                   onClick={() => addWord(word, i)}
-                  className="bg-card/80 border border-border/40 rounded-xl px-4 py-2 sm:px-3 sm:py-1.5 text-sm font-bold text-foreground hover:border-primary/40 hover:shadow-md transition-all"
+                  className="bg-card border border-border rounded-xl px-4 py-2 sm:px-3 sm:py-1.5 text-sm font-bold text-foreground transition-all hover:-translate-y-0.5 hover:shadow-2"
                 >
                   {word}
                 </motion.button>
@@ -190,7 +190,7 @@ const SentencePuzzle = () => {
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
                 onClick={checkAnswer}
-                className="w-full gradient-primary text-white rounded-2xl py-3.5 font-display font-extrabold shadow-lg"
+                className="w-full bg-primary text-primary-foreground rounded-2xl py-3.5 font-display font-extrabold shadow-1 btn-press"
               >
                 Kiểm tra
               </motion.button>

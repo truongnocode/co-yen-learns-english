@@ -82,15 +82,12 @@ const LearningPath = ({ progress }: Props) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ...smooth, delay: 0.02 }}
-          className="mb-6 relative rounded-2xl overflow-hidden shadow-xl"
+          className="mb-6 relative rounded-2xl overflow-hidden bg-accent text-accent-foreground shadow-1"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400" />
-          <div className="absolute top-0 left-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 -translate-x-1/4 blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-40 h-40 bg-white/10 rounded-full translate-y-1/3 translate-x-1/4 blur-3xl" />
           <div className="relative z-10 px-5 py-4">
             <div className="flex items-center gap-2 mb-3">
-              <Gamepad2 className="h-5 w-5 text-white" />
-              <h3 className="font-display font-extrabold text-base text-white">Trò chơi</h3>
+              <Gamepad2 className="h-5 w-5 text-accent-foreground" />
+              <h3 className="font-display font-extrabold text-base text-accent-foreground">Trò chơi</h3>
             </div>
             <div className="grid grid-cols-3 gap-2.5">
               {[
@@ -103,10 +100,10 @@ const LearningPath = ({ progress }: Props) => {
                   whileHover={{ scale: 1.06, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => navigate(item.path)}
-                  className="bg-white/20 backdrop-blur-sm rounded-xl px-3 py-3 flex flex-col items-center gap-1.5 hover:bg-white/30 transition-colors"
+                  className="bg-white/20 rounded-xl px-3 py-3 flex flex-col items-center gap-1.5 hover:bg-white/30 transition-colors"
                 >
                   <span className="text-2xl">{item.emoji}</span>
-                  <span className="text-white font-display font-bold text-[11px] sm:text-xs whitespace-nowrap">{item.label}</span>
+                  <span className="text-accent-foreground font-display font-bold text-[11px] sm:text-xs whitespace-nowrap">{item.label}</span>
                 </motion.button>
               ))}
             </div>
@@ -120,19 +117,17 @@ const LearningPath = ({ progress }: Props) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ ...smooth, delay: 0.05 }}
         onClick={() => navigate(`/grade/${grade}/camera`)}
-        className="mb-6 relative rounded-2xl overflow-hidden cursor-pointer group shadow-xl hover:shadow-2xl transition-shadow duration-500"
+        className="mb-6 relative rounded-2xl overflow-hidden cursor-pointer group bg-accent2 text-accent2-foreground shadow-1 hover:shadow-2 transition-shadow duration-500"
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500" />
-        <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl" />
         <div className="relative z-10 px-5 py-4 flex items-center gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg shrink-0">
-            <Camera className="h-6 w-6 text-white" />
+          <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center shadow-1 shrink-0">
+            <Camera className="h-6 w-6 text-accent2-foreground" />
           </div>
-          <div className="flex-1 text-white min-w-0">
+          <div className="flex-1 text-accent2-foreground min-w-0">
             <h3 className="font-display font-extrabold text-base sm:text-lg">Camera tương tác</h3>
-            <p className="text-white/75 text-xs mt-0.5">Trả lời bằng cử chỉ cơ thể — giơ tay hoặc nghiêng đầu!</p>
+            <p className="text-accent2-foreground/75 text-sm mt-0.5">Trả lời bằng cử chỉ cơ thể — giơ tay hoặc nghiêng đầu!</p>
           </div>
-          <span className="bg-white text-purple-600 font-display font-extrabold text-xs px-4 py-2 rounded-full shadow-lg inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
+          <span className="bg-card text-accent2 font-display font-extrabold text-xs px-4 py-2 rounded-full shadow-1 inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
             Vào <ArrowRight className="h-3.5 w-3.5" />
           </span>
         </div>
@@ -151,7 +146,7 @@ const LearningPath = ({ progress }: Props) => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ ...smooth, delay: 0.05 * unitIdx }}
-                className="gradient-success rounded-2xl px-6 py-4 mb-6 flex items-center justify-between shadow-lg"
+                className="bg-success text-success-foreground rounded-2xl px-6 py-4 mb-6 flex items-center justify-between shadow-1"
               >
                 <div>
                   <h3 className="font-display font-extrabold text-lg text-success-foreground">
@@ -163,7 +158,7 @@ const LearningPath = ({ progress }: Props) => {
                 </div>
                 <button
                   onClick={() => navigate(`/grade/${grade}/vocab/${unit.id}`)}
-                  className="bg-success-foreground/20 backdrop-blur-sm text-success-foreground text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 hover:bg-success-foreground/30 transition-colors"
+                  className="bg-success-foreground/20 text-success-foreground text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 hover:bg-success-foreground/30 transition-colors"
                 >
                   <BookOpen className="h-3.5 w-3.5" />
                   LÝ THUYẾT
@@ -217,7 +212,7 @@ const LearningPath = ({ progress }: Props) => {
                           else if (stop.key === "practice") navigate(`/grade/${grade}/exercises/${u}`);
                           else if (stop.key === "spelling") navigate(`/grade/${grade}/vocab/${u}`);
                         }}
-                        className={`relative w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-lg ${
+                        className={`relative w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-1 ${
                           stopDone
                             ? `${stop.color} ring-4 ${stop.ring}/30`
                             : isActive
@@ -246,7 +241,7 @@ const LearningPath = ({ progress }: Props) => {
                         <motion.div
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
-                          className={`absolute ${isLeft ? "left-[calc(50%+60px)]" : "right-[calc(50%+60px)]"} bg-card text-foreground font-display font-bold text-sm px-4 py-2 rounded-xl shadow-lg border border-border`}
+                          className={`absolute ${isLeft ? "left-[calc(50%+60px)]" : "right-[calc(50%+60px)]"} bg-card text-foreground font-display font-bold text-sm px-4 py-2 rounded-xl shadow-2 border border-border`}
                         >
                           BẮT ĐẦU
                           {/* Arrow */}
@@ -275,22 +270,20 @@ const LearningPath = ({ progress }: Props) => {
             viewport={{ once: true }}
             transition={smooth}
             onClick={() => navigate("/grade/10")}
-            className="mt-8 relative rounded-2xl overflow-hidden cursor-pointer group shadow-xl hover:shadow-2xl transition-shadow duration-500"
+            className="mt-8 relative rounded-2xl overflow-hidden cursor-pointer group bg-primary text-primary-foreground shadow-1 hover:shadow-2 transition-shadow duration-500"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,85%,50%)] via-[hsl(210,82%,55%)] to-[hsl(200,80%,58%)]" />
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl" />
             <div className="relative z-10 px-6 py-5 flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg shrink-0">
-                <GraduationCap className="h-7 w-7 text-white" />
+              <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center shadow-1 shrink-0">
+                <GraduationCap className="h-7 w-7 text-primary-foreground" />
               </div>
-              <div className="flex-1 text-white min-w-0">
+              <div className="flex-1 text-primary-foreground min-w-0">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="bg-white/20 text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full">🔥 Quan trọng</span>
                 </div>
                 <h3 className="font-display font-extrabold text-lg sm:text-xl">Ôn thi vào lớp 10</h3>
-                <p className="text-white/75 text-xs sm:text-sm mt-0.5">15 đề thi thử · Từ vựng · Ngữ pháp · Đọc hiểu · Viết</p>
+                <p className="text-primary-foreground/75 text-sm mt-0.5">15 đề thi thử · Từ vựng · Ngữ pháp · Đọc hiểu · Viết</p>
               </div>
-              <span className="bg-white text-[hsl(220,85%,50%)] font-display font-extrabold text-xs px-5 py-2.5 rounded-full shadow-lg inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
+              <span className="bg-card text-primary font-display font-extrabold text-xs px-5 py-2.5 rounded-full shadow-1 inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
                 Vào ôn thi <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </div>

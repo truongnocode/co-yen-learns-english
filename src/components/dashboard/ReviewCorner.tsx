@@ -11,10 +11,10 @@ const ReviewCorner = () => {
   const grade = profile?.grade || 6;
 
   const activities = [
-    { label: "Nối từ\nghép cặp", icon: Puzzle, gradient: "gradient-warm", path: `/practice/word-match/${grade}` },
-    { label: "Luyện\nphát âm", icon: Mic, gradient: "gradient-accent", path: `/practice/shadowing/${grade}` },
-    { label: "Flashcard\ntừ vựng", icon: BookOpen, gradient: "gradient-cool", path: `/practice/srs-review` },
-    { label: "Xếp\ncâu", icon: PenLine, gradient: "gradient-success", path: `/practice/sentence-puzzle/${grade}` },
+    { label: "Nối từ\nghép cặp", icon: Puzzle, iconBg: "bg-accent text-accent-foreground", path: `/practice/word-match/${grade}` },
+    { label: "Luyện\nphát âm", icon: Mic, iconBg: "bg-primary text-primary-foreground", path: `/practice/shadowing/${grade}` },
+    { label: "Flashcard\ntừ vựng", icon: BookOpen, iconBg: "bg-accent2 text-accent2-foreground", path: `/practice/srs-review` },
+    { label: "Xếp\ncâu", icon: PenLine, iconBg: "bg-success text-success-foreground", path: `/practice/sentence-puzzle/${grade}` },
   ];
 
   return (
@@ -34,10 +34,10 @@ const ReviewCorner = () => {
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate(act.path)}
-            className="glass glass-hover rounded-2xl p-4 flex flex-col items-center gap-3 transition-all duration-300"
+            className="bg-card border border-border shadow-1 rounded-2xl p-4 flex flex-col items-center gap-3 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2"
           >
-            <div className={`w-12 h-12 rounded-xl ${act.gradient} flex items-center justify-center shadow-md`}>
-              <act.icon className="h-5 w-5 text-white" />
+            <div className={`w-12 h-12 rounded-xl ${act.iconBg} flex items-center justify-center shadow-1`}>
+              <act.icon className="h-5 w-5" />
             </div>
             <span className="text-xs font-bold text-foreground text-center whitespace-pre-line leading-tight">
               {act.label}

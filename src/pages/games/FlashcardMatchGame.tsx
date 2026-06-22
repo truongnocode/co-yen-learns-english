@@ -156,7 +156,7 @@ const FlashcardMatchGame = () => {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30"
+            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground"
           >
             <Home className="h-5 w-5" />
           </motion.button>
@@ -167,11 +167,11 @@ const FlashcardMatchGame = () => {
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
           <div className="ml-auto flex items-center gap-3">
-            <div className="flex items-center gap-1.5 bg-card/80 backdrop-blur rounded-full px-3 py-1.5 border border-border/30">
+            <div className="flex items-center gap-1.5 bg-card rounded-full px-3 py-1.5 border border-border shadow-1">
               <MousePointerClick className="h-4 w-4 text-accent" />
               <span className="font-display font-extrabold text-sm text-foreground">{flips}</span>
             </div>
-            <div className="flex items-center gap-1.5 bg-card/80 backdrop-blur rounded-full px-3 py-1.5 border border-border/30">
+            <div className="flex items-center gap-1.5 bg-card rounded-full px-3 py-1.5 border border-border shadow-1">
               <Timer className="h-4 w-4 text-primary" />
               <span className="font-display font-extrabold text-sm text-foreground">{timer}s</span>
             </div>
@@ -179,27 +179,27 @@ const FlashcardMatchGame = () => {
         </div>
 
         <h1 className="font-display font-extrabold text-2xl text-foreground mb-1">Lật thẻ nhớ</h1>
-        <p className="text-muted-foreground text-sm mb-6">Tìm cặp emoji và từ tiếng Anh tương ứng</p>
+        <p className="text-muted-foreground text-base mb-6">Tìm cặp emoji và từ tiếng Anh tương ứng</p>
 
         {finished ? (
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30"
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border"
           >
             <span className="text-6xl block mb-4">{getFeedbackEmoji()}</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">{getFeedbackText()}</h2>
-            <p className="text-muted-foreground mb-1">
+            <p className="text-muted-foreground text-base mb-1">
               Thời gian: <strong className="text-primary">{timer} giây</strong>
             </p>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-base mb-6">
               Số lần lật: <strong className="text-accent">{flips} lần</strong>
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={restart}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold inline-flex items-center gap-2 shadow-lg"
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold inline-flex items-center gap-2 shadow-1 btn-press"
             >
               <RotateCcw className="h-4 w-4" /> Chơi lại
             </motion.button>
@@ -229,20 +229,20 @@ const FlashcardMatchGame = () => {
                     <div
                       className={`absolute inset-0 rounded-2xl flex items-center justify-center border ${
                         isMatched
-                          ? "bg-emerald-100 border-emerald-300"
-                          : "bg-gradient-to-br from-primary/80 to-accent/80 border-primary/30 shadow-lg"
+                          ? "bg-success/10 border-success"
+                          : "bg-primary border-primary shadow-1"
                       }`}
                       style={{ backfaceVisibility: "hidden" }}
                     >
-                      <span className="text-3xl text-white font-bold select-none">?</span>
+                      <span className="text-3xl text-primary-foreground font-bold select-none">?</span>
                     </div>
 
                     {/* Front face */}
                     <div
-                      className={`absolute inset-0 rounded-2xl flex items-center justify-center border bg-card/80 backdrop-blur ${
+                      className={`absolute inset-0 rounded-2xl flex items-center justify-center border bg-card ${
                         isMatched
-                          ? "border-emerald-400 opacity-70"
-                          : "border-border/30 shadow-lg"
+                          ? "border-success opacity-70"
+                          : "border-border shadow-1"
                       }`}
                       style={{
                         backfaceVisibility: "hidden",

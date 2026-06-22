@@ -29,7 +29,7 @@ const ReviewAllAnswers = ({ questions }: ReviewAllAnswersProps) => {
       <motion.button
         whileTap={{ scale: 0.97 }}
         onClick={() => setExpanded(!expanded)}
-        className="w-full bg-card/80 backdrop-blur-xl border border-border/30 rounded-2xl px-5 py-3.5 font-display font-bold text-sm text-foreground flex items-center justify-between shadow-sm"
+        className="w-full bg-card border border-border shadow-1 rounded-2xl px-5 py-3.5 font-display font-bold text-sm text-foreground flex items-center justify-between"
       >
         <span>Xem lại đáp án ({correctCount}/{questions.length} đúng)</span>
         {expanded ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
@@ -52,12 +52,12 @@ const ReviewAllAnswers = ({ questions }: ReviewAllAnswersProps) => {
                 return (
                   <div
                     key={i}
-                    className={`bg-card/80 backdrop-blur-xl rounded-2xl p-4 border shadow-sm ${
+                    className={`bg-card rounded-2xl p-4 border shadow-1 ${
                       isUnanswered
-                        ? "border-amber-200 dark:border-amber-800/40"
+                        ? "border-warning/40"
                         : isCorrect
-                        ? "border-emerald-200 dark:border-emerald-800/40"
-                        : "border-red-200 dark:border-red-800/40"
+                        ? "border-success/40"
+                        : "border-destructive/40"
                     }`}
                   >
                     {/* Header */}
@@ -66,13 +66,13 @@ const ReviewAllAnswers = ({ questions }: ReviewAllAnswersProps) => {
                         Câu {i + 1}
                       </span>
                       {isUnanswered ? (
-                        <span className="text-xs bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-2 py-0.5 rounded-full font-bold">
+                        <span className="text-xs bg-warning/15 text-warning px-2 py-0.5 rounded-full font-bold">
                           Chưa trả lời
                         </span>
                       ) : isCorrect ? (
-                        <CheckCircle2 className="h-4 w-4 text-emerald-500 shrink-0 mt-0.5" />
+                        <CheckCircle2 className="h-4 w-4 text-success shrink-0 mt-0.5" />
                       ) : (
-                        <XCircle className="h-4 w-4 text-red-500 shrink-0 mt-0.5" />
+                        <XCircle className="h-4 w-4 text-destructive shrink-0 mt-0.5" />
                       )}
                     </div>
 
@@ -87,9 +87,9 @@ const ReviewAllAnswers = ({ questions }: ReviewAllAnswersProps) => {
                       {q.opts.map((opt, j) => {
                         let cls = "text-xs px-3 py-1.5 rounded-lg break-words ";
                         if (j === q.ans) {
-                          cls += "bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 font-bold";
+                          cls += "bg-success/10 text-success font-bold";
                         } else if (j === q.selected && j !== q.ans) {
-                          cls += "bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 line-through";
+                          cls += "bg-destructive/10 text-destructive line-through";
                         } else {
                           cls += "text-muted-foreground";
                         }

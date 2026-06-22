@@ -393,18 +393,18 @@ function CameraOverlay({
   const timerPercent = (timeLeft / 15) * 100;
 
   return createPortal(
-    <div className="fixed inset-0 z-[9999] flex flex-col bg-gradient-to-b from-slate-100 via-slate-200 to-slate-300 text-slate-900">
+    <div className="fixed inset-0 z-[9999] flex flex-col bg-background text-foreground">
       {/* Header */}
-      <div className="flex items-center justify-between gap-2 px-5 py-2.5 bg-white/60 backdrop-blur-xl border-b border-black/5 shrink-0">
+      <div className="flex items-center justify-between gap-2 px-5 py-2.5 bg-card border-b border-border shrink-0">
         <div className="font-bold text-sm">
           <span className="text-muted-foreground">Score:</span> {score}/{questions.length}
         </div>
-        <div className={`text-xl font-extrabold tabular-nums min-w-[70px] text-center ${timeLeft <= 5 ? "text-red-500 animate-pulse" : "text-primary"}`}>
+        <div className={`text-xl font-extrabold tabular-nums min-w-[70px] text-center ${timeLeft <= 5 ? "text-destructive animate-pulse" : "text-primary"}`}>
           {timeLeft}s
         </div>
         <div className="flex items-center gap-3">
           <span className="text-sm font-semibold text-muted-foreground">{currentQ + 1}/{questions.length}</span>
-          <button onClick={handleClose} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-black/5 border border-black/8 hover:bg-red-500/15 hover:text-red-500 transition-colors text-lg">
+          <button onClick={handleClose} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-card border border-border hover:bg-destructive/15 hover:text-destructive transition-colors text-lg">
             ✕
           </button>
         </div>
@@ -424,9 +424,9 @@ function CameraOverlay({
 
       {/* Question */}
       {phase !== "countdown" && phase !== "finished" && (
-        <div className="text-center px-5 py-3 bg-white/45 backdrop-blur-lg border-b border-black/4 shrink-0">
+        <div className="text-center px-5 py-3 bg-card border-b border-border shrink-0">
           <div className="text-xs text-primary font-bold uppercase tracking-widest mb-1">Câu {currentQ + 1}</div>
-          <div className="text-lg sm:text-2xl font-extrabold leading-relaxed max-w-3xl mx-auto px-5 py-3 bg-white/50 rounded-2xl border border-white/60 shadow-sm break-words">
+          <div className="text-lg sm:text-2xl font-extrabold leading-relaxed max-w-3xl mx-auto px-5 py-3 bg-card rounded-2xl border border-border shadow-1 break-words">
             {q.text}
           </div>
         </div>
@@ -435,10 +435,10 @@ function CameraOverlay({
       {/* Body: A | Camera | B */}
       <div className="flex-1 flex items-stretch gap-4 px-5 py-4 min-h-0 portrait:flex-col max-sm:gap-2 max-sm:px-2">
         {/* Option A */}
-        <div className={`flex-1 flex flex-col items-center justify-center text-center p-5 rounded-3xl font-bold text-xl backdrop-blur-lg transition-all duration-300
-          ${detectedGesture === "A" ? "bg-primary text-white shadow-xl shadow-primary/30 scale-[1.03]" : "bg-primary/10 border-2 border-primary/20 text-slate-900"}`}>
+        <div className={`flex-1 flex flex-col items-center justify-center text-center p-5 rounded-2xl font-bold text-xl transition-all duration-300
+          ${detectedGesture === "A" ? "bg-primary text-primary-foreground shadow-2 scale-[1.03]" : "bg-card border-2 border-border text-foreground"}`}>
           <span className="text-3xl sm:text-4xl flex-1 flex items-center justify-center py-4 break-words min-w-0">{q.optA}</span>
-          <div className="text-xs opacity-40 border-t border-black/6 pt-2 w-full flex items-center justify-center gap-1.5">
+          <div className="text-xs opacity-60 border-t border-border pt-2 w-full flex items-center justify-center gap-1.5">
             <Hand className="h-4 w-4 opacity-60" /> Tay trái / Nghiêng trái
           </div>
           {detectedGesture === "A" && (
@@ -449,7 +449,7 @@ function CameraOverlay({
         </div>
 
         {/* Camera feed */}
-        <div className="w-[260px] min-w-[180px] shrink-0 relative rounded-2xl overflow-hidden border-2 border-white/50 self-center bg-slate-300 shadow-lg portrait:w-[100px] portrait:min-w-[80px] portrait:h-[75px] portrait:order-first">
+        <div className="w-[260px] min-w-[180px] shrink-0 relative rounded-2xl overflow-hidden border-2 border-border self-center bg-muted shadow-1 portrait:w-[100px] portrait:min-w-[80px] portrait:h-[75px] portrait:order-first">
           <video ref={videoRef} className="w-full h-full object-cover" style={{ transform: "scaleX(-1)" }} playsInline muted />
           <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" width={640} height={480} style={{ transform: "scaleX(-1)" }} />
           {!cameraReady && (
@@ -459,22 +459,22 @@ function CameraOverlay({
             </div>
           )}
           {cameraReady && !poseReady && !poseError && (
-            <div className="absolute bottom-0 inset-x-0 bg-black/60 text-white text-[10px] text-center py-1 backdrop-blur-sm">
+            <div className="absolute bottom-0 inset-x-0 bg-black/60 text-white text-[10px] text-center py-1">
               Đang tải AI...
             </div>
           )}
           {poseError && (
-            <div className="absolute bottom-0 inset-x-0 bg-red-600/80 text-white text-[10px] text-center py-1 backdrop-blur-sm">
+            <div className="absolute bottom-0 inset-x-0 bg-destructive text-destructive-foreground text-[10px] text-center py-1">
               {poseError}
             </div>
           )}
         </div>
 
         {/* Option B */}
-        <div className={`flex-1 flex flex-col items-center justify-center text-center p-5 rounded-3xl font-bold text-xl backdrop-blur-lg transition-all duration-300
-          ${detectedGesture === "B" ? "bg-primary text-white shadow-xl shadow-primary/30 scale-[1.03]" : "bg-primary/10 border-2 border-primary/20 text-slate-900"}`}>
+        <div className={`flex-1 flex flex-col items-center justify-center text-center p-5 rounded-2xl font-bold text-xl transition-all duration-300
+          ${detectedGesture === "B" ? "bg-primary text-primary-foreground shadow-2 scale-[1.03]" : "bg-card border-2 border-border text-foreground"}`}>
           <span className="text-3xl sm:text-4xl flex-1 flex items-center justify-center py-4 break-words min-w-0">{q.optB}</span>
-          <div className="text-xs opacity-40 border-t border-black/6 pt-2 w-full flex items-center justify-center gap-1.5">
+          <div className="text-xs opacity-60 border-t border-border pt-2 w-full flex items-center justify-center gap-1.5">
             <Hand className="h-4 w-4 opacity-60 -scale-x-100" /> Tay phải / Nghiêng phải
           </div>
           {detectedGesture === "B" && (
@@ -486,8 +486,8 @@ function CameraOverlay({
       </div>
 
       {/* Timer bar */}
-      <div className="h-1.5 bg-black/5 shrink-0">
-        <div className={`h-full rounded-r-sm transition-[width] duration-100 ${timeLeft <= 5 ? "bg-red-500" : "bg-primary"}`} style={{ width: `${timerPercent}%` }} />
+      <div className="h-1.5 bg-muted shrink-0">
+        <div className={`h-full rounded-r-sm transition-[width] duration-100 ${timeLeft <= 5 ? "bg-destructive" : "bg-primary"}`} style={{ width: `${timerPercent}%` }} />
       </div>
 
       {/* Result popup */}
@@ -495,8 +495,8 @@ function CameraOverlay({
         {resultPopup && (
           <motion.div
             initial={{ scale: 0.3, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }}
-            className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[10000] w-[380px] max-w-[85vw] rounded-3xl overflow-hidden backdrop-blur-2xl shadow-2xl border border-white/50 text-center pointer-events-none
-              ${resultPopup.type === "correct" ? "bg-emerald-500/90 text-white" : resultPopup.type === "wrong" ? "bg-red-500/90 text-white" : "bg-amber-500/90 text-white"}`}
+            className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[10000] w-[380px] max-w-[85vw] rounded-2xl overflow-hidden shadow-2 border border-border text-center pointer-events-none
+              ${resultPopup.type === "correct" ? "bg-success text-success-foreground" : resultPopup.type === "wrong" ? "bg-destructive text-destructive-foreground" : "bg-warning text-warning-foreground"}`}
           >
             <div className="text-4xl pt-6 pb-1">
               {resultPopup.type === "correct" ? "✓" : resultPopup.type === "wrong" ? "✗" : "⏰"}
@@ -518,12 +518,12 @@ function CameraOverlay({
         {phase === "finished" && finalScore && (
           <motion.div
             initial={{ scale: 0.3, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[10001] bg-white/70 backdrop-blur-2xl rounded-3xl p-10 text-center shadow-2xl border border-white/60"
+            className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[10001] bg-card rounded-2xl p-10 text-center shadow-2 border border-border"
           >
             <h2 className="text-2xl font-extrabold mb-1">Kết quả</h2>
             <div className="text-6xl font-black text-primary leading-tight">{finalScore.score}/{finalScore.total}</div>
             <div className="mt-2 text-muted-foreground">{Math.round((finalScore.score / finalScore.total) * 100)}%</div>
-            <div className="w-48 h-1.5 bg-black/5 rounded-full mx-auto mt-3 overflow-hidden">
+            <div className="w-48 h-1.5 bg-muted rounded-full mx-auto mt-3 overflow-hidden">
               <motion.div
                 initial={{ width: 0 }} animate={{ width: `${(finalScore.score / finalScore.total) * 100}%` }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
@@ -531,7 +531,7 @@ function CameraOverlay({
               />
             </div>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={handleClose}
-              className="mt-6 px-10 py-3 gradient-primary text-white rounded-2xl font-bold shadow-lg shadow-primary/25">
+              className="mt-6 px-10 py-3 bg-primary text-primary-foreground rounded-2xl font-display font-extrabold shadow-1">
               Đóng
             </motion.button>
           </motion.div>
@@ -633,7 +633,7 @@ const CameraPage = () => {
         {/* Navigation */}
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
@@ -646,43 +646,41 @@ const CameraPage = () => {
           initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={smooth}
-          className="relative rounded-3xl overflow-hidden shadow-xl mb-8"
+          className="relative rounded-2xl overflow-hidden shadow-2 mb-8 bg-accent2 text-accent2-foreground"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500" />
-          <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
           <div className="relative z-10 p-8">
-            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 mb-3">
-              <Camera className="h-4 w-4 text-white" />
-              <span className="text-xs font-extrabold text-white uppercase tracking-wider">Camera tương tác</span>
+            <div className="inline-flex items-center gap-2 bg-accent2-foreground/15 rounded-xl px-4 py-1.5 mb-3">
+              <Camera className="h-4 w-4" />
+              <span className="text-xs font-extrabold uppercase tracking-wider">Camera tương tác</span>
             </div>
-            <h1 className="font-display font-extrabold text-3xl text-white mb-2">Học bằng cử chỉ cơ thể</h1>
-            <p className="text-white/75 text-sm max-w-lg mb-1">{gcfg.title}</p>
-            <p className="text-white/60 text-xs max-w-lg">{gcfg.desc}</p>
+            <h1 className="font-display font-extrabold text-3xl mb-2">Học bằng cử chỉ cơ thể</h1>
+            <p className="text-base opacity-90 max-w-lg mb-1">{gcfg.title}</p>
+            <p className="text-sm opacity-75 max-w-lg">{gcfg.desc}</p>
           </div>
         </motion.div>
 
         {/* Instructions */}
         <motion.div
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ ...smooth, delay: 0.1 }}
-          className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30 mb-6"
+          className="bg-card rounded-2xl p-6 shadow-1 border border-border mb-6"
         >
           <h3 className="font-display font-extrabold text-lg mb-3 flex items-center gap-2">
             <Video className="h-5 w-5 text-primary" /> Hướng dẫn
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-muted-foreground">
-            <div className="flex items-start gap-2.5 bg-primary/5 rounded-2xl p-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-base text-muted-foreground">
+            <div className="flex items-start gap-2.5 bg-primary/5 rounded-xl p-3">
               <span className="text-lg">🤚</span>
               <div><strong className="text-foreground">Chọn A:</strong> Giơ tay trái hoặc nghiêng đầu sang trái</div>
             </div>
-            <div className="flex items-start gap-2.5 bg-primary/5 rounded-2xl p-3">
+            <div className="flex items-start gap-2.5 bg-primary/5 rounded-xl p-3">
               <span className="text-lg">✋</span>
               <div><strong className="text-foreground">Chọn B:</strong> Giơ tay phải hoặc nghiêng đầu sang phải</div>
             </div>
-            <div className="flex items-start gap-2.5 bg-primary/5 rounded-2xl p-3">
+            <div className="flex items-start gap-2.5 bg-primary/5 rounded-xl p-3">
               <span className="text-lg">⏱️</span>
               <div><strong className="text-foreground">Giữ 1.5 giây</strong> để xác nhận câu trả lời</div>
             </div>
-            <div className="flex items-start gap-2.5 bg-primary/5 rounded-2xl p-3">
+            <div className="flex items-start gap-2.5 bg-primary/5 rounded-xl p-3">
               <span className="text-lg">⏰</span>
               <div><strong className="text-foreground">15 giây</strong> mỗi câu · Tối đa 20 câu</div>
             </div>
@@ -698,17 +696,17 @@ const CameraPage = () => {
           <div className="grid grid-cols-2 gap-3">
             <motion.button whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}
               onClick={() => startGame("vocab", null)}
-              className="gradient-accent text-white rounded-2xl p-5 text-left shadow-lg hover:shadow-xl transition-shadow">
+              className="bg-accent text-accent-foreground rounded-2xl p-5 text-left shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2">
               <BookOpen className="h-7 w-7 mb-2 opacity-80" />
               <div className="font-display font-extrabold text-lg">{gcfg.vocabLabel}</div>
-              <div className="text-white/70 text-xs mt-1">{gcfg.vocabDesc}</div>
+              <div className="opacity-80 text-sm mt-1">{gcfg.vocabDesc}</div>
             </motion.button>
             <motion.button whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }}
               onClick={() => startGame("grammar", null)}
-              className="gradient-cool text-white rounded-2xl p-5 text-left shadow-lg hover:shadow-xl transition-shadow">
+              className="bg-accent2 text-accent2-foreground rounded-2xl p-5 text-left shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2">
               <Zap className="h-7 w-7 mb-2 opacity-80" />
               <div className="font-display font-extrabold text-lg">{gcfg.grammarLabel}</div>
-              <div className="text-white/70 text-xs mt-1">{gcfg.grammarDesc}</div>
+              <div className="opacity-80 text-sm mt-1">{gcfg.grammarDesc}</div>
             </motion.button>
           </div>
         </motion.div>
@@ -730,7 +728,7 @@ const CameraPage = () => {
                   transition={{ ...smooth, delay: 0.3 + i * 0.03 }}
                   whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}
                   onClick={() => startGame(isGrade10 ? "test" : "g6unit", item.key)}
-                  className="gradient-primary text-white rounded-2xl py-3.5 px-2 font-display font-bold text-sm shadow-md hover:shadow-lg transition-shadow"
+                  className="bg-primary text-primary-foreground rounded-2xl py-3.5 px-2 font-display font-bold text-sm shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2"
                 >
                   {item.label}
                 </motion.button>

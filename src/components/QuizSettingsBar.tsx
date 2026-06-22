@@ -13,7 +13,7 @@ const QUICK_TIMES = [10, 15, 30, 45, 60];
 
 const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimitChange }: QuizSettingsBarProps) => {
   return (
-    <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-4 mb-4 border border-border/30 shadow-sm">
+    <div className="bg-card border border-border shadow-1 rounded-2xl p-4 mb-4">
       {/* Review mode */}
       <div className="mb-3">
         <p className="text-xs font-bold text-muted-foreground mb-2">Chế độ xem đáp án</p>
@@ -22,8 +22,8 @@ const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimi
             onClick={() => onReviewModeChange("instant")}
             className={`flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
               reviewMode === "instant"
-                ? "gradient-primary text-white shadow-md"
-                : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
+                ? "bg-primary text-primary-foreground shadow-1"
+                : "border-2 border-border bg-card text-muted-foreground hover:bg-muted/50"
             }`}
           >
             <Eye className="h-3.5 w-3.5" />
@@ -33,8 +33,8 @@ const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimi
             onClick={() => onReviewModeChange("after")}
             className={`flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
               reviewMode === "after"
-                ? "gradient-accent text-white shadow-md"
-                : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
+                ? "bg-accent text-accent-foreground shadow-1"
+                : "border-2 border-border bg-card text-muted-foreground hover:bg-muted/50"
             }`}
           >
             <EyeOff className="h-3.5 w-3.5" />
@@ -52,10 +52,10 @@ const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimi
         <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-2">
           <button
             onClick={() => onTimeLimitChange(0)}
-            className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all ${
+            className={`px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all ${
               timeLimit === 0
                 ? "bg-foreground text-background"
-                : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
+                : "border border-border bg-card text-muted-foreground hover:bg-muted/50"
             }`}
           >
             Không
@@ -64,10 +64,10 @@ const QuizSettingsBar = ({ reviewMode, onReviewModeChange, timeLimit, onTimeLimi
             <button
               key={t}
               onClick={() => onTimeLimitChange(t)}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap transition-all ${
+              className={`px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all ${
                 timeLimit === t
                   ? "bg-foreground text-background"
-                  : "bg-secondary/50 text-muted-foreground hover:bg-secondary/80"
+                  : "border border-border bg-card text-muted-foreground hover:bg-muted/50"
               }`}
             >
               {t}p

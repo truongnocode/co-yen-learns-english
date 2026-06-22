@@ -157,29 +157,29 @@ const ShadowingPage = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
-          <span className="ml-auto text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">
+          <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
             {current + 1}/{sentences.length}
           </span>
         </div>
 
         <h1 className="font-display font-extrabold text-2xl text-foreground mb-1">Luyện Shadowing</h1>
-        <p className="text-muted-foreground text-sm mb-6">Nghe và nhại lại theo giọng bản xứ</p>
+        <p className="text-muted-foreground text-base mb-6">Nghe và nhại lại theo giọng bản xứ</p>
 
         {phase === "done" ? (
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30">
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border">
             <span className="text-6xl block mb-4">🎤🎉</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">Hoàn thành!</h2>
-            <p className="text-muted-foreground text-sm mb-6">Em đã luyện {sentences.length} cụm từ</p>
+            <p className="text-muted-foreground text-base mb-6">Em đã luyện {sentences.length} cụm từ</p>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => { setCurrent(0); setPhase("listen"); setRecordingUrl(null); setRecordingBlob(null); setVerdict(null); }}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold shadow-lg">
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold shadow-1 btn-press">
               Luyện lại
             </motion.button>
           </motion.div>
@@ -189,15 +189,15 @@ const ShadowingPage = () => {
             <div className="flex gap-1 mb-6">
               {PHASES.map((p) => (
                 <div key={p.key} className={`flex-1 h-1.5 rounded-full transition-colors ${
-                  p.key === phase ? "gradient-primary" :
-                  PHASES.findIndex((x) => x.key === p.key) < PHASES.findIndex((x) => x.key === phase) ? "bg-emerald-400" :
+                  p.key === phase ? "bg-primary" :
+                  PHASES.findIndex((x) => x.key === p.key) < PHASES.findIndex((x) => x.key === phase) ? "bg-success" :
                   "bg-muted"
                 }`} />
               ))}
             </div>
 
             {/* Current phase info */}
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 mb-4 shadow-lg border border-border/30">
+            <div className="bg-card rounded-2xl p-5 mb-4 shadow-1 border border-border">
               <div className="flex items-center gap-2 mb-2">
                 {(() => { const P = PHASES.find((p) => p.key === phase); return P ? <P.icon className="h-5 w-5 text-primary" /> : null; })()}
                 <span className="font-display font-extrabold text-sm text-primary">
@@ -210,7 +210,7 @@ const ShadowingPage = () => {
             </div>
 
             {/* Sentence display */}
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-6 mb-4 shadow-lg border border-border/30 text-center">
+            <div className="bg-card rounded-2xl p-6 mb-4 shadow-1 border border-border text-center">
               {showText || phase === "listen" ? (
                 <>
                   <p className="font-display font-extrabold text-xl text-foreground mb-2">{sentences[current]?.en}</p>
@@ -227,22 +227,22 @@ const ShadowingPage = () => {
             <div className="flex items-center justify-center gap-4 mb-6">
               <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
                 onClick={speak}
-                className="w-14 h-14 rounded-full gradient-cool flex items-center justify-center text-white shadow-lg">
+                className="w-14 h-14 rounded-full bg-accent2 text-accent2-foreground flex items-center justify-center shadow-1">
                 <Volume2 className="h-6 w-6" />
               </motion.button>
 
               {phase === "record" ? (
                 <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
                   onClick={handleRecord}
-                  className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-lg ${
-                    recording ? "bg-red-500 animate-pulse" : "gradient-warm"
+                  className={`w-16 h-16 rounded-full flex items-center justify-center shadow-1 ${
+                    recording ? "bg-destructive text-destructive-foreground animate-pulse" : "bg-accent text-accent-foreground"
                   }`}>
                   {recording ? <Square className="h-6 w-6" /> : <Mic className="h-7 w-7" />}
                 </motion.button>
               ) : (
                 <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
                   onClick={nextPhase}
-                  className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center text-white shadow-lg">
+                  className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-1">
                   <SkipForward className="h-7 w-7" />
                 </motion.button>
               )}
@@ -250,7 +250,7 @@ const ShadowingPage = () => {
 
             {/* Recording playback */}
             {recordingUrl && (
-              <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-4 mb-4 shadow-lg border border-border/30">
+              <div className="bg-card rounded-2xl p-4 mb-4 shadow-1 border border-border">
                 <p className="text-xs font-bold text-foreground mb-2">Bản ghi âm của em:</p>
                 <audio ref={audioRef} src={recordingUrl} controls className="w-full h-10" />
               </div>
@@ -263,7 +263,7 @@ const ShadowingPage = () => {
                 whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
                 onClick={handleGradeWithAI}
                 disabled={scoring}
-                className="w-full mb-3 gradient-cool text-white rounded-2xl py-3 font-display font-extrabold shadow-lg inline-flex items-center justify-center gap-2 disabled:opacity-60"
+                className="w-full mb-3 bg-accent2 text-accent2-foreground rounded-2xl py-3 font-display font-extrabold shadow-1 inline-flex items-center justify-center gap-2 disabled:opacity-60"
               >
                 {scoring ? (
                   <>
@@ -294,7 +294,7 @@ const ShadowingPage = () => {
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
                 whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
                 onClick={nextSentence}
-                className="w-full gradient-accent text-white rounded-2xl py-3.5 font-display font-extrabold shadow-lg"
+                className="w-full bg-accent text-accent-foreground rounded-2xl py-3.5 font-display font-extrabold shadow-1 btn-press"
               >
                 {current < sentences.length - 1 ? "Câu tiếp theo" : "Hoàn thành"}
               </motion.button>

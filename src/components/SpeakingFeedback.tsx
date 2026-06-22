@@ -13,25 +13,25 @@ const VERDICT_STYLE: Record<
   SpeakingVerdict["words"][number]["verdict"],
   string
 > = {
-  correct: "text-emerald-600 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30",
-  close: "text-amber-600 border-amber-300 bg-amber-50 dark:bg-amber-950/30",
-  wrong: "text-red-600 border-red-300 bg-red-50 dark:bg-red-950/30",
+  correct: "text-success border-success/40 bg-success/10",
+  close: "text-warning border-warning/40 bg-warning/10",
+  wrong: "text-destructive border-destructive/40 bg-destructive/10",
   missing: "text-muted-foreground border-muted line-through",
 };
 
 export function SpeakingFeedback({ verdict }: { verdict: SpeakingVerdict }) {
   const scoreColor =
     verdict.overall_score >= 80
-      ? "text-emerald-600"
+      ? "text-success"
       : verdict.overall_score >= 60
-        ? "text-amber-600"
-        : "text-red-600";
+        ? "text-warning"
+        : "text-destructive";
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-border/30 space-y-4"
+      className="bg-card border border-border shadow-2 rounded-2xl p-5 space-y-4"
     >
       {/* Score row */}
       <div className="flex items-center justify-between gap-3">

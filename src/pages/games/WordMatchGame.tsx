@@ -100,30 +100,30 @@ const WordMatchGame = () => {
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
-          <div className="ml-auto flex items-center gap-1.5 bg-card/80 backdrop-blur rounded-full px-3 py-1.5 border border-border/30">
+          <div className="ml-auto flex items-center gap-1.5 bg-card rounded-xl px-3 py-1.5 border border-border shadow-1">
             <Timer className="h-4 w-4 text-primary" />
             <span className="font-display font-extrabold text-sm text-foreground">{timer}s</span>
           </div>
         </div>
 
         <h1 className="font-display font-extrabold text-2xl text-foreground mb-1">Nối từ</h1>
-        <p className="text-muted-foreground text-sm mb-6">Chọn 1 từ English, 1 từ Tiếng Việt tương ứng</p>
+        <p className="text-muted-foreground text-base mb-6">Chọn 1 từ English, 1 từ Tiếng Việt tương ứng</p>
 
         {finished ? (
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30">
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border">
             <span className="text-6xl block mb-4">🎉</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">Hoàn thành!</h2>
-            <p className="text-muted-foreground mb-1">Thời gian: <strong className="text-primary">{timer} giây</strong></p>
+            <p className="text-muted-foreground text-base mb-1">Thời gian: <strong className="text-primary">{timer} giây</strong></p>
             <p className="text-muted-foreground text-sm mb-6">Ghép {words.length}/{words.length} cặp từ</p>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={restart}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold inline-flex items-center gap-2 shadow-lg">
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold inline-flex items-center gap-2 btn-press">
               <RotateCcw className="h-4 w-4" /> Chơi lại
             </motion.button>
           </motion.div>
@@ -138,11 +138,11 @@ const WordMatchGame = () => {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleEnClick(idx)}
                   disabled={matched.has(idx)}
-                  className={`w-full py-3 px-4 rounded-2xl font-bold text-sm break-words transition-all border ${
-                    matched.has(idx) ? "bg-emerald-100 border-emerald-300 text-emerald-700 opacity-60" :
-                    wrong?.[0] === idx ? "bg-red-100 border-red-300 text-red-700 animate-pulse" :
-                    selectedEn === idx ? "gradient-primary text-white border-transparent shadow-lg" :
-                    "bg-card/80 border-border/30 text-foreground hover:border-primary/40"
+                  className={`w-full py-3 px-4 rounded-2xl font-bold text-base break-words transition-all border ${
+                    matched.has(idx) ? "bg-success/10 border-success text-success opacity-60" :
+                    wrong?.[0] === idx ? "bg-destructive/10 border-destructive text-destructive animate-pulse" :
+                    selectedEn === idx ? "bg-primary text-primary-foreground border-transparent shadow-2" :
+                    "bg-card border-border text-foreground hover:border-primary/40"
                   }`}
                 >
                   {words[idx]?.en}
@@ -159,11 +159,11 @@ const WordMatchGame = () => {
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleViClick(idx)}
                   disabled={matched.has(idx)}
-                  className={`w-full py-3 px-4 rounded-2xl font-bold text-sm break-words transition-all border ${
-                    matched.has(idx) ? "bg-emerald-100 border-emerald-300 text-emerald-700 opacity-60" :
-                    wrong?.[1] === idx ? "bg-red-100 border-red-300 text-red-700 animate-pulse" :
-                    selectedVi === idx ? "gradient-accent text-white border-transparent shadow-lg" :
-                    "bg-card/80 border-border/30 text-foreground hover:border-accent/40"
+                  className={`w-full py-3 px-4 rounded-2xl font-bold text-base break-words transition-all border ${
+                    matched.has(idx) ? "bg-success/10 border-success text-success opacity-60" :
+                    wrong?.[1] === idx ? "bg-destructive/10 border-destructive text-destructive animate-pulse" :
+                    selectedVi === idx ? "bg-accent text-accent-foreground border-transparent shadow-2" :
+                    "bg-card border-border text-foreground hover:border-accent/40"
                   }`}
                 >
                   {words[idx]?.vi}

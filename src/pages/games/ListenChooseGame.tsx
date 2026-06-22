@@ -82,13 +82,13 @@ const ListenChooseGame = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
-          <span className="ml-auto text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">
+          <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-xl font-bold">
             {current + 1}/{questions.length}
           </span>
         </div>
@@ -97,13 +97,13 @@ const ListenChooseGame = () => {
 
         {finished ? (
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30">
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border">
             <span className="text-6xl block mb-4">{score >= questions.length * 0.7 ? "🎉" : "📝"}</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">{score}/{questions.length} đúng</h2>
-            <p className="text-muted-foreground text-sm mb-6">{score >= questions.length * 0.7 ? "Tuyệt vời!" : "Cần luyện thêm!"}</p>
+            <p className="text-muted-foreground text-base mb-6">{score >= questions.length * 0.7 ? "Tuyệt vời!" : "Cần luyện thêm!"}</p>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => { setCurrent(0); setSelected(null); setScore(0); setFinished(false); }}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold inline-flex items-center gap-2 shadow-lg">
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold inline-flex items-center gap-2 btn-press">
               <RotateCcw className="h-4 w-4" /> Chơi lại
             </motion.button>
           </motion.div>
@@ -113,10 +113,10 @@ const ListenChooseGame = () => {
             <motion.button
               whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => speakUS(q.word.en)}
-              className="w-full bg-card/80 backdrop-blur-xl rounded-3xl p-8 mb-6 shadow-lg border border-border/30 flex flex-col items-center gap-3"
+              className="w-full bg-card rounded-2xl p-8 mb-6 shadow-1 border border-border flex flex-col items-center gap-3"
             >
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full gradient-primary flex items-center justify-center shadow-lg">
-                <Volume2 className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary flex items-center justify-center shadow-1">
+                <Volume2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary-foreground" />
               </div>
               <span className="text-sm text-muted-foreground font-bold">Nhấn để nghe lại</span>
             </motion.button>
@@ -131,12 +131,12 @@ const ListenChooseGame = () => {
                     key={i}
                     whileTap={{ scale: 0.97 }}
                     onClick={() => handleSelect(i)}
-                    className={`w-full text-left rounded-2xl px-5 py-4 font-bold text-sm border transition-all ${
+                    className={`w-full text-left rounded-2xl px-5 py-4 font-bold text-base border transition-all ${
                       selected !== null
-                        ? isCorrect ? "bg-emerald-100 border-emerald-400 text-emerald-700" :
-                          isSelected ? "bg-red-100 border-red-400 text-red-700" :
-                          "bg-card/60 border-border/30 text-muted-foreground"
-                        : "bg-card/80 border-border/30 text-foreground hover:border-primary/40 hover:shadow-md"
+                        ? isCorrect ? "bg-success/10 border-success text-success" :
+                          isSelected ? "bg-destructive/10 border-destructive text-destructive" :
+                          "bg-card border-border text-muted-foreground"
+                        : "bg-card border-border text-foreground hover:border-primary/40 hover:shadow-2"
                     }`}
                   >
                     <span className="text-primary/60 mr-2">{String.fromCharCode(65 + i)}.</span>

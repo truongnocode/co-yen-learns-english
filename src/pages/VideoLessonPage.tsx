@@ -289,7 +289,7 @@ const VideoLessonPage = () => {
     return (
       <PageShell>
         <div className="mx-auto max-w-lg px-5 pt-32 text-center">
-          <div className="rounded-3xl border border-border/30 bg-card/80 p-8 shadow-lg backdrop-blur-xl">
+          <div className="rounded-2xl border border-border bg-card p-8 shadow-1">
             <p className="font-display text-2xl font-bold text-foreground">Không tìm thấy bài video</p>
             <Button onClick={() => navigate("/video-lessons")} className="mt-5">
               Quay lại danh sách
@@ -307,7 +307,7 @@ const VideoLessonPage = () => {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate("/dashboard")}
-            className="rounded-xl border border-border/30 bg-card/80 p-2.5 text-foreground shadow-lg backdrop-blur-xl"
+            className="rounded-xl border border-border bg-card p-2.5 text-foreground shadow-1"
           >
             <Home className="h-5 w-5" />
           </motion.button>
@@ -331,7 +331,7 @@ const VideoLessonPage = () => {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={smooth}
-              className="rounded-2xl border border-border/30 bg-card/85 p-3 shadow-lg backdrop-blur-xl lg:min-h-[230px] lg:shrink-0"
+              className="rounded-2xl border border-border bg-card p-3 shadow-1 lg:min-h-[230px] lg:shrink-0"
             >
               <h1 className="sr-only">{lesson.title}</h1>
 
@@ -363,7 +363,7 @@ const VideoLessonPage = () => {
                   Câu trước
                 </Button>
                 <Button
-                  className="h-12 text-base font-extrabold shadow-lg"
+                  className="h-12 text-base font-extrabold shadow-1"
                   onClick={linePlaying ? stopPlayback : () => playLine(playbackRate, false)}
                   variant={linePlaying ? "destructive" : "default"}
                 >
@@ -414,7 +414,7 @@ const VideoLessonPage = () => {
           </div>
 
           <aside className="space-y-3 lg:flex lg:min-h-0 lg:flex-col lg:overflow-hidden">
-            <div className="rounded-2xl border border-border/30 bg-card/85 p-4 shadow-lg backdrop-blur-xl lg:shrink-0">
+            <div className="rounded-2xl border border-border bg-card p-4 shadow-1 lg:shrink-0">
               <h2 className="font-display text-xl font-extrabold text-foreground">Cách học</h2>
               {canUseStoredRhythm && (
                 <p className="mt-2 text-sm font-semibold text-muted-foreground">
@@ -453,7 +453,7 @@ const VideoLessonPage = () => {
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-border/30 bg-card/85 p-4 shadow-lg backdrop-blur-xl lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">
+            <div className="rounded-2xl border border-border bg-card p-4 shadow-1 lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">
               <div className="mb-3 shrink-0">
                 <div className="mb-3 grid grid-cols-[1fr_auto] items-center gap-3 rounded-2xl bg-secondary/45 px-3 py-2">
                   <div className="min-w-0">
@@ -500,8 +500,8 @@ const VideoLessonPage = () => {
                         active
                           ? "border-primary bg-primary/10 text-primary"
                           : done
-                            ? "border-success/30 bg-success/10 text-success"
-                            : "border-border/30 bg-secondary/40 text-foreground hover:border-primary/30"
+                            ? "border-success bg-success/10 text-success"
+                            : "border-border bg-secondary/40 text-foreground hover:border-primary/40"
                       }`}
                     >
                       <div className="mb-1 flex items-center justify-between gap-2">

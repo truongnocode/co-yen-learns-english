@@ -96,7 +96,7 @@ const LearningOverview = ({ progress }: Props) => {
       transition={{ ...smooth, delay: 0.25 }}
       className="flex flex-col gap-4"
     >
-      <div className="glass rounded-2xl p-5">
+      <div className="bg-card border border-border shadow-1 rounded-2xl p-5">
         {/* Top row: actions */}
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-display font-extrabold text-sm text-foreground">Tổng quan</h2>
@@ -135,7 +135,7 @@ const LearningOverview = ({ progress }: Props) => {
             >
               <Camera className="h-4 w-4 text-white" />
             </button>
-            <div className="absolute -bottom-0.5 -right-0.5 w-6 h-6 rounded-full gradient-warm flex items-center justify-center shadow-sm">
+            <div className="absolute -bottom-0.5 -right-0.5 w-6 h-6 rounded-full bg-streak text-streak-foreground flex items-center justify-center shadow-1">
               <span className="text-[10px]">🔥</span>
             </div>
           </div>
@@ -175,7 +175,7 @@ const LearningOverview = ({ progress }: Props) => {
 
                 {/* Avatar change */}
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full gradient-purple-card p-[2px] shadow-md shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent2 p-[2px] shadow-1 shrink-0">
                     <img
                       src={previewUrl || editPhoto || ""}
                       alt="Preview"
@@ -206,7 +206,7 @@ const LearningOverview = ({ progress }: Props) => {
                   <input
                     value={editName}
                     onChange={(e) => setEditName(e.target.value)}
-                    className="w-full bg-card/80 border border-border rounded-xl px-3 py-2 text-sm font-bold text-foreground outline-none focus:border-primary/50 transition-colors"
+                    className="w-full bg-card border border-border rounded-xl px-3 py-2 text-sm font-bold text-foreground outline-none focus:border-primary/50 transition-colors"
                     placeholder="Nhập tên của em..."
                   />
                 </div>
@@ -216,7 +216,7 @@ const LearningOverview = ({ progress }: Props) => {
                   whileTap={{ scale: 0.98 }}
                   onClick={handleSave}
                   disabled={saving}
-                  className="w-full gradient-purple-card text-white rounded-xl py-2.5 text-xs font-extrabold shadow-md flex items-center justify-center gap-1.5 disabled:opacity-60"
+                  className="w-full bg-primary text-primary-foreground rounded-2xl py-2.5 text-xs font-display font-extrabold shadow-1 flex items-center justify-center gap-1.5 disabled:opacity-60"
                 >
                   {saving ? "Đang lưu..." : <><Check className="h-3.5 w-3.5" /> Lưu thay đổi</>}
                 </motion.button>
@@ -233,14 +233,14 @@ const LearningOverview = ({ progress }: Props) => {
           </div>
           <div className="bg-muted/40 rounded-xl px-2 py-3 text-center">
             <div className="flex items-center justify-center gap-1 mb-0.5">
-              <Flame className="h-4 w-4 text-pink" />
+              <Flame className="h-4 w-4 text-streak" />
               <span className="font-display font-extrabold text-base text-foreground">{streak}</span>
             </div>
             <span className="text-[10px] font-bold text-muted-foreground block">Streak</span>
           </div>
           <div className="bg-muted/40 rounded-xl px-2 py-3 text-center">
             <div className="flex items-center justify-center gap-1 mb-0.5">
-              <Star className="h-4 w-4 text-energy" />
+              <Star className="h-4 w-4 text-xp" />
               <span className="font-display font-extrabold text-base text-foreground">{xp}</span>
             </div>
             <span className="text-[10px] font-bold text-muted-foreground block">XP</span>
@@ -264,7 +264,7 @@ const LearningOverview = ({ progress }: Props) => {
                   <span className="text-xs font-bold text-foreground">{skill.label}</span>
                 </div>
                 <span className={`text-xs font-extrabold ${
-                  skill.pct >= 70 ? "text-success" : skill.pct >= 40 ? "text-accent" : "text-pink"
+                  skill.pct >= 70 ? "text-success" : skill.pct >= 40 ? "text-accent" : "text-streak"
                 }`}>
                   {skill.pct}%
                 </span>

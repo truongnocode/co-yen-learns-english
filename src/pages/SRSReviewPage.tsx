@@ -82,37 +82,37 @@ const SRSReviewPage = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
           {!isFinished && (
-            <span className="ml-auto text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">
+            <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
               {current + 1}/{dueItems.length}
             </span>
           )}
         </div>
 
         <h1 className="font-display font-extrabold text-2xl text-foreground mb-1">Ôn tập thông minh</h1>
-        <p className="text-muted-foreground text-sm mb-6">
+        <p className="text-muted-foreground text-base mb-6">
           {dueItems.length > 0 ? `${dueItems.length} từ cần ôn hôm nay` : "Không có từ nào cần ôn!"}
         </p>
 
         {isFinished ? (
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30">
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border">
             <span className="text-6xl block mb-4">{dueItems.length === 0 ? "🎯" : "🎉"}</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">
               {dueItems.length === 0 ? "Tuyệt vời!" : "Hoàn thành!"}
             </h2>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-base mb-6">
               {dueItems.length === 0 ? "Không có từ nào cần ôn. Hẹn em mai nhé!" : `Đã ôn ${reviewed} từ`}
             </p>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/dashboard")}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold shadow-lg">
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold shadow-1 btn-press">
               Về trang chủ
             </motion.button>
           </motion.div>
@@ -121,8 +121,8 @@ const SRSReviewPage = () => {
             {/* Flashcard */}
             <motion.div
               onClick={() => { setFlipped(!flipped); if (!flipped) speakUS(vocab.en); }}
-              className={`w-full aspect-[4/3] rounded-3xl shadow-xl flex flex-col items-center justify-center cursor-pointer p-8 border border-white/40 relative overflow-hidden mb-6 ${
-                flipped ? "gradient-purple-card text-white" : "bg-card/80 backdrop-blur-xl"
+              className={`w-full aspect-[4/3] rounded-2xl shadow-2 flex flex-col items-center justify-center cursor-pointer p-8 border relative overflow-hidden mb-6 ${
+                flipped ? "bg-accent2 text-accent2-foreground border-accent2" : "bg-card border-border"
               }`}
             >
               <AnimatePresence mode="wait">
@@ -153,17 +153,17 @@ const SRSReviewPage = () => {
               >
                 <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}
                   onClick={() => handleRate(1)}
-                  className="flex-1 bg-red-100 text-red-700 rounded-2xl py-3.5 font-bold text-sm flex items-center justify-center gap-2 border border-red-200">
+                  className="flex-1 bg-destructive/10 text-destructive rounded-2xl py-3.5 font-bold text-sm flex items-center justify-center gap-2 border border-destructive/20">
                   <ThumbsDown className="h-4 w-4" /> Khó
                 </motion.button>
                 <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}
                   onClick={() => handleRate(3)}
-                  className="flex-1 bg-amber-100 text-amber-700 rounded-2xl py-3.5 font-bold text-sm flex items-center justify-center gap-2 border border-amber-200">
+                  className="flex-1 bg-streak/10 text-streak rounded-2xl py-3.5 font-bold text-sm flex items-center justify-center gap-2 border border-streak/20">
                   <Minus className="h-4 w-4" /> OK
                 </motion.button>
                 <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}
                   onClick={() => handleRate(5)}
-                  className="flex-1 bg-emerald-100 text-emerald-700 rounded-2xl py-3.5 font-bold text-sm flex items-center justify-center gap-2 border border-emerald-200">
+                  className="flex-1 bg-success/10 text-success rounded-2xl py-3.5 font-bold text-sm flex items-center justify-center gap-2 border border-success/20">
                   <ThumbsUp className="h-4 w-4" /> Dễ
                 </motion.button>
               </motion.div>

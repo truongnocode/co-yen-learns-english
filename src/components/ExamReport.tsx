@@ -18,7 +18,7 @@ const ExamReport = ({ report }: Props) => {
       </div>
 
       {/* Competency bars */}
-      <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 border border-border/30">
+      <div className="bg-card border border-border shadow-1 rounded-2xl p-5">
         <h3 className="font-display font-extrabold text-sm text-foreground mb-4 flex items-center gap-2">
           <TrendingUp className="h-4 w-4 text-primary" /> Phân tích năng lực
         </h3>
@@ -27,7 +27,7 @@ const ExamReport = ({ report }: Props) => {
             <div key={c.category}>
               <div className="flex items-center justify-between gap-2 mb-1">
                 <span className="text-xs font-bold text-foreground truncate min-w-0">{c.label}</span>
-                <span className={`text-xs font-extrabold shrink-0 ${c.pct >= 70 ? "text-emerald-600" : c.pct >= 50 ? "text-amber-600" : "text-red-500"}`}>
+                <span className={`text-xs font-extrabold shrink-0 ${c.pct >= 70 ? "text-success" : c.pct >= 50 ? "text-warning" : "text-destructive"}`}>
                   {c.correct}/{c.total} ({c.pct}%)
                 </span>
               </div>
@@ -36,7 +36,7 @@ const ExamReport = ({ report }: Props) => {
                   initial={{ width: 0 }}
                   animate={{ width: `${c.pct}%` }}
                   transition={{ duration: 1, ease: "easeOut" }}
-                  className={`h-full rounded-full ${c.pct >= 70 ? "bg-emerald-500" : c.pct >= 50 ? "bg-amber-500" : "bg-red-500"}`}
+                  className={`h-full rounded-full ${c.pct >= 70 ? "bg-success" : c.pct >= 50 ? "bg-warning" : "bg-destructive"}`}
                 />
               </div>
             </div>
@@ -46,13 +46,13 @@ const ExamReport = ({ report }: Props) => {
 
       {/* Weak areas */}
       {weakAreas.length > 0 && (
-        <div className="bg-red-50 rounded-2xl p-4 border border-red-200/50">
-          <h3 className="font-display font-extrabold text-sm text-red-700 mb-2 flex items-center gap-2">
+        <div className="bg-destructive/10 rounded-2xl p-4 border border-destructive/20">
+          <h3 className="font-display font-extrabold text-sm text-destructive mb-2 flex items-center gap-2">
             <TrendingDown className="h-4 w-4" /> Điểm yếu cần cải thiện
           </h3>
           <div className="space-y-1.5">
             {weakAreas.map((w) => (
-              <div key={w.category} className="flex items-center gap-2 text-xs text-red-600 font-bold">
+              <div key={w.category} className="flex items-center gap-2 text-xs text-destructive font-bold">
                 <AlertCircle className="h-3.5 w-3.5" />
                 {w.label}: chỉ đúng {w.pct}%
               </div>
@@ -63,13 +63,13 @@ const ExamReport = ({ report }: Props) => {
 
       {/* Recommendations */}
       {recommendations.length > 0 && (
-        <div className="bg-primary/5 rounded-2xl p-4 border border-primary/20">
+        <div className="bg-primary/10 rounded-2xl p-4 border border-primary/20">
           <h3 className="font-display font-extrabold text-sm text-primary mb-2 flex items-center gap-2">
             <BookOpen className="h-4 w-4" /> Gợi ý ôn tập
           </h3>
           <ul className="space-y-1.5">
             {recommendations.map((r, i) => (
-              <li key={i} className="text-xs text-foreground/80 flex items-start gap-2">
+              <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
                 <span className="text-primary mt-0.5">•</span> {r}
               </li>
             ))}

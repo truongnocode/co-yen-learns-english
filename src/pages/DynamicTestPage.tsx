@@ -128,7 +128,7 @@ const DynamicTestPage = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
@@ -140,17 +140,17 @@ const DynamicTestPage = () => {
           /* Setup screen */
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}>
             <h1 className="font-display font-extrabold text-2xl text-foreground mb-1">Kiểm tra ngẫu nhiên</h1>
-            <p className="text-muted-foreground text-sm mb-6">Tạo đề thi từ ngân hàng câu hỏi SGK Lớp {grade}</p>
+            <p className="text-muted-foreground text-base mb-6">Tạo đề thi từ ngân hàng câu hỏi SGK Lớp {grade}</p>
 
             {/* Question count */}
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 mb-4 shadow-lg border border-border/30">
+            <div className="bg-card rounded-2xl p-5 mb-4 shadow-1 border border-border">
               <label className="text-xs font-bold text-foreground block mb-3">Số câu hỏi</label>
               <div className="flex gap-2">
                 {[10, 20, 30].map((n) => (
                   <motion.button key={n} whileTap={{ scale: 0.95 }}
                     onClick={() => setQuestionCount(n)}
                     className={`flex-1 py-2.5 rounded-xl font-bold text-sm border transition-all ${
-                      questionCount === n ? "gradient-primary text-white border-transparent" : "bg-card border-border/30 text-foreground"
+                      questionCount === n ? "bg-primary text-primary-foreground border-transparent" : "bg-card border-border text-foreground"
                     }`}>
                     {n} câu
                   </motion.button>
@@ -159,7 +159,7 @@ const DynamicTestPage = () => {
             </div>
 
             {/* Unit selection */}
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 mb-6 shadow-lg border border-border/30">
+            <div className="bg-card rounded-2xl p-5 mb-6 shadow-1 border border-border">
               <label className="text-xs font-bold text-foreground block mb-3">
                 Chọn Unit <span className="text-muted-foreground font-normal">(bỏ trống = tất cả)</span>
               </label>
@@ -170,7 +170,7 @@ const DynamicTestPage = () => {
                     <motion.button key={key} whileTap={{ scale: 0.9 }}
                       onClick={() => setSelectedUnits(isSelected ? selectedUnits.filter((k) => k !== key) : [...selectedUnits, key])}
                       className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap border transition-all ${
-                        isSelected ? "gradient-accent text-white border-transparent" : "bg-card border-border/30 text-foreground"
+                        isSelected ? "bg-accent text-accent-foreground border-transparent" : "bg-card border-border text-foreground"
                       }`}>
                       Unit {key}
                     </motion.button>
@@ -188,7 +188,7 @@ const DynamicTestPage = () => {
 
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
               onClick={startTest}
-              className="w-full gradient-primary text-white rounded-2xl py-4 font-display font-extrabold text-lg shadow-lg inline-flex items-center justify-center gap-2">
+              className="w-full bg-primary text-primary-foreground rounded-2xl py-4 font-display font-extrabold text-lg btn-press inline-flex items-center justify-center gap-2">
               <Play className="h-5 w-5" /> Bắt đầu kiểm tra
             </motion.button>
           </motion.div>
@@ -211,7 +211,7 @@ const DynamicTestPage = () => {
             )}
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
               onClick={() => { setStarted(false); setFinished(false); setQuestions([]); }}
-              className="w-full gradient-primary text-white rounded-2xl py-3.5 font-display font-extrabold shadow-lg mt-6">
+              className="w-full bg-primary text-primary-foreground rounded-2xl py-3.5 font-display font-extrabold shadow-1 mt-6">
               Làm bài mới
             </motion.button>
           </motion.div>
@@ -227,9 +227,9 @@ const DynamicTestPage = () => {
             </div>
             <Progress value={((current + 1) / questions.length) * 100} className="h-2 mb-6 rounded-full" />
 
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 mb-4 shadow-lg border border-border/30">
+            <div className="bg-card rounded-2xl p-5 mb-4 shadow-1 border border-border">
               <div className="flex items-start gap-3">
-                <p className="font-bold text-foreground flex-1">{questions[current].q}</p>
+                <p className="font-bold text-foreground flex-1 text-base">{questions[current].q}</p>
                 <button onClick={() => speakUS(questions[current].q)}
                   className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors shrink-0">
                   <Volume2 className="h-4 w-4 text-primary" />
@@ -246,14 +246,14 @@ const DynamicTestPage = () => {
                   if (reviewMode === "after") {
                     optStyle = isSelected
                       ? "bg-primary/10 border-primary text-primary"
-                      : "bg-card/60 border-border/30 text-muted-foreground";
+                      : "bg-card border-border text-muted-foreground";
                   } else {
-                    optStyle = isCorrect ? "bg-emerald-100 border-emerald-400 text-emerald-700" :
-                      isSelected ? "bg-red-100 border-red-400 text-red-700" :
-                      "bg-card/60 border-border/30 text-muted-foreground";
+                    optStyle = isCorrect ? "bg-success/10 border-success text-success" :
+                      isSelected ? "bg-destructive/10 border-destructive text-destructive" :
+                      "bg-card border-border text-muted-foreground";
                   }
                 } else {
-                  optStyle = "bg-card/80 border-border/30 text-foreground hover:border-primary/40";
+                  optStyle = "bg-card border-border text-foreground hover:border-primary/40";
                 }
                 return (
                   <motion.button key={i} whileTap={{ scale: 0.97 }}
@@ -267,7 +267,7 @@ const DynamicTestPage = () => {
 
             {selected !== null && reviewMode === "instant" && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="mt-4">
-                <div className={`flex items-center gap-2 text-sm font-medium ${selected === questions[current].ans ? "text-emerald-600" : "text-red-600"}`}>
+                <div className={`flex items-center gap-2 text-base font-medium ${selected === questions[current].ans ? "text-success" : "text-destructive"}`}>
                   {selected === questions[current].ans ? "Chính xác!" : `Đáp án: ${String.fromCharCode(65 + questions[current].ans)}. ${questions[current].opts[questions[current].ans]}`}
                 </div>
                 <ExplanationBox
@@ -279,7 +279,7 @@ const DynamicTestPage = () => {
                   selectedIndex={selected}
                 />
                 <motion.button whileTap={{ scale: 0.95 }} onClick={handleNext}
-                  className="w-full mt-4 gradient-primary text-white py-3 rounded-2xl font-display font-bold text-sm">
+                  className="w-full mt-4 bg-primary text-primary-foreground py-3 rounded-2xl font-display font-bold text-sm">
                   {current < questions.length - 1 ? "Câu tiếp theo" : "Xem kết quả"}
                 </motion.button>
               </motion.div>

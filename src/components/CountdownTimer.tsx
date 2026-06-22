@@ -45,7 +45,7 @@ const CountdownTimer = ({ minutes, onTimeUp, started }: CountdownTimerProps) => 
       className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-bold transition-colors ${
         isUrgent
           ? "bg-destructive/10 text-destructive border border-destructive/30 animate-pulse"
-          : "bg-card/80 text-foreground border border-border/30"
+          : "bg-card text-foreground border border-border shadow-1"
       }`}
     >
       <Timer className="h-3.5 w-3.5" />

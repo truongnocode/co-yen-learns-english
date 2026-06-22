@@ -22,8 +22,8 @@ const PetWidget = () => {
 
   if (loading) {
     return (
-      <div className="glass rounded-2xl p-4 animate-pulse">
-        <div className="h-12 bg-black/[0.04] dark:bg-white/[0.06] rounded-xl" />
+      <div className="bg-card border border-border shadow-1 rounded-2xl p-4 animate-pulse">
+        <div className="h-12 bg-muted rounded-xl" />
       </div>
     );
   }
@@ -35,7 +35,7 @@ const PetWidget = () => {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.97 }}
         onClick={() => navigate("/pet")}
-        className="w-full glass rounded-2xl p-4 text-center hover:border-primary/30 transition-all group"
+        className="w-full bg-card border border-border shadow-1 rounded-2xl p-4 text-center hover:border-primary/30 hover:shadow-2 transition-all group"
       >
         <motion.span
           className="text-3xl inline-block mb-1"
@@ -64,7 +64,7 @@ const PetWidget = () => {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.97 }}
       onClick={() => navigate("/pet")}
-      className="w-full glass rounded-2xl p-4 text-left hover:border-primary/30 transition-all group"
+      className="w-full bg-card border border-border shadow-1 rounded-2xl p-4 text-left hover:border-primary/30 hover:shadow-2 transition-all group"
     >
       <div className="flex items-center gap-3 mb-2.5">
         <motion.span

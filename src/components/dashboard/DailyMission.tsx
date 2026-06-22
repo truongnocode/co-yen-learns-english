@@ -25,9 +25,9 @@ const DailyMission = ({ progress }: Props) => {
     <div className="space-y-3">
       {/* Streak badge */}
       {streak > 0 && (
-        <div className="flex items-center gap-2 px-3 py-2 glass rounded-xl">
+        <div className="flex items-center gap-2 px-3 py-2 bg-card border border-border shadow-1 rounded-xl">
           <motion.div animate={{ scale: [1, 1.15, 1] }} transition={{ duration: 1.5, repeat: Infinity }}>
-            <Flame className="h-4 w-4 text-orange-500" />
+            <Flame className="h-4 w-4 text-streak" />
           </motion.div>
           <span className="text-xs font-bold text-foreground">{streak} ngày</span>
           {multiplier > 1 && (
@@ -37,7 +37,7 @@ const DailyMission = ({ progress }: Props) => {
       )}
 
       {/* Daily mission card */}
-      <div className={`rounded-2xl p-4 relative overflow-hidden ${isDone ? "glass border-emerald-300/50" : "glass"}`}>
+      <div className={`rounded-2xl p-4 relative overflow-hidden bg-card border shadow-1 ${isDone ? "border-success/50" : "border-border"}`}>
         <h4 className="font-display font-bold text-sm text-foreground mb-2.5">
           {isDone ? "Hoàn thành! ✓" : "Nhiệm vụ hôm nay"}
         </h4>
@@ -49,7 +49,7 @@ const DailyMission = ({ progress }: Props) => {
               <div
                 key={task.key}
                 className={`flex items-center gap-2 text-xs font-semibold rounded-lg px-2.5 py-1.5 transition-all ${
-                  done ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 line-through opacity-70" : "bg-black/[0.03] dark:bg-white/[0.05] text-foreground"
+                  done ? "bg-success/10 text-success line-through opacity-70" : "bg-muted text-foreground"
                 }`}
               >
                 {done ? <Check className="h-3.5 w-3.5" /> : <task.icon className="h-3.5 w-3.5 text-muted-foreground" />}
@@ -59,12 +59,12 @@ const DailyMission = ({ progress }: Props) => {
           })}
         </div>
 
-        <div className="w-full h-1.5 bg-black/[0.05] dark:bg-white/[0.08] rounded-full overflow-hidden mb-1">
+        <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden mb-1">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${(completed / total) * 100}%` }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`h-full rounded-full ${isDone ? "bg-emerald-500" : "bg-primary"}`}
+            className={`h-full rounded-full ${isDone ? "bg-success" : "bg-primary"}`}
           />
         </div>
         <span className="text-[10px] font-semibold text-muted-foreground">{completed}/{total}</span>

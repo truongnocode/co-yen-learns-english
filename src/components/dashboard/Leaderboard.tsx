@@ -6,7 +6,7 @@ import { calcXP, getLeaderboard, type LeaderboardEntry, type UserProgress } from
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
 const MEDAL = ["🥇", "🥈", "🥉"];
-const COLORS = ["bg-amber-500", "bg-slate-400", "bg-orange-400"];
+const COLORS = ["bg-xp", "bg-muted-foreground", "bg-streak"];
 
 interface Props {
   progress: UserProgress | null;
@@ -36,7 +36,7 @@ const Leaderboard = ({ progress }: Props) => {
       initial={{ opacity: 0, y: 15, filter: "blur(8px)" }}
       animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       transition={{ ...smooth, delay: 0.35 }}
-      className="glass rounded-2xl p-5"
+      className="bg-card border border-border shadow-1 rounded-2xl p-5"
     >
       <h3 className="font-display font-extrabold text-sm text-foreground mb-4 flex items-center gap-2">
         🏆 Xếp hạng Khối {grade}
@@ -59,7 +59,7 @@ const Leaderboard = ({ progress }: Props) => {
             >
               <span className="text-sm">{MEDAL[i]}</span>
               <div
-                className={`w-7 h-7 rounded-full ${COLORS[i]} flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0 overflow-hidden`}
+                className={`w-7 h-7 rounded-full ${COLORS[i]} flex items-center justify-center text-white text-[10px] font-bold shadow-1 shrink-0 overflow-hidden`}
               >
                 {entry.photoURL ? (
                   <img src={entry.photoURL} alt="" className="w-full h-full object-cover rounded-full" referrerPolicy="no-referrer" />
@@ -78,7 +78,7 @@ const Leaderboard = ({ progress }: Props) => {
           {user && myRank < 0 && (
             <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2.5 border border-primary/20">
               <span className="text-xs font-bold text-muted-foreground w-4 text-center">—</span>
-              <div className="w-7 h-7 rounded-full gradient-purple-card flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0 overflow-hidden">
+              <div className="w-7 h-7 rounded-full bg-accent2 text-accent2-foreground flex items-center justify-center text-[10px] font-bold shadow-1 shrink-0 overflow-hidden">
                 {user.photoURL ? (
                   <img src={user.photoURL} alt="" className="w-full h-full object-cover rounded-full" referrerPolicy="no-referrer" />
                 ) : (
@@ -92,7 +92,7 @@ const Leaderboard = ({ progress }: Props) => {
           {user && myRank >= 3 && (
             <div className="flex items-center gap-2.5 bg-primary/10 rounded-xl px-3 py-2.5 border border-primary/20">
               <span className="text-xs font-bold text-muted-foreground w-4 text-center">#{myRank + 1}</span>
-              <div className="w-7 h-7 rounded-full gradient-purple-card flex items-center justify-center text-white text-[10px] font-bold shadow-sm shrink-0 overflow-hidden">
+              <div className="w-7 h-7 rounded-full bg-accent2 text-accent2-foreground flex items-center justify-center text-[10px] font-bold shadow-1 shrink-0 overflow-hidden">
                 {user.photoURL ? (
                   <img src={user.photoURL} alt="" className="w-full h-full object-cover rounded-full" referrerPolicy="no-referrer" />
                 ) : (

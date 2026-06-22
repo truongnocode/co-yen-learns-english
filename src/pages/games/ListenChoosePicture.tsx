@@ -113,7 +113,7 @@ const ListenChoosePicture = () => {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30"
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border"
           >
             <Home className="h-5 w-5" />
           </motion.button>
@@ -123,7 +123,7 @@ const ListenChoosePicture = () => {
           >
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
-          <span className="ml-auto text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">
+          <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-xl font-bold">
             Câu {current + 1}/{questions.length}
           </span>
         </div>
@@ -134,13 +134,13 @@ const ListenChoosePicture = () => {
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30"
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border"
           >
             <span className="text-6xl block mb-4">{score >= questions.length * 0.7 ? "🎉" : "📝"}</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">
               {score}/{questions.length} đúng
             </h2>
-            <p className="text-muted-foreground text-sm mb-2">
+            <p className="text-muted-foreground text-base mb-2">
               {score >= questions.length * 0.7 ? "Tuyệt vời!" : "Cần luyện thêm!"}
             </p>
             <p className="text-muted-foreground text-xs mb-6">+{score * 10} XP</p>
@@ -148,7 +148,7 @@ const ListenChoosePicture = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={restart}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold inline-flex items-center gap-2 shadow-lg"
+              className="bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold inline-flex items-center gap-2 btn-press"
             >
               <RotateCcw className="h-4 w-4" /> Chơi lại
             </motion.button>
@@ -160,10 +160,10 @@ const ListenChoosePicture = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => speakUS(q.word.en)}
-              className="w-full bg-card/80 backdrop-blur-xl rounded-3xl p-8 mb-6 shadow-lg border border-border/30 flex flex-col items-center gap-3"
+              className="w-full bg-card rounded-2xl p-8 mb-6 shadow-1 border border-border flex flex-col items-center gap-3"
             >
-              <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center shadow-lg">
-                <Volume2 className="h-8 w-8 text-white" />
+              <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-1">
+                <Volume2 className="h-8 w-8 text-primary-foreground" />
               </div>
               <span className="text-sm text-muted-foreground font-bold">Nhấn để nghe lại</span>
             </motion.button>
@@ -175,14 +175,14 @@ const ListenChoosePicture = () => {
                 const isSelected = selected === i;
 
                 let cardClass =
-                  "bg-card/80 border-border/30 text-foreground hover:border-primary/40 hover:shadow-md";
+                  "bg-card border-border text-foreground hover:border-primary/40 hover:shadow-2";
                 if (selected !== null) {
                   if (isCorrect) {
-                    cardClass = "bg-emerald-100 border-emerald-400 text-emerald-700";
+                    cardClass = "bg-success/10 border-success text-success";
                   } else if (isSelected) {
-                    cardClass = "bg-red-100 border-red-400 text-red-700";
+                    cardClass = "bg-destructive/10 border-destructive text-destructive";
                   } else {
-                    cardClass = "bg-card/60 border-border/30 text-muted-foreground";
+                    cardClass = "bg-card border-border text-muted-foreground";
                   }
                 }
 

@@ -7,9 +7,9 @@ import PageShell from "@/components/PageShell";
 import { Progress } from "@/components/ui/progress";
 
 const PET_OPTIONS: { type: PetType; emoji: string; label: string; color: string; bgColor: string }[] = [
-  { type: "dragon", emoji: "🐉", label: "Rồng con", color: "text-red-500", bgColor: "from-red-100 to-orange-100 dark:from-red-900/30 dark:to-orange-900/30" },
-  { type: "cat", emoji: "🐱", label: "Mèo con", color: "text-amber-500", bgColor: "from-amber-100 to-yellow-100 dark:from-amber-900/30 dark:to-yellow-900/30" },
-  { type: "fox", emoji: "🦊", label: "Cáo nhỏ", color: "text-orange-500", bgColor: "from-orange-100 to-amber-100 dark:from-orange-900/30 dark:to-amber-900/30" },
+  { type: "dragon", emoji: "🐉", label: "Rồng con", color: "text-accent", bgColor: "bg-card" },
+  { type: "cat", emoji: "🐱", label: "Mèo con", color: "text-xp", bgColor: "bg-card" },
+  { type: "fox", emoji: "🦊", label: "Cáo nhỏ", color: "text-accent", bgColor: "bg-card" },
 ];
 
 const FUN_FACTS: Record<PetType, string[]> = {
@@ -124,10 +124,10 @@ const VirtualPetPage = () => {
                 whileHover={{ scale: 1.04, y: -4 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => setSelectedType(opt.type)}
-                className={`relative rounded-2xl p-6 border-2 transition-all duration-200 bg-gradient-to-br ${opt.bgColor} ${
+                className={`relative rounded-2xl p-6 border-2 transition-all duration-200 ${opt.bgColor} ${
                   selectedType === opt.type
-                    ? "border-primary shadow-lg shadow-primary/20 ring-2 ring-primary/30"
-                    : "border-transparent hover:border-primary/30"
+                    ? "border-primary shadow-2 ring-2 ring-primary/30"
+                    : "border-border hover:border-primary/30 shadow-1"
                 }`}
               >
                 <motion.span
@@ -158,8 +158,8 @@ const VirtualPetPage = () => {
                 exit={{ opacity: 0, height: 0 }}
                 className="overflow-hidden"
               >
-                <div className="glass rounded-2xl p-6 text-center space-y-4">
-                  <label className="block font-display font-bold text-sm text-foreground">
+                <div className="bg-card border border-border shadow-1 rounded-2xl p-6 text-center space-y-4">
+                  <label className="block font-display font-bold text-base text-foreground">
                     Đặt tên cho bạn nhỏ
                   </label>
                   <input
@@ -168,14 +168,14 @@ const VirtualPetPage = () => {
                     onChange={(e) => setPetName(e.target.value)}
                     placeholder="Ví dụ: Miu, Lửa, Bông..."
                     maxLength={20}
-                    className="w-full max-w-xs mx-auto block px-4 py-2.5 rounded-xl bg-white/60 dark:bg-white/10 border border-black/10 dark:border-white/10 text-center text-foreground font-semibold text-sm placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all"
+                    className="w-full max-w-xs mx-auto block px-4 py-2.5 rounded-xl bg-card border border-border text-center text-foreground font-semibold text-base placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all"
                   />
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
                     onClick={handleAdopt}
                     disabled={!petName.trim() || creating}
-                    className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-primary text-primary-foreground font-display font-bold text-sm shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="inline-flex items-center gap-2 px-8 py-3 rounded-2xl bg-primary text-primary-foreground font-display font-extrabold text-base shadow-1 btn-press hover:shadow-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {creating ? (
                       <motion.span animate={{ rotate: 360 }} transition={{ duration: 1, repeat: Infinity, ease: "linear" }}>
@@ -241,7 +241,7 @@ const VirtualPetPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="glass rounded-2xl p-5 mb-6"
+          className="bg-card border border-border shadow-1 rounded-2xl p-5 mb-6"
         >
           <div className="flex items-center justify-between mb-2">
             <span className="font-display font-bold text-sm text-foreground">Năng lượng</span>
@@ -262,9 +262,9 @@ const VirtualPetPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
-          className="glass rounded-2xl p-5 mb-6"
+          className="bg-card border border-border shadow-1 rounded-2xl p-5 mb-6"
         >
-          <h3 className="font-display font-bold text-sm text-foreground mb-4">Hành trình tiến hoá</h3>
+          <h3 className="font-display font-bold text-base text-foreground mb-4">Hành trình tiến hoá</h3>
           <div className="grid grid-cols-3 gap-3 sm:flex sm:items-center sm:justify-between sm:gap-1">
             {PET_STAGES.map((s, i) => {
               const isCurrent = s.stage === pet.stage;
@@ -278,17 +278,17 @@ const VirtualPetPage = () => {
                       transition={{ duration: 2, repeat: Infinity }}
                       className={`w-11 h-11 md:w-13 md:h-13 rounded-full flex items-center justify-center text-xl md:text-2xl transition-all ${
                         isCurrent
-                          ? "bg-primary/15 ring-2 ring-primary shadow-lg shadow-primary/20"
+                          ? "bg-primary/15 ring-2 ring-primary shadow-2"
                           : isPast
-                            ? "bg-emerald-100 dark:bg-emerald-900/30"
-                            : "bg-black/[0.04] dark:bg-white/[0.06]"
+                            ? "bg-success/15"
+                            : "bg-muted"
                       }`}
                     >
                       {emoji}
                     </motion.div>
                     <span
                       className={`text-[10px] font-bold mt-1.5 text-center leading-tight ${
-                        isCurrent ? "text-primary" : isPast ? "text-emerald-600 dark:text-emerald-400" : "text-muted-foreground"
+                        isCurrent ? "text-primary" : isPast ? "text-success" : "text-muted-foreground"
                       }`}
                     >
                       {s.label}
@@ -299,7 +299,7 @@ const VirtualPetPage = () => {
                   {i < PET_STAGES.length - 1 && (
                     <div
                       className={`h-0.5 flex-1 min-w-2 mx-0.5 rounded-full ${
-                        isPast ? "bg-emerald-400" : "bg-black/[0.06] dark:bg-white/[0.08]"
+                        isPast ? "bg-success" : "bg-border"
                       }`}
                     />
                   )}
@@ -314,9 +314,9 @@ const VirtualPetPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
-          className="glass rounded-2xl p-5"
+          className="bg-card border border-border shadow-1 rounded-2xl p-5"
         >
-          <h3 className="font-display font-bold text-sm text-foreground mb-2">💡 Bạn có biết?</h3>
+          <h3 className="font-display font-bold text-base text-foreground mb-2">💡 Bạn có biết?</h3>
           <AnimatePresence mode="wait">
             <motion.p
               key={funFact}
@@ -324,7 +324,7 @@ const VirtualPetPage = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.4 }}
-              className="text-sm text-muted-foreground font-medium leading-relaxed"
+              className="text-base text-muted-foreground font-medium leading-relaxed"
             >
               {funFact}
             </motion.p>

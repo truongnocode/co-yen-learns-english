@@ -34,8 +34,11 @@ const PracticePage = () => {
 
   const review = [
     { label: "Ôn từ vựng thông minh", desc: "Học lại đúng lúc sắp quên (SRS)", icon: RotateCcw, to: "/practice/srs-review", tone: "bg-success text-success-foreground" },
-    { label: "Tạo đề kiểm tra", desc: "Tự chọn nội dung, làm bài chấm điểm", icon: FilePlus2, to: "/test/custom", tone: "bg-primary text-primary-foreground" },
-    { label: "Đề thi vào lớp 10", desc: "Đề thi thử có chấm điểm & chữa chi tiết", icon: GraduationCap, to: "/grade/10/tests", tone: "bg-accent text-accent-foreground" },
+    { label: "Tạo đề kiểm tra", desc: `Tự chọn nội dung lớp ${grade}, làm bài chấm điểm`, icon: FilePlus2, to: "/test/custom", tone: "bg-primary text-primary-foreground" },
+    // "Đề thi vào lớp 10" chỉ hợp với học sinh lớp 10 — học sinh lớp khác không thấy.
+    ...(grade === 10
+      ? [{ label: "Đề thi vào lớp 10", desc: "Đề thi thử có chấm điểm & chữa chi tiết", icon: GraduationCap, to: "/grade/10/tests", tone: "bg-accent text-accent-foreground" }]
+      : []),
   ];
 
   const Card = ({ item, delay }: { item: (typeof games)[number]; delay: number }) => (

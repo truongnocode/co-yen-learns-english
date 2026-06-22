@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lexend:wght@400;500&family=Nunito:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,56 +10,78 @@
 
 @layer base {
   :root {
-    /* --- Surface Colors --- */
-    --background: 0 0% 100%;
-    --foreground: 230 25% 18%;
+    /* ===== "Sân trường" design system (bright, flat, kid-friendly) ===== */
+    /* --- Surfaces --- */
+    --background: 48 33% 97%;          /* #FBFAF6 warm off-white */
+    --foreground: 225 6% 16%;          /* #26272B */
 
     --card: 0 0% 100%;
-    --card-foreground: 230 25% 18%;
+    --card-foreground: 225 6% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 230 25% 18%;
+    --popover-foreground: 225 6% 16%;
 
-    /* --- Brand Colors (vivid & playful) --- */
-    --primary: 234 70% 55%;
+    /* --- Brand + accents (bright fills; deep partners for text/edge) --- */
+    --primary: 220 84% 55%;            /* #2F6FED sky blue */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 234 80% 65%;
+    --primary-deep: 222 74% 41%;       /* #1B4FB5 */
+    --primary-glow: 220 84% 65%;       /* legacy alias */
+    --primary-tint: 218 89% 95%;       /* #E8F0FE */
 
-    --secondary: 230 30% 95%;
-    --secondary-foreground: 230 25% 18%;
+    --secondary: 60 14% 94%;           /* #F1F1EC neutral panel */
+    --secondary-foreground: 225 6% 16%;
 
-    --muted: 230 15% 92%;
-    --muted-foreground: 230 12% 46%;
+    --muted: 60 9% 93%;
+    --muted-foreground: 222 5% 38%;    /* #5C5F66 */
 
-    --accent: 14 90% 58%;
+    --accent: 6 100% 68%;              /* #FF6B5E coral */
     --accent-foreground: 0 0% 100%;
+    --accent-2: 258 90% 66%;           /* #8B5CF6 grape */
+    --accent-2-foreground: 0 0% 100%;
 
-    --success: 145 65% 45%;
+    --xp: 45 100% 59%;                 /* #FFC42E gold */
+    --xp-foreground: 225 6% 16%;
+    --xp-tint: 48 100% 93%;
+    --streak: 28 100% 56%;             /* #FF8A1E flame */
+    --streak-foreground: 0 0% 100%;
+
+    --success: 145 62% 43%;            /* #28B463 */
     --success-foreground: 0 0% 100%;
-
-    --destructive: 0 75% 55%;
+    --success-deep: 145 64% 29%;       /* #1B7A45 */
+    --success-tint: 145 60% 93%;
+    --warning: 38 92% 50%;             /* #F59E0B try-again */
+    --warning-foreground: 30 92% 18%;
+    --destructive: 358 76% 59%;        /* #E5484D */
     --destructive-foreground: 0 0% 100%;
 
+    /* legacy decorative aliases (retired during cleanup phase) */
     --energy: 38 95% 55%;
     --energy-foreground: 30 50% 15%;
-
     --pink: 340 75% 58%;
     --pink-foreground: 0 0% 100%;
-
     --cyan: 185 70% 45%;
     --cyan-foreground: 0 0% 100%;
 
-    /* --- UI Chrome --- */
-    --border: 230 20% 90%;
-    --input: 230 20% 90%;
-    --ring: 234 70% 55%;
+    /* --- UI chrome --- */
+    --border: 52 11% 88%;              /* #E4E4DE */
+    --input: 52 8% 80%;                /* #CFCFC8 */
+    --ring: 220 84% 55%;
 
-    /* --- Candy Radius (rounder = friendlier) --- */
-    --radius: 16px;
+    /* --- Radius (no sharp corners) --- */
+    --radius-sm: 10px;
+    --radius: 14px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+
+    /* --- Elevation (flat + soft) --- */
+    --shadow-1: 0 2px 8px rgba(20,20,40,.08);
+    --shadow-2: 0 8px 24px rgba(20,20,40,.12);
+    --shadow-3: 0 16px 40px rgba(20,20,40,.16);
 
     /* --- Typography --- */
-    --font-display: 'Baloo 2', cursive;
-    --font-body: 'Nunito', sans-serif;
+    --font-display: 'Baloo 2', system-ui, cursive;
+    --font-body: 'Be Vietnam Pro', system-ui, sans-serif;
+    --font-reading: 'Lexend', system-ui, sans-serif;
 
     /* --- Candy Glass Properties --- */
     --glass-bg: rgba(255, 255, 255, 0.50);
@@ -85,46 +107,57 @@
 
   /* --- Dark Mode --- */
   .dark {
-    --background: 230 20% 8%;
-    --foreground: 220 15% 93%;
+    --background: 222 16% 9%;          /* #13151B */
+    --foreground: 220 9% 92%;          /* #ECEDEF */
 
-    --card: 230 15% 12%;
-    --card-foreground: 220 15% 93%;
+    --card: 222 15% 13%;               /* #1B1E26 */
+    --card-foreground: 220 9% 92%;
 
-    --popover: 230 15% 12%;
-    --popover-foreground: 220 15% 93%;
+    --popover: 222 15% 13%;
+    --popover-foreground: 220 9% 92%;
 
-    --primary: 234 65% 62%;
+    --primary: 220 80% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 234 70% 68%;
+    --primary-deep: 220 80% 72%;
+    --primary-glow: 220 80% 72%;
+    --primary-tint: 220 40% 20%;
 
-    --secondary: 230 12% 16%;
-    --secondary-foreground: 220 15% 93%;
+    --secondary: 222 12% 18%;
+    --secondary-foreground: 220 9% 92%;
 
-    --muted: 230 10% 18%;
-    --muted-foreground: 230 10% 55%;
+    --muted: 222 12% 18%;
+    --muted-foreground: 220 7% 64%;
 
-    --accent: 14 80% 58%;
+    --accent: 6 90% 68%;
     --accent-foreground: 0 0% 100%;
+    --accent-2: 258 80% 70%;
+    --accent-2-foreground: 0 0% 100%;
 
-    --success: 145 55% 48%;
+    --xp: 45 95% 60%;
+    --xp-foreground: 30 40% 12%;
+    --xp-tint: 45 40% 20%;
+    --streak: 28 90% 60%;
+    --streak-foreground: 0 0% 100%;
+
+    --success: 145 55% 50%;
     --success-foreground: 0 0% 100%;
-
-    --destructive: 0 65% 55%;
+    --success-deep: 145 50% 60%;
+    --success-tint: 145 30% 18%;
+    --warning: 38 88% 56%;
+    --warning-foreground: 30 50% 12%;
+    --destructive: 358 66% 58%;
     --destructive-foreground: 0 0% 100%;
 
     --energy: 38 85% 55%;
     --energy-foreground: 30 40% 15%;
-
     --pink: 340 65% 60%;
     --pink-foreground: 0 0% 100%;
-
     --cyan: 185 60% 50%;
     --cyan-foreground: 0 0% 100%;
 
-    --border: 230 10% 18%;
-    --input: 230 10% 18%;
-    --ring: 234 65% 62%;
+    --border: 222 12% 22%;
+    --input: 222 12% 26%;
+    --ring: 220 80% 65%;
 
     --glass-bg: rgba(255, 255, 255, 0.08);
     --glass-bg-hover: rgba(255, 255, 255, 0.14);
@@ -186,6 +219,21 @@
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
+}
+
+@layer components {
+  /* The single "pressable" CTA — a solid bottom edge that collapses on press
+     (Duolingo-style tactile feedback). Pair with a filled bg + bold label. */
+  .btn-press {
+    box-shadow: 0 4px 0 0 hsl(var(--primary-deep));
+    transition: transform .1s, box-shadow .1s;
+  }
+  .btn-press:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 0 hsl(var(--primary-deep));
+  }
+  .btn-press-accent { box-shadow: 0 4px 0 0 hsl(6 70% 50%); }
+  .btn-press-accent:active { transform: translateY(4px); box-shadow: 0 0 0 0 hsl(6 70% 50%); }
 }
 
 @layer utilities {

@@ -16,8 +16,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Baloo 2", "cursive"],
-        body: ["Nunito", "sans-serif"],
+        display: ["Baloo 2", "system-ui", "cursive"],
+        body: ["Be Vietnam Pro", "system-ui", "sans-serif"],
+        reading: ["Lexend", "system-ui", "sans-serif"],
       },
       // iOS safe-area insets (viewport-fit=cover is set in index.html). Mapped into
       // the spacing scale so they compose with p-*, m-*, inset-*, scroll-m-*, etc.
@@ -33,7 +34,15 @@ export default {
         "fluid-base": "clamp(1rem, 0.9rem + 0.5vw, 1.125rem)",
         "fluid-lg": "clamp(1.125rem, 1rem + 0.6vw, 1.375rem)",
         "fluid-h2": "clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem)",
-        "fluid-h1": "clamp(1.875rem, 1.3rem + 2.75vw, 3.75rem)",
+        "fluid-h1": ["clamp(1.625rem, 1.2rem + 1.6vw, 2.25rem)", { lineHeight: "1.15" }],
+        "fluid-display": ["clamp(1.875rem, 1.3rem + 2.75vw, 3rem)", { lineHeight: "1.1" }],
+        "body-lg": ["1.125rem", { lineHeight: "1.6" }],
+      },
+      maxWidth: { reading: "65ch" },
+      boxShadow: {
+        1: "var(--shadow-1)",
+        2: "var(--shadow-2)",
+        3: "var(--shadow-3)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -45,10 +54,29 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
           glow: "hsl(var(--primary-glow))",
+          deep: "hsl(var(--primary-deep))",
+          tint: "hsl(var(--primary-tint))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        accent2: {
+          DEFAULT: "hsl(var(--accent-2))",
+          foreground: "hsl(var(--accent-2-foreground))",
+        },
+        xp: {
+          DEFAULT: "hsl(var(--xp))",
+          foreground: "hsl(var(--xp-foreground))",
+          tint: "hsl(var(--xp-tint))",
+        },
+        streak: {
+          DEFAULT: "hsl(var(--streak))",
+          foreground: "hsl(var(--streak-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -65,6 +93,8 @@ export default {
         success: {
           DEFAULT: "hsl(var(--success))",
           foreground: "hsl(var(--success-foreground))",
+          deep: "hsl(var(--success-deep))",
+          tint: "hsl(var(--success-tint))",
         },
         energy: {
           DEFAULT: "hsl(var(--energy))",

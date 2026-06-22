@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import Navbar from "./Navbar";
+import AppNav from "./AppNav";
 
-/** Dopamine Candy Glass page wrapper */
+/** App page wrapper: unified nav (top bar + mobile bottom bar) + animated content.
+ *  Bottom padding on mobile reserves space for the fixed bottom tab bar. */
 const PageShell = ({ children, withNavbar = true }: { children: React.ReactNode; withNavbar?: boolean }) => (
-  <div className="min-h-screen gradient-hero relative">
-    {withNavbar && <Navbar />}
+  <div className={`relative min-h-svh gradient-hero ${withNavbar ? "pb-[76px] md:pb-0" : ""}`}>
+    {withNavbar && <AppNav />}
 
     <motion.div
       initial={{ opacity: 0, y: 12 }}

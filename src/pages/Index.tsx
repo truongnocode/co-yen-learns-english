@@ -1,12 +1,28 @@
 import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Mic, Menu, PlayCircle } from "lucide-react";
+import { Menu, ArrowRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { useAuth } from "@/contexts/AuthContext";
+import bearUrl from "@/assets/emoji/bear.png";
+import rabbitUrl from "@/assets/emoji/rabbit.png";
+import carrotUrl from "@/assets/emoji/carrot-char.svg";
+import bookUrl from "@/assets/emoji/open-book.png";
+import pencilUrl from "@/assets/emoji/pencil.png";
+import rocketUrl from "@/assets/emoji/rocket.png";
+import starUrl from "@/assets/emoji/star.png";
+import joystickUrl from "@/assets/emoji/joystick.png";
+import movieUrl from "@/assets/emoji/movie.png";
+import trophyUrl from "@/assets/emoji/trophy.png";
+import micUrl from "@/assets/emoji/mic.png";
+import gradcapUrl from "@/assets/emoji/gradcap.png";
 
-const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
+const smooth = { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const };
+const float = (d: number, delay = 0) => ({
+  animate: { y: [0, -10, 0] },
+  transition: { duration: d, repeat: Infinity, ease: "easeInOut" as const, delay },
+});
 
 const Index = () => {
   const navigate = useNavigate();
@@ -15,22 +31,12 @@ const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const grade = profile?.grade;
 
-  const mobileLinks = [
-    { label: "Bài học", to: "/grades" },
-    { label: "Video", to: "/video-lessons" },
-    { label: "Luyện tập", to: "/practice" },
-    { label: "Tiến trình", to: "/progress" },
-  ];
-
   const handleCTA = useCallback(async () => {
-    if (!grade) { setShowGradeSelect(true); } else { navigate("/dashboard"); }
+    if (!grade) setShowGradeSelect(true);
+    else navigate("/dashboard");
   }, [grade, navigate]);
 
-  // Nav links should always navigate — browsing should NOT require login.
-  // Protected pages handle their own auth gating.
-  const smartNavigate = useCallback((path: string) => {
-    navigate(path);
-  }, [navigate]);
+  const go = useCallback((path: string) => navigate(path), [navigate]);
 
   const handleGradeSelected = async (g: number) => {
     await selectGrade(g);
@@ -38,16 +44,35 @@ const Index = () => {
     navigate("/dashboard");
   };
 
+  const navLinks = [
+    { label: "Bài học", to: "/grades" },
+    { label: "Video", to: "/video-lessons" },
+    { label: "Luyện tập", to: "/practice" },
+    { label: "Tiến trình", to: "/progress" },
+  ];
+
+  const hubs = [
+    { label: "Bài học", desc: "Từ vựng · ngữ pháp · đọc hiểu", img: bookUrl, to: "/grades", bg: "#2F6FED", edge: "#1B4FB5" },
+    { label: "Luyện tập", desc: "Trò chơi & flashcard vui nhộn", img: joystickUrl, to: "/practice", bg: "#FF6B5E", edge: "#D8432F" },
+    { label: "Video", desc: "Nghe & nhại theo bản xứ", img: movieUrl, to: "/video-lessons", bg: "#8B5CF6", edge: "#6A3FD1" },
+    { label: "Tiến trình", desc: "Điểm · chuỗi ngày · xếp hạng", img: trophyUrl, to: "/progress", bg: "#1FAE5E", edge: "#157A41" },
+  ];
+
+  const highlights = [
+    { img: micUrl, tint: "bg-primary/10", title: "Phòng thu Shadowing AI", desc: "Nghe người bản xứ rồi nhại lại, AI chấm phát âm tới 98% và gửi về cho cô giáo.", to: "/practice" },
+    { img: movieUrl, tint: "bg-accent2/10", title: "Học bằng video", desc: "Xem hoạt hình theo chủ đề, đọc thuộc từng câu đúng nhịp người bản xứ.", to: "/video-lessons" },
+    { img: gradcapUrl, tint: "bg-accent/10", title: "Ôn thi vào lớp 10", desc: "Đề thi thử có chấm điểm, phân tích lỗ hổng ngữ pháp và gợi ý bài bổ trợ.", to: "/grade/10" },
+  ];
+
   return (
-    <div className="min-h-screen overflow-x-hidden gradient-hero">
-      {/* ─── Navbar ─── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
-        <div className="max-w-7xl mx-auto glass px-4 sm:px-6 py-2.5 sm:py-3 flex justify-between items-center gap-2 !rounded-full">
-          {/* Mobile hamburger */}
+    <div className="min-h-svh overflow-x-hidden bg-background">
+      {/* ─── Top nav ─── */}
+      <nav className="fixed top-3 left-0 right-0 z-50 px-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 rounded-2xl border border-border bg-card/95 px-4 py-2.5 shadow-1 backdrop-blur-sm sm:px-5">
           <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild>
               <button
-                className="md:hidden flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-indigo-800 active:scale-95 transition-transform"
+                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-foreground active:scale-95 transition-transform md:hidden"
                 aria-label="Mở menu"
               >
                 <Menu className="h-6 w-6" />
@@ -56,25 +81,25 @@ const Index = () => {
             <SheetContent side="left" className="w-[82vw] max-w-xs p-0" aria-describedby={undefined}>
               <SheetTitle className="sr-only">Menu điều hướng</SheetTitle>
               <div className="flex h-full flex-col">
-                <div className="flex items-center gap-2 px-5 pt-6 pb-5 border-b border-border/40">
-                  <span className="text-2xl">🚀</span>
-                  <span className="font-display text-base font-black text-foreground">Học cùng cô Yến</span>
+                <div className="flex items-center gap-2.5 border-b border-border px-5 pb-5 pt-6">
+                  <img src={bearUrl} alt="" className="h-9 w-9" />
+                  <span className="font-display text-base font-extrabold text-foreground">Cô Yến</span>
                 </div>
                 <nav className="flex flex-col gap-1 p-3" aria-label="Chính">
-                  {mobileLinks.map((link) => (
+                  {navLinks.map((link) => (
                     <button
                       key={link.to}
                       onClick={() => { setMenuOpen(false); navigate(link.to); }}
-                      className="flex min-h-12 items-center rounded-xl px-4 text-base font-bold text-foreground hover:bg-black/[0.04] dark:hover:bg-white/[0.06] transition-colors active:scale-[0.98]"
+                      className="flex min-h-12 items-center rounded-xl px-4 text-base font-semibold text-foreground transition-colors hover:bg-muted active:scale-[0.98]"
                     >
                       {link.label}
                     </button>
                   ))}
                 </nav>
-                <div className="mt-auto border-t border-border/40 p-3">
+                <div className="mt-auto border-t border-border p-3">
                   <button
                     onClick={() => { setMenuOpen(false); handleCTA(); }}
-                    className="flex min-h-12 w-full items-center justify-center rounded-full bg-indigo-600 px-4 text-base font-bold text-white active:scale-[0.98] transition-transform"
+                    className="btn-press flex min-h-12 w-full items-center justify-center rounded-2xl bg-primary px-4 font-display text-base font-extrabold text-primary-foreground"
                   >
                     {grade ? "Vào lớp học" : "Chọn lớp"}
                   </button>
@@ -83,224 +108,192 @@ const Index = () => {
             </SheetContent>
           </Sheet>
 
-          <div className="flex items-center gap-2 cursor-pointer mr-auto md:mr-0" onClick={() => navigate("/")}>
-            <span className="text-2xl sm:text-3xl">🚀</span>
-            <span className="text-lg sm:text-xl font-black text-indigo-900 tracking-tight hidden sm:block font-display">Học cùng cô Yến</span>
+          <button onClick={() => navigate("/")} className="mr-auto flex items-center gap-2 md:mr-0">
+            <img src={bearUrl} alt="" className="h-10 w-10" />
+            <span className="hidden font-display text-lg font-extrabold tracking-tight text-foreground sm:block">Cô Yến</span>
+          </button>
+
+          <div className="hidden items-center gap-1 md:flex">
+            {navLinks.map((link) => (
+              <button
+                key={link.to}
+                onClick={() => go(link.to)}
+                className="rounded-xl px-3.5 py-2 text-[15px] font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              >
+                {link.label}
+              </button>
+            ))}
           </div>
-          <div className="hidden md:flex gap-6 font-bold text-indigo-800">
-            <button onClick={() => smartNavigate("/grades")} className="hover:text-pink-500 transition-colors">Bài học</button>
-            <button onClick={() => smartNavigate("/video-lessons")} className="hover:text-pink-500 transition-colors">Video</button>
-            <button onClick={() => smartNavigate("/practice")} className="hover:text-pink-500 transition-colors">Luyện tập</button>
-            <button onClick={() => smartNavigate("/progress")} className="hover:text-pink-500 transition-colors">Tiến trình</button>
-          </div>
-          <motion.button whileTap={{ scale: 0.95 }} onClick={handleCTA}
-            className="bg-white hover:bg-indigo-50 text-indigo-600 font-bold py-2 px-6 rounded-full border-2 border-indigo-100 shadow-sm transition-all flex items-center gap-2">
+
+          <button
+            onClick={handleCTA}
+            className="btn-press shrink-0 rounded-xl bg-primary px-5 py-2.5 font-display text-[15px] font-extrabold text-primary-foreground"
+          >
             Vào học
-          </motion.button>
+          </button>
         </div>
       </nav>
 
       {/* ─── Hero ─── */}
-      <header className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left */}
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ ...smooth, delay: 0.2 }}
-            className="relative z-10 text-center lg:text-left">
-            <div className="inline-block bg-white/70 text-indigo-800 text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 shadow-sm border border-white">
-              🎯 Dành cho học sinh Tiểu học & THCS (Lớp 3 - Lớp 10)
+      <header className="relative overflow-hidden px-4 pb-12 pt-28 sm:pt-32 lg:pb-20 lg:pt-40">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ...smooth, delay: 0.1 }}
+            className="text-center lg:text-left"
+          >
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-xp px-4 py-1.5 text-sm font-extrabold text-xp-foreground shadow-1">
+              <Sparkles className="h-4 w-4" aria-hidden /> Cho học sinh lớp 3 – lớp 10
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-indigo-950 leading-tight mb-4 sm:mb-6 drop-shadow-sm font-display">
-              Học Tiếng Anh <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500">Vui Như Chơi Game!</span>
+            <h1 className="font-display text-fluid-display font-extrabold leading-[1.08] text-foreground">
+              Học tiếng Anh<br />
+              <span className="bg-gradient-to-r from-accent to-streak bg-clip-text text-transparent">vui như chơi game!</span>
             </h1>
-            <p className="text-xl text-indigo-800 font-semibold mb-10 max-w-2xl mx-auto lg:mx-0">
-              Bám sát sách giáo khoa iLearn Smart Start & Global Success. Luyện phát âm chuẩn Anh-Mỹ với phòng thu AI và chinh phục điểm 8.0+ kỳ thi vào lớp 10.
+            <p className="mx-auto mt-5 max-w-xl text-base font-medium leading-relaxed text-muted-foreground sm:text-body-lg lg:mx-0">
+              Cùng <span className="font-bold text-foreground">Gấu, Thỏ và Cà Rốt</span> học theo SGK iLearn & Global Success — luyện phát âm với phòng thu AI và chinh phục kỳ thi vào lớp 10.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.button whileTap={{ scale: 0.95 }} onClick={handleCTA}
-                className="btn-playful py-4 px-8 text-xl font-black flex items-center justify-center gap-3">
-                {grade ? "Vào lớp học" : "Chọn lớp"}
-              </motion.button>
-              <motion.button whileTap={{ scale: 0.95 }} onClick={() => smartNavigate("/grades")}
-                className="bg-white/80 text-indigo-600 border-2 border-white rounded-full shadow-[0_4px_0_#d1d5db] active:translate-y-1 active:shadow-[0_0_0_#d1d5db] py-4 px-8 text-xl font-bold flex items-center justify-center gap-2 transition-all">
-                ▶️ Xem lộ trình học
-              </motion.button>
+
+            {/* mobile mascot row — natural cluster */}
+            <div className="relative mt-7 flex items-end justify-center md:hidden">
+              <div className="absolute inset-x-8 bottom-2 -z-0 h-20 rounded-[50%] bg-primary/10 blur-sm" aria-hidden />
+              <img src={rabbitUrl} alt="Thỏ" className="relative h-24 w-auto -rotate-[6deg] drop-shadow-md" />
+              <img src={bearUrl} alt="Gấu" className="relative z-10 -mx-3 h-28 w-auto drop-shadow-md" />
+              <img src={carrotUrl} alt="Cà Rốt" className="relative h-28 w-auto rotate-[6deg] drop-shadow-md" />
             </div>
-            <div className="mt-10 flex items-center justify-center lg:justify-start gap-4 text-indigo-900 font-bold">
+
+            <div className="mt-7 flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
+              <button
+                onClick={handleCTA}
+                className="btn-press flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-4 font-display text-lg font-extrabold text-primary-foreground sm:w-auto"
+              >
+                {grade ? "Vào lớp học" : "Bắt đầu học"} <ArrowRight className="h-5 w-5" aria-hidden />
+              </button>
+              <button
+                onClick={() => go("/grades")}
+                className="flex w-full items-center justify-center gap-2 rounded-2xl border-2 border-primary/30 bg-card px-8 py-4 font-display text-lg font-extrabold text-primary shadow-1 transition-colors hover:bg-primary/5 sm:w-auto"
+              >
+                Xem lộ trình
+              </button>
+            </div>
+            <div className="mt-7 flex items-center justify-center gap-3 lg:justify-start">
               <div className="flex -space-x-3">
                 {["A", "B", "C"].map((s) => (
-                  <img key={s} className="w-10 h-10 rounded-full border-2 border-white" src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${s}`} alt="user" />
+                  <img key={s} className="h-10 w-10 rounded-full border-2 border-card" src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${s}`} alt="" />
                 ))}
               </div>
-              <p>Hơn <span className="text-pink-600">500+</span> học sinh đang học mỗi ngày</p>
+              <p className="text-sm font-semibold text-muted-foreground">
+                Hơn <span className="font-extrabold text-foreground">500+</span> học sinh học mỗi ngày
+              </p>
             </div>
           </motion.div>
 
-          {/* Right — floating cards */}
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}
-            className="relative hidden md:block h-[500px]">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/40 rounded-full blur-3xl" />
-            <motion.div animate={{ y: [0, -20, 0], rotate: [6, 8, 6] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-10 right-10 glass !rounded-2xl p-4 shadow-xl rotate-6 !transform-none" style={{ transform: "rotate(6deg)" }}>
-              <div className="text-4xl text-center mb-1">🔥</div>
-              <div className="font-black text-orange-500">Chuỗi 30 ngày!</div>
-            </motion.div>
-            <motion.div animate={{ y: [0, -15, 0], rotate: [-3, -5, -3] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-              className="absolute bottom-20 right-0 glass !rounded-2xl p-6 shadow-xl z-20" style={{ transform: "rotate(-3deg)" }}>
-              <div className="font-bold text-indigo-900 mb-2">🎤 Luyện nói (98% chính xác)</div>
-              <div className="w-48 h-3 bg-white/50 rounded-full overflow-hidden">
-                <div className="w-[98%] h-full bg-gradient-to-r from-green-400 to-blue-500" />
-              </div>
-            </motion.div>
-            <motion.div animate={{ y: [0, -18, 0], rotate: [-6, -4, -6] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-              className="absolute top-32 left-0 glass !rounded-2xl p-5 shadow-xl z-10" style={{ transform: "rotate(-6deg)" }}>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-2xl font-black">A+</div>
-                <div>
-                  <div className="font-black text-indigo-900">Bài thi lớp 9</div>
-                  <div className="text-sm font-bold text-green-500">Hoàn thành xuất sắc</div>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[180px] drop-shadow-2xl select-none">
-              🦊
-            </motion.div>
+          {/* Right — mascot stage (desktop) */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ ...smooth, delay: 0.25 }}
+            className="relative mx-auto hidden h-[420px] w-full max-w-lg md:block"
+          >
+            {/* soft organic backdrop — no hard box */}
+            <div className="absolute right-4 top-8 -z-0 h-60 w-60 rounded-full bg-primary/10" aria-hidden />
+            <div className="absolute left-6 bottom-20 -z-0 h-40 w-40 rounded-full bg-accent/10" aria-hidden />
+            <div className="absolute left-1/2 bottom-7 h-9 w-72 -translate-x-1/2 rounded-[50%] bg-foreground/5 blur-md" aria-hidden />
+
+            {/* floating objects — playful, asymmetric, varied angles */}
+            <motion.img src={bookUrl} alt="" {...float(5)} className="absolute left-0 top-14 z-10 h-16 w-16 -rotate-[14deg] drop-shadow-md" aria-hidden />
+            <motion.img src={rocketUrl} alt="" {...float(6, 0.4)} className="absolute right-1 top-1 z-10 h-24 w-24 rotate-[12deg] drop-shadow-md" aria-hidden />
+            <motion.img src={pencilUrl} alt="" {...float(5.4, 0.9)} className="absolute right-12 top-40 z-30 h-12 w-12 rotate-[20deg] drop-shadow-sm" aria-hidden />
+            <motion.img src={starUrl} alt="" {...float(4.4, 0.2)} className="absolute left-8 top-40 z-10 h-9 w-9 -rotate-12" aria-hidden />
+            <img src={starUrl} alt="" className="absolute right-1/3 top-4 z-10 h-6 w-6" aria-hidden />
+            <img src={starUrl} alt="" className="absolute left-1/4 bottom-28 z-0 h-5 w-5 opacity-80" aria-hidden />
+
+            {/* the trio — natural cluster: varied size, slight tilt, gentle overlap */}
+            <div className="absolute inset-x-0 bottom-6 z-20 flex items-end justify-center">
+              <motion.img src={rabbitUrl} alt="Thỏ" {...float(4.6, 0.3)} className="relative z-10 h-36 w-auto -rotate-[6deg] drop-shadow-xl" />
+              <motion.img src={bearUrl} alt="Gấu" {...float(5, 0)} className="relative z-20 -mx-4 h-52 w-auto drop-shadow-xl" />
+              <motion.img src={carrotUrl} alt="Cà Rốt" {...float(4.8, 0.5)} className="relative z-10 h-52 w-auto rotate-[6deg] drop-shadow-xl" />
+            </div>
           </motion.div>
         </div>
       </header>
 
-      {/* ─── Features Bento ─── */}
-      <section className="max-w-7xl mx-auto px-4 pb-24">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={smooth}
-          className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-black text-indigo-950 mb-4 font-display">Hệ sinh thái học tập toàn diện</h2>
-          <p className="text-lg text-indigo-800 font-semibold max-w-2xl mx-auto">Mọi công cụ em cần để giỏi tiếng Anh đều nằm gọn trong các nhiệm vụ hàng ngày.</p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Video lessons — full-width lead card */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.05 }}
-            onClick={() => smartNavigate("/video-lessons")}
-            className="glass p-8 md:col-span-2 lg:col-span-3 relative overflow-hidden group cursor-pointer bg-gradient-to-br from-white/50 to-purple-100/40">
-            <div className="absolute -right-10 -top-10 w-64 h-64 bg-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 group-hover:bg-indigo-400 transition-colors duration-700" />
-            <div className="relative z-10 flex flex-col md:flex-row gap-5 md:gap-6 items-center">
-              <div className="w-16 h-16 bg-white/80 rounded-2xl flex items-center justify-center text-4xl shadow-sm shrink-0 group-hover:scale-110 transition-transform">🎬</div>
-              <div className="flex-1 text-center md:text-left">
-                <div className="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full mb-3">Mới · Học thuộc lời thoại</div>
-                <h3 className="text-2xl sm:text-3xl font-black text-indigo-900 mb-2 font-display">Học tiếng Anh bằng video</h3>
-                <p className="text-indigo-800 font-medium">Xem video hoạt hình theo chủ đề, nghe từng câu rồi nhại theo đúng nhịp người bản xứ. Che chữ dần để đọc thuộc lời thoại.</p>
+      {/* ─── 4 hubs ─── */}
+      <section className="relative mx-auto max-w-6xl px-4 pb-20 sm:px-6">
+        <div className="mb-8 text-center">
+          <h2 className="font-display text-fluid-h1 font-extrabold text-foreground">Em muốn học gì hôm nay?</h2>
+          <p className="mt-2 font-medium text-muted-foreground">Mọi thứ em cần, gọn trong 4 khu vực.</p>
+        </div>
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          {hubs.map((hub, i) => (
+            <motion.button
+              key={hub.to}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ...smooth, delay: i * 0.06 }}
+              onClick={() => go(hub.to)}
+              style={{ backgroundColor: hub.bg, boxShadow: `0 5px 0 0 ${hub.edge}` }}
+              className="group relative flex flex-col items-start overflow-hidden rounded-2xl p-5 text-left text-white transition-transform hover:-translate-y-1 active:translate-y-1"
+            >
+              <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20">
+                <img src={hub.img} alt="" className="h-10 w-10 drop-shadow-sm" />
               </div>
-              <span className="bg-indigo-900 text-white font-bold py-3 px-7 rounded-full inline-flex items-center gap-2 shrink-0 group-hover:bg-pink-500 transition-colors">
-                <PlayCircle className="h-5 w-5" /> Xem video
+              <h3 className="font-display text-xl font-extrabold">{hub.label}</h3>
+              <p className="mt-1 text-sm font-semibold text-white/90">{hub.desc}</p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-extrabold">
+                Khám phá <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
               </span>
-            </div>
-          </motion.div>
-
-          {/* Microlearning */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.1 }}
-            onClick={() => smartNavigate(grade ? `/grade/${grade}` : "/grades")}
-            className="glass p-8 flex flex-col justify-between group cursor-pointer">
-            <div>
-              <div className="w-14 h-14 bg-white/80 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:scale-110 transition-transform">⚡</div>
-              <h3 className="text-2xl font-black text-indigo-900 mb-3 font-display">Microlearning 10 phút</h3>
-              <p className="text-indigo-800 font-medium">Kiến thức SGK được chia nhỏ thành các video hoạt hình và game tương tác. Học nhanh, nhớ lâu, không hề buồn ngủ.</p>
-            </div>
-          </motion.div>
-
-          {/* Shadowing — large */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.2 }}
-            onClick={() => smartNavigate(grade ? `/grade/${grade}` : "/grades")}
-            className="glass p-8 md:col-span-2 relative overflow-hidden group cursor-pointer">
-            <div className="absolute -right-10 -bottom-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-30 group-hover:bg-pink-400 transition-colors duration-700" />
-            <div className="relative z-10 flex flex-col md:flex-row gap-6 items-center">
-              <div className="flex-1">
-                <div className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full mb-4">Công nghệ lõi</div>
-                <h3 className="text-3xl font-black text-indigo-900 mb-3 font-display">Phòng thu Shadowing</h3>
-                <p className="text-indigo-800 font-medium mb-6">Nghe người bản xứ nói và nhại lại theo thời gian thực. Âm thanh tự động gửi về Google Drive cho cô giáo chấm!</p>
-                <span className="bg-indigo-900 text-white font-bold py-2 px-6 rounded-full inline-flex items-center gap-2">
-                  <Mic className="h-4 w-4" /> Thử thu âm ngay
-                </span>
-              </div>
-              <div className="bg-white/60 p-4 rounded-2xl border border-white w-full md:w-64 text-center shadow-sm">
-                <p className="font-bold text-lg mb-4">
-                  <span className="text-gray-400">"Nice to</span>{" "}
-                  <span className="text-blue-600">meet you!"</span>
-                </p>
-                <div className="flex justify-center items-end gap-1.5 h-12">
-                  {[15, 25, 40, 20, 30].map((h, i) => (
-                    <div key={i} className="w-1.5 rounded-full bg-gradient-to-t from-blue-400 to-cyan-300 sound-wave" style={{ height: `${h}px`, animationDelay: `${i * 0.15}s` }} />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Adventure Map — large */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.3 }}
-            onClick={() => smartNavigate("/progress")}
-            className="glass p-8 md:col-span-2 bg-gradient-to-br from-white/40 to-yellow-100/40 relative overflow-hidden group cursor-pointer">
-            <div className="relative z-10">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-3xl font-black text-indigo-900 font-display">Bản đồ phiêu lưu & đua top</h3>
-                <span className="text-4xl group-hover:rotate-12 transition-transform">🏆</span>
-              </div>
-              <p className="text-indigo-800 font-medium w-3/4">Tạm biệt danh sách bài tập nhàm chán. Mỗi bài học là một vùng đất cần khám phá. Cày XP, lên hạng giải đấu và sắm đồ cho avatar.</p>
-            </div>
-            <div className="absolute right-0 bottom-0 opacity-20 text-9xl transform translate-x-1/4 translate-y-1/4 select-none">🗺️</div>
-          </motion.div>
-
-          {/* Grade 10 Exam */}
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.4 }}
-            onClick={() => smartNavigate("/grade/10")}
-            className="glass p-8 bg-gradient-to-br from-white/40 to-red-100/40 flex flex-col justify-between group cursor-pointer">
-            <div>
-              <div className="w-14 h-14 bg-red-100 text-red-500 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm group-hover:scale-110 transition-transform">🎯</div>
-              <h3 className="text-2xl font-black text-indigo-900 mb-3 font-display">Đấu trường lớp 9</h3>
-              <p className="text-indigo-800 font-medium">Giả lập áp lực phòng thi 60 phút. Hệ thống tự phân tích "lỗ hổng" ngữ pháp và đề xuất bài học bổ trợ.</p>
-            </div>
-          </motion.div>
+            </motion.button>
+          ))}
         </div>
       </section>
 
-      {/* ─── Games Section ─── */}
-      <section className="max-w-7xl mx-auto px-4 pb-24">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={smooth}
-          className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-black text-indigo-950 mb-4 font-display">Trò chơi học tiếng Anh</h2>
-          <p className="text-lg text-indigo-800 font-semibold max-w-2xl mx-auto">Vừa chơi vừa học — ghi nhớ từ vựng nhanh gấp 3 lần!</p>
-        </motion.div>
+      {/* ─── Highlights ─── */}
+      <section className="mx-auto max-w-6xl px-4 pb-24 sm:px-6">
+        <div className="mb-8 text-center">
+          <h2 className="font-display text-fluid-h1 font-extrabold text-foreground">Vì sao học cùng cô Yến?</h2>
+          <p className="mt-2 font-medium text-muted-foreground">Công cụ hiện đại, học mà như chơi.</p>
+        </div>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {highlights.map((h, i) => (
+            <motion.button
+              key={h.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ...smooth, delay: i * 0.08 }}
+              onClick={() => go(h.to)}
+              className="group flex flex-col items-start rounded-2xl border border-border bg-card p-6 text-left shadow-1 transition-all hover:-translate-y-1 hover:shadow-2"
+            >
+              <div className={`mb-5 flex h-16 w-16 items-center justify-center rounded-2xl ${h.tint}`}>
+                <img src={h.img} alt="" className="h-10 w-10" />
+              </div>
+              <h3 className="font-display text-2xl font-extrabold text-foreground">{h.title}</h3>
+              <p className="mt-2 font-medium leading-relaxed text-muted-foreground">{h.desc}</p>
+            </motion.button>
+          ))}
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.1 }}
-            onClick={() => smartNavigate(grade ? `/practice/flashcard-match/${grade}` : "/grades")}
-            className="glass p-8 bg-gradient-to-br from-white/40 to-pink-100/40 group cursor-pointer hover:shadow-xl transition-shadow">
-            <div className="text-6xl mb-4 group-hover:scale-110 transition-transform text-center">🃏</div>
-            <h3 className="text-xl font-black text-indigo-900 mb-2 font-display text-center">Lật Thẻ Ghép Cặp</h3>
-            <p className="text-indigo-800 font-medium text-center text-sm">Lật thẻ tìm cặp emoji và từ tiếng Anh. Rèn trí nhớ siêu tốc!</p>
-          </motion.div>
-
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.2 }}
-            onClick={() => smartNavigate(grade ? `/practice/listen-picture/${grade}` : "/grades")}
-            className="glass p-8 bg-gradient-to-br from-white/40 to-blue-100/40 group cursor-pointer hover:shadow-xl transition-shadow">
-            <div className="text-6xl mb-4 group-hover:scale-110 transition-transform text-center">🖼️</div>
-            <h3 className="text-xl font-black text-indigo-900 mb-2 font-display text-center">Nghe và Chọn Tranh</h3>
-            <p className="text-indigo-800 font-medium text-center text-sm">Nghe từ tiếng Anh chuẩn và chọn tranh đúng. Luyện tai nghe từ nhỏ!</p>
-          </motion.div>
-
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ ...smooth, delay: 0.3 }}
-            onClick={() => smartNavigate("/pet")}
-            className="glass p-8 bg-gradient-to-br from-white/40 to-amber-100/40 group cursor-pointer hover:shadow-xl transition-shadow">
-            <div className="text-6xl mb-4 group-hover:scale-110 transition-transform text-center">🐾</div>
-            <h3 className="text-xl font-black text-indigo-900 mb-2 font-display text-center">Nuôi Thú Ảo</h3>
-            <p className="text-indigo-800 font-medium text-center text-sm">Nhận nuôi thú cưng và cho ăn bằng điểm học tập. Xem bạn nhỏ tiến hóa!</p>
-          </motion.div>
+        {/* vibrant CTA band with mascots */}
+        <div className="relative mt-12 flex flex-col items-center gap-4 overflow-hidden rounded-3xl bg-primary p-8 text-center text-primary-foreground shadow-2 sm:p-12">
+          <img src={bearUrl} alt="" className="pointer-events-none absolute -left-3 bottom-0 hidden h-36 w-auto md:block" aria-hidden />
+          <img src={carrotUrl} alt="" className="pointer-events-none absolute -right-2 bottom-0 hidden h-32 w-auto md:block" aria-hidden />
+          <h2 className="relative font-display text-fluid-h1 font-extrabold">Sẵn sàng bắt đầu chưa?</h2>
+          <p className="relative max-w-md font-medium text-white/90">Chọn lớp của em và vào lớp học ngay hôm nay — hoàn toàn miễn phí.</p>
+          <button
+            onClick={handleCTA}
+            style={{ boxShadow: "0 5px 0 0 #A66A00" }}
+            className="relative mt-2 flex items-center justify-center gap-2 rounded-2xl bg-xp px-8 py-4 font-display text-lg font-extrabold text-xp-foreground transition-transform active:translate-y-1"
+          >
+            {grade ? "Vào lớp học" : "Chọn lớp & bắt đầu"} <ArrowRight className="h-5 w-5" aria-hidden />
+          </button>
         </div>
       </section>
 
       {/* ─── Footer ─── */}
-      <footer className="text-center py-8 text-indigo-800 font-bold border-t border-white/30">
-        <p>© 2026 Học tiếng Anh cùng cô Yến · Tích hợp Google Workspace ❤️</p>
+      <footer className="border-t border-border py-8 text-center">
+        <p className="text-sm font-semibold text-muted-foreground">© 2026 Học tiếng Anh cùng cô Yến ❤️</p>
       </footer>
 
       <GradeSelectDialog open={showGradeSelect} onSelect={handleGradeSelected} />

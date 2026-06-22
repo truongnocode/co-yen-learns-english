@@ -42,7 +42,7 @@ const GradePage = () => {
     { key: "grammar", label: "Ngữ pháp", desc: "9 chủ đề ngữ pháp cốt lõi", icon: Zap, fill: "bg-accent2 text-accent2-foreground" },
     { key: "exercises", label: "Đọc hiểu", desc: "7 dạng bài luyện kỹ năng", icon: FileText, fill: "bg-success text-success-foreground" },
     { key: "writing", label: "Viết", desc: "Sắp xếp câu, viết lại, thư/đoạn văn", icon: PenLine, fill: "bg-accent2 text-accent2-foreground" },
-    { key: "tests", label: "Đề thi thử", desc: "15 đề thi vào 10 có chấm điểm", icon: ClipboardList, fill: "bg-accent text-accent-foreground" },
+    { key: "tests", label: "Đề thi thử", desc: "Hàng trăm đề thi vào 10 có chấm điểm", icon: ClipboardList, fill: "bg-accent text-accent-foreground" },
   ];
 
   return (
@@ -136,10 +136,10 @@ const GradePage = () => {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-display font-extrabold text-xl text-accent-foreground">25 Đề Dự Đoán Vào 10 Ninh Bình</h3>
+                  <h3 className="font-display font-extrabold text-xl text-accent-foreground">Đề Dự Đoán Vào 10 Ninh Bình</h3>
                   <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-accent-foreground px-2 py-0.5 rounded-full">New</span>
                 </div>
-                <p className="text-accent-foreground/80 text-sm">Ms Mai Phương · Năm học 2026-2027 · 17 đề đã ra mắt</p>
+                <p className="text-accent-foreground/80 text-sm">Ms Mai Phương · Năm học 2026-2027 · 17 đề</p>
               </div>
               <ArrowLeft className="h-5 w-5 text-accent-foreground/60 rotate-180 flex-shrink-0" />
             </div>

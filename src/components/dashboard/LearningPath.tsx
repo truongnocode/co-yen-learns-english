@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { BookOpen, Brain, MessageCircle, Gift, Pencil, Lock, Star, GraduationCap, ArrowRight, Camera, Gamepad2 } from "lucide-react";
+import { BookOpen, Brain, MessageCircle, Lock, Star, GraduationCap, ArrowRight, Camera, Gamepad2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { gradeConfig } from "@/data/types";
 import { loadSGKData } from "@/data/loader";
@@ -18,9 +18,7 @@ interface Props {
 const stopsTemplate = [
   { key: "vocab", label: "TỪ VỰNG", icon: BookOpen, color: "bg-energy text-energy-foreground", ring: "ring-energy" },
   { key: "grammar", label: "NGỮ PHÁP", icon: Brain, color: "bg-primary text-primary-foreground", ring: "ring-primary" },
-  { key: "practice", label: "LUYỆN TẬP", icon: MessageCircle, color: "bg-success text-success-foreground", ring: "ring-success" },
-  { key: "reward", label: "PHẦN THƯỞNG", icon: Gift, color: "bg-muted text-muted-foreground", ring: "ring-muted" },
-  { key: "spelling", label: "CHÍNH TẢ", icon: Pencil, color: "bg-accent text-accent-foreground", ring: "ring-accent" },
+  { key: "practice", label: "BÀI TẬP", icon: MessageCircle, color: "bg-success text-success-foreground", ring: "ring-success" },
 ];
 
 const LearningPath = ({ progress }: Props) => {
@@ -210,7 +208,6 @@ const LearningPath = ({ progress }: Props) => {
                           if (stop.key === "vocab") navigate(`/grade/${grade}/vocab/${u}`);
                           else if (stop.key === "grammar") navigate(`/grade/${grade}/grammar/${u}`);
                           else if (stop.key === "practice") navigate(`/grade/${grade}/exercises/${u}`);
-                          else if (stop.key === "spelling") navigate(`/grade/${grade}/vocab/${u}`);
                         }}
                         className={`relative w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 shadow-1 ${
                           stopDone
@@ -256,7 +253,26 @@ const LearningPath = ({ progress }: Props) => {
           );
         })}
 
-        {units.length === 0 && (
+        {/* Lớp 10 dùng khuôn ôn thi riêng — đưa thẳng vào hub thay vì lộ trình theo unit */}
+        {grade === 10 && (
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={smooth}
+            onClick={() => navigate("/grade/10")}
+            className="w-full flex items-center gap-4 rounded-2xl bg-primary px-6 py-5 text-left text-primary-foreground shadow-1 hover:shadow-2 transition-shadow"
+          >
+            <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center shrink-0">
+              <GraduationCap className="h-6 w-6" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h3 className="font-display font-extrabold text-lg">Vào khu ôn thi lớp 10</h3>
+              <p className="text-primary-foreground/80 text-sm mt-0.5">Từ vựng · Ngữ pháp · Đọc hiểu · Viết · Hàng trăm đề thi thử</p>
+            </div>
+            <ArrowRight className="h-5 w-5 shrink-0" />
+          </motion.button>
+        )}
+        {grade !== 10 && units.length === 0 && (
           <div className="text-center py-12 text-muted-foreground">
             <p className="font-display font-bold">Đang tải lộ trình...</p>
           </div>
@@ -281,7 +297,7 @@ const LearningPath = ({ progress }: Props) => {
                   <span className="bg-white/20 text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full">🔥 Quan trọng</span>
                 </div>
                 <h3 className="font-display font-extrabold text-lg sm:text-xl">Ôn thi vào lớp 10</h3>
-                <p className="text-primary-foreground/75 text-sm mt-0.5">15 đề thi thử · Từ vựng · Ngữ pháp · Đọc hiểu · Viết</p>
+                <p className="text-primary-foreground/75 text-sm mt-0.5">Hàng trăm đề thi thử · Từ vựng · Ngữ pháp · Đọc hiểu · Viết</p>
               </div>
               <span className="bg-card text-primary font-display font-extrabold text-xs px-5 py-2.5 rounded-full shadow-1 inline-flex items-center gap-1.5 shrink-0 group-hover:gap-2.5 transition-all duration-500">
                 Vào ôn thi <ArrowRight className="h-3.5 w-3.5" />

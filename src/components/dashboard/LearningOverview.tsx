@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BookOpen, Zap, Mic, Award, Flame, Star, Bell, LogOut, Pencil, Camera, X, Check } from "lucide-react";
+import { BookOpen, Zap, Award, Flame, Star, LogOut, Pencil, Camera, X, Check } from "lucide-react";
 import { updateProfile } from "firebase/auth";
 import { useAuth } from "@/contexts/AuthContext";
 import { gradeConfig } from "@/data/types";
@@ -28,9 +28,8 @@ const LearningOverview = ({ progress }: Props) => {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  const vocabPct = Math.min((progress?.wordsLearned?.length || 0) * 5, 100);
-  const grammarPct = Math.min((progress?.quizzesDone || 0) * 10, 100);
-  const speakingPct = Math.min(Math.round(vocabPct * 0.5), 100);
+  const wordsLearned = progress?.wordsLearned?.length || 0;
+  const quizzesDone = progress?.quizzesDone || 0;
 
   const getTitle = () => {
     if (xp >= 2000) return "Chiến binh ngữ pháp";
@@ -38,12 +37,6 @@ const LearningOverview = ({ progress }: Props) => {
     if (xp >= 500) return "Học giả nhí";
     return "Tân binh";
   };
-
-  const skills = [
-    { label: "Từ vựng", icon: BookOpen, pct: vocabPct, color: "bg-primary", trackColor: "bg-primary/20" },
-    { label: "Ngữ pháp", icon: Zap, pct: grammarPct, color: "bg-accent", trackColor: "bg-accent/20" },
-    { label: "Luyện nói", icon: Mic, pct: speakingPct, color: "bg-success", trackColor: "bg-success/20" },
-  ];
 
   const openEdit = () => {
     setEditName(user?.displayName || "");
@@ -101,9 +94,6 @@ const LearningOverview = ({ progress }: Props) => {
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-display font-extrabold text-sm text-foreground">Tổng quan</h2>
           <div className="flex items-center gap-1">
-            <button className="p-1.5 rounded-full hover:bg-muted/60 transition-colors">
-              <Bell className="h-4 w-4 text-muted-foreground" />
-            </button>
             {user && !user.isAnonymous && (
               <motion.button
                 whileHover={{ scale: 1.1 }}
@@ -249,36 +239,25 @@ const LearningOverview = ({ progress }: Props) => {
 
         <div className="h-px bg-border mb-4" />
 
-        {/* Skill progress */}
+        {/* Thành tích thật — chỉ số có nguồn, không bịa */}
         <h3 className="font-display font-extrabold text-xs text-muted-foreground uppercase tracking-wider mb-3">
-          Tiến độ kỹ năng
+          Thành tích
         </h3>
-        <div className="space-y-3">
-          {skills.map((skill, i) => (
-            <div key={i}>
-              <div className="flex items-center justify-between mb-1">
-                <div className="flex items-center gap-2">
-                  <div className={`w-5 h-5 rounded-md ${skill.color} flex items-center justify-center`}>
-                    <skill.icon className="h-2.5 w-2.5 text-white" />
-                  </div>
-                  <span className="text-xs font-bold text-foreground">{skill.label}</span>
-                </div>
-                <span className={`text-xs font-extrabold ${
-                  skill.pct >= 70 ? "text-success" : skill.pct >= 40 ? "text-accent" : "text-streak"
-                }`}>
-                  {skill.pct}%
-                </span>
-              </div>
-              <div className={`w-full h-2 ${skill.trackColor} rounded-full overflow-hidden`}>
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: `${skill.pct}%` }}
-                  transition={{ duration: 1.2, delay: 0.3 + i * 0.15, ease: [0.22, 1, 0.36, 1] }}
-                  className={`h-full ${skill.color} rounded-full`}
-                />
-              </div>
+        <div className="grid grid-cols-2 gap-2">
+          <div className="bg-muted/40 rounded-xl px-3 py-3 text-center">
+            <div className="flex items-center justify-center gap-1.5 mb-0.5">
+              <BookOpen className="h-4 w-4 text-primary" />
+              <span className="font-display font-extrabold text-lg text-foreground">{wordsLearned}</span>
             </div>
-          ))}
+            <span className="text-[10px] font-bold text-muted-foreground block">Từ đã học</span>
+          </div>
+          <div className="bg-muted/40 rounded-xl px-3 py-3 text-center">
+            <div className="flex items-center justify-center gap-1.5 mb-0.5">
+              <Zap className="h-4 w-4 text-accent" />
+              <span className="font-display font-extrabold text-lg text-foreground">{quizzesDone}</span>
+            </div>
+            <span className="text-[10px] font-bold text-muted-foreground block">Bài đã làm</span>
+          </div>
         </div>
       </div>
     </motion.div>

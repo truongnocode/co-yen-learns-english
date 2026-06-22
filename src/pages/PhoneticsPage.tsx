@@ -116,14 +116,14 @@ const PhoneticsPage = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Quay lại
           </button>
           {!finished && (
-            <span className="ml-auto text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">
+            <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
               {current + 1}/{questions.length}
             </span>
           )}
@@ -136,18 +136,18 @@ const PhoneticsPage = () => {
 
         {finished ? (
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 text-center shadow-xl border border-border/30">
+            className="bg-card rounded-2xl p-8 text-center shadow-2 border border-border">
             <span className="text-6xl block mb-4">{score >= questions.length * 0.7 ? "🔊🎉" : "🔊📝"}</span>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">{score}/{questions.length} đúng</h2>
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
               onClick={() => { setCurrent(0); setSelected(null); setScore(0); setFinished(false); }}
-              className="gradient-primary text-white rounded-2xl px-8 py-3 font-display font-bold inline-flex items-center gap-2 shadow-lg mt-4">
+              className="btn-press bg-primary text-primary-foreground rounded-2xl px-8 py-3 font-display font-extrabold inline-flex items-center gap-2 shadow-1 mt-4">
               <RotateCcw className="h-4 w-4" /> Luyện lại
             </motion.button>
           </motion.div>
         ) : q ? (
           <div>
-            <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-4 mb-4 shadow-lg border border-border/30">
+            <div className="bg-card rounded-2xl p-4 mb-4 shadow-1 border border-border">
               <span className="text-xs text-primary font-bold uppercase tracking-wider">
                 {q.type === "stress" ? "Chọn từ có trọng âm khác" : "Chọn từ có âm đọc khác"}
               </span>
@@ -164,10 +164,10 @@ const PhoneticsPage = () => {
                     onClick={() => handleSelect(i)}
                     className={`rounded-2xl p-3 sm:p-4 font-bold text-center border transition-all ${
                       selected !== null
-                        ? isCorrect ? "bg-emerald-100 border-emerald-400 text-emerald-700" :
-                          isSelected ? "bg-red-100 border-red-400 text-red-700" :
-                          "bg-card/60 border-border/30 text-muted-foreground"
-                        : "bg-card/80 border-border/30 text-foreground hover:border-primary/40 hover:shadow-md"
+                        ? isCorrect ? "bg-success/10 border-success/40 text-success" :
+                          isSelected ? "bg-destructive/10 border-destructive/40 text-destructive" :
+                          "bg-card border-border text-muted-foreground"
+                        : "bg-card border-border text-foreground hover:border-primary/40 hover:shadow-2"
                     }`}
                   >
                     <span className="text-xs text-muted-foreground block mb-1">{String.fromCharCode(65 + i)}.</span>

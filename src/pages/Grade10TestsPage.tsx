@@ -122,7 +122,7 @@ const Grade10TestsPage = () => {
         <div className="max-w-5xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-6">
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(activeCollection ? "/grade/10/tests" : "/grade/10")}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <ArrowLeft className="h-5 w-5" />
             </motion.button>
             <div className="flex-1">
@@ -130,17 +130,16 @@ const Grade10TestsPage = () => {
               <p className="text-xs text-muted-foreground">{activeCollection ? activeCollection.title : "Đề thi thử"}</p>
             </div>
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <Home className="h-5 w-5" />
             </motion.button>
           </div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}
-            className="gradient-orange-card text-white rounded-3xl p-6 mb-6 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
+            className="bg-accent text-accent-foreground rounded-2xl p-6 mb-6 relative overflow-hidden shadow-2">
             <ClipboardList className="h-8 w-8 mb-2 opacity-80 relative z-10" />
             <h1 className="font-display font-extrabold text-2xl relative z-10">{activeCollection ? activeCollection.title : "Đề thi thử vào 10"}</h1>
-            <p className="text-white/70 text-sm relative z-10">
+            <p className="text-accent-foreground/80 text-sm relative z-10">
               {activeCollection
                 ? `${activeCollection.subtitle} · ${allTests.length} đề`
                 : `${allTests.length} đề thi từ các trường THCS`}
@@ -155,7 +154,7 @@ const Grade10TestsPage = () => {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Tìm theo tên trường, xã, phường, hoặc mã đề..."
-              className="w-full bg-card/80 backdrop-blur-xl border border-border/30 rounded-2xl pl-11 pr-11 py-3 text-sm text-foreground shadow-lg focus:outline-none focus:border-primary transition-colors"
+              className="w-full bg-card border border-border rounded-2xl pl-11 pr-11 py-3 text-base text-foreground shadow-1 focus:outline-none focus:border-primary transition-colors"
             />
             {query && (
               <button
@@ -197,9 +196,9 @@ const Grade10TestsPage = () => {
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setSelectedTest(key)}
-                    className="bg-card/80 backdrop-blur-xl rounded-2xl p-4 text-left border border-border/30 shadow-md hover:shadow-lg hover:border-primary/30 transition-all flex items-start gap-3"
+                    className="bg-card rounded-2xl p-4 text-left border border-border shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2 hover:border-primary/30 flex items-start gap-3"
                   >
-                    <div className="shrink-0 w-11 h-11 rounded-xl gradient-orange-card text-white flex items-center justify-center font-display font-extrabold text-xs">
+                    <div className="shrink-0 w-11 h-11 rounded-xl bg-accent text-accent-foreground flex items-center justify-center font-display font-extrabold text-xs">
                       #{num}
                     </div>
                     <div className="flex-1 min-w-0">
@@ -222,7 +221,7 @@ const Grade10TestsPage = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setPage((p) => Math.max(1, p - 1))}
                 disabled={pageSafe === 1}
-                className="p-2 rounded-xl bg-card/80 backdrop-blur-xl shadow-md border border-border/30 disabled:opacity-40 disabled:cursor-not-allowed"
+                className="p-2 rounded-xl bg-card shadow-1 border border-border disabled:opacity-40 disabled:cursor-not-allowed"
                 aria-label="Trang trước"
               >
                 <ChevronLeft className="h-4 w-4 text-foreground" />
@@ -237,10 +236,10 @@ const Grade10TestsPage = () => {
                     <motion.button
                       whileTap={{ scale: 0.95 }}
                       onClick={() => setPage(n)}
-                      className={`min-w-[1.75rem] h-8 px-2 text-xs sm:min-w-[2.25rem] sm:h-9 sm:px-3 sm:text-sm rounded-xl shadow-md border font-display font-bold transition-colors ${
+                      className={`min-w-[1.75rem] h-8 px-2 text-xs sm:min-w-[2.25rem] sm:h-9 sm:px-3 sm:text-sm rounded-xl shadow-1 border font-display font-bold transition-colors ${
                         n === pageSafe
-                          ? "gradient-primary text-white border-transparent"
-                          : "bg-card/80 backdrop-blur-xl border-border/30 text-foreground hover:border-primary/30"
+                          ? "bg-primary text-primary-foreground border-transparent"
+                          : "bg-card border-border text-foreground hover:border-primary/30"
                       }`}
                     >
                       {n}
@@ -252,7 +251,7 @@ const Grade10TestsPage = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
                 disabled={pageSafe === totalPages}
-                className="p-2 rounded-xl bg-card/80 backdrop-blur-xl shadow-md border border-border/30 disabled:opacity-40 disabled:cursor-not-allowed"
+                className="p-2 rounded-xl bg-card shadow-1 border border-border disabled:opacity-40 disabled:cursor-not-allowed"
                 aria-label="Trang sau"
               >
                 <ChevronRight className="h-4 w-4 text-foreground" />
@@ -346,7 +345,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
       <PageShell>
         <div className="max-w-2xl mx-auto px-5 pt-28 pb-20 text-center">
           <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30">
+            className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">Part A & B hoàn thành!</h2>
             <p className="text-4xl font-display font-bold text-primary my-4">{score}/{totalMCQ}</p>
             {reviewMode === "after" && (
@@ -363,7 +362,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
             )}
             <p className="text-muted-foreground text-sm mb-6 mt-4">Tiếp tục với Part C (Viết)</p>
             <motion.button whileTap={{ scale: 0.95 }} onClick={() => { setShowPartC(true); setPartCAnswers(new Array(partCQuestions.length).fill("")); }}
-              className="gradient-accent text-white px-8 py-3 rounded-2xl font-display font-bold">Làm Part C →</motion.button>
+              className="bg-accent text-accent-foreground px-8 py-3 rounded-2xl font-display font-extrabold">Làm Part C →</motion.button>
           </motion.div>
         </div>
       </PageShell>
@@ -376,14 +375,14 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
         <div className="max-w-2xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-5">
             <motion.button whileTap={{ scale: 0.9 }} onClick={onBack}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <ArrowLeft className="h-5 w-5" />
             </motion.button>
             <p className="font-display font-extrabold text-sm text-foreground flex-1">Part C: Viết</p>
           </div>
           {partCSubmitted ? (
             <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-              className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30 text-center">
+              className="bg-card rounded-2xl p-8 shadow-2 border border-border text-center">
               <div className="text-5xl mb-3">📝</div>
               <h3 className="font-display font-extrabold text-2xl text-foreground mb-4">Kết quả tổng hợp</h3>
               <p className="text-muted-foreground text-sm">Trắc nghiệm: <span className="font-bold text-foreground">{score}/{totalMCQ}</span></p>
@@ -394,16 +393,16 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
                 <span className="font-display font-extrabold text-lg text-energy">Điểm: {(((score + partCScore) / (totalMCQ + partCQuestions.length)) * 10).toFixed(1)}/10</span>
               </div>
               <motion.button whileTap={{ scale: 0.95 }} onClick={onBack}
-                className="gradient-primary text-white px-8 py-3 rounded-2xl font-display font-bold">Chọn đề khác</motion.button>
+                className="bg-primary text-primary-foreground px-8 py-3 rounded-2xl font-display font-extrabold">Chọn đề khác</motion.button>
             </motion.div>
           ) : (
             <div className="flex flex-col gap-4">
               {partCQuestions.map((pq: Grade10FillIn, i: number) => (
-                <div key={i} className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 shadow-lg border border-border/30">
-                  <p className="font-medium text-foreground text-sm mb-3 whitespace-pre-line">{pq.q}</p>
+                <div key={i} className="bg-card rounded-2xl p-5 shadow-1 border border-border">
+                  <p className="font-medium text-foreground text-base mb-3 whitespace-pre-line">{pq.q}</p>
                   <input value={partCAnswers[i] || ""} onChange={e => { const a = [...partCAnswers]; a[i] = e.target.value; setPartCAnswers(a); }}
                     placeholder="Nhập đáp án..."
-                    className="w-full bg-card/80 border-2 border-border/30 rounded-xl px-4 py-3 text-foreground text-sm focus:outline-none focus:border-primary transition-colors" />
+                    className="w-full bg-card border-2 border-border rounded-xl px-4 py-3 text-foreground text-base focus:outline-none focus:border-primary transition-colors" />
                 </div>
               ))}
               <motion.button whileTap={{ scale: 0.95 }} onClick={() => {
@@ -412,7 +411,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
                   if (pq.answer?.some((a: string) => matchAnswer(partCAnswers[i] || "", [a]))) s++;
                 });
                 setPartCScore(s); setPartCSubmitted(true);
-              }} className="gradient-primary text-white py-3.5 rounded-2xl font-display font-bold text-sm">Nộp bài</motion.button>
+              }} className="bg-primary text-primary-foreground py-3.5 rounded-2xl font-display font-extrabold text-sm btn-press">Nộp bài</motion.button>
             </div>
           )}
         </div>
@@ -426,7 +425,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
       <PageShell>
         <div className="max-w-lg mx-auto px-5 pt-28 pb-20 text-center">
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30">
+            className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">{test.title}</h2>
             <p className="text-4xl font-display font-bold text-primary my-4">{score}/{totalMCQ}</p>
@@ -447,7 +446,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
               />
             )}
             <motion.button whileTap={{ scale: 0.95 }} onClick={onBack}
-              className="gradient-primary text-white px-8 py-3 rounded-2xl font-display font-bold mt-4">Chọn đề khác</motion.button>
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-2xl font-display font-extrabold mt-4">Chọn đề khác</motion.button>
           </motion.div>
         </div>
       </PageShell>
@@ -459,7 +458,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
       <div className="max-w-2xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-5">
           <motion.button whileTap={{ scale: 0.9 }} onClick={onBack}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
           <div className="flex-1">
@@ -485,7 +484,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
         <p className="text-xs text-muted-foreground text-right mb-4">Câu {current + 1}/{totalMCQ}</p>
 
         {q.passage && (
-          <div className="bg-card/60 backdrop-blur-xl rounded-2xl p-4 mb-4 text-sm text-foreground leading-relaxed max-h-64 overflow-y-auto border border-border/20 whitespace-pre-line">
+          <div className="bg-card rounded-2xl p-4 mb-4 text-base text-foreground leading-relaxed max-h-64 overflow-y-auto border border-border shadow-1 whitespace-pre-line">
             {(() => {
               // Check if question references a word in the passage (e.g., 'The word "their" refers to...')
               const refMatch = q.q.match(/[Tt]he\s+word\s+"([^"]+)"/);
@@ -506,21 +505,21 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
         {q.sign && <SignVisual sign={q.sign} />}
 
         <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
-          className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
+          className="bg-card rounded-2xl p-6 shadow-2 border border-border">
           <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed">{q.q}</p>
           <div className="flex flex-col gap-2.5">
             {q.opts.map((opt, idx) => {
               let cls = "bg-secondary/50 border-2 border-transparent text-foreground hover:border-primary/30";
               if (reviewMode === "after") {
                 // "after" mode: just highlight selected in primary color
-                if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-md";
+                if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-1";
               } else {
                 // "instant" mode: show correct/incorrect after submit
                 if (submitted) {
                   if (idx === q.ans) cls = "bg-success/10 border-2 border-success text-success";
                   else if (idx === selected && idx !== q.ans) cls = "bg-destructive/10 border-2 border-destructive text-destructive";
                   else cls = "bg-secondary/30 border-2 border-transparent text-muted-foreground opacity-50";
-                } else if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-md";
+                } else if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-1";
               }
               return (
                 <button key={idx} onClick={() => {
@@ -547,10 +546,10 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
                   setUserAnswers(prev => { const n = [...prev]; n[current] = selected; return n; });
                   if (selected === q.ans) setScore(s => s + 1);
                 }} disabled={selected === null}
-                  className={`w-full py-3.5 rounded-2xl font-display font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-white"}`}>Kiểm tra</button>
+                  className={`w-full py-3.5 rounded-2xl font-display font-extrabold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "bg-primary text-primary-foreground"}`}>Kiểm tra</button>
               ) : (
                 <button onClick={() => { if (current < totalMCQ - 1) { setCurrent(c => c + 1); setSelected(null); setSubmitted(false); } else setFinished(true); }}
-                  className="w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
+                  className="w-full py-3.5 rounded-2xl font-display font-extrabold text-sm bg-accent text-accent-foreground">
                   {current < totalMCQ - 1 ? "Câu tiếp →" : "Hoàn thành"}
                 </button>
               )}

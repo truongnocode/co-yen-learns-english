@@ -34,11 +34,11 @@ const GradePage = () => {
   const isGrade10 = grade === 10;
 
   const grade10Sections = [
-    { key: "vocab", label: "Từ vựng", desc: "11 chủ đề từ vựng trọng tâm", icon: BookOpen, gradient: "gradient-primary" },
-    { key: "grammar", label: "Ngữ pháp", desc: "9 chủ đề ngữ pháp cốt lõi", icon: Zap, gradient: "gradient-cool" },
-    { key: "exercises", label: "Đọc hiểu", desc: "7 dạng bài luyện kỹ năng", icon: FileText, gradient: "gradient-accent" },
-    { key: "writing", label: "Viết", desc: "Sắp xếp câu, viết lại, thư/đoạn văn", icon: PenLine, gradient: "gradient-purple-card" },
-    { key: "tests", label: "Đề thi thử", desc: "15 đề thi vào 10 có chấm điểm", icon: ClipboardList, gradient: "gradient-orange-card" },
+    { key: "vocab", label: "Từ vựng", desc: "11 chủ đề từ vựng trọng tâm", icon: BookOpen, fill: "bg-primary text-primary-foreground" },
+    { key: "grammar", label: "Ngữ pháp", desc: "9 chủ đề ngữ pháp cốt lõi", icon: Zap, fill: "bg-accent2 text-accent2-foreground" },
+    { key: "exercises", label: "Đọc hiểu", desc: "7 dạng bài luyện kỹ năng", icon: FileText, fill: "bg-success text-success-foreground" },
+    { key: "writing", label: "Viết", desc: "Sắp xếp câu, viết lại, thư/đoạn văn", icon: PenLine, fill: "bg-accent2 text-accent2-foreground" },
+    { key: "tests", label: "Đề thi thử", desc: "15 đề thi vào 10 có chấm điểm", icon: ClipboardList, fill: "bg-accent text-accent-foreground" },
   ];
 
   return (
@@ -46,7 +46,7 @@ const GradePage = () => {
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-6">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
           <button onClick={() => navigate("/grades")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
@@ -60,18 +60,15 @@ const GradePage = () => {
             initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={smooth}
-            className="relative rounded-3xl overflow-hidden shadow-xl mb-8"
+            className="relative rounded-2xl overflow-hidden bg-primary text-primary-foreground shadow-2 mb-8"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[hsl(220,85%,50%)] via-[hsl(210,82%,55%)] to-[hsl(200,80%,58%)]" />
-            <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
             <div className="relative z-10 p-8">
-              <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm rounded-full px-4 py-1.5 mb-3">
-                <GraduationCap className="h-4 w-4 text-white" />
-                <span className="text-xs font-extrabold text-white uppercase tracking-wider">Ôn thi vào THPT</span>
+              <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 mb-3">
+                <GraduationCap className="h-4 w-4 text-primary-foreground" />
+                <span className="text-xs font-extrabold text-primary-foreground uppercase tracking-wider">Ôn thi vào THPT</span>
               </div>
-              <h1 className="font-display font-extrabold text-3xl text-white mb-2">Chinh phục kỳ thi vào lớp 10 🏆</h1>
-              <p className="text-white/75 text-sm max-w-lg">Hệ thống ôn luyện toàn diện: từ vựng, ngữ pháp, đọc hiểu, viết và đề thi thử có chấm điểm.</p>
+              <h1 className="font-display font-extrabold text-3xl text-primary-foreground mb-2">Chinh phục kỳ thi vào lớp 10 🏆</h1>
+              <p className="text-primary-foreground/80 text-sm max-w-lg">Hệ thống ôn luyện toàn diện: từ vựng, ngữ pháp, đọc hiểu, viết và đề thi thử có chấm điểm.</p>
             </div>
           </motion.div>
         )}
@@ -81,12 +78,11 @@ const GradePage = () => {
             initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={smooth}
-            className={`bg-gradient-to-r ${cfg.gradient} text-white rounded-3xl p-4 sm:p-8 relative overflow-hidden shadow-xl mb-8`}
+            className="bg-primary text-primary-foreground rounded-2xl p-4 sm:p-8 relative overflow-hidden shadow-2 mb-8"
           >
-            <div className="absolute top-4 right-6 w-20 h-20 rounded-full bg-white/10 float-animation" />
             <span className="text-4xl">{cfg.emoji}</span>
             <h1 className="font-display font-extrabold text-3xl mt-2">{cfg.label}</h1>
-            <p className="text-white/80 text-sm">
+            <p className="text-primary-foreground/80 text-sm">
               {data ? `${Object.keys(data.units).length} bài học · SGK Global Success` : "..."}
             </p>
           </motion.div>
@@ -111,12 +107,11 @@ const GradePage = () => {
                 whileHover={{ scale: 1.03, y: -3 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => navigate(`/grade/10/${sec.key}`)}
-                className={`${sec.gradient} text-white rounded-3xl p-6 text-left relative overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500`}
+                className={`${sec.fill} rounded-2xl p-6 text-left relative overflow-hidden shadow-1 hover:shadow-2 transition-shadow duration-500`}
               >
-                <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-2xl" />
                 <sec.icon className="h-8 w-8 mb-3 opacity-80 relative z-10" />
                 <h3 className="font-display font-extrabold text-xl mb-1 relative z-10">{sec.label}</h3>
-                <p className="text-white/70 text-sm relative z-10">{sec.desc}</p>
+                <p className="text-sm opacity-80 relative z-10">{sec.desc}</p>
               </motion.button>
             ))}
           </div>
@@ -129,23 +124,20 @@ const GradePage = () => {
             whileHover={{ scale: 1.02, y: -3 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => navigate("/grade/10/tests/du-doan-ninh-binh")}
-            className="w-full mt-4 relative rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500 text-left"
+            className="w-full mt-4 relative rounded-2xl overflow-hidden bg-accent text-accent-foreground shadow-1 hover:shadow-2 transition-shadow duration-500 text-left"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-rose-500 via-orange-500 to-amber-500" />
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
             <div className="relative z-10 p-6 flex items-center gap-5">
-              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
-                <Sparkles className="h-7 w-7 text-white" />
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center">
+                <Sparkles className="h-7 w-7 text-accent-foreground" />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-display font-extrabold text-xl text-white">25 Đề Dự Đoán Vào 10 Ninh Bình</h3>
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">New</span>
+                  <h3 className="font-display font-extrabold text-xl text-accent-foreground">25 Đề Dự Đoán Vào 10 Ninh Bình</h3>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-accent-foreground px-2 py-0.5 rounded-full">New</span>
                 </div>
-                <p className="text-white/75 text-sm">Ms Mai Phương · Năm học 2026-2027 · 17 đề đã ra mắt</p>
+                <p className="text-accent-foreground/80 text-sm">Ms Mai Phương · Năm học 2026-2027 · 17 đề đã ra mắt</p>
               </div>
-              <ArrowLeft className="h-5 w-5 text-white/50 rotate-180 flex-shrink-0" />
+              <ArrowLeft className="h-5 w-5 text-accent-foreground/60 rotate-180 flex-shrink-0" />
             </div>
           </motion.button>
 
@@ -157,23 +149,20 @@ const GradePage = () => {
             whileHover={{ scale: 1.02, y: -3 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => navigate(`/grade/${grade}/camera`)}
-            className="w-full mt-4 relative rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-500 text-left"
+            className="w-full mt-4 relative rounded-2xl overflow-hidden bg-accent2 text-accent2-foreground shadow-1 hover:shadow-2 transition-shadow duration-500 text-left"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500" />
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 blur-2xl" />
             <div className="relative z-10 p-6 flex items-center gap-5">
-              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
-                <Camera className="h-7 w-7 text-white" />
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center">
+                <Camera className="h-7 w-7 text-accent2-foreground" />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <h3 className="font-display font-extrabold text-xl text-white">Camera tương tác</h3>
-                  <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-white px-2 py-0.5 rounded-full">New</span>
+                  <h3 className="font-display font-extrabold text-xl text-accent2-foreground">Camera tương tác</h3>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider bg-white/20 text-accent2-foreground px-2 py-0.5 rounded-full">New</span>
                 </div>
-                <p className="text-white/70 text-sm">Trả lời câu hỏi bằng cử chỉ cơ thể qua webcam — vừa học vừa vận động!</p>
+                <p className="text-accent2-foreground/80 text-sm">Trả lời câu hỏi bằng cử chỉ cơ thể qua webcam — vừa học vừa vận động!</p>
               </div>
-              <ArrowLeft className="h-5 w-5 text-white/50 rotate-180 flex-shrink-0" />
+              <ArrowLeft className="h-5 w-5 text-accent2-foreground/60 rotate-180 flex-shrink-0" />
             </div>
           </motion.button>
           </>
@@ -184,31 +173,31 @@ const GradePage = () => {
                 initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{ ...smooth, delay: 0.1 + i * 0.05 }}
-                className="bg-card/80 backdrop-blur-xl rounded-3xl p-5 shadow-lg border border-border/30 hover:shadow-xl transition-shadow duration-500"
+                className="bg-card border border-border rounded-2xl p-5 shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2 duration-500"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <h3 className="font-display font-extrabold text-lg text-foreground">Unit {unitKey}</h3>
                     <p className="text-sm text-muted-foreground">{unit.title}</p>
                   </div>
-                  <span className="text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold shadow-sm">
+                  <span className="text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
                     {unit.vocabulary.length} từ
                   </span>
                 </div>
                 <div className="flex gap-2.5 flex-wrap">
                   <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9 }}
                     onClick={() => navigate(`/grade/${grade}/vocab/${unitKey}`)}
-                    className="gradient-accent text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md break-words">
+                    className="bg-accent text-accent-foreground flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-1 break-words">
                     <BookOpen className="h-5 w-5" /> Từ vựng
                   </motion.button>
                   <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9 }}
                     onClick={() => navigate(`/grade/${grade}/grammar/${unitKey}`)}
-                    className="gradient-primary text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md break-words">
+                    className="bg-primary text-primary-foreground flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-1 break-words">
                     <Zap className="h-5 w-5" /> Ngữ pháp
                   </motion.button>
                   <motion.button whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.9 }}
                     onClick={() => navigate(`/grade/${grade}/exercises/${unitKey}`)}
-                    className="gradient-success text-white flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-md break-words">
+                    className="bg-success text-success-foreground flex-1 min-w-0 rounded-2xl py-3 px-2 flex flex-col items-center gap-1.5 text-xs font-bold font-display shadow-1 break-words">
                     <FileText className="h-5 w-5" /> Bài tập
                   </motion.button>
                 </div>

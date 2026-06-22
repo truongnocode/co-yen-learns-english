@@ -19,8 +19,8 @@ const GradeSelectDialog = ({ open, onSelect }: GradeSelectDialogProps) => {
 
   return (
     <Dialog open={open}>
-      <DialogContent className="max-w-[92vw] sm:max-w-md border-none bg-card/95 backdrop-blur-2xl shadow-2xl rounded-3xl p-0 overflow-hidden">
-        <div className="gradient-purple-card p-6 pb-8 text-white text-center">
+      <DialogContent className="max-w-[92vw] sm:max-w-md border border-border bg-card shadow-2 rounded-2xl p-0 overflow-hidden">
+        <div className="bg-accent2 text-accent2-foreground p-6 pb-8 text-center">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -53,10 +53,10 @@ const GradeSelectDialog = ({ open, onSelect }: GradeSelectDialogProps) => {
                   whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.92 }}
                   onClick={() => setSelected(grade)}
-                  className={`flex flex-col items-center gap-1.5 p-3 rounded-2xl transition-all duration-300 border-2 ${
+                  className={`flex flex-col items-center gap-1.5 p-3 rounded-xl transition-all border-2 ${
                     isSelected
-                      ? "border-primary bg-primary/10 shadow-lg"
-                      : "border-transparent bg-muted/50 hover:bg-muted"
+                      ? "border-primary bg-primary/10 shadow-1"
+                      : "border-border bg-card hover:bg-muted"
                   }`}
                 >
                   <span className="text-2xl">{cfg.emoji}</span>
@@ -77,7 +77,7 @@ const GradeSelectDialog = ({ open, onSelect }: GradeSelectDialogProps) => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => onSelect(selected)}
-                className="w-full gradient-purple-card text-white rounded-2xl py-4 font-display font-extrabold text-lg shadow-lg"
+                className="w-full bg-primary text-primary-foreground rounded-2xl py-4 font-display font-extrabold text-lg btn-press"
               >
                 ✨ Bắt đầu học {gradeConfig[selected].label}
               </motion.button>

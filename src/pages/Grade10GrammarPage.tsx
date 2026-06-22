@@ -21,7 +21,7 @@ const ResultCard = ({ score, total, onRetry, children }: { score: number; total:
   const xp = score * 10;
   return (
     <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
-      className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30 text-center">
+      className="bg-card rounded-2xl p-8 shadow-2 border border-border text-center">
       <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
       <div className="grid grid-cols-2 gap-3 mb-4 max-w-xs mx-auto">
         <div className="bg-success/10 border border-success/20 rounded-2xl p-3 text-center">
@@ -33,13 +33,13 @@ const ResultCard = ({ score, total, onRetry, children }: { score: number; total:
           <span className="text-xs font-bold text-destructive block">Sai</span>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3 mb-6 max-w-xs mx-auto">
-        <Trophy className="h-5 w-5 text-energy" />
-        <span className="font-display font-extrabold text-lg text-energy">+{xp} XP</span>
+      <div className="flex items-center justify-center gap-2 bg-xp/10 border border-xp/20 rounded-2xl p-3 mb-6 max-w-xs mx-auto">
+        <Trophy className="h-5 w-5 text-xp" />
+        <span className="font-display font-extrabold text-lg text-xp">+{xp} XP</span>
       </div>
       {children}
       <motion.button whileTap={{ scale: 0.95 }} onClick={onRetry}
-        className="gradient-primary text-white px-6 py-3 rounded-2xl font-display font-bold text-sm mt-4">Làm lại</motion.button>
+        className="bg-primary text-primary-foreground px-6 py-3 rounded-2xl font-display font-extrabold text-sm mt-4">Làm lại</motion.button>
     </motion.div>
   );
 };
@@ -84,7 +84,7 @@ const Grade10GrammarPage = () => {
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-6">
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <ArrowLeft className="h-5 w-5" />
             </motion.button>
             <div className="flex-1">
@@ -92,17 +92,16 @@ const Grade10GrammarPage = () => {
               <p className="text-xs text-muted-foreground">Ngữ pháp</p>
             </div>
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <Home className="h-5 w-5" />
             </motion.button>
           </div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}
-            className="gradient-cool text-white rounded-3xl p-6 mb-6 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
-            <Zap className="h-8 w-8 mb-2 opacity-80 relative z-10" />
-            <h1 className="font-display font-extrabold text-2xl relative z-10">Ngữ pháp Lớp 10</h1>
-            <p className="text-white/70 text-sm relative z-10">{topics.length} chủ đề</p>
+            className="bg-accent2 text-accent2-foreground rounded-2xl p-6 mb-6 shadow-2">
+            <Zap className="h-8 w-8 mb-2 opacity-80" />
+            <h1 className="font-display font-extrabold text-2xl">Ngữ pháp Lớp 10</h1>
+            <p className="text-accent2-foreground/80 text-sm">{topics.length} chủ đề</p>
           </motion.div>
 
           <div className="flex flex-col gap-3">
@@ -115,7 +114,7 @@ const Grade10GrammarPage = () => {
                   transition={{ ...smooth, delay: i * 0.04 }}
                   whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}
                   onClick={() => setSelectedTopic(key)}
-                  className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 text-left border border-border/30 shadow-lg hover:shadow-xl transition-all"
+                  className="bg-card rounded-2xl p-5 text-left border border-border shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2"
                 >
                   <h3 className="font-display font-bold text-foreground">{topic.name}</h3>
                   <div className="flex gap-2 mt-2 flex-wrap">
@@ -140,7 +139,7 @@ const Grade10GrammarPage = () => {
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-5">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectedTopic(null)}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
           <p className="font-display font-extrabold text-sm text-foreground flex-1">{topic.name}</p>
@@ -157,11 +156,11 @@ const Grade10GrammarPage = () => {
         />
 
         <Tabs defaultValue={Object.keys(topic.exercises)[0]} className="w-full">
-          <TabsList className="w-full flex bg-card/60 backdrop-blur-xl rounded-2xl p-1 mb-4 flex-wrap h-auto gap-1 border border-border/30">
-            {topic.exercises.mcq && <TabsTrigger value="mcq" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-primary data-[state=active]:text-white">Trắc nghiệm</TabsTrigger>}
-            {topic.exercises.rearrange && <TabsTrigger value="rearrange" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-accent data-[state=active]:text-white">Sắp xếp từ</TabsTrigger>}
-            {topic.exercises.completion && <TabsTrigger value="completion" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-success data-[state=active]:text-white">Điền từ</TabsTrigger>}
-            {topic.exercises.rewrite && <TabsTrigger value="rewrite" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:gradient-cool data-[state=active]:text-white">Viết lại câu</TabsTrigger>}
+          <TabsList className="w-full flex bg-card rounded-2xl p-1 mb-4 flex-wrap h-auto gap-1 border border-border shadow-1">
+            {topic.exercises.mcq && <TabsTrigger value="mcq" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Trắc nghiệm</TabsTrigger>}
+            {topic.exercises.rearrange && <TabsTrigger value="rearrange" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">Sắp xếp từ</TabsTrigger>}
+            {topic.exercises.completion && <TabsTrigger value="completion" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:bg-success data-[state=active]:text-success-foreground">Điền từ</TabsTrigger>}
+            {topic.exercises.rewrite && <TabsTrigger value="rewrite" className="flex-1 rounded-xl text-xs font-bold py-2 data-[state=active]:bg-accent2 data-[state=active]:text-accent2-foreground">Viết lại câu</TabsTrigger>}
           </TabsList>
           {topic.exercises.mcq && <TabsContent value="mcq"><MCQSection questions={topic.exercises.mcq.questions} instruction={topic.exercises.mcq.instruction} reviewMode={reviewMode} onStartTimer={handleStartTimer} /></TabsContent>}
           {topic.exercises.rearrange && <TabsContent value="rearrange"><TextInputSection questions={topic.exercises.rearrange.questions} instruction={topic.exercises.rearrange.instruction} reviewMode={reviewMode} onStartTimer={handleStartTimer} /></TabsContent>}
@@ -254,19 +253,19 @@ const MCQSection = ({ questions, instruction, reviewMode, onStartTimer }: { ques
       </div>
       <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
       <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
-        className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
+        className="bg-card rounded-2xl p-6 shadow-1 border border-border">
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed">{q.q}</p>
         <div className="flex flex-col gap-2.5">
           {q.opts.map((opt, idx) => {
             let cls = "bg-secondary/50 border-2 border-transparent text-foreground hover:border-primary/30";
             if (reviewMode === "after") {
-              if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-md";
+              if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-1";
             } else {
               if (submitted) {
                 if (idx === q.ans) cls = "bg-success/10 border-2 border-success text-success";
                 else if (idx === selected && idx !== q.ans) cls = "bg-destructive/10 border-2 border-destructive text-destructive";
                 else cls = "bg-secondary/30 border-2 border-transparent text-muted-foreground opacity-50";
-              } else if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-md";
+              } else if (selected === idx) cls = "bg-primary/10 border-2 border-primary text-primary shadow-1";
             }
             return (
               <button key={idx} onClick={() => {
@@ -292,10 +291,10 @@ const MCQSection = ({ questions, instruction, reviewMode, onStartTimer }: { ques
                 setUserAnswers(prev => { const n = [...prev]; n[current] = selected; return n; });
                 if (selected === q.ans) setScore(s => s + 1);
               }} disabled={selected === null}
-                className={`w-full py-3.5 rounded-2xl font-display font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-white"}`}>Kiểm tra</button>
+                className={`w-full py-3.5 rounded-2xl font-display font-extrabold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "bg-primary text-primary-foreground"}`}>Kiểm tra</button>
             ) : (
               <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setSelected(null); setSubmitted(false); } else setFinished(true); }}
-                className="w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
+                className="w-full py-3.5 rounded-2xl font-display font-extrabold text-sm bg-accent text-accent-foreground">
                 {current < questions.length - 1 ? "Câu tiếp →" : "Xem kết quả"}
               </button>
             )}
@@ -385,26 +384,26 @@ const TextInputSection = ({ questions, instruction, reviewMode, onStartTimer }: 
               {questions.map((qq, i) => {
                 const ua = userAnswers[i];
                 return (
-                  <div key={i} className={`bg-card/80 rounded-xl p-3 border text-sm ${
-                    !ua ? "border-amber-200 dark:border-amber-800/40"
-                      : ua.correct ? "border-emerald-200 dark:border-emerald-800/40"
-                      : "border-red-200 dark:border-red-800/40"
+                  <div key={i} className={`bg-card rounded-xl p-3 border text-sm ${
+                    !ua ? "border-warning/30"
+                      : ua.correct ? "border-success/30"
+                      : "border-destructive/30"
                   }`}>
                     <p className="font-medium text-foreground mb-1">Câu {i + 1}: {qq.q}</p>
                     {ua ? (
                       <div className="flex items-center gap-2">
                         {ua.correct
-                          ? <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-                          : <XCircle className="h-3.5 w-3.5 text-red-500 shrink-0" />}
-                        <span className={ua.correct ? "text-emerald-600 dark:text-emerald-400" : "text-red-600 dark:text-red-400 line-through"}>
+                          ? <CheckCircle2 className="h-3.5 w-3.5 text-success shrink-0" />
+                          : <XCircle className="h-3.5 w-3.5 text-destructive shrink-0" />}
+                        <span className={ua.correct ? "text-success" : "text-destructive line-through"}>
                           {ua.input}
                         </span>
                         {!ua.correct && (
-                          <span className="text-emerald-600 dark:text-emerald-400 font-bold ml-1">→ {qq.answer[0]}</span>
+                          <span className="text-success font-bold ml-1">→ {qq.answer[0]}</span>
                         )}
                       </div>
                     ) : (
-                      <span className="text-xs text-amber-600 dark:text-amber-400">Chưa trả lời — Đáp án: {qq.answer[0]}</span>
+                      <span className="text-xs text-warning">Chưa trả lời — Đáp án: {qq.answer[0]}</span>
                     )}
                   </div>
                 );
@@ -424,7 +423,7 @@ const TextInputSection = ({ questions, instruction, reviewMode, onStartTimer }: 
       </div>
       <Progress value={((current + 1) / questions.length) * 100} className="h-2 rounded-full mb-5" />
       <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
-        className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
+        className="bg-card rounded-2xl p-6 shadow-1 border border-border">
         <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed whitespace-pre-line">{q.q}</p>
         <div className="flex gap-2">
           <input value={input} onChange={e => !submitted && setInput(e.target.value)}
@@ -442,7 +441,7 @@ const TextInputSection = ({ questions, instruction, reviewMode, onStartTimer }: 
               }
             }}
             placeholder="Nhập câu trả lời..." disabled={submitted}
-            className="flex-1 bg-card/80 border-2 border-border/30 rounded-2xl px-4 py-3 text-foreground font-medium focus:outline-none focus:border-primary transition-colors" />
+            className="flex-1 bg-card border-2 border-border rounded-2xl px-4 py-3 text-foreground font-medium focus:outline-none focus:border-primary transition-colors" />
           {!submitted && (
             <button onClick={() => {
               if (!input.trim()) return;
@@ -456,7 +455,7 @@ const TextInputSection = ({ questions, instruction, reviewMode, onStartTimer }: 
                 if (correct) setScore(s => s + 1);
               }
             }}
-              className="gradient-primary text-white px-4 py-3 rounded-2xl"><Send className="h-5 w-5" /></button>
+              className="bg-primary text-primary-foreground px-4 py-3 rounded-2xl"><Send className="h-5 w-5" /></button>
           )}
         </div>
         {!submitted && input.trim() && instruction.toLowerCase().includes("no more than") && (
@@ -474,7 +473,7 @@ const TextInputSection = ({ questions, instruction, reviewMode, onStartTimer }: 
             </div>
             {!isCorrect && <p className="text-sm text-muted-foreground mt-1">Đáp án: <span className="font-bold text-foreground">{q.answer[0]}</span></p>}
             <button onClick={() => { if (current < questions.length - 1) { setCurrent(c => c + 1); setInput(""); setSubmitted(false); } else setFinished(true); }}
-              className="mt-4 w-full py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
+              className="mt-4 w-full py-3.5 rounded-2xl font-display font-extrabold text-sm bg-accent text-accent-foreground">
               {current < questions.length - 1 ? "Câu tiếp →" : "Xem kết quả"}
             </button>
           </div>

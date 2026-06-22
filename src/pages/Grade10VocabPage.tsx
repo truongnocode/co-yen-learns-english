@@ -47,7 +47,7 @@ const Grade10VocabPage = () => {
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-6">
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <ArrowLeft className="h-5 w-5" />
             </motion.button>
             <div className="flex-1">
@@ -55,17 +55,16 @@ const Grade10VocabPage = () => {
               <p className="text-xs text-muted-foreground">Từ vựng</p>
             </div>
             <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-              className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
               <Home className="h-5 w-5" />
             </motion.button>
           </div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}
-            className="gradient-primary text-primary-foreground rounded-3xl p-6 mb-6 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/4 blur-3xl" />
-            <BookOpen className="h-8 w-8 mb-2 opacity-80 relative z-10" />
-            <h1 className="font-display font-extrabold text-2xl relative z-10">Từ vựng Lớp 10</h1>
-            <p className="text-primary-foreground/70 text-sm relative z-10">{topics.length} chủ đề</p>
+            className="bg-primary text-primary-foreground rounded-2xl p-6 mb-6 shadow-2">
+            <BookOpen className="h-8 w-8 mb-2 opacity-80" />
+            <h1 className="font-display font-extrabold text-2xl">Từ vựng Lớp 10</h1>
+            <p className="text-primary-foreground/80 text-sm">{topics.length} chủ đề</p>
           </motion.div>
 
           <div className="flex flex-col gap-3">
@@ -76,14 +75,14 @@ const Grade10VocabPage = () => {
                 transition={{ ...smooth, delay: i * 0.04 }}
                 whileHover={{ scale: 1.02, y: -2 }} whileTap={{ scale: 0.98 }}
                 onClick={() => { setSelectedTopic(key); resetQuiz(); setAnswers(new Array(topic.questions.length).fill(null)); }}
-                className="bg-card/80 backdrop-blur-xl rounded-2xl p-5 text-left border border-border/30 shadow-lg hover:shadow-xl transition-all"
+                className="bg-card rounded-2xl p-5 text-left border border-border shadow-1 transition-all hover:-translate-y-0.5 hover:shadow-2"
               >
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="font-display font-bold text-foreground">{topic.name}</h3>
                     <p className="text-xs text-muted-foreground mt-1">{topic.questions.length} câu hỏi</p>
                   </div>
-                  <span className="text-xs gradient-accent text-white px-3 py-1.5 rounded-full font-bold">Bắt đầu</span>
+                  <span className="text-xs bg-accent text-accent-foreground px-3 py-1.5 rounded-full font-bold">Bắt đầu</span>
                 </div>
               </motion.button>
             ))}
@@ -128,7 +127,7 @@ const Grade10VocabPage = () => {
         <div className="max-w-lg mx-auto px-5 pt-28 pb-20 text-center">
           <motion.div initial={{ scale: 0.8, opacity: 0, filter: "blur(8px)" }} animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-card/80 backdrop-blur-xl rounded-3xl p-8 shadow-lg border border-border/30">
+            className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-1">Kết quả</h2>
             <p className="text-muted-foreground text-sm mb-4">{topic.name}</p>
@@ -142,16 +141,16 @@ const Grade10VocabPage = () => {
                 <span className="text-xs font-bold text-destructive block">Sai</span>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3 mb-6">
-              <Trophy className="h-5 w-5 text-energy" />
-              <span className="font-display font-extrabold text-lg text-energy">+{xp} XP</span>
-              <span className="text-xs text-energy/70">({pct}%)</span>
+            <div className="flex items-center justify-center gap-2 bg-xp/10 border border-xp/20 rounded-2xl p-3 mb-6">
+              <Trophy className="h-5 w-5 text-xp" />
+              <span className="font-display font-extrabold text-lg text-xp">+{xp} XP</span>
+              <span className="text-xs text-xp/70">({pct}%)</span>
             </div>
             <div className="flex gap-3 justify-center">
               <motion.button whileTap={{ scale: 0.95 }} onClick={() => { resetQuiz(); setAnswers(new Array(total).fill(null)); }}
-                className="gradient-primary text-white px-6 py-3 rounded-2xl font-display font-bold text-sm">Làm lại</motion.button>
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-2xl font-display font-extrabold text-sm">Làm lại</motion.button>
               <motion.button whileTap={{ scale: 0.95 }} onClick={() => setSelectedTopic(null)}
-                className="bg-secondary text-secondary-foreground px-6 py-3 rounded-2xl font-display font-bold text-sm">Chọn chủ đề khác</motion.button>
+                className="border-2 border-border bg-card text-foreground px-6 py-3 rounded-2xl font-display font-bold text-sm">Chọn chủ đề khác</motion.button>
             </div>
           </motion.div>
           {reviewMode === "after" && <ReviewAllAnswers questions={reviewQuestions} />}
@@ -202,7 +201,7 @@ const Grade10VocabPage = () => {
       <div className="max-w-2xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-5">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectedTopic(null)}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
           <div className="flex-1">
@@ -226,7 +225,7 @@ const Grade10VocabPage = () => {
         )}
 
         <motion.div key={current} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }}
-          className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 shadow-lg border border-border/30">
+          className="bg-card rounded-2xl p-6 shadow-1 border border-border">
           <p className="font-display font-bold text-foreground text-base sm:text-lg mb-6 leading-relaxed break-words">{q.q}</p>
           <div className="flex flex-col gap-2.5">
             {q.opts.map((opt, idx) => {
@@ -237,12 +236,12 @@ const Grade10VocabPage = () => {
                   else if (idx === selected && idx !== q.ans) cls = "bg-destructive/10 border-2 border-destructive text-destructive";
                   else cls = "bg-secondary/30 border-2 border-transparent text-muted-foreground opacity-50";
                 } else if (selected === idx) {
-                  cls = "bg-primary/10 border-2 border-primary text-primary shadow-md";
+                  cls = "bg-primary/10 border-2 border-primary text-primary shadow-1";
                 }
               } else {
                 // "after" mode: just highlight selected in primary
                 if (selected === idx) {
-                  cls = "bg-primary/10 border-2 border-primary text-primary shadow-md";
+                  cls = "bg-primary/10 border-2 border-primary text-primary shadow-1";
                 }
               }
               return (
@@ -257,11 +256,11 @@ const Grade10VocabPage = () => {
             <div className="flex gap-3 mt-6">
               {!submitted ? (
                 <button onClick={() => { if (!quizStarted) setQuizStarted(true); handleSubmit(); }} disabled={selected === null}
-                  className={`flex-1 py-3.5 rounded-2xl font-display font-bold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "gradient-primary text-white"}`}>
+                  className={`flex-1 py-3.5 rounded-2xl font-display font-extrabold text-sm transition-all ${selected === null ? "bg-muted text-muted-foreground" : "bg-primary text-primary-foreground btn-press"}`}>
                   Kiểm tra
                 </button>
               ) : (
-                <button onClick={handleNext} className="flex-1 py-3.5 rounded-2xl font-display font-bold text-sm gradient-accent text-white">
+                <button onClick={handleNext} className="flex-1 py-3.5 rounded-2xl font-display font-extrabold text-sm bg-accent text-accent-foreground">
                   {current < questions.length - 1 ? "Câu tiếp theo →" : "Xem kết quả"}
                 </button>
               )}

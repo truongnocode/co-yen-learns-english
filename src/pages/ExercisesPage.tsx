@@ -123,11 +123,11 @@ const ExercisesPage = () => {
             <div className="flex gap-3 justify-center">
               <motion.button whileTap={{ scale: 0.95 }}
                 onClick={() => { setCurrent(0); setSelected(null); setAnswers(new Array(exercises.length).fill(null)); setFinished(false); }}
-                className="bg-card/80 backdrop-blur-xl border border-white/60 text-foreground px-6 py-3 rounded-full font-bold shadow-md">
+                className="border-2 border-border bg-card text-foreground px-6 py-3 rounded-2xl font-bold shadow-1">
                 Làm lại
               </motion.button>
               <motion.button whileTap={{ scale: 0.95 }} onClick={() => navigate(-1)}
-                className="gradient-primary text-white px-6 py-3 rounded-full font-bold shadow-md">
+                className="bg-primary text-primary-foreground px-6 py-3 rounded-2xl font-bold shadow-1">
                 Quay lại
               </motion.button>
             </div>
@@ -155,19 +155,19 @@ const ExercisesPage = () => {
       <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-white/50">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
           <div className="flex-1">
             <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — Bài tập</p>
             <p className="text-xs text-muted-foreground">{unit.title}</p>
           </div>
-          <span className="text-xs gradient-primary text-white px-3 py-1.5 rounded-full font-bold">{current + 1}/{exercises.length}</span>
+          <span className="text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">{current + 1}/{exercises.length}</span>
           {timeLimit > 0 && (
             <CountdownTimer minutes={timeLimit} onTimeUp={handleTimeUp} started={!finished} />
           )}
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-white/50">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
         </div>
@@ -188,7 +188,7 @@ const ExercisesPage = () => {
           initial={{ opacity: 0, x: 20, filter: "blur(6px)" }}
           animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
           transition={smooth}
-          className="bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-white/60 shadow-lg mb-6"
+          className="bg-card rounded-2xl p-6 border border-border shadow-1 mb-6"
         >
           <div className="flex items-start justify-between gap-3">
             <p className="font-display font-extrabold text-lg text-foreground leading-relaxed flex-1">{q.q}</p>
@@ -205,15 +205,15 @@ const ExercisesPage = () => {
 
         <div className="flex flex-col gap-3">
           {q.opts.map((opt, idx) => {
-            let style = "bg-card/80 backdrop-blur-xl border-white/60 text-foreground hover:bg-muted/50";
+            let style = "bg-card border-border text-foreground hover:bg-muted/50";
             if (selected !== null) {
               if (reviewMode === "after") {
                 if (idx === selected) style = "bg-primary/10 border-primary text-primary";
-                else style = "bg-card/50 border-white/40 text-muted-foreground opacity-50";
+                else style = "bg-card border-border text-muted-foreground opacity-50";
               } else {
-                if (idx === q.ans) style = "bg-emerald-100 border-emerald-400 text-emerald-800";
-                else if (idx === selected) style = "bg-red-100 border-red-400 text-red-800";
-                else style = "bg-card/50 border-white/40 text-muted-foreground opacity-50";
+                if (idx === q.ans) style = "bg-success/10 border-success/40 text-success";
+                else if (idx === selected) style = "bg-destructive/10 border-destructive/40 text-destructive";
+                else style = "bg-card border-border text-muted-foreground opacity-50";
               }
             }
             return (
@@ -227,7 +227,7 @@ const ExercisesPage = () => {
 
         {selected !== null && reviewMode === "instant" && (
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
-            <div className={`mt-4 flex items-center gap-2 text-sm font-medium ${selected === q.ans ? "text-emerald-600" : "text-red-600"}`}>
+            <div className={`mt-4 flex items-center gap-2 text-sm font-medium ${selected === q.ans ? "text-success" : "text-destructive"}`}>
               {selected === q.ans ? "Chính xác!" : `Đáp án: ${String.fromCharCode(65 + q.ans)}. ${q.opts[q.ans]}`}
             </div>
             <ExplanationBox
@@ -239,7 +239,7 @@ const ExercisesPage = () => {
               selectedIndex={selected}
             />
             <motion.button whileTap={{ scale: 0.95 }} onClick={handleNext}
-              className="w-full mt-4 gradient-primary text-white py-3 rounded-2xl font-display font-bold text-sm">
+              className="w-full mt-4 btn-press bg-primary text-primary-foreground py-3 rounded-2xl font-display font-extrabold text-sm">
               {current < exercises.length - 1 ? "Câu tiếp theo" : "Xem kết quả"}
             </motion.button>
           </motion.div>

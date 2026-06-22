@@ -155,7 +155,7 @@ function ArrangeMcqSection({
 
   return (
     <div className="space-y-4">
-      <p className="rounded-lg border bg-muted/30 p-3 text-sm">
+      <p className="rounded-xl border border-border bg-card p-3 text-base shadow-1">
         <span className="font-medium">Hướng dẫn: </span>
         {section.instruction}
       </p>
@@ -174,11 +174,11 @@ function ArrangeMcqSection({
         />
       ))}
 
-      <div className="sticky bottom-4 flex items-center justify-between rounded-2xl border bg-background/90 p-3 backdrop-blur">
+      <div className="sticky bottom-4 flex items-center justify-between rounded-2xl border border-border bg-card p-3 shadow-2">
         {submitted ? (
           <>
             <div className="flex items-center gap-2 text-sm">
-              <Trophy className="h-4 w-4 text-yellow-500" />
+              <Trophy className="h-4 w-4 text-xp" />
               <span className="font-medium">
                 {score} / {section.questions.length}
               </span>
@@ -223,9 +223,9 @@ function MCQCard({
     <motion.div
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
-      className="rounded-2xl border bg-card p-4"
+      className="rounded-2xl border border-border bg-card p-4 shadow-1"
     >
-      <p className="mb-3 text-sm">
+      <p className="mb-3 text-base">
         <span className="mr-2 font-semibold">Câu {idx + 1}.</span>
         {q.q}
       </p>
@@ -235,9 +235,9 @@ function MCQCard({
           const isCorrect = i === q.ans;
           const cls = showResult
             ? isCorrect
-              ? "border-green-500 bg-green-50 dark:bg-green-950/30"
+              ? "border-success bg-success/10"
               : picked
-                ? "border-red-500 bg-red-50 dark:bg-red-950/30"
+                ? "border-destructive bg-destructive/10"
                 : "border-border"
             : picked
               ? "border-primary bg-primary/10"
@@ -246,24 +246,24 @@ function MCQCard({
             <button
               key={i}
               onClick={() => onPick(i)}
-              className={`flex items-start gap-2 rounded-xl border-2 p-3 text-left text-sm transition ${cls}`}
+              className={`flex items-start gap-2 rounded-xl border-2 p-3 text-left text-base transition ${cls}`}
             >
               <span className="font-semibold">
                 {String.fromCharCode(65 + i)}.
               </span>
               <span className="flex-1">{opt}</span>
               {showResult && isCorrect && (
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-green-600" />
+                <CheckCircle2 className="h-5 w-5 shrink-0 text-success" />
               )}
               {showResult && picked && !isCorrect && (
-                <XCircle className="h-5 w-5 shrink-0 text-red-600" />
+                <XCircle className="h-5 w-5 shrink-0 text-destructive" />
               )}
             </button>
           );
         })}
       </div>
       {showResult && q.explain && (
-        <p className="mt-3 rounded-lg bg-muted/40 p-2 text-xs text-muted-foreground">
+        <p className="mt-3 rounded-xl bg-muted/40 p-2 text-xs text-muted-foreground">
           💡 {q.explain}
         </p>
       )}
@@ -298,7 +298,7 @@ function FreeAnswerSection({
 
   return (
     <div className="space-y-4">
-      <p className="rounded-lg border bg-muted/30 p-3 text-sm">
+      <p className="rounded-xl border border-border bg-card p-3 text-base shadow-1">
         <span className="font-medium">Hướng dẫn: </span>
         {section.instruction}
       </p>
@@ -310,9 +310,9 @@ function FreeAnswerSection({
             key={i}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-2xl border bg-card p-4"
+            className="rounded-2xl border border-border bg-card p-4 shadow-1"
           >
-            <p className="mb-3 text-sm">
+            <p className="mb-3 text-base">
               <span className="mr-2 font-semibold">Câu {i + 1}.</span>
               {q.q}
             </p>
@@ -325,9 +325,9 @@ function FreeAnswerSection({
               placeholder="Nhập câu trả lời của em…"
               className={
                 v === true
-                  ? "border-green-500"
+                  ? "border-success"
                   : v === false
-                    ? "border-red-500"
+                    ? "border-destructive"
                     : ""
               }
               disabled={submitted}
@@ -335,11 +335,11 @@ function FreeAnswerSection({
             {submitted && (
               <div className="mt-2 text-xs">
                 {v ? (
-                  <p className="flex items-center gap-1 text-green-600">
+                  <p className="flex items-center gap-1 text-success">
                     <CheckCircle2 className="h-4 w-4" /> Đúng rồi!
                   </p>
                 ) : (
-                  <p className="space-y-1 text-red-600">
+                  <p className="space-y-1 text-destructive">
                     <span className="flex items-center gap-1">
                       <XCircle className="h-4 w-4" /> Chưa đúng. Đáp án gợi ý:
                     </span>
@@ -356,11 +356,11 @@ function FreeAnswerSection({
         );
       })}
 
-      <div className="sticky bottom-4 flex items-center justify-between rounded-2xl border bg-background/90 p-3 backdrop-blur">
+      <div className="sticky bottom-4 flex items-center justify-between rounded-2xl border border-border bg-card p-3 shadow-2">
         {submitted ? (
           <>
             <div className="flex items-center gap-2 text-sm">
-              <Trophy className="h-4 w-4 text-yellow-500" />
+              <Trophy className="h-4 w-4 text-xp" />
               <span className="font-medium">
                 {score} / {section.questions.length}
               </span>

@@ -14,7 +14,7 @@ const speak = (text: string) => speakUS(text);
 
 // Shared card wrapper for consistent look across tabs
 const SectionCard = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <div className={`bg-card/80 backdrop-blur-xl rounded-3xl p-6 border border-border/30 shadow-lg ${className}`}>
+  <div className={`bg-card rounded-2xl p-6 border border-border shadow-1 ${className}`}>
     {children}
   </div>
 );
@@ -57,7 +57,7 @@ const ResultScreen = ({ emoji, title, subtitle, score, total, onRetry }: {
         </SectionCard>
 
         <motion.button whileTap={{ scale: 0.95 }} onClick={onRetry}
-          className="w-full gradient-primary text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
+          className="w-full btn-press bg-primary text-primary-foreground py-3.5 rounded-2xl font-display font-extrabold shadow-1">
           Làm lại
         </motion.button>
       </motion.div>
@@ -148,12 +148,12 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
           <div className="flex flex-col gap-3">
             {relearn.size > 0 && (
               <motion.button whileTap={{ scale: 0.95 }} onClick={handleRestartRelearn}
-                className="w-full gradient-accent text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
+                className="w-full bg-accent text-accent-foreground py-3.5 rounded-2xl font-display font-extrabold shadow-1">
                 Học lại {relearn.size} từ chưa thuộc
               </motion.button>
             )}
             <motion.button whileTap={{ scale: 0.95 }} onClick={handleRestart}
-              className="w-full gradient-primary text-white py-3.5 rounded-2xl font-display font-bold shadow-md">
+              className="w-full btn-press bg-primary text-primary-foreground py-3.5 rounded-2xl font-display font-extrabold shadow-1">
               Học lại tất cả
             </motion.button>
           </div>
@@ -186,12 +186,12 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
             exit={{ rotateY: -90, opacity: 0 }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
             onClick={() => setFlipped(!flipped)}
-            className={`w-full aspect-[3/4] rounded-3xl shadow-xl flex flex-col items-center justify-center cursor-pointer select-none p-6 border relative overflow-hidden ${
-              flipped ? "gradient-purple-card text-white border-white/20" : "bg-card/90 backdrop-blur-xl border-border/30"
+            className={`w-full aspect-[3/4] rounded-2xl shadow-2 flex flex-col items-center justify-center cursor-pointer select-none p-6 border relative overflow-hidden ${
+              flipped ? "bg-accent2 text-accent2-foreground border-border" : "bg-card border-border"
             }`}
           >
             <div className={`absolute top-5 right-5 w-14 h-14 rounded-full ${flipped ? "bg-white/10" : "bg-primary/5"} float-animation`} />
-            <div className={`absolute bottom-8 left-6 w-10 h-10 rounded-full ${flipped ? "bg-white/8" : "bg-accent/8"} float-animation-delay`} />
+            <div className={`absolute bottom-8 left-6 w-10 h-10 rounded-full ${flipped ? "bg-white/10" : "bg-accent/8"} float-animation-delay`} />
             {(() => {
               const WordIcon = getWordIcon(word.en, word.type);
               return !flipped ? (
@@ -237,7 +237,7 @@ const FlashcardTab = ({ words }: { words: VocabItem[] }) => {
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setFlipped(!flipped)}
-          className="px-4 py-3 rounded-2xl bg-card/80 backdrop-blur-xl border border-border/30 text-muted-foreground font-display font-bold text-sm flex items-center gap-1.5"
+          className="px-4 py-3 rounded-2xl bg-card border border-border text-muted-foreground font-display font-bold text-sm flex items-center gap-1.5"
         >
           <RefreshCw className="h-4 w-4" />
           Lật thẻ
@@ -307,11 +307,11 @@ const QuizTab = ({ words }: { words: VocabItem[] }) => {
 
       <div className="flex flex-col gap-2.5">
         {currentOpts.options.map((opt, idx) => {
-          let style = "bg-card/80 backdrop-blur-xl border-border/30 text-foreground hover:border-primary/30";
+          let style = "bg-card border-border text-foreground hover:border-primary/30";
           if (selected !== null) {
             if (idx === currentOpts.correctIndex) style = "bg-success/10 border-success/40 text-success";
             else if (idx === selected) style = "bg-destructive/10 border-destructive/40 text-destructive";
-            else style = "bg-card/40 border-border/20 text-muted-foreground opacity-50";
+            else style = "bg-card border-border text-muted-foreground opacity-50";
           }
           return (
             <motion.button key={idx} whileTap={{ scale: 0.97 }} onClick={() => handleSelect(idx)}
@@ -431,7 +431,7 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
       </SectionCard>
 
       <motion.button whileTap={{ scale: 0.95 }} onClick={handleCheck} disabled={!!result}
-        className="w-full gradient-primary text-white py-3.5 rounded-2xl font-display font-bold text-sm shadow-md disabled:opacity-50">
+        className="w-full btn-press bg-primary text-primary-foreground py-3.5 rounded-2xl font-display font-extrabold text-sm shadow-1 disabled:opacity-50">
         Kiểm tra
       </motion.button>
     </div>
@@ -440,13 +440,13 @@ const SpellingTab = ({ words }: { words: VocabItem[] }) => {
 
 // ===== VOCAB LIST TAB =====
 const wordTypeColors: Record<string, { bg: string; text: string; icon: string }> = {
-  "Danh từ": { bg: "gradient-primary", text: "text-white", icon: "📦" },
-  "Động từ": { bg: "gradient-accent", text: "text-white", icon: "⚡" },
-  "Tính từ": { bg: "gradient-success", text: "text-white", icon: "🎨" },
-  "Trạng từ": { bg: "gradient-warm", text: "text-white", icon: "💫" },
-  "Giới từ": { bg: "gradient-cool", text: "text-white", icon: "📍" },
+  "Danh từ": { bg: "bg-primary", text: "text-primary-foreground", icon: "📦" },
+  "Động từ": { bg: "bg-accent", text: "text-accent-foreground", icon: "⚡" },
+  "Tính từ": { bg: "bg-success", text: "text-success-foreground", icon: "🎨" },
+  "Trạng từ": { bg: "bg-accent", text: "text-accent-foreground", icon: "💫" },
+  "Giới từ": { bg: "bg-accent2", text: "text-accent2-foreground", icon: "📍" },
 };
-const defaultTypeColor = { bg: "gradient-purple-card", text: "text-white", icon: "📝" };
+const defaultTypeColor = { bg: "bg-accent2", text: "text-accent2-foreground", icon: "📝" };
 
 const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
   const [search, setSearch] = useState("");
@@ -472,7 +472,7 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
         <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <input
           type="text" value={search} onChange={e => setSearch(e.target.value)} placeholder="Tìm từ vựng..."
-          className="w-full pl-11 pr-4 py-3 rounded-2xl bg-card/80 backdrop-blur-xl border border-border/30 text-sm font-medium text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-primary/40 focus:shadow-md transition-all"
+          className="w-full pl-11 pr-4 py-3 rounded-2xl bg-card border border-border text-base font-medium text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-primary/40 focus:shadow-1 transition-all"
         />
       </div>
 
@@ -484,7 +484,7 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
           return (
             <button key={type} onClick={() => setActiveType(isActive ? null : type)}
               className={`text-[10px] font-bold px-2.5 py-1 rounded-full transition-all ${
-                isActive ? `${c.bg} text-white shadow-md scale-105` : "bg-card/80 border border-border/30 text-muted-foreground hover:text-foreground"
+                isActive ? `${c.bg} ${c.text} shadow-1 scale-105` : "bg-card border border-border text-muted-foreground hover:text-foreground"
               }`}>
               {c.icon} {type} · {count}
             </button>
@@ -513,7 +513,7 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: i * 0.015 }}
                   onClick={() => setExpandedIdx(isExpanded ? null : globalIdx)}
                   className={`rounded-xl px-3.5 py-2.5 mb-1 cursor-pointer transition-all ${
-                    isExpanded ? "bg-card/90 backdrop-blur-xl shadow-md border border-primary/20" : "hover:bg-card/60 border border-transparent"
+                    isExpanded ? "bg-card shadow-1 border border-primary/20" : "hover:bg-card border border-transparent"
                   }`}>
                   <div className="flex items-center gap-3">
                     <div className={`p-1.5 rounded-lg shrink-0 transition-colors ${isExpanded ? "bg-primary/15" : "bg-primary/5"}`}>
@@ -522,7 +522,7 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline gap-2">
                         <span className="font-display font-bold text-foreground text-sm">{w.en}</span>
-                        <span className={`${typeColor.bg} text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none`}>
+                        <span className={`${typeColor.bg} ${typeColor.text} text-[9px] font-bold px-1.5 py-0.5 rounded-full leading-none`}>
                           {wordTypeLabels[w.type] || w.type}
                         </span>
                       </div>
@@ -544,7 +544,7 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
                             <p className="font-display font-bold text-foreground">{w.vi}</p>
                           </div>
                           <motion.button whileTap={{ scale: 0.9 }} onClick={(e) => { e.stopPropagation(); speak(w.en); }}
-                            className="gradient-primary text-white px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5">
+                            className="bg-primary text-primary-foreground px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5">
                             <Volume2 className="h-3.5 w-3.5" /> Nghe
                           </motion.button>
                         </div>
@@ -595,7 +595,7 @@ const VocabPage = () => {
       <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-6 flex flex-col min-h-screen">
         <div className="flex items-center gap-3 mb-5 shrink-0">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <ArrowLeft className="h-5 w-5" />
           </motion.button>
           <div className="flex-1">
@@ -603,23 +603,23 @@ const VocabPage = () => {
             <p className="text-xs text-muted-foreground">{unit.vocabulary.length} từ vựng</p>
           </div>
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card/80 backdrop-blur-xl shadow-lg text-foreground border border-border/30">
+            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
         </div>
 
         <Tabs defaultValue="list" className="w-full flex-1 flex flex-col min-h-0">
-          <TabsList className="w-full grid grid-cols-4 mb-4 bg-card/60 backdrop-blur-xl rounded-2xl p-1 border border-border/30 shrink-0">
-            <TabsTrigger value="list" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
+          <TabsList className="w-full grid grid-cols-4 mb-4 bg-card rounded-2xl p-1 border border-border shrink-0">
+            <TabsTrigger value="list" className="rounded-xl text-xs font-bold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
               <BookText className="h-3.5 w-3.5 mr-1" /> Từ điển
             </TabsTrigger>
-            <TabsTrigger value="flashcard" className="rounded-xl text-xs font-bold data-[state=active]:gradient-accent data-[state=active]:text-white">
+            <TabsTrigger value="flashcard" className="rounded-xl text-xs font-bold data-[state=active]:bg-accent data-[state=active]:text-accent-foreground">
               <BookOpen className="h-3.5 w-3.5 mr-1" /> Flashcard
             </TabsTrigger>
-            <TabsTrigger value="quiz" className="rounded-xl text-xs font-bold data-[state=active]:gradient-primary data-[state=active]:text-white">
+            <TabsTrigger value="quiz" className="rounded-xl text-xs font-bold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
               <Brain className="h-3.5 w-3.5 mr-1" /> Trắc nghiệm
             </TabsTrigger>
-            <TabsTrigger value="spelling" className="rounded-xl text-xs font-bold data-[state=active]:gradient-success data-[state=active]:text-white">
+            <TabsTrigger value="spelling" className="rounded-xl text-xs font-bold data-[state=active]:bg-success data-[state=active]:text-success-foreground">
               <Pencil className="h-3.5 w-3.5 mr-1" /> Chính tả
             </TabsTrigger>
           </TabsList>

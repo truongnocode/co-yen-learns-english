@@ -34,11 +34,10 @@ const GradesPage = () => {
             whileHover={{ scale: 1.06, y: -6 }}
             whileTap={{ scale: 0.92 }}
             onClick={() => navigate(`/grade/${grade}`)}
-            className={`bg-gradient-to-br ${cfg.gradient} text-white rounded-3xl p-6 flex flex-col items-center gap-2 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden group`}
+            className="bg-card border border-border text-foreground rounded-2xl p-6 flex flex-col items-center gap-2 shadow-1 hover:shadow-2 transition-shadow"
           >
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity shimmer rounded-3xl" />
-            <span className="text-4xl relative z-10 drop-shadow">{cfg.emoji}</span>
-            <span className="font-display font-bold text-lg relative z-10">{cfg.label}</span>
+            <span className="text-4xl">{cfg.emoji}</span>
+            <span className="font-display font-bold text-lg">{cfg.label}</span>
           </motion.button>
         );
       })}
@@ -63,19 +62,19 @@ const GradesPage = () => {
         <div className="flex flex-wrap gap-2 mb-6">
           <button
             onClick={() => navigate("/grades")}
-            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${!level ? "gradient-primary text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${!level ? "bg-primary text-primary-foreground shadow-1" : "bg-card text-muted-foreground hover:text-foreground border border-border"}`}
           >
             Tất cả
           </button>
           <button
             onClick={() => navigate("/grades?level=primary")}
-            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${level === "primary" ? "gradient-accent text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${level === "primary" ? "bg-accent text-accent-foreground shadow-1" : "bg-card text-muted-foreground hover:text-foreground border border-border"}`}
           >
             Cấp 1 (Lớp 3-5)
           </button>
           <button
             onClick={() => navigate("/grades?level=secondary")}
-            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${level === "secondary" ? "gradient-cool text-white shadow-md" : "bg-card/80 text-muted-foreground hover:text-foreground border border-border/30"}`}
+            className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${level === "secondary" ? "bg-accent2 text-accent2-foreground shadow-1" : "bg-card text-muted-foreground hover:text-foreground border border-border"}`}
           >
             Cấp 2 (Lớp 6-9)
           </button>

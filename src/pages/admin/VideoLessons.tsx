@@ -67,14 +67,14 @@ export default function VideoLessonsAdminPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-semibold">Bài học video</h2>
-        <p className="text-sm text-muted-foreground">
+        <h2 className="font-display text-2xl font-bold text-foreground">Bài học video</h2>
+        <p className="text-base text-muted-foreground">
           Nhịp đọc (/ //) được tạo sẵn bằng skill <span className="font-mono">youtube-rhythm</span> (bám giọng đọc thật
           của video), rồi nhập file JSON vào đây để xuất bản cho học sinh.
         </p>
       </div>
 
-      <div className="rounded-2xl border bg-card p-5 shadow-sm">
+      <div className="rounded-2xl border border-border bg-card p-5 shadow-1">
         <div className="flex flex-wrap items-center gap-3">
           <input
             ref={importInputRef}
@@ -87,13 +87,13 @@ export default function VideoLessonsAdminPage() {
             {importing ? <Loader2 className="h-4 w-4 animate-spin" /> : <Upload className="h-4 w-4" />}
             Nhập JSON nhịp
           </Button>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-base text-muted-foreground">
             Chọn file JSON do skill tạo (audio-faithful, <span className="font-mono">caption-audio-v1</span>). Upsert
             theo <span className="font-mono">videoId</span>.
           </span>
         </div>
 
-        <div className="mt-4 flex items-start gap-2 rounded-xl bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
+        <div className="mt-4 flex items-start gap-2 rounded-xl bg-muted/50 px-3 py-2 text-sm text-muted-foreground">
           <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />
           <p>
             Cách tạo file: chạy <span className="font-mono">node scripts/rhythm-from-captions.mjs &lt;url&gt; --grade N --out bai.json</span>
@@ -103,16 +103,16 @@ export default function VideoLessonsAdminPage() {
       </div>
 
       {lastCreatedId && (
-        <div className="flex items-center gap-2 rounded-xl border border-success/30 bg-success/10 px-4 py-3 text-sm text-success">
+        <div className="flex items-center gap-2 rounded-xl border border-success/30 bg-success/10 px-4 py-3 text-base text-success">
           <CheckCircle2 className="h-4 w-4" />
           Bài đã sẵn sàng: <span className="font-mono">{lastCreatedId}</span>
         </div>
       )}
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h3 className="text-lg font-semibold">Danh sách bài</h3>
-          <p className="text-sm text-muted-foreground">{lessons.length} bài học video trong Firestore</p>
+          <h3 className="font-display text-lg font-bold text-foreground">Danh sách bài</h3>
+          <p className="text-base text-muted-foreground">{lessons.length} bài học video trong Firestore</p>
         </div>
         <Button variant="outline" size="sm" onClick={refresh} disabled={loading}>
           <RefreshCw className={loading ? "h-4 w-4 animate-spin" : "h-4 w-4"} />
@@ -121,19 +121,19 @@ export default function VideoLessonsAdminPage() {
       </div>
 
       {loading ? (
-        <p className="text-sm text-muted-foreground">Đang tải…</p>
+        <p className="text-base text-muted-foreground">Đang tải…</p>
       ) : lessons.length === 0 ? (
-        <div className="rounded-2xl border border-dashed p-8 text-center text-sm text-muted-foreground">
+        <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center text-base text-muted-foreground">
           Chưa có bài video nào. Nhập JSON nhịp từ skill ở trên để tạo bài đầu tiên.
         </div>
       ) : (
         <div className="grid gap-3">
           {lessons.map((lesson) => (
-            <div key={lesson.id} className="rounded-2xl border bg-card p-4 shadow-sm">
+            <div key={lesson.id} className="rounded-2xl border border-border bg-card p-4 shadow-1">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="min-w-0">
-                  <h4 className="truncate font-semibold">{lesson.title}</h4>
-                  <p className="text-xs text-muted-foreground">
+                  <h4 className="truncate font-display font-bold text-foreground">{lesson.title}</h4>
+                  <p className="text-sm text-muted-foreground">
                     {lesson.lines?.length ?? 0} câu · {lesson.grade ? `Lớp ${lesson.grade}` : "Chưa gắn lớp"}
                     {lesson.topic ? ` · ${lesson.topic}` : ""}
                   </p>

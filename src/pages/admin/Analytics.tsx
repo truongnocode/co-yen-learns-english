@@ -120,12 +120,12 @@ export default function AnalyticsPage() {
   }
 
   if (loading) {
-    return <p className="text-sm text-muted-foreground">Đang tải dữ liệu…</p>;
+    return <p className="text-base text-muted-foreground">Đang tải dữ liệu…</p>;
   }
 
   if (!bundle) {
     return (
-      <p className="text-sm text-muted-foreground">
+      <p className="text-base text-muted-foreground">
         Chưa có dữ liệu để hiển thị.
       </p>
     );
@@ -133,10 +133,10 @@ export default function AnalyticsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-end justify-between gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h2 className="text-2xl font-semibold">Analytics</h2>
-          <p className="text-sm text-muted-foreground">
+          <h2 className="font-display text-2xl font-bold text-foreground">Analytics</h2>
+          <p className="text-base text-muted-foreground">
             Tổng quan tiến độ lớp học — cập nhật mỗi lần mở trang.
           </p>
         </div>
@@ -185,11 +185,11 @@ export default function AnalyticsPage() {
       {/* Timeline chart */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Tiến độ 30 ngày</CardTitle>
+          <CardTitle className="font-display text-lg">Tiến độ 30 ngày</CardTitle>
         </CardHeader>
         <CardContent>
           {bundle.daily.every((d) => d.attempts === 0) ? (
-            <p className="py-8 text-center text-sm text-muted-foreground">
+            <p className="py-8 text-center text-base text-muted-foreground">
               Chưa có lượt làm bài nào trong 30 ngày qua.
             </p>
           ) : (
@@ -233,7 +233,7 @@ export default function AnalyticsPage() {
                     type="monotone"
                     dataKey="avgPercent"
                     name="Điểm TB %"
-                    stroke="hsl(142 71% 45%)"
+                    stroke="hsl(var(--success))"
                     strokeWidth={2}
                     dot={false}
                   />
@@ -247,13 +247,13 @@ export default function AnalyticsPage() {
       {/* Weakest units */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">
+          <CardTitle className="font-display text-lg">
             Bài học yếu nhất (điểm TB thấp → cao)
           </CardTitle>
         </CardHeader>
         <CardContent>
           {bundle.units.length === 0 ? (
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Chưa có bài nào được làm.
             </p>
           ) : (
@@ -282,7 +282,7 @@ export default function AnalyticsPage() {
                     <Bar
                       dataKey="avgPercent"
                       name="Điểm TB %"
-                      fill="hsl(0 72% 51%)"
+                      fill="hsl(var(--destructive))"
                       radius={[4, 4, 0, 0]}
                     />
                   </BarChart>
@@ -308,10 +308,10 @@ export default function AnalyticsPage() {
                         <span
                           className={
                             u.avgPercent < 50
-                              ? "text-red-600 font-semibold"
+                              ? "text-destructive font-semibold"
                               : u.avgPercent < 70
-                                ? "text-amber-600"
-                                : ""
+                                ? "text-warning"
+                                : "text-foreground"
                           }
                         >
                           {u.avgPercent}%
@@ -335,7 +335,7 @@ export default function AnalyticsPage() {
       <Card>
         <CardHeader>
           <div className="flex items-center justify-between gap-4">
-            <CardTitle className="text-lg">Học sinh</CardTitle>
+            <CardTitle className="font-display text-lg">Học sinh</CardTitle>
             <Input
               placeholder="Tìm theo tên hoặc lớp…"
               value={filter}
@@ -371,10 +371,10 @@ export default function AnalyticsPage() {
                       <span
                         className={
                           s.avgPercent < 50
-                            ? "text-red-600 font-semibold"
+                            ? "text-destructive font-semibold"
                             : s.avgPercent < 70
-                              ? "text-amber-600"
-                              : "text-green-600"
+                              ? "text-warning"
+                              : "text-success"
                         }
                       >
                         {s.avgPercent}%
@@ -405,7 +405,7 @@ export default function AnalyticsPage() {
                 <TableRow>
                   <TableCell
                     colSpan={7}
-                    className="text-center text-sm text-muted-foreground"
+                    className="text-center text-base text-muted-foreground"
                   >
                     Không có học sinh nào khớp.
                   </TableCell>
@@ -420,13 +420,13 @@ export default function AnalyticsPage() {
       {selectedStudent && (
         <Card>
           <CardHeader>
-            <CardTitle className="text-lg">
+            <CardTitle className="font-display text-lg">
               Lịch sử làm bài — {selectedStudent.displayName}
             </CardTitle>
           </CardHeader>
           <CardContent>
             {selectedAttempts.length === 0 ? (
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Chưa có lượt làm bài nào.
               </p>
             ) : (
@@ -455,10 +455,10 @@ export default function AnalyticsPage() {
                         <span
                           className={
                             a.percent < 50
-                              ? "text-red-600 font-semibold"
+                              ? "text-destructive font-semibold"
                               : a.percent < 70
-                                ? "text-amber-600"
-                                : "text-green-600"
+                                ? "text-warning"
+                                : "text-success"
                           }
                         >
                           {a.percent}%
@@ -488,9 +488,9 @@ function StatCard({
   return (
     <Card>
       <CardContent className="p-6">
-        <p className="text-sm text-muted-foreground">{label}</p>
-        <p className="mt-1 text-3xl font-bold tracking-tight">{value}</p>
-        {sub && <p className="mt-1 text-xs text-muted-foreground">{sub}</p>}
+        <p className="text-base text-muted-foreground">{label}</p>
+        <p className="mt-1 font-display text-3xl font-bold tracking-tight text-foreground">{value}</p>
+        {sub && <p className="mt-1 text-sm text-muted-foreground">{sub}</p>}
       </CardContent>
     </Card>
   );

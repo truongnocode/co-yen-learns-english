@@ -121,7 +121,7 @@ export default function VideoLessonReviewPage() {
 
   if (loading) {
     return (
-      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+      <div className="flex items-center gap-2 text-base text-muted-foreground">
         <Loader2 className="h-4 w-4 animate-spin" />
         Dang tai bai video...
       </div>
@@ -130,8 +130,8 @@ export default function VideoLessonReviewPage() {
 
   if (!lesson) {
     return (
-      <div className="rounded-lg border border-dashed p-8 text-center">
-        <p className="font-medium">Khong tim thay bai video.</p>
+      <div className="rounded-2xl border border-dashed border-border bg-card p-8 text-center shadow-1">
+        <p className="font-display font-bold text-foreground">Khong tim thay bai video.</p>
         <Button className="mt-4" variant="outline" onClick={() => navigate("/admin/video-lessons")}>
           Quay lai
         </Button>
@@ -147,8 +147,8 @@ export default function VideoLessonReviewPage() {
             <ArrowLeft className="h-4 w-4" />
             Danh sach video
           </Button>
-          <h2 className="truncate text-2xl font-semibold">{lesson.title}</h2>
-          <p className="text-sm text-muted-foreground">
+          <h2 className="truncate font-display text-2xl font-bold text-foreground">{lesson.title}</h2>
+          <p className="text-base text-muted-foreground">
             {lesson.videoId} · {lesson.rhythmSource ?? "none"}
           </p>
         </div>
@@ -167,11 +167,11 @@ export default function VideoLessonReviewPage() {
 
       <div className="grid gap-3">
         {lines.map((line, lineIndex) => (
-          <section key={line.id} className="rounded-lg border bg-card p-4">
+          <section key={line.id} className="rounded-2xl border border-border bg-card p-4 shadow-1">
             <div className="mb-3 flex items-center justify-between gap-3">
               <div>
-                <h3 className="font-semibold">Cau {lineIndex + 1}</h3>
-                <p className="text-xs text-muted-foreground">
+                <h3 className="font-display font-bold text-foreground">Cau {lineIndex + 1}</h3>
+                <p className="text-sm text-muted-foreground">
                   {formatTime(line.start)} - {formatTime(line.end)}
                 </p>
               </div>
@@ -180,11 +180,11 @@ export default function VideoLessonReviewPage() {
               </Badge>
             </div>
 
-            <div className="mb-3 flex flex-wrap items-center gap-2 rounded-md bg-secondary/40 p-3">
+            <div className="mb-3 flex flex-wrap items-center gap-2 rounded-xl bg-secondary p-3">
               {(line.rhythmChunks && line.rhythmChunks.length > 1 ? line.rhythmChunks : [{ text: line.text, start: line.start, end: line.end }]).map(
                 (chunk, chunkIndex, chunks) => (
                   <span key={`${line.id}-${chunkIndex}`} className="inline-flex items-center gap-2">
-                    <span className="rounded bg-background px-2 py-1 text-sm">{chunk.text}</span>
+                    <span className="rounded-lg border border-border bg-card px-2 py-1 text-base text-foreground">{chunk.text}</span>
                     {chunkIndex < chunks.length - 1 && (
                       <span className="inline-flex items-center gap-1">
                         <Button
@@ -214,14 +214,14 @@ export default function VideoLessonReviewPage() {
               )}
             </div>
 
-            <div className="rounded-md border bg-background p-3 text-sm leading-relaxed">{line.text}</div>
+            <div className="rounded-xl border border-border bg-background p-3 text-base leading-relaxed text-foreground">{line.text}</div>
           </section>
         ))}
       </div>
 
       {dirty && (
         <div className="sticky bottom-4 flex justify-end">
-          <Button onClick={save} disabled={saving} className="shadow-lg">
+          <Button onClick={save} disabled={saving} className="shadow-2">
             {saving ? <Loader2 className="h-4 w-4 animate-spin" /> : <CheckCircle2 className="h-4 w-4" />}
             Luu thay doi
           </Button>

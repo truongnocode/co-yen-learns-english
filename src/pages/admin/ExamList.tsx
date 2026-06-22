@@ -88,14 +88,14 @@ export default function ExamListPage() {
   }, [rows, filter]);
 
   if (loading) {
-    return <p className="text-sm text-muted-foreground">Đang tải…</p>;
+    return <p className="text-base text-muted-foreground">Đang tải…</p>;
   }
 
   if (rows.length === 0) {
     return (
       <div className="space-y-2">
-        <h2 className="text-2xl font-semibold">Đề thi</h2>
-        <p className="text-sm text-muted-foreground">
+        <h2 className="font-display text-2xl font-bold text-foreground">Đề thi</h2>
+        <p className="text-base text-muted-foreground">
           Chưa có đề thi nào trong Firestore. Vào trang Import để thêm đề đầu tiên.
         </p>
       </div>
@@ -104,10 +104,10 @@ export default function ExamListPage() {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h2 className="text-2xl font-semibold">Đề thi</h2>
-          <p className="text-sm text-muted-foreground">
+          <h2 className="font-display text-2xl font-bold text-foreground">Đề thi</h2>
+          <p className="text-base text-muted-foreground">
             {rows.length} đề trong Firestore
           </p>
         </div>
@@ -119,7 +119,8 @@ export default function ExamListPage() {
         />
       </div>
 
-      <Table>
+      <div className="overflow-x-auto rounded-2xl border border-border bg-card shadow-1">
+        <Table>
         <TableHeader>
           <TableRow>
             <TableHead>Tiêu đề</TableHead>
@@ -144,7 +145,8 @@ export default function ExamListPage() {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
+        </Table>
+      </div>
 
       <div>
         <Button

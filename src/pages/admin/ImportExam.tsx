@@ -112,8 +112,8 @@ export default function ImportExamPage() {
   return (
     <div className="max-w-3xl space-y-6">
       <div>
-        <h2 className="text-2xl font-semibold">Import nội dung</h2>
-        <p className="text-sm text-muted-foreground">
+        <h2 className="font-display text-2xl font-bold text-foreground">Import nội dung</h2>
+        <p className="text-base text-muted-foreground">
           Tải lên file PDF hoặc Word (.docx). Claude sẽ phân tích nội dung và
           tạo JSON theo đúng schema. Duyệt preview rồi lưu vào Firestore.
         </p>
@@ -171,7 +171,7 @@ export default function ImportExamPage() {
             onChange={(e) => setFile(e.target.files?.[0] ?? null)}
           />
           {file && (
-            <p className="text-xs text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
               {file.name} — {(file.size / 1024 / 1024).toFixed(2)} MB
             </p>
           )}
@@ -183,7 +183,7 @@ export default function ImportExamPage() {
           {busy ? "Đang xử lý…" : "Trích xuất"}
         </Button>
         {busy && (
-          <p className="text-xs text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             Claude đang đọc file, có thể mất 30-90 giây…
           </p>
         )}
@@ -239,16 +239,16 @@ function PreviewPanel({
   const summary = summarize(preview.result);
 
   return (
-    <div className="space-y-4 rounded-lg border p-4">
-      <div className="flex items-start justify-between">
+    <div className="space-y-4 rounded-2xl border border-border bg-card p-4 shadow-1">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h3 className="font-medium">Preview</h3>
-          <p className="text-sm text-muted-foreground">
+          <h3 className="font-display font-bold text-foreground">Preview</h3>
+          <p className="text-base text-muted-foreground">
             {summary} · {preview.attempts} attempt(s)
           </p>
         </div>
-        <div className="flex items-center gap-2 text-sm">
-          <label className="flex items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-3 text-base">
+          <label className="flex min-h-11 items-center gap-2 text-foreground">
             <input
               type="checkbox"
               checked={overwrite}
@@ -267,10 +267,10 @@ function PreviewPanel({
         <Textarea
           value={jsonText}
           onChange={(e) => onJsonEdit(e.target.value)}
-          className="font-mono text-xs h-96"
+          className="font-mono text-sm h-96"
         />
         {jsonError && (
-          <p className="text-xs text-destructive">JSON không hợp lệ: {jsonError}</p>
+          <p className="text-sm text-destructive">JSON không hợp lệ: {jsonError}</p>
         )}
       </div>
     </div>

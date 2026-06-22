@@ -38,7 +38,7 @@ export function RequireAdmin({ children }: { children: ReactNode }) {
 
   if (loading || state === "checking") {
     return (
-      <div className="flex min-h-screen items-center justify-center text-sm text-muted-foreground">
+      <div className="flex min-h-screen items-center justify-center bg-background text-base text-muted-foreground">
         Đang kiểm tra quyền quản trị...
       </div>
     );
@@ -47,26 +47,28 @@ export function RequireAdmin({ children }: { children: ReactNode }) {
   if (state === "denied") {
     const needsGoogle = !user || user.isAnonymous;
     return (
-      <div className="flex min-h-screen flex-col items-center justify-center gap-4 p-6 text-center">
-        <h1 className="text-xl font-semibold">
-          {needsGoogle ? "Cần đăng nhập giáo viên" : "Không có quyền quản trị"}
-        </h1>
-        <p className="max-w-md text-sm text-muted-foreground">
-          {needsGoogle
-            ? "Trang quản trị chỉ dành cho tài khoản Google của giáo viên có quyền admin."
-            : `Tài khoản ${user.email ?? "hiện tại"} không nằm trong danh sách admin được phép.`}
-        </p>
-        {authError && (
-          <p className="max-w-md rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-sm text-destructive">
-            {authError}
+      <div className="flex min-h-screen items-center justify-center bg-background p-6">
+        <div className="flex w-full max-w-md flex-col items-center gap-4 rounded-2xl border border-border bg-card p-8 text-center shadow-1">
+          <h1 className="font-display text-xl font-bold text-foreground">
+            {needsGoogle ? "Cần đăng nhập giáo viên" : "Không có quyền quản trị"}
+          </h1>
+          <p className="text-base text-muted-foreground">
+            {needsGoogle
+              ? "Trang quản trị chỉ dành cho tài khoản Google của giáo viên có quyền admin."
+              : `Tài khoản ${user.email ?? "hiện tại"} không nằm trong danh sách admin được phép.`}
           </p>
-        )}
-        <button
-          onClick={() => signInWithGoogle().catch((err) => console.error("admin sign-in failed:", err))}
-          className="rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground shadow-sm transition-all hover:brightness-110"
-        >
-          Đăng nhập Google giáo viên
-        </button>
+          {authError && (
+            <p className="w-full rounded-xl border border-destructive/30 bg-destructive/10 px-4 py-3 text-base text-destructive">
+              {authError}
+            </p>
+          )}
+          <button
+            onClick={() => signInWithGoogle().catch((err) => console.error("admin sign-in failed:", err))}
+            className="min-h-11 rounded-xl bg-primary px-5 py-2.5 text-base font-bold text-primary-foreground transition-all hover:brightness-110"
+          >
+            Đăng nhập Google giáo viên
+          </button>
+        </div>
       </div>
     );
   }

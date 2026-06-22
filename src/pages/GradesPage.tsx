@@ -16,10 +16,11 @@ const GradesPage = () => {
   const level = searchParams.get("level"); // "primary" | "secondary" | null
 
   useEffect(() => {
+    if (searchParams.get("change")) return; // đang chủ động đổi lớp — đừng tự nhảy về lớp cũ
     if (user && profile?.grade) {
       navigate(`/grade/${profile.grade}`, { replace: true });
     }
-  }, [user, profile, navigate]);
+  }, [user, profile, navigate, searchParams]);
 
   const renderGradeGrid = (grades: readonly number[], delay = 0) => (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">

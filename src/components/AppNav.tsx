@@ -40,7 +40,7 @@ const AppNav = () => {
       <header className="fixed top-3 left-0 right-0 z-50 px-4">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 rounded-2xl border border-border bg-card/95 px-3 py-2 shadow-1 backdrop-blur-sm sm:px-5">
           <button
-            onClick={() => navigate(user && !isGuest ? routes.dashboard : routes.home)}
+            onClick={() => navigate(routes.home)}
             className="flex shrink-0 items-center gap-2"
             aria-label="Trang chủ"
           >

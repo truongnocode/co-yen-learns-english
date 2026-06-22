@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine, Sparkles, Volume2 } from "lucide-react";
 import { gradeConfig, type SGKData } from "@/data/types";
+import { loadSGKData } from "@/data/loader";
 import PageShell from "@/components/PageShell";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -12,16 +13,19 @@ const GradePage = () => {
   const navigate = useNavigate();
   const grade = Number(gradeId);
   const cfg = gradeConfig[grade];
-  const [data] = useState<SGKData | null>(null);
+  const [data, setData] = useState<SGKData | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (grade >= 3 && grade <= 9) {
-      navigate("/dashboard", { replace: true });
-      return;
+      loadSGKData(grade)
+        .then(setData)
+        .catch(() => setData(null))
+        .finally(() => setLoading(false));
+    } else {
+      setLoading(false);
     }
-    setLoading(false);
-  }, [grade, navigate]);
+  }, [grade]);
 
   if (!cfg) {
     return (
@@ -49,7 +53,7 @@ const GradePage = () => {
             className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
             <Home className="h-5 w-5" />
           </motion.button>
-          <button onClick={() => navigate("/grades")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
+          <button onClick={() => navigate("/grades?change=1")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Chọn lớp khác
           </button>
         </div>

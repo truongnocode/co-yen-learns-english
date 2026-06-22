@@ -350,11 +350,6 @@ const VideoLessonPage = () => {
                     </span>
                   ))}
                 </p>
-                {currentLine?.vi && (
-                  <p className="max-w-2xl text-center text-sm font-medium leading-snug text-muted-foreground sm:text-base">
-                    {currentLine.vi}
-                  </p>
-                )}
               </div>
 
               <div className="grid gap-2 sm:grid-cols-[1fr_1.4fr_1fr]">
@@ -387,12 +382,12 @@ const VideoLessonPage = () => {
               </div>
 
               <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
-                <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="secondary" onClick={cyclePlaybackRate}>
+                <Button className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm" variant="outline" onClick={cyclePlaybackRate}>
                   <Gauge className="h-4 w-4" />
                   Tốc độ {playbackRateLabel}
                 </Button>
                 <Button
-                  className="h-10"
+                  className="h-10 gap-1 px-2 text-xs sm:gap-2 sm:px-3 sm:text-sm"
                   variant={looping ? "destructive" : "outline"}
                   onClick={() => {
                     if (looping) {
@@ -421,23 +416,41 @@ const VideoLessonPage = () => {
           <aside className="space-y-3 lg:flex lg:min-h-0 lg:flex-col lg:overflow-hidden">
             <div className="rounded-2xl border border-border/30 bg-card/85 p-4 shadow-lg backdrop-blur-xl lg:shrink-0">
               <h2 className="font-display text-xl font-extrabold text-foreground">Cách học</h2>
-              {canUseStoredRhythm ? (
-                <ol className="mt-2 space-y-1.5 text-sm font-semibold text-muted-foreground">
-                  <li>
-                    1. Dấu <span className="font-display text-2xl font-black leading-none text-primary">/</span> là ngắt ngắn,{" "}
-                    <span className="font-display text-2xl font-black leading-none text-primary">//</span> là ngắt dài.
-                  </li>
-                  <li>2. Bấm Nghe, đọc cả câu đúng nhịp và nhấn nhá.</li>
-                  <li>3. Che chữ dần, vẫn giữ dấu / đến khi đọc thuộc.</li>
-                </ol>
-              ) : (
-                <ol className="mt-2 space-y-1.5 text-sm font-semibold text-muted-foreground">
-                  <li>1. Bấm Nghe để nghe trọn câu trong video.</li>
-                  <li>2. Nhìn chữ và đọc theo đúng âm thanh.</li>
-                  <li>3. Che chữ dần, nghe lại rồi đọc thuộc.</li>
-                  <li>4. Khi đã đọc trôi chảy, bấm Đã thuộc.</li>
-                </ol>
+              {canUseStoredRhythm && (
+                <p className="mt-2 text-sm font-semibold text-muted-foreground">
+                  Dấu <span className="font-display text-xl font-black leading-none text-primary">/</span> ngắt ngắn,{" "}
+                  <span className="font-display text-xl font-black leading-none text-primary">//</span> ngắt dài — đọc theo đúng nhịp.
+                </p>
               )}
+              <ul className="mt-3 space-y-2 text-sm font-semibold text-muted-foreground">
+                <li className="flex items-center gap-2">
+                  <Play className="h-4 w-4 shrink-0 text-primary" />
+                  <span><b className="font-extrabold text-foreground">Nghe</b> — nghe cả câu</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Gauge className="h-4 w-4 shrink-0 text-primary" />
+                  <span><b className="font-extrabold text-foreground">Tốc độ</b> — đọc nhanh hay chậm (1x · 0.75x · 0.5x)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Repeat className="h-4 w-4 shrink-0 text-primary" />
+                  <span><b className="font-extrabold text-foreground">Lặp câu</b> — nghe lại nhiều lần</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="flex shrink-0 items-center text-primary">
+                    <ChevronLeft className="h-4 w-4" />
+                    <ChevronRight className="h-4 w-4" />
+                  </span>
+                  <span><b className="font-extrabold text-foreground">Câu trước / Câu sau</b> — chuyển câu</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <EyeOff className="h-4 w-4 shrink-0 text-primary" />
+                  <span><b className="font-extrabold text-foreground">Che chữ</b> — ẩn bớt chữ để tập đọc thuộc</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 shrink-0 text-primary" />
+                  <span><b className="font-extrabold text-foreground">Đã thuộc</b> — đánh dấu đã học xong</span>
+                </li>
+              </ul>
             </div>
 
             <div className="rounded-2xl border border-border/30 bg-card/85 p-4 shadow-lg backdrop-blur-xl lg:flex lg:min-h-0 lg:flex-1 lg:flex-col">

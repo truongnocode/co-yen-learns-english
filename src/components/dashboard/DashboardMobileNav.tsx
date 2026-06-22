@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Home, LayoutList, Gamepad2, Trophy, User } from "lucide-react";
+import { Home, LayoutList, Film, Gamepad2, Trophy } from "lucide-react";
 
 const items = [
   { label: "Trang chủ", icon: Home, path: "/dashboard" },
-  { label: "Lộ trình", icon: LayoutList, path: "/grades" },
-  { label: "Trò chơi", icon: Gamepad2, path: "/practice" },
-  { label: "Xếp hạng", icon: Trophy, path: "/progress" },
-  { label: "Cá nhân", icon: User, path: "/dashboard#profile" },
+  { label: "Bài học", icon: LayoutList, path: "/grades" },
+  { label: "Video", icon: Film, path: "/video-lessons" },
+  { label: "Luyện tập", icon: Gamepad2, path: "/practice" },
+  { label: "Tiến trình", icon: Trophy, path: "/progress" },
 ];
 
 /** Horizontal pill nav shown on phones/tablets where the desktop sidebar is hidden. */
@@ -27,7 +27,7 @@ const DashboardMobileNav = () => {
         </button>
         <nav className="flex items-center gap-1.5" aria-label="Điều hướng">
           {items.map((item) => {
-            const active = location.pathname + location.hash === item.path || location.pathname === item.path;
+            const active = location.pathname === item.path;
             return (
               <motion.button
                 key={item.path}

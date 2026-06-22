@@ -16,11 +16,10 @@ const Index = () => {
   const grade = profile?.grade;
 
   const mobileLinks = [
-    { label: "Tính năng", to: "/grades" },
-    { label: "Học bằng video", to: "/video-lessons" },
-    { label: "Cấp 1 (Lớp 3-5)", to: "/grades?level=primary" },
-    { label: "Cấp 2 (Lớp 6-9)", to: "/grades?level=secondary" },
-    { label: "Thi vào 10", to: "/grade/10" },
+    { label: "Bài học", to: "/grades" },
+    { label: "Video", to: "/video-lessons" },
+    { label: "Luyện tập", to: "/practice" },
+    { label: "Tiến trình", to: "/progress" },
   ];
 
   const handleCTA = useCallback(async () => {
@@ -89,11 +88,10 @@ const Index = () => {
             <span className="text-lg sm:text-xl font-black text-indigo-900 tracking-tight hidden sm:block font-display">Học cùng cô Yến</span>
           </div>
           <div className="hidden md:flex gap-6 font-bold text-indigo-800">
-            <button onClick={() => smartNavigate("/grades")} className="hover:text-pink-500 transition-colors">Tính năng</button>
+            <button onClick={() => smartNavigate("/grades")} className="hover:text-pink-500 transition-colors">Bài học</button>
             <button onClick={() => smartNavigate("/video-lessons")} className="hover:text-pink-500 transition-colors">Video</button>
-            <button onClick={() => smartNavigate("/grades?level=primary")} className="hover:text-pink-500 transition-colors">Cấp 1 (Lớp 3-5)</button>
-            <button onClick={() => smartNavigate("/grades?level=secondary")} className="hover:text-pink-500 transition-colors">Cấp 2 (Lớp 6-9)</button>
-            <button onClick={() => smartNavigate("/grade/10")} className="hover:text-pink-500 transition-colors">Thi vào 10</button>
+            <button onClick={() => smartNavigate("/practice")} className="hover:text-pink-500 transition-colors">Luyện tập</button>
+            <button onClick={() => smartNavigate("/progress")} className="hover:text-pink-500 transition-colors">Tiến trình</button>
           </div>
           <motion.button whileTap={{ scale: 0.95 }} onClick={handleCTA}
             className="bg-white hover:bg-indigo-50 text-indigo-600 font-bold py-2 px-6 rounded-full border-2 border-indigo-100 shadow-sm transition-all flex items-center gap-2">

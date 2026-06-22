@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Home, LayoutList, Gamepad2, Trophy, User } from "lucide-react";
+import { Home, LayoutList, Film, Gamepad2, Trophy } from "lucide-react";
 import type { UserProgress } from "@/lib/progress";
 import DailyMission from "./DailyMission";
 
 const menuItems = [
   { label: "Trang chủ", icon: Home, path: "/dashboard" },
-  { label: "Lộ trình học", icon: LayoutList, path: "/grades" },
-  { label: "Trò chơi", icon: Gamepad2, path: "/practice" },
-  { label: "Xếp hạng", icon: Trophy, path: "/progress" },
-  { label: "Cá nhân", icon: User, path: "/dashboard#profile" },
+  { label: "Bài học", icon: LayoutList, path: "/grades" },
+  { label: "Video", icon: Film, path: "/video-lessons" },
+  { label: "Luyện tập", icon: Gamepad2, path: "/practice" },
+  { label: "Tiến trình", icon: Trophy, path: "/progress" },
 ];
 
 interface Props {

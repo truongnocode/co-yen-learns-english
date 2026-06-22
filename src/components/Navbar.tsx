@@ -20,18 +20,15 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navLinks = user && grade
-    ? [
-        { label: "Bài học", to: `/grade/${grade}` },
-        { label: "Video", to: "/video-lessons" },
-        { label: "Tiến trình", to: "/progress" },
-        { label: "Dashboard", to: "/dashboard" },
-      ]
-    : [
-        { label: "Cấp 1", to: "/grades?level=primary" },
-        { label: "Cấp 2", to: "/grades?level=secondary" },
-        { label: "Thi vào 10", to: "/grade/10" },
-      ];
+  // One consistent menu for everyone. Grade selection (Cấp 1/2, Thi vào 10) lives
+  // inside the "Bài học" page; the personal hub is reached via the avatar/account
+  // control on the right, not a nav item.
+  const navLinks = [
+    { label: "Bài học", to: user && grade ? `/grade/${grade}` : "/grades" },
+    { label: "Video", to: "/video-lessons" },
+    { label: "Luyện tập", to: "/practice" },
+    { label: "Tiến trình", to: "/progress" },
+  ];
 
   const isLinkActive = (to: string) =>
     location.pathname === to || location.pathname.startsWith(to.split("?")[0] + "/");

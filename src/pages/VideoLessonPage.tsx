@@ -312,6 +312,7 @@ const VideoLessonPage = () => {
               ref={playerRef}
               videoId={lesson.videoId}
               className="lg:shrink-0 lg:max-h-[calc(100vh-22rem)]"
+              caption={{ vi: currentLine?.vi }}
             />
 
             <motion.div

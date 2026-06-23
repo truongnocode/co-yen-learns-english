@@ -14,6 +14,8 @@ export interface YouTubeSegmentPlayerHandle {
 interface YouTubeSegmentPlayerProps {
   videoId: string;
   className?: string;
+  /** Phụ đề tiếng Việt hiển thị ĐÈ dưới video (dùng bản dịch đã biên tập của app). */
+  caption?: { vi?: string };
 }
 
 interface YTPlayer {
@@ -76,22 +78,20 @@ function loadYouTubeApi(): Promise<void> {
   return youtubeApiPromise;
 }
 
-// Bật phụ đề GỐC của YouTube và yêu cầu tự dịch sang tiếng Việt (chất lượng dịch
-// của YouTube). Caption module nạp sau khi video bắt đầu phát nên gọi lại vài lần.
-function enableVietnameseCaptions(player: YTPlayer | null) {
+// Tắt phụ đề GỐC của YouTube — embed (controls:0) không bật được auto-dịch tiếng
+// Việt đáng tin cậy, nên app tự vẽ phụ đề tiếng Việt (bản dịch đã biên tập).
+// Caption module nạp sau khi video phát nên gọi lại vài lần.
+function disableYouTubeCaptions(player: YTPlayer | null) {
   try {
-    player?.loadModule?.("captions");
-    player?.setOption?.("captions", "track", {
-      languageCode: "en",
-      translationLanguage: { languageCode: "vi", languageName: "Vietnamese" },
-    });
+    player?.unloadModule?.("captions");
+    player?.setOption?.("captions", "track", {});
   } catch {
-    // cc_lang_pref:"vi" trong playerVars vẫn ưu tiên tiếng Việt nếu API không nhận track.
+    // cc_load_policy:0 trong playerVars đã yêu cầu tắt mặc định.
   }
 }
 
 const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegmentPlayerProps>(
-  ({ videoId, className }, ref) => {
+  ({ videoId, className, caption }, ref) => {
     const hostRef = useRef<HTMLDivElement | null>(null);
     const playerRef = useRef<YTPlayer | null>(null);
     const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -119,9 +119,8 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
             rel: 0,
             modestbranding: 1,
             iv_load_policy: 3,
-            cc_load_policy: 1, // bật phụ đề gốc của YouTube
-            cc_lang_pref: "vi", // ưu tiên tiếng Việt (YouTube tự dịch)
-            hl: "vi",
+            cc_load_policy: 0, // tắt phụ đề gốc YouTube — app tự vẽ phụ đề tiếng Việt
+            hl: "en",
             origin: window.location.origin,
           },
           events: {
@@ -129,8 +128,8 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
               if (cancelled) return;
               setReady(true);
               playerRef.current?.cueVideoById({ videoId, startSeconds: 0 });
-              enableVietnameseCaptions(playerRef.current);
-              window.setTimeout(() => enableVietnameseCaptions(playerRef.current), 600);
+              disableYouTubeCaptions(playerRef.current);
+              window.setTimeout(() => disableYouTubeCaptions(playerRef.current), 600);
             },
           },
         });
@@ -160,11 +159,11 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
           } catch {
             // YouTube may reject an unavailable rate for some videos; default playback still works.
           }
-          enableVietnameseCaptions(player);
+          disableYouTubeCaptions(player);
         }, 250);
-        // Caption module thường nạp sau khi phát ~1s — bật lại vài lần cho chắc.
-        window.setTimeout(() => enableVietnameseCaptions(player), 1000);
-        window.setTimeout(() => enableVietnameseCaptions(player), 2000);
+        // Caption module thường nạp sau khi phát ~1s — tắt lại vài lần cho chắc.
+        window.setTimeout(() => disableYouTubeCaptions(player), 1000);
+        window.setTimeout(() => disableYouTubeCaptions(player), 2000);
 
         // Stop (or, when looping, restart) based on the ACTUAL playback position,
         // not a fixed call-time timer. On mobile the video needs ~1–2s to load/seek
@@ -215,6 +214,13 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
         <div className="h-full w-full pointer-events-none">
           <div ref={hostRef} className="h-full w-full" />
         </div>
+
+        {/* Phụ đề tiếng Việt (bản dịch đã biên tập của app) — luôn hiển thị */}
+        {caption?.vi && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/55 to-transparent px-3 pb-3 pt-10 text-center sm:pb-4">
+            <p className="font-display text-base font-bold leading-snug text-white drop-shadow-md sm:text-xl">{caption.vi}</p>
+          </div>
+        )}
       </div>
     );
   },

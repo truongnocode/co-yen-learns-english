@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { getProgress, type UserProgress } from "@/lib/progress";
+import { getPetData, type PetData } from "@/lib/pet";
+import { getSpecies } from "@/data/pets";
 import { checkAndUpdateStreak } from "@/lib/daily";
 import GradeSelectDialog from "@/components/GradeSelectDialog";
 import AppNav from "@/components/AppNav";
@@ -20,6 +22,7 @@ const DashboardPage = () => {
   const navigate = useNavigate();
   const { user, profile, selectGrade, loading: authLoading } = useAuth();
   const [progress, setProgress] = useState<UserProgress | null>(null);
+  const [pet, setPet] = useState<PetData | null>(null);
   const [loading, setLoading] = useState(true);
   const [showGradeSelect, setShowGradeSelect] = useState(false);
 
@@ -31,6 +34,10 @@ const DashboardPage = () => {
       setProgress({ ...p, dailyStreak: streak, lastActiveDate: new Date().toISOString().slice(0, 10) });
     }).catch(() => {}).finally(() => setLoading(false));
   }, [user, authLoading, navigate]);
+
+  useEffect(() => {
+    if (user) getPetData(user.uid).then(setPet).catch(() => {});
+  }, [user]);
 
   useEffect(() => {
     if (user && profile && !profile.grade) setShowGradeSelect(true);
@@ -69,7 +76,7 @@ const DashboardPage = () => {
           transition={smooth}
           className="mb-6 flex items-center gap-4 rounded-3xl border border-border bg-card p-5 shadow-1 sm:p-6"
         >
-          <img src={bearUrl} alt="" className="h-16 w-16 shrink-0 drop-shadow-sm sm:h-20 sm:w-20" />
+          <img src={pet ? getSpecies(pet.type).img : bearUrl} alt="" className="h-16 w-16 shrink-0 drop-shadow-sm sm:h-20 sm:w-20" />
           <div className="min-w-0">
             <h1 className="font-display text-fluid-h1 font-extrabold text-foreground">Chào {firstName}!</h1>
             <p className="mt-1 font-medium text-muted-foreground">Hôm nay mình học gì nào?</p>

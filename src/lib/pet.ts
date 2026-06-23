@@ -1,7 +1,10 @@
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "./firebase";
 
-export type PetType = "dragon" | "cat" | "fox";
+// A pet's species is an id from PET_SPECIES (src/data/pets.ts). Kept as a string
+// so the roster can grow without touching this type. Legacy values ("dragon",
+// "cat", "fox") are still valid ids in the roster.
+export type PetType = string;
 export type PetStage = "egg" | "baby" | "teen" | "adult" | "legend";
 
 export interface PetData {
@@ -12,12 +15,6 @@ export interface PetData {
   createdAt: string;
   lastFedAt: string;
 }
-
-export const PET_TYPES: Record<PetType, { label: string; egg: string; baby: string; teen: string; adult: string; legend: string }> = {
-  dragon: { label: "Rồng con", egg: "🥚", baby: "🐣", teen: "🐲", adult: "🐉", legend: "🌟🐉🌟" },
-  cat: { label: "Mèo con", egg: "🥚", baby: "🐱", teen: "😺", adult: "😸", legend: "🌟😸🌟" },
-  fox: { label: "Cáo nhỏ", egg: "🥚", baby: "🦊", teen: "🦊", adult: "🦊", legend: "🌟🦊🌟" },
-};
 
 export const PET_STAGES: { stage: PetStage; label: string; threshold: number }[] = [
   { stage: "egg", label: "Trứng", threshold: 0 },
@@ -35,19 +32,14 @@ export const getStageForEnergy = (energy: number): PetStage => {
 };
 
 export const getNextStage = (stage: PetStage): { stage: PetStage; threshold: number } | null => {
-  const idx = PET_STAGES.findIndex(s => s.stage === stage);
+  const idx = PET_STAGES.findIndex((s) => s.stage === stage);
   return idx < PET_STAGES.length - 1 ? PET_STAGES[idx + 1] : null;
 };
 
-export const getPetEmoji = (type: PetType, stage: PetStage): string => {
-  return PET_TYPES[type][stage];
-};
+export const getStageLabel = (stage: PetStage): string =>
+  PET_STAGES.find((s) => s.stage === stage)?.label || "";
 
-export const getStageLabel = (stage: PetStage): string => {
-  return PET_STAGES.find(s => s.stage === stage)?.label || "";
-};
-
-// Firebase operations
+// --- Firestore ---
 export const getPetData = async (uid: string): Promise<PetData | null> => {
   const snap = await getDoc(doc(db, "pets", uid));
   return snap.exists() ? (snap.data() as PetData) : null;
@@ -76,6 +68,15 @@ export const createPet = async (uid: string, type: PetType, name: string): Promi
     createdAt: new Date().toISOString(),
     lastFedAt: new Date().toISOString(),
   };
+  await savePetData(uid, pet);
+  return pet;
+};
+
+/** Đổi loài linh vật nhưng GIỮ nguyên tiến trình (tên/năng lượng/cấp). */
+export const changePetSpecies = async (uid: string, type: PetType): Promise<PetData | null> => {
+  const pet = await getPetData(uid);
+  if (!pet) return null;
+  pet.type = type;
   await savePetData(uid, pet);
   return pet;
 };

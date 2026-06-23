@@ -53,7 +53,9 @@ const DashboardPage = () => {
     );
   }
 
-  const firstName = user.displayName?.split(" ")[0]?.trim() || "bạn nhỏ";
+  const studentName = profile?.studentName?.trim();
+  const firstName =
+    (studentName ? studentName.split(/\s+/).slice(-1)[0] : user.displayName?.split(" ")[0]?.trim()) || "bạn nhỏ";
 
   return (
     <div className="relative min-h-svh bg-background pb-[76px] md:pb-0">

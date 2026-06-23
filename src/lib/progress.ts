@@ -76,6 +76,7 @@ export const completeOnboarding = async (
 ) => {
   await updateDoc(doc(db, "users", uid), {
     studentName: data.studentName,
+    displayName: data.studentName, // dùng làm tên hiển thị (greeting, leaderboard…)
     grade: data.grade,
     phone: data.phone,
   });

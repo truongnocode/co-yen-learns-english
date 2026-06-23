@@ -112,12 +112,18 @@ const LearningOverview = ({ progress }: Props) => {
         <div className="flex items-center gap-3 mb-4">
           <div className="relative shrink-0 group">
             <div className="w-14 h-14 rounded-xl bg-primary/10 p-[2px]">
-              <img
-                src={user?.photoURL || ""}
-                alt="Avatar"
-                className="w-full h-full rounded-xl object-cover border-2 border-card"
-                referrerPolicy="no-referrer"
-              />
+              {user?.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt="Avatar"
+                  className="w-full h-full rounded-xl object-cover border-2 border-card"
+                  referrerPolicy="no-referrer"
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center rounded-xl border-2 border-card bg-primary/15 font-display text-xl font-extrabold text-primary">
+                  {(profile?.studentName || user?.displayName || "?").trim().charAt(0).toUpperCase()}
+                </div>
+              )}
             </div>
             <button
               onClick={openEdit}
@@ -132,7 +138,7 @@ const LearningOverview = ({ progress }: Props) => {
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-1.5">
               <h3 className="font-display font-extrabold text-base text-foreground truncate">
-                {user?.displayName?.split(" ").slice(-2).join(" ") || "Học sinh"}
+                {profile?.studentName || user?.displayName?.split(" ").slice(-2).join(" ") || "Học sinh"}
               </h3>
               <button onClick={openEdit} className="p-1 rounded-full hover:bg-muted/60 transition-colors shrink-0">
                 <Pencil className="h-3 w-3 text-muted-foreground" />

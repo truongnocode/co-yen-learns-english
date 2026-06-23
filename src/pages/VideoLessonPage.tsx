@@ -337,6 +337,9 @@ const VideoLessonPage = () => {
                     </span>
                   ))}
                 </p>
+                {currentLine?.vi && (
+                  <p className="text-center text-sm font-medium text-muted-foreground sm:text-base">{currentLine.vi}</p>
+                )}
               </div>
 
               <div className="grid gap-2 sm:grid-cols-[1fr_1.4fr_1fr]">

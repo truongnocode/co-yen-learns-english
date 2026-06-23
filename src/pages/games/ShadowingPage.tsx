@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Play, Mic, Square, SkipForward, Eye, EyeOff, Volume2, Sparkles } from "lucide-react";
+import { Play, Mic, Square, SkipForward, Eye, EyeOff, Volume2, Sparkles } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import { speakUS } from "@/lib/tts";
 import { startRecording, stopRecording, isRecordingSupported, getAudioUrl } from "@/lib/recorder";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import { SpeakingFeedback } from "@/components/SpeakingFeedback";
 import { gradeSpeaking, type SpeakingVerdict } from "@/lib/api-client";
 import { useAuth } from "@/contexts/AuthContext";
@@ -33,7 +34,6 @@ const PHASES: { key: Phase; label: string; icon: typeof Play; desc: string }[] =
 
 const ShadowingPage = () => {
   const { gradeId } = useParams();
-  const navigate = useNavigate();
   const grade = Number(gradeId || 6);
 
   const [sentences, setSentences] = useState<{ en: string; vi: string }[]>([]);
@@ -156,13 +156,7 @@ const ShadowingPage = () => {
     <PageShell>
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground">
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
+          <PageBack />
           <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
             {current + 1}/{sentences.length}
           </span>

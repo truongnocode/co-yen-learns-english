@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Volume2, RotateCcw } from "lucide-react";
+import { Volume2, RotateCcw } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import { filterWithEmoji } from "@/data/emojiMap";
 import { speakUS } from "@/lib/tts";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import { Progress } from "@/components/ui/progress";
 
 
@@ -110,19 +111,7 @@ const ListenChoosePicture = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border"
-          >
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button
-            onClick={() => navigate(-1)}
-            className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
+          <PageBack />
           <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-xl font-bold">
             Câu {current + 1}/{questions.length}
           </span>

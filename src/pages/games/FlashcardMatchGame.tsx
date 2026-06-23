@@ -1,11 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Timer, RotateCcw, MousePointerClick } from "lucide-react";
+import { Timer, RotateCcw, MousePointerClick } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import { filterWithEmoji } from "@/data/emojiMap";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 
 
 function shuffle<T>(arr: T[]): T[] {
@@ -27,7 +28,6 @@ interface Card {
 
 const FlashcardMatchGame = () => {
   const { gradeId } = useParams();
-  const navigate = useNavigate();
   const grade = Number(gradeId || 6);
 
   const [cards, setCards] = useState<Card[]>([]);
@@ -153,19 +153,7 @@ const FlashcardMatchGame = () => {
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground"
-          >
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button
-            onClick={() => navigate(-1)}
-            className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
+          <PageBack />
           <div className="ml-auto flex items-center gap-3">
             <div className="flex items-center gap-1.5 bg-card rounded-full px-3 py-1.5 border border-border shadow-1">
               <MousePointerClick className="h-4 w-4 text-accent" />

@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Volume2 } from "lucide-react";
+import { Volume2 } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
@@ -9,6 +9,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { saveQuizResult, getProgress } from "@/lib/progress";
 import { completeDailyTask } from "@/lib/daily";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import Breadcrumb from "@/components/Breadcrumb";
 import { speakUS } from "@/lib/tts";
 import ExplanationBox from "@/components/ExplanationBox";
@@ -154,11 +155,8 @@ const ExercisesPage = () => {
   return (
     <PageShell withNavbar={false}>
       <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-20">
+        <PageBack className="mb-4" />
         <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <ArrowLeft className="h-5 w-5" />
-          </motion.button>
           <div className="flex-1">
             <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — Bài tập</p>
             <p className="text-xs text-muted-foreground">{unit.title}</p>
@@ -167,10 +165,6 @@ const ExercisesPage = () => {
           {timeLimit > 0 && (
             <CountdownTimer minutes={timeLimit} onTimeUp={handleTimeUp} started={!finished} />
           )}
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
         </div>
         <Breadcrumb />
 

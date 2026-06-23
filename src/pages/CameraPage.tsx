@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Home, Camera, BookOpen, Zap, ClipboardList, Video, Hand } from "lucide-react";
+import { Camera, BookOpen, Zap, ClipboardList, Video, Hand } from "lucide-react";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import { useAudio } from "@/lib/useAudio";
 import { speakUS } from "@/lib/tts";
 import { loadSGKData, loadGrade10Vocab, loadGrade10Grammar, loadGrade10Tests } from "@/data/loader";
@@ -546,7 +547,6 @@ function CameraOverlay({
 const CameraPage = () => {
   const { gradeId } = useParams();
   const grade = Number(gradeId || 10);
-  const navigate = useNavigate();
 
   const [gradeData, setGradeData] = useState<SGKData | Record<string, unknown> | null>(null);
   const [loading, setLoading] = useState(true);
@@ -631,15 +631,7 @@ const CameraPage = () => {
     <PageShell>
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         {/* Navigation */}
-        <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
-        </div>
+        <PageBack className="mb-6" />
 
         {/* Hero */}
         <motion.div

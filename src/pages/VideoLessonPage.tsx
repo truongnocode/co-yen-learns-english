@@ -2,18 +2,17 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate, useParams } from "react-router-dom";
 import {
-  ArrowLeft,
   Check,
   ChevronLeft,
   ChevronRight,
   EyeOff,
   Gauge,
-  Home,
   Play,
   Repeat,
   Square,
 } from "lucide-react";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import { Button } from "@/components/ui/button";
 import YouTubeSegmentPlayer, { type YouTubeSegmentPlayerHandle } from "@/components/YouTubeSegmentPlayer";
 import { useAuth } from "@/contexts/AuthContext";
@@ -303,20 +302,8 @@ const VideoLessonPage = () => {
   return (
     <PageShell>
       <div className="mx-auto flex min-h-svh max-w-6xl flex-col overflow-x-hidden px-4 pb-8 pt-24 sm:px-5 sm:pt-28 lg:box-border lg:h-screen lg:min-h-0 lg:overflow-hidden lg:pb-4 lg:pt-20 xl:max-w-7xl">
-        <div className="mb-3 flex shrink-0 items-center gap-3 lg:hidden">
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            onClick={() => navigate("/dashboard")}
-            className="rounded-xl border border-border bg-card p-2.5 text-foreground shadow-1"
-          >
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button
-            onClick={() => navigate("/video-lessons")}
-            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" /> Danh sách video
-          </button>
+        <div className="shrink-0 lg:hidden">
+          <PageBack className="mb-3" />
         </div>
 
         <div className="grid min-h-0 flex-1 gap-3 lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_350px]">

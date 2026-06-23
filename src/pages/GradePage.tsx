@@ -1,10 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, Home, GraduationCap, Camera, PenLine, Sparkles, Volume2 } from "lucide-react";
+import { ArrowLeft, BookOpen, Zap, FileText, ClipboardList, GraduationCap, Camera, PenLine, Sparkles, Volume2, Repeat } from "lucide-react";
 import { gradeConfig, type SGKData } from "@/data/types";
 import { loadSGKData } from "@/data/loader";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
@@ -48,13 +49,13 @@ const GradePage = () => {
   return (
     <PageShell>
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-6">
-        <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button onClick={() => navigate("/grades?change=1")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Chọn lớp khác
+        <div className="mb-6 flex items-center justify-between gap-3">
+          <PageBack />
+          <button
+            onClick={() => navigate("/grades?change=1")}
+            className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-card px-3 py-2 text-sm font-bold text-foreground shadow-1 transition-colors hover:bg-muted"
+          >
+            <Repeat className="h-4 w-4" /> Đổi lớp
           </button>
         </div>
 

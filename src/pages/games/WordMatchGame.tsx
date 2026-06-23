@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Timer, RotateCcw } from "lucide-react";
+import { Timer, RotateCcw } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import type { VocabItem } from "@/data/types";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 
 
 function shuffle<T>(arr: T[]): T[] {
@@ -18,7 +19,6 @@ function shuffle<T>(arr: T[]): T[] {
 
 const WordMatchGame = () => {
   const { gradeId } = useParams();
-  const navigate = useNavigate();
   const grade = Number(gradeId || 6);
 
   const [words, setWords] = useState<VocabItem[]>([]);
@@ -99,13 +99,7 @@ const WordMatchGame = () => {
     <PageShell>
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
+          <PageBack />
           <div className="ml-auto flex items-center gap-1.5 bg-card rounded-xl px-3 py-1.5 border border-border shadow-1">
             <Timer className="h-4 w-4 text-primary" />
             <span className="font-display font-extrabold text-sm text-foreground">{timer}s</span>

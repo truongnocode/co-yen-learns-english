@@ -1,12 +1,13 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Volume2, BookOpen, Brain, Pencil, Home, Search, BookText, Check, Trophy, RefreshCw, RotateCcw } from "lucide-react";
+import { Volume2, BookOpen, Brain, Pencil, Search, BookText, Check, Trophy, RefreshCw, RotateCcw } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit, type VocabItem, wordTypeLabels } from "@/data/types";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import Breadcrumb from "@/components/Breadcrumb";
 import { getWordIcon } from "@/lib/wordIcons";
 import { speakUS } from "@/lib/tts";
@@ -565,7 +566,6 @@ const DictionaryTab = ({ words }: { words: VocabItem[] }) => {
 // ===== MAIN PAGE =====
 const VocabPage = () => {
   const { gradeId, unitKey } = useParams();
-  const navigate = useNavigate();
   const grade = Number(gradeId);
   const [unit, setUnit] = useState<SGKUnit | null>(null);
   const [loading, setLoading] = useState(true);
@@ -594,19 +594,10 @@ const VocabPage = () => {
   return (
     <PageShell withNavbar={false}>
       <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-6 flex flex-col min-h-screen">
-        <div className="flex items-center gap-3 mb-5 shrink-0">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <ArrowLeft className="h-5 w-5" />
-          </motion.button>
-          <div className="flex-1">
-            <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — {unit.title}</p>
-            <p className="text-xs text-muted-foreground">{unit.vocabulary.length} từ vựng</p>
-          </div>
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
+        <PageBack className="mb-4 shrink-0" />
+        <div className="mb-5 shrink-0">
+          <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — {unit.title}</p>
+          <p className="text-xs text-muted-foreground">{unit.vocabulary.length} từ vựng</p>
         </div>
         <Breadcrumb />
 

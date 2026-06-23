@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home, Play, Volume2 } from "lucide-react";
+import { Play, Volume2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { loadSGKData } from "@/data/loader";
 import type { MCQuestion, SGKData } from "@/data/types";
@@ -17,11 +16,11 @@ import { Progress } from "@/components/ui/progress";
 import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";
 import CountdownTimer from "@/components/CountdownTimer";
 import ReviewAllAnswers from "@/components/ReviewAllAnswers";
+import PageBack from "@/components/PageBack";
 
 const smooth = { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const };
 
 const DynamicTestPage = () => {
-  const navigate = useNavigate();
   const { user, profile } = useAuth();
   const grade = profile?.grade || 6;
 
@@ -126,15 +125,7 @@ const DynamicTestPage = () => {
   return (
     <PageShell>
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
-        <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
-        </div>
+        <PageBack className="mb-6" />
 
         {!started ? (
           /* Setup screen */

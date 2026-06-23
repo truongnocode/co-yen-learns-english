@@ -1,7 +1,7 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState, useCallback, useRef, useMemo } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, ChevronRight, Home, Trophy, Search, X, ChevronLeft } from "lucide-react";
+import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, ChevronRight, Trophy, Search, X, ChevronLeft } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
 import { loadGrade10Tests } from "@/data/loader";
 import {
@@ -12,6 +12,7 @@ import {
 } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";
 import CountdownTimer from "@/components/CountdownTimer";
 import ReviewAllAnswers from "@/components/ReviewAllAnswers";
@@ -60,7 +61,6 @@ const COLLECTIONS: Record<string, { title: string; subtitle: string; keys: strin
 };
 
 const Grade10TestsPage = () => {
-  const navigate = useNavigate();
   const { collection } = useParams<{ collection?: string }>();
   const activeCollection = collection ? COLLECTIONS[collection] : undefined;
   const [data, setData] = useState<Record<string, TestData> | null>(null);
@@ -120,19 +120,10 @@ const Grade10TestsPage = () => {
     return (
       <PageShell>
         <div className="max-w-5xl mx-auto px-5 pt-28 pb-20">
-          <div className="flex items-center gap-3 mb-6">
-            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(activeCollection ? "/grade/10/tests" : "/grade/10")}
-              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-              <ArrowLeft className="h-5 w-5" />
-            </motion.button>
-            <div className="flex-1">
-              <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
-              <p className="text-xs text-muted-foreground">{activeCollection ? activeCollection.title : "Đề thi thử"}</p>
-            </div>
-            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-              <Home className="h-5 w-5" />
-            </motion.button>
+          <PageBack className="mb-4" />
+          <div className="mb-6">
+            <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
+            <p className="text-xs text-muted-foreground">{activeCollection ? activeCollection.title : "Đề thi thử"}</p>
           </div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}

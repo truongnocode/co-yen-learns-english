@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowLeft, Home, ThumbsDown, Minus, ThumbsUp } from "lucide-react";
+import { ThumbsDown, Minus, ThumbsUp } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { getProgress } from "@/lib/progress";
 import { loadSGKData } from "@/data/loader";
@@ -9,6 +9,7 @@ import { getDueWords, updateSRS, initSRSItems, type SRSItem } from "@/lib/srs";
 import type { VocabItem } from "@/data/types";
 import { speakUS } from "@/lib/tts";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
@@ -80,20 +81,15 @@ const SRSReviewPage = () => {
   return (
     <PageShell>
       <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
-        <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card border border-border shadow-1 text-foreground">
-            <Home className="h-5 w-5" />
-          </motion.button>
-          <button onClick={() => navigate(-1)} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
-          {!isFinished && (
+        <PageBack className="mb-4" />
+
+        {!isFinished && (
+          <div className="flex mb-6">
             <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">
               {current + 1}/{dueItems.length}
             </span>
-          )}
-        </div>
+          </div>
+        )}
 
         <h1 className="font-display font-extrabold text-2xl text-foreground mb-1">Ôn tập thông minh</h1>
         <p className="text-muted-foreground text-base mb-6">

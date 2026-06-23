@@ -1,10 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, Home } from "lucide-react";
 import { loadSGKData } from "@/data/loader";
 import { type SGKUnit } from "@/data/types";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import Breadcrumb from "@/components/Breadcrumb";
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -82,19 +82,10 @@ const GrammarPage = () => {
   return (
     <PageShell withNavbar={false}>
       <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-20">
-        <div className="flex items-center gap-3 mb-6">
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate(-1)}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <ArrowLeft className="h-5 w-5" />
-          </motion.button>
-          <div className="flex-1">
-            <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — {unit.title}</p>
-            <p className="text-xs text-muted-foreground">Ngữ pháp</p>
-          </div>
-          <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-            className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-            <Home className="h-5 w-5" />
-          </motion.button>
+        <PageBack className="mb-4" />
+        <div className="mb-6">
+          <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — {unit.title}</p>
+          <p className="text-xs text-muted-foreground">Ngữ pháp</p>
         </div>
         <Breadcrumb />
 

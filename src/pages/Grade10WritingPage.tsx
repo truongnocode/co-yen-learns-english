@@ -12,15 +12,14 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import {
-  ArrowLeft,
   CheckCircle2,
   XCircle,
   Trophy,
   Sparkles,
 } from "lucide-react";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,7 +49,6 @@ const SECTION_META: Record<
 };
 
 export default function Grade10WritingPage() {
-  const navigate = useNavigate();
   const [data, setData] = useState<Grade10WritingData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -88,19 +86,11 @@ export default function Grade10WritingPage() {
   return (
     <PageShell>
       <div className="mx-auto max-w-3xl space-y-6 pb-12">
-        <div className="flex items-center justify-between">
-          <button
-            onClick={() => navigate(-1)}
-            className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" /> Quay lại
-          </button>
-          <h1 className="font-display text-xl font-black">
-            <Sparkles className="mr-1 inline h-5 w-5 text-primary" />
-            Writing — Lớp 10
-          </h1>
-          <span />
-        </div>
+        <PageBack className="mb-4" />
+        <h1 className="font-display text-xl font-black">
+          <Sparkles className="mr-1 inline h-5 w-5 text-primary" />
+          Writing — Lớp 10
+        </h1>
 
         <Tabs defaultValue={availableSections[0]} className="space-y-6">
           <TabsList className="flex w-full flex-wrap">

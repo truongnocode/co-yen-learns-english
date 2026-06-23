@@ -1,12 +1,12 @@
-import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowLeft, FileText, CheckCircle2, XCircle, BookOpen, Eye, PenTool, Send, Home, Trophy } from "lucide-react";
+import { ArrowLeft, FileText, CheckCircle2, XCircle, BookOpen, Eye, PenTool, Send, Trophy } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
 import { loadGrade10Reading, loadGrade10Writing } from "@/data/loader";
 import { type MCQuestion, type Grade10WritingData } from "@/data/types";
 import { Progress } from "@/components/ui/progress";
 import PageShell from "@/components/PageShell";
+import PageBack from "@/components/PageBack";
 import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";
 import CountdownTimer from "@/components/CountdownTimer";
 import ReviewAllAnswers from "@/components/ReviewAllAnswers";
@@ -315,7 +315,6 @@ const TextInputExercise = ({ questions, instruction, reviewMode = "instant" }: {
 };
 
 const Grade10ReadingPage = () => {
-  const navigate = useNavigate();
   const [readingData, setReadingData] = useState<Grade10ReadingData | null>(null);
   const [writingData, setWritingData] = useState<Grade10WritingData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -346,19 +345,10 @@ const Grade10ReadingPage = () => {
     return (
       <PageShell>
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
-          <div className="flex items-center gap-3 mb-6">
-            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/grade/10")}
-              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-              <ArrowLeft className="h-5 w-5" />
-            </motion.button>
-            <div className="flex-1">
-              <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
-              <p className="text-xs text-muted-foreground">Đọc hiểu & Viết</p>
-            </div>
-            <motion.button whileTap={{ scale: 0.9 }} onClick={() => navigate("/dashboard")}
-              className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
-              <Home className="h-5 w-5" />
-            </motion.button>
+          <PageBack className="mb-4" />
+          <div className="mb-6">
+            <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
+            <p className="text-xs text-muted-foreground">Đọc hiểu & Viết</p>
           </div>
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth}

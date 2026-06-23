@@ -71,6 +71,14 @@ export async function importVideoLesson(
   }
   const id = lesson.videoId;
   const lines = normalizeLessonLines(lesson.lines);
+  // Mọi câu BẮT BUỘC có bản dịch tiếng Việt — học sinh luôn thấy nghĩa, không câu nào trống.
+  const missingVi = lines.filter((l) => !l.vi || !l.vi.trim());
+  if (missingVi.length) {
+    const ids = missingVi.slice(0, 5).map((l) => l.id).join(", ");
+    throw new Error(
+      `JSON không hợp lệ: ${missingVi.length} câu thiếu bản dịch tiếng Việt ('vi') — vd: ${ids}. Mọi câu đều cần có 'vi'.`,
+    );
+  }
   await setDoc(
     doc(db, "video_lessons", id),
     {

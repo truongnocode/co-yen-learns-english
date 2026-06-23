@@ -114,7 +114,7 @@ const Grade10VocabPage = () => {
 
     return (
       <PageShell>
-        <div className="max-w-lg mx-auto px-5 pt-28 pb-20 text-center">
+        <div className="max-w-3xl mx-auto px-5 pt-28 pb-20 text-center">
           <motion.div initial={{ scale: 0.8, opacity: 0, filter: "blur(8px)" }} animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="bg-card rounded-2xl p-8 shadow-2 border border-border">
@@ -188,7 +188,7 @@ const Grade10VocabPage = () => {
 
   return (
     <PageShell>
-      <div className="max-w-2xl mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-5">
           <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectedTopic(null)}
             className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">

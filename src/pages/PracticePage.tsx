@@ -79,7 +79,7 @@ const PracticePage = () => {
 
   return (
     <PageShell>
-      <div className="mx-auto max-w-4xl px-5 pb-20 pt-28">
+      <div className="mx-auto max-w-3xl px-5 pb-20 pt-28">
         <PageBack className="mb-6" />
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={smooth} className="mb-8">

@@ -50,7 +50,7 @@ const GradesPage = () => {
 
   return (
     <PageShell>
-      <div className="max-w-5xl mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="mb-8">
           <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground text-sm inline-flex items-center gap-1.5 mb-4 transition-colors">
             <ArrowLeft className="h-4 w-4" /> Trang chủ

@@ -154,7 +154,7 @@ const ExercisesPage = () => {
 
   return (
     <PageShell withNavbar={false}>
-      <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-20">
+      <div className="max-w-3xl mx-auto w-full px-5 pt-12 pb-20">
         <PageBack className="mb-4" />
         <div className="flex items-center gap-3 mb-6">
           <div className="flex-1">

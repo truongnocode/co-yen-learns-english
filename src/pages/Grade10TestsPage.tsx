@@ -119,7 +119,7 @@ const Grade10TestsPage = () => {
   if (!selectedTest) {
     return (
       <PageShell>
-        <div className="max-w-5xl mx-auto px-5 pt-28 pb-20">
+        <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
           <PageBack className="mb-4" />
           <div className="mb-6">
             <p className="font-display font-extrabold text-sm text-foreground">Ôn thi vào lớp 10</p>
@@ -334,7 +334,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
   if (finished && !showPartC && partCQuestions.length > 0) {
     return (
       <PageShell>
-        <div className="max-w-2xl mx-auto px-5 pt-28 pb-20 text-center">
+        <div className="max-w-3xl mx-auto px-5 pt-28 pb-20 text-center">
           <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">Part A & B hoàn thành!</h2>
@@ -363,7 +363,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
   if (showPartC) {
     return (
       <PageShell>
-        <div className="max-w-2xl mx-auto px-5 pt-28 pb-20">
+        <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
           <div className="flex items-center gap-3 mb-5">
             <motion.button whileTap={{ scale: 0.9 }} onClick={onBack}
               className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
@@ -414,7 +414,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
     const pct = Math.round((score / totalMCQ) * 100);
     return (
       <PageShell>
-        <div className="max-w-lg mx-auto px-5 pt-28 pb-20 text-center">
+        <div className="max-w-3xl mx-auto px-5 pt-28 pb-20 text-center">
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
@@ -446,7 +446,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
 
   return (
     <PageShell>
-      <div className="max-w-2xl mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-5">
           <motion.button whileTap={{ scale: 0.9 }} onClick={onBack}
             className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">

@@ -92,7 +92,7 @@ const VideoLessonsPage = () => {
 
   return (
     <PageShell>
-      <div className="mx-auto max-w-4xl px-5 pb-20 pt-28">
+      <div className="mx-auto max-w-3xl px-5 pb-20 pt-28">
         <div className="mb-6 flex items-center gap-3">
           <motion.button
             whileTap={{ scale: 0.9 }}

@@ -91,7 +91,7 @@ const VirtualPetPage = () => {
     const isChange = !!pet;
     return (
       <PageShell>
-        <div className="mx-auto max-w-2xl px-4 pt-24 pb-16">
+        <div className="mx-auto max-w-3xl px-5 pt-28 pb-20">
           <div className="mb-6 text-center">
             <h1 className="font-display text-2xl font-extrabold text-foreground md:text-3xl">
               {isChange ? "Đổi bạn đồng hành" : "Chọn bạn đồng hành"}
@@ -149,7 +149,7 @@ const VirtualPetPage = () => {
 
   return (
     <PageShell>
-      <div className="mx-auto max-w-2xl px-4 pt-24 pb-16">
+      <div className="mx-auto max-w-3xl px-5 pt-28 pb-20">
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="mb-8 text-center">
           <motion.img
             src={species.img} alt={species.name}

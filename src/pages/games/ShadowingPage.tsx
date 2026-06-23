@@ -154,7 +154,7 @@ const ShadowingPage = () => {
 
   return (
     <PageShell>
-      <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <div className="flex items-center gap-3 mb-6">
           <PageBack />
           <span className="ml-auto text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-full font-bold">

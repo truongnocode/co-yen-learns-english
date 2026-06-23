@@ -593,7 +593,7 @@ const VocabPage = () => {
 
   return (
     <PageShell withNavbar={false}>
-      <div className="max-w-lg mx-auto w-full px-5 pt-12 pb-6 flex flex-col min-h-screen">
+      <div className="max-w-3xl mx-auto w-full px-5 pt-12 pb-6 flex flex-col min-h-screen">
         <PageBack className="mb-4 shrink-0" />
         <div className="mb-5 shrink-0">
           <p className="font-display font-extrabold text-sm text-foreground">Unit {unitKey} — {unit.title}</p>

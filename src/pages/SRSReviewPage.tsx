@@ -80,7 +80,7 @@ const SRSReviewPage = () => {
 
   return (
     <PageShell>
-      <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         <PageBack className="mb-4" />
 
         {!isFinished && (

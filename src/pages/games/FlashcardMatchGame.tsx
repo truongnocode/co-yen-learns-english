@@ -150,7 +150,7 @@ const FlashcardMatchGame = () => {
 
   return (
     <PageShell>
-      <div className="max-w-lg mx-auto px-5 pt-28 pb-20">
+      <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
           <PageBack />

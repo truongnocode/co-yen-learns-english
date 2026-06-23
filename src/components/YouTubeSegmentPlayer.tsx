@@ -14,6 +14,8 @@ export interface YouTubeSegmentPlayerHandle {
 interface YouTubeSegmentPlayerProps {
   videoId: string;
   className?: string;
+  /** Phụ đề hiển thị ĐÈ TRÊN video (song ngữ). text = tiếng Anh (đã che nếu cần), vi = nghĩa. */
+  caption?: { text?: string; vi?: string };
 }
 
 interface YTPlayer {
@@ -75,17 +77,8 @@ function loadYouTubeApi(): Promise<void> {
   return youtubeApiPromise;
 }
 
-function enableEnglishCaptions(player: YTPlayer | null) {
-  try {
-    player?.loadModule?.("captions");
-    player?.setOption?.("captions", "track", { languageCode: "en" });
-  } catch {
-    // Caption module support varies by video/browser; playerVars still request English CC.
-  }
-}
-
 const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegmentPlayerProps>(
-  ({ videoId, className }, ref) => {
+  ({ videoId, className, caption }, ref) => {
     const hostRef = useRef<HTMLDivElement | null>(null);
     const playerRef = useRef<YTPlayer | null>(null);
     const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -113,8 +106,7 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
             rel: 0,
             modestbranding: 1,
             iv_load_policy: 3,
-            cc_load_policy: 1,
-            cc_lang_pref: "en",
+            cc_load_policy: 0, // tắt phụ đề gốc của YouTube — dùng lớp phụ đề song ngữ riêng (caption prop)
             hl: "en",
             origin: window.location.origin,
           },
@@ -123,8 +115,6 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
               if (cancelled) return;
               setReady(true);
               playerRef.current?.cueVideoById({ videoId, startSeconds: 0 });
-              enableEnglishCaptions(playerRef.current);
-              window.setTimeout(() => enableEnglishCaptions(playerRef.current), 300);
             },
           },
         });
@@ -148,14 +138,12 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
         const end = Math.max(start + 0.8, segment.end);
 
         player.loadVideoById({ videoId, startSeconds: start, endSeconds: end });
-        enableEnglishCaptions(player);
         window.setTimeout(() => {
           try {
             player.setPlaybackRate(rate);
           } catch {
             // YouTube may reject an unavailable rate for some videos; default playback still works.
           }
-          enableEnglishCaptions(player);
         }, 250);
 
         // Stop (or, when looping, restart) based on the ACTUAL playback position,
@@ -207,6 +195,18 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
         <div className="h-full w-full pointer-events-none">
           <div ref={hostRef} className="h-full w-full" />
         </div>
+
+        {/* Phụ đề song ngữ ĐÈ TRÊN video — luôn có nghĩa tiếng Việt */}
+        {(caption?.text || caption?.vi) && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col items-center gap-0.5 bg-gradient-to-t from-black/85 via-black/55 to-transparent px-3 pb-3 pt-10 text-center sm:pb-4">
+            {caption.text && (
+              <p className="font-display text-base font-extrabold leading-snug text-white drop-shadow-md sm:text-xl">{caption.text}</p>
+            )}
+            {caption.vi && (
+              <p className="text-sm font-semibold leading-snug text-amber-200 drop-shadow-md sm:text-lg">{caption.vi}</p>
+            )}
+          </div>
+        )}
       </div>
     );
   },

@@ -27,6 +27,7 @@ interface YTPlayer {
   getCurrentTime: () => number;
   setPlaybackRate: (rate: number) => void;
   loadModule?: (module: string) => void;
+  unloadModule?: (module: string) => void;
   setOption?: (module: string, option: string, value: unknown) => void;
   destroy: () => void;
 }
@@ -77,6 +78,18 @@ function loadYouTubeApi(): Promise<void> {
   return youtubeApiPromise;
 }
 
+// Tắt hẳn phụ đề GỐC của YouTube (kể cả khi tài khoản/video bật sẵn) — app tự
+// vẽ phụ đề song ngữ riêng. Caption module nạp sau khi video bắt đầu phát nên
+// phải gọi lại vài lần sau khi load.
+function disableYouTubeCaptions(player: YTPlayer | null) {
+  try {
+    player?.unloadModule?.("captions");
+    player?.setOption?.("captions", "track", {});
+  } catch {
+    // Hỗ trợ caption khác nhau theo video/trình duyệt; cc_load_policy:0 đã yêu cầu tắt mặc định.
+  }
+}
+
 const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegmentPlayerProps>(
   ({ videoId, className, caption }, ref) => {
     const hostRef = useRef<HTMLDivElement | null>(null);
@@ -115,6 +128,8 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
               if (cancelled) return;
               setReady(true);
               playerRef.current?.cueVideoById({ videoId, startSeconds: 0 });
+              disableYouTubeCaptions(playerRef.current);
+              window.setTimeout(() => disableYouTubeCaptions(playerRef.current), 600);
             },
           },
         });
@@ -144,7 +159,11 @@ const YouTubeSegmentPlayer = forwardRef<YouTubeSegmentPlayerHandle, YouTubeSegme
           } catch {
             // YouTube may reject an unavailable rate for some videos; default playback still works.
           }
+          disableYouTubeCaptions(player);
         }, 250);
+        // Caption module thường nạp sau khi phát ~1s — tắt lại vài lần cho chắc.
+        window.setTimeout(() => disableYouTubeCaptions(player), 1000);
+        window.setTimeout(() => disableYouTubeCaptions(player), 2000);
 
         // Stop (or, when looping, restart) based on the ACTUAL playback position,
         // not a fixed call-time timer. On mobile the video needs ~1–2s to load/seek

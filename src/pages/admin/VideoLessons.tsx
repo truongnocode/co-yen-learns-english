@@ -44,14 +44,31 @@ export default function VideoLessonsAdminPage() {
     setImporting(true);
     setLastCreatedId(null);
     try {
-      const lesson = JSON.parse(await file.text());
-      const id = await importVideoLesson(lesson);
-      setLastCreatedId(id);
+      const parsed = JSON.parse(await file.text());
+      // Chấp nhận 1 bài (object) HOẶC nhiều bài (mảng) — nhập cả playlist trong 1 lần.
+      const lessons: Array<{ videoId?: string; title?: string; lines?: unknown[] }> = Array.isArray(parsed) ? parsed : [parsed];
+      let okCount = 0;
+      let lastId: string | null = null;
+      const errors: string[] = [];
+      for (const lesson of lessons) {
+        try {
+          lastId = await importVideoLesson(lesson as Parameters<typeof importVideoLesson>[0]);
+          okCount++;
+        } catch (e) {
+          errors.push(`${lesson?.videoId ?? lesson?.title ?? "?"}: ${(e as Error).message}`);
+        }
+      }
+      setLastCreatedId(lastId);
       await refresh();
-      toast({
-        title: "Đã nhập bài học",
-        description: `${lesson.title ?? id} · ${lesson.lines?.length ?? 0} câu (nhịp từ skill).`,
-      });
+      if (okCount > 0) {
+        toast({
+          title: `Đã nhập ${okCount}/${lessons.length} bài học`,
+          description: errors.length ? `Lỗi ${errors.length} bài: ${errors.slice(0, 2).join("; ")}` : "Tất cả bài đã sẵn sàng cho học sinh.",
+          variant: errors.length ? "destructive" : undefined,
+        });
+      } else {
+        toast({ variant: "destructive", title: "Chưa nhập được bài nào", description: errors.slice(0, 3).join("; ") });
+      }
     } catch (e) {
       toast({
         variant: "destructive",
@@ -88,7 +105,8 @@ export default function VideoLessonsAdminPage() {
             Nhập JSON nhịp
           </Button>
           <span className="text-base text-muted-foreground">
-            Chọn file JSON do skill tạo (audio-faithful, <span className="font-mono">caption-audio-v1</span>). Upsert
+            Chọn file JSON do skill tạo (audio-faithful, <span className="font-mono">caption-audio-v1</span>). Hỗ trợ
+            1 bài hoặc <span className="font-semibold">mảng nhiều bài</span> (nhập cả playlist trong 1 lần). Upsert
             theo <span className="font-mono">videoId</span>.
           </span>
         </div>

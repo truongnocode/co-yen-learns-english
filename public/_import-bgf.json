@@ -1,0 +1,7695 @@
+[
+  {
+    "videoId": "lUKHMAEECr8",
+    "title": "The Big Green Forest 1: I Can Hop",
+    "youtubeUrl": "https://www.youtube.com/watch?v=lUKHMAEECr8",
+    "source": "caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 5.18,
+        "end": 6.72,
+        "text": "I can hop.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.18,
+            "end": 6.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hop.",
+            "start": 6.18,
+            "end": 6.72
+          }
+        ],
+        "vi": "Mình nhảy được."
+      },
+      {
+        "id": "l1",
+        "start": 17.9,
+        "end": 26.16,
+        "text": "I can hop too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 17.9,
+            "end": 18.9,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hop",
+            "start": 18.9,
+            "end": 25.86,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 6504,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "too.",
+            "start": 25.86,
+            "end": 26.16
+          }
+        ],
+        "vi": "Mình cũng nhảy được."
+      },
+      {
+        "id": "l2",
+        "start": 33.12,
+        "end": 34.26,
+        "text": "Watch me hop!",
+        "rhythmChunks": [
+          {
+            "text": "Watch",
+            "start": 33.12,
+            "end": 33.72,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "me hop!",
+            "start": 33.72,
+            "end": 34.26
+          }
+        ],
+        "vi": "Xem mình nhảy nè!"
+      },
+      {
+        "id": "l3",
+        "start": 41.24,
+        "end": 46.8,
+        "text": "I can't hop.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 41.24,
+            "end": 42.24,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't hop.",
+            "start": 42.24,
+            "end": 46.8
+          }
+        ],
+        "vi": "Mình không nhảy được."
+      },
+      {
+        "id": "l4",
+        "start": 50.76,
+        "end": 53.28,
+        "text": "I can hop over the log.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 50.76,
+            "end": 51.54,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 564,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hop over the log.",
+            "start": 51.54,
+            "end": 53.28
+          }
+        ],
+        "vi": "Mình nhảy qua khúc gỗ được."
+      },
+      {
+        "id": "l5",
+        "start": 61.32,
+        "end": 63.66,
+        "text": "I can hop over the log too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 61.32,
+            "end": 62.1,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hop over the log too.",
+            "start": 62.1,
+            "end": 63.66
+          }
+        ],
+        "vi": "Mình cũng nhảy qua khúc gỗ được."
+      },
+      {
+        "id": "l6",
+        "start": 71.7,
+        "end": 72.6,
+        "text": "So can I!",
+        "vi": "Mình cũng làm được!"
+      },
+      {
+        "id": "l7",
+        "start": 75.17,
+        "end": 89.84,
+        "text": "I can hop onto the rock.",
+        "vi": "Mình nhảy lên hòn đá được."
+      },
+      {
+        "id": "l8",
+        "start": 92.41,
+        "end": 109.95,
+        "text": "I can hop onto the rock too.",
+        "vi": "Mình cũng nhảy lên hòn đá được."
+      },
+      {
+        "id": "l9",
+        "start": 112.52,
+        "end": 112.92,
+        "text": "Uh-oh.",
+        "vi": "Ối."
+      },
+      {
+        "id": "l10",
+        "start": 115.39,
+        "end": 115.79,
+        "text": "Ouch!",
+        "vi": "Á!"
+      },
+      {
+        "id": "l11",
+        "start": 118.27,
+        "end": 118.67,
+        "text": "Oof!",
+        "vi": "Hự!"
+      },
+      {
+        "id": "l12",
+        "start": 121.14,
+        "end": 123.84,
+        "text": "I can’t hop onto the rock.",
+        "vi": "Mình không nhảy lên hòn đá được."
+      },
+      {
+        "id": "l13",
+        "start": 126.12,
+        "end": 128.04,
+        "text": "I can’t hop onto the rock.",
+        "vi": "Mình không nhảy lên hòn đá được."
+      },
+      {
+        "id": "l14",
+        "start": 132.96,
+        "end": 133.36,
+        "text": "Hello.",
+        "vi": "Xin chào."
+      },
+      {
+        "id": "l15",
+        "start": 139.1,
+        "end": 140.4,
+        "text": "You hopped?",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 139.1,
+            "end": 140.1,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "hopped?",
+            "start": 140.1,
+            "end": 140.4
+          }
+        ],
+        "vi": "Bạn nhảy hả?"
+      },
+      {
+        "id": "l16",
+        "start": 141.36,
+        "end": 143.46,
+        "text": "No, I walked.",
+        "rhythmChunks": [
+          {
+            "text": "No,",
+            "start": 141.36,
+            "end": 142.2,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 625,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 142.2,
+            "end": 143.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "walked.",
+            "start": 143.16,
+            "end": 143.46
+          }
+        ],
+        "vi": "Không, mình đi bộ."
+      }
+    ]
+  },
+  {
+    "videoId": "QebjCE_6-As",
+    "title": "The Big Green Forest 2: Look!",
+    "youtubeUrl": "https://www.youtube.com/watch?v=QebjCE_6-As",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 2.36,
+        "end": 5.64,
+        "text": "The Big Green Forest, episode 2.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 2.36,
+            "end": 3.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 3.36,
+            "end": 4.44,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 290,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 4.44,
+            "end": 5.34,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 494,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "2.",
+            "start": 5.34,
+            "end": 5.64
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 2."
+      },
+      {
+        "id": "l1",
+        "start": 5.76,
+        "end": 24.9,
+        "text": "Look over there.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 5.76,
+            "end": 23.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 17846,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "over",
+            "start": 23.82,
+            "end": 24.6,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 470,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "there.",
+            "start": 24.6,
+            "end": 24.9
+          }
+        ],
+        "vi": "Nhìn đằng kia kìa."
+      },
+      {
+        "id": "l2",
+        "start": 27,
+        "end": 28.2,
+        "text": "Look at that butterfly.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 27,
+            "end": 27.54,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 324,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at that butterfly.",
+            "start": 27.54,
+            "end": 28.2
+          }
+        ],
+        "vi": "Nhìn con bướm kia kìa."
+      },
+      {
+        "id": "l3",
+        "start": 41.9,
+        "end": 43.5,
+        "text": "Look over here.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 41.9,
+            "end": 42.9,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "over here.",
+            "start": 42.9,
+            "end": 43.5
+          }
+        ],
+        "vi": "Nhìn đằng này nè."
+      },
+      {
+        "id": "l4",
+        "start": 47.22,
+        "end": 48.54,
+        "text": "Oh, look at this caterpillar.",
+        "vi": "Ôi, nhìn con sâu này nè."
+      },
+      {
+        "id": "l5",
+        "start": 56.12,
+        "end": 57.66,
+        "text": "Look up there.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 56.12,
+            "end": 57.12,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "up there.",
+            "start": 57.12,
+            "end": 57.66
+          }
+        ],
+        "vi": "Nhìn lên trên kia kìa."
+      },
+      {
+        "id": "l6",
+        "start": 60.2,
+        "end": 61.98,
+        "text": "Look at the birds.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 60.2,
+            "end": 61.2,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at the birds.",
+            "start": 61.2,
+            "end": 61.98
+          }
+        ],
+        "vi": "Nhìn mấy chú chim kìa."
+      },
+      {
+        "id": "l7",
+        "start": 73.62,
+        "end": 77.46,
+        "text": "Oh, look at the sky.",
+        "rhythmChunks": [
+          {
+            "text": "Oh,",
+            "start": 73.62,
+            "end": 75.72,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1886,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "look",
+            "start": 75.72,
+            "end": 76.68,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at the sky.",
+            "start": 76.68,
+            "end": 77.46
+          }
+        ],
+        "vi": "Ôi, nhìn bầu trời kìa."
+      },
+      {
+        "id": "l8",
+        "start": 82.2,
+        "end": 83.52,
+        "text": "Look at the clouds.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 82.2,
+            "end": 82.8,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at the clouds.",
+            "start": 82.8,
+            "end": 83.52
+          }
+        ],
+        "vi": "Nhìn những đám mây kìa."
+      },
+      {
+        "id": "l9",
+        "start": 93.8,
+        "end": 95.94,
+        "text": "Look at that dry cave.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 93.8,
+            "end": 94.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at that dry cave.",
+            "start": 94.8,
+            "end": 95.94
+          }
+        ],
+        "vi": "Nhìn cái hang khô ráo kia kìa."
+      },
+      {
+        "id": "l10",
+        "start": 96.9,
+        "end": 98.28,
+        "text": "Let's go in it.",
+        "rhythmChunks": [
+          {
+            "text": "Let's",
+            "start": 96.9,
+            "end": 97.56,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "go in it.",
+            "start": 97.56,
+            "end": 98.28
+          }
+        ],
+        "vi": "Mình vào trong đó nào."
+      },
+      {
+        "id": "l11",
+        "start": 110.04,
+        "end": 111.48,
+        "text": "Look at all the rain.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 110.04,
+            "end": 110.58,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 324,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at all the rain.",
+            "start": 110.58,
+            "end": 111.48
+          }
+        ],
+        "vi": "Nhìn mưa kìa."
+      },
+      {
+        "id": "l12",
+        "start": 115.02,
+        "end": 116.76,
+        "text": "Look at all the mud.",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 115.02,
+            "end": 115.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 564,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at all the mud.",
+            "start": 115.8,
+            "end": 116.76
+          }
+        ],
+        "vi": "Nhìn bùn lầy kìa."
+      },
+      {
+        "id": "l13",
+        "start": 121.38,
+        "end": 122.28,
+        "text": "Look at us.",
+        "vi": "Nhìn chúng mình này."
+      },
+      {
+        "id": "l14",
+        "start": 123.3,
+        "end": 125.16,
+        "text": "We are nice and dry.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 123.3,
+            "end": 124.08,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "are nice and dry.",
+            "start": 124.08,
+            "end": 125.16
+          }
+        ],
+        "vi": "Chúng mình khô ráo, dễ chịu ghê."
+      }
+    ]
+  },
+  {
+    "videoId": "HtcP9Ev-izg",
+    "title": "The Big Green Forest 3: I Will Fly",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HtcP9Ev-izg",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.82,
+        "end": 5.16,
+        "text": "The Big Green Forest, episode 3.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.82,
+            "end": 2.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.82,
+            "end": 4.02,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 291,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 4.02,
+            "end": 4.86,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 435,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "3.",
+            "start": 4.86,
+            "end": 5.16
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 3."
+      },
+      {
+        "id": "l1",
+        "start": 5.36,
+        "end": 6.84,
+        "text": "I will fly.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.36,
+            "end": 6.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fly.",
+            "start": 6.36,
+            "end": 6.84
+          }
+        ],
+        "vi": "Mình sẽ bay."
+      },
+      {
+        "id": "l2",
+        "start": 24.18,
+        "end": 25.2,
+        "text": "I will fly.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 24.18,
+            "end": 24.78,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fly.",
+            "start": 24.78,
+            "end": 25.2
+          }
+        ],
+        "vi": "Mình sẽ bay."
+      },
+      {
+        "id": "l3",
+        "start": 26.76,
+        "end": 28.74,
+        "text": "I will fly to that tree.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 26.76,
+            "end": 27.36,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fly to that tree.",
+            "start": 27.36,
+            "end": 28.74
+          }
+        ],
+        "vi": "Mình sẽ bay tới cái cây kia."
+      },
+      {
+        "id": "l4",
+        "start": 32.64,
+        "end": 33.84,
+        "text": "You can't fly.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 32.64,
+            "end": 33.42,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't fly.",
+            "start": 33.42,
+            "end": 33.84
+          }
+        ],
+        "vi": "Bạn không bay được đâu."
+      },
+      {
+        "id": "l5",
+        "start": 35.9,
+        "end": 37.92,
+        "text": "You do not have wings.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 35.9,
+            "end": 36.9,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do not have wings.",
+            "start": 36.9,
+            "end": 37.92
+          }
+        ],
+        "vi": "Bạn không có cánh."
+      },
+      {
+        "id": "l6",
+        "start": 44.76,
+        "end": 49.02,
+        "text": "I have wings, so I can fly.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 44.76,
+            "end": 45.48,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have wings,",
+            "start": 45.48,
+            "end": 47.46,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1526,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "so",
+            "start": 47.46,
+            "end": 48.06,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "I can fly.",
+            "start": 48.06,
+            "end": 49.02
+          }
+        ],
+        "vi": "Mình có cánh nên mình bay được."
+      },
+      {
+        "id": "l7",
+        "start": 82.64,
+        "end": 83.94,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 82.64,
+            "end": 83.64,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 83.64,
+            "end": 83.94
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      },
+      {
+        "id": "l8",
+        "start": 85.44,
+        "end": 86.94,
+        "text": "Now I have wings.",
+        "rhythmChunks": [
+          {
+            "text": "Now",
+            "start": 85.44,
+            "end": 86.22,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 566,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "I have wings.",
+            "start": 86.22,
+            "end": 86.94
+          }
+        ],
+        "vi": "Giờ mình có cánh rồi."
+      },
+      {
+        "id": "l9",
+        "start": 90.9,
+        "end": 92.22,
+        "text": "I will fly now.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 90.9,
+            "end": 91.44,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 324,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fly now.",
+            "start": 91.44,
+            "end": 92.22
+          }
+        ],
+        "vi": "Giờ mình sẽ bay."
+      },
+      {
+        "id": "l10",
+        "start": 94.22,
+        "end": 95.76,
+        "text": "You can't fly.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 94.22,
+            "end": 95.22,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't fly.",
+            "start": 95.22,
+            "end": 95.76
+          }
+        ],
+        "vi": "Bạn không bay được đâu."
+      },
+      {
+        "id": "l11",
+        "start": 98.88,
+        "end": 100.44,
+        "text": "Do not try to fly.",
+        "vi": "Đừng cố bay."
+      },
+      {
+        "id": "l12",
+        "start": 105.78,
+        "end": 107.7,
+        "text": "I will fly now.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 105.78,
+            "end": 106.74,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fly now.",
+            "start": 106.74,
+            "end": 107.7
+          }
+        ],
+        "vi": "Giờ mình sẽ bay."
+      },
+      {
+        "id": "l13",
+        "start": 108.54,
+        "end": 110.7,
+        "text": "I will fly to that tree.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 108.54,
+            "end": 109.32,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fly to that tree.",
+            "start": 109.32,
+            "end": 110.7
+          }
+        ],
+        "vi": "Mình sẽ bay tới cái cây kia."
+      },
+      {
+        "id": "l14",
+        "start": 132.74,
+        "end": 134.46,
+        "text": "You did not fly.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 132.74,
+            "end": 133.74,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "did not fly.",
+            "start": 133.74,
+            "end": 134.46
+          }
+        ],
+        "vi": "Bạn đâu có bay."
+      },
+      {
+        "id": "l15",
+        "start": 136.04,
+        "end": 138.66,
+        "text": "No, I did not fly.",
+        "rhythmChunks": [
+          {
+            "text": "No,",
+            "start": 136.04,
+            "end": 137.04,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 137.04,
+            "end": 138,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "did not fly.",
+            "start": 138,
+            "end": 138.66
+          }
+        ],
+        "vi": "Không, mình không bay."
+      },
+      {
+        "id": "l16",
+        "start": 139.88,
+        "end": 141.18,
+        "text": "I fell.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 139.88,
+            "end": 140.88,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "fell.",
+            "start": 140.88,
+            "end": 141.18
+          }
+        ],
+        "vi": "Mình ngã rồi."
+      }
+    ]
+  },
+  {
+    "videoId": "t7CT7AXcQHk",
+    "title": "The Big Green Forest 4: Where Can We Play?",
+    "youtubeUrl": "https://www.youtube.com/watch?v=t7CT7AXcQHk",
+    "source": "caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.8,
+        "end": 4.82,
+        "text": "The Big Green Forest, episode 4.",
+        "rhythmChunks": [
+          {
+            "text": "The Big Green Forest,",
+            "start": 1.8,
+            "end": 3.96,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 690,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode 4.",
+            "start": 3.96,
+            "end": 4.82
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 4."
+      },
+      {
+        "id": "l1",
+        "start": 5.4,
+        "end": 6.5,
+        "text": "Where can we play?",
+        "vi": "Mình chơi ở đâu được nhỉ?"
+      },
+      {
+        "id": "l2",
+        "start": 13.44,
+        "end": 14.74,
+        "text": "Where can we play?",
+        "rhythmChunks": [
+          {
+            "text": "Where",
+            "start": 13.44,
+            "end": 13.96,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 305,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can we play?",
+            "start": 13.96,
+            "end": 14.74
+          }
+        ],
+        "vi": "Mình chơi ở đâu được nhỉ?"
+      },
+      {
+        "id": "l3",
+        "start": 22.4,
+        "end": 24.06,
+        "text": "We can play in the trees.",
+        "vi": "Mình chơi trên cây được."
+      },
+      {
+        "id": "l4",
+        "start": 28.88,
+        "end": 30.14,
+        "text": "I can play in the trees.",
+        "vi": "Mình chơi trên cây được."
+      },
+      {
+        "id": "l5",
+        "start": 35.12,
+        "end": 35.9,
+        "text": "Me, too.",
+        "vi": "Mình cũng vậy."
+      },
+      {
+        "id": "l6",
+        "start": 45.72,
+        "end": 47.54,
+        "text": "I can't play in the trees.",
+        "rhythmChunks": [
+          {
+            "text": "I can't",
+            "start": 45.72,
+            "end": 46.6,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 305,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "play in the trees.",
+            "start": 46.6,
+            "end": 47.54
+          }
+        ],
+        "vi": "Mình không chơi trên cây được."
+      },
+      {
+        "id": "l7",
+        "start": 72.36,
+        "end": 73.58,
+        "text": "We can play on the rocks.",
+        "vi": "Mình chơi trên đá được."
+      },
+      {
+        "id": "l8",
+        "start": 77.28,
+        "end": 79.02,
+        "text": "I can play on the rocks.",
+        "vi": "Mình chơi trên đá được."
+      },
+      {
+        "id": "l9",
+        "start": 96.76,
+        "end": 98.58,
+        "text": "I can't play on the rocks.",
+        "vi": "Mình không chơi trên đá được."
+      },
+      {
+        "id": "l10",
+        "start": 103.32,
+        "end": 104.18,
+        "text": "Where can we play?",
+        "vi": "Mình chơi ở đâu được nhỉ?"
+      },
+      {
+        "id": "l11",
+        "start": 108.96,
+        "end": 110.54,
+        "text": "We can play in the stream.",
+        "vi": "Mình chơi dưới suối được."
+      },
+      {
+        "id": "l12",
+        "start": 114.72,
+        "end": 116.38,
+        "text": "I can play in the stream.",
+        "vi": "Mình chơi dưới suối được."
+      },
+      {
+        "id": "l13",
+        "start": 118.28,
+        "end": 119.14,
+        "text": "Me, too.",
+        "rhythmChunks": [
+          {
+            "text": "Me,",
+            "start": 118.28,
+            "end": 118.84,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 345,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "too.",
+            "start": 118.84,
+            "end": 119.14
+          }
+        ],
+        "vi": "Mình cũng vậy."
+      },
+      {
+        "id": "l14",
+        "start": 121.68,
+        "end": 123.46,
+        "text": "Let's all play in the stream.",
+        "rhythmChunks": [
+          {
+            "text": "Let's",
+            "start": 121.68,
+            "end": 122.2,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 305,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "all play in the stream.",
+            "start": 122.2,
+            "end": 123.46
+          }
+        ],
+        "vi": "Cả nhà mình cùng chơi dưới suối nào."
+      }
+    ]
+  },
+  {
+    "videoId": "sIaRBR_wwYo",
+    "title": "The Big Green Forest 5: I Can't Find My Leaf",
+    "youtubeUrl": "https://www.youtube.com/watch?v=sIaRBR_wwYo",
+    "source": "caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.96,
+        "end": 5.02,
+        "text": "The Big Green Forest, episode five.",
+        "rhythmChunks": [
+          {
+            "text": "The Big Green Forest,",
+            "start": 1.96,
+            "end": 4.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 810,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode five.",
+            "start": 4.16,
+            "end": 5.02
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 5."
+      },
+      {
+        "id": "l1",
+        "start": 5.8,
+        "end": 7.22,
+        "text": "I can't find my leaf.",
+        "vi": "Mình không tìm được chiếc lá của mình."
+      },
+      {
+        "id": "l2",
+        "start": 21.48,
+        "end": 22.66,
+        "text": "I found a big leaf.",
+        "vi": "Mình tìm thấy một chiếc lá to."
+      },
+      {
+        "id": "l3",
+        "start": 46.52,
+        "end": 46.92,
+        "text": "Uh-oh.",
+        "vi": "Ối."
+      },
+      {
+        "id": "l4",
+        "start": 64.64,
+        "end": 65.82,
+        "text": "I can't find my leaf.",
+        "vi": "Mình không tìm được chiếc lá của mình."
+      },
+      {
+        "id": "l5",
+        "start": 68.68,
+        "end": 69.78,
+        "text": "Can you find my leaf?",
+        "vi": "Bạn tìm giúp mình chiếc lá được không?"
+      },
+      {
+        "id": "l6",
+        "start": 80.12,
+        "end": 81.5,
+        "text": "I will find your leaf.",
+        "vi": "Mình sẽ tìm chiếc lá cho bạn."
+      },
+      {
+        "id": "l7",
+        "start": 86.04,
+        "end": 87.78,
+        "text": "I will find your leaf.",
+        "vi": "Mình sẽ tìm chiếc lá cho bạn."
+      },
+      {
+        "id": "l8",
+        "start": 141.32,
+        "end": 142.22,
+        "text": "Well, I found a stick.",
+        "vi": "Ừm, mình tìm thấy một cái que."
+      },
+      {
+        "id": "l9",
+        "start": 145.24,
+        "end": 146.26,
+        "text": "I found a rock.",
+        "vi": "Mình tìm thấy một hòn đá."
+      },
+      {
+        "id": "l10",
+        "start": 154.4,
+        "end": 156.58,
+        "text": "We did not find your leaf.",
+        "vi": "Chúng mình không tìm thấy chiếc lá của bạn."
+      },
+      {
+        "id": "l11",
+        "start": 161.4,
+        "end": 162.34,
+        "text": "I found something.",
+        "vi": "Mình tìm thấy một thứ."
+      },
+      {
+        "id": "l12",
+        "start": 163.48,
+        "end": 165.06,
+        "text": "Did you find your leaf?",
+        "vi": "Bạn tìm thấy lá của mình chưa?"
+      },
+      {
+        "id": "l13",
+        "start": 167.4,
+        "end": 167.8,
+        "text": "No.",
+        "vi": "Không."
+      },
+      {
+        "id": "l14",
+        "start": 168.84,
+        "end": 170.18,
+        "text": "I did not find my leaf.",
+        "vi": "Mình không tìm thấy chiếc lá của mình."
+      },
+      {
+        "id": "l15",
+        "start": 172.52,
+        "end": 173.42,
+        "text": "What did you find?",
+        "vi": "Bạn tìm thấy gì vậy?"
+      },
+      {
+        "id": "l16",
+        "start": 175.52,
+        "end": 176.74,
+        "text": "I found a new leaf.",
+        "vi": "Mình tìm thấy một chiếc lá mới."
+      },
+      {
+        "id": "l17",
+        "start": 177.96,
+        "end": 178.36,
+        "text": "Yay!",
+        "vi": "Yeah!"
+      },
+      {
+        "id": "l18",
+        "start": 182.56,
+        "end": 182.96,
+        "text": "Yay!",
+        "vi": "Yeah!"
+      }
+    ]
+  },
+  {
+    "videoId": "47APregOYzo",
+    "title": "The Big Green Forest 6: I Want to Sing",
+    "youtubeUrl": "https://www.youtube.com/watch?v=47APregOYzo",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.52,
+        "end": 4.98,
+        "text": "The Big Green Forest, episode 6.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.52,
+            "end": 2.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.52,
+            "end": 3.72,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 290,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.72,
+            "end": 4.68,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 555,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "6.",
+            "start": 4.68,
+            "end": 4.98
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 6."
+      },
+      {
+        "id": "l1",
+        "start": 5.18,
+        "end": 6.9,
+        "text": "I want to sing.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.18,
+            "end": 6.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "want to sing.",
+            "start": 6.18,
+            "end": 6.9
+          }
+        ],
+        "vi": "Mình muốn hát."
+      },
+      {
+        "id": "l2",
+        "start": 36.24,
+        "end": 37.68,
+        "text": "Do you want to sing?",
+        "rhythmChunks": [
+          {
+            "text": "Do",
+            "start": 36.24,
+            "end": 36.9,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you want to sing?",
+            "start": 36.9,
+            "end": 37.68
+          }
+        ],
+        "vi": "Bạn có muốn hát không?"
+      },
+      {
+        "id": "l3",
+        "start": 39.24,
+        "end": 40.5,
+        "text": "I want to sing.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 39.24,
+            "end": 39.96,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 506,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "want to sing.",
+            "start": 39.96,
+            "end": 40.5
+          }
+        ],
+        "vi": "Mình muốn hát."
+      },
+      {
+        "id": "l4",
+        "start": 50.66,
+        "end": 52.74,
+        "text": "I want to sing too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 50.66,
+            "end": 51.66,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "want to sing too.",
+            "start": 51.66,
+            "end": 52.74
+          }
+        ],
+        "vi": "Mình cũng muốn hát."
+      },
+      {
+        "id": "l5",
+        "start": 85.02,
+        "end": 86.94,
+        "text": "Do you want to dance?",
+        "rhythmChunks": [
+          {
+            "text": "Do",
+            "start": 85.02,
+            "end": 85.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 564,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you want to dance?",
+            "start": 85.8,
+            "end": 86.94
+          }
+        ],
+        "vi": "Bạn có muốn nhảy không?"
+      },
+      {
+        "id": "l6",
+        "start": 99.14,
+        "end": 100.8,
+        "text": "I want to dance.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 99.14,
+            "end": 100.14,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "want to dance.",
+            "start": 100.14,
+            "end": 100.8
+          }
+        ],
+        "vi": "Mình muốn nhảy."
+      },
+      {
+        "id": "l7",
+        "start": 107.04,
+        "end": 108.12,
+        "text": "So do I.",
+        "rhythmChunks": [
+          {
+            "text": "So",
+            "start": 107.04,
+            "end": 107.58,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 324,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do I.",
+            "start": 107.58,
+            "end": 108.12
+          }
+        ],
+        "vi": "Mình cũng vậy."
+      },
+      {
+        "id": "l8",
+        "start": 115.28,
+        "end": 117.72,
+        "text": "I do not want to dance.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 115.28,
+            "end": 116.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do not want to dance.",
+            "start": 116.28,
+            "end": 117.72
+          }
+        ],
+        "vi": "Mình không muốn nhảy."
+      },
+      {
+        "id": "l9",
+        "start": 126.18,
+        "end": 127.8,
+        "text": "What do you want to do?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 126.18,
+            "end": 126.9,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 504,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you want to do?",
+            "start": 126.9,
+            "end": 127.8
+          }
+        ],
+        "vi": "Bạn muốn làm gì?"
+      },
+      {
+        "id": "l10",
+        "start": 130.16,
+        "end": 132,
+        "text": "I want to sleep.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 130.16,
+            "end": 131.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "want to sleep.",
+            "start": 131.16,
+            "end": 132
+          }
+        ],
+        "vi": "Mình muốn ngủ."
+      }
+    ]
+  },
+  {
+    "videoId": "Nf8KODaAZrA",
+    "title": "The Big Green Forest 7: I Sleep at Night",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Nf8KODaAZrA",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.7,
+        "end": 4.92,
+        "text": "The Big Green Forest, episode 7.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.7,
+            "end": 2.7,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.7,
+            "end": 3.78,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 291,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.78,
+            "end": 4.62,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 435,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "7.",
+            "start": 4.62,
+            "end": 4.92
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 7."
+      },
+      {
+        "id": "l1",
+        "start": 5.1,
+        "end": 6.84,
+        "text": "I sleep at night.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.1,
+            "end": 6,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep at night.",
+            "start": 6,
+            "end": 6.84
+          }
+        ],
+        "vi": "Mình ngủ vào ban đêm."
+      },
+      {
+        "id": "l2",
+        "start": 22.68,
+        "end": 33.36,
+        "text": "I sleep in a tree.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 22.68,
+            "end": 23.28,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep",
+            "start": 23.28,
+            "end": 32.58,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 9085,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "in a tree.",
+            "start": 32.58,
+            "end": 33.36
+          }
+        ],
+        "vi": "Mình ngủ trên cây."
+      },
+      {
+        "id": "l3",
+        "start": 48.86,
+        "end": 50.16,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 48.86,
+            "end": 49.86,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 49.86,
+            "end": 50.16
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      },
+      {
+        "id": "l4",
+        "start": 52.52,
+        "end": 54.3,
+        "text": "I sleep at night.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 52.52,
+            "end": 53.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep at night.",
+            "start": 53.52,
+            "end": 54.3
+          }
+        ],
+        "vi": "Mình ngủ vào ban đêm."
+      },
+      {
+        "id": "l5",
+        "start": 62.84,
+        "end": 64.86,
+        "text": "I sleep in a hole.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 62.84,
+            "end": 63.84,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep in a hole.",
+            "start": 63.84,
+            "end": 64.86
+          }
+        ],
+        "vi": "Mình ngủ trong hang."
+      },
+      {
+        "id": "l6",
+        "start": 74.82,
+        "end": 76.5,
+        "text": "I sleep at night.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 74.82,
+            "end": 75.66,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 624,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep at night.",
+            "start": 75.66,
+            "end": 76.5
+          }
+        ],
+        "vi": "Mình ngủ vào ban đêm."
+      },
+      {
+        "id": "l7",
+        "start": 97.52,
+        "end": 99.36,
+        "text": "I sleep at night.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 97.52,
+            "end": 98.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep at night.",
+            "start": 98.52,
+            "end": 99.36
+          }
+        ],
+        "vi": "Mình ngủ vào ban đêm."
+      },
+      {
+        "id": "l8",
+        "start": 107.96,
+        "end": 109.62,
+        "text": "I sleep underwater.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 107.96,
+            "end": 108.96,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep underwater.",
+            "start": 108.96,
+            "end": 109.62
+          }
+        ],
+        "vi": "Mình ngủ dưới nước."
+      },
+      {
+        "id": "l9",
+        "start": 123.68,
+        "end": 126.36,
+        "text": "I do not sleep at night.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 123.68,
+            "end": 124.68,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do not sleep",
+            "start": 124.68,
+            "end": 125.7,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 326,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "at night.",
+            "start": 125.7,
+            "end": 126.36
+          }
+        ],
+        "vi": "Mình không ngủ vào ban đêm."
+      },
+      {
+        "id": "l10",
+        "start": 129.54,
+        "end": 131.22,
+        "text": "You don't sleep at night?",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 129.54,
+            "end": 130.26,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "don't sleep at night?",
+            "start": 130.26,
+            "end": 131.22
+          }
+        ],
+        "vi": "Bạn không ngủ ban đêm à?"
+      },
+      {
+        "id": "l11",
+        "start": 133.02,
+        "end": 133.42000000000002,
+        "text": "No.",
+        "vi": "Không."
+      },
+      {
+        "id": "l12",
+        "start": 135.84,
+        "end": 137.34,
+        "text": "What do you do at night?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 135.84,
+            "end": 136.44,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you do at night?",
+            "start": 136.44,
+            "end": 137.34
+          }
+        ],
+        "vi": "Ban đêm bạn làm gì?"
+      },
+      {
+        "id": "l13",
+        "start": 139.52,
+        "end": 145.5,
+        "text": "I wake up and I fly.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 139.52,
+            "end": 140.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "wake up",
+            "start": 140.52,
+            "end": 144.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 3205,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "and",
+            "start": 144.18,
+            "end": 144.9,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "I fly.",
+            "start": 144.9,
+            "end": 145.5
+          }
+        ],
+        "vi": "Mình thức dậy và bay."
+      },
+      {
+        "id": "l14",
+        "start": 163.88,
+        "end": 170.04,
+        "text": "Please fly somewhere else, because we sleep at night.",
+        "rhythmChunks": [
+          {
+            "text": "Please",
+            "start": 163.88,
+            "end": 164.88,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "fly somewhere",
+            "start": 164.88,
+            "end": 166.08,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 375,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "else,",
+            "start": 166.08,
+            "end": 167.42,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1125,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "because",
+            "start": 167.42,
+            "end": 168.42,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 690,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "we",
+            "start": 168.42,
+            "end": 169.02,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 384,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sleep at night.",
+            "start": 169.02,
+            "end": 170.04
+          }
+        ],
+        "vi": "Bạn bay đi chỗ khác nhé, vì chúng mình ngủ vào ban đêm."
+      }
+    ]
+  },
+  {
+    "videoId": "ERlP0nlV8Ng",
+    "title": "The Big Green Forest 8: I See Something",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ERlP0nlV8Ng",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.52,
+        "end": 4.74,
+        "text": "The Big Green Forest, episode 8.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.52,
+            "end": 2.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.52,
+            "end": 3.66,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 289,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.66,
+            "end": 4.44,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 376,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "8.",
+            "start": 4.44,
+            "end": 4.74
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 8."
+      },
+      {
+        "id": "l1",
+        "start": 4.92,
+        "end": 6.36,
+        "text": "I see something.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 4.92,
+            "end": 5.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 684,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see something.",
+            "start": 5.82,
+            "end": 6.36
+          }
+        ],
+        "vi": "Mình thấy một thứ."
+      },
+      {
+        "id": "l2",
+        "start": 24.66,
+        "end": 26.1,
+        "text": "What do you see?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 24.66,
+            "end": 25.38,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you see?",
+            "start": 25.38,
+            "end": 26.1
+          }
+        ],
+        "vi": "Bạn thấy gì vậy?"
+      },
+      {
+        "id": "l3",
+        "start": 37.82,
+        "end": 39.72,
+        "text": "I see the stream.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 37.82,
+            "end": 38.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see the stream.",
+            "start": 38.82,
+            "end": 39.72
+          }
+        ],
+        "vi": "Mình thấy con suối."
+      },
+      {
+        "id": "l4",
+        "start": 42.44,
+        "end": 44.64,
+        "text": "I see the stream too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 42.44,
+            "end": 43.44,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see the stream too.",
+            "start": 43.44,
+            "end": 44.64
+          }
+        ],
+        "vi": "Mình cũng thấy con suối."
+      },
+      {
+        "id": "l5",
+        "start": 50.84,
+        "end": 53.28,
+        "text": "I see rocks in the stream.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 50.84,
+            "end": 51.84,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see rocks",
+            "start": 51.84,
+            "end": 52.68,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "in the stream.",
+            "start": 52.68,
+            "end": 53.28
+          }
+        ],
+        "vi": "Mình thấy mấy hòn đá dưới suối."
+      },
+      {
+        "id": "l6",
+        "start": 70.82,
+        "end": 73.26,
+        "text": "I see us in the stream.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 70.82,
+            "end": 71.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see us in the stream.",
+            "start": 71.82,
+            "end": 73.26
+          }
+        ],
+        "vi": "Mình thấy chúng mình dưới suối."
+      },
+      {
+        "id": "l7",
+        "start": 79.1,
+        "end": 81.96,
+        "text": "I see trees in the stream.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 79.1,
+            "end": 80.1,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see trees",
+            "start": 80.1,
+            "end": 81.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "in the stream.",
+            "start": 81.18,
+            "end": 81.96
+          }
+        ],
+        "vi": "Mình thấy bóng cây dưới suối."
+      },
+      {
+        "id": "l8",
+        "start": 98.36,
+        "end": 101.7,
+        "text": "Wow, I see something in the trees.",
+        "rhythmChunks": [
+          {
+            "text": "Wow,",
+            "start": 98.36,
+            "end": 99.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 99.36,
+            "end": 100.26,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 684,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "see something in the trees.",
+            "start": 100.26,
+            "end": 101.7
+          }
+        ],
+        "vi": "Ồ, mình thấy gì đó trên cây."
+      },
+      {
+        "id": "l9",
+        "start": 104.04,
+        "end": 105.36,
+        "text": "What do you see?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 104.04,
+            "end": 104.7,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you see?",
+            "start": 104.7,
+            "end": 105.36
+          }
+        ],
+        "vi": "Bạn thấy gì vậy?"
+      },
+      {
+        "id": "l10",
+        "start": 111.06,
+        "end": 136.2,
+        "text": "Oh, I got a lot of nuts.",
+        "rhythmChunks": [
+          {
+            "text": "Oh,",
+            "start": 111.06,
+            "end": 134.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 22785,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 134.06,
+            "end": 135.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "got a lot of nuts.",
+            "start": 135.06,
+            "end": 136.2
+          }
+        ],
+        "vi": "Ôi, mình nhặt được nhiều hạt ghê."
+      },
+      {
+        "id": "l11",
+        "start": 137.82,
+        "end": 139.38,
+        "text": "Yes, you did.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 137.82,
+            "end": 138.78,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 746,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "you did.",
+            "start": 138.78,
+            "end": 139.38
+          }
+        ],
+        "vi": "Đúng vậy, bạn làm được rồi."
+      },
+      {
+        "id": "l12",
+        "start": 149.36,
+        "end": 152.52,
+        "text": "Oh, I did not see that stick.",
+        "rhythmChunks": [
+          {
+            "text": "Oh,",
+            "start": 149.36,
+            "end": 150.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 150.36,
+            "end": 151.2,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 625,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "did not see that stick.",
+            "start": 151.2,
+            "end": 152.52
+          }
+        ],
+        "vi": "Ôi, mình không thấy cái que đó."
+      },
+      {
+        "id": "l13",
+        "start": 163.94,
+        "end": 165.24,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 163.94,
+            "end": 164.94,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 164.94,
+            "end": 165.24
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      }
+    ]
+  },
+  {
+    "videoId": "xJ5QMOLcdZk",
+    "title": "The Big Green Forest 11: Watch Me Run",
+    "youtubeUrl": "https://www.youtube.com/watch?v=xJ5QMOLcdZk",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.52,
+        "end": 4.74,
+        "text": "The Big Green Forest, episode 11.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.52,
+            "end": 2.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.52,
+            "end": 3.6,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 290,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.6,
+            "end": 4.44,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 435,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "11.",
+            "start": 4.44,
+            "end": 4.74
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 11."
+      },
+      {
+        "id": "l1",
+        "start": 4.82,
+        "end": 6.42,
+        "text": "Watch me run.",
+        "rhythmChunks": [
+          {
+            "text": "Watch",
+            "start": 4.82,
+            "end": 5.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "me run.",
+            "start": 5.82,
+            "end": 6.42
+          }
+        ],
+        "vi": "Xem mình chạy nè."
+      },
+      {
+        "id": "l2",
+        "start": 30.3,
+        "end": 32.82,
+        "text": "Can you run around the rock?",
+        "rhythmChunks": [
+          {
+            "text": "Can",
+            "start": 30.3,
+            "end": 30.9,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you run around the",
+            "start": 30.9,
+            "end": 32.52,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 325,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "rock?",
+            "start": 32.52,
+            "end": 32.82
+          }
+        ],
+        "vi": "Bạn chạy vòng quanh hòn đá được không?"
+      },
+      {
+        "id": "l3",
+        "start": 34.08,
+        "end": 36,
+        "text": "Now I can run around the rock.",
+        "vi": "Giờ mình chạy vòng quanh hòn đá được rồi."
+      },
+      {
+        "id": "l4",
+        "start": 37.32,
+        "end": 39.72,
+        "text": "Watch me run around the rock.",
+        "rhythmChunks": [
+          {
+            "text": "Watch",
+            "start": 37.32,
+            "end": 38.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "me run around the rock.",
+            "start": 38.28,
+            "end": 39.72
+          }
+        ],
+        "vi": "Xem mình chạy vòng quanh hòn đá nè."
+      },
+      {
+        "id": "l5",
+        "start": 52.94,
+        "end": 55.02,
+        "text": "Oh my god!",
+        "rhythmChunks": [
+          {
+            "text": "Oh",
+            "start": 52.94,
+            "end": 53.94,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "my",
+            "start": 53.94,
+            "end": 54.72,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 564,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "god!",
+            "start": 54.72,
+            "end": 55.02
+          }
+        ],
+        "vi": "Ôi trời ơi!"
+      },
+      {
+        "id": "l6",
+        "start": 57.9,
+        "end": 60.3,
+        "text": "Can you run up the hill?",
+        "rhythmChunks": [
+          {
+            "text": "Can",
+            "start": 57.9,
+            "end": 58.68,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 566,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you run up the hill?",
+            "start": 58.68,
+            "end": 60.3
+          }
+        ],
+        "vi": "Bạn chạy lên đồi được không?"
+      },
+      {
+        "id": "l7",
+        "start": 61.8,
+        "end": 63.48,
+        "text": "I can run up the hill.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 61.8,
+            "end": 62.46,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can run up the hill.",
+            "start": 62.46,
+            "end": 63.48
+          }
+        ],
+        "vi": "Mình chạy lên đồi được."
+      },
+      {
+        "id": "l8",
+        "start": 65.46,
+        "end": 67.44,
+        "text": "Watch me run up the hill.",
+        "rhythmChunks": [
+          {
+            "text": "Watch",
+            "start": 65.46,
+            "end": 66.12,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 444,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "me run up the hill.",
+            "start": 66.12,
+            "end": 67.44
+          }
+        ],
+        "vi": "Xem mình chạy lên đồi nè."
+      },
+      {
+        "id": "l9",
+        "start": 94.38,
+        "end": 96.3,
+        "text": "I can run across the log.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 94.38,
+            "end": 94.92,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 325,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can run across the log.",
+            "start": 94.92,
+            "end": 96.3
+          }
+        ],
+        "vi": "Mình chạy qua khúc gỗ được."
+      },
+      {
+        "id": "l10",
+        "start": 97.28,
+        "end": 99.72,
+        "text": "Watch me run across the log.",
+        "rhythmChunks": [
+          {
+            "text": "Watch",
+            "start": 97.28,
+            "end": 98.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "me run across the log.",
+            "start": 98.28,
+            "end": 99.72
+          }
+        ],
+        "vi": "Xem mình chạy qua khúc gỗ nè."
+      },
+      {
+        "id": "l11",
+        "start": 108.3,
+        "end": 110.28,
+        "text": "Whoa, whoa!",
+        "rhythmChunks": [
+          {
+            "text": "Whoa,",
+            "start": 108.3,
+            "end": 109.98,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1465,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "whoa!",
+            "start": 109.98,
+            "end": 110.28
+          }
+        ],
+        "vi": "Oái, oái!"
+      },
+      {
+        "id": "l12",
+        "start": 112.44,
+        "end": 113.88,
+        "text": "Can you swim?",
+        "rhythmChunks": [
+          {
+            "text": "Can",
+            "start": 112.44,
+            "end": 113.34,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 686,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you swim?",
+            "start": 113.34,
+            "end": 113.88
+          }
+        ],
+        "vi": "Bạn bơi được không?"
+      },
+      {
+        "id": "l13",
+        "start": 115.74,
+        "end": 118.02,
+        "text": "Yes, I can swim.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 115.74,
+            "end": 116.58,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 624,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 116.58,
+            "end": 117.48,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can swim.",
+            "start": 117.48,
+            "end": 118.02
+          }
+        ],
+        "vi": "Có chứ, mình bơi được."
+      }
+    ]
+  },
+  {
+    "videoId": "3yVMvWEoF7c",
+    "title": "The Big Green Forest 12: Please Stop",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3yVMvWEoF7c",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.64,
+        "end": 4.8,
+        "text": "The Big Green Forest, episode 12.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.64,
+            "end": 2.64,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.64,
+            "end": 3.72,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 290,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.72,
+            "end": 4.5,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 375,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "12.",
+            "start": 4.5,
+            "end": 4.8
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 12."
+      },
+      {
+        "id": "l1",
+        "start": 5,
+        "end": 40.14,
+        "text": "Please stop running.",
+        "rhythmChunks": [
+          {
+            "text": "Please",
+            "start": 5,
+            "end": 6,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "stop",
+            "start": 6,
+            "end": 39.84,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 33625,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "running.",
+            "start": 39.84,
+            "end": 40.14
+          }
+        ],
+        "vi": "Làm ơn ngừng chạy đi."
+      },
+      {
+        "id": "l2",
+        "start": 43.92,
+        "end": 48.66,
+        "text": "Okay, I will stop running.",
+        "rhythmChunks": [
+          {
+            "text": "Okay,",
+            "start": 43.92,
+            "end": 47.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 3290,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I will stop running.",
+            "start": 47.52,
+            "end": 48.66
+          }
+        ],
+        "vi": "Được rồi, mình sẽ ngừng chạy."
+      },
+      {
+        "id": "l3",
+        "start": 56.66,
+        "end": 58.2,
+        "text": "Please stop flying.",
+        "rhythmChunks": [
+          {
+            "text": "Please",
+            "start": 56.66,
+            "end": 57.66,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "stop flying.",
+            "start": 57.66,
+            "end": 58.2
+          }
+        ],
+        "vi": "Làm ơn ngừng bay đi."
+      },
+      {
+        "id": "l4",
+        "start": 65.94,
+        "end": 69.78,
+        "text": "Okay, I will stop flying.",
+        "rhythmChunks": [
+          {
+            "text": "Okay,",
+            "start": 65.94,
+            "end": 68.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 2271,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 68.52,
+            "end": 69.06,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 325,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will stop flying.",
+            "start": 69.06,
+            "end": 69.78
+          }
+        ],
+        "vi": "Được rồi, mình sẽ ngừng bay."
+      },
+      {
+        "id": "l5",
+        "start": 78.5,
+        "end": 80.1,
+        "text": "Please stop hopping.",
+        "rhythmChunks": [
+          {
+            "text": "Please",
+            "start": 78.5,
+            "end": 79.5,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "stop hopping.",
+            "start": 79.5,
+            "end": 80.1
+          }
+        ],
+        "vi": "Làm ơn ngừng nhảy đi."
+      },
+      {
+        "id": "l6",
+        "start": 85.16,
+        "end": 88.32,
+        "text": "Okay, I will stop hopping.",
+        "rhythmChunks": [
+          {
+            "text": "Okay,",
+            "start": 85.16,
+            "end": 87.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1591,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I will stop hopping.",
+            "start": 87.06,
+            "end": 88.32
+          }
+        ],
+        "vi": "Được rồi, mình sẽ ngừng nhảy."
+      },
+      {
+        "id": "l7",
+        "start": 97.62,
+        "end": 98.88,
+        "text": "Please stop swimming.",
+        "rhythmChunks": [
+          {
+            "text": "Please",
+            "start": 97.62,
+            "end": 98.28,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 446,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "stop swimming.",
+            "start": 98.28,
+            "end": 98.88
+          }
+        ],
+        "vi": "Làm ơn ngừng bơi đi."
+      },
+      {
+        "id": "l8",
+        "start": 103.98,
+        "end": 111.96,
+        "text": "I will stop swimming, okay.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 103.98,
+            "end": 104.58,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will stop swimming,",
+            "start": 104.58,
+            "end": 111.66,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 6109,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "okay.",
+            "start": 111.66,
+            "end": 111.96
+          }
+        ],
+        "vi": "Được rồi, mình sẽ ngừng bơi."
+      },
+      {
+        "id": "l9",
+        "start": 125.48,
+        "end": 127.14,
+        "text": "Please stop talking.",
+        "rhythmChunks": [
+          {
+            "text": "Please",
+            "start": 125.48,
+            "end": 126.48,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "stop talking.",
+            "start": 126.48,
+            "end": 127.14
+          }
+        ],
+        "vi": "Làm ơn ngừng nói chuyện đi."
+      },
+      {
+        "id": "l10",
+        "start": 129.62,
+        "end": 132.84,
+        "text": "Okay, we will stop talking.",
+        "rhythmChunks": [
+          {
+            "text": "Okay,",
+            "start": 129.62,
+            "end": 131.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1351,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "we",
+            "start": 131.28,
+            "end": 131.94,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will stop talking.",
+            "start": 131.94,
+            "end": 132.84
+          }
+        ],
+        "vi": "Được rồi, chúng mình sẽ ngừng nói chuyện."
+      },
+      {
+        "id": "l11",
+        "start": 135.86,
+        "end": 139.2,
+        "text": "Hey, why must we stop?",
+        "rhythmChunks": [
+          {
+            "text": "Hey,",
+            "start": 135.86,
+            "end": 137.46,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1384,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "why must",
+            "start": 137.46,
+            "end": 138.66,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "we stop?",
+            "start": 138.66,
+            "end": 139.2
+          }
+        ],
+        "vi": "Ơ, sao chúng mình phải dừng lại?"
+      },
+      {
+        "id": "l12",
+        "start": 141.24,
+        "end": 147.06,
+        "text": "Oh, I'm going to sing for you.",
+        "rhythmChunks": [
+          {
+            "text": "Oh,",
+            "start": 141.24,
+            "end": 144.48,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 3026,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I'm",
+            "start": 144.48,
+            "end": 145.44,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "going to sing for you.",
+            "start": 145.44,
+            "end": 147.06
+          }
+        ],
+        "vi": "Ôi, mình sẽ hát cho các bạn nghe."
+      }
+    ]
+  },
+  {
+    "videoId": "HIpHxly_0vs",
+    "title": "The Big Green Forest 16: I Will Sit",
+    "youtubeUrl": "https://www.youtube.com/watch?v=HIpHxly_0vs",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.52,
+        "end": 4.92,
+        "text": "The Big Green Forest, episode 16.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.52,
+            "end": 2.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.52,
+            "end": 3.66,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 289,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.66,
+            "end": 4.62,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 556,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "16.",
+            "start": 4.62,
+            "end": 4.92
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 16."
+      },
+      {
+        "id": "l1",
+        "start": 5.48,
+        "end": 7.02,
+        "text": "I will sit.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.48,
+            "end": 6.48,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will sit.",
+            "start": 6.48,
+            "end": 7.02
+          }
+        ],
+        "vi": "Mình sẽ ngồi."
+      },
+      {
+        "id": "l2",
+        "start": 39.62,
+        "end": 40.92,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 39.62,
+            "end": 40.62,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 40.62,
+            "end": 40.92
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      },
+      {
+        "id": "l3",
+        "start": 53.28,
+        "end": 54.42,
+        "text": "I need to sit.",
+        "vi": "Mình cần ngồi."
+      },
+      {
+        "id": "l4",
+        "start": 76.94,
+        "end": 78.9,
+        "text": "I will sit on this log.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 76.94,
+            "end": 77.94,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will sit on this log.",
+            "start": 77.94,
+            "end": 78.9
+          }
+        ],
+        "vi": "Mình sẽ ngồi lên khúc gỗ này."
+      },
+      {
+        "id": "l5",
+        "start": 80.36,
+        "end": 82.2,
+        "text": "I need to sit too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 80.36,
+            "end": 81.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "need to sit too.",
+            "start": 81.36,
+            "end": 82.2
+          }
+        ],
+        "vi": "Mình cũng cần ngồi."
+      },
+      {
+        "id": "l6",
+        "start": 100.2,
+        "end": 101.34,
+        "text": "Sit next to me.",
+        "vi": "Ngồi cạnh mình nè."
+      },
+      {
+        "id": "l7",
+        "start": 111.24,
+        "end": 112.92,
+        "text": "I need to sit.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 111.24,
+            "end": 112.14,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "need to sit.",
+            "start": 112.14,
+            "end": 112.92
+          }
+        ],
+        "vi": "Mình cần ngồi."
+      },
+      {
+        "id": "l8",
+        "start": 146.12,
+        "end": 147.66,
+        "text": "Sit with us.",
+        "rhythmChunks": [
+          {
+            "text": "Sit",
+            "start": 146.12,
+            "end": 147.12,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "with us.",
+            "start": 147.12,
+            "end": 147.66
+          }
+        ],
+        "vi": "Ngồi với chúng mình nào."
+      },
+      {
+        "id": "l9",
+        "start": 152.52,
+        "end": 154.14,
+        "text": "Sit with us on the log.",
+        "rhythmChunks": [
+          {
+            "text": "Sit",
+            "start": 152.52,
+            "end": 153.06,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 325,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "with us on the log.",
+            "start": 153.06,
+            "end": 154.14
+          }
+        ],
+        "vi": "Ngồi với chúng mình trên khúc gỗ nào."
+      },
+      {
+        "id": "l10",
+        "start": 157.34,
+        "end": 159.48,
+        "text": "We are all sitting.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 157.34,
+            "end": 158.34,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "are all",
+            "start": 158.34,
+            "end": 159.18,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 325,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sitting.",
+            "start": 159.18,
+            "end": 159.48
+          }
+        ],
+        "vi": "Chúng mình đều đang ngồi."
+      },
+      {
+        "id": "l11",
+        "start": 170.16,
+        "end": 180.9,
+        "text": "Oh, I can't sit on the log.",
+        "rhythmChunks": [
+          {
+            "text": "Oh,",
+            "start": 170.16,
+            "end": 178.7,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 8325,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 178.7,
+            "end": 179.7,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't sit on the log.",
+            "start": 179.7,
+            "end": 180.9
+          }
+        ],
+        "vi": "Ôi, mình không ngồi lên khúc gỗ được."
+      },
+      {
+        "id": "l12",
+        "start": 194.12,
+        "end": 195.9,
+        "text": "Sit where I said.",
+        "rhythmChunks": [
+          {
+            "text": "Sit",
+            "start": 194.12,
+            "end": 195.12,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "where I said.",
+            "start": 195.12,
+            "end": 195.9
+          }
+        ],
+        "vi": "Ngồi chỗ mình bảo đi."
+      },
+      {
+        "id": "l13",
+        "start": 203.6,
+        "end": 205.5,
+        "text": "I'll sit on that log.",
+        "rhythmChunks": [
+          {
+            "text": "I'll",
+            "start": 203.6,
+            "end": 204.6,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sit on that log.",
+            "start": 204.6,
+            "end": 205.5
+          }
+        ],
+        "vi": "Mình sẽ ngồi lên khúc gỗ kia."
+      },
+      {
+        "id": "l14",
+        "start": 213.6,
+        "end": 215.04,
+        "text": "Don't sit on Bat.",
+        "rhythmChunks": [
+          {
+            "text": "Don't",
+            "start": 213.6,
+            "end": 214.26,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 446,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "sit on Bat.",
+            "start": 214.26,
+            "end": 215.04
+          }
+        ],
+        "vi": "Đừng ngồi lên Bat."
+      },
+      {
+        "id": "l15",
+        "start": 217.38,
+        "end": 217.78,
+        "text": "Whoa!",
+        "vi": "Oái!"
+      }
+    ]
+  },
+  {
+    "videoId": "CtKOH6ButZ8",
+    "title": "The Big Green Forest 17: Yes, I Can",
+    "youtubeUrl": "https://www.youtube.com/watch?v=CtKOH6ButZ8",
+    "source": "caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.76,
+        "end": 4.9,
+        "text": "The Big Green Forest, episode 17.",
+        "rhythmChunks": [
+          {
+            "text": "The Big Green Forest,",
+            "start": 1.76,
+            "end": 4.04,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 810,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode 17.",
+            "start": 4.04,
+            "end": 4.9
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 17."
+      },
+      {
+        "id": "l1",
+        "start": 5.72,
+        "end": 6.66,
+        "text": "Yes, I can.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 5.72,
+            "end": 6.24,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 305,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I can.",
+            "start": 6.24,
+            "end": 6.66
+          }
+        ],
+        "vi": "Có chứ, mình làm được."
+      },
+      {
+        "id": "l2",
+        "start": 41.8,
+        "end": 42.66,
+        "text": "Can you dance?",
+        "vi": "Bạn nhảy được không?"
+      },
+      {
+        "id": "l3",
+        "start": 48.96,
+        "end": 49.36,
+        "text": "No.",
+        "vi": "Không."
+      },
+      {
+        "id": "l4",
+        "start": 50.56,
+        "end": 51.86,
+        "text": "I can't dance.",
+        "rhythmChunks": [
+          {
+            "text": "I can't",
+            "start": 50.56,
+            "end": 51.56,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "dance.",
+            "start": 51.56,
+            "end": 51.86
+          }
+        ],
+        "vi": "Mình không nhảy được."
+      },
+      {
+        "id": "l5",
+        "start": 54.88,
+        "end": 55.98,
+        "text": "I think you can.",
+        "vi": "Mình nghĩ bạn làm được."
+      },
+      {
+        "id": "l6",
+        "start": 61.6,
+        "end": 62.54,
+        "text": "Can you do this?",
+        "vi": "Bạn làm thế này được không?"
+      },
+      {
+        "id": "l7",
+        "start": 72.2,
+        "end": 73.22,
+        "text": "Yes, I can.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 72.2,
+            "end": 72.8,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I can.",
+            "start": 72.8,
+            "end": 73.22
+          }
+        ],
+        "vi": "Có chứ, mình làm được."
+      },
+      {
+        "id": "l8",
+        "start": 79.44,
+        "end": 80.74,
+        "text": "I can do that.",
+        "vi": "Mình làm được điều đó."
+      },
+      {
+        "id": "l9",
+        "start": 88.24,
+        "end": 89.06,
+        "text": "Can you clap?",
+        "vi": "Bạn vỗ tay được không?"
+      },
+      {
+        "id": "l10",
+        "start": 93.92,
+        "end": 95.62,
+        "text": "Yes, I can clap.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 93.92,
+            "end": 94.88,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I can clap.",
+            "start": 94.88,
+            "end": 95.62
+          }
+        ],
+        "vi": "Có chứ, mình vỗ tay được."
+      },
+      {
+        "id": "l11",
+        "start": 106.56,
+        "end": 108.14,
+        "text": "Can you hop three times?",
+        "vi": "Bạn nhảy ba cái được không?"
+      },
+      {
+        "id": "l12",
+        "start": 117.32,
+        "end": 120.1,
+        "text": "Yes, I can hop three times.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 117.32,
+            "end": 118.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 825,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I can",
+            "start": 118.36,
+            "end": 119.12,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 305,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "hop three times.",
+            "start": 119.12,
+            "end": 120.1
+          }
+        ],
+        "vi": "Có chứ, mình nhảy ba cái được."
+      },
+      {
+        "id": "l13",
+        "start": 132.36,
+        "end": 133.9,
+        "text": "Can you move like this?",
+        "vi": "Bạn cử động thế này được không?"
+      },
+      {
+        "id": "l14",
+        "start": 141.92,
+        "end": 144.7,
+        "text": "Yes, I can move like that.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 141.92,
+            "end": 143.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1025,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I can move like that.",
+            "start": 143.16,
+            "end": 144.7
+          }
+        ],
+        "vi": "Có chứ, mình cử động như thế được."
+      },
+      {
+        "id": "l15",
+        "start": 152.52,
+        "end": 153.86,
+        "text": "You can do all of that?",
+        "vi": "Bạn làm được hết mấy cái đó hả?"
+      },
+      {
+        "id": "l16",
+        "start": 155.12,
+        "end": 157.82,
+        "text": "Yes, I can do all of it.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 155.12,
+            "end": 156.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 825,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I can do all of it.",
+            "start": 156.16,
+            "end": 157.82
+          }
+        ],
+        "vi": "Có chứ, mình làm được hết."
+      },
+      {
+        "id": "l17",
+        "start": 159.8,
+        "end": 161.22,
+        "text": "Then you can dance.",
+        "rhythmChunks": [
+          {
+            "text": "Then you can",
+            "start": 159.8,
+            "end": 160.92,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 305,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "dance.",
+            "start": 160.92,
+            "end": 161.22
+          }
+        ],
+        "vi": "Vậy thì bạn nhảy được rồi."
+      }
+    ]
+  },
+  {
+    "videoId": "-zEjePB0Jm0",
+    "title": "The Big Green Forest 18: You Will Fall",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-zEjePB0Jm0",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.58,
+        "end": 4.8,
+        "text": "The Big Green Forest, episode 18.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.58,
+            "end": 2.58,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.58,
+            "end": 3.66,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 289,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.66,
+            "end": 4.5,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 436,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "18.",
+            "start": 4.5,
+            "end": 4.8
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 18."
+      },
+      {
+        "id": "l1",
+        "start": 5.18,
+        "end": 25.44,
+        "text": "You will fall off the log.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 5.18,
+            "end": 6.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fall",
+            "start": 6.18,
+            "end": 24.54,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 17904,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "off the log.",
+            "start": 24.54,
+            "end": 25.44
+          }
+        ],
+        "vi": "Bạn sẽ ngã khỏi khúc gỗ đấy."
+      },
+      {
+        "id": "l2",
+        "start": 27.66,
+        "end": 29.34,
+        "text": "I will not fall.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 27.66,
+            "end": 28.62,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 744,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will not fall.",
+            "start": 28.62,
+            "end": 29.34
+          }
+        ],
+        "vi": "Mình sẽ không ngã đâu."
+      },
+      {
+        "id": "l3",
+        "start": 48.6,
+        "end": 50.34,
+        "text": "I fell off the log.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 48.6,
+            "end": 49.26,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "fell off the log.",
+            "start": 49.26,
+            "end": 50.34
+          }
+        ],
+        "vi": "Mình ngã khỏi khúc gỗ."
+      },
+      {
+        "id": "l4",
+        "start": 63.8,
+        "end": 66.06,
+        "text": "You will fall off that rock.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 63.8,
+            "end": 64.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fall off that rock.",
+            "start": 64.8,
+            "end": 66.06
+          }
+        ],
+        "vi": "Bạn sẽ ngã khỏi hòn đá kia đấy."
+      },
+      {
+        "id": "l5",
+        "start": 71.84,
+        "end": 73.62,
+        "text": "I will not fall.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 71.84,
+            "end": 72.84,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will not fall.",
+            "start": 72.84,
+            "end": 73.62
+          }
+        ],
+        "vi": "Mình sẽ không ngã đâu."
+      },
+      {
+        "id": "l6",
+        "start": 77.76,
+        "end": 93.42,
+        "text": "I fell off the rock.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 77.76,
+            "end": 92.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 14184,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "fell off the rock.",
+            "start": 92.16,
+            "end": 93.42
+          }
+        ],
+        "vi": "Mình ngã khỏi hòn đá."
+      },
+      {
+        "id": "l7",
+        "start": 116.46,
+        "end": 125.22,
+        "text": "You will fall from the tree.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 116.46,
+            "end": 117.12,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 444,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will fall",
+            "start": 117.12,
+            "end": 124.44,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 6864,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "from the tree.",
+            "start": 124.44,
+            "end": 125.22
+          }
+        ],
+        "vi": "Bạn sẽ ngã từ trên cây xuống đấy."
+      },
+      {
+        "id": "l8",
+        "start": 127.56,
+        "end": 128.64,
+        "text": "I will not fall.",
+        "vi": "Mình sẽ không ngã đâu."
+      },
+      {
+        "id": "l9",
+        "start": 152.34,
+        "end": 153.96,
+        "text": "I fell from the tree.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 152.34,
+            "end": 153.06,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "fell from the tree.",
+            "start": 153.06,
+            "end": 153.96
+          }
+        ],
+        "vi": "Mình ngã từ trên cây xuống."
+      },
+      {
+        "id": "l10",
+        "start": 158.48,
+        "end": 160.26,
+        "text": "You fell on me.",
+        "rhythmChunks": [
+          {
+            "text": "You",
+            "start": 158.48,
+            "end": 159.48,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "fell on me.",
+            "start": 159.48,
+            "end": 160.26
+          }
+        ],
+        "vi": "Bạn ngã lên người mình rồi."
+      }
+    ]
+  },
+  {
+    "videoId": "mxhijw3HJf8",
+    "title": "The Big Green Forest 19: Let's Make Something",
+    "youtubeUrl": "https://www.youtube.com/watch?v=mxhijw3HJf8",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.52,
+        "end": 4.8,
+        "text": "The Big Green Forest, episode 19.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.52,
+            "end": 2.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.52,
+            "end": 3.6,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 290,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.6,
+            "end": 4.5,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 495,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "19.",
+            "start": 4.5,
+            "end": 4.8
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 19."
+      },
+      {
+        "id": "l1",
+        "start": 5.06,
+        "end": 6.72,
+        "text": "Let's make something.",
+        "rhythmChunks": [
+          {
+            "text": "Let's",
+            "start": 5.06,
+            "end": 6.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "make something.",
+            "start": 6.06,
+            "end": 6.72
+          }
+        ],
+        "vi": "Mình làm gì đó nào."
+      },
+      {
+        "id": "l2",
+        "start": 17.58,
+        "end": 23.22,
+        "text": "Let's make something with snow.",
+        "rhythmChunks": [
+          {
+            "text": "Let's",
+            "start": 17.58,
+            "end": 18.42,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 625,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "make something",
+            "start": 18.42,
+            "end": 22.44,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 3194,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "with snow.",
+            "start": 22.44,
+            "end": 23.22
+          }
+        ],
+        "vi": "Mình làm gì đó bằng tuyết nào."
+      },
+      {
+        "id": "l3",
+        "start": 49.34,
+        "end": 51.18,
+        "text": "I will make a snowball.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 49.34,
+            "end": 50.34,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will make a snowball.",
+            "start": 50.34,
+            "end": 51.18
+          }
+        ],
+        "vi": "Mình sẽ làm một quả cầu tuyết."
+      },
+      {
+        "id": "l4",
+        "start": 76.2,
+        "end": 78.54,
+        "text": "I will make a bigger snowball.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 76.2,
+            "end": 76.98,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 564,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "will make a bigger snowball.",
+            "start": 76.98,
+            "end": 78.54
+          }
+        ],
+        "vi": "Mình sẽ làm một quả cầu tuyết to hơn."
+      },
+      {
+        "id": "l5",
+        "start": 105.14,
+        "end": 107.04,
+        "text": "I can make an arm.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 105.14,
+            "end": 106.14,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can make an arm.",
+            "start": 106.14,
+            "end": 107.04
+          }
+        ],
+        "vi": "Mình làm được cánh tay."
+      },
+      {
+        "id": "l6",
+        "start": 114.8,
+        "end": 116.88,
+        "text": "I can make an arm too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 114.8,
+            "end": 115.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can make an arm too.",
+            "start": 115.8,
+            "end": 116.88
+          }
+        ],
+        "vi": "Mình cũng làm được cánh tay."
+      },
+      {
+        "id": "l7",
+        "start": 124.22,
+        "end": 125.88,
+        "text": "I can make eyes.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 124.22,
+            "end": 125.22,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can make eyes.",
+            "start": 125.22,
+            "end": 125.88
+          }
+        ],
+        "vi": "Mình làm được đôi mắt."
+      },
+      {
+        "id": "l8",
+        "start": 138.74,
+        "end": 140.76,
+        "text": "I can make a mouth.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 138.74,
+            "end": 139.74,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can make a mouth.",
+            "start": 139.74,
+            "end": 140.76
+          }
+        ],
+        "vi": "Mình làm được cái miệng."
+      },
+      {
+        "id": "l9",
+        "start": 148.94,
+        "end": 150.96,
+        "text": "I can make a nose.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 148.94,
+            "end": 149.94,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can make a nose.",
+            "start": 149.94,
+            "end": 150.96
+          }
+        ],
+        "vi": "Mình làm được cái mũi."
+      },
+      {
+        "id": "l10",
+        "start": 159.78,
+        "end": 161.16,
+        "text": "We made something.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 159.78,
+            "end": 160.62,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 625,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "made something.",
+            "start": 160.62,
+            "end": 161.16
+          }
+        ],
+        "vi": "Chúng mình làm được một thứ."
+      },
+      {
+        "id": "l11",
+        "start": 163.08,
+        "end": 164.58,
+        "text": "We made a snowman.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 163.08,
+            "end": 163.74,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 444,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "made a snowman.",
+            "start": 163.74,
+            "end": 164.58
+          }
+        ],
+        "vi": "Chúng mình làm được một người tuyết."
+      },
+      {
+        "id": "l12",
+        "start": 174.68,
+        "end": 176.76,
+        "text": "We make a good team!",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 174.68,
+            "end": 175.68,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "make a good team!",
+            "start": 175.68,
+            "end": 176.76
+          }
+        ],
+        "vi": "Chúng mình là một đội ăn ý!"
+      }
+    ]
+  },
+  {
+    "videoId": "ysAhdklo3kg",
+    "title": "The Big Green Forest 20: I Can Hold It",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ysAhdklo3kg",
+    "source": "caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.46,
+        "end": 4.68,
+        "text": "The Big Green Forest, episode 20.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.46,
+            "end": 2.46,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.46,
+            "end": 4.08,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 830,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode 20.",
+            "start": 4.08,
+            "end": 4.68
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 20."
+      },
+      {
+        "id": "l1",
+        "start": 5.16,
+        "end": 6.54,
+        "text": "I can hold it.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.16,
+            "end": 5.82,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 444,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hold it.",
+            "start": 5.82,
+            "end": 6.54
+          }
+        ],
+        "vi": "Mình cầm được nó."
+      },
+      {
+        "id": "l2",
+        "start": 22.56,
+        "end": 24.24,
+        "text": "Can you hold this big stick?",
+        "vi": "Bạn cầm cây gậy to này được không?"
+      },
+      {
+        "id": "l3",
+        "start": 31.28,
+        "end": 33.96,
+        "text": "Yes, I can hold this stick.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 31.28,
+            "end": 32.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 32.28,
+            "end": 32.88,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 386,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hold this stick.",
+            "start": 32.88,
+            "end": 33.96
+          }
+        ],
+        "vi": "Có chứ, mình cầm được cây gậy này."
+      },
+      {
+        "id": "l4",
+        "start": 35.06,
+        "end": 36.36,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 35.06,
+            "end": 36.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 36.06,
+            "end": 36.36
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      },
+      {
+        "id": "l5",
+        "start": 39.86,
+        "end": 41.76,
+        "text": "I can hold it too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 39.86,
+            "end": 40.86,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can hold it too.",
+            "start": 40.86,
+            "end": 41.76
+          }
+        ],
+        "vi": "Mình cũng cầm được nó."
+      },
+      {
+        "id": "l6",
+        "start": 61.1,
+        "end": 63.12,
+        "text": "Can you hold this rock?",
+        "rhythmChunks": [
+          {
+            "text": "Can",
+            "start": 61.1,
+            "end": 62.1,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you hold this rock?",
+            "start": 62.1,
+            "end": 63.12
+          }
+        ],
+        "vi": "Bạn cầm hòn đá này được không?"
+      },
+      {
+        "id": "l7",
+        "start": 94.68,
+        "end": 97.14,
+        "text": "No, I can't hold it.",
+        "rhythmChunks": [
+          {
+            "text": "No,",
+            "start": 94.68,
+            "end": 95.52,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 625,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 95.52,
+            "end": 96.3,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 564,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't hold it.",
+            "start": 96.3,
+            "end": 97.14
+          }
+        ],
+        "vi": "Không, mình không cầm được."
+      },
+      {
+        "id": "l8",
+        "start": 121.1,
+        "end": 123.3,
+        "text": "Can you hold this big rock?",
+        "rhythmChunks": [
+          {
+            "text": "Can",
+            "start": 121.1,
+            "end": 122.1,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you hold this big rock?",
+            "start": 122.1,
+            "end": 123.3
+          }
+        ],
+        "vi": "Bạn cầm hòn đá to này được không?"
+      },
+      {
+        "id": "l9",
+        "start": 137.22,
+        "end": 139.74,
+        "text": "No, I can't hold it.",
+        "rhythmChunks": [
+          {
+            "text": "No,",
+            "start": 137.22,
+            "end": 138.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 138.18,
+            "end": 138.9,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't hold it.",
+            "start": 138.9,
+            "end": 139.74
+          }
+        ],
+        "vi": "Không, mình không cầm được."
+      },
+      {
+        "id": "l10",
+        "start": 148.16,
+        "end": 150.24,
+        "text": "I can't hold it either.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 148.16,
+            "end": 149.16,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't hold it either.",
+            "start": 149.16,
+            "end": 150.24
+          }
+        ],
+        "vi": "Mình cũng không cầm được nó."
+      },
+      {
+        "id": "l11",
+        "start": 154.68,
+        "end": 156.9,
+        "text": "Only I can hold this big rock.",
+        "rhythmChunks": [
+          {
+            "text": "Only",
+            "start": 154.68,
+            "end": 155.34,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 350,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "I can hold this big rock.",
+            "start": 155.34,
+            "end": 156.9
+          }
+        ],
+        "vi": "Chỉ có mình cầm được hòn đá to này."
+      },
+      {
+        "id": "l12",
+        "start": 158.94,
+        "end": 160.74,
+        "text": "I am very strong.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 158.94,
+            "end": 159.9,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am very strong.",
+            "start": 159.9,
+            "end": 160.74
+          }
+        ],
+        "vi": "Mình rất khỏe."
+      },
+      {
+        "id": "l13",
+        "start": 171.12,
+        "end": 173.52,
+        "text": "Look what I can hold!",
+        "rhythmChunks": [
+          {
+            "text": "Look",
+            "start": 171.12,
+            "end": 172.08,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "what I can hold!",
+            "start": 172.08,
+            "end": 173.52
+          }
+        ],
+        "vi": "Nhìn mình cầm được cái này này!"
+      }
+    ]
+  },
+  {
+    "videoId": "W8lsbIBNxhQ",
+    "title": "The Big Green Forest 21: I Have Something",
+    "youtubeUrl": "https://www.youtube.com/watch?v=W8lsbIBNxhQ",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 0.8,
+        "end": 4.38,
+        "text": "The Big Green Forest, episode 21.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 0.8,
+            "end": 1.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 1.8,
+            "end": 3.42,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 769,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode 21.",
+            "start": 3.42,
+            "end": 4.38
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 21."
+      },
+      {
+        "id": "l1",
+        "start": 5.18,
+        "end": 6.72,
+        "text": "I have something.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.18,
+            "end": 6.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have something.",
+            "start": 6.18,
+            "end": 6.72
+          }
+        ],
+        "vi": "Mình có một thứ."
+      },
+      {
+        "id": "l2",
+        "start": 31.58,
+        "end": 33.24,
+        "text": "What do you have?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 31.58,
+            "end": 32.58,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you have?",
+            "start": 32.58,
+            "end": 33.24
+          }
+        ],
+        "vi": "Bạn có gì vậy?"
+      },
+      {
+        "id": "l3",
+        "start": 36.56,
+        "end": 38.22,
+        "text": "I have a leaf.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 36.56,
+            "end": 37.56,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have a leaf.",
+            "start": 37.56,
+            "end": 38.22
+          }
+        ],
+        "vi": "Mình có một chiếc lá."
+      },
+      {
+        "id": "l4",
+        "start": 45.32,
+        "end": 47.28,
+        "text": "I have something too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 45.32,
+            "end": 46.32,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have something too.",
+            "start": 46.32,
+            "end": 47.28
+          }
+        ],
+        "vi": "Mình cũng có một thứ."
+      },
+      {
+        "id": "l5",
+        "start": 51.38,
+        "end": 53.04,
+        "text": "What do you have?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 51.38,
+            "end": 52.38,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you have?",
+            "start": 52.38,
+            "end": 53.04
+          }
+        ],
+        "vi": "Bạn có gì vậy?"
+      },
+      {
+        "id": "l6",
+        "start": 56.88,
+        "end": 59.22,
+        "text": "I have a flower.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 56.88,
+            "end": 57.78,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 686,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have a",
+            "start": 57.78,
+            "end": 58.92,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 506,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "flower.",
+            "start": 58.92,
+            "end": 59.22
+          }
+        ],
+        "vi": "Mình có một bông hoa."
+      },
+      {
+        "id": "l7",
+        "start": 67.26,
+        "end": 69.06,
+        "text": "I have two things.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 67.26,
+            "end": 68.1,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 625,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have two things.",
+            "start": 68.1,
+            "end": 69.06
+          }
+        ],
+        "vi": "Mình có hai thứ."
+      },
+      {
+        "id": "l8",
+        "start": 71.58,
+        "end": 73.44,
+        "text": "What do you have?",
+        "rhythmChunks": [
+          {
+            "text": "What",
+            "start": 71.58,
+            "end": 72.54,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 745,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do you have?",
+            "start": 72.54,
+            "end": 73.44
+          }
+        ],
+        "vi": "Bạn có gì vậy?"
+      },
+      {
+        "id": "l9",
+        "start": 75.42,
+        "end": 77.28,
+        "text": "I have two sticks.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 75.42,
+            "end": 76.32,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have two sticks.",
+            "start": 76.32,
+            "end": 77.28
+          }
+        ],
+        "vi": "Mình có hai cái que."
+      },
+      {
+        "id": "l10",
+        "start": 88.04,
+        "end": 89.7,
+        "text": "I have an idea.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 88.04,
+            "end": 89.04,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have an idea.",
+            "start": 89.04,
+            "end": 89.7
+          }
+        ],
+        "vi": "Mình có một ý này."
+      },
+      {
+        "id": "l11",
+        "start": 90.78,
+        "end": 104.76,
+        "text": "We all have things that float, and we have a stream.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 90.78,
+            "end": 91.5,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "all have things that float,",
+            "start": 91.5,
+            "end": 102.14,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 8925,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "and",
+            "start": 102.14,
+            "end": 103.14,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "we",
+            "start": 103.14,
+            "end": 103.8,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 444,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have a stream.",
+            "start": 103.8,
+            "end": 104.76
+          }
+        ],
+        "vi": "Chúng mình đều có những thứ nổi được, và mình có một con suối."
+      },
+      {
+        "id": "l12",
+        "start": 107.34,
+        "end": 109.08,
+        "text": "Let's have a race.",
+        "rhythmChunks": [
+          {
+            "text": "Let's",
+            "start": 107.34,
+            "end": 108.24,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have a race.",
+            "start": 108.24,
+            "end": 109.08
+          }
+        ],
+        "vi": "Mình thi đua nào."
+      },
+      {
+        "id": "l13",
+        "start": 126.8,
+        "end": 128.58,
+        "text": "We are having fun.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 126.8,
+            "end": 127.8,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "are having fun.",
+            "start": 127.8,
+            "end": 128.58
+          }
+        ],
+        "vi": "Chúng mình đang vui ghê."
+      },
+      {
+        "id": "l14",
+        "start": 132.26,
+        "end": 133.56,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 132.26,
+            "end": 133.26,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 133.26,
+            "end": 133.56
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      }
+    ]
+  },
+  {
+    "videoId": "1J-U7Rahd10",
+    "title": "The Big Green Forest 22: I Am Tall",
+    "youtubeUrl": "https://www.youtube.com/watch?v=1J-U7Rahd10",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.58,
+        "end": 4.86,
+        "text": "The Big Green Forest, episode 22.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.58,
+            "end": 2.58,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest, episode",
+            "start": 2.58,
+            "end": 4.56,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 555,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "22.",
+            "start": 4.56,
+            "end": 4.86
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 22."
+      },
+      {
+        "id": "l1",
+        "start": 5.28,
+        "end": 6.72,
+        "text": "I am tall.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.28,
+            "end": 6.18,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 686,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am tall.",
+            "start": 6.18,
+            "end": 6.72
+          }
+        ],
+        "vi": "Mình cao."
+      },
+      {
+        "id": "l2",
+        "start": 24.86,
+        "end": 34.92,
+        "text": "I am taller than you are.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 24.86,
+            "end": 25.86,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am",
+            "start": 25.86,
+            "end": 33.9,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 7825,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "taller than you are.",
+            "start": 33.9,
+            "end": 34.92
+          }
+        ],
+        "vi": "Mình cao hơn bạn."
+      },
+      {
+        "id": "l3",
+        "start": 38.16,
+        "end": 40.2,
+        "text": "No, I am taller.",
+        "rhythmChunks": [
+          {
+            "text": "No,",
+            "start": 38.16,
+            "end": 39.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 684,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 39.06,
+            "end": 39.72,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am taller.",
+            "start": 39.72,
+            "end": 40.2
+          }
+        ],
+        "vi": "Không, mình cao hơn."
+      },
+      {
+        "id": "l4",
+        "start": 57.42,
+        "end": 58.74,
+        "text": "I am the tallest.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 57.42,
+            "end": 58.14,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am the tallest.",
+            "start": 58.14,
+            "end": 58.74
+          }
+        ],
+        "vi": "Mình cao nhất."
+      },
+      {
+        "id": "l5",
+        "start": 72.14,
+        "end": 74.7,
+        "text": "I am stronger than you are.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 72.14,
+            "end": 73.14,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am stronger than you are.",
+            "start": 73.14,
+            "end": 74.7
+          }
+        ],
+        "vi": "Mình khỏe hơn bạn."
+      },
+      {
+        "id": "l6",
+        "start": 77.76,
+        "end": 79.26,
+        "text": "I am strong too.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 77.76,
+            "end": 78.48,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 504,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am strong too.",
+            "start": 78.48,
+            "end": 79.26
+          }
+        ],
+        "vi": "Mình cũng khỏe mà."
+      },
+      {
+        "id": "l7",
+        "start": 90.18,
+        "end": 92.7,
+        "text": "I am also stronger than you are.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 90.18,
+            "end": 90.9,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 505,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am also stronger than you are.",
+            "start": 90.9,
+            "end": 92.7
+          }
+        ],
+        "vi": "Mình cũng khỏe hơn bạn nữa."
+      },
+      {
+        "id": "l8",
+        "start": 94.92,
+        "end": 97.26,
+        "text": "No, I am the strongest.",
+        "rhythmChunks": [
+          {
+            "text": "No,",
+            "start": 94.92,
+            "end": 95.7,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 95.7,
+            "end": 96.6,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am the strongest.",
+            "start": 96.6,
+            "end": 97.26
+          }
+        ],
+        "vi": "Không, mình khỏe nhất."
+      },
+      {
+        "id": "l9",
+        "start": 111.18,
+        "end": 112.98,
+        "text": "I am also the fastest.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 111.18,
+            "end": 111.78,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am also the fastest.",
+            "start": 111.78,
+            "end": 112.98
+          }
+        ],
+        "vi": "Mình cũng nhanh nhất nữa."
+      },
+      {
+        "id": "l10",
+        "start": 116.46,
+        "end": 117.9,
+        "text": "I am the fastest.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 116.46,
+            "end": 117.24,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am the fastest.",
+            "start": 117.24,
+            "end": 117.9
+          }
+        ],
+        "vi": "Mình nhanh nhất."
+      },
+      {
+        "id": "l11",
+        "start": 121.8,
+        "end": 123.24,
+        "text": "I am the fastest.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 121.8,
+            "end": 122.58,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am the fastest.",
+            "start": 122.58,
+            "end": 123.24
+          }
+        ],
+        "vi": "Mình nhanh nhất."
+      },
+      {
+        "id": "l12",
+        "start": 139.4,
+        "end": 140.7,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 139.4,
+            "end": 140.4,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 140.4,
+            "end": 140.7
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      },
+      {
+        "id": "l13",
+        "start": 157.64,
+        "end": 159.24,
+        "text": "I am sleeping.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 157.64,
+            "end": 158.64,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "am sleeping.",
+            "start": 158.64,
+            "end": 159.24
+          }
+        ],
+        "vi": "Mình đang ngủ."
+      },
+      {
+        "id": "l14",
+        "start": 160.68,
+        "end": 165.36,
+        "text": "Oh my god!",
+        "rhythmChunks": [
+          {
+            "text": "Oh",
+            "start": 160.68,
+            "end": 164.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 3165,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "my",
+            "start": 164.06,
+            "end": 165.06,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "god!",
+            "start": 165.06,
+            "end": 165.36
+          }
+        ],
+        "vi": "Ôi trời ơi!"
+      }
+    ]
+  },
+  {
+    "videoId": "1vxZ1yHUIyg",
+    "title": "The Big Green Forest 23: I Can Draw",
+    "youtubeUrl": "https://www.youtube.com/watch?v=1vxZ1yHUIyg",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.64,
+        "end": 4.98,
+        "text": "The Big Green Forest, episode 23.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.64,
+            "end": 2.64,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest,",
+            "start": 2.64,
+            "end": 3.78,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 291,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "episode",
+            "start": 3.78,
+            "end": 4.68,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 495,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "23.",
+            "start": 4.68,
+            "end": 4.98
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 23."
+      },
+      {
+        "id": "l1",
+        "start": 5.42,
+        "end": 6.96,
+        "text": "I can draw.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 5.42,
+            "end": 6.42,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw.",
+            "start": 6.42,
+            "end": 6.96
+          }
+        ],
+        "vi": "Mình vẽ được."
+      },
+      {
+        "id": "l2",
+        "start": 19.22,
+        "end": 20.76,
+        "text": "Can you draw?",
+        "rhythmChunks": [
+          {
+            "text": "Can",
+            "start": 19.22,
+            "end": 20.22,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you draw?",
+            "start": 20.22,
+            "end": 20.76
+          }
+        ],
+        "vi": "Bạn vẽ được không?"
+      },
+      {
+        "id": "l3",
+        "start": 22.5,
+        "end": 24.3,
+        "text": "Yes, I can draw.",
+        "rhythmChunks": [
+          {
+            "text": "Yes,",
+            "start": 22.5,
+            "end": 23.16,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "I",
+            "start": 23.16,
+            "end": 23.82,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw.",
+            "start": 23.82,
+            "end": 24.3
+          }
+        ],
+        "vi": "Có chứ, mình vẽ được."
+      },
+      {
+        "id": "l4",
+        "start": 30.74,
+        "end": 32.7,
+        "text": "I can draw with sticks.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 30.74,
+            "end": 31.74,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw with sticks.",
+            "start": 31.74,
+            "end": 32.7
+          }
+        ],
+        "vi": "Mình vẽ được bằng que."
+      },
+      {
+        "id": "l5",
+        "start": 35.82,
+        "end": 37.68,
+        "text": "I can draw on the ground.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 35.82,
+            "end": 36.42,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw on the ground.",
+            "start": 36.42,
+            "end": 37.68
+          }
+        ],
+        "vi": "Mình vẽ được trên mặt đất."
+      },
+      {
+        "id": "l6",
+        "start": 40.5,
+        "end": 42.42,
+        "text": "I can draw in the dirt.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 40.5,
+            "end": 41.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw in the dirt.",
+            "start": 41.28,
+            "end": 42.42
+          }
+        ],
+        "vi": "Mình vẽ được trên đất."
+      },
+      {
+        "id": "l7",
+        "start": 48,
+        "end": 49.2,
+        "text": "I can draw circles.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 48,
+            "end": 48.54,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 324,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw circles.",
+            "start": 48.54,
+            "end": 49.2
+          }
+        ],
+        "vi": "Mình vẽ được hình tròn."
+      },
+      {
+        "id": "l8",
+        "start": 59.72,
+        "end": 61.32,
+        "text": "I can draw squares.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 59.72,
+            "end": 60.72,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw squares.",
+            "start": 60.72,
+            "end": 61.32
+          }
+        ],
+        "vi": "Mình vẽ được hình vuông."
+      },
+      {
+        "id": "l9",
+        "start": 72.26,
+        "end": 73.86,
+        "text": "I can draw lines.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 72.26,
+            "end": 73.26,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw lines.",
+            "start": 73.26,
+            "end": 73.86
+          }
+        ],
+        "vi": "Mình vẽ được đường thẳng."
+      },
+      {
+        "id": "l10",
+        "start": 87.08,
+        "end": 88.74,
+        "text": "I can draw dots.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 87.08,
+            "end": 88.08,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can draw dots.",
+            "start": 88.08,
+            "end": 88.74
+          }
+        ],
+        "vi": "Mình vẽ được chấm tròn."
+      },
+      {
+        "id": "l11",
+        "start": 90.98,
+        "end": 92.88,
+        "text": "Do you see what I drew?",
+        "rhythmChunks": [
+          {
+            "text": "Do",
+            "start": 90.98,
+            "end": 91.98,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you see what I drew?",
+            "start": 91.98,
+            "end": 92.88
+          }
+        ],
+        "vi": "Bạn có thấy mình vẽ gì không?"
+      },
+      {
+        "id": "l12",
+        "start": 97.98,
+        "end": 100.68,
+        "text": "What did you do?",
+        "rhythmChunks": [
+          {
+            "text": "What did you",
+            "start": 97.98,
+            "end": 100.38,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 1586,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "do?",
+            "start": 100.38,
+            "end": 100.68
+          }
+        ],
+        "vi": "Bạn đã làm gì vậy?"
+      },
+      {
+        "id": "l13",
+        "start": 100.38,
+        "end": 101.88,
+        "text": "I drew you.",
+        "rhythmChunks": [
+          {
+            "text": "I",
+            "start": 100.38,
+            "end": 101.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "drew you.",
+            "start": 101.28,
+            "end": 101.88
+          }
+        ],
+        "vi": "Mình vẽ bạn đấy."
+      },
+      {
+        "id": "l14",
+        "start": 108.06,
+        "end": 110.04,
+        "text": "You draw very well.",
+        "rhythmChunks": [
+          {
+            "text": "You draw",
+            "start": 108.06,
+            "end": 109.26,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 565,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "very well.",
+            "start": 109.26,
+            "end": 110.04
+          }
+        ],
+        "vi": "Bạn vẽ đẹp ghê."
+      },
+      {
+        "id": "l15",
+        "start": 111.24,
+        "end": 112.14,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 111.24,
+            "end": 111.84,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 385,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 111.84,
+            "end": 112.14
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      }
+    ]
+  },
+  {
+    "videoId": "kEZkBWnjUPY",
+    "title": "The Big Green Forest 24: Let's Get Apples",
+    "youtubeUrl": "https://www.youtube.com/watch?v=kEZkBWnjUPY",
+    "source": "auto_caption",
+    "languageCode": "en",
+    "grade": 3,
+    "topic": "The Big Green Forest",
+    "rhythmSource": "caption-audio-v1",
+    "lines": [
+      {
+        "id": "l0",
+        "start": 1.34,
+        "end": 4.56,
+        "text": "The Big Green Forest, episode 24.",
+        "rhythmChunks": [
+          {
+            "text": "The",
+            "start": 1.34,
+            "end": 2.34,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "Big Green Forest, episode",
+            "start": 2.34,
+            "end": 4.26,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 494,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "24.",
+            "start": 4.26,
+            "end": 4.56
+          }
+        ],
+        "vi": "Khu Rừng Xanh Lớn, tập 24."
+      },
+      {
+        "id": "l1",
+        "start": 5,
+        "end": 6.54,
+        "text": "Let's get apples.",
+        "rhythmChunks": [
+          {
+            "text": "Let's",
+            "start": 5,
+            "end": 6,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "get apples.",
+            "start": 6,
+            "end": 6.54
+          }
+        ],
+        "vi": "Mình đi hái táo nào."
+      },
+      {
+        "id": "l2",
+        "start": 36.12,
+        "end": 37.44,
+        "text": "How will we get them?",
+        "vi": "Làm sao mình lấy được chúng?"
+      },
+      {
+        "id": "l3",
+        "start": 41.18,
+        "end": 50.34,
+        "text": "We will get some long grass.",
+        "vi": "Mình sẽ đi lấy ít cỏ dài."
+      },
+      {
+        "id": "l4",
+        "start": 52.5,
+        "end": 53.64,
+        "text": "We will get sticks.",
+        "vi": "Mình sẽ đi lấy que."
+      },
+      {
+        "id": "l5",
+        "start": 59.34,
+        "end": 60.66,
+        "text": "I will get the grass.",
+        "vi": "Mình sẽ đi lấy cỏ."
+      },
+      {
+        "id": "l6",
+        "start": 91.28,
+        "end": 92.58,
+        "text": "Thank you.",
+        "rhythmChunks": [
+          {
+            "text": "Thank",
+            "start": 91.28,
+            "end": 92.28,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "you.",
+            "start": 92.28,
+            "end": 92.58
+          }
+        ],
+        "vi": "Cảm ơn nhé."
+      },
+      {
+        "id": "l7",
+        "start": 96.62,
+        "end": 99.3,
+        "text": "We got lots of sticks.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 96.62,
+            "end": 97.62,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "got lots",
+            "start": 97.62,
+            "end": 98.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 685,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "of sticks.",
+            "start": 98.82,
+            "end": 99.3
+          }
+        ],
+        "vi": "Mình kiếm được nhiều que rồi."
+      },
+      {
+        "id": "l8",
+        "start": 104.6,
+        "end": 106.02,
+        "text": "Lots of grass.",
+        "rhythmChunks": [
+          {
+            "text": "Lots",
+            "start": 104.6,
+            "end": 105.6,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "of grass.",
+            "start": 105.6,
+            "end": 106.02
+          }
+        ],
+        "vi": "Thật nhiều cỏ."
+      },
+      {
+        "id": "l9",
+        "start": 118.88,
+        "end": 121.5,
+        "text": "Now we have a raft.",
+        "rhythmChunks": [
+          {
+            "text": "Now",
+            "start": 118.88,
+            "end": 119.88,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "we",
+            "start": 119.88,
+            "end": 120.54,
+            "boundaryAfter": {
+              "type": "minor",
+              "pauseMs": 445,
+              "confidence": 0.82,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "have a raft.",
+            "start": 120.54,
+            "end": 121.5
+          }
+        ],
+        "vi": "Giờ mình có một cái bè rồi."
+      },
+      {
+        "id": "l10",
+        "start": 133.82,
+        "end": 135.3,
+        "text": "Get the raft!",
+        "rhythmChunks": [
+          {
+            "text": "Get",
+            "start": 133.82,
+            "end": 134.82,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "the raft!",
+            "start": 134.82,
+            "end": 135.3
+          }
+        ],
+        "vi": "Lấy cái bè đi!"
+      },
+      {
+        "id": "l11",
+        "start": 136.64,
+        "end": 141.66,
+        "text": "Oh no, we can't get apples.",
+        "rhythmChunks": [
+          {
+            "text": "Oh",
+            "start": 136.64,
+            "end": 137.64,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "no,",
+            "start": 137.64,
+            "end": 139.88,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 2024,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "we",
+            "start": 139.88,
+            "end": 140.88,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't get apples.",
+            "start": 140.88,
+            "end": 141.66
+          }
+        ],
+        "vi": "Ôi không, mình không hái được táo."
+      },
+      {
+        "id": "l12",
+        "start": 149.36,
+        "end": 158.94,
+        "text": "We can't get apples, but we can get blueberries.",
+        "rhythmChunks": [
+          {
+            "text": "We",
+            "start": 149.36,
+            "end": 150.36,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "can't get apples,",
+            "start": 150.36,
+            "end": 156.92,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 5925,
+              "confidence": 0.92,
+              "sources": [
+                "silence",
+                "punctuation"
+              ]
+            }
+          },
+          {
+            "text": "but",
+            "start": 156.92,
+            "end": 157.92,
+            "boundaryAfter": {
+              "type": "major",
+              "pauseMs": 785,
+              "confidence": 0.92,
+              "sources": [
+                "silence"
+              ]
+            }
+          },
+          {
+            "text": "we can get blueberries.",
+            "start": 157.92,
+            "end": 158.94
+          }
+        ],
+        "vi": "Mình không hái được táo, nhưng hái được việt quất."
+      }
+    ]
+  }
+]

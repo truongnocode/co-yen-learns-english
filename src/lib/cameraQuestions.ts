@@ -85,7 +85,7 @@ export function collectCameraQuestions(
   const raw: RawQ[] = [];
 
   if (mode === "vocab") {
-    if (grade >= 6 && grade <= 9) {
+    if (grade >= 3 && grade <= 9) {
       // Generate vocab questions from vocabulary items (en↔vi)
       const d = gradeData as SGKData;
       if (d?.units) {
@@ -108,7 +108,7 @@ export function collectCameraQuestions(
       });
     }
   } else if (mode === "grammar") {
-    if (grade >= 6 && grade <= 9) {
+    if (grade >= 3 && grade <= 9) {
       const d = gradeData as SGKData;
       if (d?.units) {
         Object.values(d.units).forEach((unit) => {

@@ -20,6 +20,27 @@ const gradeCamera: Record<number, {
   grammarLabel: string; grammarDesc: string;
   unitLabel: string;
 }> = {
+  3: {
+    title: "Lớp 3 · iLearn Smart Start",
+    desc: "Ôn từ vựng và mẫu câu đầu tiên qua cử chỉ — vui và dễ cho lớp 3",
+    vocabLabel: "Từ vựng", vocabDesc: "Anh ↔ Việt · Từ vựng cơ bản",
+    grammarLabel: "Ngữ pháp", grammarDesc: "Câu ngắn · Mẫu câu nền tảng",
+    unitLabel: "Chọn Unit",
+  },
+  4: {
+    title: "Lớp 4 · iLearn Smart Start",
+    desc: "Ôn từ vựng và ngữ pháp cơ bản qua cử chỉ — phù hợp chương trình lớp 4",
+    vocabLabel: "Từ vựng", vocabDesc: "Anh ↔ Việt · Dịch nghĩa từ",
+    grammarLabel: "Ngữ pháp", grammarDesc: "Câu đơn giản · Ngữ pháp cơ bản",
+    unitLabel: "Chọn Unit",
+  },
+  5: {
+    title: "Lớp 5 · iLearn Smart Start",
+    desc: "Củng cố từ vựng và mẫu câu qua vận động — chuẩn bị lên cấp 2",
+    vocabLabel: "Từ vựng", vocabDesc: "Anh ↔ Việt · Chủ đề quen thuộc",
+    grammarLabel: "Ngữ pháp", grammarDesc: "Câu đơn giản · Thì hiện tại",
+    unitLabel: "Chọn Unit",
+  },
   6: {
     title: "Lớp 6 · SGK Global Success",
     desc: "Ôn từ vựng và ngữ pháp cơ bản qua cử chỉ — phù hợp chương trình lớp 6",
@@ -560,7 +581,7 @@ const CameraPage = () => {
   useEffect(() => {
     async function load() {
       try {
-        if (grade >= 6 && grade <= 9) {
+        if (grade >= 3 && grade <= 9) {
           const data = await loadSGKData(grade);
           setGradeData(data);
         } else if (grade === 10) {

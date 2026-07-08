@@ -118,14 +118,31 @@ const speakWebSpeech = async (text: string, rate = 0.85): Promise<void> => {
 
 // ---- Language detection ----
 
-/** Returns true if text is primarily Vietnamese (contains Vietnamese diacritics). */
-const isVietnamese = (text: string): boolean => {
-  // Vietnamese-specific diacritical characters not found in other Latin languages
-  const viRegex = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/i;
-  // Count Vietnamese chars vs total alpha chars
-  const viChars = (text.match(viRegex) || []).length;
-  // If more than 2 Vietnamese diacritics, it's Vietnamese text
-  return viChars >= 2;
+// Vietnamese-specific diacritical characters not found in other Latin languages.
+// The `g` flag is required — without it String.match returns only the first
+// match, so the count below could never reach the >= 2 threshold. (String.match
+// with a global regex is stateless across calls, so reuse here is safe.)
+const viCharRegex = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/gi;
+
+/** Returns true if text is primarily Vietnamese (>= 2 Vietnamese diacritics). */
+const isVietnamese = (text: string): boolean =>
+  (text.match(viCharRegex) || []).length >= 2;
+
+/**
+ * Prepare text for an English TTS voice. Drops Vietnamese fragments so only the
+ * English part is read aloud:
+ *   - parenthetical glosses that contain Vietnamese, e.g. "(màu xanh dương)"
+ *   - a leading question number, e.g. "1. " / "12) "
+ * Returns "" when what remains is still primarily Vietnamese (nothing English
+ * worth reading) — e.g. a pure Vietnamese instruction line.
+ */
+const sanitizeForSpeech = (text: string): string => {
+  const cleaned = text
+    .replace(/\s*\([^)]*\)/g, (m) => (isVietnamese(m) ? " " : m))
+    .replace(/^\s*\d+\s*[.)]\s*/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return isVietnamese(cleaned) ? "" : cleaned;
 };
 
 // ---- Public API ----
@@ -140,15 +157,16 @@ if (typeof window !== "undefined") {
  * Puter TTS if user has session, otherwise Web Speech API with best voice.
  */
 export const speakUS = async (text: string, rate = 0.85): Promise<void> => {
-  // Skip Vietnamese text — English TTS cannot pronounce it properly
-  if (isVietnamese(text)) return;
+  // Read only the English part; an English voice cannot pronounce Vietnamese.
+  const speakText = sanitizeForSpeech(text);
+  if (!speakText) return;
 
   speechSynthesis.cancel();
   if (puterStatus === "unknown") await initPuter();
   if (puterStatus === "ready") {
-    await speakPuter(text);
+    await speakPuter(speakText);
   } else {
-    await speakWebSpeech(text, rate);
+    await speakWebSpeech(speakText, rate);
   }
 };
 

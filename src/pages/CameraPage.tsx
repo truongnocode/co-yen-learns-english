@@ -333,8 +333,13 @@ function CameraOverlay({
   useEffect(() => {
     if (phase !== "playing") return;
 
-    if (questions[currentQRef.current]) {
-      speakUS(questions[currentQRef.current].text, 1.0);
+    const cq = questions[currentQRef.current];
+    if (cq) {
+      // Read only the English part. `speak` is set for vocab questions
+      // (English word, or "" to stay silent on Việt→Anh); grammar/test
+      // questions leave it undefined and fall back to the English `text`.
+      const toSpeak = cq.speak !== undefined ? cq.speak : cq.text;
+      if (toSpeak) speakUS(toSpeak, 1.0);
     }
 
     setTimeLeft(15);

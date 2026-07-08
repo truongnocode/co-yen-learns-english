@@ -5,6 +5,13 @@ export interface CameraQuestion {
   optA: string;
   optB: string;
   correct: "A" | "B";
+  /**
+   * Exactly what TTS should read aloud (English only), independent of the
+   * on-screen `text` which may contain Vietnamese scaffolding like
+   * "… nghĩa là gì?". Empty string = read nothing. When undefined, callers
+   * fall back to reading `text` (used for English grammar/test questions).
+   */
+  speak?: string;
 }
 
 function shuffleArray<T>(arr: T[]): T[] {
@@ -54,22 +61,25 @@ function vocabToCamera(allVocab: VocabItem[]): CameraQuestion[] {
 
     // Alternate between en→vi and vi→en
     if (Math.random() < 0.5) {
-      // English → Vietnamese
+      // English → Vietnamese: read only the English word (not "nghĩa là gì?")
       const isACorrect = Math.random() < 0.5;
       questions.push({
         text: `"${item.en}" nghĩa là gì?`,
         optA: isACorrect ? item.vi : wrong.vi,
         optB: isACorrect ? wrong.vi : item.vi,
         correct: isACorrect ? "A" : "B",
+        speak: item.en,
       });
     } else {
-      // Vietnamese → English
+      // Vietnamese → English: don't read aloud — the prompt is Vietnamese and
+      // the English word is the answer (reading it would give it away).
       const isACorrect = Math.random() < 0.5;
       questions.push({
         text: `"${item.vi}" trong tiếng Anh là?`,
         optA: isACorrect ? item.en : wrong.en,
         optB: isACorrect ? wrong.en : item.en,
         correct: isACorrect ? "A" : "B",
+        speak: "",
       });
     }
   }

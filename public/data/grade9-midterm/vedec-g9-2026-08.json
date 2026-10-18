@@ -1,0 +1,730 @@
+{
+  "id": "vedec-g9-2026-08",
+  "number": 8,
+  "title": "Đề 08",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen to the dialogue between Mai and Nam talking about healthy living and study habits. Circle the best answer A or B for each sentence. You will listen TWICE. (1,25 pts)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. Nam does exercise every evening. \t\t\t\t\tA. True  \t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>1. Nam does exercise every evening. \t\t\t\t\tA. True  \t\t<strong>B. False</strong></p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. Mai eats more vegetables and less fast food. \t\t\t\tA. True  \t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>2. Mai eats more vegetables and less fast food. \t\t\t\t<strong>A. True</strong>  \t\tB. False</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. The school counsellor can’t help students with their stress. \t\tA. True  \t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>3. The school counsellor can’t help students with their stress. \t\tA. True  \t\t<strong>B. False</strong></p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Nam advises Mai to manage her time and get enough sleep. \tA. True  \t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>4. Nam advises Mai to manage her time and get enough sleep. \t<strong>A. True</strong>  \t\tB. False</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Mai already has a well-balanced life. \t\t\t\t\tA. True  \t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>5. Mai already has a well-balanced life. \t\t\t\t\tA. True  \t\t<strong>B. False</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. You will hear a man talking about life in the city. Listen carefully and circle the best answer A, B, or C for each question. You will listen TWICE. (1,25 pts)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p>6. What can people do in the city? </p>\n<p>A. Go downtown to relax and enjoy activities\t\tB. Stay home all day</p>\n<p>C. Work in the countryside</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>6. What can people do in the city? </p>\n<p><strong>A. Go downtown to relax and enjoy activities</strong>\t\tB. Stay home all day</p>\n<p>C. Work in the countryside</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p>7. What is public transport in the city like? </p>\n<p>A. Expensive and slow\t\t\t\t\tB. Easy and convenient</p>\n<p>C. Unsafe and crowded</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>7. What is public transport in the city like? </p>\n<p>A. Expensive and slow\t\t\t\t\t<strong>B. Easy and convenient</strong></p>\n<p>C. Unsafe and crowded</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p>8. Why do people have to be careful in some areas? </p>\n<p>A. Because there is a high crime rate\t\t\tB. Because it rains heavily</p>\n<p>C. Because it’s too quiet</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>8. Why do people have to be careful in some areas? </p>\n<p><strong>A. Because there is a high crime rate</strong>\t\t\tB. Because it rains heavily</p>\n<p>C. Because it’s too quiet</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p>9. What does the writer hope for the future city? </p>\n<p>A. It will be more peaceful and cleaner\t\t\tB. It will have more traffic jams</p>\n<p>C. It will be noisier and more polluted</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>9. What does the writer hope for the future city? </p>\n<p><strong>A. It will be more peaceful and cleaner</strong>\t\t\tB. It will have more traffic jams</p>\n<p>C. It will be noisier and more polluted</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p>10. What can you do to help make your city clean and safe? </p>\n<p>A. Play loud music everywhere\t\t\t\tB. Throw rubbish on the street</p>\n<p>C. Use public transport and keep the environment clean</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>10. What can you do to help make your city clean and safe? </p>\n<p>A. Play loud music everywhere\t\t\t\tB. Throw rubbish on the street</p>\n<p><strong>C. Use public transport and keep the environment clean</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2.5 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0.5 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "Circle the letter A, B , C or D to indicate the word whose underlined part is pronounced differently from the others.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "11",
+          "html": "<p>11. A. <u>a</u>ccomplish\t\tB. <u>a</u>dditional\t\t\tC. <u>a</u>nxiety\t\t\tD. <u>a</u>ssignment</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>11. A. <u>a</u>ccomplish\t\tB. <u>a</u>dditional\t\t\t<strong>C. </strong><strong><u>a</u></strong><strong>nxiety</strong>\t\t\tD. <u>a</u>ssignment</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Circle the letter A, B, C or D to indicate the word that differs from the rest in the position of the main stress.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "12",
+          "html": "<p>12. A. cognitive\t\tB. abandon\t\t\tC. emotion\t\t\tD. important</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>12. <strong>A. cognitive</strong>\t\tB. abandon\t\t\tC. emotion\t\t\tD. important</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (2.0 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "13",
+          "html": "<p>13. You should identify the most important tasks and focus _____ those first. </p>\n<p>A. to\tB. on\tC. with\t\tD. of</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>13. You should identify  the most  important  tasks and focus _____ those first. </p>\n<p>A. to\t<strong>B. on</strong>\tC. with\t\tD. of</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "14",
+          "html": "<p>14. Let&#x27;s discuss _______ to improve our community garden.</p>\n<p>A. when\tB. where\tC. why\t\tD. how</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>14. Let&#x27;s discuss _______ to improve our community garden.</p>\n<p>A. when\tB. where\tC. why\t\t<strong>D. how</strong></p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "15",
+          "html": "<p>15. <strong>Sue:</strong> &quot;Hey, Ally! Have you heard about the upcoming neighborhood picnic?&quot;</p>\n<p><strong>Ally:</strong> “_______. It&#x27;s a great way to meet new people and strengthen our community bonds.&quot;</p>\n<p>A. Of course not, it’s not costly. \t\t\t\tB. Yes! I&#x27;m excited.</p>\n<p>C. I think so.\t\t\t\t\t\t\tD. No problem.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>15. <strong>Sue:</strong> &quot;Hey, Ally! Have you heard about the upcoming neighborhood picnic?&quot;</p>\n<p><strong>Ally:</strong> “_______. It&#x27;s a great way to meet new people and strengthen our community bonds.&quot;</p>\n<p>A. Of course not, it’s not costly. \t\t\t\t<strong>B. Yes! I&#x27;m excited</strong>.</p>\n<p>C. I think so.\t\t\t\t\t\t\tD. No problem.</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "16",
+          "html": "<p>16. During the snowstorm, we _______ salt for the icy sidewalks, so neighbors pitched in to help.</p>\n<p>A. cut down of\tB. got on with\tC. fed up with\t\tD. ran out of</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>16. During the snowstorm, we _______ salt for the icy sidewalks, so neighbors pitched in to help.</p>\n<p>A. cut down of\tB. got on with\tC. fed up with\t\t<strong>D. ran out of</strong></p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "17",
+          "html": "<p>17. Good ______ practices are essential to prevent the spread of diseases.</p>\n<p>A. construction \tB. hygiene \tC. leftover \t\tD. downtown</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>17. Good ______ practices are essential to prevent the spread of diseases.</p>\n<p>A. construction \t<strong>B. hygiene</strong> \tC. leftover \t\tD. downtown</p>"
+        },
+        {
+          "id": "s8-q6",
+          "number": "18",
+          "html": "<p>18. A _______ can provide guidance on academic and emotional matters.</p>\n<p>A. accomplishment \tB. adolescence\tC. adulthood\t\tD. counsellor</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>18. A _______ can provide guidance on academic and emotional matters.</p>\n<p>A. accomplishment \tB. adolescence\tC. adulthood\t\t<strong>D. counsellor</strong></p>"
+        },
+        {
+          "id": "s8-q7",
+          "number": "19",
+          "html": "<p>19. ______ the temperature, ______ water turns into steam.</p>\n<p>A. Higher / faster the\t\tB. The higher / the faster\t</p>\n<p>C. The more higher / the faster\tD. The higher / the fast\t</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>19. ______ the temperature, ______ water turns into steam.</p>\n<p>A. Higher / faster the\t\t<strong>B. The higher / the faster</strong>\t</p>\n<p>C. The more higher / the faster\tD. The higher / the fast\t</p>"
+        },
+        {
+          "id": "s8-q8",
+          "number": "20",
+          "html": "<p>20. If you want to travel to Australia, you _______ have a valid passport.</p>\n<p>A. should\tB. may\tC. can\t\tD. must</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>20. If you want to travel to Australia, you _______ have a valid passport.</p>\n<p>A. should\tB. may\tC. can\t\t<strong>D. must</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "C. READING (2.5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Choose the correct answer A, B, or C to fill in each blank in the following passage. (1.25 points)",
+      "part": "READING",
+      "introHtml": "<p>(21) ______, we all need to learn how to make our life more successful, especially teenagers. Good communication is the key to being successful and satisfied in many areas of life, including work, personal life, and social interactions. At work, communication skills are most (22) ______shown in your ability to use and understand language, whether spoken or on paper. You need a good command of language to get your ideas, opinions and feelings across clearly. Listening carefully is (23) ______important communication skill, as is the ability and confidence to (24) ______questions when you need to understand something or get information from someone. Competence in a language rather than your mother (25) ______also count as communication skill.</p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "21",
+          "html": "<p>21. A. To me</p>\n<p>B. In my opinion</p>\n<p>C. To begin with </p>\n<p>D. For example </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>21: A. To me</p>\n<p><strong>B. </strong><strong>In my opinion</strong></p>\n<p>C. Consequently </p>\n<p>D. For example </p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "22",
+          "html": "<p>22. A. common</p>\n<p>B. uncommon\t</p>\n<p>C. uncommonly </p>\n<p>D. commonly </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>22: A. common</p>\n<p>B. uncommon\t</p>\n<p>C. uncommonly </p>\n<p><strong>D. commonly</strong><strong> </strong></p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "23",
+          "html": "<p>23. A. the</p>\n<p>B. an\t</p>\n<p>C. a </p>\n<p>D. any</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>23: A. the</p>\n<p><strong>B.</strong><strong> an</strong><strong>\t</strong></p>\n<p>C. a </p>\n<p>D. any</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "24",
+          "html": "<p>24. A. ask</p>\n<p>B. do</p>\n<p>C. answer </p>\n<p>D. find</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>24: <strong>A. ask</strong></p>\n<p>B. do</p>\n<p>C. answer </p>\n<p>D. find</p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "25",
+          "html": "<p>25. A. country</p>\n<p>B. nature</p>\n<p>C. figure </p>\n<p>D. tongue</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>25: A. country</p>\n<p>B. nature</p>\n<p>C. figure </p>\n<p><strong>D. tongue</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Read the following passage and answer the questions. (1.25 points)",
+      "part": "READING",
+      "introHtml": "<p>One of the most important aspects of city life is public transportation. Efficient public transport systems can greatly enhance the quality of life for city dwellers by reducing traffic congestion and pollution. Many large cities have developed extensive networks of buses, trains, and subways to help<br>people get around quickly and affordably.<br>In cities like Tokyo and New York, public transportation is an essential part of daily life. The Tokyo subway system is known for its <strong>punctuality</strong> and cleanliness, transporting millions of passengers every day. Similarly, New York&#x27;s subway system, though older and less reliable, is crucial for the<br>mobility of <strong>its</strong> residents. Public transportation not only benefits individuals but also has a positive impact on the environment. By reducing the number of private vehicles on the road, public transport systems help to lower emissions and decrease the city&#x27;s carbon footprint. Additionally, using public<br>transportation can be more economical for residents, saving money on fuel and parking fees.<br>However, public transportation systems also face challenges. In many cities, aging infrastructure and lack of funding can lead to delays and overcrowding. Safety and cleanliness are other concerns that need to be addressed to make public transport more appealing to users.<br>Despite these issues, the advantages of public transportation in city life are clear. Investments in<br>modernizing and expanding public transport can lead to significant improvements in urban living conditions. Encouraging the use of public transportation is essential for the sustainable development of cities. (Adapted from: https://www.gotokyo.org)<br></p>",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "26",
+          "html": "<p>26. What is the passage mainly about?<br>A. The history of public transportation<br>B.<strong> </strong>The benefits and challenges of public transportation in cities<strong><br></strong>C.<strong> </strong>The differences between public transportation in Tokyo and New York<strong><br></strong>D.<strong> </strong>The environmental impact of private vehicles<strong><br></strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1: What is the passage mainly about?<br>A. The history of public transportation<br>B. The benefits and challenges of public transportation in cities<br>C. The differences between public transportation in Tokyo and New York<br>D. The environmental impact of private vehicles<br></p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "27",
+          "html": "<p>27.<strong> </strong>The word &quot;<strong>punctuality</strong>&quot; in paragraph 2 is closest in meaning to ______.<strong><br></strong>A.<strong> </strong>speed \t\t\tB.<strong> </strong>cleanliness \t\tC.<strong> </strong>reliability \t\t\tD.<strong> </strong>timeliness<strong><br></strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2: The word &quot;punctuality&quot; in paragraph 2 is closest in meaning to ______.<br>A. speed \t\t\tB. cleanliness \t\tC. reliability \t\t\t<strong>D. </strong>timeliness<br></p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "28",
+          "html": "<p>28.<strong> </strong>The word &quot;<strong>its</strong>&quot; in paragraph 2 refers to ______.<strong><br></strong>A.<strong> </strong>Tokyo \t\t\tB.<strong> </strong>subway \t\t\tC.<strong> </strong>system \t\t\tD.<strong> </strong>New York<strong><br></strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3: The word &quot;its&quot; in paragraph 2 refers to ______.<br>A. Tokyo \t\t\tB. subway \t\t\tC. system \t\t\t<strong>D. </strong>New York<br></p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "29",
+          "html": "<p>29.<strong> </strong>According to the passage, what is the benefit of public transportation?<strong><br></strong>A.<strong> </strong>Increased traffic congestion \t\t\t\tB.<strong> </strong>Higher fuel costs<strong><br></strong>C.<strong> </strong>Reduced emissions \t\t\t\t\tD.<strong> </strong>Less safety<strong><br></strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4: According to the passage, what is the benefit of public transportation?<br>A. Increased traffic congestion \t\t\t\tB. Higher fuel costs<br><strong>C. </strong>Reduced emissions \t\t\t\t\tD. Less safety<br></p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "30",
+          "html": "<p>30.<strong> </strong>Which of the following is <strong>NOT </strong>mentioned as a challenge for public transportation?<strong><br></strong>A.<strong> </strong>Aging infrastructure \tB.<strong> </strong>Lack of funding \t\tC.<strong> </strong>Overcrowding \t\tD.<strong> </strong>High fuel costs</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5: Which of the following is NOT mentioned as a challenge for public transportation?<br>A. Aging infrastructure \tB. Lack of funding \t\tC. Overcrowding \t\t<strong>D. </strong>High fuel costs</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "D. WRITING (2.5 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s13",
+      "title": "I. Arrange these sentences to make meaningful paragraphs or conversations. (0.5 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "31",
+          "html": "<p>31. a. Sleep is very important for staying healthy because it helps your brain and emotions work well.</p>\n<p>      b. So, if you keep a regular sleep schedule, you will feel better.</p>\n<p>      c. This way, you can take better care of your health.</p>\n<p>      d. In addition, avoiding late-night activities makes your sleep better.</p>\n<p>     e. Also, creating a calm bedtime routine can help you fall asleep.</p>\n<p>A. a-c-d-b-e\t\t\tB. a-b-e-c-d\t\t\tC. a-d-b-e-c\t\t\tD. a-e-b-d-c</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>31. a. Sleep is very important for staying healthy because it helps your brain and emotions work well.</p>\n<p>      b. So, if you keep a regular sleep schedule, you will feel better.</p>\n<p>      c. This way, you can take better care of your health.</p>\n<p>     d. In addition, avoiding late-night activities makes your sleep better.</p>\n<p>    e. Also, creating a calm bedtime routine can help you fall asleep.</p>\n<p>A. a-c-d-b-e\t\t\t<strong>B. a-b-e-c-d</strong>\t\t\tC. a-d-b-e-c\t\t\tD. a-e-b-d-c</p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "32",
+          "html": "<p>32. a. Hello Everyone, </p>\n<p>      b. Finally, please come and help us make our community a safer place!</p>\n<p>      c. Additionally, your input and suggestions are very important to us. </p>\n<p>      d. Firstly, our neighborhood association is hosting a meeting to discuss improving local safety. </p>\n<p>      e. The meeting will be held on Tuesday, September 7th, at 6 PM in the town hall. </p>\n<p>A. a-d-e-b-c\t\t\tB. a-d-c-e-b\t\t\tC. a-d-b-e-c\t\t\tD. a-d-b-c-e</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>32. a. Hello Everyone, </p>\n<p>      b. Finally, please come and help us make our community a safer place!</p>\n<p>      c. Additionally, your input and suggestions are very important to us. </p>\n<p>     d. Firstly, our neighborhood association is hosting a meeting to discuss improving local safety. </p>\n<p>     e. The meeting will be held on Tuesday, September 7th, at 6 PM in the town hall. </p>\n<p>A. a-d-e-b-c\t\t\t<strong>B. a-d-c-e-b</strong>\t\t\tC. a-d-b-e-c\t\t\tD. a-d-b-c-e</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "II. Complete the second sentence so that it means the same as the sentence before. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "33",
+          "html": "<p>33. Please tell me how I can get to the bus station.</p>\n<p>=&gt; Please tell me  …………………………………………………………………… the bus station.</p>",
+          "kind": "text",
+          "answers": [
+            "how to get to",
+            "Please tell me how to get to the bus station."
+          ],
+          "referenceHtml": "<p>how to get to / Please tell me how to get to the bus station.</p>"
+        },
+        {
+          "id": "s14-q2",
+          "number": "34",
+          "html": "<p>34. You will have less health worries if you exercise.</p>\n<p>=&gt; The more you exercise, ……………………………………………………………you will have.</p>",
+          "kind": "text",
+          "answers": [
+            "the fewer health worries",
+            "The more you exercise, the fewer health worries you will have.",
+            "the less health worries",
+            "The more you exercise, the less health worries you will have."
+          ],
+          "referenceHtml": "<p>the fewer health worries / The more you exercise, the fewer health worries you will have. / the less health worries / The more you exercise, the less health worries you will have.</p>",
+          "note": "Với danh từ đếm được worries, dùng fewer. Vẫn nhận cách viết less trong đáp án gốc để học sinh đối chiếu."
+        },
+        {
+          "id": "s14-q3",
+          "number": "35",
+          "html": "<p>35. They should reduce the amount of fatty foods in their daily meals. (cut)</p>\n<p>=&gt; They should ………………………………………………… of fatty foods in their daily meals.</p>",
+          "kind": "text",
+          "answers": [
+            "cut down on the amount",
+            "They should cut down on the amount of fatty foods in their daily meals."
+          ],
+          "referenceHtml": "<p>cut down on the amount / They should cut down on the amount of fatty foods in their daily meals.</p>"
+        },
+        {
+          "id": "s14-q4",
+          "number": "36",
+          "html": "<p>36. You can go on a vacation. You save enough money. (if)</p>",
+          "kind": "text",
+          "answers": [
+            "You can go on a vacation if you save enough money.",
+            "If you save enough money, you can go on a vacation."
+          ],
+          "referenceHtml": "<p>You can go on a vacation if you save enough money. / If you save enough money, you can go on a vacation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "III. Write the correct form or tense of the verbs in brackets. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s15-q1",
+          "number": "37",
+          "html": "<p>37.<strong> </strong>She decided (cut down on) __________ her spending on unnecessary items.</p>",
+          "kind": "text",
+          "answers": [
+            "to cut down on"
+          ],
+          "referenceHtml": "<p>37.<strong> </strong>She decided (cut down on) _____ to cut down on _____ her spending on unnecessary items.</p>"
+        },
+        {
+          "id": "s15-q2",
+          "number": "38",
+          "html": "<p>38. You will get a good seat if you (come) _______ there first tomorrow.</p>",
+          "kind": "text",
+          "answers": [
+            "come"
+          ],
+          "referenceHtml": "<p>38. You will get a good seat if you (come) ___ <strong>come</strong> ____ there first tomorrow.</p>"
+        },
+        {
+          "id": "s15-q3",
+          "number": "39",
+          "html": "<p>39. I am looking forward (see) _______ you in Hue tomorrow.</p>",
+          "kind": "text",
+          "answers": [
+            "to seeing"
+          ],
+          "referenceHtml": "<p>39. I am looking forward  (see) ____<strong> </strong><strong>to seeing</strong>___ you in Hue tomorrow.</p>"
+        },
+        {
+          "id": "s15-q4",
+          "number": "40",
+          "html": "<p>40. Tom missed the bus. Therefore, he (turn) _______ up the meeting in our community late.</p>\n<p><strong>The end</strong></p>",
+          "kind": "text",
+          "answers": [
+            "turned"
+          ],
+          "referenceHtml": "<p>turned</p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "E 9GKI-BÀI NGHE 1 Q1-5.mp3",
+      "sourceHash": "f74489dbdc61e599d7c4ccf7f8cec136901f9c7da68be0d7483bcd42e94c7a86",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-08-1.mp3",
+      "duration": 123.924979,
+      "sectionIds": [
+        "s2"
+      ]
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "E 9GKI-BÀI NGHE 2 Q6-10.wav",
+      "sourceHash": "b0d7d60df971974e7eec15aeff190636b96f98347462de6d75ab3f8d21d574e0",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-08-2.mp3",
+      "duration": 154.850958,
+      "sectionIds": [
+        "s3"
+      ]
+    }
+  ],
+  "sourceHash": "f60fe26dd3f2ef8b1b623ad05493ccdd04c6d1413de3b161ff174021a3c5922e"
+}

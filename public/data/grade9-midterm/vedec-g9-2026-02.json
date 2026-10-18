@@ -1,0 +1,665 @@
+{
+  "id": "vedec-g9-2026-02",
+  "number": 2,
+  "title": "Đề 02",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "I. LANGUAGE FOCUS (3.0 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Circle the best answer among A, B, C or D to complete the following sentences. ( 2.5pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1.\tTom came down <u>\t</u>food poisoning after eating at that new restaurant.</p>\n<p>A. of</p>\n<p>B. on</p>\n<p>C. to</p>\n<p>D. with</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1.\tTom came down <u>\t</u>food poisoning after eating at that new restaurant.</p>\n<p>A. of</p>\n<p>B. on</p>\n<p>C. to</p>\n<p>D. with</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2.  She hates watching documentary because she thinks it is <u>\t</u>.</p>\n<p>A. tired</p>\n<p>B. tiring</p>\n<p>C. tiredly</p>\n<p>D.tiredness</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2.  She hates watching documentary because she thinks it is <u>\t</u>.</p>\n<p>A. tired</p>\n<p>B. tiring</p>\n<p>C. tiredly</p>\n<p>D.tiredness</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. Today&#x27;s cities are <u>\t</u>than cities in previous times.</p>\n<p>A. lots large</p>\n<p>B. much larger</p>\n<p>C. as large</p>\n<p>D. the largest</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Today&#x27;s cities are <u>\t</u>than cities in previous times.</p>\n<p>A. lots large</p>\n<p>B. much larger</p>\n<p>C. as large</p>\n<p>D. the largest</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. I don’t like <u>\t</u>roads in big cities. They are usually full of traffic.</p>\n<p>A. congested</p>\n<p>B. modern</p>\n<p>C. winding</p>\n<p>D. smoothy</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. I don’t like <u>\t</u>roads in big cities. They are usually full of traffic.</p>\n<p>A. congested</p>\n<p>B. modern</p>\n<p>C. winding</p>\n<p>D. smoothy</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Two roommates are studying and the room is dark.</p>\n<p>- <strong>Linda</strong>: &quot;Would you mind opening the window?&quot;\t- <strong>Jane</strong>: &quot; <u>\t</u>. &quot;</p>\n<p>A. I agree with you</p>\n<p>B. Yes, you can</p>\n<p>C. Not at all</p>\n<p>D. That’s great idea</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. Two roommates are studying and the room is dark.</p>\n<p>- <strong>Linda</strong>: &quot;Would you mind opening the window?&quot;\t- <strong>Jane</strong>: &quot; <u>\t</u>. &quot;</p>\n<p>A. I agree with you</p>\n<p>B. Yes, you can</p>\n<p>C. Not at all</p>\n<p>D. That’s great idea</p>"
+        },
+        {
+          "id": "s2-q6",
+          "number": "6",
+          "html": "<p>6. If they practise a little harder, they <u>\t</u>win the match.</p>\n<p>A. must</p>\n<p>B. may</p>\n<p>C. should</p>\n<p>D. won’t</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. If they practise a little harder, they <u>\t</u>win the match.</p>\n<p>A. must</p>\n<p>B. may</p>\n<p>C. should</p>\n<p>D. won’t</p>"
+        },
+        {
+          "id": "s2-q7",
+          "number": "7",
+          "html": "<p>7. Could you tell me <u>\t</u>to do to get on well with my new neighbors?</p>\n<p>A. what</p>\n<p>B. where</p>\n<p>C. how</p>\n<p>D. when</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. Could you tell me <u>\t</u>to do to get on well with my new neighbors?</p>\n<p>A. what</p>\n<p>B. where</p>\n<p>C. how</p>\n<p>D. when</p>"
+        },
+        {
+          "id": "s2-q8",
+          "number": "8",
+          "html": "<p>8. The <u>\t</u>puts out fire and saves people from dangerous fire.</p>\n<p>A. electrician</p>\n<p>B. police officer</p>\n<p>C. garbage collector</p>\n<p>D. firefighter</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. The <u>\t</u>puts out fire and saves people from dangerous fire.</p>\n<p>A. electrician</p>\n<p>B. police officer</p>\n<p>C. garbage collector</p>\n<p>D. firefighter</p>"
+        },
+        {
+          "id": "s2-q9",
+          "number": "9",
+          "html": "<p>9. My father phoned me while I <u>\t</u>dinner yesterday.</p>\n<p>A. cooked</p>\n<p>B. were cooking</p>\n<p>C. cooking</p>\n<p>D. was cooking</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. My father phoned me while I <u>\t</u>dinner yesterday.</p>\n<p>A. cooked</p>\n<p>B. were cooking</p>\n<p>C. cooking</p>\n<p>D. was cooking</p>"
+        },
+        {
+          "id": "s2-q10",
+          "number": "10",
+          "html": "<p>10.It’s necessary to decide which we should <u>\t</u>priority to: work or study.</p>\n<p>A. make</p>\n<p>B. bring</p>\n<p>C. give</p>\n<p>D. take</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10.It’s necessary to decide which we should <u>\t</u>priority to: work or study.</p>\n<p>A. make</p>\n<p>B. bring</p>\n<p>C. give</p>\n<p>D. take</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Choose the letter A, B, C, or D to indicate the underlined part that needs correction in each of the following questions. (0.5 pt)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>1.<u> The</u><u> </u><u>more</u> pollution <u>there</u><u> </u><u>is</u> in the air, <u>the</u><u> </u><u>hardest</u> it <u>is to </u><u>breathe</u>.</p>\n<p>A. The more</p>\n<p>B. there is</p>\n<p>C. the hardest</p>\n<p>D. is to breathe </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1.<u> The</u><u> </u><u>more</u> pollution <u>there</u><u> </u><u>is</u> in the air, <u>the</u><u> </u><u>hardest</u> it <u>is to </u><u>breathe</u>.</p>\n<p>A. The more</p>\n<p>B. there is</p>\n<p>C. the hardest</p>\n<p>D. is to breathe</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>2. We <u>will go</u> to the park <u>for</u> a picnic <u>if</u> the weather <u>will be</u> nice tomorrow.</p>\n<p>A. will go</p>\n<p>B. for</p>\n<p>C. if</p>\n<p>D. will be</p>\n<p><strong>PART </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. We <u>will go</u> to the park <u>for</u> a picnic <u>if</u> the weather <u>will be</u> nice tomorrow. </p>\n<p>A. will go </p>\n<p>B. for</p>\n<p>C. if</p>\n<p>D. will be</p>\n<p><strong>PART </strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "II. READING (4.0 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Read the following signs and circle the letter A, B, C or D to indicate the correct answer to each of the questions. (0.5 pt)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong><strong>.</strong> <strong>What does this</strong><strong> sign say?</strong></p>\n<p><img src=\"/data/grade9-midterm/images/95d1f8ec97c9d362.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p><strong>A.</strong> You must not take food or drinks out of this room.         </p>\n<p><strong>B.</strong> You cannot have snacks in this room.       </p>\n<p><strong>C.</strong> You can buy cheaper food here.        </p>\n<p><strong>D.</strong> You must eat in this room.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong> <strong>What does this sign say?</strong></p>\n<p><strong>A.</strong> You must not take food or drinks out of this room.         </p>\n<p><strong>B.</strong> You cannot have snacks in this room.       </p>\n<p><strong>C.</strong> You can buy cheaper food here.        </p>\n<p><strong>D.</strong> You must eat in this room.</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "2",
+          "html": "<p>2. What does the notice say?</p><p>The Science Club is open from 2 p.m to 5 p.m to students with membership cards.</p><p>A. You can get your membership cards from 2 p.m to 5 p.m.<br>B. Only members can visit the Science Club from 2 p.m to 5 p.m.<br>C. All students can visit the Science Club from 2 p.m to 5 p.m.<br>D. Membership cards are not for all students.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> <strong>What does the notice say?</strong></p>\n<p>The Science Club is open from 2 p.m to 5 p.m to students with membership cards.The Science Club is open from 2 p.m to 5 p.m to students with membership cards.</p>\n<p>The Science Club is open from 2 p.m to 5 p.m to students with membership cards.</p>\n<p>The Science Club is open from 2 p.m to 5 p.m to students with membership cards.</p>\n<p><strong>A</strong><strong>.</strong> You can get your membership cards from 2 p.m to 5 p.m.        </p>\n<p><strong>B.</strong> Only members can visit the Science Club from 2 p.m to </p>\n<p>5 p.m.        </p>\n<p><strong>C.</strong> All students can visit the Science Club from 2 p.m to </p>\n<p>5 p.m.        </p>\n<p><strong>D.</strong> Membership cards are not for all students.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "II. Read the following announcement and circle the letter A, B, C or D to indicate the correct answer to each of the questions. (1.0 pt)",
+      "part": "READING",
+      "introHtml": "<p><strong>CITY </strong><strong>CLEAN</strong><strong>-</strong><strong>UP DAY</strong></p>\n<p>Let’s make our city a better place to live! Join the <strong>CITY </strong><strong>CLEAN</strong><strong>-</strong><strong>UP DAY</strong><strong> </strong>to<strong> </strong>keep our streets and parks clean and beautiful.</p>\n<p> <strong>Event Details</strong>:</p>\n<p>- Date : March 10.</p>\n<p>- Time : 7:00 a.m - 11:00 a.m.</p>\n<p>- Place : Central Park.</p>\n<p>- Purpose : To (1)_________people’s awarness about protecting the environment and keeping public places tidy.</p>\n<p>We encourage everyone(2)_________their reusable water bottles and gloves.</p>\n<p>Volunteers will work together to clean up trash in different areas.</p>\n<p>After finishing, all groups will meet at the park gate to take (3)_________group photo.</p>\n<p>Let’s join this event to make our city cleaner(4)  _________more beautiful!</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "1",
+          "html": "<p><strong>1. </strong>A. take\t B. raise\tC. increase\t\tD. discourage</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. </strong>A. take\t B. raise\tC. increase\t\tD. discourage</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong>A. bringing\t B. bring\tC. brought\t\tD. to bring</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. </strong>A. bringing\t B. bring\tC. brought\t\tD. to bring</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "3",
+          "html": "<p><strong>3. </strong>A. a\t B. some\tC. an\t\tD. many</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. </strong>A. a\t B. some\tC. an\t\tD. many</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "4",
+          "html": "<p><strong>4. </strong>A. and\t B. but\tC. so\t\tD. or</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. </strong>A. and\t B. but\tC. so\t\tD. or</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "III. Read the following passage and circle the letter A, B, C or D to indicate the correct answer to each of the questions. (1.25 pts)",
+      "part": "READING",
+      "introHtml": "<p>Healthy living is crucial for teenagers as it helps them grow, develop, and build habits that will last a lifetime. First, a balanced diet is the foundation of healthy living. Teens should eat plenty of fruits, vegetables, whole grains, and learn proteins, while avoiding too much junk food and sugar drinks. Also, regular physical activity is equally important, with at least 60 minutes of exercise recommended daily. This can include anything from sport like basketball or soccer to simple activities like walking or cycling.</p>\n<p>In addition to diet and exercise, sleep plays a key role in maintaining health. Teenagers need about 8 to 10 hours of sleep each night to support their physical and mental growth. Lack of sleep can lead to poor concentration, irritability, and an increased risk of illness. Managing stress is another important factor. With the pressure of school, friends, and social media, teens may feel overwhelmed. Practicing mindfulness, taking breaks, and talking to someone they trust can help them manage more effectively.</p>\n<p>By adopting these healthy habits - eating well, staying active, sleeping enough, and managing stress - teens can improve their overall well-being and set the stage for a healthy adult life.</p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong><strong>.</strong> <strong>What is the main idea of the passage?</strong></p>\n<p>    <strong>A.</strong> Teenagers need to exercise for 60 minutes every day.</p>\n<p>    <strong>B.</strong> Healthy living includes balanced nutrition, exercise, sleep, and stress management for teens.</p>\n<p>    <strong>C.</strong> Teens should avoid stress and eat only fruits and vegetables.</p>\n<p>    <strong>D.</strong> Physical activity is more important than sleep for teenagers.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong> <strong>What is the main idea of the passage?</strong></p>\n<p>    <strong>A.</strong> Teenagers need to exercise for 60 minutes every day.</p>\n<p>    <strong>B</strong><strong>.</strong> Healthy living includes balanced nutrition, exercise, sleep, and stress management for teens.</p>\n<p>    <strong>C.</strong> Teens should avoid stress and eat only fruits and vegetables.</p>\n<p>    <strong>D.</strong> Physical activity is more important than sleep for teenagers.</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong><strong>.</strong> <strong>Which of the following is NOT TRUE according to the passage?</strong></p>\n<p><strong>    A.</strong> Teens should eat a balanced diet that included fruits, vegetables.</p>\n<p>    <strong>B.</strong> Teenagers need around 8 to 10 hours of sleep every night.</p>\n<p>    <strong>C.</strong> Stress has no impact on the health of teenagers.</p>\n<p>    <strong>D.</strong> Teens should avoid junk food and sugary drinks.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> <strong>Which of the following is NOT TRUE according to the passage?</strong></p>\n<p><strong>    A.</strong> Teens should eat a balanced diet that included fruits, vegetables.</p>\n<p>    <strong>B.</strong> Teenagers need around 8 to 10 hours of sleep every night.</p>\n<p>    <strong>C.</strong> Stress has no impact on the health of teenagers</p>\n<p>    <strong>D.</strong> Teens should avoid junk food and sugary drinks.</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p><strong>3</strong><strong>. </strong><strong>From the passage, it can be inferred that...</strong></p>\n<p>    <strong>A.</strong> Lack of sleep can badly affect a teenager’s mood and health.</p>\n<p>    <strong>B.</strong> Teens don’t need to manage stress if they sleep well.</p>\n<p>    <strong>C.</strong> Teenagers need more than 10 hours of sleep every night.</p>\n<p>    <strong>D.</strong> Teens can stay healthy by only exercising.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. From the passage, it can be inferred that...</strong></p>\n<p>    <strong>A.</strong> Lack of sleep can badly affect a teenager’s mood and health.</p>\n<p>    <strong>B.</strong> Teens don’t need to manage stress if they sleep well.</p>\n<p>    <strong>C.</strong> Teenagers need more than 10 hours of sleep every night.</p>\n<p>    <strong>D.</strong> Teens can stay healthy by only exercising.</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p><strong>4</strong><strong>. </strong><strong>According to the passage, what</strong><strong> </strong><strong>can happen if teenagers </strong><strong>don’t</strong><strong> get enough sleep</strong><strong>?</strong></p>\n<p>    <strong>A.</strong> They may become stronger and more focused.</p>\n<p>    <strong>B.</strong> They may feel angry and have trouble concentrating.</p>\n<p>    <strong>C.</strong> They will sleep better the next night.</p>\n<p>    <strong>D.</strong> They will eat more fruits and vegetables.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. According to the passage, what can happen if teenagers don’t get enough sleep?</strong></p>\n<p>    <strong>A.</strong> They may become stronger and more focused.</p>\n<p>    <strong>B.</strong> They may feel angry and have trouble concentrating.</p>\n<p>    <strong>C.</strong> They will sleep better the next night.</p>\n<p>    <strong>D.</strong> They will eat more fruits and vegetables.</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p><strong>5</strong><strong>. </strong><strong>According to the passage, teenagers can have a healthy life by____________.</strong></p>\n<p>    <strong>A.</strong> eat less fruits and vegetables.</p>\n<p>    <strong>B.</strong> talking to someone they trust and taking breaks.</p>\n<p>    <strong>C.</strong> playing video games for long hours.</p>\n<p>    <strong>D.</strong> sleeping less.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5. According to the passage, teenagers can have a healthy life by____________.</strong></p>\n<p>    <strong>A.</strong> eat less fruits and vegetables.</p>\n<p>    <strong>B.</strong> talking to someone they trust and taking breaks.</p>\n<p>    <strong>C.</strong> playing video games for long hours.</p>\n<p>    <strong>D.</strong> sleeping less.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "IV. Read the following passage and choose the letter A, B, C or D to indicate the correct answer to each of the questions. (1.25 pts)",
+      "part": "READING",
+      "introHtml": "<p>In the Mekong Delta, Long Dinh village in Tien Giang province is famous for its traditional craft of weaving sedge mats. The mats&#x27; high quality makes them popular domestically, and they are also exported to markets worldwide. In spite of its well-established reputation for this traditional craft, mat weaving only started here some 50 years ago. It was first introduced by immigrants from Kim Son, a famous mat weaving village in Ninh Binh province. However, the technique of weaving sedge mats in Long Dinh, as compared with other places, is somewhat different. Long Dinh branded mats are thicker and have more attractive colours and patterns.</p>\n<p>Weaving sedge mats is similar to growing rice. Long Dinh mat production mainly occurs during the dry season, from January to April. Weavers have to work the hardest in May and June; otherwise, when the rainy season starts in July, they will have to <strong><u>put off</u></strong> finishing their products till the next dry season. No matter how much work it requires, Long Dinh mat producers stick with this occupation, as it brings a higher income than growing rice.</p>\n<p>This trade provides employment for thousands of local labourers. At present, nearly 1,000 households in Long Dinh village live on weaving mats. To better meet market demands, Long Dinh mat weavers have created many kinds of products besides the traditional sedge mats.</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> <strong>What can be the title of the passage?</strong></p>\n<p>    <strong>A.</strong> Growing Rice in Tien Giang Province.</p>\n<p>    <strong>B.</strong> A Sedge Mat Craft Village in Ninh Binh Province.</p>\n<p>    <strong>C.</strong> Growing Rice in Ninh Binh Province.</p>\n<p>    <strong>D.</strong> A Sedge Mat Craft Village in Tien Giang Province.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong> <strong>What can be the title of the passage?</strong></p>\n<p>    <strong>A.</strong> Growing Rice in Tien Giang Province.</p>\n<p>    <strong>B.</strong> A Sedge Mat Craft Village in Ninh Binh Province.</p>\n<p>    <strong>C.</strong> Growing Rice in Ninh Binh Province.</p>\n<p>    <strong>D.</strong> A Sedge Mat Craft Village in Tien Giang Province.</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> <strong>What is Long Dinh village famous for</strong><strong>?</strong></p>\n<p><strong>    A.</strong> Growing rice.                                                        <strong>B.</strong> Making sedge mats.</p>\n<p>    <strong>C.</strong> Selling fruits.                                                       <strong>D.</strong> Building houses.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> <strong>What is Long Dinh village famous for?</strong></p>\n<p><strong>    A.</strong> Growing rice.                                                        <strong>B.</strong> Making sedge mats.</p>\n<p>    <strong>C.</strong> Selling fruits .                                                       <strong>D.</strong> Building houses.</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "3",
+          "html": "<p><strong>3. </strong><strong>According to the passage, Long Dinh mat production mainly occurs_________</strong><strong>.</strong></p>\n<p>    <strong>A.</strong> from April to January.                                          <strong>B.</strong> during the rainy season.</p>\n<p>    <strong>C.</strong> from January to July.                                            <strong>D.</strong> during the dry season.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. According to the passage, Long Dinh mat production mainly occurs_________.</strong></p>\n<p>    <strong>A.</strong> from April to January.                                          <strong>B.</strong> during the rainy season.</p>\n<p>    <strong>C.</strong> from January to July.                                            <strong>D.</strong> during the dry season.</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "4",
+          "html": "<p><strong>4. </strong><strong>All of</strong><strong> the following are true about the craft in Long Dinh EXCEPT that _________.</strong></p>\n<p>    <strong>A.</strong> it has had the reputation for more than 100 years.</p>\n<p>    <strong>B.</strong> it has the origin in Kim Son, Ninh Binh.</p>\n<p>    <strong>C.</strong> the mats have attractive colours and patterns.</p>\n<p>    <strong>D.</strong> the technique is a little bit different from that in other places.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. All of the following are true about the craft in Long Dinh EXCEPT that _________.</strong></p>\n<p>    <strong>A.</strong> it has had the reputation for more than 100 years.</p>\n<p>    <strong>B.</strong> it has the origin in Kim Son, Ninh Binh.</p>\n<p>    <strong>C.</strong> the mats have attractive colours and patterns.</p>\n<p>    <strong>D.</strong> the technique is a little bit different from that in other places.</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "5",
+          "html": "<p><strong>5. </strong>The word<strong> “put </strong><strong>off ”</strong><strong> </strong>in paragraph 2 is<strong> OPPOSITE </strong>in meaning to<strong>_________.</strong></p>\n<p>    <strong>A.</strong> cancel                        <strong>B.</strong> delay                              <strong>C.</strong> continue                         <strong>D.</strong> finish</p>\n<p><br><strong>                                                          </strong><strong>PART </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5. </strong>The word<strong> “put off ” </strong>in paragraph 2 is<strong> OPPOSITE </strong>in meaning to<strong>_________.</strong></p>\n<p>    <strong>A.</strong> cancel                        <strong>B.</strong> delay                              <strong>C.</strong> continue                         <strong>D.</strong> finish</p>\n<p><br><strong>                                                          PART </strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "III. WRITING (3.0 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Mark the letter A, B, C or D to indicate the correct arrangement of the sentences to make a meaningful paragraph/ letter in each of the following questions. (0.5pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong></p>\n<p>a. For example, cities offer better education, modern transport, and more job opportunities.<br>b. However, living in big cities also has disadvantages such as traffic jams and pollution.<br>c. Many people move from the countryside to cities because they want to have a better life.<br>d. In conclusion, life in cities can be both exciting and challenging.</p>\n<p>e. There are many advantages of living in a city that attract people from rural areas.</p>\n<p>A. c-e-a-b-d\tB. e-c-a-b-d\tC. c-a-e-b-d\tD. e-a-c-b-d</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong></p>\n<p>a. For example, cities offer better education, modern transport, and more job opportunities.<br>b. However, living in big cities also has disadvantages such as traffic jams and pollution.<br>c. Many people move from the countryside to cities because they want to have a better life.<br>d. In conclusion, life in cities can be both exciting and challenging.</p>\n<p>e. There are many advantages of living in a city that attract people from rural areas.</p>\n<p>A. c-e-a-b-d\tB. e-c-a-b-d\tC. c-a-e-b-d\tD. e-a-c-b-d</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong>Dear neighbours,</p>\n<p>a. Finally, we hope to see you there and enjoy a fun day with your family and friends!<br>b. The festival will take place on Saturday, July 15th, from 10 AM to 4 PM at the community center.<br>c. Firstly, we should like to invite you to our annual town festival next weekend.<br>d. Also, there will be food stalls, games, and live entertainment for all ages.</p>\n<p>Sincerely,<br>A. a-b-d-c\tB. c-a-b-d\tC. c-b-d-a\tD. a-d-b-c</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. </strong>Dear neighbours,</p>\n<p>a. Finally, we hope to see you there and enjoy a fun day with your family and friends!<br>b. The festival will take place on Saturday, July 15th, from 10 AM to 4 PM at the community center.<br>c. Firstly, we should like to invite you to our annual town festival next weekend.<br>d. Also, there will be food stalls, games, and live entertainment for all ages.</p>\n<p>Sincerely,<br>A. a-b-d-c\tB. c-a-b-d\tC. c-b-d-a\tD. a-d-b-c</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Rearrange the following words to make complete sentences. (0.5 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong>. popular / The restaurant / was / teenagers,/ so / with / a bit / it / pricey./ was /</p>\n<p>-&gt;…………………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "The restaurant was popular with teenagers, so it was a bit pricey",
+            "The restaurant was popular with teenagers, so it was a bit pricey."
+          ],
+          "referenceHtml": "<p><strong>1</strong>. popular / The restaurant / was / teenagers,/ so / with / a bit / it / pricey./ was /</p>\n<p>-&gt; The restaurant was popular with teenagers, so it was a bit pricey.</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong>. out / a project / is carrying / food waste ./ to recycle / Her team / </p>\n<p>-&gt;……………………………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "Her team is carrying out a project to recycle food waste",
+            "Her team is carrying out a project to recycle food waste."
+          ],
+          "referenceHtml": "<p><strong>2</strong>. out / a project / is carrying / food waste ./ to recycle / Her team / </p>\n<p>-&gt; Her team is carrying out a project to recycle food waste.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "III. Rewrite the sentence so that it has a similar meaning to the first, using the given words. (1.0pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> The apartment is small, but it’s cozy and comfortable.</p>\n<p>→ Although the apartment ______________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "is small, it’s cozy and comfortable",
+            "Although the apartment is small, it’s cozy and comfortable."
+          ],
+          "referenceHtml": "<p><strong>1.</strong> The apartment is small, but it’s cozy and comfortable.</p>\n<p>→ Although the apartment is small, it’s cozy and comfortable.</p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> Many countries are reducing the use of nuclear power nowadays.</p>\n<p><strong>→ </strong>Many countries are cutting<strong> ________</strong><strong>_____________________________</strong><strong>______________.</strong></p>",
+          "kind": "text",
+          "answers": [
+            "down on the use of nuclear power nowadays",
+            "Many countries are cutting down on the use of nuclear power nowadays."
+          ],
+          "referenceHtml": "<p><strong>2.</strong> Many countries are reducing the use of nuclear power nowadays.</p>\n<p><strong>→ </strong>Many countries are cutting<strong> </strong>down on<strong> </strong>the use of nuclear power nowadays.</p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> I have no idea who I should contact in case of emergency.</p>\n<p>→ I have no _________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "idea who to contact in case of emergency",
+            "I have no idea who to contact in case of emergency."
+          ],
+          "referenceHtml": "<p><strong>3.</strong> I have no idea who I should contact in case of emergency.</p>\n<p>→ I have no idea who to contact in case of emergency.</p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong> We are getting more exhausted and we feel more unmotivated to finish our work.</p>\n<p>→ The more_________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "exhausted we are getting, the more unmotivated we feel to finish our work",
+            "The more exhausted we are getting, the more unmotivated we feel to finish our work."
+          ],
+          "referenceHtml": "<p><strong>4.</strong> We are getting more exhausted and we feel more unmotivated to finish our work.</p>\n<p>→ The more exhausted we are getting, the more unmotivated we feel to finish our work.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "IV. Write a paragraph of about 100- 120 words about “What you like about living in a city?”. You can use the following ideas. (1.0 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p>- Good job opportunities<br>- Good health service<br>- Easy shopping</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>- Good job opportunities<br>- Good health service<br>- Easy shopping</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "8f6fdb2142f841cd51f98cd7bedef35d8dd0a995c7d98c9a1114215419627b26"
+}

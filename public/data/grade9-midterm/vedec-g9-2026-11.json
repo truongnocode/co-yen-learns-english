@@ -1,0 +1,664 @@
+{
+  "id": "vedec-g9-2026-11",
+  "number": 11,
+  "title": "Đề 11",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Part 1: Listen to Binh and Mira talking about a place of interest in their community and complete each blank with no more than TWO words or a number. You will listen twice. (1.0 pt)",
+      "part": "LISTENING",
+      "introHtml": "<p>      My favourite place of (1)…………is Nguyen Du pedestrian street. It&#x27;s in the centre of this city and only a kilometre from our house, so we walk there every weekend. It&#x27;s (2)…………for pedestrians only and is very popular, especially at weekends and during tet. My sister and I enjoy the music that street bands play and look for our favourite books while our parents look around. Of all the attractions in Sydney, I love the opera house the most. It&#x27;s one of the most famous (3)…………..arts centre in the world. Our family goes there twice a month because it&#x27;s about five kilometres from our house. My brother and I are fond of running up and down the (4)………….and feeding the seagulls. Our parents love having a drink and talking to each other.</p>",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>Chỗ trống (1)</p>",
+          "kind": "text",
+          "answers": [
+            "interest"
+          ],
+          "referenceHtml": "<p>interest</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>Chỗ trống (2)</p>",
+          "kind": "text",
+          "answers": [
+            "used"
+          ],
+          "referenceHtml": "<p>used</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>Chỗ trống (3)</p>",
+          "kind": "text",
+          "answers": [
+            "performing"
+          ],
+          "referenceHtml": "<p>performing</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>Chỗ trống (4)</p>",
+          "kind": "text",
+          "answers": [
+            "stairs"
+          ],
+          "referenceHtml": "<p>stairs</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Part 2: Listen to Demi, talking about her life in the city and in the countryside. Choose the letter A, B, C or D to indicate the option that best fit each of blanks. You will listen twice. (1.5 pts)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "5",
+          "html": "<p>5. Demi used to live in London for ……………… with her parents.</p>\n<p>\tA. three years\t\tB. thirty years\t\tC. two years\t\tD. ten years</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. Demi used to live in London for ……………… with her parents.</p>\n<p>\tA. three years\t\tB. thirty years\t\tC. two years\t\tD. ten years</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "6",
+          "html": "<p>6. At weekends, they usually visited attractions and …………………….</p>\n<p>\tA. famous stores\tB. famous markets\t\tC. famous parks\tD. famous gardens</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. At weekends, they usually visited attractions and …………………….</p>\n<p>\tA. famous stores\tB. famous markets\tC. famous parks\tD. famous gardens</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "7",
+          "html": "<p>7. Now Demi lives in one of the …………. villages in the world.</p>\n<p>           A. beautiful\tB. most beautiful\t\tC. more beautiful\tD. most beautifully</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. Now Demi lives in one of the …………. villages in the world.</p>\n<p>           A. beautiful\t\tB. most beautiful\tC. more beautiful\tD. most beautifully</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "8",
+          "html": "<p>8. In the village, people only sail around ,…………., or cycle.</p>\n<p>\tA. work\t\t\tB. walks\t\t\tC. works\t\tD. walk</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. In the village, people only sail around ,…………., or cycle.</p>\n<p>\tA. work\t\tB. walks\t\tC. works\t\tD. walk</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "9",
+          "html": "<p>9. Her favourite place of interest is the ……………………….</p>\n<p>\tA. stadium\t\tB. theatre\t\t\tC. cinema\t\tD.museum</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. Her favourite place of interest is the ……………………….</p>\n<p>\tA. stadium\t\tB. theatre\t\tC. cinema\t\tD.museum</p>"
+        },
+        {
+          "id": "s3-q6",
+          "number": "10",
+          "html": "<p>10. She can learn how people ……………………..more than 100 years ago.</p>\n<p><strong>\t</strong>A. lived\t\t\tB. live\t\t\tC.to live\t\tD. living</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10. She can learn how people ……………………..more than 100 years ago.</p>\n<p><strong>\t</strong>A. lived\t\tB. live\t\t\tC.to live\t\tD. living</p>"
+        }
+      ],
+      "audioStart": 170
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2.5 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "Part 1: Read Trang’s email to her friend, Elena and choose the letter A, B, C, or D to complete the email (1.25pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p>From: trang@bamboomail.com</p>\n<p>To: elena@fastmail.com</p>\n<p>Subject: Places of interest in my community</p>\n<p>Hi Elena,</p>\n<p>How are you? In your last email, you asked me about places of (11) …………in my community. Now I&#x27;ll tell you about them.</p>\n<p>I live in a suburb of Ha Noi. Although it&#x27;s a small community, there are enough places of interest. Near my house there are two parks with a lot of trees and sports (12) ………... People of all ages go there to enjoy the fresh air, do exercise, and play badminton or basketball. I also go to these parks to play badminton with my brother. Another place which people like in our (13) ……….. is the local library. It has many new books of all kinds. In addition, it holds different activities for book lovers, such as book review competitions or meetings with famous authors. Therefore, it attracts a lot of readers each weekend. We&#x27;ll look (14) ……….  the place when you visit Ha Noi.</p>\n<p>Tell me (15)…………..the places of interest in your area in your next email.</p>\n<p>                                                                                       <strong>Adapted from English 9 Work book (Global success</strong>)</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "11",
+          "html": "<p>A. interest\tB. interesting\tC. interested\tD. interests</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. interest\tB. interesting\tC. interested\tD. interests</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "12",
+          "html": "<p>A. facility\tB. equipment\tC. equipments \tD. facilities</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. facility\tB. equipment\tC. equipments \tD. facilities</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "13",
+          "html": "<p>A. communication\tB. communicate\tC. community\tD. commit</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. communication\tB. communicate\tC. community\tD. commit</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "14",
+          "html": "<p>A. for\tB. around\tC.at\tD. up</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. for\tB. around\tC.at\tD. up</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "15",
+          "html": "<p>A. on\tB.in\tC. about\tD. over</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. on\tB.in\tC. about\tD. over</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Part 2: Read the article below and choose the best answer A, B, C, or D to complete it (1.25 pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p>   Some experts worry that teens are more (16)………….and have lower self-esteem because of social media and texting. There are key differences to socializing (17) ……………. Teens miss out on things like body language and facial expressions. This can lead to misunderstandings and hurt feelings. It can also make talking in person feel more intimidating. It is also common for teens to feel bad about themselves when they see everyone online looking perfect. Teens often try to compensate by (18) …………pictures that make them look perfect, too. Then, when their social media identity doesn’t match how they actually feel, they can end (19)……………… feeling worse. Parents can help by setting a good example of (20) ………….to use tech. Try to give kids your full attention when you are with them, and establish tech-free zones in the house and tech-free hours when no one is on their phones. To help build self-esteem, get kids involved in something they’re interested in. When kids learn to feel good about what they can do instead of how they look and what they own, they’re happier.</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "16",
+          "html": "<p>16.A. anxiety\t\tB. anxious\t\tC. anxieties\t\tD. anxiousness</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>16.A. anxiety\t\tB. anxious\t\tC. anxieties\t\tD. anxiousness</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "17",
+          "html": "<p>17.A. offline\t\tB. meeting\t\tC. meet\t\tD. online</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>17.A. offline\t\tB. meeting\t\tC. meet\t\tD. online</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "18",
+          "html": "<p>18.A sharing\t\tB. share\t\tC. post\t\tD. posting</p>",
+          "kind": "choice",
+          "answers": [
+            "A",
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>by sharing pictures / by posting pictures</p>",
+          "note": "Cả sharing pictures và posting pictures đều phù hợp sau by; chấp nhận A hoặc D."
+        },
+        {
+          "id": "s6-q4",
+          "number": "19",
+          "html": "<p>19.A. at\t\t\tB. with\t\tC. on\t\t\tD. up</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>19.A. at\t\t\tB. with\t\tC. on\t\t\tD. up</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "20",
+          "html": "<p>20.A. when\t\tB. what\t\tC. how\t\tD. where</p>\n<p>                                                                                                  (  <strong>Adapted from the </strong><strong>Internet</strong><strong>)</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>20.A. when\t\tB. what\t\tC. how\t\tD. where</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "C. READING (2.5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "Part 1: Choose the correct answer A, B, C, or D to complete the following passage(1.25pts)",
+      "part": "READING",
+      "introHtml": "<p>We can (21) ………… our time effectively by following some of these strategies. Firstly, it is important to (22) ………… clear and realistic goals and prioritise tasks accordingly. This means that you must identify what is the most important and urgent and allocate time and resources accordingly. Next, creating a schedule or to-do list can be (23) ……in staying on track and ensuring that all tasks are completed within the time allotted. Thirdly, it is important to learn to say no to distractions and time-wasting activities such as checking social media. Instead, you (24) ……focus on the task at hand and work efficiently to complete it. Additionally, taking regular breaks and scheduling time for self-care activities can help increase productivity and prevent burnout. Finally, it is essential to regularly review and adjust your schedule to ensure that you are making progress toward your (25) ……and accommodating yourself to any working conditions in your life. </p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "21",
+          "html": "<p>21. A. make                  \tB. manage        \t  C. own             \t D. work</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>21. A. make                  \tB. manage        \t  C. own             \t D. work</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "22",
+          "html": "<p>22. A. achieve                 \tB. get               \t  C. reach           \t D. set</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>22. A. achieve                 \tB. get               \t  C. reach           \t D. set</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "23",
+          "html": "<p>23. A. helping                   \tB. helpless       \t  C. help               \t D. helpful</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>23. A. helping                   \tB. helpless       \t  C. help               \t D. helpful</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "24",
+          "html": "<p>24. A. can            \t\tB. should      \t  C. must \t\t D.  may</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>24. A. can            \t\tB. should      \t  C. must \t\t D.  may</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "25",
+          "html": "<p>25. A. need\t\t\tB. working\t  \t  C. goals\t\t D. subject</p>\n<p>                                                         <strong>Adapted from English 9 Work book (Global success)</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>25. A. need\t\t\tB. working\t  \t  C. goals\t\t D. subject</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Part 2: Read the following passage about city life and choose the best answer A, B, C, or D. (1.25 pts)",
+      "part": "READING",
+      "introHtml": "<p>    Have you ever felt so passionate about something that you couldn’t stop thinking about it? That overwhelming feeling of excitement and dedication is what makes following your passions so rewarding. For teenagers, discovering their passions can be a significant step towards a fulfilling future. Passions can take many forms. It could be a love for music and playing an instrument, a fascination with science and conducting experiments, or a talent for writing and expressing oneself creatively. When teenagers pursue their passions, they often experience a sense of purpose and motivation. They become eager to learn, develop new skills, and overcome challenges. However, focusing on a passion isn’t always easy. There may be times when friends seem more interested in different things, or family expectations can seem at odds with personal aspirations. It’s important to remember that pursuing a passion requires commitment and perseverance. There will be setbacks and moments of doubt, but the feeling of accomplishment and satisfaction from pursuing something you truly love is worth the effort. </p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "26",
+          "html": "<p><strong>26. What is the main idea of this passage?</strong></p>\n<p>A. Teenagers should be pressured to find their passion.</p>\n<p>B. Following your passions can lead to a fulfilling future.</p>\n<p>C. Friends and family always support your passions.</p>\n<p>D. There is only one right passion for everyone.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>26. What is the main idea of this passage?</strong></p>\n<p>A. Teenagers should be pressured to find their passion.</p>\n<p>B. Following your passions can lead to a fulfilling future.</p>\n<p>C. Friends and family always support your passions.</p>\n<p>D. There is only one right passion for everyone.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "27",
+          "html": "<p><strong>27. What are some examples of passions, according to the passage?</strong></p>\n<p>A. Spending time on social media and playing video games.</p>\n<p>B. Playing sports, watching TV, and going to parties.</p>\n<p>C. Learning new languages, traveling, and volunteering.</p>\n<p>D. Playing music, doing science experiments, and writing creatively.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>27. What are some examples of passions, according to the passage?</strong></p>\n<p>A. Spending time on social media and playing video games.</p>\n<p>B. Playing sports, watching TV, and going to parties.</p>\n<p>C. Learning new languages, traveling, and volunteering.</p>\n<p>D. Playing music, doing science experiments, and writing creatively.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "28",
+          "html": "<p><strong>28. What feeling might a teenager experience when pursuing their passion? </strong></p>\n<p>A. Purpose and motivation\t\t\tB. Confusion and boredom</p>\n<p>C. Frustration and anger\t\t\t D. Loneliness and isolation</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>28. What feeling might a teenager experience when pursuing their passion? </strong></p>\n<p>A. Purpose and motivation\t\t\tB. Confusion and boredom</p>\n<p>C. Frustration and anger\t\t           D. Loneliness and isolation</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "29",
+          "html": "<p><strong>29. What is important to remember when pursuing a passion, according to the passage?</strong><strong> </strong></p>\n<p>A. It’s easy and doesn’t require any effort. </p>\n<p>B. You should give up if your friends don’t share your passion. </p>\n<p>C. It’s only important if your family approves. </p>\n<p>D. It requires commitment and perseverance.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>29. What is important to remember when pursuing a passion, according to the passage?</strong><strong> </strong></p>\n<p>A. It’s easy and doesn’t require any effort. </p>\n<p>B. You should give up if your friends don’t share your passion. </p>\n<p>C. It’s only important if your family approves. </p>\n<p>D. It requires commitment and perseverance.</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "30",
+          "html": "<p><strong>30. What is the reward for overcoming challenges while pursuing your passion?</strong><strong> </strong></p>\n<p>A. Becoming popular and well-liked. </p>\n<p>B. Avoiding any future setbacks. </p>\n<p>C. Getting perfect grades in school. </p>\n<p>D. The feeling of accomplishment and satisfaction.</p>\n<p>\t\t\t\t\t                                    (<strong>Adapted from the Internet</strong><strong>)</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>30. What is the reward for overcoming challenges while pursuing your passion?</strong><strong> </strong></p>\n<p>A. Becoming popular and well-liked. </p>\n<p>B. Avoiding any future setbacks. </p>\n<p>C. Getting perfect grades in school. </p>\n<p>D. The feeling of accomplishment and satisfaction.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "D. WRITING (2.5 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "Part 1: Choose the letter A, B, C, or D to make a meaningful conversation in each of the following questions. (0.5pts)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "31",
+          "html": "<p><strong>       </strong><strong>31</strong>:       a.<strong> Tom</strong>:   How is your new neighbourhood?  </p>\n<p> b. <strong>Mary</strong>: Fine, thanks. By the way, we moved to a new house 5 days ago.</p>\n<p> c.<strong> Tom</strong>:   Long time no see. How are you?</p>\n<p><strong>                              A</strong>.  c-a-b<strong>                  B. </strong>b-c-a<strong>\tC. </strong>c-b-a <strong>           D. </strong>a-c-b\t</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>       </strong><strong>31</strong>:       a.<strong> </strong><strong>Tom</strong> :   How is your new neighbourhood?  </p>\n<p> b. <strong>Mary</strong>: Fine, thanks. By the way, we moved to a new house 5 days ago.</p>\n<p> c.<strong> </strong><strong>Tom</strong> :   Long time no see. How are you?</p>\n<p><strong>                              A</strong>.  c-a-b<strong>                  B. </strong>b-c-a<strong>\t</strong><strong>C. </strong>c-b-a <strong>           D. </strong>a-c-b\t</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "32",
+          "html": "<p><strong>      32:</strong>  </p>\n<p>a<strong>.</strong><strong> </strong><strong>Bill</strong>: Show me how to get to the nearest bookstore, please?</p>\n<p>b. <strong>Linda</strong>: OK, go straight ahead. Take the second turning on the left. It’s on your right. </p>\n<p>c. <strong>Bill</strong>: Excuse me. Would you mind showing me the way to the nearest bookstore, please?</p>\n<p>d. <strong>Linda:</strong> I beg your pardon.</p>\n<p><strong>                   A</strong>.  c-a-b<strong> </strong>-d<strong>                    B. </strong>b-c-a-d<strong>\tC. </strong>c-d-a-b          <strong>D. </strong>a-c-b-d\t</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>      32:</strong>  </p>\n<p><strong>a.Bill</strong><strong>:</strong> Show me how to get to the nearest bookstore, please?</p>\n<p><strong>b.Linda</strong>: OK, go straight ahead. Take the second turning on the left. It’s on your right. </p>\n<p><strong>c.Bill:</strong> Excuse me. Would you mind showing me the way to the nearest bookstore, please?</p>\n<p><strong>d.Linda:</strong> I beg your pardon.</p>\n<p><strong>                   A</strong>.  c-a-b<strong> </strong>-d<strong>                    B. </strong>b-c-a-d<strong>\t</strong><strong>C. </strong>c-d-a-b          <strong>D. </strong>a-c-b-d\t</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Part 2: Rewrite the following sentences using the words or phrase words given in brackets. (1.0 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "33",
+          "html": "<p><strong>33.</strong> Do you have good relationships with your classmates? (<strong>get on</strong>)<br> ______________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "Do you get on with your classmates?",
+            "Do you get on well with your classmates?"
+          ],
+          "referenceHtml": "<p>Do you get on with your classmates? / Do you get on well with your classmates?</p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "34",
+          "html": "<p><strong>34.</strong> She doesn&#x27;t know where she can buy some flowers. (<strong>to buy)</strong></p>",
+          "kind": "text",
+          "answers": [
+            "She doesn't know where to buy some flowers",
+            "She doesn't know where to buy some flowers."
+          ],
+          "referenceHtml": "<strong><p>34.</strong> She doesn&#x27;t know where she can buy some flowers. (to buy)</p>\n<p> She doesn&#x27;t know where to buy some flowers. </p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "35",
+          "html": "<p><strong>35.</strong> He can’t pass the exam unless he learns hard. (<strong>if)</strong></p>",
+          "kind": "text",
+          "answers": [
+            "He can’t pass the exam if he doesn’t learn hard",
+            "He can’t pass the exam if he doesn’t learn hard."
+          ],
+          "referenceHtml": "<p><strong>35.</strong> He can’t pass the exam unless he learns hard. (if)</p>\n<p>   _ He can’t pass the exam if he doesn’t learn hard.</p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "36",
+          "html": "<p><strong>36.</strong> As a shopping mall is bigger, it becomes more attractive to teenagers. (<strong>more</strong>)</p>",
+          "kind": "text",
+          "answers": [
+            "The bigger a shopping mall is, the more attractive it becomes to teenagers"
+          ],
+          "referenceHtml": "<p><strong>36.</strong><strong> </strong>As a shopping mall is bigger, it becomes more attractive to teenagers. (more)</p>\n<p> The bigger a shopping mall is, the more attractive it becomes to teenagers </p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Part 3: Write a paragraph about 100 - 120 words about “Advantages of living in a big city”. The following ideas might help you. (1.0 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p><strong>   </strong><strong>                         </strong><strong>Suggested ideas:</strong></p>\n<p> 1.Having better job opportunities.</p>\n<p> 2. Having best medical service.</p>\n<p> 3.Meeting new people.</p>\n<p> 4.Having good public amenities.</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>                                 </strong><strong>Suggested ideas:</strong></p>\n<p> 1.Having better job opportunities.</p>\n<p> 2. Having best medical service.</p>\n<p> 3.Meeting new people.</p>\n<p> 4.Having good public amenities.</p>\n<p><strong>1. Format</strong>: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<strong><p>2. Content:</strong> (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<strong><p>3. Language:</strong> (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<strong><p>4. Presentation</strong>: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe đầy đủ",
+      "sourceName": "Nghe 9.mp3",
+      "sourceHash": "1a7518d07a791c12138522c3c49c4b1163e14e7a93aa40c65051f29137b5061d",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-11-1.mp3",
+      "duration": 339.645147,
+      "sectionIds": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "sourceHash": "0eaaf4b47217644302fd04ba2f64f6c84e2797c9d1f78dde8e423d405d2dc91b"
+}

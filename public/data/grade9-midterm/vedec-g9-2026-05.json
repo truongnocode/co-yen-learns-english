@@ -1,0 +1,639 @@
+{
+  "id": "vedec-g9-2026-05",
+  "number": 5,
+  "title": "Đề 05",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A: LANGUAGE (3 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Mark the letter A, B, C, or D to indicate the best answer to each of the following questions.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Question </strong><strong>1. </strong>________ being tired, Jack helped his mother with the housework.<br><strong>A.</strong> Because of \t\t<strong>B.</strong> In spite \t\t\t<strong>C.</strong> Despite \t\t\t<strong>D.</strong> Although</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>1. </strong>________ being tired, Jack helped his mother with the housework.<br><strong>A.</strong> Because of \t\t<strong>B.</strong> In spite \t\t\t<strong>C. Despite</strong><strong> </strong>\t\t\t<strong>D.</strong> Although</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>2.</strong> The _______ puts out fires and saves people from dangerous fires.</p>\n<p><strong>A.</strong> police officer\t\t<strong>B.</strong> delivery person\t\t<strong>C.</strong> garbage collector\t\t<strong>D.</strong> electrician </p>",
+          "kind": "choice",
+          "answers": [],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "",
+          "unscored": true,
+          "note": "Người chữa cháy là firefighter, nhưng đề gốc không có lựa chọn này. Câu này không tính điểm tự động."
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>3</strong>. Maria often spends 30 minutes traveling from her house in the________to her office in the city centre.</p>\n<p><strong>A</strong>. downtown<strong> </strong><strong>\t</strong><strong>\tB</strong>. suburb<strong> </strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>C</strong>. city<strong> </strong><strong>\t</strong><strong>\t</strong><strong>\tD</strong>. urban</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 3</strong>. Maria often spends 30 minutes traveling from her house in the________to her office in the city centre.</p>\n<p><strong>A</strong>. downtown<strong> </strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>B. suburb</strong> \t<strong>\t</strong><strong>\tC</strong>. city<strong> </strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>D</strong>. urban</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>4</strong>. The dirtier the air gets, _____it is for people to breathe</p>\n<p><strong>A.</strong> more difficult\t \t<strong>B.</strong> the difficult\t\t<strong>C.</strong> the difficultier\t\t<strong>D.</strong> the more difficult</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 4</strong>. The dirtier the air gets, _____it is for people to breathe</p>\n<p><strong>A.</strong> more difficult\t \t<strong>B.</strong> the difficult\t\t\t<strong>C.</strong> the difficultier\t\t<strong>D. the more difficult</strong></p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>5</strong>. My dad ________  heart surgery all morning yesterday.<br><strong>A.</strong> were performing \t<strong>B.</strong> was performing \t<strong>C.</strong> is performing \t\t<strong>D.</strong> performs</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 5</strong>. My dad ________  heart surgery all morning yesterday.<br><strong>A.</strong> were performing \t\t<strong>B. was performing</strong><strong> </strong>\t\t<strong>C.</strong> is performing \t\t<strong>D.</strong> performs</p>"
+        },
+        {
+          "id": "s2-q6",
+          "number": "6",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>6</strong>. We feel so__________ about the green projects with the participation of many volunteers</p>\n<p><strong>A.</strong> mental\t\t\t<strong>B.</strong> sure\t\t\t<strong>C.</strong> ready\t\t\t<strong>D.</strong> optimistic</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 6</strong>. We feel so__________ about the green projects with the participation of many volunteers</p>\n<p><strong>A.</strong> mental\t\t\t<strong>B.</strong> sure\t\t\t\t<strong>C.</strong> ready\t\t\t<strong>D. optimistic</strong></p>"
+        },
+        {
+          "id": "s2-q7",
+          "number": "7",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>7.</strong> In Bat Trang, they can _________pottery themselves in workshops.</p>\n<p><strong>A</strong>. do\t\t\t\t<strong>B</strong>. make\t\t\t<strong>C</strong>. have\t\t\t<strong>D</strong>. work</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 7.</strong> In Bat Trang, they can _________pottery themselves in workshops.</p>\n<p><strong>A</strong>. do\t\t\t\t<strong>B. make</strong>\t\t\t<strong>C</strong>. have\t\t\t<strong>D</strong>. work</p>"
+        },
+        {
+          "id": "s2-q8",
+          "number": "8",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>8</strong>. Do you know__________ to sort rubbish?</p>\n<p><strong>A.</strong> who\t\t\t<strong>B.</strong> which\t\t\t<strong>C.</strong> how\t\t\t<strong>D.</strong> what</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 8</strong>. Do you know__________ to sort rubbish?</p>\n<p><strong>A.</strong> who\t\t\t\t<strong>B.</strong> which\t\t\t<strong>C. how</strong><strong>\t</strong>\t\t<strong>D.</strong> what</p>"
+        },
+        {
+          "id": "s2-q9",
+          "number": "9",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>9</strong>. If you enroll in our intensive Spanish class, you _______ speak this language fluently.</p>\n<p><strong>A.</strong> can\t<strong>   </strong><strong>B.</strong> should\t     <strong>C.</strong> must\t         <strong>D.</strong> can’t</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 9</strong>. If you enroll in our intensive Spanish class, you _______ speak this language fluently.</p>\n<p><strong>A. can</strong>\t<strong>   </strong><strong>B.</strong> should\t      <strong>C.</strong> must\t         <strong>D.</strong> can’t</p>"
+        },
+        {
+          "id": "s2-q10",
+          "number": "10",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>10.</strong> After a long vacation, it&#x27;s always comforting to _______ home and settle into familiar surroundings. </p>\n<p><strong>A.</strong> give back \t\t\t<strong>B.</strong> run away \t\t\t<strong>C.</strong> pass down \t\t<strong>D.</strong> come back </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 10.</strong> After a long vacation, it&#x27;s always comforting to _______ home and settle into familiar surroundings. </p>\n<p><strong>A.</strong> give back \t\t\t<strong>B.</strong> run away \t\t\t<strong>C.</strong> pass down \t\t\t<strong>D. come back</strong> </p>"
+        },
+        {
+          "id": "s2-q11",
+          "number": "11",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>11. </strong>The driver turned quickly to avoid <u>\t</u>the dog on the road, which was very dangerous.</p>\n<p><strong>A.</strong><strong> </strong>to hitting                         <strong>B.</strong><strong> </strong>to hit                                <strong>C.</strong><strong> </strong>hitting\t<strong>D.</strong><strong> </strong>hit</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 11. </strong>The driver turned quickly to avoid <u>\t</u>the dog on the road, which was very dangerous.</p>\n<p><strong>A.</strong><strong> </strong>to hitting                             <strong>B.</strong><strong> </strong>to hit                                   <strong>C.</strong><strong> </strong><strong>hitting</strong>\t<strong>D.</strong><strong> </strong>hit</p>"
+        },
+        {
+          "id": "s2-q12",
+          "number": "12",
+          "html": "<p><strong>Question</strong><strong> 12.</strong> To most people, _______ living means both physical and mental health are functioning well together.</p>\n<p><strong>A.</strong> healthy \t           \t\t<strong>B.</strong> unhealthy \t       \t\t<strong>C.</strong> health \t\t\t<strong>D.</strong> healthily</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 12.</strong> To most people, _______ living means both physical and mental health are functioning well together.</p>\n<p><strong>A. healthy</strong> \t           \t\t<strong>B.</strong> unhealthy \t       \t\t<strong>C.</strong> health \t\t\t<strong>D.</strong> healthily</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PART B: READING (4 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s4",
+      "title": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks. (1 point)",
+      "part": "READING",
+      "introHtml": "<p><strong>COMMUNITY</strong><strong> </strong><strong>FOOTBALL</strong><strong> </strong><strong>CLASS</strong></p>\n<p>Do you want to live a healthy and <strong>(13) </strong><strong>_______</strong>life? Join our community football class and enjoy a fun way to stay fit. Playing football regularly helps improve your physical health, build strong muscles, and increase your energy. <strong>(14) </strong><u>_______</u>, it helps reduce stress and makes you feel happier.</p>\n<p>In this class, you can learn basic football skills, practice teamwork, and make many new friends. The class is open to under-16-year-old students who<strong> </strong>enjoy <strong>(15) </strong>_______ activities and healthy living. It will be held at the community football field <strong>(16)</strong> _______Saturdays and Sundays from 4:00 to 6:00 p.m.</p>\n<p>Come and join us today!</p>",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "13",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>13.</strong><strong> </strong><strong>A.</strong><strong> </strong>bustling</p>\n<p><strong>B.</strong><strong> </strong>easy</p>\n<p><strong>C.</strong><strong> </strong>brilliant</p>\n<p><strong>D.</strong><strong> </strong>active</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>13.</strong><strong> </strong><strong>A.</strong><strong> </strong>bustling</p>\n<p><strong>B.</strong><strong> </strong>easy</p>\n<p><strong>C.</strong><strong> </strong>brilliant</p>\n<p><strong>D.</strong><strong> </strong><strong>active</strong></p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "14",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>14.</strong><strong> </strong><strong>A.</strong><strong> </strong>Because</p>\n<p><strong>B.</strong><strong> </strong>Moreover</p>\n<p><strong>C.</strong><strong> </strong>Therefore</p>\n<p><strong>D.</strong><strong> </strong>However</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>14.</strong><strong> </strong><strong>A.</strong><strong> </strong>Because</p>\n<p><strong>B.</strong><strong> </strong><strong>Moreover</strong></p>\n<p><strong>C.</strong><strong> </strong>Therefore</p>\n<p><strong>D.</strong><strong> </strong>However</p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "15",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>15.</strong><strong> </strong><strong>A.</strong><strong> </strong>outdoors</p>\n<p><strong>B.</strong><strong> </strong>indoor</p>\n<p><strong>C</strong>. outdoor</p>\n<p><strong>D.</strong><strong> </strong>indoors</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>15.</strong><strong> </strong><strong>A.</strong><strong> </strong>outdoors</p>\n<p><strong>B.</strong><strong> </strong>indoor</p>\n<p><strong>C.</strong><strong> </strong><strong>outdoor</strong></p>\n<p><strong>D.</strong><strong> </strong>indoors</p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "16",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>16.</strong><strong> </strong><strong>A.</strong><strong> </strong>on</p>\n<p><strong>B.</strong><strong> </strong>at</p>\n<p><strong>C.</strong><strong> </strong>in</p>\n<p><strong>D.</strong><strong> </strong>by</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>16.</strong><strong> </strong><strong>A.</strong><strong> </strong><strong>on</strong></p>\n<p><strong>B.</strong><strong> </strong>at</p>\n<p><strong>C.</strong><strong> </strong>in</p>\n<p><strong>D.</strong><strong> </strong>by</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "17",
+          "html": "<p><strong>Question 17. What does the sign mean? </strong><strong>Choose the best option (A, B, C or D)</strong><strong> (0,25 point) </strong></p>\n<p><img src=\"/data/grade9-midterm/images/75d001e3149536a8.jpeg\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p><strong>A.</strong><strong> </strong>People should fish carefully near water.</p>\n<p><strong>B.</strong><strong> </strong>You may fish here, but with permission.</p>\n<p><strong>C.</strong><strong> </strong>Fishing is encouraged during weekends.</p>\n<p><strong>D.</strong><strong> </strong>People are not permitted to fish here.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 17. What does the sign mean? </strong><strong>Choose the best option (A, B, C or D)</strong><strong> (0,25 point) </strong></p>\n<p><strong>A.</strong><strong> </strong>People should fish carefully near water.</p>\n<p><strong>B.</strong><strong> </strong>You may fish here, but with permission.</p>\n<p><strong>C.</strong><strong> </strong>Fishing is encouraged during weekends.</p>\n<p><strong>D.</strong><strong> </strong><strong>People</strong><strong> </strong><strong>are</strong><strong> </strong><strong>not</strong><strong> </strong><strong>permitted</strong><strong> </strong><strong>to</strong><strong> </strong><strong>fish</strong><strong> </strong><strong>here.</strong></p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "18",
+          "html": "<p><strong>Question 18.</strong> <strong>Which information is correct from the announcement</strong><strong>? </strong><strong>Choose the best option (A, B, C or D)</strong><strong> (0,25 point) </strong></p>\n<p>Art workshop</p>\n<p>Saturdays 10.30 – 12.30</p>\n<p>From 15 September for 5 weeks</p>\n<p>Suitable for all abilities</p>\n<p><strong>A.</strong> There will be five workshops each week.</p>\n<p><strong>B.</strong> You don’t have to be talented to go to the workshop.</p>\n<p><strong>C.</strong> The final workshop is on Saturday, 15 September.</p>\n<p><strong>D.</strong> The workshop is for good painters.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 18.</strong> <strong>Which information is correct from the announcement</strong><strong>? </strong><strong>Choose the best option (A, B, C or D)</strong><strong> (0,25 point) </strong></p>\n<p>Art workshop</p>\n<p>Saturdays 10.30 – 12.30</p>\n<p>From 15 September for 5 weeks</p>\n<p>Suitable for all abilities</p>\n<p><strong>A.</strong> There will be five workshops each week.</p>\n<p>B. You don’t have to be talented to go to the workshop.</p>\n<p><strong>C.</strong> The final workshop is on Saturday, 15 September.</p>\n<p><strong>D.</strong> The workshop is for good painters.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Read the following passage and mark the letter A, B, C, or D to indicate the best answer to each of the questions.( 1,25 points)",
+      "part": "READING",
+      "introHtml": "<p>For teenagers, staying healthy is crucial for their growth and development. A healthy lifestyle includes a balanced diet, regular exercise, and enough sleep.</p>\n<p>First, a balanced diet provides the body with the necessary nutrients. Teens should eat plenty of fruits, vegetables, and whole grains while limiting sugary snacks and fast food. Drinking enough water is also vital to keep the body hydrated.</p>\n<p>Second, physical activity is essential. Experts recommend that teens get at least 60 minutes of moderate to vigorous exercise every day. This can include sports, dancing, or simply walking or cycling to school. Exercise not only helps teens grow taller, but also builds strong bones and muscles and reduces stress.</p>\n<p>Finally, sleep plays a key role in mental and physical health. Teenagers need about 8 to 10 hours of sleep per night to function <strong>effectively</strong>. Lack of sleep can lead to poor concentration at school and mood swings.</p>\n<p>By following these simple habits, teenagers can maintain good health and perform better in their daily activities.</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "19",
+          "html": "<p><strong>Question 19. What is the best title for the passage?</strong></p>\n<p><strong>A.</strong> How to Exercise Effectively\t\t\t<strong>B.</strong> Tips for a Healthy Lifestyle for Teens</p>\n<p>C. The Importance of Sleep\t\t\t<strong>D.</strong> Healthy Foods for Teenagers</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 19. What is the best title for the passage?</strong></p>\n<p><strong>A.</strong> How to Exercise Effectively\t\t<strong>B. Tips for a Healthy Lifestyle for Teens</strong></p>\n<p><strong>C.</strong> The Importance of Sleep\t\t\t<strong>D.</strong> Healthy Foods for Teenagers</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "20",
+          "html": "<p><strong>Question 20.</strong> <strong> According to the passage, teenagers should limit eating ______.</strong></p>\n<p><strong>A.</strong> fruits and vegetables\t\t\t\t<strong>B.</strong> whole grains</p>\n<p><strong>C.</strong> sugary snacks and fast food\t\t\t<strong>D.</strong> rice and meat</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 20.</strong> <strong> According to the passage, teenagers should limit eating ______.</strong></p>\n<p><strong>A.</strong> fruits and vegetables\t\t\t<strong>B.</strong> whole grains</p>\n<p><strong>C. sugary snacks and </strong><strong>fast-food</strong>\t\t<strong>D.</strong> rice and meat</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "21",
+          "html": "<p><strong>Question 21. The word “effectively” in paragraph 4 is closest in meaning to ______.</strong></p>\n<p>A. badly\t\t<strong>B.</strong> slowly\t\t\t<strong>C.</strong> efficiently\t\t<strong>D.</strong> uselessly</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 21. The word “effectively” in paragraph 4 is closest in meaning to ______.</strong></p>\n<p><strong>A.</strong> badly\t\t<strong>B.</strong> slowly\t\t<strong>C. efficiently</strong>\t\t<strong>D.</strong> uselessly</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "22",
+          "html": "<p><strong>Question 22.</strong> <strong> How much exercise should teens get every day?</strong></p>\n<p><strong>A.</strong> Less than half an hour\t\t\t\t<strong>B.</strong> Exactly 60 minutes</p>\n<p><strong>C.</strong> At least an hour\t\t\t\t\t<strong>D.</strong> About 8 to 10 hours</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 22.</strong> <strong> How much exercise should teens get every day?</strong></p>\n<p><strong>A.</strong> Less than half an hour\t\t\t<strong>B.</strong> Exactly 60 minutes</p>\n<p><strong>C. At least an hour</strong><strong>\t</strong><strong>\t</strong>\t\t<strong>D.</strong> About 8 to 10 hours</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "23",
+          "html": "<p><strong>Question 23. Which of the following is NOT mentioned as a benefit of exercise?</strong></p>\n<p><strong>A.</strong> Building strong bones and muscles\t\t\t<strong>B.</strong> Reducing stress</p>\n<p><strong>C.</strong> Improving concentration\t\t\t\t<strong>D.</strong> Helping with height growth</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 23. Which of the following is NOT mentioned as a benefit of exercise?</strong></p>\n<p><strong>A.</strong> Building strong bones and muscles\t\t\t<strong>B.</strong> Reducing stress</p>\n<p><strong>C. Improving concentration</strong><strong>\t</strong>\t\t\t\t<strong>D.</strong> Helping with height growth</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Read the following passage and mark the letter A, B, C, or D to indicate the best answer to each of the questions. (1,25 points)",
+      "part": "READING",
+      "introHtml": "<p> Singapore, a <strong>dynamic </strong>island nation in Southeast Asia, is a remarkable example of cultural harmony and rapid modernization. While geographically small, its influence is enormous. The city-state is a genuine melting pot, with a population comprised mainly of Chinese, Malay, and Indian ethnic groups. This blend is immediately apparent in its cuisine, which is famous worldwide for its diverse flavors and styles, ranging from Malay satay to Indian curry and Chinese Hainanese chicken rice. This cultural mixture is formalized by four official languages: English, Malay, Mandarin Chinese, and Tamil. This multi-lingual environment is key to the country&#x27;s success as a global trade hub.</p>\n<p>Beyond its cultural diversity, Singapore is globally celebrated for its futuristic urban planning. Iconic structures like the Supertree Grove at Gardens by the Bay and the stunning architecture of the Marina Bay Sands reflect a commitment to innovation and green spaces. Despite <strong>its </strong>dense population, the government places a high priority on creating parks and green areas, ensuring that the city is filled with lush greenery. Tourists visiting the city are consistently impressed by the efficiency of the public transport system and the low crime rate. The nation&#x27;s ability to maintain order and cleanliness while embracing global influences makes it a unique experience for any visitor.</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "24",
+          "html": "<p><strong>Question 24. What is the best title for the passage?</strong></p>\n<p><strong>A.</strong> Singapore’s Economic Success</p>\n<p><strong>B.</strong> Singapore: A Blend of Culture and Futuristic Planning</p>\n<p><strong>C.</strong> The Best Food in Southeast Asia</p>\n<p><strong>D.</strong> Gardens by the Bay: A Tourist Attraction</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 19. What is the best title for the passage?</strong></p>\n<p><strong>A.</strong> How to Exercise Effectively\t\t<strong>B. Tips for a Healthy Lifestyle for Teens</strong></p>\n<p><strong>C.</strong> The Importance of Sleep\t\t\t<strong>D.</strong> Healthy Foods for Teenagers</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "25",
+          "html": "<p><strong>Question 25. The word “dynamic” in paragraph 1 is closest in meaning to ______.</strong></p>\n<p><strong>A.</strong> boring\t\t<strong>B.</strong> ancient\t\t<strong>C.</strong> energetic\t\t<strong>D.</strong> static</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 25. The word “dynamic” in paragraph 1 is closest in meaning to ______.</strong></p>\n<p><strong>A.</strong> boring\t\t<strong>B.</strong> ancient\t\t<strong>C.</strong> <strong>energetic</strong><strong>\t</strong>\t<strong>D.</strong> static</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "26",
+          "html": "<p><strong>Question 26. Which of the following is NOT mentioned as one of Singapore’s four official languages?</strong></p>\n<p><strong>A.</strong> English\t\t<strong>B.</strong> Malay\t\t<strong>C.</strong> Tamil\t\t<strong>D.</strong> Japanese</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 26. Which of the following is NOT mentioned as one of Singapore’s four official languages?</strong></p>\n<p><strong>A.</strong> English\t\t<strong>B.</strong> Malay\t\t<strong>C.</strong> Tamil\t\t<strong>D. Japanese</strong></p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "27",
+          "html": "<p><strong>Question 27. What makes Singapore’s cuisine </strong><strong>famous</strong><strong>?</strong></p>\n<p><strong>A.</strong> It is a mixture of Chinese, Malay, and Indian styles.</p>\n<p><strong>B.</strong> It is expensive.</p>\n<p><strong>C.</strong> It uses only local ingredients.</p>\n<p><strong>D.</strong> It is only found in Hawker centers.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 27. What makes Singapore’s cuisine </strong><strong>famous</strong><strong>?</strong></p>\n<p><strong>A. It is a mixture of Chinese, Malay, and Indian styles.</strong></p>\n<p><strong>B.</strong> It is expensive.</p>\n<p><strong>C.</strong> It uses only local ingredients.</p>\n<p><strong>D.</strong> It is only found in Hawker centers.</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "28",
+          "html": "<p><strong>Question 28.</strong> <strong> The word “its” in the last paragraph refers to ______.</strong></p>\n<p><strong>A.</strong> the public transport system\t\t<strong>B.</strong> the government</p>\n<p><strong>C.</strong> Singapore\t\t\t\t<strong>D.</strong> the population</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 28.</strong> <strong> The word “its” in the last paragraph refers to ______.</strong></p>\n<p><strong>A.</strong> the public transport system\t\t<strong>B.</strong> the government</p>\n<p><strong>C. Singapore</strong>\t\t\t\t<strong>D.</strong> the population</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "PART C: WRITING ( 3 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "Mark the letter A, B, C, or D to indicate the correct arrangement of the sentences to make a meaningful paragraph/email in each of the following questions from 29 to 30. ( 0,5 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "29",
+          "html": "<p>Question 29.<br><strong>[a]</strong> Secondly, for relaxation and leisure, there are always numerous world-class entertainment centers – such as cinemas, theaters, and museums – and expensive, diverse shopping malls available at one&#x27;s fingertips.</p>\n<p><strong>[b]</strong> Living in a big city is a choice made by millions worldwide because it presents several clear and compelling advantages over rural areas.</p>\n<p><strong>[c]</strong> Finally, navigating these busy urban centers is made relatively easy because the system of public transport is convenient and typically much more efficient and easier to use than elsewhere, often featuring modern subways and extensive bus routes.</p>\n<p><strong>[d]</strong> Firstly, the city environment is a massive economic engine; it consistently offers significantly better job opportunities across various industries, often accompanied by more competitive and higher salaries.</p>\n<p><strong>[e]</strong> In conclusion, while city life certainly has its share of drawbacks, the overwhelming array of career prospects, exciting amenities, and accessibility make it an incredibly attractive choice for many ambitious people.</p>\n<p><strong>A.</strong> d - a - c - b – e\t  \t<strong>B.</strong> b - a - d - c – e\t    \t<strong>C.</strong> b - d - a - c – e\t      <strong>D.</strong> e - b - d - a - c</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Question 29.<br><strong>[a]</strong> Secondly, for relaxation and leisure, there are always numerous world-class entertainment centers – such as cinemas, theaters, and museums – and expensive, diverse shopping malls available at one&#x27;s fingertips.</p>\n<p><strong>[b]</strong> Living in a big city is a choice made by millions worldwide because it presents several clear and compelling advantages over rural areas.</p>\n<p><strong>[c]</strong> Finally, navigating these busy urban centers is made relatively easy because the system of public transport is convenient and typically much more efficient and easier to use than elsewhere, often featuring modern subways and extensive bus routes.</p>\n<p><strong>[d]</strong> Firstly, the city environment is a massive economic engine; it consistently offers significantly better job opportunities across various industries, often accompanied by more competitive and higher salaries.</p>\n<p><strong>[e]</strong> In conclusion, while city life certainly has its share of drawbacks, the overwhelming array of career prospects, exciting amenities, and accessibility make it an incredibly attractive choice for many ambitious people.</p>\n<p><strong>A.</strong> d - a - c - b – e\t  <strong>B.</strong> b - a - d - c – e\t    <strong>C. b - d - a - c – e</strong>\t<strong>      D</strong>. e - b - d - a - c</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "30",
+          "html": "<p>Question 30.</p>\n<p>Dear Mai,</p>\n<p><strong>[a]</strong> The trip was really enjoyable and helped me learn more about the culture and history of the region.</p>\n<p><strong>[b]</strong> Last month, my family and I had a wonderful trip to Central Vietnam.</p>\n<p><strong>[c]</strong> We also tried many delicious local dishes like mi Quang and Banh Xeo.</p>\n<p><strong>[d]</strong> We visited famous places such as Hue, Da Nang, and Hoi An, which were all very beautiful.</p>\n<p><strong>[e]</strong> I was especially impressed by the ancient houses and colorful lanterns in Hoi An at night.</p>\n<p>Best wishes, </p>\n<p>Lan</p>\n<p><strong>A.</strong> a – b – d – e – c\t<strong>B.</strong> c – e – d – a – b\t<strong>C.</strong><strong> </strong>d – a – c – e – b\t<strong>D.</strong><strong> </strong>b – d – e – c – a</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Question 30.</p>\n<p>Dear Mai,</p>\n<p><strong>[a]</strong> The trip was really enjoyable and helped me learn more about the culture and history of the region.</p>\n<p><strong>[b]</strong> Last month, my family and I had a wonderful trip to Central Vietnam.</p>\n<p><strong>[c]</strong> We also tried many delicious local dishes like mi Quang and Banh Xeo.</p>\n<p><strong>[d]</strong> We visited famous places such as Hue, Da Nang, and Hoi An, which were all very beautiful.</p>\n<p><strong>[e]</strong> I was especially impressed by the ancient houses and colorful lanterns in Hoi An at night.</p>\n<p>Best wishes, </p>\n<p>Lan</p>\n<p><strong>A.</strong><strong> </strong>a – b – d – e – c\t<strong>B.</strong><strong> </strong>c – e – d – a – b\t<strong>C.</strong><strong> </strong>d – a – c – e – b\t<strong>D.</strong><strong> </strong>b – d – e – c – a</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Put the words in the correct order to make meaningful sentences. (0,75 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "31",
+          "html": "<p>Question 31. The / difficult / lesson is / students / more / the /, / make. / mistakes / more / the<br>……………………………………………………………………………………………………….</p>",
+          "kind": "text",
+          "answers": [
+            "The more difficult the lesson is, the more mistakes students make"
+          ],
+          "referenceHtml": "<p>Question 31. The / difficult / lesson is / students / more / the /, / make. / mistakes / more / the<br><strong>The</strong><strong> more difficult the lesson is, the more mistakes students make.</strong> </p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "32",
+          "html": "<p>Question 32. <strong> </strong>takes/ every/ It/ to/ get/ me/ to/ thirty minutes/ by bus/ morning. / school/</p>",
+          "kind": "text",
+          "answers": [
+            "It takes me thirty minutes to get to school by bus every morning",
+            "It takes me thirty minutes to get to school by bus every morning."
+          ],
+          "referenceHtml": "<p>Question 32. <strong> </strong>takes/ every/ It/ to/ get/ me/ to/ thirty minutes/ by bus/ morning./ school/</p>\n<p><strong>It takes me thirty minutes to get to school by bus every morning.</strong></p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "33",
+          "html": "<p>Question 33. in the future. / you/ spend more time/ If/ practicing English every day, / you/ will make/ much greater progress/<br>…………………………………………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "If you spend more time practicing English every day, you will make much greater progress in the future"
+          ],
+          "referenceHtml": "<p>Question 33. in the future./ you/ spend more time/ If/ practicing English every day,/ you/ will make/ much greater progress/<br><strong>If you spend more time practicing English every day, you will make much greater progress in the future.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Complete the following sentences with NO MORE THAN FIVE WORDS. (0,75 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "34",
+          "html": "<p><strong>Question 34.</strong> I don’t know who I should ask for the advice.</p>\n<p> I don’t know …………………………………………………..… the advice.</p>",
+          "kind": "text",
+          "answers": [
+            "who to ask for",
+            "I don’t know who to ask for the advice."
+          ],
+          "referenceHtml": "<p><strong>Question 34.</strong> I don’t know who I should ask for the advice.</p>\n<p> I don’t know <strong>who to ask for</strong> the advice.</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "35",
+          "html": "<p><strong>Question 35.</strong> This photo makes me think of my hometown.</p>\n<p> This photo reminds ………………………….………………………………….</p>",
+          "kind": "text",
+          "answers": [
+            "me of my hometown",
+            "This photo reminds me of my hometown."
+          ],
+          "referenceHtml": "<p><strong>Question 35.</strong> This photo makes me think of my hometown.</p>\n<p> This photo reminds <strong>me of my hometown.</strong></p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "36",
+          "html": "<p><strong>Question 36. </strong>“I am having dinner with my family now.”, Hoa said.</p>\n<p>Hoa said she………………………………………………… family then.</p>",
+          "kind": "text",
+          "answers": [
+            "was having dinner with her",
+            "Hoa said she was having dinner with her family then."
+          ],
+          "referenceHtml": "<p><strong>Question 36. </strong>“I am having dinner with my family now.”, Hoa said.</p>\n<p> Hoa said she <strong>was having dinner with her</strong> family then.</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "37",
+          "html": "<p><strong>Question 37. </strong><strong>Write a paragraph (100 – 120 words) about how teenagers manage their time effectively. (1.0 p</strong><strong>oin</strong><strong>t)</strong> </p>\n<p>You can use the following suggestions:</p>\n<p>- Making a plan or schedule for things you need to do, including appointments, projects, homework and tests.</p>\n<p>- Giving priority to the most important task.</p>\n<p>- Building an effective daily routine.</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>Question 37. </strong><strong>Write a paragraph (100 – 120 words) about how teenagers manage their time effectively. (1.0 p</strong><strong>oin</strong><strong>t)</strong> </p>\n<p>You can use the following suggestions:</p>\n<p>- Making a plan or schedule for things you need to do, including appointments, projects, homework and tests.</p>\n<p>- Giving priority to the most important task.</p>\n<p>- Building an effective daily routine.</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "7d77118da8d6df7a9cd7050e1e590984f04d4dd85aea71a9dc76c0773a61f0a6"
+}

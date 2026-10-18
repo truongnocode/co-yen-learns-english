@@ -1,0 +1,643 @@
+{
+  "id": "vedec-g9-2026-04",
+  "number": 4,
+  "title": "Đề 04",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A: LANGUAGE",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Question</strong><strong> 1</strong>. It&#x27;s necessary to decide which we should _______ priority to: work or study.</p>\n<p><strong>A</strong>. make</p>\n<p><strong>B</strong>. give</p>\n<p><strong>C</strong>. bring</p>\n<p><strong>D</strong>. take</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 1</strong>. It&#x27;s necessary to decide which we should _______ priority to: work or study.</p>\n<p><strong>A</strong>. make</p>\n<p><strong>B. give</strong></p>\n<p><strong>C</strong>. bring</p>\n<p><strong>D</strong>. take</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Question </strong><strong>2</strong>. I don&#x27;t like living in this area because it is like a _______ with all these tall buildings.</p>\n<p><strong>A</strong>. concrete jungle</p>\n<p><strong>B</strong>. tourist attraction</p>\n<p><strong>C</strong>. green space</p>\n<p><strong>D</strong>. concrete wood</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong> </strong><strong>2</strong>. I don&#x27;t like living in this area because it is like a _______ with all these tall buildings.</p>\n<p><strong>A. concrete jungle</strong></p>\n<p><strong>B</strong>. tourist attraction</p>\n<p><strong>C</strong>. green space</p>\n<p><strong>D</strong>. concrete wood</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Question</strong><strong> 3</strong>. My grandfather is a skillful _______ ; he can make unique vases.</p>\n<p><strong>A</strong>. maker</p>\n<p><strong>B</strong>. worker</p>\n<p><strong>C</strong>. employee</p>\n<p><strong>D</strong>. artisan</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 3</strong>. My grandfather is a skillful _______ ; he can make unique vases.</p>\n<p><strong>A</strong>. maker</p>\n<p><strong>B</strong>. worker</p>\n<p><strong>C</strong>. employee</p>\n<p><strong>D. artisan</strong></p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Question</strong><strong> 4</strong>. Her team is carrying _____ a project to recycle food waste.</p>\n<p><strong>A</strong>. out</p>\n<p><strong>B</strong>. off</p>\n<p><strong>C</strong>. around</p>\n<p><strong>D</strong>. down</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 4</strong>. Her team is carrying _____ a project to recycle food waste.</p>\n<p><strong>A. out</strong></p>\n<p><strong>B</strong>. off</p>\n<p><strong>C</strong>. around</p>\n<p><strong>D</strong>. down</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Question</strong><strong> 5</strong>. Could you tell me ______ to do in this situation?</p>\n<p><strong>A</strong>. where</p>\n<p><strong>B</strong>. when</p>\n<p><strong>C</strong>. what</p>\n<p><strong>D</strong>. who</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 5</strong>. Could you tell me ______ to do in this situation?</p>\n<p><strong>A</strong>. where</p>\n<p><strong>B</strong>. when</p>\n<p><strong>C. what</strong></p>\n<p><strong>D</strong>. who</p>"
+        },
+        {
+          "id": "s2-q6",
+          "number": "6",
+          "html": "<p><strong>Question</strong><strong> 6</strong>. Com Lang Vong has a special ______ so it is very popular.</p>\n<p><strong>A</strong>. function  </p>\n<p><strong>B</strong>. facility</p>\n<p><strong>C</strong>. fragrance</p>\n<p><strong>D</strong>. pottery</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 6</strong>. Com Lang Vong has a special ______ so it is very popular.</p>\n<p><strong>A</strong>. function  </p>\n<p><strong>B</strong>. facility</p>\n<p><strong>C. </strong><strong>fragrance</strong></p>\n<p><strong>D</strong>. pottery</p>"
+        },
+        {
+          "id": "s2-q7",
+          "number": "7",
+          "html": "<p><strong>Question</strong><strong> 7</strong>. Bun cha, pho and hu tieu are examples of famous Vietnamese_____ food.</p>\n<p><strong>A</strong>. artisan</p>\n<p><strong>B</strong>. souvenir</p>\n<p><strong>C</strong>. speciality</p>\n<p><strong>D</strong>. handicraft</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 7</strong>. Bun cha, pho and hu tieu are examples of famous Vietnamese_____ food.</p>\n<p><strong>A</strong>. artisan</p>\n<p><strong>B</strong>. souvenir</p>\n<p><strong>C. </strong><strong>speciality</strong></p>\n<p><strong>D</strong>. handicraft</p>"
+        },
+        {
+          "id": "s2-q8",
+          "number": "8",
+          "html": "<p><strong>Question</strong><strong> 8</strong>. The sky train is ________ with commuters at rush hour.</p>\n<p><strong>A</strong>. packed</p>\n<p><strong>B</strong>. full</p>\n<p><strong>C</strong>. busy</p>\n<p><strong>D</strong>. interesting</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 8</strong>. The sky train is ________ with commuters at rush hour.</p>\n<p><strong>A. </strong><strong>packed</strong></p>\n<p><strong>B</strong>. full</p>\n<p><strong>C</strong>. busy</p>\n<p><strong>D</strong>. interesting</p>"
+        },
+        {
+          "id": "s2-q9",
+          "number": "9",
+          "html": "<p><strong>Question</strong><strong> 9</strong>. Nam has got too much homework to do this week and he&#x27;s completely _____.</p>\n<p><strong>A</strong>. optimistic</p>\n<p><strong>B</strong>. stressed out</p>\n<p><strong>C</strong>. relaxing</p>\n<p><strong>D</strong>. confident</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 9</strong>. Nam has got too much homework to do this week and he&#x27;s completely _____.</p>\n<p><strong>A</strong>. optimistic</p>\n<p><strong>B. </strong><strong>stressed out</strong></p>\n<p><strong>C</strong>. relaxing</p>\n<p><strong>D</strong>. confident</p>"
+        },
+        {
+          "id": "s2-q10",
+          "number": "10",
+          "html": "<p><strong>Question</strong><strong> 10</strong>. <strong>Minh: </strong>May I give you a hand?  <strong>- Peter: _____</strong><strong>_____.</strong></p>\n<p><strong>A</strong>. Yes, I’d love to.</p>\n<p><strong>B</strong>. Thank you. You are so kind.</p>\n<p><strong>C</strong><strong>. </strong>Yes, give me.</p>\n<p><strong>D</strong><strong>. </strong>I’m not sure.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 10</strong>. <strong>Minh: </strong>May I give you a hand?  <strong>- Peter: _____</strong><strong>_____.</strong></p>\n<p><strong>A</strong>. Yes, I’d love to.</p>\n<p><strong>B. Thank you. You are so kind.</strong></p>\n<p><strong>C</strong><strong>. </strong>Yes, give me.</p>\n<p><strong>D</strong><strong>. </strong>I’m not sure.</p>"
+        },
+        {
+          "id": "s2-q11",
+          "number": "11",
+          "html": "<p><strong>Question</strong><strong> 11</strong>. There is a market in our area where you can buy all kinds of handmade products. It may be the biggest __________ market in our country.</p>\n<p><strong>A</strong>. thing</p>\n<p><strong>B</strong>. product</p>\n<p><strong>C</strong>. handicraft</p>\n<p><strong>D</strong>. selling</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 11</strong>. There is a market in our area where you can buy all kinds of handmade products. It may be the biggest __________ market in our country.</p>\n<p><strong>A</strong>. thing</p>\n<p><strong>B</strong>. product</p>\n<p><strong>C. </strong><strong>handicraft</strong></p>\n<p><strong>D</strong>. selling</p>"
+        },
+        {
+          "id": "s2-q12",
+          "number": "12",
+          "html": "<p><strong> </strong><strong>Question</strong><strong> 12</strong>. The town is overcrowded and lacks public __________ .</p>\n<p><strong>A</strong>. health</p>\n<p><strong>B</strong>. amenities</p>\n<p><strong>C</strong>. education</p>\n<p><strong>D</strong>. places</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong> </strong><strong>Question</strong><strong> 12</strong>. The town is overcrowded and lacks public __________ .</p>\n<p><strong>A</strong>. health</p>\n<p><strong>B. amenities</strong></p>\n<p><strong>C</strong>. education</p>\n<p><strong>D</strong>. places</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PART B: READING",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s4",
+      "title": "Read the following announcement and mark the letter A, B, C, or D on your answer sheet to indicate the correct word that best fits each of the numbered blanks.",
+      "part": "READING",
+      "introHtml": "<p><strong>HANDICRAFT FAIR ANNOUNCEMENT</strong></p>\n<p>This weekend, a special fair will be held to promote traditional crafts. Students will sell handmade products, including pottery, paper flowers, and silk items.</p>\n<p>The event is open to <strong>(</strong><strong>1</strong><strong>3</strong><strong>)</strong> ______ students and parents.</p>\n<p>It takes place <strong>(</strong><strong>14</strong><strong>)</strong> ______ 8 a.m. to 4 p.m. on Saturday at the school yard.</p>\n<p><strong>(</strong><strong>15</strong><strong>)</strong> ______ you enjoy creative activities, don’t miss this chance!</p>\n<p>Come and buy lovely <strong>(</strong><strong>16</strong><strong>)</strong> ______ to support our talented students.</p>",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "13",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>1</strong><strong>3</strong><strong>. </strong><strong>A</strong>. some\t\t<strong>B</strong>. much\t\t<strong>C</strong>. all\t\t\t<strong>D</strong>. each</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>13. </strong><strong>A</strong>. some\t\t<strong>B</strong>. much\t\t<strong>C. all</strong><strong>\t</strong>\t\t<strong>D</strong>. each</p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "14",
+          "html": "<p><strong>Question </strong><strong>14</strong><strong>. </strong><strong>A</strong>. from\t\t\t<strong>B</strong>. at\t\t\t<strong>C</strong>. during\t\t<strong>D</strong>. in</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>14. </strong><strong>A. from</strong><strong>\t</strong>\t<strong>B</strong>. at\t\t\t<strong>C</strong>. during\t\t<strong>D</strong>. in</p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "15",
+          "html": "<p><strong>Question </strong><strong>15</strong><strong>. </strong><strong>A</strong>. If\t\t\t<strong>B</strong>. Because\t\t<strong>C</strong>. When\t\t<strong>D</strong>. Although</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>15. </strong><strong>A. If</strong>\t\t\t<strong>B</strong>. Because\t\t<strong>C</strong>. When\t\t<strong>D</strong>. Although</p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "16",
+          "html": "<p><strong>Question </strong><strong>16</strong><strong>. </strong><strong>A</strong>. facilities\t\t<strong>B</strong>. suburbs\t\t<strong>C</strong>. handicrafts\t<strong>D</strong>. electricians</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>16. </strong><strong>A</strong>. facilities\t\t<strong>B</strong>. suburbs\t\t<strong>C. handicrafts</strong>\t<strong>D</strong>. electricians</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "17",
+          "html": "<p><strong>Question 17. What does the sign say?</strong></p>\n<p><img src=\"/data/grade9-midterm/images/13ec2acf386ba155.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p>A. The shallow water is only for children. </p>\n<p>B. Do not dive here. </p>\n<p>C. Diving is allowed here, so you should dive into the water</p>\n<p>D. Swimming is not allowed here, so you cannot enter the water.  </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 17. What does the sign say?</strong></p>\n<p>A. The shallow water is only for children. </p>\n<p>B. <strong>Do not dive here. </strong></p>\n<p>C. Diving is allowed here, so you should dive into the water</p>\n<p>D. Swimming is not allowed here, so you cannot enter the water.  </p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "18",
+          "html": "<p><strong>Question 18. </strong><strong>What does the notice say?</strong> </p>\n<p><img src=\"/data/grade9-midterm/images/3cfe3099fd7f8942.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p>A. The library is open every day of the week. </p>\n<p>B. The library closes at 6 PM on weekdays. </p>\n<p>C. The library opens at 9 AM on Saturdays. </p>\n<p>D. The library is open on Sundays.  </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 18. </strong><strong>What does the notice say?</strong> </p>\n<p>A. The library is open every day of the week. </p>\n<p>B. <strong>The library closes at 6 PM on weekdays. </strong></p>\n<p>C. The library opens at 9 AM on Saturdays. </p>\n<p>D. The library is open on Sundays.  </p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>\tI believe all humans have the right to live in a safe and clean place. However, that needs solutions. Johannesburg, South Africa, is one of these cities. I will explain some of its problems and potential solutions below.</p>\n<p>A big problem is that crime is high in the city. There are so many criminals that life for normal people is beginning to break down. <strong>They</strong> may move away from the city. For this reason, the government should provide more police officers on the streets.</p>\n<p>Another problem is that the population is rising quickly. It might make more people homeless. Having more homeless people can cause many problems. The government should build more apartments around the city.</p>\n<p>The final problem is that air pollution is getting worse. Because of this, more people will need medical help. This could make hospitals very busy. To improve this, the government should ask people to ride bicycles more and use cars less.</p>\n<p>To conclude, crime, population growth, and air pollution are problems in Johannesburg. However, there are solutions the government can implement. They should train more police officers, build more apartments, and ask people to ride bicycles instead of using cars.</p>\n<p>(Adapted from https://game.baitap365.com)</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "19",
+          "html": "<p><strong>Question </strong><strong>1</strong><strong>9</strong><strong>. What is the main idea of the passage?</strong></p>\n<p><strong>A</strong>. Johannesburg is a clean and safe city to live in.</p>\n<p><strong>B</strong>. Johannesburg has some problems and possible solutions.</p>\n<p><strong>C</strong>. The government doesn’t care about the people in Johannesburg.</p>\n<p><strong>D</strong>. People in Johannesburg don’t want to live there anymore.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>1</strong><strong>9</strong><strong>. What is the main idea of the passage?</strong></p>\n<p><strong>A</strong>. Johannesburg is a clean and safe city to live in.</p>\n<p><strong>B. Johannesburg has some problems and possible solutions.</strong></p>\n<p><strong>C</strong>. The government doesn’t care about the people in Johannesburg.</p>\n<p><strong>D</strong>. People in Johannesburg don’t want to live there anymore.</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "20",
+          "html": "<p><strong>Question </strong><strong>20</strong><strong>. The word “They” in paragraph 2 refers to ______.</strong></p>\n<p><strong>A</strong>. cities\t\t<strong>B</strong>. people living in Johannesburg\t<strong>C</strong>. criminals\t\t<strong>D</strong>. government</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>20</strong><strong>. The word “They” in paragraph 2 refers to ______.</strong></p>\n<p><strong>A</strong>. cities\t\t<strong>B. people living in Johannesburg</strong>\t<strong>C</strong>. criminals\t\t<strong>D</strong>. government</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "21",
+          "html": "<p><strong>Question </strong><strong>2</strong><strong>1</strong><strong>. Which of the following best describes the impact of crime on people’s daily lives in Johannesburg?</strong></p>\n<p><strong>A</strong>. They choose to leave the city permanently.</p>\n<p><strong>B</strong>. They are unable to maintain a normal way of life.</p>\n<p><strong>C</strong>. They are forced to commit crimes to survive.</p>\n<p><strong>D</strong>. They can no longer receive support from the government.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>2</strong><strong>1</strong><strong>. Which of the following best describes the impact of crime on people’s daily lives in Johannesburg?</strong></p>\n<p><strong>A</strong>. They choose to leave the city permanently.</p>\n<p><strong>B. They are unable to maintain a normal way of life.</strong></p>\n<p><strong>C</strong>. They are forced to commit crimes to survive.</p>\n<p><strong>D</strong>. They can no longer receive support from the government.</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "22",
+          "html": "<p><strong>Question </strong><strong>2</strong><strong>2</strong><strong>. Which of the following is TRUE about Johannesburg?</strong></p>\n<p><strong>A</strong>. There won’t be enough homes for people in the future.</p>\n<p><strong>B</strong>. There aren’t enough jobs for people.</p>\n<p><strong>C</strong>. Johannesburg doesn’t have any homeless people anymore.</p>\n<p><strong>D</strong>. There aren’t many apartment buildings in Johannesburg now.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>2</strong><strong>2</strong><strong>. Which of the following is TRUE about Johannesburg?</strong></p>\n<p><strong>A. There won’t be enough homes for people in the future.</strong></p>\n<p><strong>B</strong>. There aren’t enough jobs for people.</p>\n<p><strong>C</strong>. Johannesburg doesn’t have any homeless people anymore.</p>\n<p><strong>D</strong>. There aren’t many apartment buildings in Johannesburg now.</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "23",
+          "html": "<p><strong>Question </strong><strong>2</strong><strong>3</strong><strong>. Which solutions are suggested to improve living conditions in Johannesburg?</strong></p>\n<p><strong>A</strong>. Reducing the city’s population to solve social problems.</p>\n<p><strong>B</strong>. Focusing mainly on economic growth and job creation.</p>\n<p><strong>C</strong>. Encouraging people to use private cars as much as possible.</p>\n<p><strong>D</strong>. Improving public safety, housing conditions, and environmental quality.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>2</strong><strong>3</strong><strong>. Which solutions are suggested to improve living conditions in Johannesburg?</strong></p>\n<p><strong>A</strong>. Reducing the city’s population to solve social problems.</p>\n<p><strong>B</strong>. Focusing mainly on economic growth and job creation.</p>\n<p><strong>C</strong>. Encouraging people to use private cars as much as possible.</p>\n<p><strong>D. Improving public safety, housing conditions, and environmental quality.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Read the following passage and mark the letter A, B, C, or D to indicate the best answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>You can do a few things to make homework less <strong>stressful</strong>.</p>\n<p>First, be sure you understand what you have to do in your assignment. Write it down in your notebook if you need to, and don’t be afraid to ask questions about what is expected.</p>\n<p>Second, use any extra time you have at school to work on your homework. Many schools have libraries specifically designed for students to study or complete homework.</p>\n<p>Third, pace yourself. You need to plan your time. If it is a heavy homework day, you will need to devote more time to your homework.</p>\n<p>Whenever you need help, the first person you should ask for help is your teacher. Sometimes, it is good to have someone explain something that you are not completely sure of.</p>\n<p>In addition, you might also be able to get some help from another student. If there is a friend who is a good student, think about asking that person to study with you.</p>\n<p>(Adapted from https://mentalhealthliteracy.org)</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "24",
+          "html": "<p><strong>Question </strong><strong>24</strong><strong>. </strong><strong>In order to</strong><strong> </strong><strong>make homework</strong><strong> less stressful, the first thing to do is ______.</strong></p>\n<p><strong>A</strong>. to remember the deadline</p>\n<p><strong>B</strong>. to understand what you have to do in your assignment</p>\n<p><strong>C</strong>. to go to the school library as soon as possible</p>\n<p><strong>D</strong>. to know what it can do for you</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>24</strong><strong>. In order to make homework less stressful, the first thing to do is ______.</strong></p>\n<p><strong>A</strong>. to remember the deadline</p>\n<p><strong>B. to understand what you have to do in your assignment</strong></p>\n<p><strong>C</strong>. to go to the school library as soon as possible</p>\n<p><strong>D</strong>. to know what it can do for you</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "25",
+          "html": "<p><strong>Question </strong><strong>2</strong><strong>5</strong><strong>. The word “stressful” in paragraph 1 is opposite in meaning to ______.</strong></p>\n<p><strong>A</strong>. annoying\t\t<strong>B</strong>. relaxing\t\t<strong>C</strong>. tiring\t\t<strong>D</strong>. wasteful</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>2</strong><strong>5</strong><strong>. The word “stressful” in paragraph 1 is opposite in meaning to ______.</strong></p>\n<p><strong>A</strong>. annoying\t\t<strong>B. relaxing</strong>\t\t<strong>C</strong>. tiring\t\t<strong>D</strong>. wasteful</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "26",
+          "html": "<p><strong>Question </strong><strong>26</strong><strong>. What should you do if you have extra time at school?</strong></p>\n<p><strong>A</strong>. spend time with your friends\t\t\t<strong>B</strong>. use it to make your day planner</p>\n<p><strong>C</strong>. use it to understand the assignment\t\t<strong>D</strong>. study or get your homework done</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>26</strong><strong>. What should you do if you have extra time at school?</strong></p>\n<p><strong>A</strong>. spend time with your friends\t\t\t<strong>B</strong>. use it to make your day planner</p>\n<p><strong>C</strong>. use it to understand the assignment\t\t<strong>D. study or get your homework done</strong></p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "27",
+          "html": "<p><strong>Question</strong><strong> 27.</strong><strong> </strong><strong>Who is the first person to ask when a student needs some help?</strong></p>\n<p><strong>A</strong>. the best student at school\t\t<strong>B</strong>. his teacher</p>\n<p><strong>C</strong>. a member of his family\t\t<strong>D</strong>. his friend</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 27.</strong><strong> </strong><strong>Who is the first person to ask when a student needs some help?</strong></p>\n<p><strong>A</strong>. the best student at school\t\t<strong>B. his teacher</strong></p>\n<p><strong>C</strong>. a member of his family\t\t<strong>D</strong>. his friend</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "28",
+          "html": "<p><strong>Question </strong><strong>28</strong><strong>. What is the main idea of the passage?</strong></p>\n<p><strong>A</strong>. Some tips to avoid worrying about homework</p>\n<p><strong>B</strong>. Some ways to look after your physical health</p>\n<p><strong>C</strong>. Some advice to get on with friends at school</p>\n<p><strong>D</strong>. Some reasons to do homework in school libraries</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>28</strong><strong>. What is the main idea of the passage?</strong></p>\n<p><strong>A. Some tips to avoid worrying about homework</strong></p>\n<p><strong>B</strong>. Some ways to look after your physical health</p>\n<p><strong>C</strong>. Some advice to get on with friends at school</p>\n<p><strong>D</strong>. Some reasons to do homework in school libraries</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "PART C: WRITING",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "Mark the letter A, B, C, or D to indicate the correct arrangement of the sentences to make a meaningful paragraph/email in each of the following questions from 29 to 30.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "29",
+          "html": "<p><strong>Question 29.</strong></p>\n<p>Dear Jennifer,</p>\n<p>a. If there’s anything you’d like to share or talk about regarding the exams, I’m here for you.</p>\n<p>b. I trust this letter finds you well. It’s Mai, your close friend.</p>\n<p>c. Looking forward to catching up soon and hearing all about it!</p>\n<p>d. I understand that exam periods can be quite stressful, so I hope you manage to take breaks and relax a bit.</p>\n<p>e. I recently heard about the exams you had a few days ago and I was eager to know how everything went. How did you find the papers? I’m genuinely curious to hear about your experience.</p>\n<p>Best wishes,</p>\n<p>Mai.</p>\n<p><strong>A.</strong> b - e - d - a - c\t<strong>B.</strong> b - d - e - c - a\t<strong>C.</strong> a - b - e - d - c\t<strong>D.</strong> d - e - a - c - b</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 29.</strong></p>\n<p>Dear Jennifer,</p>\n<p>a. If there’s anything you’d like to share or talk about regarding the exams, I’m here for you.</p>\n<p>b. I trust this letter finds you well. It’s Mai, your close friend.</p>\n<p>c. Looking forward to catching up soon and hearing all about it!</p>\n<p>d. I understand that exam periods can be quite stressful, so I hope you manage to take breaks and relax a bit.</p>\n<p>e. I recently heard about the exams you had a few days ago and I was eager to know how everything went. How did you find the papers? I’m genuinely curious to hear about your experience.</p>\n<p>Best wishes,</p>\n<p>Mai.</p>\n<p><strong>A. b - e - d - a - c</strong>\t<strong>B.</strong> b - d - e - c - a\t<strong>C.</strong> a - b - e - d - c\t<strong>D.</strong> d - e - a - c - b</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "30",
+          "html": "<p><strong>Question 30</strong><strong>.</strong></p>\n<p>a. Firstly, there is the problem of traffic jams and traffic accidents. The increase in population and the number of vehicles has led to many accidents every day.</p>\n<p>b. Living in a city has a number of drawbacks, which can be listed as follows.</p>\n<p>c. Thirdly, the city is noisy, even at night. Noise pollution comes from the traffic and from construction sites. Buildings are constantly being knocked down and rebuilt, causing unwanted noise.</p>\n<p>d. In conclusion, these factors contribute to making city life more difficult for its residents.\t</p>\n<p>e. Secondly, air pollution negatively affects people&#x27;s health, and it also has a bad influence on the environment. More and more city dwellers suffer from coughing or breathing problems.</p>\n<p><strong>A.</strong> a - b - c - d - e\t<strong>B.</strong> e - d - a - b - c\t<strong>C.</strong> b - a - e - c - d\t<strong>D.</strong> e - b - d - a - c</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 30.</strong></p>\n<p>a. Firstly, there is the problem of traffic jams and traffic accidents. The increase in population and the number of vehicles has led to many accidents every day.</p>\n<p>b. Living in a city has a number of drawbacks, which can be listed as follows.</p>\n<p>c. Thirdly, the city is noisy, even at night. Noise pollution comes from the traffic and from construction sites. Buildings are constantly being knocked down and rebuilt, causing unwanted noise.</p>\n<p>d. In conclusion, these factors contribute to making city life more difficult for its residents.\t</p>\n<p>e. Secondly, air pollution negatively affects people&#x27;s health, and it also has a bad influence on the environment. More and more city dwellers suffer from coughing or breathing problems.</p>\n<p><strong>A.</strong> a - b - c - d - e\t<strong>B.</strong> e - d - a - b - c\t<strong>C. b - a - e - c - d</strong>\t<strong>D.</strong> e - b - d - a - c</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Put the words in the correct order to make meaningful sentences.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "31",
+          "html": "<p><strong>Question </strong><strong>31</strong>. a / Ho Chi Minh City / is / city / busy / very /</p>\n<p>-&gt; \t</p>",
+          "kind": "text",
+          "answers": [
+            "Ho Chi Minh City is a very busy city",
+            "Ho Chi Minh City is a very busy city."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>31</strong>. a / Ho Chi Minh City / is / city / busy / very /</p>\n<p>-&gt; <strong>Ho Chi Minh City is a very busy city.</strong></p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "32",
+          "html": "<p><strong>Question </strong><strong>32</strong>. forward / to / looking / seeing / am / I / you / soon /</p>\n<p>-&gt; \t</p>",
+          "kind": "text",
+          "answers": [
+            "I am looking forward to seeing you soon",
+            "I am looking forward to seeing you soon."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>32</strong>. forward / to / looking / seeing / am / I / you / soon /</p>\n<p>-&gt; <strong>I am looking forward to seeing you soon.</strong></p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "33",
+          "html": "<p><strong>Question </strong><strong>33</strong>. rains / If / tomorrow / it / cancel / will / the / we / picnic /</p>\n<p>-&gt; \t</p>",
+          "kind": "text",
+          "answers": [
+            "If it rains tomorrow, we will cancel the picnic",
+            "If it rains tomorrow, we will cancel the picnic."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>33</strong>. rains / If / tomorrow / it / cancel / will / the / we / picnic /</p>\n<p>-&gt; <strong>If it rains tomorrow, we will cancel the picnic.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Complete the following sentences with NO MORE THAN FIVE WORDS.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "34",
+          "html": "<p><strong>Question </strong><strong>34</strong>. They are wondering where they can buy traditional handicrafts<strong>.</strong></p>\n<p>=&gt; They are wondering where_______________________ handicrafts.</p>",
+          "kind": "text",
+          "answers": [
+            "to buy traditional",
+            "They are wondering where to buy traditional handicrafts."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>34</strong>. They are wondering where they can buy traditional handicrafts<strong>.</strong></p>\n<p>=&gt; They are wondering where <strong>to buy traditional</strong> handicrafts.</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "35",
+          "html": "<p><strong>Question </strong><strong>35</strong>. They have a good relationship with all neighbours. </p>\n<p>=&gt; They get__________________________________all neighbours.</p>",
+          "kind": "text",
+          "answers": [
+            "on with",
+            "on well with",
+            "They get on with all neighbours.",
+            "They get on well with all neighbours."
+          ],
+          "referenceHtml": "<p>on with / on well with / They get on with all neighbours. / They get on well with all neighbours.</p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "36",
+          "html": "<p><strong>Question</strong><strong> 36</strong>. The apartment is big. The rent is high.<strong>\t</strong></p>\n<p>=&gt; The bigger ___________________________________the rent is.</p>",
+          "kind": "text",
+          "answers": [
+            "the apartment is, the higher",
+            "The bigger the apartment is, the higher the rent is."
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 36</strong>. The apartment is big. The rent is high.<strong>\t</strong></p>\n<p>=&gt; The bigger <strong>the apartment is, the higher</strong><strong> </strong>the rent is.</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "37",
+          "html": "<p><strong>Question 37. </strong><strong>Write a paragraph (about 100 – 120 words) about advantages of living in the city. You can use the following ideas.</strong></p>\n<p>-Having better job opportunities\t</p>\n<p>          - Having best medical service </p>\n<p>          - Meeting new people</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>Question 37. </strong><strong>Write a paragraph (about 100 – 120 words) about advantages of living in the city. You can use the following ideas.</strong></p>\n<p>-Having better job opportunities\t</p>\n<p>          - Having best medical service </p>\n<p>          - Meeting new people</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "feecd52a4bb7bdb3d14b7547564babbc860b2aa07f6bd5fcdaca4e732448b609"
+}

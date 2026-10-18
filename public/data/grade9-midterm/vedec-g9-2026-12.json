@@ -1,0 +1,661 @@
+{
+  "id": "vedec-g9-2026-12",
+  "number": 12,
+  "title": "Đề 12",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.0 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen and circle the best option to answer the questions",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>1. </strong>Minh is currently a __________. </p>\n<p><strong>A. </strong>university student<strong>\t</strong><strong>\tB. </strong>high school student<strong>\t</strong></p>\n<p><strong>C. </strong>secondary school student<strong>\tD. </strong>primary school student</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. </strong>Minh is currently a __________. </p>\n<p><strong>A. university student</strong><strong>\t</strong><strong>\tB. </strong>high school student<strong>\t</strong></p>\n<p><strong>C. </strong>secondary school student<strong>\tD. </strong>primary school student</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong>What is <strong><u>NOT</u></strong> mentioned as a thing he will do when he is feeling overwhelmed?</p>\n<p><strong>A. </strong>going for a short walk<strong>\t</strong><strong>\tB. </strong>listening to lo-fi music<strong>\t</strong></p>\n<p><strong>C. </strong>taking a few deep breaths<strong>\tD. </strong>reading his favorite comics</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. </strong>What is <strong><u>NOT</u></strong> mentioned as a thing he will do when he is feeling overwhelmed?</p>\n<p><strong>A. </strong>going for a short walk<strong>\t</strong><strong>\tB. </strong>listening to lo-fi music<strong>\t</strong></p>\n<p><strong>C. </strong>taking a few deep breaths<strong>\t</strong><strong>D. reading his favorite comics</strong></p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>3. </strong>What physical activity does Minh do? </p>\n<p><strong>A. </strong>going for a run outside<strong>\t</strong><strong>\tB. </strong>going to the boxing club<strong>\t</strong></p>\n<p><strong>C. </strong>playing soccer<strong>\t</strong><strong>\tD. </strong>working out at home</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. </strong>What physical activity does Minh do? </p>\n<p><strong>A. </strong>going for a run outside<strong>\t</strong><strong>\tB. </strong>going to the boxing club<strong>\t</strong></p>\n<p><strong>C. </strong>playing soccer<strong>\t</strong><strong>\t</strong><strong>D. working out at home</strong></p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>4. </strong>He tries to talk to his friends and family because ________________________</p>\n<p><strong>A. </strong>They can offer support and help him.<strong>\tB. </strong>They can see things in a more positive light.</p>\n<p><strong>C. </strong>They can talk about his stress positively. <strong>\t</strong><strong>D. </strong>They can make it feel more manageable.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. </strong>He tries to talk to his friends and family because ________________________</p>\n<p><strong>A. They can offer support and help him.</strong><strong>\tB. </strong>They can see things in a more positive light.</p>\n<p><strong>C. </strong>They can talk about his stress positively. <strong>\tD. </strong>They can make it feel more manageable.</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>5. </strong>How many hours does Minh try to sleep each night?</p>\n<p><strong>A. </strong>No more than 8 hours<strong>\t</strong><strong>\tB. </strong>No less than 8 hours<strong>\t</strong></p>\n<p><strong>C. </strong>Exactly 8 hours<strong>\t</strong><strong>\tD. </strong>Less than 8 hours</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5. </strong>How many hours does Minh try to sleep each night?</p>\n<p><strong>A. </strong>No more than 8 hours<strong>\t</strong><strong>\t</strong><strong>B. No less than 8 hours</strong><strong>\t</strong></p>\n<p><strong>C. </strong>Exactly 8 hours<strong>\t</strong><strong>\tD. </strong>Less than 8 hours</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen and fill each gap with ONE WORD ONLY",
+      "part": "LISTENING",
+      "introHtml": "<p>Trên điện thoại, vuốt ngang để xem đủ các cột trong bảng.</p><div class=\"exam-table-scroll\" role=\"region\" aria-label=\"Bảng bài nghe: Your city life\" tabindex=\"0\"><table><thead><tr><th>Người nói</th><th>Good things</th><th>Problems</th><th>Solutions</th></tr></thead><tbody><tr><td>Tom</td><td>Good parks, libraries and (1) ______</td><td>Old and uncomfortable buses</td><td>(2) ______ the roads; have more air-conditioned buses</td></tr><tr><td>Elena</td><td></td><td>Few places for (3) ______; costly shopping mall</td><td>Have more free sport facilities</td></tr><tr><td>Chi</td><td>Food stalls almost street corners</td><td>Teens become too (4) ______</td><td>Warn about the hygiene risks; (5) ______ children how to cook</td></tr></tbody></table></div>",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>Chỗ trống (1)</p>",
+          "kind": "text",
+          "answers": [
+            "cinemas"
+          ],
+          "referenceHtml": "<p>cinemas</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>Chỗ trống (2)</p>",
+          "kind": "text",
+          "answers": [
+            "widen"
+          ],
+          "referenceHtml": "<p>widen</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>Chỗ trống (3)</p>",
+          "kind": "text",
+          "answers": [
+            "entertainment"
+          ],
+          "referenceHtml": "<p>entertainment</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p>Chỗ trống (4)</p>",
+          "kind": "text",
+          "answers": [
+            "lazy"
+          ],
+          "referenceHtml": "<p>lazy</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>Chỗ trống (5)</p>",
+          "kind": "text",
+          "answers": [
+            "teach"
+          ],
+          "referenceHtml": "<p>teach</p>"
+        }
+      ],
+      "audioStart": 161
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE USE (2pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Choose the option with the underlined part pronounced differently from the others",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong><strong> </strong><strong>A. </strong>h<u>a</u>ndicraft\t<strong>B.</strong> g<u>a</u>rbage\t<strong>C.</strong> gr<u>a</u>ndmother\t\t\t<strong>D.</strong> m<u>a</u>rry</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong><strong> </strong><strong>A. </strong>h<u>a</u>ndicraft\t<strong>B</strong><strong>. g</strong><strong><u>a</u></strong><strong>rbage</strong>\t<strong>C.</strong> gr<u>a</u>ndmother\t\t\t<strong>D.</strong> m<u>a</u>rry</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Choose the option of words that has stress different from the others",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "2",
+          "html": "<p><strong>2.</strong> <strong>A.</strong> polite\t<strong>B. </strong>invite\t<strong>C.</strong> nation\t\t\t<strong>D.</strong> decide </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> <strong>A.</strong> polite\t<strong>B. </strong>invite\t<strong>C.</strong> <strong>nation</strong>\t\t\t<strong>D.</strong> decide </p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "II. Choose the correct option to complete the sentences.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p><strong>1. Mai:</strong> “Could you do me a favor<strong>?</strong>”\t<strong>Tom: </strong>“____________”</p>\n<p><strong>A.</strong> Yes. Go ahead.\t<strong>B.</strong> No, not yet.\t<strong>C. </strong>Sure. How can I help you?<strong>\tD. </strong>You’re welcome!</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. </strong><strong>Mai:</strong> “Could you do me a favor<strong>?</strong>”\t<strong>Tom: </strong>“____________”</p>\n<p><strong>A.</strong> Yes. Go ahead.\t<strong>B.</strong> No, not yet.      <strong>C. </strong><strong>Sure. How can I help you?</strong><strong>\tD. </strong>You’re welcome!</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> If you don’t want to put on weight, you __________eat more vegetables and do exercise regularly.</p>\n<p><strong>A.</strong> should\t<strong>B. </strong>must\t<strong>C.</strong> will\t\t<strong>D.</strong> can</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> If you don’t want to put on weight, you __________eat more vegetables and do exercise regularly.</p>\n<p><strong>A.</strong> <strong>should</strong>\t<strong>B. </strong>must\t<strong>C.</strong> will\t\t<strong>D.</strong> can</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> The ________ can cause delays and frustration for drivers.<br><strong>A.</strong> traffic jam\t<strong>B.</strong> food waste\t<strong>C.</strong> concrete jungle\t\t\t<strong>D.</strong> high crime rate</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3</strong><strong>.</strong> The ________ can cause delays and frustration for drivers.<br><strong>A.</strong> <strong>traffic jam</strong>\t<strong>B.</strong> food waste\t<strong>C.</strong> concrete jungle\t\t\t<strong>D.</strong> high crime rate</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p><strong>4</strong>. I think I&#x27;m ______  flu.</p>\n<p><strong>A.</strong> getting on with\t<strong>B. </strong>coming down with\t<strong>C.</strong> passing down\t\t\t<strong>D.</strong> looking for</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>B</p>",
+          "note": "Cụm đúng là come down with flu; đáp án A trong bản gốc bị nhầm."
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p><strong>5</strong><strong>. </strong>Do you know _________ to sort out rubbish?</p>\n<p><strong>A.</strong> what\t<strong>B.</strong> why\t<strong>C. </strong>what time\t\t<strong>\tD. </strong>how</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5</strong><strong>. </strong>Do you know _________ to sort out rubbish?</p>\n<p><strong>A.</strong> what\t<strong>B.</strong> why\t<strong>C. </strong>what time\t\t<strong>\t</strong><strong>D. </strong><strong>how</strong></p>"
+        },
+        {
+          "id": "s7-q6",
+          "number": "6",
+          "html": "<p><strong>6</strong><strong>. </strong>The __________ the air pollution is, the __________ it is to enjoy outdoor activities.<br><strong>A. </strong>higher / more difficult\t\t<strong>B.</strong> lower / more difficult\t</p>\n<p><strong>C.</strong> higher / easier\t\t\t<strong>D.</strong> lower / more easier</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>6</strong><strong>. </strong>The __________ the air pollution is, the __________ it is to enjoy outdoor activities.<br><strong>A. </strong><strong>higher / more difficult</strong>\t\t<strong>B.</strong> lower / more difficult\t</p>\n<p><strong>C.</strong> higher / easier\t\t\t<strong>D.</strong> lower / more easier</p>"
+        },
+        {
+          "id": "s7-q7",
+          "number": "7",
+          "html": "<p><strong>7</strong><strong>.</strong> Being __________ can lead to a well-balanced life.<br><strong>A.</strong> stressed out\t<strong>B. </strong>optimistic\t<strong>C.</strong> distracted\t<strong>D</strong>. discouraged</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>7</strong><strong>.</strong> Being __________ can lead to a well-balanced life.<br><strong>A.</strong> stressed out\t<strong>B. </strong><strong>optimistic</strong>\t<strong>C.</strong> distracted\t<strong>D</strong>. discouraged</p>"
+        },
+        {
+          "id": "s7-q8",
+          "number": "8",
+          "html": "<p><strong>8</strong><strong>. </strong>What does the sign say in each following situation? Circle the best option.</p>\n<p><img src=\"/data/grade9-midterm/images/4d24fc662289c0ed.jpeg\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p><strong>A.</strong> The paint is dry and safe to touch.<br><strong>B.</strong> The paint is still wet, so please do not touch it.<br><strong>C.</strong> You can touch the paint because it’s wet.<br><strong>D.</strong> The paint is not for public use.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>8</strong><strong>. </strong>What does the sign say in each following situation? Circle the best option.</p>\n<p><strong>A.</strong> The paint is dry and safe to touch.<br><strong>B.</strong> <strong>The paint is still wet, so please do not touch it.</strong><strong><br></strong><strong>C.</strong> You can touch the paint because it’s wet.<br><strong>D.</strong> The paint is not for public use.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "C. READING (2pts)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s9",
+      "title": "I. Read the following announcement and mark the letter A, B, C, or D to indicate the correct option",
+      "part": "READING",
+      "introHtml": "<p>Living in a &quot;concrete jungle&quot; like Hong Kong or New York can be both exciting and stressful. These cities are packed (1) _____ high buildings and modern public amenities like shopping malls and cinemas. However, the density of the population often leads to serious (2) _____ congestion. The more crowded the city gets, the more (3) _____ the streets become. Drivers often don&#x27;t obey traffic rules, which indirectly causes many accidents. Moreover, the dust and dirt from construction sites can badly affect people&#x27;s health. For example, many residents suffer from (4) _____ eyes and runny noses when they go outside. To improve the situation, the local government should invest more in green spaces and trees. (5) _____ , they need to encourage people to cut down on using private cars. If these problems are solved, city life will be much more pleasant. People will be able to enjoy the benefits of a modern city without worrying too much about their health and safety.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong>. <strong>A.</strong> of\t\t\t<strong>B.</strong> by\t\t\t<strong>C.</strong> with \t\t<strong>D.</strong> for</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong>. <strong>A.</strong> of\t\t\t<strong>B.</strong> by\t\t\t<strong>C.</strong> <strong>with</strong><strong> </strong>\t\t<strong>D.</strong> for</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong>. <strong>A.</strong> road \t\t\t<strong>B.</strong> street\t\t<strong>C.</strong> way\t\t<strong>D.</strong> path</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2</strong>. <strong>A.</strong> <strong>road</strong> \t\t\t<strong>B.</strong> street\t\t<strong>C.</strong> way\t\t<strong>D.</strong> path</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "3",
+          "html": "<p><strong>3</strong>. <strong>A.</strong> congest\t\t\t<strong>B.</strong> congested \t\t<strong>C.</strong> congesting\t<strong>D.</strong> congestion</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3</strong>. <strong>A.</strong> congest\t\t\t<strong>B. congested</strong> \t<strong>C.</strong> congesting\t<strong>D.</strong> congestion</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "4",
+          "html": "<p><strong>4</strong>. <strong>A.</strong> pain\t\t\t<strong>B.</strong> sore \t\t<strong>C.</strong> itchy\t\t<strong>D.</strong> tired</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4</strong>. <strong>A.</strong> pain\t\t\t<strong>B.</strong> sore \t\t<strong>C.</strong> <strong>itchy</strong>\t\t<strong>D.</strong> tired</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "5",
+          "html": "<p><strong>5</strong>. <strong>A.</strong> In addition\t\t<strong>B.</strong> But \t\t<strong>C.</strong> Therefore\t\t<strong>D.</strong> Although</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5</strong>. <strong>A.</strong> <strong>In </strong><strong>addition</strong>\t\t<strong>B.</strong> But \t\t<strong>C.</strong> Therefore\t\t<strong>D.</strong> Although</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "II. Read the following passage and choose the best option to answer the questions below",
+      "part": "READING",
+      "introHtml": "<p>Portion control is also important when you&#x27;re trying to lose weight. One problem many overweight teens have is that they underestimate how much they really eat. So, stop super-sizing, and learn what a healthy portion looks like. It may also help to eat more <strong><u>suitably</u></strong>. Six small meals per day appears to be one of the best approaches to eating, especially when you&#x27;re trying to lose weight. Just remember these mini meals need to be small. If you feel you are overweight, talk to your primary health care provider or a registered dietitian. There are plenty of medically supervised diets that work well for teens who need to lose more than 10 pounds. Just be sure to include exercise, or you&#x27;ll find that the weight comes back as easily as <strong><u>it</u></strong> left you.</p>\n<p>(Adapted from: https://www.webmd.com)</p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> What can be the best title of the passage?</p>\n<p><strong>A.</strong> A tip to lose weight. \t\t<strong>B.</strong> How to gain weight?\t</p>\n<p><strong>C.</strong> Trick to control portion.\t\t<strong>D.</strong> Eating too much! </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong> What can be the best title of the passage?</p>\n<p><strong>A.</strong> <strong>A tip to lose weight</strong>. \t\t<strong>B.</strong> How to gain weight?\t</p>\n<p><strong>C.</strong> Trick to control portion.\t\t<strong>D.</strong> Eating too much! </p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> The word &quot;<strong><u>suitably</u></strong>&quot; is closest in meaning to ______. </p>\n<p><strong>A.</strong> particularly\t<strong>B.</strong> additionally\t<strong>C.</strong> appropriately\t<strong>D.</strong> mentally</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> The word &quot;<strong><u>suitably</u></strong>&quot; is closest in meaning to ______. </p>\n<p><strong>A.</strong> particularly\t<strong>B.</strong> additionally\t<strong>C.</strong> <strong>appropriately</strong>\t\t\t<strong>D.</strong> mentally</p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> What is the issue that many overweight teens have?</p>\n<p><strong>A.</strong> overestimate how long they eat\t<strong>B.</strong> underestimate the food they eat<br><strong>C</strong>. overestimate the times they eat\t<strong>D.</strong> underestimate how much they eat</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3.</strong> What is the issue that many overweight teens have?</p>\n<p><strong>A.</strong> overestimate how long they eat\t<strong>B.</strong> underestimate the food they eat<br><strong>C</strong>. overestimate the times they eat\t<strong>D.</strong> <strong>underestimate how much they eat</strong></p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "4",
+          "html": "<p><strong>4. </strong>What can we infer from the passage? </p>\n<p><strong>A.</strong> Overweight teens always underestimate how much they eat.</p>\n<p><strong>B.</strong> Eating smaller, more frequent meals can be helpful for weight loss.\t\t\t</p>\n<p><strong>C.</strong> Doing exercise is more important than maintaining weight loss.\t</p>\n<p><strong>D</strong>. It&#x27;s useless to consult a healthcare provider or registered dietitian.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. </strong>What can we infer from the passage? </p>\n<p><strong>A.</strong> Overweight teens always underestimate how much they eat.</p>\n<p><strong>B.</strong> <strong>Eating smaller, more frequent meals can be helpful for weight loss</strong>.\t\t\t</p>\n<p><strong>C.</strong> Doing exercise is more important than maintaining weight loss.\t</p>\n<p><strong>D</strong>. It&#x27;s useless to consult a healthcare provider or registered dietitian.</p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "5",
+          "html": "<p><strong>5.</strong> The word <strong>&quot;</strong><strong><u>it</u></strong><strong>&quot;</strong> refers to ______. </p>\n<p><strong>A.</strong> provider\t<strong>B.</strong> dietitian\t<strong>C.</strong> exercise\t\t<strong>D.</strong> weight</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5.</strong> The word &quot;<u>it</u>&quot; refers to ______. </p>\n<p><strong>A.</strong> provider\t<strong>B.</strong> dietitian\t<strong>C.</strong> exercise\t\t\t<strong>D.</strong> <strong>weight</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "D. WRITING (2 pts)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s12",
+      "title": "I. Rearrange these words to make completed sentences (0.4 pts)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p><strong>1. </strong>likes/ watching/ younger brother/ My/ TV/ in the evening./</p>",
+          "kind": "text",
+          "answers": [
+            "My younger brother likes watching TV in the evening",
+            "My younger brother likes watching TV in the evening."
+          ],
+          "referenceHtml": "<p><strong>1. </strong>likes/ watching/ younger brother/ My/ TV/ in the evening./</p>\n<p>    <strong>My </strong><strong>younger </strong><strong>brother likes watching TV in the evening.</strong></p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "2",
+          "html": "<p>2. If/ you/ a / license. / a car, / you/ have/ drive/ must / to/ driver’s/ want /</p>",
+          "kind": "text",
+          "answers": [
+            "If you want to drive a car, you must have a driver’s license",
+            "If you want to drive a car, you must have a driver’s license."
+          ],
+          "referenceHtml": "<p>2. If/ you/ a / license. / a car, / you/ have/ drive/ must / to/ driver’s/ want /</p>\n<p><strong>    </strong><strong>If you want to drive a car, you must have a driver’s license.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "II. Complete the following sentences with no more than five words (0.6 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong><strong>. </strong>Can you tell me how I can get to the nearest farmers’ market?</p>\n<p> Can you tell me how ……………………………… farmers’ market?</p>",
+          "kind": "text",
+          "answers": [
+            "to get to the nearest",
+            "Can you tell me how to get to the nearest farmers’ market?"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>. </strong>Can you tell me how I can get to the nearest farmers’ market?</p>\n<p> Can you tell me<strong> </strong>how <strong>to get to the nearest</strong> farmers’ market?</p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong><strong>. </strong>We feel more comfortable in a larger house.</p>\n<p> The larger the<strong> </strong><strong> </strong>………………………………….…we feel.</p>",
+          "kind": "text",
+          "answers": [
+            "house is, the more comfortable",
+            "The larger the house is, the more comfortable we feel."
+          ],
+          "referenceHtml": "<p><strong>2</strong><strong>. </strong>We feel more comfortable in a larger house.</p>\n<p> The larger the<strong> </strong><strong>house is, the more comfortable</strong><strong> </strong>we feel.</p>"
+        },
+        {
+          "id": "s13-q3",
+          "number": "3",
+          "html": "<p>3. If she doesn’t manage time well, she cannot achieve a balanced life.</p>\n<p> Unless she……………………………………cannot achieve a balanced life.</p>",
+          "kind": "text",
+          "answers": [
+            "manages time well, she",
+            "Unless she manages time well, she cannot achieve a balanced life."
+          ],
+          "referenceHtml": "<p>3. If she doesn’t manage time well, she cannot achieve a balanced life.</p>\n<p> Unless she <strong>manages time well, she</strong> cannot achieve a balanced life.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "III. Write about the advantages of living in a big city?",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "1",
+          "html": "<p>The following ideas may help you:</p>\n<p>- More job opportunities</p>\n<p>- A lot of entertainment options</p>\n<p>- Better medical care</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>The following ideas may help you:</p>\n<p>- More job opportunities</p>\n<p>- A lot of entertainment options</p>\n<p>- Better medical care</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "PART E: SPEAKING ( 2.0 points)",
+      "part": "SPEAKING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s15-q1",
+          "number": "Nói",
+          "html": "<p><strong>PART 1: Introduce personal information (0,6 points)</strong></p><p><strong>PART 2: Suggested topics (1.0 point)</strong></p><p>1. Talk about the traditional craft you know.</p>\n<p>2. Talk about the life in the city.</p>\n<p>3. Talk about the life skills that Vietnamese teenagers need.</p><p><strong>PART 3: Answer the questions about the topic (0,4 points)</strong></p><p>- 2 câu liên quan đến chủ đề ở phần II</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. Talk about the traditional craft you know.</p>\n<p>2. Talk about the life in the city.</p>\n<p>3. Talk about the life skills that Vietnamese teenagers need.</p><p>- 2 câu liên quan đến chủ đề ở phần 2</p>\n<p><strong>Trả</strong><strong> </strong><strong>lời</strong><strong> </strong><strong>được</strong><strong> </strong><strong>các</strong><strong> </strong><strong>câu</strong><strong> </strong><strong>hỏi</strong><strong> </strong><strong>về</strong><strong> </strong><strong>bản</strong><strong> </strong><strong>thân</strong><strong>, </strong><strong>nói</strong><strong> </strong><strong>được</strong><strong> </strong><strong>các</strong><strong> ý </strong><strong>liên</strong><strong> </strong><strong>quan</strong><strong> </strong><strong>đến</strong><strong> topic </strong><strong>và</strong><strong> </strong><strong>trả</strong><strong> </strong><strong>lời</strong><strong> </strong><strong>thêm</strong><strong> </strong><strong>được</strong><strong> </strong><strong>các</strong><strong> ý </strong><strong>mở</strong><strong> </strong><strong>rộng</strong><strong> </strong><strong>của</strong><strong> topic</strong></p>\n<p><strong>- </strong><strong>Trả</strong><strong> </strong><strong>lời</strong><strong> to, </strong><strong>rõ</strong><strong> </strong><strong>ràng</strong><strong>, </strong><strong>sắp</strong><strong> </strong><strong>xếp</strong><strong> ý </strong><strong>hợp</strong><strong> </strong><strong>lý</strong><strong>, logic</strong></p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe đầy đủ",
+      "sourceName": "BÀI NGHE 1-BÀI NGHE 2.mp3",
+      "sourceHash": "db074a2269fbaf3e5be512c5843ece4df33f9797d581b4e19eef7b513e47253b",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-12-1.mp3",
+      "duration": 347.7,
+      "sectionIds": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "sourceHash": "ca687d6d901cf66a35b721b284bfcb6922aa2eed1d0b4010d5e691e0a5f309cc"
+}

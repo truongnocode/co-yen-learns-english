@@ -1,0 +1,642 @@
+{
+  "id": "vedec-g9-2026-10",
+  "number": 10,
+  "title": "Đề 10",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "I. Phonetics. (1.0 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Circle the letter A, B, C or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> <strong>A</strong>. artis<u>a</u>n\t<strong>B</strong>. est<u>a</u>blish\t<strong>C</strong><strong>. </strong><u>a</u>ttraction<strong>\t</strong><strong>D</strong>. <u>a</u>pplicant</p>",
+          "kind": "choice",
+          "answers": [],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "",
+          "unscored": true,
+          "note": "Theo đúng phần gạch chân, các từ chia thành hai nhóm phát âm; chưa có một từ duy nhất khác ba từ còn lại. Câu này không tính điểm tự động."
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> <strong>A. </strong>preserv<u>ed</u>\t<strong>B.</strong> conduct<u>ed</u>\t<strong>C.</strong> wonder<u>ed</u>\t<strong>D. </strong>employ<u>ed</u></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> <strong>A. </strong>preserv<u>ed</u>\t<strong>B.</strong> <strong>conduct</strong><strong><u>ed</u></strong>\t<strong>C.</strong> wonder<u>ed</u>\t<strong>D. </strong>employ<u>ed</u></p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Circle the letter A, B, C or D to indicate the word that differs from the other three in the position of stress in each of the following questions.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "3",
+          "html": "<p><strong>3.</strong> <strong>A.</strong> wander\t<strong>B.</strong> craftsman\t<strong>C.</strong> layer\t<strong>D. </strong>remind\t </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3.</strong> <strong>A.</strong> wander\t<strong>B.</strong> craftsman\t<strong>C.</strong> layer\t<strong>D. remind</strong>\t </p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "4",
+          "html": "<p><strong>4. A.</strong> confident\t<strong>B. </strong>delighted\t<strong>C.</strong> cognitive\t<strong>D.</strong> disciplined</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. A.</strong> confident\t<strong>B. </strong><strong>delighted</strong>\t<strong>C.</strong> cognitive\t<strong>D.</strong> disciplined</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "II. Circle the letter A, B, C or D to indicate the correct answer to each of the following questions. (3.0 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> Local __________ make their pottery and souvenirs in the workshop.</p>\n<p><strong>A.</strong> farmers\t<strong>B.</strong> customers\t<strong>C.</strong> sellers\t<strong>D. </strong>artisans</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1.</strong> Local __________ make their pottery and souvenirs in the workshop.</p>\n<p><strong>A.</strong> farmers\t<strong>B.</strong> customers\t<strong>C.</strong> sellers\t<strong>D. artisans</strong></p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> The souvenirs from my trip to the beach always _______ me of the good time I had with my family. </p>\n<p><strong>A. </strong>remind \t<strong>B.</strong> encourage\t<strong>C.</strong> remember\t<strong>D.</strong> show </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> The souvenirs from my trip to the beach always ______ me of the good time I had with my family. </p>\n<p><strong>A. remind</strong><strong> </strong>\t<strong>B.</strong> encourage\t<strong>C.</strong> remember\t<strong>D.</strong> show </p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> Huong was not sure __________ to buy souvenirs for her pen pals from Korea. </p>\n<p><strong>A.</strong> what \t<strong>B.</strong> who \t<strong>C.</strong> which \t<strong>D. </strong>where<strong> </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3.</strong> Huong was not sure __________ to buy souvenirs for her pen pals from Korea. </p>\n<p><strong>A.</strong> what \t<strong>B.</strong> who \t<strong>C.</strong> which \t<strong>D. where</strong><strong> </strong></p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong> Traffic __________ in London is terrible.</p>\n<p><strong>A</strong>. downtown\t<strong>B</strong>. jungle\t<strong>C. </strong>congestion\t<strong>D</strong>. concrete</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4.</strong> Traffic __________ in London is terrible.</p>\n<p><strong>A</strong>. downtown\t<strong>B</strong>. jungle\t<strong>C. congestion</strong>\t<strong>D</strong>. concrete</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "5",
+          "html": "<p><strong>5.</strong> I can turn the television off if you find it a(n) __________.</p>\n<p><strong>A. </strong>distraction<strong>     </strong><strong>\tB.</strong> relaxation    \t<strong>C.</strong> confusion            \t<strong>D.</strong> enjoyment</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5.</strong> I can turn the television off if you find it a(n) __________.</p>\n<p><strong>A. distraction</strong><strong>     </strong><strong>\t</strong><strong>B.</strong> relaxation    \t<strong>C.</strong> confusion            \t<strong>D.</strong> enjoyment</p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "6",
+          "html": "<p><strong>6.</strong> I need to __________ the train schedule so I can plan my journey and ensure timely arrival at my destination.</p>\n<p><strong>A.</strong> remind of     \t<strong>B.</strong> run out of              \t<strong>C.</strong> hand out          \t<strong>D. </strong>find out\t</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>6.</strong> I need to __________ the train schedule so I can plan my journey and ensure timely arrival at my destination.</p>\n<p><strong>A.</strong> remind of     \t<strong>B.</strong> run out of              \t<strong>C.</strong> hand out          \t<strong>D. find out</strong>\t</p>"
+        },
+        {
+          "id": "s4-q7",
+          "number": "7",
+          "html": "<p><strong>7.</strong> Lucy met the school __________ to ask for advice on how to manage time better.</p>\n<p><strong>A.</strong> parent<strong> </strong><strong>\tB. </strong>counsellor<strong> </strong><strong>\tC.</strong> students<strong> </strong><strong>\tD.</strong> children</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>7.</strong> Lucy met the school __________ to ask for advice on how to manage time better.</p>\n<p><strong>A.</strong> parent<strong> </strong><strong>\t</strong><strong>B. counsellor</strong><strong> </strong><strong>\t</strong><strong>C.</strong> students<strong> </strong><strong>\t</strong><strong>D.</strong> children</p>"
+        },
+        {
+          "id": "s4-q8",
+          "number": "8",
+          "html": "<p><strong>8.</strong> The __________ the computer is, the __________ the price you have to pay.</p>\n<p><strong>A. </strong>more modern – higher<strong>        </strong><strong>\t</strong><strong>B.</strong> moderner – higher</p>\n<p><strong>C.</strong> more modern - more high           \t<strong>D.</strong> moderner - more high</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>8.</strong> The __________ the computer is, the __________ the price you have to pay.</p>\n<p><strong>A. more modern – higher</strong><strong>        </strong><strong>\t</strong><strong>B.</strong> moderner – higher</p>\n<p><strong>C.</strong> more modern - more high           \t<strong>D.</strong> moderner - more high</p>"
+        },
+        {
+          "id": "s4-q9",
+          "number": "9",
+          "html": "<p>9. If you finish reading a book, you __________ put it back on the shelf. It’s necessary. </p>\n<p>A. can \tB. should \tC. will \tD. may</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. If you finish reading a book, you __________ put it back on the shelf. It’s necessary. </p>\n<p>A. can \tB. should \tC. will \tD. may</p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Circle the letter A, B, C or D to indicate the best arrangement of utterances or sentences to make a meaningful exchange.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "10",
+          "html": "<p>10.</p>\n<p>a. Nam: Oh, I&#x27;m sorry I can&#x27;t. I have to study for a test today.</p>\n<p>b. <strong>Lan: </strong>Never mind. We can go another time.</p>\n<p>c. <strong>Lan: </strong>Nam, there is a new park in the city. Let&#x27;s go and walk there this afternoon.</p>\n<p><strong>A. </strong>c-a-b\t<strong>B. </strong>b-c-a \t<strong>C. </strong>c-b-a \t<strong>D. </strong>a-c-b</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10.</p>\n<p>a. Nam: Oh, I&#x27;m sorry I can&#x27;t. I have to study for a test today.</p>\n<p>b. <strong>Lan: </strong>Never mind. We can go another time.</p>\n<p>c. <strong>Lan: </strong>Nam, there is a new park in the city. Let&#x27;s go and walk there this afternoon.</p>\n<p><strong>A. </strong><strong>c-a-b</strong>\t<strong>B. </strong>b-c-a \t<strong>C. </strong>c-b-a \t<strong>D. </strong>a-c-b</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Circle the letter A, B, C or D to indicate the underlined part that needs correction in each of the following questions.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "11",
+          "html": "<p><strong>11.</strong> The <u>colder</u> it <u>gets</u>, <u>the more warm</u> the coat needs <u>to be</u>.</p>\n<p><strong>          </strong><strong>\tA</strong><strong>\tB              C                                     D</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>C</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "12",
+          "html": "<p><strong>12. </strong>They <u>are wondering</u> where <u>buying</u> traditional handcrafts <u>for</u> the <u>upcoming</u> event.</p>\n<p>            \tA                         \tB\t\tC             D</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>B</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "PART B. READING (3.0 points)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "I. Read the following passage and circle the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks. (1.25p)",
+      "part": "READING",
+      "introHtml": "<p>The local newspaper carried out a survey with city dwellers about how to make the city a more <strong>(1)</strong> ______ place. Most participants in the survey talked about the city’s traffic. First, they wanted stricter traffic laws to stop drivers from ignoring traffic lights and breaking speed limits. This would help reduce road accidents. In addition, they hoped their city would improve its <strong>(2)</strong> ________ system. For example, buses should be bus lines that reach almost all areas in the city, so it would be easy for people to <strong>(3)</strong> _______. They said that good public transport could also save the city money. The local authority wouldn’t need to construct new parking lots and <strong>(4)</strong> _________ roads to cater for the increasing number of private cars. Finally, the survey participants suggested the local authority build traffic apps. The apps could recommend to drivers the best routes to avoid traffic <strong>(5)</strong> ________. The sooner the government started implementing these, the more convenient it would be to travel around the city. </p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p><strong>1. A.</strong> lifelong \t<strong>B.</strong> liveable  \t<strong>C.</strong> living \t<strong>D.</strong> lively </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. A.</strong> lifelong \t<strong>B.</strong> <strong>liveable</strong>  \t<strong>C.</strong> living \t<strong>D.</strong> lively </p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p><strong>2. A.</strong> amenity \t<strong>B.</strong> parking \t<strong>C.</strong> public transport   \t<strong>D.</strong> underground </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. A.</strong> amenity \t<strong>B.</strong> parking \t<strong>C.</strong> <strong>public transport</strong>   \t<strong>D.</strong> underground </p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "3",
+          "html": "<p><strong>3. A.</strong> move in \t<strong>B.</strong> go away \t<strong>C.</strong> come out \t<strong>D.</strong> get around </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. A.</strong> move in \t<strong>B.</strong> go away \t<strong>C.</strong> come out \t<strong>D.</strong> <strong>get around</strong> </p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "4",
+          "html": "<p><strong>4. A.</strong> widen \t<strong>B.</strong> block \t<strong>C.</strong> narrow \t<strong>D.</strong> reduce </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. </strong><strong>A.</strong> <strong>widen</strong><strong> </strong>\t<strong>B.</strong> block \t<strong>C.</strong> narrow \t<strong>D.</strong> reduce </p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "5",
+          "html": "<p><strong>5. A.</strong> flow \t<strong>B.</strong> accidents \t<strong>C.</strong> congestion<strong> </strong>\t<strong>D.</strong> signs</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5. A.</strong> flow \t<strong>B.</strong> accidents \t<strong>C.</strong> <strong>congestion</strong><strong> </strong>\t<strong>D.</strong> signs</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "II. Read the following passage and circle the letter A, B, C or D to indicate the correct answer to each of the following questions. (1.75p)",
+      "part": "READING",
+      "introHtml": "<p>Tan Cuong tea is a renowned speciality from Thai Nguyen, situated 75 kilometers to the North of Hanoi. Among the tea-growing places in this province, Tan Cuong Commune stands out as the prime area for tea leaves and related products.</p>\n<p>Tan Cuong Tea is one of the most exceptional tea products from this region. What makes it unique is the method of nurturing tea trees with organic fertilizer, ensuring they are free from harmful pesticide or chemical residues. The tea leaves are harvested using traditional methods. Carefully picked green tea buds from the trees are stored to maintain their quality before <strong><u>they</u></strong><strong> </strong>are sent to the factory for processing.</p>\n<p>In recent years, Thai Nguyen Province has implemented various strategies to support businesses, cooperatives, and farmers involved in tea cultivation. Their goal is to <strong><u>preserve</u></strong><strong> </strong>and expand the Tan Cuong speciality tea area, which has brought prosperity to many families through substantial annual earnings from tea sales and manufacturing.</p>\n<p>Moreover, many families in Tan Cuong who own tea farms have established facilities for tourists. Visitors can enjoy tea, observe tea harvesting and processing, and even arrange for an overnight homestay at a local house, all while taking in the <strong><u>stunning</u></strong><strong> </strong>views of the tea-covered hills.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p><strong>1. </strong>What is the main idea of the passage?</p>\n<p><strong>A. </strong>The landscapes of Thai Nguyen.\t<strong>B. </strong>The speciality tea from Thai Nguyen.</p>\n<p><strong>C. </strong>How to process tea leaves.\t<strong>D. </strong>How to grow tea trees.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. </strong>What is the main idea of the passage?</p>\n<p><strong>A. </strong>The landscapes of Thai Nguyen.\t<strong>B. </strong><strong>The speciality tea from Thai Nguyen.</strong></p>\n<p><strong>C. </strong>How to process tea leaves.\t<strong>D. </strong>How to grow tea trees.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong>According to the passage, Tan Cuong Tea is unique because</p>\n<p><strong>A. </strong>it is free from harmful pesticide.\t<strong>B.</strong> it is harvested in a traditional way.</p>\n<p><strong>C. </strong>it is stored to maintain the quality. \t<strong>D.</strong> it is exported to many countries.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. </strong>According to the passage, Tan Cuong Tea is unique because</p>\n<p><strong>A. </strong><strong>it is free from harmful pesticide.</strong>\t<strong>B.</strong> it is harvested in a traditional way.</p>\n<p><strong>C. </strong>it is stored to maintain the quality. \t<strong>D.</strong> it is exported to many countries.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "3",
+          "html": "<p><strong>3. </strong>Why has there been support to businesses, cooperatives, and farmers involved in tea cultivation in Thai Nguyen in recent years?</p>\n<p><strong>A.</strong> To maintain the quality of tea leaves before they are sent to the factory.</p>\n<p><strong>B.</strong> To ensure tea trees are free from harmful pesticide or chemical residues.</p>\n<p><strong>C.</strong> To preserve and expand the unique Tan Cuong tea-producing region.</p>\n<p><strong>D.</strong> To help tea farm owners to establish facilities for foreign tourists.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. </strong>Why has there been support to businesses, cooperatives, and farmers involved in tea cultivation in Thai Nguyen in recent years?</p>\n<p><strong>A.</strong> To maintain the quality of tea leaves before they are sent to the factory.</p>\n<p><strong>B.</strong> To ensure tea trees are free from harmful pesticide or chemical residues.</p>\n<p><strong>C.</strong> <strong>To preserve and expand the unique Tan Cuong tea-producing region.</strong></p>\n<p><strong>D.</strong> To help tea farm owners to establish facilities for foreign tourists.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "4",
+          "html": "<p><strong>4. </strong>The word <strong>&quot;preserve&quot; </strong>in paragraph 3 is CLOSEST in meaning to</p>\n<p><strong>A. </strong>destroy\t<strong>B. </strong>damage\t<strong>C. </strong>protect\t<strong>D. </strong>provide</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. </strong>The word <strong>&quot;preserve&quot; </strong>in paragraph 3 is CLOSEST in meaning to</p>\n<p><strong>A. </strong>destroy\t<strong>B. </strong>damage\t<strong>C. </strong><strong>protect</strong>\t<strong>D. </strong>provide</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "5",
+          "html": "<p><strong>5. </strong>The word <strong>&quot;stunning&quot; </strong>in paragraph 4 is OPPOSITE in meaning to</p>\n<p><strong>A. </strong>unattractive\t<strong>B. </strong>unimportant\t<strong>C. </strong>beautiful\t<strong>D. </strong>wonderful</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5. </strong>The word <strong>&quot;stunning&quot; </strong>in paragraph 4 is OPPOSITE in meaning to</p>\n<p><strong>A. </strong><strong>unattractive</strong>\t<strong>B. </strong>unimportant\t<strong>C. </strong>beautiful\t<strong>D. </strong>wonderful</p>"
+        },
+        {
+          "id": "s9-q6",
+          "number": "6",
+          "html": "<p><strong>6. </strong>The word <strong>&quot;they&quot; </strong>in paragraph 2 refers to\t.</p>\n<p><strong>A. </strong>tea trees\t<strong>B. </strong>tea products\t<strong>C. </strong>tea sales\t<strong>D. </strong>tea buds</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>6. </strong>The word <strong>&quot;they&quot; </strong>in paragraph 2 refers to\t.</p>\n<p><strong>A. </strong>tea trees\t<strong>B. </strong>tea products\t<strong>C. </strong>tea sales\t<strong>D. </strong><strong>tea buds</strong></p>"
+        },
+        {
+          "id": "s9-q7",
+          "number": "7",
+          "html": "<p><strong>7. </strong>According to the passage, visitors to Tan Cuong Commune can do all of the following <strong>EXCEPT.</strong></p>\n<p><strong>A. </strong>staying overnight      \t<strong>B. </strong>enjoying tea         \t<strong>C.</strong> seeing tea hills\t<strong>D.</strong> harvesting tea</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>7. </strong>According to the passage, visitors to Tan Cuong Commune can do all of the following <strong>EXCEPT.</strong></p>\n<p><strong>A. </strong>staying overnight      \t<strong>B. </strong>enjoying tea         \t<strong>C.</strong> seeing tea hills\t<strong>D.</strong> <strong>harvesting tea</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "PART C. WRITING (3.0 points)",
+      "part": "WRITING",
+      "introHtml": "<p><strong>I. Finish each of the following sentences in such a way that it means the same as the sentence printed before, using the given words/ phrases in the bracket. </strong><strong>(2.0 points)</strong></p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> Finish your homework or you can&#x27;t go out with your friend. </p>\n<p>If you ………………………………………………………………………………….<strong> </strong></p>",
+          "kind": "text",
+          "answers": [
+            "finish your homework, you can go out with your friend.",
+            "If you finish your homework, you can go out with your friend.",
+            "don't finish your homework, you can't go out with your friend.",
+            "If you don't finish your homework, you can't go out with your friend."
+          ],
+          "referenceHtml": "<p>finish your homework, you can go out with your friend. / If you finish your homework, you can go out with your friend. / don&#x27;t finish your homework, you can&#x27;t go out with your friend. / If you don&#x27;t finish your homework, you can&#x27;t go out with your friend.</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> The bread is fresh. It tastes good.</p>\n<p>The fresher<strong> </strong>…………………………………………………………………………....</p>",
+          "kind": "text",
+          "answers": [
+            "the bread is, the better it tastes",
+            "The fresher the bread is, the better it tastes."
+          ],
+          "referenceHtml": "<p><strong>2.</strong> The bread is fresh. It tastes good.</p>\n<p>The fresher<strong> </strong><strong>the bread is, the better it tastes.</strong></p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> “What should I do to stop arguing with my sister?” Linh wondered. </p>\n<p>Linh wondered what ………………………………………………………………..…</p>",
+          "kind": "text",
+          "answers": [
+            "to do to stop arguing with her sister",
+            "Linh wondered what to do to stop arguing with her sister."
+          ],
+          "referenceHtml": "<p><strong>3.</strong> “What should I do to stop arguing with my sister?” Linh wondered. </p>\n<p>Linh wondered what <strong>to do to stop arguing with her sister</strong><strong>.</strong></p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong> They should reduce the amount of fatty food in their daily meals.  </p>\n<p>They should ………………………………………………………………………..….</p>",
+          "kind": "text",
+          "answers": [
+            "cut down on the amount of fatty food in their daily meals",
+            "They should cut down on the amount of fatty food in their daily meals."
+          ],
+          "referenceHtml": "<p><strong>4.</strong> They should reduce the amount of fatty food in their daily meals.  </p>\n<p>They should <strong>cut down on </strong><strong>the amount of fatty food in their daily meals.</strong>  </p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "5",
+          "html": "<p><strong>5.</strong> The city was modern. The living standard got high.</p>\n<p>The more modern ………………………………………………………………….….</p>",
+          "kind": "text",
+          "answers": [
+            "the city was, the higher the living standard got",
+            "The more modern the city was, the higher the living standard got."
+          ],
+          "referenceHtml": "<p><strong>5.</strong> The city was modern. The living standard got high.</p>\n<p>The more modern <strong>the city was, the higher the </strong><strong>living standard got.</strong></p>"
+        },
+        {
+          "id": "s10-q6",
+          "number": "6",
+          "html": "<p><strong>6.</strong> I don&#x27;t know where I can buy the best cake. <strong>(to buy)</strong><br>I don’t know …………………………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "where to buy the best cake",
+            "I don't know where to buy the best cake."
+          ],
+          "referenceHtml": "<p>where to buy the best cake / I don&#x27;t know where to buy the best cake.</p>"
+        },
+        {
+          "id": "s10-q7",
+          "number": "7",
+          "html": "<p><strong>7. </strong>Visit the local museum and you will learn about the history of this town. <strong>(if)</strong></p>\n<p>You will learn ………………………………………………………………………… </p>",
+          "kind": "text",
+          "answers": [
+            "about the history of this town if you visit the local museum",
+            "You will learn about the history of this town if you visit the local museum."
+          ],
+          "referenceHtml": "<p><strong>7. </strong>Visit the local museum and you will learn about the history of this town. <strong>(if)</strong></p>\n<p>You will learn <strong>about the history of this town if you visit the local museum.</strong></p>"
+        },
+        {
+          "id": "s10-q8",
+          "number": "8",
+          "html": "<p><strong>8</strong>. He often has good relationships with his classmates. (<strong>gets on with</strong>)<br>He often ………………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "gets on with his classmates",
+            "He often gets on with his classmates."
+          ],
+          "referenceHtml": "<p>gets on with his classmates / He often gets on with his classmates.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Write a paragraph (about 100 – 120 words) about the advantages of doing regular exercise. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p>You can use these suggestions:</p>\n<p>Improve health</p>\n<p>Be more active</p>\n<p>Make you feel happier</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>You can use these suggestions:</p>\n<p>Improve health</p>\n<p>Be more active</p>\n<p>Make you feel happier</p>\n<p><strong>Tổng điểm là 1,0 điểm</strong></p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body,<br>and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of<br>secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>T</strong><strong>he end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "7ff080a5aa8051dab3a9c2dbc8bf1bbde5bea4e61abab0938c540642694b71b0"
+}

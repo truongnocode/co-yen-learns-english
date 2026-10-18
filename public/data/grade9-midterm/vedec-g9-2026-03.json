@@ -1,0 +1,633 @@
+{
+  "id": "vedec-g9-2026-03",
+  "number": 3,
+  "title": "Đề 03",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A: LANGUAGE",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Choose the best answer A, B, C or D to complete the sentences:",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Question</strong> <strong>1</strong>. There is a big _____ site near my house, so it’s very noisy.</p>\n<p><strong>A. </strong>construction<strong>\tB. </strong>constructed<strong>\tC. </strong>constructing<strong>\tD. </strong>construct</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 1. There is a big _____ site near my house, so it’s very noisy.</p>\n<p><strong>A. </strong>construction<strong>\tB. </strong>constructed<strong>\tC. </strong>constructing<strong>\tD. </strong>construct</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Question</strong> <strong>2</strong>. The committee has _____ a survey of parking problems in residential areas.</p>\n<p><strong>A.</strong><strong>\t </strong>carried out<strong> </strong><strong>\tB. </strong>come around<strong>\tC. </strong>worked out<strong>\tD. </strong>cut down </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 2. The committee has _____ a survey of parking problems in residential areas.</p>\n<p><strong>A.</strong><strong>\t </strong>carried out<strong> </strong><strong>\tB. </strong>come around<strong>\tC. </strong>worked out<strong>\tD. </strong>cut down </p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Question</strong> <strong>3</strong>. Altdorf is a ___ city with a huge number of foreigners, traders, adventurers, etc.</p>\n<p><strong>A. </strong>quiet<strong>\tB. </strong>peaceful<strong>\t</strong><strong>C. </strong>bustling<strong>\tD. </strong>tranquil</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 3. Altdorf is a ___ city with a huge number of foreigners, traders, adventurers, etc.</p>\n<p><strong>A. </strong>quiet<strong>\tB. </strong>peaceful<strong>\t</strong><strong>C. </strong>bustling<strong>\tD. </strong>tranquil</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Question</strong> <strong>4</strong>. When working outside, the farmers should dress _____ for the weather.</p>\n<p><strong>A. </strong>acceptably<strong>\t</strong><strong>B. </strong>appropriately<strong>\tC. </strong>correctly<strong>\tD. </strong>smartly</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 4. When working outside, the farmers should dress _____ for the weather.</p>\n<p><strong>A. </strong>acceptably<strong>\t</strong><strong>B. </strong>appropriately<strong>\tC. </strong>correctly<strong>\tD. </strong>smartly</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Question</strong> <strong>5</strong>. Children normally feel a lot of _____ about their first day at school.</p>\n<p><strong>A. </strong>anxiety<strong>\tB. </strong>calm<strong>\tC. </strong>hurry<strong>\tD. </strong>suffering</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 5. Children normally feel a lot of _____ about their first day at school.</p>\n<p><strong>A. </strong>anxiety<strong>\tB. </strong>calm<strong>\tC. </strong>hurry<strong>\tD. </strong>suffering</p>"
+        },
+        {
+          "id": "s2-q6",
+          "number": "6",
+          "html": "<p><strong>Question</strong><strong> 6</strong>. The _____ system runs underground, so it doesn’t encounter road congestion.</p>\n<p><strong>A. </strong>bus<strong>\tB. </strong>coach<strong>\t</strong><strong>C. </strong>metro<strong>\tD. </strong>taxi</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 6. The _____ system runs underground, so it doesn’t encounter road congestion.</p>\n<p><strong>A. </strong>bus<strong>\tB. </strong>coach<strong>\t</strong><strong>C. </strong>metro<strong>\tD. </strong>taxi</p>"
+        },
+        {
+          "id": "s2-q7",
+          "number": "7",
+          "html": "<p><strong>Question</strong> <strong>7</strong>. _______ demonstrate exceptional skills and dedication in their craft.</p>\n<p><strong>A. </strong>Police officers<strong>\tB. </strong>Electricians<strong>\tC. </strong>Workers <strong>\t</strong><strong>D. </strong>Artisans</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 7. _______ demonstrate exceptional skills and dedication in their craft.</p>\n<p><strong>A. </strong>Police officers<strong>\tB. </strong>Electricians<strong>\tC. </strong>Workers <strong>\t</strong><strong>D. </strong>Artisans</p>"
+        },
+        {
+          "id": "s2-q8",
+          "number": "8",
+          "html": "<p><strong>Question</strong> <strong>8</strong>. My neighbour asked me _____ to use the dishwasher.</p>\n<p><strong>A. </strong>what<strong>\t</strong><strong>B. </strong>how<strong>\tC. </strong>why<strong>\tD. </strong>which</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 8. My neighbour asked me _____ to use the dishwasher.</p>\n<p><strong>A. </strong>what<strong>\t</strong><strong>B. </strong>how<strong>\tC. </strong>why<strong>\tD. </strong>which</p>"
+        },
+        {
+          "id": "s2-q9",
+          "number": "9",
+          "html": "<p><strong>Question</strong> <strong>9</strong>. _______ a city is, the more liveable it becomes.</p>\n<p><strong>A. </strong>Safer <strong>\tB. </strong>The safest<strong>\tC. </strong>The more safe<strong>\t</strong><strong>D. </strong>The safer </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 9. _______ a city is, the more liveable it becomes.</p>\n<p><strong>A. </strong>Safer <strong>\tB. </strong>The safest<strong>\tC. </strong>The more safe<strong>\t</strong><strong>D. </strong>The safer </p>"
+        },
+        {
+          "id": "s2-q10",
+          "number": "10",
+          "html": "<p><strong>Question</strong> <strong>10</strong>. <strong>Hoa:</strong> Could you help me move this table, please?      - <strong>N</strong>a<strong>m</strong><strong>:</strong><strong> </strong>_____.</p>\n<p><strong>A. </strong>I promise.\t\t<strong>B. </strong>No, not yet.</p>\n<p><strong>C. </strong>Sure, I’d be glad to help.\t<strong>D. </strong>You’re welcome!</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 10. <strong>Hoa</strong><strong>:</strong> Could you help me move this table, please?      - <strong>N</strong>a<strong>m</strong><strong>:</strong><strong> </strong>_____.</p>\n<p><strong>A. </strong>I promise.\t\t<strong>B. </strong>No, not yet.</p>\n<p><strong>C. </strong>Sure, I’d be glad to help.\t<strong>D. </strong>You’re welcome!</p>"
+        },
+        {
+          "id": "s2-q11",
+          "number": "11",
+          "html": "<p><strong>Question</strong> <strong>11</strong>.  Before I visit a place, I usually find ……………… about its history.</p>\n<p><strong>A</strong>. down</p>\n<p><strong>B</strong>. out</p>\n<p><strong>C</strong>. around</p>\n<p><strong>D</strong>. back</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 11.  Before I visit a place, I usually find ……………… about its history.</p>\n<p><strong>A</strong>. down</p>\n<p><strong>B</strong>. out</p>\n<p><strong>C</strong>. around</p>\n<p><strong>D</strong>. back</p>"
+        },
+        {
+          "id": "s2-q12",
+          "number": "12",
+          "html": "<p><strong>Question</strong> <strong>1</strong><strong>2</strong>. They don’t know …………… to preserve the natural beauty of their region.</p>\n<p><strong>A</strong>. what</p>\n<p><strong>B</strong>. who</p>\n<p><strong>C</strong>. where</p>\n<p><strong>D</strong>. how</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 12. They don’t know …………… to preserve the natural beauty of their region.</p>\n<p><strong>A</strong>. what</p>\n<p><strong>B</strong>. who</p>\n<p><strong>C</strong>. where</p>\n<p><strong>D</strong>. how</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PART B. READING",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s4",
+      "title": "Read the following announcement and mark the letter A, B, C, or D to indicate the correct word that best fits each of the numbered blanks. (13-16)",
+      "part": "READING",
+      "introHtml": "<p>When I was at school, I had to learn how to have a well-balanced life in order to reduce stress and anxiety. Here are some of the typical things I did. Firstly, I managed my time properly. (13) _______ I started to plan my schedule, made a weekly work list and gave priority to some of my work. This helped me concentrate my efforts on my most important tasks. In addition, I communicated with my family, friends, and teachers about my busy schedule and problems, so they would offer me additional (14) _______ support. I also took breaks appropriately because they helped me keep away from stress and anxiety and gave my brain a rest and improved my (15) _______. Finally, I looked after my physical health. I got at least eight hours of sleep a day. I played football with my classmates twice a week and went for a walk with my grandparents early every morning. Besides, I also tried to (16) ________ a healthy diet. I ate a lot of fruit and vegetables. I ate little fattening foods and avoided junk foods like chips, cookies, pizza, etc.</p>",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "13",
+          "html": "<p><strong>Question 13:</strong> A. however\tB. therefore\tC. but\tD. because</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 13:</strong> A. however\tB. therefore\tC. but\tD. because</p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "14",
+          "html": "<p><strong>Question 14:</strong> A. a\tB. the\tC. some\tD. O</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 14:</strong> A. a\tB. the\tC. some\tD. O</p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "15",
+          "html": "<p><strong>Question 15:</strong> A. happy\tB. happier\tC. happiness\tD. happily</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 15:</strong> A. happy\tB. happier\tC. happiness\tD. happily</p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "16",
+          "html": "<p><strong>Question </strong><strong>16</strong><strong>:</strong> A. take part\tB. healthy diet\tC. be careful\tD. make sure</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>16</strong><strong>:</strong> A. take part\tB. healthy diet\tC. be careful\tD. make sure</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "17",
+          "html": "<p><strong>Question 17. What does the sign say?</strong></p>\n<p><strong></strong><img src=\"/data/grade9-midterm/images/b907788c5afca2f4.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p>A. You are allowed to eat and drink here without any restrictions. </p>\n<p>B. Eating and drinking are not permitted in this area at all times. </p>\n<p>C. You can bring drinks but not food into this area. </p>\n<p>D. Food is permitted but drinks are not allowed in this area. </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 17. What does the sign say?</strong></p>\n<p>A. You are allowed to eat and drink here without any restrictions. </p>\n<p>B. Eating and drinking are not permitted in this area at all times. </p>\n<p>C. You can bring drinks but not food into this area. </p>\n<p>D. Food is permitted but drinks are not allowed in this area. </p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "18",
+          "html": "<p><strong>Question 18. What does the notice say?</strong></p>\n<p> <img src=\"/data/grade9-midterm/images/2bd316ddb970aa15.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p>A. You need to keep your bus ticket with you. Officers might check it. </p>\n<p>B. Transport officers will give you a bus ticket. </p>\n<p>C. You do not need a bus ticket for the journey. </p>\n<p>D. You can get your bus ticket from the transport officers. </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 18. What does the notice say?</strong></p>\n<p>A. You need to keep your bus ticket with you. Officers might check it. </p>\n<p>B. Transport officers will give you a bus ticket. </p>\n<p>C. You do not need a bus ticket for the journey. </p>\n<p>D. You can get your bus ticket from the transport officers. </p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>Traffic jams and <strong><u>pollution</u></strong> are two big problems in the city. Traffic jams occur when there are too many cars on the roads, making it difficult for people to move around quickly. To solve this, cities can encourage people to use public transportation, like buses or trains, instead of driving their own cars. This would reduce the number of vehicles on the roads, easing traffic <strong><u>congestion</u></strong>. Pollution is another issue in cities because there is too much dirty air from vehicles and factories. One solution for this problem is to plant more trees and create more green spaces in the city. Trees provide oxygen and clean the air. By increasing the number of trees, cities can improve air quality and make the environment healthier for everyone. In conclusion, we all need to work together to solve the problems of traffic and pollution. By using public transportation and starting green projects like planting trees, we can make our city environment more sustainable and enjoyable.</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "19",
+          "html": "<p><strong>Question 19. </strong>Which title best suits the passage?</p>\n<p>A. The Benefits of Public Transportation</p>\n<p>B. Solutions for City Traffic and Pollution</p>\n<p>C. The Importance of Green Spaces</p>\n<p>D. The Role of Factories in Pollution</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 19. </strong>Which title best suits the passage?</p>\n<p>A. The Benefits of Public Transportation</p>\n<p>B. Solutions for City Traffic and Pollution</p>\n<p>C. The Importance of Green Spaces</p>\n<p>D. The Role of Factories in Pollution</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "20",
+          "html": "<p><strong>Question 20</strong>. What is one method suggested to reduce traffic congestion?</p>\n<p>A. Expanding road networks\t\t\t\tB. Increasing the number of vehicles</p>\n<p>C. Encouraging public transportation use\t\tD. Building more factories</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 20</strong>. What is one method suggested to reduce traffic congestion?</p>\n<p>A. Expanding road networks\t\t\t\tB. Increasing the number of vehicles</p>\n<p>C. Encouraging public transportation use\t\tD. Building more factories</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "21",
+          "html": "<p><strong>Question 21</strong>. What is the OPPOSITE of &quot;<strong><u>congestion</u></strong>&quot; as used in the passage? </p>\n<p>A. Density\t\tB. Clarity\t\tC. Dispersal\t\tD. Compression</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 21</strong>. What is the OPPOSITE of &quot;<strong><u>congestion</u></strong>&quot; as used in the passage?</p>\n<p>A. Density\t\tB. Clarity\t\tC. Dispersal\t\tD. Compression</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "22",
+          "html": "<p><strong>Question 22</strong>. What is a synonym for &quot;<strong><u>pollution&quot;</u></strong> in the passage? </p>\n<p>A. Cleanliness\t\tB. Contamination\t\tC. Purity\t\tD. Freshness</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 22</strong>. What is a synonym for &quot;<strong><u>pollution&quot;</u></strong> in the passage?</p>\n<p>A. Cleanliness\t\tB. Contamination\t\tC. Purity\t\tD. Freshness</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "23",
+          "html": "<p><strong>Question 23</strong>. What does the word &quot;<strong>this</strong>&quot; refer to in the context of the passage?</p>\n<p>A. Traffic congestion\tB. Air quality\t\tC. Planting trees\tD. Using public transportation</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 23</strong>. What does the word &quot;<strong>this</strong>&quot; refer to in the context of the passage?</p>\n<p>A. Traffic congestion\tB. Air quality\t\tC. Planting trees\tD. Using public transportation</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Read the following passage and circle the letter A, B, C, or D to indicate the correct answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>       Ho Chi Minh City, like many other major cities around the world, faces significant air pollution challenges. To address this pressing issue, the local government launched the &quot;Clean Air Campaign&quot; in 2023, aiming to reduce air pollution levels and improve the overall air quality in the city.</p>\n<p>      The campaign involves several key initiatives. First, the city has introduced stricter emissions standards for vehicles. This means that older, more polluting cars and motorcycles are being <strong><u>phased out</u></strong>, and residents are encouraged to switch to electric or hybrid vehicles. Additionally, there is an increased investment in public transportation, with the expansion of bus routes and the construction of new metro lines to reduce the number of private vehicles on the road.</p>\n<p>      Another major component of the Clean Air Campaign is the promotion of green spaces throughout the city. Parks and gardens are being developed in urban areas to help absorb pollutants and provide residents with cleaner air. Tree-planting events are regularly organized, involving community members in the effort to green <strong><u>their</u></strong> city.</p>\n<p>Public awareness and education are also critical aspects of the campaign. The city government has partnered with local schools and organizations to educate citizens about the importance of air quality and ways to reduce pollution in their daily lives. Workshops, seminars, and media campaigns aim to inform and engage the public on the benefits of a cleaner environment.</p>\n<p>      Early results from the Clean Air Campaign are promising. There has been a noticeable decrease in air pollution levels, and many residents report an improvement in their health and overall quality of life. However, city officials emphasize that continued effort and public participation are essential to maintaining and furthering these gains.</p>\n<p>(Adapted from: https://e.vnexpress.net)</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "24",
+          "html": "<p><strong>Question 24:</strong> What is the main purpose of the Clean Air Campaign? </p>\n<p><strong>A.</strong> To improve the city&#x27;s infrastructure\t<strong>B.</strong> To reduce air pollution levels<br><strong>C.</strong> To increase public transportation routes\t<strong>D.</strong> To promote tourism in the city</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 24:</strong> What is the main purpose of the Clean Air Campaign? </p>\n<p><strong>A.</strong> To improve the city&#x27;s infrastructure\t<strong>B.</strong> To reduce air pollution levels<br><strong>C.</strong> To increase public transportation routes\t<strong>D.</strong> To promote tourism in the city</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "25",
+          "html": "<p><strong>Question 25:</strong> The word &quot;<strong>phased out</strong>&quot; in paragraph 2 is closest in meaning to ______. </p>\n<p><strong>A.</strong> eliminated\t<strong>B.</strong> introduced\t<strong>C.</strong> repaired\t<strong>D.</strong> sold</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 25:</strong> The word &quot;<strong>phased out</strong>&quot; in paragraph 2 is closest in meaning to ______. </p>\n<p><strong>A.</strong> eliminated\t<strong>B.</strong> introduced\t<strong>C.</strong> repaired\t<strong>D.</strong> sold</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "26",
+          "html": "<p><strong>Question 26:</strong> The word &quot;<strong>their</strong>&quot; in paragraph 3 refers to ______. </p>\n<p><strong>A.</strong> pollutants\t\t<strong>B.</strong> tree-planting events\t</p>\n<p><strong>C.</strong> community members\t\t<strong>D.</strong> urban areas</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 26:</strong> The word &quot;<strong>their</strong>&quot; in paragraph 3 refers to ______. </p>\n<p><strong>A.</strong> pollutants\t\t<strong>B.</strong> tree-planting events\t</p>\n<p><strong>C.</strong> community members\t\t<strong>D.</strong> urban areas</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "27",
+          "html": "<p><strong>Question 27:</strong> According to the passage, what is one way the campaign promotes green spaces? </p>\n<p><strong>A.</strong> Constructing new roads\t\t<strong>B. </strong>Organizing tree-planting events</p>\n<p><strong>C.</strong> Building new factories\t\t<strong>D.</strong> Reducing public transportation</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 27:</strong> According to the passage, what is one way the campaign promotes green spaces? </p>\n<p><strong>A.</strong> Constructing new roads\t\t<strong>B. </strong>Organizing tree-planting events</p>\n<p><strong>C.</strong> Building new factories\t\t<strong>D.</strong> Reducing public transportation</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "28",
+          "html": "<p><strong>Question 28:</strong> Which of the following is <strong><u>NOT</u></strong> a component of the Clean Air Campaign? </p>\n<p><strong>A.</strong> Stricter emissions standards for vehicles\t<strong>B.</strong> Increased investment in public transportation<br><strong>C.</strong> Construction of new industrial zones\t<strong>D.</strong> Public awareness and education</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 28:</strong> Which of the following is <strong><u>NOT</u></strong> a component of the Clean Air Campaign? </p>\n<p><strong>A.</strong> Stricter emissions standards for vehicles\t<strong>B.</strong> Increased investment in public transportation<br><strong>C.</strong> Construction of new industrial zones\t<strong>D.</strong> Public awareness and education</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "PART C. WRITING (3.0 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "29",
+          "html": "<p><strong>Question 29: Rearrange the sentences to make a meaningful letter.</strong></p>\n<p>A. Dear Residents,</p>\n<p>B.  In addition, there will be various activities, including a bake sale and a raffle.</p>\n<p>C.  Finally, we hope you can join us and support this great cause!</p>\n<p>D. Firstly, we are organizing a local charity event to raise funds for the community center.</p>\n<p>E. Moreover, the event will take place on Sunday, October 10th, at the town square from 2 PM to 5 PM. </p>\n<p>A. A-D-E-B-C\tB. A-D-B-E-C\tC. A-D-B-C-E\tD. A-D-E-C-B</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 29: Rearrange the sentences to make a meaningful letter.</strong></p>\n<p>A. Dear Residents,</p>\n<p>B.  In addition, there will be various activities, including a bake sale and a raffle.</p>\n<p>C.  Finally, we hope you can join us and support this great cause!</p>\n<p>D. Firstly, we are organizing a local charity event to raise funds for the community center.</p>\n<p>E. Moreover, the event will take place on Sunday, October 10th, at the town square from 2 PM to 5 PM. </p>\n<p>A. A-D-E-B-C\tB. A-D-B-E-C\tC. A-D-B-C-E\tD. A-D-E-C-B</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "30",
+          "html": "<p><strong>Question 30: Rearrange the sentences to make a meaningful paragraph.</strong></p>\n<p>A. Firstly, the city offers many chances for social and cultural activities. </p>\n<p>B. Also, many people enjoy the variety of lifestyle and services available.</p>\n<p>C. In conclusion, city life provides a lively and exciting environment for its residents.</p>\n<p>D. For example, from theaters to art galleries, there is always something to explore.</p>\n<p>E. However, despite the fun, living in the city can be challenging because of the noise and crowded streets.</p>\n<p>A. A-C-D-B-E\tB. A-D-B-E-C\tC. A-B-C-D-E\tD. B-A-D-C-E</p>\n<p><strong>Rearrange the order of the given words to make complete sentences.</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 30: Rearrange the sentences to make a meaningful paragraph.</strong></p>\n<p>A. Firstly, the city offers many chances for social and cultural activities. </p>\n<p>B. Also, many people enjoy the variety of lifestyle and services available.</p>\n<p>C. In conclusion, city life provides a lively and exciting environment for its residents.</p>\n<p>D. For example, from theaters to art galleries, there is always something to explore.</p>\n<p>E. However, despite the fun, living in the city can be challenging because of the noise and crowded streets.</p>\n<p>A. A-C-D-B-E\tB. A-D-B-E-C\tC. A-B-C-D-E\tD. B-A-D-C-E</p>\n<p><strong>Rearrange the order of the given words to make complete sentences.</strong></p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "31",
+          "html": "<p><strong>Question 31</strong>. community / helping / volunteers / to / people / Many / by / the / contribute</p>",
+          "kind": "text",
+          "answers": [
+            "Many volunteers contribute to the community by helping people",
+            "Many volunteers contribute to the community by helping people."
+          ],
+          "referenceHtml": "<p><strong>Question 31</strong>. community / helping / volunteers / to / people / Many / by / the / contribute</p>\n<p>…<strong> </strong>Many volunteers contribute to the community by helping people.</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "32",
+          "html": "<p><strong>Question 32</strong>. pick / at/ will / I / you / at / up / the / station / 5 PM</p>",
+          "kind": "text",
+          "answers": [
+            "I will pick you up at the station at 5 pm"
+          ],
+          "referenceHtml": "<p><strong>Question 32</strong>. pick / at/ will / I / you / at / up / the / station / 5 PM</p>\n<p>…… I will pick you up at the station at 5 pm<strong>.</strong><strong> </strong></p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "33",
+          "html": "<p><strong>Question 33</strong>. shouldn’t/ visit/ the/ If/ park, / a/ national/ you/ feed/ you/ wildlife. /</p>",
+          "kind": "text",
+          "answers": [
+            "If you visit a national park, you shouldn’t feed the wildlife",
+            "If you visit a national park, you shouldn’t feed the wildlife."
+          ],
+          "referenceHtml": "<p><strong>Question 33</strong>. shouldn’t/ visit/ the/ If/ park,/ a/ national/ you/ feed/ you/ wildlife./</p>\n<p>           If you visit a national park, you shouldn’t feed the wildlife.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Complete the following sentences with NO MORE THAN FIVE WORDS.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "34",
+          "html": "<p><strong>Question</strong> <strong>34</strong>. Turn right and you’ll see the park on your left.</p>\n<p>=&gt; If you ……………………, you’ll see the park on your left</p>",
+          "kind": "text",
+          "answers": [
+            "turn right",
+            "If you turn right, you’ll see the park on your left"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 34. Turn right and you’ll see the park on your left.</p>\n<p>=&gt; If you turn right, you’ll see the park on your left</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "35",
+          "html": "<p><strong>Question</strong> <strong>35</strong>. Phong can’t decide who he should consult about his problem.</p>\n<p>=&gt; Phong can’t decide ……………………about his problem.</p>",
+          "kind": "text",
+          "answers": [
+            "who to consult",
+            "Phong can’t decide who to consult about his problem."
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 35. Phong can’t decide who he should consult about his problem.</p>\n<p>=&gt; Phong can’t decide who to consult about his problem.</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "36",
+          "html": "<p><strong>Question</strong> <strong>36</strong>. I decided to reduce fast food and start cooking my own meals.</p>\n<p>=&gt; I decided to cut down ……………………cooking my own meals.</p>",
+          "kind": "text",
+          "answers": [
+            "on fast food and start",
+            "I decided to cut down on fast food and start cooking my own meals."
+          ],
+          "referenceHtml": "<p><strong>Question</strong> 36. I decided to reduce fast food and start cooking my own meals.</p>\n<p>=&gt; I decided to cut down on fast food and start cooking my own meals.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "II. Write a passage (100 – 120 words) about your favourite community helper. These suggested ideas may help you (1,0 point):",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p>His/ her job.</p>\n<p>His/ her appearance and personality.</p>\n<p>The things he/ she does for the community.</p>\n<p>Your feelings about him/her</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body,<br>and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of<br>secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>---The end---</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "d85c8a31ff2ddd3567a3b28b7e15b277e2f446c029f30c70798264f6d54a518b"
+}

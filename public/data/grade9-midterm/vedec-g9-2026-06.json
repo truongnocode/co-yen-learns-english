@@ -1,0 +1,682 @@
+{
+  "id": "vedec-g9-2026-06",
+  "number": 6,
+  "title": "Đề 06",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2,5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen and write T (True) or F (False). You will listen twice. (1,25 points)",
+      "part": "LISTENING",
+      "introHtml": "<p><strong>Statements</strong></p>\n<p><strong>True/ False</strong></p>",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> Tom is not nervous about exams.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. Tom is not nervous about exams.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> Grace thinks Tom always gets good marks in class.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>2. Grace thinks Tom always gets good marks in class.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> Tom already has a revision timetable.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>3. Tom already has a revision timetable.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong> Grace never feels nervous about exams.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. Grace never feels nervous about exams.</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>5.</strong> Tom agrees to go out with Grace and the others at the end of the conversation.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>5. Tom agrees to go out with Grace and the others at the end of the conversation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen and choose the best answer A, B, or C for each question. (1,25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p><strong>6</strong><strong>. What does Ray hate the most?</strong></p>\n<p>A. The taxis aren’t air-conditioned.\t</p>\n<p>B. The drivers drive too fast.\t</p>\n<p>C. The taxis are pricey.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p><strong>6</strong><strong>. What does Ray hate the most?</strong></p>\n<p>A. The taxis aren’t air-conditioned.\t</p>\n<p>B. The drivers drive too fast.\t</p>\n<p><strong>C. The taxis are pricey.</strong></p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p><strong>7</strong><strong>. The thing Maureen likes the most is __________ .</strong></p>\n<p>A. the prices\t\t\t\t</p>\n<p>B. that the taxis are clean\t\t</p>\n<p>C. that the drivers drive slowly</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p><strong>7</strong><strong>. The thing Maureen likes the most is __________ .</strong></p>\n<p>A. the prices\t\t\t\t</p>\n<p><strong>B. that the taxis are clean</strong><strong>\t</strong><strong>\t</strong></p>\n<p>C. that the drivers drive slowly</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p><strong>8.</strong><strong> Why does Ahmed think the taxi service in New York is not good?</strong></p>\n<p>A. The taxis are high.\t\t\t</p>\n<p>B. The drivers don’t understand English very well.</p>\n<p>C. The taxis are not safe.\t</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p><strong>8.</strong><strong> Why does Ahmed think the taxi service in New York is not good?</strong></p>\n<p>A. The taxis are high.\t\t\t</p>\n<p><strong>B. The drivers don’t understand English very well.</strong></p>\n<p>C. The taxis are not safe.\t</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p><strong>9</strong><strong>. The thing Larry doesn’t like the most is that _________.</strong></p>\n<p>A. the drivers are careless\t\t\t</p>\n<p>B. the taxis are old\t</p>\n<p>C. the drivers are not friendly</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p><strong>9</strong><strong>. The thing Larry doesn’t like the most is that _________.</strong></p>\n<p><strong>A. the drivers are careless</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong></p>\n<p>B. the taxis are old\t</p>\n<p>C. the drivers are not friendly</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p><strong>10</strong><strong>. Which sentence is NOT true about taxis in San Francisco?</strong></p>\n<p>A. The taxis are comfortable and clean.\t</p>\n<p>B. The drivers are friendly and helpful.</p>\n<p>C. Visitors may get a lot of bad taxi experiences.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p><strong>10</strong><strong>. Which sentence is NOT true about taxis in San Francisco?</strong></p>\n<p>A. The taxis are comfortable and clean.\t</p>\n<p>B. The drivers are friendly and helpful.</p>\n<p><strong>C. Visitors may get a lot of bad taxi experiences.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2,75 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0,5 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "11. Circle the letter A, B, C or D to indicate the word whose underlined part is pronounced differently from the others.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "11",
+          "html": "<p>A. distr<strong><u>a</u></strong>ction\t\t\tB. speci<strong><u>a</u></strong>lity\t\t\tC. g<strong><u>a</u></strong>rbage\t\t\tD. <strong><u>a</u></strong>nxiety<strong> </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. distr<strong><u>a</u></strong>ction\t\t\tB. speci<strong><u>a</u></strong>lity\t\t\tC. g<strong><u>a</u></strong>rbage\t\t\tD. <strong><u>a</u></strong>nxiety<strong> </strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "12. Circle the letter A, B, C or D to indicate the word that differs from the rest in the position of the main stress.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "12",
+          "html": "<p>A. effectively\t\t\tB. responsibility\t\tC. ingredients\t\tD. encouragement</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. effectively\t\t\t<strong>B. responsibility</strong>\t\tC. ingredients\t\tD. encouragement</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (2,25 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "13",
+          "html": "<p><strong>13. </strong>Living in a _________ like New York can be exciting, but sometimes you will miss the peace and quiet of nature.</p>\n<p>A. traffic jam\t\t<strong>\t</strong>B. concrete jungle\t\tC. public amenities\t\tD. construction site</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>13. </strong>Living in a _________ like New York can be exciting, but sometimes you will miss the peace and quiet of nature.</p>\n<p>A. traffic jam\t\t<strong>\t</strong><strong>B. concrete jungle</strong><strong>\t</strong>\tC. public amenities\t\tD. construction site</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "14",
+          "html": "<p><strong>14. </strong>To maintain _______ health, you should get enough sleep, eat a healthy diet, and exercise regularly.</p>\n<p>A. physically\t\t\tB. physics\t\t\tC. physician\t\t\tD. physical</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>14. </strong>To maintain _______ health, you should get enough sleep, eat a healthy diet, and exercise regularly.</p>\n<p>A. physically\t\t\tB. physics\t\t\tC. physician\t\t\t<strong>D. physical</strong></p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "15",
+          "html": "<p><strong>15</strong>. ________ the school is, _______ convenient it is for students.</p>\n<p>A. The nearest / the more \t\t\t\t\tB. The nearer / the most</p>\n<p>C. The nearer / the more \t\t\t\t\tD. Nearer / the more</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>15</strong>. ________ the school is, _______ convenient it is for students.</p>\n<p>A. The nearest / the more \t\t\t\t\tB. The nearer / the most</p>\n<p><strong>C. The nearer / the more</strong><strong> </strong><strong>\t</strong>\t\t\t\tD. Nearer / the more</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "16",
+          "html": "<p><strong>16. </strong>If you ______ hard, you _______ the first prize in the English-speaking contest.</p>\n<p>A. train / might win<strong>\t</strong><strong>\t</strong>\t\t\t\tB. train / mustn’t win\t</p>\n<p>C. don’t train / can win\t\t\t\t\tD. don’t train / should win</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>16. </strong>If you ______ hard, you _______ the first prize in the English-speaking contest.</p>\n<p><strong>A. train / might win</strong><strong>\t</strong><strong>\t</strong>\t\t\tB. train / mustn’t win\t</p>\n<p>C. don’t train / can win\t\t\t\t\tD. don’t train / should win</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "17",
+          "html": "<p><strong>17. </strong>I can’t decide _______ to start my fitness plan – this week or next week.</p>\n<p>A. where\t\t\tB. when\t\t\tC. who\t\t\tD. how</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>17. </strong>I can’t decide _______ to start my fitness plan – this week or next week.</p>\n<p>A. where\t\t\t<strong>B. when</strong>\t\t\tC. who\t\t\tD. how</p>"
+        },
+        {
+          "id": "s8-q6",
+          "number": "18",
+          "html": "<p><strong>18. </strong>Nam: &#x27;Can I help you with your project?&#x27; – Nick: &#x27;That would be great, _____.&#x27;</p>\n<p>A. I beg your pardon\tB. you’re too helpful\tC. it’s not necessary\t\tD. I appreciate it!</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>18. </strong>Nam: &#x27;Can I help you with your project?&#x27; – Nick: &#x27;That would be great, _____.&#x27;</p>\n<p>A. I beg your pardon\tB. you’re too helpful\tC. it’s not necessary\t\t<strong>D. I appreciate it!</strong></p>"
+        },
+        {
+          "id": "s8-q7",
+          "number": "19",
+          "html": "<p><strong>19</strong>. Choose the underlined word that needs correction in the following sentence:</p>\n<p>I think I might <strong><u>come</u></strong><strong><u> </u></strong><strong><u>up</u></strong><strong> </strong>with a cold after <strong><u>being</u></strong><strong><u> </u></strong>out <strong><u>in</u></strong><strong> </strong>the rain yesterday.</p>\n<p>A. come\t\t\tB. up\t\t\t\tC. being\t\t\tD. in</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>19</strong>. Choose the underlined word that needs correction in the following sentence:</p>\n<p>I think I might <strong><u>come</u></strong><strong><u> </u></strong><strong><u>up</u></strong><strong> </strong>with a cold after <strong><u>being</u></strong><strong><u> </u></strong>out <strong><u>in</u></strong><strong> </strong>the rain yesterday.</p>\n<p>A. come\t\t\t<strong>B.</strong><strong> </strong><strong>up</strong>\t\t\t\tC. being\t\tD. in</p>"
+        },
+        {
+          "id": "s8-q8",
+          "number": "20",
+          "html": "<p><strong>20</strong>. Choose the word or phrase that <strong>CLOSEST</strong> in meaning to the underlined part in the sentence.</p>\n<p>The new hotel looks very <strong><u>grand</u></strong>. It has a beautiful glass design and a view of the whole city at night.</p>\n<p>A. small\t\t\tB. impressive \t\tC. simple\t\tD. old</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>20</strong>. Choose the word or phrase that <strong>CLOSEST</strong> in meaning to the underlined part in the sentence.</p>\n<p>The new hotel looks very <strong><u>grand</u></strong>. It has a beautiful glass design and a view of the whole city at night.</p>\n<p>A. small\t\t\t<strong>B. impressive</strong><strong> </strong><strong>\t</strong>\tC. simple\t\tD. old</p>"
+        },
+        {
+          "id": "s8-q9",
+          "number": "21",
+          "html": "<p><strong>21</strong>. Choose the word or phrase that <strong>OPPOSITE</strong> in meaning to the underlined part in the sentence.</p>\n<p>After failing the mid-term test, Lan tried hard to <strong><u>get over</u></strong> her disappointment by focusing on improving her study habits and preparing better for the next exam.</p>\n<p>A. overcome\t\t\tB. forget\t\t\tC. calm down\tD. suffer from</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>21</strong>. Choose the word or phrase that <strong>OPPOSITE</strong> in meaning to the underlined part in the sentence.</p>\n<p>After failing the mid-term test, Lan tried hard to <strong><u>get over</u></strong> her disappointment by focusing on improving her study habits and preparing better for the next exam.</p>\n<p>A. overcome\t\t\tB. forget\t\t\tC. calm down\t<strong>D. suffer from</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "C. READING (2,5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+      "part": "READING",
+      "introHtml": "<p><strong>(1</strong><strong>,</strong><strong>25 </strong><strong>p</strong><strong>oin</strong><strong>ts</strong><strong>)</strong></p>\n<p><strong></strong><img src=\"/data/grade9-midterm/images/331c3bb00c463ef8.jpeg\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\">When you think about the conical hat, the first thing you think of <strong>(22) </strong>______ the region of Hue. Conical hat making has been a traditional craft there for hundreds of years, and there are many craft <strong>(23) </strong>________ like Da Le, Phu Cam, and Doc So. However, Tay Ho is the most famous because it is the birthplace of the conical hat in Hue. It is a village on the bank of the Nhu Y River, 12 km from Hue City.</p>\n<p>A conical hat may look simple, <strong>(24) </strong>________, artisans have to follow 15 stages, from going to the forest to collect leaves to ironing the leaves, making the frames, etc. Hue’s conical hats always have two layers of leaves. Craftsmen must be skillful to make the two layers very thin. What is special is that they then add poems and paintings of Hue between the two layers, creating the famous bai tho or poetic conical hats.</p>\n<p>Conical hat making in the village has been <strong>(25) </strong>________ from generation to generation because everybody, young or old, can take part in the process. It is a well-known handicraft, not only in Viet Nam, but all <strong>(26) </strong>_______ the world.</p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "22",
+          "html": "<p><strong>22</strong>. A. was\t\t\tB. is\t\t\tC. has\t\t\t\tD. be</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>22</strong>. A. was\t\t\t<strong>B. is</strong>\t\t\tC. has\t\t\t\tD. be</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "23",
+          "html": "<p><strong>23</strong>. A. traditions\t\tB. countries\t\tC. villages\t\t\tD. hats</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>23</strong>. A. traditions\t\tB. countries\t\t<strong>C. villages</strong>\t\t\tD. hats</p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "24",
+          "html": "<p><strong>24</strong>. A. however\t\tB. so\t\t\tC. therefore\t\t\tD. but</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>24</strong>. <strong>A. however</strong>\t\tB. so\t\t\tC. therefore\t\t\tD. but</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "25",
+          "html": "<p><strong>25</strong>. A. run out of\t\tB. passed down\tC. came back\t\t\tD. got around</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>25</strong>. A. run out of\t\t<strong>B. passed down</strong>\tC. came back\t\t\tD. got around</p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "26",
+          "html": "<p><strong>26</strong>. A. around\t\t\tB. of\t\t\tC. for\t\t\t\tD. at</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>26</strong>. <strong>A. around</strong>\t\tB. of\t\t\tC. for\t\t\t\tD. at</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Read the following passage and answer the questions. (1,25 points)",
+      "part": "READING",
+      "introHtml": "<p><strong>Healthy Living for Teens</strong></p>\n<p>Being a teenager can be both exciting and challenging. Your body is changing, and so are your lifestyle choices. Firstly, maintaining a balanced diet is crucial. As a teenager, your body needs a variety of nutrients to support growth and development. Avoid excessive consumption of sugary snacks and drinks, as they can lead to weight gain and dental problems. Secondly, regular physical activity is essential for staying healthy. Aim for at least 60 minutes of moderate to vigorous exercise every day. This could include activities like jogging, swimming, dancing, or playing sports with friends. Physical activity not only keeps your body fit but also improves your mood and reduces stress. Additionally, getting enough sleep is often underestimated but vital for your well-being. Lastly, managing stress is key to maintaining overall health. Find healthy ways to cope, such as practicing mindfulness, talking to a trusted adult, or engaging in hobbies you enjoy. By prioritizing a balanced diet, regular exercise, sufficient sleep, and stress management, you can pave the way for a healthy and fulfilling teenage life.</p>",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "27",
+          "html": "<p><strong>27. What is one reason why sugary snacks and drinks should be limited?</strong></p>\n<p>A. They make you sleepy.\t\t\t\t\tB. They provide necessary nutrients.</p>\n<p>C. They can cause weight gain and dental problems.\tD. They are good for your bones.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>27. What is one reason why sugary snacks and drinks should be limited?</strong></p>\n<p>A. They make you sleepy.\t\t\t\t\t\tB. They provide necessary nutrients.</p>\n<p><strong>C. They can cause weight gain and dental problems.</strong>\tD. They are good for your bones.</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "28",
+          "html": "<p><strong>28. How long should teenagers exercise every day to have good health?</strong></p>\n<p>A. 30 minutes\t\tB. 45 minutes\t\tC. 60 minutes\tD. 90 minutes</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>28. How long should teenagers exercise every day to have good health?</strong></p>\n<p>A. 30 minutes\t\tB. 45 minutes\t\t<strong>C. 60 minutes</strong>\tD. 90 minutes</p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "29",
+          "html": "<p><strong>29. What is one benefit of getting enough sleep as a teenager?</strong></p>\n<p>A. Feeling hungry during the day.\t\t\t\tB. Improving mood and reducing stress.</p>\n<p>C. Gaining weight.\t\t\t\t\t\tD. Skipping breakfast.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>29. What is one benefit of getting enough sleep as a teenager?</strong></p>\n<p>A. Feeling hungry during the day.\t\t\t\t<strong>B. Improving mood and reducing stress.</strong></p>\n<p>C. Gaining weight.\t\t\t\t\t\tD. Skipping breakfast.</p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "30",
+          "html": "<p><strong>30. What is suggested to help manage stress effectively?</strong></p>\n<p>A. Drinking caffeine.\t\t\t\t\tB. Avoiding friends.</p>\n<p>C. Engaging in hobbies and practicing mindfulness.\tD. Ignoring the problem.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>30. What is suggested to help manage stress effectively?</strong></p>\n<p>A. Drinking caffeine.\t\t\t\t\tB. Avoiding friends.</p>\n<p><strong>C. Engaging in hobbies and practicing mindfulness.</strong>\tD. Ignoring the problem.</p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "31",
+          "html": "<p><strong>31. According to the passage, what are the key components of healthy living for teens?</strong></p>\n<p>A. Eating junk food, staying up late, and avoiding exercise.</p>\n<p>B. Balancing diet, regular exercise, sufficient sleep, and stress management.</p>\n<p>C. Only focusing on academics and ignoring social activities.</p>\n<p>D. Consuming energy drinks and playing video games.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>31. According to the passage, what are the key components of healthy living for teens?</strong></p>\n<p>A. Eating junk food, staying up late, and avoiding exercise.</p>\n<p><strong>B. Balancing diet, regular exercise, sufficient sleep, and stress management.</strong></p>\n<p>C. Only focusing on academics and ignoring social activities.</p>\n<p>D. Consuming energy drinks and playing video games.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "D. WRITING (2,25 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s13",
+      "title": "I. Reorder the words to make correct sentences. (0,5 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "32",
+          "html": "<p><strong>32. </strong>The / where / young craftsmen / decide / their / new / couldn’t / the exhibition stall. / to display / products / at /</p>\n<p>→ _____________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "The young craftsmen couldn’t decide where to display their new products at the exhibition stall",
+            "The young craftsmen couldn’t decide where to display their new products at the exhibition stall."
+          ],
+          "referenceHtml": "<p><strong>32. </strong>The / where / young craftsmen / decide / their / new / couldn’t / the exhibition stall. / to display / products / at /</p>\n<p><strong>→ The young craftsmen couldn’t decide where to </strong><strong>display</strong><strong> their new products </strong><strong>at</strong><strong> the exhibition </strong><strong>stall.</strong></p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "33",
+          "html": "<p><strong>33.</strong><strong> </strong>with / is / often packed / Ho Chi Minh City / during / rush hours. / motorbikes //</p>\n<p>→ _______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Ho Chi Minh City is often packed with motorbikes during rush hours",
+            "Ho Chi Minh City is often packed with motorbikes during rush hours."
+          ],
+          "referenceHtml": "<p><strong>33.</strong><strong> </strong>with / is / often packed / Ho Chi Minh City / during / rush hours. / motorbikes //</p>\n<p><strong>→ Ho Chi Minh City is often packed with motorbikes during rush hours.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "II. Complete the second sentence so that it means the same as the sentence before. (0,75 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "34",
+          "html": "<p><strong>34.</strong><strong> </strong>I have to take care of my little brother until my parents come home from work.<strong> </strong><strong>(Rewrite </strong><strong>using “</strong><strong>look after</strong><strong>”)</strong></p>\n<p>→ _______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "I have to look after my little brother until my parents come home from work",
+            "I have to look after my little brother until my parents come home from work."
+          ],
+          "referenceHtml": "<p><strong>34.</strong><strong> </strong>I have to take care of my little brother until my parents come home from work.</p>\n<p>→ <strong>I have to </strong><strong>look after</strong><strong> my little brother until my parents come home from work.</strong></p>"
+        },
+        {
+          "id": "s14-q2",
+          "number": "35",
+          "html": "<p><strong>35.</strong><strong> </strong>The city gets more crowded, people feel more stressed. (<strong>Rewrite using Double Comparative</strong>)</p>\n<p>→ _______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "The more crowded the city gets, the more stressed people feel",
+            "The more crowded the city gets, the more stressed people feel."
+          ],
+          "referenceHtml": "<p><strong>35.</strong><strong> </strong>The city gets more crowded, people feel more stressed.</p>\n<p><strong>→ The more crowded the city gets, the more stressed people feel.</strong></p>"
+        },
+        {
+          "id": "s14-q3",
+          "number": "36",
+          "html": "<p><strong>36.</strong><strong> </strong>If Mai doesn’t cut down on fast food, she will continue to gain weight.<strong> </strong><strong>(Rewrite </strong><strong>using “</strong><strong>Unless</strong><strong>”)</strong></p>\n<p>→ _______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Unless Mai cuts down on fast food, she will continue to gain weight",
+            "Unless Mai cuts down on fast food, she will continue to gain weight."
+          ],
+          "referenceHtml": "<p><strong>36.</strong><strong> </strong>If Mai doesn’t cut down on fast food, she will continue to gain weight<strong>. </strong><strong>(Rewrite using “</strong><strong>Unless</strong><strong>”)</strong></p>\n<p><strong>→ Unless Mai cuts down on fast food, she will continue to gain weight.</strong></p>"
+        },
+        {
+          "id": "s14-q4",
+          "number": "37",
+          "html": "<p><strong>37. </strong><strong>Write a paragraph (100</strong><strong> </strong><strong>–</strong><strong> </strong><strong>120 words) about how to manage your time effectively. You can use your own ideas or given cues:</strong><strong> (1</strong><strong>,0</strong><strong> p</strong><strong>oint</strong><strong>)</strong></p>\n<p>- Making a plan or schedule for things you need to do.</p>\n<p>- Giving priority to the most important task.</p>\n<p>- Building an effective daily routine.</p>\n<p>1. Format: (0,1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0,4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0,3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0,2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>37. </strong><strong>Write a paragraph (100–120 words) about how to manage your time effectively. You can use your own ideas or given cues:</strong><strong> </strong><strong>(1,0 point)</strong></p>\n<p>- Making a plan or schedule for things you need to do.</p>\n<p>- Giving priority to the most important task.</p>\n<p>- Building an effective daily routine.</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "BÀI NGHE 1.mp3",
+      "sourceHash": "5cd55e11105eb381b7dff6328a75e8598f6091ad738961b5f512461d53c093cc",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-06-1.mp3",
+      "duration": 123.742041,
+      "sectionIds": [
+        "s2"
+      ]
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "BÀI NGHE 2.mp3",
+      "sourceHash": "d8afbd4bcccb616fd1862598785271484d07f624e5a6f693a2cd0953862cbbc1",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-06-2.mp3",
+      "duration": 134.034286,
+      "sectionIds": [
+        "s3"
+      ]
+    }
+  ],
+  "sourceHash": "d8e9f3484c21a3145f4b257bd1c4402e2f559e8c84500ee24d9372b0aa50f01e"
+}

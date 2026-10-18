@@ -1,0 +1,636 @@
+{
+  "id": "vedec-g9-2026-16",
+  "number": 16,
+  "title": "Đề 16",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A – LANGUAGE FOCUS",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Mark the letter A, B, C, or D on your answer sheet to indicate the best answer to each of the following questions.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Question 1.</strong> The baby’s illness is much _________than we thought at first. </p>\n<p><strong>A</strong>. bad                \t\t\t <strong>B</strong>. worst               \t\t<strong>C</strong>. worse                 \t\t <strong>D</strong>. badly</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 1.</strong> The baby’s illness is much _________than we thought at first. </p>\n<p><strong>A</strong>. bad                \t\t\t <strong>B</strong>. worst               \t\t<strong>C</strong>. worse                 \t\t <strong>D</strong>. badly</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Question 2: </strong>People who make products like pottery or cloth with their hands are called ______.</p>\n<p><strong>A</strong><strong>. </strong>firefighters\t\t\t<strong>B</strong><strong>.</strong> electricians\t  \t<strong>C</strong><strong>. </strong>delivers\t           \t\t<strong>D</strong><strong>.</strong> artisans</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 2: </strong>People who make products like pottery or cloth with their hands are called ______.</p>\n<p><strong>A</strong><strong>. </strong>firefighters\t\t\t<strong>B</strong><strong>.</strong> electricians\t  \t<strong>C</strong><strong>. </strong>delivers\t           \t\t<strong>D</strong><strong>.</strong> artisans</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Question 3: </strong>Ha Noi is like a concrete jungle with so many people in it. It’s a/an_____city. </p>\n<p><strong>A</strong>. bustling\t\t\t\t<strong>B</strong>. quiet \t\t\t<strong>C</strong>. old \t\t\t\t<strong>D</strong>. peaceful</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 3: </strong>Ha Noi is like a concrete jungle with so many people in it. It’s a/an_____city. </p>\n<p><strong>A</strong>. bustling\t\t\t\t<strong>B</strong>. quiet \t\t\t<strong>C</strong>. old \t\t\t\t<strong>D</strong>. peaceful</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Question 4:</strong> The city is now a big _____site with many half-finished buildings.</p>\n<p><strong>A</strong>. waste\t\t\t\t<strong>B</strong>. tourist\t\t           <strong>C</strong>. storage\t\t\t<strong>D</strong>. construction</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 4:</strong> The city is now a big _____site with many half-finished buildings.</p>\n<p><strong>A</strong>. waste\t\t\t\t<strong>B</strong>. tourist\t\t           <strong>C</strong>. storage\t\t\t<strong>D</strong>. construction</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Question 5: </strong>We can’t decide where________during our holiday. </p>\n<p><strong>A</strong>. staying \t\t\t\t<strong>B</strong>. stay\t\t\t<strong>C</strong>. to stay\t          \t\t<strong>D</strong>. stayed</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 5: </strong>We can’t decide where________during our holiday. </p>\n<p><strong>A</strong>. staying \t\t\t\t<strong>B</strong>. stay\t\t\t<strong>C</strong>. to stay\t          \t\t<strong>D</strong>. stayed</p>"
+        },
+        {
+          "id": "s2-q6",
+          "number": "6",
+          "html": "<p><strong>Question 6</strong>. Hoa wondered what to give_______to the most important tasks: work or study </p>\n<p><strong>A</strong>. priority \t\t\t\t<strong>B</strong>. metro\t\t\t<strong>C</strong>. downtown\t           \t\t<strong>D</strong>. distractions</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 6</strong>. Hoa wondered to give_______to the most important tasks: work or study </p>\n<p><strong>A</strong>. priority \t\t\t\t<strong>B</strong>. metro\t\t\t<strong>C</strong>. downtown\t           \t\t<strong>D</strong>. distractions</p>"
+        },
+        {
+          "id": "s2-q7",
+          "number": "7",
+          "html": "<p><strong>Question 7</strong><strong>. </strong>My sister is studying English hard ___________ she needs it for her new job.</p>\n<p><strong>A</strong><strong>.</strong> however\t\t           \t\t<strong>B</strong><strong>.</strong> because\t            \t<strong>C</strong><strong>. </strong>despite \t\t\t<strong>D</strong><strong>.</strong> therefore</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 7</strong><strong>. </strong>My sister is studying English hard ___________ she needs it for her new job.</p>\n<p><strong>A</strong><strong>.</strong> however\t\t           \t\t<strong>B</strong><strong>.</strong> because\t            \t<strong>C</strong><strong>. </strong>despite \t\t\t<strong>D</strong><strong>.</strong> therefore</p>"
+        },
+        {
+          "id": "s2-q8",
+          "number": "8",
+          "html": "<p><strong>Question 8</strong>. Our teacher agreed to extend the_____ by two weeks.</p>\n<p><strong>A</strong>. finish\t\t\t\t<strong>B</strong>. limit\t\t\t<strong>C</strong>. allotment\t\t\t<strong>D</strong>. deadline</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 8</strong>. Our teacher agreed to extend the_____ by two weeks.</p>\n<p><strong>A</strong>. finish\t\t\t\t<strong>B</strong>. limit\t\t\t<strong>C</strong>. allotment\t\t\t<strong>D</strong>. deadline</p>"
+        },
+        {
+          "id": "s2-q9",
+          "number": "9",
+          "html": "<p><strong>Question</strong> <strong>9</strong>. The city center is always packed ___________ people and vehicles at rush hour.</p>\n<p><strong>A</strong><strong>.</strong> on\t\t\t           \t\t<strong>B</strong><strong>. </strong>with   \t                      <strong>C</strong><strong>.</strong> of\t\t          \t           <strong>D</strong><strong>.</strong> up</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>9</strong>. The city center is always packed ___________ people and vehicles at rush hour.</p>\n<p><strong>A</strong><strong>.</strong> on\t\t\t           \t\t<strong>B</strong><strong>. </strong>with   \t                      <strong>C</strong><strong>.</strong> of\t\t          \t           <strong>D</strong><strong>.</strong> up</p>"
+        },
+        {
+          "id": "s2-q10",
+          "number": "10",
+          "html": "<p><strong>Question 10: </strong>Despite the_________ in the busy coffee shop, she managed to focus and complete her work on time.</p>\n<p><strong>A</strong>. distracting         \t\t\t<strong>B</strong>. distracted                        <strong>C</strong>. distractions          \t<strong>D</strong>. distract </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 10: </strong>Despite the_________ in the busy coffee shop, she managed to focus and complete her work on time.</p>\n<p><strong>A</strong>. distracting         \t\t\t<strong>B</strong>. distracted                        <strong>C</strong>. distractions          \t<strong>D</strong>. distract </p>"
+        },
+        {
+          "id": "s2-q11",
+          "number": "11",
+          "html": "<p><strong>Question 11: </strong>The locals asked ______ to take out the rubbish, in the morning or in the afternoon.</p>\n<p><strong>A.</strong> where<strong>\t</strong><strong>            </strong><strong>B.</strong> when<strong>\t</strong><strong>  </strong><strong>             </strong><strong>  </strong><strong>C.</strong> why<strong>\t</strong><strong>      </strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>D.</strong> how</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 11: </strong>The locals asked ______ to take out the rubbish, in the morning or in the afternoon.</p>\n<p><strong>A.</strong> where<strong>\t</strong><strong>            </strong><strong>B.</strong> when<strong>\t</strong><strong>  </strong><strong>             </strong><strong>  </strong><strong>C.</strong> why<strong>\t</strong><strong>      </strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>D.</strong> how</p>"
+        },
+        {
+          "id": "s2-q12",
+          "number": "12",
+          "html": "<p><strong>Question 12: </strong>If she has time, she <u>                </u> visit you.</p>\n<p><strong>A.</strong> must\t\t\t\t<strong>B.</strong> may\t\t          <strong>C.</strong> ought\t          \t\t <strong>D.</strong> had to</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 12: </strong>If she has time, she <u>                </u> visit you.</p>\n<p><strong>A.</strong> must\t\t\t\t<strong>B.</strong> may\t\t          <strong>C.</strong> ought\t          \t\t <strong>D.</strong> had to</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PART B – READING",
+      "part": "READING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "13",
+          "html": "<p><strong>Question</strong> <strong>1</strong><strong>3</strong><strong>. What does the sign say? Choose the best option (A, B, C or D)</strong></p>\n<p><img src=\"/data/grade9-midterm/images/367dd25a29df4df9.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p><strong>A</strong>. This area is safe with no electrical problems or dangers.<br><strong>B</strong>. There is high voltage electricity in this area; be very careful.<br><strong>C</strong>. All electrical equipment is turned off and not working.<br><strong>D</strong>. The voltage here is low and it is safe to touch the equipment.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>1</strong><strong>3</strong><strong>. What does the sign say? Choose the best option (A, B, C or D)</strong></p>\n<p><strong>A</strong>. This area is safe with no electrical problems or dangers.<br><strong>B</strong>. There is high voltage electricity in this area; be very careful.<br><strong>C</strong>. All electrical equipment is turned off and not working.<br><strong>D</strong>. The voltage here is low and it is safe to touch the equipment.</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "14",
+          "html": "<p><strong>Question 1</strong><strong>4</strong><strong>.</strong><strong> </strong><strong>What does the notice say?</strong> <strong>Choose the best option (A, B, C or D)</strong></p>\n<p><img src=\"/data/grade9-midterm/images/dd42c2d10ad30d7a.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p><strong>A</strong>. Soliciting cannot be done in this area without a permit.</p>\n<p><strong>B</strong>. Soliciting is only allowed in some areas.</p>\n<p><strong>C</strong>. Soliciting is not allowed or permitted in this area.</p>\n<p><strong>D</strong>. Soliciting is allowed and you can do it here.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 1</strong><strong>4</strong><strong>.</strong><strong> </strong><strong>What does the notice say?</strong> <strong>Choose the best option (A, B, C or D)</strong></p>\n<p><strong>A</strong>. Soliciting cannot be done in this area without a permit.</p>\n<p><strong>B</strong>. Soliciting is only allowed in some areas.</p>\n<p><strong>C</strong>. Soliciting is not allowed or permitted in this area.</p>\n<p><strong>D</strong>. Soliciting is allowed and you can do it here.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Read the following passage and circle the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks.",
+      "part": "READING",
+      "introHtml": "<p>\t\tTeenagers today live in a very competitive world. It is more important than ever to succeed at school if you hope to (15)<u>__________</u><u>_</u> a chance in the job market afterwards. It’s no wonder that many young people worry (16) <u>_________</u> letting down their parents, their peers and themselves. To try to please everyone, they take on too many tasks until it becomes harder to balance homework assignments, parties, sports activities and friends. The result is that young people (17) __________ from stress.</p>\n<p>\t\tThere are different ways of dealing with stress. Everyone knows that caffeine, in the form of coffee or soft drinks, keeps you awake and alert. But caffeine is a drug which can become addictive. In the end, like other drugs, caffeine only leads to more stress. There are better ways to deal with stress: physical exercise is a good release for stress (18) ______ it increases certain chemicals in the brain which calm you down. You have to get enough sleep to avoid stress and to stay healthy and full of energy.</p>",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "15",
+          "html": "<p><strong>Question</strong> <strong>1</strong><strong>5</strong>. <strong>A</strong>. wonder\t       <strong>B</strong>. have\t<strong>C</strong>. doing\t<strong>D</strong>. take on</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>1</strong><strong>5</strong>. <strong>A</strong>. wonder\t       <strong>B</strong>. have\t<strong>C</strong>. doing\t<strong>D</strong>. take on</p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "16",
+          "html": "<p><strong>Question</strong> <strong>16</strong>. <strong>A</strong>. of\t       <strong>B</strong>. at\t<strong>C</strong>. about\t<strong>D</strong>. with </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>16</strong>. <strong>A</strong>. of\t       <strong>B</strong>. at\t<strong>C</strong>. about\t<strong>D</strong>. with </p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "17",
+          "html": "<p><strong>Question</strong> <strong>17</strong>. <strong>A</strong>. suffer \t       <strong>B</strong>. please \t<strong>C</strong>. balance  \t<strong>D</strong>. cope with </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>17</strong>. <strong>A</strong>. suffer \t       <strong>B</strong>. please \t<strong>C</strong>. balance  \t<strong>D</strong>. cope with </p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "18",
+          "html": "<p><strong>Question</strong> <strong>18</strong>. <strong>A</strong>. although       <strong>B</strong>. unless \t<strong>C</strong>. because\t<strong>D</strong>. because of </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>18</strong>. <strong>A</strong>. although       <strong>B</strong>. unless \t<strong>C</strong>. because\t<strong>D</strong>. because of </p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Read the following passage and circle the letter A, B, C, or D to indicate the correct answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>\tDo you live in a big city? It is said that living in big cities is expensive because of the high cost of living. There are also pollution and traffic problems that make living in big cities unpleasant. However, many people enjoy living in big cities because <strong><u>they</u></strong> offer convenience and countless options for entertainment.</p>\n<p>\tMany big cities already have good public transportation systems, which makes it easy for the citizens to go anywhere around the city. This also <strong><u>reduces</u></strong> and helps overcome the problem of traffic jams that often occur at peak times. With the convenience of public transportation, the citizens do not have to drive everywhere and can save money as they do not have to pay for parking charges.</p>\n<p>\tStaying healthy is everybody&#x27;s concern and in big cities you can find the best possible medical care for any diseases, especially the severe ones. Moreover, compared to rural areas, access to medical treatment is easier because there are always clinics or medical centers that open 24 hours in many parts of the city so you can get medical help anytime, as soon as you need it. Reaching hospitals is also easier as public transport is usually available 24 hours a day.</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "19",
+          "html": "<p><strong>Question 1</strong><strong>9</strong>. <strong>What is the passage mainly about?</strong></p>\n<p>\t<strong>A</strong>. Advantages of living in big cities\t\t<strong>B</strong>. Disadvantages of living in big cities</p>\n<p>\t<strong>C</strong>. Drawbacks of living in rural areas\t\t<strong>D</strong>. Benefits living in rural areas</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 1</strong><strong>9</strong>. <strong>What is the passage mainly about?</strong></p>\n<p>\t<strong>A</strong>. Advantages of living in big cities\t\t<strong>B</strong>. Disadvantages of living in big cities</p>\n<p>\t<strong>C</strong>. Drawbacks of living in rural areas\t\t<strong>D</strong>. Benefits living in rural areas</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "20",
+          "html": "<p><strong>Question</strong> <strong>2</strong><strong>0</strong>.<strong> Which</strong><strong> of the following is closest in meaning to the word &quot;reduces&quot; in paragraph </strong><strong>2</strong><strong>?</strong></p>\n<p>\t<strong>A</strong>. increases\t <strong>B</strong>. decreases \t    <strong>C</strong>. goes up \t<strong>D</strong>. rises</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>2</strong><strong>0</strong>.<strong> Which</strong><strong> of the following is closest in meaning to the word &quot;reduces&quot; in paragraph 1?</strong></p>\n<p>\t<strong>A</strong>. increases\t <strong>B</strong>. decreases \t    <strong>C</strong>. goes up \t<strong>D</strong>. rises</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "21",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>21</strong>. <strong>What makes living in big cities costly?</strong></p>\n<p>\t<strong>A</strong>. public transport \t <strong>B</strong>. healthcare              <strong>C</strong>. high cost of living             <strong>D</strong>. high parking charges</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>21</strong>. <strong>What makes living in big cities costly?</strong></p>\n<p>\t<strong>A</strong>. public transport \t <strong>B</strong>. healthcare              <strong>C</strong>. high cost of living              <strong>D</strong>. high parking charges</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "22",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>22</strong>. <strong>What</strong><strong> does the word “they” in line 3 refer to? </strong></p>\n<p>\t<strong>A</strong>. big cities.\t <strong>B</strong>. people.                   <strong>C</strong>. traffic problems                 <strong>D</strong>. pollution</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> </strong><strong>22</strong>. <strong>What</strong><strong> does the word “they” in line 3 refer to? </strong></p>\n<p>\t<strong>A</strong>. big cities.\t <strong>B</strong>. people.                   <strong>C</strong>. traffic problems                 <strong>D</strong>. pollution</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Read the following passage and circle the letter A, B, C, or D to indicate the correct answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>\tIn Tien Giang province, Long Dinh village is famous for its traditional craft of weaving flowered mats. The mats high quality makes them popular domestically, and they are also exported to markets worldwide including Korea, Japan and America. In spite of its well-established reputation for this traditional craft, mat weaving only started here some 50 years ago. It was first introduced by immigrants from Kim Son, a famous mat weaving village in the northern province of Ninh Binh. However, the<br>technique of weaving sedge mats in Long Dinh, as compared with other places in the South, is somewhat different. Long Dinh branded mats are thicker and have more attractive colors and patterns. Weaving sedge mats is similar to growing rice. People in Long Dinh village mainly produce mats during the dry season, from January to April. Weavers have to work their hardest in May and June, otherwise, when the rainy season starts in July, they will have to put off finishing their products till the next dry season. No matter how much work it requires, Long Dinh mat producers stick with this occupation because it brings a higher income than growing rice.</p>\n<p>(Adapted from English 9 Reading Comprehension)</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "23",
+          "html": "<p><strong>Question</strong> <strong>23</strong>. What is Long Dinh village well-known for?<br><strong>A</strong>. Rice farming\t\t<strong>B</strong>. Weaving sedge mats\t\t<strong>C</strong>. Making pottery\t\t<strong>D</strong>. Producing silk</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>23</strong>. What is Long Dinh village well-known for?<br><strong>A</strong>. Rice farming\t\t<strong>B</strong>. Weaving sedge mats\t\t<strong>C</strong>. Making pottery\t\t<strong>D</strong>. Producing silk</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "24",
+          "html": "<p><strong>Question</strong> <strong>2</strong><strong>4</strong>.  What is special about Long Dinh mats?\t\t</p>\n<p><strong>A</strong>. They have attractive colors and patterns<strong> </strong><strong>\t</strong><strong>\t</strong><strong>\tB</strong>. They are thinner and cheaper\t<br><strong>C</strong>. They are imported from the North\t\t\t\t<strong>D</strong>. They are only sold domestically</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>2</strong><strong>4</strong>.  What is special about Long Dinh mats?\t\t</p>\n<p><strong>A</strong>. They have attractive colors and patterns<strong> </strong><strong>\t</strong><strong>\t</strong><strong>\tB</strong>. They are thinner and cheaper\t<br><strong>C</strong>. They are imported from the North\t\t\t\t<strong>D</strong>. They are only sold domestically</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "25",
+          "html": "<p><strong>Question</strong> <strong>25</strong>. Despite difficulties, people in Long Dinh still stick with the craft because.<br><strong>A</strong>. they can make the techniques of weaving different<br><strong>B</strong>. they can earn more money than growing rice<br><strong>C</strong>. they can have jobs in the rainy months<br><strong>D</strong>. they can go to Korea, Japan and America<br></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong> <strong>25</strong>. Despite difficulties, people in Long Dinh still stick with the craft because.<br><strong>A</strong>. they can make the techniques of weaving different<br><strong>B</strong>. they can earn more money than growing rice<br><strong>C</strong>. they can have jobs in the rainy months<br><strong>D</strong>. they can go to Korea, Japan and America<br></p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "26",
+          "html": "<strong><p>Question</strong> <strong>26</strong>. The word “<strong>somewhat</strong>” in the second paragraph is closest in meaning to .<br><strong>A</strong>. a few \t<strong>B</strong>. extremely \t<strong>C.</strong> a lot \t<strong>D</strong>. a little</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<strong><p>Question</strong> <strong>26</strong>. The word “<strong>somewhat</strong>” in the second paragraph is closest in meaning to .<br><strong>A</strong>. a few \t<strong>B</strong>. extremely \t<strong>C.</strong> a lot \t<strong>D</strong>. a little</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "27",
+          "html": "<p><strong>Question 27. </strong>Why do weavers have to work hardest in May and June?</p>\n<p><strong>A</strong>. Because the rainy season begins in July and may delay their work.<br><strong>B</strong>. Because they have to prepare for growing rice.<br><strong>C</strong>. Because they want to export more mats.<br><strong>D</strong>. Because many tourists visit the village at that time.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A</p>"
+        },
+        {
+          "id": "s6-q6",
+          "number": "28",
+          "html": "<p><strong>Question 28. </strong>Which of the following is <strong>TRUE</strong> according to the passage?</p>\n<p><strong>A</strong>. Mat weaving in Long Dinh has existed for hundreds of years.<br><strong>B</strong>. Long Dinh mats are only sold in Vietnam.<br><strong>C</strong>. Mat weaving was introduced to Long Dinh by immigrants from Ninh Binh. <br><strong>D</strong>. People weave mats only during the rainy season.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 28. </strong>Which of the following is <strong>TRUE</strong> according to the passage?</p>\n<p><strong>A</strong>. Mat weaving in Long Dinh has existed for hundreds of years.<br><strong>B</strong>. Long Dinh mats are only sold in Vietnam.<br><strong>C</strong>. Mat weaving was introduced to Long Dinh by immigrants from Ninh Binh. <br><strong>D</strong>. People weave mats only during the rainy season.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "PART C – WRITING",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "29",
+          "html": "<p><strong>Question</strong><strong> 29. </strong><strong>Arranging sentences to make a paragraph:</strong></p>\n<p>a. Cross-cultural learning has three main benefits.</p>\n<p>d. Firstly, it helps understand and respect different backgrounds, making us more open-minded.</p>\n<p>b. Secondly, it allows us to learn new ways of thinking and problem-solving by exchanging ideas with others.</p>\n<p>c. Finally, it encourages us to appreciate diversity and work together with people from various cultures</p>\n<p>e. So it is important to learn about different cultures around the world.</p>\n<p><strong>A</strong>. b-d-a-e-c\t                <strong>B</strong>. a-b-d-e-c\t        <strong>C.</strong> a-d-b-c-e\t                <strong>D</strong>. d-b-a-e-c</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 29. </strong><strong>Arranging sentences to make a paragraph:</strong></p>\n<p>a. Cross-cultural learning has three main benefits.</p>\n<p>d. Firstly, it helps understand and respect different backgrounds, making us more open-minded.</p>\n<p>b. Secondly, it allows us to learn new ways of thinking and problem-solving by exchanging ideas with others.</p>\n<p>c. Finally, it encourages us to appreciate diversity and work together with people from various cultures</p>\n<p>e. So it is important to learn about different cultures around the world.</p>\n<p><strong>A</strong>. b-d-a-e-c\t                <strong>B</strong>. a-b-d-e-c\t        <strong>C.</strong> a-d-b-c-e\t                <strong>D</strong>. d-b-a-e-c</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "30",
+          "html": "<p><strong>Question 30</strong><strong>. Arranging sentences to make </strong><strong>an email</strong></p>\n<p>Dear Anna,</p>\n<p>a. We visited many famous places like the Eiffel Tower and the Louvre Museum, which were absolutely beautiful.</p>\n<p>b. I hope you&#x27;re doing well! I&#x27;m having a wonderful time in Paris with my family.</p>\n<p>c. I bought you a small souvenir from a shop near our hotel. </p>\n<p>d. The local food is delicious, especially the croissants and cheese that we have for breakfast every morning.</p>\n<p>e. Tomorrow we&#x27;re going to Disneyland Paris, which I&#x27;ve been excited about since we planned this trip.</p>\n<p>See you soon! </p>\n<p>Love, </p>\n<p>Emily</p>\n<p><strong>A.</strong> b – a – c – d – e\t                           <strong>B.</strong> a – b – c – d – e\t<strong>C</strong><strong>.</strong> e – b – a – c – d\t\t<strong> D.</strong> b – a – d – e – c</p>",
+          "kind": "choice",
+          "answers": [
+            "A",
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A: b – a – c – d – e<br>D: b – a – d – e – c</p>",
+          "note": "Hai thứ tự A và D đều tạo email hợp lý, mở đầu bằng b rồi a; chấp nhận cả hai."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Complete the following sentences with NO MORE THAN FIVE WORDS.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "31",
+          "html": "<p><strong>Question </strong><strong>3</strong><strong>1</strong>: If you don’t try harder, you can’t pass the next exam.<br> Unless you………………………………………………………………… the next exam.</p>",
+          "kind": "text",
+          "answers": [
+            "try harder, you can’t pass",
+            "Unless you try harder, you can’t pass the next exam."
+          ],
+          "referenceHtml": "<p>try harder, you can’t pass / Unless you try harder, you can’t pass the next exam.</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "32",
+          "html": "<p><strong>Question </strong><strong>3</strong><strong>2: </strong>Mr. Nam should reduce the number of cigarettes he smokes.<br> Mr. Nam should cut ……………………………………………………… of cigarettes he smokes.</p>",
+          "kind": "text",
+          "answers": [
+            "down on the number",
+            "Mr. Nam should cut down on the number of cigarettes he smokes."
+          ],
+          "referenceHtml": "<p>down on the number / Mr. Nam should cut down on the number of cigarettes he smokes.</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "33",
+          "html": "<p><strong>Question</strong> <strong>3</strong><strong>3</strong>: The exam is difficult. The students become hard-working.<br> The more …………………………………………………………………… hard- working the students become.</p>",
+          "kind": "text",
+          "answers": [
+            "difficult the exam is, the more",
+            "The more difficult the exam is, the more hard-working the students become."
+          ],
+          "referenceHtml": "<p>difficult the exam is, the more / The more difficult the exam is, the more hard-working the students become.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Rearranging words to make sentences",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "34",
+          "html": "<p><strong>Question </strong><strong>3</strong><strong>4: </strong>not sure / We are / what we should do / to help the poor children.</p>",
+          "kind": "text",
+          "answers": [
+            "We are not sure what we should do to help the poor children",
+            "We are not sure what we should do to help the poor children."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>3</strong><strong>4: </strong>not sure / We are / what we should do / to help the poor children.</p>\n<p>We are not sure what we should do to help the poor children.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "35",
+          "html": "<p><strong>Question </strong><strong>35</strong>. can / feel / If / stressed, / take a rest. / you / you</p>\n<p>→  …………………………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "If you feel stressed, you can take a rest"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>35</strong>. can / feel / If / stressed, / take a rest. / you / you</p>\n<p>If you feel stressed, you can take a rest</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "36",
+          "html": "<p><strong>Question </strong><strong>36</strong><strong>. </strong>It took / my father / a week / to make / a conical hat.</p>",
+          "kind": "text",
+          "answers": [
+            "It took my father a week to make a conical hat",
+            "It took my father a week to make a conical hat."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>36</strong><strong>. </strong>It took / my father / a week / to make / a conical hat.</p>\n<p>It took my father a week to make a conical hat.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "37",
+          "html": "<p><strong>Question 37. </strong><strong>Write a short paragraph </strong><strong>(80-100 words) </strong><strong>about how</strong><strong> to manage </strong><strong>your </strong><strong>time effectively. </strong><strong>(1pt).</strong><strong> </strong><strong>You may use the cues given:</strong></p>\n<p>Making a plan or schedule for things you need to do.</p>\n<p>Giving priority to the most important task.</p>\n<p>Building an effective daily routine.</p>\n<p><strong>THE END</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>Question </strong><strong>37. </strong><strong>Write a short paragraph </strong><strong>(80-100 words) </strong><strong>about how</strong><strong> to manage </strong><strong>your </strong><strong>time effectively. </strong><strong>(1pt).</strong><strong> </strong><strong>You may use the cues given:</strong></p>\n<p>Making a plan or schedule for things you need to do.</p>\n<p>Giving priority to the most important task.</p>\n<p>Building an effective daily routine.</p>\n<p><strong>THE END</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "fd342d2ca20fdd9dc2879fadc78bcba98afc3053c1503a250d27a0f05b954f99"
+}

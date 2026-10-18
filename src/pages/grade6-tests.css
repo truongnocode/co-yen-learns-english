@@ -3,3 +3,6 @@
 .exam-source img { display: block; max-width: 100%; width: auto; max-height: 340px; height: auto; object-fit: contain; margin: 1rem 0; }
 .exam-source u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
 .exam-source strong { font-weight: 700; }
+.exam-source .exam-table-scroll { max-width: 100%; overflow-x: auto; }
+.exam-source .exam-table-scroll table { min-width: 640px; width: 100%; border-collapse: collapse; overflow-wrap: normal; }
+.exam-source .exam-table-scroll th, .exam-source .exam-table-scroll td { padding: .75rem; border: 1px solid hsl(var(--border)); text-align: left; vertical-align: top; }

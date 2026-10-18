@@ -1,0 +1,639 @@
+{
+  "id": "vedec-g9-2026-13",
+  "number": 13,
+  "title": "Đề 13",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A: LISTENING (2.25 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. You will hear Trang, Phong, and Tom talking about how to manage their time effectively. Listen and tick true or false column for each statement. You will listen twice. There is an example at the beginning (0) (1.0 point)",
+      "part": "LISTENING",
+      "introHtml": "<div><strong>Ví dụ (0):</strong><p>0. Trang enters what she has to do into a calendar at the beginning of each term.</p>\n<p><strong></strong></p><p>Đáp án ví dụ: T</p></div>",
+      "questions": [
+        {
+          "id": "s2-q2",
+          "number": "1",
+          "html": "<p>1. Trang often uses different colours to mark project due dates and exam times on her calendar.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. Trang often uses different colours to mark project due dates and exam times on her calendar.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "2",
+          "html": "<p>2. Phong turns off his cell phone and signs out of social media networks when he starts his work.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>T. When it is time to start his work, Phong turns off his cell phone and signs out of social media accounts.</p>",
+          "note": "Theo bản nghe, Phong tắt điện thoại và thoát mạng xã hội khi bắt đầu học; đáp án F trong bản gốc bị nhầm."
+        },
+        {
+          "id": "s2-q4",
+          "number": "3",
+          "html": "<p>3. Tom sometimes leaves homework until just before the due date.</p><p></p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>3. Tom sometimes leaves homework until just before the due date.</p><p></p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "4",
+          "html": "<p>4. Tom reviews his projects and upcoming tests and adds them to his schedule.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. Tom reviews his projects, and upcoming tests and adds them to his schedule.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen and circle the correct answer A, B, C, or D to complete the following sentences. You will listen twice. There is an example at the beginning (0) (1.25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>1. The speaker felt __________ when he first came to live in the city. </p>\n<p>A. excited \t\tB. surprised\t\t\tC. safe \t\t\tD. lonely</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. The speaker felt __________ when he first came to live in the city. </p>\n<p>A. excited \t\tB. surprised\t\t\tC. safe \t\t\t<strong>D. lonely</strong></p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>2<strong>.</strong> It took the speaker a long time to learn about __________.</p>\n<p>A. making friends at school\t\t\tB. crossing the streets </p>\n<p>C. taking a bus \t\t\t\t\tD. greeting neighbours </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2<strong>.</strong> It took the speaker a long time to learn about __________.</p>\n<p>A. making friends at school\t\t\t<strong>B. crossing the streets</strong> </p>\n<p>C. taking a bus \t\t\t\t\tD. greeting neighbours </p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>3. _________ students at the school come from the countryside. </p>\n<p>A. Some \t\tB. Many \t\t\tC. A few\t\t\tD. All \t</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. _________ students at the school come from the countryside. </p>\n<p><strong>A. Some</strong> \t\tB. Many \t\t\tC. A few\t\t\tD. All \t</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p>4. At the club he has joined, the speaker learns to _________ daily products. </p>\n<p>A. use \t\tB. sort \t\t\tC. recycle\t\t\tD. save</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. At the club he has joined, the speaker learns to _________ daily products. </p>\n<p>A. use \t\tB. sort \t\t\t<strong>C.</strong><strong> recycle</strong>\t\t\tD. save</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>5<strong>.</strong> The speaker has acquired essential skills like how to manage my small allowance, how to read street signs and notices, and how to search for a _________.</p>\n<p>A. bus stop\t\tB. bus route\t\t\tC. bus around \t\tD. bus station</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5<strong>.</strong> The speaker has acquired essential skills like how to manage my small allowance, how to read street signs and notices, and how to search for a _________.</p>\n<p>A. bus stop\t\t<strong>B. bus route</strong>\t\t\tC. bus around \t\tD. bus station</p>"
+        }
+      ],
+      "audioStart": 160
+    },
+    {
+      "id": "s4",
+      "title": "PART B: LANGUAGE FOCUS (2.75 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Circle the correct answer A, B, C, or D to complete the following sentences. (1.75 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p>Circle correct answer A, B, C, or D for the word which has different pronunciation from the others.</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "1",
+          "html": "<p>1. A. undergr<u>ou</u>nd\t\tB. m<u>ou</u>ntain\t\tC. t<u>ou</u>rist\t\t\tD. ar<u>ou</u>nd </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. undergr<u>ou</u>nd\t\tB. m<u>ou</u>ntain\t\t<strong>C. t</strong><strong><u>ou</u></strong><strong>rist</strong>\t\t\tD. ar<u>ou</u>nd </p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Circle the letter A, B, C or D to indicate the word that differs from the rest in the position of the main stress.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "2",
+          "html": "<p> 2. A. carry</p>\n<p>B. delay</p>\n<p>C. shorten</p>\n<p>D. travel</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p> 2. A. carry</p>\n<p><strong>B. delay</strong></p>\n<p>C. shorten</p>\n<p>D. travel</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "3",
+          "html": "<p>3. She didn&#x27;t decide __________to come back from her hometown: this week or next week.</p>\n<p>A. when\t\t\tB. how\t\tC. where\t\t\tD. what </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. She didn&#x27;t decide __________to come back from her hometown: this week or next week.</p>\n<p><strong>A</strong><strong>. when</strong>\t\t\tB. how\t\tC. where\t\t\tD. what </p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "4",
+          "html": "<p>4. If you don’t understand the lesson, you ____________ ask your teacher for help. </p>\n<p>A.  could \t\t\tB. should \t\tC. will  \t\t\tD. mustn’t </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. If you don’t understand the lesson, you ____________ ask your teacher for help. </p>\n<p>A.  could \t\t\t<strong>B. should</strong> \t\tC. will  \t\t\tD. mustn’t </p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "5",
+          "html": "<p>5. My mum gets fat, so she has to _____________ sweet food and soft drinks.</p>\n<p>A. cut down on\t\tB. run out of\t\tC. come down with\t\tD. get on with</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. My mum gets fat, so she has to _____________ sweet food and soft drinks.</p>\n<p><strong>A. cut down on</strong>\t\tB. run out of\t\tC. come down with\t\tD. get on with</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "6",
+          "html": "<p>6. I don’t like ________________ roads in big cities. They are usually full of traffic. </p>\n<p>A. congest\t\t\tB. congestion\t\tC. congested \t\t\tD. congestedly </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. I don’t like ________________ roads in big cities. They are usually full of traffic. </p>\n<p>A. congest\t\t\tB. congestion\t\t<strong>C. congested</strong> \t\t\tD. congestedly </p>"
+        },
+        {
+          "id": "s6-q6",
+          "number": "7",
+          "html": "<p>7. Nam: “Could you tell the name of the delivery person?</p>\n<p>      Ann: “_____________”</p>\n<p>A. Yes, I could\t\t\t\t\tB. Thank you. I can do it myself\t</p>\n<p>C. Not at all\t\t\t\t\t\tD. Sure. His name’s Hung.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. Nam: “Could you tell the name of the delivery person?</p>\n<p>      Ann: “_____________”</p>\n<p>A. Yes, I could\t\t\t\t\tB. Thank you. I can do it myself\t</p>\n<p>C. Not at all\t\t\t\t\t\t<strong>D. </strong><strong>Sure. His name’s Hung.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "II. Give the correct form of the verbs to complete the following sentences. There is an example at the beginning (0). (1.0 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>1. Ms White (meet)___________________  her father last Sunday.</p>",
+          "kind": "text",
+          "answers": [
+            "met"
+          ],
+          "referenceHtml": "<p>1. Ms White (meet)____<strong>met</strong>_____  her father last Sunday.</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>2. _____________________ (they/ build) a new bridge in my village next year?</p>",
+          "kind": "text",
+          "answers": [
+            "Will they build"
+          ],
+          "referenceHtml": "<p>2. __ <strong>Will they build </strong>_ (they/ build) a new bridge in my village next year?</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>3. At 7 a.m yesterday, the garbage collector (take)___________________ rubbish away in our neighbourhood.</p>",
+          "kind": "text",
+          "answers": [
+            "was taking"
+          ],
+          "referenceHtml": "<p>3. At 7 a.m yesterday, the garbage collector (take)____ <strong>was taking </strong>___ rubbish away in our neighbourhood.</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>4. Many young people spend the whole day (play) ___________________online games.</p>",
+          "kind": "text",
+          "answers": [
+            "playing"
+          ],
+          "referenceHtml": "<p>4. Many young people spend the whole day (play) ____<strong>playing</strong>____online games.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "PART C: READING (2.75 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s9",
+      "title": "I. Choose the correct answer A, B, c or D to fill in each blank in the following text. There is an example at the beginning (0). (1.25 points)",
+      "part": "READING",
+      "introHtml": "<p>A community is a social unit (0) __________ people come together to form relationships, support one another, and work towards common objectives. A good community is essential for several (1)__________. Firstly, it provides a sense of belonging and support. In a good community, people care for one another and offer help when it&#x27;s needed. This support system creates a feeling of security and fosters positive relationships. Secondly, a good community promotes social interaction, (2)__________ it brings people together, encouraging connections and friendships. Through community events and activities, individuals can engage with others, and share experiences. Additionally, a good community (3)__________ various resources and services. It provides access to healthcare, education, recreational facilities, and more. These amenities enhance (4)__________ quality of life for community members and contribute to their overall well-being. In conclusion, a good community is important (5)__________ personal growth, support, social connections, and access to resources. It is the foundation for a fulfilling and harmonious life.</p><div><strong>Ví dụ (0):</strong><p>0. A. who\t\t\tB. when\t\t\tC. where\t\tD. which</p><p>Đáp án ví dụ: C</p></div>",
+      "questions": [
+        {
+          "id": "s9-q2",
+          "number": "1",
+          "html": "<p>1. A. reasonable\t\tB. reasons\t\t\tC. reasoning\t\tD. reasonably</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. reasonable\t\t<strong>B. reasons</strong>\t\t\tC. reasoning\t\tD. reasonably</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "2",
+          "html": "<p>2. A. therefore\t\tB. but\t\t\t\tC. although\t\tD. so</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. A. therefore\t\tB. but\t\t\t\tC. although\t\t<strong>D. so</strong></p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "3",
+          "html": "<p>3. A. creates\t\t\tB. takes\t\t\tC. offers\t\tD. affects</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. A. creates\t\t\tB. takes\t\t\t<strong>C. offers</strong>\t\tD. affects</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "4",
+          "html": "<p>4. A. a\t\t\t\tB. an\t\t\t\tC. Ø\t\t\tD. the</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. A. a\t\t\t\tB. an\t\t\t\tC. Ø\t\t\t<strong>D. the</strong></p>"
+        },
+        {
+          "id": "s9-q6",
+          "number": "5",
+          "html": "<p>5. A. for\t\t\tB. of\t\t\t\tC. in \t\t\tD. with</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. <strong>A. for</strong>\t\t\tB. of\t\t\t\tC. in \t\t\tD. with</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "II. Read the following passage and do the tasks below. (1.5 points)",
+      "part": "READING",
+      "introHtml": "<p>Do you live in a big city? It is said that living in big cities is expensive because of the high living cost. There are also pollution and traffic problems that make living in big cities unpleasant. However, many people enjoy living in big cities because they offer convenience and countless options for entertainment.</p>\n<p>        Many big cities already have good public transportation systems, which makes it easy for the citizens to go anywhere around the city. This also reduces and helps overcome the problem of traffic jams that often occur at peak time. With the convenience of public transportation, the citizens do not have to drive everywhere and can save money as they do not have to pay for parking charges.</p>\n<p>        Staying healthy is everybody&#x27;s concern and in big cities you can find the best possible medical care for any diseases, especially the severe ones. Moreover, compared to rural areas, access to medical treatment is easier because there are always clinics or medical centers that open 24 hours in many parts of the city so you can get medical help anytime, as soon as you need it. Reaching hospitals is also easier as public transport is usually available 24 hours a day.</p>\n<p>(Adapted from: https://vungoi.vn/cau-hoi-87409)</p>\n<p><strong>*Answer the following questions:</strong></p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p>1. What makes living in big cities unpleasant?</p>",
+          "kind": "text",
+          "answers": [
+            "The high living cost, pollution and traffic problems do.",
+            "The high living cost, pollution and traffic problems.",
+            "The high living cost, pollution and traffic problems make living in big cities unpleasant",
+            "The high living cost, pollution and traffic problems make living in big cities unpleasant."
+          ],
+          "referenceHtml": "<p>1. What makes living in big cities unpleasant?</p>\n<p>The high living cost, pollution and traffic problems do./ The high living cost, pollution and traffic problems. / The high living cost, pollution and traffic problems make living in big cities unpleasant.<br></p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p>2. Why do many people<strong> </strong>enjoy living in big cities?\t</p>",
+          "kind": "text",
+          "answers": [
+            "Many people enjoy living in big cities because they offer convenience and countless options for entertainment.",
+            "Because they offer convenience and countless options for entertainment",
+            "Because they offer convenience and countless options for entertainment."
+          ],
+          "referenceHtml": "<p>2. Why do many people<strong> </strong>enjoy living in big cities?\t</p>\n<p>Many people enjoy living in big cities because they offer convenience and countless options for entertainment./ Because they offer convenience and countless options for entertainment.</p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "3",
+          "html": "<p>3. Do all cities have good public transportation systems?</p>",
+          "kind": "text",
+          "answers": [
+            "No, they don’t.",
+            "No",
+            "No."
+          ],
+          "referenceHtml": "<p>3. Do all cities have good public transportation systems?</p>\n<p>No, they don’t./ No.</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "4",
+          "html": "<p>4. When do traffic jams often happen in big cities?</p>\n<p><strong>* Choose the correct answer A, B, C or D to answer the questions:</strong></p>",
+          "kind": "text",
+          "answers": [
+            "At peak time.",
+            "At peak times.",
+            "Traffic jams often happen at peak time.",
+            "Traffic jams often occur at peak time.",
+            "They often happen at peak times.",
+            "They often occur at peak times."
+          ],
+          "referenceHtml": "<p>At peak time. / At peak times. / Traffic jams often happen at peak time. / Traffic jams often occur at peak time. / They often happen at peak times. / They often occur at peak times.</p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "5",
+          "html": "<p>5. What is the passage mainly about?</p>\n<p>A. Drawbacks of living in rural areas.\t\tB. Disadvantages of living in big cities.</p>\n<p>C. Advantages of living in big cities.\t\tD. Benefits of living in rural areas.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. What is the passage mainly about?</p>\n<p>A. Drawbacks of living in rural areas.\t\tB. Disadvantages of living in big cities.</p>\n<p><strong>C. Advantages of living in big cities.</strong>\t\tD. Benefits of living in rural areas.</p>"
+        },
+        {
+          "id": "s10-q6",
+          "number": "6",
+          "html": "<p>6. According to the passage, what is people&#x27;s concern?</p>\n<p>A. staying healthy\tB. traffic congestions        C. medical centers.        D. air pollution.            </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. According to the passage, what is people&#x27;s concern?</p>\n<p><strong>A. staying healthy</strong>\tB. traffic congestions        C. medical centers.        D. air pollution.            </p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "PART D: WRITING (2.25 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s12",
+      "title": "I. Complete the second sentence so that it means the same as the sentence before. There is an example at the beginning (0) (1.25 points)",
+      "part": "WRITING",
+      "introHtml": "<div><strong>Ví dụ (0):</strong><p>0. There is a library in my school.</p>\n<p>My school has a library.</p><p>Đáp án ví dụ: My school has a library.</p></div>",
+      "questions": [
+        {
+          "id": "s12-q2",
+          "number": "1",
+          "html": "<p>1. We are not sure what we should do to make our house more beautiful at Tet.</p>\n<p>→ We are not sure what \t</p>",
+          "kind": "text",
+          "answers": [
+            "to do to make our house more beautiful at Tet",
+            "We are not sure what to do to make our house more beautiful at Tet."
+          ],
+          "referenceHtml": "<p>1. We are not sure what we should do to make our house more beautiful at Tet.</p>\n<p>→ We are not sure what <strong>to do to make our house more beautiful at Tet.</strong></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "2",
+          "html": "<p>2. Where do they often get the information about our traditional products?</p>\n<p>→ Where do they often find\t?</p>",
+          "kind": "text",
+          "answers": [
+            "out about our traditional products?",
+            "Where do they often find out about our traditional products?"
+          ],
+          "referenceHtml": "<p>2. Where do they often get the information about our traditional products?</p>\n<p>→ Where do they often find <strong>out about our traditional products?</strong></p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "3",
+          "html": "<p>3. He won’t succeed in his work if he doesn’t manage his time effectively.</p>\n<p>→ Unless he\t</p>",
+          "kind": "text",
+          "answers": [
+            "manages his time effectively, he won’t succeed in his work",
+            "Unless he manages his time effectively, he won’t succeed in his work."
+          ],
+          "referenceHtml": "<p>3. He won’t succeed in his work if he doesn’t manage his time effectively.</p>\n<p>→ Unless he <strong>manages his time effectively, he won’t succeed in his work.</strong></p>"
+        },
+        {
+          "id": "s12-q5",
+          "number": "4",
+          "html": "<p>4. Students practice English regularly, and they become confident.</p>\n<p>→ The more regularly\t</p>",
+          "kind": "text",
+          "answers": [
+            "students practice English, the more confident they become",
+            "The more regularly students practice English, the more confident they become."
+          ],
+          "referenceHtml": "<p>4. Students practice English regularly, and they become confident.</p>\n<p>→ The more regularly <strong>students practice English, the more confident they become.</strong></p>"
+        },
+        {
+          "id": "s12-q6",
+          "number": "5",
+          "html": "<p>5. The girl said, “I will attend the festival next month.” </p>\n<p>→ The girl said that \t</p>",
+          "kind": "text",
+          "answers": [
+            "she would attend the festival the next month",
+            "The girl said that she would attend the festival the next month."
+          ],
+          "referenceHtml": "<p>5. The girl said, “I will attend the festival next month.” </p>\n<p>→ The girl said that <strong>she</strong><strong> would attend the festival the next month</strong><strong>.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "II. Write a paragraph (about 100 – 120 words) about the topic:",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p>“What should teenagers do to reduce stress?”</p>\n<p>You can use some suggestions:</p>\n<p>- Playing sports</p>\n<p>- Managing time effectively</p>\n<p>- Relaxing</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>“What should teenagers do to reduce stress?”</p>\n<p>You can use some suggestions:</p>\n<p>- Playing sports</p>\n<p>- Managing time effectively</p>\n<p>- Relaxing</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe đầy đủ",
+      "sourceName": "BÀI NGHE 1+2.mp3",
+      "sourceHash": "1db1bbf9182855a33a363fec56c64f8b3665d062b90c7d3b12578b16686b18c7",
+      "src": "/data/grade9-midterm/audio/vedec-g9-2026-13-1.mp3",
+      "duration": 328.353063,
+      "sectionIds": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "sourceHash": "c822db8d1b010cf3fa87ce74edebe3b47ea2a5db5c292986a42059354de376e1"
+}

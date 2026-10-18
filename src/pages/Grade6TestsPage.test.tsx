@@ -38,18 +38,18 @@ describe('exam modes', () => {
       expect(lookup).not.toHaveBeenCalledWith('exam-result');
     } finally { vi.useRealTimers(); }
   });
-  it('opens the last grade 8 paper in test mode and saves it separately', async () => {
-    const grade8 = { ...fixture, id: 'vedec-g8-2026-17', subtitle: 'Tiếng Anh 8' };
+  it.each([{ grade: 8 as const, last: 17 }, { grade: 9 as const, last: 16 }])('opens the last grade $grade paper in test mode and saves it separately', async ({ grade, last }) => {
+    const grade8 = { ...fixture, id: `vedec-g${grade}-2026-${last}`, subtitle: `Tiếng Anh ${grade}` };
     const fetchMock = vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => grade8 });
     vi.stubGlobal('fetch', fetchMock);
-    render(<MemoryRouter initialEntries={['/grade/8/tests/vedec-g8-2026-17?mode=test']}><Routes><Route path="/grade/8/tests/:examId" element={<Grade6TestsPage grade={8} />} /></Routes></MemoryRouter>);
-    expect(await screen.findByText('Tiếng Anh 8')).toBeInTheDocument();
-    expect(fetchMock.mock.calls[0][0]).toBe('/data/grade8-midterm/vedec-g8-2026-17.json');
+    render(<MemoryRouter initialEntries={[`/grade/${grade}/tests/vedec-g${grade}-2026-${last}?mode=test`]}><Routes><Route path="/grade/:grade/tests/:examId" element={<Grade6TestsPage grade={grade} />} /></Routes></MemoryRouter>);
+    expect(await screen.findByText(`Tiếng Anh ${grade}`)).toBeInTheDocument();
+    expect(fetchMock.mock.calls[0][0]).toBe(`/data/grade${grade}-midterm/vedec-g${grade}-2026-${last}.json`);
     expect(fetchMock.mock.calls[0][1].cache).toBe('no-cache');
     const first = screen.getByRole('article', { name: 'Câu 1' });
     fireEvent.click(within(first).getByRole('button', { name: 'T · Đúng' }));
     expect(screen.queryByText('✓ Chính xác!')).not.toBeInTheDocument();
-    expect(screen.getByRole('link', { name: 'Chọn đề khác' })).toHaveAttribute('href', '/grade/8/tests');
+    expect(screen.getByRole('link', { name: 'Chọn đề khác' })).toHaveAttribute('href', `/grade/${grade}/tests`);
     expect(localStorage.getItem(attemptKey(grade8.id, 'test'))).toContain('"q1":"T"');
     expect(localStorage.getItem(attemptKey(grade8.id, 'practice'))).toBeNull();
   });

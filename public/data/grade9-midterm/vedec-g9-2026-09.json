@@ -1,0 +1,816 @@
+{
+  "id": "vedec-g9-2026-09",
+  "number": 9,
+  "title": "Đề 09",
+  "subtitle": "Tiếng Anh 9 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PHẦN 1: TRẮC NGHIỆM (7 điểm)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Chọn từ có phần gạch chân phát âm khác với những từ còn lại (1 điểm)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Câu</strong> <strong>1.</strong> A. suburb<u>s</u> \t\t\tB. book<u>s</u> \t\tC. lake<u>s</u> \t\tD. outskirt<u>s</u></p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>1.</strong> <strong>A. suburb</strong><strong><u>s</u></strong> \t\t\tB. book<u>s</u> \t\tC. lake<u>s</u> \t\tD. outskirt<u>s</u></p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Câu</strong> <strong>2.</strong> A. develop<u>ed</u> \t\tB. locat<u>ed</u> \t\tC. found<u>ed</u> \t\tD. complet<u>ed</u></p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>2.</strong> <strong>A. develop</strong><strong><u>ed</u></strong> \t\tB. locat<u>ed</u> \t\tC. found<u>ed</u> \t\tD. complet<u>ed</u></p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Câu 3.</strong> A. fl<u>a</u>t\t\t\tB. m<u>a</u>p\t\tC. s<u>a</u>y \t\t\tD. m<u>a</u>n</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 3.</strong> A. fl<u>a</u>t\t\t\tB. m<u>a</u>p\t\t<strong>C. s</strong><strong><u>a</u></strong><strong>y</strong> \t\tD. m<u>a</u>n</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Câu</strong><strong> 4.</strong><strong> </strong>A. pl<u>ea</u>sure                         B. w<u>ea</u>ther                C. sp<u>ea</u>ker                D. f<u>ea</u>ther</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 4.</strong><strong> </strong>A. pl<u>ea</u>sure                         B. w<u>ea</u>ther                <strong>C.</strong><strong> sp</strong><strong><u>ea</u></strong><strong>ker</strong><strong>                </strong>D. f<u>ea</u>ther</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Câu</strong> <strong>5. </strong>A. <u>h</u>our                               B. <u>h</u>onesty                C. <u>h</u>onor                   D. <u>h</u>eat</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>5. </strong>A. <u>h</u>our                               B. <u>h</u>onesty                C. <u>h</u>onor                   <strong>D. </strong><strong><u>h</u></strong><strong>eat</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Chọn phương án phù hợp nhất để hoàn thành các câu sau (3 điểm)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p><strong>Câu 6. </strong>My father often ________ his hat when he enters a pagoda.</p>\n<p>A. takes over              B. takes off                        C. takes after            \tD. takes part</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 6. </strong>My father often ________ his hat when he enters a pagoda.</p>\n<p>A. takes over              <strong>B. take</strong><strong>s</strong><strong> off</strong>                        C. takes after            \tD. takes part</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p><strong>Câu</strong><strong> 7.</strong><strong> </strong>My grandparents handed ________ the skills to my parents.</p>\n<p>A. down                   B. out\t                          C. up                          D. off</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 7.</strong><strong> </strong>My grandparents handed ________ the skills to my parents.</p>\n<p><strong>A.</strong><strong> </strong><strong>down</strong>                   B. out\t                          C. up                          D. off</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p><strong>Câu 8.</strong> You should ________ priority to finishing the report which is due today.</p>\n<p>A. have\t\tB. make\t\t\tC. get\t\t\tD. give</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 8.</strong> You should ________ priority to finishing the report which is due today.</p>\n<p>A. have\t\tB. make\t\t\tC. get\t\t\t<strong>D. give</strong></p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p><strong>Câu 9. </strong>The Internet is a very fast and convenient way for me to get _________.</p>\n<p>A. informer              B. information                     C. inform                  D. informative</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 9. </strong>The Internet is a very fast and convenient way for me to get _________.</p>\n<p>A. informer              <strong>B. information</strong>                     C. inform                  D. informative</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p><strong>Câu 10. </strong>Mark is so ________ to know that he has been admitted to Harvard University.</p>\n<p>A. excitingly            B. excite\t                          C. exciting                D. excited</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 10. </strong>Mark is so ________ to know that he has been admitted to Harvard University.</p>\n<p>A. excitingly            B. excite\t                          C. exciting                <strong>D. excited</strong></p>"
+        },
+        {
+          "id": "s3-q6",
+          "number": "11",
+          "html": "<p><strong>Câu 11.</strong> The new plants in the garden will die if we don&#x27;t water them _________.</p>\n<p>A. regular\t\tB. regularly\t\t\tC. regularity\t\tD. regularize</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 11.</strong> The new plants in the garden will die if we don&#x27;t water them _________.</p>\n<p>A. regular\t\t<strong>B. regularly</strong><strong>\t</strong>\t\tC. regularity\t\tD. regularize</p>"
+        },
+        {
+          "id": "s3-q7",
+          "number": "12",
+          "html": "<p><strong>Câu 12. </strong>Mr Nam lives in the _______,but he works in the citycentre, so it takes him30 minutes to go to work.</p>\n<p>A.suburbs\t\tB.downtown\t\t\tC.buildings\t\tD.small house</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 12. </strong>Mr Nam lives in the _______, but he works in the city centre, so it takes him 30 minutes to go to work.</p>\n<p><strong>A.suburbs</strong>\t\tB.downtown\t\t\tC.buildings\t\tD.small house</p>"
+        },
+        {
+          "id": "s3-q8",
+          "number": "13",
+          "html": "<p><strong>Câu 13.</strong> Every day, they ________ Facebook Messenger to discuss their schoolwork.</p>\n<p>A. are using\t\tB. use\t\t\t\tC. will use\t\tD. used</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 13.</strong> Every day, they ________ Facebook Messenger to discuss their schoolwork.</p>\n<p>A. are using\t\t<strong>B. use</strong><strong>\t</strong>\t\t\tC. will use\t\tD. used</p>"
+        },
+        {
+          "id": "s3-q9",
+          "number": "14",
+          "html": "<p><strong>Câu 14.</strong> Last weekend, my school ________ a trip to a famous historical place.</p>\n<p>A. is organising \tB. will organise\t\tC. organised\t\tD. organises</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 14.</strong> Last weekend, my school ________ a trip to a famous historical place.</p>\n<p>A. is organising \tB. will organise\t\t<strong>C. organised</strong>\t\tD. organises</p>"
+        },
+        {
+          "id": "s3-q10",
+          "number": "15",
+          "html": "<p><strong>Câu 15.</strong> Her son doesn&#x27;t mind ________ her with the laundry and cooking.</p>\n<p>A. to help\t\tB. to helping\t\t\tC. helping\t\tD. help</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 15.</strong> Her son doesn&#x27;t mind ________ her with the laundry and cooking.</p>\n<p>A. to help\t\tB. to helping\t\t\t<strong>C. helping</strong>\t\tD. help</p>"
+        },
+        {
+          "id": "s3-q11",
+          "number": "16",
+          "html": "<p><strong>Câu</strong><strong> 16. </strong>They often encourage their children ________ in outdoor activities.<strong> </strong></p>\n<p>\tA. to participate\tB. participating</p>\n<p>\tC. to participating \tD. participate</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 16. </strong>They often encourage their children ________ in outdoor activities.<strong> </strong></p>\n<p>\t<strong>A. </strong><strong>to participate</strong>\tB. participating</p>\n<p>\tC. to participating \tD. participate</p>"
+        },
+        {
+          "id": "s3-q12",
+          "number": "17",
+          "html": "<p><strong>Câu</strong><strong> 17.</strong><strong> </strong>The ________ the price of living in the city, the ________ people can afford to live there comfortably.</p>\n<p>A. higher/ fewer         B. lower/ many                 C. higher/ more         D. lower/ less</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 17.</strong><strong> </strong>The ________ the price of living in the city, the ________ people can afford to live there comfortably.</p>\n<p><strong>A.</strong><strong> </strong><strong>h</strong><strong>igher/ </strong><strong>fewer</strong>         B. lower/ many                   C. higher/ more         D. lower/ less</p>"
+        },
+        {
+          "id": "s3-q13",
+          "number": "18",
+          "html": "<p><strong>Câu 18.</strong> Viet Nam&#x27;s first university, the Imperial Academy, was founded ________ 1076.</p>\n<p>A. on\t\t\tB. at\t\t\t\tC. to\t\t\tD. in</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 18.</strong> Viet Nam&#x27;s first university, the Imperial Academy, was founded ________ 1076.</p>\n<p>A. on\t\t\tB. at\t\t\t\tC. to\t\t\t<strong>D. in</strong></p>"
+        },
+        {
+          "id": "s3-q14",
+          "number": "19",
+          "html": "<p><strong>Câu</strong><strong> 19.</strong> If you __________ less than 8 hours tonight, you will feel tired tomorrow morning.</p>\n<p>A. sleep\t\tB. will sleep\t\t\tC. slept\t\tD. would sleep</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 19.</strong> If you ________ less than 8 hours a night, you will feel tired tomorrow morning.</p>\n<p><strong>A. sleep</strong>\t\tB. will sleep\t\t\tC. slept\t\tD. would sleep</p>"
+        },
+        {
+          "id": "s3-q15",
+          "number": "20",
+          "html": "<p><strong>Câu</strong><strong> 20.</strong> The tourists wondered where _________ the traditional crafts in the village market.</p>\n<p>A. should buy\tB.buying\t\t\tC.to buy\t\tD. bought</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 20.</strong> The tourists wondered where _________ the traditional crafts in the village market.</p>\n<p>A. should buy\tB. buying\t\t\t<strong>C.</strong><strong> </strong><strong>to buy</strong><strong>\t</strong>\tD. bought</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "III. Chọn thứ tự sắp xếp đúng của các câu trong đoạn hội thoại sau (0,4 điểm)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "21",
+          "html": "<p><strong>Câu 21.</strong></p>\n<p>a. Natalie: Thanks!</p>\n<p>b. Chris: What made you choose that?</p>\n<p>c. Natalie: I&#x27;m taking part in a volunteer project this summer.</p>\n<p>d. Chris: That&#x27;s great. Good luck!</p>\n<p>e. Natalie: I want to do something meaningful over the summer.</p>\n<p>A. c-b-e-d-a\t\t\tB. e-b-a-d-c\t\tC. a-b-c-d-e\t\tD. c-d-e-b-a</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 21.</strong></p>\n<p>a. Natalie: Thanks!</p>\n<p>b. Chris: What made you choose that?</p>\n<p>c. Natalie: I&#x27;m taking part in a volunteer project this summer.</p>\n<p>d. Chris: That&#x27;s great. Good luck!</p>\n<p>e. Natalie: I want to do something meaningful over the summer.</p>\n<p><strong>A. c-b-e-d-a</strong><strong>\t</strong>\t\tB. e-b-a-d-c\t\tC. a-b-c-d-e\t\tD. c-d-e-b-a</p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "22",
+          "html": "<p><strong>Câu 22.</strong></p>\n<p>a. Maybe a comedy.</p>\n<p>b. Good idea. What do you want to watch?</p>\n<p>c. Let&#x27;s watch a movie tonight.</p>\n<p>A. b-a-c\t\t\tB. a-c-b\t\tC. c-b-a\t\tD. a-b-c</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 22.</strong></p>\n<p>a. Maybe a comedy.</p>\n<p>b. Good idea. What do you want to watch?</p>\n<p>c. Let&#x27;s watch a movie tonight.</p>\n<p>A. b-a-c\t\t\tB. a-c-b\t\t<strong>C. c-b-a</strong>\t\tD. a-b-c</p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "IV. Chọn phần gạch chân cần phải sửa trong các câu sau (0,6 điểm)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "23",
+          "html": "<p><strong>Câu 23.</strong> I get <u>up</u> with my neighbour. We often <u>chat </u>and <u>help</u> each other <u>do</u> the gardening.</p>\n<p>A. do\t\t\t\tB. up\t\t\tC. chat\t\tD. help</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 23.</strong> I get <u>up</u> with my neighbour. We often <u>chat </u>and <u>help</u> each other <u>do</u> the gardening.</p>\n<p>A. do\t\t\t\t<strong>B. up</strong><strong>\t</strong>\t\tC. chat\t\tD. help</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "24",
+          "html": "<p><strong>Câu 24. </strong>If she <u>come</u> late, we <u>will</u> <u>go to</u> the party <u>without </u>her. </p>\n<p>A. will\t\t\tB. without\t\tC. come\t\tD. go to</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 24. </strong>If she <u>come</u> late, we <u>will</u> <u>go to</u> the party <u>without </u>her. </p>\n<p>A. will\t\t\tB. without\t\t<strong>C. come</strong>\t\tD. go to</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "25",
+          "html": "<p><strong>Câu 25.</strong> The <u>more thinner</u> the ice gets, the <u>more dangerous</u> it becomes <u>to </u>walk <u>on</u>.</p>\n<p>A. more thinner\t\tB. on\t\t\tC. to\t\t\tD. more dangerous</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 25.</strong> The <u>more thinner</u> the ice gets, the <u>more dangerous</u> it becomes <u>to </u>walk <u>on</u>.</p>\n<p><strong>A. more thinner</strong>\t\tB. on\t\t\tC. to\t\t\tD. more dangerous</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "V. Đọc biển báo/thông báo ngắn và chọn đáp án đúng cho mỗi câu sau (0,4 điểm)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "26",
+          "html": "<p><img src=\"/data/grade9-midterm/images/607a58865a75b078.jpeg\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"><img src=\"/data/grade9-midterm/images/607a58865a75b078.jpeg\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"><strong>Câu</strong><strong> </strong><strong>26.</strong><strong> </strong>What does the sign say?</p>\n<p>A. You are allowed to take photos in this area</p>\n<p>B. Photography is not allowed in this area</p>\n<p>C. We don’t sell cameras</p>\n<p>D. People who forget bringing cameras are not allowed to enter.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>26.</strong><strong> </strong>What does the sign say?</p>\n<p>A. You are allowed to take photos in this area</p>\n<p><strong>B. Photography</strong><strong> </strong><strong>is</strong><strong> </strong><strong>not</strong><strong> </strong><strong>allowed</strong><strong> </strong><strong>in</strong><strong> </strong><strong>this</strong><strong> </strong><strong>area</strong></p>\n<p>C. We don’t sell cameras</p>\n<p>D. People who forget to bring cameras are not allowed to enter.</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "27",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>27.</strong><strong> </strong>What does the notice say?</p>\n<p><strong></strong><strong>The local swimming pool is having a water safety course for children on Saturday morning. Sign up now</strong><strong>The local swimming pool is having a water safety course for children on Saturday morning. Sign up now</strong></p>\n<p>A. The water safety course for children will be held on Saturday morning.</p>\n<p>B. Sign up now for the children’s course.</p>\n<p>C. The course is held in the afternoon for teenagers</p>\n<p>D. Registration begins next month for the children’s course.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>27.</strong><strong> </strong>What does the notice say?</p>\n<p><strong></strong><strong>The local swimming pool is having a water safety course for children on Saturday morning. Sign up now</strong><strong>The local swimming pool is having a water safety course for children on Saturday morning. Sign up now</strong></p>\n<p>A. <strong>The</strong><strong> </strong><strong>water</strong><strong> </strong><strong>safety</strong><strong> </strong><strong>course for</strong><strong> </strong><strong>children</strong><strong> </strong><strong>will</strong><strong> </strong><strong>be</strong><strong> </strong><strong>held</strong><strong> </strong><strong>on</strong><strong> </strong><strong>Saturday </strong><strong>morning.</strong></p>\n<p>B. Sign up now for the children’s course.</p>\n<p>C. The course is held in the afternoon for teenagers</p>\n<p>D. Registration begins next month for the children’s course.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "VI. Đọc đoạn thông báo sau và chọn từ phù hợp nhất để điền vào chỗ trống (0,8 điểm)",
+      "part": "READING",
+      "introHtml": "<p>Dear Students,</p>\n<p>Maintaining good health is important for your well-being. Here are some tips:</p>\n<p>Healthy Eating: Eat (28) ________ whole grains, and healthy fats every day.</p>\n<p>Regular Activity: Incorporate (29) ________ minutes of physical activity (30) ________your daily routine.</p>\n<p>Proper Rest: Ensure you get a few hours of rest each night to keep your body (31) ________ well.</p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "28",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>28.</strong><strong> </strong>A. no</p>\n<p>B. all</p>\n<p>C. a variety of</p>\n<p>D. the</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>28.</strong><strong> </strong>A. no</p>\n<p>B. all</p>\n<p><strong>C.</strong><strong> </strong><strong>a</strong><strong> </strong><strong>variety</strong><strong> </strong><strong>of</strong></p>\n<p>D. the</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "29",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>29.</strong><strong> </strong>A. much</p>\n<p>B. little</p>\n<p>C. a few</p>\n<p>D. several</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>29.</strong><strong> </strong>A. much</p>\n<p>B. little</p>\n<p>C. a few</p>\n<p><strong>D.</strong><strong> several</strong></p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "30",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>30.</strong><strong> </strong>A. into</p>\n<p>B. from</p>\n<p>C. of</p>\n<p>D. on</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>30.</strong><strong> </strong><strong>A.</strong><strong> </strong><strong>into</strong></p>\n<p>B. from</p>\n<p>C. of</p>\n<p>D. on</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "31",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>31.</strong><strong> </strong>A. function</p>\n<p>B. functioning</p>\n<p>C. functioned</p>\n<p>D. functions</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>31.</strong><strong> </strong>A. function</p>\n<p><strong>B. </strong><strong>functioning</strong></p>\n<p>C. functioned</p>\n<p>D. functions</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "VIII. Đọc đoạn văn và chọn câu trả lời phù hợp nhất cho mỗi câu sau (0,8 điểm)",
+      "part": "READING",
+      "introHtml": "<p>One of the most important aspects of city life is public transportation. Efficient public transport systems can greatly enhance the quality of life for city dwellers by reducing traffic congestion and pollution. Many large cities have developed extensive networks of buses, trains, and subways to help people get around quickly and affordably.</p>\n<p>In cities like Tokyo and New York, public transportation is an essential part of daily life. The Tokyo subway system is known for its punctuality<strong> </strong>and cleanliness, transporting millions of passengers every day. Similarly, New York&#x27;s subway system, though older and less reliable, is crucial for the mobility of its residents. Public transportation not only benefits individuals but also has a positive impact on the environment. By reducing the number of private vehicles on the road, public transport systems help to lower emissions and <strong><u>decrease</u></strong> the city&#x27;s carbon footprint. Additionally, using public transportation can be more economical for residents, saving money on fuel and parking fees.</p>\n<p>However, public transportation systems also face challenges. In many cities, aging infrastructure and lack of funding can lead to delays and overcrowding. Safety and cleanliness are other concerns that need to be addressed to make public transport more appealing to users.</p>\n<p>Despite these issues, the advantages of public transportation in city life are clear. Investments in modernizing and expanding public transport can lead to significant improvements in urban living conditions. Encouraging the use of public transportation is essential for the sustainable development of cities.</p>\n<p>(Adapted from: <u>https://www.gotokyo.org</u>)</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "32",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>32. </strong>What is the passage mainly about?</p>\n<p>A. The history of public transportation</p>\n<p>B. The benefits and challenges of public transportation in cities</p>\n<p>C. The differences between public transportation in Tokyo and New York.</p>\n<p>D. The environmental impact of private vehicles.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>32. </strong>What is the passage mainly about?</p>\n<p>A. The history of public transportation</p>\n<p>B. <strong>The</strong><strong> </strong><strong>benefits</strong><strong> </strong><strong>and</strong><strong> </strong><strong>challenges</strong><strong> </strong><strong>of</strong><strong> </strong><strong>public</strong><strong> </strong><strong>transportation</strong><strong> </strong><strong>in </strong><strong>cities</strong></p>\n<p>C. The differences between public transportation in Tokyo and New York.</p>\n<p>D. The environmental impact of private vehicles.</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "33",
+          "html": "<p><strong>Câu</strong><strong> </strong><strong>3</strong><strong>3</strong><strong>. </strong>According to the passage, what is the benefit of public transportation?</p>\n<p>\tA. Increased traffic congestion\tB. Higher fuel costs</p>\n<p>C. Reduced emissions\tD. Less safety</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> </strong><strong>3</strong><strong>3</strong><strong>. </strong>According to the passage, what is the benefit of public transportation?</p>\n<p>\tA. Increased traffic congestion\tB. Higher fuel costs</p>\n<p><strong>C. </strong><strong>Reduced</strong><strong> </strong><strong>emissions</strong>\tD. Less safety</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "34",
+          "html": "<p><strong>Câu</strong><strong> 34. </strong>Which of the following is <strong><u>NOT</u></strong><strong> </strong>mentioned as a challenge for public transportation?</p>\n<p>A. Aging infrastructure\t       B. Lack of funding\t</p>\n<p>C. Overcrowding\t\t      D. High fuel costs</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 34. </strong>Which of the following is <strong><u>NOT</u></strong><strong> </strong>mentioned as a challenge for public transportation?</p>\n<p>A. Aging infrastructure\t\tB. Lack of funding</p>\n<p>C. Overcrowding\t\t\t<strong>D.</strong><strong> </strong><strong>High</strong><strong> </strong><strong>fuel</strong><strong> </strong><strong>costs</strong></p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "35",
+          "html": "<p><strong>Câu</strong><strong> 35. </strong>The word “<strong>decrease”</strong> in the passage is CLOSEST in meaning to \t.</p>\n<p>A. Reduce\t\tB. Improve\t\tC. Develop\t\tD. Expand</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong><strong> 35. </strong>The word “<strong>decrease”</strong> in the passage is CLOSEST in meaning to \t.</p>\n<p><strong>A. Reduce</strong>\t\tB. Improve\t\tC. Develop\t\tD. Expand</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "PHẦN 2: TỰ LUẬN (3 điểm)",
+      "part": "WRITING",
+      "introHtml": "<p><strong>I. </strong><strong>Chia động từ trong ngoặc ở thì thích hợp cho mỗi câu sau</strong><strong> (1 điểm)</strong></p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "36",
+          "html": "<p><strong>Câu</strong> <strong>36.</strong> In 1778, he (go) __________ to London to study with Benjamin West.</p>",
+          "kind": "text",
+          "answers": [
+            "went"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>36.</strong> In 1778, he (go) ___<strong>went</strong><strong>  </strong>_______ to London to study with Benjamin West.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "37",
+          "html": "<p><strong>Câu</strong> <strong>37.</strong> If it is convenient, we (go) ___________ out for a drink tonight.</p>",
+          "kind": "text",
+          "answers": [
+            "will go"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>37.</strong> If it is convenient, we (go) ___<strong>will</strong><strong> </strong><strong>go           </strong>________ out for a drink tonight.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "38",
+          "html": "<p><strong>Câu</strong> <strong>38.</strong> She doesn’t mind (help) __________ her classmates as long as she has time.</p>",
+          "kind": "text",
+          "answers": [
+            "helping"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>38.</strong> She doesn’t mind (help) ___<strong>h</strong><strong>elping   </strong>_______ her classmates as long as she has time.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "39",
+          "html": "<p><strong>Câu</strong> <strong>39.</strong>  Every day, he (spend)__________ about half an hour surfing the Internet.</p>",
+          "kind": "text",
+          "answers": [
+            "spends"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>39.</strong>  Every day, he (spend)______<strong>s</strong><strong>pends</strong>____ about half an hour surfing the Internet.</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "40",
+          "html": "<p><strong>Câu</strong> <strong>40.</strong> We couldn’t decide what (buy) ___________ as souvenirs.</p>",
+          "kind": "text",
+          "answers": [
+            "to buy"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>40.</strong> We couldn’t decide what (buy) ___<strong>to </strong><strong>buy</strong>________ as souvenirs.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "II. Viết lại các câu sau sao cho nghĩa của chúng không đổi so với câu gốc. (1 điểm)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "41",
+          "html": "<p><strong>Câu</strong> <strong>41.</strong> I don’t know how I can play the piano well.                                                           </p>\n<p> I don’t know how ____________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "to play the piano well",
+            "I don't know how to play the piano well."
+          ],
+          "referenceHtml": "<p>to play the piano well / I don&#x27;t know how to play the piano well.</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "42",
+          "html": "<p><strong>Câu</strong> <strong>42.</strong> My parents gave some traditional skills to me.                                                                 </p>\n<p> My parents handed ____________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "down some traditional skills to me",
+            "My parents handed down some traditional skills to me."
+          ],
+          "referenceHtml": "<p>down some traditional skills to me / My parents handed down some traditional skills to me.</p>",
+          "note": "Giữ traditional skills theo câu hỏi; đáp án gốc ghi nhầm new skills."
+        },
+        {
+          "id": "s10-q3",
+          "number": "43",
+          "html": "<p><strong>Câu</strong> <strong>43.</strong> Ms Hoa becomes old, she feels cozy when living near her family.</p>\n<p>The older_____________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Ms Hoa becomes, the cozier she feels when living near her family",
+            "The older Ms Hoa becomes, the cozier she feels when living near her family."
+          ],
+          "referenceHtml": "<p>Ms Hoa becomes, the cozier she feels when living near her family / The older Ms Hoa becomes, the cozier she feels when living near her family.</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "44",
+          "html": "<p><strong>Câu</strong> <strong>44.</strong> They were late for school because they missed the first train.</p>\n<p>Because of ____________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "missing the first train, they were late for school",
+            "Because of missing the first train, they were late for school."
+          ],
+          "referenceHtml": "<p>missing the first train, they were late for school / Because of missing the first train, they were late for school.</p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "45",
+          "html": "<p><strong>Câu</strong> <strong>45.</strong>Take these pills or you might feel better.</p>\n<p> If you_<u>_____________________________________________________</u>___.</p>",
+          "kind": "text",
+          "answers": [],
+          "referenceHtml": "",
+          "unscored": true,
+          "note": "Đề gốc dùng or you might feel better, trong khi đáp án đổi thành điều kiện khẳng định nên không giữ nghĩa. Câu này không tính điểm tự động."
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "III. Sử dụng từ gợi ý để viết thành câu hoàn chỉnh. Thay đổi dạng từ nếu cần. (1 điểm).",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "46",
+          "html": "<p><strong>Câu</strong> <strong>46.</strong><strong> </strong>Laura / can / be / good / time management / if / take / training course / school.</p>",
+          "kind": "text",
+          "answers": [
+            "Laura can be good at time management if she takes a training course at school.",
+            "Laura can be good at time management if she takes training course at school."
+          ],
+          "referenceHtml": "<p>Laura can be good at time management if she takes a training course at school. / Laura can be good at time management if she takes training course at school.</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "47",
+          "html": "<p><strong>Câu</strong> <strong>47.</strong><strong> </strong>Big/ mall/ is,/ the easier/ it/ people/ to/ lost/ in it.</p>",
+          "kind": "text",
+          "answers": [
+            "The bigger the mall is, the easier it is for people to get lost in it",
+            "The bigger the mall is, the easier it is for people to get lost in it."
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>47.</strong><strong> </strong>big/ mall/ is,/ the easier/ it/ people/ to/ lost/ in it.</p>\n<p><strong>The bigger the mall is, the easier it is for people to get lost in it.</strong></p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "48",
+          "html": "<p><strong>Câu</strong> <strong>48. </strong>boy/ came/ food poisoning/ after/ eat/ street food.</p>",
+          "kind": "text",
+          "answers": [
+            "The boy came down with food poisoning after eating street food"
+          ],
+          "referenceHtml": "<p><strong>Câu</strong> <strong>48. </strong>boy/ came/ food poison/ after/ eat/ street food.</p>\n<p><strong>The boy came down with food poisoning after eating street food</strong></p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "49",
+          "html": "<p><strong>Câu</strong> <strong>49. </strong>The restaurant/ bit/ pricey, / so/ it was/ not popular/ teenagers </p>",
+          "kind": "text",
+          "answers": [
+            "The restaurant was a bit pricey, so it was not popular among teenagers.",
+            "The restaurant was a bit pricey, so it was not popular with teenagers."
+          ],
+          "referenceHtml": "<p>The restaurant was a bit pricey, so it was not popular among teenagers. / The restaurant was a bit pricey, so it was not popular with teenagers.</p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "50",
+          "html": "<p><strong> Câu</strong> <strong>50. </strong>Travel/ a dusty road/ every day/ causes/ have/ itchy eyes/ runny nose.</p>\n<p><strong>The end</strong></p>",
+          "kind": "text",
+          "answers": [
+            "Travelling on a dusty road every day causes me to have itchy eyes and a runny nose.",
+            "Traveling on a dusty road every day causes me to have itchy eyes and a runny nose."
+          ],
+          "referenceHtml": "<p>Travelling on a dusty road every day causes me to have itchy eyes and a runny nose. / Traveling on a dusty road every day causes me to have itchy eyes and a runny nose.</p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "bcd7adf1dce98c3a9e9c84c109ab86a7ffccaa78fe697ca600a88537ce678d02"
+}

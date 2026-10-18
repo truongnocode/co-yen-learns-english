@@ -1,6 +1,6 @@
 """Import the teacher's VEDEC DOCX papers and keys without changing their sources.
 
-Usage: python scripts/import-grade6-vedec.py SOURCE_FOLDER [--grade 6|7|8] [--audio]
+Usage: python scripts/import-grade6-vedec.py SOURCE_FOLDER [--grade 6|7|8|9] [--audio]
 The generated review in tmp/gradeN-import must be checked before publishing.
 """
 import argparse
@@ -61,8 +61,8 @@ def split_blocks(blocks):
             if '<img' in b['html']:result.append(b)
             continue
         cuts=[m.start(1) for m in re.finditer(r'(?:^|[\s])((?:Question\s*n?|Câu\s*)?\d+\s*[.:)]\s*(?!\d))',b['text'],re.I)]
-        cuts=[i for i in cuts if i>0 and b['text'][:i].strip() and ('\n' in b['text'][max(0,i-2):i] or re.match(r'(?:Question\s*)?\d+[.:)]\s*A\.',b['text'][i:],re.I) or b['text'][i-1]=='\t' or GRADE in (7,8) and b['text'][i:].startswith('Question '))]
-        if GRADE==8:
+        cuts=[i for i in cuts if i>0 and b['text'][:i].strip() and ('\n' in b['text'][max(0,i-2):i] or re.match(r'(?:Question\s*)?\d+[.:)]\s*A\.',b['text'][i:],re.I) or b['text'][i-1]=='\t' or GRADE in (7,8,9) and b['text'][i:].startswith('Question '))]
+        if GRADE in (8,9):
             cuts += [m.start(1) for m in re.finditer(r'(?<!\S)((?:Question\s+\d+[.:]|\d+\.\s+)(?=[A-Z]))',b['text']) if m.start(1)>0 and re.search(r'=>|→|->|⇒',b['text'][:m.start(1)])]
             cuts += [m.start(1) for m in re.finditer(r'(?<!\S)((?:PART\s+[A-E][.:]|[A-EIVX]+\.)\s*(?:LISTENING|LANGUAGE|READING|WRITING|Rewrite\b|Complete the second\b|Write a paragraph\b|Rearrange\b))',b['text']) if m.start(1)>0]
             cuts=sorted(set(cuts))
@@ -101,6 +101,9 @@ def read_doc(path, exam_id, is_key=False):
                 bold = run.find(W+'rPr/'+W+'b')
                 if highlight is not None and highlight.get(W+'val') not in ('none', 'white') or shade is not None and shade.get(W+'fill') in ('FFFF00','00FF00'):
                     marks.extend(range(start, len(text)))
+                color=run.find(W+'rPr/'+W+'color')
+                if GRADE==9 and is_key and color is not None and color.get(W+'val','').upper() in ('FF0000','EE0000','C00000'):
+                    marks.extend(range(start,len(text)))
                 if bold is not None and bold.get(W+'val') not in ('0', 'false'):
                     bolds.extend(range(start, len(text)))
                 escaped = html.escape(value).replace('\n', '<br>')
@@ -126,7 +129,7 @@ def read_doc(path, exam_id, is_key=False):
             if re.match(r'^\s*\d+\s+[A-Z]',text):auto=re.match(r'^\s*(\d+)',text).group(1)
             if re.match(r'^\s*l\.\s*How old are Hoa',text):auto='1'
             np=p.find(W+'pPr/'+W+'numPr')
-            if np is not None and (GRADE!=8 or clean(text) or '<img' in markup):
+            if np is not None and (GRADE not in (8,9) or clean(text) or '<img' in markup):
                 nid=np.find(W+'numId');level=np.find(W+'ilvl')
                 num=nums.get(nid.get(W+'val')) if nid is not None else None
                 if num is not None:
@@ -141,7 +144,7 @@ def read_doc(path, exam_id, is_key=False):
                         elif format_name=='upperLetter' and not re.match(r'^\s*[A-D][.)]',text):
                             prefix=chr(64+counters[counter_key])+'. '
                             text=prefix+text;markup=html.escape(prefix)+markup;marks=[i+len(prefix) for i in marks];bolds=[i+len(prefix) for i in bolds]
-                        elif GRADE==8 and format_name=='lowerLetter' and not re.match(r'^\s*[a-z][.):]',text):
+                        elif GRADE in (8,9) and format_name=='lowerLetter' and not re.match(r'^\s*[a-z][.):]',text):
                             prefix=chr(96+counters[counter_key])+'. '
                             text=prefix+text;markup=html.escape(prefix)+markup;marks=[i+len(prefix) for i in marks];bolds=[i+len(prefix) for i in bolds]
             return {'text': text, 'html': '<p>'+markup+'</p>', 'marks': marks, 'bolds': bolds, 'autoNumber':auto}
@@ -191,7 +194,7 @@ def sections(blocks):
             break
         m = MAIN.match(t)
         grade7_heading=False
-        if GRADE in (7,8):
+        if GRADE in (7,8,9):
             section_main=MAIN.match(re.sub(r'^SECTION\s+','',t))
             if section_main and t.startswith('SECTION '):
                 main=section_main.group(1).upper();grade7_heading=True
@@ -205,12 +208,20 @@ def sections(blocks):
             if re.match(r'^[IVX]+\.\s*Arrange\b',t,re.I):grade7_heading=True
             if re.match(r'^PART\s+\d+\b',t):grade7_heading=True
             if re.match(r'^Task\s+\d+[.:]\s*Listen',t,re.I):grade7_heading=True
-        if GRADE==8:
+        if GRADE in (8,9):
             if re.match(r'^Write (?:a |an |short )?(?:paragraph|passage)',t,re.I):main='WRITING';grade7_heading=True
             if re.match(r'^(?:Listen to |Listen and |Part [IVX]+[.:]|Questions? [12]:\s*(?:Choose|Read|Listen|Rewrite))',t,re.I):grade7_heading=True
             if re.match(r'^[A-EIVX]+\.\s*KNOWLEDGE OF LANGUAGE',t,re.I):main='LANGUAGE FOCUS';grade7_heading=True
             if re.match(r'^Put the words',t,re.I):main='WRITING';grade7_heading=True
             if re.match(r'^Choose the (?:word|best option|letter.*underlined part)',t,re.I):main='LANGUAGE FOCUS'
+        if GRADE==9:
+            if re.match(r'^(?:Circle the letter|Mark the letter|Complete the following sentences with NO MORE|Rearranging words to make)',t,re.I):grade7_heading=True
+            if re.match(r'^(?:PHẦN [12]|[IVX]+\. (?:Chọn|Đọc|Viết|Hoàn thành|Sắp xếp|Sử dụng))',t,re.I):
+                grade7_heading=True
+                if 'Đọc' in t:main='READING'
+                elif re.search(r'Viết|Hoàn thành|Sắp xếp|TỰ LUẬN',t):main='WRITING'
+                else:main='LANGUAGE FOCUS'
+            if not main and re.match(r'^(?:I\. Phonetics|Circle the letter)',t):main='LANGUAGE FOCUS'
         if m:
             main = m.group(1).upper().replace('LISTENNING','LISTENING')
             if main=='LANGUAGE':main='LANGUAGE FOCUS'
@@ -226,11 +237,12 @@ def sections(blocks):
 
 def questions(section):
     intro, qs, current = [], [], None
-    manual = section['part'] == 'SPEAKING' or bool(re.search(r'Write\s+(?:a\s+)?(?:short\s+)?(?:paragraph|passage)',section['title'],re.I)) or GRADE in (7,8) and any(re.match(r'^Write a paragraph',clean(b['text']),re.I) for b in section['blocks'])
+    manual = section['part'] == 'SPEAKING' or bool(re.search(r'Write\s+(?:a\s+)?(?:short\s+)?(?:paragraph|passage)',section['title'],re.I)) or GRADE in (7,8,9) and any(re.match(r'^Write a paragraph',clean(b['text']),re.I) for b in section['blocks'])
+    if GRADE==9 and re.search(r'Write about the advantages',section['title'],re.I):manual=True
     if manual:
         return [], [{'number':'1','blocks':section['blocks'], 'manual':True}]
     blocks=section['blocks']
-    if GRADE in (7,8) and not any(QUESTION.match(clean(b['text'])) or b.get('autoNumber') for b in blocks):
+    if GRADE in (7,8,9) and not any(QUESTION.match(clean(b['text'])) or b.get('autoNumber') for b in blocks):
         # Some papers print one unnumbered A-D option row per blank.
         counter=0;prepared=[]
         for b in blocks:
@@ -241,11 +253,12 @@ def questions(section):
     for b in blocks:
         t=clean(b['text'])
         m=QUESTION.match(t)
-        auto=b.get('autoNumber') if GRADE in (7,8) or not re.match(r'^\s*[A-D]\.',t) else None
-        if GRADE==8 and re.match(r'^[A-D]\.',t) and current and current['blocks'] and QUESTION.match(current['blocks'][0]['text']):auto=None
+        auto=b.get('autoNumber') if GRADE in (7,8,9) or not re.match(r'^\s*[A-D]\.',t) else None
+        if GRADE in (8,9) and re.match(r'^[A-D]\.',t) and current and current['blocks'] and QUESTION.match(current['blocks'][0]['text']):auto=None
+        if GRADE==9 and any(re.match(r'^Câu\s*\d+',clean(x['text'])) for x in blocks):auto=None
         if re.fullmatch(r'(?:STATEMENTS?|SENTENCES)\s+(?:TRUE FALSE|T F|T/F)',t,re.I):
             continue
-        is_tf = b.get('tf') and len(t)>20 and not re.search(r'\b[A-D]\.',t) and not (GRADE in (7,8) and re.search(r'will listen twice|statements.*true',t,re.I))
+        is_tf = b.get('tf') and len(t)>20 and not re.search(r'\b[A-D]\.',t) and not (GRADE in (7,8,9) and re.search(r'will listen twice|statements.*true',t,re.I))
         if m or is_tf or auto:
             current={'number':m.group(1) if m else auto or str(len(qs)+1), 'blocks':[]}
             qs.append(current)
@@ -256,7 +269,7 @@ def questions(section):
         if current and re.search(r'Write\s+(?:a\s+)?(?:short\s+)?(?:paragraph|passage)',t,re.I):
             current['manual']=True
     # Keep paragraph prompts and their numbered cues together.
-    if GRADE in (7,8) and intro and qs and len(set(re.findall(r'(?<![a-z])([A-D])\s*\.',joined(intro))))>=2 and not re.search(r'\(\d+\).*[_…]',joined(intro)):
+    if GRADE in (7,8,9) and intro and qs and len(set(re.findall(r'(?<![a-z])([A-D])\s*\.',joined(intro))))>=2 and not re.search(r'\(\d+\).*[_…]',joined(intro)):
         qs.insert(0,{'number':'1','blocks':intro});intro=[]
     for i,q in enumerate(qs):
         if q.get('manual'):
@@ -268,7 +281,7 @@ def questions(section):
     if not qs and any(re.search(r'\bA\.',b['text']) for b in intro):
         qs=[{'number':'1','blocks':intro}]; intro=[]
     if not qs:
-        blank_pattern=r'\((\d+)\)\s*(?:[_…\.]\s*){2,}' if GRADE==8 else r'\((\d+)\)\s*[_…\.]{2,}'
+        blank_pattern=r'\((\d+)\)\s*(?:[_…\.]\s*){2,}' if GRADE in (8,9) else r'\((\d+)\)\s*[_…\.]{2,}'
         blank_numbers=list(dict.fromkeys(re.findall(blank_pattern,joined(intro))))
         qs=[{'number':n,'blocks':[{'text':f'Chỗ trống ({n})','html':f'<p>Chỗ trống ({n})</p>','marks':[],'bolds':[]}]} for n in blank_numbers]
     return intro,qs
@@ -318,7 +331,7 @@ def answer_for(q, k, kind):
 
 def main():
     global OUT, REVIEW, DATA_URL, GRADE
-    ap=argparse.ArgumentParser();ap.add_argument('source',type=Path);ap.add_argument('--audio',action='store_true');ap.add_argument('--grade',type=int,choices=[6,7,8],default=6);args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('source',type=Path);ap.add_argument('--audio',action='store_true');ap.add_argument('--grade',type=int,choices=[6,7,8,9],default=6);args=ap.parse_args()
     OUT=BASE/f'public/data/grade{args.grade}-midterm';REVIEW=BASE/f'tmp/grade{args.grade}-import';DATA_URL=f'/data/grade{args.grade}-midterm'
     GRADE=args.grade
     OUT.mkdir(parents=True,exist_ok=True);REVIEW.mkdir(parents=True,exist_ok=True)
@@ -334,7 +347,7 @@ def main():
             key,= [f for f in docs if 'ĐÁP ÁN' in f.name.upper()]
             paper,= [f for f in docs if f!=key and 'NỘI DUNG' not in f.name.upper()]
         else:
-            paper=next(directory.glob('2.*.docx'));key=next(directory.glob('3.*.docx'))
+            paper=next(directory.glob('2.*.docx'));key=next(f for f in directory.glob('3.*.docx') if not f.stem.endswith('BOR'))
         src_sections=sections(read_doc(paper,exam_id)); key_sections=sections(read_doc(key,exam_id,True))
         exam={'id':exam_id,'number':int(num),'title':f'Đề {int(num):02d}', 'subtitle':f'Tiếng Anh {args.grade} · Global Success · Giữa học kỳ I · VEDEC 2026','sections':[],'audio':[], 'sourceHash':hashlib.sha256(paper.read_bytes()).hexdigest()}
         reports.append(f'\nEXAM {num} source sections={len(src_sections)} key sections={len(key_sections)}')
@@ -359,11 +372,12 @@ def main():
                     _,best=max(pool,key=lambda pair:(.8*difflib.SequenceMatcher(None,stem(q),stem(pair[1])).ratio()+.2*difflib.SequenceMatcher(None,norm(s['title']),norm(pair[0]['title'])).ratio()))
                     if difflib.SequenceMatcher(None,stem(q),stem(best)).ratio()>.55 and len(stem(q))>5:k=best
                 choices=list(dict.fromkeys(re.findall(r'(?<![a-z])([A-D])\s*\.\s*',text)))
+                if GRADE==9 and re.search(r'underlined part that needs correction',s['title'],re.I) and re.search(r'A\s+B\s+C\s+D',text):choices=['A','B','C','D']
                 tf=any(b.get('tf') for b in q['blocks']) or bool(re.search(r'true|false|\bT\b.*\bF\b',s['title'],re.I)) and not re.search(r'_{3,}',text)
                 kind='manual' if q.get('manual') else 'choice' if len(choices)>=2 else 'tf' if tf else 'text'
                 answers=[] if kind=='manual' else answer_for(q,k,kind)
                 item={'id':qid,'number':q['number'],'html':joined(q['blocks'],'html'),'kind':kind,'answers':answers}
-                if GRADE==8 and not QUESTION.match(text):
+                if GRADE in (8,9) and not QUESTION.match(text):
                     printed_number=re.match(r'^\s*(\d+)(?=[.…])',text)
                     heading_number=re.match(r'^(\d+)\.\s*(?:Circle the letter|Which underlined|Choose the correct answer)',s['title']) if qi==0 else None
                     if printed_number or heading_number:item['number']=(printed_number or heading_number).group(1)
@@ -396,8 +410,8 @@ def main():
             first['questions']=[{'id':first['id']+'-q1','number':'Nói','html':combined,'kind':'manual','answers':[],'referenceHtml':reference}]
             exam['sections']=[s for s in exam['sections'] if s['part']!='SPEAKING' or s is first]
         audio_files=sorted(f for f in directory.iterdir() if f.suffix.lower() in ('.mp3','.wav','.wma','.m4a'))
-        # Paper 14's filenames are reversed: the Nam interview is part I;
-        # Mai's house recording is part II (identical source files in papers 02/11).
+        # Reviewed source order: grade 6 paper 14 has reversed track names;
+        # grade 8 paper 14 must play part I.mp3 before part 2.wav.
         if (args.grade==6 or args.grade==8) and num=='14':audio_files.reverse()
         for ai,f in enumerate(audio_files):
             name=f'{exam_id}-{ai+1}.mp3';dest=OUT/'audio'/name
@@ -415,7 +429,7 @@ def main():
         for sid,patch in overrides.get(num,{}).get('__sections',{}).items():
             next(s for s in exam['sections'] if s['id']==sid).update(patch)
         if '__audio' in overrides.get(num,{}):exam['audio']=overrides[num]['__audio']
-        if GRADE in (7,8):
+        if GRADE in (7,8,9):
             # Empty speaking placeholders are retained as headings, not fake tasks.
             for s in exam['sections']:
                 if s['part']=='SPEAKING' and all(re.fullmatch(r'\W*The end\W*',clean(re.sub('<[^>]+>','',q['html'])),re.I) for q in s['questions']):s['questions']=[]
@@ -424,7 +438,13 @@ def main():
         manifest.append({k:exam[k] for k in ('id','number','title','subtitle')} | {'questionCount':sum(len(s['questions']) for s in exam['sections']), 'audioCount':len(exam['audio'])})
     (OUT/'index.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
     (REVIEW/'review.txt').write_text('\n'.join(reports),encoding='utf-8')
-    if GRADE in (7,8):
+    if GRADE==9:
+        # Worked examples contain irrelevant checkmark-search screenshots.
+        # Prune only generated images not retained by the reviewed paper HTML.
+        retained=''.join(p.read_text(encoding='utf-8') for p in OUT.glob('vedec-*.json'))
+        for generated in (OUT/'images').glob('*'):
+            if generated.name not in retained:generated.unlink()
+    if GRADE in (7,8,9):
         # Only remove generated recordings superseded by reviewed mappings.
         # Original teacher files are never modified.
         for generated in (OUT/'audio').glob(f'vedec-g{GRADE}-2026-*.mp3'):

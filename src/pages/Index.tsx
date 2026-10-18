@@ -105,6 +105,7 @@ const Index = () => {
           <button onClick={() => navigate('/grade/6/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 18 đề ôn giữa kỳ I · Tiếng Anh lớp 6 →</button>
           <button onClick={() => navigate('/grade/7/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 18 đề ôn giữa kỳ I · Tiếng Anh lớp 7 →</button>
           <button onClick={() => navigate('/grade/8/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 17 đề ôn giữa kỳ I · Tiếng Anh lớp 8 →</button>
+          <button onClick={() => navigate('/grade/9/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 16 đề ôn giữa kỳ I · Tiếng Anh lớp 9 →</button>
         </div>
         <p className="text-sm font-semibold text-muted-foreground">© 2026 Học tiếng Anh cùng cô Yến ❤️</p>
       </footer>

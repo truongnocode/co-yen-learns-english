@@ -10,7 +10,7 @@ const button = 'inline-flex items-center justify-center gap-2 rounded-xl bg-prim
 const secondary = 'inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 font-bold hover:bg-muted';
 
 async function getData<T,>(grade: ExamGrade, path: string, signal: AbortSignal): Promise<T> {
-  const response = await fetch(`/data/grade${grade}-midterm/${path}`, { signal });
+  const response = await fetch(`/data/grade${grade}-midterm/${path}`, { signal, cache: 'no-cache' });
   if (!response.ok || !response.headers.get('content-type')?.includes('application/json')) throw new Error('Không tải được đề. Em hãy thử lại.');
   return response.json();
 }

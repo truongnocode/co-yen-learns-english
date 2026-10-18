@@ -45,6 +45,7 @@ describe('exam modes', () => {
     render(<MemoryRouter initialEntries={['/grade/8/tests/vedec-g8-2026-17?mode=test']}><Routes><Route path="/grade/8/tests/:examId" element={<Grade6TestsPage grade={8} />} /></Routes></MemoryRouter>);
     expect(await screen.findByText('Tiếng Anh 8')).toBeInTheDocument();
     expect(fetchMock.mock.calls[0][0]).toBe('/data/grade8-midterm/vedec-g8-2026-17.json');
+    expect(fetchMock.mock.calls[0][1].cache).toBe('no-cache');
     const first = screen.getByRole('article', { name: 'Câu 1' });
     fireEvent.click(within(first).getByRole('button', { name: 'T · Đúng' }));
     expect(screen.queryByText('✓ Chính xác!')).not.toBeInTheDocument();

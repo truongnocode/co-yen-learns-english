@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, Headphones, RotateCcw, Save, Zap } from 'lucide-react';
 import PageShell from '@/components/PageShell';
@@ -108,6 +108,10 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
   });
   const [storageError, setStorageError] = useState(false);
   const [confirm, setConfirm] = useState<'submit' | 'reset' | null>(null);
+  const resultFocusTimer = useRef<number>();
+  useEffect(() => () => {
+    if (resultFocusTimer.current !== undefined) window.clearTimeout(resultFocusTimer.current);
+  }, []);
   const result = examResult(questions, attempt.answers);
   const answered = questions.filter(q => !!attempt.answers[q.id]?.trim()).length;
   const unanswered = questions.length - answered;
@@ -161,7 +165,7 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
     <AlertDialog open={confirm !== null} onOpenChange={open => { if (!open) setConfirm(null); }}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>{confirm === 'reset' ? 'Làm lại từ đầu?' : 'Em muốn nộp bài?'}</AlertDialogTitle><AlertDialogDescription>{confirm === 'reset' ? 'Bài làm đã lưu của đề này trong chế độ hiện tại sẽ được thay bằng một lượt làm mới.' : unanswered ? `Còn ${unanswered} câu / bài chưa trả lời. Khi nộp, em sẽ xem được kết quả và đáp án; câu chấm tự động chưa trả lời tính là chưa đúng.` : 'Sau khi nộp, em sẽ xem được kết quả và đáp án từng câu.'}</AlertDialogDescription></AlertDialogHeader><AlertDialogFooter><AlertDialogCancel>Quay lại</AlertDialogCancel><AlertDialogAction onClick={() => {
       const action = confirm; setConfirm(null);
       if (action === 'reset') { setAttempt(newAttempt()); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-      else { setAttempt(current => ({ ...current, submitted: true })); window.setTimeout(() => { const result = document.getElementById('exam-result'); result?.focus(); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50); }
+      else { setAttempt(current => ({ ...current, submitted: true })); resultFocusTimer.current = window.setTimeout(() => { const result = document.getElementById('exam-result'); result?.focus(); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50); }
     }}>{confirm === 'reset' ? 'Làm lại' : 'Nộp bài'}</AlertDialogAction></AlertDialogFooter></AlertDialogContent></AlertDialog>
   </>;
 }

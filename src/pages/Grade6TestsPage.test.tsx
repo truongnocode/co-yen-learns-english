@@ -25,6 +25,19 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe('exam modes', () => {
+  it('cancels the result focus task when the learner leaves immediately after submitting', async () => {
+    const view = mount('test');
+    await screen.findByRole('article', { name: 'Câu 1' });
+    vi.useFakeTimers();
+    try {
+      fireEvent.click(screen.getByRole('button', { name: 'Nộp bài và xem kết quả' }));
+      fireEvent.click(screen.getByRole('button', { name: /^Nộp bài$/ }));
+      view.unmount();
+      const lookup = vi.spyOn(document, 'getElementById');
+      vi.advanceTimersByTime(100);
+      expect(lookup).not.toHaveBeenCalledWith('exam-result');
+    } finally { vi.useRealTimers(); }
+  });
   it('opens the last grade 8 paper in test mode and saves it separately', async () => {
     const grade8 = { ...fixture, id: 'vedec-g8-2026-17', subtitle: 'Tiếng Anh 8' };
     const fetchMock = vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => grade8 });

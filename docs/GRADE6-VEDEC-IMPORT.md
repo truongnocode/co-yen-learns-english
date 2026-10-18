@@ -29,6 +29,9 @@ All 11 distinct source pictures are retained as PNGs.
 
 ## Learning and assessment
 
+- The progress card sits directly below the paper title. Each listening player sits
+  below its corresponding task heading, before that task's questions. Papers with one
+  recording shared across tasks show the same complete file at each relevant task.
 - Practice mode reveals feedback immediately for choices and on request for typed answers.
 - Test mode permits changes and reveals feedback only after confirmed submission.
 - An incomplete submission requires confirmation. Unanswered scored questions earn no credit.

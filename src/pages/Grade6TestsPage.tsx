@@ -61,11 +61,11 @@ function ExamCatalog() {
   </main></PageShell>;
 }
 
-function AudioTrack({ track, index }: { track: Grade6Exam['audio'][number]; index: number }) {
+function AudioTrack({ track, sectionId }: { track: Grade6Exam['audio'][number]; sectionId: string }) {
   const [error, setError] = useState(false);
   return <div className="rounded-2xl border border-border bg-card p-4">
-    <label htmlFor={`track-${index}`} className="mb-2 block font-bold">{track.title}</label>
-    <audio id={`track-${index}`} aria-label={track.title} controls preload="metadata" src={track.src} onError={() => setError(true)} onPlay={event => {
+    <label htmlFor={`track-${sectionId}`} className="mb-2 block font-bold">{track.title}</label>
+    <audio id={`track-${sectionId}`} aria-label={track.title} controls preload="metadata" src={track.src} onError={() => setError(true)} onPlay={event => {
       document.querySelectorAll('audio').forEach(player => { if (player !== event.currentTarget) player.pause(); });
     }} className="w-full" />
     <a className="mt-2 inline-block text-xs font-semibold text-primary underline" href={track.src} target="_blank" rel="noreferrer">{error ? 'Chưa phát được. Mở file nghe riêng' : 'Mở file nghe riêng'}</a>
@@ -103,6 +103,7 @@ function QuestionCard({ question: q, attempt, mode, onAnswer, onCheck }: { quest
 
 function ExamPlayer({ exam, mode }: { exam: Grade6Exam; mode: ExamMode }) {
   const questions = exam.sections.flatMap(s => s.questions);
+  const listeningSections = exam.sections.filter(s => s.part === 'LISTENING' && s.questions.length);
   const [attempt, setAttempt] = useState<ExamAttempt>(() => {
     try { return restoreAttempt(localStorage.getItem(attemptKey(exam.id, mode)), questions) ?? newAttempt(); } catch { return newAttempt(); }
   });
@@ -130,11 +131,6 @@ function ExamPlayer({ exam, mode }: { exam: Grade6Exam; mode: ExamMode }) {
       <div><p className="text-sm font-bold text-primary">{mode === 'practice' ? 'LUYỆN TẬP · CHẤM NGAY' : 'LÀM BÀI KIỂM TRA · CHẤM SAU KHI NỘP'}</p><h1 className="mt-2 font-display text-3xl font-extrabold">{exam.title} · Giữa kỳ I</h1><p className="mt-2 text-sm text-muted-foreground">{exam.subtitle}</p></div>
       <button className={secondary} onClick={() => setConfirm('reset')}><RotateCcw className="h-4 w-4" /> Làm lại</button>
     </div>
-    <section aria-label="Bài nghe" className="mb-8 rounded-3xl bg-primary/5 p-4 sm:p-6">
-      <h2 className="mb-2 flex items-center gap-2 font-display text-xl font-extrabold"><Headphones className="h-5 w-5 text-primary" /> Nghe cùng đề</h2>
-      <p className="mb-4 text-sm leading-relaxed text-muted-foreground">Nghe lần lượt các file theo thứ tự dưới đây. Em có thể tạm dừng, tua và nghe lại. File được giữ trọn nội dung từ bản gốc.</p>
-      <div className="grid gap-3 sm:grid-cols-2">{exam.audio.map((track, i) => <AudioTrack key={track.src} track={track} index={i} />)}</div>
-    </section>
     <div className="sticky top-20 z-20 mb-6 rounded-2xl border border-border bg-card/95 p-4 shadow-1 backdrop-blur-sm">
       <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-sm font-bold">{attempt.submitted ? 'Đã nộp bài' : `Đã làm ${answered}/${questions.length} câu / bài`}</p><span className={`flex items-center gap-1 text-xs ${storageError ? 'text-destructive' : 'text-muted-foreground'}`}><Save className="h-3 w-3" />{storageError ? 'Không lưu được trên thiết bị này' : 'Lưu trên thiết bị này'}</span></div>
       <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-muted"><div className="h-full bg-primary transition-all" style={{ width: `${answered / Math.max(1, questions.length) * 100}%` }} /></div>
@@ -146,11 +142,19 @@ function ExamPlayer({ exam, mode }: { exam: Grade6Exam; mode: ExamMode }) {
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{result.manual} câu / bài cần tự đối chiếu hoặc nhờ cô chấm, không tính trong điểm trên. Đây là kết quả phần tự động, chưa phải điểm toàn bộ đề gốc.</p>
       <p className="mt-3 font-semibold">Xem từng câu phía dưới để đối chiếu và học lại nhé.</p>
     </section>}
-    <div className="space-y-6">{exam.sections.map(section => <section key={section.id} id={section.id} className="scroll-mt-52">
+    <div className="space-y-6">{exam.sections.map(section => {
+      const listeningIndex = listeningSections.findIndex(s => s.id === section.id);
+      const track = listeningIndex >= 0 ? exam.audio[exam.audio.length === 1 ? 0 : listeningIndex] : undefined;
+      return <section key={section.id} id={section.id} className="scroll-mt-52">
       <h2 className={`mb-4 font-display font-extrabold ${section.questions.length ? 'text-lg' : 'border-b border-border pb-3 text-xl text-primary'}`}>{section.title}</h2>
+      {track && <div role="region" aria-label={`Bài nghe cho ${section.title}`} className="mb-4 rounded-3xl bg-primary/5 p-4 sm:p-6">
+        <h3 className="mb-2 flex items-center gap-2 font-display text-lg font-extrabold"><Headphones className="h-5 w-5 text-primary" /> Nghe cùng bài</h3>
+        <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{exam.audio.length === 1 && listeningSections.length > 1 ? 'File nghe đầy đủ dùng chung cho các phần nghe của đề. Em có thể tua đến phần đang làm.' : 'Nghe file bên dưới để trả lời các câu hỏi trong phần này. Em có thể tạm dừng, tua và nghe lại.'}</p>
+        <AudioTrack track={track} sectionId={section.id} />
+      </div>}
       {section.introHtml && <div className="mb-4 rounded-2xl border border-border bg-card p-4 sm:p-6"><RichText value={section.introHtml} /></div>}
       <div className="space-y-4">{section.questions.map(q => <QuestionCard key={q.id} question={q} attempt={attempt} mode={mode} onAnswer={onAnswer} onCheck={id => setAttempt(current => ({ ...current, checked: [...new Set([...current.checked, id])] }))} />)}</div>
-    </section>)}</div>
+    </section>; })}</div>
     <div className="my-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5">
       <p className="text-sm text-muted-foreground">{attempt.submitted ? 'Em có thể làm lại hoặc thử một đề khác.' : `${unanswered} câu / bài chưa trả lời. Em vẫn có thể nộp và xem kết quả.`}</p>
       {attempt.submitted ? <Link to="/grade/6/tests" className={button}>Chọn đề khác <ArrowRight className="h-4 w-4" /></Link> : <button className={button} onClick={() => setConfirm('submit')}><ClipboardCheck className="h-4 w-4" /> Nộp bài và xem kết quả</button>}

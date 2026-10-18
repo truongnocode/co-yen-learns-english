@@ -25,6 +25,35 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe('exam modes', () => {
+  it('places progress above the matching listening players, including shared full recordings', async () => {
+    const listening: Grade6Exam = {
+      ...fixture,
+      audio: [
+        { title: 'Bài nghe 1', src: '/first.mp3', duration: 60, sourceName: 'first.mp3' },
+        { title: 'Bài nghe 2', src: '/second.mp3', duration: 90, sourceName: 'second.mp3' },
+      ],
+      sections: [
+        { ...fixture.sections[0], title: 'Listening I', questions: [fixture.sections[0].questions[0]] },
+        { ...fixture.sections[0], id: 's2', title: 'Listening II', questions: [fixture.sections[0].questions[1]] },
+        { ...fixture.sections[0], id: 's3', title: 'Writing', part: 'WRITING', questions: [fixture.sections[0].questions[2]] },
+      ],
+    };
+    vi.stubGlobal('fetch', vi.fn().mockImplementation(async () => ({ ok: true, headers: { get: () => 'application/json' }, json: async () => listening })));
+    const view = mount();
+    const progress = await screen.findByText('Đã làm 0/3 câu / bài');
+    const first = document.querySelector('#s1 audio')!;
+    expect(first).toHaveAttribute('src', '/first.mp3');
+    expect(document.querySelector('#s2 audio')).toHaveAttribute('src', '/second.mp3');
+    expect(document.querySelector('#s3 audio')).toBeNull();
+    expect(progress.compareDocumentPosition(first) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    view.unmount();
+    listening.audio = [listening.audio[0]];
+    mount();
+    await screen.findByText('Listening II');
+    expect(document.querySelector('#s1 audio')).toHaveAttribute('src', '/first.mp3');
+    expect(document.querySelector('#s2 audio')).toHaveAttribute('src', '/first.mp3');
+    expect(document.querySelector('#s1 audio')?.id).not.toBe(document.querySelector('#s2 audio')?.id);
+  });
   it('gives immediate choice feedback, checks typed answers on request, and resumes after reload', async () => {
     const view = mount();
     const first = await screen.findByRole('article', { name: 'Câu 1' });

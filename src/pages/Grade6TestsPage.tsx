@@ -3,10 +3,9 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle2, ClipboardCheck, Headphones, RotateCcw, Save, Zap } from 'lucide-react';
 import PageShell from '@/components/PageShell';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '@/components/ui/alert-dialog';
-import { attemptKey, examResult, isAutoScored, isCorrectExamAnswer, newAttempt, restoreAttempt, type ExamAttempt, type ExamMode, type ExamQuestion, type ExamSummary, type Grade6Exam } from '@/lib/grade6Exam';
+import { MIDTERM_EXAM_COUNTS, isValidMidtermExamId, type ExamGrade, attemptKey, examResult, isAutoScored, isCorrectExamAnswer, newAttempt, restoreAttempt, type ExamAttempt, type ExamMode, type ExamQuestion, type ExamSummary, type Grade6Exam } from '@/lib/grade6Exam';
 import './grade6-tests.css';
 
-type ExamGrade = 6 | 7;
 const button = 'inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50';
 const secondary = 'inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 font-bold hover:bg-muted';
 
@@ -44,8 +43,8 @@ function ExamCatalog({ grade }: { grade: ExamGrade }) {
     <header className="my-6 rounded-3xl bg-primary p-6 text-primary-foreground sm:p-9">
       <span className="text-sm font-bold opacity-85">GLOBAL SUCCESS · VEDEC 2026</span>
       <h1 className="mt-2 font-display text-3xl font-extrabold sm:text-4xl">Cùng ôn thi giữa kỳ I</h1>
-      <p className="mt-3 max-w-2xl leading-relaxed opacity-90">18 đề Tiếng Anh lớp {grade}, có bài nghe và đáp án. Chọn cách học, chọn một đề và bắt đầu nhé!</p>
-      <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full bg-white/15 px-3 py-1.5">18 đề tham khảo</span><span className="flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5"><Headphones className="h-4 w-4" /> Có file nghe gốc</span></div>
+      <p className="mt-3 max-w-2xl leading-relaxed opacity-90">{MIDTERM_EXAM_COUNTS[grade]} đề Tiếng Anh lớp {grade}, có bài nghe và đáp án. Chọn cách học, chọn một đề và bắt đầu nhé!</p>
+      <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full bg-white/15 px-3 py-1.5">{MIDTERM_EXAM_COUNTS[grade]} đề tham khảo</span><span className="flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5"><Headphones className="h-4 w-4" /> Có file nghe gốc</span></div>
     </header>
     <ModePicker mode={mode} onChange={setMode} />
     <p className="my-5 text-sm leading-relaxed text-muted-foreground">Phần viết đoạn văn và nói để em tự luyện, đối chiếu hướng dẫn hoặc nhờ cô chấm. Bài làm được lưu trên trình duyệt của thiết bị này.</p>
@@ -177,7 +176,7 @@ function ExamDetail({ examId, grade }: { examId: string; grade: ExamGrade }) {
   const [setupMode, setSetupMode] = useState<ExamMode>('practice');
   useEffect(() => {
     const controller = new AbortController(); setExam(null); setError('');
-    if (!(grade === 6 ? /^vedec-2026-(0[1-9]|1[0-8])$/ : /^vedec-g7-2026-(0[1-9]|1[0-8])$/).test(examId)) { setError('Không tìm thấy đề này.'); return; }
+    if (!isValidMidtermExamId(grade, examId)) { setError('Không tìm thấy đề này.'); return; }
     getData<Grade6Exam>(grade, examId + '.json', controller.signal).then(setExam).catch(e => { if (!controller.signal.aborted) setError(e.message); });
     return () => controller.abort();
   }, [examId, grade, retry]);

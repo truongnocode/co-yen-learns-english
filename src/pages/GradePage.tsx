@@ -1,3 +1,4 @@
+import { MIDTERM_EXAM_COUNTS, isExamGrade } from '@/lib/grade6Exam';
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -95,10 +96,10 @@ const GradePage = () => {
       </div>
 
       <div className="max-w-3xl mx-auto px-5 pb-20">
-        {(grade === 6 || grade === 7) && (
+        {isExamGrade(grade) && (
           <button onClick={() => navigate(`/grade/${grade}/tests`)} className="mb-6 flex w-full items-center gap-4 rounded-2xl bg-accent p-5 text-left text-accent-foreground shadow-1 transition hover:shadow-2">
             <ClipboardList className="h-9 w-9 shrink-0" />
-            <span className="flex-1"><span className="block font-display text-xl font-extrabold">Đề ôn thi giữa kỳ I</span><span className="mt-1 block text-sm">18 đề Global Success · Có bài nghe · Hai chế độ chấm</span></span>
+            <span className="flex-1"><span className="block font-display text-xl font-extrabold">Đề ôn thi giữa kỳ I</span><span className="mt-1 block text-sm">{MIDTERM_EXAM_COUNTS[grade]} đề Global Success · Có bài nghe · Hai chế độ chấm</span></span>
             <ArrowLeft className="h-5 w-5 rotate-180" />
           </button>
         )}

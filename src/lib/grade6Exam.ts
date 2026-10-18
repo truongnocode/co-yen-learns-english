@@ -1,5 +1,14 @@
 import { normalizeAnswer } from './answerMatch';
 
+export const MIDTERM_EXAM_COUNTS = { 6: 18, 7: 18, 8: 17 } as const;
+export type ExamGrade = keyof typeof MIDTERM_EXAM_COUNTS;
+export const isExamGrade = (grade: number): grade is ExamGrade => grade in MIDTERM_EXAM_COUNTS;
+export function isValidMidtermExamId(grade: ExamGrade, id: string) {
+  const prefix = grade === 6 ? 'vedec-2026-' : `vedec-g${grade}-2026-`;
+  const number = id.slice(prefix.length);
+  return id.startsWith(prefix) && /^\d{2}$/.test(number) && Number(number) >= 1 && Number(number) <= MIDTERM_EXAM_COUNTS[grade];
+}
+
 export interface ExamQuestion {
   id: string;
   number: string;
@@ -43,7 +52,7 @@ export interface ExamAttempt {
   startedAt: number;
 }
 export const newAttempt = (): ExamAttempt => ({ answers: {}, checked: [], submitted: false, startedAt: Date.now() });
-export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade${id.startsWith('vedec-g7-') ? 7 : 6}:v1:${id}:${mode}`;
+export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade${id.startsWith('vedec-g8-') ? 8 : id.startsWith('vedec-g7-') ? 7 : 6}:v1:${id}:${mode}`;
 
 // Short answers accept case, punctuation, apostrophe and contraction variants.
 // They deliberately do not use fuzzy matching, which could accept wrong grammar.

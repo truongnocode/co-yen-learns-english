@@ -1,0 +1,675 @@
+{
+  "id": "vedec-g8-2026-17",
+  "number": 17,
+  "title": "Đề 17",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A. LISTENING (2 points)",
+      "part": "LISTENING",
+      "introHtml": "<p><strong>I. Listening to Tom and Mai talking about their lives in the city and the </strong><strong>countryside .</strong><strong> Fill in each blank with one </strong><strong>word .</strong><strong> (1,0pt) </strong></p>\n<p><strong>In the city </strong></p>\n<p><strong>In the countryside </strong></p>\n<p>-There are many (1) …………….for entertainment .</p>\n<p>-It is more (2) ……………….to get around.</p>\n<p>-There are many means of (3) ………….transport.</p>\n<p>-It is peaceful and (4) …………….</p>\n<p>- Things are simple and lovely .</p>\n<p>-People are kind and (5) ………….</p>",
+      "questions": [
+        {
+          "id": "s1-q1",
+          "number": "1",
+          "html": "<p>Chỗ trống (1)</p>",
+          "kind": "text",
+          "answers": [
+            "places"
+          ],
+          "referenceHtml": "<p>(1): places</p>"
+        },
+        {
+          "id": "s1-q2",
+          "number": "2",
+          "html": "<p>Chỗ trống (2)</p>",
+          "kind": "text",
+          "answers": [
+            "convenient"
+          ],
+          "referenceHtml": "<p>(2): convenient</p>"
+        },
+        {
+          "id": "s1-q3",
+          "number": "3",
+          "html": "<p>Chỗ trống (3)</p>",
+          "kind": "text",
+          "answers": [
+            "public"
+          ],
+          "referenceHtml": "<p>(3): public</p>"
+        },
+        {
+          "id": "s1-q4",
+          "number": "4",
+          "html": "<p>Chỗ trống (4)</p>",
+          "kind": "text",
+          "answers": [
+            "spacious"
+          ],
+          "referenceHtml": "<p>(4): spacious</p>"
+        },
+        {
+          "id": "s1-q5",
+          "number": "5",
+          "html": "<p>Chỗ trống (5)</p>",
+          "kind": "text",
+          "answers": [
+            "hospitable"
+          ],
+          "referenceHtml": "<p>(5): hospitable</p>"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "II. Listen to a conversation and decide if the statements are true (T) or false (F) (1,0pt)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. Sarah is a teacher.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>T</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. She usually arrives at work at nine o ’clock.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>F</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. Sarah always brings a sandwich from home.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>F</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. She often has work to do in the evening</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>T</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. She never goes out during the week</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>F</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PART B. LANGUAGE (3.0 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s4",
+      "title": "I. Choose the best answer A, B, C or D to complete the sentences(2pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "1",
+          "html": "<p>1. Mr Nam dislikes _______ the Net in the evening.</p>\n<p>A. to surf</p>\n<p>B. surf</p>\n<p>C. surfed</p>\n<p>D. surfing</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. Mr Nam dislikes _______ the Net in the evening.</p>\n<p>A. to surf</p>\n<p>B. surf</p>\n<p>C. surfed</p>\n<p><strong><u>D.</u></strong><strong><u> surf</u></strong><strong><u>ing</u></strong></p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "2",
+          "html": "<p>2. Nam didn’t study hard,______ he failed the exam.</p>\n<p>A. but</p>\n<p>B. so</p>\n<p>C. and</p>\n<p>D. for</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. Nam didn’t study hard,______ he failed the exam.</p>\n<p>A. but</p>\n<p><strong><u>B. so</u></strong></p>\n<p>C. and</p>\n<p>D. for</p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "3",
+          "html": "<p>“Would you like  to go to the swimming pool with me?” “_______.”</p>\n<p> A. You don’t want to</p>\n<p>B. Let’s go out</p>\n<p>C. I’d love to.Thanks</p>\n<p>D. That’s difficult</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>“Would you like  to go to the swimming pool with me?” “_______.”</p>\n<p> A. You don’t want to</p>\n<p>B. Let’s go out</p>\n<p><strong><u>C. </u></strong><strong><u>I’d love </u></strong><strong><u>to.Thanks</u></strong></p>\n<p>D. That’s difficult</p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "4",
+          "html": "<p>4.   The sport that kids in the UK are crazy_______is football.</p>\n<p>A. in</p>\n<p>B. about</p>\n<p>C. for</p>\n<p>D. at</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4.   The sport that kids in the UK are crazy_______is football.</p>\n<p>A. in</p>\n<p><strong><u>B. about</u></strong></p>\n<p>C. for</p>\n<p>D. at</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "5",
+          "html": "<p>5.There are a lot of amusement parks___________ our neighborhood.</p>\n<p>A. on</p>\n<p>B<strong>.</strong> in</p>\n<p>C<strong>.</strong> at </p>\n<p>D<strong>.</strong> in front of</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5.There are a lot of amusement parks___________ our neighborhood.</p>\n<p>A. on</p>\n<p><strong><u>B. i</u></strong><strong><u>n</u></strong></p>\n<p>C<strong>.</strong> at </p>\n<p>D<strong>.</strong> in front of</p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "6",
+          "html": "<p>6. Our teacher _______a video of our last meeting in our forum for everyone  to see.</p>\n<p>A. uploaded</p>\n<p>B. connects</p>\n<p>C. checked</p>\n<p>D. logs on</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. Our teacher _______a video of our last meeting in our forum for everyone  to see.</p>\n<p><strong><u>A. uploaded</u></strong></p>\n<p>B. connects</p>\n<p>C. checked</p>\n<p>D. logs on</p>"
+        },
+        {
+          "id": "s4-q7",
+          "number": "7",
+          "html": "<p>7. In his free time, he likes to ………… fish and ………… pigs. </p>\n<p>A. catch/ feed</p>\n<p>B. feed/ catch</p>\n<p>C. herd/ pick</p>\n<p>D. pick/ herd</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. In his free time, he likes to ………… fish and ………… pigs. </p>\n<p><strong><u>A. catch/ feed</u></strong></p>\n<p>B. feed/ catch</p>\n<p>C. herd/ pick</p>\n<p>D. pick/ herd</p>"
+        },
+        {
+          "id": "s4-q8",
+          "number": "8",
+          "html": "<p>8. People in the countryside live_______ than those in the city.</p>\n<p>A. happy</p>\n<p>B. happily</p>\n<p>C. more happily</p>\n<p>D. less happy</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. People in the countryside live_______ than those in the city.</p>\n<p>A. happy</p>\n<p>B. happily</p>\n<p><strong><u>C</u></strong><strong><u>. more happily</u></strong></p>\n<p>D. less happy</p>"
+        },
+        {
+          "id": "s4-q9",
+          "number": "9",
+          "html": "<p>9. A busy time when people cut and gather their crops is called _______.</p>\n<p>A. harvest time</p>\n<p>B. herd</p>\n<p>C. paddy field</p>\n<p>D.combine harvester</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. A busy time when people cut and gather their crops is called _______.</p>\n<p><strong><u>A. harvest time</u></strong></p>\n<p>B. herd</p>\n<p>C. paddy field</p>\n<p>D.combine harvester</p>"
+        },
+        {
+          "id": "s4-q10",
+          "number": "10",
+          "html": "<p>10. Does your brother ______ reading books to watching films in his free time?</p>\n<p>A. like</p>\n<p>B. prefer</p>\n<p>C. hate</p>\n<p>D. detest</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10. Does your brother ______ reading books to watching films in his free time?</p>\n<p>A. like</p>\n<p><strong><u>B. </u></strong><strong><u>prefer</u></strong></p>\n<p>C. hate</p>\n<p>D. detest</p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "II. Supply the correct tense or form of the verb in parentheses(1pt)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "1",
+          "html": "<p>1. I (go) __________________herding buffaloes with the boys yesterday.</p>",
+          "kind": "text",
+          "answers": [
+            "went"
+          ],
+          "referenceHtml": "<p>1. I <strong><u>went</u></strong> herding buffaloes with the boys yesterday.</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "2",
+          "html": "<p>2. Teenagers enjoy (connect) __________________ with friends on Facebook.</p>",
+          "kind": "text",
+          "answers": [
+            "connecting"
+          ],
+          "referenceHtml": "<p>2. Teenagers enjoy <strong><u>connecting</u></strong>   with friends on Facebook.</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "3",
+          "html": "<p>3. He usually (cycle) __________________to the countryside with his father.</p>",
+          "kind": "text",
+          "answers": [
+            "cycles"
+          ],
+          "referenceHtml": "<p>3. He usually <strong><u>cycles</u></strong> to the countryside with his father.</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "4",
+          "html": "<p>4. It (rain)__________________ heavily outside now.</p>",
+          "kind": "text",
+          "answers": [
+            "is raining"
+          ],
+          "referenceHtml": "<p>4. It <strong><u>is </u></strong><strong><u>raining</u></strong>  heavily outside now.</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "5",
+          "html": "<p>5. We (have) __________________ a picnic next Sunday.</p>",
+          "kind": "text",
+          "answers": [
+            "will have"
+          ],
+          "referenceHtml": "<p>5. We <strong><u>will have</u></strong> a picnic next Sunday.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "PART C: READING (2.5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s7",
+      "title": "I. Read the passage and circle the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks. (1.25pts)",
+      "part": "READING",
+      "introHtml": "<p>     Teenagers today have a lot of things to do. They go to school, do homework, and spend time with friends. Some teenagers enjoy playing sports, while (1)______  like listening to music or using social media. Sometimes they feel tired when they have too much homework. (2) _______, it is important for them to relax. They can go for a walk, read books, or talk with their friends. These activities help them feel happier and (3) _______ than before. Parents should understand their children and give them advice. Teenagers also need love and care (4) _______ their families. Life can be easier when they have support from people around them. Teenage life is not always easy, but it is also (5) _______ and interesting.</p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>1. <strong>A</strong>. other  \t         <strong>B</strong>. others  \t       \t<strong>C.</strong> each         \t\t<strong>D</strong>. the other</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>(1): B</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>2. <strong>A</strong>. Because  \t\t<strong>B</strong>. Therefore      \t\t<strong>C</strong>. However  \t<strong>D</strong>. Although </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>(2): B</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>3. <strong>A</strong>. more good  \t<strong>B</strong>. good  \t      \t\t<strong>C.</strong> better  \t\t<strong>D</strong>. best</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>(3): C</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>4. <strong>A</strong>. from  \t\t<strong>B</strong>. of  \t\t      <strong>C</strong>. with  \t\t<strong>D</strong>. to</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>(4): A</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p>5. <strong>A</strong>. boring  \t\t<strong>B</strong>. excited  \t      <strong>C</strong>. bored         \t<strong>D</strong>. exciting</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>(5): D</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Read the following passage and do the tasks below(1.25pts)",
+      "part": "READING",
+      "introHtml": "<p>Many people enjoy living in a big city because they think life is more exciting there. However, I come from a small village and in my view, there are lots of benefits. The main reason I prefer village life is because it’s very quiet, so I always feel calm when I’m here. Another reason is that the air is so fresh and clean. We have more green spaces and bigger gardens, too. In addition, I think the people here are friendlier. Personally, I’m interested in wildlife photography, so the countryside is perfect for me.</p>\n<p>    The only downside is transport. I have an early start for a long journey to school in Faro and the school bus is always stopping to pick up more people. Also, it’s boring sometimes, but I enjoy chatting to my friends. Fortunately, I’m learning to ride a moped. On balance, I disagree that city life is better, as I think my village lifestyle is </p>\n<p>healthier and more relaxing.         </p>\n<p>In spite of that, some of my friends couldn’t cope with life in the country, so it comes down to personal opinion.</p>\n<p><strong>A. </strong><strong>Choose the best answer A, B, C or D to complete the sentences:</strong></p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p>1. Where does the writer come from?</p>\n<p><strong>A. </strong>a big city        <strong>B.</strong> a small village        <strong>C.</strong> a countryside           <strong>D.</strong> a small town<strong> </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>I come from a small village. → B</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p>2. One reason why he prefers village life is that…………………………</p>\n<p><strong>A. </strong>it’s very noisy                                          <strong>B.</strong> the air is so fresh and clean</p>\n<p><strong>C.</strong> life is more exciting there                       <strong> D. </strong>village lifestyle is healthier</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Another reason is that the air is so fresh and clean. → B</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "B. Answer the questions:",
+      "part": "READING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "3",
+          "html": "<p>3. What does he think about the people in his village?</p>",
+          "kind": "text",
+          "answers": [
+            "They are friendlier",
+            "The people in his village are friendlier",
+            "He thinks the people in his village are friendlier"
+          ],
+          "referenceHtml": "<p>3. What does he think about the people in his village?</p>\n<p>     The people/ They  are friendlier.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "4",
+          "html": "<p>4. How does he go to school?</p>",
+          "kind": "text",
+          "answers": [
+            "By bus",
+            "By school bus",
+            "He goes to school by bus",
+            "He goes to school by school bus"
+          ],
+          "referenceHtml": "<p>4. How does he go to school?</p>\n<p>     He goes to school by bus </p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "5",
+          "html": "<p>5. Does  the writer agree that city life is better ?</p>",
+          "kind": "text",
+          "answers": [
+            "No , he doesn’t",
+            "No , he doesn’t ."
+          ],
+          "referenceHtml": "<p>5. Does  the writer agree that city life is better ?</p>\n<p>     No , he doesn’t .</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "PART D. WRITING (2.5 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "I. Complete the second sentence so that it means the same as the sentence before:(1,5pts)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p>1. Why don&#x27;t we open all the windows? </p>\n<p> How about ………………………………………………………………………?</p>",
+          "kind": "text",
+          "answers": [
+            "opening all the windows",
+            "How about opening all the windows?",
+            "How about opening all the windows",
+            "opening all the windows?"
+          ],
+          "referenceHtml": "<p>1. Why don&#x27;t we open all the windows? (1,5pt)</p>\n<p> <strong>How about</strong><strong> opening all the </strong><strong>windows ?</strong></p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "2",
+          "html": "<p>2. It takes Mr Nam 30 minutes to drive to work everyday.</p>\n<p> Mr Nam spends…………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "30 minutes driving to work everyday",
+            "Mr Nam spends 30 minutes driving to work everyday"
+          ],
+          "referenceHtml": "<p>2. It takes Mr Nam 30 minutes to drive to work everyday.</p>\n<p> <strong>Mr Nam spends</strong><strong> </strong><strong>30 minutes driving to work everyday</strong></p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "3",
+          "html": "<p>3. He loves surfing the facebook in his leisure time.</p>\n<p> He is fond ………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "of surfing the facebook in his leisure time",
+            "He is fond of surfing the facebook in his leisure time.",
+            "He is fond of surfing the facebook in his leisure time",
+            "of surfing the facebook in his leisure time."
+          ],
+          "referenceHtml": "<p>3. He loves surfing the facebook in his leisure time.</p>\n<p> <strong>He is fond </strong><strong>of </strong><strong>surfing the facebook in his leisure time.</strong></p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "4",
+          "html": "<p>4. Minh is a better swimmer than Hieu.</p>\n<p> Minh swims ……………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "better than Hieu",
+            "Minh swims better than Hieu"
+          ],
+          "referenceHtml": "<p>4. Minh is a better swimmer than Hieu.</p>\n<p> <strong>Minh swims</strong><strong> better than Hieu</strong> </p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "5",
+          "html": "<p><strong>5.</strong> There was a loud noise next to my door last night, so I couldn’t sleep. </p>\n<p>Because……………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "There was a loud noise next to my door last night, I couldn’t sleep",
+            "Because There was a loud noise next to my door last night, I couldn’t sleep.",
+            "There was a loud noise next to my door last night, I couldn’t sleep."
+          ],
+          "referenceHtml": "<p><strong>5.</strong> There was a loud noise next to my door last night, so I couldn’t sleep. </p>\n<p><strong></strong><strong> Because</strong><strong> </strong><strong>There was a loud noise next to my door last night, I couldn’t sleep.</strong></p>"
+        },
+        {
+          "id": "s11-q6",
+          "number": "6",
+          "html": "<p>6.  It takes us half a day to clean up the beach in the morning.</p>\n<p>We spend………………………………………………………………….</p>",
+          "kind": "text",
+          "answers": [
+            "half a day cleaning up the beach in the morning",
+            "We spend half a day cleaning up the beach in the morning"
+          ],
+          "referenceHtml": "<p> 6.  It takes us half a day to clean up the beach in the morning.</p>\n<p><strong>We spend half a day cleaning up the beach in the morning</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "II. Write a short paragraph (about 80- 100 words) about the advantages of living in the countryside. (1.0 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p>People in the countryside are friendly to each other.</p>\n<p>Life in the countryside is simple and peaceful.</p>\n<p>Food is fresher and cheaper.</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body,<br>and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of<br>secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "BÀI NGHE 1.mp3",
+      "sourceHash": "5bc95a214439a95a6776ee14f9ecce4ff587cfa48803dffa40c10138069c2dc8",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-17-1.mp3",
+      "duration": 77.988639
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "BÀI NGHE 2.mp3",
+      "sourceHash": "f91248e5f5c4406e652d5693796a4a243dce21abcc6b79ed67ccf1f4cf7d0fe2",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-17-2.mp3",
+      "duration": 153.286531
+    }
+  ],
+  "sourceHash": "eaaa25b921d9f6390365fd3f7fc5d80ea8506c2793ac3b2f5be3f76cbc05c6b4"
+}

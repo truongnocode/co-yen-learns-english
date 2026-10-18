@@ -1,0 +1,1117 @@
+{
+  "01": {
+    "s5-q1": {
+      "answers": [],
+      "unscored": true,
+      "note": "Đáp án gốc của câu phát âm chưa thống nhất với các phần gạch chân. Em đối chiếu với cô; câu này không tính điểm tự động."
+    },
+    "s3-q1": {
+      "answers": [
+        "technology generation",
+        "'technology' generation"
+      ]
+    },
+    "s14-q1": {
+      "answers": [
+        "interested in writing short stories when she has free time",
+        "=>Mai is interested in writing short stories when she has free time"
+      ]
+    },
+    "s14-q2": {
+      "answers": [
+        "Jack has a new laptop, he never logs on his account on Facebook",
+        "Although Jack has a new laptop, he never logs on his account on Facebook. .",
+        "Jack has a new laptop, he never logs on his account on Facebook. ."
+      ]
+    },
+    "s14-q3": {
+      "answers": [
+        "very interesting to fly a kite in the countryside",
+        "It’s very interesting to fly a kite in the countryside"
+      ]
+    },
+    "s14-q4": {
+      "answers": [
+        "drives less carefully than Hung",
+        "Hung’s brother drives less carefully than Hung"
+      ]
+    },
+    "s14-q5": {
+      "answers": [
+        "taking a break and relaxing for a while?",
+        "How about taking a break and relaxing for a while? .",
+        "How about taking a break and relaxing for a while?",
+        "taking a break and relaxing for a while? ."
+      ]
+    }
+  },
+  "02": {
+    "s5-q6": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>Kind and hospitable to visitors → B. hospitable</p>"
+    },
+    "s5-q9": {
+      "answers": [
+        "A"
+      ],
+      "referenceHtml": "<p>KEEP OFF THE GRASS → A. You must not walk on the grass.</p>"
+    },
+    "s3-q5": {
+      "html": "<p><strong>Question</strong><strong> </strong><strong>n</strong><strong>10</strong>. According to speaker 3, life in the countryside is peaceful and____________.</p>"
+    },
+    "s12-q1": {
+      "answers": [
+        "French more fluently than Nam",
+        "Nam’s brother speaks French more fluently than Nam.",
+        "=>Nam’s brother speaks Nam’s brother speaks French more fluently than Nam."
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "playing soccer with his peers after school",
+        "My brother is into playing soccer with his peers after school.",
+        "=>My brother is into playing soccer with his peers after school"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "Jack has a new laptop, he never logs on his account on Facebook",
+        "Although Jack has a new laptop, he never logs on his account on Facebook."
+      ]
+    }
+  },
+  "03": {
+    "s3-q1": {
+      "answers": [
+        "entertainment"
+      ],
+      "referenceHtml": "<p>(1): entertainment</p>"
+    },
+    "s3-q2": {
+      "answers": [
+        "convenient"
+      ],
+      "referenceHtml": "<p>(2): convenient</p>"
+    },
+    "s3-q3": {
+      "answers": [
+        "means"
+      ],
+      "referenceHtml": "<p>(3): means</p>"
+    },
+    "s3-q4": {
+      "answers": [
+        "peaceful"
+      ],
+      "referenceHtml": "<p>(4): peaceful</p>"
+    },
+    "s3-q5": {
+      "answers": [
+        "kind"
+      ],
+      "referenceHtml": "<p>(5): kind</p>"
+    },
+    "s5-q3": {
+      "answers": [
+        "C",
+        "D"
+      ],
+      "note": "File đáp án đánh dấu cả C và D. Chấp nhận cả hai lựa chọn theo tài liệu đi kèm.",
+      "referenceHtml": "<p>Đáp án đi kèm đánh dấu C. worse than và D. more badly than.</p>"
+    },
+    "s8-q1": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>The library is open from 8:00 a.m. to 5:00 p.m. → C. Leave the library by 5:00 p.m.</p>"
+    },
+    "s8-q2": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>Biển cấm điện thoại → B. You must not use your phone.</p>"
+    },
+    "s12-q1": {
+      "answers": [
+        "Exams may give students a lot of stress",
+        "Exams may give students a lot of stress."
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "The healthcare service in the city is better than that in the countryside",
+        "The healthcare service in the city is better than that in the countryside."
+      ]
+    },
+    "s13-q1": {
+      "answers": [
+        "arrived later than they did",
+        "We arrived later than they did.",
+        "→ We arrived later than they did"
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "would rather play football than play video games",
+        "Nam would rather play football than play video games.",
+        "→ Nam would rather play football than play video games"
+      ]
+    },
+    "s13-q3": {
+      "answers": [
+        "is tired, but she still wants to join the leisure activity with her friends",
+        "Lan is tired, but she still wants to join the leisure activity with her friends.",
+        "→ Lan is tired, but she still wants to join the leisure activity with her friends"
+      ]
+    },
+    "s13-q4": {
+      "answers": [
+        "What picturesque scenery in the countryside!"
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 158
+      }
+    }
+  },
+  "05": {
+    "s12-q2": {
+      "answers": [
+        "cook better than me",
+        "cook better than I can",
+        "My mother can cook better than me",
+        "My mother can cook better than I can",
+        "->My mother can cook better than me",
+        "->My mother can cook better than I can"
+      ]
+    },
+    "s12-q1": {
+      "answers": [
+        "listening to music every day",
+        "I enjoy listening to music every day.",
+        "->I enjoy listening to music every day"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "therefore, the main part of the festival was delayed for an hour",
+        "It rained heavily; therefore, the main part of the festival was delayed for an hour.",
+        "->It rained heavily; therefore, the main part of the festival was delayed for an hour"
+      ]
+    }
+  },
+  "06": {
+    "s17-q2": {
+      "answers": [
+        "Nelson plays football more skillfully than Brian",
+        "Nelson plays football more skillfully than Brian does"
+      ]
+    },
+    "s16-q1": {
+      "answers": [
+        "Children in the countryside walk to school farther than those in the city",
+        "Children in the countryside walk to school farther than those in the city."
+      ]
+    },
+    "s16-q2": {
+      "answers": [
+        "Most teenagers prefer using Facebook to keep in touch with their friends",
+        "Most teenagers prefer using Facebook to keep in touch with their friends."
+      ]
+    },
+    "s17-q1": {
+      "answers": [
+        "Jack has studied every night for a week; therefore, he gets a good grade on the test",
+        "Jack has studied every night for a week; therefore, he gets a good grade on the test."
+      ]
+    },
+    "s17-q3": {
+      "answers": [
+        "They are into flying kites in the vast green fields",
+        "They are into flying kites in the vast green fields."
+      ]
+    }
+  },
+  "07": {
+    "s7-q2": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>Posting personal pictures on social media is fun; however, sometimes it can bring many problems. → C</p>"
+    },
+    "s7-q3": {
+      "answers": [
+        "A"
+      ],
+      "referenceHtml": "<p>Friendly and hospitable → A. friendly</p>"
+    },
+    "s8-q2": {
+      "answers": [
+        "is searching"
+      ]
+    },
+    "s10-q1": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>I often help my mother to collect water from the river. → B. help</p>"
+    },
+    "s11-q2": {
+      "answers": [
+        "About one in four",
+        "One in four",
+        "About one quarter",
+        "One quarter",
+        "A quarter",
+        "25%",
+        "About 25%"
+      ],
+      "referenceHtml": "<p>The passage states about one in four students (25%).</p>"
+    },
+    "s11-q3": {
+      "answers": [
+        "No",
+        "No, it did not",
+        "No, it didn't"
+      ]
+    },
+    "s11-q5": {
+      "answers": [
+        "Bullying goes down a lot",
+        "It is expected that bullying goes down a lot"
+      ]
+    },
+    "s13-q1": {
+      "answers": [
+        "on hanging out with friends in his leisure time after school",
+        "Tuan is keen on hanging out with friends in his leisure time after school",
+        "→ Tuan is keen on hanging out with friends in his leisure time after school"
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "better than me",
+        "better than I do",
+        "My brother swims better than me",
+        "My brother swims better than I do",
+        "→ My brother swims better than me",
+        "→ My brother swims better than I do"
+      ]
+    },
+    "s13-q4": {
+      "answers": [
+        "therefore she turned off her smartphone",
+        "She wanted to prepare for the exam; therefore she turned off her smartphone",
+        "→ She wanted to prepare for the exam; therefore she turned off her smartphone"
+      ]
+    },
+    "s13-q5": {
+      "answers": [
+        "interesting to fly kites and herd buffaloes in the countryside",
+        "It's very interesting to fly kites and herd buffaloes in the countryside",
+        "→ It’s very interesting to fly kites and herd buffaloes in the countryside",
+        "→ It’s very It's very interesting to fly kites and herd buffaloes in the countryside"
+      ]
+    },
+    "s13-q6": {
+      "answers": [
+        "more than two hours discussing this problem on our class forum",
+        "We spent more than two hours discussing this problem on our class forum",
+        "=>We spent more than two hours discussing this problem on our class forum"
+      ]
+    },
+    "s13-q3": {
+      "answers": [
+        "MORE STRESSFUL THAN LIFE IN THE COUNTRYSIDE",
+        "Life in the city is MORE STRESSFUL THAN LIFE IN THE COUNTRYSIDE .",
+        "→ Life in the city is MORE STRESSFUL THAN LIFE IN THE COUNTRYSIDE"
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 175
+      }
+    }
+  },
+  "08": {
+    "s9-q4": {
+      "answers": [
+        "were / doing",
+        "were doing",
+        "What were you doing at 8 o’clock yesterday morning?"
+      ]
+    },
+    "s12-q1": {
+      "answers": [
+        "Hurricanes and tornadoes",
+        "The most dangerous storms which affect America are hurricanes and tornadoes"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "Their fury",
+        "By their fury",
+        "The fury of hurricanes and tornadoes",
+        "Homes are destroyed by their fury",
+        "Hurricanes and tornadoes"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "No",
+        "No, they aren't",
+        "No, they are not"
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "Between July and October",
+        "Hurricanes usually develop between July and October"
+      ]
+    },
+    "s14-q1": {
+      "answers": [
+        "she often went to the cinema on Sunday",
+        "Linh told Hoa that she often went to the cinema on Sunday.",
+        "=> Linh told Hoa that she often went to the cinema on Sunday"
+      ]
+    },
+    "s14-q2": {
+      "answers": [
+        "I came home, my mother was watching TV",
+        "When I came home, my mother was watching TV."
+      ]
+    },
+    "s14-q3": {
+      "answers": [
+        "preserve our customs and traditions",
+        "We should preserve our customs and traditions.",
+        "=> We should preserve our customs and traditions"
+      ]
+    },
+    "s14-q4": {
+      "answers": [
+        "practise a lot, they will lose the game",
+        "Unless they practise a lot, they will lose the game.",
+        "=> Unless they practise a lot, they will lose the game"
+      ]
+    },
+    "s14-q5": {
+      "answers": [
+        "mine",
+        "Lan is a friend of mine.",
+        "=> Lan is a friend of mine"
+      ]
+    }
+  },
+  "09": {
+    "s12-q1": {
+      "answers": [
+        "work more carelessly than those in your factory",
+        "work more carelessly than yours",
+        "work more carelessly than yours do",
+        "The workers in my factory work more carelessly than those in your factory",
+        "The workers in my factory work more carelessly than yours",
+        "The workers in my factory work more carelessly than yours do",
+        "→ The workers in my factory work more carelessly than those in your factory",
+        "→ The workers in my factory work more carelessly than yours",
+        "→ The workers in my factory work more carelessly than yours do"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "don't know how to avoid bullies, but they don't want to tell their teachers",
+        "Teens don't know how to avoid bullies, but they don't want to tell their teachers.",
+        "→ Teens don't know how to avoid bullies, but they don't want to tell their teachers"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "hates playing computer games",
+        "Phong hates playing computer games.",
+        "→ Phong hates playing computer games"
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "read and downloaded the healthy tips",
+        "My mother read and downloaded the healthy tips.",
+        "→ My mother read and downloaded the healthy tips"
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 206
+      }
+    }
+  },
+  "12": {
+    "s12-q2": {
+      "answers": [
+        "work more carelessly than those in your factory",
+        "work more carelessly than yours",
+        "work more carelessly than yours do",
+        "The workers in my factory work more carelessly than those in your factory",
+        "The workers in my factory work more carelessly than yours",
+        "The workers in my factory work more carelessly than yours do"
+      ]
+    },
+    "s2-q1": {
+      "answers": [
+        "community"
+      ],
+      "referenceHtml": "<p>(1): community</p>"
+    },
+    "s2-q2": {
+      "answers": [
+        "share"
+      ],
+      "referenceHtml": "<p>(2): share</p>"
+    },
+    "s2-q3": {
+      "answers": [
+        "like"
+      ],
+      "referenceHtml": "<p>(3): like</p>"
+    },
+    "s2-q4": {
+      "answers": [
+        "spacious"
+      ],
+      "referenceHtml": "<p>(4): spacious</p>"
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 183
+      }
+    }
+  },
+  "10": {
+    "s12-q1": {
+      "answers": [
+        "more carefully than Phuc",
+        "Nick writes more carefully than Phuc",
+        "=> Nick writes more carefully than Phuc"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "faster than Phuc",
+        "Phong swims faster than Phuc",
+        "=> Phong swims faster than Phuc"
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "You can go around and take a look"
+      ],
+      "referenceHtml": "<p>You can go around and take a look. (Kết hợp hai hành động bằng and.)</p>"
+    },
+    "s13-q4": {
+      "answers": [
+        "Did you adore",
+        "Did you / adore"
+      ]
+    }
+  },
+  "11": {
+    "s9-q3": {
+      "answers": [
+        "wild animals"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "My brother and I fancy playing football in our free time"
+      ],
+      "referenceHtml": "<p>My brother and I fancy playing football in our free time. (fancy + V-ing)</p>"
+    },
+    "s11-q4": {
+      "answers": [
+        "drives carefully in busy streets",
+        "drives carefully in the busy streets",
+        "Mai always drives carefully in the busy streets",
+        "Mai always drives carefully in busy streets"
+      ]
+    },
+    "s11-q5": {
+      "answers": [
+        "more carelessly than my mother",
+        "more carelessly than my mother does",
+        "I knit more carelessly than my mother",
+        "I knit more carelessly than my mother does",
+        "- I knit more carelessly than my mother",
+        "- I knit more carelessly than my mother does"
+      ]
+    },
+    "s11-q1": {
+      "answers": [
+        "takes children much time to use social media everyday",
+        "It takes children much time to use social media everyday.",
+        "- It takes children much time to use social media everyday"
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "Nam didn’t study hard. Therefore, he failed the test",
+        "Nam didn’t study hard. Therefore, he failed the test."
+      ]
+    },
+    "__sections": {
+      "s9": {
+        "audioStart": 201
+      }
+    }
+  },
+  "13": {
+    "s2-q1": {
+      "answers": [
+        "video"
+      ],
+      "referenceHtml": "<p>(1): video</p>"
+    },
+    "s2-q2": {
+      "answers": [
+        "cinema"
+      ],
+      "referenceHtml": "<p>(2): cinema</p>"
+    },
+    "s2-q3": {
+      "answers": [
+        "park"
+      ],
+      "referenceHtml": "<p>(3): park</p>"
+    },
+    "s2-q4": {
+      "answers": [
+        "bike ride"
+      ],
+      "referenceHtml": "<p>(4): bike ride</p>"
+    },
+    "s3-q3": {
+      "answers": [],
+      "unscored": true,
+      "note": "Bản nghe nói “Transportation is another big problem”, nhưng các lựa chọn của đề không có transportation. Em đối chiếu với cô; câu này không tính điểm tự động."
+    },
+    "s7-q2": {
+      "answers": [
+        "Did / visit",
+        "Did visit",
+        "Did you visit your grandfather last Sunday?"
+      ]
+    },
+    "s9-q1": {
+      "answers": [
+        "A"
+      ],
+      "referenceHtml": "<p>Enjoy participating in outdoor activities → A. participating (enjoy + V-ing).</p>"
+    },
+    "s13-q1": {
+      "answers": [
+        "Hoa loves making crafts",
+        "Hoa loves making crafts.",
+        "making crafts",
+        "making crafts."
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "Minh plays football better than Nam",
+        "Minh plays football better than Nam.",
+        "better than Nam",
+        "better than Nam."
+      ]
+    },
+    "s13-q3": {
+      "answers": [
+        "It’s very interesting to fly a kite in the countryside",
+        "It’s very interesting to fly a kite in the countryside.",
+        "very interesting to fly a kite in the countryside",
+        "very interesting to fly a kite in the countryside."
+      ]
+    },
+    "s13-q4": {
+      "answers": [
+        "My father usually spent twenty minutes walking to school in the past",
+        "My father usually spent twenty minutes walking to school in the past.",
+        "twenty minutes walking to school in the past",
+        "twenty minutes walking to school in the past."
+      ]
+    },
+    "s13-q5": {
+      "answers": [
+        "Because Nam and Tom arrived late, they missed the important part of the festival",
+        "Because Nam and Tom arrived late, they missed the important part of the festival.",
+        "Nam and Tom arrived late, they missed the important part of the festival",
+        "Nam and Tom arrived late, they missed the important part of the festival."
+      ]
+    }
+  },
+  "14": {
+    "__sections": {
+      "s3": {
+        "introHtml": "",
+        "questions": [
+          {
+            "id": "s3-q1",
+            "number": "1",
+            "html": "<p>The girl thinks her city is polluted and crowded.</p>",
+            "kind": "tf",
+            "options": [
+              "T",
+              "F"
+            ],
+            "answers": [
+              "F"
+            ],
+            "referenceHtml": "<p>(1): F</p>"
+          },
+          {
+            "id": "s3-q2",
+            "number": "2",
+            "html": "<p>The girl thinks her city is full of traffic.</p>",
+            "kind": "tf",
+            "options": [
+              "T",
+              "F"
+            ],
+            "answers": [
+              "F"
+            ],
+            "referenceHtml": "<p>(2): F</p>"
+          },
+          {
+            "id": "s3-q3",
+            "number": "3",
+            "html": "<p>The girl thinks her city is clean and tidy.</p>",
+            "kind": "tf",
+            "options": [
+              "T",
+              "F"
+            ],
+            "answers": [
+              "T"
+            ],
+            "referenceHtml": "<p>(3): T</p>"
+          },
+          {
+            "id": "s3-q4",
+            "number": "4",
+            "html": "<p>The girl thinks her city is an exciting place to live.</p>",
+            "kind": "tf",
+            "options": [
+              "T",
+              "F"
+            ],
+            "answers": [
+              "T"
+            ],
+            "referenceHtml": "<p>(4): T</p>"
+          },
+          {
+            "id": "s3-q5",
+            "number": "5",
+            "html": "<p>The girl thinks her city is getting better.</p>",
+            "kind": "tf",
+            "options": [
+              "T",
+              "F"
+            ],
+            "answers": [
+              "T"
+            ],
+            "referenceHtml": "<p>(5): T</p>"
+          }
+        ]
+      }
+    },
+    "s11-q1": {
+      "answers": [
+        "T"
+      ],
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "F"
+      ],
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s17-q2": {
+      "answers": [
+        "so they missed the important part of the festival",
+        "Nam and Tom arrived late, so they missed the important part of the festival",
+        "therefore they missed the important part of the festival",
+        "Nam and Tom arrived late; therefore they missed the important part of the festival",
+        "=> Nam and Tom arrived late; so they missed the important part of the festival",
+        "=> Nam and Tom arrived late; therefore they missed the important part of the festival"
+      ]
+    },
+    "s17-q1": {
+      "answers": [
+        "on making crafts and knitting",
+        "We are keen on making crafts and knitting.",
+        "=>We are keen on making crafts and knitting"
+      ]
+    }
+  },
+  "15": {
+    "s1-q3": {
+      "answers": [
+        "F"
+      ],
+      "referenceHtml": "<p>The recording says 93% go for a walk, not everybody. It does not specify different times of day. → F</p>"
+    },
+    "s1-q5": {
+      "answers": [],
+      "unscored": true,
+      "note": "Bài nghe cho hai tỷ lệ riêng: 71% nghe radio và 8% chơi nhạc cụ. Cách gộp hai nhóm trong câu hỏi chưa rõ nên câu này không tính điểm tự động."
+    },
+    "s4-q1": {
+      "answers": [],
+      "unscored": true,
+      "note": "“Addict” có thể thay đổi trọng âm theo từ loại, nhưng câu gốc không cho ngữ cảnh. Em đối chiếu với cô; câu này không tính điểm tự động."
+    },
+    "s8-q1": {
+      "answers": [],
+      "unscored": true,
+      "note": "Đoạn văn có nhắc cả bốn đặc điểm trong các lựa chọn, nên câu hỏi NOT famous không có một đáp án rõ ràng. Câu này không tính điểm tự động."
+    },
+    "s8-q2": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>Most farmland is now owned by individual people or independent companies. → B. most farmland in Britain</p>"
+    },
+    "s8-q3": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>Many British people enjoy the peace and relaxation of life in the countryside. → C</p>"
+    },
+    "s8-q4": {
+      "answers": [],
+      "unscored": true,
+      "note": "“Commute” là việc đi lại thường xuyên giữa nhà và nơi làm việc, không chỉ một phương tiện cụ thể. Các lựa chọn đều chỉ cách đi; câu này không tính điểm tự động."
+    },
+    "s12-q1": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>a (hỏi câu lạc bộ) → d (chess club) → c (hỏi giờ) → b (trả lời giờ). → B. a-d-c-b</p>"
+    },
+    "s10-q1": {
+      "answers": [
+        "less carefully than Hung does",
+        "Hung’s brother drives less carefully than Hung does"
+      ]
+    },
+    "s10-q2": {
+      "answers": [
+        "in writing short stories when she has free time",
+        "Mai is interested in writing short stories when she has free time.",
+        "Mai is interested in writing short stories when she has free time",
+        "in writing short stories when she has free time."
+      ]
+    },
+    "s11-q1": {
+      "answers": [
+        "It usually took my father twenty minutes to walk to school in the past",
+        "It usually took my father twenty minutes to walk to school in the past."
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "Flying a kite in the countryside is very interesting"
+      ]
+    }
+  },
+  "16": {
+    "s3-q1": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>Biển giới hạn khối lượng 10 tấn → C. Your vehicle’s weight must be below 10 tons.</p>"
+    },
+    "s3-q2": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>Choose a pair of gloves free when you buy a coat today. → B</p>"
+    },
+    "s6-q1": {
+      "answers": [
+        "C"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "referenceHtml": "<p>C</p>"
+    },
+    "s6-q2": {
+      "answers": [
+        "A"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "referenceHtml": "<p>A</p>"
+    },
+    "s6-q3": {
+      "answers": [
+        "D"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "referenceHtml": "<p>D</p>"
+    },
+    "s6-q4": {
+      "answers": [
+        "B"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "referenceHtml": "<p>B</p>"
+    }
+  },
+  "17": {
+    "s1-q1": {
+      "answers": [
+        "places"
+      ],
+      "referenceHtml": "<p>(1): places</p>"
+    },
+    "s1-q2": {
+      "answers": [
+        "convenient"
+      ],
+      "referenceHtml": "<p>(2): convenient</p>"
+    },
+    "s1-q3": {
+      "answers": [
+        "public"
+      ],
+      "referenceHtml": "<p>(3): public</p>"
+    },
+    "s1-q4": {
+      "answers": [
+        "spacious"
+      ],
+      "referenceHtml": "<p>(4): spacious</p>"
+    },
+    "s1-q5": {
+      "answers": [
+        "hospitable"
+      ],
+      "referenceHtml": "<p>(5): hospitable</p>"
+    },
+    "s2-q1": {
+      "answers": [
+        "T"
+      ],
+      "referenceHtml": "<p>T</p>"
+    },
+    "s2-q2": {
+      "answers": [
+        "F"
+      ],
+      "referenceHtml": "<p>F</p>"
+    },
+    "s2-q3": {
+      "answers": [
+        "F"
+      ],
+      "referenceHtml": "<p>F</p>"
+    },
+    "s2-q4": {
+      "answers": [
+        "T"
+      ],
+      "referenceHtml": "<p>T</p>"
+    },
+    "s2-q5": {
+      "answers": [
+        "F"
+      ],
+      "referenceHtml": "<p>F</p>"
+    },
+    "s5-q1": {
+      "answers": [
+        "went"
+      ]
+    },
+    "s5-q2": {
+      "answers": [
+        "connecting"
+      ]
+    },
+    "s5-q3": {
+      "answers": [
+        "cycles"
+      ]
+    },
+    "s5-q4": {
+      "answers": [
+        "is raining"
+      ]
+    },
+    "s5-q5": {
+      "answers": [
+        "will have"
+      ]
+    },
+    "s7-q1": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>(1): B</p>"
+    },
+    "s7-q2": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>(2): B</p>"
+    },
+    "s7-q3": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>(3): C</p>"
+    },
+    "s7-q4": {
+      "answers": [
+        "A"
+      ],
+      "referenceHtml": "<p>(4): A</p>"
+    },
+    "s7-q5": {
+      "answers": [
+        "D"
+      ],
+      "referenceHtml": "<p>(5): D</p>"
+    },
+    "s8-q1": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>I come from a small village. → B</p>"
+    },
+    "s8-q2": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>Another reason is that the air is so fresh and clean. → B</p>"
+    },
+    "s9-q1": {
+      "answers": [
+        "They are friendlier",
+        "The people in his village are friendlier",
+        "He thinks the people in his village are friendlier"
+      ]
+    },
+    "s9-q2": {
+      "answers": [
+        "By bus",
+        "By school bus",
+        "He goes to school by bus",
+        "He goes to school by school bus"
+      ]
+    },
+    "s11-q1": {
+      "answers": [
+        "opening all the windows",
+        "How about opening all the windows?",
+        "How about opening all the windows",
+        "opening all the windows?"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "30 minutes driving to work everyday",
+        "Mr Nam spends 30 minutes driving to work everyday"
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "of surfing the facebook in his leisure time",
+        "He is fond of surfing the facebook in his leisure time.",
+        "He is fond of surfing the facebook in his leisure time",
+        "of surfing the facebook in his leisure time."
+      ]
+    },
+    "s11-q4": {
+      "answers": [
+        "better than Hieu",
+        "Minh swims better than Hieu"
+      ]
+    },
+    "s11-q5": {
+      "answers": [
+        "There was a loud noise next to my door last night, I couldn’t sleep",
+        "Because There was a loud noise next to my door last night, I couldn’t sleep.",
+        "There was a loud noise next to my door last night, I couldn’t sleep."
+      ]
+    },
+    "s11-q6": {
+      "answers": [
+        "half a day cleaning up the beach in the morning",
+        "We spend half a day cleaning up the beach in the morning"
+      ]
+    }
+  },
+  "04": {
+    "s11-q1": {
+      "answers": [
+        "hanging out with friends on Saturday evening",
+        "I enjoy hanging out with friends on Saturday evening.",
+        "I enjoy hanging out with friends on Saturday evening",
+        "hanging out with friends on Saturday evening."
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "me two hours to draw this picture",
+        "It takes me two hours to draw this picture.",
+        "It takes me two hours to draw this picture",
+        "me two hours to draw this picture."
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "more beautifully than Huy",
+        "Jane dances more beautifully than Huy.",
+        "Jane dances more beautifully than Huy",
+        "more beautifully than Huy."
+      ]
+    }
+  }
+}

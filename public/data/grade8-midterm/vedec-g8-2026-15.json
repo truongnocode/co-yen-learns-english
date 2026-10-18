@@ -1,0 +1,653 @@
+{
+  "id": "vedec-g8-2026-15",
+  "number": 15,
+  "title": "Đề 15",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2 pts)",
+      "part": "LISTENING",
+      "introHtml": "<p><strong>I. A man and a woman are reporting on the results of a survey on people’s favorite leisure activities. Listen and decide if the statements are True (T) or False (F). (1 pt)</strong></p>\n<p>\t</p>",
+      "questions": [
+        {
+          "id": "s1-q1",
+          "number": "1",
+          "html": "<p>1. Most people don’t do enough exercise.\t\t</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. Most people don’t do enough exercise.\t\t</p>"
+        },
+        {
+          "id": "s1-q2",
+          "number": "2",
+          "html": "<p>2. More people watch movies at the cinema than at home.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>2. More people watch movies at the cinema than at home.</p>"
+        },
+        {
+          "id": "s1-q3",
+          "number": "3",
+          "html": "<p>3. Everybody go for a walk in the different time of a day.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>The recording says 93% go for a walk, not everybody. It does not specify different times of day. → F</p>"
+        },
+        {
+          "id": "s1-q4",
+          "number": "4",
+          "html": "<p>4. 84% of the surveyed people often eat out.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. 84% of the surveyed people often eat out.</p>"
+        },
+        {
+          "id": "s1-q5",
+          "number": "5",
+          "html": "<p>5. The number of people listening to radio and playing music accounts for nearly 80%.</p>",
+          "kind": "tf",
+          "answers": [],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>5. The number of people listening to radio and playing music accounts for nearly 80%.</p>",
+          "unscored": true,
+          "note": "Bài nghe cho hai tỷ lệ riêng: 71% nghe radio và 8% chơi nhạc cụ. Cách gộp hai nhóm trong câu hỏi chưa rõ nên câu này không tính điểm tự động."
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "II: Listen to a woman sharing her thoughts about seasons in the countryside. Listen and fill in the blanks with a word from the tape (1pt)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. City people spend half their lives ……………. or underground.</p>",
+          "kind": "text",
+          "answers": [
+            "indoors"
+          ],
+          "referenceHtml": "<p>1. City people spend half their lives …indoors…. or underground.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. I love watching the ………… grow in the fields. </p>",
+          "kind": "text",
+          "answers": [
+            "crops"
+          ],
+          "referenceHtml": "<p>2. I love watching the …crops… grow in the fields. </p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. I watch them push their way up from the ground in the …………… and then grow tall in the summer sun. </p>",
+          "kind": "text",
+          "answers": [
+            "Spring"
+          ],
+          "referenceHtml": "<p>3. I watch them push their way up from the ground in the …Spring… and then grow tall in the summer sun. </p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Just before autumn arrives, the farmers ……………them and then winter comes. </p>",
+          "kind": "text",
+          "answers": [
+            "harvest"
+          ],
+          "referenceHtml": "<p>4. Just before autumn arrives, the farmers …harvest…them and then winter comes. </p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Seasons means it’s like living in a new place every …………… months. </p>",
+          "kind": "text",
+          "answers": [
+            "4",
+            "four"
+          ],
+          "referenceHtml": "<p>5. Seasons means it’s like living in a new place every …4/four… months.  </p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PART B – LANGUAGE FOCUS (2.0 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p><strong>1. </strong><strong>Choose the word whose underline part is pronounced differently from the rest. Circle A, B, C or D to indicate your answer.</strong><strong> (0.2 point)</strong></p>\n<p><strong>\tA. </strong><u>c</u>attle\t\tB. <u>c</u>ulture\t\tC. <u>c</u>ountry\t\tD. <u>c</u>ity</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. </strong><strong>Choose the word whose underline part is pronounced differently from the rest. Circle A, B, C or D to indicate your answer.</strong><strong> (0.2 point)</strong></p>\n<p><strong>\tA. </strong><u>c</u>attle\t\tB. <u>c</u>ulture\t\tC. <u>c</u>ountry\t\tD. <u>c</u>ity</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "2. Circle the letter A, B, C or D to indicate the word that differs from the rest in the position of the main stress. (0.2 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "1",
+          "html": "<p><strong>\tA. </strong>addict\t\tB. affect\t\tC. balance\t\tD. decide</p>",
+          "kind": "choice",
+          "answers": [],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>\tA. </strong>addict\t\tB. affect\t\tC. balance\t\tD. decide</p>",
+          "unscored": true,
+          "note": "“Addict” có thể thay đổi trọng âm theo từ loại, nhưng câu gốc không cho ngữ cảnh. Em đối chiếu với cô; câu này không tính điểm tự động."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Choose the correct opption (1.6 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "3",
+          "html": "<p>3. John is keen …………watching cartoons.</p>\n<p>\t\t\tA. on\t\t\tB. at\t\t\tC. in\t\t\tD. to</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. John is keen …………watching cartoons.</p>\n<p>\t\t\tA. on\t\t\tB. at\t\t\tC. in\t\t\tD. to</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "4",
+          "html": "<p>4. Teenagers would prefer …………….out at weekends.<br>  A. to go \t\tB. go\t\t\tC. going \t\tD. goes </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. Teenagers would prefer …………….out at weekends.<br>  A. to go \t\tB. go\t\t\tC. going \t\tD. goes </p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "5",
+          "html": "<p>5. Harvesting the rice is much ……………………. than drying the rice.</p>\n<p>\t\t\tA. more harder \tB. more hardly\tC. hardlier\t\tD. harder</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. Harvesting the rice is much ……………………. than drying the rice.</p>\n<p>\t\t\tA. more harder \tB. more hardly\tC. hardlier\t\tD. harder</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "6",
+          "html": "<p>6. He tries to meet his ________, but it is hard.</p>\n<p>\tA. dreams\t\tB. interests\t\tC. expectations\tD. arrangement</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. He tries to meet his ________, but it is hard.</p>\n<p>\tA. dreams\t\tB. interests\t\tC. expectations\tD. arrangement</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "7",
+          "html": "<p>7. Mai: “Why don’t we go camping this weekend?”. – Nam “…………………..”</p>\n<p>\tA. That’s a good idea\t\t\tB. Well done</p>\n<p>\tC. I don’t understand\t\t\tD. Yes, it is</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. Mai: “Why don’t we go camping this weekend?”. – Nam “…………………..”</p>\n<p>\tA. That’s a good idea\t\t\tB. Well done</p>\n<p>\tC. I don’t understand\t\t\tD. Yes, it is</p>"
+        },
+        {
+          "id": "s5-q6",
+          "number": "8",
+          "html": "<p>8. After harvesting rice, I helped my dad _____________ it onto a truck.</p>\n<p>\t\tA. unload\t\tB. pick\t\tC. a\t\t\tD. load </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. After harvesting rice, I helped my dad _____________ it onto a truck.</p>\n<p>\t\tA. unload\t\tB. pick\t\tC. a\t\t\tD. load </p>"
+        },
+        {
+          "id": "s5-q7",
+          "number": "9",
+          "html": "<p>9.<u>The</u> American <u>spends</u> 34 hours <u>a</u> week <u>to watch</u> television </p>\n<p>A. The\t\tB. spends\t\tC. a\t\t\tD. to watch</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9.<u>The</u> American <u>spends</u> 34 hours <u>a</u> week <u>to watch</u> television </p>\n<p>A. The\t\tB. spends\t\tC. a\t\t\tD. to watch</p>"
+        },
+        {
+          "id": "s5-q8",
+          "number": "10",
+          "html": "<p><img src=\"/data/grade8-midterm/images/3bbcbacc0281a41f.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\">10<strong>.</strong>   What does the sign say?</p>\n<p>        A. You must get a license to fish here. </p>\n<p>        B. You don&#x27;t need to pay attention to your fishing.</p>\n<p>        C. You are not allowed to fish here.</p>\n<p>        D. You can only catch certain types of fish.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10<strong>.</strong>   What does the sign say?</p>\n<p>        A. You must get a license to fish here. </p>\n<p>        B. You don&#x27;t need to pay attention to your fishing.</p>\n<p>        C. You are not allowed to fish here.</p>\n<p>        D. You can only catch certain types of fish.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "PART C: READING (2 points)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s7",
+      "title": "I. Choose the correct word A, B, C or D for each gap to complete the following passage:1 pt",
+      "part": "READING",
+      "introHtml": "<p>MY VILLAGE</p>\n<p>           I live in a village by Mekong River. Every day, like most of my friends, I walk to school. It is three  kilometers away. After class, I often (1)_________  my mother to collect water from the river and (2)_________ the chickens. At the weekend, the villagers often gather at the community hall where there is a TV. The adults watch TV, (3)_________ more often they talk about their farm work and exchange news. The children run around, playing games and shouting (4)_________ . Laughter  is heard everywhere.</p>\n<p>   My father sometimes takes me to the market town nearby where he sells our home (5)________ like vegetables, fruits, eggs… He then buys me an ice cream and lets me take a ride on the electric train in the town square. I love those trips.</p>\n<p>    On starry nights,  Children lie on the grass, looking at the sky and daring each other to find the Milky Way. We dream of faraway places.</p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>1. A. watch\t\t\tB. help \t\tC.  play\t\tD. live</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. watch\t\t\tB. help \t\tC.  play\t\tD. live</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>2. A. herd\t\t\tB. drink \t\tC.  feed \t\tD. eat</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. A. herd\t\t\tB. drink \t\tC.  feed \t\tD. eat</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>3. A. and\t\t\tB. because\t\tC. so\t\t\tD.  but </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. A. and\t\t\tB. because\t\tC. so\t\t\tD.  but </p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>4. A. merrily \t\t\tB. happy \t\tC. well \t\tD. carefully</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. A. merrily \t\tB. happy \t\tC. well \t\tD. carefully</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p>5. A. farm \t\t\tB. products\t\tC. television \t\tD. living room</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. A. farm \t\t\tB. products\t\tC. television \t\tD. living room</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Read the passage and choose the correct answer A, B, C, or D to each of the questions.(1pt)",
+      "part": "READING",
+      "introHtml": "<p>Besides its beauty, the countryside of Britain is well known for many contrasts: its bare mountains and moorland, its lakes, rivers and woods, and its long, often wild coastline. National parks which are protected from development by the government have the most beautiful and picturesque scenery. British people often associate the countryside with farmland, open spaces like fields of wheat and barley, green fields enclosed by hedges or stone walls in which cows or sheep are raised. Most farmland is now owned by individual people or independent companies. However, the government has built a network of public footpaths across the farmland.</p>\n<p>Many British people enjoy the peace and relaxation of life in the countryside where they can spend their free time walking, cycling, or going for a picnic or a pub lunch. In summer they can pick strawberries and other fruit in fruit farms. Nowadays, few rural people work on farms. Many of them <strong><u>commute</u></strong> to work in towns. Many others wish to live in the countryside so that <strong><u>they</u></strong> would have a better and healthier lifestyle.</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p>1. The countryside of Britain is NOT famous for its ______.</p>\n<p>A. farmland \t\t\t\t\t\tB. moorland </p>\n<p>C. bare mountains \t\t\t\t\tD. lakes, rivers, and woods </p>",
+          "kind": "choice",
+          "answers": [],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. watch\t\t\tB. help \t\tC.  play\t\tD. live</p>",
+          "unscored": true,
+          "note": "Đoạn văn có nhắc cả bốn đặc điểm trong các lựa chọn, nên câu hỏi NOT famous không có một đáp án rõ ràng. Câu này không tính điểm tự động."
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p>2. Individual people or independent companies own ______.</p>\n<p>A. some of the farmland in Britain \t\tB. most farmland in Britain </p>\n<p>C. footpaths across the farmland \t\t\tD. a network of public footpaths </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Most farmland is now owned by individual people or independent companies. → B. most farmland in Britain</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "3",
+          "html": "<p>3. Many British people think the countryside goes with ______.</p>\n<p>A. work in towns \t\t\t\t\tB. work on farms </p>\n<p>C. peace and relaxation \t\t\t\tD. public farmland </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Many British people enjoy the peace and relaxation of life in the countryside. → C</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "4",
+          "html": "<p>4. The word <strong>&quot;commute&quot;</strong> in the passage is closest in meaning to ______.</p>\n<p>A. go on foot                                          \t\tB. go by public transport</p>\n<p>C. go by bicycle                                     \t\tD. go by car</p>",
+          "kind": "choice",
+          "answers": [],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. A. merrily \t\tB. happy \t\tC. well \t\tD. carefully</p>",
+          "unscored": true,
+          "note": "“Commute” là việc đi lại thường xuyên giữa nhà và nơi làm việc, không chỉ một phương tiện cụ thể. Các lựa chọn đều chỉ cách đi; câu này không tính điểm tự động."
+        },
+        {
+          "id": "s8-q5",
+          "number": "5",
+          "html": "<p>5. What does the word <strong>&quot;they&quot;</strong> in the passage refer to?</p>\n<p>A. Those who commute to work in towns.\tB. Those who go to the country for a picnic.</p>\n<p>C. Those who go to fruit farms in summer.\tD. Those who dream of living in the country<strong>.</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. A. farm \t\t\tB. products\t\tC. television \t\tD. living room</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "D: WRITING ( 2 poins)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Rewrite the following sentences so that their meaning stays the same, using the words given. (0.4pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p>1. Hung drives more carefully than his brother.</p>\n<p> Hung’s brother drives......................................................................</p>",
+          "kind": "text",
+          "answers": [
+            "less carefully than Hung does",
+            "Hung’s brother drives less carefully than Hung does"
+          ],
+          "referenceHtml": "<p>31. Hung drives more carefully than his brother.</p>\n<p> Hung’s brother drives......... <strong>less carefully than</strong> Hung does</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p>2. Mai enjoys writing short stories when she has free time.</p>\n<p>  Mai is interested …….……….……….……….……………………</p>",
+          "kind": "text",
+          "answers": [
+            "in writing short stories when she has free time",
+            "Mai is interested in writing short stories when she has free time.",
+            "Mai is interested in writing short stories when she has free time",
+            "in writing short stories when she has free time."
+          ],
+          "referenceHtml": "<p>32. Mai enjoys writing short stories when she has free time.</p>\n<p>  Mai is interested <strong>in writing short stories when she has free time.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Rearrange the given words to complete the sentence.( 0.4 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "3",
+          "html": "<p>3. usually /It / my father / to walk /took / in the past./twenty minutes /to school /</p>\n<p>→ ......................................................................................................................................</p>",
+          "kind": "text",
+          "answers": [
+            "It usually took my father twenty minutes to walk to school in the past",
+            "It usually took my father twenty minutes to walk to school in the past."
+          ],
+          "referenceHtml": "<p>33. usually /It / my father / to walk /took / in the past./twenty minutes /to school /</p>\n<p>→ <strong>It usually </strong><strong>took </strong><strong>my father </strong><strong>twenty </strong><strong>minutes to walk to school in the past.</strong></p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "4",
+          "html": "<p>4. a kite /the countryside/very / Flying/ in/ is/ interesting.</p>\n<p>→ .....................................................................................................................................</p>",
+          "kind": "text",
+          "answers": [
+            "Flying a kite in the countryside is very interesting"
+          ],
+          "referenceHtml": "<p>34. a kite /the countryside/very / Flying/ in/ is/ interesting.</p>\n<p><strong>→ </strong><strong>Flying a kite in the countryside is very </strong><strong>inte</strong><strong>rest</strong><strong>ing</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "III. Rearrange the given sentences to complete an email.(0.2 pt)",
+      "part": "WRITING",
+      "introHtml": "<p>a: Kate, so what club are you a member of?</p>\n<p>b: It meets on Thursdays, from 5:30 p.m. to 7:00 p.m.</p>\n<p>c: Great! I&#x27;d love to join it too. So, what time does it meet?</p>\n<p>d: I&#x27;m a member of the chess club.</p>",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p>A.c-b-a-d                             B.a-d-c-b                       C. a-c-d-b               D.d-b-a-c</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>a (hỏi câu lạc bộ) → d (chess club) → c (hỏi giờ) → b (trả lời giờ). → B. a-d-c-b</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "IV. Write a paragraph about 80 - 100 words about the causes of your stress and offer solutions. Use the suggested ideas.(1 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p>- school work, parents, friends</p>\n<p>- divide school work</p>\n<p>- ignore, ask friends</p>\n<p>- stay calm, relax</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the </p>\n<p>body, and the conclusion. </p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea. </p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of </p>\n<p>secondary students. </p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of </p>\n<p>secondary students.</p>\n<p>Stress is a common problem that many students have to deal with. <strong>Firstly</strong>, school work makes me stressed because I have many assignments and tests. To solve this problem, I divide my school work into smaller tasks so that I can finish them more easily. <strong>Secondly</strong>, my parents and friends sometimes make me feel worried. When my friends say negative things, I try to ignore them or ask other friends for advice. <strong>Finally</strong>, I always stay calm and relax by listening to music or taking a walk. <strong>In conclusion</strong>, managing stress in these ways helps me feel happier and more confident.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "PART E – SPEAKING (2.0 POINTS)",
+      "part": "SPEAKING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "Nói",
+          "html": "<p><strong>I. Answer the personal questions. (0,6point)</strong></p><p>- 3 câu hỏi về bản thân ( tên, tuổi, lớp, ….)</p><p><strong>II. Talk about the topic. (1pt)</strong></p><p>- Chủ đề: Leisure time, Life in the countryside, and Teenagers</p>\n<p>- Topic theo chủ đề các Unit trong giai đoạn. Bám sát chủ đề và phần Speaking.</p><p><strong>III. Answer the questions about the topic (0,4pt)</strong></p><p>- 2 câu</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>- 3 câu hỏi về bản thân ( tên, tuổi, lớp, ….)</p>\n<p>\t+What’s your name?</p>\n<p>\t+How old are you?</p>\n<p>\t+ What class rre you in?</p><p>- Chủ đề: Leisure time, Life in the countryside, and Teenagers</p>\n<p>Học sinh bốc chủ đề và nói</p><p>- 2 câu</p>\n<p>\tTopic: Leisure time</p>\n<p>\t\t+ What do you often do in your leisure time?</p>\n<p>\t\t+ Please, give some advantages of that activity</p>\n<p>\tTopic: Life in the countryside</p>\n<p>\t\t+ Do you like living in the countryside or city?</p>\n<p>\t\t+ Please, give the reasons for your choise</p>\n<p>\tTopic: Teenagers</p>\n<p>\t\t+ Have you suffered any pressure?</p>\n<p>\t\t+ What did you do to deal with it?</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "TIẾNG ANH 8-GKI-part 1.mp3",
+      "sourceHash": "945dd64f53100125babadb1b8acbe19c3bea5128f30ed89d8cd6baae18ab3983",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-15-1.mp3",
+      "duration": 90.88
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "TIẾNG ANH 8-GKI-part 2.mp3",
+      "sourceHash": "911e3497c38843df20a3afa77bb95686264958b14325ee4f65ec557267ef8118",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-15-2.mp3",
+      "duration": 57.756735
+    }
+  ],
+  "sourceHash": "fcca91e15ee576332ee4f2888cfded6993476f3edec29d877be9283b4b0e8910"
+}

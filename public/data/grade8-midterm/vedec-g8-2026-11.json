@@ -1,0 +1,762 @@
+{
+  "id": "vedec-g8-2026-11",
+  "number": 11,
+  "title": "Đề 11",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "I. LANGUAGE FOCUS (4 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Questions 1: Choose the word in which the underlined part is pronounced differently (1 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Câu 1.</strong> A. decid<u>ed</u>\t           B. turn<u>ed</u> \t\tC. destroy<u>ed</u> \t           D. liv<u>ed</u></p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 1.</strong> <strong>A. decid</strong><strong><u>ed</u></strong><strong>\t</strong>           B. turn<u>ed</u> \t\tC. destroy<u>ed</u> \t           D. liv<u>ed</u></p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Câu 2.</strong> A. write<u>s</u>\t\tB. paint<u>s</u> \t\tC. move<u>s</u> \t\tD. make<u>s</u></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 2.</strong> A. write<u>s</u>\t\tB. paint<u>s</u> \t\t<strong>C. move</strong><strong><u>s</u></strong> \t\tD. make<u>s</u></p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Câu 3.</strong> A. w<u>oo</u>d  \t\tB. m<u>oo</u>n \t\tC. s<u>oo</u>n \t\tD. l<u>oo</u>se</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 3.</strong> <strong>A. w</strong><strong><u>oo</u></strong><strong>d</strong><strong>  </strong>\t\tB. m<u>oo</u>n \t\tC. s<u>oo</u>n \t\tD. l<u>oo</u>se</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Câu 4.</strong> A.w<u>e</u>bsite\t  B. str<u>e</u>ssful               C. pr<u>e</u>ssure                D.  m<u>e</u>dia </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 4.</strong> A.w<u>e</u>bsite\t  B. str<u>e</u>ssful               C. pr<u>e</u>ssure                <strong>D.  m</strong><strong><u>e</u></strong><strong>dia</strong> </p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Câu 5.</strong> A. av<u>oi</u>d \t<strong>\t</strong>B. d<u>oi</u>ng \t     <strong>     </strong>C. ch<u>oi</u>ce \t<strong>\t</strong>D. j<u>oi</u>n  </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 5.</strong> A. av<u>oi</u>d \t<strong>\t</strong><strong>B. d</strong><strong><u>oi</u></strong><strong>ng</strong> \t     <strong>     </strong>C. ch<u>oi</u>ce \t<strong>\t</strong>D. j<u>oi</u>n  </p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Question 2: Choose the best answer (A, B, C or D) to complete the sentence (3,0 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p><strong>Câu 6.</strong> <strong>Ba:</strong> You look amazing in that traditional dress! <strong>Nga</strong>: _________.</p>\n<p> A. Thank you, Ba. My nother made it for me.        B. Oh, no. I’m ugly.</p>\n<p>C. Don’t say that.                                                      D. You’re welcome.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 6.</strong> <strong>Ba:</strong> You look amazing in that traditional dress! <strong>Nga</strong>: _________.</p>\n<p> <strong>A. Thank you, Ba. My </strong><strong>m</strong><strong>other made it for me.</strong>        B. Oh, no. I’m ugly.</p>\n<p>C. Don’t say that.                                                      D. You’re welcome.</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p><strong>Câu 7.</strong> The Mid-Autumn Festival is usually held _______ August 15th everyyear.</p>\n<p>A. at\t\t\tB. on\t\t\tC. in \t\t\tD. for</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 7.</strong> The Mid-Autumn Festival is usually held _______ August 15th everyyear.</p>\n<p>A. at\t\t\t<strong>B. on</strong>\t\t\tC. in \t\t\tD. for</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p><strong>Câu 8.</strong> __________ does he finish his English class? - At 10.am.</p>\n<p>A. What time\t\t\tB. When\t\tC. What\t\tD. Where</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 8.</strong> __________ does he finish his English class? - At 10.am.</p>\n<p><strong>A. What time</strong><strong>\t</strong>\t\tB. When\t\tC. What\t\tD. Where</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p><strong>Câu 9.</strong> We often post many questions to discuss on a/an _______after school.</p>\n<p>A. office\t\tB. market\t\tC. club\t\tD. forum</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 9.</strong> We often post many questions to discuss on a/an _______after school.</p>\n<p>A. office\t\tB. market\t\tC. club\t\t<strong>D. forum</strong></p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p><strong>Câu 10.</strong> To reduce stress you should go to bed early and _______enough sleep everyday.</p>\n<p>A. take\t\tB. do\t\t\tC. make\t\tD. get</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 10.</strong> To reduce stress you should go to bed early and _______enough sleep everyday.</p>\n<p>A. take\t\tB. do\t\t\tC. make\t\t<strong>D. get</strong></p>"
+        },
+        {
+          "id": "s3-q6",
+          "number": "11",
+          "html": "<p><strong>Câu 11.</strong> Nam often logs ________to her Instagram account to chat with her sister in Ha Noi.</p>\n<p>A. on\t\t\tB. with\t\tC. at\t\t\tD. off</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 11.</strong> Nam often logs ________to her Instagram account to chat with her sister in Ha Noi.</p>\n<p><strong>A. on</strong><strong>\t</strong>\t\tB. with\t\tC. at\t\t\tD. off</p>"
+        },
+        {
+          "id": "s3-q7",
+          "number": "12",
+          "html": "<p><strong>Câu </strong><strong>12</strong><strong>.</strong> Do you fancy ________ with friends?</p>\n<p>A. to socialise\tB. socialising\t\tC. socialise\t\tD. socialised</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu </strong><strong>12</strong><strong>.</strong> Do you fancy ________ with friends?</p>\n<p>A. to socialise\t<strong>B. </strong><strong>socialising</strong><strong>\t</strong>\tC. socialise\t\tD. socialised</p>"
+        },
+        {
+          "id": "s3-q8",
+          "number": "13",
+          "html": "<p><strong>Câu 13.</strong> She sings _______ than her sister.</p>\n<p>A. more beautiful                B. beautifully           C. more beautifully  \t  D. most beautifully</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 13.</strong> She sings _______ than her sister.</p>\n<p>A. more beautiful                B. beautifully           <strong>C. more beautifully</strong>  \t  D. most beautifully</p>"
+        },
+        {
+          "id": "s3-q9",
+          "number": "14",
+          "html": "<p><strong>Câu 14.</strong> Mr Ba likes showing off his new things;_________, he often posts pictures on social media.</p>\n<p>A. because\t\tB. therefore\t\tC. although\t\tD. but</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 14.</strong> Mr Ba likes showing off his new things;_________, he often posts pictures on social media.</p>\n<p>A. Because\t\t<strong>B. </strong><strong>T</strong><strong>herefore</strong><strong>\t</strong>\tC. Although\t\tD. But</p>"
+        },
+        {
+          "id": "s3-q10",
+          "number": "15",
+          "html": "<p><strong>Câu 15.</strong> I usually _________ shopping at a corner shop.</p>\n<p>A. goes\t\t B. going\t\tC. go\t\t\tD. to go</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 15.</strong> I usually _________ shopping at a corner shop.</p>\n<p>A. goes\t\t B. will go\t\t<strong>C. go</strong><strong>\t</strong>\t\tD. went</p>"
+        },
+        {
+          "id": "s3-q11",
+          "number": "16",
+          "html": "<p><strong>Câu 16</strong><strong>.</strong> They _______ money to help the storm Yagi victims last September.</p>\n<p>A. were donating\t\tB. donated\t\tC. donate\t\tD. to donate</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 16</strong><strong>.</strong> They _______ money to help the storm Yagi victims last September.</p>\n<p>A. were donating\t\t<strong>B. donated</strong><strong>\t</strong>\tC. donate\t\tD. to donate</p>"
+        },
+        {
+          "id": "s3-q12",
+          "number": "17",
+          "html": "<p><strong>Câu 17.</strong> I think my family _______ Hue next summer.</p>\n<p>A. visit\t\tB. are  visiting\tC. will visit\t\tD. visited</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 17.</strong> I think my family _______ Hue next summer.</p>\n<p>A. visit\t\tB. are  visiting\t<strong>C. will visit</strong><strong>\t</strong>\tD. visited</p>"
+        },
+        {
+          "id": "s3-q13",
+          "number": "18",
+          "html": "<p><strong>Câu 18.</strong> Parents often have a higher________of their children, so they feel more pressure.</p>\n<p>A. expect\t\tB. to expect\t\tC. expectating\tD. expectation</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 18.</strong> Parents often have a higher________of their children, so they feel more pressure.</p>\n<p>A. expect\t\tB. to expect\t\tC. expectating\t<strong>D. expectation</strong></p>"
+        },
+        {
+          "id": "s3-q14",
+          "number": "19",
+          "html": "<p><strong>Câu 19.</strong> We came back from a very _________summer holiday.</p>\n<p>A. enjoy\t\tB. enjoyable\t\tC. enjoyment\t\tD. enjoyed</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 19.</strong> We came back from a very _________summer holiday.</p>\n<p>A. enjoy\t\t<strong>B. enjoyable</strong><strong>\t</strong>\tC. enjoyment\t\tD. enjoyed</p>"
+        },
+        {
+          "id": "s3-q15",
+          "number": "20",
+          "html": "<p><strong>Câu 20.</strong> She speaks Vietnamese very _______.</p>\n<p>A. fluent\t\tB. fluency\t\tC. Fluently\t\tD. more fluently</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 20.</strong> She speaks Vietnamese very _______.</p>\n<p>A. fluent\t\tB. fluency\t\t<strong>C. </strong><strong>f</strong><strong>luently</strong>\t\tD. more fluently</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "II. READING (2points)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "Question 1: Choose the correct answer A, B, C, or D to complete the passage. (1,0 point)",
+      "part": "READING",
+      "introHtml": "<p>    There are a lot of pastimes that young people like, and one of them<strong> (21)____</strong> mountain climbing. It is an active leisure activity that people can do either indoors or outdoors. If you go climbing outdoors, it is a great way to <strong>(22)____</strong> your strength and enjoy the nature at the same time. You can even set up your own climbing wall in your backyard or inside your home. This way you don&#x27;t have to go out and still can keep <strong>(23)____</strong> <strong> </strong>and enjoy the activity.</p>\n<p>  So how can you start mountain climbing? Many people take a class to learn how to climb and use their equipment <strong>(24)____</strong> . Others join climbing clubs to make new friends with the same interest and go climbing together. If you are an active person and like outdoor activities, <strong>(25)____</strong> don&#x27;t you try this activity?</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "21",
+          "html": "<p><strong>Câu 21.</strong> A. was              \tB. are\t\t           C. were           \tD. is  </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 21.</strong> A. was              \tB. are\t\t           C. were           \t<strong>D. is</strong>  </p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "22",
+          "html": "<p><strong>Câu 22.</strong> A. make\t\tB. take\t\tC. increase \t           D. reduce</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 22.</strong> A. make\t\tB. take\t\t<strong>C. increase</strong> \t           D. reduce</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "23",
+          "html": "<p><strong>Câu 23.</strong> A. shape\t           B. fit<strong>        </strong>\t\tC. calm \t\tD. body</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 23.</strong> A. shape\t           <strong>B. fit</strong><strong>        </strong>\t\tC. calm \t\tD. body</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "24",
+          "html": "<p><strong>Câu 24.</strong> A. effectively\tB. effection\t\tC. effective \t           D. effecting</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 24.</strong> <strong>A. effectively</strong>\tB. effection\t\tC. effective \t           D. effecting</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "25",
+          "html": "<p><strong>Câu 25.</strong> A. who\t           B. why\t\tC. which\t           D. How</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Câu 25.</strong> A. who\t           <strong>B. why</strong>\t\tC. which\t           D. How</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Question 2: Read the passage and choose T or F. (1,0 point)",
+      "part": "READING",
+      "introHtml": "<p><strong>BULLYING</strong></p>\n<p>Bullying is a big problem that happens in many different ways. It can involve mean words, physical actions, or exclusion which means excluding someone from a group. A study done in British primary schools found that about a quarter of students said they were bullied, and some of them said it happened a lot. In secondary schools, there was less bullying, with about one in twenty-five cases being persistent but harder to deal with. In the past, schools didn&#x27;t always admit that bullying was happening because they didn&#x27;t know much about it or have the right tools to handle it. But now, things are changing. People are starting to recognise how serious bullying is, and schools are creating rules to stop it. They&#x27;re doing this because they know it&#x27;s important, they have the resources to help, and they&#x27;ve seen that their efforts can make a difference. Studies in different countries have shown that when schools take action, bullying goes down a lot. In general, people are working hard to stop bullying in schools. <strong>They</strong> understand that it hurts students and want to make sure everyone feels safe.</p>\n<p>(Source: https://mini-ielts.com/381/reading/persistent-bullying-is-one-of-the-worst-</p>\n<p>experiences-a-child-can-face)</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "26",
+          "html": "<p><strong>Câu 26.</strong>  The passage is mainly about how schools are dealing with the problem of bullying.      </p>\n<p>  A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 26.</strong>  The passage is mainly about how schools are dealing with the problem of bullying.      </p>\n<p><strong>  </strong><strong>A. True</strong>\t\t B. False</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "27",
+          "html": "<p><strong>Câu 27.</strong>  About one quarter of students in British primary schools said they were bullied.</p>\n<p>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 27.</strong>  About one quarter of students in British primary schools said they were bullied.</p>\n<p><strong>A. True</strong>\t\t B. False</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "28",
+          "html": "<p><strong>Câu 28.</strong>  In the past, schools always had effective tools to deal with bullying.</p>\n<p>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 28.</strong>  In the past, schools always had effective tools to deal with bullying.</p>\n<p>A. True\t\t <strong>B. False</strong></p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "29",
+          "html": "<p><strong>Câu 29.</strong>  Studies show that bullying increases when schools take action.</p>\n<p>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 29.</strong>  Studies show that bullying increases when schools take action.</p>\n<p><strong>A. True</strong>\t\t B. False</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "30",
+          "html": "<p><strong>Câu 30.</strong>  The word “they” in the last paragraph refers to schools<strong>.</strong></p>\n<p>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 30.</strong>  The word “they” in the last paragraph refers to schools<strong>.</strong></p>\n<p>A. True\t\t <strong>B. False</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "III. LISTENING (2.0 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "Question 1: Listen and choose T/F. (1,0 point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "31",
+          "html": "<p><strong>Câu 31.</strong> Mr. Smith lives on a mountain because he enjoys the peace and quiet there.</p>\n<p>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 31.</strong> Mr. Smith lives on a mountain because he enjoys the peace and quiet there.</p>\n<p><strong>A. True</strong>\t\t B. False</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "32",
+          "html": "<p><strong>Câu 32.</strong> He moved to the mountain mainly to avoid other people.<br>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 32.</strong> He moved to the mountain mainly to avoid other people.<br>A. True\t\t <strong>B. False</strong></p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "33",
+          "html": "<p><strong>Câu 33</strong>. He likes living on the mountain for outdoor activities such as hiking and rock climbing.<br>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 33</strong>. He likes living on the mountain for outdoor activities such as hiking and rock climbing.<br><strong>A. True</strong>\t\t B. False</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "34",
+          "html": "<p><strong>Câu 34.</strong> The mountain offers endless adventures that keep him  physically and mentally healthy.</p>\n<p>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 34.</strong> The mountain offers endless adventures that keep him  physically and mentally healthy.</p>\n<p><strong>A. True</strong>\t\t B. False</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "35",
+          "html": "<p><strong>Câu 35.</strong> Mr. Smith is talking about his decision to live on the countryside.<br>A. True\t\t B. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Câu 35.</strong> Mr. Smith is talking about his decision to live on the countryside.<br>A. True\t\t <strong>B. False</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Question 2: Listen and write ONE or TWO words (1,0 point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "36",
+          "html": "<p><strong>Câu 36:</strong></p>\n<p><strong>Monday:      </strong> </p>\n<p>Make a ________________________ </p>",
+          "kind": "text",
+          "answers": [
+            "shelter"
+          ],
+          "referenceHtml": "<p><strong>Câu 36:</strong></p>\n<p><strong>Monday:      </strong> </p>\n<p>Make a ______<strong> </strong><strong>shelter</strong>_________________ </p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "37",
+          "html": "<p><strong>Câu 37:</strong></p>\n<p><strong>Tuesday:</strong>       </p>\n<p>Make a ________________________ </p>",
+          "kind": "text",
+          "answers": [
+            "fire"
+          ],
+          "referenceHtml": "<p><strong>Câu 37:</strong></p>\n<p><strong>Tuesday:</strong>       </p>\n<p>Make a _______<strong>fire</strong>___________________ </p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "38",
+          "html": "<p><strong>Câu 38:</strong></p>\n<p><strong>Wednesday:</strong>  </p>\n<p>Look for ________________________ </p>",
+          "kind": "text",
+          "answers": [
+            "wild animals"
+          ],
+          "referenceHtml": "<p><strong>Câu 38:</strong></p>\n<p><strong>Wednesday:</strong>  </p>\n<p>Look for _______w<strong>ild animals</strong>_________________ </p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "39",
+          "html": "<p><strong>Câu 39:</strong></p>\n<p><strong>Thursday:</strong>     </p>\n<p>Watch the________________________ </p>",
+          "kind": "text",
+          "answers": [
+            "stars"
+          ],
+          "referenceHtml": "<p><strong>Câu 39:</strong></p>\n<p><strong>Thursday:</strong>     </p>\n<p>Watch the______<strong>stars</strong>__________________ </p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "40",
+          "html": "<p><strong>Câu 40:</strong></p>\n<p><strong>Friday:</strong>          </p>\n<p>Discover_________________________ </p>",
+          "kind": "text",
+          "answers": [
+            "unusual plants"
+          ],
+          "referenceHtml": "<p><strong>Câu 40:</strong></p>\n<p><strong>Friday:</strong>          </p>\n<p>Discover__________<strong>unusual plants</strong>______ </p>"
+        }
+      ],
+      "audioStart": 201
+    },
+    {
+      "id": "s10",
+      "title": "IV. WRITING (2 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "Question 1: Rewrite sentences so that the meaning does not change. (1,0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "41",
+          "html": "<p><strong>Câu 41.</strong> Children spend much time using social media everyday. </p>\n<p>- It ________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "takes children much time to use social media everyday",
+            "It takes children much time to use social media everyday.",
+            "- It takes children much time to use social media everyday"
+          ],
+          "referenceHtml": "<p><strong>Câu 41.</strong> Children spend much time using social media everyday. </p>\n<p>- It <strong>takes </strong><strong>children much time to use social media everyday.</strong></p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "42",
+          "html": "<p><strong>Câu 42.</strong> My brother and I like playing football in our free time. (fancy)</p>\n<p>-_______________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "My brother and I fancy playing football in our free time"
+          ],
+          "referenceHtml": "<p>My brother and I fancy playing football in our free time. (fancy + V-ing)</p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "43",
+          "html": "<p><strong>Câu 43.</strong> Nam didn’t study hard, so<strong> </strong>he failed the test. (Therefore)</p>\n<p>-______________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "Nam didn’t study hard. Therefore, he failed the test",
+            "Nam didn’t study hard. Therefore, he failed the test."
+          ],
+          "referenceHtml": "<p><strong>Câu 43.</strong> Nam didn’t study hard, so<strong> </strong>he failed the test. (Therefore)</p>\n<p><strong>Nam didn’t study hard. Therefore, he failed the test.</strong></p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "44",
+          "html": "<p><strong>Câu 44.</strong> Mai is always a careful driver in the busy streets. (carefully)<br>- Mai always______________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "drives carefully in busy streets",
+            "drives carefully in the busy streets",
+            "Mai always drives carefully in the busy streets",
+            "Mai always drives carefully in busy streets"
+          ],
+          "referenceHtml": "<p><strong>Câu 44.</strong> Mai is always a careful driver in the busy streets. (carefully)<br>- Mai always <strong>drives carefully in busy streets.</strong></p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "45",
+          "html": "<p><strong>Câu 45.</strong>  My mother knits more carefully than I do. </p>\n<p>- I knit________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "more carelessly than my mother",
+            "more carelessly than my mother does",
+            "I knit more carelessly than my mother",
+            "I knit more carelessly than my mother does",
+            "- I knit more carelessly than my mother",
+            "- I knit more carelessly than my mother does"
+          ],
+          "referenceHtml": "<p><strong>Câu 45.</strong>  My mother knits more carefully than I do. </p>\n<p>- I knit <strong>more carelessly than my mother (does).</strong></p>"
+        },
+        {
+          "id": "s11-q6",
+          "number": "2",
+          "html": "<p><strong>Question 2: (1</strong><strong>.0 point</strong><strong>) Write a paragraph (80-100 words) about the the causes of your stress and offer solutions. You can use </strong><strong>some of </strong><strong>the</strong><strong>se</strong><strong> suggestions:</strong></p>\n<p>- Turn off computers and smartphones.      </p>\n<p> - Go to bed early and get enough sleep.</p>\n<p>- Talk with friends and teachers.                 </p>\n<p>-  Do more exercise. </p>\n<p>- Avoid bullies whenever possible.          </p>\n<p>- Stay calm and relax.</p>\n<p><strong>You can start your writing like this:</strong></p>\n<p> I often feel stressed because of………………….. Here are some ways I deal with my stress.</p>\n<p>____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________<strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>Question 2: (1</strong><strong>.0 point</strong><strong>) Write a paragraph (80-100 words) about the the causes of your stress and offer solutions. You can use </strong><strong>some of </strong><strong>the</strong><strong>se</strong><strong> suggestions:</strong></p>\n<p>- Turn off computers and smartphones.      </p>\n<p> - Go to bed early and get enough sleep.</p>\n<p>- Talk with friends and teachers.                 </p>\n<p>-  Do more exercise. </p>\n<p>- Avoid bullies whenever possible.          </p>\n<p>- Stay calm and relax.</p>\n<p><strong>You can start your writing like this:</strong></p>\n<p> I often feel stressed because of………………….. Here are some ways I deal with my stress.</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe đầy đủ",
+      "sourceName": "BÀI NGHE ANH 8- GK1.mp3",
+      "sourceHash": "916b8a7531540f38cabed7aee6729b03ad5bfbf9f172fb5484c4984a774bc376",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-11-1.mp3",
+      "duration": 409.313719
+    }
+  ],
+  "sourceHash": "99b2cfa82eb36eb59d312a11be70bc956f153c0b710539566c99fe80a67d7df0"
+}

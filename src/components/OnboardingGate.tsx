@@ -20,7 +20,7 @@ const OnboardingGate = () => {
     if (loading) return;
     if (pathname.startsWith("/admin")) return;
     // Public practice papers are usable directly from a teacher's shared link.
-    if (/^\/grade\/[67]\/tests(?:\/|$)/.test(pathname)) return;
+    if (/^\/grade\/[678]\/tests(?:\/|$)/.test(pathname)) return;
     if (ALLOW.has(pathname)) return;
     if (user && profile && !isOnboarded(profile)) {
       navigate("/onboarding", { replace: true });

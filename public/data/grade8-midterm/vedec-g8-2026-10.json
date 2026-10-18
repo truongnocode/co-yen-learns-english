@@ -1,0 +1,713 @@
+{
+  "id": "vedec-g8-2026-10",
+  "number": 10,
+  "title": "Đề 10",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen and decide if the statements are True (T) or False (F) (1.25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. People in the countryside usually wake up late in the morning.\t\t</p>\n<p>A. True\t\t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>1. People in the countryside usually wake up late in the morning.\t\t</p>\n<p>A. True\t\t\t<strong>B. False</strong></p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. Life in rural areas is less noisy compared to urban life.\t\t\t</p>\n<p>A. True\t\t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>2. Life in rural areas is less noisy compared to urban life.\t\t\t</p>\n<p><strong>A. True</strong><strong>\t</strong>\t\tB. False</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. People living in the countryside often know and support their neighbors.</p>\n<p>A. True\t\t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>3. People living in the countryside often know and support their neighbors.</p>\n<p><strong>A. True</strong>\t\t\tB. False</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. There are plenty of things to do for fun in rural places.\t\t\t</p>\n<p>A. True\t\t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>4. There are plenty of things to do for fun in rural places.\t\t\t</p>\n<p>A. True\t\t\t<strong>B. False</strong></p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Many urban citizens choose the countryside to reduce stress and improve health.</p>\n<p>A. True\t\t\tB. False</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B"
+          ],
+          "referenceHtml": "<p>5. Many urban citizens choose the countryside to reduce stress and improve health.</p>\n<p><strong>A. True</strong>\t\t\tB. False</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen to the recording and mark the letter A, B, C, or D to indicate the correct answer to each of the following questions. You will listen TWICE. (1.25 pts)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p>6. What are the sources of pressure for teenagers at school?</p>\n<p>A. Parents, teachers, and friends.\t\t\t\tB. Parents.\t\t</p>\n<p>C. Friends.\t\t\t\t\t\t\tD. Teachers.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. What are the sources of pressure for teenagers at school?</p>\n<p><strong>A. Parents,</strong><strong> </strong><strong>teachers,</strong><strong> </strong><strong>and</strong><strong> </strong><strong>friends.</strong>\t\t\tB. Parents.\t\t</p>\n<p>C. Friends.\t\t\t\t\t\t\tD. Teachers.</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p>7. All of the following extracurricular activities are mentioned EXCEPT_________.</p>\n<p>A. clubs\t\t\tB. community service\tC. sports\t\t\tD. volunteering</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. All of the following extracurricular activities are mentioned EXCEPT<u>_________</u>.</p>\n<p>A. clubs\t\t\t<strong>B.</strong><strong> </strong><strong>community</strong><strong> </strong><strong>service</strong>\tC. sports\t\t\tD. volunteering</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p>8. What can extracurricular activities be beneficial for?</p>\n<p>A. Growth and development\t\t\t\tB. School pressure</p>\n<p>C. Heavy workload\t\t\t\t\t\tD. Stress and anxiety</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. What can extracurricular activities be beneficial for?</p>\n<p><strong>A. Growth</strong><strong> </strong><strong>and</strong><strong> </strong><strong>development</strong>\t\t\t\tB. School pressure</p>\n<p>C. Heavy workload\t\t\t\t\t\tD. Stress and anxiety</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p>9. According to the passage, what is one source of pressure for teenagers in their social life?</p>\n<p>A. Having as many friends as possible.\t\t\tB. Wanting to make new friends.</p>\n<p>C. Needing to fit in.\t\t\t\t\t\tD. Being the most popular.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. According to the passage, what is one source of pressure for teenagers in their social life?</p>\n<p>A. Having as many friends as possible.\t\t\tB. Wanting to make new friends.</p>\n<p><strong>C.</strong><strong> </strong><strong>Needing</strong><strong> </strong><strong>to</strong><strong> </strong><strong>fit</strong><strong> </strong><strong>in.</strong><strong>\t</strong>\t\t\t\t\tD. Being the most popular.</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p>10. What can parents and teachers do to help teenagers manage their stress?</p>\n<p>A. Recognise and understand the problem.\t\tB. Give them more chores.</p>\n<p>C. Provide support and guidance.</p>\n<p>D. Provide support and guidance, and recognise and understand the problem.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10. What can parents and teachers do to help teenagers manage their stress?</p>\n<p>A. Recognise and understand the problem.\t\tB. Give them more chores.</p>\n<p>C. Provide support and guidance.</p>\n<p><strong>D. Provide</strong><strong> </strong><strong>support</strong><strong> </strong><strong>and</strong><strong> </strong><strong>guidance,</strong><strong> </strong><strong>and</strong><strong> </strong><strong>recognise</strong><strong> </strong><strong>and</strong><strong> </strong><strong>understand</strong><strong> </strong><strong>the</strong><strong> </strong><strong>problem.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2.5 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0.5 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p><strong>C</strong><strong>ircle the letter A, B , C or D to indicate the word whose underlined part is pronounced differently from the others.</strong><strong> </strong></p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "11",
+          "html": "<p>11. A. t<u>oo</u>l\tB. f<u>oo</u>d\t\t\t\tC. n<u>oo</u>n\t\t\tD. c<u>oo</u>k</p>\n<p><strong>C</strong><strong>ircle the letter A, B, C or D to indicate the word that </strong><strong>differs from the rest in the position of the main stress.</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>11. A. t<u>oo</u>l\tB. f<u>oo</u>d\t\t\t\tC. n<u>oo</u>n\t\t\t<strong>D.</strong><strong> </strong><strong>c</strong><strong><u>oo</u></strong><strong>k</strong></p>\n<p><strong>C</strong><strong>ircle the letter A, </strong><strong>B,</strong><strong> C or D to indicate the word that </strong><strong>differs from the rest in the position of the main stress.</strong></p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "12",
+          "html": "<p>12. A. negative\tB. teenager\t\t\tC. solution             \t\tD. benefit </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>12. A. negative\tB. teenager\t\t\t<strong>C. solution</strong>             \t\tD. benefit </p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (2.0 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "13",
+          "html": "<p>13. Teenagers often prefer travelling with their friends _______ travelling with their parents.</p>\n<p>A. from\t\t\tB. to\t\t\t\tC. on\t\t\t\tD. in</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>13. Teenagers often prefer travelling with their friends _______ travelling with their parents.</p>\n<p>A. from\t\t\t<strong>B. to</strong>\t\t\t\tC. on\t\t\t\tD. in</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "14",
+          "html": "<p>14. City drivers have to drive _______ than country ones. </p>\n<p>A. more careful \t\tB. more careless \t\tC. more carefully \t\tD. more carelessly</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>14. City drivers have to drive _______ than country ones. </p>\n<p>A. more careful \t\tB. more careless \t\t<strong>C. more carefully</strong> \t\tD. more carelessly</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "15",
+          "html": "<p>15. Nga invites Hoa to hang out with her.</p>\n<p>- Nga : Would you like to hang out with me?\t\t\t- Hoa : “_______”</p>\n<p>A. Yes, I’d like \t\tB. No, I don’t like\t\tC. Yes, I’d love to\t\tD. Never mind</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>15.<strong> </strong>Nga invites Hoa to hang out with her.</p>\n<p>- <strong>Nga</strong> : Would you like to hang out with me?\t\t\t- <strong>Hoa</strong> : “_______”</p>\n<p>A. Yes, I’d like \t\tB. No, I don’t like\t\t<strong>C. Yes, I’d love to</strong>\t\tD. Never mind</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "16",
+          "html": "<p>16. I think country life is so boring and _______ because you’re not close to shops and services.</p>\n<p>A. unhealthy\t\t\tB. inconvenient\t\tC. comfortable\t\tD. peaceful</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>16. I think country life is so boring and _______ because you’re not close to shops and services.</p>\n<p>A. unhealthy\t\t\t<strong>B.</strong><strong> </strong><strong>inconvenient</strong>\t\tC. comfortable\t\tD. peaceful</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "17",
+          "html": "<p>17. Minh is _______ social media. She spends a lot of time on Facebook and Zalo.</p>\n<p>A. addicted to\t\tB. bored with\t\t\tC. tired of\t\t\tD. full of</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>17. Minh is _______ social media. She spends a lot of time on Facebook and Zalo.</p>\n<p><strong>A.</strong><strong> </strong><strong>addicted</strong><strong> to</strong>\t\tB. bored with\t\t\tC. tired of\t\t\tD. full of</p>"
+        },
+        {
+          "id": "s6-q6",
+          "number": "18",
+          "html": "<p>18. He likes _______ stamps because stamps have a lot of valuable information on them, cultures, and important events.</p>\n<p>A. herding\t\t\tB. collecting\t\t\tC. feeding\t\t\tD. loading</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>18. He likes _______ stamps because stamps have a lot of valuable information on them, cultures, and important events.</p>\n<p>A. herding\t\t\t<strong>B.</strong><strong> </strong><strong>collecting</strong>\t\t\tC. feeding\t\t\tD. loading</p>"
+        },
+        {
+          "id": "s6-q7",
+          "number": "19",
+          "html": "<p>19. My dad doesn’t mind _______ my mom from work every day.</p>\n<p>A. pick up\t\t\tB. picked up\t\t\tC. picking up\t\t\tD. picks up</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>19. My dad doesn’t mind _______ my mom from work every day.</p>\n<p>A. pick up\t\t\tB. picked up\t\t\t<strong>C.</strong><strong> </strong><strong>picking</strong><strong> </strong><strong>up</strong>\t\t\tD. picks up</p>"
+        },
+        {
+          "id": "s6-q8",
+          "number": "20",
+          "html": "<p>20. Would you like to drink a cup of tea _______ coffee?</p>\n<p>A. and\t\t\t\tB. or\t\t\t\tC. although\t\t\tD. but</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>20. Would you like to drink a cup of tea _______ coffee?</p>\n<p>A. and\t\t\t\t<strong>B.</strong><strong> or</strong>\t\t\t\tC. although\t\t\tD. but</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "C. READING (2.5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "I. Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+      "part": "READING",
+      "introHtml": "<p><strong>(1.25 points)</strong></p>\n<p>Nowadays. Social media platforms such as Facebook, Instagram, TikTok, and Snapchat have to become a popular way for teens to connect and (21) _______ their experiences with their friends. With just (22) _______ taps on their smartphones, they can upload photos and videos, comment on posts, and like or follow others. (23) _______ social media can be fun and exciting, they can also have pressure from teenagers’ mental health. (24) _______ comparing oneself to others on social media can lead to feelings of jealousy and low self-esteem.</p>\n<p>Additionally, cyberbullying is also a persistent problem<strong>. </strong>Therefore, it is essential for teens to use social media carefully and in moderation<strong>. </strong>It’s important for parents and caregivers to support teens in developing healthy social media habits<strong>. </strong>This can be done by talking openly and honestly about social media use and setting rules around screen time<strong>. </strong>Teaching teens how to balance their online activities with offline (25) _______ such as exercise, reading, and spending time with family and friends, ….</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "21",
+          "html": "<p>21. A. check         \t \tB. share               \t\tC. write             \t\tD. say</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>21. A. check         \t \t<strong>B. share</strong>               \t\tC. write             \t\tD. say</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "22",
+          "html": "<p>22. A. a little                \tB. much                    \tC. a few             \t\tD. many</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>22. A. a little                \tB. much                    \t<strong>C. a few</strong>             \t\tD. many</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "23",
+          "html": "<p>23. A. However     \t\tB. Therefore \t\t\tC.  Although  \t\tD. Because</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>23. A. However     \t\tB. Therefore \t\t\t<strong>C.  </strong><strong>Although</strong>  \t\tD. Because</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "24",
+          "html": "<p>24. A.  Constantly              B. Constant  \t\t\tC. Constancy  \t   \tD. Constants  </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>24. <strong>A.  </strong><strong>Constantly</strong>              B. Constant  \t\t\tC. Constancy  \t   \tD. Constants  </p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "25",
+          "html": "<p>25. A. dreams         \t\tB. events             \t\tC. expectations \t\tD. interests</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>25. A. dreams         \t\tB. events             \t\tC. expectations \t\t<strong>D. interests</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "II. Read the following passage and answer the questions. (1.25 points)",
+      "part": "READING",
+      "introHtml": "<p>Many people who work in London prefer to live outside it, and to go into their offices, factories or schools everyday by train, car or bus, even though this means they have to get up earlier in the morning and reach home later in the evening.</p>\n<p>One advantage of living outside London is that houses are cheaper. Even a small flat in London without a garden costs quite a lot to rent. With the same money people can get a small house in the country with a garden of one’s own. Then in the country they can get from the noise and hurry of the town. Even though <strong><u>they</u></strong> get up earlier and spend more time in trains or buses, they can sleep well at night, and during weekends and summer evenings, one can enjoy the fresh, clean air of the country. If a person who likes gardens, can spend one’s free time digging, planting, watering and doing the one hundred and one other things that are needed in a garden. Then, when the flowers and the vegetables <strong><u>come up</u></strong>, one has the reward of one who has shared the secrets of nature.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "26",
+          "html": "<p>26. The phrasal verb “come up” means_________.</p>\n<p>A. rise\t\t\t\tB. reach\t\t\tC. happen\t\t\tD. appear</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>26. The phrasal verb “<strong>come up</strong>” means_________.</p>\n<p>A. rise\t\t\t\tB. reach\t\t\tC. happen\t\t\t<strong>D. appear</strong></p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "27",
+          "html": "<p>27. Where do most people who work in London prefer to live?      - They prefer to live in_________.</p>\n<p>A. London’s suburbs\t\tB. London City</p>\n<p>C. London’s urban areas\t\tD. London’s towns          </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>27. Where do most people who work in London prefer to live?      - They prefer to live in_________.</p>\n<p><strong>A. London’s suburbs</strong>\t\tB. London City</p>\n<p>C. London’s urban areas\t\tD. London’s towns          </p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "28",
+          "html": "<p>28. What does the word “they” in paragraph 2 refer to?</p>\n<p>A. buses\t\t\tB. trains\t\t\tC. people\t\t\tD. weekends</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>28. What does the word “they” in paragraph 2 refer to?</p>\n<p>A. buses\t\t\tB. trains\t\t\t<strong>C. people</strong>\t\t\tD. weekends</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "29",
+          "html": "<p>29. What are the advantages of living outside London?</p>\n<p>A. It’s a peaceful and quiet place.\t\tB. The air is polluted.</p>\n<p>C. Houses are expensive.\t\t\t\t\tD. It’s busy and noisy</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>29. What are the advantages of living outside London?</p>\n<p><strong>A. It’s a peaceful and quiet place.</strong>\t\tB. The air is polluted.</p>\n<p>C. Houses are expensive.\t\t\t\t\tD. It’s busy and noisy</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "30",
+          "html": "<p>30. What of the following statements is NOT TRUE about the passage?</p>\n<p>A. People in the country spend time doing gardening.\tB. People in the country get fresh air.                                                  </p>\n<p>C. People in the country can’t sleep well.\t\tD. People in the country get peace and quiet.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>30. What of the following statements is NOT TRUE about the passage?</p>\n<p>A. People in the country spend time doing gardening.\tB. People in the country get fresh air.                                                  </p>\n<p><strong>C. People in the country can</strong><strong>’t</strong><strong> sleep well</strong>.\t\tD. People in the country get peace and quiet.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "D. WRITING (2.5 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "I. Arrange these sentences to make meaningful paragraphs or conversations. (0.5 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "31",
+          "html": "<p>31. a. Furthermore, she also likes taking photos of nature, especially during her trips to the countryside.</p>\n<p>      b. Her favourite hobby is listening to music, which she does every day to relax. </p>\n<p>      c. Another interesting activity for her is doing DIY projects, like making small decorations for her     room.    </p>\n<p>    d. Lan has many different hobbies that she enjoys in her free time. Here are some of them. </p>\n<p>A. d-a-b-c\t\t \tB. d-b-a-c \t\t\tC. d-c-a-b\t\t\t D. d-b-c-a</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>31. a. Furthermore, she also likes taking photos of nature, especially during her trips to the countryside.</p>\n<p>      b. Her favourite hobby is listening to music, which she does every day to relax. </p>\n<p>      c. Another interesting activity for her is doing DIY projects, like making small decorations for her     room.    </p>\n<p>    d. Lan has many different hobbies that she enjoys in her free time. Here are some of them. </p>\n<p>A. d-a-b-c\t\t \tB. d-b-a-c \t\t\tC. d-c-a-b\t\t\t <strong>D. d-b-c-a</strong></p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "32",
+          "html": "<p>32. a. Lack of sleep can lead to various health problems, including obesity and heart disease.<br>      b. It also helps improve your memory and concentration.<br>      c. Additionally, good sleep can boost your immune system and help you fight off illnesses.</p>\n<p>      d. Getting enough sleep is crucial for your overall health. </p>\n<p>A. d-c-a-b\t\t\tB. d-b-a-c\t\t\tC. d-a-c-b\t\t\tD. d-b-c-a</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>32. a. Lack of sleep can lead to various health problems, including obesity and heart disease.<br>      b. It also helps improve your memory and concentration.<br>      c. Additionally, good sleep can boost your immune system and help you fight off illnesses.</p>\n<p>      d. Getting enough sleep is crucial for your overall health. </p>\n<p>A. d-c-a-b\t\t\tB. d-b-a-c\t\t\t<strong>C. d-a-c-b</strong>\t\t\tD. d-b-c-a</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "II. Complete the second sentence so that it means the same as the sentence before. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "33",
+          "html": "<p>33. Nick is a careful writer than Phuc. (carefully)</p>\n<p>=&gt; Nick writes …………………………………………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "more carefully than Phuc",
+            "Nick writes more carefully than Phuc",
+            "=> Nick writes more carefully than Phuc"
+          ],
+          "referenceHtml": "<p>33. Nick is a careful writer than Phuc. (carefully)</p>\n<p><strong>=&gt;</strong><strong> Nick writes </strong><strong>more carefully than Phuc.</strong><strong> </strong></p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "34",
+          "html": "<p>34. Phong is a faster swimmer than Phuc. (fast)</p>\n<p>=&gt; Phong swims ……………………………………………………………………………………….</p>",
+          "kind": "text",
+          "answers": [
+            "faster than Phuc",
+            "Phong swims faster than Phuc",
+            "=> Phong swims faster than Phuc"
+          ],
+          "referenceHtml": "<p>34. Phong is a faster swimmer than Phuc. (fast)</p>\n<p><strong>=&gt; </strong><strong>Phong swims </strong><strong>faster than Phuc.</strong></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "35",
+          "html": "<p>35. My best friend is studying abroad. It is impossible for us to meet each other now. (so)</p>",
+          "kind": "text",
+          "answers": [
+            "My best friend is studying abroad, so it is impossible for us to meet each other now",
+            "My best friend is studying abroad, so it is impossible for us to meet each other now."
+          ],
+          "referenceHtml": "<p>35. My best friend is studying abroad. It is impossible for us to meet each other now. (so)</p>\n<p><strong>=&gt; My best friend is studying abroad, so it is impossible for us to meet each other now.</strong></p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "36",
+          "html": "<p>36. You can go around. You can take a look. (and)</p>",
+          "kind": "text",
+          "answers": [
+            "You can go around and take a look"
+          ],
+          "referenceHtml": "<p>You can go around and take a look. (Kết hợp hai hành động bằng and.)</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "III. Write the correct form or tense of the verbs in brackets. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "37",
+          "html": "<p>37.<strong> </strong>She didn’t want (tell) ______ him about her plan.</p>",
+          "kind": "text",
+          "answers": [
+            "to tell"
+          ],
+          "referenceHtml": "<p>37.<strong> </strong>She didn’t want (tell) ___<strong>to </strong><strong>tell</strong> ____ him about her plan.</p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "38",
+          "html": "<p>38. I detest (have) ______ a conversation with John. </p>",
+          "kind": "text",
+          "answers": [
+            "having"
+          ],
+          "referenceHtml": "<p>38. I detest (have) ___ <strong>having</strong>____ a conversation with John. </p>"
+        },
+        {
+          "id": "s13-q3",
+          "number": "39",
+          "html": "<p>39. Nam (surf) _______ the Internet a lot to find useful information for his studying.</p>",
+          "kind": "text",
+          "answers": [
+            "surfs"
+          ],
+          "referenceHtml": "<p>39. Nam (surf) ____ <strong>surfs</strong> ___ the Internet a lot to find useful information for his studying.</p>"
+        },
+        {
+          "id": "s13-q4",
+          "number": "40",
+          "html": "<p>40. _______ (you/ adore ) _______ listening to fairy tales when you were a child?</p>\n<p><strong>The end</strong></p>",
+          "kind": "text",
+          "answers": [
+            "Did you adore",
+            "Did you / adore"
+          ],
+          "referenceHtml": "<p>40. ___<strong> Did</strong> <strong>you</strong> ____ (adore ) ___<strong> adore</strong> ____ listening to fairy tales when you were a child?</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "E8GK1-BÀI NGHE 1 Q1-5.mp3",
+      "sourceHash": "e68bb97702c097d85c1a4796719009976e47a68165a0d3a3322309e085a10716",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-10-1.mp3",
+      "duration": 56.256
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "E8GK1-BÀI NGHE 2 Q6-10.mp3",
+      "sourceHash": "977cfb5e5d4d9fd3c71359fe6f0f5cbe0561d622819695a82359065838eb087f",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-10-2.mp3",
+      "duration": 61.992
+    }
+  ],
+  "sourceHash": "f74c19a1d612e0392138302c90483cc43a050746d4c6780b369a02ee55e228b0"
+}

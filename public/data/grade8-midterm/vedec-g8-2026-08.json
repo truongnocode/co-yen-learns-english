@@ -1,0 +1,635 @@
+{
+  "id": "vedec-g8-2026-08",
+  "number": 8,
+  "title": "Đề 08",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.25 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen to the conversation twice and choose the correct answer (1.0 point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. How many languages can a robot Ellas speak?</p>\n<p>A. 20\tB. 25\t      C. 23</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>1. How many languages can a robot Ellas speak?</p>\n<p>A. 20\tB. 25\t      C. 23</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. What can Ellas do?</p>\n<p>\tA. Interact with students\t</p>\n<p>\tB. Solve problems between students\t</p>\n<p>\tC. Have emotional connections with students</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>2. What can Ellas do?</p>\n<p>\tA. Interact with students\t</p>\n<p>\tB. Solve problems between students\t</p>\n<p>\tC. Have emotional connections with students</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. What can’t Ellas do with students?</p>\n<p>A. Practice English\tB. Teach students how to behave\t    C. Do a Gangnam style dance</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>3. What can’t Ellas do with students?</p>\n<p>A. Practice English\tB. <strong>Teach students how to behave</strong>\t    C. Do a Gangnam style dance</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. In Lan’s opinion, how can students feel when studying in a class with Ellas?</p>\n<p>\tA. difficult\tB. excited\t   C. tired</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>4. In Lan’s opinion, how can students feel when studying in a class with Ellas?</p>\n<p>\tA. difficult\tB. excited\t   C. tired</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen and decide whether the statements are True (T) or False (F) (1.25points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>Online shopping is buying a product or service online.                                T               F</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>Online shopping is buying a product or service online.                                <strong>T</strong>               </p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>Online shopping is inconvenient.                                                                  T               F</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>Online shopping is inconvenient.                                                                                   <strong>F</strong></p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>You can save the trouble of traveling time and money.                                T               F</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>You can save the trouble of traveling time and money.                                <strong>T</strong>               </p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p> You can return it and you don’t have to pay for the shipping.                     T               F</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p> You can return it and you don’t have to pay for the shipping.                                      <strong>F</strong></p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>You cannot easily become a shopaholic when online shopping.                   T              F</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>You cannot easily become a shopaholic when online shopping.                                    <strong>F</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2.75 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0.5 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "1. Circle the letter A, B, C or D to indicate the word whose underlined part is pronounced differently from the others.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "1",
+          "html": "<p>A. cost<u>u</u>me         \t        B. m<u>u</u>sician\t\t    C. c<u>u</u>stomer\t\tD. h<u>u</u>morous</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. cost<u>u</u>me         \t        B. m<u>u</u>sician\t\t    <strong>C. c</strong><strong><u>u</u></strong><strong>stomer</strong>\t\tD. h<u>u</u>morous</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "2. Circle the letter A, B, C or D to indicate the word that differs from the rest in the position of the main stress.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>A. poisonous                     B. Vietnamese               C. awardee                       D. Japanese</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>A. poisonous</strong>                     B. Vietnamese               C. awardee                       D. Japanese</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (1.25 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p>1. Lily’s house is ________ the end of this street</p>\n<p>A. on                                  B. at                               C. in                                  D. under</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1.  Lily’s house is ________ the end of this street.</p>\n<p>A. on                                  <strong>B. at</strong>                            C. in                                    D. under</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p>2. Hundreds of people were made ___________after the flood.  </p>\n<p>A. helpless                         B. careless                      C. carelessly                     D. homeless</p>\n<p>3______ transmits live images of the speakers with a webcam or camera on smart devices.   </p>\n<p>\tA. Email\tB. social media\tC. Video call\t  D. Audio call</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. Hundreds of people were made ___________after the flood.  </p>\n<p>A. helpless                         B. careless                   C. carelessly                       <strong>D. homeless</strong></p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "4",
+          "html": "<p>4. Many teenagers like to meet on social _________ rather than face to face.</p>\n<p>A. television\tB. media \tC. network\t    D. projects</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. Many teenagers like to meet on social _________ rather than face to face.</p>\n<p>A. television\tB. media \t<strong>C. network</strong>\t    D. projects</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "5",
+          "html": "<p>5. Peter: Vietnamese cooking uses a lot of vegetables and herbs.</p>\n<p>    Mai:_____________________.</p>\n<p>A. That’s a good idea.          B. Oh. Thank you         C. No, I don’t like             D. Yes, certainly.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. Peter: Vietnamese cooking uses a lot of vegetables and herbs.</p>\n<p>    Mai: _____________________.</p>\n<p>A. That’s a good idea.          B. Oh. Thank you         C. No, I don’t like             <strong>D. Yes, certainly</strong>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "III. Give the correct form of the verb. Write your answers in the blanks. (1.0 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p>1. Tomorrow, the train (leave)____________________ at 7 a.m.</p>",
+          "kind": "text",
+          "answers": [
+            "leaves"
+          ],
+          "referenceHtml": "<p>1. Tomorrow, the train (leave)_____<strong>leaves</strong>_______________ at 7 a.m.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "2",
+          "html": "<p>2. Try to avoid (use) _____________ single-use products.</p>",
+          "kind": "text",
+          "answers": [
+            "using"
+          ],
+          "referenceHtml": "<p>2. Try to avoid (use) __<strong>using</strong>___________ single-use products.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "3",
+          "html": "<p>3. Last year, two of our classmates (win) ____________ scholarships to the UK.</p>",
+          "kind": "text",
+          "answers": [
+            "won"
+          ],
+          "referenceHtml": "<p>3. Last year, two of our classmates (win) ____<strong>won</strong>________ scholarships to the UK.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "4",
+          "html": "<p>4. What ________ you (do) ____________ at 8 o&#x27;clock yesterday morning?</p>",
+          "kind": "text",
+          "answers": [
+            "were / doing",
+            "were doing",
+            "What were you doing at 8 o’clock yesterday morning?"
+          ],
+          "referenceHtml": "<p>4. What ___<strong>were</strong>_____ you (do) ____<strong>doing</strong>________ at 8 o&#x27;clock yesterday morning?</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "C. READING (2.75 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "I. Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+      "part": "READING",
+      "introHtml": "<p><strong>(1.25</strong><strong> </strong><strong>points)</strong></p>\n<p>The British spend their free time in different ways. People generally use it to relax. But many people also take part (1) __________ voluntary work, especially for charities. People spend a lot of their free time at home, where the most (2) _______ leisure activity is watching television, the average viewing time being 25 hours a week. People often (3) ____________ programs on video so that they can watch them later.</p>\n<p>Reading is also a favorite way of spending leisure time. The British spend a lot of time (4) ______________ newspapers and magazines. In the summer gardening is popular. And in winter it is often replaced by “Do-it-yourself’, when people spend their time improving or repairing their homes. (5) _____________ people have pets to look after taking the dog for a daily walk is a regular routine.</p>",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p>1. A. on\tB. in\tC. at\t\tD. for</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. on\t<strong>B. in</strong>\tC. at\t\tD. for</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "2",
+          "html": "<p>2. A. free\tB. rare\tC. popular\t\tD. unpopular</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. A. free\tB. rare\t<strong>C. popular</strong>\t\tD. unpopular</p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "3",
+          "html": "<p>3. A. record\tB. scan\tC. print\t\tD. power</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. <strong>A. record</strong>\tB. scan\tC. print\t\tD. power</p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "4",
+          "html": "<p>4. A. to read\tB. read\tC. reads\t\tD. reading</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. A. to read\tB. read\tC. reads\t\t<strong>D. reading</strong></p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "5",
+          "html": "<p>5. A. many\tB. few\tC. much\t\tD. a lot</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. <strong>A. many</strong>\tB. few\tC. much\t\tD. a lot</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "II. Read the following passage and answer the questions. (1.5 points)",
+      "part": "READING",
+      "introHtml": "<p>Two of the most dangerous storms which affect America are hurricanes and tornadoes. They are very much feared by anyone who may live in the path of their destruction. Every year homes are destroyed by their fury and often lives are lost. Most people who live near the coast are forced to evacuate their homes and to move to safer areas until the storm passes. Floods are caused along the coasts by both the heavy rain and a storm tide that is considerably above normal water level. The high winds, coastal flooding and heavy rains associated with a hurricane cause enormous damage.</p>\n<p>Hurricanes usually develop between July and October. Once they hit land, they carry tremendous power with driving rain and wind. Tornadoes are violent low-pressured storms. These storms occur most often during the summer months and are noticeable by their strong wind and lack of rain. The sky turns black as dust is sucked up into the air. Tornadoes are capable of lifting quite heavy objects from the ground. <strong>They</strong> can pick up trees and cars right into the air and even uplift heavier objects such as homes and railway cars. Both hurricanes and tornadoes cause millions of dollars worth of damage to life and property every year. Today they can be predicted more easily than in the past, but they cannot be stopped or ignored.</p>",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p>1. Which are the most dangerous storms that affect America?</p>",
+          "kind": "text",
+          "answers": [
+            "Hurricanes and tornadoes",
+            "The most dangerous storms which affect America are hurricanes and tornadoes"
+          ],
+          "referenceHtml": "<p>1. Which are the most dangerous storms that affect America?</p>\n<p><strong>The most dangerous storms which affect America are hurricanes and tornadoes</strong>.</p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "2",
+          "html": "<p>2. What are homes destroyed by?</p>",
+          "kind": "text",
+          "answers": [
+            "Their fury",
+            "By their fury",
+            "The fury of hurricanes and tornadoes",
+            "Homes are destroyed by their fury",
+            "Hurricanes and tornadoes"
+          ],
+          "referenceHtml": "<p>2. What are homes destroyed by?</p>\n<p><strong>by their fury and often lives are lost</strong></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "3",
+          "html": "<p>3. Are all people who live near the coast forced to evacuate their homes?</p>",
+          "kind": "text",
+          "answers": [
+            "No",
+            "No, they aren't",
+            "No, they are not"
+          ],
+          "referenceHtml": "<p>3. Are all people who live near the coast forced to evacuate their homes?</p>\n<p><strong>No</strong><strong>./ No</strong><strong>, they don’t.</strong></p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "4",
+          "html": "<p>4. When do hurricanes usually develop?</p>",
+          "kind": "text",
+          "answers": [
+            "Between July and October",
+            "Hurricanes usually develop between July and October"
+          ],
+          "referenceHtml": "<p>4. When do hurricanes usually develop?</p>\n<p><strong>Hurricanes usually develop between July and October. </strong></p>"
+        },
+        {
+          "id": "s12-q5",
+          "number": "5",
+          "html": "<p>5. The word <strong>&quot;they&quot;</strong> in the second paragraph means</p>\n<p>A. Objects</p>\n<p>B. Tornadoes</p>\n<p>C. Floods</p>\n<p>D. Storms</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. The word <strong>&quot;they&quot;</strong> in the second paragraph means</p>\n<p>A. Objects</p>\n<p><strong>B. Tornadoes</strong></p>\n<p>C. Floods</p>\n<p>D. Storms</p>"
+        },
+        {
+          "id": "s12-q6",
+          "number": "6",
+          "html": "<p> 6. Which of the following is true of tornadoes and hurricanes?<strong><br></strong>A. They cannot be predicted with accuracy.<br>B. They are easier to control today than in the past.<br>C. Tornadoes are more dangerous than hurricanes.<br>D. They can be predicted today with greater accuracy.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p> 6.Which of the following is true of tornadoes and hurricanes?<strong><br></strong>A. They cannot be predicted with accuracy.<br>B. They are easier to control today than in the past.<br>C. Tornadoes are more dangerous than hurricanes.<br><strong>D. They can be predicted today with greater accuracy</strong>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "D. WRITING (2.25 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s14",
+      "title": "I. Complete the second sentence so that it means the same as the sentence before. (1.25 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "1",
+          "html": "<p>1. &quot;I often go to the cinema on Sunday?&quot; Linh told Hoa.</p>\n<p>=&gt; Linh told Hoa that _________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "she often went to the cinema on Sunday",
+            "Linh told Hoa that she often went to the cinema on Sunday.",
+            "=> Linh told Hoa that she often went to the cinema on Sunday"
+          ],
+          "referenceHtml": "<p>1. &quot;I often go to the cinema on Sunday?&quot; Linh told Hoa.</p>\n<p>=&gt; Linh told Hoa that <strong>she often went to the cinema on Sunday.</strong></p>"
+        },
+        {
+          "id": "s14-q2",
+          "number": "2",
+          "html": "<p>2. My mother was watching TV. Then I came home.</p>\n<p>=&gt; When___________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "I came home, my mother was watching TV",
+            "When I came home, my mother was watching TV."
+          ],
+          "referenceHtml": "<p>2. My mother was watching TV. Then I came home.</p>\n<p>=&gt; When <strong>I came </strong><strong>home,</strong><strong> my mother was watching TV</strong><strong>.</strong></p>"
+        },
+        {
+          "id": "s14-q3",
+          "number": "3",
+          "html": "<p>3. It’s a good idea for us to preserve our customs and traditions.</p>\n<p>=&gt; We should________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "preserve our customs and traditions",
+            "We should preserve our customs and traditions.",
+            "=> We should preserve our customs and traditions"
+          ],
+          "referenceHtml": "<p>3. It’s a good idea for us to preserve our customs and traditions.</p>\n<p>=&gt; We should <strong>preserve our customs and traditions.</strong></p>"
+        },
+        {
+          "id": "s14-q4",
+          "number": "4",
+          "html": "<p>4. If they don&#x27;t practise a lot, they will lose the game.</p>\n<p>=&gt; Unless they_____________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "practise a lot, they will lose the game",
+            "Unless they practise a lot, they will lose the game.",
+            "=> Unless they practise a lot, they will lose the game"
+          ],
+          "referenceHtml": "<p>4. If they don&#x27;t practise a lot, they will lose the game.</p>\n<p>=&gt; Unless they <strong>practise a lot, they will lose the game.</strong></p>"
+        },
+        {
+          "id": "s14-q5",
+          "number": "5",
+          "html": "<p>5. Lan is one of my friends.</p>\n<p>=&gt; Lan is a friend of ________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "mine",
+            "Lan is a friend of mine.",
+            "=> Lan is a friend of mine"
+          ],
+          "referenceHtml": "<p>5. Lan is one of my friends.</p>\n<p>=&gt; Lan is a friend of <strong>mine</strong><strong>.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "II. Write a paragraph (about 80-100 words) about what you do to protect the environment. You can use the following ideas. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s15-q1",
+          "number": "1",
+          "html": "<p>- Reuse and recycle bottles and cans<br>- Go to school by bike or bus<br>- Put garbage bins around the school yard</p>\n<p>- Plant more trees and raise people’s awareness of protecting the environment. </p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>- Reuse and recycle bottles and cans<br>- Go to school by bike or bus<br>- Put garbage bins around the school yard</p>\n<p>- Plant more trees and raise people’s awareness of protecting the environment. </p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "BÀI NGHE 1.mp3",
+      "sourceHash": "b94d2064adcbcb54d72fdc117242c5798173b832364d051d1932a268afeb42ef",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-08-1.mp3",
+      "duration": 90.638231
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "BÀI NGHE 2.mp3",
+      "sourceHash": "bd43e55bd88317c6f4e870058867273cc1bceb053a0141df40a77ad2c98375a5",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-08-2.mp3",
+      "duration": 70.486259
+    }
+  ],
+  "sourceHash": "f4e534816b7079f3cf063f5bc6d5b8212ee9fff65d16d2191e6d5ea57defde1c"
+}

@@ -1,0 +1,705 @@
+{
+  "id": "vedec-g8-2026-06",
+  "number": 6,
+  "title": "Đề 06",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2,5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen to the conversation twice and choose the correct answer (1,25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong>. The class decided to use Facebook for their class ______________.</p>\n<p>A. forum\t\t\tB. website\t\tC. group\t\t\tD. fanpage</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong>. The class decided to use Facebook for their class ______________.</p>\n<p><strong>A. forum</strong>\t\t\tB. website\t\tC. group\t\t\tD. fanpage</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong>. Exams might give students a lot of ___________.</p>\n<p>A. relaxation\t\t\tB. stress\t\tC. happiness\t\t\tD. relationship</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2</strong>. Exams might give students a lot of ___________.</p>\n<p>A. relaxation\t\t\t<strong>B. stress</strong>\t\tC. happiness\t\t\tD. relationship</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>3</strong>. Students also have pressure from their ______________.</p>\n<p>A. friends\t\t\tB. parents\t\tC. teachers\t\t\tD. parents and friends</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3</strong>. Students also have pressure from their ______________.</p>\n<p>A. friends\t\t\tB. parents\t\tC. teachers\t\t\t<strong>D. parents and friends</strong></p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>4</strong>. Students chose Facebook to discuss their problems because it&#x27;s _______.</p>\n<p>A. popular\t\t\tB. easy to use\tC. unpopular\t\t\tD. difficult to use</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4</strong>. Students chose Facebook to discuss their problems because it&#x27;s _______.</p>\n<p>A. popular\t\t\t<strong>B. easy to use</strong>\tC. unpopular\t\t\tD. difficult to use</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>5</strong>. The club leaders will provide them with many _______.</p>\n<p>A. skills\t\t\tB. members\t\tC. activities\t\t\tD. prizes</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5</strong>. The club leaders will provide them with many _______.</p>\n<p>A. skills\t\t\tB. members\t\t<strong>C. activities</strong>\t\t\tD. prizes</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen and write T (True) or F (False). You will listen twice. (1,25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p><strong>6</strong>. 18% of people living in Britain dream of living in the countryside. </p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>6</strong>. 18% of people living in Britain dream of living in the countryside. <strong>F</strong></p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p><strong>7</strong>. The countryside of England is only for people who prefer busy life. </p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>7</strong>. The countryside of England is only for people who prefer busy life. <strong>F</strong></p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p><strong>8</strong>. Maggie thinks village life is not suitable for families with children. </p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>8</strong>. Maggie thinks village life is not suitable for families with children. <strong>F</strong></p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p><strong>9</strong>. Maggie thinks it&#x27;s difficult to tell who has money in the village. </p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>9</strong>. Maggie thinks it&#x27;s difficult to tell who has money in the village. <strong>T</strong></p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p><strong>10.</strong> People in the countryside of England prefer private transport. </p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>10.</strong> People in the countryside of England prefer private transport. <strong>T</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2,75 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0,5 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "11. Circle the letter A, B, C or D to indicate the word whose underlined part is pronounced differently from the others.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "1",
+          "html": "<p>A. pict<strong><u>ure</u></strong>\t\t\tB. mat<strong><u>ure</u></strong>\t\tC. ens<strong><u>ure</u></strong>\t\t\tD. s<strong><u>ure</u></strong></p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. pict<strong><u>ure</u></strong>\t\t\tB. mat<strong><u>ure</u></strong>\t\tC. ens<strong><u>ure</u></strong>\t\t\tD. s<strong><u>ure</u></strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "12. Circle the letter A, B, C or D to indicate the word that differs from the rest in the position of the main stress.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>A. balance\t\t\tB. bracelet\t\tC. focused\t\t\tD. origami</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. balance\t\t\tB. bracelet\t\tC. focused\t\t\t<strong>D. </strong><strong>origami</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (2,25 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "13",
+          "html": "<p><strong>1</strong><strong>3</strong>. They are very _______ of travelling and exploring new cultures.</p>\n<p>A. fond\t\t\tB. keen\t\tC. interested\t\t\tD. excited</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>13. They are very _______ of travelling and exploring new cultures.</p>\n<p><strong>A. fond</strong><strong>\t</strong>\t\tB. keen\t\tC. interested\t\t\tD. excited</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "14",
+          "html": "<p><strong>1</strong><strong>4</strong>. She is driving too slowly, so I think she will get there _________ than us.</p>\n<p>A. latelier\t\t\tB. more late\t\tC. more lately\t\tD. much later</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>4</strong>. She is driving too slowly, so I think she will get there _________ than us.</p>\n<p>A. latelier\t\t\tB. more late\t\tC. more lately\t\t<strong>D. much later</strong></p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "15",
+          "html": "<p><strong>1</strong><strong>5</strong>. Make time for your hobbies during the weekend; ______ you won&#x27;t have any chance to relax.</p>\n<p>A. however\t\t\tB. therefore\t\tC. otherwise\t<strong>\t</strong>\tD. so</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>5</strong>. Make time for your hobbies during the weekend; ______ you won&#x27;t have any chance to relax.</p>\n<p>A. however\t\t\tB. therefore\t\t<strong>C.</strong><strong> </strong><strong>otherwise</strong><strong>\t</strong><strong>\t</strong>\tD. so</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "16",
+          "html": "<p><strong>1</strong><strong>6</strong>. She forgot to check __________, so she missed the meeting.</p>\n<p>A. interests\t\t\tB. notifications\tC. expectations\t\tD. pressure</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>6</strong>. She forgot to check __________, so she missed the meeting.</p>\n<p>A. interests\t\t\t<strong>B. notifications</strong>\tC. expectations\t\tD. pressure</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "17",
+          "html": "<p><strong>1</strong><strong>7</strong>. The Thai people _________ a lot of poultry such as chickens, ducks and geese.</p>\n<p>A. make\t\t\tB. take\t\tC. raise\t\t\tD. load</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>7</strong>. The Thai people _________ a lot of poultry such as chickens, ducks and geese.</p>\n<p>A. make\t\t\tB. take\t\t<strong>C. raise</strong>\t\t\tD. load</p>"
+        },
+        {
+          "id": "s8-q6",
+          "number": "18",
+          "html": "<p><strong>1</strong><strong>8</strong>. Nick: You really have a nice helmet, Lisa.</p>\n<p>    Lisa: _____________________. I think its colour really suits me.</p>\n<p>A. I’m glad you like it\t\t\t\tB. I’m busy doing my homework</p>\n<p>C. I’m sorry to hear that\t\t\t\tD. I envy you</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>8</strong>. Nick: You really have a nice helmet, Lisa.</p>\n<p>    Lisa: _____________________. I think its colour really suits me.</p>\n<p><strong>A. I’m glad you like it</strong><strong>\t</strong>\t\t\tB. I’m busy doing my homework</p>\n<p>C. I’m sorry to hear that\t\t\t\tD. I envy you</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Choose the underlined part that needs correcting in each sentence below.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "19",
+          "html": "<p><strong>19</strong>. Farming is <strong><u>easier</u></strong> in the countryside; <strong><u>but</u></strong>, there <strong><u>is</u></strong> more <strong><u>open</u></strong> land available.</p>\n<p>A. easier\t\t\tB. but\t\t\tC. is\t\t\t\tD. open</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>19</strong>. Farming is <strong><u>easier</u></strong> in the countryside; <strong><u>but</u></strong>, there <strong><u>is</u></strong> more <strong><u>open</u></strong> land available.</p>\n<p>A. easier\t\t\t<strong>B. but</strong><strong>\t</strong>\t\tC. is\t\t\t\tD. open</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Choose the word or phrase that is OPPOSITE in meaning to the underlined words in the sentence.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "20",
+          "html": "<p><strong>20</strong>. The Internet allows us to <strong><u>communicate with</u></strong> friends from different parts of the world.</p>\n<p>A. interact with\t\tB. talk to\t\tC. disconnect from\t\tD. contact</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>20</strong>. The Internet allows us to <strong><u>communicate with</u></strong> friends from different parts of the world.</p>\n<p>A. interact with\t\tB. talk to\t\t<strong>C. disconnect from</strong>\t\tD. contact</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Choose the word or phrase that is CLOSEST in meaning to the underlined word in the sentence.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "21",
+          "html": "<p><strong>21</strong>. The Sahara Desert is <strong><u>extremely </u></strong><strong><u>large</u></strong> and covers parts of eleven countries in northern Africa.</p>\n<p>A. vast\t\t\tB. picturesque\tC. well-trained\t\tD. hospitable</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>21</strong>. The Sahara Desert is <strong><u>extremely </u></strong><strong><u>large</u></strong> and covers parts of eleven countries in northern Africa.</p>\n<p><strong>A. </strong><strong>vast</strong>\t\t\tB. picturesque\tC. well-trained\t\tD. hospitable</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "C. READING (2,5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s13",
+      "title": "I. Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+      "part": "READING",
+      "introHtml": "<p><strong>(1</strong><strong>,</strong><strong>25</strong><strong> </strong><strong>points)</strong></p>\n<p>Ethan and Noah are brothers. They look like each other but they are quite (<strong>22</strong>) __________ in some ways. Noah likes to stay inside. He likes to watch television, and he watches several shows every day. He spends about two hours (<strong>23</strong>) _________ television each day. He also likes playing video games. He also loves surfing the Internet. He likes (<strong>24</strong>) _________ with his friends and playing games online. In contrast, Ethan likes to spend time outside. He likes to swim in a pool which is not far from his house. He goes to the pool (<strong>25</strong>) _______ a week, sometimes every day. He swims for about an hour. He walks there and back. Sometimes he runs all the way there. On some days, Ethan plays basketball with his friends. Ethan doesn&#x27;t watch much television. He spends most of his days (<strong>26</strong>) _______ his feet.</p>",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "22",
+          "html": "<p>22. A. alike\t\t\tB. similar\t\tC. different\t<strong>\t</strong>\tD. same</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>22. A. alike\t\t\tB. similar\t\t<strong>C. </strong><strong>different</strong><strong>\t</strong><strong>\t</strong>\tD. same</p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "23",
+          "html": "<p>23<strong>. </strong>A. spending<strong>\t</strong><strong>\t</strong>B. spends\t\tC. to spend\t\t\tD. to spending</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>23<strong>. </strong><strong>A. </strong><strong>spending</strong><strong>\t</strong><strong>\t</strong>B. spends\t\tC. to spend\t\t\tD. to spending</p>"
+        },
+        {
+          "id": "s13-q3",
+          "number": "24",
+          "html": "<p>24. A. watching\t\tB. talking\t\tC. surfing\t\t\tD. chatting</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>24. A. watching\t\tB. talking\t\tC. surfing\t\t\t<strong>D. </strong><strong>chatting</strong></p>"
+        },
+        {
+          "id": "s13-q4",
+          "number": "25",
+          "html": "<p>25. A. one\t\t\tB. twice\t\tC. two\t\t\t\tD. many</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>25. A. one\t\t\t<strong>B. </strong><strong>twice</strong>\t\tC. two\t\t\t\tD. many</p>"
+        },
+        {
+          "id": "s13-q5",
+          "number": "26",
+          "html": "<p>26. A. on\t\t\tB. in\t\t\tC. with\t\t\tD. at</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>26. <strong>A. </strong><strong>on</strong>\t\t\tB. in\t\t\tC. with\t\t\tD. at</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "II. Read the following passage and answer the questions. (1,25 points)",
+      "part": "READING",
+      "introHtml": "<p>Making a film takes a long time and is very hard work. Writing the story for the film may take many weeks. Filming the story, or shooting the film, often takes at least six months. Actors and cameramen work from very early in the morning until late at night. Each scene had to be acted and reacted, filmed and refilmed, until it is just right. Sometimes the same scene has to be acted twenty or thirty times.</p>\n<p>The film studio is like a large factory and the indoor stages are very big indeed. Scenery of all kinds is made in the studio; churches, castles and forests are all built of wood and cupboard. Several hundred people work together to make one film. Some of these people are actors and actresses. The director of the film, however, is the most important person in a studio. He decides how the scene should be filmed and how the actors should act.</p>\n<p>Most people go to see a film because they know the film stars in it. Sometimes the film may be very poor. It is best to choose a film made by a good director. Some famous directors make their film very real. People feel that they themselves are among the people in the film.</p>",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "27",
+          "html": "<p><strong>27</strong>. How long does shooting a film often take? </p>\n<p>A. more than six months \tB. at least six months \tC. six months\t\tD. many weeks</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>27</strong>. How long does shooting a film often take? </p>\n<p>A. more than six months \t<strong>B. at least six months</strong> \tC. six months\t\tD. many weeks</p>"
+        },
+        {
+          "id": "s14-q2",
+          "number": "28",
+          "html": "<p><strong>28</strong>. Some scenes have to be filmed many times because ______.</p>\n<p>A. It is often difficult to make them just right<strong> </strong><strong>\t</strong>\tC. It takes a long time to make a film </p>\n<p>B. Many people work together \t\t\t\tD. The film is poor</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>28</strong>. Some scenes have to be filmed many times because ______.</p>\n<p><strong>A. It is often difficult to make them just right</strong><strong> </strong><strong>\t</strong>\tC. It takes a long time to make a film </p>\n<p>B. Many people work together \t\t\t\tD. The film is poor</p>"
+        },
+        {
+          "id": "s14-q3",
+          "number": "29",
+          "html": "<p><strong>29</strong>. Which of the following is compared to a factory? </p>\n<p>A. The film studio \t\tB. The indoor stage \t\tC. There scene \tD. A poor film</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>29</strong>. Which of the following is compared to a factory? </p>\n<p><strong>A. The film studio</strong><strong> </strong><strong>\t</strong>\tB. The indoor stage \t\tC. There scene \tD. A poor film</p>"
+        },
+        {
+          "id": "s14-q4",
+          "number": "30",
+          "html": "<p><strong>30</strong>. The director of a film __________.</p>\n<p>A. is always an actor\t\t\t\t\tB. says how each scene should be filmed</p>\n<p>C. makes the scenery\t\t\t\t\tD. is a film star</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>30</strong>. The director of a film __________.</p>\n<p>A. is always an actor\t\t\t\t\t<strong>B. says how each scene should be filmed</strong></p>\n<p>C. makes the scenery\t\t\t\t\tD. is a film star</p>"
+        },
+        {
+          "id": "s14-q5",
+          "number": "31",
+          "html": "<p><strong>31</strong>. We should choose a film which ________.</p>\n<p>A. has actors we know\t\t\t\t\tC. seems very real</p>\n<p>B. takes a long time to make \t\t\t\tD. is made by a good director<br><strong>                                                          </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>31</strong>. We should choose a film which ________.</p>\n<p>A. has actors we know\t\t\t\t\tC. seems very real</p>\n<p>B. takes a long time to make \t\t\t\t<strong>D. is made by a good director</strong><br><strong>                                                          </strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "D. WRITING (2,25 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s16",
+      "title": "I. Rearrange the words / phrases to make meaningful sentences. (0,5 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s16-q1",
+          "number": "32",
+          "html": "<p><strong>32. </strong>in the countryside / those in the city. / walk to school / farther than / Children //</p>\n<p>→ ______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Children in the countryside walk to school farther than those in the city",
+            "Children in the countryside walk to school farther than those in the city."
+          ],
+          "referenceHtml": "<p><strong>32. </strong>in the countryside / those in the city. / walk to school / farther than / Children //</p>\n<p><strong>→</strong> <strong>Children in the countryside walk to school farther than those in the city.</strong></p>"
+        },
+        {
+          "id": "s16-q2",
+          "number": "33",
+          "html": "<p><strong>33. </strong>Most teenagers / to keep in touch / using Facebook / with their friends. / prefer //</p>\n<p>→ ______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Most teenagers prefer using Facebook to keep in touch with their friends",
+            "Most teenagers prefer using Facebook to keep in touch with their friends."
+          ],
+          "referenceHtml": "<p><strong>33. </strong>Most teenagers / to keep in touch / using Facebook / with their friends. / prefer //</p>\n<p><strong>→</strong> <strong>Most teenagers prefer using Facebook to keep in touch with their friends.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "title": "II. Complete the second sentence so that it means the same as the sentence before. (0,75 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s17-q1",
+          "number": "34",
+          "html": "<p><strong>34</strong>. Jack gets a good grade on the test. He has studied every night for a week. <strong>(Combine the two sentences to make a compound sentence, using &quot;therefore&quot;)</strong></p>\n<p>→ ______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Jack has studied every night for a week; therefore, he gets a good grade on the test",
+            "Jack has studied every night for a week; therefore, he gets a good grade on the test."
+          ],
+          "referenceHtml": "<p><strong>34</strong>. Jack gets a good grade on the test. He has studied every night for a week. <strong>(Combine the two sentences to make a compound sentence, using &quot;therefore&quot;)</strong></p>\n<p><strong>→ </strong><strong>Jack has studied every night for a week; therefore, he gets a good grade on the test.</strong></p>"
+        },
+        {
+          "id": "s17-q2",
+          "number": "35",
+          "html": "<p><strong>35. </strong>Nelson is a more skillful football player than Brian. (<strong>Rewrite using “skillfully”</strong>)</p>\n<p>→ ______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Nelson plays football more skillfully than Brian",
+            "Nelson plays football more skillfully than Brian does"
+          ],
+          "referenceHtml": "<p><strong>35. </strong>Nelson is a more skillful football player than Brian. (<strong>Rewrite using “skillfully”</strong>)</p>\n<p><strong>→ Nelson plays football more skillfully than Brian (does).</strong></p>"
+        },
+        {
+          "id": "s17-q3",
+          "number": "36",
+          "html": "<p><strong>36. </strong>They love flying kites in the vast green fields. (<strong>Rewrite using “into”</strong>)</p>\n<p>→ ______________________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "They are into flying kites in the vast green fields",
+            "They are into flying kites in the vast green fields."
+          ],
+          "referenceHtml": "<p><strong>36. </strong>They love flying kites in the vast green fields. (<strong>Rewrite using “into”</strong>)</p>\n<p><strong>→ They are into flying kites in the vast green fields.</strong></p>"
+        },
+        {
+          "id": "s17-q4",
+          "number": "37",
+          "html": "<p><strong>37. </strong><strong>Write a paragraph of about 80-100 words about what you like OR dislike about life in the countryside. You can use some cues in the table or you can create your own ideas. (1</strong><strong>,</strong><strong>0 point)</strong></p>\n<p><strong>Like</strong></p>\n<p><strong>Dislike</strong></p>\n<p>- low cost of living</p>\n<p>- many cheap things</p>\n<p>- cool/ fresh air</p>\n<p>- peaceful/ simple life</p>\n<p>- beautiful/ picturesque landscape</p>\n<p>- hospitable/ generous/ friendly/ kind people</p>\n<p>- not many entertainment places, such as theatres, cinemas, etc.</p>\n<p>- poor means of transport</p>\n<p>- not many good schools</p>\n<p>- lack of facilities (hospital, post office, library,...)</p>\n<p>- not many job opportunities …</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>37. </strong><strong>Write a paragraph of about 80-100 words about what you like OR dislike about life in the countryside. You can use some cues in the table or you can create your own ideas. (1</strong><strong>,</strong><strong>0 point)</strong></p>\n<p><strong>Like</strong></p>\n<p><strong>Dislike</strong></p>\n<p>- low cost of living</p>\n<p>- many cheap things</p>\n<p>- cool/ fresh air</p>\n<p>- peaceful/ simple life</p>\n<p>- beautiful/ picturesque landscape</p>\n<p>- hospitable/ generous/ friendly/ kind people</p>\n<p>- not many entertainment places, such as theatres, cinemas, etc.</p>\n<p>- poor means of transport</p>\n<p>- not many good schools</p>\n<p>- lack of facilities (hospital, post office, library,...)</p>\n<p>- not many job opportunities</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "BÀI NGHE 1.mp3",
+      "sourceHash": "b61731997fc3db0454260ef59a4a894ce7794550bf48c71a8a049d90976f3ae0",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-06-1.mp3",
+      "duration": 104.202449
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "BÀI NGHE 2.wav",
+      "sourceHash": "911d33b7bcbf35d9e51a8cbcb08b5675a2c56a52a52fb9244985c962adb31e65",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-06-2.mp3",
+      "duration": 50.72
+    }
+  ],
+  "sourceHash": "0a5d331d848872662a6a5c802c84a658d29ca255cee7a8c9510007a4dd2d6bf4"
+}

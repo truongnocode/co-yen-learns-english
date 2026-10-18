@@ -1,0 +1,656 @@
+{
+  "id": "vedec-g8-2026-02",
+  "number": 2,
+  "title": "Đề 02",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A: LISTENING (2,0ps)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Listen to a conversation and decide if the statements are true (T) or false (F)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>Question </strong><strong>1</strong>. Sarah is a teacher.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>1</strong>. Sarah is a teacher.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>Question 2</strong>. She usually arrives at work at nine o ’clock.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>Question 2</strong>. She usually arrives at work at nine o ’clock.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>Question 3</strong>. Sarah always brings a sandwich from home.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>Question 3</strong>. Sarah always brings a sandwich from home.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>Question 4</strong>. She often has work to do in the evening</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>Question 4</strong>. She often has work to do in the evening</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p><strong>Question 5</strong>. She never goes out during the week</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>Question 5</strong>. She never goes out during the week</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen and fill in the blank one word or number /(no more than 3 words or number)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p><strong>Question</strong><strong> 6</strong>. According to speaker 1, there is a great sense of ________ in his village.</p>",
+          "kind": "text",
+          "answers": [
+            "community"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 6</strong>. According to speaker 1, there is a great sense of community___in his village.</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p><strong>Question </strong><strong>7</strong>. Speaker 1 says that people in his village are very___________to help each other. </p>",
+          "kind": "text",
+          "answers": [
+            "willing"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>7</strong>. Speaker 1 says that people in his village are very willing ___to help each other. </p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p><strong>Question </strong><strong>8</strong>. In speaker 2’s opinion, Transportation is a big _______ in the countryside.</p>",
+          "kind": "text",
+          "answers": [
+            "problem"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>8</strong>. In speaker 2’s opinion, Transportation is a big problem_______ in the countryside.</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p><strong>Question</strong><strong> 9</strong>. We can go swimming, play football, ________ ______, and do other interesting things.</p>",
+          "kind": "text",
+          "answers": [
+            "fly kites"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 9</strong>. We can go swimming, play football, fly kites_, and do other interesting things.</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p><strong>Question</strong><strong> </strong><strong>n</strong><strong>10</strong>. According to speaker 3, life in the countryside is peaceful and____________.</p>",
+          "kind": "text",
+          "answers": [
+            "simple"
+          ],
+          "referenceHtml": "<p><strong>Question</strong><strong> 10</strong>. According to speaker 3, life in the countryside is peaceful and simple.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "PART B: LANGUAGE FOCUS (2,75ps)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Choose the best answer A, B, C or D to complete the sentences.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "11",
+          "html": "<p><strong>Question 11: </strong>Choose the word which has a different stress pattern from the rest. Circle A, B, C or D to indicate your answer</p>\n<p>A. detest                 </p>\n<p>B. balance</p>\n<p>C. open</p>\n<p>D.visit</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 11: </strong>Choose the word which has a different stress pattern from the rest. Circle A, B, C or D to indicate your answer</p>\n<p>A. detest                 </p>\n<p>B. balance</p>\n<p>C. open</p>\n<p>D.visit</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "12",
+          "html": "<p><strong>Question </strong><strong>12</strong><strong>: </strong>Choose the word whose underline part is pronounced differently from the rest. Circle A, B, C or D to indicate your answer.</p>\n<p>A. w<u>oo</u>d</p>\n<p>B. p<u>oo</u>l</p>\n<p>C. c<u>oo</u>k</p>\n<p>D. f<u>oo</u>tball</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>12</strong><strong>: </strong>Choose the word whose underline part is pronounced differently from the rest. Circle A, B, C or D to indicate your answer.</p>\n<p>A. w<u>oo</u>d</p>\n<p>B. p<u>oo</u>l</p>\n<p>C. c<u>oo</u>k</p>\n<p>D. f<u>oo</u>tball</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "13",
+          "html": "<p><strong>Question </strong><strong>13</strong><strong>: </strong>Mr Nam dislikes _______ the Net in the evening.</p>\n<p>A. to surf</p>\n<p>B. surf</p>\n<p>C. surfed</p>\n<p>D. surfing</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>13</strong><strong>: </strong>Mr Nam dislikes _______ the Net in the evening.</p>\n<p>A. to surf</p>\n<p>B. surf</p>\n<p>C. surfed</p>\n<p>D. surfing</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "14",
+          "html": "<p><strong>Question </strong><strong>14</strong><strong>: </strong>We couldn’t do the puzzles______ we were busy.</p>\n<p>A. because</p>\n<p>B. because of</p>\n<p>C. although</p>\n<p>D. when</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>14</strong><strong>: </strong>We couldn’t do the puzzles______ we were busy.</p>\n<p>A. because</p>\n<p>B. because of</p>\n<p>C. although</p>\n<p>D. when</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "15",
+          "html": "<p><strong>Question </strong><strong>15:</strong> A: Do you fancy going out for a drink?    - B: ____________</p>\n<p>A. I usually drink tea.</p>\n<p>B. Sure, thanks.</p>\n<p>C. Why are you asking? </p>\n<p>D. No, I prefer coffee.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>15:</strong> A: Do you fancy going out for a drink?    - B: ____________</p>\n<p> A. I usually drink tea.</p>\n<p>B. Sure, thanks.</p>\n<p>C. Why are you asking? </p>\n<p>D. No, I prefer coffee.</p>"
+        },
+        {
+          "id": "s5-q6",
+          "number": "16",
+          "html": "<p><strong>Question </strong><strong>16</strong><strong>:</strong><strong> </strong>The local people are kind and ________to visitors.</p>\n<p>A. well-trained</p>\n<p>B. hospitable</p>\n<p>C. vast</p>\n<p>D. picturesque</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Kind and hospitable to visitors → B. hospitable</p>"
+        },
+        {
+          "id": "s5-q7",
+          "number": "17",
+          "html": "<p><strong>Question </strong><strong>17</strong>. What does “DIY” stand for? - “Do it ______________.”</p>\n<p>A. you\t\t\tB. yourself\t\tC. yourselves\t\tD. your</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>17</strong>. What does “DIY” stand for? - “Do it ______________.”</p>\n<p>A. you\t\t\t      B. yourself\t          C. yourselves\t\tD. your</p>"
+        },
+        {
+          "id": "s5-q8",
+          "number": "18",
+          "html": "<p><strong>Question </strong><strong>18</strong>. In his free time, he likes to ………… fish and ………… pigs. </p>\n<p>A. catch/ feed</p>\n<p>B. feed/ catch</p>\n<p>C. herd/ pick</p>\n<p>D. pick/ herd</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>18</strong>. In his free time, he likes to ………… fish and ………… pigs. </p>\n<p>A. catch/ feed</p>\n<p>B. feed/ catch</p>\n<p>C. herd/ pick</p>\n<p>D. pick/ herd</p>"
+        },
+        {
+          "id": "s5-q9",
+          "number": "19",
+          "html": "<p><strong>Question </strong><strong>19</strong>. </p>\n<p>The sign “KEEP OFF THE GRASS” means: <br>A. You must not walk on the grass.<br>B. You must water the grass.<br>C. You can sit on the grass.<br>D. You can play football on the grass.</p>\n<p><strong></strong><img src=\"/data/grade8-midterm/images/fd91205d5edd70b0.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>KEEP OFF THE GRASS → A. You must not walk on the grass.</p>"
+        },
+        {
+          "id": "s5-q10",
+          "number": "20",
+          "html": "<p><br><strong>Question </strong><strong>20</strong>.  It usually rains __________ in my country than in yours.</p>\n<p>A. heavier</p>\n<p>B. more heavier</p>\n<p>C. more heavily</p>\n<p>D. most heavily</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><br><strong>Question </strong><strong>20</strong>.  It usually rains __________ in my country than in yours.</p>\n<p>A. heavier</p>\n<p>B. more heavier</p>\n<p>C. more heavily</p>\n<p>D. most heavily</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "PART C – READING (2.0 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s7",
+      "title": "I. Read the passage and circle the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks.",
+      "part": "READING",
+      "introHtml": "<p>Teenagers today have a lot of things to do. They go to school, do homework, and spend time with friends. Some teenagers enjoy playing sports, while (21)______  like listening to music or using social media. Sometimes they feel when they have too much homework. (22) _______, it is important for them to relax. They can go for a walk, read books, or talk with their friends. These activities help them feel happier and (23) _______ than before. Parents should understand their children and give them advice. Teenagers also need love and care (24) _______ their families. Life can be easier when they have support from people around them. Teenage life is not always easy, but it is also (25) _______ and interesting.</p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "21",
+          "html": "<p><strong>Question 21:</strong><strong> </strong><strong>A</strong>. other  \t          <strong>B</strong>. others  \t          <strong>C.</strong> each  \t          <strong>D</strong>. the other</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 21:</strong><strong> </strong><strong>A</strong>. other  \t           <strong>B</strong>. others  \t <strong>C.</strong> each  \t          <strong>D</strong>. the other</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "22",
+          "html": "<p><strong>Question 22:</strong> <strong>A</strong>. Because  \t<strong>B</strong>. Therefore      <strong>C</strong>. However  \t<strong>D</strong>. Although </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 22:</strong> <strong>A</strong>. Because  \t<strong>B</strong><strong>. </strong><strong>Therefore</strong>      <strong>C</strong>. However  \t<strong>D</strong>. Although </p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "23",
+          "html": "<p><strong>Question 23:</strong> <strong>A</strong>. more good  \t<strong>B</strong>. good  \t\t<strong>C.</strong> better  \t\t<strong>D</strong>. best</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 23:</strong> <strong>A</strong>. more good  \t<strong>B</strong>. good  \t\t<strong>C.</strong> better  \t\t<strong>D</strong>. best</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "24",
+          "html": "<p><strong>Question 24:</strong> <strong>A</strong>. from  \t\t<strong>B</strong>. of  \t\t<strong>C</strong>. with  \t\t <strong>D</strong>. to</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 24:</strong> <strong>A</strong>. from  \t\t<strong>B</strong>. of  \t\t<strong>C</strong>. with  \t\t <strong>D</strong>. to</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "25",
+          "html": "<p><strong>Question 25:</strong> <strong>A</strong>. boring  \t<strong>B</strong>. excited  \t<strong>C</strong>. bored  \t\t <strong>D</strong>. exciting</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 25:</strong> <strong>A</strong>. boring  \t<strong>B</strong>. excited  \t<strong>C</strong>. bored  \t\t <strong>D</strong>. exciting</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Read the following passage and circle the letter A, B, C, or D to indicate the correct answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p><strong>Leisure</strong> <strong>activities</strong> are things people usually do in their free time for fun and relaxation. Different people enjoy different kinds of leisure activities depending on their interests and personalities. Some teenagers love outdoor activities such as playing football, cycling, going camping, or going for a walk in the park because they can stay healthy, enjoy the fresh air, and make new friends. Others prefer indoor activities like reading books, watching movies, listening to music, or playing computer games to relax and entertain themselves after a busy school day.</p>\n<p>In many families, weekends are a wonderful time for leisure. Parents and children can spend more quality time together. They may go on a picnic, visit grandparents, go shopping, or simply cook a special meal at home and enjoy it. Spending time together helps family members feel closer, share their feelings, and become happier.</p>\n<p>Leisure activities are very important because they help us relax after studying or working hard. They also make our lives more interesting, reduce stress, and help us learn new things.</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "26",
+          "html": "<p><strong>Question 26.</strong> What is the main idea of the passage?<br><strong>A</strong>. Teenagers and their hobbies<br><strong>B</strong>. The importance of leisure activities<br><strong>C</strong>. How to study hard at school<br><strong>D</strong>. Family life at weekends</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 26.</strong> What is the main idea of the passage?<br><strong>A</strong>. Teenagers and their hobbies<br><strong>B</strong>. The importance of leisure activities<br><strong>C</strong>. How to study hard at school<br><strong>D</strong>. Family life at weekends</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "27",
+          "html": "<p><strong>Question 27.</strong> The word <strong>they</strong> in paragraph 2 refers to _______.<br>A. parents and children\tB. grandparents\tC. families\tD. friends</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 27.</strong> The word <strong>they</strong> in paragraph 2 refers to _______.<br><strong>A. parents and children</strong>\tB. grandparents\tC. families\tD. friends</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "28",
+          "html": "<p><strong>Question 28.</strong> The word <strong>relax</strong> in paragraph 3 is closest in meaning to _______.<br><strong>A</strong>. rest  \t\t<strong>B</strong>. work  \t\t<strong>C</strong>. move\t\t<strong>D</strong>. travel</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 28.</strong> The word <strong>relax</strong> in paragraph 3 is closest in meaning to _______.<br><strong>A</strong>. rest  \t\t<strong>B</strong>. work  \t\t<strong>C</strong>. move\t\t<strong>D</strong>. travel</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "29",
+          "html": "<p><strong>Question 29.</strong> Which of the following is <strong>NOT</strong> mentioned as a leisure activity?<br><strong>A</strong>. Reading books  \t\t\t<strong>B</strong>. Playing computer games  </p>\n<p><strong>C</strong>. Doing homework \t\t\t<strong>D</strong>. Going camping</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 29.</strong> Which of the following is <strong>NOT</strong> mentioned as a leisure activity?<br><strong>A</strong>. Reading books  \t\t\t<strong>B</strong>. Playing computer games  </p>\n<p><strong>C</strong>. Doing homework \t\t\t<strong>D</strong>. Going camping</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "30",
+          "html": "<p><strong>Question 30.</strong> According to the passage, why are leisure activities important?<br><strong>A</strong>. They help people relax and enjoy life.<br><strong>B</strong>. They help people earn more money.<br><strong>C</strong>. They make people work faster.<br><strong>D</strong>. They help people sleep longer.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 30.</strong> According to the passage, why are leisure activities important?<br><strong>A</strong>. They help people relax and enjoy life.<br><strong>B</strong>. They help people earn more money.<br><strong>C</strong>. They make people work faster.<br><strong>D</strong>. They help people sleep longer.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "PART D – WRITING (2.0 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Put the following words and phrases in correct order to make sentences. Choose A, B, C or D.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "31",
+          "html": "<p><strong>Question 31:</strong> Living / is /interesting / in the city / in the countryside./ more/ than / living /</p>\n<p>A. Living in the city is more interesting than living in the countryside. </p>\n<p>B. Living is more interesting in the city than living in the countryside.</p>\n<p>C. Living in the city is interesting more than living in the countryside.</p>\n<p>D. Living in the countryside is more interesting than living in the city.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 31:</strong> Living / is /interesting / in the city / in the countryside./ more/ than / living /</p>\n<p>A. Living in the city is more interesting than living in the countryside. </p>\n<p>B. Living is more interesting in the city than living in the countryside.</p>\n<p>C. Living in the city is interesting more than living in the countryside.</p>\n<p>D. Living in the countryside is more interesting than living in the city.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "32",
+          "html": "<strong><p>Question 32.</strong> Rearrange the following sentences (A–E) to make a meaningful paragraph about leisure activities.</p>\n<p>A. Some prefer watching movies or listening to music at home.<br>B. In short, free time activities are very important for teenagers.<br>C. Teenagers today have many ways to relax after school.<br>D. These activities help them reduce stress and stay healthy.<br>E. Others like doing sports such as football or badminton with friends.</p>\n<p><strong>A.</strong> C – A – E – D – B<br><strong>B.</strong> B – C – A – E – D<br><strong>C.</strong> A – E – B – C – D<br><strong>D.</strong> C – E – A – D – B</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<strong><p>Question 32.</strong> Rearrange the following sentences (A–E) to make a meaningful paragraph about leisure activities.</p>\n<p>A. Some prefer watching movies or listening to music at home.<br>B. In short, free time activities are very important for teenagers.<br>C. Teenagers today have many ways to relax after school.<br>D. These activities help them reduce stress and stay healthy.<br>E. Others like doing sports such as football or badminton with friends.</p>\n<p><strong>A.</strong> C – A – E – D – B<br><strong>B.</strong> B – C – A – E – D<br><strong>C.</strong> A – E – B – C – D<br><strong>D.</strong> C – E – A – D – B</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "III. Complete the second sentence so that it means the same as the sentence before",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "33",
+          "html": "<p><strong>Question </strong><strong>33:</strong> Nam doesn’t speak French as fluently as his brother.</p>\n<p>=&gt;Nam’s brother speaks …………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "French more fluently than Nam",
+            "Nam’s brother speaks French more fluently than Nam.",
+            "=>Nam’s brother speaks Nam’s brother speaks French more fluently than Nam."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>33:</strong> Nam doesn’t speak French as fluently as his brother.</p>\n<p>=&gt;Nam’s brother speaks …<strong> </strong><strong>French more fluently than Nam.</strong></p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "34",
+          "html": "<p><strong>Question </strong><strong>34: </strong>My brother likes to play soccer with his peers after school.  </p>\n<p>=&gt;My brother is into……………………………………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "playing soccer with his peers after school",
+            "My brother is into playing soccer with his peers after school.",
+            "=>My brother is into playing soccer with his peers after school"
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>34: </strong>My brother likes to play soccer with his peers after school.  </p>\n<p>=&gt;My brother is into…<strong> </strong><strong>playing soccer with his peers after school.</strong></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "35",
+          "html": "<p><strong>Question </strong><strong>35:</strong> Jack has a new laptop; however, he never logs on his account on the Facebook. </p>\n<p>=&gt; Although ……………………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "Jack has a new laptop, he never logs on his account on Facebook",
+            "Although Jack has a new laptop, he never logs on his account on Facebook."
+          ],
+          "referenceHtml": "<p><strong>Question </strong><strong>35:</strong> Jack has a new laptop; however, he never logs on his account on the Facebook. </p>\n<p>=&gt; Although <strong>Jack has a new laptop, he never logs on his account on Facebook.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "III. Write a short paragraph (80-100 words) about how teenagers should deal with stress.",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p><strong>* </strong><strong>The following cues may help you:</strong></p>\n<p> - Turn off computers and smartphones.</p>\n<p> - Go to bed early and get enough sleep.</p>\n<p> - Talk with friends and teachers.</p>\n<p> - Do more exercise. </p>\n<p> - Go outside.</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>* </strong><strong>The following cues may help you:</strong></p>\n<p> - Turn off computers and smartphones.</p>\n<p> - Go to bed early and get enough sleep.</p>\n<p> - Talk with friends and teachers.</p>\n<p> - Do more exercise. </p>\n<p> - Go outside.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "PART E – SPEAKING(2.0 POINTS)",
+      "part": "SPEAKING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "Nói",
+          "html": "<p><strong>I. Answer the personal questions.</strong></p><p>1. What is your full name?</p>\n<p>2. How may people are there in your family ?</p>\n<p>3. What do you do in your free time?</p><p><strong>II. Talk about the topic.</strong></p><p>- Chủ đề: The benefits of living  in the countryside- Unit 2</p>\n<p>Idea 1: The air is clean and fresh</p>\n<p> Idea 2: The people are friendly and hospitable</p><p><strong>III. Answer the questions about the topic</strong></p><p>1. Do you like living in the countryside? Why or why not?</p>\n<p>2. Tell me about the village you like most.</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. What is your full name?</p>\n<p>2. How may people are there in your family ?</p>\n<p>3. What do you do in your free time?</p><p>- Chủ đề: The benefits of living  in the countryside- Unit 2</p>\n<p>Idea 1: The air is clean and fresh</p>\n<p> Idea 2: The people are friendly and hospitable</p><p>1. Do you like living in the countryside? Why or why not?</p>\n<p>2. Tell me about the village you like most.</p>\n<p><strong>IV</strong><strong>. Writing (80–100 words)</strong></p>\n<p><strong>Topic: How teenagers should deal with stress</strong></p>\n<p>Teenagers often face a lot of stress from school and daily life, so it is important for them to know how to relax. First, they should turn off computers and smartphones for a while to avoid spending too much time online. They can go outside, enjoy nature, or do some exercise to feel better. Getting enough sleep by going to bed early also helps the body and mind stay healthy. Moreover, talking with friends or teachers can make them feel supported and less stressed.</p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "file nghe bài 1.mp3",
+      "sourceHash": "f91248e5f5c4406e652d5693796a4a243dce21abcc6b79ed67ccf1f4cf7d0fe2",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-02-1.mp3",
+      "duration": 153.286531
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "file nghe bài 2.mp3",
+      "sourceHash": "541d4be6e485699d69a9ca62727ac41d0cb0e88f5834ad14af0b47271aaef266",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-02-2.mp3",
+      "duration": 98.299841
+    }
+  ],
+  "sourceHash": "0e01c6cf034c2769e02cb44e9a524b94ae83f3d476a49261eef110477b728bd4"
+}

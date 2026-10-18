@@ -1,0 +1,669 @@
+{
+  "id": "vedec-g8-2026-09",
+  "number": 9,
+  "title": "Đề 09",
+  "subtitle": "Tiếng Anh 8 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Part I. Listen to three people talking about “ Life in the countryside” and fill in each blank with NO MORE THAN ONE WORD according to what you have just heard. You will listen to the recording TWICE. (1.0pt)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> According to speaker 1, there is a great sense of______in his village.</p>",
+          "kind": "text",
+          "answers": [
+            "community"
+          ],
+          "referenceHtml": "<p><strong>1.</strong> According to speaker 1, there is a great sense of___ <strong>community</strong> ___in his village.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> In speaker 2’s opinion,______is  a big problem in the countryside.</p>",
+          "kind": "text",
+          "answers": [
+            "transportation"
+          ],
+          "referenceHtml": "<p><strong>2.</strong> In speaker 2’s opinion,___ <strong>transportation</strong> ___is  a big problem in the countryside.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong> Speaker 2 says that they should______the lives of people in the countryside.</p>",
+          "kind": "text",
+          "answers": [
+            "improve"
+          ],
+          "referenceHtml": "<p><strong>3.</strong> Speaker 2 says that they should__ <strong>improve</strong> ____the lives of people in the countryside.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong> According to speaker 3, life in the countryside is peaceful and______.</p>",
+          "kind": "text",
+          "answers": [
+            "simple"
+          ],
+          "referenceHtml": "<p><strong>4.</strong> According to speaker 3, life in the countryside is peaceful and___ <strong>simple</strong> ___.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Part II. Listen to a conversation and choose the letter A, B, C or D to indicate the option that best fit each of blanks according to what you have just heard. You will listen to the recording TWICE. (1.5pts)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "5",
+          "html": "<p><strong>5. </strong>The students are discussing_____.</p>\n<p><strong>A.</strong> their stress\t                                           <strong>B.</strong> their class forum</p>\n<p><strong>C.</strong> their community activities\t                  <strong>D.</strong> their schoolwork</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5. </strong>The students are discussing_____.</p>\n<p><strong>A.</strong><strong> their stress</strong>\t                                           <strong>B.</strong> their class forum</p>\n<p><strong>C.</strong> their community activities\t                  <strong>D.</strong> their schoolwork</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "6",
+          "html": "<p><strong>6.</strong> Minh’s tired of trying to meet______.</p>\n<p><strong>A.</strong> his peers’ expectations\t\t      <strong>B.</strong> his parents’ expectations </p>\n<p><strong>C.</strong>  his grandparents’ expectations\t      <strong>D.</strong> his teachers’ expectations</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>6.</strong> Minh’s tired of trying to meet______.</p>\n<p><strong>A.</strong> his peers’ expectations\t\t      <strong>B.</strong><strong> his parents’ expectations</strong> </p>\n<p><strong>C.</strong>  his grandparents’ expectations\t      <strong>D.</strong> his teachers’ expectations</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "7",
+          "html": "<p><strong>7.</strong> Minh should tell his parents about______.</p>\n<p><strong>A.</strong> his interests and activities                       <strong>B.</strong> his schoolwork and abilities<strong> </strong></p>\n<p><strong>C. </strong>his interests and abilities<strong>                         D.</strong> his clubs and abilities<strong> </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>7.</strong> Minh should tell his parents about______.</p>\n<p><strong>A.</strong> his interests and activities                       <strong>B.</strong> his schoolwork and abilities<strong> </strong></p>\n<p><strong>C. </strong><strong>his interests and abilities</strong><strong>                         D.</strong> his clubs and abilities<strong> </strong></p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "8",
+          "html": "<p><strong>8. </strong>Now Ann just focuses on______and tries to lose some weight.</p>\n<p><strong>A.</strong> eating healthy food\t\t                   <strong>B.</strong> doing exercise</p>\n<p><strong>C.</strong> staying fit\t\t                                <strong>D.</strong> her health</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>8. </strong>Now Ann just focuses on______and tries to lose some weight.</p>\n<p><strong>A.</strong> eating healthy food\t\t                   <strong>B.</strong> doing exercise</p>\n<p><strong>C.</strong> staying fit\t\t                                <strong>D.</strong><strong> </strong><strong>her health</strong></p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "9",
+          "html": "<p><strong>9.</strong> Ann  Should feel good about______</p>\n<p><strong>A. </strong>her body                                                  <strong>B.</strong> her achievements</p>\n<p><strong>C.</strong> herself\t                                            <strong>D. </strong>her choices </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>9.</strong> Ann  Should feel good about______</p>\n<p><strong>A. </strong><strong>her body</strong>                                                  <strong>B.</strong> her achievements</p>\n<p><strong>C.</strong> herself\t                                            <strong>D. </strong>her choices </p>"
+        },
+        {
+          "id": "s3-q6",
+          "number": "10",
+          "html": "<p><strong>10</strong>. Mi______her sister, so she should talk to her mum. </p>\n<p><strong>A.</strong> gets on with\t\t\t                   <strong>B.</strong> doesn’t get on with\t\t\t</p>\n<p><strong>C.</strong> doesn’t deal with\t\t\t      <strong>D.</strong> deals with</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>10</strong>. Mi______her sister, so she should talk to her mum. </p>\n<p><strong>A.</strong> gets on with\t\t\t                   <strong>B.</strong><strong> doesn’t get on with</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong></p>\n<p><strong>C.</strong> doesn’t deal with\t\t\t      <strong>D.</strong> deals with</p>"
+        }
+      ],
+      "audioStart": 206
+    },
+    {
+      "id": "s4",
+      "title": "B. KNOWLEDGE OF LANGUAGE (2.5 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "Part 1. Read the leaflet below and choose the correct answer A, B, C, or D to complete. (1.25 pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p><strong>Free Time Activities</strong></p>\n<p>In their free time, many teenagers enjoy different leisure activities. Some like <strong>(11)______ </strong>sports such as football or badminton, while others prefer quieter hobbies like reading or drawing. Online activities are also popular. Many students spend hours <strong>(12)______</strong> the Internet, chatting with friends, or watching videos.</p>\n<p>Leisure time is important because it helps us relax and <strong>(13)______</strong> stress after a busy school day. However, we should not<strong> (14)______</strong> too much time on smartphones or computer games. It is better to balance online hobbies with outdoor ones.</p>\n<p>Healthy activities such as cooking, gardening, or making <strong>(15)______ </strong>can also improve our creativity and give us useful life skills.</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "11",
+          "html": "<p><strong>11.A.</strong> play \t\t<strong>B.</strong> played \t\t\t<strong>C.</strong> playing \t\t\t<strong>D.</strong> plays</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>11.A.</strong> play \t\t<strong>B.</strong> played \t\t\t<strong>C.</strong><strong> playing</strong> \t\t\t<strong>D.</strong> plays</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "12",
+          "html": "<p><strong>12.A.</strong> surf \t\t<strong>B.</strong> surfed\t\t\t<strong>C.</strong> to surf  \t\t\t<strong>D.</strong> surfing </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>12.A.</strong> surf \t\t<strong>B.</strong> surfed\t\t\t<strong>C.</strong> to surf  \t\t\t<strong>D.</strong><strong> surfing</strong> </p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "13",
+          "html": "<p><strong>13.A.</strong> cause  \t<strong>B.</strong> reduce  \t\t\t<strong>C.</strong> make  \t\t\t<strong>D.</strong> get</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>13.A.</strong> cause  \t<strong>B.</strong><strong> reduce</strong>  \t\t\t<strong>C.</strong> make  \t\t\t<strong>D.</strong> get</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "14",
+          "html": "<p><strong>14.A.</strong> take  \t\t<strong>B.</strong> spend  \t\t\t<strong>C.</strong> use  \t\t\t<strong>D.</strong> give</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>14.A.</strong> take  \t\t<strong>B.</strong><strong> spend</strong>  \t\t\t<strong>C.</strong> use  \t\t\t<strong>D.</strong> give</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "15",
+          "html": "<p><strong>15.A.</strong> bracelets   \t<strong>B.</strong> recipes  \t\t\t<strong>C.</strong> ingredients \t\t<strong>D.</strong> exercises</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>15.</strong><strong>A.</strong><strong> bracelets</strong>   \t<strong>B.</strong> recipes  \t\t\t<strong>C.</strong> ingredients \t\t<strong>D.</strong> exercises</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Part 2.Read the email below and choose the best answer (A, B, C, or D) to complete it. (1.25pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p>Dear Elena,</p>\n<p>Thanks for your email. Now I&#x27;II tell you about my summer holiday in my hometown. I live in Ha Noi, <strong>(16) ______</strong> my home town is Ninh Binh. My grandparents live there, in a small house near a paddy field. I went to stay with them in June. It was a wonderful holiday. Every morning, my grandma and I got up early and <strong>(17) ______ </strong>the pigs and chickens. When we finished, we cooked breakfast. After that, I <strong>(18)______ </strong>fishing with my grandpa or helped my grandma with gardening. In the afternoon, I went to the fields with some other children. They taught me to <strong>(19)______</strong> the buffaloes. Sometimes we flew kites or skipped rope together. In the evening, I drew pictures, read books, or watched TV with my grandparents. I went to bed quite early, at about 9 p.m.</p>\n<p>I&#x27;m sending you a photo I took <strong>(20)______</strong>my grandparents&#x27; house. I hope you&#x27;ll like it.</p>\n<p>Love,</p>\n<p>Mi</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "16",
+          "html": "<p><strong>16. A.</strong> but                                  <strong>B.</strong> so                             <strong>C.</strong> for                                 <strong> D. </strong>or</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>16. </strong><strong>A.</strong><strong> but</strong>                                  <strong>B.</strong> so                             <strong>C.</strong> for                                 <strong> D. </strong>or</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "17",
+          "html": "<p><strong>17. A</strong>. feed                                <strong> B</strong>. is feeding                <strong>C.</strong> fed                                <strong> D.</strong> will fed</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>17. A</strong>. feed                                <strong> B</strong>. is feeding                <strong>C.</strong><strong> fed</strong><strong> </strong>                               <strong> D.</strong> will fed</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "18",
+          "html": "<p><strong>18. A.</strong> could                               <strong>B. </strong>went                        <strong>C.</strong> did                                <strong> D. </strong>played</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>18. A.</strong> could                               <strong>B. </strong><strong>went</strong><strong> </strong>                       <strong>C.</strong> did                                <strong> D. </strong>played</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "19",
+          "html": "<p><strong>19. A.</strong> run                                 <strong> B</strong>. get                           <strong>C.</strong> go                                 <strong> D.</strong> herd</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>19. A.</strong> run                                 <strong> B</strong>. get                           <strong>C.</strong> go                                 <strong> </strong><strong>D.</strong><strong> herd</strong></p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "20",
+          "html": "<p><strong>20. A. </strong>for                                  <strong> B. </strong>of                            <strong>C.</strong> on                                  <strong>D.</strong> next</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>20. A. </strong>for                                  <strong> </strong><strong>B. </strong><strong>of</strong><strong> </strong>                           <strong>C.</strong> on                                  <strong>D.</strong> next</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "C. READING (2.5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "Part 1. Read the passage and choose the correct answer A, B, C, or D to complete. (1.25 pts)",
+      "part": "READING",
+      "introHtml": "<p>Every teenage feels <strong>(21)______ </strong>at times. There are different kinds of troubles, such as academic pressures, family issues and difficulties with peers. We must say that they are the main things that teens have to <strong>(22)______</strong>with on a daily basis. None of us can avoid stress completely, but <strong>(23)______ </strong>give us some advice about things we can do to reduce our stress levels. </p>\n<p>Firstly, it&#x27;s important to exercise regularly, and avoid eating<strong> (24)______</strong> food. It is also important to take time out every day to do something that makes you happy. It may be listening to your favorite music, talking to a friend, or <strong>(25)______</strong>time with a pet.</p>\n<p>It is always helpful to talk about your problems with others whether that&#x27;s a friend, your parents or a teacher. As the saying goes, “A problem shared, is a problem halved!”</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "21",
+          "html": "<p><strong>21.</strong> <strong>A.</strong> stress\t<strong>B.</strong> stressing\t<strong>C. </strong>stressed\t<strong>D. </strong>stressful</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>21.</strong> <strong>A.</strong> stress\t<strong>B.</strong> stressing\t<strong>C. </strong><strong>stressed</strong>\t<strong>D. </strong>stressful</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "22",
+          "html": "<p><strong>22.</strong> <strong>A.</strong> deal\t<strong>B.</strong> think\t<strong>C.</strong> talk\t<strong>D.</strong> keep</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>22.</strong> <strong>A.</strong><strong> deal</strong>\t<strong>B.</strong> think\t<strong>C.</strong> talk\t<strong>D.</strong> keep</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "23",
+          "html": "<p><strong>23.</strong> <strong>A.</strong> psychology \t<strong>B.</strong> psychologies \t<strong>C</strong>. psychologist \t<strong>D.</strong> psychologists</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>23.</strong> <strong>A.</strong> psychology \t<strong>B.</strong> psychologies \t<strong>C</strong>. psychologist \t<strong>D.</strong><strong> psychologists</strong></p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "24",
+          "html": "<p><strong>24.</strong> <strong>A.</strong> healthy \t<strong>B.</strong> health\t<strong>C.</strong> unhealthy\t<strong>D.</strong> unhealth</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>24.</strong> <strong>A.</strong> healthy \t<strong>B.</strong> health\t<strong>C.</strong><strong> unhealthy</strong>\t<strong>D.</strong> unhealth</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "25",
+          "html": "<p><strong>25.</strong> <strong>A.</strong> to spending \t         <strong>B. </strong>spending\t                   <strong>C.</strong> spend\t                          <strong>  D.</strong> to spend</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>25.</strong> <strong>A.</strong> to spending \t        <strong>B. </strong><strong>spending</strong>\t                 <strong>C.</strong> spend\t                         <strong>D.</strong> to spend</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Part 2. Read the following passage and choose the best answer (A, B, C or D) for each question. (1.25pts)",
+      "part": "READING",
+      "introHtml": "<p>One of the most obvious negative aspects of social networking is losing face- to-face contact with other people. Teens are sitting around with their phone in their hands all day long, tapping messages onto screens instead of communicating with real people. Many teenagers feel more comfortable with virtual friends than with real ones. The majority think that it is easier to chat on the Internet because they lack communication skills.</p>\n<p>It is also true that parents often have no knowledge about what their kids do with their phones or computers. Crosby says that, &quot;While kids are plugged in to social media, only about 40% of parents are involved themselves.&quot; And because parents don&#x27;t know the full picture, they also don&#x27;t know how to deal with a teenager&#x27;s potential <strong><u>overuse</u></strong> of social media and might not even be aware that a problem exists. Therefore, social networking can be much more immediately engaging with the teenager&#x27;s life than parents are, and this fact makes virtual communication feel more &quot;real&quot; than face-to-face communication. </p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "26",
+          "html": "<p><strong>26. What is the main idea of the passage?</strong></p>\n<p>\t<strong>A</strong>. Parents should use social networks more to understand their children.</p>\n<p>\t<strong>B</strong>. Students are using social networks too much.</p>\n<p><strong>\t</strong><strong>C</strong>. Social networking brings negative effects to student’s face-to-face communication.</p>\n<p>\t<strong>D.</strong> Virtual life is easier than real life.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>26. What is the main idea of the passage?</strong></p>\n<p>\t<strong>A</strong>. Parents should use social networks more to understand their children.</p>\n<p>\t<strong>B</strong>. Students are using social networks too much.</p>\n<p><strong>\t</strong><strong>C</strong><strong>. Social networking brings negative effects to student’s face-to-face communication.</strong></p>\n<p>\t<strong>D.</strong> Virtual life is easier than real life.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "27",
+          "html": "<p><strong>27. What do most teenagers think about chatting on the Internet?</strong></p>\n<p><strong>\t</strong><strong>A</strong>. Chatting on the Internet is easier than talking with real people.</p>\n<p>\t<strong>B</strong>. Chatting on the Internet is more difficult than talking with real people.</p>\n<p>\t<strong>C</strong>. Chatting on the Internet is funnier than talking with real people.</p>\n<p>\t<strong>D</strong>. Chatting on the Internet is more boring than talking with real people.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>27. What do most teenagers think about chatting on the Internet?</strong></p>\n<p><strong>\t</strong><strong>A</strong><strong>. Chatting on the Internet is easier than talking with real people.</strong></p>\n<p>\t<strong>B</strong>. Chatting on the Internet is more difficult than talking with real people.</p>\n<p>\t<strong>C</strong>. Chatting on the Internet is funnier than talking with real people.</p>\n<p>\t<strong>D</strong>. Chatting on the Internet is more boring than talking with real people.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "28",
+          "html": "<p><strong>28. The percentage of 40% refers to______.</strong></p>\n<p>\t<strong>A</strong>. The number of parents who let their children use social media.</p>\n<p>\t<strong>B</strong>. The number of parents who do not want their children to use media.</p>\n<p><strong>\t</strong><strong>C</strong>. The number of parents who use social media.</p>\n<p>\t<strong>D.</strong> The number of parents who do not use social media.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>28. The percentage of 40% refers to______.</strong></p>\n<p>\t<strong>A</strong>. The number of parents who let their children use social media.</p>\n<p>\t<strong>B</strong>. The number of parents who do not want their children to use media.</p>\n<p><strong>\t</strong><strong>C</strong><strong>. The number of parents who use social media.</strong></p>\n<p>\t<strong>D.</strong> The number of parents who do not use social media.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "29",
+          "html": "<p><strong>29. Which sentence is NOT TRUE according to the passage?</strong></p>\n<p>\t<strong>A</strong>. The majority of teenagers find it easier to communicate with virtual friend</p>\n<p>\t<strong>B</strong>. The majority of teenagers lacks communication skill.</p>\n<p><strong>\t</strong><strong>C</strong>. The majority of parents know how to use social media with their children</p>\n<p>\t<strong>D</strong>. The majority of parents do not know how to deal with their children overuse of social media.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>29. Which sentence is NOT TRUE according to the passage?</strong></p>\n<p>\t<strong>A</strong>. The majority of teenagers find it easier to communicate with virtual friend</p>\n<p>\t<strong>B</strong>. The majority of teenagers lacks communication skill.</p>\n<p><strong>\t</strong><strong>C</strong><strong>. The majority of parents know how to use social media with their children</strong></p>\n<p>\t<strong>D</strong>. The majority of parents do not know how to deal with their children overuse of social media.</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "30",
+          "html": "<p><strong>30. Which of the following best explains the word “</strong><strong><u>overuse</u></strong><strong>” in the passage?</strong></p>\n<p>\t<strong>A</strong>. using something overnight\t<strong>B</strong>. using something too much</p>\n<p>\t<strong>C.</strong> using something without thinking\t<strong>D</strong>. using something with carelessness</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>30. Which of the following best explains the word “</strong><strong><u>overuse</u></strong><strong>” in the passage?</strong></p>\n<p>\t<strong>A</strong>. using something overnight\t<strong>B</strong><strong>. using something too much</strong></p>\n<p>\t<strong>C.</strong> using something without thinking\t<strong>D</strong>. using something with carelessness</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "D. WRITING (2.5 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "Part 1. Choose the best answer (A, B, C or D) to make meaningful utterances. (0.5pts)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "31",
+          "html": "<p><strong>31.  </strong></p>\n<p><strong>a. </strong>Nam: Yes, I love flying it in the afternoon with my friends.</p>\n<p><strong>b. </strong>Nam: Thank you. My father made it for me last week.</p>\n<p><strong>c. </strong>Hoa: Wow, it looks so colorful and big.</p>\n<p><strong>d.</strong> Hoa: What a beautiful kite you have! </p>\n<p><strong>A. </strong>d–b–c–a\t\t<strong>B.</strong> a–c–b–d                    <strong>C.</strong> c–a–b–d             <strong>D.</strong> b–a–c–d</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>31.  </strong></p>\n<p>a. Nam: Yes, I love flying it in the afternoon with my friends.</p>\n<p><strong>b. </strong>Nam: Thank you. My father made it for me last week.</p>\n<p><strong>c. </strong>Hoa: Wow, it looks so colorful and big.</p>\n<p><strong>d.</strong> Hoa: What a beautiful kite you have! </p>\n<p><strong>A. </strong><strong>d–b–c–a</strong>\t\t<strong>B.</strong> a–c–b–d                    <strong>C.</strong> c–a–b–d             <strong>D.</strong> b–a–c–d</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "32",
+          "html": "<p><strong>32.</strong></p>\n<p><strong>a</strong>. On the other hand, young people sometimes leave the countryside to find jobs in the city.</p>\n<p><strong>b.</strong> In conclusion, life in the countryside may be simple, but it offers many values.</p>\n<p><strong>c.</strong> Life in the countryside is closely connected to nature.</p>\n<p><strong>d.</strong> People often grow crops, raise animals, and live peacefully with their neighbors.</p>\n<p><strong>A.</strong> c–d–a–b                  <strong>B.</strong> d–c–a–b                  <strong> C.</strong> c–d–b–a              <strong>D.</strong> d–c–a-b</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>32.</strong></p>\n<p><strong>a</strong>. On the other hand, young people sometimes leave the countryside to find jobs in the city.</p>\n<p><strong>b.</strong> In conclusion, life in the countryside may be simple, but it offers many values.</p>\n<p><strong>c.</strong> Life in the countryside is closely connected to nature.</p>\n<p><strong>d.</strong> People often grow crops, raise animals, and live peacefully with their neighbors.</p>\n<p><strong>A.</strong><strong> c–d–a–b</strong>                  <strong>B.</strong> d–c–a–b                  <strong> C.</strong> c–d–b–a              <strong>D.</strong> d–c–a-b</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Part 2. Complete the second sentence so that it has a similar meaning to the first one, using the words in brackets (1.0pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "33",
+          "html": "<p><strong>33.</strong> The workers in your factory work more responsibly than those in my factory. (carelessly)</p>\n<p>→   The workers in my factory ________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "work more carelessly than those in your factory",
+            "work more carelessly than yours",
+            "work more carelessly than yours do",
+            "The workers in my factory work more carelessly than those in your factory",
+            "The workers in my factory work more carelessly than yours",
+            "The workers in my factory work more carelessly than yours do",
+            "→ The workers in my factory work more carelessly than those in your factory",
+            "→ The workers in my factory work more carelessly than yours",
+            "→ The workers in my factory work more carelessly than yours do"
+          ],
+          "referenceHtml": "<p><strong>33.</strong> The workers in your factory work more responsibly than those in my factory. (carelessly)</p>\n<p>→  The workers in my factory <strong><u>work more carelessly than those in your factory / yours (do)</u></strong><strong>.</strong></p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "34",
+          "html": "<p><strong>34. </strong>Although teens don&#x27;t know how to avoid bullies, they don&#x27;t want to tell their teachers. (but)</p>\n<p>→  Teens_________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "don't know how to avoid bullies, but they don't want to tell their teachers",
+            "Teens don't know how to avoid bullies, but they don't want to tell their teachers.",
+            "→ Teens don't know how to avoid bullies, but they don't want to tell their teachers"
+          ],
+          "referenceHtml": "<p><strong>34. </strong>Although teens don&#x27;t know how to avoid bullies, they don&#x27;t want to tell their teachers. (but)</p>\n<p>→  Teens <strong><u>don&#x27;t know how to avoid bullies, but they don&#x27;t want to tell their teachers</u></strong><strong><u>.</u></strong></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "35",
+          "html": "<p>Phong detests playing computer games.<strong> </strong>(hate) </p>\n<p>→ Phong_________________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "hates playing computer games",
+            "Phong hates playing computer games.",
+            "→ Phong hates playing computer games"
+          ],
+          "referenceHtml": "<p>Phong detests playing computer games.<strong> </strong>(hate) </p>\n<p>→ Phong <strong><u>hates playing computer games.</u></strong></p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "36",
+          "html": "<p>My mother read the healthy tips. My mother downloaded the healthy tips. (and)</p>\n<p>→ My mother ____________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "read and downloaded the healthy tips",
+            "My mother read and downloaded the healthy tips.",
+            "→ My mother read and downloaded the healthy tips"
+          ],
+          "referenceHtml": "<p>My mother read the healthy tips. My mother downloaded the healthy tips. (and)</p>\n<p>→ My mother <strong><u>read and downloaded the healthy tips.</u></strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Part 3. Write a paragraph (80 - 100 words) about your leisure activity. (1.0 pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p><strong>The following questions below might help you.</strong></p>\n<p>1-What leisure activity do you like doing the most?</p>\n<p>2-How often do you do it?</p>\n<p>3-Who do you do the activity with?</p>\n<p>4-When do you usually do it?</p>\n<p>5-Why do you like it?</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>The following questions below might help you.</strong></p>\n<p>1-What leisure activity do you like doing the most?</p>\n<p>2-How often do you do it?</p>\n<p>3-Who do you do the activity with?</p>\n<p>4-When do you usually do it?</p>\n<p>5-Why do you like it?</p>\n<p><strong>ĐỀ XUẤT CHẤM BÀI VIẾT</strong></p>\n<p>Giáo viên cho điểm mỗi thành phần ứng với mức độ nhận thức học sinh đạt được.</p>\n<p><strong>T</strong><strong>ổng:</strong></p>\n<p><strong>1 đi</strong><strong>ểm</strong></p>\n<p><strong>Nh</strong><strong>ận biết</strong></p>\n<p><strong>Thông hi</strong><strong>ểu</strong></p>\n<p><strong>V</strong><strong>ận dụng</strong></p>\n<p><strong>N</strong><strong>ội dung</strong></p>\n<p><strong>(0,4đ)</strong></p>\n<p><strong>(0,2đ)</strong></p>\n<p>- Trả lời ở mức tối thiểu yêu cầu của bài. Bài viết có câu chủ đề và các thành phần cơ bản.</p>\n<p>- Viết được một số ý chính nhưng có chỗ diễn đạt không rõ, bị lặp ý, không liên quan, gây khó hiểu cho người đọc.</p>\n<p><strong>(0,3đ)</strong></p>\n<p>- Trả lời được cơ bản yêu cầu của bài. Bài viết có câu chủ đề. Các thành phần cơ bản đều được phát triển, đôi khi có chỗ phát triển chưa cân xứng.</p>\n<p>- Viết được cơ bản đủ ý chính. Có một vài ý không liên quan, gây khó hiểu cho người đọc.</p>\n<p>- Có đôi chỗ dẫn chứng còn chưa phù hợp.</p>\n<p><strong>(0,4đ)</strong></p>\n<p>- Trả lời đầy đủ yêu cầu của bài. Bài viết có câu chủ đề. Các thành phần cơ bản được phát triển kỹ, logic, cân xứng.</p>\n<p>- Đủ ý, các ý thống nhất, có liên quan chặt chẽ.</p>\n<p>- Dẫn chứng hay và thuyết phục.</p>\n<p><strong>Tổ chức thông tin và tính liên kết (0,2đ)</strong></p>\n<p><strong>(0,1đ)</strong></p>\n<p>- Thông tin bị lặp và ảnh hưởng đến diễn đạt.</p>\n<p>- Sắp xếp ý thiếu logic, thiếu tính liên kết.</p>\n<p>- Ít sử dụng hoặc sử dụng lặp các phương tiện kết nối, hoặc sử dụng các phương tiện kết nối chưa chính xác. </p>\n<p><strong>(0,15đ)</strong></p>\n<p>- Thông tin còn bị lặp.</p>\n<p>- Sắp xếp các ý có logic, có tính liên kết, mặc dù tính mạch lạc giữa các câu còn thấp hoặc máy móc.</p>\n<p>- Sử dụng các phương tiện kết nối tuy còn đơn giản nhưng đúng nghĩa.</p>\n<p><strong>(0,2đ)</strong></p>\n<p>- Thông tin không bị lặp.</p>\n<p>- Sắp xếp ý logic, mạch lạc cao. Bài viết có tổng thể hài hòa, trôi chảy, uyển chuyển, tự nhiên.</p>\n<p>- Sử dụng đa dạng và chính xác các phương tiện kết nối. </p>\n<p><strong>T</strong><strong>ừ vựng</strong></p>\n<p><strong>(0,2đ)</strong></p>\n<p><strong>(0,1đ)</strong></p>\n<p>- Từ vựng liên quan đến chủ đề hạn chế, lặp, hoặc không phù hợp.</p>\n<p>- Dạng từ, chính tả còn viết sai, gây hiểu lầm hoặc khó chịu cho người đọc.</p>\n<p><strong>(0,15đ)</strong></p>\n<p>- Từ vựng tạm đủ để diễn đạt thông tin liên quan đến chủ đề. Một số chỗ dùng từ chưa phù hợp hoặc viết sai dạng từ.</p>\n<p>- Còn mắc một số lỗi sai về dạng từ và chính tả gây khó khăn cho người đọc.</p>\n<p><strong>(0,2đ)</strong></p>\n<p>- Từ vựng phong phú liên quan đến chủ đề, diễn đạt tự nhiên. Dùng từ phù hợp, chính xác.</p>\n<p>- Sử dụng đa dạng các từ đồng nghĩa, trái nghĩa, kết hợp từ, thành ngữ…</p>\n<p>- Rất ít lỗi về dạng từ, và chính tả.</p>\n<p><strong>Ng</strong><strong>ữ ph</strong><strong>áp</strong></p>\n<p><strong>(0,2đ)</strong></p>\n<p><strong>(0,1đ)</strong></p>\n<p>- Sử dụng cấu trúc câu đơn giản.</p>\n<p>- Mắc nhiều lỗi sai về ngữ pháp và chấm câu, gây khó hiểu cho người đọc.</p>\n<p><strong>(0,15đ)</strong></p>\n<p>- Sử dụng các cấu trúc câu khác nhau.</p>\n<p>- Có khá nhiều lỗi sai về ngữ pháp và chấm câu, đôi chỗ gây khó hiểu cho người đọc.</p>\n<p><strong>(0,2đ)</strong></p>\n<p>- Sử dụng đa dạng, linh hoạt cấu trúc câu.</p>\n<p>- Còn một vài lỗi nhỏ về ngữ pháp và chấm cấu, người đọc vẫn thấy dễ hiểu.</p>\n<p><strong>THE END</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe đầy đủ",
+      "sourceName": "NGHE TIẾNG ANH 8 -GHKI (2025-2026).mp3",
+      "sourceHash": "0d85dd99056501a9cf736be748322335345b82ded3bcf97282e891cb71d9b5eb",
+      "src": "/data/grade8-midterm/audio/vedec-g8-2026-09-1.mp3",
+      "duration": 393.245125
+    }
+  ],
+  "sourceHash": "3b8ddaddbd9ae2eba410aa29895f36a80f826799c0eaaeb39317eb24932e482a"
+}

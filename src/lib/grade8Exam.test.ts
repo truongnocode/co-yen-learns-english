@@ -61,6 +61,8 @@ describe('grade 8 VEDEC content and routing', () => {
     expect(question(7, 's2-q1').html).toContain('A. knitting kit');
     expect(question(7, 's2-q1').html).not.toContain('E. pen');
     expect(question(16, 's6-q1').options).toEqual(['A', 'B', 'C', 'D']);
+    expect(question(12, 's3-q1').number).toBe('5');
+    expect(question(1, 's6-q1').number).toBe('2');
   });
   it('requires both verb blanks, accepts completed rewrites, and excludes ambiguous original items', () => {
     expect(isCorrectExamAnswer(question(8, 's9-q4'), 'were')).toBe(false);

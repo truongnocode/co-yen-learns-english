@@ -67,7 +67,7 @@
       "questions": [
         {
           "id": "s3-q1",
-          "number": "1",
+          "number": "5",
           "html": "<p>5………… is looking for a knitting kit.</p>\n<p>A. Tom\t\tB. Tom’s friends\t\tC. Trang \t\tD. Trang’s friend</p>",
           "kind": "choice",
           "answers": [

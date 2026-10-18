@@ -181,7 +181,7 @@
       "questions": [
         {
           "id": "s6-q1",
-          "number": "1",
+          "number": "2",
           "html": "<p>A. ferry</p>\n<p>B. paddy</p>\n<p>C. well- trained</p>\n<p>D. orchard</p>",
           "kind": "choice",
           "answers": [

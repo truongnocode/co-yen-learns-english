@@ -363,6 +363,10 @@ def main():
                 kind='manual' if q.get('manual') else 'choice' if len(choices)>=2 else 'tf' if tf else 'text'
                 answers=[] if kind=='manual' else answer_for(q,k,kind)
                 item={'id':qid,'number':q['number'],'html':joined(q['blocks'],'html'),'kind':kind,'answers':answers}
+                if GRADE==8 and not QUESTION.match(text):
+                    printed_number=re.match(r'^\s*(\d+)(?=[.…])',text)
+                    heading_number=re.match(r'^(\d+)\.\s*(?:Circle the letter|Which underlined|Choose the correct answer)',s['title']) if qi==0 else None
+                    if printed_number or heading_number:item['number']=(printed_number or heading_number).group(1)
                 if kind=='choice':item['options']=sorted(choices)
                 if kind=='tf':item['options']=['T','F']
                 if k['blocks']: item['referenceHtml']=joined(k['blocks'],'html')

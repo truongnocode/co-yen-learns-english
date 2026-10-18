@@ -1,0 +1,5 @@
+.exam-source { line-height: 1.9; overflow-wrap: anywhere; }
+.exam-source p { margin: .4rem 0; white-space: pre-wrap; tab-size: 2; }
+.exam-source img { display: block; max-width: 100%; width: auto; max-height: 340px; height: auto; object-fit: contain; margin: 1rem 0; }
+.exam-source u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.exam-source strong { font-weight: 700; }

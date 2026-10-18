@@ -1,0 +1,652 @@
+{
+  "id": "vedec-2026-15",
+  "number": 15,
+  "title": "Đề 15",
+  "subtitle": "Tiếng Anh 6 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.25 POINTS",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen to Trang talking about her friend and mark the letter A, B, C, or D to indicate the correct answer to each of the following questions. You will listen TWICE. (1.0 pt)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. Trang’s friend is from ____________ .</p>\n<p>A. America\t\t      B. Viet Nam\t                   C. Japan\t\t\t</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>1. Trang’s friend is from ____________ .</p>\n<p>A. America\t\t      B. Viet Nam\t                   <strong>C. Japan</strong>\t\t\t</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. Trang’s friend has ____________.</p>\n<p>A. short black hair and an oval face\t\t\t</p>\n<p>B. bright eyes and an oval face</p>\n<p>C. bright eyes and curly hair</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>2. Trang’s friend has ____________.</p>\n<p>A. short black hair and an oval face\t\t\t</p>\n<p><strong>B. bright eyes and an oval face</strong></p>\n<p>C. bright eyes and curly hair</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. Trang teaches her friend ____________.</p>\n<p>A. Viet Nam’s customs\t\t\t\t\t\t\t</p>\n<p>B. Viet Nam’s history\t\t\t\t\t</p>\n<p>C. Viet Nam’s culture</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>3. Trang teaches her friend ____________.</p>\n<p><strong>A. Viet Nam’s customs</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong></p>\n<p>B. Viet Nam’s history\t\t\t\t\t</p>\n<p>C. Viet Nam’s culture</p>",
+          "unscored": true,
+          "note": "Đề gốc thiếu lựa chọn “some Vietnamese” tương ứng nội dung bài nghe. Câu này không tính điểm tự động."
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Both Trang and her friend like ____________. </p>\n<p>A. manga reading\t\t\t\t\t\t</p>\n<p>B. flower arranging\t</p>\n<p>C. skiing\t\t\t\t\t\t\t</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>4. Both Trang and her friend like ____________. </p>\n<p><strong>A. manga reading</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong><strong>\t</strong></p>\n<p>B. flower arranging\t</p>\n<p>C. skiing\t\t\t\t\t\t\t</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Trang’s friend is ____________.</p>\n<p>A. kind\t\t\tB. humorous\t\t                 C. creative\t</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>5. Trang’s friend is ____________.</p>\n<p><strong>A. kind</strong>\t\t\tB. humorous\t\t                 C. creative\t\t\t</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen to Henry talking about his new school and decide whether the following statements are true (T) or false (F). You will listen TWICE. (1.25 pt)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>1. The classrooms are small and dark.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. The classrooms are small and dark.</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>2. The teachers are friendly, but not helpful.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>2. The teachers are friendly, but not helpful.</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>3. Students can play sports in the playground.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>3. Students can play sports in the playground.</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p>4. There is no place for students to paint in this school.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. There is no place for students to paint in this school.</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>5. Henry and his friends have lunch together in the canteen.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>5. Henry and his friends have lunch together in the canteen.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2.75 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0.5 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "1. Circle the letter A, B, C or D to indicate the word whose underlined part is pronounced differently from the others.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "1",
+          "html": "<p>1. A. cup<u>b</u>oard                   B. clim<u>b</u>ing                       C. <u>b</u>iscuit                 D. <u>b</u>oarding </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. cup<strong><u>b</u></strong>oard                   <strong>B. clim</strong><strong><u>b</u></strong><strong>ing</strong>                       C. <strong><u>b</u></strong>iscuit                 D. <strong><u>b</u></strong>oarding </p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "2",
+          "html": "<p>2. A. r<u>u</u>bber                         B. cl<u>u</u>b\t\t\tC. <u>u</u>sually\t\tD. st<u>u</u>dy<strong> </strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. A. r<u>u</u>bber                         B. cl<u>u</u>b\t\t\t<strong>C.</strong><strong> </strong><strong><u>u</u></strong><strong>sually</strong>\t\tD. st<u>u</u>dy<strong> </strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (1.25 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>1. Students often use _________ in maths lessons.</p>\n<p>A. dictionaries  \t\tB. calculators\t\tC. rubbers\t\t                          D. pencil cases</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. Students often use _________ in maths lessons.</p>\n<p>A. dictionaries  \t\t <strong>B</strong><strong>. calculators</strong>\tC. rubbers\t\t                        D. pencil cases</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>2. My house is___________ to the park.  </p>\n<p>A. next              \t B. near              \tC. behind         \t\t                D. on </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. My house is___________ to the park.  </p>\n<p><strong>A. next</strong>              \t  B. near              \tC. behind         \t\t              D. on </p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>3. Our____________ knowledge is very good. She often gives us interesting lessons.</p>\n<p>A. teachers\t\t          B. teachers’\t\tC. teacher\t\t\t                D. teacher’s</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Our____________ knowledge is very good. She often gives us interesting lessons.</p>\n<p>A. teachers\t\t            B. teachers’\t\tC. teacher\t\t\t               <strong>D. teacher’s</strong></p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>4. My new classmate, Nam, always get high grades in Maths. He is a ____________ student.</p>\n<p>A. intelligent                        B. clever\t\tC. kind\t\t\t                D. caring</p>",
+          "kind": "choice",
+          "answers": [
+            "A",
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. My new classmate, Nam, always get high grades in Maths. He is a ____________ student.</p>\n<p><strong>A. intelligent</strong>                        B. clumsy\t\tC. kind\t\t\t                D. caring</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p>5. <strong>Phong</strong>: Hi, Duy. Nice to meet you.\t\t <strong>Duy</strong>: Hi, Phong. _________ .</p>\n<p>A. Nice to meet you, too\t B. Good idea\tC. That’s very kind of you to say so    D. Thanks</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. <strong>Phong</strong>: Hi, Duy. Nice to meet you.\t\t <strong>Duy</strong>: Hi, Phong. _________ .</p>\n<p><strong>A. Nice to meet you, too</strong>\t B. Good idea\tC. That’s very kind of you to say so    D. Thanks</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "III. Give the correct form of the verb. Write your answers in the blanks. (1.0 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p>My sister always ( wash)…………………………………dishes after eating.</p>",
+          "kind": "text",
+          "answers": [
+            "washes"
+          ],
+          "referenceHtml": "<p>My sister always ( wash) _____<strong>washes</strong>____________dishes after eating.</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p>There (not/ be) ………………….………. any pictures in my kitchen.</p>",
+          "kind": "text",
+          "answers": [
+            "aren’t",
+            "are not"
+          ],
+          "referenceHtml": "<p>There (not/ be) _____<strong>aren’t (are not)</strong>____________ any pictures in my kitchen.</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "3",
+          "html": "<p>Lan (have)……………………….…………….two dolls.</p>",
+          "kind": "text",
+          "answers": [
+            "has"
+          ],
+          "referenceHtml": "<p>Lan (have) _____<strong>has</strong>__________ two dolls.</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "4",
+          "html": "<p>Trang (write)………………………………………….a letter at present.</p>",
+          "kind": "text",
+          "answers": [
+            "is writing"
+          ],
+          "referenceHtml": "<p>Trang (write) _____<strong>is writing</strong>____________ a letter at present.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "C. READING (2.75 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+      "part": "READING",
+      "introHtml": "<p><strong>(1.25</strong><strong> </strong><strong>points)</strong></p>\n<p><strong>    </strong>Most children love (1)_______ activities. They play (2)________, go skateboarding or go fishing. In countries with snow like Sweden, children go to the mountains with their parents to go (3)________. They can make (4)________ snowman in the playground in front of their house. When the weather is bad, they can stay at home and (5)________ interesting programmes on TV.</p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p>1. </p><p>A. outdoor</p>\n<p>B. indoor</p>\n<p>C. outdoors</p>\n<p>D. indoors</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. </p><p><strong>A. outdoor</strong></p>\n<p>B. indoor</p>\n<p>C. outdoors</p>\n<p>D. indoors</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p>2. </p><p>A. karate</p>\n<p>B. aerobics</p>\n<p>C. judo</p>\n<p>D. football</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. </p><p>A. karate</p>\n<p>B. aerobics</p>\n<p>C. judo</p>\n<p><strong>D. football</strong></p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "3",
+          "html": "<p>3. </p><p>A. shopping</p>\n<p>B. skiing</p>\n<p>C. jogging</p>\n<p>D. running</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. </p><p>A. shopping</p>\n<p><strong>B. skiing</strong></p>\n<p>C. jogging</p>\n<p>D. running</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "4",
+          "html": "<p>4. </p><p>A. any</p>\n<p>B. a</p>\n<p>C. an</p>\n<p>D. some</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. </p><p>A. any</p>\n<p><strong>B. a</strong></p>\n<p>C. an</p>\n<p>D. some</p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "5",
+          "html": "<p>5. </p><p>A. make</p>\n<p>B. tell</p>\n<p>C. watch</p>\n<p>D. play</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. </p><p>A. make</p>\n<p>B. tell</p>\n<p><strong>C. watch</strong></p>\n<p>D. play</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Read the following passage and answer the questions. (1.5 points)",
+      "part": "READING",
+      "introHtml": "<p>David and Lucy Smith live in England. They have a big house. There are five bedrooms, two bathrooms, and a balcony. David and Lucy have two children. Their names are Sam and Anne. Sam is twelve and Anne is fourteen. David works in a bank and Lucy is a doctor.  Lucy drives to school with Sam and Anne, and then she drives to work at the hospital. In the evening, David always cooks dinner. After dinner, David and Lucy sometimes watch television. They never go out in the evenings. In summer, they go to the beach <strong><u>at weekends</u></strong><u>.</u> Sam and Anne like swimming in the sea. In winter, they don’t go to the beach at weekends because it is very cold.</p>",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p><strong> 1. </strong>Where do David and Lucy live?</p>",
+          "kind": "text",
+          "answers": [
+            "They live in England"
+          ],
+          "referenceHtml": "<p><strong> 1. </strong>Where do David and Lucy live?</p>\n<p>  ___<strong>They live in England</strong>__________________________________________________.</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "2",
+          "html": "<p><strong> 2. </strong>How old is Anne?</p>",
+          "kind": "text",
+          "answers": [
+            "She is fourteen"
+          ],
+          "referenceHtml": "<p><strong> 2. </strong>How old is Anne?</p>\n<p>  ___<strong>She is fourteen</strong>________________________________________________________.</p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "3",
+          "html": "<p><strong> 3. </strong>How does Lucy do?</p>",
+          "kind": "text",
+          "answers": [
+            "She is a doctor"
+          ],
+          "referenceHtml": "<p><strong> 3. </strong>What does Lucy do?</p>\n<p>  ____<strong>She is a doctor</strong>________________________________________________________.</p>",
+          "unscored": true,
+          "note": "Câu hỏi trong đề và câu hỏi ở đáp án khác nhau. Em xem cùng cô; câu này không tính điểm tự động."
+        },
+        {
+          "id": "s11-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong> Do David and Lucy sometimes watch television after dinner? </p>",
+          "kind": "text",
+          "answers": [
+            "Yes, they do",
+            "Yes",
+            "Yes, they sometimes watch television after dinner"
+          ],
+          "referenceHtml": "<p><strong>4.</strong> Who sometimes watch television after dinner?</p>\n<p>  ___<strong>David and Lucy ( David and Lucy sometimes watch television after dinner)</strong>______.</p>"
+        },
+        {
+          "id": "s11-q5",
+          "number": "5",
+          "html": "<p><strong>5</strong>. What does the word “<strong><u>at weekends</u></strong><strong>” </strong>mean<strong>?</strong></p>\n<p><strong>A. </strong>every day                    <strong>B.</strong> on Saturday and Sunday     <strong> C.</strong> daily                      <strong>D. </strong>weekly </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>5</strong>. What does the word “<strong><u>at weekends</u></strong><strong>” </strong>mean<strong>?</strong></p>\n<p>A. every day                    <strong>B. on Saturday and Sunday</strong>      C. daily                      D. weekly </p>"
+        },
+        {
+          "id": "s11-q6",
+          "number": "6",
+          "html": "<p>6. Which of the following is true?<strong><br></strong>A. Lucy always cooks dinner.<br>B. David and Lucy sometimes go out in the evening.<br>C. Sam and Anne like the beach.<br>D. David and Lucy have three children.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. Which of the following is<strong> true</strong>?<strong><br></strong>A. Lucy always cooks dinner.<br>B. David and Lucy sometimes go out in the evening.<br><strong>C. Sam and Anne like the beach.</strong><br>D. David and Lucy have three children.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "D. WRITING (2.25 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s13",
+      "title": "I. Complete the second sentence so that it means the same as the sentence before. (1.25 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p>1. The dog is in front of the microwave.</p>\n<p>The microwave is __________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "behind the dog",
+            "The microwave is behind the dog."
+          ],
+          "referenceHtml": "<p>1. The dog is in front of the microwave.</p>\n<p>The microwave is  <strong>behind the dog</strong>.</p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "2",
+          "html": "<p>2. My school has twenty classes.</p>\n<p>There are _________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "twenty classes in my school",
+            "There are twenty classes in my school."
+          ],
+          "referenceHtml": "<p>2. My school has twenty class</p>\n<p>There are <strong>twenty classes in my school</strong>.</p>"
+        },
+        {
+          "id": "s13-q3",
+          "number": "3",
+          "html": "<p>3. Let’s play football this weekend.</p>\n<p> How about ________________________________________________________________?</p>",
+          "kind": "text",
+          "answers": [
+            "playing football this weekend",
+            "How about playing football this weekend?"
+          ],
+          "referenceHtml": "<p>3. Let’s play football this weekend.</p>\n<p> How about <strong>playing football this weekend</strong>?</p>"
+        },
+        {
+          "id": "s13-q4",
+          "number": "4",
+          "html": "<p>4. Phong likes Science most.</p>\n<p>Phong’s favourite__________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "subject is Science",
+            "Phong’s favourite subject is Science."
+          ],
+          "referenceHtml": "<p>4. Phong likes Science most.</p>\n<p>Phong’s favourite <strong>subject is Science</strong>.</p>"
+        },
+        {
+          "id": "s13-q5",
+          "number": "5",
+          "html": "<p>5. Minh is Mr.Quang’s son.</p>\n<p>Mr Quang is  _______________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "Minh’s father",
+            "Mr Quang is Minh’s father."
+          ],
+          "referenceHtml": "<p>5.Minh is Mr.Quang’s son.</p>\n<p>Mr Quang is  <strong>Minh’s father</strong>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "II. Write a paragraph (about 80-100 words) about your best friend. You can use the following ideas. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "1",
+          "html": "<p>- What is his/ her name? </p>\n<p>- What does he/ she look like?</p>\n<p>- What is he/ she like?</p>\n<p>- Why do you like him/ her?</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br>2</p>\n<p>. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br>3.</p>\n<p> Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br>4. </p>\n<p>Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "MIDTERM TEST 6 - PART 1.mp3",
+      "sourceHash": "cd97a6cea1f52a76dcddaffdf22dbb290bd482fd292c1f7b051fd34178b5c9af",
+      "src": "/data/grade6-midterm/audio/vedec-2026-15-1.mp3",
+      "duration": 54.744
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "MIDTERM TEST 6 - PART 2.mp3",
+      "sourceHash": "12ab58fc2010c303cf104e648e6b192a74b5c29405f1f274feb6aafdd3b56273",
+      "src": "/data/grade6-midterm/audio/vedec-2026-15-2.mp3",
+      "duration": 39.984
+    }
+  ],
+  "sourceHash": "cd8c5c982f755c666f81c7b2fa157e2755e8e8aeba39b6b43a91809744fe55fe"
+}

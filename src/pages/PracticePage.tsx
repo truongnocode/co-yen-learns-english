@@ -52,6 +52,9 @@ const PracticePage = () => {
       items: [
         { label: "Xếp câu", desc: "Sắp xếp từ thành câu hoàn chỉnh", icon: PuzzleIcon, to: `/practice/sentence-puzzle/${grade}`, tone: "bg-primary text-primary-foreground" },
         { label: "Tạo đề kiểm tra", desc: `Tự chọn nội dung lớp ${grade}, làm bài chấm điểm`, icon: FilePlus2, to: "/test/custom", tone: "bg-primary text-primary-foreground" },
+        ...(grade === 6
+          ? [{ label: "Đề giữa kỳ I lớp 6", desc: "18 đề Global Success có bài nghe và hai chế độ chấm", icon: GraduationCap, to: "/grade/6/tests", tone: "bg-accent text-accent-foreground" }]
+          : []),
         ...(grade === 10
           ? [{ label: "Đề thi vào lớp 10", desc: "Đề thi thử có chấm điểm & chữa chi tiết", icon: GraduationCap, to: "/grade/10/tests", tone: "bg-accent text-accent-foreground" }]
           : []),

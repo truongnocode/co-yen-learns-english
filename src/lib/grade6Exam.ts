@@ -1,0 +1,80 @@
+import { normalizeAnswer } from './answerMatch';
+
+export interface ExamQuestion {
+  id: string;
+  number: string;
+  html: string;
+  kind: 'choice' | 'tf' | 'text' | 'manual';
+  options?: string[];
+  answers: string[];
+  referenceHtml?: string;
+  note?: string;
+  unscored?: boolean;
+}
+export interface ExamSection {
+  id: string;
+  title: string;
+  part: string;
+  introHtml: string;
+  questions: ExamQuestion[];
+}
+export interface Grade6Exam {
+  id: string;
+  number: number;
+  title: string;
+  subtitle: string;
+  sections: ExamSection[];
+  audio: { title: string; src: string; duration: number; sourceName: string }[];
+}
+export interface ExamSummary {
+  id: string;
+  number: number;
+  title: string;
+  subtitle: string;
+  questionCount: number;
+  audioCount: number;
+}
+export type ExamMode = 'practice' | 'test';
+export interface ExamAttempt {
+  answers: Record<string, string>;
+  checked: string[];
+  submitted: boolean;
+  startedAt: number;
+}
+export const newAttempt = (): ExamAttempt => ({ answers: {}, checked: [], submitted: false, startedAt: Date.now() });
+export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade6:v1:${id}:${mode}`;
+
+// Short answers accept case, punctuation, apostrophe and contraction variants.
+// They deliberately do not use fuzzy matching, which could accept wrong grammar.
+export function normalizeExamAnswer(value: string) {
+  return normalizeAnswer(value)
+    .replace(/\b(aren't|isn't|don't|doesn't|can't|won't)\b/g, m => ({ "aren't": 'are not', "isn't": 'is not', "don't": 'do not', "doesn't": 'does not', "can't": 'cannot', "won't": 'will not' })[m]!)
+    .replace(/\s*([,;])\s*/g, '$1 ')
+    .replace(/\s*\/\s*/g, '/')
+    .replace(/\s+'s\b/g, "'s")
+    .trim();
+}
+export const isAutoScored = (q: ExamQuestion) => q.kind !== 'manual' && !q.unscored && q.answers.length > 0;
+export const isCorrectExamAnswer = (q: ExamQuestion, value: string) =>
+  !!value.trim() && q.answers.some(a => normalizeExamAnswer(a) === normalizeExamAnswer(value));
+
+export function examResult(questions: ExamQuestion[], answers: Record<string, string>) {
+  const scored = questions.filter(isAutoScored);
+  const correct = scored.filter(q => isCorrectExamAnswer(q, answers[q.id] ?? '')).length;
+  return { correct, total: scored.length, score: scored.length ? Math.round(correct / scored.length * 100) / 10 : 0, manual: questions.filter(q => !isAutoScored(q)).length };
+}
+
+export function restoreAttempt(raw: string | null, questions: ExamQuestion[]): ExamAttempt | null {
+  if (!raw) return null;
+  try {
+    const value = JSON.parse(raw);
+    if (!value || typeof value.answers !== 'object' || !value.answers || !Array.isArray(value.checked) || typeof value.submitted !== 'boolean' || !Number.isFinite(value.startedAt)) return null;
+    const ids = new Set(questions.map(q => q.id));
+    const answers: Record<string, string> = {};
+    for (const [id, answer] of Object.entries(value.answers)) {
+      const q = questions.find(q => q.id === id);
+      if (q && typeof answer === 'string' && answer.length <= 10000 && (!q.options || q.options.includes(answer))) answers[id] = answer;
+    }
+    return { answers, checked: value.checked.filter((id: unknown): id is string => typeof id === 'string' && ids.has(id) && !!answers[id]?.trim()), submitted: value.submitted, startedAt: value.startedAt };
+  } catch { return null; }
+}

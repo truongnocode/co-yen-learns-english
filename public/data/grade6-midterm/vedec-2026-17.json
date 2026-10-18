@@ -1,0 +1,669 @@
+{
+  "id": "vedec-2026-17",
+  "number": 17,
+  "title": "Đề 17",
+  "subtitle": "Tiếng Anh 6 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING. (2 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen to a girl talking about her school and tick true (T) or false (F) to the statement (1 point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. Janet&#x27;s favourite teacher is her maths teacher.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. Janet&#x27;s favourite teacher is her maths teacher.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. Today Janet isn&#x27;t wearing her uniform.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>2. Today Janet isn&#x27;t wearing her uniform.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. Janet studies English for two hours a week</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>3. Janet studies English for two hours a week</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Janet usually does her homework at home.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. Janet usually does her homework at home.</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Her class is going to have a biology lesson on a farm</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>5. Her class is going to have a biology lesson on a farm</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen to Trang talking about her friend and choose the best answer A, B, C or D (1point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p> 1. Trang’s friend is from …..……..</p>\n<p>\tA. Viet Nam\t\tB. Japan\t\tC. America\t\tD. Britain</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p> 1. Trang’s friend is from …..……..</p>\n<p>\tA. Viet Nam\t\tB. Japan\t\tC. America\t\tD. Britain</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p> 2. Trang’s friend has ……………..</p>\n<p>  \tA. bright eyes and curly hair\t\tB. big eyes and an oval face</p>\n<p>   \tC. bright eyes and an oval face\t\tD. big eyes and curly hair</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p> 2. Trang’s friend has ……………..</p>\n<p>  \tA. bright eyes and curly hair\t\tB. big eyes and an oval face</p>\n<p>   \tC. bright eyes and an oval face\t\tD. big eyes and curly hair</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>3. Trang teaches her friend…………………..</p>\n<p>\tA. some Vietnamese\t\t\t\tB. Viet Nam’s history</p>\n<p>\tC. Viet Nam’s cultural\t\t\tD. Viet Nam’s tradition\t</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Trang teaches her friend…………………..</p>\n<p>\tA. some Vietnamese\t\t\t\tB. Viet Nam’s history</p>\n<p>\tC. Viet Nam’s cultural\t\t\tD. Viet Nam’s tradition\t</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p>4. Trang’s friend is …………….</p>\n<p>\tA. talkative\t\tB. creative\t\tC. kind\t\tD. funny</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. Trang’s friend is …………….</p>\n<p>\tA. talkative\t\tB. creative\t\tC. kind\t\tD. funny</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>5. I feel ………………………… to have a friend like Yoko.</p>\n<p>\tA. happy\t\tB. busy\t\tC. noisy\t\tD. lucky</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. I feel ………………………… to have a friend like Yoko.</p>\n<p>\tA. happy\t\tB. busy\t\tC. noisy\t\tD. lucky</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "PART B – LANGUAGE FOCUS (2.0 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong>. <strong>Choose the word whose underline part is pronounced differently from the rest. Circle A, B, C or D to indicate your answer.</strong><strong>(0.2 point)</strong></p>\n<p>A. sink<u>s </u>\t\tB. help<u>s</u>\t\tC. clean<u>s</u>\t\tD. subject<u>s</u> </p>\n<p><strong>Choose the best option A, B, C or D </strong><strong>(</strong><strong>1.8 points)</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong>. <strong>Choose the word whose underline part is pronounced differently from the rest. Circle A, B, C or D to indicate your answer.</strong><strong>( 0.2 point)</strong></p>\n<p>A. sink<u>s </u>\t\tB. help<u>s</u>\t\tC. clean<u>s</u>\t\tD. subject<u>s</u> </p>\n<p><strong>Choose the best option A, B, C or D </strong><strong>(1.8 points)</strong></p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "2",
+          "html": "<p>2. After eating dinner, I do the __________.</p>\n<p>\tA. dishes\t\tB. bed\t\t\tC. kitchen\t\tD. breakfast</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. After eating dinner, I do the __________.</p>\n<p>\tA. dishes\t\tB. bed\t\t\tC. kitchen\t\tD. breakfast</p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "3",
+          "html": "<p>3. Can Tho is famous for floating markets and _______ rivers.</p>\n<p>A. beauty\t\tB. beautiful\t\tC. beautify\t\tD. beautifully </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Can Tho is famous for floating markets and _______ rivers.</p>\n<p>A. beauty\t\tB. beautiful\t\tC. beautify\t\tD. beautifully </p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "4",
+          "html": "<p>4. I ___________ to school on foot every day</p>\n<p>\tA. walk\t\tB. cycle\t\tC. go\t\t\tD. ride</p>",
+          "kind": "choice",
+          "answers": [
+            "A",
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. I ___________ to school on foot every day</p>\n<p>\tA. walk\t\tB. cycle\t\tC. go\t\t\tD. ride</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "5",
+          "html": "<p>5. Student A: “What does Mr. Bach look like?”\t\t</p>\n<p>    Student B: “________”</p>\n<p>A. He’s very friendly.\t\t\tB. He teaches literature.</p>\n<p> \tC. He’s tall and has brown hair.\t\tD. He likes playing soccer.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. Student A: “What does Mr. Bach look like?”\t\t</p>\n<p>    Student B: “________”</p>\n<p>A. He’s very friendly.\t\t\tB. He teaches literature.</p>\n<p> \tC. He’s tall and has brown hair.\t\tD. He likes playing soccer.</p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "6",
+          "html": "<p>6. <u>My</u> house <u>have</u> <u>a</u> balcony and a <u>garage</u>.</p>\n<p>\tA. My\t\t\tB. have\t\tC. a\t\t\tD. garage</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. <u>My</u> house <u>have</u> <u>a</u> balcony and a <u>garage</u>.</p>\n<p>\tA. My\t\t\tB. have\t\tC. a\t\t\tD. garage</p>"
+        },
+        {
+          "id": "s4-q7",
+          "number": "7",
+          "html": "<p>7. My_________ bedroom is my favourite room in our house. </p>\n<p>\tA. grandmother’s\tB. grandmother\tC. grandmothers’\tD. grandparent’s</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. My_________ bedroom is my favourite room in our house. </p>\n<p>\tA. grandmother’s\tB. grandmother\tC. grandmothers’\tD. grandparent’s</p>"
+        },
+        {
+          "id": "s4-q8",
+          "number": "8",
+          "html": "<p>8. Peter is so ________. He often checks his writing twice before giving it to the teacher.</p>\n<p>\tA. care\t\tB. carefully\t\tC. careful\t\tD. caring</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. Peter is so ________. He often checks his writing twice before giving it to the teacher.</p>\n<p>\tA. care\t\tB. carefully\t\tC. careful\t\tD. caring</p>"
+        },
+        {
+          "id": "s4-q9",
+          "number": "9",
+          "html": "<p>9. ______________write to your pen pal?</p>\n<p> \tA. Do you usually\t\t\t\tB. Do usually you\t\t</p>\n<p>C. Are you usually\t\t\t\tD. Are usually you</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. ______________write to your pen pal?</p>\n<p> \tA. Do you usually\t\t\t\tB. Do usually you\t\t</p>\n<p>C. Are you usually\t\t\t\tD. Are usually you</p>"
+        },
+        {
+          "id": "s4-q10",
+          "number": "10",
+          "html": "<p><img src=\"/data/grade6-midterm/images/2acf047e354655ff.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\">10. What does the sign mean?<strong><br></strong>A. You can eat in class.<br>B. You should bring more food.<br>C. Do not eat food in class.<br>D. The canteen is open</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10. What does the sign mean?<br>A. You can eat in class.<br>B. You should bring more food.<br>C. Do not eat food in class.<br>D. The canteen is open</p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "III. READING: (2 pts)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "I. Read the text. Choose the best word (A, B, C, or D) for each space.",
+      "part": "READING",
+      "introHtml": "<p>MY NEW FRIEND</p>\n<p>Kim is a new girl in my class. We&#x27;re friends now. Kim is tall with (21) _________ blond hair and blue eyes. We (22) _________badminton together after school. At school, she always wears a uniform but today is Saturday so she (23) _________ a yellow T-shirt and pink sneakers. I think Kim is very funny and kind, and she thinks (24) _________other people. We are going shopping at the mall this afternoon because she&#x27;s having a party tonight. After that, we are making pizza for the party and watching TV. Tomorrow we are (25) _________swimming at the beach.</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "1",
+          "html": "<p>1. A. tall\t\tB. slim\t\tC. long\t\tD. big</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. tall\t\tB. slim\t\tC. long\t\tD. big</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "2",
+          "html": "<p>2. A. play\t\tB. playing\t\tC. played\t\tD. plays</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. A.play\t\tB. playing\t\tC. played\t\tD. plays</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "3",
+          "html": "<p>3. A. wears\t\tB. does\t\tC. plays\t\tD. puts</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. A. wears\t\tB. does\t\tC. plays\t\tD. puts</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "4",
+          "html": "<p>4. A. about\t\tB. to\t\t\tC. for\t\t\tD. on</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. A. about\t\tB. to\t\t\tC. for\t\t\tD. on</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "5",
+          "html": "<p>5. A. playing\t\tB. going\t\tC. doing\t\tD. watching</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. A. playing\tB. going\t\tC. doing\t\tD. watching</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "II. Read the text about Simon. Choose the correct answer (A, B, C, or D). (1 point)",
+      "part": "READING",
+      "introHtml": "<p>I really like art, English, and literature. They&#x27;re really interesting and can be fun. I don&#x27;t like math, geography, or science. They&#x27;re boring. My favorite subject at school is literature. I like learning about stories of people from different places and times. My favorite book is The Secret Garden. The author is Frances Hodgson Burnett. The girl in the novel, Mary Lennox, goes to live at her uncle&#x27;s house and discovers a secret garden. She becomes friends with Dickon and her cousin Colin Craven. They often play together and take care of the garden. It&#x27;s a very interesting story and I really love their friendship. </p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>1. What subjects does Simon like?</p>\n<p>A. math, geography, and science.\t\tB. He likes all of them.\t</p>\n<p>C. art, English, and literature.\t\tD. math, geography, English, and literature</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. What subjects does Simon like?</p>\n<p>A. math, geography, and science.\t\tB. He likes all of them.\t</p>\n<p>C. art, English, and literature.\t\tD. math, geography, English, and literature</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>2. Why does Simon like these subjects?</p>\n<p>A. They&#x27;re exciting.\t\t\t\tB. He is good at them.\t</p>\n<p>C. They&#x27;re interesting.\t\t\tD. His mother want him to learn </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. Why does Simon like these subjects?</p>\n<p>A. They&#x27;re exciting.\t\t\t\tB. He is good at them.\t</p>\n<p>C. They&#x27;re interesting.\t\t\tD. His mother want him to learn </p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>3. What is Simon&#x27;s favorite subject?</p>\n<p>A. math\t\t\t\t\tB. English\t\t\t</p>\n<p>C. art\t\t\t\t\t\tD. literature\t\t\t\t</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. What is Simon&#x27;s favorite subject?</p>\n<p>A. math\t\t\t\t\tB. English\t\t\t</p>\n<p>C. art\t\t\t\t\t\tD. literature\t\t\t\t</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>4. Who&#x27;s the author of Simon&#x27;s favorite book?</p>\n<p>A. Frances Hodgson Burnett\t\tB. Colin Craven\t\t</p>\n<p>C. Mary Lennox\t\t\t\tD. Secret author</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. Who&#x27;s the author of Simon&#x27;s favorite book?</p>\n<p>A. Frances Hodgson Burnett\t\tB. Colin Craven\t\t</p>\n<p>C. Mary Lennox\t\t\t\tD. Secret author</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p>5. Why does Simon like the novel?</p>\n<p>A. He likes the children&#x27;s friendship.\t</p>\n<p>B. It has many fun adventures.</p>\n<p>C. He likes mystery novels.\t\t\t</p>\n<p>D. He likes taking care of the garden as Colin Craven</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. Why does Simon like the novel?</p>\n<p>A. He likes the children&#x27;s friendship.\t</p>\n<p>B. It has many fun adventures.</p>\n<p>C. He likes mystery novels.\t\t\t</p>\n<p>D. He likes taking care of the garden as Colin Craven</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "PART D – WRITING (2.0 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s9",
+      "title": "I. Put these words and phrases in the correct order to make meaningful sentences: (0.4pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong><strong>. </strong>are /There /four/ living room. / in/ the/ chairs/</p>\n<p>-&gt;___________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "There are four chairs in the living room"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>. </strong>are /There /four/ living room. / in/ the/ chairs/</p>\n<p>-&gt;___There are four chairs in the living room______</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong>does/ How often/ your father/ to/ go/ work/ ?/</p>\n<p><strong>-&gt;</strong>____________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "How often does your father go to work?"
+          ],
+          "referenceHtml": "<p><strong>2. </strong>does/ How often/ your father/ to/ go/ work/ ?/</p>\n<p><strong>-&gt;</strong>___How often does your father go to work?_______</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "II. Mark the letter A, B, C or D on your answer sheet to indicate the correct arrangement of the sentences to make a meaningful timetable (0.2pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p>a: What about your brother?</p>\n<p>b: He’s caring and patient. He loves me a lot. </p>\n<p>c: What’s your sister like?</p>\n<p>d: She’s friendly and hard-working. </p>\n<p>A. a- d- c- b\t\t\tB. d- b- a- c\t\t\tC. c- a- d- b\t\t\tD. c- d- a- b</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>a: What about your brother?</p>\n<p>b: He’s caring and patient. He loves me a lot. </p>\n<p>c: What’s your sister like?</p>\n<p>d: She’s friendly and hard-working. </p>\n<p>A. a- d- c- b\t\t\tB. d- b- a- c\t\tC. c- a- d- b                   D. c- d- a- b</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "III. Rewrite the sentences so that it has the same meaning as the first one.(0.4pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong><strong>.</strong><strong> </strong>The dog is in front of the microwave.</p>\n<p>=&gt; The microwave________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "is behind the dog"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>.</strong><strong> </strong>The dog is in front of the microwave.</p>\n<p>=&gt; The microwave___<strong> </strong><strong>is </strong><strong>behind</strong><strong> the dog</strong> _________________</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong><strong>.</strong><strong> </strong>Mai has a book. It’s on the table</p>\n<p>=&gt; Mai’s ________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "book is on the table"
+          ],
+          "referenceHtml": "<p><strong>2</strong><strong>. </strong>Mai has a book. It’s on the table</p>\n<p>=&gt; Mai’s ___<strong> </strong><strong>book is on the table</strong> ____________________</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "IV. Write a passage about 40-60 words about your house. (1pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p><strong>You can use the following questions as cues</strong><strong>:</strong></p>\n<p>1. Where do you live?   \t\t\t\t       </p>\n<p>2. How many rooms are there in your house? </p>\n<p>3. Which room do you like best in your house? Why?        </p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the </p>\n<p>body, and the conclusion. </p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea. </p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students. </p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of </p>\n<p>secondary students.</p>\n<p>I live in a lovely house in Nam Dinh with my family. There are six rooms in my house: a living room, a kitchen, three bedrooms, and a bathroom. My favourite room is my bedroom because it is bright, quiet, and comfortable. Besides, I often study, read books, and relax there after school. I really love my house because it is a happy place for my family</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "PART E – SPEAKING (2.0 POINTS)",
+      "part": "SPEAKING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "Nói",
+          "html": "<p><strong>I. Answer the personal questions. (0,6pt)</strong></p><p>- 3 câu hỏi về bản thân ( tên, tuổi, lớp, ….)</p><p><strong>II. Talk about the topic. (1pt)</strong></p><p>- Chủ đề: My new school, My house and My friends.</p>\n<p>- Topic theo chủ đề các Unit trong giai đoạn. Bám sát chủ đề và phần Speaking.</p><p><strong>III. Answer the questions about the topic (0,4pt)</strong></p><p>- 2 câu</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>- 3 câu hỏi về bản thân ( tên, tuổi, lớp, ….)</p><p>- Chủ đề: My new school, My house and My friends.</p>\n<p>- Topic theo chủ đề các Unit trong giai đoạn. Bám sát chủ đề và phần Speaking.</p><p>- 2 câu</p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "FILE NGHE 1.mp3",
+      "sourceHash": "09b10ad3e90ed646dcdaf313d6ecbb9322416b15a2f62d7dde1b5fedbc90d8f7",
+      "src": "/data/grade6-midterm/audio/vedec-2026-17-1.mp3",
+      "duration": 98.156644
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "FILE NGHE 2.mp3",
+      "sourceHash": "91567804ef418c78c52c63a8db65f52d07d343c595199b13a445910a60e01f63",
+      "src": "/data/grade6-midterm/audio/vedec-2026-17-2.mp3",
+      "duration": 118.848
+    }
+  ],
+  "sourceHash": "86f482556a525878641126b4076afdfe235422b998115f70cf235ee5c1986995"
+}

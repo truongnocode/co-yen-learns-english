@@ -15,6 +15,7 @@ import Grade10VocabPage from "./pages/Grade10VocabPage";
 import Grade10GrammarPage from "./pages/Grade10GrammarPage";
 import Grade10ReadingPage from "./pages/Grade10ReadingPage";
 import Grade10TestsPage from "./pages/Grade10TestsPage";
+import Grade6TestsPage from "./pages/Grade6TestsPage";
 import Grade10WritingPage from "./pages/Grade10WritingPage";
 import ProgressPage from "./pages/ProgressPage";
 import PracticePage from "./pages/PracticePage";
@@ -65,6 +66,8 @@ const App = () => (
           <Route path="/grade/10/tests" element={<Grade10TestsPage />} />
           <Route path="/grade/10/tests/:collection" element={<Grade10TestsPage />} />
           <Route path="/grade/10/writing" element={<Grade10WritingPage />} />
+          <Route path="/grade/6/tests" element={<Grade6TestsPage />} />
+          <Route path="/grade/6/tests/:examId" element={<Grade6TestsPage />} />
           <Route path="/grade/:gradeId" element={<GradePage />} />
           <Route path="/grade/:gradeId/vocab/:unitKey" element={<VocabPage />} />
           <Route path="/grade/:gradeId/grammar/:unitKey" element={<GrammarPage />} />

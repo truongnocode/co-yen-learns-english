@@ -1,0 +1,545 @@
+{
+  "01": {
+    "s12-q1": {
+      "answers": [
+        "They are twelve years old",
+        "They are 12 years old",
+        "12",
+        "12 years old",
+        "twelve",
+        "twelve years old"
+      ]
+    }
+  },
+  "02": {
+    "s5-q2": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s5-q8": {
+      "kind": "text",
+      "answers": [
+        "don't",
+        "B"
+      ]
+    },
+    "s7-q1": {
+      "answers": [
+        "A"
+      ]
+    },
+    "s7-q2": {
+      "answers": [
+        "C"
+      ]
+    },
+    "s7-q3": {
+      "answers": [
+        "C",
+        "D"
+      ]
+    },
+    "s7-q4": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s7-q5": {
+      "answers": [
+        "A"
+      ]
+    }
+  },
+  "03": {
+    "s3-q2": {
+      "answers": [
+        "black / mouth",
+        "black, mouth",
+        "black mouth"
+      ]
+    }
+  },
+  "04": {
+    "s7-q2": {
+      "answers": [
+        "Is / cooking",
+        "Is cooking"
+      ]
+    }
+  },
+  "05": {
+    "s8-q5": {
+      "answers": [
+        "B"
+      ]
+    }
+  },
+  "07": {
+    "s9-q1": {
+      "answers": [
+        "playground"
+      ]
+    },
+    "s9-q2": {
+      "answers": [
+        "library"
+      ]
+    },
+    "s9-q3": {
+      "answers": [
+        "subject"
+      ]
+    },
+    "s9-q4": {
+      "answers": [
+        "do"
+      ]
+    },
+    "s9-q5": {
+      "answers": [
+        "kind"
+      ]
+    }
+  },
+  "08": {
+    "s3-q3": {
+      "answers": [
+        "math",
+        "maths",
+        "mathematics"
+      ]
+    },
+    "s12-q1": {
+      "answers": [
+        "is next to her teacher’s house",
+        "My house is next to her teacher’s house",
+        "My house is next to her teacher’s house."
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "father’s bookshelf",
+        "This is my father’s bookshelf",
+        "This is my father’s bookshelf."
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "sitting behind Lan",
+        "Nga is sitting behind Lan",
+        "Nga is sitting behind Lan."
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "is on the table",
+        "The computer is on the table",
+        "The computer is on the table."
+      ]
+    }
+  },
+  "13": {
+    "s3-q3": {
+      "answers": [
+        "math",
+        "maths",
+        "mathematics"
+      ]
+    },
+    "s12-q1": {
+      "answers": [
+        "is next to her teacher’s house",
+        "is next to her teacher’s house",
+        "My house is next to her teacher’s house"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "father’s bookshelf",
+        "father’s bookshelf",
+        "This is my father’s bookshelf"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "sitting behind Lan",
+        "sitting behind Lan",
+        "Nga is sitting behind Lan"
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "is on the table",
+        "is on the table",
+        "The computer is on the table."
+      ]
+    },
+    "s2-q1": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s2-q2": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s2-q3": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s2-q4": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s2-q5": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s2-q6": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s8-q1": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s8-q2": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s8-q3": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s8-q4": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s8-q5": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s9-q1": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s9-q2": {
+      "answers": [
+        "D"
+      ]
+    },
+    "s9-q3": {
+      "answers": [
+        "C"
+      ]
+    },
+    "s9-q4": {
+      "answers": [
+        "C"
+      ]
+    },
+    "s9-q5": {
+      "answers": [
+        "B"
+      ]
+    }
+  },
+  "09": {
+    "s12-q4": {
+      "answers": [
+        "He is swimming at the moment"
+      ]
+    }
+  },
+  "10": {
+    "s8-q1": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "I usually come home at 5:30 p.m.",
+        "I usually come home at 5:30 pm",
+        "I usually come home at 5:30 p.m"
+      ]
+    },
+    "s12-q1": {
+      "answers": [
+        "room is the bedroom",
+        "My favourite room is the bedroom",
+        "My favorite room is the bedroom"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "in front of the lamp",
+        "The computer is in front of the lamp"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "big brown eyes",
+        "brown and big eyes",
+        "She has big brown eyes",
+        "She has brown and big eyes"
+      ]
+    }
+  },
+  "11": {
+    "s13-q1": {
+      "answers": [
+        "is a living room, a kitchen, a bathroom and two bedrooms in my house",
+        "There is a living room, a kitchen, a bathroom and two bedrooms in my house"
+      ]
+    },
+    "s13-q6": {
+      "answers": [
+        "Nam’s bike is near the school gate"
+      ]
+    }
+  },
+  "12": {
+    "s9-q1": {
+      "answers": [
+        "There are six people",
+        "There are 6 people",
+        "six",
+        "6",
+        "six people",
+        "6 people"
+      ]
+    },
+    "s9-q2": {
+      "answers": [
+        "Her grandparents are retired",
+        "Anna’s grandparents are retired",
+        "Her grandparents",
+        "Anna’s grandparents",
+        "The grandparents"
+      ]
+    },
+    "s9-q3": {
+      "answers": [
+        "He is forty-one",
+        "He is 41",
+        "He is forty-one years old",
+        "He is 41 years old",
+        "forty-one",
+        "41",
+        "41 years old",
+        "forty-one years old"
+      ]
+    },
+    "s9-q4": {
+      "answers": [],
+      "unscored": true,
+      "note": "Bài đọc chỉ cho biết bố Anna là bác sĩ, chưa nêu nơi làm việc. Câu này không tính điểm tự động."
+    },
+    "s9-q5": {
+      "answers": [
+        "No, he isn’t",
+        "No",
+        "He is a high school student"
+      ]
+    },
+    "s11-q1": {
+      "answers": [
+        "has five rooms",
+        "My house has five rooms"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "is behind my house",
+        "The bookshop is behind my house"
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "bedroom is always clean",
+        "Mrs Mai’s bedroom is always clean"
+      ]
+    },
+    "s11-q4": {
+      "answers": [
+        "has short black hair",
+        "has black and short hair",
+        "She has short black hair",
+        "She has black and short hair"
+      ]
+    },
+    "s11-q5": {
+      "answers": [
+        "noodles best",
+        "He likes noodles best"
+      ]
+    }
+  },
+  "14": {
+    "s2-q4": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s3-q1": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s3-q2": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s3-q3": {
+      "answers": [
+        "T"
+      ]
+    },
+    "s3-q4": {
+      "answers": [
+        "F"
+      ]
+    },
+    "s6-q1": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s6-q4": {
+      "unscored": true,
+      "note": "Các lựa chọn trong đề chưa có từ “creative” phù hợp với mô tả. Câu này để cô đối chiếu, không tính điểm tự động."
+    },
+    "s7-q3": {
+      "answers": [
+        "does / travel",
+        "does travel"
+      ]
+    },
+    "s10-q4": {
+      "answers": [
+        "They are all helpful and friendly",
+        "They are helpful and friendly",
+        "Helpful and friendly",
+        "All helpful and friendly"
+      ]
+    },
+    "s10-q6": {
+      "answers": [
+        "She took part in the English club",
+        "The English club",
+        "She takes part in the English club",
+        "She joins the English club"
+      ]
+    }
+  },
+  "15": {
+    "s2-q3": {
+      "unscored": true,
+      "note": "Đề gốc thiếu lựa chọn “some Vietnamese” tương ứng nội dung bài nghe. Câu này không tính điểm tự động."
+    },
+    "s8-q2": {
+      "answers": [
+        "aren’t",
+        "are not"
+      ]
+    },
+    "s11-q3": {
+      "unscored": true,
+      "note": "Câu hỏi trong đề và câu hỏi ở đáp án khác nhau. Em xem cùng cô; câu này không tính điểm tự động."
+    },
+    "s11-q4": {
+      "answers": [
+        "Yes, they do",
+        "Yes",
+        "Yes, they sometimes watch television after dinner"
+      ]
+    },
+    "s7-q4": {
+      "answers": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "16": {
+    "s7-q1": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s7-q2": {
+      "answers": [
+        "C"
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "40 students",
+        "My school has 40 students"
+      ]
+    }
+  },
+  "17": {
+    "s4-q4": {
+      "answers": [
+        "A",
+        "C"
+      ]
+    }
+  },
+  "18": {
+    "s7-q1": {
+      "unscored": true,
+      "note": "Bài đọc không nêu tuổi của Hoa và Hà. Câu này không tính điểm tự động."
+    },
+    "s7-q5": {
+      "answers": [
+        "B"
+      ]
+    },
+    "s8-q1": {
+      "answers": [
+        "C"
+      ],
+      "note": "Đáp án đã được đối chiếu với biển cấm hút thuốc: “Smoking is not permitted here”.",
+      "referenceHtml": "<p>C. Smoking is not permitted here.</p>"
+    },
+    "s6-q1": {
+      "unscored": true,
+      "note": "Cách diễn đạt câu này chưa rõ vì trường có cả cấp THPT và các cấp khác. Em đối chiếu với cô; không tính điểm tự động."
+    },
+    "s10-q2": {
+      "answers": [
+        "has a TV",
+        "Our living room has a TV and a poster"
+      ]
+    },
+    "s10-q3": {
+      "answers": [
+        "near the",
+        "Peter’s house is near the station"
+      ]
+    },
+    "s10-q4": {
+      "answers": [
+        "between the sofa",
+        "between the sofa and the wardrobe",
+        "The dog is between the sofa and the wardrobe"
+      ]
+    }
+  }
+}

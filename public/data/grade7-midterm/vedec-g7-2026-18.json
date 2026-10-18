@@ -1,0 +1,740 @@
+{
+  "id": "vedec-g7-2026-18",
+  "number": 18,
+  "title": "Đề 18",
+  "subtitle": "Tiếng Anh 7 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Choose the word A, B, C or D whose underlined part is pronounced differently from the others.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s1-q1",
+          "number": "1",
+          "html": "<p><strong>Question 1.</strong><strong> </strong>Thiếu phần gạch chân phần cần phát âm</p>\n<p><strong>A. </strong>reach<u>ed</u></p>\n<p><strong>B. </strong>play<u>ed</u></p>\n<p><strong>C. </strong>work<u>ed</u></p>\n<p><strong>D. </strong>fix<u>ed</u></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 1.</strong></p>\n<p><strong>A. </strong>reached</p>\n<p>B. played</p>\n<p><strong>C. </strong>worked</p>\n<p><strong>D. </strong>fixed</p>\n<p>Giải thích: <strong>A. </strong>reached → /riːtʃt/ (đuôi -ed phát âm /t/)<br><strong>B. </strong>played → /pleɪd/ (đuôi -ed phát âm /d/) ✅ khác biệt<br><strong>C. </strong>worked → /wɜːrkt/ (đuôi -ed phát âm /t/)<br><strong>D. </strong>fixed → /fɪkst/ (đuôi -ed phát âm /t/)</p>",
+          "unscored": true,
+          "note": "Đề gốc ghi thiếu phần gạch chân của câu phát âm này. Câu được giữ để đối chiếu, không tính điểm tự động."
+        },
+        {
+          "id": "s1-q2",
+          "number": "2",
+          "html": "<p><strong>Question 2.</strong></p>\n<p><strong>A. </strong>h<u>ea</u>d</p>\n<p><strong>B. </strong>br<u>ea</u>d</p>\n<p><strong>C. </strong>r<u>ea</u>dy</p>\n<p><strong>D. </strong>m<u>ea</u>t</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 2.</strong></p>\n<p><strong>A. </strong>h<u>ea</u>d</p>\n<p><strong>B. </strong>br<u>ea</u>d</p>\n<p><strong>C. </strong>r<u>ea</u>dy</p>\n<p><strong>D. </strong>m<u>ea</u>t</p>\n<p>Giải thích: <strong>A. </strong>head → /hed/ (nguyên âm /e/)<br><strong>B. </strong>bread → /bred/ (nguyên âm /e/)<br><strong>C. </strong>ready → /ˈredi/ (nguyên âm /e/)<br><strong>D. </strong>meat → /miːt/ (nguyên âm /iː/) ✅ khác biệt</p>"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Choose the best option to complete each of the following sentences.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "3",
+          "html": "<p><strong>Question 3.</strong><strong> </strong>Jane doesn’t like ____________ such as chips, sweets and fizzy drinks.</p>\n<p><strong>A. </strong>vegetables</p>\n<p><strong>B. </strong>junk food</p>\n<p><strong>C. </strong>soft drinks</p>\n<p><strong>D. </strong>fruits</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 3.</strong><strong> </strong>Jane doesn’t like ____________ such as chips, sweets and fizzy drinks.</p>\n<p><strong>A. </strong>vegetables</p>\n<p><strong>B. </strong>junk food</p>\n<p><strong>C. </strong>soft drinks</p>\n<p><strong>D. </strong>fruits</p>\n<p>Giải thích: Chips, sweets, fizzy drinks thuộc nhóm “junk food”.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "4",
+          "html": "<p><strong>Question 4.</strong><strong> </strong>She is going to see the doctor because she has ____________.</p>\n<p><strong>A. </strong>a vitamin</p>\n<p><strong>B. </strong>an exercise</p>\n<p><strong>C. </strong>a toothache</p>\n<p><strong>D. </strong>a diet</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 4.</strong><strong> </strong>She is going to see the doctor because she has ____________.</p>\n<p><strong>A. </strong>a vitamin</p>\n<p><strong>B. </strong>an exercise</p>\n<p><strong>C. </strong>a toothache</p>\n<p><strong>D. </strong>a diet</p>\n<p>Giải thích: “see the doctor” vì bị bệnh → chỉ có “a toothache” phù hợp<strong>.</strong></p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "5",
+          "html": "<p><strong>Question 5.</strong><strong> </strong>You can ____________ some illnesses if you keep yourself clean.</p>\n<p><strong>A. </strong>do</p>\n<p><strong>B. </strong>have</p>\n<p><strong>C. </strong>get</p>\n<p><strong>D. </strong>avoid</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 5.</strong><strong> </strong>You can ____________ some illnesses if you keep yourself clean.</p>\n<p><strong>A. </strong>do</p>\n<p><strong>B. </strong>have</p>\n<p><strong>C. </strong>get</p>\n<p><strong>D. </strong>avoid</p>\n<p>Giải thích: “avoid illnesses” = tránh bệnh.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "6",
+          "html": "<p><strong>Question 6.</strong><strong> </strong>Trung never ______(watch) TV before finishing all his homework.</p>\n<p><strong>A. </strong>watches</p>\n<p><strong>B. </strong>watch</p>\n<p><strong>C. </strong>watched</p>\n<p><strong>D. </strong>to watch</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Thói quen ở hiện tại, chủ ngữ Trung (ngôi thứ ba số ít): never watches → A.</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "7",
+          "html": "<p><strong>Question 7.</strong><strong> </strong>My sister_____(leave) Noi Bai airport yesterday morning.</p>\n<p><strong>A. </strong>leave</p>\n<p><strong>B. </strong>leaves</p>\n<p><strong>C. </strong>left</p>\n<p><strong>D. </strong>to leave</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 7.</strong><strong> </strong>My sister_____(leave) Noi Bai airport yesterday morning.</p>\n<p><strong>A. </strong>leave</p>\n<p><strong>B. </strong>leaves</p>\n<p><strong>C. </strong>left</p>\n<p><strong>D. </strong>to leave</p>\n<p>Giải thích: Có từ chỉ thời gian “yesterday” → quá khứ đơn.</p>"
+        },
+        {
+          "id": "s2-q6",
+          "number": "8",
+          "html": "<p><strong>Question 8.</strong><strong> </strong>Alice is quite lazy and she sometimes____(do) her homework</p>\n<p><strong>A. </strong>do</p>\n<p><strong>B. </strong>does</p>\n<p><strong>C. </strong>to do</p>\n<p><strong>D. </strong>doing</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 8.</strong><strong> </strong>Alice is quite lazy and she sometimes____(do) her homework</p>\n<p><strong>A. </strong>do</p>\n<p><strong>B. </strong>does</p>\n<p><strong>C. </strong>to do</p>\n<p><strong>D. </strong>doing</p>\n<p>Giải thích: Thói quen, chủ ngữ “she” → động từ “does”</p>"
+        },
+        {
+          "id": "s2-q7",
+          "number": "9",
+          "html": "<p><strong>Question 9.</strong><strong> </strong>Do you like playing chess? - No, I don’t. But my dad______</p>\n<p><strong>A. </strong>to do</p>\n<p><strong>B. </strong>do</p>\n<p><strong>C. </strong>did</p>\n<p><strong>D. </strong>does</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 9.</strong><strong> </strong>Do you like playing chess? - No, I don’t. But my dad______</p>\n<p><strong>A. </strong>to do</p>\n<p><strong>B. </strong>do</p>\n<p><strong>C. </strong>did</p>\n<p><strong>D. </strong>does</p>\n<p>Giải thích: Câu trả lời ngắn dùng trợ động từ → “my dad does”.</p>"
+        },
+        {
+          "id": "s2-q8",
+          "number": "10",
+          "html": "<p><strong>Question 10.</strong><strong> </strong>Look at those students. They are picking ____used bottles to help save the environment.</p>\n<p><strong>A. </strong>over</p>\n<p><strong>B. </strong>in</p>\n<p><strong>C. </strong>up</p>\n<p><strong>D. </strong>on</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 10.</strong><strong> </strong>Look at those students. They are picking ____used bottles to help save the environment.</p>\n<p><strong>A. </strong>over</p>\n<p><strong>B. </strong>in</p>\n<p><strong>C. </strong>up</p>\n<p><strong>D. </strong>on</p>\n<p>Giải thích: Cụm động từ “pick up” = nhặt lên.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Choose the letter A, B, C or D on your answer sheet to indicate the the underlined part that needs correction following sentences.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "11",
+          "html": "<p><strong>Question 11.</strong><strong> </strong>She usually <u>has</u> <u>a cup of</u> tea after breakfast <u>but</u> now she <u>drinks</u> coffee.</p>\n<p><strong>A. </strong>has</p>\n<p><strong>B. </strong>a cup of</p>\n<p><strong>C. </strong>but</p>\n<p><strong>D. </strong>drinks</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 11.</strong><strong> </strong>She usually <u>has</u> <u>a cup of</u> tea after breakfast <u>but</u> now she <u>drinks</u> coffee.</p>\n<p><strong>A. </strong>has</p>\n<p><strong>B. </strong>a cup of</p>\n<p><strong>C. </strong>but</p>\n<p><strong>D. </strong>drinks</p>\n<p>Giải thích: ‘now’ dấu hiệu nhận biết thì hiện tại tiếp diễn. drinks 🡪 is drinking</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "12",
+          "html": "<p><strong>Question 12.</strong><strong> </strong>Mary <u>likes</u> music very <u>much</u>. She is interested in <u>listen</u><u> </u>to every music program <u>on</u> the radio</p>\n<p><strong>A. </strong>likes</p>\n<p><strong>B. </strong>much</p>\n<p><strong>C. </strong>listen</p>\n<p><strong>D. </strong>on</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 12.</strong><strong> </strong>Mary <u>likes</u> music very <u>much</u>. She is interested in <u>listen </u>to every music program <u>on</u> the radio</p>\n<p><strong>A. </strong>likes</p>\n<p><strong>B. </strong>much</p>\n<p><strong>C. </strong>listen</p>\n<p><strong>D. </strong>on</p>\n<p>Giải thích: “interested in + V-ing” → phải là “listening”.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Odd one out",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "13",
+          "html": "<p><strong>Question 13.</strong></p>\n<p><strong>A. </strong>poster</p>\n<p><strong>B. </strong>regular</p>\n<p><strong>C. </strong>science</p>\n<p><strong>D. </strong>responsibility</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 13.</strong></p>\n<p><strong>A. </strong>poster</p>\n<p><strong>B. </strong>regular</p>\n<p><strong>C. </strong>science</p>\n<p><strong>D. </strong>responsibility</p>\n<p>Giải thích: regular là tính từ, các từ còn lại là danh từ</p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "14",
+          "html": "<p><strong>Question 14.</strong></p>\n<p><strong>A. </strong>pimple</p>\n<p><strong>B. </strong>lip balm</p>\n<p><strong>C. </strong>sunburn</p>\n<p><strong>D. </strong>homeless</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 14.</strong></p>\n<p><strong>A. </strong>pimple</p>\n<p><strong>B. </strong>lip balm</p>\n<p><strong>C. </strong>sunburn</p>\n<p><strong>D. </strong>homeless</p>\n<p>Giải thích: A, B, C liên quan đến sức khỏe/da liễu; D là tính từ chỉ tình trạng con người.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Four phrases/ sentences have been removed from the text below. For each question, choose the letter A, B, C or D on your answer sheet to indicate the correct option that best fits each of the numbered blanks from 15 to 18.",
+      "part": "READING",
+      "introHtml": "<p>My hobby is reading. I read storybooks, magazines, newspapers, and any kind of material that I find interesting. (15)_____. Soon they became tired of reading to me all the time, so I decided to learn how to read by myself. (16)_____. Now I can read almost anything that is available.</p>\n<p>Reading enables me to learn about many things that I would otherwise not know. I have learned about how people lived in the past, about magic and mystery, and about the wonders of the world. (17)_____. Reading not only gives me information but also improves my imagination and helps me relax after a long day. (18)_____. That is why reading has become an important part of my life, and I will always love this hobby.</p>\n<p><strong>A. </strong>I started with simple ABC books and then moved on to fairy tales and short stories</p>\n<p><strong>B. </strong>Whenever I feel lonely, I open a book and immediately find myself in a new world</p>\n<p><strong>C. </strong>This hobby started when I was a little boy. I always wanted my parents to read fairy tales and other stories to me</p>\n<p><strong>D. </strong>Books also give me knowledge about space travel, human achievements, gigantic whales, tiny viruses, and other fascinating things</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "15",
+          "html": "<p><strong>Question 15.</strong><strong> ______</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "referenceHtml": "<p><strong>Question 15.</strong><strong> ___C___</strong></p>",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "s5-q2",
+          "number": "16",
+          "html": "<p><strong>Question 16.</strong><strong> ______</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "referenceHtml": "<p><strong>Question 16.</strong><strong> __A____</strong></p>",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "s5-q3",
+          "number": "17",
+          "html": "<p><strong>Question 17.</strong><strong> ______</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 17.</strong><strong> ___D___</strong></p>",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "s5-q4",
+          "number": "18",
+          "html": "<p><strong>Question 18.</strong><strong> ______</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "referenceHtml": "<p><strong>Question 18.</strong><strong> __B____</strong></p>\n<p>Giải thích:</p>\n<p>(15) Đoạn đầu nói về “My hobby is reading” → câu C là mở đầu hợp lý nhất, giới thiệu việc thói quen đọc bắt đầu từ khi còn nhỏ.</p>\n<p>(16) Sau khi bố mẹ mệt vì đọc cho tôi, tôi quyết định học đọc → hợp lý để tiếp theo là “tôi bắt đầu với những cuốn ABC đơn giản rồi sang truyện cổ tích”.</p>\n<p>(17) Mở rộng kiến thức từ sách → “Books also give me knowledge about…”</p>\n<p>(18) Kết thúc đoạn phải nhấn mạnh vai trò của sách với cuộc sống và cảm xúc → phù hợp với câu B (đọc sách khi thấy cô đơn).</p>\n<p>Tạm dịch: Sở thích của tôi là đọc sách. Tôi đọc truyện, tạp chí, báo và bất kỳ loại tài liệu nào tôi thấy thú vị. Sở thích này bắt đầu từ khi tôi còn nhỏ. Tôi luôn muốn bố mẹ đọc truyện cổ tích và các câu chuyện khác cho tôi nghe. Chẳng bao lâu sau, họ chán việc phải đọc sách cho tôi nghe suốt ngày, nên tôi quyết định tự học đọc. Tôi bắt đầu với những cuốn sách bảng chữ cái đơn giản, sau đó chuyển sang truyện cổ tích và truyện ngắn. Giờ đây, tôi có thể đọc hầu như bất cứ thứ gì có sẵn.</p>\n<p>Việc đọc sách giúp tôi học hỏi được nhiều điều mà nếu không có nó, tôi sẽ không biết. Tôi đã tìm hiểu về cuộc sống của con người trong quá khứ, về phép thuật và những điều bí ẩn, cũng như về những điều kỳ diệu của thế giới. Sách cũng cho tôi kiến ​​thức về du hành vũ trụ, những thành tựu của loài người, những con cá voi khổng lồ, những loại virus nhỏ bé và những điều thú vị khác. Đọc sách không chỉ cung cấp thông tin mà còn cải thiện trí tưởng tượng và giúp tôi thư giãn sau một ngày dài. Bất cứ khi nào cảm thấy cô đơn, tôi mở một cuốn sách ra và ngay lập tức thấy mình lạc vào một thế giới mới. Đó là lý do tại sao đọc sách đã trở thành một phần quan trọng trong cuộc sống của tôi, và tôi sẽ luôn yêu thích sở thích này.</p>",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Put the sentences in the correct order",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "19",
+          "html": "<p><strong>Question 19.</strong></p>\n<p>a. Oh, that’s wonderful. I’ll try it.</p>\n<p>b. I don’t know what to buy for my mother’s birthday.</p>\n<p>c. Then you can give her a handmade card.</p>\n<p>d. Great! She will love it.</p>\n<p>e. She has flowers every year.</p>\n<p>f. Why don’t you buy her some flowers?</p>\n<p><strong>A. </strong>b – f – c – e – a – d</p>\n<p><strong>B. </strong>f – b – e – c – a – </p>\n<p>d</p>\n<p><strong>C. </strong>b – e – f – c – a – d</p>\n<p><strong>D. </strong>b – f – e – c – a – d</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 19.</strong></p>\n<p>a. Oh, that’s wonderful. I’ll try it.</p>\n<p>b. I don’t know what to buy for my mother’s birthday.</p>\n<p>c. Then you can give her a handmade card.</p>\n<p>d. Great! She will love it.</p>\n<p>e. She has flowers every year.</p>\n<p>f. Why don’t you buy her some flowers?</p>\n<p><strong>A. </strong>b – f – c – e – a – d</p>\n<p><strong>B. </strong>f – b – e – c – a – d</p>\n<p><strong>C. </strong>b – e – f – c – a – d</p>\n<p><strong>D. </strong>b – f – e – c – a – d</p>\n<p>Giải thích:</p>\n<p>b. I don’t know what to buy for my mother’s birthday. (Tớ không biết mua gì cho sinh nhật mẹ.)</p>\n<p>e. She has flowers every year. (Năm nào mẹ cũng có hoa rồi.)</p>\n<p>f. Why don’t you buy her some flowers? (Sao cậu không mua hoa?)</p>\n<p>c. Then you can give her a handmade card. (Vậy thì cậu có thể tặng mẹ một tấm thiệp tự làm.)</p>\n<p>a. Oh, that’s wonderful. I’ll try it. (Ồ, tuyệt quá. Tớ sẽ thử.)</p>\n<p>d. Great! She will love it. (Tuyệt! Mẹ cậu sẽ thích lắm.)</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "20",
+          "html": "<p><strong>Question 20.</strong></p>\n<p>a. I’m Linh. Nice to meet you.</p>\n<p>b. I’m in class 7<strong>A. </strong>How about you?</p>\n<p>c. Hi, my name is Hoa. What’s your name?</p>\n<p>d. Yes, it’s my favorite subject.</p>\n<p>e. Nice to meet you, too. Which class are you in?</p>\n<p>f. I’m in class 7<strong>B. </strong>Do you like English?</p>\n<p><strong>A. </strong>c – a – e – b – f – d</p>\n<p><strong>B. </strong>a – c – e – b – f – d</p>\n<p><strong>C. </strong>c – e – a – b – f – d</p>\n<p><strong>D. </strong>c – a – b – e – f – d</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 20.</strong></p>\n<p>a. I’m Linh. Nice to meet you.</p>\n<p>b. I’m in class 7<strong>A. </strong>How about you?</p>\n<p>c. Hi, my name is Hoa. What’s your name?</p>\n<p>d. Yes, it’s my favorite subject.</p>\n<p>e. Nice to meet you, too. Which class are you in?</p>\n<p>f. I’m in class 7<strong>B. </strong>Do you like English?</p>\n<p><strong>A. </strong>c – a – e – b – f – d</p>\n<p><strong>B. </strong>a – c – e – b – f – d</p>\n<p><strong>C. </strong>c – e – a – b – f – d</p>\n<p><strong>D. </strong>c – a – b – e – f – d</p>\n<p>Giải thích:</p>\n<p>c. Hi, my name is Hoa. What’s your name? (Chào, tớ tên là Hoa. Bạn tên gì?)</p>\n<p>a. I’m Linh. Nice to meet you. (Tớ là Linh. Rất vui được gặp bạn.)</p>\n<p>e. Nice to meet you, too. Which class are you in? (Mình cũng vui được gặp bạn. Bạn học lớp nào?)</p>\n<p>b. I’m in class 7<strong>A. </strong>How about you? (Mình học lớp 7<strong>A. </strong>Còn bạn?)</p>\n<p>f. I’m in class 7<strong>B. </strong>Do you like English? (Mình học lớp 7<strong>B. </strong>Bạn có thích tiếng Anh không?)</p>\n<p>d. Yes, it’s my favorite subject. (Có, đó là môn học yêu thích của mình.)</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Read the following sign or notice and choose the letter A, B, C or D on your answer sheet to indicate the correct answer to each of the following questions.",
+      "part": "READING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "21",
+          "html": "<p><strong>Question 21.</strong><strong> </strong>What does the notice tell people?</p>\n<p><strong>A. </strong>People visit on Saturday afternoons to help.<br><strong>B. </strong>People visit every day.<br><strong>C. </strong>People don’t need to help.<br><strong>D. </strong>The shelter is closed.</p>\n<p>🐶 Animal Shelter<br>Visit every Saturday afternoon to help feed the dogs</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 21.</strong><strong> </strong>What does the notice tell people?</p>\n<p><strong>A. </strong>People visit on Saturday afternoons to help. <br><strong>B. </strong>People visit every day.<br><strong>C. </strong>People don’t need to help.<br><strong>D. </strong>The shelter is closed.</p>\n<p>🐶 Animal Shelter<br>Visit every Saturday afternoon to help feed the dogs</p>\n<p>Giải thích: Thông báo ghi rõ: “Visit every Saturday afternoon to help feed the dogs.” (đến thăm vào mỗi chiều thứ 7 để giúp cho chó ăn)</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "22",
+          "html": "<p><strong>Question 22.</strong><strong> What does this sign mean?</strong></p>\n<p><strong>A. </strong>People cannot recycle here</p>\n<p><strong>B. </strong>People can throw any trash here.</p>\n<p><strong>C. </strong>People cannot recycle here.</p>\n<p><strong>D. </strong>People must recycle glass here.</p>\n<p><img src=\"/data/grade7-midterm/images/1266b921433e2537.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Glass only → D. People must recycle glass here.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Read and complete each blank in the passage with the correct answer A, B, C or D.",
+      "part": "READING",
+      "introHtml": "<p>Martin: Hello, Nancy! How are you? Have you got a new job?</p>\n<p>Nancy: No, I’m afraid not, but I’m still looking. It’s taking (23) ______longer than I think. The problem is there aren’t (24)_________   jobs. And there are too (25) _______ people looking for jobs.</p>\n<p>Martin: I’m old enough to remember when there was plenty of work.</p>\n<p>Nancy: Yes, I know. But there isn’t any more. I’m afraid I’m (26) ___________longer optimistic as a few weeks before. In fact I feel a (27) ___________ sad about it sometimes.</p>\n<p>Martin: Don’t worry. You will soon find something, I expect.</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "23",
+          "html": "<p><strong>Question 23.</strong></p>\n<p><strong>A. </strong>more</p>\n<p><strong>B. </strong>quite</p>\n<p><strong>C. </strong>any</p>\n<p><strong>D. </strong>some</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 23.</strong></p>\n<p><strong>A. </strong>more</p>\n<p><strong>B. </strong>quite</p>\n<p><strong>C. </strong>any</p>\n<p><strong>D. </strong>some</p>\n<p>Giải thích: so sánh hơn tính từ ngắn ‘long’ không dùng với ‘more’; đáp án C, D không dùng với tính từ 🡪 đáp án đúng là B</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "24",
+          "html": "<p><strong>Question 24.</strong></p>\n<p><strong>A. </strong>enough</p>\n<p><strong>B. </strong>much</p>\n<p><strong>C. </strong>right</p>\n<p><strong>D. </strong>some</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 24.</strong></p>\n<p><strong>A. </strong>enough</p>\n<p><strong>B. </strong>much</p>\n<p><strong>C. </strong>right</p>\n<p><strong>D. </strong>some</p>\n<p>Giải thích: Vấn đề là không còn đủ công việc 🡪 phù hợp ngữ cảnh. ‘Much’ không đi cùng danh từ số nhiều đếm được.</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "25",
+          "html": "<p><strong>Question 25.</strong></p>\n<p><strong>A. </strong>big</p>\n<p><strong>B. </strong>lot</p>\n<p><strong>C. </strong>many</p>\n<p><strong>D. </strong>much</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 25.</strong></p>\n<p><strong>A. </strong>big</p>\n<p><strong>B. </strong>lot</p>\n<p><strong>C. </strong>many</p>\n<p><strong>D. </strong>much</p>\n<p>Giải thích: too + many people: quá nhiều người. ‘Much’ không đi cùng danh từ số nhiều đếm được. ‘lot’ sai cụm từ.</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "26",
+          "html": "<p><strong>Question 26.</strong></p>\n<p><strong>A. </strong>any</p>\n<p><strong>B. </strong>never</p>\n<p><strong>C. </strong>no</p>\n<p><strong>D. </strong>not</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 26.</strong></p>\n<p><strong>A. </strong>any</p>\n<p><strong>B. </strong>never</p>\n<p><strong>C. </strong>no</p>\n<p><strong>D. </strong>not</p>\n<p>Giải thích: ‘no longer’ = chẳng còn ... nữa</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "27",
+          "html": "<p><strong>Question 27.</strong></p>\n<p><strong>A. </strong>bit</p>\n<p><strong>B. </strong>piece</p>\n<p><strong>C. </strong>quite</p>\n<p><strong>D. </strong>lightly</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 27.</strong></p>\n<p><strong>A. </strong>bit</p>\n<p><strong>B. </strong>piece</p>\n<p><strong>C. </strong>quite</p>\n<p><strong>D. </strong>lightly</p>\n<p>Giải thích: a bit + tính từ: có chút</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Read the following passage and choose the letter A, B, C or D on your answer sheet to indicate the correct answer to each of the questions.",
+      "part": "READING",
+      "introHtml": "<p>Do you want to be fitter and healthier? Would you like to look younger? Do you want to feel more relaxed? Then try a few days at a health farm. Health farms are becoming one of the most <strong>popular </strong>places for a short break. I went to Henley Manor for a week. It&#x27;s the largest health farm in the country but it isn&#x27;t the most expensive. After two days of exercise I felt ten times better. But the best thing for me was the food. It was all very healthy, of course, but it was excellent, too!</p>\n<p>If you&#x27;re looking for something a bit cheaper, try a winter break. Winter is the darkest and coldest season of the year, and it can also be the worst time for your body. We all eat too much and we don&#x27;t take enough exercise. A lot of health farms offer lower prices from Monday to Friday from November to March.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "28",
+          "html": "<p><strong>Question 28.</strong><strong> </strong>What is the paragraph about?<strong>                 </strong></p>\n<p><strong>A. </strong>You can get fitter.        </p>\n<p><strong>B. </strong>Health farms are becoming very popular.</p>\n<p><strong>C. </strong>You feel a lot better afterwards.</p>\n<p><strong>D. </strong>Health farms are a good way to make your health better.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 28.</strong><strong> </strong>What is the paragraph about?<strong>                 </strong></p>\n<p><strong>A. </strong>You can get fitter.        </p>\n<p><strong>B. </strong>Health farms are becoming very popular.</p>\n<p><strong>C. </strong>You feel a lot better afterwards.</p>\n<p><strong>D. </strong>Health farms are a good way to make your health better.</p>\n<p>Giải thích: Ý chính toàn bài nói về lợi ích của health farm.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "29",
+          "html": "<p><strong>Question 29.</strong><strong> </strong>The word ‘popular’ in the passage 1 line 2 in the meaning to</p>\n<p><strong>A. </strong>famous</p>\n<p><strong>B. </strong>unpopular</p>\n<p><strong>C. </strong>unliked</p>\n<p><strong>D. </strong>welcome</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 29.</strong><strong> </strong>The word ‘popular’ in the passage 1 line 2 in the meaning to</p>\n<p><strong>A. </strong>famous</p>\n<p><strong>B. </strong>unpopular</p>\n<p><strong>C. </strong>unliked</p>\n<p><strong>D. </strong>welcome</p>\n<p>Giải thích: “popular” = được nhiều người ưa chuộng ~ “famous/well-liked”.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "30",
+          "html": "<p><strong>Question 30.</strong><strong> </strong>Helen Manor is _______________ health farm in the country.</p>\n<p><strong>A. </strong>the biggest and the most cheapest</p>\n<p><strong>B. </strong>the most expensive</p>\n<p><strong>C. </strong>the biggest and the most expensive</p>\n<p><strong>D. </strong>the biggest</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 30.</strong><strong> </strong>Helen Manor is _______________ health farm in the country.</p>\n<p><strong>A. </strong>the biggest and the most cheapest</p>\n<p><strong>B. </strong>the most expensive</p>\n<p><strong>C. </strong>the biggest and the most expensive</p>\n<p><strong>D. </strong>the biggest</p>\n<p>Giải thích: Bài nói: “the largest health farm … but it isn’t the most expensive”. → ‘largets’ =“biggest”.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "31",
+          "html": "<p><strong>Question 31.</strong><strong> </strong>What is the best thing in Helen Manor?</p>\n<p><strong>A. </strong>The prices</p>\n<p><strong>B. </strong>The facilities</p>\n<p><strong>C. </strong>The food</p>\n<p><strong>D. </strong>The time</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 31.</strong><strong> </strong>What is the best thing in Helen Manor?</p>\n<p><strong>A. </strong>The prices</p>\n<p><strong>B. </strong>The facilities</p>\n<p><strong>C. </strong>The food</p>\n<p><strong>D. </strong>The time</p>\n<p>Giải thích: “the best thing for me was the food”: điều tuyệt vời nhất với tôi là đồ ăn</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "32",
+          "html": "<p><strong>Question 32.</strong><strong> </strong>Which statement is NOT true?</p>\n<p><strong>A. </strong>Winter is can be the worst time for our health.</p>\n<p><strong>B. </strong>The writer felt ten times better after two days of exercise in Helen Manor.</p>\n<p><strong>C. </strong>Many health farm offer lower prices from November to March.</p>\n<p><strong>D. </strong>Health farm is too expensive to relax.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 32.</strong><strong> </strong>Which statement is NOT true?</p>\n<p><strong>A. </strong>Winter is can be the worst time for our health.</p>\n<p><strong>B. </strong>The writer felt ten times better after two days of exercise in Helen Manor.</p>\n<p><strong>C. </strong>Many health farm offer lower prices from November to March.</p>\n<p><strong>D. </strong>Health farm is too expensive to relax. </p>\n<p>Giải thích: Bài có nói “it isn’t the most expensive” → câu D sai.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Choose the letter A, B, C or D on your answer sheet to indicate the sentence that is best made form the given cues in each of following questions",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "33",
+          "html": "<p><strong>Question 33.</strong><strong> </strong>If/ we/ not/ plant/ more trees/ the city/ become/ more polluted/ future.</p>\n<p><strong>A. </strong>If we don’t plant more trees, the city will become more polluted in the future.</p>\n<p><strong>B. </strong>If we didn’t plant more trees, the city will become more polluted in the future.</p>\n<p><strong>C. </strong>If we not plant more trees, the city become more polluted in the future.</p>\n<p><strong>D. </strong>If we doesn’t plant more trees, the city will becomes more polluted in the future.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 33.</strong><strong> </strong>If/ we/ not/ plant/ more trees/ the city/ become/ more polluted/ future.</p>\n<p><strong>A. </strong>If we don’t plant more trees, the city will become more polluted in the future.</p>\n<p><strong>B. </strong>If we didn’t plant more trees, the city will become more polluted in the future.</p>\n<p><strong>C. </strong>If we not plant more trees, the city become more polluted in the future.</p>\n<p><strong>D. </strong>If we doesn’t plant more trees, the city will becomes more polluted in the future.</p>\n<p>Giải thích: Câu điều kiện loại 1: If + present simple, will + V.</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "34",
+          "html": "<p><strong>Question 34.</strong><strong> </strong>Because/ the flood/ serious/ volunteers/ decide/ raise/ more money/ help victims.</p>\n<p><strong>A. </strong>Because the flood was serious, the volunteers decided to raise more money to help the victims.</p>\n<p><strong>B. </strong>Because the flood is serious, the volunteers decide to raise more money helping the victims.</p>\n<p><strong>C. </strong>Because the flood were serious, the volunteers decided raise more money to help the victims.</p>\n<p><strong>D. </strong>Because the flood was serious, the volunteers decides raising more money to help the victims.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 34.</strong><strong> </strong>Because/ the flood/ serious/ volunteers/ decide/ raise/ more money/ help victims.</p>\n<p><strong>A. </strong>Because the flood was serious, the volunteers decided to raise more money to help the victims.</p>\n<p><strong>B. </strong>Because the flood is serious, the volunteers decide to raise more money helping the victims.</p>\n<p><strong>C. </strong>Because the flood were serious, the volunteers decided raise more money to help the victims.</p>\n<p><strong>D. </strong>Because the flood was serious, the volunteers decides raising more money to help the victims.</p>\n<p>Giải thích: “was serious” (quá khứ) → “decided” (quá khứ).</p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "35",
+          "html": "<p><strong>Question 35.</strong><strong> </strong>We/ help/ children/ do homework/ every Saturday.</p>\n<p><strong>A. </strong>We helping children do homework every Saturday.</p>\n<p><strong>B. </strong>We helps children do homework every Saturday.</p>\n<p><strong>C. </strong>We helped children do homework every Saturday.</p>\n<p><strong>D. </strong>We help children do homework every Saturday.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 35.</strong><strong> </strong>We/ help/ children/ do homework/ every Saturday.</p>\n<p><strong>A. </strong>We helping children do homework every Saturday.</p>\n<p><strong>B. </strong>We helps children do homework every Saturday.</p>\n<p><strong>C. </strong>We helped children do homework every Saturday.</p>\n<p><strong>D. </strong>We help children do homework every Saturday.</p>\n<p>Giải thích: ‘every Staturday’🡪 Thói quen → hiện tại đơn.</p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "36",
+          "html": "<p><strong>Question 36.</strong><strong> </strong>I/ usually/ work/ Friday/ but/ I/ have/ day/ off/ today.</p>\n<p><strong>A. </strong>I usually work on Friday, but I have a day off today.</p>\n<p><strong>B. </strong>I usually work on Friday, but I have day off today.</p>\n<p><strong>C. </strong>I usually work on Friday, but I am having day off today.</p>\n<p><strong>D. </strong>I usually work on Friday, but I am having a day off today.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 36.</strong><strong> </strong>I/ usually/ work/ Friday/ but/ I/ have/ day/ off/ today.</p>\n<p><strong>A. </strong>I usually work on Friday, but I have a day off today.</p>\n<p><strong>B. </strong>I usually work on Friday, but I have day off today.</p>\n<p><strong>C. </strong>I usually work on Friday, but I am having day off today.</p>\n<p><strong>D. </strong>I usually work on Friday, but I am having a day off today.</p>\n<p>Giải thích: Thói quen (usually) + hiện tại đơn. Có bổ sung mạo từ ‘a’ trước từ ‘day’</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Choose the letter A, B, C or D on your answer sheet to indicate the sentence that is closet in meaning to the original sentence in each of following questions",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "37",
+          "html": "<p><strong>Question 37.</strong><strong> </strong>They go jogging in the park every morning.</p>\n<p><strong>A. </strong>They went jogging in the park every morning.</p>\n<p><strong>B. </strong>They usually go jogging in the park in the morning.</p>\n<p><strong>C. </strong>They go jog in the park every morning.</p>\n<p><strong>D. </strong>They are jogging in the park every morning.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 37.</strong><strong> </strong>They go jogging in the park every morning.</p>\n<p><strong>A. </strong>They went jogging in the park every morning.</p>\n<p><strong>B. </strong>They usually go jogging in the park in the morning.</p>\n<p><strong>C. </strong>They go jog in the park every morning.</p>\n<p><strong>D. </strong>They are jogging in the park every morning.</p>\n<p><strong>Giải thích:</strong> Câu gốc: ‘every morning’ 🡪thói quen hằng ngày 🡪 dùng thì hiện tại đơn</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "38",
+          "html": "<p><strong>Question 38.</strong><strong> </strong>She gets up early every morning. She goes jogging in the park.</p>\n<p><strong>A. </strong>She gets up early every morning, and she goes jogging in the park.</p>\n<p><strong>B. </strong>She gets up early every morning, but she goes jogging in the park.</p>\n<p><strong>C. </strong>She gets up early every morning, so she goes jogging in the park.</p>\n<p><strong>D. </strong>She gets up early every morning, however she goes jogging in the park.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 38.</strong><strong> </strong>She gets up early every morning. She goes jogging in the park.</p>\n<p><strong>A. </strong>She gets up early every morning, and she goes jogging in the park.</p>\n<p><strong>B. </strong>She gets up early every morning, but she goes jogging in the park.</p>\n<p><strong>C. </strong>She gets up early every morning, so she goes jogging in the park.</p>\n<p><strong>D. </strong>She gets up early every morning, however she goes jogging in the park.</p>\n<p>Giải thích: Dùng “and” nối hai hành động cùng xảy ra.</p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "39",
+          "html": "<p><strong>Question 39.</strong><strong> </strong>We took part in a clean-up campaign last week.</p>\n<p><strong>A. </strong>We are taking part in a clean-up campaign last week.</p>\n<p><strong>B. </strong>We participate a clean-up campaign last week.</p>\n<p><strong>C. </strong>We participated in a clean-up campaign last week.</p>\n<p><strong>D. </strong>We takes part in a clean-up campaign last week.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 39.</strong><strong> </strong>We took part in a clean-up campaign last week.</p>\n<p><strong>A. </strong>We are taking part in a clean-up campaign last week.</p>\n<p><strong>B. </strong>We participate a clean-up campaign last week.</p>\n<p><strong>C. </strong>We participated in a clean-up campaign last week.</p>\n<p><strong>D. </strong>We takes part in a clean-up campaign last week.</p>\n<p>Giải thích: “took part in” = “participated in” (quá khứ).</p>"
+        },
+        {
+          "id": "s11-q4",
+          "number": "40",
+          "html": "<p><strong>Question 40.</strong><strong> </strong>I love collecting stamps. My brother doesn’t think it is interesting.</p>\n<p><strong>A. </strong>I love collecting stamps, so my brother doesn’t think it is interesting.</p>\n<p><strong>B. </strong>I love collecting stamps, however my brother doesn’t think it is interesting.</p>\n<p><strong>C. </strong>I love collecting stamps, but my brother doesn’t think it is interesting.</p>\n<p><strong>D. </strong>I love collecting stamps, and my brother doesn’t think it is interesting.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Question 40.</strong><strong> </strong>I love collecting stamps. My brother doesn’t think it is interesting.</p>\n<p><strong>A. </strong>I love collecting stamps, so my brother doesn’t think it is interesting.</p>\n<p><strong>B. </strong>I love collecting stamps, however my brother doesn’t think it is interesting.</p>\n<p><strong>C. </strong>I love collecting stamps, but my brother doesn’t think it is interesting.</p>\n<p><strong>D. </strong>I love collecting stamps, and my brother doesn’t think it is interesting.</p>\n<p>Giải thích: Hai ý trái ngược → dùng “but”.</p>"
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "sourceHash": "bc2ac2d63054d4e10903c3419753a0b15e3ca6cf3598f1a203a865c086c463dc"
+}

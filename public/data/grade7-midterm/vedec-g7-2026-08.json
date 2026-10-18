@@ -1,0 +1,654 @@
+{
+  "id": "vedec-g7-2026-08",
+  "number": 8,
+  "title": "Đề 08",
+  "subtitle": "Tiếng Anh 7 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2,5 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen to a talk about tips for healthy skin. Decide whether the statements (1-5) are True (T) or False (F). You will listen TWICE. (1,25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>You should wash your face only in the morning. \t_____</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "referenceHtml": "<p>You should wash your face only in the morning. \t__<strong>F</strong>___</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>You shouldn&#x27;t drink more than 8 glasses of water a day. \t_____</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "referenceHtml": "<p>You shouldn&#x27;t drink more than 8 glasses of water a day. \t__<strong>F</strong>___</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>Sugary snacks are not good for your skin. \t_____</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "referenceHtml": "<p>Sugary snacks are not good for your skin. \t__<strong>T</strong>___</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>You only need to use suncream on sunny days. \t_____</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "referenceHtml": "<p>You only need to use suncream on sunny days. \t__<strong>F</strong>___</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>Sleeping 7 - 8 hours helps your skin get better.\t_____</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "referenceHtml": "<p>Sleeping 7 - 8 hours helps your skin get better.\t__<strong>T</strong>___</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen to the conversation between Lan and Trang. Choose the correct answer for questions 6-10. You will listen TWICE. (1,25 points)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "6",
+          "html": "<p>What is Trang&#x27;s hobby?</p>\n<p><strong>A.</strong> Collecting dolls\t\t<strong>B.</strong> Building dollhouses</p>\n<p><strong>C.</strong> Painting houses\t\t<strong>D.</strong> Making clothes</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>What is Trang&#x27;s hobby?</p>\n<p><strong>A.</strong> Collecting dolls\t\t<strong>B.</strong><strong> Building dollhouses</strong></p>\n<p><strong>C.</strong> Painting houses\t\t<strong>D.</strong> Making clothes</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "7",
+          "html": "<p>When did she start her hobby?</p>\n<p><strong>A.</strong> One year ago\t\t<strong>B.</strong> Two years ago</p>\n<p><strong>C.</strong> Three years ago\t\t<strong>D.</strong> Four years ago</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>When did she start her hobby?</p>\n<p><strong>A.</strong> One year ago\t\t<strong>B.</strong> Two years ago</p>\n<p><strong>C.</strong><strong> Three years ago</strong>\t\t<strong>D.</strong> Four years ago</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "8",
+          "html": "<p>Who also likes building dollhouses?</p>\n<p><strong>A.</strong> Her sister\t\t<strong>B.</strong> Her cousin Mi</p>\n<p><strong>C.</strong> Her best friend\t\t<strong>D.</strong> Her mother</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Who also likes building dollhouses?</p>\n<p><strong>A.</strong> Her sister\t\t<strong>B.</strong><strong> Her cousin Mi</strong></p>\n<p><strong>C.</strong> Her best friend\t\t<strong>D.</strong> Her mother</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "9",
+          "html": "<p>What does she use to build the house?</p>\n<p><strong>A.</strong> Wood and paint\t\t<strong>B.</strong> Plastic and paper</p>\n<p><strong>C.</strong> Cardboard and glue\t<strong>D.</strong> Clay and glass</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>What does she use to build the house?</p>\n<p><strong>A.</strong> Wood and paint\t\t<strong>B.</strong> Plastic and paper</p>\n<p><strong>C.</strong><strong> Cardboard and glue</strong>\t<strong>D.</strong> Clay and glass</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "10",
+          "html": "<p>What are the benefits of her hobby?</p>\n<p><strong>A.</strong> She is stronger and healthier.\t<strong>B.</strong> She is more patient and creative.</p>\n<p><strong>C.</strong> She is taller and faster.\t<strong>D.</strong> She is more famous.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>What are the benefits of her hobby?</p>\n<p><strong>A.</strong> She is stronger and healthier.\t<strong>B.</strong><strong> She is more patient and creative.</strong></p>\n<p><strong>C.</strong> She is taller and faster.\t<strong>D.</strong> She is more famous.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "B. LANGUAGE FOCUS (2,5 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Phonetics (0,5 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p><strong>C</strong><strong>ircle</strong><strong> the letter A, B, C or D to indicate the word whose underlined part is pronounced differently from the others.</strong></p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "11",
+          "html": "<p><strong>A.</strong> ret<strong><u>ur</u></strong>n\t<strong>B.</strong> pict<strong><u>ur</u></strong>e\t<strong>C.</strong> cult<strong><u>ur</u></strong>e\t<strong>D.</strong> fut<strong><u>ur</u></strong>e</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>A.</strong><strong> </strong><strong>ret</strong><strong><u>ur</u></strong><strong>n</strong>\t<strong>B.</strong> pict<strong><u>ur</u></strong>e\t<strong>C.</strong> cult<strong><u>ur</u></strong>e\t<strong>D.</strong> fut<strong><u>ur</u></strong>e</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "12",
+          "html": "<p><strong>A.</strong> help<strong><u>ed</u></strong>\t<strong>B.</strong> clean<strong><u>ed</u></strong>\t<strong>C.</strong> cook<strong><u>ed</u></strong>\t<strong>D.</strong> pass<strong><u>ed</u></strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>A.</strong> help<strong><u>ed</u></strong>\t<strong>B.</strong><strong> </strong><strong>clean</strong><strong><u>ed</u></strong>\t<strong>C.</strong> cook<strong><u>ed</u></strong>\t<strong>D.</strong> pass<strong><u>ed</u></strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "II. Circle the letter A, B, C or D to complete each of the following sentences. (1,0 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "13",
+          "html": "<p>Some ________ such as carrots and tomatoes are rich in vitamins.</p>\n<p><strong>A.</strong> coloured vegetables\t<strong>B.</strong> chapped lips\t<strong>C.</strong> soft drinks\t<strong>D.</strong> red spots</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Some ________ such as carrots and tomatoes are rich in vitamins.</p>\n<p><strong>A.</strong><strong> </strong><strong>coloured vegetables</strong>\t<strong>B.</strong> chapped lips\t<strong>C.</strong> soft drinks\t<strong>D.</strong> red spots</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "14",
+          "html": "<p>_____ models is a creative hobby for many students.</p>\n<p><strong>A.</strong> Taking\t<strong>B.</strong> Making\t<strong>C.</strong> Doing\t<strong>D.</strong> Playing</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>_____ models is a creative hobby for many students.</p>\n<p><strong>A.</strong> Taking\t<strong>B.</strong><strong> </strong><strong>Making</strong>\t<strong>C.</strong> Doing\t<strong>D.</strong> Playing</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "15",
+          "html": "<p>My friend enjoys ________ because we can sell vegetables and flowers ________ money.</p>\n<p><strong>A.</strong> gardening - for\t<strong>B.</strong> gardening - with\t<strong>C.</strong> garden - to\t<strong>D.</strong> garden - of</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>My friend enjoys ________ because we can sell vegetables and flowers ________ money.</p>\n<p><strong>A.</strong><strong> </strong><strong>gardening - for</strong>\t<strong>B.</strong> gardening - with\t<strong>C.</strong> garden - to\t<strong>D.</strong> garden - of</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "16",
+          "html": "<p>Anna: “I got the highest score in the English test!”<br>Lan: “______”.</p>\n<p><strong>A.</strong> You should study less next time.\t<strong>B.</strong> That&#x27;s wonderful! Congratulations!\t</p>\n<p><strong>C.</strong> Don&#x27;t be so proud of it.\t<strong>D.</strong> It doesn&#x27;t matter.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Anna: “I got the highest score in the English test!”<br>Lan: “______”.</p>\n<p><strong>A.</strong> You should study less next time.\t<strong>B.</strong><strong> </strong><strong>That&#x27;s wonderful! Congratulations!</strong>\t</p>\n<p><strong>C.</strong> Don&#x27;t be so proud of it.\t<strong>D.</strong> It doesn&#x27;t matter.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "III. Give the correct form of the verb. Write your answers in the blanks. (1,0 point)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "17",
+          "html": "<p>I join a photography club, and all members love (take) ____________ photos.</p>",
+          "kind": "text",
+          "answers": [
+            "taking"
+          ],
+          "referenceHtml": "<p>I join a photography club, and all members love (take) _<strong>taking</strong> __ photos.</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "18",
+          "html": "<p>Why (Nam, have)________________________ a stomachache yesterday?.</p>",
+          "kind": "text",
+          "answers": [
+            "did Nam have"
+          ],
+          "referenceHtml": "<p>Why (Nam, have)__ <strong>did Nam have</strong> __ a stomachache yesterday?.</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "19",
+          "html": "<p>Some children (visit)____________ the elderly to make them happy every week.</p>",
+          "kind": "text",
+          "answers": [
+            "visit"
+          ],
+          "referenceHtml": "<p>Some children (visit)__ <strong>visit</strong> __ the elderly to make them happy every week.</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "20",
+          "html": "<p>When water (boil) ___________, it (change) ___________ from a liquid to a gas.</p>",
+          "kind": "text",
+          "answers": [
+            "boils / changes",
+            "boils changes"
+          ],
+          "referenceHtml": "<p>When water (boil) __<strong>boils</strong> ___, it (change) __<strong>changes</strong> _ from a liquid to a gas.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "C. READING (2,5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s9",
+      "title": "I. Read the following passage and choose the best answer (A, B, C or D) for each blank. (1,25 points) Lien's blog:",
+      "part": "READING",
+      "introHtml": "<p>Cooking is my favorite hobby. My grandmother (<strong>21</strong>) ______ me how to cook my first dish when I was eight. Some people say cooking is a waste of time, but I find this hobby very interesting and meaningful. I really love (<strong>22</strong>) ______ new food and cooking for my family. I often collect recipes (<strong>23</strong>) ______ my mother and my grandmother. I hope I will become a good chef and have my own cookery book in the future.</p>\n<p><strong>Cuong&#x27;s blog:</strong></p>\n<p>I have an unusual hobby: carving eggshells. It&#x27;s amazing that something as fragile as an empty eggshell can be made into such a beautiful piece of art. I was so amazed that I learned (<strong>24</strong>) ______ to carve them myself from the internet. The feeling of accomplishment when I finish a piece is absolutely awesome. This hobby also (<strong>25</strong>) ______ me be more patient and careful.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "21",
+          "html": "<p><strong>A.</strong> teach\t\t<strong>B.</strong> teaches\t\t<strong>C.</strong> taught\t\t\t<strong>D.</strong> teaching</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Chỗ trống (21): C. taught</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "22",
+          "html": "<p>Chỗ trống (22)</p><p>A. try · B. trying · C. tries · D. tried</p>",
+          "kind": "choice",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answers": [
+            "B"
+          ],
+          "referenceHtml": "<p>Chỗ trống (22): B. trying</p>",
+          "note": "Các lựa chọn của chỗ trống (22) được bổ sung từ file đáp án đi kèm vì bản đề bị thiếu dòng này."
+        },
+        {
+          "id": "s9-q3",
+          "number": "23",
+          "html": "<p><strong>A.</strong> from\t\t<strong>B.</strong> to\t\t\t<strong>C.</strong> without\t\t\t<strong>D.</strong> of</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Chỗ trống (23): A. from</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "24",
+          "html": "<p><strong>A.</strong> what\t\t<strong>B.</strong> which\t\t<strong>C.</strong> who\t\t\t<strong>D.</strong> how</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Chỗ trống (24): D. how</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "25",
+          "html": "<p><strong>A.</strong> help\t\t<strong>B.</strong> helping\t\t<strong>C.</strong> helps\t\t\t<strong>D.</strong> helped</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Chỗ trống (25): C. helps</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "II. Read the passage and choose the best answer (A, B, C, or D) for each question. (1,25 points) Do you want to be fitter and healthier? Do you like to look younger? Do you want to feel more relaxed? Then try spending a few days at Helen Manor Health Farm. It is one of the most popular places for a short holiday. Helen Manor is the largest health farm in the country, but it isn't the most expensive. After two days of exercise and massage, you will feel much better. The best thing is the food — it's very healthy and also very tasty!",
+      "part": "READING",
+      "introHtml": "<p>If you want something cheaper, you can try a winter break. Winter is the coldest and darkest time of the year, and it can be bad for your body. We often eat too much and don&#x27;t do enough exercise. Many health farms offer lower prices from Monday to Friday, between November and March. It&#x27;s a great way to relax, stay healthy, and enjoy yourself during the winter.</p>",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "26",
+          "html": "<p><strong>What is the passage mainly about? </strong></p>\n<p><strong>A.</strong> How to eat tasty food.\t\t\t\t<strong>B.</strong> Why winter is bad for your body.</p>\n<p><strong>C.</strong> A great place to stay healthy and relaxed.\t\t<strong>D.</strong> A new type of sport.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>What is the passage mainly about? </strong></p>\n<p><strong>A.</strong> How to eat tasty food.\t\t\t\t\t<strong>B.</strong> Why winter is bad for your body.</p>\n<p><strong>C.</strong><strong> A great place to stay healthy and relaxed.</strong><strong>\t</strong>\t<strong>D.</strong> A new type of sport.</p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "27",
+          "html": "<p><strong>How can people stay healthy at Helen Manor Health Farm? </strong></p>\n<p><strong>A.</strong> By going shopping and swimming.\t\t\t<strong>B.</strong> By studying and working online.</p>\n<p><strong>C.</strong> By exercising, getting massages, and eating healthy food.</p>\n<p><strong>D.</strong> By visiting friends and watching movies.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>How can people stay healthy at Helen Manor Health Farm? </strong></p>\n<p><strong>A.</strong> By going shopping and swimming.\t\t\t<strong>B.</strong> By studying and working online.</p>\n<p><strong>C.</strong><strong> By exercising, getting massages, and eating healthy food.</strong></p>\n<p><strong>D.</strong> By visiting friends and watching movies.</p>"
+        },
+        {
+          "id": "s10-q3",
+          "number": "28",
+          "html": "<p><strong>Why is winter a bad time for your body? </strong></p>\n<p><strong>A.</strong> Because it is too hot and sunny.\t\t\t\t<strong>B.</strong> Because food is not healthy in winter.</p>\n<p><strong>C.</strong> Because health farms are closed.</p>\n<p><strong>D.</strong> Because people eat too much and don&#x27;t exercise.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Why is winter a bad time for your body? </strong></p>\n<p><strong>A.</strong> Because it is too hot and sunny.\t\t\t\t<strong>B.</strong> Because food is not healthy in winter.</p>\n<p><strong>C.</strong> Because health farms are closed.</p>\n<p><strong>D.</strong><strong> Because people eat too much and don&#x27;t exercise.</strong></p>"
+        },
+        {
+          "id": "s10-q4",
+          "number": "29",
+          "html": "<p><strong>When can visitors get lower prices at health farms? </strong></p>\n<p><strong>A.</strong> Every day of the year.\t\t\t\t\t<strong>B.</strong> Only during summer holidays.</p>\n<p><strong>C.</strong> From June to September, on weekends.</p>\n<p><strong>D.</strong> From November to March, Monday to Friday.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>When can visitors get lower prices at health farms? </strong></p>\n<p><strong>A.</strong> Every day of the year.\t\t\t\t\t<strong>B.</strong> Only during summer holidays.</p>\n<p><strong>C.</strong> From June to September, on weekends.</p>\n<p><strong>D.</strong><strong> From November to March, Monday to Friday.</strong></p>"
+        },
+        {
+          "id": "s10-q5",
+          "number": "30",
+          "html": "<p><strong>Which statement is NOT true about the passage? </strong></p>\n<p><strong>A.</strong> Helen Manor is the smallest health farm in the country.</p>\n<p><strong>B.</strong> You can get cheaper prices from November to March.</p>\n<p><strong>C.</strong> Health farms are good places to relax and stay healthy.</p>\n<p><strong>D.</strong> The food at Helen Manor is healthy and tasty.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>Which statement is NOT true about the passage? </strong></p>\n<p><strong>A.</strong><strong> Helen Manor is the smallest health farm in the country.</strong></p>\n<p><strong>B.</strong> You can get cheaper prices from November to March.</p>\n<p><strong>C.</strong> Health farms are good places to relax and stay healthy.</p>\n<p><strong>D.</strong> The food at Helen Manor is healthy and tasty.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "D. WRITING (2,5 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s12",
+      "title": "I. Complete the second sentence so that it means the same as the sentence before. (0,75 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "31",
+          "html": "<p>It&#x27;s not a good idea to stay up late every night.</p>\n<p>→ We should _________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "not stay up late every night",
+            "We should not stay up late every night."
+          ],
+          "referenceHtml": "<p>It&#x27;s not a good idea to stay up late every night.</p>\n<p>→ We should _<strong>not stay up late every night</strong>. _</p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "32",
+          "html": "<p>Minh finds it interesting to watch films with his friends.</p>\n<p>→ Minh is ____________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "interested in watching films with his friends",
+            "Minh is interested in watching films with his friends"
+          ],
+          "referenceHtml": "<p>Minh finds it interesting to watch films with his friends.</p>\n<p>→ Minh is _<strong>interested in watching films with his friends</strong>. ___</p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "33",
+          "html": "<p>Playing football after school is my cousin&#x27;s hobby.</p>\n<p>→ My cousin enjoys _____________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "playing football after school",
+            "My cousin enjoys playing football after school"
+          ],
+          "referenceHtml": "<p>Playing football after school is my cousin&#x27;s hobby.</p>\n<p>→ My cousin enjoys _<strong>playing football after school.</strong> __</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "II. Reorder the words to make complete sentences. (0,75 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "34",
+          "html": "<p>collects / for poor children / every Monday morning. / Our school / money</p>\n<p>→ ________________________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "Our school collects money for poor children every Monday morning",
+            "Our school collects money for poor children every Monday morning."
+          ],
+          "referenceHtml": "<p>collects / for poor children / every Monday morning. / Our school / money</p>\n<p>→ <strong>Our school collects money for poor children every Monday morning.</strong></p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "35",
+          "html": "<p>pick up / litter / Tom and his friends / last Sunday? / Where did</p>\n<p>→ ________________________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "Where did Tom and his friends pick up litter last Sunday?"
+          ],
+          "referenceHtml": "<p>pick up / litter / Tom and his friends / last Sunday? / Where did</p>\n<p>→ <strong>Where did Tom and his friends pick up litter last Sunday?</strong></p>"
+        },
+        {
+          "id": "s13-q3",
+          "number": "36",
+          "html": "<p>eat breakfast / don&#x27;t / I / before school. / often</p>\n<p>→ ________________________________________________________________________________</p>",
+          "kind": "text",
+          "answers": [
+            "I don't often eat breakfast before school",
+            "I don't often eat breakfast before school."
+          ],
+          "referenceHtml": "<p>eat breakfast / don&#x27;t / I / before school. / often</p>\n<p>→ <strong>I don&#x27;t often eat breakfast before school.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "III. Write a paragraph (70–80 words) about your school activities last summer. (1,0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "1",
+          "html": "<p>You may use the cues below or create your own ideas.</p>\n<p>plant trees and flowers </p>\n<p>collect rubbish in public places </p>\n<p>recycle plastic bottles and cans </p>\n<p>donate old books or toys to homeless children</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>You may use the cues below or create your own ideas.</p>\n<p>plant trees and flowers </p>\n<p>collect rubbish in public places </p>\n<p>recycle plastic bottles and cans </p>\n<p>donate old books or toys to homeless children</p>\n<p><strong>Last summer, I joined many school activities. My classmates and I planted trees and flowers in the school yard. We also collected rubbish in public places to keep the environment clean. We recycled plastic bottles and cans to protect nature. Besides that, we donated old books and toys to homeless children. These activities helped me learn how to care for the environment and share with others. I felt happy and proud to help my community.</strong></p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "BÀI NGHE 1.wma",
+      "sourceHash": "eb46a4f382731049bd9a25e570cdd626889b49724332e138c6c41debe5b8a1eb",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-08-1.mp3",
+      "duration": 61.04
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "BÀI NGHE 2.wma",
+      "sourceHash": "f1c33e77d7fc6b2cc54667d5391abfac1f122e2e61a9542f986b559e3b6925be",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-08-2.mp3",
+      "duration": 57.67
+    }
+  ],
+  "sourceHash": "cd8f5fd3ec9596e56b02cdc10c6554b50e97d89e1739990dfd836a73495958a5"
+}

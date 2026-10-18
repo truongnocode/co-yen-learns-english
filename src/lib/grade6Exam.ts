@@ -16,6 +16,7 @@ export interface ExamSection {
   title: string;
   part: string;
   introHtml: string;
+  audioStart?: number;
   questions: ExamQuestion[];
 }
 export interface Grade6Exam {
@@ -24,7 +25,7 @@ export interface Grade6Exam {
   title: string;
   subtitle: string;
   sections: ExamSection[];
-  audio: { title: string; src: string; duration: number; sourceName: string }[];
+  audio: { title: string; src: string; duration: number; sectionIds?: string[]; sourceName: string }[];
 }
 export interface ExamSummary {
   id: string;
@@ -42,7 +43,7 @@ export interface ExamAttempt {
   startedAt: number;
 }
 export const newAttempt = (): ExamAttempt => ({ answers: {}, checked: [], submitted: false, startedAt: Date.now() });
-export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade6:v1:${id}:${mode}`;
+export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade${id.startsWith('vedec-g7-') ? 7 : 6}:v1:${id}:${mode}`;
 
 // Short answers accept case, punctuation, apostrophe and contraction variants.
 // They deliberately do not use fuzzy matching, which could accept wrong grammar.

@@ -6,12 +6,12 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { attemptKey, examResult, isAutoScored, isCorrectExamAnswer, newAttempt, restoreAttempt, type ExamAttempt, type ExamMode, type ExamQuestion, type ExamSummary, type Grade6Exam } from '@/lib/grade6Exam';
 import './grade6-tests.css';
 
-const DATA = '/data/grade6-midterm/';
+type ExamGrade = 6 | 7;
 const button = 'inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50';
 const secondary = 'inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 font-bold hover:bg-muted';
 
-async function getData<T,>(path: string, signal: AbortSignal): Promise<T> {
-  const response = await fetch(DATA + path, { signal });
+async function getData<T,>(grade: ExamGrade, path: string, signal: AbortSignal): Promise<T> {
+  const response = await fetch(`/data/grade${grade}-midterm/${path}`, { signal });
   if (!response.ok || !response.headers.get('content-type')?.includes('application/json')) throw new Error('Không tải được đề. Em hãy thử lại.');
   return response.json();
 }
@@ -29,31 +29,31 @@ function ModePicker({ mode, onChange }: { mode: ExamMode; onChange: (mode: ExamM
   </fieldset>;
 }
 
-function ExamCatalog() {
+function ExamCatalog({ grade }: { grade: ExamGrade }) {
   const [exams, setExams] = useState<ExamSummary[]>([]);
   const [mode, setMode] = useState<ExamMode>('practice');
   const [error, setError] = useState('');
   const [retry, setRetry] = useState(0);
   useEffect(() => {
     const controller = new AbortController(); setError('');
-    getData<ExamSummary[]>('index.json', controller.signal).then(setExams).catch(e => { if (!controller.signal.aborted) setError(e.message); });
+    getData<ExamSummary[]>(grade, 'index.json', controller.signal).then(setExams).catch(e => { if (!controller.signal.aborted) setError(e.message); });
     return () => controller.abort();
-  }, [retry]);
+  }, [grade, retry]);
   return <PageShell><main className="mx-auto max-w-5xl px-4 pb-16 pt-28 sm:px-6">
-    <Link to="/grade/6" className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4" /> Lớp 6</Link>
+    <Link to={`/grade/${grade}`} className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4" /> Lớp {grade}</Link>
     <header className="my-6 rounded-3xl bg-primary p-6 text-primary-foreground sm:p-9">
       <span className="text-sm font-bold opacity-85">GLOBAL SUCCESS · VEDEC 2026</span>
       <h1 className="mt-2 font-display text-3xl font-extrabold sm:text-4xl">Cùng ôn thi giữa kỳ I</h1>
-      <p className="mt-3 max-w-2xl leading-relaxed opacity-90">18 đề Tiếng Anh lớp 6, có bài nghe và đáp án. Chọn cách học, chọn một đề và bắt đầu nhé!</p>
+      <p className="mt-3 max-w-2xl leading-relaxed opacity-90">18 đề Tiếng Anh lớp {grade}, có bài nghe và đáp án. Chọn cách học, chọn một đề và bắt đầu nhé!</p>
       <div className="mt-5 flex flex-wrap gap-3 text-sm font-bold"><span className="rounded-full bg-white/15 px-3 py-1.5">18 đề tham khảo</span><span className="flex items-center gap-2 rounded-full bg-white/15 px-3 py-1.5"><Headphones className="h-4 w-4" /> Có file nghe gốc</span></div>
     </header>
     <ModePicker mode={mode} onChange={setMode} />
     <p className="my-5 text-sm leading-relaxed text-muted-foreground">Phần viết đoạn văn và nói để em tự luyện, đối chiếu hướng dẫn hoặc nhờ cô chấm. Bài làm được lưu trên trình duyệt của thiết bị này.</p>
     {error ? <div role="alert" className="rounded-2xl border p-5">{error}<button className={`${secondary} ml-3`} onClick={() => setRetry(x => x + 1)}>Thử lại</button></div> : !exams.length ? <p role="status">Đang tải danh sách đề…</p> : <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {exams.map(exam => <Link key={exam.id} to={`/grade/6/tests/${exam.id}?mode=${mode}`} className="group rounded-2xl border border-border bg-card p-5 shadow-1 transition hover:-translate-y-1 hover:shadow-2">
+      {exams.map(exam => <Link key={exam.id} to={`/grade/${grade}/tests/${exam.id}?mode=${mode}`} className="group rounded-2xl border border-border bg-card p-5 shadow-1 transition hover:-translate-y-1 hover:shadow-2">
         <div className="mb-4 flex items-center justify-between"><span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 font-display text-xl font-extrabold text-primary">{String(exam.number).padStart(2, '0')}</span><Headphones className="h-5 w-5 text-primary" aria-hidden /></div>
         <h2 className="font-display text-xl font-extrabold">{exam.title}</h2>
-        <p className="mt-1 text-sm text-muted-foreground">Giữa học kỳ I · Tiếng Anh 6</p>
+        <p className="mt-1 text-sm text-muted-foreground">Giữa học kỳ I · Tiếng Anh {grade}</p>
         <p className="mt-3 text-sm text-muted-foreground">{exam.questionCount} câu / bài · {exam.audioCount} file nghe</p>
         <span className="mt-5 flex items-center gap-2 font-bold text-primary">{mode === 'practice' ? 'Vào luyện tập' : 'Vào làm bài'}<ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span>
       </Link>)}
@@ -61,11 +61,11 @@ function ExamCatalog() {
   </main></PageShell>;
 }
 
-function AudioTrack({ track, sectionId }: { track: Grade6Exam['audio'][number]; sectionId: string }) {
+function AudioTrack({ track, sectionId, startAt }: { track: Grade6Exam['audio'][number]; sectionId: string; startAt?: number }) {
   const [error, setError] = useState(false);
   return <div className="rounded-2xl border border-border bg-card p-4">
     <label htmlFor={`track-${sectionId}`} className="mb-2 block font-bold">{track.title}</label>
-    <audio id={`track-${sectionId}`} aria-label={track.title} controls preload="metadata" src={track.src} onError={() => setError(true)} onPlay={event => {
+    <audio id={`track-${sectionId}`} aria-label={track.title} controls preload="metadata" src={track.src} onLoadedMetadata={event => { if (startAt) event.currentTarget.currentTime = startAt; }} onError={() => setError(true)} onPlay={event => {
       document.querySelectorAll('audio').forEach(player => { if (player !== event.currentTarget) player.pause(); });
     }} className="w-full" />
     <a className="mt-2 inline-block text-xs font-semibold text-primary underline" href={track.src} target="_blank" rel="noreferrer">{error ? 'Chưa phát được. Mở file nghe riêng' : 'Mở file nghe riêng'}</a>
@@ -101,7 +101,7 @@ function QuestionCard({ question: q, attempt, mode, onAnswer, onCheck }: { quest
   </article>;
 }
 
-function ExamPlayer({ exam, mode }: { exam: Grade6Exam; mode: ExamMode }) {
+function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; grade: ExamGrade }) {
   const questions = exam.sections.flatMap(s => s.questions);
   const listeningSections = exam.sections.filter(s => s.part === 'LISTENING' && s.questions.length);
   const [attempt, setAttempt] = useState<ExamAttempt>(() => {
@@ -144,20 +144,20 @@ function ExamPlayer({ exam, mode }: { exam: Grade6Exam; mode: ExamMode }) {
     </section>}
     <div className="space-y-6">{exam.sections.map(section => {
       const listeningIndex = listeningSections.findIndex(s => s.id === section.id);
-      const track = listeningIndex >= 0 ? exam.audio[exam.audio.length === 1 ? 0 : listeningIndex] : undefined;
+      const track = exam.audio.find(a => a.sectionIds?.includes(section.id)) ?? (listeningIndex >= 0 && !exam.audio.some(a => a.sectionIds) ? exam.audio[exam.audio.length === 1 ? 0 : listeningIndex] : undefined);
       return <section key={section.id} id={section.id} className="scroll-mt-52">
       <h2 className={`mb-4 font-display font-extrabold ${section.questions.length ? 'text-lg' : 'border-b border-border pb-3 text-xl text-primary'}`}>{section.title}</h2>
       {track && <div role="region" aria-label={`Bài nghe cho ${section.title}`} className="mb-4 rounded-3xl bg-primary/5 p-4 sm:p-6">
         <h3 className="mb-2 flex items-center gap-2 font-display text-lg font-extrabold"><Headphones className="h-5 w-5 text-primary" /> Nghe cùng bài</h3>
         <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{exam.audio.length === 1 && listeningSections.length > 1 ? 'File nghe đầy đủ dùng chung cho các phần nghe của đề. Em có thể tua đến phần đang làm.' : 'Nghe file bên dưới để trả lời các câu hỏi trong phần này. Em có thể tạm dừng, tua và nghe lại.'}</p>
-        <AudioTrack track={track} sectionId={section.id} />
+        <AudioTrack track={track} sectionId={section.id} startAt={section.audioStart} />
       </div>}
       {section.introHtml && <div className="mb-4 rounded-2xl border border-border bg-card p-4 sm:p-6"><RichText value={section.introHtml} /></div>}
       <div className="space-y-4">{section.questions.map(q => <QuestionCard key={q.id} question={q} attempt={attempt} mode={mode} onAnswer={onAnswer} onCheck={id => setAttempt(current => ({ ...current, checked: [...new Set([...current.checked, id])] }))} />)}</div>
     </section>; })}</div>
     <div className="my-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5">
       <p className="text-sm text-muted-foreground">{attempt.submitted ? 'Em có thể làm lại hoặc thử một đề khác.' : `${unanswered} câu / bài chưa trả lời. Em vẫn có thể nộp và xem kết quả.`}</p>
-      {attempt.submitted ? <Link to="/grade/6/tests" className={button}>Chọn đề khác <ArrowRight className="h-4 w-4" /></Link> : <button className={button} onClick={() => setConfirm('submit')}><ClipboardCheck className="h-4 w-4" /> Nộp bài và xem kết quả</button>}
+      {attempt.submitted ? <Link to={`/grade/${grade}/tests`} className={button}>Chọn đề khác <ArrowRight className="h-4 w-4" /></Link> : <button className={button} onClick={() => setConfirm('submit')}><ClipboardCheck className="h-4 w-4" /> Nộp bài và xem kết quả</button>}
     </div>
     <AlertDialog open={confirm !== null} onOpenChange={open => { if (!open) setConfirm(null); }}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>{confirm === 'reset' ? 'Làm lại từ đầu?' : 'Em muốn nộp bài?'}</AlertDialogTitle><AlertDialogDescription>{confirm === 'reset' ? 'Bài làm đã lưu của đề này trong chế độ hiện tại sẽ được thay bằng một lượt làm mới.' : unanswered ? `Còn ${unanswered} câu / bài chưa trả lời. Khi nộp, em sẽ xem được kết quả và đáp án; câu chấm tự động chưa trả lời tính là chưa đúng.` : 'Sau khi nộp, em sẽ xem được kết quả và đáp án từng câu.'}</AlertDialogDescription></AlertDialogHeader><AlertDialogFooter><AlertDialogCancel>Quay lại</AlertDialogCancel><AlertDialogAction onClick={() => {
       const action = confirm; setConfirm(null);
@@ -167,7 +167,7 @@ function ExamPlayer({ exam, mode }: { exam: Grade6Exam; mode: ExamMode }) {
   </>;
 }
 
-function ExamDetail({ examId }: { examId: string }) {
+function ExamDetail({ examId, grade }: { examId: string; grade: ExamGrade }) {
   const [exam, setExam] = useState<Grade6Exam | null>(null);
   const [error, setError] = useState('');
   const [retry, setRetry] = useState(0);
@@ -177,17 +177,17 @@ function ExamDetail({ examId }: { examId: string }) {
   const [setupMode, setSetupMode] = useState<ExamMode>('practice');
   useEffect(() => {
     const controller = new AbortController(); setExam(null); setError('');
-    if (!/^vedec-2026-(0[1-9]|1[0-8])$/.test(examId)) { setError('Không tìm thấy đề này.'); return; }
-    getData<Grade6Exam>(examId + '.json', controller.signal).then(setExam).catch(e => { if (!controller.signal.aborted) setError(e.message); });
+    if (!(grade === 6 ? /^vedec-2026-(0[1-9]|1[0-8])$/ : /^vedec-g7-2026-(0[1-9]|1[0-8])$/).test(examId)) { setError('Không tìm thấy đề này.'); return; }
+    getData<Grade6Exam>(grade, examId + '.json', controller.signal).then(setExam).catch(e => { if (!controller.signal.aborted) setError(e.message); });
     return () => controller.abort();
-  }, [examId, retry]);
+  }, [examId, grade, retry]);
   return <PageShell><main className="mx-auto max-w-4xl px-4 pb-12 pt-28 sm:px-6">
-    <Link to="/grade/6/tests" className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4" /> Chọn đề khác</Link>
-    {error ? <div role="alert" className="mt-8 rounded-2xl border p-5">{error}<button className={`${secondary} ml-3`} onClick={() => setRetry(x => x + 1)}>Thử lại</button></div> : !exam ? <p role="status" className="py-10">Đang mở đề…</p> : selected !== 'practice' && selected !== 'test' ? <div className="py-8"><h1 className="mb-6 font-display text-3xl font-extrabold">{exam.title} · Giữa kỳ I · Lớp 6</h1><ModePicker mode={setupMode} onChange={setSetupMode} /><button className={`${button} mt-6`} onClick={() => setParams({ mode: setupMode })}>Bắt đầu làm bài <ArrowRight className="h-4 w-4" /></button></div> : <ExamPlayer key={exam.id + mode} exam={exam} mode={mode} />}
+    <Link to={`/grade/${grade}/tests`} className="inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary"><ArrowLeft className="h-4 w-4" /> Chọn đề khác</Link>
+    {error ? <div role="alert" className="mt-8 rounded-2xl border p-5">{error}<button className={`${secondary} ml-3`} onClick={() => setRetry(x => x + 1)}>Thử lại</button></div> : !exam ? <p role="status" className="py-10">Đang mở đề…</p> : selected !== 'practice' && selected !== 'test' ? <div className="py-8"><h1 className="mb-6 font-display text-3xl font-extrabold">{exam.title} · Giữa kỳ I · Lớp {grade}</h1><ModePicker mode={setupMode} onChange={setSetupMode} /><button className={`${button} mt-6`} onClick={() => setParams({ mode: setupMode })}>Bắt đầu làm bài <ArrowRight className="h-4 w-4" /></button></div> : <ExamPlayer key={exam.id + mode} exam={exam} mode={mode} grade={grade} />}
   </main></PageShell>;
 }
 
-export default function Grade6TestsPage() {
+export default function Grade6TestsPage({ grade = 6 }: { grade?: ExamGrade }) {
   const { examId } = useParams();
-  return examId ? <ExamDetail examId={examId} /> : <ExamCatalog />;
+  return examId ? <ExamDetail key={grade + examId} examId={examId} grade={grade} /> : <ExamCatalog key={grade} grade={grade} />;
 }

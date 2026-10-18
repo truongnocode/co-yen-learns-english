@@ -1,0 +1,674 @@
+{
+  "id": "vedec-g7-2026-06",
+  "number": 6,
+  "title": "Đề 06",
+  "subtitle": "Tiếng Anh 7 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "PART A: LISTENING (2.0 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen and tick true (T) or false (F) to the statement. (1.0 point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. Healthy habits help us keep fit and avoid disease.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. Healthy habits help us keep fit and avoid disease.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. We should eat more fruit and vegetables.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>2. We should eat more fruit and vegetables.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. We should eat much meat, egg and cheese.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>3. We should eat much meat, egg and cheese.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Soft drinks are good for our health</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. Soft drinks are good for our health</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Playing sports will help you keep fit.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>5. Playing sports will help you keep fit.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. You will hear five short conversations twice. There is one question for each conversation. For questions 1-5, circle the right answer. (1.0 point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>1.  How will Mary travel to Scotland?</p>\n<p>A. by bus\t\t\t\tB. by car\t\t\t\t\tC. by train</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>1.  How will Mary travel to Scotland?</p>\n<p>A. by bus\t\t\t\t<strong>B. by car</strong>\t\t\t\t\tC. by train</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>2. Where are the shoes?</p>\n<p>A. under the window\t\tB. under the table\t\t\t       \tC. on the chair</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>2. Where are the shoes?</p>\n<p><strong>A. under the window</strong><strong>\t</strong>\tB. under the table\t\t\t       \tC. on the chair</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>3. When will the football match start next week?</p>\n<p>A. 11.45 am\t\t\t\tB. 12.15 pm\t\t\t\t       \tC. 2.00 pm</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>3. When will the football match start next week?</p>\n<p>A. 11.45 am\t\t\t\tB. 12.15 pm\t\t\t\t       \t<strong>C. 2.00 pm</strong></p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p>4. Which box of chocolates do they buy?</p>\n<p>A. small round box\t\t           B. big round box\t\t\t\tC. square box</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>4. Which box of chocolates do they buy?</p>\n<p>A. small round box\t\t<strong>           </strong><strong>B. big round box</strong><strong>\t</strong>\t\t\tC. square box</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>5. When’s Wendy’s birthday?</p>\n<p>A. 16 May\t\t\t          \tB. 18 May\t\t\t\t\tC. 21 May</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>5. When’s Wendy’s birthday?</p>\n<p>A. 16 May\t\t\t          <strong>\t</strong><strong>B. 18 May</strong><strong>\t</strong>\t\t\t\tC. 21 May</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "PART B: LANGUAGE FOCUS (2.0 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "Choose the best answer A, B, C or D to complete the sentences.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "1",
+          "html": "<p>1. Lan hates ___________ to the concert.</p>\n<p>A. go</p>\n<p>B. going\t</p>\n<p>C. went</p>\n<p>D. goes</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. Lan hates ___________ to the concert.</p>\n<p>A. go</p>\n<p><strong>B. going</strong><strong>\t</strong></p>\n<p>C. went</p>\n<p>D. goes</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "2",
+          "html": "<p>2. He                  this hobby when he was 5 years old.</p>\n<p>A. begins</p>\n<p>B. begin</p>\n<p>C. began</p>\n<p>D. begun</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. He                  this hobby when he was 5 years old.</p>\n<p>A. begins</p>\n<p>B. begin</p>\n<p><strong>C. began</strong></p>\n<p>D. begun</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "3",
+          "html": "<p>3. It is __________ to eat so much junk food.</p>\n<p>A. healthy </p>\n<p>B. unhealthy</p>\n<p>C. healthful</p>\n<p>D. health </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. It is __________ to eat so much junk food.</p>\n<p>A. healthy </p>\n<p><strong>B. unhealthy</strong></p>\n<p>C. healthful</p>\n<p>D. health </p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "4",
+          "html": "<p>4. “Would you like me to turn off your computer? - “__________ I’ll do it myself”</p>\n<p>A. No, thanks </p>\n<p>B. Yes, please                </p>\n<p>C. Don’t do it</p>\n<p>D. Of course</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. “Would you like me to turn off your computer? - “__________ I’ll do it myself”</p>\n<p><strong>A. No, thanks</strong><strong> </strong></p>\n<p>B. Yes, please                </p>\n<p>C. Don’t do it</p>\n<p>D. Of course</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "5",
+          "html": "<p>5. ___________ a horse is one of my favorite hobbies.</p>\n<p>A. Going</p>\n<p>B. Making</p>\n<p>C. Riding</p>\n<p>D. Building</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. ___________ a horse is one of my favorite hobbies.</p>\n<p>A. Going</p>\n<p>B. Making</p>\n<p><strong>C. Riding</strong></p>\n<p>D. Building</p>"
+        },
+        {
+          "id": "s5-q6",
+          "number": "6",
+          "html": "<p>6. I prefer collecting dolls _________ stamps.</p>\n<p>A. than</p>\n<p>B. at</p>\n<p>C. on</p>\n<p>D. to</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. I prefer collecting dolls _________ stamps.</p>\n<p>A. than</p>\n<p>B. at</p>\n<p>C. on</p>\n<p><strong>D. to</strong></p>"
+        },
+        {
+          "id": "s5-q7",
+          "number": "7",
+          "html": "<p>7.The Japanese eat a lot of fish instead of meat, __________ they stay more healthy</p>\n<p>A. but\t </p>\n<p>B. because</p>\n<p>C. although</p>\n<p>D. so</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7.The Japanese eat a lot of fish instead of meat, __________ they stay more healthy</p>\n<p>A. but\t </p>\n<p>B. because</p>\n<p>C. although</p>\n<p><strong>D. </strong><strong>so</strong></p>"
+        },
+        {
+          "id": "s5-q8",
+          "number": "8",
+          "html": "<p>8. What does the sign say? <br>A. You can talk loudly here<br>B. This place is not important <br>C. People can make noise freely<br>D. No noise is allowed here.            </p>\n<p><img src=\"/data/grade7-midterm/images/651374f468c36017.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>PLEASE KEEP SILENCE → D. No noise is allowed here.</p>"
+        },
+        {
+          "id": "s5-q9",
+          "number": "9",
+          "html": "<p>9. You should eat ________ fruits and vegetables because they are good for your health.</p>\n<p>A. more </p>\n<p>B. less</p>\n<p>C. little</p>\n<p>D. no</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. You should eat ________ fruits and vegetables because they are good for your health.</p>\n<p><strong>A.</strong><strong> </strong><strong>more</strong><strong> </strong></p>\n<p>B. less</p>\n<p>C. little</p>\n<p>D. no</p>"
+        },
+        {
+          "id": "s5-q10",
+          "number": "10",
+          "html": "<p>10. Nowadays, a lot of __________ live in a nursing home.</p>\n<p>A. homeless people\t </p>\n<p>B. elderly people</p>\n<p>C. street children</p>\n<p>D. disabled people</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10. Nowadays, a lot of __________ live in a nursing home.</p>\n<p>A. homeless people\t </p>\n<p><strong>B.</strong><strong> </strong><strong>elderly people</strong></p>\n<p>C. street children</p>\n<p>D. disabled people</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "PART C: READING (2.0 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s7",
+      "title": "I. Read the following passage and put a word in the box in each of the numbered blanks. (1.0 point)",
+      "part": "READING",
+      "introHtml": "<p>I have a very interesting and (1)<u>\t</u><u>\t</u> hobby. I make short video clips with my digital camera. It was my birthday present from my parents last year. Since then, I have (2) <u>\t</u><u>\t</u> three short films. It’s great fun! I started asking my friends and relatives to take (3)<u>\t</u><u>\t</u> in the films. I have tried to write the story for my video clips. When I have finished the script, 1 make copies for the “actors”. Each scene is small and they can look at the words just (4) _____<u> </u><u> </u>we start filming. We film at<u> </u>the weekend in my neighbourhood, (5)______ no one has to travel far. When the video clip is finished, I invite all the “actors” and we watch the film at my house. </p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>1. A. enjoy</p>\n<p>B. enjoyed</p>\n<p>C. enjoying</p>\n<p>D. enjoyable</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. enjoy</p>\n<p>B. enjoyed</p>\n<p>C. enjoying</p>\n<p><strong>D. enjoyable</strong></p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>2. A. done</p>\n<p>B. played</p>\n<p>C. made</p>\n<p>D. watched</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. A. done</p>\n<p>B. played</p>\n<p><strong>C. made</strong></p>\n<p>D. watched</p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>3. A. part </p>\n<p>B. role</p>\n<p>C. scene</p>\n<p>D. film</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. <strong>A. part</strong> </p>\n<p>B. role</p>\n<p>C. scene</p>\n<p>D. film</p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>4. A. before</p>\n<p>B. after</p>\n<p>C. only</p>\n<p>D. until</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. <strong>A. before</strong></p>\n<p>B. after</p>\n<p>C. only</p>\n<p>D. until</p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p>5. A. although</p>\n<p>B. because</p>\n<p>C. but</p>\n<p>D. so</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. A. although</p>\n<p>B. because</p>\n<p>C. but</p>\n<p><strong>D. so</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Read the following passage and do the tasks below. (1.0 point)",
+      "part": "READING",
+      "introHtml": "<p>Calories are units of energy. They refer to the amount of energy you get from foods and drinks, and the amount of energy you use through physical activities. For example, an apple has about 80 calories, while a 1.6 km walk might use up 100 calories. Calories are important for human health, and the key is having the right amount of it.</p>\n<p> Everyone needs different amounts of energy per day depending on age, size and activity levels. An athlete needs more calories than an office worker. To stay in shape, an average adult requires at least 1,800 calories per day (according to the Food and Agriculture Organization of the United Nations). If we eat just the number of calories our body needs each day, we will probably be healthy. However, eating too much can make you put on weight. To lose weight, eat fewer calories than your body burns each day.</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p>1. What are calories?</p>\n<p>A. They are units of energy. \t\t\tB. They are the amount of energy.</p>\n<p>C. They are important. \t\t\t\tD. Each person needs different amounts of calories.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. What are calories?</p>\n<p><strong>A. They are units of energy.</strong><strong> </strong><strong>\t</strong>\t\tB. They are the amount of energy.</p>\n<p>C. They are important. \t\t\t\tD. Each person needs different amounts of calories.</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p>2. How many calories does an apple contain?</p>\n<p>A. 100 calories \t\t\t\t\tB. About 80 calories</p>\n<p>C. About 160 calories \t\t\t\tD. None are correct.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. How many calories does an apple contain?</p>\n<p>A. 100 calories \t\t\t\t\t<strong>B. About 80 calories</strong></p>\n<p>C. About 160 calories \t\t\t\tD. None are correct.</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "3",
+          "html": "<p>3. What factor decides the amount of energy a person needs each day?</p>\n<p>A. Age \t\tB. Size \t\tC. Activity levels \t\tD. All are correct.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. What factor decides the amount of energy a person needs each day?</p>\n<p>A. Age \t\tB. Size \t\tC. Activity levels \t\t<strong>D. All are correct.</strong></p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "4",
+          "html": "<p>4. What is a healthy number of calories per day?</p>\n<p>A. At least 160 calories \t\t\t\tB. About 80 calories</p>\n<p>C. At least 1,800 calories \t\t\t\tD. None are correct.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. What is a healthy number of calories per day?</p>\n<p>A. At least 160 calories \t\t\t\tB. About 80 calories</p>\n<p><strong>C. At least 1,800 calories</strong><strong> </strong><strong>\t</strong>\t\t\tD. None are correct.</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "5",
+          "html": "<p>5. What happens when we eat too many calories?</p>\n<p>A. We can put on weight \t\t\t\tB. We will be healthy.</p>\n<p>C. We can lose weight. \t\t\t\tD. We can reduce calorie intake.</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. What happens when we eat too many calories?</p>\n<p><strong>A. We can put on weight</strong><strong> </strong><strong>\t</strong>\t\t\tB. We will be healthy.</p>\n<p>C. We can lose weight. \t\t\t\tD. We can reduce calorie intake.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "PART D: WRITING (2.0 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s10",
+      "title": "I. Reorder the words to make correct sentences. (0.2 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p>old textbooks/We/rural areas./donate/children/in/to</p>",
+          "kind": "text",
+          "answers": [
+            "We donate old textbooks to children in rural areas",
+            "We donate old textbooks to children in rural areas."
+          ],
+          "referenceHtml": "<p>old textbooks/We/rural areas./donate/children/in/to</p>\n<p><strong>We donate old textbooks to children in rural areas.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "II. Put the following sentences in correct order to have a meaningful exchange. (0.2 point)",
+      "part": "WRITING",
+      "introHtml": "<p>a. You can use eye drops.</p>\n<p>b. Yes. Thank you.</p>\n<p>c. My eyes are tired.</p>",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p>A. a - b - c</p>\n<p>B. b - a - c</p>\n<p>C. c – a - b</p>\n<p>D. b - c - a </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. a - b - c</p>\n<p>B. b - a - c</p>\n<p><strong>C. c – a - b</strong></p>\n<p>D. b - c - a </p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "III. Complete the second sentence so that it means the same as the sentence before. (0.6 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p>1. Her hobby is raising money for the poor.</p>\n<p>=&gt; She enjoys______________________________________________________. </p>",
+          "kind": "text",
+          "answers": [
+            "raising money for the poor",
+            "She enjoys raising money for the poor."
+          ],
+          "referenceHtml": "<p>1. Her hobby is raising money for the poor.</p>\n<p>=&gt; She enjoys <strong>raising money for the poor.</strong></p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "2",
+          "html": "<p>2.You should water vegetables in the school garden.</p>\n<p>=&gt; It is a good idea__________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "to water vegetables in the school garden",
+            "It is a good idea to water vegetables in the school garden."
+          ],
+          "referenceHtml": "<p>2.You should water vegetables in the school garden.</p>\n<p>=&gt; It is a good idea <strong>to water vegetables in the school garden.</strong></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "4",
+          "html": "<p>4. My dad loves outdoor activities. I love outdoor activities.</p>\n<p>=&gt; My dad_________________________________________________________.</p>",
+          "kind": "text",
+          "answers": [
+            "and I love outdoor activities",
+            "My dad and I love outdoor activities."
+          ],
+          "referenceHtml": "<p>4. My dad loves outdoor activities. I love outdoor activities.</p>\n<p>=&gt; My dad <strong>and I love outdoor activities.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "II. Write a paragraph about 70 words about how to stay healthy. (1.0 point)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p>You can use the following cues:</p>\n<p>eat a healthy diet</p>\n<p>do morning exercises </p>\n<p>sleep well</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>You can use the following cues:</p>\n<p>eat a healthy diet</p>\n<p>do morning exercises </p>\n<p>sleep well</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "PART E: SPEAKING (2.0 POINTS)",
+      "part": "SPEAKING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "Nói",
+          "html": "<p>A. <strong>Personal information. (1.0 point)</strong></p>\n<p>1. What’s your name?                </p>\n<p>2. Which school do you go to?  </p>\n<p>3. What is your favourite subject? </p>\n<p>B. <strong>Topic: Talk about your favorite </strong><strong>hobby</strong><strong>. (1.0 point)</strong></p>\n<p>What’s your hobby?</p>\n<p>When did you start your hobby?</p>\n<p>Who do you share your hobby with?</p>\n<p> What do you need to maintain your hobby?</p>\n<p>What are the advantages of your hobby?</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>A. <strong>Personal information. (1.0 point)</strong></p>\n<p>1. What’s your name?                </p>\n<p>2. Which school do you go to?  </p>\n<p>3. What is your favourite subject? </p>\n<p>B. <strong>Topic: Talk about your favorite </strong><strong>hobby</strong><strong>. (1.0 point)</strong></p>\n<p>What’s your hobby?</p>\n<p>When did you start your hobby?</p>\n<p>Who do you share your hobby with?</p>\n<p> What do you need to maintain your hobby?</p>\n<p>What are the advantages of your hobby?</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "file nghe 1.mp3",
+      "sourceHash": "99431199115a5135f010b4bdfa03928fe1fe8ddbc31914cf1f02c45f05579d8c",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-06-1.mp3",
+      "duration": 80.378776
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "file nghe 2.mp3",
+      "sourceHash": "2d48576ba9223bc5d922973e1f62b9ecd77457db7c0d9c937a5cee73876a0bf6",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-06-2.mp3",
+      "duration": 332.042449
+    }
+  ],
+  "sourceHash": "73c246f18084e3de9cca16739af3e992fda42e1fc75f1a9c819866d1bc85de32"
+}

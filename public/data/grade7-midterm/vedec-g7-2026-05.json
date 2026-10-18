@@ -1,0 +1,682 @@
+{
+  "id": "vedec-g7-2026-05",
+  "number": 5,
+  "title": "Đề 05",
+  "subtitle": "Tiếng Anh 7 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.0 POINTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "I. Listen and tick true (T) or false (F) to the statement. (1.0 p)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1. Tom is a member of the Youth Club.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>1. Tom is a member of the Youth Club.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. Tom goes to hospitals to provide food every two weeks.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>2. Tom goes to hospitals to provide food every two weeks.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. At the nursing house, Tom and friends cook for the elderly.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>3. At the nursing house, Tom and friends cook for the elderly.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Tom and friends go to orphanages to learn English.</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>4. Tom and friends go to orphanages to learn English.</p>"
+        },
+        {
+          "id": "s2-q5",
+          "number": "5",
+          "html": "<p>5. Ha feels very excited about Tom and his friends’ work.</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p>5. Ha feels very excited about Tom and his friends’ work.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "II. Listen to the conversation. Circle A, B or C to complete the sentences. You will listen TWICE. (1.0 p)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "1",
+          "html": "<p>1. </p><p>Paul talks to the __________.</p>\n<p><strong>A</strong>.   receptionist</p>\n<p><strong>B</strong>. doctor</p>\n<p><strong>C</strong>. nurse</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>1. </p><p>Paul talks to the __________.</p>\n<p><strong>A</strong>.   receptionist</p>\n<p><strong>B</strong>. doctor</p>\n<p><strong>C</strong>. nurse</p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "2",
+          "html": "<p>2. </p><p>Paul has __________.</p>\n<p><strong>A</strong>. chills</p>\n<p><strong>B</strong>. ache</p>\n<p><strong>C</strong>. flu</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>2. </p><p>Paul has __________.</p>\n<p><strong>A</strong>. chills</p>\n<p><strong>B</strong>. ache</p>\n<p><strong>C</strong>. flu</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "3",
+          "html": "<p>3. </p><p>His body hurts and he __________.</p>\n<p><strong>A</strong>. coughs and has a temperature.</p>\n<p><strong>B</strong>. coughs, and has a temperature and a headache.</p>\n<p><strong>C</strong>. coughs, and has a headache and stomach ache.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>3. </p><p>His body hurts and he __________.</p>\n<p><strong>A</strong>. coughs and has a temperature.</p>\n<p><strong>B</strong>. coughs, and has a temperature and a headache.</p>\n<p><strong>C</strong>. coughs, and has a headache and stomach ache.</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "4",
+          "html": "<p>4. </p><p>He has to fill out some __________.</p>\n<p><strong>A</strong>. forms</p>\n<p><strong>B</strong>. reports</p>\n<p><strong>C</strong>. tests</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>4. </p><p>He has to fill out some __________.</p>\n<p><strong>A</strong>. forms</p>\n<p><strong>B</strong>. reports</p>\n<p><strong>C</strong>. tests</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "5",
+          "html": "<p>5. </p><p>He will sit in the __________before a nurse calls his name.</p>\n<p><strong>A</strong>. corner</p>\n<p><strong>B</strong>. desk</p>\n<p><strong>C</strong>. waiting room</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C"
+          ],
+          "referenceHtml": "<p>5. </p><p>He will sit in the __________before a nurse calls his name.</p>\n<p><strong>A</strong>. corner</p>\n<p><strong>B</strong>. desk</p>\n<p><strong>C</strong>. waiting room</p>"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "PART B. LANGUAGE FOCUS (2.0 points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "I. Choose the best option to complete each sentence. Circle A, B, C or D.",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "1",
+          "html": "<p>1. My dad has a big bookshelf because he is interested ______ collecting old books.</p>\n<p>A. at</p>\n<p>B. on </p>\n<p>C. in</p>\n<p>D. of</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. My dad has a big bookshelf because he is interested ______ collecting old books.</p>\n<p>A. at</p>\n<p>B. on </p>\n<p>C. in</p>\n<p>D. of</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "2",
+          "html": "<p>2. My sister spends one hour in the garden every day. Her hobby is ______.</p>\n<p>A. gardening</p>\n<p> B. making models</p>\n<p>C. riding a horse</p>\n<p>D. collecting coins</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. My sister spends one hour in the garden every day. Her hobby is ______.</p>\n<p>A. gardening</p>\n<p> B. making models</p>\n<p>C. riding a horse</p>\n<p>D. collecting coins</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "3",
+          "html": "<p>3. Those students ______ all the litter on the street.</p>\n<p>A. like</p>\n<p>B. waste</p>\n<p>C. pick up </p>\n<p>D. plant</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Those students ______ all the litter on the street.</p>\n<p>A. like</p>\n<p>B. waste</p>\n<p>C. pick up </p>\n<p>D. plant</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "4",
+          "html": "<p>4. If you have ______, use lip balm.</p>\n<p>A. chapped lips   </p>\n<p>B. sunburn  </p>\n<p>C. red spots </p>\n<p>D. white pimples</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. If you have ______, use lip balm.</p>\n<p>A. chapped lips   </p>\n<p>B. sunburn  </p>\n<p>C. red spots </p>\n<p>D. white pimples</p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "5",
+          "html": "<p>5.Linh: “My eyes are tired.”           - Minh: “______”</p>\n<p>A. Let’s go to the dentist.</p>\n<p>B. Thank you.</p>\n<p>C. You are welcome.</p>\n<p>D. You shouldn’t read in dim light.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5.Linh: “My eyes are tired.”           - Minh: “______”</p>\n<p>A. Let’s go to the dentist.</p>\n<p>B. Thank you.</p>\n<p>C. You are welcome.</p>\n<p>D. You shouldn’t read in dim light.</p>"
+        },
+        {
+          "id": "s5-q6",
+          "number": "6",
+          "html": "<p>6. Watching too much TV is not good ………. you or your eyes.</p>\n<p>A. at </p>\n<p>B.for </p>\n<p>C.with </p>\n<p>D. to</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. Watching too much TV is not good ………. you or your eyes.</p>\n<p>A. at </p>\n<p>B.for </p>\n<p>C.with </p>\n<p>D. to</p>"
+        },
+        {
+          "id": "s5-q7",
+          "number": "7",
+          "html": "<p>7. We can postcards and sell them to ………….money to help the homeless.</p>\n<p>A. rise </p>\n<p>B.raise </p>\n<p>C.get </p>\n<p>D. own</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. We can postcards and sell them to ………….money to help the homeless.</p>\n<p>A. rise </p>\n<p>B.raise </p>\n<p>C.get </p>\n<p>D. own</p>"
+        },
+        {
+          "id": "s5-q8",
+          "number": "8",
+          "html": "<p>8. The underground in Japan is much …………..than taxis or buses .</p>\n<p>A. slow </p>\n<p>B.quick </p>\n<p>C.quicker </p>\n<p>D. more quick </p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. The underground in Japan is much …………..than taxis or buses .</p>\n<p>A. slow </p>\n<p>B.quick </p>\n<p>C.quicker </p>\n<p>D. more quick </p>"
+        },
+        {
+          "id": "s5-q9",
+          "number": "9",
+          "html": "<p>9. Some of a vegetarian’s main food are …………..and vegetables.</p>\n<p>A. pork</p>\n<p>B. fish </p>\n<p>C.beef </p>\n<p>D. tofu</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. Some of a vegetarian’s main food are …………..and vegetables.</p>\n<p>A. pork</p>\n<p>B. fish </p>\n<p>C.beef </p>\n<p>D. tofu</p>"
+        },
+        {
+          "id": "s5-q10",
+          "number": "10",
+          "html": "<p><strong>10</strong>. Some foreigners volunteered to teach English at my school _______</p>\n<p><strong>A</strong>. every year</p>\n<p><strong>B</strong>. last year</p>\n<p><strong>C</strong>. next year</p>\n<p><strong>D</strong>. sometimes</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>10</strong>. Some foreigners volunteered to teach English at my school _______</p>\n<p><strong>A</strong>. every year</p>\n<p><strong>B</strong>. last year</p>\n<p><strong>C</strong>. next year</p>\n<p><strong>D</strong>. sometimes</p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "PART C. READING (2.0 points)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s7",
+      "title": "I. Read the following sign or notice and circle the letter A, B, C, or D to indicate the correct answer to each of the following questions (0.4 p).",
+      "part": "READING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong>.What is the meaning of the sign below?</p>\n<p><strong></strong><img src=\"/data/grade7-midterm/images/ddf238a021714d17.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p>A. The paint is dry and safe to touch.</p>\n<p>B. The paint is still wet, so please do not touch it.</p>\n<p>C. You are encouraged to touch the paint.</p>\n<p>D. The paint is not for public use.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1</strong>.What is the meaning of the sign below?</p>\n<p>A. The paint is dry and safe to touch.</p>\n<p>B. The paint is still wet, so please do not touch it.</p>\n<p>C. You are encouraged to touch the paint.</p>\n<p>D. The paint is not for public use.</p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong>What is the meaning of the sign below?</p>\n<p><img src=\"/data/grade7-midterm/images/29fdd0b3701b19de.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"></p>\n<p>A. Running is not encouraged here, so you should run as much as you can.</p>\n<p>B. Running is allowed in some specific places, but not here.</p>\n<p>C. Only children are allowed to run here; adults should walk.</p>\n<p>D. Running is not allowed in this area, so you need to walk instead of running.</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. </strong>What is the meaning of the sign below?</p>\n<p>A. Running is not encouraged here, so you should run as much as you can.</p>\n<p>B. Running is allowed in some specific places, but not here.</p>\n<p>C. Only children are allowed to run here; adults should walk.</p>\n<p>D. Running is not allowed in this area, so you need to walk instead of running.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "II. Read the following passage and circle the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks. (0.8 p)",
+      "part": "READING",
+      "introHtml": "<p>Headache is a very common disease. The symptoms (<strong>1</strong>) _______ a headache are various. People may (<strong>2</strong>) _______ pains only one side of the head. Sometimes when the pain goes away, the head is sore. People have a headache (<strong>3</strong>) _______ they work too hard or they are too nervous about something. (<strong>4</strong>) _______ can help cure the disease but people usually have to do more than taking tablets. They can prevent headaches by changing their diets or their lifestyles or simply by going to bed.</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "1",
+          "html": "<p><strong>1. </strong><strong>A. </strong>on\t<strong>B. </strong>in\t<strong>C. </strong>of\t<strong>D. </strong>at</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>1. </strong><strong>A. </strong>on\t<strong>B. </strong>in\t<strong>C. </strong>of\t<strong>D. </strong>at</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "2",
+          "html": "<p><strong>2. </strong><strong>A. </strong>be\t<strong>B. </strong>have\t<strong>C. </strong>happen\t<strong>D. </strong>take</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>2. </strong><strong>A. </strong>be\t<strong>B. </strong>have\t<strong>C. </strong>happen\t<strong>D. </strong>take</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "3",
+          "html": "<p><strong>3. </strong><strong>A. </strong>when\t<strong>B. </strong>but\t<strong>C. </strong>so\t<strong>D. </strong>and</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>3. </strong><strong>A. </strong>when\t<strong>B. </strong>but\t<strong>C. </strong>so\t<strong>D. </strong>and</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "4",
+          "html": "<p><strong>4. </strong><strong>A. </strong>medicine\t<strong>B. </strong>doctor\t<strong>C. </strong>sport\t<strong>D. </strong>fruit</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>4. </strong><strong>A. </strong>medicine\t<strong>B. </strong>doctor\t<strong>C. </strong>sport\t<strong>D. </strong>fruit</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "III. Read the following passage and circle the letter A, B, C, or D to indicate the correct answer to each of the questions. (0.8 p)",
+      "part": "READING",
+      "introHtml": "<p><strong>The benefits of voluntary work</strong></p>\n<p>Nowadays, volunteer work attracts a large number of attendants from different age groups because of its huge benefits. Firstly, voluntary work provides the <strong><u>adolescents</u></strong> many precious opportunities to develop social skills, foster independence and form the ability to deal with difficulties in different situations. Secondly, every member will be taught how to work in a team, the way to make conversation or the responsibility of finishing a task. The experience you gain will be valuable for your future, helping you tackle serious problems in later life. In addition, volunteer work can help US adapt to something new and make many new friends through regular activities of clubs or organizations. We can also have a chance to travel more and explore more interesting things we have not experienced before. In conclusion, it is very good to do voluntary work.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p>1. What is the main idea of the passage?</p>\n<p>A. Voluntary work is only for young people.</p>\n<p>B. Voluntary work helps people develop skills and make friends. </p>\n<p>C. Voluntary work is difficult and boring.</p>\n<p>D. Voluntary work is only done in clubs.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. What is the main idea of the passage?</p>\n<p>A. Voluntary work is only for young people.</p>\n<p>B. Voluntary work helps people develop skills and make friends. </p>\n<p>C. Voluntary work is difficult and boring.</p>\n<p>D. Voluntary work is only done in clubs.</p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "2",
+          "html": "<p>2. Which of the following is NOT mentioned in the passage?</p>\n<p>A. Voluntary work helps people develop social skills.</p>\n<p>B. Volunteers learn how to work in teams.</p>\n<p>C. Voluntary work is only for adults. </p>\n<p>D. Voluntary work can help people travel and explore.</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. Which of the following is NOT mentioned in the passage?</p>\n<p>A. Voluntary work helps people develop social skills.</p>\n<p>B. Volunteers learn how to work in teams.</p>\n<p>C. Voluntary work is only for adults. </p>\n<p>D. Voluntary work can help people travel and explore.</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "3",
+          "html": "<p>3. Why does voluntary work attract people from different age groups?</p>\n<p>A. Because it is easy and doesn’t require effort.</p>\n<p>B. Because it offers many benefits and opportunities. </p>\n<p>C. Because it is only for young people.</p>\n<p>D. Because it is done only once a year.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Why does voluntary work attract people from different age groups?</p>\n<p>A. Because it is easy and doesn’t require effort.</p>\n<p>B. Because it offers many benefits and opportunities. </p>\n<p>C. Because it is only for young people.</p>\n<p>D. Because it is done only once a year.</p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "4",
+          "html": "<p>4. The word “<strong>adolescents</strong>” in the passage refers to_________</p>\n<p>A. Old people\t\t\t\t\t\tB. Young people/teenagers </p>\n<p>C. Children under 5\t\t\t\t\tD. Adults over 30</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. The word “<strong>adolescents</strong>” in the passage refers to_________</p>\n<p>A. Old people\t\t\t\t\t\tB. Young people/teenagers </p>\n<p>C. Children under 5\t\t\t\t\tD. Adults over 30</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "PART D. WRITING (2.0 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "I. Circle the letter A, B, C or D to indicate the best arrangement of utterances or sentences to make a meaningful exchange. (0.2 p)",
+      "part": "WRITING",
+      "introHtml": "<p>a. Tom: I’m joining a community clean-up on Saturday. We’re cleaning the park near my house.</p>\n<p>b. Anna: Hey! What are you doing this weekend?</p>\n<p>c. Tom: Of course! We start at 8 a.m. Just bring gloves and a trash bag.</p>\n<p>d. Anna: That sounds great! I’ve never done that before. Can I join too?</p>",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p>A. b-a-c-d                                  B. b-a-d-c\tC. d-c-a-b\t\t\tD. d-c-b-a</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. b-a-c-d                                  B. b-a-d-c\tC. d-c-a-b\t\t\tD. d-c-b-a</p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "II. Use the provided words/phrases to write a complete sentence. (0.2p)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p>1. classical/ My/ likes/ mother/ to/ music/. / listening</p>",
+          "kind": "text",
+          "answers": [
+            "My mother likes listening to classical music",
+            "My mother likes listening to classical music."
+          ],
+          "referenceHtml": "<p>1. classical/ My/ likes/ mother/ to/ music/. / listening</p>\n<p>     My mother likes listening to classical music.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "III. Rewrite each of the following sentences in another way so that it means almost the same as the sentence printed before it. (0.6 p)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "1",
+          "html": "<p><strong>1</strong>. My mother likes cooking. My sister likes cooking, too .</p>\n<p> My mother and  ………………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "my sister like cooking",
+            "My mother and my sister like cooking"
+          ],
+          "referenceHtml": "<p><strong>1</strong>. My mother likes cooking. My sister likes cooking, too .</p>\n<p> My mother and my sister like cooking ………………………..</p>"
+        },
+        {
+          "id": "s13-q2",
+          "number": "2",
+          "html": "<p><strong>2</strong>. It&#x27;s not good to stay up so late to listen to music.</p>\n<p> You shouldn’t …………………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "stay up so late to listen to music",
+            "You shouldn't stay up so late to listen to music"
+          ],
+          "referenceHtml": "<p><strong>2</strong>. It&#x27;s not good to stay up so late to listen to music.</p>\n<p> You shouldn’t stay up so late to listen to music ………………..</p>"
+        },
+        {
+          "id": "s13-q3",
+          "number": "3",
+          "html": "<p><strong>3</strong>. I love collecting teddy bears.</p>\n<p> My hobby ……………………………………………………………………….</p>",
+          "kind": "text",
+          "answers": [
+            "is collecting teddy bears",
+            "My hobby is collecting teddy bears"
+          ],
+          "referenceHtml": "<p><strong>3</strong>. I love collecting teddy bears.</p>\n<p> My hobby is collecting teddy bears ….</p>"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "II. Write a paragraph (about 70 - 80 words) about things we should do to have a healthy life. (1 p)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s14-q1",
+          "number": "1",
+          "html": "<p>You can use the following questions as cues:</p>\n<p>• What food should we eat?</p>\n<p>• What outdoor activities should we take part in?</p>\n<p>• What good habits should we have?</p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>Marking scheme:</p>\n<p>\t\tThe impression mark is based on the following scheme:</p>\n<p>1. Format: (0.1 point for correct format): One paragraph only with the introduction, the body, and the conclusion.</p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.</p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.</p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "PART E – SPEAKING(2.0 POINTS)",
+      "part": "SPEAKING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s15-q1",
+          "number": "Nói",
+          "html": "<p><strong>I. Answer the personal questions.</strong></p><p>1. What is your full name?</p>\n<p>2. How many people are there in your family?</p>\n<p>3. What do you do in your free time?</p><p><strong>II.Talk about the topic.</strong></p><p>Tell me about<strong> </strong>your hobby</p>\n<p>Tell me about healthy living</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p>1. What is your full name?</p>\n<p>2. How many people are there in your family ?</p>\n<p>3. What do you do in your free time?</p><p>Tell me about<strong> </strong>your hobby</p>\n<p>Tell me about a healthy living</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "BÀI NGHE 1.mp3",
+      "sourceHash": "3fb3972a381bd659d0f6b895f8db110cf569148515d88cf139c44b4a6673f0cf",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-05-1.mp3",
+      "duration": 146.239274
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "BÀI NGHE 2.mp3",
+      "sourceHash": "96701bb2fc6a3ae832f7980126b46915b98f85a1b19f35db21d9c270bab26af5",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-05-2.mp3",
+      "duration": 276.795601
+    }
+  ],
+  "sourceHash": "cb9f94156d2b44f23f8687a40ce3b7bb6850a0d9399f159fbcfb0cf3ccb05ca7"
+}

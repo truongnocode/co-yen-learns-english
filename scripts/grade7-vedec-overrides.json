@@ -1,0 +1,936 @@
+{
+  "01": {
+    "s6-q1": {
+      "answers": [
+        "Does / go",
+        "Does go",
+        "Does Lan go to the zoo on Sundays?"
+      ]
+    },
+    "s10-q1": {
+      "answers": [
+        "At about seven in the morning",
+        "At about seven",
+        "About seven",
+        "At about 7",
+        "They usually have breakfast at about seven in the morning",
+        "Vietnamese people usually have breakfast at about seven in the morning"
+      ]
+    },
+    "s10-q3": {
+      "answers": [
+        "Wonderful",
+        "It is wonderful",
+        "The food in Viet Nam is wonderful"
+      ]
+    },
+    "s12-q6": {
+      "answers": [
+        "more expensive than the red one",
+        "The black car is more expensive than the red one",
+        "not as cheap as the red one",
+        "The black car is not as cheap as the red one"
+      ]
+    }
+  },
+  "02": {
+    "s12-q3": {
+      "answers": [
+        "would like to go to your club this Sunday",
+        "I would like to go to your club this Sunday"
+      ],
+      "note": "Dùng “would like to” để diễn đạt mong muốn. Đáp án được chỉnh lại theo nghĩa của câu gốc.",
+      "referenceHtml": "<p>I would like to go to your club this Sunday.</p>"
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 91
+      }
+    }
+  },
+  "03": {
+    "s10-q2": {
+      "answers": [
+        "much fast food or sweetened food",
+        "You shouldn't eat much fast food or sweetened food",
+        "much fast food and sweetened food",
+        "You shouldn't eat much fast food and sweetened food"
+      ]
+    },
+    "s10-q1": {
+      "answers": [
+        "of collecting glass bottles",
+        "I am fond of collecting glass bottles.",
+        "of collecting glass bottles."
+      ]
+    },
+    "s10-q3": {
+      "answers": [
+        "do exercise regularly",
+        "You should do exercise regularly.",
+        "do exercise regularly."
+      ]
+    },
+    "s10-q4": {
+      "answers": [
+        "watching TV",
+        "My favourite hobby is watching TV.",
+        "watching TV."
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 144
+      }
+    }
+  },
+  "04": {
+    "s3-q1": {
+      "answers": [
+        "milk"
+      ],
+      "referenceHtml": "<p>Chỗ trống (1): milk</p>"
+    },
+    "s3-q2": {
+      "answers": [
+        "soft"
+      ],
+      "referenceHtml": "<p>Chỗ trống (2): soft</p>"
+    },
+    "s3-q3": {
+      "answers": [
+        "computers"
+      ],
+      "referenceHtml": "<p>Chỗ trống (3): computers</p>"
+    },
+    "s3-q4": {
+      "answers": [
+        "active"
+      ],
+      "referenceHtml": "<p>Chỗ trống (4): active</p>"
+    },
+    "s12-q1": {
+      "answers": [
+        "take part in some volunteer activities this weekend",
+        "Let's take part in some volunteer activities this weekend"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "fond of eating fast food",
+        "keen on eating fast food",
+        "interested in eating fast food",
+        "Are you fond of eating fast food?",
+        "Are you keen on eating fast food?",
+        "Are you interested in eating fast food?"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "putting on the hat to protect ourselves from getting sunburnt",
+        "How about putting on the hat to protect ourselves from getting sunburnt?"
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "so I join the recycling project",
+        "I want to help protect the environment, so I join the recycling project"
+      ]
+    },
+    "s12-q5": {
+      "answers": [
+        "watching the goldfish in the tank the best",
+        "I like watching the goldfish in the tank the best"
+      ]
+    },
+    "s12-q6": {
+      "answers": [
+        "his mother like playing the piano",
+        "Nam and his mother like playing the piano"
+      ]
+    },
+    "__audio": [
+      {
+        "title": "Bài nghe Julia",
+        "sourceName": "TASK 2.mp3",
+        "sourceHash": "c9f428a8bfd30ec68a01fa8a2f8de4746b14478acbfbd7f9a0d41b6be35c029e",
+        "src": "/data/grade7-midterm/audio/vedec-g7-2026-01-2.mp3",
+        "duration": 289.334376,
+        "sectionIds": [
+          "s2"
+        ]
+      },
+      {
+        "title": "Bài nghe 2",
+        "sourceName": "4.Listening - ANH 7 - GK1 Task 2.mp3",
+        "sourceHash": "49f80d99ce1bbbbe369708d9c38d64a4946e42ea8388e6863af1700ac34f3749",
+        "src": "/data/grade7-midterm/audio/vedec-g7-2026-04-2.mp3",
+        "duration": 170.102834,
+        "sectionIds": [
+          "s3"
+        ]
+      }
+    ],
+    "__sections": {
+      "s2": {
+        "audioStart": 183
+      }
+    }
+  },
+  "05": {
+    "s13-q1": {
+      "answers": [
+        "my sister like cooking",
+        "My mother and my sister like cooking"
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "stay up so late to listen to music",
+        "You shouldn't stay up so late to listen to music"
+      ]
+    },
+    "s13-q3": {
+      "answers": [
+        "is collecting teddy bears",
+        "My hobby is collecting teddy bears"
+      ]
+    }
+  },
+  "06": {
+    "s5-q8": {
+      "answers": [
+        "D"
+      ],
+      "referenceHtml": "<p>PLEASE KEEP SILENCE → D. No noise is allowed here.</p>"
+    }
+  },
+  "07": {
+    "s2-q2": {
+      "answers": [
+        "B"
+      ],
+      "note": "Đối chiếu lời thoại: Linda và các bạn nấu ăn và dọn dẹp cho người cao tuổi.",
+      "referenceHtml": "<p>Linda: We cooked for them and did some cleaning too. → B. cooked for</p>"
+    },
+    "s3-q1": {
+      "answers": [
+        "good health"
+      ],
+      "referenceHtml": "<p>good health</p>"
+    },
+    "s3-q2": {
+      "answers": [
+        "get up"
+      ],
+      "referenceHtml": "<p>get up</p>"
+    },
+    "s3-q3": {
+      "answers": [
+        "three times",
+        "3 times"
+      ],
+      "referenceHtml": "<p>three times / 3 times</p>"
+    },
+    "s3-q4": {
+      "answers": [
+        "much"
+      ],
+      "referenceHtml": "<p>much</p>"
+    },
+    "s3-q5": {
+      "answers": [
+        "habit"
+      ],
+      "referenceHtml": "<p>habit</p>"
+    },
+    "s2-q1": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>Đáp án: C</p>"
+    },
+    "s2-q3": {
+      "answers": [
+        "B"
+      ],
+      "referenceHtml": "<p>Đáp án: B</p>"
+    },
+    "s2-q4": {
+      "answers": [
+        "D"
+      ],
+      "referenceHtml": "<p>Đáp án: D</p>"
+    },
+    "s2-q5": {
+      "answers": [
+        "A"
+      ],
+      "referenceHtml": "<p>Đáp án: A</p>"
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 173
+      }
+    }
+  },
+  "08": {
+    "s2-q1": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s2-q2": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s2-q3": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s2-q4": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s2-q5": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s7-q4": {
+      "answers": [
+        "boils / changes",
+        "boils changes"
+      ]
+    },
+    "__sections": {
+      "s9": {
+        "questions": [
+          {
+            "id": "s9-q1",
+            "number": "21",
+            "html": "<p><strong>A.</strong> teach\t\t<strong>B.</strong> teaches\t\t<strong>C.</strong> taught\t\t\t<strong>D.</strong> teaching</p>",
+            "kind": "choice",
+            "answers": [
+              "C"
+            ],
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "referenceHtml": "<p>Chỗ trống (21): C. taught</p>"
+          },
+          {
+            "id": "s9-q2",
+            "number": "22",
+            "html": "<p>Chỗ trống (22)</p><p>A. try · B. trying · C. tries · D. tried</p>",
+            "kind": "choice",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "answers": [
+              "B"
+            ],
+            "referenceHtml": "<p>Chỗ trống (22): B. trying</p>",
+            "note": "Các lựa chọn của chỗ trống (22) được bổ sung từ file đáp án đi kèm vì bản đề bị thiếu dòng này."
+          },
+          {
+            "id": "s9-q3",
+            "number": "23",
+            "html": "<p><strong>A.</strong> from\t\t<strong>B.</strong> to\t\t\t<strong>C.</strong> without\t\t\t<strong>D.</strong> of</p>",
+            "kind": "choice",
+            "answers": [
+              "A"
+            ],
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "referenceHtml": "<p>Chỗ trống (23): A. from</p>"
+          },
+          {
+            "id": "s9-q4",
+            "number": "24",
+            "html": "<p><strong>A.</strong> what\t\t<strong>B.</strong> which\t\t<strong>C.</strong> who\t\t\t<strong>D.</strong> how</p>",
+            "kind": "choice",
+            "answers": [
+              "D"
+            ],
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "referenceHtml": "<p>Chỗ trống (24): D. how</p>"
+          },
+          {
+            "id": "s9-q5",
+            "number": "25",
+            "html": "<p><strong>A.</strong> help\t\t<strong>B.</strong> helping\t\t<strong>C.</strong> helps\t\t\t<strong>D.</strong> helped</p>",
+            "kind": "choice",
+            "answers": [
+              "C"
+            ],
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "referenceHtml": "<p>Chỗ trống (25): C. helps</p>"
+          }
+        ]
+      }
+    },
+    "s12-q2": {
+      "answers": [
+        "interested in watching films with his friends",
+        "Minh is interested in watching films with his friends"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "playing football after school",
+        "My cousin enjoys playing football after school"
+      ]
+    }
+  },
+  "09": {
+    "s11-q1": {
+      "answers": [
+        "in playing badminton with my classmates after school",
+        "I am interested in playing badminton with my classmates after school."
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "not eat too much fast food",
+        "You should not eat too much fast food."
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "she is busy, she doesn’t join any volunteer activities",
+        "Because she is busy, she doesn’t join any volunteer activities."
+      ]
+    },
+    "s11-q4": {
+      "answers": [
+        "I often go to villages to do charity work",
+        "My parents and I often go to villages to do charity work."
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 133
+      }
+    }
+  },
+  "10": {
+    "s2-q1": {
+      "kind": "choice",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "s2-q2": {
+      "kind": "choice",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "s2-q3": {
+      "kind": "choice",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "s2-q4": {
+      "kind": "choice",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "s2-q5": {
+      "kind": "choice",
+      "options": [
+        "A",
+        "B"
+      ]
+    },
+    "s6-q4": {
+      "answers": [
+        "B"
+      ],
+      "note": "Người được chăm sóc trong nursing home là người cao tuổi (the elderly).",
+      "referenceHtml": "<p>We helped the elderly in the nursing home last Sunday. → B</p>"
+    },
+    "s13-q1": {
+      "answers": [
+        "Did you eat",
+        "Did you / eat"
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "drank"
+      ],
+      "referenceHtml": "<p>I often drank coca cola when I was a child.</p>"
+    },
+    "s13-q4": {
+      "answers": [
+        "has"
+      ]
+    }
+  },
+  "11": {
+    "s6-q1": {
+      "answers": [
+        "B"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "s11-q1": {
+      "answers": [
+        "Yes",
+        "Yes, it is"
+      ]
+    },
+    "s13-q1": {
+      "answers": [
+        "collecting dolls from foreign countries",
+        "She enjoys collecting dolls from foreign countries.",
+        "collecting dolls from foreign countries."
+      ]
+    },
+    "s13-q2": {
+      "answers": [
+        "like cooking",
+        "Lan and Mai like cooking.",
+        "like cooking."
+      ]
+    },
+    "s13-q3": {
+      "answers": [
+        "is collecting glass bottles",
+        "My hobby is collecting glass bottles.",
+        "is collecting glass bottles."
+      ]
+    },
+    "s13-q4": {
+      "answers": [
+        "eat fresh food regularly",
+        "You should eat fresh food regularly.",
+        "eat fresh food regularly."
+      ]
+    },
+    "s13-q5": {
+      "answers": [
+        "putting on the hats to protect ourselves from getting sunburnt?",
+        "How about putting on the hats to protect ourselves from getting sunburnt?"
+      ]
+    },
+    "s3-q1": {
+      "answers": [
+        "F"
+      ],
+      "note": "Đối chiếu bản nghe: Pete bị đau đầu tối hôm trước, hiện đau họng, và không tập thể dục.",
+      "referenceHtml": "<p>I had a headache last night and now I have a sore throat. I love fast food and I am too lazy to do any exercise.</p>"
+    },
+    "s3-q2": {
+      "answers": [
+        "F"
+      ],
+      "note": "Đối chiếu bản nghe: Pete bị đau đầu tối hôm trước, hiện đau họng, và không tập thể dục.",
+      "referenceHtml": "<p>I had a headache last night and now I have a sore throat. I love fast food and I am too lazy to do any exercise.</p>"
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 160
+      }
+    }
+  },
+  "12": {
+    "s1-q1": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s1-q2": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s1-q3": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s1-q4": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s1-q5": {
+      "kind": "tf",
+      "options": [
+        "T",
+        "F"
+      ]
+    },
+    "s6-q2": {
+      "answers": [
+        "D",
+        "A",
+        "B"
+      ],
+      "note": "“Like to watch” và “like watching” đều đúng. Chấp nhận A, B hoặc D (A & B are correct).",
+      "referenceHtml": "<p>Young children like to watch / watching cartoons. A và B đều đúng → D.</p>"
+    },
+    "s11-q1": {
+      "answers": [
+        "me twenty minutes to walk to school every morning",
+        "It takes me twenty minutes to walk to school every morning"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "because I walked in the sun so long",
+        "I got sunburn because I walked in the sun so long.",
+        "because I walked in the sun so long."
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "in going on a picnic with her best friends at weekends",
+        "Ha is interested in going on a picnic with her best friends at weekends.",
+        "in going on a picnic with her best friends at weekends."
+      ]
+    },
+    "__sections": {
+      "s6": {
+        "introHtml": "<p>People of different ages (1)______different tastes for TV programs. Young children like (2)______cartoon most. So there (3)______many kinds of films on children’s corner. Teenagers like sports shows, fashion shows, movies (often romantic, horror or detective), music (often pop and rock) and sometimes cartoons. But there are not many good programs for people of this age. Adults prefer (4)______ the news, reports, movies and contests. Old people like watching and listening to classical music most. They also watch movies, news and other programs that suit them.</p>"
+      }
+    },
+    "s6-q4": {
+      "note": "Bản đề đánh nhầm chỗ trống cuối là (5). Đã thống nhất thành (4) để khớp bốn câu lựa chọn."
+    }
+  },
+  "13": {
+    "s9-q1": {
+      "answers": [
+        "were having"
+      ]
+    },
+    "s12-q1": {
+      "answers": [
+        "Yes, it does",
+        "Yes"
+      ]
+    },
+    "s12-q2": {
+      "answers": [
+        "You can go to the gym",
+        "To the gym",
+        "The gym"
+      ]
+    },
+    "s12-q3": {
+      "answers": [
+        "Yes, they can",
+        "Yes"
+      ]
+    },
+    "s12-q4": {
+      "answers": [
+        "You should drink more water",
+        "More water",
+        "Water"
+      ]
+    },
+    "s12-q5": {
+      "answers": [
+        "You should visit the doctor regularly",
+        "Regularly"
+      ]
+    },
+    "s14-q1": {
+      "answers": [
+        "him an hour to do yoga every morning",
+        "It takes him an hour to do yoga every morning"
+      ]
+    },
+    "s14-q2": {
+      "answers": [
+        "and try to have a healthy diet",
+        "We avoid staying up late and try to have a healthy diet"
+      ]
+    },
+    "s14-q3": {
+      "answers": [
+        "interested in jogging every morning",
+        "interested in going jogging every morning",
+        "My brother is interested in jogging every morning",
+        "My brother is interested in going jogging every morning"
+      ]
+    },
+    "s14-q4": {
+      "answers": [
+        "playing football after school",
+        "How about playing football after school?"
+      ]
+    },
+    "s14-q5": {
+      "answers": [
+        "is Mary's favorite hobby",
+        "is Mary's favourite hobby",
+        "Reading books is Mary's favorite hobby",
+        "Reading books is Mary's favourite hobby"
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 97
+      }
+    }
+  },
+  "15": {
+    "s7-q1": {
+      "answers": [
+        "B"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "__sections": {
+      "s3": {
+        "audioStart": 92
+      }
+    }
+  },
+  "16": {
+    "s6-q1": {
+      "answers": [
+        "B"
+      ],
+      "number": "2",
+      "note": "Trọng âm “belong” ở âm tiết thứ hai; các từ còn lại ở âm tiết thứ nhất.",
+      "referenceHtml": "<p>jogging / benefit / culture: trọng âm 1; belong: trọng âm 2 → B.</p>"
+    },
+    "s11-q1": {
+      "answers": [
+        "Because it requires us to be active",
+        "Because volunteering requires us to be active",
+        "Volunteering requires us to be active",
+        "Volunteering can improve our health because it requires us to be active"
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "In teams",
+        "They often work in teams",
+        "Volunteers often work in teams"
+      ]
+    },
+    "s13-q6": {
+      "answers": [
+        "in any community activities",
+        "Do you take part in any community activities?"
+      ]
+    },
+    "__audio": [
+      {
+        "title": "Bài nghe đầy đủ · sức khỏe và sở thích",
+        "sourceName": "TASK 1.mp3",
+        "sourceHash": "6247eceeabc2485db42c14513ac23448d9389a5f47ce0494abaef25300529bf1",
+        "src": "/data/grade7-midterm/audio/vedec-g7-2026-01-1.mp3",
+        "duration": 298.377375,
+        "sectionIds": [
+          "s2",
+          "s3"
+        ]
+      }
+    ],
+    "__sections": {
+      "s3": {
+        "audioStart": 140
+      }
+    }
+  },
+  "17": {
+    "s5-q10": {
+      "answers": [
+        "C"
+      ],
+      "number": "20",
+      "referenceHtml": "<p>FACE MASKS REQUIRED → C. You must wear a face mask in this area.</p>"
+    },
+    "s8-q4": {
+      "answers": [
+        "D"
+      ],
+      "referenceHtml": "<p>The villagers were very kind and offered us local food. → D. Food</p>"
+    },
+    "s11-q1": {
+      "answers": [
+        "listening to music",
+        "to listen to music",
+        "Many children hate listening to music",
+        "Many children hate to listen to music"
+      ]
+    },
+    "s11-q2": {
+      "answers": [
+        "sweetened food and soft drinks",
+        "We avoid sweetened food and soft drinks"
+      ]
+    },
+    "s11-q3": {
+      "answers": [
+        "pick up litter on the streets in our neighbourhood",
+        "Why don't we pick up litter on the streets in our neighbourhood?"
+      ]
+    },
+    "__audio": [
+      {
+        "title": "Bài nghe đầy đủ · hoạt động cộng đồng và sức khỏe",
+        "sourceName": "4. GKI- BÀI NGHE ANH 7 GKI (26-27).mp3",
+        "sourceHash": "5521523d0832feed734b96c0d83653601c1f19acdeef62761076e6ba26b21c18",
+        "src": "/data/grade7-midterm/audio/vedec-g7-2026-07-1.mp3",
+        "duration": 325.6,
+        "sectionIds": [
+          "s2",
+          "s3"
+        ]
+      }
+    ],
+    "__sections": {
+      "s2": {
+        "audioStart": 173
+      }
+    },
+    "s2-q4": {
+      "answers": [
+        "C"
+      ],
+      "referenceHtml": "<p>I also drink a lot of juice and water. → C. water and juice</p>"
+    }
+  },
+  "18": {
+    "s1-q1": {
+      "unscored": true,
+      "note": "Đề gốc ghi thiếu phần gạch chân của câu phát âm này. Câu được giữ để đối chiếu, không tính điểm tự động."
+    },
+    "s5-q1": {
+      "answers": [
+        "C"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "s5-q2": {
+      "answers": [
+        "A"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "s5-q3": {
+      "answers": [
+        "D"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "s5-q4": {
+      "answers": [
+        "B"
+      ],
+      "kind": "choice",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "s7-q2": {
+      "answers": [
+        "D"
+      ],
+      "referenceHtml": "<p>Glass only → D. People must recycle glass here.</p>"
+    },
+    "s2-q4": {
+      "answers": [
+        "A"
+      ],
+      "referenceHtml": "<p>Thói quen ở hiện tại, chủ ngữ Trung (ngôi thứ ba số ít): never watches → A.</p>"
+    }
+  },
+  "14": {
+    "__sections": {
+      "s3": {
+        "audioStart": 133
+      }
+    }
+  }
+}

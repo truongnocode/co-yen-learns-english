@@ -1,0 +1,638 @@
+{
+  "id": "vedec-g7-2026-14",
+  "number": 14,
+  "title": "Đề 14",
+  "subtitle": "Tiếng Anh 7 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.5 PTS)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s2",
+      "title": "Part 1 (1-4). Listen to an interview about Trang’s hobby and complete the blanks with NO MORE THAN A WORD OR A NUMBER for each question according to what you have just heard. You will listen to the recording TWICE. (1.0pt)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong>  Trang’s hobby is building ………….</p>",
+          "kind": "text",
+          "answers": [
+            "dollhouses"
+          ],
+          "referenceHtml": "<p><strong>1</strong><strong>.</strong>  Trang’s hobby is building dollhouses.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong>  She started her hobby …………. years ago.</p>",
+          "kind": "text",
+          "answers": [
+            "three",
+            "3"
+          ],
+          "referenceHtml": "<p><strong>2.</strong>  She started her hobby three/3 years ago.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p><strong>3.</strong>  She uses cardboard and glue to build the house and make the ……… ….</p>",
+          "kind": "text",
+          "answers": [
+            "furniture"
+          ],
+          "referenceHtml": "<p><strong>3.</strong>  She uses cardboard and glue to build the house and make the furniture.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p><strong>4.</strong>  This hobby makes her more …………. and creative.</p>",
+          "kind": "text",
+          "answers": [
+            "patient"
+          ],
+          "referenceHtml": "<p><strong>4.</strong>  This hobby makes her more patient and creative.</p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Part 2 (5-10). Listen to Tom and Linda talking about their community activities last summer and decide if the statements are True (T) or False (F) for each question according to what you have just heard. You will listen to the recording TWICE. (1.5pts)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s3-q1",
+          "number": "5",
+          "html": "<p><strong>5</strong><strong>.</strong>  Linda and her friends tutored 3rd grade children and helped old people. \t………….  </p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>5.</strong>  Linda and her friends tutored 3rd grade children and helped old people. \t……T…….  </p>"
+        },
+        {
+          "id": "s3-q2",
+          "number": "6",
+          "html": "<p><strong>6.</strong>  They taught English and Art.  \t\t\t\t\t\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>6.</strong>  They taught English and Art.  \t\t\t\t\t\t\t……F…….</p>"
+        },
+        {
+          "id": "s3-q3",
+          "number": "7",
+          "html": "<p><strong>7</strong><strong>.  </strong>They didn’t have a lot of fun.           \t\t\t\t\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>7.  </strong>They didn’t have a lot of fun.           \t\t\t\t\t\t……F…….</p>"
+        },
+        {
+          "id": "s3-q4",
+          "number": "8",
+          "html": "<p><strong>8</strong><strong>.</strong>  They cooked for the elderly and did some cleaning.  \t\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>8.</strong>  They cooked for the elderly and did some cleaning.  \t\t\t……T…….</p>"
+        },
+        {
+          "id": "s3-q5",
+          "number": "9",
+          "html": "<p><strong>9</strong><strong>.  </strong>Tom and his friends planted and watered the plants.   \t\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>9.  </strong>Tom and his friends planted and watered the plants.   \t\t\t……T…….</p>"
+        },
+        {
+          "id": "s3-q6",
+          "number": "10",
+          "html": "<p><strong>10</strong><strong>. </strong> They also learnt some skills.    \t\t\t\t\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>10. </strong> They also learnt some skills.    \t\t\t\t\t\t……T…….</p>"
+        }
+      ],
+      "audioStart": 133
+    },
+    {
+      "id": "s4",
+      "title": "B. USE OF LANGUAGE (2.5 PTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s5",
+      "title": "Part 1 (11-15): Read carefully and choose A, B, C, or D to indicate the correct word or phrase. (1.25pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p>Gardening is one of the oldest <strong>(11)</strong> …………. activities. It has something for everyone, even for children. Gardening <strong>(12)</strong> …………. children about flowers, fruits, and vegetables. They can also learn about insects and bugs. When gardening, children learn to be <strong>(13)</strong> …………. and take on responsibility. They learn to wait for the plants to grow to maturity and if they don’t<strong> (14)</strong> …………. their plants, their plants will die. This teaches them valuable lessons about responsibility.</p>\n<p>Gardening is also good because everyone in the family can join in and do something together. My mum and I love gardening. We usually <strong>(15)</strong> …………. an hour a day in our garden. It really makes us happy, and we love spending time together.</p>",
+      "questions": [
+        {
+          "id": "s5-q1",
+          "number": "11",
+          "html": "<p><strong>11.</strong> A. many\t\tB. indoor\tC. outdoor\t\tD. some</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>11.</strong> A. many\t\tB. indoor\tC. outdoor\t\tD. some</p>"
+        },
+        {
+          "id": "s5-q2",
+          "number": "12",
+          "html": "<p><strong>12.</strong> A. teaches\tB. studies\tC. does\t\tD. has</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>12.</strong> A. teaches\tB. studies\tC. does\t\tD. has</p>"
+        },
+        {
+          "id": "s5-q3",
+          "number": "13",
+          "html": "<p><strong>13.</strong> A. friendly\tB. happy\tC. patient\t\tD. boring</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>13.</strong> A. friendly\tB. happy\tC. patient\t\tD. boring</p>"
+        },
+        {
+          "id": "s5-q4",
+          "number": "14",
+          "html": "<p><strong>14.</strong> A. drink\t\tB. water\tC. study\t\tD. teach </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>14.</strong> A. drink\t\tB. water\tC. study\t\tD. teach </p>"
+        },
+        {
+          "id": "s5-q5",
+          "number": "15",
+          "html": "<p><strong>15.</strong> A. spend\t\tB. do \t \tC. go\t\t\tD. make </p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>15.</strong> A. spend\t\tB. do \t \tC. go\t\t\tD. make </p>"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Part 2 (16-20). Read carefully and choose the letter A, B, C, or D to indicate the correct word or phrase. (1.25 pts)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "<p>Bright Future school <strong>(16)</strong> …………. many community activities for students. The school believes that a good way for students to <strong>(17)</strong> …………. themselves is through community service. All students can join any of these different projects:</p>\n<p>- Tutoring: Upper grade students tutor lower grade students.</p>\n<p>- Postcard-to-Help: Students make and <strong>(18)</strong> …………. postcards to raise money for local children.</p>\n<p>- Visit-to-Read: Students visit a nursing home monthly and read books to the elderly.</p>\n<p>- Garden-to-Give: Students grow vegetables and <strong>(19)</strong> …………. them to local schools.</p>\n<p>- Paper-Plant-Exchange: Students collect paper and exchange it for plants. They then look after the plants in their school garden.</p>\n<p>Students learn that they can <strong>(20) </strong>…………. people and the world around them when they do community service. They feel useful and proud because they do good things.</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "16",
+          "html": "<p><strong>16.</strong> A. have\t\t\tB. having \t\tC. has\t\t\tD. had</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>16.</strong> A. have\t\t\tB. having \t\tC. has\t\t\tD. had</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "17",
+          "html": "<p><strong>17</strong>. A. develops\t\tB. develop\t\tC. developing\tD. developed</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>17</strong>. A. develops\t\tB. develop\t\tC. developing\tD. developed</p>"
+        },
+        {
+          "id": "s6-q3",
+          "number": "18",
+          "html": "<p><strong>18.</strong> A. sell\t\t\tB. sells\t\tC. selling\t\tD. sold</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>18.</strong> A. sell\t\t\tB. sells\t\tC. selling\t\tD. sold</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "19",
+          "html": "<p><strong>19</strong>. A. donating\t\tB. donates\t\tC. donated\t\tD. donate</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>19</strong>. A. donating\t\tB. donates\t\tC. donated\t\tD. donate</p>"
+        },
+        {
+          "id": "s6-q5",
+          "number": "20",
+          "html": "<p><strong>20.</strong> A. help       \t\tB. helps\t\tC. helping\t\tD. helped</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>20.</strong> A. help       \t\tB. helps\t\tC. helping\t\tD. helped</p>"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "C. READING (2.5 PTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s8",
+      "title": "Part 1 (21-25) Read the passage and decide if the statements are True (T) or False (F) (1.25pts)",
+      "part": "READING",
+      "introHtml": "<p>Mark has a lot of hobbies and interests. He usually gets up early, so he can jog before school. After school, Mark often rides a horse at the riding club near his home. Sometimes he goes riding on Sunday afternoons. He also loves music. He goes to choir practice on Wednesday and Saturday evenings. On Saturday mornings, he usually waters the plants and trees in the garden with his mum. He seldom watches TV because he likes doing things outside. He has a lot of friends and he plays football with them twice a week. He’s a happy boy!</p>",
+      "questions": [
+        {
+          "id": "s8-q1",
+          "number": "21",
+          "html": "<p><strong>21.</strong> Mark usually gets up early to jog before school.\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>21.</strong> Mark usually gets up early to jog before school.\t……T…….</p>"
+        },
+        {
+          "id": "s8-q2",
+          "number": "22",
+          "html": "<p><strong>22.</strong> He often rides a horse on Sunday mornings.\t \t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>22.</strong> He often rides a horse on Sunday mornings.\t \t……F…….</p>"
+        },
+        {
+          "id": "s8-q3",
+          "number": "23",
+          "html": "<p><strong>23.</strong> Mark goes to choir practice twice a week.\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>23.</strong> Mark goes to choir practice twice a week.\t\t……T…….</p>"
+        },
+        {
+          "id": "s8-q4",
+          "number": "24",
+          "html": "<p><strong>24.</strong> He usually watches TV after school.\t\t\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>24.</strong> He usually watches TV after school.\t\t\t……F…….</p>"
+        },
+        {
+          "id": "s8-q5",
+          "number": "25",
+          "html": "<p><strong>25</strong>. Mark plays football with his friends twice a week.\t………….</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "options": [
+            "T",
+            "F"
+          ],
+          "referenceHtml": "<p><strong>25</strong>. Mark plays football with his friends twice a week.\t……T…….</p>"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Part 2 (26-30): Read the passage and choose the correct answer A, B, C, or D (1.25pts)",
+      "part": "READING",
+      "introHtml": "<p>My school has a number of volunteer activities every summer. The activities include donating books to village children, tutoring kids in the neighbourhood, teaching English to primary students, reading books or cooking food for the needy. Our school started this programme 5 years ago. Every student can join one or two activities. In the beginning, we thought about why we should join in these activities, then we thought about what activities we wanted to do. Those who like reading could choose to collect and donate books Those who are good at English could tutor primary students. Finally, we signed up for the activities we chose. Our teachers often encourage us to stay committed. They also help us when we need it. We have a lot of fun and learn many things from doing the activities.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "26",
+          "html": "<p><strong>26.</strong> <strong>What do the students do every summer?</strong><br>A. They go on holiday.                                \tB. They take part in volunteer activities.<br>C. They study for exams.                             \tD. They play sports.<br></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>26.</strong> <strong>What do the students do every summer?</strong><br>A. They go on holiday.                                \tB. They take part in volunteer activities.<br>C. They study for exams.                             \tD. They play sports.<br></p>"
+        },
+        {
+          "id": "s9-q2",
+          "number": "27",
+          "html": "<strong><p>27.</strong> <strong>Which activity is in volunteer activities?</strong><strong><br></strong>A. Donating books to street children           \tB. Teaching Maths to primary students<br>C. Tutoring kids in the neighbourhood \t    \tD. Cooking food for poor students</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<strong><p>27.</strong> <strong>Which activity is in volunteer activities?</strong><strong><br></strong>A. Donating books to street children           \tB. Teaching Maths to primary students<br>C. Tutoring kids in the neighbourhood \t    \tD. Cooking food for poor students</p>"
+        },
+        {
+          "id": "s9-q3",
+          "number": "28",
+          "html": "<p><strong>28.</strong> <strong>When did the school start this </strong><strong>programme</strong><strong>?</strong><br>A. Three years ago                                              \tB. Four years ago<br>C. Five years ago                                                \tD. Six years ago<br></p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>28.</strong> <strong>When did the school start this programme</strong><strong>?</strong><br>A. Three years ago                                              \tB. Four years ago<br>C. Five years ago                                                \tD. Six years ago<br></p>"
+        },
+        {
+          "id": "s9-q4",
+          "number": "29",
+          "html": "<strong><p>29.</strong> <strong>What did students do before </strong><strong>joining</strong><strong> the activities?</strong><strong><br></strong>A. They bought new books.\t\t         \t B. They thought about why and what to do.<br>C. They asked their parents to choose for them.\t  D. They waited for teachers’ instructions.</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<strong><p>29.</strong> <strong>What did students do before joining the activities?</strong><strong><br></strong>A. They bought new books.\t\t         \t B. They thought about why and what to do.<br>C. They asked their parents to choose for them.\t  D. They waited for teachers’ instructions.</p>"
+        },
+        {
+          "id": "s9-q5",
+          "number": "30",
+          "html": "<p><strong>30.</strong> <strong>What can students who are good at English do?</strong><br>A. Tutor primary students\t\t\t\tB. Cook for the needy<br>C. Collect books\t\t\t\t\tD. Donate money</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>30.</strong> <strong>What can students who are good at English do?</strong><br>A. Tutor primary students\t\t\t\tB. Cook for the needy<br>C. Collect books\t\t\t\t\tD. Donate money</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "D-WRITING (2.5 PTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s11",
+      "title": "Part 1 (31-32): Choose the correct order A, B, C, or D to make a meaningful conversation/ paragraph in each of the following questions. (0.5pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "31",
+          "html": "<p><strong>31.</strong></p>\n<p>1-Mi: Do you like reading books? </p>\n<p>2-Mi: What about painting? Do you like it? </p>\n<p>3-Ann: Yes, very much, especially books about science. </p>\n<p>4-Ann: No, I don&#x27;t. I&#x27;m not interest in Art. </p>\n<p>A.1-3-2-4       \tB.1-2-3-4           \tC.1-4-2-3\t\tD.1-4-3-2</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>31.</strong></p>\n<p>1-Mi: Do you like reading books? </p>\n<p>2-Mi: What about painting? Do you like it? </p>\n<p>3-Ann: Yes, very much, especially books about science. </p>\n<p>4-Ann: No, I don&#x27;t. I&#x27;m not interest in Art. </p>\n<p>A.1-3-2-4       \tB.1-2-3-4           \tC.1-4-2-3\t\tD.1-4-3-2</p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "32",
+          "html": "<p><strong>32. </strong></p>\n<p>1-Nam: You can use eyedrops.</p>\n<p>2-Nam: And you shouldn&#x27;t read in dim light.</p>\n<p>3-Hoa: My eyes are tired.</p>\n<p>4-Hoa: Yes.</p>\n<p>A. 3-2-1-4      \tB. 3-2-1-4\t\tC.3-4-2-1       \tD. 3-1-4-2 </p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p><strong>32. </strong></p>\n<p>1-Nam: You can use eyedrops.</p>\n<p>2-Nam: And you shouldn&#x27;t read in dim light.</p>\n<p>3-Hoa: My eyes are tired.</p>\n<p>4-Hoa: Yes.</p>\n<p>A. 3-2-1-4      \tB. 3-2-1-4\t\tC.3-4-2-1       \tD. 3-1-4-2 </p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Part 2. (33-36) Complete the second sentence so that it has the same meaning as the first one. Use the given words (1.0pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "33",
+          "html": "<p><strong>33.</strong> You are active, and your brother is active too.</p>\n<p>=&gt; Both you and ………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "your brother are active",
+            "Both you and your brother are active."
+          ],
+          "referenceHtml": "<p><strong>33.</strong> You are active, and your brother is active too.</p>\n<p>=&gt; Both you and <u>your brother are active</u>.</p>"
+        },
+        {
+          "id": "s12-q2",
+          "number": "34",
+          "html": "<p><strong>34.</strong> We planted some trees last summer. We donated old books, last summer too.</p>\n<p>=&gt; We planted ………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "some trees and donated old books last summer",
+            "We planted some trees and donated old books last summer."
+          ],
+          "referenceHtml": "<p><strong>34.</strong> We planted some trees last summer. We donated old books last summer too.</p>\n<p>=&gt; We planted <u>some trees and donated old books</u><u> </u><u>last summer</u><u>.</u></p>"
+        },
+        {
+          "id": "s12-q3",
+          "number": "35",
+          "html": "<p><strong>35.</strong> I enjoy collecting coins. </p>\n<p>=&gt; Collecting coins ………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "is my hobby",
+            "Collecting coins is my hobby."
+          ],
+          "referenceHtml": "<p><strong>35.</strong> I enjoy collecting coins. </p>\n<p>=&gt; Collecting coins <u>is my hobby</u><u>.</u></p>"
+        },
+        {
+          "id": "s12-q4",
+          "number": "36",
+          "html": "<p><strong>36.</strong> Hoa likes to read books in the library.</p>\n<p>=&gt; Hoa enjoys ………………………………</p>",
+          "kind": "text",
+          "answers": [
+            "reading books in the library",
+            "Hoa enjoys reading books in the library."
+          ],
+          "referenceHtml": "<p><strong>36.</strong> Hoa likes to read books in the library.</p>\n<p>=&gt; Hoa enjoys <u>reading books in the library.</u></p>"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Part 3. (1.0m)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s13-q1",
+          "number": "37",
+          "html": "<p><strong>37.</strong> Write a paragraph about your best friend (<strong>60</strong><strong>-70 words</strong>). (1.0 pt)</p>\n<p>You might use the following questions below:</p>\n<p>- What is your hobby’s name? </p>\n<p>- When did you start it?</p>\n<p>- Who do you share it with?</p>\n<p>- How do you feel about your hobby?</p>\n<p>- What benefits does it bring?</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>37.</strong> Write a paragraph about your best friend (<strong>60</strong><strong>-70 words</strong>). (1.0 pt)</p>\n<p>You might use the following questions below:</p>\n<p>- What is your hobby’s name? </p>\n<p>- When did you start it?</p>\n<p>- Who do you share it with?</p>\n<p>- How do you feel about your hobby?</p>\n<p>- What benefits does it bring?</p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion.<br></p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea.<br></p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students.<br></p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe đầy đủ",
+      "sourceName": "4. BAI NGHE - ANH 7 - GK1.mp3",
+      "sourceHash": "15a83eb719b56063161a0f3f3b44bf3cec0255220ed431a9e3eeb5047ddf06f6",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-14-1.mp3",
+      "duration": 302.174195
+    }
+  ],
+  "sourceHash": "dff28d1b3bfa44bfb1a157a95103c4c111e8fbd0443f98995dcb03e35f27ba42"
+}

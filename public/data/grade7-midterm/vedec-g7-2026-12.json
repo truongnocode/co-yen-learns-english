@@ -1,0 +1,625 @@
+{
+  "id": "vedec-g7-2026-12",
+  "number": 12,
+  "title": "Đề 12",
+  "subtitle": "Tiếng Anh 7 · Global Success · Giữa học kỳ I · VEDEC 2026",
+  "sections": [
+    {
+      "id": "s1",
+      "title": "A. LISTENING (2.25p)",
+      "part": "LISTENING",
+      "introHtml": "<p><strong>I. Listening –</strong><strong>This text is about Angela’s hobbies. </strong>Listen and <strong>w</strong><strong>rite T (True) or F (false).(1,</strong><strong>25points</strong><strong>) </strong></p>",
+      "questions": [
+        {
+          "id": "s1-q1",
+          "number": "1",
+          "html": "<p>1. Angela walks in the park every morning.\t\t\t\t\t\t\tT\tF</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "referenceHtml": "<p>1. Angela walks in the park every morning.\t\t\t\t\t\t\tT\t<strong><u>F</u></strong></p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s1-q2",
+          "number": "2",
+          "html": "<p>2. There is a park near Angela’s house.\t\t\t\t\t\t\t\tT\tF</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "referenceHtml": "<p>2. There is a park near Angela’s house.\t\t\t\t\t\t\t\t<strong><u>T</u></strong>\tF</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s1-q3",
+          "number": "3",
+          "html": "<p>3. Angela likes hiking, but she does not do it much.\t\t\t\t\t\tT\tF</p>",
+          "kind": "tf",
+          "answers": [
+            "T"
+          ],
+          "referenceHtml": "<p>3. Angela likes hiking, but she does not do it much.\t\t\t\t\t\t<strong><u>T</u></strong>\tF</p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s1-q4",
+          "number": "4",
+          "html": "<p>4. On Thursday evenings, Angela stays at home and chats with friends.\t\t\tT\tF</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "referenceHtml": "<p>4. On Thursday evenings, Angela stays at home and chats with friends.\t\t\tT\t<strong><u>F</u></strong></p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        },
+        {
+          "id": "s1-q5",
+          "number": "5",
+          "html": "<p>5. At weekends, Angela is healthier than usual.\t\t\t\t\t\t\tT\tF</p>",
+          "kind": "tf",
+          "answers": [
+            "F"
+          ],
+          "referenceHtml": "<p>5. At weekends, Angela is healthier than usual.\t\t\t\t\t\t\tT\t<strong><u>F</u></strong></p>",
+          "options": [
+            "T",
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "II. Listen and complete each sentence with ONE word. Listen twice (1.0point)",
+      "part": "LISTENING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s2-q1",
+          "number": "1",
+          "html": "<p>1.While camping, we have a lot of time for  ___________________.</p>",
+          "kind": "text",
+          "answers": [
+            "games"
+          ],
+          "referenceHtml": "<p>1.While camping, we have a lot of time for  _______<strong>games</strong>____________.</p>"
+        },
+        {
+          "id": "s2-q2",
+          "number": "2",
+          "html": "<p>2. When camping near the beach, we can build ___________________.</p>",
+          "kind": "text",
+          "answers": [
+            "sandcastles"
+          ],
+          "referenceHtml": "<p>2. When camping near the beach, we can build ________ <strong>sandcastles</strong> ___________.</p>"
+        },
+        {
+          "id": "s2-q3",
+          "number": "3",
+          "html": "<p>3. We can have dinner by an _____________________fire.</p>",
+          "kind": "text",
+          "answers": [
+            "open"
+          ],
+          "referenceHtml": "<p>3. We can have dinner by an ________<strong>open</strong><strong>_____________</strong>fire.</p>"
+        },
+        {
+          "id": "s2-q4",
+          "number": "4",
+          "html": "<p>4. Don’t forget to bring ___________________things, like food and water, a sleeping bag, a compass, and some insects</p>",
+          "kind": "text",
+          "answers": [
+            "important"
+          ],
+          "referenceHtml": "<p>4. Don’t forget to bring ____<strong>_</strong><strong>important</strong>______________things, like food and water, a sleeping bag, a compass, and some insects. </p>"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "B. LANGUAGE FOCUS (2.75 POINTS)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s4",
+      "title": "I. Circle the letter A, B, C or D to complete each of the following sentences. (1.25points)",
+      "part": "LANGUAGE FOCUS",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s4-q1",
+          "number": "1",
+          "html": "<p>1. My father can make beautiful pieces of art _____________ empty eggshells.</p>\n<p>\tA. of \t\t\tB. from \t\tC. in \t\t\tD. into</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. My father can make beautiful pieces of art _____________ empty eggshells.</p>\n<p>\tA. of \t\t\t<strong>B. from</strong> \t\tC. in \t\t\tD. into</p>"
+        },
+        {
+          "id": "s4-q2",
+          "number": "2",
+          "html": "<p>2. Community service is the work we do for the <u>                            </u>of the community.</p>\n<p>A. benefits  \t\tB. forces \t\tC. problems              D. skills</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>2. Community service is the work we do for the <u>                            </u>of the community.</p>\n<p><strong>A.</strong><strong> </strong><strong>benefits</strong>  \t\tB. forces \t\tC. problems              D. skills</p>"
+        },
+        {
+          "id": "s4-q3",
+          "number": "3",
+          "html": "<p>3. Collecting cars is a(n) _____________ hobby. It costs a lot of money.</p>\n<p>A. interesting \tB. cheap \t\tC. expensive \t           D. unusual</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3. Collecting cars is a(n) _____________ hobby. It costs a lot of money.</p>\n<p>A. interesting \tB. cheap \t\t<strong>C. expensive</strong> \tD. unusual</p>"
+        },
+        {
+          "id": "s4-q4",
+          "number": "4",
+          "html": "<p>4. They have decided to clean up the neighborhood ________ it is full of rubbish. </p>\n<p>A. so \t\t            B. but \t\tC. because\t           D. although</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4. They have decided to clean up the neighbourhood ________ it is full of rubbish. </p>\n<p>A. so \t\t            B. but \t           <strong> </strong><strong>C. because</strong>\t           D. although</p>"
+        },
+        {
+          "id": "s4-q5",
+          "number": "5",
+          "html": "<p>5. You can get social ________ from doing volunteer work.</p>\n<p>\t      A. life\tB. media                   C. class                     D. skills</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. You can get social ________ from doing volunteer work.</p>\n<p>\t      A. life\tB. media                    C. class                  <strong>D. skills</strong></p>"
+        },
+        {
+          "id": "s4-q6",
+          "number": "6",
+          "html": "<p>6. Both Linda and Peter ________ eating vegetables. </p>\n<p>\tA. likes\t\tB. are liking\t \tC. to like\t           D. like</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6. Both Linda and Peter ________ eating vegetables. </p>\n<p>\tA. likes\t\tB. are liking\t \tC. to like\t<strong>          </strong><strong>D. like</strong></p>"
+        },
+        {
+          "id": "s4-q7",
+          "number": "7",
+          "html": "<p>7. Jane is _________ weight because she eats too much junk food.</p>\n<p>A. getting over \tB. putting on \t\tC. taking up \t\tD. throwing away</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>7. Jane is _________ weight because she eats too much junk food.</p>\n<p>A. getting over \t<strong>B. putting on</strong> \tC. taking up \t\tD. throwing away</p>"
+        },
+        {
+          "id": "s4-q8",
+          "number": "8",
+          "html": "<p>8. The charity __________ facilities for disabled people to take part in sport last summer.</p>\n<p>\tA. provided \t\tB. donated \t\tC. raised \t\tD. collected</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>8. The charity __________ facilities for disabled people to take part in sport.</p>\n<p>\tA. provided \t\t<strong>B. donate</strong><strong>d</strong> \t\tC. raised \t\tD. collected</p>"
+        },
+        {
+          "id": "s4-q9",
+          "number": "9",
+          "html": "<p>9. More people are _________ birds today than ever before.</p>\n<p>           A. seeing \t\tB. looking \t\tC. hearing \t\tD. watching</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>9. More people are _________ birds today than ever before.</p>\n<p>           A. seeing \t\tB. looking \t\tC. hearing \t\t<strong>D. watching</strong></p>"
+        },
+        {
+          "id": "s4-q10",
+          "number": "10",
+          "html": "<p>10. Sandra ________ learning Spanish language in her free time.</p>\n<p>\tA. looks for\tB. takes up\tC. takes part in\tD. puts on</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>10. Sandra ________ learning Spanish language in her free time.</p>\n<p>\tA. looks for\t<strong>B. takes up</strong>               C. takes part in         D. puts on</p>"
+        },
+        {
+          "id": "s4-q11",
+          "number": "11",
+          "html": "<p><img src=\"/data/grade7-midterm/images/cd6a0d69430faa8e.png\" alt=\"Hình minh họa của câu hỏi\" loading=\"lazy\"> 11<strong>.</strong><strong> </strong><strong>What does the sign mean? </strong></p>\n<p>A. People don’t sell shoes in this place. </p>\n<p>B. Please remove your shoes when you enter this place. </p>\n<p>C. You can find shoes when you are in this place. </p>\n<p>D. Don’t buy shoes when you enter this place. </p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p> 11<strong>.</strong><strong> </strong><strong>What does the sign mean? </strong></p>\n<p>A. People don’t sell shoes in this place. </p>\n<p>B. <strong>Please remove your shoes when you enter this place. </strong></p>\n<p>C. You can find shoes when you are in this place. </p>\n<p>D. Don’t buy shoes when you enter this place. </p>"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "SECTION C: READING (2.5 POINTS)",
+      "part": "READING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s6",
+      "title": "I. Read the passage and then choose the correct answer to each question. (1 point)",
+      "part": "READING",
+      "introHtml": "<p>People of different ages (1)______different tastes for TV programs. Young children like (2)______cartoon most. So there (3)______many kinds of films on children’s corner. Teenagers like sports shows, fashion shows, movies (often romantic, horror or detective), music (often pop and rock) and sometimes cartoons. But there are not many good programs for people of this age. Adults prefer (4)______ the news, reports, movies and contests. Old people like watching and listening to classical music most. They also watch movies, news and other programs that suit them.</p>",
+      "questions": [
+        {
+          "id": "s6-q1",
+          "number": "1",
+          "html": "<p>1. A. has\tB. have\tC. are having\tD. had</p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>1. A. has\t<strong>B. have</strong>\tC. are having\tD. had</p>"
+        },
+        {
+          "id": "s6-q2",
+          "number": "2",
+          "html": "<p>2. A. to watch\tB. watching\tC. watch\tD. A&amp;B are correct</p>",
+          "kind": "choice",
+          "answers": [
+            "D",
+            "A",
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>Young children like to watch / watching cartoons. A và B đều đúng → D.</p>",
+          "note": "“Like to watch” và “like watching” đều đúng. Chấp nhận A, B hoặc D (A & B are correct)."
+        },
+        {
+          "id": "s6-q3",
+          "number": "3",
+          "html": "<p>3. A. are\tB. is\tC. will be\t     D. isn’t</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>3<strong>. A. are</strong>\tB. is\tC. will be\t    D. isn’t</p>"
+        },
+        {
+          "id": "s6-q4",
+          "number": "4",
+          "html": "<p>4. A. watching\tB. watch\tC. watched             D. watches</p>",
+          "kind": "choice",
+          "answers": [
+            "A"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>4.<strong> A. watching</strong>\tB. watch\tC. watched               D. watches</p>",
+          "note": "Bản đề đánh nhầm chỗ trống cuối là (5). Đã thống nhất thành (4) để khớp bốn câu lựa chọn."
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "II. Read the following passage and answer the questions. (1.5 points)",
+      "part": "READING",
+      "introHtml": "<p>Each country has many good people who take care of others. For example, some of students in the United States often spend many hours as volunteers in hospitals, orphanages or homes for the elderly. They read books to people in these places, or they just visit them and play games with them or listen to their problems.</p>\n<p>Other young volunteers go and work in the homes of people who are sick or old. They paint, clean up, or repair their houses, and do the shopping. For boys who don’t have fathers, there is an organization called Big Brothers. College students and other men take these boys to basketball games or on fishing trips and help <strong>them </strong>to get to know things those boys usually learn from their fathers.</p>\n<p>Each city has a number of clubs where boys and girls can go and play games. Some of these clubs show movies or hold short trips to the mountains, the beaches, museums, or other places of interest. Most of these clubs use a lot of students as volunteers because they are young enough to understand the problems of younger boys and girls</p>",
+      "questions": [
+        {
+          "id": "s7-q1",
+          "number": "1",
+          "html": "<p>Do all of students in the United States often spend a lot of time as volunteers?</p>",
+          "kind": "text",
+          "answers": [
+            "No, they don’t"
+          ],
+          "referenceHtml": "<p>Do all of students in the United States often spend a lot of time as volunteers?</p>\n<p><strong>No, they don’t</strong></p>"
+        },
+        {
+          "id": "s7-q2",
+          "number": "2",
+          "html": "<p>What do volunteers usually do to help sick or old people?</p>",
+          "kind": "text",
+          "answers": [
+            "They paint, clean up, or repair their houses, do the shopping"
+          ],
+          "referenceHtml": "<p>What do volunteers usually do to help sick or old people?</p>\n<p><strong>They </strong><strong>paint, clean up, or repair their houses, do </strong><strong>the </strong><strong>shopping</strong></p>"
+        },
+        {
+          "id": "s7-q3",
+          "number": "3",
+          "html": "<p>What do college students and other men do to help the boys who don’t have fathers?</p>",
+          "kind": "text",
+          "answers": [
+            "They take them to basketball games or on fishing trips and help them to get to know things those boys usually learn from their fathers",
+            "They take them to basketball games or on fishing trips and help them to get to know things those boys usually learn from their fathers."
+          ],
+          "referenceHtml": "<p>What do college students and other men do to help the boys who don’t have fathers?</p>\n<p><strong>They take them to basketball games or on fishing trips and help </strong><strong>them </strong><strong>to </strong><strong>get to know things those boys usually learn from their fathers.</strong></p>"
+        },
+        {
+          "id": "s7-q4",
+          "number": "4",
+          "html": "<p>Why most of the clubs use students as volunteers?</p>",
+          "kind": "text",
+          "answers": [
+            "Because they are young enough to understand the problems of younger boys and girls"
+          ],
+          "referenceHtml": "<p>Why most of the clubs use students as volunteers?</p>\n<p><strong>Because they are young enough to understand the problems of younger boys and girls</strong></p>"
+        },
+        {
+          "id": "s7-q5",
+          "number": "5",
+          "html": "<p>   5. The word <strong>“them</strong><strong>” </strong>in the second paragraph refers to ____</p>\n<p>A. College students \tB. sick people \t\tC. volunteers \tD. the boys who don’t have fathers</p>",
+          "kind": "choice",
+          "answers": [
+            "D"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>5. The word <strong>“them</strong><strong>” </strong>in the second paragraph refers to ____</p>\n<p>A. College students \tB. sick people \t\tC. volunteers \t<strong>D. the boys who don’t have fathers</strong></p>"
+        },
+        {
+          "id": "s7-q6",
+          "number": "6",
+          "html": "<p>6. What is the passage mainly about? </p>\n<p>A. Clubs for young students in America. </p>\n<p>B. Big Brother organization </p>\n<p>C. Students doing volunteer work in America</p>\n<p>D. Sick or old people in America</p>",
+          "kind": "choice",
+          "answers": [
+            "C"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>6.What is the passage mainly about? </p>\n<p>A. Clubs for young students in America. </p>\n<p>B. Big Brother organization </p>\n<p>C. <strong>Students doing volunteer work in America</strong></p>\n<p>D. Sick or old people in America</p>"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "SECTION D: WRITING (2,5 POINTS)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": []
+    },
+    {
+      "id": "s9",
+      "title": "I. Mark A, B, C, D to indicate the correct arrangement of the sentences to make a meaningful paragraph (0.25 points)",
+      "part": "WRITING",
+      "introHtml": "<p>a. Finally, we went home at 5 p.m</p>\n<p>b. First, we visited the local museum in the morning.</p>\n<p>c. Last weekend, my family had a wonderful trip to the countryside.</p>\n<p>d. After that, we had a picnic lunch near the river.</p>\n<p>e. Then, we went fishing in the afternoon.</p>",
+      "questions": [
+        {
+          "id": "s9-q1",
+          "number": "1",
+          "html": "<p><strong>A.</strong><strong> </strong><strong>c-b-d-e-a                 B.</strong><strong> </strong><strong>c-b-e-d-a         C.</strong><strong> </strong><strong>e-b-d-a-c                 </strong><strong>D.</strong><strong> </strong><strong>d-b-c-e-a</strong></p>",
+          "kind": "choice",
+          "answers": [
+            "B"
+          ],
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "referenceHtml": "<p>A. c-b-d-e-a<strong>                 </strong><strong>B.</strong><strong> </strong><strong>c-b-e-d-</strong>a         C. e-b-d-a-c                 D. d-b-c-e-a</p>"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "II. Rearrange the words to make meaningful sentences. (0.5 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s10-q1",
+          "number": "1",
+          "html": "<p><strong>1.</strong> happens/ What/ when/ has/ our body/ too many calories?</p>\n<p>=&gt; …………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "What happens when our body has too many calories?"
+          ],
+          "referenceHtml": "<p>1<strong>.</strong> happens/ What/ when/ has/ our body/ too many calories?</p>\n<p><strong>=&gt; </strong><strong>What happens when our body has too many calories?</strong></p>"
+        },
+        {
+          "id": "s10-q2",
+          "number": "2",
+          "html": "<p><strong>2.</strong> usually/ My father/ finishes work/ home/ half past five/ and goes/ at</p>\n<p>=&gt; …………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "My father usually finishes work at half past five and goes home",
+            "My father usually finishes work at half past five and goes home."
+          ],
+          "referenceHtml": "<p>2. usually/ My father/ finishes work/ home/ half past five/ and goes/ at</p>\n<p><strong>=&gt; </strong><strong>My father usually finishes work at half past five and goes home.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "III. Rewrite the following sentences as directed (using the suggested words) so that the meanings stay the same. (0.75 points)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s11-q1",
+          "number": "1",
+          "html": "<p>1. I spend twenty minutes walking to school every morning.</p>\n<p>  It takes..........................................................................................................................</p>",
+          "kind": "text",
+          "answers": [
+            "me twenty minutes to walk to school every morning",
+            "It takes me twenty minutes to walk to school every morning"
+          ],
+          "referenceHtml": "<p>1. I spend twenty minutes walking to school every morning.</p>\n<p><strong> </strong><strong></strong><strong> It takes</strong><strong> </strong><strong>me twenty minutes to walk to school every morning</strong></p>"
+        },
+        {
+          "id": "s11-q2",
+          "number": "2",
+          "html": "<p>2<strong>. </strong> I walked in the sun so long, so I got sunburn.</p>\n<p>I got sunburn……………………………………………………………………………………….</p>",
+          "kind": "text",
+          "answers": [
+            "because I walked in the sun so long",
+            "I got sunburn because I walked in the sun so long.",
+            "because I walked in the sun so long."
+          ],
+          "referenceHtml": "<p>2<strong>. </strong> I walked in the sun so long, so I got sunburn.</p>\n<p><strong></strong><strong>I got sunburn</strong><strong> </strong><strong>because I walked in the sun so long.</strong><strong>\t</strong></p>"
+        },
+        {
+          "id": "s11-q3",
+          "number": "3",
+          "html": "<p>3. Ha likes going on a picnic with her best friends at weekends.</p>\n<p> Ha is interested …………………………………………………………………..</p>",
+          "kind": "text",
+          "answers": [
+            "in going on a picnic with her best friends at weekends",
+            "Ha is interested in going on a picnic with her best friends at weekends.",
+            "in going on a picnic with her best friends at weekends."
+          ],
+          "referenceHtml": "<p>3. Ha likes going on a picnic with her best friends at weekends.</p>\n<p><strong></strong><strong> Ha is interested </strong><strong>in going on a picnic with her best friends at weekends.</strong></p>"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "IV. Write a paragraph of about 60- 80 words about your hobby. (1pt)",
+      "part": "WRITING",
+      "introHtml": "",
+      "questions": [
+        {
+          "id": "s12-q1",
+          "number": "1",
+          "html": "<p><strong> Based on</strong></p>\n<p>What is your hobby?</p>\n<p>When did you start it?</p>\n<p>Who do you share your hobby?</p>\n<p>How do you feel?</p>\n<p><strong>The end</strong></p>",
+          "kind": "manual",
+          "answers": [],
+          "referenceHtml": "<p><strong>Marking scheme: </strong></p>\n<p>1. Format: (0.1 point for correct format). One paragraph only with the introduction, the body, and the conclusion. </p>\n<p>2. Content: (0.4 point): a provision of main ideas and details as appropriate to the main idea. </p>\n<p>3. Language: (0.3 point): a variety of vocabulary and structures appropriate to the level of secondary students. </p>\n<p>4. Presentation: (0.2 point): Coherence, cohesion and style appropriate to the level of secondary students.</p>\n<p><strong>The end</strong></p>"
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "title": "Bài nghe 1",
+      "sourceName": "Listening 1...mp3",
+      "sourceHash": "6a46776e85801e683656e8bc22e247760a93298a7a3a2b4c016200e28e5e86b5",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-12-1.mp3",
+      "duration": 71.732245
+    },
+    {
+      "title": "Bài nghe 2",
+      "sourceName": "Listening 2.mp3",
+      "sourceHash": "69a355600d0e05c9220ab9ec8b506cb083e4df87b7f7547a4d2721bcc03e533c",
+      "src": "/data/grade7-midterm/audio/vedec-g7-2026-12-2.mp3",
+      "duration": 76.826122
+    }
+  ],
+  "sourceHash": "f5acb71ee3feb7900d98a11fee761f1013e3d653ca673de9aead854a8e599d3a"
+}

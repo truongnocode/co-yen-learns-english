@@ -25,6 +25,26 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe('exam modes', () => {
+  it('loads grade 7 data, links back to grade 7, and seeks shared recordings to the matching task', async () => {
+    const grade7: Grade6Exam = {
+      ...fixture, id: 'vedec-g7-2026-01', subtitle: 'Tiếng Anh 7',
+      audio: [{ title: 'Bản ghi đầy đủ', src: '/shared.mp3', duration: 300, sourceName: 'source.mp3', sectionIds: ['s1'] }],
+      sections: [{ ...fixture.sections[0], audioStart: 173 }],
+    };
+    const fetchMock = vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => grade7 });
+    vi.stubGlobal('fetch', fetchMock);
+    render(<MemoryRouter initialEntries={['/grade/7/tests/vedec-g7-2026-01?mode=practice']}><Routes><Route path="/grade/7/tests/:examId" element={<Grade6TestsPage grade={7} />} /></Routes></MemoryRouter>);
+    expect(await screen.findByText('Tiếng Anh 7')).toBeInTheDocument();
+    expect(fetchMock.mock.calls[0][0]).toBe('/data/grade7-midterm/vedec-g7-2026-01.json');
+    expect(screen.getByRole('link', { name: 'Chọn đề khác' })).toHaveAttribute('href', '/grade/7/tests');
+    const audio = document.querySelector('audio')!;
+    fireEvent.loadedMetadata(audio);
+    expect(audio.currentTime).toBe(173);
+    fireEvent.click(within(screen.getByRole('article', { name: 'Câu 1' })).getByRole('button', { name: 'T · Đúng' }));
+    expect(screen.getByText('✓ Chính xác!')).toBeInTheDocument();
+    expect(localStorage.getItem(attemptKey(grade7.id, 'practice'))).toContain('"q1":"T"');
+    expect(localStorage.getItem(attemptKey(fixture.id, 'practice'))).toBeNull();
+  });
   it('places progress above the matching listening players, including shared full recordings', async () => {
     const listening: Grade6Exam = {
       ...fixture,

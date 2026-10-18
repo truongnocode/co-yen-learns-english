@@ -1,10 +1,11 @@
 import { useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { ArrowRight, BookOpen, Sparkles } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 import { useAuth } from "@/contexts/AuthContext";
 import { isOnboarded } from "@/lib/progress";
+import { MIDTERM_EXAM_COUNTS, type ExamGrade } from "@/lib/grade6Exam";
 import bearUrl from "@/assets/emoji/bear.png";
 import rabbitUrl from "@/assets/emoji/rabbit.png";
 import carrotUrl from "@/assets/emoji/carrot-char.svg";
@@ -100,13 +101,32 @@ const Index = () => {
         </div>
       </header>
 
-      <footer className="border-t border-border py-8 text-center">
-        <div className="mb-5 flex flex-wrap justify-center gap-3 px-4">
-          <button onClick={() => navigate('/grade/6/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 18 đề ôn giữa kỳ I · Tiếng Anh lớp 6 →</button>
-          <button onClick={() => navigate('/grade/7/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 18 đề ôn giữa kỳ I · Tiếng Anh lớp 7 →</button>
-          <button onClick={() => navigate('/grade/8/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 17 đề ôn giữa kỳ I · Tiếng Anh lớp 8 →</button>
-          <button onClick={() => navigate('/grade/9/tests')} className="rounded-xl bg-primary/10 px-5 py-3 font-bold text-primary hover:bg-primary/20">Mới: 16 đề ôn giữa kỳ I · Tiếng Anh lớp 9 →</button>
+      <section aria-labelledby="midterm-heading" className="px-4 pb-12 sm:px-6">
+        <div className="mx-auto max-w-6xl rounded-3xl border border-primary/15 bg-primary/5 p-5 sm:p-8">
+          <div className="mb-6 flex items-start gap-4">
+            <span className="hidden rounded-2xl bg-primary/10 p-3 text-primary sm:block"><BookOpen className="h-7 w-7" aria-hidden /></span>
+            <div>
+              <span className="inline-block rounded-full bg-xp px-3 py-1 text-xs font-extrabold text-xp-foreground">MỚI · LỚP 6–9</span>
+              <h2 id="midterm-heading" className="mt-3 font-display text-2xl font-extrabold sm:text-3xl">Ôn thi giữa kỳ I</h2>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">Tiếng Anh · Global Success · VEDEC 2026. Chọn lớp của em để luyện tập hoặc làm bài kiểm tra.</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+            {([6, 7, 8, 9] as ExamGrade[]).map(grade => (
+              <Link key={grade} to={`/grade/${grade}/tests`} className="group rounded-2xl border border-border bg-card p-4 shadow-1 transition hover:-translate-y-1 hover:border-primary/40 hover:shadow-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary sm:p-5">
+                <div className="flex items-center justify-between gap-2">
+                  <h3 className="font-display text-2xl font-extrabold text-primary">Lớp {grade}</h3>
+                  <span className="rounded-full bg-primary/10 p-2 text-primary"><ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden /></span>
+                </div>
+                <p className="mt-3 text-sm font-semibold text-muted-foreground">{MIDTERM_EXAM_COUNTS[grade]} đề tham khảo</p>
+                <span className="mt-4 inline-block text-sm font-extrabold text-primary">Chọn đề</span>
+              </Link>
+            ))}
+          </div>
         </div>
+      </section>
+
+      <footer className="border-t border-border py-8 text-center">
         <p className="text-sm font-semibold text-muted-foreground">© 2026 Học tiếng Anh cùng cô Yến ❤️</p>
       </footer>
     </PageShell>

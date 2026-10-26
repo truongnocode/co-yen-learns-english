@@ -1,3 +1,8 @@
+export function examChoiceSize(choices: string[]) {
+  const longest = Math.max(0, ...choices.map(c => c.replace(/\s+/g, ' ').trim().length));
+  return { size: longest <= 18 ? 'short' : longest <= 120 ? 'medium' : 'long', tiny: longest <= 8 };
+}
+
 /** Reflow only a complete, trailing set of A–D choices from trusted exam HTML.
  * DOM ranges retain the original underline, emphasis, images and question text.
  * If the source uses another structure, leave its HTML untouched.
@@ -32,17 +37,28 @@ export function splitExamChoices(html: string, labels: string[] | undefined) {
     return entry && { node: entry.node, offset: m.index! - entry.start };
   });
   if (positions.some(p => !p)) return null;
+  const lastPosition = positions[positions.length - 1]!;
+  const followingInstruction = [...root.querySelectorAll('p')].find(p =>
+    /^(?:(?:[IVX]+|\d+)[.:]\s*)?(?:Mark the letter|Circle the letter|Read the following|Choose the (?:correct|best arrangement|word)|Complete the following|Rearrange the following|Put the following|Write a paragraph|Listen and)/i.test(p.textContent?.trim() ?? '') &&
+    !!(p.compareDocumentPosition(lastPosition.node) & Node.DOCUMENT_POSITION_PRECEDING));
   const fragment = (start: number | null, end: number | null) => {
     const range = document.createRange();
     range.selectNodeContents(root);
     if (start !== null) range.setStart(positions[start]!.node, positions[start]!.offset);
     if (end !== null) range.setEnd(positions[end]!.node, positions[end]!.offset);
+    else if (followingInstruction) range.setEndBefore(followingInstruction);
     const holder = document.createElement('div');
     holder.append(range.cloneContents());
     return holder.innerHTML;
   };
   const choices = tail.map((m, i) => ({ label: labels[i], html: fragment(i, i + 1 < labels.length ? i + 1 : null), text: text.slice(m.index! + m[0].length, tail[i + 1]?.index).trim() }));
   if (choices.some(c => !c.text || /\uFFFC/.test(c.text))) return null;
-  const longest = Math.max(...choices.map(c => c.text.replace(/\s+/g, ' ').length));
-  return { stemHtml: fragment(null, 0), choices, size: longest <= 18 ? 'short' : longest <= 120 ? 'medium' : 'long', tiny: longest <= 8 };
+  let afterHtml = '';
+  if (followingInstruction) {
+    const range = document.createRange(); range.selectNodeContents(root); range.setStartBefore(followingInstruction);
+    const holder = document.createElement('div'); holder.append(range.cloneContents()); afterHtml = holder.innerHTML;
+    // Size only the actual options, not a heading printed after option D.
+    choices[choices.length - 1].text = new DOMParser().parseFromString(choices[choices.length - 1].html, 'text/html').body.textContent?.replace(/^[A-D]\s*[.)]\s*/, '').trim() ?? '';
+  }
+  return { stemHtml: fragment(null, 0), choices, afterHtml, ...examChoiceSize(choices.map(c => c.text)) };
 }

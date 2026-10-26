@@ -6,6 +6,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 import { MIDTERM_EXAM_COUNTS, isValidMidtermExamId, type ExamGrade, attemptKey, examResult, isAutoScored, isCorrectExamAnswer, newAttempt, restoreAttempt, type ExamAttempt, type ExamMode, type ExamQuestion, type ExamSummary, type Grade6Exam } from '@/lib/grade6Exam';
 import './grade6-tests.css';
 import { splitExamChoices } from '@/lib/examChoiceLayout';
+import { compactExamHtml, compactExamInstruction } from '@/lib/compactExamContent';
 
 const button = 'inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50';
 const secondary = 'inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 font-bold hover:bg-muted';
@@ -74,7 +75,8 @@ function AudioTrack({ track, sectionId, startAt }: { track: Grade6Exam['audio'][
 
 function RichText({ value }: { value: string }) {
   // Only trusted static HTML produced by the local DOCX importer; never student HTML.
-  return <div className="exam-source" lang="en" dangerouslySetInnerHTML={{ __html: value }} />;
+  const compact = useMemo(() => compactExamHtml(value), [value]);
+  return <div className="exam-source" lang="en" dangerouslySetInnerHTML={{ __html: compact }} />;
 }
 
 function QuestionCard({ question: q, attempt, mode, onAnswer, onCheck }: { question: ExamQuestion; attempt: ExamAttempt; mode: ExamMode; onAnswer: (id: string, answer: string) => void; onCheck: (id: string) => void }) {
@@ -83,17 +85,19 @@ function QuestionCard({ question: q, attempt, mode, onAnswer, onCheck }: { quest
   const scored = isAutoScored(q);
   const correct = isCorrectExamAnswer(q, value);
   const locked = attempt.submitted || (revealed && scored);
-  const layout = useMemo(() => splitExamChoices(q.html, q.options), [q.html, q.options]);
+  const prompt = useMemo(() => compactExamHtml(q.html, { questionNumber: q.number, manual: q.kind === 'manual' }), [q.html, q.number, q.kind]);
+  const layout = useMemo(() => splitExamChoices(prompt, q.options), [prompt, q.options]);
+  const multipleBlanks = (prompt.match(/____/g)?.length ?? 0) > 1;
   return <article id={q.id} className="exam-question scroll-mt-24 rounded-2xl border border-border bg-card p-4 shadow-1" aria-label={`Câu ${q.number}`}>
     <div className="mb-2 flex items-center justify-between gap-3"><span className="rounded-lg bg-muted px-2.5 py-1 text-xs font-extrabold">Câu {q.number}</span>{q.kind === 'manual' && <span className="text-xs font-bold text-muted-foreground">Tự luyện · nhờ cô chấm</span>}</div>
-    <RichText value={layout?.stemHtml ?? q.html} />
+    <RichText value={layout?.stemHtml ?? prompt} />
     {q.options ? <div role="group" aria-label={`Đáp án câu ${q.number}`} className={layout ? `exam-choices exam-choices-${layout.size}${layout.tiny ? ' exam-choices-tiny' : ''}` : 'mt-3 flex flex-wrap gap-2'}>
       {q.options.map((option, index) => <button key={option} type="button" disabled={locked} aria-label={layout ? option : undefined} aria-describedby={layout ? `option-${q.id}-${option}` : undefined} aria-pressed={value === option} onClick={() => onAnswer(q.id, option)} className={`${layout ? 'exam-choice text-left font-medium' : 'min-w-14 px-4 font-extrabold'} min-h-11 rounded-xl border-2 py-2 transition-colors disabled:cursor-default ${value === option ? 'border-primary bg-primary/10 text-foreground' : 'border-border hover:border-primary hover:bg-primary/5'} ${revealed && scored && q.answers.includes(option) ? '!border-success !bg-success/10 !text-foreground' : ''}`}>{layout ? <div id={`option-${q.id}-${option}`}><RichText value={layout.choices[index].html} /></div> : option === 'T' ? 'T · Đúng' : option === 'F' ? 'F · Sai' : option}</button>)}
-    </div> : <div className="mt-4">
-      <label htmlFor={`answer-${q.id}`} className="mb-2 block text-sm font-bold">{q.kind === 'manual' ? 'Bài làm của em' : 'Câu trả lời của em'}</label>
-      {q.kind === 'manual' ? <><textarea id={`answer-${q.id}`} lang="en" value={value} disabled={locked} maxLength={10000} onChange={e => onAnswer(q.id, e.target.value)} rows={6} className="w-full rounded-xl border-2 border-border bg-background p-3 outline-none focus:border-primary" placeholder="Viết bài hoặc ghi chú để luyện nói…" /><p className="mt-1 text-xs text-muted-foreground">{value.trim() ? value.trim().split(/\s+/).length : 0} từ</p></> : <><input id={`answer-${q.id}`} lang="en" autoComplete="off" spellCheck={false} value={value} disabled={locked} maxLength={1000} onChange={e => onAnswer(q.id, e.target.value)} onKeyDown={e => { if (e.key === 'Enter' && mode === 'practice' && value.trim()) onCheck(q.id); }} className="w-full rounded-xl border-2 border-border bg-background px-4 py-3 outline-none focus:border-primary" placeholder="Nhập phần còn thiếu hoặc câu trả lời đầy đủ" /><p className="mt-2 text-xs text-muted-foreground">Nếu có nhiều chỗ trống, nhập theo thứ tự, cách nhau bằng dấu /.</p></>}
-      {mode === 'practice' && !revealed && q.kind !== 'manual' && <button className={`${button} mt-3`} disabled={!value.trim()} onClick={() => onCheck(q.id)}>Kiểm tra câu này</button>}
+    </div> : <div className="mt-3">
+      <label htmlFor={`answer-${q.id}`} className={q.kind === 'manual' ? 'mb-2 block text-sm font-bold' : 'sr-only'}>{q.kind === 'manual' ? 'Bài làm của em' : 'Câu trả lời của em'}</label>
+      {q.kind === 'manual' ? <><textarea id={`answer-${q.id}`} lang="en" value={value} disabled={locked} maxLength={10000} onChange={e => onAnswer(q.id, e.target.value)} rows={4} className="w-full rounded-xl border-2 border-border bg-background p-3 outline-none focus:border-primary" placeholder="Viết bài hoặc ghi chú để luyện nói…" /><p className="mt-1 text-xs text-muted-foreground">{value.trim() ? value.trim().split(/\s+/).length : 0} từ</p></> : <><div className="flex items-start gap-2"><input id={`answer-${q.id}`} lang="en" autoComplete="off" spellCheck={false} value={value} disabled={locked} maxLength={1000} onChange={e => onAnswer(q.id, e.target.value)} onKeyDown={e => { if (e.key === 'Enter' && mode === 'practice' && value.trim()) onCheck(q.id); }} className="min-w-0 flex-1 rounded-xl border-2 border-border bg-background px-3 py-2.5 outline-none focus:border-primary" placeholder="Nhập đáp án…" />{mode === 'practice' && !revealed && <button aria-label="Kiểm tra câu này" className="min-h-11 shrink-0 rounded-xl bg-primary px-3 py-2.5 text-sm font-bold text-primary-foreground hover:bg-primary/90 disabled:opacity-50" disabled={!value.trim()} onClick={() => onCheck(q.id)}>Kiểm tra</button>}</div>{multipleBlanks && <p className="mt-1.5 text-xs text-muted-foreground">Nhập các phần theo thứ tự, cách nhau bằng dấu /.</p>}</>}
     </div>}
+    {layout?.afterHtml && <div className="mt-3 border-t border-border pt-2 text-sm font-semibold text-muted-foreground"><RichText value={layout.afterHtml} /></div>}
     {q.note && (!scored || revealed) && <p className="mt-4 rounded-xl bg-muted p-3 text-sm leading-relaxed">{q.note}</p>}
     {revealed && <div role="status" className={`mt-4 rounded-xl p-4 text-sm leading-relaxed ${scored && correct ? 'bg-success/10' : 'bg-muted'}`}>
       {scored ? <><p className="font-extrabold">{!value.trim() ? 'Em chưa trả lời câu này.' : correct ? '✓ Chính xác!' : q.kind === 'text' ? 'Câu trả lời chưa khớp đáp án mẫu.' : 'Em chưa chọn đúng.'}</p><p className="mt-1">Đáp án{q.kind === 'text' ? ' mẫu' : ''}: <strong lang="en">{q.kind === 'text' ? q.answers[0] : q.answers.join(' / ')}</strong></p></> : <p className="font-semibold">{q.kind === 'manual' ? 'Em có thể nhờ cô xem và chấm bài này.' : 'Câu này không tính vào điểm tự động.'}</p>}
@@ -151,7 +155,7 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
       const listeningIndex = listeningSections.findIndex(s => s.id === section.id);
       const track = exam.audio.find(a => a.sectionIds?.includes(section.id)) ?? (listeningIndex >= 0 && !exam.audio.some(a => a.sectionIds) ? exam.audio[exam.audio.length === 1 ? 0 : listeningIndex] : undefined);
       return <section key={section.id} id={section.id} className="scroll-mt-52">
-      <h2 className={`mb-4 font-display font-extrabold ${section.questions.length ? 'text-lg' : 'border-b border-border pb-3 text-xl text-primary'}`}>{section.title}</h2>
+      <h2 className={`mb-3 font-display font-extrabold ${section.questions.length ? 'text-lg' : 'border-b border-border pb-3 text-xl text-primary'}`}>{compactExamInstruction(section.title)}</h2>
       {track && <div role="region" aria-label={`Bài nghe cho ${section.title}`} className="mb-4 rounded-3xl bg-primary/5 p-4 sm:p-6">
         <h3 className="mb-2 flex items-center gap-2 font-display text-lg font-extrabold"><Headphones className="h-5 w-5 text-primary" /> Nghe cùng bài</h3>
         <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{exam.audio.length === 1 && listeningSections.length > 1 ? 'File nghe đầy đủ dùng chung cho các phần nghe của đề. Em có thể tua đến phần đang làm.' : 'Nghe file bên dưới để trả lời các câu hỏi trong phần này. Em có thể tạm dừng, tua và nghe lại.'}</p>

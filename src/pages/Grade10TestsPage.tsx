@@ -18,6 +18,9 @@ import CountdownTimer from "@/components/CountdownTimer";
 import ReviewAllAnswers from "@/components/ReviewAllAnswers";
 import { matchAnswer } from "@/lib/answerMatch";
 import SignVisual from "@/components/SignVisual";
+import { compactExamText } from "@/lib/compactExamContent";
+import { examChoiceSize } from "@/lib/examChoiceLayout";
+import './grade6-tests.css';
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
 
@@ -285,6 +288,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
 
   const totalMCQ = allQuestions.length;
   const q = allQuestions[current];
+  const choiceLayout = examChoiceSize(q?.opts.map(compactExamText) ?? []);
   const progress = ((current + 1) / totalMCQ) * 100;
   const partCQuestions = test.partC?.fill_in || [];
 
@@ -342,8 +346,8 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
             {reviewMode === "after" && (
               <ReviewAllAnswers
                 questions={allQuestions.map((aq, i) => ({
-                  q: aq.q,
-                  opts: aq.opts,
+                  q: compactExamText(aq.q),
+                  opts: aq.opts.map(compactExamText),
                   ans: aq.ans,
                   explain: aq.explain,
                   selected: userAnswers[i],
@@ -390,7 +394,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
             <div className="flex flex-col gap-4">
               {partCQuestions.map((pq: Grade10FillIn, i: number) => (
                 <div key={i} className="bg-card rounded-2xl p-5 shadow-1 border border-border">
-                  <p className="font-medium text-foreground text-base mb-3 whitespace-pre-line">{pq.q}</p>
+                  <p className="font-medium text-foreground text-base mb-3 whitespace-pre-line">{compactExamText(pq.q)}</p>
                   <input value={partCAnswers[i] || ""} onChange={e => { const a = [...partCAnswers]; a[i] = e.target.value; setPartCAnswers(a); }}
                     placeholder="Nhập đáp án..."
                     className="w-full bg-card border-2 border-border rounded-xl px-4 py-3 text-foreground text-base focus:outline-none focus:border-primary transition-colors" />
@@ -427,8 +431,8 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
             {reviewMode === "after" && (
               <ReviewAllAnswers
                 questions={allQuestions.map((aq, i) => ({
-                  q: aq.q,
-                  opts: aq.opts,
+                  q: compactExamText(aq.q),
+                  opts: aq.opts.map(compactExamText),
                   ans: aq.ans,
                   explain: aq.explain,
                   selected: userAnswers[i],
@@ -479,11 +483,12 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
             {(() => {
               // Check if question references a word in the passage (e.g., 'The word "their" refers to...')
               const refMatch = q.q.match(/[Tt]he\s+word\s+"([^"]+)"/);
-              if (!refMatch) return q.passage;
+              const passage = compactExamText(q.passage);
+              if (!refMatch) return passage;
               const refWord = refMatch[1];
               // Highlight all occurrences of the referenced word in passage
               const regex = new RegExp(`\\b(${refWord})\\b`, "gi");
-              const parts = q.passage.split(regex);
+              const parts = passage.split(regex);
               return parts.map((part, i) =>
                 regex.test(part) ? (
                   <span key={i} className="underline decoration-2 decoration-primary font-bold text-primary">{part}</span>
@@ -496,9 +501,9 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
         {q.sign && <SignVisual sign={q.sign} />}
 
         <motion.div key={current} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}
-          className="bg-card rounded-2xl p-6 shadow-2 border border-border">
-          <p className="font-display font-bold text-foreground text-lg mb-5 leading-relaxed">{q.q}</p>
-          <div className="flex flex-col gap-2.5">
+          className="exam-question bg-card rounded-2xl p-4 shadow-2 border border-border">
+          <p className="font-display font-bold text-foreground text-lg mb-4 leading-relaxed">{compactExamText(q.q)}</p>
+          <div className={`exam-choices exam-choices-${choiceLayout.size}${choiceLayout.tiny ? ' exam-choices-tiny' : ''}`}>
             {q.opts.map((opt, idx) => {
               let cls = "bg-secondary/50 border-2 border-transparent text-foreground hover:border-primary/30";
               if (reviewMode === "after") {
@@ -519,8 +524,8 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
                   } else {
                     if (!submitted) setSelected(idx);
                   }
-                }} className={`p-4 rounded-2xl text-left font-medium transition-all ${cls}`}>
-                  <span className="font-bold mr-2">{String.fromCharCode(65 + idx)}.</span>{opt}
+                }} className={`min-h-11 px-3 py-2.5 rounded-xl text-left font-medium transition-all ${cls}`}>
+                  <span className="font-bold mr-2">{String.fromCharCode(65 + idx)}.</span>{compactExamText(opt)}
                 </button>
               );
             })}

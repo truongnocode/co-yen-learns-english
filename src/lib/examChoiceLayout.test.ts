@@ -49,7 +49,7 @@ describe('compact exam choice layout', () => {
           const result = splitExamChoices(q.html, q.options);
           if (!result) continue;
           reflowed++;
-          const joined = result.stemHtml + result.choices.map(c => c.html).join('');
+          const joined = result.stemHtml + result.choices.map(c => c.html).join('') + result.afterHtml;
           const before = source(q.html);
           const after = source(joined);
           expect(after.textContent!.replace(/\s+/g, ''), `${file}/${q.id}`).toBe(before.textContent!.replace(/\s+/g, ''));

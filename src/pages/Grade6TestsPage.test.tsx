@@ -25,6 +25,22 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe('exam modes', () => {
+  it('compacts printed rewrite blanks while keeping grading, input labels and saved answers', async () => {
+    const compact: Grade6Exam = { ...fixture, sections: [{ ...fixture.sections[0], questions: [
+      { id: 'q2', number: '33', kind: 'text', html: '<p>Question 33: There are many flowers in our garden.</p><p>=&gt; Our\n garden__________________________________________________________.</p>', answers: ['has many flowers'] },
+      { id: 'q4', number: '34', kind: 'text', html: '<p>They (be) __________ (play) __________.</p>', answers: ['are / playing'] },
+    ] }] };
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => compact }));
+    mount();
+    const article = await screen.findByRole('article', { name: 'Câu 33' });
+    expect(within(article).getByText('=> Our garden ____.')).toBeInTheDocument();
+    expect(within(article).queryByText(/cách nhau bằng dấu/)).not.toBeInTheDocument();
+    expect(within(screen.getByRole('article', { name: 'Câu 34' })).getByText(/cách nhau bằng dấu/)).toBeInTheDocument();
+    fireEvent.change(within(article).getByRole('textbox', { name: 'Câu trả lời của em' }), { target: { value: 'has many flowers' } });
+    fireEvent.click(within(article).getByRole('button', { name: 'Kiểm tra câu này' }));
+    expect(within(article).getByText('✓ Chính xác!')).toBeInTheDocument();
+    expect(localStorage.getItem(attemptKey(fixture.id, 'practice'))).toContain('has many flowers');
+  });
   it('makes the full reflowed option clickable without duplicating its text or changing grading', async () => {
     const compact = { ...fixture, sections: [{ ...fixture.sections[0], questions: [{ id: 'q1', number: '1', kind: 'choice', html: '<p>Choose the answer.</p><p>A. first</p><p>B. second</p><p>C. third</p><p>D. fourth</p>', answers: ['B'], options: ['A', 'B', 'C', 'D'] }] }] };
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => compact }));

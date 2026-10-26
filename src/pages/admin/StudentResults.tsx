@@ -34,6 +34,7 @@ export default function StudentResults() {
   useEffect(() => { void load(); }, []);
   const filtered = rows.filter(row => (!grade || String(row.grade) === grade) && (!mode || row.mode === mode) && (!state || (isDraftSubmission(row) ? 'in_progress' : 'submitted') === state) && normalize(`${row.studentName} ${row.className} ${row.examTitle} ${row.examId}`).includes(normalize(search.trim())));
   return <div className="mx-auto max-w-6xl">
+    <Link to="/leaderboard" className="mb-4 inline-block text-sm font-bold text-primary">Bảng xếp hạng công khai →</Link>
     <div className="mb-5 flex flex-wrap items-center justify-between gap-3"><div><h2 className="font-display text-2xl font-extrabold">Kết quả học sinh</h2><p className="mt-1 text-sm text-muted-foreground">Bài đang làm và đã nộp · Lớp 6–10 · Bấm Làm mới để cập nhật danh sách</p></div><button className={button} disabled={loading} onClick={() => void load()}>Làm mới</button></div>
     <div className="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_8rem_11rem_11rem]">
       <input aria-label="Tìm học sinh, lớp hoặc đề" value={search} onChange={e => setSearch(e.target.value)} placeholder="Tìm tên học sinh, lớp hoặc đề…" className={field} />

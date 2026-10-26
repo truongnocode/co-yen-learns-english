@@ -1,6 +1,7 @@
 import { collection, doc, getDoc, getDocs, limit, onSnapshot, orderBy, query, runTransaction, serverTimestamp, setDoc, startAfter, type QueryDocumentSnapshot } from 'firebase/firestore';
 import { db } from './firebase';
 import { z } from 'zod';
+import { publicExamResult } from './examLeaderboard';
 
 export interface StudentIdentity { studentName: string; className: string }
 export interface SubmittedQuestion {
@@ -65,12 +66,15 @@ export function sendExamSubmission(id: string, submission: ExamSubmission): Prom
   const promise = runTransaction(db, async transaction => {
     const ref = doc(db, 'exam_submissions', id);
     const existing = await transaction.get(ref);
+    let final = submission;
     if (existing.exists()) {
       if (existing.data().uid !== submission.uid) throw new Error('Bài nộp thuộc phiên đăng nhập khác.');
-      if (!isDraftSubmission(existing.data())) return;
-      if ((existing.data().revision ?? 0) >= (submission.revision ?? 0)) throw new Error('Có tiến trình mới hơn. Hãy tải lại bài trước khi nộp.');
+      if (!isDraftSubmission(existing.data())) final = existing.data() as ExamSubmission;
+      else if ((existing.data().revision ?? 0) >= (submission.revision ?? 0)) throw new Error('Có tiến trình mới hơn. Hãy tải lại bài trước khi nộp.');
     }
-    transaction.set(ref, { ...submission, receivedAt: serverTimestamp() });
+    if (!existing.exists() || isDraftSubmission(existing.data())) transaction.set(ref, { ...submission, receivedAt: serverTimestamp() });
+    const publicResult = publicExamResult(final);
+    if (publicResult) transaction.set(doc(db, 'exam_leaderboard', id), publicResult);
   }).then(() => {
     try { localStorage.setItem(receiptKey(submission.uid, id), 'sent'); localStorage.removeItem(prefix + id); } catch { /* Remote receipt is authoritative. */ }
     try { localStorage.removeItem(progressPrefix + id); } catch { /* Final remote record is immutable. */ }

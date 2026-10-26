@@ -147,6 +147,27 @@ service cloud.firestore {
       }
     }
 
+    // Public score projection only. A matching finalized private snapshot must
+    // exist (or finalize in this same transaction); client fields cannot diverge.
+    match /exam_leaderboard/{submissionId} {
+      allow read: if true;
+      function matchesFinalSnapshot() {
+        let source = getAfter(/databases/$(database)/documents/exam_submissions/$(submissionId)).data;
+        let target = request.resource.data;
+        return isSignedIn() && (source.uid == request.auth.uid || isAdmin())
+          && source.get('state', 'submitted') == 'submitted' && source.total > 0
+          && target.keys().hasAll(['version', 'studentName', 'className', 'grade', 'examId', 'examTitle', 'mode', 'score', 'finishedAt'])
+          && target.keys().hasOnly(['version', 'studentName', 'className', 'grade', 'examId', 'examTitle', 'mode', 'score', 'finishedAt'])
+          && target.version == 1 && target.studentName == source.studentName
+          && target.className == source.className && target.grade == source.grade
+          && target.examId == source.examId && target.examTitle == source.examTitle
+          && target.mode == source.mode && target.score == source.score
+          && target.finishedAt == source.finishedAt;
+      }
+      allow create, update: if matchesFinalSnapshot();
+      allow delete: if false;
+    }
+
     // ─── Deny everything else by default ────────────────────────────────
     match /{document=**} {
       allow read, write: if false;

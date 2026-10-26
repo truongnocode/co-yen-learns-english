@@ -9,6 +9,7 @@ export const routes = {
   video: "/video-lessons",
   videoLesson: (id: string) => `/video-lessons/${id}`,
   progress: "/progress",
+  leaderboard: "/leaderboard",
   pet: "/pet",
   tests: "/tests",
 } as const;

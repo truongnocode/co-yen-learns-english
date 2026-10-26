@@ -13,6 +13,15 @@ beforeEach(() => {
   mock.transaction.mockImplementation(async (_db, action) => action({ get: mock.read, set: mock.write }));
 });
 describe('persistent idempotent exam delivery', () => {
+  it('publishes only a limited final summary atomically and replays the stored score on retries', async () => {
+    const final = { ...submission, total: 1, manual: 0, correct: 1, score: 10, state: 'submitted' as const };
+    await sendExamSubmission('ranked', final);
+    expect(mock.write).toHaveBeenCalledWith('exam_leaderboard/ranked', { version: 1, studentName: 'Test Student', className: '6A1', grade: 6, examId: 'paper', examTitle: 'Paper', mode: 'test', score: 10, finishedAt: 2 });
+    mock.read.mockResolvedValue({ exists: () => true, data: () => final });
+    mock.write.mockClear(); await sendExamSubmission('ranked', { ...final, score: 0 });
+    expect(mock.write).toHaveBeenCalledTimes(1);
+    expect(mock.write.mock.calls[0][1].score).toBe(10);
+  });
   it('advances drafts, finalizes the same record, and ignores delayed older drafts', async () => {
     const draft = { ...submission, state: 'in_progress' as const, revision: 10, answered: 1 };
     await sendExamProgress('draft-id', draft);

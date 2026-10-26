@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Trophy } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import PageShell from "@/components/PageShell";
 import { useAuth } from "@/contexts/AuthContext";
@@ -125,6 +125,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section className="px-4 pb-12 sm:px-6" aria-labelledby="leaderboard-heading"><div className="mx-auto max-w-6xl rounded-3xl border border-xp/50 bg-xp/10 p-5 sm:p-8"><div className="flex flex-wrap items-center justify-between gap-4"><div><h2 id="leaderboard-heading" className="flex items-center gap-3 font-display text-2xl font-extrabold"><Trophy className="h-7 w-7 text-primary" aria-hidden /> Bảng xếp hạng</h2><p className="mt-2 text-sm text-muted-foreground">Cùng ghi điểm mỗi ngày · Xem thành tích theo từng khối</p></div><Link to="/leaderboard" className="inline-flex min-h-11 items-center rounded-xl bg-primary px-5 font-bold text-primary-foreground">Xem xếp hạng →</Link></div><div className="mt-5 grid grid-cols-5 gap-2">{[6, 7, 8, 9, 10].map(g => <Link key={g} to={`/leaderboard?grade=${g}`} className="rounded-xl border bg-card py-3 text-center text-sm font-extrabold text-primary hover:border-primary sm:text-base">Lớp {g}</Link>)}</div></div></section>
 
       <footer className="border-t border-border py-8 text-center">
         <p className="text-sm font-semibold text-muted-foreground">© 2026 Học tiếng Anh cùng cô Yến ❤️</p>

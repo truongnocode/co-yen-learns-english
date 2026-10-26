@@ -49,7 +49,7 @@ const AppNav = () => {
             <span className="hidden font-display text-lg font-extrabold tracking-tight text-foreground sm:block">Cô Yến</span>
           </button>
 
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Điều hướng chính">
+          <nav className="hidden items-center gap-1 lg:flex" aria-label="Điều hướng chính">
             {HUBS.map((h) => {
               const on = active === h.key;
               return (
@@ -70,7 +70,7 @@ const AppNav = () => {
           {user && !isGuest ? (
             <div className="flex shrink-0 items-center gap-1.5">
               {isAdminEmail(user.email) && <button onClick={() => navigate('/admin/results')} className="min-h-11 rounded-xl bg-primary/10 px-3 text-sm font-bold text-primary">Kết quả học sinh</button>}
-              <div className="mr-1 hidden items-center gap-1.5 sm:flex">
+              <div className="mr-1 hidden items-center gap-1.5 xl:flex">
                 <span className="inline-flex items-center gap-1 rounded-full bg-streak/15 px-2.5 py-1 text-sm font-extrabold text-foreground" title="Chuỗi ngày học">
                   <Flame className="h-4 w-4 text-streak" aria-hidden /> {streak}
                 </span>
@@ -110,7 +110,7 @@ const AppNav = () => {
 
       {/* ── Mobile: persistent bottom tab bar ── */}
       <nav
-        className="pb-safe fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-card/95 backdrop-blur-sm md:hidden"
+        className="pb-safe fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-card/95 backdrop-blur-sm lg:hidden"
         aria-label="Điều hướng chính"
       >
         <div className="mx-auto flex max-w-md items-stretch justify-around px-1">

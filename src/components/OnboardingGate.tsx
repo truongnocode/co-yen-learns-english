@@ -5,7 +5,7 @@ import { isOnboarded } from "@/lib/progress";
 
 // Paths that never require onboarding: the splash, the wizard itself, the
 // teacher's admin area. Everything else (học tập) is gated.
-const ALLOW = new Set(["/", "/onboarding"]);
+const ALLOW = new Set(["/", "/onboarding", "/leaderboard"]);
 
 /**
  * Bắt buộc tạo tài khoản (Tên + Lớp + SĐT) trước khi vào bất kỳ nội dung học nào.

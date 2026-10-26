@@ -1,4 +1,4 @@
-import { BookOpen, Dumbbell, TrendingUp, type LucideIcon } from "lucide-react";
+import { BookOpen, Dumbbell, TrendingUp, Trophy, type LucideIcon } from "lucide-react";
 import { routes } from "./routes";
 
 // The top-level hubs — the ONLY primary destinations (see docs/IA-PLAN.md §3).
@@ -17,6 +17,7 @@ export const HUBS: NavHub[] = [
   { key: "hoc", label: "Học", icon: BookOpen, to: routes.grades, match: ["/grades", "/grade", "/phonetics"] },
   { key: "luyen", label: "Luyện tập", icon: Dumbbell, to: routes.practice, match: ["/practice", "/tests", "/test", "/video-lessons"] },
   { key: "tien", label: "Tiến trình", icon: TrendingUp, to: routes.progress, match: ["/progress", "/pet"] },
+  { key: "hang", label: "Xếp hạng", icon: Trophy, to: routes.leaderboard, match: ["/leaderboard"] },
 ];
 
 export function activeHubKey(pathname: string): string | null {

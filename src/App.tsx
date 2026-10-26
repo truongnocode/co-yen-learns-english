@@ -18,6 +18,7 @@ import Grade10TestsPage from "./pages/Grade10TestsPage";
 import Grade6TestsPage from "./pages/Grade6TestsPage";
 import Grade10WritingPage from "./pages/Grade10WritingPage";
 import ProgressPage from "./pages/ProgressPage";
+import LeaderboardPage from './pages/LeaderboardPage';
 import PracticePage from "./pages/PracticePage";
 import DashboardPage from "./pages/DashboardPage";
 import OnboardingPage from "./pages/OnboardingPage";
@@ -84,6 +85,7 @@ const App = () => (
           <Route path="/grade/:gradeId/camera" element={<CameraPage />} />
           <Route path="/practice/camera/:gradeId" element={<CameraPage />} />
           <Route path="/progress" element={<ProgressPage />} />
+          <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/practice" element={<PracticePage />} />
           <Route path="/practice/word-match/:gradeId" element={<WordMatchGame />} />
           <Route path="/practice/listen/:gradeId" element={<ListenChooseGame />} />

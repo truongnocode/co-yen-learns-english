@@ -5,9 +5,10 @@ interface CountdownTimerProps {
   minutes: number;
   onTimeUp: () => void;
   started: boolean; // only count when started
+  deadline?: number; // Restored exam attempts keep their original deadline.
 }
 
-const CountdownTimer = ({ minutes, onTimeUp, started }: CountdownTimerProps) => {
+const CountdownTimer = ({ minutes, onTimeUp, started, deadline }: CountdownTimerProps) => {
   const [secondsLeft, setSecondsLeft] = useState(minutes * 60);
   const calledRef = useRef(false);
 
@@ -18,6 +19,15 @@ const CountdownTimer = ({ minutes, onTimeUp, started }: CountdownTimerProps) => 
 
   useEffect(() => {
     if (!started || minutes <= 0) return;
+    if (deadline !== undefined) {
+      const tick = () => {
+        const remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+        setSecondsLeft(remaining);
+        if (!remaining && !calledRef.current) { calledRef.current = true; onTimeUp(); }
+      };
+      tick(); const interval = setInterval(tick, 1000);
+      return () => clearInterval(interval);
+    }
     const interval = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
@@ -32,7 +42,7 @@ const CountdownTimer = ({ minutes, onTimeUp, started }: CountdownTimerProps) => 
       });
     }, 1000);
     return () => clearInterval(interval);
-  }, [started, minutes, onTimeUp]);
+  }, [started, minutes, onTimeUp, deadline]);
 
   if (minutes <= 0) return null;
 

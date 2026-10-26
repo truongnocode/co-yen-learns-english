@@ -53,6 +53,15 @@ await check('owner cannot alter submitted answers', 403, await request(`${base}:
 await check('student cannot forge another owner', 403, await request(`${base}:commit`, stranger.idToken, 'POST', { writes: [write(`exam_submissions/codex-forged-${crypto.randomUUID()}`, submission, 'receivedAt')] }));
 const review = { comment: 'Bài kiểm thử quyền của Codex, không phải kết quả học sinh.', writingScore: 8, reviewedBy: 'truongnq.vie@gmail.com' };
 await check('student cannot grade own work', 403, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(`${path}/reviews/teacher`, review, 'updatedAt')] }));
+const draftPath = `exam_submissions/codex-draft-${crypto.randomUUID()}`;
+const draft = { ...submission, studentName: 'KIỂM THỬ TIẾN TRÌNH CODEX', state: 'in_progress', revision: 10, answered: 1 };
+await check('owner can create unfinished paper', 200, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(draftPath, draft, 'receivedAt')] }));
+await check('owner can save newer draft', 200, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(draftPath, { ...draft, revision: 12, answered: 2 }, 'receivedAt')] }));
+await check('stale draft revision is rejected', 403, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(draftPath, { ...draft, revision: 11 }, 'receivedAt')] }));
+await check('another student cannot edit draft', 403, await request(`${base}:commit`, stranger.idToken, 'POST', { writes: [write(draftPath, { ...draft, uid: stranger.localId, revision: 13 }, 'receivedAt')] }));
+await check('draft cannot be reassigned to a different student name', 403, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(draftPath, { ...draft, studentName: 'Another student', revision: 13 }, 'receivedAt')] }));
+await check('draft finalizes under the same document ID', 200, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(draftPath, { ...draft, state: 'submitted', revision: 13 }, 'receivedAt')] }));
+await check('delayed draft cannot reopen submitted paper', 403, await request(`${base}:commit`, owner.idToken, 'POST', { writes: [write(draftPath, { ...draft, revision: 14 }, 'receivedAt')] }));
 await mkdir('tmp/exam-results', { recursive: true });
-await writeFile('tmp/exam-results/permissions-smoke.json', JSON.stringify({ at: new Date().toISOString(), project, submissionId: id, results }, null, 2));
+await writeFile('tmp/exam-results/permissions-smoke.json', JSON.stringify({ at: new Date().toISOString(), project, submissionId: id, draftPath, results }, null, 2));
 console.log(`All ${results.length} production permission checks passed. Test record: ${id}`);

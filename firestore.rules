@@ -90,8 +90,9 @@ service cloud.firestore {
     match /exam_submissions/{submissionId} {
       allow get: if isSignedIn() && (!exists(/databases/$(database)/documents/exam_submissions/$(submissionId)) || resource.data.uid == request.auth.uid || isAdmin());
       allow list: if isAdmin() || (isSignedIn() && resource.data.uid == request.auth.uid);
-      allow create: if isSignedIn()
-        && request.resource.data.keys().hasOnly(['version', 'uid', 'studentName', 'className', 'grade', 'examId', 'examTitle', 'mode', 'startedAt', 'finishedAt', 'receivedAt', 'correct', 'total', 'manual', 'score', 'questions'])
+      function validSnapshot() {
+        return request.auth != null
+        && request.resource.data.keys().hasOnly(['version', 'uid', 'studentName', 'className', 'grade', 'examId', 'examTitle', 'mode', 'startedAt', 'finishedAt', 'receivedAt', 'correct', 'total', 'manual', 'score', 'questions', 'state', 'revision', 'answered'])
         && request.resource.data.version == 1
         && request.resource.data.uid == request.auth.uid
         && request.resource.data.studentName is string
@@ -110,12 +111,33 @@ service cloud.firestore {
         && request.resource.data.manual is int && request.resource.data.manual >= 0
         && request.resource.data.total + request.resource.data.manual == request.resource.data.questions.size()
         && request.resource.data.correct is int && request.resource.data.correct >= 0 && request.resource.data.correct <= request.resource.data.total
-        && request.resource.data.score is number && request.resource.data.score >= 0 && request.resource.data.score <= 10;
-      allow update, delete: if false;
+        && request.resource.data.score is number && request.resource.data.score >= 0 && request.resource.data.score <= 10
+        && request.resource.data.get('state', 'submitted') in ['in_progress', 'submitted']
+        && (!request.resource.data.keys().hasAny(['state']) || (
+          request.resource.data.revision is int && request.resource.data.revision > 0
+          && request.resource.data.answered is int && request.resource.data.answered >= 0
+          && request.resource.data.answered <= request.resource.data.questions.size()
+        ));
+      }
+      allow create: if validSnapshot();
+      // A draft may advance, then becomes immutable when submitted. A delayed
+      // draft write cannot undo a newer revision or re-open a submitted paper.
+      allow update: if validSnapshot() && isOwner(resource.data.uid)
+        && resource.data.get('state', 'submitted') == 'in_progress'
+        && request.resource.data.revision > resource.data.revision
+        && request.resource.data.uid == resource.data.uid
+        && request.resource.data.studentName == resource.data.studentName
+        && request.resource.data.className == resource.data.className
+        && request.resource.data.grade == resource.data.grade
+        && request.resource.data.examId == resource.data.examId
+        && request.resource.data.examTitle == resource.data.examTitle
+        && request.resource.data.startedAt == resource.data.startedAt;
+      allow delete: if false;
       match /reviews/{reviewId} {
         allow read: if isAdmin() || (isSignedIn() && get(/databases/$(database)/documents/exam_submissions/$(submissionId)).data.uid == request.auth.uid);
         allow create, update: if isAdmin() && reviewId == 'teacher'
           && exists(/databases/$(database)/documents/exam_submissions/$(submissionId))
+          && get(/databases/$(database)/documents/exam_submissions/$(submissionId)).data.get('state', 'submitted') == 'submitted'
           && request.resource.data.keys().hasOnly(['comment', 'writingScore', 'reviewedBy', 'updatedAt'])
           && request.resource.data.comment is string && request.resource.data.comment.size() <= 5000
           && (request.resource.data.writingScore == null || (request.resource.data.writingScore is number && request.resource.data.writingScore >= 0 && request.resource.data.writingScore <= 10))

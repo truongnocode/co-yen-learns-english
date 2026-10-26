@@ -1,20 +1,31 @@
-import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
+import { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import StudentResults, { StudentResultDetail } from './StudentResults';
-import { loadSubmissionPage, loadSubmission, loadTeacherReview, saveTeacherReview } from '@/lib/examSubmissions';
+import { loadSubmissionPage, loadSubmission, loadTeacherReview, saveTeacherReview, watchSubmission } from '@/lib/examSubmissions';
 vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'teacher', email: 'truongnq.vie@gmail.com' } }) }));
-vi.mock('@/lib/examSubmissions', () => ({ loadSubmissionPage: vi.fn(), loadSubmission: vi.fn(), loadTeacherReview: vi.fn(), saveTeacherReview: vi.fn() }));
+vi.mock('@/lib/examSubmissions', () => ({ isDraftSubmission: (row: {state?: string}) => row.state === 'in_progress', watchSubmission: vi.fn(), loadSubmissionPage: vi.fn(), loadSubmission: vi.fn(), loadTeacherReview: vi.fn(), saveTeacherReview: vi.fn() }));
 const row = { id: 'a1', version: 1, uid: 'student', studentName: 'Nguyễn Minh Anh', className: '6A1', grade: 6, examId: 'paper1', examTitle: 'Đề 01', mode: 'test', startedAt: 1000, finishedAt: 61000, correct: 1, total: 2, manual: 1, score: 5, questions: [{ id: 'q3', number: '3', section: 'Writing', prompt: 'Write about a friend.', context: '', options: [], answer: '<img src=x onerror=alert(1)> My friend is kind.', expected: [], status: 'manual' }] };
 beforeEach(() => {
   vi.clearAllMocks();
   vi.mocked(loadSubmissionPage).mockResolvedValue({ rows: [row, { ...row, id: 'a2', studentName: 'Lan', grade: 9, className: '9B', mode: 'practice' }] as never, cursor: undefined, hasMore: false });
   vi.mocked(loadSubmission).mockResolvedValue(row as never);
+  vi.mocked(watchSubmission).mockImplementation((_id, receive) => { receive(row as never); return vi.fn(); });
   vi.mocked(loadTeacherReview).mockResolvedValue(null);
   vi.mocked(saveTeacherReview).mockResolvedValue(undefined);
 });
 afterEach(cleanup);
 describe('teacher results', () => {
+  it('shows draft progress and updates the same detail page when the student submits', async () => {
+    let receive!: Parameters<typeof watchSubmission>[1];
+    vi.mocked(watchSubmission).mockImplementation((_id, callback) => { receive = callback; callback({ ...row, state: 'in_progress', answered: 1 } as never); return vi.fn(); });
+    render(<MemoryRouter initialEntries={['/admin/results/a1']}><Routes><Route path="/admin/results/:resultId" element={<StudentResultDetail />} /></Routes></MemoryRouter>);
+    expect(await screen.findByText('Đang làm dở · 1/1 câu / bài')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Lưu nhận xét' })).toBeDisabled();
+    act(() => receive({ ...row, state: 'submitted' } as never));
+    expect(screen.getByText('Đã nộp')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Lưu nhận xét' })).toBeEnabled();
+  });
   it('filters by grade, mode and Vietnamese student/class names', async () => {
     render(<MemoryRouter><StudentResults /></MemoryRouter>);
     await screen.findByRole('link', { name: /Nguyễn Minh Anh/ });
@@ -30,7 +41,7 @@ describe('teacher results', () => {
     expect(within(question).getByText(row.questions[0].answer)).toBeInTheDocument();
     expect(within(question).queryByRole('img')).not.toBeInTheDocument();
     fireEvent.change(screen.getByRole('spinbutton'), { target: { value: '8.5' } });
-    fireEvent.change(screen.getByRole('textbox', { name: 'Nhận xét', exact: true }), { target: { value: 'Em viết rõ ý.' } });
+    fireEvent.change(screen.getByRole('textbox', { name: /^Nhận xét$/ }), { target: { value: 'Em viết rõ ý.' } });
     fireEvent.click(screen.getByRole('button', { name: 'Lưu nhận xét' }));
     expect(await screen.findByRole('status')).toHaveTextContent('Đã lưu nhận xét');
     expect(saveTeacherReview).toHaveBeenCalledWith('a1', { writingScore: 8.5, comment: 'Em viết rõ ý.', reviewedBy: 'truongnq.vie@gmail.com' });

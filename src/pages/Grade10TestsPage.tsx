@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState, useCallback, useRef, useMemo } from "react";
+import { useEffect, useState, useCallback, useRef, useMemo, type SetStateAction } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ClipboardList, CheckCircle2, XCircle, ChevronRight, Trophy, Search, X, ChevronLeft } from "lucide-react";
 import ExplanationBox from "@/components/ExplanationBox";
@@ -13,7 +13,7 @@ import {
 import { Progress } from "@/components/ui/progress";
 import PageShell from "@/components/PageShell";
 import PageBack from "@/components/PageBack";
-import QuizSettingsBar, { type ReviewMode } from "@/components/QuizSettingsBar";
+import QuizSettingsBar from "@/components/QuizSettingsBar";
 import CountdownTimer from "@/components/CountdownTimer";
 import ReviewAllAnswers from "@/components/ReviewAllAnswers";
 import { matchAnswer } from "@/lib/answerMatch";
@@ -21,7 +21,10 @@ import SignVisual from "@/components/SignVisual";
 import { compactExamText } from "@/lib/compactExamContent";
 import { examChoiceSize } from "@/lib/examChoiceLayout";
 import ExamSubmission from '@/components/ExamSubmission';
-import { newSubmissionId, readStudentIdentity, validIdentity, submissionSummary, type SubmittedQuestion } from '@/lib/examSubmissions';
+import ExamProgressSync from '@/components/ExamProgressSync';
+import ExamStudentStart from '@/components/ExamStudentStart';
+import { grade10AttemptKey, examSignature, newGrade10Attempt, restoreGrade10Attempt, type Grade10Attempt } from '@/lib/grade10Attempt';
+import { nextExamRevision, studentIdentityKey, submissionSummary, type StudentIdentity, type SubmittedQuestion } from '@/lib/examSubmissions';
 import './grade6-tests.css';
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -259,49 +262,62 @@ const Grade10TestsPage = () => {
     );
   }
 
-  return <TestExam key={selectedTest} examId={selectedTest} test={data[selectedTest]} onBack={() => setSelectedTest(null)} />;
+  return <TestExamGate key={selectedTest} examId={selectedTest} test={data[selectedTest]} onBack={() => setSelectedTest(null)} />;
 };
 
-const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; onBack: () => void }) => {
-  const [session] = useState(() => ({ id: newSubmissionId(), startedAt: Date.now() }));
-  const [finishedAt, setFinishedAt] = useState(0);
-  const allQuestions: FlatQuestion[] = [];
-  test.partA.questions.forEach(q => allQuestions.push({ ...q, context: "Part A: Ngữ pháp & Từ vựng" }));
-  if (test.partB.cloze) test.partB.cloze.questions.forEach(q => allQuestions.push({ ...q, context: "Part B: Điền từ vào đoạn văn", passage: test.partB.cloze.passage }));
-  if (test.partB.signs) test.partB.signs.forEach((s: Grade10SignQuestion) => allQuestions.push({ q: s.q, opts: s.opts, ans: s.ans, explain: s.explain, context: "Part B: Đọc biển báo", sign: s.sign }));
+function flattenQuestions(test: TestData) {
+  const result: FlatQuestion[] = [];
+  test.partA.questions.forEach(q => result.push({ ...q, context: "Part A: Ngữ pháp & Từ vựng" }));
+  if (test.partB.cloze) test.partB.cloze.questions.forEach(q => result.push({ ...q, context: "Part B: Điền từ vào đoạn văn", passage: test.partB.cloze.passage }));
+  if (test.partB.signs) test.partB.signs.forEach((s: Grade10SignQuestion) => result.push({ q: s.q, opts: s.opts, ans: s.ans, explain: s.explain, context: "Part B: Đọc biển báo", sign: s.sign }));
   [test.partB.reading1, test.partB.reading2].forEach(r => {
-    if (r) r.questions.forEach(q => allQuestions.push({ ...q, context: `Part B: Đọc hiểu · ${r.title}`, passage: r.passage }));
+    if (r) r.questions.forEach(q => result.push({ ...q, context: `Part B: Đọc hiểu · ${r.title}`, passage: r.passage }));
   });
 
-  const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [score, setScore] = useState(0);
-  const [finished, setFinished] = useState(false);
-  const [partCAnswers, setPartCAnswers] = useState<string[]>([]);
-  const [partCSubmitted, setPartCSubmitted] = useState(false);
-  const [showPartC, setShowPartC] = useState(false);
-  const [partCScore, setPartCScore] = useState(0);
-
-  // Review mode & timer state
-  const [reviewMode, setReviewMode] = useState<ReviewMode>("instant");
-  const [timeLimit, setTimeLimit] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<(number | null)[]>(new Array(allQuestions.length).fill(null));
-  const [timerStarted, setTimerStarted] = useState(false);
+  return result;
+}
+function TestExamGate({ test, examId, onBack }: { test: TestData; examId: string; onBack: () => void }) {
+  const [identity, setIdentity] = useState<StudentIdentity | null>(null);
+  const signature = useMemo(() => examSignature(test), [test]);
+  const options = useMemo(() => flattenQuestions(test).map(q => q.opts), [test]);
+  if (!identity) return <PageShell><main className="mx-auto max-w-3xl px-5 pb-20 pt-28"><button className="font-bold text-primary" onClick={onBack}>← Chọn đề khác</button><ExamStudentStart title={test.title} saved={student => { const saved = restoreGrade10Attempt(grade10AttemptKey(examId, student), signature, options, test.partC?.fill_in?.length || 0); return saved ? { answered: saved.userAnswers.filter(a => a !== null).length + saved.partCAnswers.filter(a => a.trim()).length, submitted: !!saved.finishedAt } : null; }} onStart={student => setIdentity(student)} /></main></PageShell>;
+  return <TestExam key={studentIdentityKey(identity)} test={test} examId={examId} student={identity} onBack={onBack} onChangeStudent={() => setIdentity(null)} />;
+}
+const TestExam = ({ test, examId, student, onBack, onChangeStudent }: { test: TestData; examId: string; student: StudentIdentity; onBack: () => void; onChangeStudent: () => void }) => {
+  const allQuestions = useMemo(() => flattenQuestions(test), [test]);
+  const signature = useMemo(() => examSignature(test), [test]);
+  const storageKey = grade10AttemptKey(examId, student);
+  const [attempt, setAttempt] = useState<Grade10Attempt>(() => restoreGrade10Attempt(storageKey, signature, allQuestions.map(q => q.opts), test.partC?.fill_in?.length || 0) ?? newGrade10Attempt(allQuestions.length, student));
+  const [storageError, setStorageError] = useState(false);
+  const { current, selected, submitted, score, finished, partCAnswers, partCSubmitted, showPartC, partCScore, reviewMode, timeLimit, userAnswers, timerStarted, finishedAt } = attempt;
+  const setters = useMemo(() => {
+    function setter<K extends keyof Grade10Attempt>(key: K) {
+      return (value: SetStateAction<Grade10Attempt[K]>) => setAttempt(previous => ({ ...previous, [key]: typeof value === 'function' ? (value as (v: Grade10Attempt[K]) => Grade10Attempt[K])(previous[key]) : value, revision: nextExamRevision(previous.revision), ...(key === 'timerStarted' && value === true && !previous.timerStartedAt ? { timerStartedAt: Date.now() } : {}) }));
+    }
+    return { setCurrent: setter('current'), setSelected: setter('selected'), setSubmitted: setter('submitted'), setScore: setter('score'), setFinished: setter('finished'), setPartCAnswers: setter('partCAnswers'), setPartCSubmitted: setter('partCSubmitted'), setShowPartC: setter('showPartC'), setPartCScore: setter('partCScore'), setReviewMode: setter('reviewMode'), setTimeLimit: setter('timeLimit'), setUserAnswers: setter('userAnswers'), setTimerStarted: setter('timerStarted'), setFinishedAt: setter('finishedAt') };
+  }, []);
+  const { setCurrent, setSelected, setSubmitted, setScore, setFinished, setPartCAnswers, setPartCSubmitted, setShowPartC, setPartCScore, setReviewMode, setTimeLimit, setUserAnswers, setTimerStarted, setFinishedAt } = setters;
+  useEffect(() => {
+    const save = () => { try { localStorage.setItem(storageKey, JSON.stringify({ signature, attempt })); setStorageError(false); } catch { setStorageError(true); } };
+    save(); window.addEventListener('beforeunload', save);
+    return () => window.removeEventListener('beforeunload', save);
+  }, [attempt, storageKey, signature]);
   const autoAdvanceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
   const totalMCQ = allQuestions.length;
   const q = allQuestions[current];
   const choiceLayout = examChoiceSize(q?.opts.map(compactExamText) ?? []);
   const progress = ((current + 1) / totalMCQ) * 100;
-  const partCQuestions = test.partC?.fill_in || [];
+  const partCQuestions = useMemo(() => test.partC?.fill_in || [], [test]);
   const complete = partCSubmitted || finished && partCQuestions.length === 0;
-  useEffect(() => { if (complete && !finishedAt) setFinishedAt(Date.now()); }, [complete, finishedAt]);
-  const submissionQuestions: SubmittedQuestion[] = complete ? [
+  useEffect(() => { if (complete && !finishedAt) setFinishedAt(Date.now()); }, [complete, finishedAt, setFinishedAt]);
+  const submissionQuestions: SubmittedQuestion[] = useMemo(() => [
     ...allQuestions.map((item, i) => ({ id: `mc-${i}`, number: String(i + 1), section: item.context, prompt: compactExamText(item.q), context: compactExamText([item.passage, item.sign].filter(Boolean).join('\n')), options: item.opts.map((opt, j) => `${String.fromCharCode(65 + j)}. ${compactExamText(opt)}`), answer: userAnswers[i] === null ? '' : `${String.fromCharCode(65 + userAnswers[i]!)}. ${item.opts[userAnswers[i]!]}`, expected: [`${String.fromCharCode(65 + item.ans)}. ${item.opts[item.ans]}`], status: userAnswers[i] === item.ans ? 'correct' as const : 'incorrect' as const })),
     ...partCQuestions.map((item, i) => ({ id: `writing-${i}`, number: String(totalMCQ + i + 1), section: 'Part C: Viết', prompt: compactExamText(item.q), context: '', options: [], answer: partCAnswers[i] || '', expected: item.answer || [], status: !item.answer?.length ? 'manual' as const : matchAnswer(partCAnswers[i] || '', item.answer) ? 'correct' as const : 'incorrect' as const })),
-  ] : [];
-  const submissionPanel = complete && finishedAt ? <ExamSubmission id={session.id} autoSend={validIdentity(readStudentIdentity())} value={{ version: 1, grade: 10, examId, examTitle: test.title, mode: reviewMode === 'instant' ? 'practice' : 'test', startedAt: session.startedAt, finishedAt, ...submissionSummary(submissionQuestions), questions: submissionQuestions }} /> : null;
+  ], [allQuestions, partCQuestions, userAnswers, partCAnswers, totalMCQ]);
+  const submissionValue = useMemo(() => ({ version: 1 as const, grade: 10, examId, examTitle: test.title, mode: reviewMode === 'instant' ? 'practice' as const : 'test' as const, startedAt: attempt.startedAt, finishedAt: finishedAt || attempt.revision, state: complete ? 'submitted' as const : 'in_progress' as const, revision: attempt.revision, answered: submissionQuestions.filter(q => q.answer.trim()).length, ...submissionSummary(submissionQuestions), questions: submissionQuestions }), [attempt, complete, examId, test.title, reviewMode, finishedAt, submissionQuestions]);
+  const submissionPanel = complete && finishedAt ? <ExamSubmission id={attempt.id} identity={attempt.identity} autoSend value={submissionValue} /> : null;
+  const progressPanel = <div className="mb-4 rounded-xl border border-border bg-card p-3 text-left"><div className="flex flex-wrap justify-between gap-2 text-sm"><strong>{attempt.identity.studentName} · {attempt.identity.className}</strong><button onClick={onChangeStudent} className="font-bold text-primary">Đổi học sinh</button></div><p className="mt-1 text-xs text-muted-foreground">{storageError ? 'Không lưu được trên máy này' : 'Đã lưu bài trên máy này'}</p>{!complete && <ExamProgressSync id={attempt.id} value={submissionValue} identity={attempt.identity} />}</div>;
+
 
   const handleTimeUp = useCallback(() => {
     // Calculate score from answered questions
@@ -311,7 +327,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
     });
     setScore(s);
     setFinished(true);
-  }, [userAnswers, allQuestions]);
+  }, [userAnswers, allQuestions, setFinished, setScore]);
 
   // Handle "after" mode selection: auto-advance after 500ms
   const handleAfterModeSelect = useCallback((idx: number) => {
@@ -339,7 +355,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
         setFinished(true);
       }
     }, 500);
-  }, [current, totalMCQ, submitted, userAnswers, allQuestions, timerStarted]);
+  }, [current, totalMCQ, submitted, userAnswers, allQuestions, timerStarted, setCurrent, setFinished, setScore, setSelected, setTimerStarted, setUserAnswers]);
 
   // Cleanup auto-advance on unmount
   useEffect(() => {
@@ -350,6 +366,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
     return (
       <PageShell>
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20 text-center">
+          {progressPanel}
           <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">Part A & B hoàn thành!</h2>
@@ -379,6 +396,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
     return (
       <PageShell>
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
+          {progressPanel}
           <div className="flex items-center gap-3 mb-5">
             <motion.button whileTap={{ scale: 0.9 }} onClick={onBack}
               className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
@@ -407,7 +425,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
               {partCQuestions.map((pq: Grade10FillIn, i: number) => (
                 <div key={i} className="bg-card rounded-2xl p-5 shadow-1 border border-border">
                   <p className="font-medium text-foreground text-base mb-3 whitespace-pre-line">{compactExamText(pq.q)}</p>
-                  <input value={partCAnswers[i] || ""} onChange={e => { const a = [...partCAnswers]; a[i] = e.target.value; setPartCAnswers(a); }}
+                  <input maxLength={10000} value={partCAnswers[i] || ""} onChange={e => { const a = [...partCAnswers]; a[i] = e.target.value; setPartCAnswers(a); }}
                     placeholder="Nhập đáp án..."
                     className="w-full bg-card border-2 border-border rounded-xl px-4 py-3 text-foreground text-base focus:outline-none focus:border-primary transition-colors" />
                 </div>
@@ -431,6 +449,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
     return (
       <PageShell>
         <div className="max-w-3xl mx-auto px-5 pt-28 pb-20 text-center">
+          {progressPanel}
           <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
@@ -464,6 +483,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
   return (
     <PageShell>
       <div className="max-w-3xl mx-auto px-5 pt-28 pb-20">
+          {progressPanel}
         <div className="flex items-center gap-3 mb-5">
           <motion.button whileTap={{ scale: 0.9 }} onClick={onBack}
             className="p-2.5 rounded-xl bg-card shadow-1 text-foreground border border-border">
@@ -474,7 +494,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
             <p className="text-xs text-muted-foreground">{q.context}</p>
           </div>
           {timeLimit > 0 && (
-            <CountdownTimer minutes={timeLimit} onTimeUp={handleTimeUp} started={timerStarted} />
+            <CountdownTimer minutes={timeLimit} onTimeUp={handleTimeUp} started={timerStarted} deadline={attempt.timerStartedAt && timeLimit > 0 ? attempt.timerStartedAt + timeLimit * 60000 : undefined} />
           )}
         </div>
 
@@ -535,7 +555,7 @@ const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; on
                   if (reviewMode === "after") {
                     handleAfterModeSelect(idx);
                   } else {
-                    if (!submitted) setSelected(idx);
+                    if (!submitted) { setSelected(idx); setUserAnswers(previous => { const answers = [...previous]; answers[current] = idx; return answers; }); }
                   }
                 }} className={`min-h-11 px-3 py-2.5 rounded-xl text-left font-medium transition-all ${cls}`}>
                   <span className="font-bold mr-2">{String.fromCharCode(65 + idx)}.</span>{compactExamText(opt)}

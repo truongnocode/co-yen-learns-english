@@ -14,8 +14,9 @@ export function PendingExamSubmissions() {
   useEffect(() => {
     if (!user) return;
     const sync = () => { void resendPendingSubmissions(user.uid); };
-    sync(); window.addEventListener('online', sync);
-    return () => window.removeEventListener('online', sync);
+    sync(); window.addEventListener('online', sync); window.addEventListener('pagehide', sync);
+    const interval = window.setInterval(sync, 15000);
+    return () => { window.clearInterval(interval); window.removeEventListener('online', sync); window.removeEventListener('pagehide', sync); };
   }, [user]);
   return null;
 }

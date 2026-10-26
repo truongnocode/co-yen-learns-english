@@ -49,12 +49,13 @@ export interface ExamAttempt {
   submissionId?: string;
   finishedAt?: number;
   identity?: { studentName: string; className: string };
+  revision?: number;
   answers: Record<string, string>;
   checked: string[];
   submitted: boolean;
   startedAt: number;
 }
-export const newAttempt = (): ExamAttempt => ({ submissionId: crypto.randomUUID(), answers: {}, checked: [], submitted: false, startedAt: Date.now() });
+export const newAttempt = (): ExamAttempt => ({ submissionId: crypto.randomUUID(), revision: Date.now(), answers: {}, checked: [], submitted: false, startedAt: Date.now() });
 export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade${id.startsWith('vedec-g9-') ? 9 : id.startsWith('vedec-g8-') ? 8 : id.startsWith('vedec-g7-') ? 7 : 6}:v1:${id}:${mode}`;
 
 // Short answers accept case, punctuation, apostrophe and contraction variants.
@@ -91,6 +92,7 @@ export function restoreAttempt(raw: string | null, questions: ExamQuestion[]): E
     return { answers, checked: value.checked.filter((id: unknown): id is string => typeof id === 'string' && ids.has(id) && !!answers[id]?.trim()), submitted: value.submitted, startedAt: value.startedAt,
       submissionId: typeof value.submissionId === 'string' && /^[a-zA-Z0-9-]{10,80}$/.test(value.submissionId) ? value.submissionId : crypto.randomUUID(),
       finishedAt: Number.isFinite(value.finishedAt) ? value.finishedAt : undefined,
+      revision: Number.isSafeInteger(value.revision) && value.revision > 0 ? value.revision : Date.now(),
       identity: typeof value.identity?.studentName === 'string' && typeof value.identity?.className === 'string' ? { studentName: value.identity.studentName.slice(0, 100), className: value.identity.className.slice(0, 60) } : undefined,
     };
   } catch { return null; }

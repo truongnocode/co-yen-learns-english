@@ -7,8 +7,10 @@ import { MIDTERM_EXAM_COUNTS, isValidMidtermExamId, type ExamGrade, attemptKey, 
 import './grade6-tests.css';
 import { splitExamChoices } from '@/lib/examChoiceLayout';
 import { compactExamHtml, compactExamInstruction } from '@/lib/compactExamContent';
-import ExamSubmission, { StudentIdentityFields } from '@/components/ExamSubmission';
-import { plainExamText, readStudentIdentity, validIdentity, rememberStudentIdentity } from '@/lib/examSubmissions';
+import ExamStudentStart from '@/components/ExamStudentStart';
+import ExamProgressSync from '@/components/ExamProgressSync';
+import ExamSubmission from '@/components/ExamSubmission';
+import { plainExamText, nextExamRevision, studentAttemptKey, studentIdentityKey, type StudentIdentity } from '@/lib/examSubmissions';
 
 const button = 'inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50';
 const secondary = 'inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 font-bold hover:bg-muted';
@@ -108,15 +110,33 @@ function QuestionCard({ question: q, attempt, mode, onAnswer, onCheck }: { quest
   </article>;
 }
 
-function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; grade: ExamGrade }) {
+function readMidtermAttempt(exam: Grade6Exam, mode: ExamMode, identity?: StudentIdentity): ExamAttempt | null {
   const questions = exam.sections.flatMap(s => s.questions);
+  try {
+    if (!identity) return restoreAttempt(localStorage.getItem(attemptKey(exam.id, mode)), questions);
+    const own = restoreAttempt(localStorage.getItem(studentAttemptKey(attemptKey(exam.id, mode), identity)), questions);
+    if (own) return own;
+    const legacy = readMidtermAttempt(exam, mode);
+    return legacy?.identity && studentIdentityKey(legacy.identity) === studentIdentityKey(identity) ? legacy : null;
+  } catch { return null; }
+}
+function ExamPlayer(props: { exam: Grade6Exam; mode: ExamMode; grade: ExamGrade }) {
+  const [student, setStudent] = useState<{ identity: StudentIdentity; resumeUnnamed: boolean } | null>(null);
+  const legacy = readMidtermAttempt(props.exam, props.mode);
+  if (!student) return <ExamStudentStart title={`${props.exam.title} · Lớp ${props.grade}`} hasUnnamed={!!legacy && !legacy.identity && !legacy.submitted} saved={identity => { const value = readMidtermAttempt(props.exam, props.mode, identity); return value ? { answered: Object.values(value.answers).filter(a => a.trim()).length, submitted: value.submitted } : null; }} onStart={(identity, resumeUnnamed) => setStudent({ identity, resumeUnnamed })} />;
+  return <StudentExamPlayer {...props} student={student.identity} resumeUnnamed={student.resumeUnnamed} onChangeStudent={() => setStudent(null)} />;
+}
+function StudentExamPlayer({ exam, mode, grade, student, resumeUnnamed, onChangeStudent }: { exam: Grade6Exam; mode: ExamMode; grade: ExamGrade; student: StudentIdentity; resumeUnnamed: boolean; onChangeStudent: () => void }) {
+  const questions = useMemo(() => exam.sections.flatMap(s => s.questions), [exam]);
   const listeningSections = exam.sections.filter(s => s.part === 'LISTENING' && s.questions.length);
+  const storageKey = studentAttemptKey(attemptKey(exam.id, mode), student);
   const [attempt, setAttempt] = useState<ExamAttempt>(() => {
-    try { return restoreAttempt(localStorage.getItem(attemptKey(exam.id, mode)), questions) ?? newAttempt(); } catch { return newAttempt(); }
+    const saved = readMidtermAttempt(exam, mode, student) ?? (resumeUnnamed ? readMidtermAttempt(exam, mode) : null) ?? newAttempt();
+    return { ...saved, identity: saved.identity ?? student };
   });
+  const identity = attempt.identity!;
   const [storageError, setStorageError] = useState(false);
   const [confirm, setConfirm] = useState<'submit' | 'reset' | null>(null);
-  const [identity, setIdentity] = useState(readStudentIdentity);
   const resultFocusTimer = useRef<number>();
   useEffect(() => () => {
     if (resultFocusTimer.current !== undefined) window.clearTimeout(resultFocusTimer.current);
@@ -124,28 +144,32 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
   const result = examResult(questions, attempt.answers);
   const answered = questions.filter(q => !!attempt.answers[q.id]?.trim()).length;
   const unanswered = questions.length - answered;
+  const questionSources = useMemo(() => exam.sections.flatMap(section => section.questions.map(q => ({ id: q.id, number: q.number, section: compactExamInstruction(section.title), context: plainExamText(compactExamHtml(section.introHtml)), prompt: plainExamText(compactExamHtml(q.html, { questionNumber: q.number, manual: q.kind === 'manual' })), options: q.options ?? [], expected: q.answers }))), [exam]);
+  const submissionValue = useMemo(() => ({ version: 1 as const, grade, examId: exam.id, examTitle: exam.title, mode, startedAt: attempt.startedAt, finishedAt: attempt.finishedAt ?? Math.max(attempt.startedAt, attempt.revision ?? attempt.startedAt), state: attempt.submitted ? 'submitted' as const : 'in_progress' as const, revision: attempt.revision, answered, ...examResult(questions, attempt.answers), questions: questionSources.map((source, i) => ({ ...source, answer: attempt.answers[source.id] ?? '', status: !isAutoScored(questions[i]) ? 'manual' as const : isCorrectExamAnswer(questions[i], attempt.answers[source.id] ?? '') ? 'correct' as const : 'incorrect' as const })) }), [grade, exam.id, exam.title, mode, attempt, answered, questionSources, questions]);
   useEffect(() => {
-    try { localStorage.setItem(attemptKey(exam.id, mode), JSON.stringify(attempt)); setStorageError(false); } catch { setStorageError(true); }
-  }, [attempt, exam.id, mode]);
+    try { localStorage.setItem(storageKey, JSON.stringify(attempt)); setStorageError(false); } catch { setStorageError(true); }
+  }, [attempt, storageKey]);
   useEffect(() => {
     const guard = (event: BeforeUnloadEvent) => {
       // Flush the latest attempt even when navigation happens before the debounce.
-      try { localStorage.setItem(attemptKey(exam.id, mode), JSON.stringify(attempt)); } catch { if (!attempt.submitted && answered) { event.preventDefault(); event.returnValue = ''; } }
+      try { localStorage.setItem(storageKey, JSON.stringify(attempt)); } catch { if (!attempt.submitted && answered) { event.preventDefault(); event.returnValue = ''; } }
     };
     window.addEventListener('beforeunload', guard);return () => window.removeEventListener('beforeunload', guard);
-  }, [attempt, answered, exam.id, mode]);
+  }, [attempt, answered, storageKey]);
   const onAnswer = (id: string, answer: string) => setAttempt(current => {
     if (current.submitted || mode === 'practice' && current.checked.includes(id) && isAutoScored(questions.find(q => q.id === id)!)) return current;
-    return { ...current, answers: { ...current.answers, [id]: answer }, checked: mode === 'practice' && questions.find(q => q.id === id)?.options ? [...new Set([...current.checked, id])] : current.checked };
+    return { ...current, revision: nextExamRevision(current.revision), answers: { ...current.answers, [id]: answer }, checked: mode === 'practice' && questions.find(q => q.id === id)?.options ? [...new Set([...current.checked, id])] : current.checked };
   });
   return <>
     <div className="my-6 flex flex-wrap items-start justify-between gap-4">
       <div><p className="text-sm font-bold text-primary">{mode === 'practice' ? 'LUYỆN TẬP · CHẤM NGAY' : 'LÀM BÀI KIỂM TRA · CHẤM SAU KHI NỘP'}</p><h1 className="mt-2 font-display text-3xl font-extrabold">{exam.title} · Giữa kỳ I</h1><p className="mt-2 text-sm text-muted-foreground">{exam.subtitle}</p></div>
-      <button className={secondary} onClick={() => setConfirm('reset')}><RotateCcw className="h-4 w-4" /> Làm lại</button>
+      <div className="flex flex-wrap gap-2"><button className={secondary} onClick={onChangeStudent}>Đổi học sinh</button><button className={secondary} onClick={() => setConfirm('reset')}><RotateCcw className="h-4 w-4" /> Làm lại</button></div>
     </div>
+    <p className="mb-3 text-sm font-bold">{identity.studentName} · {identity.className}</p>
     <div className="sticky top-20 z-20 mb-6 rounded-2xl border border-border bg-card/95 p-4 shadow-1 backdrop-blur-sm">
       <div className="flex flex-wrap items-center justify-between gap-3"><p className="text-sm font-bold">{attempt.submitted ? 'Đã nộp bài' : `Đã làm ${answered}/${questions.length} câu / bài`}</p><span className={`flex items-center gap-1 text-xs ${storageError ? 'text-destructive' : 'text-muted-foreground'}`}><Save className="h-3 w-3" />{storageError ? 'Không lưu được trên thiết bị này' : 'Lưu trên thiết bị này'}</span></div>
       <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-muted"><div className="h-full bg-primary transition-all" style={{ width: `${answered / Math.max(1, questions.length) * 100}%` }} /></div>
+      {!attempt.submitted && <ExamProgressSync id={attempt.submissionId!} value={submissionValue} identity={identity} />}
       <nav aria-label="Các phần trong đề" className="mt-3 flex flex-wrap gap-2">{exam.sections.filter((s, i, sections) => s.questions.length && sections.findIndex(other => other.part === s.part && other.questions.length) === i).map(s => <a key={s.id} href={`#${s.id}`} className="rounded-lg bg-muted px-3 py-1.5 text-xs font-bold hover:bg-primary/10">{s.part === 'LISTENING' ? 'Nghe' : s.part === 'READING' ? 'Đọc' : s.part === 'WRITING' ? 'Viết' : s.part === 'SPEAKING' ? 'Nói' : 'Ngôn ngữ'}</a>)}</nav>
     </div>
     {attempt.submitted && <section id="exam-result" tabIndex={-1} className="mb-8 scroll-mt-52 rounded-3xl border-2 border-primary bg-primary/5 p-6" aria-label="Kết quả bài làm">
@@ -153,7 +177,7 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
       <p className="mt-3 text-xl font-bold">Đúng {result.correct}/{result.total} câu chấm tự động</p><p className="mt-2 text-sm text-muted-foreground">Điểm luyện tập quy đổi: <strong className="text-foreground">{result.score}/10</strong>. Các câu có cùng trọng số.</p>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{result.manual} câu / bài cần tự đối chiếu hoặc nhờ cô chấm, không tính trong điểm trên. Đây là kết quả phần tự động, chưa phải điểm toàn bộ đề gốc.</p>
       <p className="mt-3 font-semibold">Xem từng câu phía dưới để đối chiếu và học lại nhé.</p>
-      <ExamSubmission id={attempt.submissionId!} identity={attempt.identity} autoSend={!!attempt.identity} value={{ version: 1, grade, examId: exam.id, examTitle: exam.title, mode, startedAt: attempt.startedAt, finishedAt: attempt.finishedAt ?? attempt.startedAt, ...result, questions: exam.sections.flatMap(section => section.questions.map(q => ({ id: q.id, number: q.number, section: compactExamInstruction(section.title), context: plainExamText(compactExamHtml(section.introHtml)), prompt: plainExamText(compactExamHtml(q.html, { questionNumber: q.number, manual: q.kind === 'manual' })), options: q.options ?? [], answer: attempt.answers[q.id] ?? '', expected: q.answers, status: !isAutoScored(q) ? 'manual' as const : isCorrectExamAnswer(q, attempt.answers[q.id] ?? '') ? 'correct' as const : 'incorrect' as const }))) }} />
+      <ExamSubmission id={attempt.submissionId!} identity={attempt.identity} autoSend={!!attempt.identity} value={submissionValue} />
     </section>}
     <div className="space-y-6">{exam.sections.map(section => {
       const listeningIndex = listeningSections.findIndex(s => s.id === section.id);
@@ -172,10 +196,10 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
       <p className="text-sm text-muted-foreground">{attempt.submitted ? 'Em có thể làm lại hoặc thử một đề khác.' : `${unanswered} câu / bài chưa trả lời. Em vẫn có thể nộp và xem kết quả.`}</p>
       {attempt.submitted ? <Link to={`/grade/${grade}/tests`} className={button}>Chọn đề khác <ArrowRight className="h-4 w-4" /></Link> : <button className={button} onClick={() => setConfirm('submit')}><ClipboardCheck className="h-4 w-4" /> Nộp bài và xem kết quả</button>}
     </div>
-    <AlertDialog open={confirm !== null} onOpenChange={open => { if (!open) setConfirm(null); }}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>{confirm === 'reset' ? 'Làm lại từ đầu?' : 'Em muốn nộp bài?'}</AlertDialogTitle><AlertDialogDescription>{confirm === 'reset' ? 'Bài làm đã lưu của đề này trong chế độ hiện tại sẽ được thay bằng một lượt làm mới.' : unanswered ? `Còn ${unanswered} câu / bài chưa trả lời. Khi nộp, em sẽ xem được kết quả và đáp án; câu chấm tự động chưa trả lời tính là chưa đúng.` : 'Sau khi nộp, em sẽ xem được kết quả và đáp án từng câu.'}</AlertDialogDescription></AlertDialogHeader>{confirm === 'submit' && <><StudentIdentityFields value={identity} onChange={setIdentity} /><p className="text-xs text-muted-foreground">Ghi tên và lớp để cô nhận diện bài làm của em.</p></>}<AlertDialogFooter><AlertDialogCancel>Quay lại</AlertDialogCancel><AlertDialogAction disabled={confirm === 'submit' && !validIdentity(identity)} onClick={() => {
+    <AlertDialog open={confirm !== null} onOpenChange={open => { if (!open) setConfirm(null); }}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>{confirm === 'reset' ? 'Làm lại từ đầu?' : 'Em muốn nộp bài?'}</AlertDialogTitle><AlertDialogDescription>{confirm === 'reset' ? 'Bài làm đã lưu của đề này trong chế độ hiện tại sẽ được thay bằng một lượt làm mới.' : unanswered ? `Còn ${unanswered} câu / bài chưa trả lời. Khi nộp, em sẽ xem được kết quả và đáp án; câu chấm tự động chưa trả lời tính là chưa đúng.` : 'Sau khi nộp, em sẽ xem được kết quả và đáp án từng câu.'}</AlertDialogDescription></AlertDialogHeader>{confirm === 'submit' && <p className="text-sm font-bold">{identity.studentName} · {identity.className}</p>}<AlertDialogFooter><AlertDialogCancel>Quay lại</AlertDialogCancel><AlertDialogAction onClick={() => {
       const action = confirm; setConfirm(null);
-      if (action === 'reset') { setAttempt(newAttempt()); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-      else { rememberStudentIdentity(identity); setAttempt(current => ({ ...current, submitted: true, finishedAt: Date.now(), identity })); resultFocusTimer.current = window.setTimeout(() => { const result = document.getElementById('exam-result'); result?.focus(); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50); }
+      if (action === 'reset') { setAttempt({ ...newAttempt(), identity }); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+      else { setAttempt(current => ({ ...current, submitted: true, finishedAt: Math.max(Date.now(), current.revision ?? 0), revision: nextExamRevision(current.revision), identity })); resultFocusTimer.current = window.setTimeout(() => { const result = document.getElementById('exam-result'); result?.focus(); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50); }
     }}>{confirm === 'reset' ? 'Làm lại' : 'Nộp bài'}</AlertDialogAction></AlertDialogFooter></AlertDialogContent></AlertDialog>
   </>;
 }

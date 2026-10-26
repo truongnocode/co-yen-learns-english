@@ -2,10 +2,11 @@ import { cleanup, fireEvent, render, screen, within } from '@testing-library/rea
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import Grade6TestsPage from './Grade6TestsPage';
+import { studentAttemptKey } from '@/lib/examSubmissions';
 import { attemptKey, type Grade6Exam } from '@/lib/grade6Exam';
 
 vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-test' }, profile: null, loading: false }) }));
-vi.mock('@/lib/examSubmissions', async importOriginal => ({ ...await importOriginal<typeof import('@/lib/examSubmissions')>(), sendExamSubmission: vi.fn().mockResolvedValue(undefined) }));
+vi.mock('@/lib/examSubmissions', async importOriginal => ({ ...await importOriginal<typeof import('@/lib/examSubmissions')>(), sendExamSubmission: vi.fn().mockResolvedValue(undefined), queueExamProgress: vi.fn(), sendExamProgress: vi.fn().mockResolvedValue(undefined) }));
 vi.mock('@/components/PageShell', () => ({ default: ({ children }: { children: React.ReactNode }) => <>{children}</> }));
 const fixture: Grade6Exam = {
   id: 'vedec-2026-01', number: 1, title: 'Đề 01', subtitle: 'Tiếng Anh 6', audio: [],
@@ -18,6 +19,9 @@ const fixture: Grade6Exam = {
 function mount(mode = 'practice') {
   return render(<MemoryRouter initialEntries={[`/grade/6/tests/vedec-2026-01?mode=${mode}`]}><Routes><Route path="/grade/6/tests/:examId" element={<Grade6TestsPage />} /></Routes></MemoryRouter>);
 }
+const student = { studentName: 'Test Student', className: '6A Test' };
+const studentKey = (id: string, mode: 'test' | 'practice') => studentAttemptKey(attemptKey(id, mode), student);
+async function enter() { fireEvent.click(await screen.findByRole('button', { name: /^(Bắt đầu làm bài|Tiếp tục làm bài|Xem bài đã nộp)$/ })); }
 beforeEach(() => {
   localStorage.clear();
   localStorage.setItem('coyen:exam-student', JSON.stringify({ studentName: 'Test Student', className: '6A Test' }));
@@ -28,13 +32,33 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe('exam modes', () => {
+  it('requires identity before revealing questions and keeps two students separate on one device', async () => {
+    localStorage.clear(); mount('test');
+    const start = await screen.findByRole('button', { name: 'Bắt đầu làm bài' });
+    expect(start).toBeDisabled(); expect(screen.queryByRole('article')).not.toBeInTheDocument();
+    fireEvent.change(screen.getByRole('textbox', { name: 'Họ và tên học sinh' }), { target: { value: 'Minh Anh' } });
+    expect(start).toBeDisabled();
+    fireEvent.change(screen.getByRole('textbox', { name: 'Lớp / nhóm học' }), { target: { value: '6A1' } });
+    fireEvent.click(start);
+    fireEvent.click(within(screen.getByRole('article', { name: 'Câu 1' })).getByRole('button', { name: 'T · Đúng' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Đổi học sinh' }));
+    fireEvent.change(screen.getByRole('textbox', { name: 'Họ và tên học sinh' }), { target: { value: 'Hoàng Nam' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Bắt đầu làm bài' }));
+    expect(screen.getByText('Đã làm 0/3 câu / bài')).toBeInTheDocument();
+    fireEvent.click(within(screen.getByRole('article', { name: 'Câu 1' })).getByRole('button', { name: 'F · Sai' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Đổi học sinh' }));
+    fireEvent.change(screen.getByRole('textbox', { name: 'Họ và tên học sinh' }), { target: { value: 'Minh Anh' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp tục làm bài' }));
+    expect(within(screen.getByRole('article', { name: 'Câu 1' })).getByRole('button', { name: 'T · Đúng' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByText('Đã làm 1/3 câu / bài')).toBeInTheDocument();
+  });
   it('compacts printed rewrite blanks while keeping grading, input labels and saved answers', async () => {
     const compact: Grade6Exam = { ...fixture, sections: [{ ...fixture.sections[0], questions: [
       { id: 'q2', number: '33', kind: 'text', html: '<p>Question 33: There are many flowers in our garden.</p><p>=&gt; Our\n garden__________________________________________________________.</p>', answers: ['has many flowers'] },
       { id: 'q4', number: '34', kind: 'text', html: '<p>They (be) __________ (play) __________.</p>', answers: ['are / playing'] },
     ] }] };
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => compact }));
-    mount();
+    mount(); await enter();
     const article = await screen.findByRole('article', { name: 'Câu 33' });
     expect(within(article).getByText('=> Our garden ____.')).toBeInTheDocument();
     expect(within(article).queryByText(/cách nhau bằng dấu/)).not.toBeInTheDocument();
@@ -42,12 +66,12 @@ describe('exam modes', () => {
     fireEvent.change(within(article).getByRole('textbox', { name: 'Câu trả lời của em' }), { target: { value: 'has many flowers' } });
     fireEvent.click(within(article).getByRole('button', { name: 'Kiểm tra câu này' }));
     expect(within(article).getByText('✓ Chính xác!')).toBeInTheDocument();
-    expect(localStorage.getItem(attemptKey(fixture.id, 'practice'))).toContain('has many flowers');
+    expect(localStorage.getItem(studentKey(fixture.id, 'practice'))).toContain('has many flowers');
   });
   it('makes the full reflowed option clickable without duplicating its text or changing grading', async () => {
     const compact = { ...fixture, sections: [{ ...fixture.sections[0], questions: [{ id: 'q1', number: '1', kind: 'choice', html: '<p>Choose the answer.</p><p>A. first</p><p>B. second</p><p>C. third</p><p>D. fourth</p>', answers: ['B'], options: ['A', 'B', 'C', 'D'] }] }] };
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => compact }));
-    mount();
+    mount(); await enter();
     const article = await screen.findByRole('article', { name: 'Câu 1' });
     expect(within(article).getAllByText('B. second')).toHaveLength(1);
     fireEvent.click(within(article).getByText('B. second'));
@@ -55,7 +79,7 @@ describe('exam modes', () => {
     expect(within(article).getByText('✓ Chính xác!')).toBeInTheDocument();
   });
   it('cancels the result focus task when the learner leaves immediately after submitting', async () => {
-    const view = mount('test');
+    const view = mount('test'); await enter();
     await screen.findByRole('article', { name: 'Câu 1' });
     vi.useFakeTimers();
     try {
@@ -71,7 +95,7 @@ describe('exam modes', () => {
     const grade8 = { ...fixture, id: `vedec-g${grade}-2026-${last}`, subtitle: `Tiếng Anh ${grade}` };
     const fetchMock = vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => grade8 });
     vi.stubGlobal('fetch', fetchMock);
-    render(<MemoryRouter initialEntries={[`/grade/${grade}/tests/vedec-g${grade}-2026-${last}?mode=test`]}><Routes><Route path="/grade/:grade/tests/:examId" element={<Grade6TestsPage grade={grade} />} /></Routes></MemoryRouter>);
+    render(<MemoryRouter initialEntries={[`/grade/${grade}/tests/vedec-g${grade}-2026-${last}?mode=test`]}><Routes><Route path="/grade/:grade/tests/:examId" element={<Grade6TestsPage grade={grade} />} /></Routes></MemoryRouter>); await enter();
     expect(await screen.findByText(`Tiếng Anh ${grade}`)).toBeInTheDocument();
     expect(fetchMock.mock.calls[0][0]).toBe(`/data/grade${grade}-midterm/vedec-g${grade}-2026-${last}.json`);
     expect(fetchMock.mock.calls[0][1].cache).toBe('no-cache');
@@ -79,8 +103,8 @@ describe('exam modes', () => {
     fireEvent.click(within(first).getByRole('button', { name: 'T · Đúng' }));
     expect(screen.queryByText('✓ Chính xác!')).not.toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Chọn đề khác' })).toHaveAttribute('href', `/grade/${grade}/tests`);
-    expect(localStorage.getItem(attemptKey(grade8.id, 'test'))).toContain('"q1":"T"');
-    expect(localStorage.getItem(attemptKey(grade8.id, 'practice'))).toBeNull();
+    expect(localStorage.getItem(studentKey(grade8.id, 'test'))).toContain('"q1":"T"');
+    expect(localStorage.getItem(studentKey(grade8.id, 'practice'))).toBeNull();
   });
   it('loads grade 7 data, links back to grade 7, and seeks shared recordings to the matching task', async () => {
     const grade7: Grade6Exam = {
@@ -90,7 +114,7 @@ describe('exam modes', () => {
     };
     const fetchMock = vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => grade7 });
     vi.stubGlobal('fetch', fetchMock);
-    render(<MemoryRouter initialEntries={['/grade/7/tests/vedec-g7-2026-01?mode=practice']}><Routes><Route path="/grade/7/tests/:examId" element={<Grade6TestsPage grade={7} />} /></Routes></MemoryRouter>);
+    render(<MemoryRouter initialEntries={['/grade/7/tests/vedec-g7-2026-01?mode=practice']}><Routes><Route path="/grade/7/tests/:examId" element={<Grade6TestsPage grade={7} />} /></Routes></MemoryRouter>); await enter();
     expect(await screen.findByText('Tiếng Anh 7')).toBeInTheDocument();
     expect(fetchMock.mock.calls[0][0]).toBe('/data/grade7-midterm/vedec-g7-2026-01.json');
     expect(screen.getByRole('link', { name: 'Chọn đề khác' })).toHaveAttribute('href', '/grade/7/tests');
@@ -99,8 +123,8 @@ describe('exam modes', () => {
     expect(audio.currentTime).toBe(173);
     fireEvent.click(within(screen.getByRole('article', { name: 'Câu 1' })).getByRole('button', { name: 'T · Đúng' }));
     expect(screen.getByText('✓ Chính xác!')).toBeInTheDocument();
-    expect(localStorage.getItem(attemptKey(grade7.id, 'practice'))).toContain('"q1":"T"');
-    expect(localStorage.getItem(attemptKey(fixture.id, 'practice'))).toBeNull();
+    expect(localStorage.getItem(studentKey(grade7.id, 'practice'))).toContain('"q1":"T"');
+    expect(localStorage.getItem(studentKey(fixture.id, 'practice'))).toBeNull();
   });
   it('places progress above the matching listening players, including shared full recordings', async () => {
     const listening: Grade6Exam = {
@@ -116,7 +140,7 @@ describe('exam modes', () => {
       ],
     };
     vi.stubGlobal('fetch', vi.fn().mockImplementation(async () => ({ ok: true, headers: { get: () => 'application/json' }, json: async () => listening })));
-    const view = mount();
+    const view = mount(); await enter();
     const progress = await screen.findByText('Đã làm 0/3 câu / bài');
     const first = document.querySelector('#s1 audio')!;
     expect(first).toHaveAttribute('src', '/first.mp3');
@@ -125,14 +149,14 @@ describe('exam modes', () => {
     expect(progress.compareDocumentPosition(first) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     view.unmount();
     listening.audio = [listening.audio[0]];
-    mount();
+    mount(); await enter();
     await screen.findByText('Listening II');
     expect(document.querySelector('#s1 audio')).toHaveAttribute('src', '/first.mp3');
     expect(document.querySelector('#s2 audio')).toHaveAttribute('src', '/first.mp3');
     expect(document.querySelector('#s1 audio')?.id).not.toBe(document.querySelector('#s2 audio')?.id);
   });
   it('gives immediate choice feedback, checks typed answers on request, and resumes after reload', async () => {
-    const view = mount();
+    const view = mount(); await enter();
     const first = await screen.findByRole('article', { name: 'Câu 1' });
     fireEvent.click(within(first).getByRole('button', { name: 'T · Đúng' }));
     expect(within(first).getByText('✓ Chính xác!')).toBeInTheDocument();
@@ -142,12 +166,12 @@ describe('exam modes', () => {
     expect(within(second).queryByText('✓ Chính xác!')).not.toBeInTheDocument();
     fireEvent.click(within(second).getByRole('button', { name: 'Kiểm tra câu này' }));
     expect(within(second).getByText('✓ Chính xác!')).toBeInTheDocument();
-    view.unmount(); mount();
+    view.unmount(); mount(); await enter();
     expect(await screen.findAllByText('✓ Chính xác!')).toHaveLength(2);
   });
   it('hides feedback until confirmed submission, allows changes, and separates mode progress', async () => {
     localStorage.setItem(attemptKey(fixture.id, 'practice'), JSON.stringify({ answers: { q1: 'T' }, checked: ['q1'], submitted: true, startedAt: Date.now() }));
-    mount('test');
+    mount('test'); await enter();
     const first = await screen.findByRole('article', { name: 'Câu 1' });
     fireEvent.click(within(first).getByRole('button', { name: 'F · Sai' }));
     fireEvent.click(within(first).getByRole('button', { name: 'T · Đúng' }));

@@ -3,6 +3,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { sendExamSubmission } from '@/lib/examSubmissions';
 import Grade10TestsPage from './Grade10TestsPage';
+import { loadGrade10Tests } from '@/data/loader';
+import { grade10AttemptKey, examSignature, restoreGrade10Attempt } from '@/lib/grade10Attempt';
 
 vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-test' }, profile: null, loading: false }) }));
 vi.mock('@/lib/examSubmissions', async importOriginal => ({ ...await importOriginal<typeof import('@/lib/examSubmissions')>(), sendExamSubmission: vi.fn().mockResolvedValue(undefined), queueExamProgress: vi.fn(), sendExamProgress: vi.fn().mockResolvedValue(undefined) }));
@@ -15,6 +17,27 @@ beforeEach(() => { localStorage.clear(); vi.clearAllMocks(); });
 afterEach(cleanup);
 
 describe('grade 10 compact presentation', () => {
+  it('restores a multi-question attempt between questions, not only the writing stage', async () => {
+    const test = { title: 'Many questions', partA: { questions: Array.from({ length: 8 }, (_, i) => ({ q: `Question ${i + 1}`, opts: ['one', 'two'], ans: 0 })) }, partB: {}, partC: { fill_in: [] } };
+    vi.mocked(loadGrade10Tests).mockResolvedValueOnce({ test1: test }).mockResolvedValueOnce({ test1: test });
+    const student = { studentName: 'Minh Anh', className: '10A1' };
+    const view = render(<MemoryRouter><Grade10TestsPage /></MemoryRouter>);
+    fireEvent.click(await screen.findByRole('button', { name: /Many questions/ }));
+    fireEvent.change(screen.getByRole('textbox', { name: 'Họ và tên học sinh' }), { target: { value: student.studentName } });
+    fireEvent.change(screen.getByRole('textbox', { name: 'Lớp / nhóm học' }), { target: { value: student.className } });
+    fireEvent.click(screen.getByRole('button', { name: 'Bắt đầu làm bài' }));
+    for (let i = 0; i < 7; i++) {
+      fireEvent.click(screen.getByRole('button', { name: 'A. one' }));
+      fireEvent.click(screen.getByRole('button', { name: 'Kiểm tra' }));
+      fireEvent.click(screen.getByRole('button', { name: 'Câu tiếp →' }));
+    }
+    view.unmount();
+    expect(restoreGrade10Attempt(grade10AttemptKey('test1', student), examSignature(test), test.partA.questions.map(q => q.opts), 0)).not.toBeNull();
+    render(<MemoryRouter><Grade10TestsPage /></MemoryRouter>);
+    fireEvent.click(await screen.findByRole('button', { name: /Many questions/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Tiếp tục làm bài' }));
+    expect(screen.getByText('Câu 8/8')).toBeInTheDocument();
+  });
   it('restores the writing stage and typed answer after reopening the same paper and student', async () => {
     let view = render(<MemoryRouter><Grade10TestsPage /></MemoryRouter>);
     fireEvent.click(await screen.findByRole('button', { name: /Practice Test 1/ }));

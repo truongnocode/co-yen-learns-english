@@ -24,10 +24,11 @@ export function newGrade10Attempt(count: number, identity: StudentIdentity): Gra
 export function restoreGrade10Attempt(key: string, signature: string, options: string[][], writingCount: number): Grade10Attempt | null {
   try {
     const raw = JSON.parse(localStorage.getItem(key) || 'null');
-    if (raw?.signature !== signature) return null;
-    const result = schema.safeParse(raw.attempt); if (!result.success) return null;
+    if (!raw) return null;
+    if (raw.signature !== signature) { console.warn('Exam resume: paper content signature changed. Saved attempt retained.'); return null; }
+    const result = schema.safeParse(raw.attempt); if (!result.success) { console.warn('Exam resume: invalid saved fields', result.error.issues.map(issue => issue.path.join('.'))); return null; }
     const a = result.data;
-    if (a.current >= options.length || a.userAnswers.length !== options.length || a.partCAnswers.length > writingCount || a.userAnswers.some((answer, i) => answer !== null && answer >= options[i].length) || a.selected !== null && a.selected >= options[a.current].length || a.score > options.length || a.partCScore > writingCount) return null;
+    if (a.current >= options.length || a.userAnswers.length !== options.length || a.partCAnswers.length > writingCount || a.userAnswers.some((answer, i) => answer !== null && answer >= options[i].length) || a.selected !== null && a.selected >= options[a.current].length || a.score > options.length || a.partCScore > writingCount) { console.warn('Exam resume: saved question positions no longer match this paper.'); return null; }
     return a as Grade10Attempt;
   } catch { return null; }
 }

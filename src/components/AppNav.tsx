@@ -6,6 +6,7 @@ import { getProgress, calcXP } from "@/lib/progress";
 import { HUBS, activeHubKey, type NavHub } from "@/data/nav";
 import { routes } from "@/data/routes";
 import bearUrl from "@/assets/emoji/bear.png";
+import { isAdminEmail } from '@/lib/admin';
 
 /**
  * The single navigation system for the whole app (replaces the old Navbar,
@@ -68,6 +69,7 @@ const AppNav = () => {
 
           {user && !isGuest ? (
             <div className="flex shrink-0 items-center gap-1.5">
+              {isAdminEmail(user.email) && <button onClick={() => navigate('/admin/results')} className="min-h-11 rounded-xl bg-primary/10 px-3 text-sm font-bold text-primary">Kết quả học sinh</button>}
               <div className="mr-1 hidden items-center gap-1.5 sm:flex">
                 <span className="inline-flex items-center gap-1 rounded-full bg-streak/15 px-2.5 py-1 text-sm font-extrabold text-foreground" title="Chuỗi ngày học">
                   <Flame className="h-4 w-4 text-streak" aria-hidden /> {streak}

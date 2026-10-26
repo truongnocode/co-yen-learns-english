@@ -26,6 +26,9 @@ export function AdminLayout() {
               <NavLink to="/admin/exams" className={navLinkClass}>
                 Đề thi
               </NavLink>
+              <NavLink to="/admin/results" className={navLinkClass}>
+                Kết quả học sinh
+              </NavLink>
               <NavLink to="/admin/analytics" className={navLinkClass}>
                 Analytics
               </NavLink>

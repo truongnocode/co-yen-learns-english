@@ -43,6 +43,8 @@ import ExamListPage from "./pages/admin/ExamList";
 import AnalyticsPage from "./pages/admin/Analytics";
 import VideoLessonsAdminPage from "./pages/admin/VideoLessons";
 import VideoLessonReviewPage from "./pages/admin/VideoLessonReview";
+import StudentResults, { StudentResultDetail } from './pages/admin/StudentResults';
+import { PendingExamSubmissions } from './components/ExamSubmission';
 
 const queryClient = new QueryClient();
 
@@ -55,6 +57,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <OnboardingGate />
+        <PendingExamSubmissions />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/onboarding" element={<OnboardingPage />} />
@@ -105,6 +108,8 @@ const App = () => (
             <Route index element={<ImportExamPage />} />
             <Route path="import" element={<ImportExamPage />} />
             <Route path="exams" element={<ExamListPage />} />
+            <Route path="results" element={<StudentResults />} />
+            <Route path="results/:resultId" element={<StudentResultDetail />} />
             <Route path="analytics" element={<AnalyticsPage />} />
             <Route path="video-lessons" element={<VideoLessonsAdminPage />} />
             <Route path="video-lessons/:lessonId" element={<VideoLessonReviewPage />} />

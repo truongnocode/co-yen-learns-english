@@ -7,6 +7,8 @@ import { MIDTERM_EXAM_COUNTS, isValidMidtermExamId, type ExamGrade, attemptKey, 
 import './grade6-tests.css';
 import { splitExamChoices } from '@/lib/examChoiceLayout';
 import { compactExamHtml, compactExamInstruction } from '@/lib/compactExamContent';
+import ExamSubmission, { StudentIdentityFields } from '@/components/ExamSubmission';
+import { plainExamText, readStudentIdentity, validIdentity, rememberStudentIdentity } from '@/lib/examSubmissions';
 
 const button = 'inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-50';
 const secondary = 'inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card px-4 py-3 font-bold hover:bg-muted';
@@ -114,6 +116,7 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
   });
   const [storageError, setStorageError] = useState(false);
   const [confirm, setConfirm] = useState<'submit' | 'reset' | null>(null);
+  const [identity, setIdentity] = useState(readStudentIdentity);
   const resultFocusTimer = useRef<number>();
   useEffect(() => () => {
     if (resultFocusTimer.current !== undefined) window.clearTimeout(resultFocusTimer.current);
@@ -150,6 +153,7 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
       <p className="mt-3 text-xl font-bold">Đúng {result.correct}/{result.total} câu chấm tự động</p><p className="mt-2 text-sm text-muted-foreground">Điểm luyện tập quy đổi: <strong className="text-foreground">{result.score}/10</strong>. Các câu có cùng trọng số.</p>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{result.manual} câu / bài cần tự đối chiếu hoặc nhờ cô chấm, không tính trong điểm trên. Đây là kết quả phần tự động, chưa phải điểm toàn bộ đề gốc.</p>
       <p className="mt-3 font-semibold">Xem từng câu phía dưới để đối chiếu và học lại nhé.</p>
+      <ExamSubmission id={attempt.submissionId!} identity={attempt.identity} autoSend={!!attempt.identity} value={{ version: 1, grade, examId: exam.id, examTitle: exam.title, mode, startedAt: attempt.startedAt, finishedAt: attempt.finishedAt ?? attempt.startedAt, ...result, questions: exam.sections.flatMap(section => section.questions.map(q => ({ id: q.id, number: q.number, section: compactExamInstruction(section.title), context: plainExamText(compactExamHtml(section.introHtml)), prompt: plainExamText(compactExamHtml(q.html, { questionNumber: q.number, manual: q.kind === 'manual' })), options: q.options ?? [], answer: attempt.answers[q.id] ?? '', expected: q.answers, status: !isAutoScored(q) ? 'manual' as const : isCorrectExamAnswer(q, attempt.answers[q.id] ?? '') ? 'correct' as const : 'incorrect' as const }))) }} />
     </section>}
     <div className="space-y-6">{exam.sections.map(section => {
       const listeningIndex = listeningSections.findIndex(s => s.id === section.id);
@@ -168,10 +172,10 @@ function ExamPlayer({ exam, mode, grade }: { exam: Grade6Exam; mode: ExamMode; g
       <p className="text-sm text-muted-foreground">{attempt.submitted ? 'Em có thể làm lại hoặc thử một đề khác.' : `${unanswered} câu / bài chưa trả lời. Em vẫn có thể nộp và xem kết quả.`}</p>
       {attempt.submitted ? <Link to={`/grade/${grade}/tests`} className={button}>Chọn đề khác <ArrowRight className="h-4 w-4" /></Link> : <button className={button} onClick={() => setConfirm('submit')}><ClipboardCheck className="h-4 w-4" /> Nộp bài và xem kết quả</button>}
     </div>
-    <AlertDialog open={confirm !== null} onOpenChange={open => { if (!open) setConfirm(null); }}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>{confirm === 'reset' ? 'Làm lại từ đầu?' : 'Em muốn nộp bài?'}</AlertDialogTitle><AlertDialogDescription>{confirm === 'reset' ? 'Bài làm đã lưu của đề này trong chế độ hiện tại sẽ được thay bằng một lượt làm mới.' : unanswered ? `Còn ${unanswered} câu / bài chưa trả lời. Khi nộp, em sẽ xem được kết quả và đáp án; câu chấm tự động chưa trả lời tính là chưa đúng.` : 'Sau khi nộp, em sẽ xem được kết quả và đáp án từng câu.'}</AlertDialogDescription></AlertDialogHeader><AlertDialogFooter><AlertDialogCancel>Quay lại</AlertDialogCancel><AlertDialogAction onClick={() => {
+    <AlertDialog open={confirm !== null} onOpenChange={open => { if (!open) setConfirm(null); }}><AlertDialogContent><AlertDialogHeader><AlertDialogTitle>{confirm === 'reset' ? 'Làm lại từ đầu?' : 'Em muốn nộp bài?'}</AlertDialogTitle><AlertDialogDescription>{confirm === 'reset' ? 'Bài làm đã lưu của đề này trong chế độ hiện tại sẽ được thay bằng một lượt làm mới.' : unanswered ? `Còn ${unanswered} câu / bài chưa trả lời. Khi nộp, em sẽ xem được kết quả và đáp án; câu chấm tự động chưa trả lời tính là chưa đúng.` : 'Sau khi nộp, em sẽ xem được kết quả và đáp án từng câu.'}</AlertDialogDescription></AlertDialogHeader>{confirm === 'submit' && <><StudentIdentityFields value={identity} onChange={setIdentity} /><p className="text-xs text-muted-foreground">Ghi tên và lớp để cô nhận diện bài làm của em.</p></>}<AlertDialogFooter><AlertDialogCancel>Quay lại</AlertDialogCancel><AlertDialogAction disabled={confirm === 'submit' && !validIdentity(identity)} onClick={() => {
       const action = confirm; setConfirm(null);
       if (action === 'reset') { setAttempt(newAttempt()); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-      else { setAttempt(current => ({ ...current, submitted: true })); resultFocusTimer.current = window.setTimeout(() => { const result = document.getElementById('exam-result'); result?.focus(); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50); }
+      else { rememberStudentIdentity(identity); setAttempt(current => ({ ...current, submitted: true, finishedAt: Date.now(), identity })); resultFocusTimer.current = window.setTimeout(() => { const result = document.getElementById('exam-result'); result?.focus(); result?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50); }
     }}>{confirm === 'reset' ? 'Làm lại' : 'Nộp bài'}</AlertDialogAction></AlertDialogFooter></AlertDialogContent></AlertDialog>
   </>;
 }

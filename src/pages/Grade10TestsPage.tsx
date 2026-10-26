@@ -20,6 +20,8 @@ import { matchAnswer } from "@/lib/answerMatch";
 import SignVisual from "@/components/SignVisual";
 import { compactExamText } from "@/lib/compactExamContent";
 import { examChoiceSize } from "@/lib/examChoiceLayout";
+import ExamSubmission from '@/components/ExamSubmission';
+import { newSubmissionId, readStudentIdentity, validIdentity, submissionSummary, type SubmittedQuestion } from '@/lib/examSubmissions';
 import './grade6-tests.css';
 
 const smooth = { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const };
@@ -257,10 +259,12 @@ const Grade10TestsPage = () => {
     );
   }
 
-  return <TestExam test={data[selectedTest]} onBack={() => setSelectedTest(null)} />;
+  return <TestExam key={selectedTest} examId={selectedTest} test={data[selectedTest]} onBack={() => setSelectedTest(null)} />;
 };
 
-const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
+const TestExam = ({ test, examId, onBack }: { test: TestData; examId: string; onBack: () => void }) => {
+  const [session] = useState(() => ({ id: newSubmissionId(), startedAt: Date.now() }));
+  const [finishedAt, setFinishedAt] = useState(0);
   const allQuestions: FlatQuestion[] = [];
   test.partA.questions.forEach(q => allQuestions.push({ ...q, context: "Part A: Ngữ pháp & Từ vựng" }));
   if (test.partB.cloze) test.partB.cloze.questions.forEach(q => allQuestions.push({ ...q, context: "Part B: Điền từ vào đoạn văn", passage: test.partB.cloze.passage }));
@@ -291,6 +295,13 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
   const choiceLayout = examChoiceSize(q?.opts.map(compactExamText) ?? []);
   const progress = ((current + 1) / totalMCQ) * 100;
   const partCQuestions = test.partC?.fill_in || [];
+  const complete = partCSubmitted || finished && partCQuestions.length === 0;
+  useEffect(() => { if (complete && !finishedAt) setFinishedAt(Date.now()); }, [complete, finishedAt]);
+  const submissionQuestions: SubmittedQuestion[] = complete ? [
+    ...allQuestions.map((item, i) => ({ id: `mc-${i}`, number: String(i + 1), section: item.context, prompt: compactExamText(item.q), context: compactExamText([item.passage, item.sign].filter(Boolean).join('\n')), options: item.opts.map((opt, j) => `${String.fromCharCode(65 + j)}. ${compactExamText(opt)}`), answer: userAnswers[i] === null ? '' : `${String.fromCharCode(65 + userAnswers[i]!)}. ${item.opts[userAnswers[i]!]}`, expected: [`${String.fromCharCode(65 + item.ans)}. ${item.opts[item.ans]}`], status: userAnswers[i] === item.ans ? 'correct' as const : 'incorrect' as const })),
+    ...partCQuestions.map((item, i) => ({ id: `writing-${i}`, number: String(totalMCQ + i + 1), section: 'Part C: Viết', prompt: compactExamText(item.q), context: '', options: [], answer: partCAnswers[i] || '', expected: item.answer || [], status: !item.answer?.length ? 'manual' as const : matchAnswer(partCAnswers[i] || '', item.answer) ? 'correct' as const : 'incorrect' as const })),
+  ] : [];
+  const submissionPanel = complete && finishedAt ? <ExamSubmission id={session.id} autoSend={validIdentity(readStudentIdentity())} value={{ version: 1, grade: 10, examId, examTitle: test.title, mode: reviewMode === 'instant' ? 'practice' : 'test', startedAt: session.startedAt, finishedAt, ...submissionSummary(submissionQuestions), questions: submissionQuestions }} /> : null;
 
   const handleTimeUp = useCallback(() => {
     // Calculate score from answered questions
@@ -383,6 +394,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
               <p className="text-muted-foreground text-sm">Trắc nghiệm: <span className="font-bold text-foreground">{score}/{totalMCQ}</span></p>
               <p className="text-muted-foreground text-sm">Tự luận: <span className="font-bold text-foreground">{partCScore}/{partCQuestions.length}</span></p>
               <p className="text-4xl font-display font-bold text-primary my-4">{score + partCScore}/{totalMCQ + partCQuestions.length}</p>
+              {submissionPanel}
               <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3 mb-4 max-w-xs mx-auto">
                 <Trophy className="h-5 w-5 text-energy" />
                 <span className="font-display font-extrabold text-lg text-energy">Điểm: {(((score + partCScore) / (totalMCQ + partCQuestions.length)) * 10).toFixed(1)}/10</span>
@@ -423,6 +435,7 @@ const TestExam = ({ test, onBack }: { test: TestData; onBack: () => void }) => {
             className="bg-card rounded-2xl p-8 shadow-2 border border-border">
             <div className="text-5xl mb-3">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
             <h2 className="font-display font-extrabold text-2xl text-foreground mb-2">{test.title}</h2>
+            {submissionPanel}
             <p className="text-4xl font-display font-bold text-primary my-4">{score}/{totalMCQ}</p>
             <div className="flex items-center justify-center gap-2 bg-energy/10 border border-energy/20 rounded-2xl p-3 mb-6 max-w-xs mx-auto">
               <Trophy className="h-5 w-5 text-energy" />

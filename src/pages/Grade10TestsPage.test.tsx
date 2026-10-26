@@ -1,8 +1,11 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { sendExamSubmission } from '@/lib/examSubmissions';
 import Grade10TestsPage from './Grade10TestsPage';
 
+vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-test' }, profile: null, loading: false }) }));
+vi.mock('@/lib/examSubmissions', async importOriginal => ({ ...await importOriginal<typeof import('@/lib/examSubmissions')>(), sendExamSubmission: vi.fn().mockResolvedValue(undefined) }));
 vi.mock('@/components/PageShell', () => ({ default: ({ children }: { children: React.ReactNode }) => <>{children}</> }));
 vi.mock('@/data/loader', () => ({ loadGrade10Tests: vi.fn().mockResolvedValue({ test1: {
   title: 'Practice Test 1', partA: { questions: [{ q: 'Yesterday, he ____________________ home.', opts: ['went', 'go', 'going', 'goes'], ans: 0 }] },
@@ -20,9 +23,15 @@ describe('grade 10 compact presentation', () => {
     expect(screen.getByText('Chính xác!')).toBeInTheDocument();
     fireEvent.click(screen.getByRole('button', { name: 'Hoàn thành' }));
     fireEvent.click(screen.getByRole('button', { name: 'Làm Part C →' }));
+    expect(sendExamSubmission).not.toHaveBeenCalled();
     expect(screen.getByText(/Our garden ____\./)).toBeInTheDocument();
     fireEvent.change(screen.getByRole('textbox'), { target: { value: 'has many flowers' } });
     fireEvent.click(screen.getByRole('button', { name: 'Nộp bài' }));
     expect(screen.getByText('2/2')).toBeInTheDocument();
+    fireEvent.change(screen.getByRole('textbox', { name: 'Họ và tên học sinh' }), { target: { value: 'Minh Anh' } });
+    fireEvent.change(screen.getByRole('textbox', { name: 'Lớp / nhóm học' }), { target: { value: '10A1' } });
+    fireEvent.click(screen.getByRole('button', { name: 'Gửi kết quả cho cô' }));
+    expect(await screen.findByRole('status')).toHaveTextContent('Đã gửi kết quả cho cô');
+    expect(sendExamSubmission).toHaveBeenCalledWith(expect.any(String), expect.objectContaining({ grade: 10, examId: 'test1', correct: 2, total: 2, score: 10, questions: expect.arrayContaining([expect.objectContaining({ answer: 'has many flowers', status: 'correct' })]) }));
   });
 });

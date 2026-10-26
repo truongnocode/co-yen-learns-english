@@ -4,6 +4,8 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import Grade6TestsPage from './Grade6TestsPage';
 import { attemptKey, type Grade6Exam } from '@/lib/grade6Exam';
 
+vi.mock('@/contexts/AuthContext', () => ({ useAuth: () => ({ user: { uid: 'student-test' }, profile: null, loading: false }) }));
+vi.mock('@/lib/examSubmissions', async importOriginal => ({ ...await importOriginal<typeof import('@/lib/examSubmissions')>(), sendExamSubmission: vi.fn().mockResolvedValue(undefined) }));
 vi.mock('@/components/PageShell', () => ({ default: ({ children }: { children: React.ReactNode }) => <>{children}</> }));
 const fixture: Grade6Exam = {
   id: 'vedec-2026-01', number: 1, title: 'Đề 01', subtitle: 'Tiếng Anh 6', audio: [],
@@ -18,6 +20,7 @@ function mount(mode = 'practice') {
 }
 beforeEach(() => {
   localStorage.clear();
+  localStorage.setItem('coyen:exam-student', JSON.stringify({ studentName: 'Test Student', className: '6A Test' }));
   vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => fixture }));
   vi.spyOn(window, 'scrollTo').mockImplementation(() => {});
   Element.prototype.scrollIntoView = vi.fn();

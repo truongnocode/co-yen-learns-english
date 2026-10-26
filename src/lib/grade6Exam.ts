@@ -46,12 +46,15 @@ export interface ExamSummary {
 }
 export type ExamMode = 'practice' | 'test';
 export interface ExamAttempt {
+  submissionId?: string;
+  finishedAt?: number;
+  identity?: { studentName: string; className: string };
   answers: Record<string, string>;
   checked: string[];
   submitted: boolean;
   startedAt: number;
 }
-export const newAttempt = (): ExamAttempt => ({ answers: {}, checked: [], submitted: false, startedAt: Date.now() });
+export const newAttempt = (): ExamAttempt => ({ submissionId: crypto.randomUUID(), answers: {}, checked: [], submitted: false, startedAt: Date.now() });
 export const attemptKey = (id: string, mode: ExamMode) => `coyen:grade${id.startsWith('vedec-g9-') ? 9 : id.startsWith('vedec-g8-') ? 8 : id.startsWith('vedec-g7-') ? 7 : 6}:v1:${id}:${mode}`;
 
 // Short answers accept case, punctuation, apostrophe and contraction variants.
@@ -85,6 +88,10 @@ export function restoreAttempt(raw: string | null, questions: ExamQuestion[]): E
       const q = questions.find(q => q.id === id);
       if (q && typeof answer === 'string' && answer.length <= 10000 && (!q.options || q.options.includes(answer))) answers[id] = answer;
     }
-    return { answers, checked: value.checked.filter((id: unknown): id is string => typeof id === 'string' && ids.has(id) && !!answers[id]?.trim()), submitted: value.submitted, startedAt: value.startedAt };
+    return { answers, checked: value.checked.filter((id: unknown): id is string => typeof id === 'string' && ids.has(id) && !!answers[id]?.trim()), submitted: value.submitted, startedAt: value.startedAt,
+      submissionId: typeof value.submissionId === 'string' && /^[a-zA-Z0-9-]{10,80}$/.test(value.submissionId) ? value.submissionId : crypto.randomUUID(),
+      finishedAt: Number.isFinite(value.finishedAt) ? value.finishedAt : undefined,
+      identity: typeof value.identity?.studentName === 'string' && typeof value.identity?.className === 'string' ? { studentName: value.identity.studentName.slice(0, 100), className: value.identity.className.slice(0, 60) } : undefined,
+    };
   } catch { return null; }
 }

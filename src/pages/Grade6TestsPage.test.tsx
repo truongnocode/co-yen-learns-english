@@ -25,6 +25,16 @@ beforeEach(() => {
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe('exam modes', () => {
+  it('makes the full reflowed option clickable without duplicating its text or changing grading', async () => {
+    const compact = { ...fixture, sections: [{ ...fixture.sections[0], questions: [{ id: 'q1', number: '1', kind: 'choice', html: '<p>Choose the answer.</p><p>A. first</p><p>B. second</p><p>C. third</p><p>D. fourth</p>', answers: ['B'], options: ['A', 'B', 'C', 'D'] }] }] };
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, headers: { get: () => 'application/json' }, json: async () => compact }));
+    mount();
+    const article = await screen.findByRole('article', { name: 'Câu 1' });
+    expect(within(article).getAllByText('B. second')).toHaveLength(1);
+    fireEvent.click(within(article).getByText('B. second'));
+    expect(within(article).getByRole('button', { name: 'B' })).toHaveAttribute('aria-pressed', 'true');
+    expect(within(article).getByText('✓ Chính xác!')).toBeInTheDocument();
+  });
   it('cancels the result focus task when the learner leaves immediately after submitting', async () => {
     const view = mount('test');
     await screen.findByRole('article', { name: 'Câu 1' });
